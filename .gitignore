@@ -219,3 +219,4 @@ skills/*/tests/
 .parallel_vibe/
 .compact-bensz-skills/
 .draw-plot
+tests/bensz-nsfc/__pycache__/test_nsfc_bundled_fonts.cpython-313-pytest-8.3.4.pyc
