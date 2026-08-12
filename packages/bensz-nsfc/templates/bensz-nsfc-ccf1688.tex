@@ -1,0 +1,246 @@
+% CCF-1688 源宝合作基金项目申报书专属稳定样式。
+% 项目正文与表格数据保留在 projects/ccf-1688/extraTex/。
+
+\RequirePackage[table]{xcolor}
+\RequirePackage{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+\RequirePackage{array}
+\RequirePackage{fancyhdr}
+\RequirePackage{amsmath}
+\RequirePackage{titlesec}
+\RequirePackage{indentfirst}
+\RequirePackage{caption}
+\DeclareCaptionFont{ccftablecaption}{\fontsize{10pt}{11.5pt}\selectfont}
+
+\expandafter\geometry\expandafter{\NSFCGeometryOptions}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{17.5pt}
+\setlength{\footskip}{36pt}
+\raggedbottom
+
+\definecolor{CCFBlue}{RGB}{0,102,255}
+\definecolor{CCFHintGray}{RGB}{127,127,127}
+
+% CCF 正文中的公式、参考文献 URL 与交叉引用均需可正常渲染和跳转。
+\RequirePackage{hyperref}
+\RequirePackage{xurl}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=CCFBlue,
+  CJKbookmarks=true
+}
+\urlstyle{same}
+
+% 使用共享字体资源：中文保持 SimSun / Noto Sans SC，英文与数字统一使用
+% Times New Roman，保证正文、标题、表格、页眉和参考文献的西文字体一致。
+\newfontfamily\ccfsonglatinfont[
+  Path={\NSFCAssetFontsDir},
+  UprightFont=TimesNewRoman.ttf,
+  BoldFont=TimesNewRoman.ttf,
+  BoldFeatures={FakeBold=2.5},
+  ItalicFont=TimesNewRoman.ttf,
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont=TimesNewRoman.ttf,
+  BoldItalicFeatures={FakeBold=2.5,FakeSlant=0.2}
+]{TimesNewRoman.ttf}
+\setCJKfamilyfont{ccfsong}[
+  Path={\NSFCAssetFontsDir},
+  AutoFakeBold=2.5,
+  AutoFakeSlant=0.2
+]{SimSun.ttf}
+\newfontfamily\ccfsymbolfont[
+  Path={\NSFCAssetFontsDir},
+  UprightFont=SimSun.ttf,
+  BoldFont=SimSun.ttf,
+  BoldFeatures={FakeBold=2.5}
+]{SimSun.ttf}
+
+\newfontfamily\ccfsanslatinfont[
+  Path={\NSFCAssetFontsDir},
+  UprightFont=TimesNewRoman.ttf,
+  BoldFont=TimesNewRoman.ttf,
+  BoldFeatures={FakeBold=2.5},
+  ItalicFont=TimesNewRoman.ttf,
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont=TimesNewRoman.ttf,
+  BoldItalicFeatures={FakeBold=2.5,FakeSlant=0.2}
+]{TimesNewRoman.ttf}
+\setCJKfamilyfont{ccfsans}[
+  Path={\NSFCAssetFontsDir},
+  BoldFont=NotoSansSC-Bold.otf,
+  AutoFakeSlant=0.2
+]{NotoSansSC-Regular.otf}
+
+\newcommand{\ccfsonglatin}{\ccfsonglatinfont}
+\newcommand{\ccfsong}{\CJKfamily{ccfsong}}
+\newcommand{\ccfnsonglatin}{\ccfsonglatinfont}
+\newcommand{\ccfnsong}{\CJKfamily{ccfsong}}
+\newcommand{\ccfsanslatin}{\ccfsanslatinfont}
+\newcommand{\ccfsans}{\CJKfamily{ccfsans}}
+\newcommand{\CCFSymbol}[1]{{\ccfsymbolfont #1}}
+
+% 参考文献沿用国自然模板的紧凑列表口径：五号字、单倍行距、条目间距为 0，
+% 并保留悬挂编号与两端对齐；标题仍使用 CCF 中文字体和黑色标题样式。
+\newlength{\CCFBibTitleAboveSkip}
+\newlength{\CCFBibTitleBelowSkip}
+\newlength{\CCFBibItemSep}
+\setlength{\CCFBibTitleAboveSkip}{10pt}
+\setlength{\CCFBibTitleBelowSkip}{10pt}
+\setlength{\CCFBibItemSep}{0pt}
+
+\makeatletter
+\renewenvironment{thebibliography}[1]{%
+  \par\addvspace{\CCFBibTitleAboveSkip}%
+  \noindent{\ccfsonglatin\ccfsong\fontsize{14.1pt}{17pt}\selectfont\bfseries\refname}\par
+  \vspace{\CCFBibTitleBelowSkip}%
+  \ccfsonglatin\ccfsong\fontsize{10.5pt}{14.45pt}\selectfont
+  \frenchspacing
+  \list{\@biblabel{\@arabic\c@enumiv}}{%
+    \settowidth\labelwidth{\@biblabel{#1}}%
+    \leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \setlength{\rightmargin}{0pt}%
+    \setlength{\itemsep}{\CCFBibItemSep}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\parskip}{0pt}%
+    \setlength{\topsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+    \usecounter{enumiv}%
+    \let\p@enumiv\@empty
+    \renewcommand\theenumiv{\@arabic\c@enumiv}%
+  }%
+  \spaceskip=0.25em plus 0.25em minus 0.15em\relax
+  \xspaceskip=\spaceskip
+  \setlength{\emergencystretch}{0pt}%
+  \tolerance=2000\relax
+  \clubpenalty4000\widowpenalty4000%
+  \sfcode`\.=1000\relax
+}{%
+  \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist
+}
+\makeatother
+
+\setCJKmainfont[
+  Path={\NSFCAssetFontsDir},
+  AutoFakeBold=2.5,
+  AutoFakeSlant=0.2
+]{SimSun.ttf}
+\setCJKmonofont[Path={\NSFCAssetFontsDir}]{SimSun.ttf}
+\setmainfont[
+  Path={\NSFCAssetFontsDir},
+  UprightFont=TimesNewRoman.ttf,
+  BoldFont=TimesNewRoman.ttf,
+  BoldFeatures={FakeBold=2.5},
+  ItalicFont=TimesNewRoman.ttf,
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont=TimesNewRoman.ttf,
+  BoldItalicFeatures={FakeBold=2.5,FakeSlant=0.2}
+]{TimesNewRoman.ttf}
+\setmonofont[
+  Path={\NSFCAssetFontsDir},
+  UprightFont=TimesNewRoman.ttf,
+  BoldFont=TimesNewRoman.ttf,
+  BoldFeatures={FakeBold=2.5},
+  ItalicFont=TimesNewRoman.ttf,
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont=TimesNewRoman.ttf,
+  BoldItalicFeatures={FakeBold=2.5,FakeSlant=0.2}
+]{TimesNewRoman.ttf}
+
+\AtBeginDocument{%
+  \renewcommand{\baselinestretch}{1.0}%
+  \fontsize{12.05pt}{23.4pt}\selectfont\ccfsonglatin\ccfsong
+  \setlength{\parindent}{2em}%
+  \setlength{\parskip}{0pt}%
+  \setlength{\emergencystretch}{3em}%
+  % 表题采用国自然申请书的紧凑层级：小于正文、居中，并与表体留白。
+  % 对置于表体上方的 caption，skip 控制表题与表体之间的距离。
+  \captionsetup[table]{font=ccftablecaption,skip=6pt}%
+}
+\XeTeXlinebreaklocale "zh"
+
+\fancypagestyle{ccf1688}{%
+  \fancyhf{}%
+  \fancyhead[C]{\raisebox{1.4pt}{{\ccfsanslatin\ccfsans\fontsize{12.05pt}{15pt}\selectfont\bfseries CONFIDENTIAL}}}%
+  \fancyfoot[C]{{\ccfsanslatin\ccfsans\fontsize{9pt}{11pt}\selectfont 保密信息}}%
+  \renewcommand{\headrulewidth}{0.75pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+\pagestyle{ccf1688}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcommand{\CCFCenteredFixedCell}[2]{%
+  \parbox[c][#1][c]{\linewidth}{\centering #2\par}%
+}
+\newcommand{\CCFLeftFixedCell}[2]{%
+  \parbox[c][#1][c]{\linewidth}{\raggedright #2\par}%
+}
+
+\newcommand{\CCFHint}[1]{{\fontsize{11.09pt}{23.4pt}\selectfont\color{CCFHintGray}#1}}
+\newcommand{\CCFBlueHeader}{\rowcolor{CCFBlue}}
+\newcommand{\CCFTableHeader}[1]{{\ccfsonglatin\ccfsong\fontsize{12.05pt}{14.5pt}\selectfont\bfseries\color{white}#1}}
+\newcommand{\CCFNormalTableHeader}[1]{\CCFTableHeader{#1}}
+\newcommand{\CCFSmallTableHeader}[1]{{\ccfsonglatin\ccfsong\fontsize{10pt}{12pt}\selectfont\bfseries\color{white}#1}}
+\newcommand{\CCFTableSongHint}[1]{{\ccfsonglatin\ccfsong\fontsize{11.09pt}{13pt}\selectfont\color{CCFHintGray}#1}}
+\newcommand{\CCFTableSansHint}[1]{{\ccfsanslatin\ccfsans\fontsize{10.5pt}{13pt}\selectfont\itshape\color{CCFHintGray}#1}}
+
+\NewDocumentCommand{\CCFMainHeading}{O{24pt} m m}{%
+  \noindent\makebox[24pt][l]{\bfseries #2}{\bfseries #3}\par
+}
+
+% 二级标题由 CCF 官方骨架手工编号；此宏在排标题时同步 LaTeX 计数器，
+% 使其下的三级标题能得到 1.2.1、1.4.1 等正确层级编号。
+\NewDocumentCommand{\CCFSecondHeading}{m m m}{%
+  \setcounter{section}{#1}%
+  \setcounter{subsection}{#2}%
+  \setcounter{subsubsection}{0}%
+  \noindent #1.#2.\hspace{6pt}#3\par
+}
+
+\setcounter{secnumdepth}{4}
+\renewcommand{\thesubsubsection}{\thesection.\arabic{subsection}.\arabic{subsubsection}}
+\titleformat{\subsubsection}
+  {\ccfsonglatin\ccfsong\fontsize{12.05pt}{18pt}\selectfont\bfseries}
+  {\thesubsubsection}
+  {0.5em}
+  {}
+\titlespacing*{\subsubsection}{22pt}{6pt}{0pt}
+
+\titleclass{\subsubsubsection}{straight}[\subsubsection]
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand{\thesubsubsubsection}{（\arabic{subsubsubsection}）}
+\titleformat{\subsubsubsection}
+  {\ccfsonglatin\ccfsong\fontsize{12.05pt}{18pt}\selectfont\bfseries}
+  {\thesubsubsubsection}
+  {0.25em}
+  {}
+\titlespacing*{\subsubsubsection}{22pt}{4pt}{0pt}
+\makeatletter
+\def\toclevel@subsubsubsection{4}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\makeatother
+
+\newcommand{\CCFCoverInfoTable}{%
+  \begingroup
+  \setlength{\tabcolsep}{6pt}%
+  \setlength{\arrayrulewidth}{0.5pt}%
+  \fontsize{10.5pt}{13pt}\selectfont
+  \noindent
+  \begin{tabular}{|C{113.3pt}|C{278.04pt}|}
+    \hline
+    \CCFCenteredFixedCell{31.5pt}{\bfseries 申请者姓名} & \CCFCenteredFixedCell{31.5pt}{\CCFApplicantName} \\ \hline
+    \CCFCenteredFixedCell{31.5pt}{\bfseries CCF会员码} & \CCFCenteredFixedCell{31.5pt}{\CCFMemberCode} \\ \hline
+    \CCFCenteredFixedCell{31.5pt}{\bfseries 所属学校/科研机构} &
+      \CCFCenteredFixedCell{31.5pt}{\CCFInstitution\ifx\CCFInstitution\empty{\color{CCFHintGray}（提示：申报单位与项目科研协议签署单位需保持一致）}\fi} \\ \hline
+    \CCFCenteredFixedCell{31.5pt}{\bfseries 提交日期} & \CCFCenteredFixedCell{31.5pt}{\CCFSubmissionDate} \\ \hline
+  \end{tabular}%
+  \par
+  \vspace{-4.5pt}%
+  \endgroup
+}

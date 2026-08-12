@@ -1,0 +1,15 @@
+\ProvidesFile{bensz-nsfc-profile-ccf1688.def}[2026/07/15 CCF-1688 Yuanbao Cooperation Fund Profile]
+
+\renewcommand{\NSFCTemplateId}{ccf1688}
+\renewcommand{\NSFCTemplateVersion}{t_v20260715}
+\renewcommand{\NSFCGeometryOptions}{left=31.75mm,right=31.75mm,top=28.4mm,bottom=30mm}
+
+\NSFCUseWasysymfalse
+\NSFCRaggedBottomtrue
+\NSFCUseFrenchSpacingfalse
+\NSFCHFuzztrue
+\NSFCUseAdjustedBlankParafalse
+\NSFCUseFigureCaptionSetupfalse
+\NSFCDisablePunctstyleInPdfstringfalse
+\NSFCUseUrlStyleSamefalse
+\NSFCUseDingSubtitlefalse
