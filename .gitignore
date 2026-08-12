@@ -209,6 +209,8 @@ test.md
 skills/*/plans/
 skills/*/tests/
 /tests/*
+!/tests/bensz-nsfc/
+!/tests/bensz-nsfc/**
 !/tests/bensz-thesis/
 !/tests/bensz-thesis/**
 /tests/bensz-thesis/.DS_Store
