@@ -150,7 +150,7 @@ NSFC_Local/
 ```latex
 % 默认：1.1 风格
 \titleformat{\subsubsection}
-  {\color{MsBlue} \subsubsectionzihao \templatefont \bfseries}
+  {\color{black} \subsubsectionzihao \templatefont \bfseries}
   {\hspace{1.1em}  \textnormal{\templatefont \arabic{subsection}.\arabic{subsubsection}}}
   {0.5em}
   {}
