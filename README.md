@@ -170,6 +170,24 @@ AI 负责格式对齐、参考文献管理、章节重构、中英双语内容�
 
 ---
 
+## 🆕 基于模板新建 NSFC 项目
+
+在仓库根目录运行以下命令，可默认基于已清空示例正文的 `NSFC_Local_Clean` 新建项目：
+
+```bash
+python scripts/create_project.py --name NSFC_MyProject
+```
+
+如需直接复制带示例内容的地区项目模板，可显式指定源模板：
+
+```bash
+python scripts/create_project.py --template NSFC_Local --name NSFC_MyProject
+```
+
+新项目名必须以 `NSFC_` 开头。脚本不会覆盖已有目录，并会自动排除 `.latex-cache/`、PDF、常见 LaTeX 中间文件和旧的 `*.code-workspace`，再生成与新目录同名的 VS Code 工作区文件。
+
+---
+
 ## 🚀 环境
 
 ### LaTex版本

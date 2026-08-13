@@ -142,4 +142,12 @@
 - 写博士后研究报告：进入 `thesis-cas-postdoc/` 或 `thesis-smu-postdoc/`
 - 写中英文简历：进入 `cv-01/`
 
+需要在本仓库中建立独立的地区项目工作目录时，可从仓库根目录运行：
+
+```bash
+python scripts/create_project.py --name NSFC_MyProject
+```
+
+该命令默认从 `NSFC_Local_Clean/` 创建干净副本；使用 `--template NSFC_Local` 可改为复制带示例内容的版本。新项目名必须保留 `NSFC_` 前缀，以便自动生成和同步 VS Code 配置。
+
 若你的问题涉及共享样式、公共宏、构建脚本或安装逻辑，再回到 `packages/` 目录定位对应公共包。

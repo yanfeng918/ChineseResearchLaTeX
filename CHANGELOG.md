@@ -10,11 +10,13 @@
 
 ### Changed（变更）
 
+- **NSFC 地区项目干净模板标题颜色**：`projects/NSFC_Local_Clean` 的 `1.1`、`1.2` 等 `subsubsection` 标题及“参考文献”标题改为黑色，并同步 README 示例；通过该模板新建的项目将继承相同标题颜色。
 - **skills 任务工作区**：新增 `skills/WORKSPACE.md` 并同步当前 Skills 文档与默认配置；中间文件默认收敛到 `./.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/{skill名}/input|output|log/`，同一任务共享一个根目录，旧隐藏目录仅保留显式兼容读取、迁移或清理。
 - **GXNSF 字体对齐**：`projects/GXNSF_General` 现按原 DOCX 声明优先使用系统中的“方正仿宋_GBK / 方正楷体_GBK”（兼容对应简体家族名），标题与条目标题继续使用仿宋加粗；缺少方正字体时仍稳定回退到 `bensz-fonts` 的内置字体，兼顾原稿字形与跨平台编译。
 
 ### Added（新增）
 
+- 新增 `scripts/create_project.py`：可在 `projects/` 下从 `NSFC_Local_Clean`（默认）或显式指定的 `NSFC_*` 模板创建独立项目；创建过程校验安全项目名、拒绝覆盖已有目录、过滤 `.latex-cache`、PDF、常见 LaTeX 中间文件与旧工作区文件，并复用 VS Code 配置同步器生成与新目录同名的工作区配置。
 - 新增 `projects/GXNSF_General/`：基于 issue #52 提供的广西自然科学基金面上项目精简“报告正文” DOCX，落地四部分、十五个内容插槽的独立 LaTeX 模板；对齐 A4 页面、页边距、16 pt 字号、28.3 pt 固定行距、两字符首行缩进、仿宋/楷体语义与局部粗体，并提供项目级 XeLaTeX wrapper、VS Code 工作区、Word/PDF 基线与使用边界说明。
 - 为 `projects/GXNSF_General/extraTex/` 的十五个内容插槽补充佐佐木希公开案例示例：以多模态时序数据、跨媒介状态转移和职业韧性为科学主线，加入公式、表格、公开来源参考文献与完整组织实施示例；对人员履历、项目经历、工作条件和附件采用显式占位或“无”的示例写法，避免把演示材料伪装成真实申请。
 - 扩展 `scripts/sync_vscode_configs.py`、`scripts/update_readme_template_list.py` 与 `scripts/pack_release.py` 的 `GXNSF_` 项目识别：新增 GXNSF 专属 LaTeX Workshop 配置、首页独立分类、标准/Overleaf Release 资产接入及最小自包含字体运行时；省级基金打包逻辑继续与 `bensz-nsfc` 隔离，并保留 GDNSF 兼容入口。
