@@ -1,0 +1,23 @@
+{
+  "skill_name": "nsfc-full-pipeline",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请基于项目背景自动完成 NSFC 地区基金标书全流程写作。",
+      "expected_output": "读取 AGENTS.md、main.tex、extraTex、docs 和 references；创建或更新 docs/workflow_status.yaml；按阶段生成 docs 和 extraTex；缺真实信息时生成问卷并将阶段标记为 need_user_input。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "继续上次 NSFC 标书写作流程，不要从头开始。",
+      "expected_output": "读取 docs/workflow_status.yaml，验证已完成输出是否存在，跳过 completed 阶段，只推进未完成、失败或需要修复的阶段。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "根据模拟专家评审报告修复 P0/P1 问题并重新 QC。",
+      "expected_output": "读取最新 review/模拟专家评审_全稿.md 和 QC 报告，只做 P0/P1 定点修复，避免重写无关章节，修复后重新运行相关 QC 或 reviewers 阶段。",
+      "files": []
+    }
+  ]
+}

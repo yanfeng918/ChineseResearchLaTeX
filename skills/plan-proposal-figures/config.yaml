@@ -1,0 +1,5 @@
+skill_info:
+  name: plan-proposal-figures
+  version: 0.1.0
+  description: "分析科研或基金项目申报书 PDF，依次生成 Figure Plan、独立审核与复审，再用 classic Academic Figure Prompt 为全部获批且确需新绘制的图输出 figure spec 与英文 image prompt；全程不生成图像。"
+  category: writing

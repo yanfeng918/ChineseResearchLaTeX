@@ -1,0 +1,4 @@
+interface:
+  display_name: "申报书配图规划与提示词"
+  short_description: "三步规划、审核申报书配图并生成 classic 提示词，不执行生图"
+  default_prompt: "Use $plan-proposal-figures to analyze this proposal PDF in three steps: create and audit the Figure Plan, then generate classic prompts for every approved figure without generating images."

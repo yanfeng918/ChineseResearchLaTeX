@@ -734,6 +734,42 @@ output_mode：preview（先预览）/ apply（确认后写入）
 
 ---
 
+### 23. plan-proposal-figures - 申报书配图规划与提示词
+
+**状态**：🚧 开发中（v0.1.0）
+
+**类型**：📝 日常
+
+**功能**：读取科研或基金申报书 PDF，依次生成 Figure Plan、独立审核并复审，再为全部获批且需要绘制的图生成 classic figure spec 与 200–400 词英文 image prompt；全程不生图。
+
+**使用场景**：
+- 想知道整份申报书真正需要哪些图
+- 希望先审核 Figure Plan 的证据、覆盖、重复和篇幅问题
+- 需要一次性得到所有获批图项的可复用绘图 prompts
+
+**推荐 Prompt 模板**：
+
+```text
+请使用 plan-proposal-figures，按三个步骤处理：
+申报书：/absolute/path/to/main.pdf
+1. 生成 Figure Plan
+2. 独立审核并修订 Figure Plan
+3. 为所有审核通过且需要绘制的图生成 figure spec 和英文 prompt
+禁止生图。
+```
+
+**技能特点**：
+- 强制保持“规划 → 审核 → prompts”的阶段顺序
+- 逐图保留页码/章节证据，禁止编造模块、结果、数值和关系
+- 审核后计划是 prompt 阶段的唯一图项清单，并按证据锚点回读 PDF；自动处理重复、过载与图型不匹配
+- 复用 `Academic Paper Analyzer & Figure Planner` 与 `Academic Figure Prompt`
+- classic-only；pastel/airy 请求在 prompt 阶段前明确停止
+- 明确禁止调用任何图像生成后端
+
+[执行规范 →](plan-proposal-figures/SKILL.md)
+
+---
+
 ## 技能依赖关系
 
 某些技能依赖其他技能的输出，形成完整的工作流：
@@ -747,6 +783,7 @@ output_mode：preview（先预览）/ apply（确认后写入）
 - **nsfc-budget**：基于完整正文与补充材料生成预算说明书（通常放在正文接近完成后）
 - **nsfc-length-aligner**：在中后期检查总篇幅与章节分布，防止结构失衡
 - **nsfc-humanization**：在定稿前去掉明显“机器味”，保持表达更像人工撰写
+- **plan-proposal-figures**：标书正文成型后规划并审核配图，再为全部获批图项生成 prompts；依赖外部学术 Figure Planner 与 Figure Prompt Skill
 - **nsfc-qc**：在送审前做只读体检，集中排查文风/引用/篇幅/逻辑/缩写问题
 - **nsfc-reviewers**：标书完成后模拟专家评审（依赖标书完整正文）
 - **paper-write-sci**：SCI 论文写作与修订（依赖 LaTeX 论文项目结构）
@@ -767,8 +804,9 @@ output_mode：preview（先预览）/ apply（确认后写入）
 7. **nsfc-research-foundation-writer** → 撰写研究基础
 8. **nsfc-length-aligner** → 对齐整体篇幅与章节分布
 9. **nsfc-humanization** → 去掉明显机器味，做表达层精修
-10. **nsfc-qc** → 做只读质量控制，集中排查问题
-11. **nsfc-reviewers** → 模拟专家评审，发现问题并迭代优化
+10. **plan-proposal-figures** → 规划、审核申报书配图并生成全套 prompts（不生图）
+11. **nsfc-qc** → 做只读质量控制，集中排查问题
+12. **nsfc-reviewers** → 模拟专家评审，发现问题并迭代优化
 
 对于 SCI 论文写作，建议按以下顺序使用技能：
 
