@@ -8,7 +8,25 @@
 
 ## [Unreleased]
 
+### Fixed（修复）
+
+- **`skills/nsfc-full-pipeline` 跨模板静默写错章节**：该编排器原先把 `extraTex/1.1`–`1.5`、`2.1`–`2.4`、`3.1`–`3.5` 写死在阶段 05/06/07 中，只适配 `NSFC_Local` 与 `NSFC_2026_Education`；而 `NSFC_General` / `NSFC_Young` 使用 `1.1`+`2.1`–`2.3`、`3.1`–`3.4`、`4.1`–`4.6` 的另一套编号，两套编号互相重叠，在面上/青年项目上运行会把研究基础写进研究内容的位置且不报错。新增 `Stage 00: Proposal Layout Resolution`，强制从 `main.tex` 的未注释 `\input{extraTex/...}` 解析真实正文文件并按 `part_one` / `foundation` / `statements` 归类，`SKILL.md` 中已无编号型硬编码路径。
+- **`skills/nsfc-full-pipeline` 编译命令路径不成立**：原命令 `python scripts/nsfc_build.py build --project-dir .` 依赖当前工作目录恰为项目目录，而仓库根 `scripts/` 下并无该脚本。现区分仓库根入口 `packages/bensz-nsfc/scripts/nsfc_project_tool.py` 与项目内 wrapper 两种口径。
+- **`skills/nsfc-full-pipeline` 续跑判定失真**：原判定依据为输出文件是否存在，但 `extraTex/*.tex` 在模板中本就存在且带 `\NSFCBlankPara` 占位，会被误判为已完成而跳过写作；现要求输出同时为非占位态。
+- **`skills/nsfc-full-pipeline` 阶段依赖缺陷**：阶段 06 的 inputs 与 outputs 完全相同形成自引用，且其输入 `docs/研究基础.md` 无任何上游阶段产出；现输入改为 `docs/05_研究基础素材.md` 与已回填的补充问卷。阶段 07 补齐生成式人工智能声明的处理口径（注释态不写入，仅在检查报告中提示）。
+- 修正 `skills/nsfc-full-pipeline/SKILL.md` 中的中英混排残留 `response口径`、`proposal正文`。
+
+### Added（新增）
+
+- 新增 `skills/nsfc-full-pipeline/config.yaml`、`README.md` 与 `CHANGELOG.md`：该 skill 此前仅有 `SKILL.md` 与 `evals/evals.json`，无版本号、无配置、未登记入索引。`config.yaml` 作为版本号唯一真相来源（v0.1.0），同时固化布局解析规则、断点完成判定口径、参考文献充分性闸门、子 skill 编排表、编译命令，并以 `not_covered` 显式登记未覆盖的 `nsfc-abstract` / `nsfc-code` / `nsfc-budget` / 配图链路。
+- `skills/nsfc-full-pipeline/SKILL.md` 新增 `Workspace Convention` 小节：说明 `docs/` 与 `review/` 属于 `skills/WORKSPACE.md` 定义的正式交付物因而不进任务工作区，缓存与日志仍按标准约定隔离。
+- `skills/nsfc-full-pipeline/evals/evals.json` 由 3 条扩充到 14 条：原有 3 条中前两条描述的是修复前行为，已同步更新以免把旧缺陷固化为期望值；新增 11 条覆盖布局解析、注释态与孤儿文件处理、解析失败停机、占位态完成判定、编译口径、缺事实问卷、覆盖边界提示、评审组数与参考文献闸门。
+
 ### Changed（变更）
+
+- `skills/README.md` 补录 `nsfc-full-pipeline`（此前索引仅列 23 个技能，该编排器完全缺席，用户无从发现）；NSFC 写作章节改为「路线 A 一键编排 / 路线 B 手动分步」双路线表述，并在技能协作清单中标注其覆盖边界。
+- `skills/nsfc-full-pipeline` 阶段 12 模拟评审默认 `panel_count` 由 `5` 调整为 `3`，与 `nsfc-reviewers` 自身调优默认值一致；断点文件模板压缩约 60 行，字段语义不变。
+
 
 - **NSFC 地区项目干净模板标题颜色**：`projects/NSFC_Local_Clean` 的 `1.1`、`1.2` 等 `subsubsection` 标题及“参考文献”标题改为黑色，并同步 README 示例；通过该模板新建的项目将继承相同标题颜色。
 - **skills 任务工作区**：新增 `skills/WORKSPACE.md` 并同步当前 Skills 文档与默认配置；中间文件默认收敛到 `./.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/{skill名}/input|output|log/`，同一任务共享一个根目录，旧隐藏目录仅保留显式兼容读取、迁移或清理。

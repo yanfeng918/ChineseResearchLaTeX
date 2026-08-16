@@ -770,11 +770,49 @@ output_mode：preview（先预览）/ apply（确认后写入）
 
 ---
 
+### 24. nsfc-full-pipeline - NSFC 标书全流程编排
+
+**状态**：🚧 开发中（版本见 `skills/nsfc-full-pipeline/config.yaml`）
+
+**类型**：📝 日常
+
+**功能**：把选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译串成一条可断点续跑的流水线，自动调用已有的 nsfc / research 系列技能
+
+**使用场景**：
+
+- 有完整标书 LaTeX 项目，想一次性跑完全流程而不是逐个手动触发技能
+- 上次流程中断，想从断点续跑
+- 拿到 QC 或模拟评审报告后，想让 AI 直接改稿而不是只给建议
+
+**推荐 Prompt 模板**：
+
+```text
+请使用 nsfc-full-pipeline 处理 projects/NSFC_2026_Education，从头跑全流程。
+```
+
+续跑直接说"继续"；评审后修复说"根据模拟评审报告修复 P0/P1 问题"。
+
+**技能特点**：
+
+- 阶段 00 强制从 `main.tex` 的未注释 `\input` 解析真实正文文件，适配 `five-part`（地区/教育类）与 `three-part`（面上/青年）两套互相重叠的章节编号，避免跨模板静默写错章节
+- 以 `docs/workflow_status.yaml` 为断点；判定阶段完成时要求输出文件非 `\NSFCBlankPara` 占位态
+- 缺真实项目号、经费、论文、奖项、平台信息时生成问卷并标记 `need_user_input`，不编造
+- 内置参考文献充分性闸门（正文 30–50 条、立项依据引用 20–35 条）
+- CS/AI/Agent/时序类选题额外要求研究方案含 4–8 个公式块与评测口径
+- `docs/` 与 `review/` 作为正式交付物直接写入项目，不进 `.bensz-api/` 任务工作区
+- **不覆盖** `nsfc-abstract`、`nsfc-code`、`nsfc-budget` 与配图链路，需单独调用（摘要为必填项，勿遗漏）
+
+[详细文档 →](nsfc-full-pipeline/README.md)
+
+---
+
 ## 技能依赖关系
 
 某些技能依赖其他技能的输出，形成完整的工作流：
 
 ### 工作流中的技能协作
+
+- **nsfc-full-pipeline**：NSFC 标书全流程编排器，按阶段自动调用下列 research / nsfc 系列技能，并以 `docs/workflow_status.yaml` 为断点续跑；不覆盖摘要、申请代码、预算与配图
 
 - **research-topic-extractor**：前置步骤，提取主题关键词
 - **research-literature-review**：核心文献综述（可选依赖 research-topic-extractor 的输出）
@@ -793,7 +831,11 @@ output_mode：preview（先预览）/ apply（确认后写入）
 
 ### 推荐使用顺序
 
-对于 NSFC 标书写作，建议按以下顺序使用技能：
+对于 NSFC 标书写作有两条路线。
+
+**路线 A：一键编排**——直接使用 **nsfc-full-pipeline**，它会按 00–14 阶段自动串联下面这些技能并支持断点续跑。注意它不覆盖 `nsfc-abstract`、`nsfc-code`、`nsfc-budget` 与配图，需要单独补。
+
+**路线 B：手动分步**——按以下顺序逐个触发：
 
 1. **research-topic-extractor** → 提取综述主题
 2. **research-literature-review** → 生成文献综述
