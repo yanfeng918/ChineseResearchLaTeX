@@ -1,0 +1,106 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{application-template}[2026/08/02 Regional R&D application form]
+
+\RequirePackage[
+  a4paper,
+  left=0pt,
+  right=0pt,
+  top=0pt,
+  bottom=0pt,
+  noheadfoot
+]{geometry}
+\RequirePackage{tikz}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\topskip}{0pt}
+\linespread{1}
+\xeCJKsetup{PunctStyle=plain}
+
+% The source PDF uses SimHei at about 16 bp for part headings and FangSong at
+% about 14 bp for form labels.  Fandol is shipped with TeX Live and provides a
+% portable, metrically close substitute without requiring proprietary fonts.
+\newcommand{\ApplicationPartFont}{%
+  \heiti\fontsize{16bp}{20bp}\selectfont
+}
+\newcommand{\ApplicationBodyFont}{%
+  \fangsong\fontsize{14.17bp}{18.12bp}\selectfont
+}
+\newcommand{\ApplicationInputFont}{%
+  \fangsong\fontsize{14.17bp}{18.12bp}\selectfont
+}
+
+% One environment equals one physical source page.  PDF coordinates are used
+% directly: x grows to the right and y grows down from the page's north-west
+% corner.  This keeps the form geometry readable against the measured baseline.
+\newenvironment{ApplicationFormPage}{%
+  \thispagestyle{empty}%
+  \null
+  \begin{tikzpicture}[
+    remember picture,
+    overlay,
+    x=1bp,
+    y=-1bp,
+    line cap=butt,
+    line join=bevel
+  ]
+  \begin{scope}[shift={(current page.north west)}]
+}{%
+  \end{scope}
+  \end{tikzpicture}%
+  \clearpage
+}
+
+% The frame x coordinates are invariant throughout the source PDF.
+\newcommand{\ApplicationFrame}[3]{%
+  \draw[line width=.48bp]
+    (65.4988,#1) rectangle (529.8489,#2);
+  \foreach \ApplicationRuleY in {#3}{%
+    \draw[line width=.48bp]
+      (65.2602,\ApplicationRuleY) -- (530.0913,\ApplicationRuleY);
+  }%
+}
+
+\newcommand{\ApplicationPart}[2]{%
+  \node[anchor=north,inner sep=0pt,outer sep=0pt,yshift=-2bp]
+    at (297.65,#1)
+    {\ApplicationPartFont #2};
+}
+
+\newcommand{\ApplicationText}[4]{%
+  \node[anchor=north west,inner sep=0pt,outer sep=0pt]
+    at (#1,#2)
+    {\parbox[t]{#3bp}{\ApplicationBodyFont #4}};
+}
+
+\newcommand{\ApplicationContent}[5]{%
+  \node[anchor=north west,inner sep=0pt,outer sep=0pt]
+    at (#1,#2)
+    {\parbox[t][#4bp][t]{#3bp}{\ApplicationInputFont #5}};
+}
+
+% Force a source line to its measured width without changing its vertical
+% metrics.  This is needed only for four unusually dense WPS lines.
+\newcommand{\ApplicationExactLine}[2]{%
+  \makebox[0pt][l]{\resizebox{#1bp}{\height}{#2}}%
+}
+
+% Standard inner text width: 529.85 - 2*5.42 - 65.50 = 453.51 bp.
+\newcommand{\ApplicationLabel}[2]{%
+  \begin{scope}[yshift=-1.12bp]
+    \ApplicationText{70.92}{#1}{453.49}{#2}%
+  \end{scope}
+}
+\newcommand{\ApplicationAnswer}[3]{%
+  \ApplicationContent{70.92}{#1}{453.49}{#2}{#3}%
+}
+
+% Some source-table rows are shorter than their instruction text.  WPS clips
+% those lines at the cell boundary; this helper preserves that visible result.
+\newcommand{\ApplicationClippedLabel}[4]{%
+  \begin{scope}
+    \clip (65.4988,#2) rectangle (529.8489,#3);
+    \ApplicationLabel{#1}{#4}%
+  \end{scope}
+}
