@@ -23,9 +23,19 @@ parameters:
     # preview: 预览模式，只生成内容不写入文件
     # apply: 应用模式，将生成的内容写入 extraTex 文件
 
+# targets 是"没有基金画像时"的兜底默认值（对应 NSFC 三段式模板）。
+# 项目根存在 grant-profile.yaml 时，按 grant_profile.role_map 的角色解析覆盖。
 targets:
   foundation_tex: extraTex/3.1.研究基础.tex
   conditions_tex: extraTex/3.2.工作条件.tex
+
+# 基金画像映射：使本 skill 可用于 NSFC 以外的基金模板。
+# 广东省基金的对应文件叫"3.1.研究工作基础.tex"/"3.2.实验条件.tex"，
+# 靠角色解析而非文件名硬编码来寻址。
+grant_profile:
+  role_map:
+    foundation_tex: research_foundation
+    conditions_tex: work_conditions
 
 guardrails:
   allowed_write_files:

@@ -122,6 +122,16 @@ references: skills/nsfc-qc/references/
 
 ### 5. 标准化报告
 
+## 基金画像上下文
+
+本 skill 的检查项（文风、引用、缩略语、篇幅分布）本身与模板结构无关，可直接用于非 NSFC 基金。但在报告"篇幅与结构分布"时，先读标书项目根的 `grant-profile.yaml`（规范见 `docs/grant-profile-spec.md`）：
+
+- `length_budget.pages`：页数上限按画像判断，不要默认套 NSFC 的 30 页
+- `grant.name`：报告中标明这是哪个基金的口径
+- `roles` 里为 `merged_into` 的角色：内容写在宿主章节里，不得判为"章节缺失"
+
+画像不存在或未填页数时，明确写成"未提供页数上限，跳过页数判断"，不要用 NSFC 口径顶替。
+
 最终报告必须包含：
 
 1. 执行摘要

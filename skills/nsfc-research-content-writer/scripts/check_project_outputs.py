@@ -7,9 +7,18 @@ import sys
 from pathlib import Path
 
 from _yaml_utils import extract_yaml_list_under_block, extract_yaml_value_under_block
+from grant_profile_reader import load_profile, resolve_role_file
 
 DEFAULT_RISK_PHRASES = ["首次", "领先", "填补空白", "突破性", "国际领先", "世界领先"]
 DEFAULT_SUBGOAL_MARKERS_MIN = 3
+DEFAULT_DURATION_YEARS = 3
+
+# config.yaml 的 targets 字段 -> 画像角色 -> 内容检查类型
+TARGET_ROLES: tuple[tuple[str, str, str], ...] = (
+    ("research_content_tex", "research_content", "research"),
+    ("innovation_tex", "innovation", "innovation"),
+    ("yearly_plan_tex", "yearly_plan", "yearly"),
+)
 
 
 def _err(message: str) -> int:
@@ -29,6 +38,42 @@ def _read_targets_from_config(config_yaml: Path) -> dict[str, str]:
         "innovation_tex": innovation,
         "yearly_plan_tex": yearly,
     }
+
+
+def _resolve_plan(project_root: Path, config_targets: dict[str, str]) -> tuple[list[tuple[str, str]], list[str], int]:
+    """确定要检查哪些文件、每个文件按什么类型检查。
+
+    有基金画像时按角色解析：``merged_into`` 的角色不会被跳过，而是把它的内容
+    检查转到宿主文件上——广东省基金要求把"特色与创新""年度研究计划"写进
+    "研究内容"，跳过就等于默许这两块内容缺失。
+
+    没有画像时维持原有的三文件固定检查，既有 NSFC 项目行为不变。
+    """
+    profile = load_profile(project_root)
+    if profile is None:
+        plan = [(config_targets[key], kind) for key, _, kind in TARGET_ROLES]
+        return plan, [], DEFAULT_DURATION_YEARS
+
+    notes: list[str] = []
+    plan: list[tuple[str, str]] = []
+    for key, role, kind in TARGET_ROLES:
+        rel, state, host = resolve_role_file(profile, role)
+        if state in ("absent", "unknown"):
+            notes.append(f"角色 {role} 在本基金模板中不存在，已跳过 {kind} 检查")
+            continue
+        if state == "unresolved" or not rel:
+            notes.append(f"角色 {role} 画像未裁决（unresolved），请先补全 grant-profile.yaml")
+            continue
+        if host:
+            notes.append(f"角色 {role} 并入 {host}，改为在 {rel} 内检查 {kind} 内容")
+        plan.append((rel, kind))
+
+    grant = profile.get("grant") or {}
+    try:
+        years = int(grant.get("duration_years") or DEFAULT_DURATION_YEARS)
+    except (TypeError, ValueError):
+        years = DEFAULT_DURATION_YEARS
+    return plan, notes, max(1, years)
 
 
 def _read_checks_from_config(config_yaml: Path) -> tuple[list[str], int]:
@@ -54,7 +99,25 @@ def _check_file_exists(project_root: Path, relpath: str) -> str | None:
     return None
 
 
-def _check_minimal_content(path: Path, *, kind: str, subgoal_markers_min: int) -> list[str]:
+_CN_DIGITS = "〇一二三四五六七八九十"
+
+
+def _year_patterns(years: int) -> dict[str, list[str]]:
+    """按资助年限生成年度小标题的匹配模式。
+
+    年限不是常数：NSFC 面上 4 年、青年 3 年、省基金多为 3 年，
+    写死"第1/2/3年"会让 4 年期项目误报缺失第 4 年、3 年期项目被要求写第 4 年。
+    """
+    patterns: dict[str, list[str]] = {}
+    for n in range(1, years + 1):
+        cn = _CN_DIGITS[n] if n < len(_CN_DIGITS) else str(n)
+        patterns[f"第{n}年/第{cn}年"] = [rf"第\s*{n}\s*年", rf"第{cn}年"]
+    return patterns
+
+
+def _check_minimal_content(
+    path: Path, *, kind: str, subgoal_markers_min: int, duration_years: int = DEFAULT_DURATION_YEARS
+) -> list[str]:
     text = path.read_text(encoding="utf-8", errors="replace")
     problems: list[str] = []
 
@@ -68,12 +131,7 @@ def _check_minimal_content(path: Path, *, kind: str, subgoal_markers_min: int) -
         if not re.search(r"对应\s*S\d+", text):
             problems.append(f"{path}: missing backreference marker like '对应 S1'")
     elif kind == "yearly":
-        year_patterns = {
-            "第1年/第一年": [r"第\s*1\s*年", r"第一年"],
-            "第2年/第二年": [r"第\s*2\s*年", r"第二年"],
-            "第3年/第三年": [r"第\s*3\s*年", r"第三年"],
-        }
-        for label, patterns in year_patterns.items():
+        for label, patterns in _year_patterns(duration_years).items():
             if not any(re.search(p, text) for p in patterns):
                 problems.append(f"{path}: missing yearly header ({label})")
         if not re.search(r"对应\s*S\d+", text) and not re.search(r"\bS\d+\b", text):
@@ -128,39 +186,34 @@ def main() -> int:
 
     risk_phrases, subgoal_markers_min = _read_checks_from_config(config_yaml)
 
+    plan, profile_notes, duration_years = _resolve_plan(project_root, targets)
+    for note in profile_notes:
+        print(f"INFO: {note}")
+    if not plan:
+        return _err("基金画像未解析出任何可检查的章节，请先补全 grant-profile.yaml")
+
     errors: list[str] = []
-    errors.extend(
-        e
-        for e in [
-            _check_file_exists(project_root, targets["research_content_tex"]),
-            _check_file_exists(project_root, targets["innovation_tex"]),
-            _check_file_exists(project_root, targets["yearly_plan_tex"]),
-        ]
-        if e
-    )
+    errors.extend(e for e in (_check_file_exists(project_root, rel) for rel, _ in plan) if e)
     if errors:
         for e in errors:
             print(f"ERROR: {e}", file=sys.stderr)
         return 1
 
     if not args.no_content_check:
-        checks = [
-            (targets["research_content_tex"], "research"),
-            (targets["innovation_tex"], "innovation"),
-            (targets["yearly_plan_tex"], "yearly"),
-        ]
-        for relpath, kind in checks:
+        for relpath, kind in plan:
             errors.extend(
-                _check_minimal_content(project_root / relpath, kind=kind, subgoal_markers_min=subgoal_markers_min)
+                _check_minimal_content(
+                    project_root / relpath,
+                    kind=kind,
+                    subgoal_markers_min=subgoal_markers_min,
+                    duration_years=duration_years,
+                )
             )
 
     warnings: list[str] = []
     if not args.no_risk_scan:
-        for relpath in [
-            targets["research_content_tex"],
-            targets["innovation_tex"],
-            targets["yearly_plan_tex"],
-        ]:
+        # 角色合并后多个角色可能指向同一文件，去重避免重复告警
+        for relpath in dict.fromkeys(rel for rel, _ in plan):
             path = project_root / relpath
             text = path.read_text(encoding="utf-8", errors="replace")
             for phrase in risk_phrases:
@@ -181,10 +234,10 @@ def main() -> int:
 
     print("OK: project outputs check passed")
     print(f"- project_root: {project_root}")
+    print(f"- duration_years: {duration_years}")
     print("- targets:")
-    print(f"  - {targets['research_content_tex']}")
-    print(f"  - {targets['innovation_tex']}")
-    print(f"  - {targets['yearly_plan_tex']}")
+    for relpath, kind in plan:
+        print(f"  - {relpath}  ({kind})")
     return 0
 
 

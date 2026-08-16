@@ -9,14 +9,20 @@ skill_info:
   category: writing
 
 # === 项目布局解析（stage 00）===
-# 各 NSFC 模板的章节编号不共用一套方案且互相重叠，必须先解析再写作。
+# 各基金模板的章节编号不共用一套方案且互相重叠，必须先解析再写作。
 layout:
-  # 唯一真相来源：main.tex 中未被注释的 \input{extraTex/...}
+  # 首选真相来源：项目根的 grant-profile.yaml（角色 -> 文件），
+  # 规范见 docs/grant-profile-spec.md，可用 python scripts/grant_profile.py infer 生成。
+  # 有画像时按角色寻址，本编排器即可用于 NSFC 以外的基金（省基金等）。
+  profile: grant-profile.yaml
+  prefer_profile: true
+  # 画像缺失时的回退：解析 main.tex 中未被注释的 \input{extraTex/...}
   resolve_from: main.tex
   ignore_commented_input: true
   ignore_files:
     - "extraTex/@config.tex"
-  # 已知布局，仅用于对解析结果做合理性校验，不替代读取 main.tex
+  # 已知 NSFC 布局，仅用于对回退解析结果做合理性校验，不替代读取 main.tex；
+  # 非 NSFC 模板不会命中这两种布局，此时必须依赖画像而不是判定为异常
   known:
     five-part:
       example_projects: [NSFC_Local, NSFC_2026_Education]
@@ -28,8 +34,12 @@ layout:
       part_one: ["1.1", "2.1", "2.2", "2.3"]
       foundation: ["3.1", "3.2", "3.3", "3.4"]
       statements: ["4.1", "4.2", "4.3", "4.4", "4.6"]
-  # 解析失败或与两种已知布局都冲突时必须停下询问，不得猜测
+  # 既无画像、解析又与已知布局冲突时必须停下询问，不得猜测；
+  # 正确做法是先生成 grant-profile.yaml，而不是往 known 里继续堆布局
   halt_on_unresolved: true
+  # 画像中标为 merged_into 的角色，其内容必须写进宿主章节，
+  # 不得因为"没有独立文件"而跳过该阶段——那等于静默丢掉模板要求的内容
+  merged_roles_must_be_written: true
 
 # === 断点与续跑 ===
 checkpoint:
@@ -78,7 +88,10 @@ not_covered:
 
 # === 模拟评审默认参数（stage 12）===
 simulated_review:
+  # 仅在画像未提供时使用；有 grant-profile.yaml 时以其 review.grant_type 为准，
+  # 否则会拿 NSFC 地区基金的口径去评省级/横向基金
   grant_type: 地区基金
+  grant_type_from_profile: review.grant_type
   panel_count: 3
   output_path: review/模拟专家评审_全稿.md
 

@@ -72,13 +72,18 @@ def resolve_word_target(
     config: Dict[str, Any],
     user_intent_text: str = "",
     info_form_text: str = "",
+    profile_budget: Optional[Tuple[int, int]] = None,
 ) -> WordTargetSpec:
     """
     解析优先级（用户意图优先）：
     - P0：user_intent_text（通常是用户指令/Prompt）
     - P1：info_form_text（信息表中的“字数限制”）
-    - P2：config.active_preset（若存在，视作“学科预设”来源之一）
-    - P3：config.word_count.*（兜底）
+    - P2：profile_budget（基金画像 length_budget.by_role，基金自身的硬性口径）
+    - P3：config.active_preset（若存在，视作“学科预设”来源之一）
+    - P4：config.word_count.*（兜底）
+
+    画像排在预设与兜底之前：config 里的 9000 字是 NSFC 口径，
+    而省级/重点研发类基金的单节上限常在千字量级，拿 NSFC 口径去写会严重超框。
     """
     parsed = parse_word_target_from_text(user_intent_text)
     if parsed:
@@ -93,6 +98,19 @@ def resolve_word_target(
         lo, hi = word_target_range(config)
         target = _clamp_int(target, lo=lo, hi=hi)
         return WordTargetSpec(target=target, tolerance=tol, source="info_form", evidence=ev)
+
+    if profile_budget:
+        lo_b, hi_b = int(profile_budget[0]), int(profile_budget[1])
+        if hi_b < lo_b:
+            lo_b, hi_b = hi_b, lo_b
+        target = (lo_b + hi_b) // 2
+        tol = max(1, (hi_b - lo_b) // 2)
+        return WordTargetSpec(
+            target=target,
+            tolerance=tol,
+            source="grant_profile",
+            evidence=f"length_budget.by_role = [{lo_b}, {hi_b}]",
+        )
 
     wc_cfg = get_mapping(config, "word_count")
     target = get_int(wc_cfg, "target", 4000)

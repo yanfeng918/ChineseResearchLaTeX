@@ -25,6 +25,7 @@ scripts_root_for_import = Path(__file__).resolve().parent
 sys.path.insert(0, str(scripts_root_for_import))
 
 from core.config_loader import load_config, get_runs_dir, validate_config
+from core.grant_profile_reader import apply_to_config
 from core.config_access import get_bool, get_mapping, get_seq_str, get_str
 from core.bib_manager_integration import BibFixSuggestion
 from core.errors import BackupNotFoundError, MissingCitationKeysError, SectionNotFoundError, SkillError
@@ -192,6 +193,23 @@ def _load_config_for_args(skill_root: Path, args: argparse.Namespace) -> Dict[st
         logger.warning("⚠️ 配置加载警告：%s", w)
     if len(warnings) > 10:
         logger.warning("⚠️ 配置加载警告：更多 %s 条已省略", str(len(warnings) - 10))
+
+    # 基金画像优先于 config.yaml 的默认路径：项目根有 grant-profile.yaml 时，
+    # 按角色重定向写入目标；没有则维持原有 NSFC 默认值，既有项目无感。
+    # 放在最后是为了覆盖 preset/override，且能把新路径补进 guardrails 白名单
+    # （load_config 内的 _harden_guardrails 只做非空兜底，不会撤销这里的追加）。
+    gp = get_mapping(cfg, "grant_profile")
+    role_map = gp.get("role_map") or {}
+    readonly_map = gp.get("readonly_role_map") or {}
+    if role_map or readonly_map:
+        notes = apply_to_config(
+            cfg,
+            getattr(args, "project_root", None),
+            dict(role_map),
+            dict(readonly_map),
+        )
+        for note in notes:
+            logger.info("📋 %s", note)
     return cfg
 
 

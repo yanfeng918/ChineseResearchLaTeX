@@ -149,6 +149,25 @@ python3 scripts/check_length.py --input <目标标书路径> --config config.yam
 python3 scripts/check_length.py --input <目标标书路径> --config config.yaml
 ```
 
+### 6) 定宽框溢出检查（仅 `addressing: macro` 的表单式模板）
+
+表单式模板把正文钉在 `\parbox[t][高度][t]` 固定坐标框里。**内容超过框高时 LaTeX 不报错、页数不变、超出部分直接从 PDF 里消失**。实测把一节灌到 4 倍：`Overfull \vbox` 警告数为 0，注入的 28 个段落在 PDF 中只剩 12 个。
+
+所以字数达标 ≠ 内容完整。改完正文后必须回读 PDF 核对：
+
+```bash
+python3 scripts/check_box_overflow.py --project-dir <项目目录> --build
+```
+
+它逐个核对每个宏的尾句是否还在 PDF 中，截断时报出丢失字数与比例。
+
+要点：
+
+- **真实上限取“模板标注字数”与“框高容量”的较小者**，字数预算只是代理指标
+- 基于编译日志或 bbox 的检查会漏报，不要用它替代本检查
+- 脚本自动选用最新的 PDF；若 PDF 比正文旧会告警——对着过期 PDF 核对会虚报或漏报
+- 检出截断后：压缩该角色正文，或在版式文件里加大对应框的高度
+
 ## 格式红线（2026+ 常见）
 
 - 不缩小字体、不缩小行距来“挤页数”（页数要求是评审风险点）

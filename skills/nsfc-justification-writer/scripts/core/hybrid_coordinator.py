@@ -17,6 +17,13 @@ from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNo
 from .editor import ApplyResult, apply_new_content
 from .dimension_coverage import DimensionCoverageAI, format_dimension_coverage_markdown
 from .example_matcher import recommend_examples_markdown
+from .grant_profile_reader import (
+    is_macro_addressing,
+    load_profile,
+    read_macro_body,
+    replace_macro_body,
+    resolve_role_macros,
+)
 from .io_utils import iter_text_chunks_by_subsubsection_mark, read_text_streaming
 from .latex_parser import match_title_via_ai, replace_subsubsection_body_hybrid, suggest_titles
 from .observability import Observability, ensure_run_dir, make_run_id
@@ -105,6 +112,79 @@ class HybridCoordinator:
     def target_path(self, *, project_root: Path) -> Path:
         return self._resolve_target(Path(project_root).resolve())
 
+    def _role_macro_names(self, project_root: Path) -> List[str]:
+        """宏级寻址下本 skill 负责的宏名；文件模式返回空列表。"""
+        profile = load_profile(project_root)
+        if profile is None or not is_macro_addressing(profile):
+            return []
+        role_map = get_mapping(self.config, "grant_profile").get("role_map") or {}
+        role = role_map.get("justification_tex") or "justification"
+        return resolve_role_macros(profile, str(role))
+
+    def _profile_word_budget(self, project_root: Path) -> Optional[tuple]:
+        """取画像里本角色的篇幅区间；没有画像或没写预算返回 None。"""
+        profile = load_profile(project_root)
+        if profile is None:
+            return None
+        role_map = get_mapping(self.config, "grant_profile").get("role_map") or {}
+        role = str(role_map.get("justification_tex") or "justification")
+        by_role = ((profile.get("length_budget") or {}).get("by_role") or {})
+        span = by_role.get(role)
+        if isinstance(span, (list, tuple)) and len(span) == 2:
+            try:
+                return (int(span[0]), int(span[1]))
+            except (TypeError, ValueError):
+                return None
+        return None
+
+    def _tier1_config(self, project_root: Path) -> Dict[str, Any]:
+        """宏模式下关掉不适用的检查项，避免恒定误报。
+
+        宏体里不存在 ``\\subsubsection``，小节数量检查会永远报"结构缺失"；
+        表单式模板的版面由固定坐标框决定，页数也不是写作侧的约束。
+        两者都是 NSFC 文件模板的假设，在宏模式下只会淹没真实问题。
+        """
+        if not self._role_macro_names(project_root):
+            return self.config
+
+        cfg = dict(self.config)
+        structure = dict(get_mapping(self.config, "structure"))
+        structure["min_subsubsection_count"] = 0
+        structure["recommended_subsubsections"] = []
+        cfg["structure"] = structure
+
+        # 页数目标来自 constraints.page_limit（NSFC 立项依据 6-10 页）。
+        # 表单式模板按固定坐标框排版，页数不是写作侧约束；置 0 表示关闭该判断
+        # （删键无效：load_page_limit 在缺键时会回退到 6/10 的 NSFC 默认值）。
+        constraints = dict(get_mapping(self.config, "constraints"))
+        constraints["page_limit"] = {"min": 0, "max": 0, "recommended": [0, 0]}
+        cfg["constraints"] = constraints
+        return cfg
+
+    def _read_target_text(self, project_root: Path, target: Path) -> str:
+        """读取本角色负责的正文。
+
+        宏级寻址下 target 是整个 macro_file（并存二十多个角色的正文），
+        直接整读会把别人的正文算成自己的——字数统计、结构检查、维度覆盖全部失真。
+        这里只取本角色的宏体。
+        """
+        if not target.exists():
+            return ""
+        text = read_text_streaming(target).text
+
+        names = self._role_macro_names(project_root)
+        if not names:
+            return text
+
+        bodies = [read_macro_body(text, name) for name in names]
+        found = [b for b in bodies if b is not None]
+        if not found:
+            raise TargetFileNotFoundError(
+                f"画像声明的宏 {', '.join(names)} 未在 {target} 中找到，"
+                f"请检查 grant-profile.yaml 与 content.tex 是否一致"
+            )
+        return "\n".join(found)
+
     def diagnose(
         self,
         *,
@@ -116,7 +196,7 @@ class HybridCoordinator:
     ) -> DiagnosticReport:
         project_root = Path(project_root).resolve()
         target = self._resolve_target(project_root)
-        tex = read_text_streaming(target).text if target.exists() else ""
+        tex = self._read_target_text(project_root, target)
         info_form_text = ""
         for candidate in [
             project_root / "info_form.md",
@@ -128,8 +208,13 @@ class HybridCoordinator:
                     break
                 except (OSError, UnicodeError):
                     continue
-        word_spec = resolve_word_target(config=self.config, user_intent_text="", info_form_text=info_form_text)
-        tier1 = run_tier1(tex_text=tex, project_root=project_root, config=self.config)
+        word_spec = resolve_word_target(
+            config=self.config,
+            user_intent_text="",
+            info_form_text=info_form_text,
+            profile_budget=self._profile_word_budget(project_root),
+        )
+        tier1 = run_tier1(tex_text=tex, project_root=project_root, config=self._tier1_config(project_root))
         report = DiagnosticReport(
             tier1=tier1,
             tier2=None,
@@ -336,6 +421,33 @@ class HybridCoordinator:
             raise TargetFileNotFoundError(target_relpath=self._target_relpath(), project_root=str(project_root))
 
         src = read_text_streaming(target).text
+
+        # 宏级寻址：target 是并存二十多个角色正文的 macro_file，
+        # 里面没有 \subsubsection 可供定位。改走宏体替换，且只动本角色的宏。
+        macro_names = self._role_macro_names(project_root)
+        if macro_names:
+            chosen_macro = next(
+                (m for m in macro_names if m.lower() == str(title).strip().lstrip("\\").lower()),
+                macro_names[0] if len(macro_names) == 1 else None,
+            )
+            if chosen_macro is None:
+                raise SectionNotFoundError(title=title, suggestions=list(macro_names))
+
+            new_text, changed = replace_macro_body(src, chosen_macro, new_body)
+            if not changed:
+                raise SectionNotFoundError(title=chosen_macro, suggestions=list(macro_names))
+            return self._finish_apply(
+                project_root=project_root,
+                target=target,
+                new_text=new_text,
+                new_body=new_body,
+                matched_title=f"\\{chosen_macro}",
+                backup=backup,
+                run_id=run_id,
+                allow_missing_citations=allow_missing_citations,
+                strict_quality=strict_quality,
+            )
+
         structure_cfg = get_mapping(self.config, "structure")
         strict = get_bool(structure_cfg, "strict_title_match", True)
         try:
@@ -364,6 +476,36 @@ class HybridCoordinator:
         if not changed:
             raise SectionNotFoundError(title=title, suggestions=suggest_titles(src, query=title, limit=12))
 
+        return self._finish_apply(
+            project_root=project_root,
+            target=target,
+            new_text=new_text,
+            new_body=new_body,
+            matched_title=str(matched_title or title),
+            backup=backup,
+            run_id=run_id,
+            allow_missing_citations=allow_missing_citations,
+            strict_quality=strict_quality,
+        )
+
+    def _finish_apply(
+        self,
+        *,
+        project_root: Path,
+        target: Path,
+        new_text: str,
+        new_body: str,
+        matched_title: str,
+        backup: bool,
+        run_id: Optional[str],
+        allow_missing_citations: bool,
+        strict_quality: bool,
+    ) -> ApplyResult:
+        """写入前的共用闸门：质量检查、引用核验、备份与落盘。
+
+        文件模式与宏模式只在"如何定位并生成 new_text"上不同，
+        写入侧的安全检查必须完全一致，因此收口到这里。
+        """
         ref_cfg = get_mapping(self.config, "references")
         allow_missing = get_bool(ref_cfg, "allow_missing_citations", False) or bool(allow_missing_citations)
 
@@ -402,7 +544,7 @@ class HybridCoordinator:
             run_id=run_id,
             target_relpath=rel,
         )
-        self.obs.add("apply.section", title=str(matched_title or title), changed=result.changed)
+        self.obs.add("apply.section", title=matched_title, changed=result.changed)
         if result.backup_path:
             self.obs.add("apply.backup", path=str(result.backup_path))
         return result
@@ -410,7 +552,7 @@ class HybridCoordinator:
     def word_count_status(self, *, project_root: Path, mode: Optional[str] = None) -> Dict[str, Any]:
         project_root = Path(project_root).resolve()
         target = self._resolve_target(project_root)
-        tex = read_text_streaming(target).text if target.exists() else ""
+        tex = self._read_target_text(project_root, target)
         wc_cfg = get_mapping(self.config, "word_count")
         used_mode = str(mode or wc_cfg.get("mode", "cjk_only")).strip() or "cjk_only"
         current = count_cjk_chars(tex, mode=used_mode).cjk_count
@@ -431,6 +573,7 @@ class HybridCoordinator:
             config=self.config,
             user_intent_text="",
             info_form_text=info_form_text,
+            profile_budget=self._profile_word_budget(project_root),
         )
         target_n = int(word_spec.target)
         tol = int(word_spec.tolerance)
@@ -476,7 +619,7 @@ class HybridCoordinator:
     ) -> str:
         project_root = Path(project_root).resolve()
         target = self._resolve_target(project_root)
-        tex = read_text_streaming(target).text if target.exists() else ""
+        tex = self._read_target_text(project_root, target)
         report = self.diagnose(
             project_root=project_root,
             include_tier2=include_tier2,

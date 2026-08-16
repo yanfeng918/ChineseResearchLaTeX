@@ -90,6 +90,84 @@ def test_create_project_rejects_unsafe_or_unrecognized_project_names(
         )
 
 
+@pytest.mark.parametrize(
+    ("template_name", "project_name"),
+    [
+        ("GDNSF_General", "GDNSF_MyProject"),
+        ("GXNSF_General", "GXNSF_MyProject"),
+    ],
+)
+def test_create_project_supports_provincial_grant_families(
+    tmp_path: Path, template_name: str, project_name: str
+):
+    """省级基金产品线此前被 ^NSFC_ 硬校验挡住，完全建不出项目。"""
+    projects_dir = tmp_path / "projects"
+    make_template(projects_dir, name=template_name)
+
+    created = creator.create_project(
+        template_name=template_name,
+        project_name=project_name,
+        projects_dir=projects_dir,
+        sync_project_func=write_new_workspace,
+    )
+
+    assert created == projects_dir / project_name
+    assert (created / "main.tex").read_text(encoding="utf-8") == "template body\n"
+    assert (created / f"{project_name}.code-workspace").is_file()
+    assert not (created / f"{template_name}.code-workspace").exists()
+
+
+def test_create_project_rejects_cross_family_copy(tmp_path: Path):
+    """跨产品线复制会让同步器写入错族的 settings.json，产出编译不了的项目。"""
+    projects_dir = tmp_path / "projects"
+    make_template(projects_dir, name="GDNSF_General")
+
+    with pytest.raises(ValueError, match="同一产品线"):
+        creator.create_project(
+            template_name="GDNSF_General",
+            project_name="NSFC_Mixed",
+            projects_dir=projects_dir,
+            sync_project_func=write_new_workspace,
+        )
+
+    assert not (projects_dir / "NSFC_Mixed").exists()
+
+
+def test_create_project_rejects_families_needing_extra_metadata(tmp_path: Path):
+    """thesis 项目还需同步维护 template.json，直接复制会产出坏项目。"""
+    projects_dir = tmp_path / "projects"
+    make_template(projects_dir, name="thesis-smu-master")
+
+    with pytest.raises(ValueError, match="template.json"):
+        creator.create_project(
+            template_name="thesis-smu-master",
+            project_name="thesis-foo-master",
+            projects_dir=projects_dir,
+            sync_project_func=write_new_workspace,
+        )
+
+
+def test_validate_project_name_returns_detected_profile():
+    assert creator.validate_project_name("NSFC_Foo", label="新项目名") == "nsfc"
+    assert creator.validate_project_name("GDNSF_Foo", label="新项目名") == "gdnsf"
+    assert creator.validate_project_name("GXNSF_Foo", label="新项目名") == "gxnsf"
+
+
+def test_main_reports_family_specific_build_command(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+):
+    """各产品线的构建 wrapper 不同，不能一律提示 NSFC 的命令。"""
+    projects_dir = tmp_path / "projects"
+    make_template(projects_dir, name="GXNSF_General")
+    monkeypatch.setattr(creator, "PROJECTS_DIR", projects_dir)
+    monkeypatch.setattr(creator.sync_vscode_configs, "sync_project", write_new_workspace)
+
+    exit_code = creator.main(["--template", "GXNSF_General", "--name", "GXNSF_FromCli"])
+
+    assert exit_code == 0
+    assert "scripts/gxnsf_build.py" in capsys.readouterr().out
+
+
 def test_create_project_preserves_existing_destination(tmp_path: Path):
     projects_dir = tmp_path / "projects"
     make_template(projects_dir)

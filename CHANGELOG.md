@@ -8,7 +8,39 @@
 
 ## [Unreleased]
 
+### Added（新增）
+
+- **基金画像机制（`grant-profile.yaml`）**：新增 `scripts/grant_profile.py` 与 `docs/grant-profile-spec.md`，把"章节角色 → 实际文件"从各 skill 的硬编码路径中抽出来，放到标书项目根的 `grant-profile.yaml`。写作类 skill 改为只认角色（`justification` / `research_content` / `innovation` / …），不再认 `extraTex/1.1.立项依据.tex` 这类固定路径，从而可用于 NSFC 以外的基金模板。脚本提供 `infer`（从 `main.tex` 的未注释 `\input` 链推断）/ `validate`（校验画像与实际文件一致）/ `show`（查询单角色解析结果）三个子命令。
+- 角色定义为四态：`file`（有独立文件）、`merged_into`（无独立文件、内容须写进宿主角色）、`absent`（模板确实不要求）、`unresolved`（推断不出、待人工裁决，`validate` 直接判失败）。`merged_into` 与 `absent` 必须区分：广东省自然科学基金没有"特色与创新""年度研究计划"的独立文件，但官方提纲明确要求"应提炼出研究目标、特色与创新点、年度研究计划"，若标成 `absent`，写作 skill 会静默丢掉模板要求的内容。
+- 为 `projects/GDNSF_General`、`projects/GXNSF_General`、`projects/NSFC_General`、`projects/NSFC_Young`、`projects/NSFC_Local`、`projects/NSFC_2026_Education` 生成并人工复核了 `grant-profile.yaml`，六者均通过 `validate`。
+- 角色支持 `files:` 多文件形态：一个角色被模板拆成多节时（如广西 2026 自治区重点研发把"立项依据"拆成"国外研究现状"与"国内研究现状"两节，各限 1500 字），第一个文件为主写入目标，其余一并进写入白名单，避免只写一半内容却不报错。
+- 角色词表扩充 9 个产业/重点研发类基金常见的独立章节：`guideline_alignment`、`assessment_indicators`、`economic_benefits`、`partners`、`task_division`、`intl_cooperation`、`safeguards`、`ip_strategy`、`risk_analysis`。这些章节在 NSFC 模板中并入其它部分，此前无角色可映射。
+- **宏级寻址（`addressing: macro`）**：部分模板不按"一节一文件"组织，而是把正文集中定义成 `\newcommand` 宏、再由版式文件按固定坐标渲染。`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 即属此类——其 `content.tex` 定义 22 个正文宏，由 `sections/form-pages.tex` 的 `\ApplicationAnswer` 摆放，而目录下的 `extraTex/*.tex` 是从 NSFC 模板派生时遗留的孤儿文件，不在 `main.tex` 的 input 链内。`infer` 现会自动识别寻址方式（某 `.tex` 定义 ≥8 个宏且过半命中宏名词表时判为宏级），并生成 `macro` / `macros` 形态的角色映射；`validate` 会校验宏是否真的定义在 `macro_file` 中。为该项目生成并人工补全了画像，22 个宏全部归位、零 `unresolved`。
+- 宏级寻址下所有角色共用同一个 `macro_file`，故读取器新增 `resolve_role_macros()`：写作必须只替换目标宏的宏体，整文件重写会冲掉其余角色的正文。`apply_to_config` 会显式给出该警示。
+- **宏体读写原语**：`grant_profile_reader.py` 新增 `find_macro_body_span()` / `read_macro_body()` / `replace_macro_body()`，逐字符配对花括号，正确处理嵌套 `\textbf{...{...}}`、转义 `\{` `\}`、以及 `$\geq 99\%$` 这类会被误判为注释的转义百分号；括号不配对时返回 None 而不是猜一个边界。`tests/grant-profile/test_macro_addressing.py` 以 12 项测试锁住这些边界，含在真实 22 宏文件上验证"替换一个宏，其余 21 个内容不变且不丢失"。
+- **`nsfc-justification-writer` 支持宏模式写作**：`apply-section` 在宏模式下改走宏体替换（`--title` 传宏名；角色只有一个宏时可省略匹配），并把写入前的质量闸门、引用核验、备份落盘抽成 `_finish_apply()` 由两种模式共用，确保安全检查完全一致。
+- **`nsfc-justification-writer` 宏模式只读本角色正文**：4 处整读 `macro_file` 的位置收口为 `_read_target_text()`，只取本角色的宏体。此前会把 22 个角色的正文全算成立项依据（实测 8607 字 vs 实际 1100 字），字数统计、维度覆盖、结构检查全部失真。
+- **宏模式关闭不适用的诊断项**：宏体内不存在 `\subsubsection`，小节数量检查会恒报"结构缺失"；表单式模板按固定坐标框排版，页数估算也无意义。两者在宏模式下自动关闭（`constraints.page_limit` 置 0 表示关闭——删键无效，`load_page_limit` 会回退到 6/10 的 NSFC 默认值）。
+- **画像预算接入目标字数**：`resolve_word_target()` 新增 `profile_budget` 参数，优先级位于 info_form 之后、学科预设与 config 兜底之前。此前物流项目的立项依据目标字数取 NSFC 默认的 9000，而模板实际上限是国外/国内现状各 1500 字。
+- **定宽框溢出检查 `skills/nsfc-length-aligner/scripts/check_box_overflow.py`**：表单式模板的 `\ApplicationAnswer` 展开为 `\parbox[t][高度][t]`，内容超框时 LaTeX 不报错、页数不变、超出部分直接从 PDF 消失。实测把 `projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 的一节灌到 4 倍：`Overfull \vbox` 警告数为 **0**、页数保持 14 页不变，而注入的 28 个重复段落在 PDF 中只剩 **12** 个——基于编译日志或 bbox 的检查完全漏报。新脚本回读 PDF 文本，逐个核对宏的尾句是否还在，截断时报出丢失字数与比例（实测样例：丢失 1107 字 / 73%）。
+- 该脚本两侧使用同一套归一化（只保留汉字与字母数字）：开发中曾因只对源文剥离 `/` 而把 `2G/3G` 误判成截断点，虚报 353 字丢失；`tests/grant-profile/test_box_overflow.py` 以 10 项测试锁住归一化对称性与截断定位。
+- 该脚本选用**最新**的 PDF 而非固定优先 `.latex-cache/`：两处 PDF 常不同步，实测缓存件比正文旧 4 小时，会虚报 2 处不存在的截断。PDF 比正文旧时额外告警——对着过期 PDF 核对得出"没问题"比漏报更危险。
+- `skills/nsfc-length-aligner/SKILL.md` 新增"定宽框溢出检查"步骤，明确字数达标 ≠ 内容完整。
+- **`nsfc-length-aligner` 宏模式按角色统计**：新增 `_macro_count_units()`，把统计单元从"文件"改成"角色"。此前 17 个角色全部解析到同一个 `content.tex`，per-role 预算互相覆盖，报告只有一个无意义的总数；现产出角色级偏差表（如 `content.tex::justification 1100 / 2400~3000 / -1300`）。
+- `projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/grant-profile.yaml` 的篇幅预算直接取自版式文件里标注的"限 N 字"，并注明 `\ApplicationAnswer` 为固定坐标定宽框、超框静默丢字，真实上限取"标注字数"与"框高容量"较小者，改写后须做尾句存在性检查。
+
 ### Fixed（修复）
+
+- **写作类 skill 在非 NSFC 基金模板上寻址失效**：`nsfc-justification-writer` 写死 `extraTex/1.1.立项依据.tex`，而广东省基金的对应文件名为 `1.**立论**依据.tex`；`nsfc-research-content-writer` 写死 `2.1`/`2.2`/`2.3` 三个文件，在广西（`1.2`/`1.4`/`1.5`）、广东（仅 `2.研究内容.tex`）、教育口（`1.2`/`1.4`/`1.5`）三套模板上全部错位；`nsfc-length-aligner` 的预算用文件名 glob `*立项依据*.tex` 匹配，同样漏掉广东的"立论依据"。现统一改为按画像的角色解析，无画像时回退到原有 NSFC 默认值，既有项目行为不变。
+- **年度计划检查写死三年**：`nsfc-research-content-writer/scripts/check_project_outputs.py` 原按"第1/2/3年"匹配，而 NSFC 面上与地区项目资助期为 4 年。现由画像的 `grant.duration_years` 驱动生成匹配模式。修复后在 `projects/NSFC_General` 上暴露出既有示例内容缺少第 4 年（示例内容本身未改动）。
+- **合并角色被静默跳过**：角色为 `merged_into` 时，`nsfc-research-content-writer` 的内容检查改为在宿主文件上执行而非跳过；`nsfc-research-foundation-writer` 在工作条件并入研究基础时，改为在研究基础正文内核查条件表述。
+- **只读引用被误加入写入白名单的风险**：`nsfc-justification-writer` 的 `targets.related_tex`（研究内容/研究基础，仅供术语一致性对照）与写入目标分离为 `readonly_role_map`，不进 `guardrails.allowed_write_files`，避免立项依据 writer 获得改写研究内容文件的权限。
+- **`nsfc-reviewers` 拿 NSFC 额度口径评省级基金**：`funding_context.project_types` 仅定义了 NSFC 青年（30–40 万）与面上（50–60 万）区间。现约定画像的 `review.grant_type` / `criteria` 优先，且非 NSFC 基金在画像未给额度时走保守策略，不得套用 NSFC 区间苛责研究链条完整度。
+- **`scripts/create_project.py` 建不出省级基金项目**：`PROJECT_NAME_PATTERN` 写死 `^NSFC_`，导致 `GDNSF_*` / `GXNSF_*` 无法创建，而 `scripts/sync_vscode_configs.py` 早已支持这两个前缀并备有专属 settings 模板，两者口径长期不一致。现把"路径安全"与"项目族识别"拆成两个独立关注点：前者只做字符集与越界校验，后者委托 `sync_vscode_configs.infer_project_profile()` 判断，避免前缀清单再次漂移。同时新增两道防护——跨产品线复制（如用 `GDNSF_General` 建 `NSFC_Mixed`）会让同步器写入错族的 `settings.json` 产出编译不了的项目，现直接拒绝；`thesis` / `paper` / `cv` 产品线因还需同步维护 `template.json` 等元数据，显式拒绝并给出指引，而不是静默产出坏项目。
+- **`scripts/create_project.py` 完成提示给出错误的构建命令**：原先一律提示 NSFC 的 `nsfc_project_tool.py`，而各产品线的构建 wrapper 不同（`nsfc_build.py` / `gdnsf_build.py` / `gxnsf_build.py`）。现按识别出的项目族输出对应命令。`tests/bensz-nsfc/create-project/test_create_project.py` 由 11 项扩充到 17 项，覆盖省级基金创建、跨产品线拦截、额外元数据产品线拒绝与产品线专属构建提示。
+- **`nsfc-full-pipeline` 遇非 NSFC 模板停机**：Stage 00 的 `layout.known` 只登记了四个 NSFC 项目，`GDNSF_General` / `GXNSF_General` 会命中 `halt_on_unresolved`。现改为优先读取 `grant-profile.yaml`，画像缺失才回退到 `main.tex` 启发式；并明确"修复方式是生成画像，而不是继续往 `known` 里堆布局"。
+
+### Fixed（修复，续）
 
 - **`skills/nsfc-full-pipeline` 跨模板静默写错章节**：该编排器原先把 `extraTex/1.1`–`1.5`、`2.1`–`2.4`、`3.1`–`3.5` 写死在阶段 05/06/07 中，只适配 `NSFC_Local` 与 `NSFC_2026_Education`；而 `NSFC_General` / `NSFC_Young` 使用 `1.1`+`2.1`–`2.3`、`3.1`–`3.4`、`4.1`–`4.6` 的另一套编号，两套编号互相重叠，在面上/青年项目上运行会把研究基础写进研究内容的位置且不报错。新增 `Stage 00: Proposal Layout Resolution`，强制从 `main.tex` 的未注释 `\input{extraTex/...}` 解析真实正文文件并按 `part_one` / `foundation` / `statements` 归类，`SKILL.md` 中已无编号型硬编码路径。
 - **`skills/nsfc-full-pipeline` 编译命令路径不成立**：原命令 `python scripts/nsfc_build.py build --project-dir .` 依赖当前工作目录恰为项目目录，而仓库根 `scripts/` 下并无该脚本。现区分仓库根入口 `packages/bensz-nsfc/scripts/nsfc_project_tool.py` 与项目内 wrapper 两种口径。

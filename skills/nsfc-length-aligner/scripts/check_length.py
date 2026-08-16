@@ -12,6 +12,15 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from grant_profile_reader import (  # noqa: E402
+    is_macro_addressing,
+    load_profile,
+    read_macro_body,
+    resolve_role_file,
+    resolve_role_macros,
+)
+
 
 class _ConfigError(RuntimeError):
     pass
@@ -488,6 +497,121 @@ def _count_pdf_pages(pdf_path: Path) -> int | None:
     return None
 
 
+def _macro_count_units(base_dir: Path, profile: dict[str, Any]) -> tuple[list[tuple[str, str]], list[str]]:
+    """宏级寻址下，把"待统计单元"从文件改成角色。
+
+    该模式下所有角色共用一个 ``macro_file``，按文件统计会把 22 个角色的正文
+    加成一个数，per-role 预算全部失效。这里按角色聚合其宏体：预算粒度就是角色，
+    两者正好对齐。``main.tex`` 等版式脚手架不承载正文，不计入。
+    """
+    macro_rel = str(profile.get("macro_file") or "").strip()
+    macro_path = base_dir / macro_rel
+    if not macro_rel or not macro_path.is_file():
+        return [], [f"macro_file 不可读：{macro_rel or '(未声明)'}"]
+
+    text = _read_text(macro_path)
+    units: list[tuple[str, str]] = []
+    notes: list[str] = []
+    for role in (profile.get("roles") or {}):
+        macros = resolve_role_macros(profile, role)
+        if not macros:
+            continue
+        bodies: list[str] = []
+        for name in macros:
+            body = read_macro_body(text, name)
+            if body is None:
+                notes.append(f"角色 {role} 的宏 \\{name} 未在 {macro_rel} 中找到，未计入统计")
+                continue
+            bodies.append(body)
+        if bodies:
+            # 标签必须与 _budgets_from_profile 生成的 match 完全一致，
+            # 否则预算匹配不上；宏个数信息放进 notes，不进标签。
+            if len(bodies) > 1:
+                notes.append(f"角色 {role} 跨 {len(bodies)} 个宏，篇幅按合计统计")
+            units.append((f"{macro_rel}::{role}", "\n".join(bodies)))
+    return units, notes
+
+
+def _budgets_from_profile(
+    base_dir: Path,
+    *,
+    unit: str,
+    pages_cfg: dict[str, Any],
+    budgets: list[_Budget],
+) -> tuple[str, dict[str, Any], list[_Budget], list[str]]:
+    """用项目的基金画像覆盖篇幅预算。
+
+    页数上限是各基金差异最大的一项（NSFC 正文 30 页，多数省基金远低于此），
+    沿用 NSFC 口径去量省基金标书会给出完全错误的结论。
+
+    画像里的 ``length_budget.by_role`` 按角色声明区间，这里解析成精确文件路径，
+    比 config.yaml 里的 ``*立项依据*.tex`` 之类 glob 更准（广东叫"立论依据"，
+    glob 直接漏掉）。没有画像或画像没写预算时，保持 config.yaml 原值。
+    """
+    profile = load_profile(base_dir)
+    if profile is None:
+        return unit, pages_cfg, budgets, []
+
+    lb = profile.get("length_budget")
+    if not isinstance(lb, dict):
+        return unit, pages_cfg, budgets, []
+
+    notes: list[str] = []
+    grant_name = ((profile.get("grant") or {}).get("name") or "").strip()
+
+    if isinstance(lb.get("unit"), str) and lb["unit"].strip():
+        unit = lb["unit"].strip()
+
+    pages = lb.get("pages")
+    if isinstance(pages, dict) and (pages.get("max") is not None or pages.get("hard_max") is not None):
+        pages_cfg = dict(pages)
+        notes.append(f"页数上限按画像：max={pages.get('max')} hard_max={pages.get('hard_max')}")
+    elif isinstance(pages, dict):
+        notes.append("画像未填写页数上限（length_budget.pages 为 null），页数检查已跳过")
+        pages_cfg = {}
+
+    macro_mode = is_macro_addressing(profile)
+    macro_rel = str(profile.get("macro_file") or "").strip()
+
+    by_role = lb.get("by_role")
+    if isinstance(by_role, dict) and by_role:
+        new_budgets: list[_Budget] = []
+        for role, span in by_role.items():
+            if macro_mode:
+                # 宏模式的统计单元是角色，预算直接挂到角色标签上
+                if not resolve_role_macros(profile, str(role)):
+                    notes.append(f"角色 {role} 无对应宏，其篇幅预算已跳过")
+                    continue
+                rel = f"{macro_rel}::{role}"
+            else:
+                rel, state, _ = resolve_role_file(profile, str(role))
+                if not rel or state in ("absent", "unknown", "unresolved"):
+                    notes.append(f"角色 {role} 无对应文件，其篇幅预算已跳过")
+                    continue
+            lo = hi = None
+            if isinstance(span, (list, tuple)) and len(span) == 2:
+                lo, hi = _to_int(span[0]), _to_int(span[1])
+            elif _to_int(span) is not None:
+                lo = hi = None
+            new_budgets.append(
+                _Budget(
+                    name=str(role),
+                    match=rel,          # 精确相对路径，不再依赖文件名 glob
+                    target=_to_int(span) if not isinstance(span, (list, tuple)) else None,
+                    min_value=lo,
+                    max_value=hi,
+                    notes=f"来自基金画像 {grant_name}".strip(),
+                )
+            )
+        if new_budgets:
+            budgets = new_budgets
+            notes.append(f"篇幅预算按画像重建：{len(new_budgets)} 个角色")
+
+    if notes and grant_name:
+        notes.insert(0, f"已加载基金画像：{grant_name}")
+    return unit, pages_cfg, budgets, notes
+
+
 def _pick_budget(rel_path: str, budgets: list[_Budget]) -> _Budget | None:
     for b in budgets:
         if not b.match:
@@ -586,6 +710,13 @@ def main(argv: list[str]) -> int:
     discovery: dict[str, Any] = {"mode": "filesystem"}
     base_dir = input_path if input_path.is_dir() else input_path.parent
 
+    # 基金画像优先于 config.yaml 的 length_standard（NSFC 口径只是默认值）
+    unit, pages_cfg, budgets, profile_notes = _budgets_from_profile(
+        base_dir, unit=unit, pages_cfg=pages_cfg, budgets=budgets
+    )
+    for note in profile_notes:
+        print(f"[画像] {note}")
+
     files: list[Path] = []
     main_tex: Path | None = None
     if (follow_inputs is True) or (follow_inputs == "auto"):
@@ -631,15 +762,26 @@ def main(argv: list[str]) -> int:
     section_results: list[dict[str, Any]] = []
     unmatched_budget_files: list[str] = []
 
+    # 待统计单元：文件模式下一个文件一行；宏模式下一个角色一行。
+    # 宏模式必须按角色切分，否则 22 个角色的正文会被加成一个数。
+    profile_for_units = load_profile(base_dir)
+    count_units: list[tuple[str, str, str]] = []
+    if profile_for_units is not None and is_macro_addressing(profile_for_units):
+        macro_units, macro_notes = _macro_count_units(base_dir, profile_for_units)
+        for note in macro_notes:
+            print(f"[画像] {note}")
+        count_units = [(label, body, ".tex") for label, body in macro_units]
+    else:
+        count_units = [
+            (str(f.relative_to(base_dir)), _read_text(f), f.suffix.lower()) for f in files
+        ]
+
     total_value = 0
     totals_all = {"cjk_chars": 0, "chars": 0}
-    for f in files:
-        rel = str(f.relative_to(base_dir))
-        raw = _read_text(f)
-
+    for rel, raw, suffix in count_units:
         visible = ""
         sections: list[tuple[str, str]] = []
-        if f.suffix.lower() == ".tex":
+        if suffix == ".tex":
             visible = _tex_visible_text(
                 raw,
                 strip_math=bool(latex_cfg.get("strip_math", True)),
@@ -652,7 +794,7 @@ def main(argv: list[str]) -> int:
                     strip_math=bool(latex_cfg.get("strip_math", True)),
                     strip_commands=bool(latex_cfg.get("strip_commands", True)),
                 )
-        elif f.suffix.lower() in {".md", ".markdown"}:
+        elif suffix in {".md", ".markdown"}:
             visible = _md_visible_text(raw)
         else:
             continue

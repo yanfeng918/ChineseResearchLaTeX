@@ -149,7 +149,10 @@ def format_tier1(report: Tier1Report) -> str:
         page = c.get("page_limit") if isinstance(c.get("page_limit"), dict) else {}
         pages = c.get("estimated_pages")
         pstatus = str(c.get("page_status", "") or "")
-        if isinstance(page, dict) and isinstance(pages, (int, float)):
+        # max<=0 表示调用方显式关闭了页数判断（如表单式模板按固定坐标框排版，
+        # 页数不是写作侧约束），此时不输出页数行，避免给出误导性目标区间。
+        page_disabled = isinstance(page, dict) and int(page.get("max") or 0) <= 0
+        if isinstance(page, dict) and isinstance(pages, (int, float)) and not page_disabled:
             rec = page.get("recommended", [])
             rec_text = f"{rec[0]}-{rec[1]}" if isinstance(rec, list) and len(rec) >= 2 else "6-8"
             lim_text = f"{page.get('min', 6)}-{page.get('max', 10)}"

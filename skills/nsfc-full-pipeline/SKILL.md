@@ -93,9 +93,20 @@ If `docs/workflow_status.yaml` does not exist, create it.
 
 ## Stage 00: Proposal Layout Resolution
 
-NSFC project templates in this repository do not share one chapter numbering scheme, and the numbers overlap. Writing Part One content into a project that uses the other scheme silently overwrites the wrong chapter instead of failing. Resolve the layout before any writing, repair, or QC stage.
+Grant templates in this repository do not share one chapter numbering scheme, and the numbers overlap. Writing Part One content into a project that uses the other scheme silently overwrites the wrong chapter instead of failing. Resolve the layout before any writing, repair, or QC stage.
 
-Do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.tex`:
+**Prefer the grant profile.** If the project root contains `grant-profile.yaml` (spec: `docs/grant-profile-spec.md`), use it as the authoritative role-to-file map and skip the filename heuristics below. It is the only mechanism that works for non-NSFC funds, whose chapter names differ (Guangdong writes 立**论**依据, not 立**项**依据):
+
+- `roles.<role>.file` — the role has its own file; write there.
+- `roles.<role>.merged_into: <host>` — the role has **no** separate file, but the template still requires the content. Write it into the host role's file as a dedicated subsection. Never skip a merged role: Guangdong's official outline demands 特色与创新点 and 年度研究计划 inside 研究内容, so skipping silently drops required content.
+- `roles.<role>.absent: true` — the template genuinely does not ask for it; skip the corresponding stage.
+- `roles.<role>.unresolved: true` — the profile is incomplete. Stop and ask the user to decide `merged_into` vs `absent` before writing.
+- `grant.duration_years` — how many years the yearly plan must cover. Do not assume three.
+- `review.grant_type` — overrides `simulated_review.grant_type` for stage 12.
+
+If no profile exists, generate one with `python scripts/grant_profile.py infer --project-dir <project-dir>`, have the user confirm it, then proceed. Falling back to the heuristics below is only appropriate for the four known NSFC layouts.
+
+Fallback (no profile): do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.tex`:
 
 1. Read `main.tex` and collect every **active** `\input{extraTex/...}` in document order. Ignore lines whose `\input` is commented out with `%`, and ignore `extraTex/@config.tex`.
 2. Ignore `extraTex/*.tex` files that exist on disk but are not reachable from `main.tex`. They are disabled or orphaned sections; do not write to them and do not treat them as missing work.
@@ -105,7 +116,7 @@ Do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.
    - `statements`: 不同类型国基情况 / 同年单位不一致 / 承担中单位不一致 / 不同专业技术职务的申请 / 生成式人工智能 / 其他 / 其它
 4. Record the resolved layout and the ordered role-to-file map into `project.layout` and `project.body_files` in the checkpoint.
 
-Two layouts currently exist. Use them to sanity-check the resolved map, not as a substitute for reading `main.tex`:
+Two **NSFC** layouts are known. Use them to sanity-check the resolved map, not as a substitute for reading `main.tex`. Non-NSFC templates will match neither, which is expected — that is what the profile is for, so do not treat a mismatch as an error when a profile exists:
 
 | Layout | Example projects | Part One | Foundation | Statements |
 |---|---|---|---|---|
@@ -116,7 +127,7 @@ Stop and ask the user when:
 
 - no `\input{extraTex/...}` can be resolved from `main.tex`;
 - an active file cannot be classified into any role;
-- the resolved map contradicts both known layouts and the user has not confirmed a custom template.
+- the resolved map contradicts both known layouts, no `grant-profile.yaml` exists, and the user has not confirmed a custom template. The fix is to generate a profile, not to add another layout to `known`.
 
 If the user later enables a section that is currently commented out in `main.tex`, such as an AIGC usage declaration, re-run this stage so the new file enters the role map before it is written.
 

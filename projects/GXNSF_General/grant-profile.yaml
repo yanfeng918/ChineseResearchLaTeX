@@ -1,0 +1,77 @@
+# 基金画像（grant-profile.yaml）
+# 由 `python scripts/grant_profile.py infer` 生成，请人工复核后使用。
+# 规范见 docs/grant-profile-spec.md。
+#
+# roles 的三种状态：
+#   file:        本模板有独立文件承载该角色
+#   merged_into: 本模板无独立文件，内容须写进目标角色（不可当作不用写）
+#   absent:      本模板确实不要求该角色
+
+grant:
+  name: "广西自然科学基金-面上项目"
+  agency: "广西壮族自治区科学技术厅"
+  duration_years: 3
+  source: "projects/GXNSF_General/main.tex 内嵌的官方提纲"
+
+roles:
+  justification:   # 立项依据
+    file: "extraTex/1.1.立项依据.tex"
+  research_content:   # 研究内容
+    file: "extraTex/1.2.研究内容目标与关键科学问题.tex"
+  key_questions:   # 关键科学问题
+    merged_into: research_content   # 无独立文件，须写进研究内容
+  research_scheme:   # 研究方案与可行性
+    file: "extraTex/1.3.研究方案及可行性.tex"
+  innovation:   # 特色与创新
+    file: "extraTex/1.4.特色与创新.tex"
+  yearly_plan:   # 年度研究计划
+    file: "extraTex/1.5.年度研究计划.tex"
+  expected_results:   # 预期研究结果
+    file: "extraTex/1.6.预期研究结果.tex"
+  research_foundation:   # 研究基础
+    file: "extraTex/2.1.工作基础.tex"
+  work_conditions:   # 工作条件
+    file: "extraTex/2.2.工作条件.tex"
+  team_members:   # 项目组人员
+    file: "extraTex/2.3.项目组人员简介.tex"
+  ongoing_projects:   # 申请或承担科研项目
+    file: "extraTex/2.4.申请或承担科研项目情况.tex"
+  completed_projects:   # 项目完成情况
+    file: "extraTex/2.5.完成广西自然科学基金项目情况.tex"
+  ai_disclosure:   # 生成式人工智能声明
+    absent: true
+  budget_plan:   # 经费与预算
+    file: "extraTex/3.2.单位分工和经费分配.tex"
+  management:   # 组织管理措施
+    file: "extraTex/3.1.组织管理措施.tex"
+  site_scale:   # 实施地点及规模
+    file: "extraTex/3.3.实施地点及规模.tex"
+  attachments:   # 附件清单
+    file: "extraTex/4.其他附件清单.tex"
+  other:   # 其他
+    merged_into: attachments   # 无独立文件，须写进附件清单
+
+# 篇幅预算：广西自然科学基金正文分为 16 个章节，单章篇幅显著小于 NSFC。
+# 页数上限未在 main.tex 中声明，须按当年指南填写后再启用篇幅对齐。
+length_budget:
+  unit: cjk_chars
+  pages:
+    max: null        # TODO 按当年申报指南填写
+    hard_max: null   # TODO 按当年申报指南填写
+  by_role:
+    justification: [4000, 6000]
+    research_content: [3000, 5000]
+    research_scheme: [2500, 4000]
+    innovation: [600, 1200]
+    yearly_plan: [600, 1200]
+    expected_results: [500, 1000]
+    research_foundation: [1500, 2500]
+
+# 模拟评审口径，供 nsfc-reviewers 使用。
+review:
+  grant_type: "省级面上项目"
+  criteria:
+    - "科学问题是否清晰，立项依据是否充分"
+    - "研究方案与可行性论证是否扎实"
+    - "特色与创新是否可对照"
+    - "预期研究结果是否具体可考核"

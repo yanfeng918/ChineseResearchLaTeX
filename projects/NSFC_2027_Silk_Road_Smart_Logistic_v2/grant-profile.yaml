@@ -1,0 +1,120 @@
+# 基金画像（grant-profile.yaml）
+# 由 `python scripts/grant_profile.py infer` 生成，请人工复核后使用。
+# 规范见 docs/grant-profile-spec.md。
+#
+# roles 的三种状态：
+#   file/files:  本模板有独立文件承载该角色
+#   macro/macros: 正文存在 \newcommand 宏里（宏级寻址）
+#   merged_into: 本模板无独立文件，内容须写进目标角色（不可当作不用写）
+#   absent:      本模板确实不要求该角色
+
+# 宏级寻址：正文不是一节一文件，而是集中定义在下面这个文件的
+# \newcommand 宏里，再由版式文件按固定坐标渲染。写作时改写宏体，
+# 不要新建 extraTex 文件。
+addressing: macro
+macro_file: "content.tex"
+
+grant:
+  name: "广西自治区重点研发计划-现代物流领域（课题二）"
+  agency: "广西壮族自治区科学技术厅"
+  duration_years: 3
+  source: "template/申报书(2026自治区重点研发-物流项目).pdf"
+
+roles:
+  justification:   # 立项依据
+    macros:
+      - ForeignResearchContent
+      - DomesticResearchContent
+  research_content:   # 研究内容
+    macro: ResearchContent
+  key_questions:   # 关键科学问题
+    absent: true
+  research_scheme:   # 研究方案与可行性
+    macros:
+      - ResearchMethodsContent
+      - MethodFeasibilityContentA
+      - MethodFeasibilityContentB
+  innovation:   # 特色与创新
+    macro: InnovationContent
+  yearly_plan:   # 年度研究计划
+    macro: ScheduleContent
+  expected_results:   # 预期研究结果
+    macro: OutcomeFormsContent
+  research_foundation:   # 研究基础
+    macro: PriorWorkContent
+  work_conditions:   # 工作条件
+    macro: ResearchConditionsContent
+  team_members:   # 项目组人员
+    macro: TeamAchievementsContent
+  ongoing_projects:   # 申请或承担科研项目
+    absent: true
+  completed_projects:   # 项目完成情况
+    absent: true
+  ai_disclosure:   # 生成式人工智能声明
+    absent: true
+  budget_plan:   # 经费与预算
+    absent: true
+  management:   # 组织实施与管理
+    macro: OrganizationContent
+  site_scale:   # 实施地点及规模
+    absent: true
+  attachments:   # 附件清单
+    absent: true
+  guideline_alignment:   # 与指南方向的关联
+    macro: GuideAlignmentContent
+  assessment_indicators:   # 考核指标与评测方式
+    macro: ObjectivesContent
+  economic_benefits:   # 预期经济社会效益
+    macro: BenefitsContent
+  partners:   # 协作单位
+    macro: PartnerAdvantagesContent
+  task_division:   # 任务分工
+    macro: TaskDivisionContent
+  intl_cooperation:   # 国际合作与交流
+    macro: InternationalCooperationContent
+  safeguards:   # 保障措施
+    macro: SafeguardsContent
+  ip_strategy:   # 知识产权与成果管理
+    macro: IntellectualPropertyContent
+  risk_analysis:   # 风险分析及对策
+    macro: RiskContent
+  other:   # 其他
+    absent: true
+
+# 篇幅预算：本模板每节都在版式文件里标了"限 N 字"，直接取该口径。
+# 注意：\ApplicationAnswer 是固定坐标定宽框，超框会静默丢字且不报错。
+# 真实上限取"标注字数"与"框高容量"的较小者；改写后必须做尾句存在性检查，
+# 仅比对 bbox 会漏报。
+length_budget:
+  unit: cjk_chars
+  pages:
+    max: null        # 表单式模板，页数由版式固定，不作为写作约束
+    hard_max: null
+  by_role:
+    justification: [2400, 3000]          # 国外1500 + 国内1500，两宏合计
+    guideline_alignment: [400, 500]
+    assessment_indicators: [640, 800]
+    expected_results: [400, 500]
+    research_content: [800, 1000]
+    research_scheme: [1040, 1300]        # 方法800 + 可行性500
+    innovation: [500, 800]               # 每条创新点限200字
+    economic_benefits: [400, 500]
+    research_foundation: [640, 800]
+    team_members: [960, 1200]
+    work_conditions: [400, 500]
+    intl_cooperation: [240, 300]
+    yearly_plan: [800, 1000]
+    management: [640, 800]
+    safeguards: [400, 500]
+    ip_strategy: [400, 500]
+    risk_analysis: [400, 500]
+
+# 模拟评审口径，供 nsfc-reviewers 使用。
+review:
+  grant_type: "省级重点研发计划（应用/产业导向）"
+  criteria:
+    - "与指南方向的匹配性及对指南目标的支撑作用"
+    - "考核指标是否可量化、评测方式是否可执行"
+    - "创新点是否具备方法/理论/知识产权特征"
+    - "预期经济社会效益是否可核验"
+    - "协作单位分工与风险对策是否落地"

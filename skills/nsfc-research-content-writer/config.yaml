@@ -21,10 +21,22 @@ parameters:
     default: apply
     allowed_values: [preview, apply]
 
+# targets 是"没有基金画像时"的兜底默认值（对应 NSFC 三段式模板）。
+# 项目根存在 grant-profile.yaml 时，按 grant_profile.role_map 的角色解析覆盖。
 targets:
   research_content_tex: extraTex/2.1.研究内容.tex
   innovation_tex: extraTex/2.2.特色与创新.tex
   yearly_plan_tex: extraTex/2.3.年度研究计划.tex
+
+# 基金画像映射：使本 skill 可用于 NSFC 以外的基金模板。
+# 若某角色在画像中是 merged_into（如广东省基金把创新/年度计划并入研究内容），
+# 检查会转到宿主文件上执行，而不是跳过——跳过等于默许内容缺失。
+# 年度计划检查的年数由画像的 grant.duration_years 决定，不再写死 3 年。
+grant_profile:
+  role_map:
+    research_content_tex: research_content
+    innovation_tex: innovation
+    yearly_plan_tex: yearly_plan
 
 guardrails:
   allowed_write_files:

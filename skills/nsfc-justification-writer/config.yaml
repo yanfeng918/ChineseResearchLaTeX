@@ -40,6 +40,8 @@ parameters:
     default: 800
     description: 允许偏差范围（兜底值；若用户给出区间/±范围则优先使用）
 
+# targets 是"没有基金画像时"的兜底默认值（对应 NSFC 三段式模板）。
+# 项目根存在 grant-profile.yaml 时，下面 grant_profile.role_map 会按角色覆盖它们。
 targets:
   justification_tex: extraTex/1.1.立项依据.tex
   related_tex:
@@ -48,6 +50,17 @@ targets:
   bib_globs:
     - references/*.bib
     - references/**/*.bib
+
+# 基金画像映射：把 targets 字段绑定到与基金无关的章节角色，
+# 使本 skill 能用于 NSFC 以外的基金模板（省基金等）。规范见 docs/grant-profile-spec.md。
+grant_profile:
+  # 可写目标：解析出的路径会自动补进 guardrails.allowed_write_files
+  role_map:
+    justification_tex: justification
+  # 只读引用：仅用于术语一致性对照，不进写入白名单
+  readonly_role_map:
+    related_tex.research_content: research_content
+    related_tex.research_foundation: research_foundation
 
 workspace:
   # runs/ 属于运行时产物：统一放在 tests/_artifacts/ 下（测试/运行产物集中收口）

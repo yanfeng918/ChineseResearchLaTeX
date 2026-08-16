@@ -1,0 +1,77 @@
+# 基金画像（grant-profile.yaml）
+# 由 `python scripts/grant_profile.py infer` 生成，请人工复核后使用。
+# 规范见 docs/grant-profile-spec.md。
+#
+# roles 的三种状态：
+#   file:        本模板有独立文件承载该角色
+#   merged_into: 本模板无独立文件，内容须写进目标角色（不可当作不用写）
+#   absent:      本模板确实不要求该角色
+
+grant:
+  name: "广东省自然科学基金-面上项目"
+  agency: "广东省科学技术厅"
+  duration_years: 3
+  source: "projects/GDNSF_General/main.tex 内嵌的官方提纲与提示语"
+
+roles:
+  justification:   # 立项依据
+    file: "extraTex/1.立论依据.tex"
+  research_content:   # 研究内容
+    file: "extraTex/2.研究内容.tex"
+  key_questions:   # 关键科学问题
+    absent: true
+  research_scheme:   # 研究方案与可行性
+    absent: true
+  # 官方提纲原文：“应提炼出研究目标、特色与创新点、年度研究计划”。
+  # 这两项没有独立文件，但模板明确要求写，必须并入研究内容，不能标 absent。
+  innovation:   # 特色与创新
+    merged_into: research_content
+  yearly_plan:   # 年度研究计划
+    merged_into: research_content
+  expected_results:   # 预期研究结果
+    absent: true
+  research_foundation:   # 研究基础
+    file: "extraTex/3.1.研究工作基础.tex"
+  work_conditions:   # 工作条件
+    file: "extraTex/3.2.实验条件.tex"
+  team_members:   # 项目组人员
+    absent: true
+  ongoing_projects:   # 申请或承担科研项目
+    absent: true
+  completed_projects:   # 项目完成情况
+    absent: true
+  ai_disclosure:   # 生成式人工智能声明
+    absent: true
+  budget_plan:   # 经费与预算
+    absent: true
+  management:   # 组织管理措施
+    absent: true
+  site_scale:   # 实施地点及规模
+    absent: true
+  attachments:   # 附件清单
+    absent: true
+  other:   # 其他
+    absent: true
+
+# 篇幅预算：不同基金差异极大，务必按当年指南校对后再用。
+length_budget:
+  unit: cjk_chars
+  pages:
+    max: 28          # 留缓冲，不靠缩字体挤页数
+    hard_max: 30     # main.tex 原文：“申请书正文原则上不超过30页”
+  # 本模板只有 4 个正文文件，研究内容还要额外承载创新与年度计划，
+  # 因此比 NSFC 三段式的研究内容预算更宽。数值待按当年指南复核。
+  by_role:
+    justification: [7000, 9000]
+    research_content: [13000, 16000]
+    research_foundation: [4000, 6000]
+    work_conditions: [1500, 2500]
+
+# 模拟评审口径，供 nsfc-reviewers 使用。
+review:
+  grant_type: "省级面上项目"
+  criteria:
+    - "研究的科学技术价值（对应“一、立论依据”的官方提示语）"
+    - "研究目标、特色与创新点是否清晰可辨"
+    - "年度研究计划是否可执行"
+    - "研究活动、知识产权、成果是否主要在粤港澳地区"   # 本基金特有的硬性要求

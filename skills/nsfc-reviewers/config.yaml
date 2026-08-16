@@ -37,6 +37,16 @@ stage_assessment:
         - 核心亮点是否足够鲜明，能支撑专家讨论与投票
         - 现有短板是否会在会评讨论中被放大
 
+# 基金画像：标书项目根若存在 grant-profile.yaml，其 review.grant_type 与
+# review.criteria 优先于本文件的 NSFC 默认口径。省级、市级、横向等基金的
+# 资助额度与评审要点与 NSFC 差异极大，套用 NSFC 区间会得出错误结论。
+grant_profile:
+  profile_filename: grant-profile.yaml
+  prefer_profile_over_defaults: true
+  # 画像里没有额度信息时，一律走 unknown_policy: conservative，
+  # 绝不回退到下面的 NSFC 区间
+  forbid_nsfc_budget_fallback_for_non_nsfc: true
+
 # 资助额度约束识别（默认写入相关问题）
 funding_context:
   enabled: true

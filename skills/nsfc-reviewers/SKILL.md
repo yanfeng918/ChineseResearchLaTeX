@@ -55,6 +55,19 @@ metadata:
 - `parallel_review`
 - `output_settings`
 
+## 基金画像优先
+
+评审前先读标书项目根目录的 `grant-profile.yaml`（规范见 `docs/grant-profile-spec.md`）。它决定这份标书按哪个基金的口径评：
+
+- `grant.name` / `review.grant_type`：优先于用户未显式给出的 `grant_type`
+- `review.criteria`：该基金公开的评审要点，须并入 `review_dimensions` 一起考量
+- `grant.duration_years`：年度计划是否完整按此判断，不要默认三年
+- `roles`：某角色为 `merged_into` 时，对应内容写在宿主章节里，不得判为"缺失该章节"
+
+**额度判断红线**：`funding_context.project_types` 里的额度区间只适用于 NSFC。当画像显示这是省级/市级/横向等非 NSFC 基金，且画像未给出额度信息时，走 `unknown_policy: conservative`，不得套用 NSFC 的 30–40 万 / 50–60 万区间去苛责研究链条完整度。
+
+无画像时维持原有 NSFC 默认口径。
+
 ## 输出
 
 - 默认输出文件名读取 `config.yaml:output_settings.default_filename`
