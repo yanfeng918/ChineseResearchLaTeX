@@ -1,0 +1,29 @@
+{
+  "paperId": "b7e32cbb848a8fa125bbe140f3fadb25fe6b9ff5",
+  "title": "Use of a Virtual Twin for Dynamic Storage Space Monitoring in a Port Terminal",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.5220/0010676800003062",
+    "status": "GOLD",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5220/0010676800003062?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5220/0010676800003062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2078820006",
+      "name": "Andreas Höpfner"
+    },
+    {
+      "authorId": "3349075",
+      "name": "Olaf Poenicke"
+    },
+    {
+      "authorId": "101715782",
+      "name": "C. Blobner"
+    },
+    {
+      "authorId": "3119396",
+      "name": "André Winge"
+    }
+  ],
+  "abstract": ": The paper describes research and development for dynamic 3D models and Virtual Reality (VR) applications in the context of port processes. The work described is carried out in the currently ongoing EU-funded project PortForward . The paper addresses the use of VR technologies in the context of industrial applications and describes how dynamic sensor data can be integrated into a 3D model of a Port. In addition to tracking data of moving assets, the sensor data mainly comprises 3D measurement data from LiDAR sensors. These sensors are installed in the port infrastructure to automatically record the current occupancy status of storage areas. The measurement data from the LiDAR sensors are dynamically integrated into the VR model in an abstracted form together process related meta-data to reflect the current process status in the port terminal. Based on that approach in the sense of a Virtual Twin, process flows and storage space management can be optimized. The use of VR technologies is crucial in this context in order to depict the complex spatial and dynamic process situation in an intuitive way."
+}

@@ -1,0 +1,984 @@
+{
+  "id": "https://openalex.org/W1999521261",
+  "doi": "https://doi.org/10.1109/chinacom.2011.6158204",
+  "title": "A general model for store-carry-forward routing schemes with multicast in delay tolerant networks",
+  "display_name": "A general model for store-carry-forward routing schemes with multicast in delay tolerant networks",
+  "publication_year": 2011,
+  "publication_date": "2011-08-01",
+  "ids": {
+    "openalex": "https://openalex.org/W1999521261",
+    "doi": "https://doi.org/10.1109/chinacom.2011.6158204",
+    "mag": "1999521261"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/chinacom.2011.6158204",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/chinacom.2011.6158204",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2011 6th International ICST Conference on Communications and Networking in China (CHINACOM)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5108050448",
+        "display_name": "Jiajia Liu",
+        "orcid": "https://orcid.org/0000-0003-4273-8866"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I201537933",
+          "display_name": "Tohoku University",
+          "ror": "https://ror.org/01dq60k83",
+          "country_code": "JP",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ],
+      "countries": [
+        "JP"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Jiajia Liu",
+      "raw_affiliation_strings": [
+        "University of Tohoku, Sendai, Japan",
+        "Tohoku University, Sendai, Japan 980-8579"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Tohoku, Sendai, Japan",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Tohoku University, Sendai, Japan 980-8579",
+          "institution_ids": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5014884811",
+        "display_name": "Xiaohong Jiang",
+        "orcid": "https://orcid.org/0000-0001-9739-1930"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I84400586",
+          "display_name": "Future University Hakodate",
+          "ror": "https://ror.org/05szw2z23",
+          "country_code": "JP",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I84400586"
+          ]
+        }
+      ],
+      "countries": [
+        "JP"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Xiaohong Jiang",
+      "raw_affiliation_strings": [
+        "Future University, Hakodate, Hokkaido, Japan",
+        "Future University-Hakodate, Hokkaido, Japan 041-8655"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Future University, Hakodate, Hokkaido, Japan",
+          "institution_ids": [
+            "https://openalex.org/I84400586"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Future University-Hakodate, Hokkaido, Japan 041-8655",
+          "institution_ids": [
+            "https://openalex.org/I84400586"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5084228321",
+        "display_name": "Hiroki Nishiyama",
+        "orcid": "https://orcid.org/0000-0002-7374-2772"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I201537933",
+          "display_name": "Tohoku University",
+          "ror": "https://ror.org/01dq60k83",
+          "country_code": "JP",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ],
+      "countries": [
+        "JP"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Hiroki Nishiyama",
+      "raw_affiliation_strings": [
+        "University of Tohoku, Sendai, Japan",
+        "Tohoku University, Sendai, Japan 980-8579"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Tohoku, Sendai, Japan",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Tohoku University, Sendai, Japan 980-8579",
+          "institution_ids": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5013311265",
+        "display_name": "Nei Kato",
+        "orcid": "https://orcid.org/0000-0001-8769-302X"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I201537933",
+          "display_name": "Tohoku University",
+          "ror": "https://ror.org/01dq60k83",
+          "country_code": "JP",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ],
+      "countries": [
+        "JP"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Nei Kato",
+      "raw_affiliation_strings": [
+        "University of Tohoku, Sendai, Japan",
+        "Tohoku University, Sendai, Japan 980-8579"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Tohoku, Sendai, Japan",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Tohoku University, Sendai, Japan 980-8579",
+          "institution_ids": [
+            "https://openalex.org/I201537933"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.572,
+  "has_fulltext": false,
+  "cited_by_count": 13,
+  "citation_normalized_percentile": {
+    "value": 0.57286106,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 90,
+    "max": 97
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "494",
+    "last_page": "500"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11896",
+    "display_name": "Opportunistic and Delay-Tolerant Networks",
+    "score": 1.0,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11896",
+      "display_name": "Opportunistic and Delay-Tolerant Networks",
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10246",
+      "display_name": "Mobile Ad Hoc Networks",
+      "score": 0.9947999715805054,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11478",
+      "display_name": "Caching and Content Delivery",
+      "score": 0.9944999814033508,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/multicast",
+      "display_name": "Multicast",
+      "score": 0.8004255294799805
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.7956948280334473
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.6962490081787109
+    },
+    {
+      "id": "https://openalex.org/keywords/carry",
+      "display_name": "Carry (investment)",
+      "score": 0.6217286586761475
+    },
+    {
+      "id": "https://openalex.org/keywords/routing",
+      "display_name": "Routing (electronic design automation)",
+      "score": 0.6013023257255554
+    },
+    {
+      "id": "https://openalex.org/keywords/protocol-independent-multicast",
+      "display_name": "Protocol Independent Multicast",
+      "score": 0.5526102185249329
+    },
+    {
+      "id": "https://openalex.org/keywords/xcast",
+      "display_name": "Xcast",
+      "score": 0.542595386505127
+    },
+    {
+      "id": "https://openalex.org/keywords/source-specific-multicast",
+      "display_name": "Source-specific multicast",
+      "score": 0.5167326331138611
+    },
+    {
+      "id": "https://openalex.org/keywords/distance-vector-multicast-routing-protocol",
+      "display_name": "Distance Vector Multicast Routing Protocol",
+      "score": 0.4686034917831421
+    },
+    {
+      "id": "https://openalex.org/keywords/distributed-computing",
+      "display_name": "Distributed computing",
+      "score": 0.37168702483177185
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C32295351",
+      "wikidata": "https://www.wikidata.org/wiki/Q899288",
+      "display_name": "Multicast",
+      "level": 2,
+      "score": 0.8004255294799805
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.7956948280334473
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.6962490081787109
+    },
+    {
+      "id": "https://openalex.org/C2776299755",
+      "wikidata": "https://www.wikidata.org/wiki/Q432449",
+      "display_name": "Carry (investment)",
+      "level": 2,
+      "score": 0.6217286586761475
+    },
+    {
+      "id": "https://openalex.org/C74172769",
+      "wikidata": "https://www.wikidata.org/wiki/Q1446839",
+      "display_name": "Routing (electronic design automation)",
+      "level": 2,
+      "score": 0.6013023257255554
+    },
+    {
+      "id": "https://openalex.org/C44892269",
+      "wikidata": "https://www.wikidata.org/wiki/Q782752",
+      "display_name": "Protocol Independent Multicast",
+      "level": 3,
+      "score": 0.5526102185249329
+    },
+    {
+      "id": "https://openalex.org/C192059732",
+      "wikidata": "https://www.wikidata.org/wiki/Q3823050",
+      "display_name": "Xcast",
+      "level": 3,
+      "score": 0.542595386505127
+    },
+    {
+      "id": "https://openalex.org/C18787934",
+      "wikidata": "https://www.wikidata.org/wiki/Q7565105",
+      "display_name": "Source-specific multicast",
+      "level": 3,
+      "score": 0.5167326331138611
+    },
+    {
+      "id": "https://openalex.org/C42272142",
+      "wikidata": "https://www.wikidata.org/wiki/Q1229379",
+      "display_name": "Distance Vector Multicast Routing Protocol",
+      "level": 4,
+      "score": 0.4686034917831421
+    },
+    {
+      "id": "https://openalex.org/C120314980",
+      "wikidata": "https://www.wikidata.org/wiki/Q180634",
+      "display_name": "Distributed computing",
+      "level": 1,
+      "score": 0.37168702483177185
+    },
+    {
+      "id": "https://openalex.org/C10138342",
+      "wikidata": "https://www.wikidata.org/wiki/Q43015",
+      "display_name": "Finance",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/chinacom.2011.6158204",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/chinacom.2011.6158204",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2011 6th International ICST Conference on Communications and Networking in China (CHINACOM)",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "score": 0.8299999833106995,
+      "display_name": "Good health and well-being",
+      "id": "https://metadata.un.org/sdg/3"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 34,
+  "referenced_works": [
+    "https://openalex.org/W1524819485",
+    "https://openalex.org/W1572481965",
+    "https://openalex.org/W1965396227",
+    "https://openalex.org/W1965531437",
+    "https://openalex.org/W1995341435",
+    "https://openalex.org/W2038830731",
+    "https://openalex.org/W2039157284",
+    "https://openalex.org/W2060063887",
+    "https://openalex.org/W2076363954",
+    "https://openalex.org/W2096509679",
+    "https://openalex.org/W2097625638",
+    "https://openalex.org/W2099658721",
+    "https://openalex.org/W2100920893",
+    "https://openalex.org/W2104844475",
+    "https://openalex.org/W2105273407",
+    "https://openalex.org/W2105713661",
+    "https://openalex.org/W2109528718",
+    "https://openalex.org/W2110476963",
+    "https://openalex.org/W2115853833",
+    "https://openalex.org/W2124927196",
+    "https://openalex.org/W2129849999",
+    "https://openalex.org/W2144509357",
+    "https://openalex.org/W2145594425",
+    "https://openalex.org/W2149959815",
+    "https://openalex.org/W2151307771",
+    "https://openalex.org/W2153688248",
+    "https://openalex.org/W2160712526",
+    "https://openalex.org/W2162076967",
+    "https://openalex.org/W2171471095",
+    "https://openalex.org/W4242656826",
+    "https://openalex.org/W4392470360",
+    "https://openalex.org/W6631336499",
+    "https://openalex.org/W6633076157",
+    "https://openalex.org/W6669612247"
+  ],
+  "related_works": [
+    "https://openalex.org/W80466176",
+    "https://openalex.org/W2371847117",
+    "https://openalex.org/W89592389",
+    "https://openalex.org/W1559233856",
+    "https://openalex.org/W4321384965",
+    "https://openalex.org/W2080190883",
+    "https://openalex.org/W2036328685",
+    "https://openalex.org/W2509526366",
+    "https://openalex.org/W2152719263",
+    "https://openalex.org/W2148721315"
+  ],
+  "abstract_inverted_index": {
+    "Delay": [
+      0
+    ],
+    "tolerant": [
+      1
+    ],
+    "networks": [
+      2
+    ],
+    "(DTNs)": [
+      3
+    ],
+    "are": [
+      4,
+      94
+    ],
+    "sparse": [
+      5
+    ],
+    "and": [
+      6,
+      26,
+      103,
+      178
+    ],
+    "highly": [
+      7
+    ],
+    "mobile": [
+      8
+    ],
+    "wireless": [
+      9
+    ],
+    "ad": [
+      10
+    ],
+    "hoc": [
+      11
+    ],
+    "networks,": [
+      12
+    ],
+    "where": [
+      13
+    ],
+    "no": [
+      14
+    ],
+    "contemporaneous": [
+      15
+    ],
+    "end-to-end": [
+      16
+    ],
+    "path": [
+      17
+    ],
+    "may": [
+      18
+    ],
+    "ever": [
+      19
+    ],
+    "exist": [
+      20
+    ],
+    "at": [
+      21
+    ],
+    "any": [
+      22
+    ],
+    "given": [
+      23
+    ],
+    "time": [
+      24,
+      72
+    ],
+    "instant,": [
+      25
+    ],
+    "thus": [
+      27
+    ],
+    "the": [
+      28,
+      47,
+      55,
+      61,
+      79,
+      85,
+      99,
+      114,
+      124,
+      129,
+      141,
+      153,
+      162,
+      167,
+      175,
+      179
+    ],
+    "“store-carry-forward”": [
+      29,
+      131
+    ],
+    "kind": [
+      30
+    ],
+    "of": [
+      31,
+      40,
+      50,
+      84,
+      170
+    ],
+    "schemes": [
+      32,
+      53
+    ],
+    "becomes": [
+      33
+    ],
+    "a": [
+      34,
+      69
+    ],
+    "natural": [
+      35
+    ],
+    "routing": [
+      36,
+      52,
+      132,
+      173,
+      177
+    ],
+    "option.": [
+      37
+    ],
+    "A": [
+      38
+    ],
+    "lot": [
+      39
+    ],
+    "models": [
+      41,
+      150
+    ],
+    "have": [
+      42
+    ],
+    "been": [
+      43
+    ],
+    "proposed": [
+      44
+    ],
+    "to": [
+      45,
+      77,
+      122,
+      165
+    ],
+    "analyze": [
+      46,
+      123
+    ],
+    "unicast": [
+      48,
+      155
+    ],
+    "performance": [
+      49,
+      127,
+      169
+    ],
+    "such": [
+      51
+    ],
+    "in": [
+      54,
+      113
+    ],
+    "DTNs,": [
+      56
+    ],
+    "while": [
+      57
+    ],
+    "few": [
+      58
+    ],
+    "works": [
+      59
+    ],
+    "consider": [
+      60
+    ],
+    "multicast": [
+      62,
+      87,
+      126
+    ],
+    "scenario.": [
+      63
+    ],
+    "In": [
+      64
+    ],
+    "this": [
+      65
+    ],
+    "paper,": [
+      66
+    ],
+    "we": [
+      67
+    ],
+    "develop": [
+      68
+    ],
+    "general": [
+      70,
+      112
+    ],
+    "continuous": [
+      71
+    ],
+    "Markov": [
+      73
+    ],
+    "chain-based": [
+      74
+    ],
+    "theoretical": [
+      75,
+      109,
+      163
+    ],
+    "framework": [
+      76,
+      110,
+      164
+    ],
+    "characterize": [
+      78
+    ],
+    "complicated": [
+      80
+    ],
+    "message": [
+      81
+    ],
+    "delivery": [
+      82,
+      101,
+      105,
+      168
+    ],
+    "process": [
+      83
+    ],
+    "DTN": [
+      86,
+      125,
+      154
+    ],
+    "scenarios,": [
+      88
+    ],
+    "based": [
+      89
+    ],
+    "on": [
+      90
+    ],
+    "which": [
+      91
+    ],
+    "analytical": [
+      92
+    ],
+    "expressions": [
+      93
+    ],
+    "further": [
+      95
+    ],
+    "derived": [
+      96
+    ],
+    "for": [
+      97,
+      140,
+      152
+    ],
+    "both": [
+      98
+    ],
+    "expected": [
+      100,
+      104
+    ],
+    "delay": [
+      102
+    ],
+    "cost.": [
+      106
+    ],
+    "The": [
+      107
+    ],
+    "developed": [
+      108,
+      151
+    ],
+    "is": [
+      111
+    ],
+    "sense": [
+      115
+    ],
+    "that:": [
+      116
+    ],
+    "1)": [
+      117
+    ],
+    "it": [
+      118,
+      135,
+      146
+    ],
+    "can": [
+      119,
+      136
+    ],
+    "be": [
+      120,
+      138
+    ],
+    "used": [
+      121,
+      139
+    ],
+    "under": [
+      128
+    ],
+    "common": [
+      130,
+      142
+    ],
+    "schemes;": [
+      133
+    ],
+    "2)": [
+      134
+    ],
+    "also": [
+      137
+    ],
+    "mobility": [
+      143
+    ],
+    "models;": [
+      144
+    ],
+    "3)": [
+      145
+    ],
+    "covers": [
+      147
+    ],
+    "some": [
+      148
+    ],
+    "available": [
+      149
+    ],
+    "as": [
+      156
+    ],
+    "special": [
+      157
+    ],
+    "cases.": [
+      158
+    ],
+    "We": [
+      159
+    ],
+    "then": [
+      160
+    ],
+    "apply": [
+      161
+    ],
+    "explore": [
+      166
+    ],
+    "two": [
+      171
+    ],
+    "popular": [
+      172
+    ],
+    "schemes,": [
+      174
+    ],
+    "epidemic": [
+      176
+    ],
+    "two-hop": [
+      180
+    ],
+    "relaying.": [
+      181
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

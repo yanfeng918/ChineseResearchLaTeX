@@ -1,0 +1,17 @@
+{
+  "paperId": "b1bff16d698591c011f62ea34ed29dfe90943b9e",
+  "title": "Port-to-Factory Digital Twin for Malaysia's Klang Valley- Port Klang-Penang Logistics Corridor",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1145/3802463.3802486",
+    "status": "GOLD",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3802463.3802486?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3802463.3802486, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2362398201",
+      "name": "W. Y. Leong"
+    }
+  ],
+  "abstract": "Malaysia's Klang Valley–Port Klang–Penang corridor forms a critical backbone for national manufacturing exports and regional trade connectivity. Despite its strategic importance, corridor performance is often constrained by fragmented decision-making across ports, inland transport, warehousing, customs clearance, and factory inbound logistics. This study proposes a Port-to-Factory Digital Twin (P2F-DT) framework that integrates real-time operational data, port community system events, and factory production constraints into a unified cyber–physical representation of the logistics corridor. The framework combines state estimation, predictive lead-time modelling, and discrete-event simulation to enable coordinated planning, scenario evaluation, and data-driven optimisation across stakeholders. Aligned with Malaysia's Industry4WRD and MyDIGITAL initiatives, the proposed architecture emphasises governance, auditability, and interoperability to support trusted cross-organisational collaboration. Simulation-based evaluation demonstrates that the P2F-DT can significantly reduce port dwell time, improve end-to-end delivery reliability, and enhance cost and emissions performance, supporting resilient and sustainable corridor operations."
+}

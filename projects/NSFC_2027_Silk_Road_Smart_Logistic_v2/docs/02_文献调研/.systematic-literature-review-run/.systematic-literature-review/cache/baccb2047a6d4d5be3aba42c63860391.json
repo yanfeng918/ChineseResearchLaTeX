@@ -1,0 +1,29 @@
+{
+  "paperId": "7c1ed62933350d7aaff8fdfbe0fa77953d1f7a66",
+  "title": "Freight Container Yard Management System with Electronic Seal Technology",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/INDIN.2006.275719?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/INDIN.2006.275719, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "3298800",
+      "name": "Joo-Sang Park"
+    },
+    {
+      "authorId": "48854205",
+      "name": "Sewon Oh"
+    },
+    {
+      "authorId": "39139120",
+      "name": "Taesu Cheong"
+    },
+    {
+      "authorId": "2109263468",
+      "name": "Yongjoon Lee"
+    }
+  ],
+  "abstract": null
+}

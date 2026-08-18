@@ -1,0 +1,25 @@
+{
+  "paperId": "2fe839956e5d2f888b3cea6c8f181d039e2148e4",
+  "title": "Using Energy-Efficient Wireless Sensor Network for Cold Chain Monitoring",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CCNC.2009.4784847?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CCNC.2009.4784847, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2050167",
+      "name": "Rahim Kacimi"
+    },
+    {
+      "authorId": "1692568",
+      "name": "R. Dhaou"
+    },
+    {
+      "authorId": "1711946",
+      "name": "A. Beylot"
+    }
+  ],
+  "abstract": null
+}

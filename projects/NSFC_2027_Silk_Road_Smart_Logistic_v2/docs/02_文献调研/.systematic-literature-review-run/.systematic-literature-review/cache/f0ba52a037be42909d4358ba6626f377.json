@@ -1,0 +1,436 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2024-05-12T12:19:22Z",
+      "timestamp": 1715516362165
+    },
+    "reference-count": 40,
+    "publisher": "Elsevier",
+    "isbn-type": [
+      {
+        "value": "9780081027936",
+        "type": "print"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2021-01-01T00:00:00Z",
+          "timestamp": 1609459200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "DOI": "10.1016/b978-0-08-102793-6.00008-4",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          11
+        ]
+      ],
+      "date-time": "2021-02-11T02:48:52Z",
+      "timestamp": 1613011732000
+    },
+    "page": "161-178",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Assessing the Bundle Protocol (BP) and alternative approaches to data bundling in delay-tolerant networks (DTNs)"
+    ],
+    "prefix": "10.1016",
+    "author": [
+      {
+        "given": "W.M.",
+        "family": "Eddy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0010",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/ICET.2010.5638377",
+        "article-title": "Routing protocols in delay tolerant networks—a survey",
+        "author": "Ali",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0015",
+        "article-title": "Deployment of file based spacecraft communication protocols",
+        "author": "Blake",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0020",
+        "series-title": "Final Specification of Forwarding Paradigms in Haggle",
+        "author": "Boldrini",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0025",
+        "series-title": "Delay-Tolerant Networking Architecture",
+        "author": "Cerf",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0030",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/INFOCOM.2006.172",
+        "article-title": "Impact of human mobility on the design of opportunistic forwarding algorithms",
+        "author": "Chaintreau",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0035",
+        "series-title": "CCSDS File Delivery Protocol (CFDP) Part 1: Introduction and Overview",
+        "author": "Consultative Committee for Space Data Systems",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0040",
+        "series-title": "CCSDS Bundle Protocol Specification",
+        "author": "Consultative Committee for Space Data Systems",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0045",
+        "author": "Eddy"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0050",
+        "first-page": "27",
+        "article-title": "A delay-tolerant network architecture for challenged internets, proceedings of ACM SIGCOMM 2003",
+        "volume": "33",
+        "author": "Fall",
+        "year": "2003",
+        "journal-title": "Comput. Commun. Rev."
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0055",
+        "article-title": "AnN4C DTN router node design",
+        "author": "Farrell",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0060",
+        "article-title": "Study on CFDP and DTN architectures for ESA space missions",
+        "author": "Flentge",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0065",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2514/6.2012-1294297",
+        "article-title": "File based operations—the way ahead?",
+        "author": "Haddow",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0070",
+        "article-title": "Pocket switched networking: challenges, feasibility, and implementation issues",
+        "author": "Hui",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0075",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/CHINACOM.2006.344671",
+        "article-title": "Osmosis in pocket switched networks",
+        "author": "Hui",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0080",
+        "author": "Interagency Operations Advisory Group, Space Internetworking Strategy Group"
+      },
+      {
+        "issue": "5–6",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1002/sat.966",
+        "article-title": "Experience with delay-tolerant networking from orbit",
+        "volume": "28",
+        "author": "Ivancic",
+        "year": "2010",
+        "journal-title": "Int. J. Satell. Commun. Netw."
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0090",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/GLOCOM.2010.5683304",
+        "article-title": "Large file transfers from space using multiple ground terminals and delay-tolerant networking",
+        "author": "Ivancic",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0095",
+        "series-title": "Disruption Tolerant Network Technology Flight Validation Report",
+        "author": "Jones",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0100",
+        "series-title": "Mobile Ad-Hoc Networks: Protocol Design",
+        "article-title": "Data delivery in delay tolerant networks: a survey",
+        "author": "Kapadia",
+        "year": "2011"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0105",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/SURV.2011.041911.00093",
+        "article-title": "Disruption-tolerant networking: a comprehensive survey on recent developments and persisting challenges",
+        "volume": "14",
+        "author": "Khabbaz",
+        "year": "2012",
+        "journal-title": "IEEE Commun. Surv. Tutorials"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0110",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/MILCOM.2007.4454942",
+        "article-title": "The SPINDLE disruption-tolerant networking system",
+        "author": "Krishnan",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0115",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-540-27767-5_24",
+        "article-title": "Probabilistic routing in intermittently connected networks",
+        "author": "Lindgren",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0120",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/NGI.2011.5985945",
+        "article-title": "Bundles fragmentation in vehicular delay-tolerant networks",
+        "author": "Magaia",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0125",
+        "series-title": "Test Results—Documentation of Test Results From Tests",
+        "author": "N4C: Networking for Communications Challenged Communities",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0130",
+        "author": "Neufield"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0135",
+        "series-title": "Applying DTN to Mobile Internet Access: An Experiment with HTTP",
+        "author": "Ott",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0140",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/NGI.2011.5985871",
+        "article-title": "The vehicular delay-tolerant networks (VDTN) Euro-NF joint research project",
+        "author": "Rodrigues",
+        "year": "2011"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "1166",
+        "DOI": "10.1109/SURV.2011.081611.00102",
+        "article-title": "From delay-tolerant networks to vehicular delay-tolerant networks",
+        "volume": "14",
+        "author": "Rogerio",
+        "year": "2012",
+        "journal-title": "IEEE Commun. Surv. Tutorials"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0150",
+        "series-title": "Bundle Protocol Specification",
+        "author": "Scott",
+        "year": "2008"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0155",
+        "article-title": "Haggle: a networking architecture designed around mobile users",
+        "author": "Scott",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0160",
+        "author": "Symington"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0165",
+        "series-title": "Bundle Security Protocol Specification",
+        "author": "Symington",
+        "year": "2011"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0170",
+        "first-page": "331",
+        "article-title": "A survey of delay- and disruption-tolerant networking applications",
+        "volume": "5",
+        "author": "Voyiatzis",
+        "year": "2012",
+        "journal-title": "J. Internet Eng."
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0175",
+        "first-page": "29",
+        "article-title": "Panel: the state of DTN evaluation",
+        "author": "Walker",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0180",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/AERO.2009.4839384",
+        "article-title": "A bundle of problems",
+        "author": "Wood",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0185",
+        "author": "Wood"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0190",
+        "first-page": "168",
+        "article-title": "Saratoga: a delay-tolerant networking convergence layer with efficient link utilization",
+        "author": "Wood",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0195",
+        "article-title": "Sharing the dream: the consensual hallucination offered by the bundle protocol",
+        "author": "Wood",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0200",
+        "article-title": "Moving data in DTNs with HTTP and MIME: making use of HTTP for delay- and disruption-tolerant networks with convergence layers",
+        "author": "Wood",
+        "year": "2009"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/B978-0-08-102793-6.00008-4_bb0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "387",
+        "DOI": "10.1109/SURV.2012.032612.00004",
+        "article-title": "A survey of social-based routing in delay tolerant networks: positive and negative social effects",
+        "volume": "15",
+        "author": "Zhu",
+        "year": "2013",
+        "journal-title": "IEEE Commun. Surv. Tutorials"
+      }
+    ],
+    "container-title": [
+      "Advances in Delay-Tolerant Networks (DTNs)"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:B9780081027936000084?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:B9780081027936000084?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          11
+        ]
+      ],
+      "date-time": "2021-02-11T02:48:59Z",
+      "timestamp": 1613011739000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/B9780081027936000084"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "ISBN": [
+      "9780081027936"
+    ],
+    "references-count": 40,
+    "URL": "https://doi.org/10.1016/b978-0-08-102793-6.00008-4",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    }
+  }
+}

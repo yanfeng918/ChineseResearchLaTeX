@@ -1,0 +1,25 @@
+{
+  "paperId": "059add04b8eceb0e3f03e63b8ba89e921614c4e8",
+  "title": "A Demonstrative Study on the Potential of Store-Carry-Forward-Based Contents Delivery by a Beverage Supplier’s Logistics Network",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/WiMOB.2019.8923146?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/WiMOB.2019.8923146, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2109942128",
+      "name": "Yoshito Watanabe"
+    },
+    {
+      "authorId": null,
+      "name": "Wei Liu"
+    },
+    {
+      "authorId": "1733285",
+      "name": "Y. Shoji"
+    }
+  ],
+  "abstract": "A store-carry-forward (SCF) technique is one of the data delivery methods by the physical movement of nodes in an opportunistic network and has the potential to transfer large contents rapidly without the help of cellular networks or cloud servers. This paper investigates the effective throughput performance of an SCF technique for large contents delivery using the field connection logs in our prototype platform developed by a beverage supplier’s logistics network, in which beverage delivery trucks unconsciously behave as data mules to transfer the data from a source road side unit (RSU) to a destination RSU. The effective throughput is computed based on the vehicle’s travel time from one RSU to the other RSU and the connection duration time between a truck and an RSU. Performance for large contents delivery based on an SCF technique is statistically analyzed with totally 5 trucks and more than 50 vending machines as RSUs in the prototype platform. It is revealed that an SCF technique superiors to other solutions such as conventional cellular networks for transferring large contents in terms of throughput performance."
+}

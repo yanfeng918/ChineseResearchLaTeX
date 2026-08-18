@@ -1,0 +1,334 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2025-08-21T18:14:49Z",
+      "timestamp": 1755800089998,
+      "version": "3.44.0"
+    },
+    "reference-count": 26,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2025-07-01T00:00:00Z",
+          "timestamp": 1751328000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2025-07-01T00:00:00Z",
+          "timestamp": 1751328000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/metroind4.0iot66048.2025.11122097",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2025-08-19T18:08:07Z",
+      "timestamp": 1755626887000
+    },
+    "page": "422-427",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Cyclic Intermittent Connectivity of Industrial Sensors Impacting Information Freshness"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Lucrezia",
+        "family": "Rossi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Padova,Padua,Italy,35131"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Leonardo",
+        "family": "Badia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Padova,Padua,Italy,35131"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2023.3332507"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2919320"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2024.3475422"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3464429"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.adhoc.2024.103583"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11235-018-0475-8"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MedComNet58619.2023.10168850"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2024.3480528"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ett.3754"
+      },
+      {
+        "key": "ref10",
+        "first-page": "3234",
+        "article-title": "Age of information for powersaving devices with DRX mechanism",
+        "volume-title": "Proc. IEEE ICC",
+        "author": "Lin"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s18082611"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SAHCN.2011.5984917"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INDIN41052.2019.8972306"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LWC.2021.3105304"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2023.3298716"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OJCOMS.2024.3458802"
+      },
+      {
+        "article-title": "Stochastic analysis of delay statistics for intermittently connected vehicular networks",
+        "volume-title": "Proc. European Wirel. Conf.",
+        "author": "Badia",
+        "key": "ref17"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2021.3065072"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMNETSAT59769.2023.10420788"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.23919/WiOPT47501.2019.9144090"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2022.3189399"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ASMS/SPSC64465.2025.10946056"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CC.2018.8424604"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ALLERTON.2017.8262777"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2007.313397"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/info12100420"
+      }
+    ],
+    "event": {
+      "name": "2025 IEEE International Workshop on Metrology for Industry 4.0 &amp; IoT (MetroInd4.0 &amp; IoT)",
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            1
+          ]
+        ]
+      },
+      "location": "Castelldefels, Spain",
+      "end": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2025 IEEE International Workshop on Metrology for Industry 4.0 &amp;amp; IoT (MetroInd4.0 &amp;amp; IoT)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/11122018/11121940/11122097.pdf?arnumber=11122097",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          20
+        ]
+      ],
+      "date-time": "2025-08-20T07:08:25Z",
+      "timestamp": 1755673705000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11122097/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          1
+        ]
+      ]
+    },
+    "references-count": 26,
+    "URL": "https://doi.org/10.1109/metroind4.0iot66048.2025.11122097",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          1
+        ]
+      ]
+    }
+  }
+}

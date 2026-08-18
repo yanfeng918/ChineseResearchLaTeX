@@ -1,0 +1,41 @@
+{
+  "paperId": "45d261b873d614816f00b52db7e9d8ae433a7b3e",
+  "title": "RFID smart tag for traceability and cold chain monitoring of foods: Demonstration in an intercontinental fresh fish logistic chain",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.JFOODENG.2009.02.004?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.JFOODENG.2009.02.004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "27811492",
+      "name": "E. Abad"
+    },
+    {
+      "authorId": "20593035",
+      "name": "F. Palacio"
+    },
+    {
+      "authorId": "28900106",
+      "name": "M. Nuin"
+    },
+    {
+      "authorId": "83919335",
+      "name": "A. G. Zárate"
+    },
+    {
+      "authorId": "8636766",
+      "name": "A. Juarros"
+    },
+    {
+      "authorId": "81716411",
+      "name": "Jose M. Gomez"
+    },
+    {
+      "authorId": "144356182",
+      "name": "S. Marco"
+    }
+  ],
+  "abstract": null
+}

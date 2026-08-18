@@ -1,0 +1,1093 @@
+{
+  "id": "https://openalex.org/W2161592797",
+  "doi": "https://doi.org/10.1109/ccnc.2009.4784847",
+  "title": "Using Energy-Efficient Wireless Sensor Network for Cold Chain Monitoring",
+  "display_name": "Using Energy-Efficient Wireless Sensor Network for Cold Chain Monitoring",
+  "publication_year": 2009,
+  "publication_date": "2009-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2161592797",
+    "doi": "https://doi.org/10.1109/ccnc.2009.4784847",
+    "mag": "2161592797"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/ccnc.2009.4784847",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/ccnc.2009.4784847",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2009 6th IEEE Consumer Communications and Networking Conference",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5083246261",
+        "display_name": "Rahim Kacimi",
+        "orcid": "https://orcid.org/0000-0002-2784-4305"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I134560555",
+          "display_name": "Université Toulouse III - Paul Sabatier",
+          "ror": "https://ror.org/02v6kpv12",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I134560555"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I205747304",
+          "display_name": "Institut National Polytechnique de Toulouse",
+          "ror": "https://ror.org/033p9g875",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210119061",
+          "display_name": "Institut de Recherche en Informatique de Toulouse",
+          "ror": "https://ror.org/01rx4qw44",
+          "country_code": "FR",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1294671590",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4210152422",
+            "https://openalex.org/I4405258862",
+            "https://openalex.org/I4405259414"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4387153255",
+          "display_name": "École Nationale Supérieure d'Électrotechnique, d'Électronique, d'Informatique, d'Hydraulique et des Télécommunications",
+          "ror": "https://ror.org/05wfw4946",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4387153255"
+          ]
+        }
+      ],
+      "countries": [
+        "FR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Rahim Kacimi",
+      "raw_affiliation_strings": [
+        "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+        "Temps Réel dans les Réseaux et Systèmes",
+        "Université Toulouse III - Paul Sabatier"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+          "institution_ids": [
+            "https://openalex.org/I134560555",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4387153255"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Temps Réel dans les Réseaux et Systèmes",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Université Toulouse III - Paul Sabatier",
+          "institution_ids": [
+            "https://openalex.org/I134560555"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5076080292",
+        "display_name": "Riadh Dhaou",
+        "orcid": "https://orcid.org/0000-0003-3233-362X"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I134560555",
+          "display_name": "Université Toulouse III - Paul Sabatier",
+          "ror": "https://ror.org/02v6kpv12",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I134560555"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I205747304",
+          "display_name": "Institut National Polytechnique de Toulouse",
+          "ror": "https://ror.org/033p9g875",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210119061",
+          "display_name": "Institut de Recherche en Informatique de Toulouse",
+          "ror": "https://ror.org/01rx4qw44",
+          "country_code": "FR",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1294671590",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4210152422",
+            "https://openalex.org/I4405258862",
+            "https://openalex.org/I4405259414"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4387153255",
+          "display_name": "École Nationale Supérieure d'Électrotechnique, d'Électronique, d'Informatique, d'Hydraulique et des Télécommunications",
+          "ror": "https://ror.org/05wfw4946",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4387153255"
+          ]
+        }
+      ],
+      "countries": [
+        "FR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Riadh Dhaou",
+      "raw_affiliation_strings": [
+        "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+        "Institut National Polytechnique (Toulouse)",
+        "Réseaux, Mobiles, Embarqués, Sans fil, Satellites"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+          "institution_ids": [
+            "https://openalex.org/I134560555",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4387153255"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institut National Polytechnique (Toulouse)",
+          "institution_ids": [
+            "https://openalex.org/I205747304"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Réseaux, Mobiles, Embarqués, Sans fil, Satellites",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5110033892",
+        "display_name": "André-Luc Beylot",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I134560555",
+          "display_name": "Université Toulouse III - Paul Sabatier",
+          "ror": "https://ror.org/02v6kpv12",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I134560555"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I205747304",
+          "display_name": "Institut National Polytechnique de Toulouse",
+          "ror": "https://ror.org/033p9g875",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210119061",
+          "display_name": "Institut de Recherche en Informatique de Toulouse",
+          "ror": "https://ror.org/01rx4qw44",
+          "country_code": "FR",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I1294671590",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4210152422",
+            "https://openalex.org/I4405258862",
+            "https://openalex.org/I4405259414"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4387153255",
+          "display_name": "École Nationale Supérieure d'Électrotechnique, d'Électronique, d'Informatique, d'Hydraulique et des Télécommunications",
+          "ror": "https://ror.org/05wfw4946",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4387153255"
+          ]
+        }
+      ],
+      "countries": [
+        "FR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Andre-Luc Beylot",
+      "raw_affiliation_strings": [
+        "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+        "Institut National Polytechnique (Toulouse)",
+        "Réseaux, Mobiles, Embarqués, Sans fil, Satellites"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "IRIT-ENSEEIHT Laboratory, University of Toulouse III, Toulouse, France",
+          "institution_ids": [
+            "https://openalex.org/I134560555",
+            "https://openalex.org/I205747304",
+            "https://openalex.org/I4210119061",
+            "https://openalex.org/I4387153255"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institut National Polytechnique (Toulouse)",
+          "institution_ids": [
+            "https://openalex.org/I205747304"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Réseaux, Mobiles, Embarqués, Sans fil, Satellites",
+          "institution_ids": []
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 4,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.0812,
+  "has_fulltext": false,
+  "cited_by_count": 11,
+  "citation_normalized_percentile": {
+    "value": 0.77444004,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 97
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "1",
+    "last_page": "5"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10080",
+    "display_name": "Energy Efficient Wireless Sensor Networks",
+    "score": 0.9995999932289124,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10080",
+      "display_name": "Energy Efficient Wireless Sensor Networks",
+      "score": 0.9995999932289124,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12222",
+      "display_name": "IoT-based Smart Home Systems",
+      "score": 0.9980000257492065,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12697",
+      "display_name": "Water Quality Monitoring Technologies",
+      "score": 0.9932000041007996,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2312",
+        "display_name": "Water Science and Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/23",
+        "display_name": "Environmental Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.818615734577179
+    },
+    {
+      "id": "https://openalex.org/keywords/cold-chain",
+      "display_name": "Cold chain",
+      "score": 0.7951493859291077
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6630820035934448
+    },
+    {
+      "id": "https://openalex.org/keywords/context",
+      "display_name": "Context (archaeology)",
+      "score": 0.623380184173584
+    },
+    {
+      "id": "https://openalex.org/keywords/traceability",
+      "display_name": "Traceability",
+      "score": 0.6087012887001038
+    },
+    {
+      "id": "https://openalex.org/keywords/base-station",
+      "display_name": "Base station",
+      "score": 0.5901837348937988
+    },
+    {
+      "id": "https://openalex.org/keywords/schedule",
+      "display_name": "Schedule",
+      "score": 0.5723703503608704
+    },
+    {
+      "id": "https://openalex.org/keywords/key-distribution-in-wireless-sensor-networks",
+      "display_name": "Key distribution in wireless sensor networks",
+      "score": 0.4654776453971863
+    },
+    {
+      "id": "https://openalex.org/keywords/energy-consumption",
+      "display_name": "Energy consumption",
+      "score": 0.43809300661087036
+    },
+    {
+      "id": "https://openalex.org/keywords/work",
+      "display_name": "Work (physics)",
+      "score": 0.421790212392807
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.3984096646308899
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.3983088731765747
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-network",
+      "display_name": "Wireless network",
+      "score": 0.39387261867523193
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.3375568091869354
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.20393985509872437
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.19171971082687378
+    },
+    {
+      "id": "https://openalex.org/keywords/electrical-engineering",
+      "display_name": "Electrical engineering",
+      "score": 0.07952037453651428
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.818615734577179
+    },
+    {
+      "id": "https://openalex.org/C2780114722",
+      "wikidata": "https://www.wikidata.org/wiki/Q592197",
+      "display_name": "Cold chain",
+      "level": 2,
+      "score": 0.7951493859291077
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6630820035934448
+    },
+    {
+      "id": "https://openalex.org/C2779343474",
+      "wikidata": "https://www.wikidata.org/wiki/Q3109175",
+      "display_name": "Context (archaeology)",
+      "level": 2,
+      "score": 0.623380184173584
+    },
+    {
+      "id": "https://openalex.org/C153876917",
+      "wikidata": "https://www.wikidata.org/wiki/Q899704",
+      "display_name": "Traceability",
+      "level": 2,
+      "score": 0.6087012887001038
+    },
+    {
+      "id": "https://openalex.org/C68649174",
+      "wikidata": "https://www.wikidata.org/wiki/Q1379116",
+      "display_name": "Base station",
+      "level": 2,
+      "score": 0.5901837348937988
+    },
+    {
+      "id": "https://openalex.org/C68387754",
+      "wikidata": "https://www.wikidata.org/wiki/Q7271585",
+      "display_name": "Schedule",
+      "level": 2,
+      "score": 0.5723703503608704
+    },
+    {
+      "id": "https://openalex.org/C41971633",
+      "wikidata": "https://www.wikidata.org/wiki/Q6398155",
+      "display_name": "Key distribution in wireless sensor networks",
+      "level": 4,
+      "score": 0.4654776453971863
+    },
+    {
+      "id": "https://openalex.org/C2780165032",
+      "wikidata": "https://www.wikidata.org/wiki/Q16869822",
+      "display_name": "Energy consumption",
+      "level": 2,
+      "score": 0.43809300661087036
+    },
+    {
+      "id": "https://openalex.org/C18762648",
+      "wikidata": "https://www.wikidata.org/wiki/Q42213",
+      "display_name": "Work (physics)",
+      "level": 2,
+      "score": 0.421790212392807
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.3984096646308899
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.3983088731765747
+    },
+    {
+      "id": "https://openalex.org/C108037233",
+      "wikidata": "https://www.wikidata.org/wiki/Q11375",
+      "display_name": "Wireless network",
+      "level": 3,
+      "score": 0.39387261867523193
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.3375568091869354
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.20393985509872437
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.19171971082687378
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.07952037453651428
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C115903868",
+      "wikidata": "https://www.wikidata.org/wiki/Q80993",
+      "display_name": "Software engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1109/ccnc.2009.4784847",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/ccnc.2009.4784847",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2009 6th IEEE Consumer Communications and Networking Conference",
+      "raw_type": "proceedings-article"
+    },
+    {
+      "id": "pmh:oai:HAL:hal-03970406v1",
+      "is_oa": false,
+      "landing_page_url": "https://hal.science/hal-03970406",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+          "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "https://ieeexplore.ieee.org/document/4784847",
+      "raw_type": "info:eu-repo/semantics/conferenceObject"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/7",
+      "score": 0.6499999761581421,
+      "display_name": "Affordable and clean energy"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 12,
+  "referenced_works": [
+    "https://openalex.org/W18850081",
+    "https://openalex.org/W1564659653",
+    "https://openalex.org/W1965703925",
+    "https://openalex.org/W2004296431",
+    "https://openalex.org/W2103278235",
+    "https://openalex.org/W2103902040",
+    "https://openalex.org/W2116675627",
+    "https://openalex.org/W2117520883",
+    "https://openalex.org/W2135505702",
+    "https://openalex.org/W2137814624",
+    "https://openalex.org/W2151714048",
+    "https://openalex.org/W2165677640"
+  ],
+  "related_works": [
+    "https://openalex.org/W4312138033",
+    "https://openalex.org/W2235546141",
+    "https://openalex.org/W2789825376",
+    "https://openalex.org/W4249545720",
+    "https://openalex.org/W3126954492",
+    "https://openalex.org/W2378709054",
+    "https://openalex.org/W4380301954",
+    "https://openalex.org/W2370001102",
+    "https://openalex.org/W4318294007",
+    "https://openalex.org/W2540218377"
+  ],
+  "abstract_inverted_index": {
+    "Temperature": [
+      0
+    ],
+    "control": [
+      1
+    ],
+    "is": [
+      2,
+      61,
+      108
+    ],
+    "a": [
+      3,
+      80
+    ],
+    "major": [
+      4
+    ],
+    "concern": [
+      5
+    ],
+    "in": [
+      6,
+      29,
+      71,
+      110,
+      126
+    ],
+    "cold": [
+      7,
+      56
+    ],
+    "chain": [
+      8,
+      36,
+      57
+    ],
+    "monitoring": [
+      9
+    ],
+    "and": [
+      10,
+      66,
+      78,
+      119
+    ],
+    "traceability": [
+      11
+    ],
+    "services": [
+      12
+    ],
+    "for": [
+      13,
+      55
+    ],
+    "the": [
+      14,
+      24,
+      32,
+      35,
+      38,
+      75,
+      82,
+      87,
+      111
+    ],
+    "largest": [
+      15
+    ],
+    "cause": [
+      16
+    ],
+    "of": [
+      17,
+      26,
+      34,
+      113
+    ],
+    "food": [
+      18
+    ],
+    "poisoning.": [
+      19
+    ],
+    "Considerable": [
+      20
+    ],
+    "work": [
+      21
+    ],
+    "has": [
+      22
+    ],
+    "examined": [
+      23
+    ],
+    "use": [
+      25
+    ],
+    "wireless": [
+      27,
+      50
+    ],
+    "solutions": [
+      28
+    ],
+    "warehouses.": [
+      30
+    ],
+    "However,": [
+      31
+    ],
+    "maintaining": [
+      33
+    ],
+    "during": [
+      37
+    ],
+    "transportation": [
+      39
+    ],
+    "phase": [
+      40
+    ],
+    "remains": [
+      41
+    ],
+    "very": [
+      42
+    ],
+    "crucial.": [
+      43
+    ],
+    "In": [
+      44
+    ],
+    "this": [
+      45,
+      91,
+      127
+    ],
+    "paper,": [
+      46
+    ],
+    "we": [
+      47
+    ],
+    "present": [
+      48
+    ],
+    "new": [
+      49
+    ],
+    "sensor": [
+      51,
+      76
+    ],
+    "network": [
+      52,
+      84
+    ],
+    "(WSN)": [
+      53
+    ],
+    "solution": [
+      54,
+      60,
+      92
+    ],
+    "monitoring.": [
+      58
+    ],
+    "This": [
+      59
+    ],
+    "based": [
+      62
+    ],
+    "on": [
+      63
+    ],
+    "self-organizing": [
+      64
+    ],
+    "protocols": [
+      65,
+      115
+    ],
+    "aims": [
+      67
+    ],
+    "at": [
+      68
+    ],
+    "saving": [
+      69
+    ],
+    "energy": [
+      70
+    ],
+    "order": [
+      72
+    ],
+    "to": [
+      73
+    ],
+    "increase": [
+      74
+    ],
+    "lifetime": [
+      77
+    ],
+    "as": [
+      79
+    ],
+    "result": [
+      81
+    ],
+    "global": [
+      83
+    ],
+    "longevity": [
+      85
+    ],
+    "within": [
+      86
+    ],
+    "given": [
+      88
+    ],
+    "context.": [
+      89
+    ],
+    "Furthermore,": [
+      90
+    ],
+    "does": [
+      93
+    ],
+    "not": [
+      94
+    ],
+    "need": [
+      95
+    ],
+    "any": [
+      96
+    ],
+    "base": [
+      97
+    ],
+    "station": [
+      98
+    ],
+    "or": [
+      99
+    ],
+    "central": [
+      100
+    ],
+    "equipment.": [
+      101
+    ],
+    "To": [
+      102
+    ],
+    "save": [
+      103
+    ],
+    "energy,": [
+      104
+    ],
+    "periodical": [
+      105
+    ],
+    "active/sleep": [
+      106
+    ],
+    "schedule": [
+      107
+    ],
+    "adopted": [
+      109
+    ],
+    "design": [
+      112
+    ],
+    "our": [
+      114
+    ],
+    "which": [
+      116
+    ],
+    "were": [
+      117
+    ],
+    "dimensioned": [
+      118
+    ],
+    "validated": [
+      120
+    ],
+    "by": [
+      121
+    ],
+    "an": [
+      122
+    ],
+    "analytical": [
+      123
+    ],
+    "model": [
+      124
+    ],
+    "described": [
+      125
+    ],
+    "paper.": [
+      128
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

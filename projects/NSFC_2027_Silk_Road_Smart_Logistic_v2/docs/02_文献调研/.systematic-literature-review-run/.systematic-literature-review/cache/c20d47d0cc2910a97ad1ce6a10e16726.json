@@ -1,0 +1,1089 @@
+{
+  "id": "https://openalex.org/W4249614478",
+  "doi": "https://doi.org/10.1109/ipsn.2012.6920956",
+  "title": "Low power, low delay: Opportunistic routing meets duty cycling",
+  "display_name": "Low power, low delay: Opportunistic routing meets duty cycling",
+  "publication_year": 2012,
+  "publication_date": "2012-04-01",
+  "ids": {
+    "openalex": "https://openalex.org/W4249614478",
+    "doi": "https://doi.org/10.1109/ipsn.2012.6920956"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/ipsn.2012.6920956",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/ipsn.2012.6920956",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2012 ACM/IEEE 11th International Conference on Information Processing in Sensor Networks (IPSN)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:ri:diva-23947",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5018279980",
+        "display_name": "Olaf Landsiedel",
+        "orcid": "https://orcid.org/0000-0001-6432-300X"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I66862912",
+          "display_name": "Chalmers University of Technology",
+          "ror": "https://ror.org/040wg7k59",
+          "country_code": "SE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I66862912"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I86987016",
+          "display_name": "KTH Royal Institute of Technology",
+          "ror": "https://ror.org/026vcq606",
+          "country_code": "SE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I86987016"
+          ]
+        }
+      ],
+      "countries": [
+        "SE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Olaf Landsiedel",
+      "raw_affiliation_strings": [
+        "ACCESS Linnaeus Center, KTH Royal Institute of Technology, Sweden",
+        "Chalmers University of Technology, Sweden"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "ACCESS Linnaeus Center, KTH Royal Institute of Technology, Sweden",
+          "institution_ids": [
+            "https://openalex.org/I86987016"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Chalmers University of Technology, Sweden",
+          "institution_ids": [
+            "https://openalex.org/I66862912"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5038126548",
+        "display_name": "Euhanna Ghadimi",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I86987016",
+          "display_name": "KTH Royal Institute of Technology",
+          "ror": "https://ror.org/026vcq606",
+          "country_code": "SE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I86987016"
+          ]
+        }
+      ],
+      "countries": [
+        "SE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Euhanna Ghadimi",
+      "raw_affiliation_strings": [
+        "KTH Royal Institute of Technology, Sweden"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "KTH Royal Institute of Technology, Sweden",
+          "institution_ids": [
+            "https://openalex.org/I86987016"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5027188782",
+        "display_name": "Simon Duquennoy",
+        "orcid": "https://orcid.org/0000-0003-1051-7292"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I2800780207",
+          "display_name": "Swedish Institute",
+          "ror": "https://ror.org/022w3f533",
+          "country_code": "SE",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I2800780207"
+          ]
+        }
+      ],
+      "countries": [
+        "SE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Simon Duquennoy",
+      "raw_affiliation_strings": [
+        "Swedish Institute of Computer Science (SICS), Sweden"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Swedish Institute of Computer Science (SICS), Sweden",
+          "institution_ids": [
+            "https://openalex.org/I2800780207"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5024256519",
+        "display_name": "Mikael Johansson",
+        "orcid": "https://orcid.org/0000-0002-2237-2580"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I86987016",
+          "display_name": "KTH Royal Institute of Technology",
+          "ror": "https://ror.org/026vcq606",
+          "country_code": "SE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I86987016"
+          ]
+        }
+      ],
+      "countries": [
+        "SE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Mikael Johansson",
+      "raw_affiliation_strings": [
+        "KTH Royal Institute of Technology, Sweden"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "KTH Royal Institute of Technology, Sweden",
+          "institution_ids": [
+            "https://openalex.org/I86987016"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.9823,
+  "has_fulltext": false,
+  "cited_by_count": 24,
+  "citation_normalized_percentile": {
+    "value": 0.88109411,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 98
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "185",
+    "last_page": "196"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10246",
+    "display_name": "Mobile Ad Hoc Networks",
+    "score": 1.0,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10246",
+      "display_name": "Mobile Ad Hoc Networks",
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10080",
+      "display_name": "Energy Efficient Wireless Sensor Networks",
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11896",
+      "display_name": "Opportunistic and Delay-Tolerant Networks",
+      "score": 0.9998000264167786,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.8150163888931274
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.762261152267456
+    },
+    {
+      "id": "https://openalex.org/keywords/network-packet",
+      "display_name": "Network packet",
+      "score": 0.6168819665908813
+    },
+    {
+      "id": "https://openalex.org/keywords/routing-protocol",
+      "display_name": "Routing protocol",
+      "score": 0.5982287526130676
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-routing-protocol",
+      "display_name": "Wireless Routing Protocol",
+      "score": 0.5306785702705383
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.521736741065979
+    },
+    {
+      "id": "https://openalex.org/keywords/dynamic-source-routing",
+      "display_name": "Dynamic Source Routing",
+      "score": 0.4920589327812195
+    },
+    {
+      "id": "https://openalex.org/keywords/link-state-routing-protocol",
+      "display_name": "Link-state routing protocol",
+      "score": 0.4679158329963684
+    },
+    {
+      "id": "https://openalex.org/keywords/resilience",
+      "display_name": "Resilience (materials science)",
+      "score": 0.45904889702796936
+    },
+    {
+      "id": "https://openalex.org/keywords/zone-routing-protocol",
+      "display_name": "Zone Routing Protocol",
+      "score": 0.43999454379081726
+    },
+    {
+      "id": "https://openalex.org/keywords/energy-consumption",
+      "display_name": "Energy consumption",
+      "score": 0.4214818477630615
+    },
+    {
+      "id": "https://openalex.org/keywords/static-routing",
+      "display_name": "Static routing",
+      "score": 0.4173702895641327
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.3208971619606018
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.13070613145828247
+    },
+    {
+      "id": "https://openalex.org/keywords/electrical-engineering",
+      "display_name": "Electrical engineering",
+      "score": 0.06849148869514465
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.8150163888931274
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.762261152267456
+    },
+    {
+      "id": "https://openalex.org/C158379750",
+      "wikidata": "https://www.wikidata.org/wiki/Q214111",
+      "display_name": "Network packet",
+      "level": 2,
+      "score": 0.6168819665908813
+    },
+    {
+      "id": "https://openalex.org/C104954878",
+      "wikidata": "https://www.wikidata.org/wiki/Q1648707",
+      "display_name": "Routing protocol",
+      "level": 3,
+      "score": 0.5982287526130676
+    },
+    {
+      "id": "https://openalex.org/C47318570",
+      "wikidata": "https://www.wikidata.org/wiki/Q8026863",
+      "display_name": "Wireless Routing Protocol",
+      "level": 4,
+      "score": 0.5306785702705383
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.521736741065979
+    },
+    {
+      "id": "https://openalex.org/C9659607",
+      "wikidata": "https://www.wikidata.org/wiki/Q1268903",
+      "display_name": "Dynamic Source Routing",
+      "level": 4,
+      "score": 0.4920589327812195
+    },
+    {
+      "id": "https://openalex.org/C89305328",
+      "wikidata": "https://www.wikidata.org/wiki/Q1755411",
+      "display_name": "Link-state routing protocol",
+      "level": 4,
+      "score": 0.4679158329963684
+    },
+    {
+      "id": "https://openalex.org/C2779585090",
+      "wikidata": "https://www.wikidata.org/wiki/Q3457762",
+      "display_name": "Resilience (materials science)",
+      "level": 2,
+      "score": 0.45904889702796936
+    },
+    {
+      "id": "https://openalex.org/C189884158",
+      "wikidata": "https://www.wikidata.org/wiki/Q8073926",
+      "display_name": "Zone Routing Protocol",
+      "level": 5,
+      "score": 0.43999454379081726
+    },
+    {
+      "id": "https://openalex.org/C2780165032",
+      "wikidata": "https://www.wikidata.org/wiki/Q16869822",
+      "display_name": "Energy consumption",
+      "level": 2,
+      "score": 0.4214818477630615
+    },
+    {
+      "id": "https://openalex.org/C204948658",
+      "wikidata": "https://www.wikidata.org/wiki/Q1119410",
+      "display_name": "Static routing",
+      "level": 4,
+      "score": 0.4173702895641327
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.3208971619606018
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.13070613145828247
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.06849148869514465
+    },
+    {
+      "id": "https://openalex.org/C97355855",
+      "wikidata": "https://www.wikidata.org/wiki/Q11473",
+      "display_name": "Thermodynamics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.1109/ipsn.2012.6920956",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/ipsn.2012.6920956",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2012 ACM/IEEE 11th International Conference on Information Processing in Sensor Networks (IPSN)",
+      "raw_type": "proceedings-article"
+    },
+    {
+      "id": "pmh:oai:DiVA.org:ri-23947",
+      "is_oa": true,
+      "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:ri:diva-23947",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306401559",
+        "display_name": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I86987016",
+        "host_organization_name": "KTH Royal Institute of Technology",
+        "host_organization_lineage": [
+          "https://openalex.org/I86987016"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "other-oa",
+      "license_id": "https://openalex.org/licenses/other-oa",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "info:eu-repo/semantics/conferenceObject"
+    },
+    {
+      "id": "pmh:oai:publications.lib.chalmers.se:158250",
+      "is_oa": false,
+      "landing_page_url": "http://publications.lib.chalmers.se/publication/158250-low-power-low-delay-opportunistic-routing-meets-duty-cycling",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4377196470",
+        "display_name": "Chalmers Publication Library (Chalmers University of Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I66862912",
+        "host_organization_name": "Chalmers University of Technology",
+        "host_organization_lineage": [
+          "https://openalex.org/I66862912"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "",
+      "raw_type": "Text.Article.Conference.PeerReviewed"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:DiVA.org:ri-23947",
+    "is_oa": true,
+    "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:ri:diva-23947",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306401559",
+      "display_name": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": "https://openalex.org/I86987016",
+      "host_organization_name": "KTH Royal Institute of Technology",
+      "host_organization_lineage": [
+        "https://openalex.org/I86987016"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "other-oa",
+    "license_id": "https://openalex.org/licenses/other-oa",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "info:eu-repo/semantics/conferenceObject"
+  },
+  "sustainable_development_goals": [
+    {
+      "display_name": "Affordable and clean energy",
+      "id": "https://metadata.un.org/sdg/7",
+      "score": 0.9200000166893005
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 38,
+  "referenced_works": [
+    "https://openalex.org/W585590",
+    "https://openalex.org/W1465761504",
+    "https://openalex.org/W1582880497",
+    "https://openalex.org/W1815391874",
+    "https://openalex.org/W1974877378",
+    "https://openalex.org/W1999620668",
+    "https://openalex.org/W2023136410",
+    "https://openalex.org/W2025979890",
+    "https://openalex.org/W2038379800",
+    "https://openalex.org/W2047282676",
+    "https://openalex.org/W2077606673",
+    "https://openalex.org/W2084942212",
+    "https://openalex.org/W2086110500",
+    "https://openalex.org/W2095428073",
+    "https://openalex.org/W2098578349",
+    "https://openalex.org/W2101070258",
+    "https://openalex.org/W2102372792",
+    "https://openalex.org/W2102482985",
+    "https://openalex.org/W2122505293",
+    "https://openalex.org/W2127350146",
+    "https://openalex.org/W2130078449",
+    "https://openalex.org/W2132004615",
+    "https://openalex.org/W2141151352",
+    "https://openalex.org/W2144017041",
+    "https://openalex.org/W2150039965",
+    "https://openalex.org/W2152431187",
+    "https://openalex.org/W2160343401",
+    "https://openalex.org/W2160983584",
+    "https://openalex.org/W2163592558",
+    "https://openalex.org/W2171953266",
+    "https://openalex.org/W2185898988",
+    "https://openalex.org/W4235904988",
+    "https://openalex.org/W4236269498",
+    "https://openalex.org/W6628633353",
+    "https://openalex.org/W6634980267",
+    "https://openalex.org/W6638588532",
+    "https://openalex.org/W6669586595",
+    "https://openalex.org/W6679463372"
+  ],
+  "related_works": [
+    "https://openalex.org/W2113081707",
+    "https://openalex.org/W2884568852",
+    "https://openalex.org/W2172271487",
+    "https://openalex.org/W2151422282",
+    "https://openalex.org/W998025572",
+    "https://openalex.org/W2122558727",
+    "https://openalex.org/W100628529",
+    "https://openalex.org/W2139978795",
+    "https://openalex.org/W2127462695",
+    "https://openalex.org/W2187408018"
+  ],
+  "abstract_inverted_index": {
+    "Traditionally,": [
+      0
+    ],
+    "routing": [
+      1,
+      12,
+      66
+    ],
+    "in": [
+      2
+    ],
+    "wireless": [
+      3,
+      69,
+      116
+    ],
+    "sensor": [
+      4,
+      70
+    ],
+    "networks": [
+      5
+    ],
+    "consists": [
+      6
+    ],
+    "of": [
+      7,
+      81,
+      152
+    ],
+    "two": [
+      8
+    ],
+    "steps:": [
+      9
+    ],
+    "First,": [
+      10
+    ],
+    "the": [
+      11,
+      20,
+      25,
+      33,
+      51,
+      87,
+      96,
+      150,
+      153
+    ],
+    "protocol": [
+      13,
+      22
+    ],
+    "selects": [
+      14
+    ],
+    "a": [
+      15,
+      63,
+      73
+    ],
+    "next": [
+      16,
+      52
+    ],
+    "hop,": [
+      17
+    ],
+    "and,": [
+      18
+    ],
+    "second,": [
+      19
+    ],
+    "MAC": [
+      21
+    ],
+    "waits": [
+      23
+    ],
+    "for": [
+      24,
+      50,
+      68
+    ],
+    "intended": [
+      26
+    ],
+    "destination": [
+      27
+    ],
+    "to": [
+      28,
+      40,
+      42,
+      54,
+      79,
+      115,
+      136,
+      145,
+      149
+    ],
+    "wake": [
+      29,
+      55
+    ],
+    "up": [
+      30,
+      91
+    ],
+    "and": [
+      31,
+      45,
+      84,
+      93,
+      101,
+      141
+    ],
+    "receive": [
+      32
+    ],
+    "data.": [
+      34
+    ],
+    "This": [
+      35,
+      98
+    ],
+    "design": [
+      36
+    ],
+    "makes": [
+      37
+    ],
+    "it": [
+      38
+    ],
+    "difficult": [
+      39
+    ],
+    "adapt": [
+      41
+    ],
+    "link": [
+      43,
+      117
+    ],
+    "dynamics": [
+      44,
+      118
+    ],
+    "introduces": [
+      46
+    ],
+    "delays": [
+      47,
+      142
+    ],
+    "while": [
+      48
+    ],
+    "waiting": [
+      49
+    ],
+    "hop": [
+      53
+    ],
+    "up.": [
+      56
+    ],
+    "In": [
+      57,
+      72
+    ],
+    "this": [
+      58,
+      112
+    ],
+    "paper": [
+      59
+    ],
+    "we": [
+      60
+    ],
+    "introduce": [
+      61
+    ],
+    "ORW,": [
+      62
+    ],
+    "practical": [
+      64
+    ],
+    "opportunistic": [
+      65
+    ],
+    "scheme": [
+      67
+    ],
+    "networks.": [
+      71
+    ],
+    "duty-cycled": [
+      74
+    ],
+    "setting,": [
+      75
+    ],
+    "packets": [
+      76
+    ],
+    "are": [
+      77
+    ],
+    "addressed": [
+      78
+    ],
+    "sets": [
+      80
+    ],
+    "potential": [
+      82,
+      109
+    ],
+    "receivers": [
+      83
+    ],
+    "forwarded": [
+      85
+    ],
+    "by": [
+      86,
+      104,
+      119,
+      133,
+      143
+    ],
+    "neighbor": [
+      88
+    ],
+    "that": [
+      89,
+      126
+    ],
+    "wakes": [
+      90
+    ],
+    "first": [
+      92
+    ],
+    "successfully": [
+      94
+    ],
+    "receives": [
+      95
+    ],
+    "packet.": [
+      97
+    ],
+    "reduces": [
+      99,
+      128
+    ],
+    "delay": [
+      100
+    ],
+    "energy": [
+      102
+    ],
+    "consumption": [
+      103
+    ],
+    "utilizing": [
+      105
+    ],
+    "all": [
+      106
+    ],
+    "neighbors": [
+      107
+    ],
+    "as": [
+      108
+    ],
+    "forwarders.": [
+      110
+    ],
+    "Furthermore,": [
+      111
+    ],
+    "increases": [
+      113
+    ],
+    "resilience": [
+      114
+    ],
+    "exploiting": [
+      120
+    ],
+    "spatial": [
+      121
+    ],
+    "diversity.": [
+      122
+    ],
+    "Our": [
+      123
+    ],
+    "results": [
+      124
+    ],
+    "show": [
+      125
+    ],
+    "ORW": [
+      127
+    ],
+    "radio": [
+      129
+    ],
+    "duty-cycles": [
+      130
+    ],
+    "on": [
+      131,
+      138
+    ],
+    "average": [
+      132
+    ],
+    "50%": [
+      134
+    ],
+    "(up": [
+      135
+    ],
+    "90%": [
+      137,
+      146
+    ],
+    "individual": [
+      139
+    ],
+    "nodes)": [
+      140
+    ],
+    "30%": [
+      144
+    ],
+    "when": [
+      147
+    ],
+    "compared": [
+      148
+    ],
+    "state": [
+      151
+    ],
+    "art.": [
+      154
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2025,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-08-13T07:04:57.449891",
+  "created_date": "2025-10-10T00:00:00"
+}

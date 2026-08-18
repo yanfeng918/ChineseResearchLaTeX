@@ -1,0 +1,893 @@
+{
+  "id": "https://openalex.org/W2074011700",
+  "doi": "https://doi.org/10.5307/jbe.2008.33.1.045",
+  "title": "Vibration Characteristics of Packaged Freight and Packaged Apples by Random Vibration Input",
+  "display_name": "Vibration Characteristics of Packaged Freight and Packaged Apples by Random Vibration Input",
+  "publication_year": 2008,
+  "publication_date": "2008-02-25",
+  "ids": {
+    "openalex": "https://openalex.org/W2074011700",
+    "doi": "https://doi.org/10.5307/jbe.2008.33.1.045",
+    "mag": "2074011700"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.5307/jbe.2008.33.1.045",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.5307/jbe.2008.33.1.045",
+    "pdf_url": "http://koreascience.or.kr:80/article/JAKO200818259605854.pdf",
+    "source": {
+      "id": "https://openalex.org/S4210231410",
+      "display_name": "Journal of Biosystems Engineering",
+      "issn_l": "1738-1266",
+      "issn": [
+        "1738-1266",
+        "2234-1862"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310319900",
+      "host_organization_name": "Springer Science+Business Media",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310319900",
+        "https://openalex.org/P4310319965"
+      ],
+      "host_organization_lineage_names": [
+        "Springer Science+Business Media",
+        "Springer Nature"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Biosystems Engineering",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "bronze",
+    "oa_url": "http://koreascience.or.kr:80/article/JAKO200818259605854.pdf",
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5017279562",
+        "display_name": "Ghi-Seok Kim",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Ghi-Seok Kim",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5036025028",
+        "display_name": "Hyun-Mo Jung",
+        "orcid": "https://orcid.org/0000-0002-7310-3081"
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Hyun-Mo Jung",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5079444013",
+        "display_name": "Ki-Bok Kim",
+        "orcid": "https://orcid.org/0000-0002-5327-9565"
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Ki-Bok Kim",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5015299678",
+        "display_name": "Man Soo Kim",
+        "orcid": "https://orcid.org/0000-0002-1374-9964"
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Man-Soo Kim",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 0,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": {
+    "value": 3090,
+    "currency": "USD",
+    "value_usd": 3090
+  },
+  "apc_paid": null,
+  "fwci": 0.0,
+  "has_fulltext": false,
+  "cited_by_count": 3,
+  "citation_normalized_percentile": {
+    "value": 0.15302931,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 90,
+    "max": 94
+  },
+  "biblio": {
+    "volume": "33",
+    "issue": "1",
+    "first_page": "45",
+    "last_page": "50"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10473",
+    "display_name": "Postharvest Quality and Shelf Life Management",
+    "score": 0.9715999960899353,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1110",
+      "display_name": "Plant Science"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/11",
+      "display_name": "Agricultural and Biological Sciences"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10473",
+      "display_name": "Postharvest Quality and Shelf Life Management",
+      "score": 0.9715999960899353,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1110",
+        "display_name": "Plant Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10488",
+      "display_name": "Nanocomposite Films for Food Packaging",
+      "score": 0.9401000142097473,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2502",
+        "display_name": "Biomaterials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11546",
+      "display_name": "Plant Physiology and Cultivation Studies",
+      "score": 0.9138000011444092,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1110",
+        "display_name": "Plant Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/vibration",
+      "display_name": "Vibration",
+      "score": 0.7860147356987
+    },
+    {
+      "id": "https://openalex.org/keywords/random-vibration",
+      "display_name": "Random vibration",
+      "score": 0.7057431936264038
+    },
+    {
+      "id": "https://openalex.org/keywords/shock",
+      "display_name": "Shock (circulatory)",
+      "score": 0.49484819173812866
+    },
+    {
+      "id": "https://openalex.org/keywords/resonance",
+      "display_name": "Resonance (particle physics)",
+      "score": 0.4940202832221985
+    },
+    {
+      "id": "https://openalex.org/keywords/acoustics",
+      "display_name": "Acoustics",
+      "score": 0.47478362917900085
+    },
+    {
+      "id": "https://openalex.org/keywords/range",
+      "display_name": "Range (aeronautics)",
+      "score": 0.4130535125732422
+    },
+    {
+      "id": "https://openalex.org/keywords/materials-science",
+      "display_name": "Materials science",
+      "score": 0.3665425777435303
+    },
+    {
+      "id": "https://openalex.org/keywords/environmental-science",
+      "display_name": "Environmental science",
+      "score": 0.35860854387283325
+    },
+    {
+      "id": "https://openalex.org/keywords/automotive-engineering",
+      "display_name": "Automotive engineering",
+      "score": 0.3443741202354431
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.2584139108657837
+    },
+    {
+      "id": "https://openalex.org/keywords/composite-material",
+      "display_name": "Composite material",
+      "score": 0.20691722631454468
+    },
+    {
+      "id": "https://openalex.org/keywords/physics",
+      "display_name": "Physics",
+      "score": 0.18340283632278442
+    },
+    {
+      "id": "https://openalex.org/keywords/medicine",
+      "display_name": "Medicine",
+      "score": 0.07513442635536194
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C198394728",
+      "wikidata": "https://www.wikidata.org/wiki/Q3695508",
+      "display_name": "Vibration",
+      "level": 2,
+      "score": 0.7860147356987
+    },
+    {
+      "id": "https://openalex.org/C130076159",
+      "wikidata": "https://www.wikidata.org/wiki/Q7291997",
+      "display_name": "Random vibration",
+      "level": 3,
+      "score": 0.7057431936264038
+    },
+    {
+      "id": "https://openalex.org/C2781300812",
+      "wikidata": "https://www.wikidata.org/wiki/Q178061",
+      "display_name": "Shock (circulatory)",
+      "level": 2,
+      "score": 0.49484819173812866
+    },
+    {
+      "id": "https://openalex.org/C139210041",
+      "wikidata": "https://www.wikidata.org/wiki/Q2145840",
+      "display_name": "Resonance (particle physics)",
+      "level": 2,
+      "score": 0.4940202832221985
+    },
+    {
+      "id": "https://openalex.org/C24890656",
+      "wikidata": "https://www.wikidata.org/wiki/Q82811",
+      "display_name": "Acoustics",
+      "level": 1,
+      "score": 0.47478362917900085
+    },
+    {
+      "id": "https://openalex.org/C204323151",
+      "wikidata": "https://www.wikidata.org/wiki/Q905424",
+      "display_name": "Range (aeronautics)",
+      "level": 2,
+      "score": 0.4130535125732422
+    },
+    {
+      "id": "https://openalex.org/C192562407",
+      "wikidata": "https://www.wikidata.org/wiki/Q228736",
+      "display_name": "Materials science",
+      "level": 0,
+      "score": 0.3665425777435303
+    },
+    {
+      "id": "https://openalex.org/C39432304",
+      "wikidata": "https://www.wikidata.org/wiki/Q188847",
+      "display_name": "Environmental science",
+      "level": 0,
+      "score": 0.35860854387283325
+    },
+    {
+      "id": "https://openalex.org/C171146098",
+      "wikidata": "https://www.wikidata.org/wiki/Q124192",
+      "display_name": "Automotive engineering",
+      "level": 1,
+      "score": 0.3443741202354431
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.2584139108657837
+    },
+    {
+      "id": "https://openalex.org/C159985019",
+      "wikidata": "https://www.wikidata.org/wiki/Q181790",
+      "display_name": "Composite material",
+      "level": 1,
+      "score": 0.20691722631454468
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.18340283632278442
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 0.07513442635536194
+    },
+    {
+      "id": "https://openalex.org/C126322002",
+      "wikidata": "https://www.wikidata.org/wiki/Q11180",
+      "display_name": "Internal medicine",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C109214941",
+      "wikidata": "https://www.wikidata.org/wiki/Q18334",
+      "display_name": "Particle physics",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.5307/jbe.2008.33.1.045",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.5307/jbe.2008.33.1.045",
+      "pdf_url": "http://koreascience.or.kr:80/article/JAKO200818259605854.pdf",
+      "source": {
+        "id": "https://openalex.org/S4210231410",
+        "display_name": "Journal of Biosystems Engineering",
+        "issn_l": "1738-1266",
+        "issn": [
+          "1738-1266",
+          "2234-1862"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310319900",
+        "host_organization_name": "Springer Science+Business Media",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310319900",
+          "https://openalex.org/P4310319965"
+        ],
+        "host_organization_lineage_names": [
+          "Springer Science+Business Media",
+          "Springer Nature"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Journal of Biosystems Engineering",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.5307/jbe.2008.33.1.045",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.5307/jbe.2008.33.1.045",
+    "pdf_url": "http://koreascience.or.kr:80/article/JAKO200818259605854.pdf",
+    "source": {
+      "id": "https://openalex.org/S4210231410",
+      "display_name": "Journal of Biosystems Engineering",
+      "issn_l": "1738-1266",
+      "issn": [
+        "1738-1266",
+        "2234-1862"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310319900",
+      "host_organization_name": "Springer Science+Business Media",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310319900",
+        "https://openalex.org/P4310319965"
+      ],
+      "host_organization_lineage_names": [
+        "Springer Science+Business Media",
+        "Springer Nature"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Biosystems Engineering",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": true,
+    "grobid_xml": false
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W2074011700.pdf"
+  },
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W2899084033",
+    "https://openalex.org/W4238624118",
+    "https://openalex.org/W2104841456",
+    "https://openalex.org/W3210515806",
+    "https://openalex.org/W2056648019",
+    "https://openalex.org/W2354785892",
+    "https://openalex.org/W2369354710",
+    "https://openalex.org/W2092861014",
+    "https://openalex.org/W2766613356",
+    "https://openalex.org/W2374647154"
+  ],
+  "abstract_inverted_index": {
+    "Shock": [
+      0
+    ],
+    "and": [
+      1,
+      27,
+      41,
+      65,
+      123,
+      146,
+      152,
+      156,
+      171
+    ],
+    "vibration": [
+      2,
+      18,
+      34,
+      95,
+      108,
+      118
+    ],
+    "inputs": [
+      3
+    ],
+    "are": [
+      4,
+      50
+    ],
+    "transmitted": [
+      5
+    ],
+    "from": [
+      6,
+      84
+    ],
+    "the": [
+      7,
+      11,
+      15,
+      28,
+      42,
+      48,
+      59,
+      63,
+      69,
+      74,
+      82,
+      94,
+      98,
+      106,
+      114,
+      120,
+      129,
+      135,
+      139,
+      153,
+      159,
+      164
+    ],
+    "transporting": [
+      8
+    ],
+    "vehicle": [
+      9
+    ],
+    "through": [
+      10
+    ],
+    "packaging": [
+      12,
+      70,
+      76,
+      102
+    ],
+    "box": [
+      13
+    ],
+    "to": [
+      14,
+      72,
+      92,
+      143,
+      148,
+      168,
+      173
+    ],
+    "fruit.": [
+      16
+    ],
+    "The": [
+      17,
+      31,
+      56
+    ],
+    "causes": [
+      19
+    ],
+    "sustained": [
+      20
+    ],
+    "bouncing": [
+      21
+    ],
+    "of": [
+      22,
+      58,
+      62,
+      81,
+      97,
+      116,
+      128,
+      132,
+      141,
+      158,
+      166
+    ],
+    "fruits": [
+      23,
+      49,
+      64,
+      83
+    ],
+    "against": [
+      24
+    ],
+    "each": [
+      25
+    ],
+    "other": [
+      26
+    ],
+    "container": [
+      29
+    ],
+    "wall.": [
+      30
+    ],
+    "steady": [
+      32
+    ],
+    "state": [
+      33
+    ],
+    "input": [
+      35
+    ],
+    "may": [
+      36,
+      67
+    ],
+    "cause": [
+      37
+    ],
+    "serous": [
+      38
+    ],
+    "fruit": [
+      39
+    ],
+    "injury,": [
+      40
+    ],
+    "damage": [
+      43
+    ],
+    "is": [
+      44
+    ],
+    "particularly": [
+      45
+    ],
+    "severe": [
+      46
+    ],
+    "if": [
+      47
+    ],
+    "bounced": [
+      51
+    ],
+    "at": [
+      52
+    ],
+    "its": [
+      53
+    ],
+    "resonance": [
+      54,
+      60,
+      121,
+      154
+    ],
+    "frequency.": [
+      55
+    ],
+    "determination": [
+      57
+    ],
+    "frequencies": [
+      61
+    ],
+    "vegetables": [
+      66
+    ],
+    "help": [
+      68
+    ],
+    "designer": [
+      71
+    ],
+    "design": [
+      73,
+      103
+    ],
+    "proper": [
+      75
+    ],
+    "system": [
+      77
+    ],
+    "providing": [
+      78
+    ],
+    "adequate": [
+      79
+    ],
+    "protection": [
+      80
+    ],
+    "external": [
+      85
+    ],
+    "impact": [
+      86
+    ],
+    "or": [
+      87
+    ],
+    "shock.": [
+      88
+    ],
+    "In": [
+      89
+    ],
+    "this": [
+      90
+    ],
+    "study,": [
+      91
+    ],
+    "analyze": [
+      93
+    ],
+    "properties": [
+      96
+    ],
+    "apples": [
+      99,
+      133,
+      161
+    ],
+    "for": [
+      100
+    ],
+    "optimum": [
+      101
+    ],
+    "during": [
+      104
+    ],
+    "transportation,": [
+      105
+    ],
+    "random": [
+      107,
+      117
+    ],
+    "tests": [
+      109
+    ],
+    "were": [
+      110,
+      137,
+      162
+    ],
+    "carried": [
+      111
+    ],
+    "out.": [
+      112
+    ],
+    "From": [
+      113
+    ],
+    "results": [
+      115
+    ],
+    "test,": [
+      119
+    ],
+    "frequency": [
+      122,
+      155
+    ],
+    "power": [
+      124
+    ],
+    "spectral": [
+      125
+    ],
+    "density": [
+      126
+    ],
+    "(PSD)": [
+      127
+    ],
+    "packaged": [
+      130,
+      160
+    ],
+    "freight": [
+      131
+    ],
+    "in": [
+      134,
+      138,
+      163
+    ],
+    "test": [
+      136
+    ],
+    "range": [
+      140,
+      165
+    ],
+    "82": [
+      142
+    ],
+    "97": [
+      144
+    ],
+    "Hz": [
+      145,
+      170
+    ],
+    "0.0013": [
+      147
+    ],
+    "0.0021": [
+      149
+    ],
+    "<TEX>$G^2/Hz$</TEX>": [
+      150,
+      175
+    ],
+    "respectively": [
+      151
+    ],
+    "PSD": [
+      157
+    ],
+    "13": [
+      167
+    ],
+    "71": [
+      169
+    ],
+    "0.0143": [
+      172
+    ],
+    "0.0923": [
+      174
+    ],
+    "respectively.": [
+      176
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-23T08:03:31.855105",
+  "created_date": "2025-10-10T00:00:00"
+}

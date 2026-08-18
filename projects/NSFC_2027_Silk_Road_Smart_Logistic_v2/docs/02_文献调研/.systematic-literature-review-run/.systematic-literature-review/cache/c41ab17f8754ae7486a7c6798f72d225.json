@@ -1,0 +1,21 @@
+{
+  "paperId": "e07100ad7bc165f4b758f78dce1d3b6bb38dcfa3",
+  "title": "Forward Correction and Fountain Codes in Delay-Tolerant Networks",
+  "openAccessPdf": {
+    "url": "http://arxiv.org/pdf/0808.3747",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/0808.3747, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "143665732",
+      "name": "E. Altman"
+    },
+    {
+      "authorId": "144822891",
+      "name": "F. Pellegrini"
+    }
+  ],
+  "abstract": "Delay-tolerant ad hoc networks leverage the mobility of relay nodes to compensate for lack of permanent connectivity and thus enable communication between nodes that are out of range of each other. To decrease delivery delay, the information to be delivered is replicated in the network. Our objective in this paper is to study a class of replication mechanisms that include coding in order to improve the probability of successful delivery within a given time limit. We propose an analytical approach that allows to quantify tradeoffs between resources and performance measures (energy and delay). We study the effect of coding on the performance of the network while optimizing parameters that govern routing. Our results, based on fluid approximations, are compared to simulations that validate the model."
+}

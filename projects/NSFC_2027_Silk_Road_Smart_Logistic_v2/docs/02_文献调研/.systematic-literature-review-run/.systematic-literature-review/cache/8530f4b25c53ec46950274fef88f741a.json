@@ -1,0 +1,401 @@
+{
+  "id": "https://openalex.org/W240222604",
+  "doi": "https://doi.org/10.1007/978-3-642-32054-5_130",
+  "title": "Applying RFID and GPS Tracker for Ensuring Cargo Transportation Security",
+  "display_name": "Applying RFID and GPS Tracker for Ensuring Cargo Transportation Security",
+  "publication_year": 2013,
+  "publication_date": "2013-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W240222604",
+    "doi": "https://doi.org/10.1007/978-3-642-32054-5_130",
+    "mag": "240222604"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1007/978-3-642-32054-5_130",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1007/978-3-642-32054-5_130",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "LISS 2012",
+    "raw_type": "book-chapter"
+  },
+  "type": "book-chapter",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5042279808",
+        "display_name": "Ruijian Zhang",
+        "orcid": "https://orcid.org/0000-0002-2682-8020"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I219193219",
+          "display_name": "Purdue University West Lafayette",
+          "ror": "https://ror.org/02dqehb95",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I219193219"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Ruijian Zhang",
+      "raw_affiliation_strings": [
+        "Purdue University, West Lafayette, IN, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Purdue University, West Lafayette, IN, USA",
+          "institution_ids": [
+            "https://openalex.org/I219193219"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5042279808"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I219193219"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.0,
+  "has_fulltext": false,
+  "cited_by_count": 0,
+  "citation_normalized_percentile": {
+    "value": 0.08398024,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": null,
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "931",
+    "last_page": "936"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10986",
+    "display_name": "RFID technology advancements",
+    "score": 0.9732999801635742,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2214",
+      "display_name": "Media Technology"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10986",
+      "display_name": "RFID technology advancements",
+      "score": 0.9732999801635742,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2214",
+        "display_name": "Media Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T14304",
+      "display_name": "Transport Systems and Technology",
+      "score": 0.9549999833106995,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T13295",
+      "display_name": "Safety Systems Engineering in Autonomy",
+      "score": 0.9092000126838684,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2213",
+        "display_name": "Safety, Risk, Reliability and Quality"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/global-positioning-system",
+      "display_name": "Global Positioning System",
+      "score": 0.8115898370742798
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.613894522190094
+    },
+    {
+      "id": "https://openalex.org/keywords/dangerous-goods",
+      "display_name": "Dangerous goods",
+      "score": 0.5989015698432922
+    },
+    {
+      "id": "https://openalex.org/keywords/track",
+      "display_name": "Track (disk drive)",
+      "score": 0.5167816877365112
+    },
+    {
+      "id": "https://openalex.org/keywords/the-internet",
+      "display_name": "The Internet",
+      "score": 0.4621070325374603
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.39107978343963623
+    },
+    {
+      "id": "https://openalex.org/keywords/database",
+      "display_name": "Database",
+      "score": 0.34357982873916626
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.3235785961151123
+    },
+    {
+      "id": "https://openalex.org/keywords/transport-engineering",
+      "display_name": "Transport engineering",
+      "score": 0.22987574338912964
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.15504023432731628
+    },
+    {
+      "id": "https://openalex.org/keywords/world-wide-web",
+      "display_name": "World Wide Web",
+      "score": 0.13907530903816223
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.08466079831123352
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C60229501",
+      "wikidata": "https://www.wikidata.org/wiki/Q18822",
+      "display_name": "Global Positioning System",
+      "level": 2,
+      "score": 0.8115898370742798
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.613894522190094
+    },
+    {
+      "id": "https://openalex.org/C2776371148",
+      "wikidata": "https://www.wikidata.org/wiki/Q757138",
+      "display_name": "Dangerous goods",
+      "level": 2,
+      "score": 0.5989015698432922
+    },
+    {
+      "id": "https://openalex.org/C89992363",
+      "wikidata": "https://www.wikidata.org/wiki/Q5961558",
+      "display_name": "Track (disk drive)",
+      "level": 2,
+      "score": 0.5167816877365112
+    },
+    {
+      "id": "https://openalex.org/C110875604",
+      "wikidata": "https://www.wikidata.org/wiki/Q75",
+      "display_name": "The Internet",
+      "level": 2,
+      "score": 0.4621070325374603
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.39107978343963623
+    },
+    {
+      "id": "https://openalex.org/C77088390",
+      "wikidata": "https://www.wikidata.org/wiki/Q8513",
+      "display_name": "Database",
+      "level": 1,
+      "score": 0.34357982873916626
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.3235785961151123
+    },
+    {
+      "id": "https://openalex.org/C22212356",
+      "wikidata": "https://www.wikidata.org/wiki/Q775325",
+      "display_name": "Transport engineering",
+      "level": 1,
+      "score": 0.22987574338912964
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.15504023432731628
+    },
+    {
+      "id": "https://openalex.org/C136764020",
+      "wikidata": "https://www.wikidata.org/wiki/Q466",
+      "display_name": "World Wide Web",
+      "level": 1,
+      "score": 0.13907530903816223
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.08466079831123352
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1007/978-3-642-32054-5_130",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1007/978-3-642-32054-5_130",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "LISS 2012",
+      "raw_type": "book-chapter"
+    },
+    {
+      "id": "pmh:oai:RePEc:spr:sprchp:978-3-642-32054-5_130",
+      "is_oa": false,
+      "landing_page_url": null,
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306401271",
+        "display_name": "RePEc: Research Papers in Economics",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I77793887",
+        "host_organization_name": "Federal Reserve Bank of St. Louis",
+        "host_organization_lineage": [
+          "https://openalex.org/I77793887"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "book"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 2,
+  "referenced_works": [
+    "https://openalex.org/W1651298197",
+    "https://openalex.org/W3122134657"
+  ],
+  "related_works": [
+    "https://openalex.org/W2735406411",
+    "https://openalex.org/W3162200841",
+    "https://openalex.org/W2915266342",
+    "https://openalex.org/W2586280620",
+    "https://openalex.org/W2993481718",
+    "https://openalex.org/W2805505483",
+    "https://openalex.org/W2350767540",
+    "https://openalex.org/W2999947692",
+    "https://openalex.org/W2384744344",
+    "https://openalex.org/W4233932308"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [],
+  "updated_date": "2026-08-04T08:18:43.703281",
+  "created_date": "2025-10-10T00:00:00"
+}

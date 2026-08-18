@@ -1,0 +1,268 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          29
+        ]
+      ],
+      "date-time": "2024-10-29T12:14:43Z",
+      "timestamp": 1730204083099,
+      "version": "3.28.0"
+    },
+    "reference-count": 16,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/ccwc.2017.7868422",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          2
+        ]
+      ],
+      "date-time": "2017-03-02T16:39:33Z",
+      "timestamp": 1488472773000
+    },
+    "page": "1-5",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Low-bandwidth transmission algorithm for reliable wireless communication"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Evangelos A.",
+        "family": "Yfantis",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Masanori",
+        "family": "Nakakuni",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ernesto Zamora",
+        "family": "Ramos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "article-title": "Network Security Essentials: Applications and Standards",
+        "author": "stallings",
+        "year": "2000",
+        "journal-title": "ser William Stallings books on computerand data communications technology"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1386853.1378356"
+      },
+      {
+        "journal-title": "Energy Aware Radio and neTwork tecHnologies (E A R T H )",
+        "year": "2011",
+        "key": "ref12"
+      },
+      {
+        "journal-title": "Towards Real Energyefficient Network Design (T R E N D )",
+        "year": "0",
+        "key": "ref13"
+      },
+      {
+        "journal-title": "Cognitive Radio and Cooperative strategies in multi-standard wireless devices (C2Power)",
+        "year": "2012",
+        "key": "ref14"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2016.2558146"
+      },
+      {
+        "journal-title": "Aeronautical telecommunication network using the internet protocol suite",
+        "year": "0",
+        "key": "ref16"
+      },
+      {
+        "key": "ref4",
+        "first-page": "163",
+        "article-title": "Dynamic redundancy bit allocation and packet size to increase throughput in noisy real time video wireless transmission",
+        "volume": "86",
+        "author": "fantis",
+        "year": "2013",
+        "journal-title": "Journal of Combinatorial Mathematics and Combinatorial Computing"
+      },
+      {
+        "key": "ref3",
+        "first-page": "43",
+        "article-title": "A novel digital modulation method for digital wireless communication",
+        "volume": "94",
+        "author": "yfantis",
+        "year": "2015",
+        "journal-title": "Journal of Combinatorial Mathematics and Combinatorial Computing"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5.726791"
+      },
+      {
+        "key": "ref5",
+        "first-page": "312",
+        "article-title": "An algorithm for key-frame determination in digitalvideo",
+        "author": "fantis",
+        "year": "2001",
+        "journal-title": "Proceeding of the 16th ACM conf in Applied Computing"
+      },
+      {
+        "key": "ref8",
+        "article-title": "Using spectral decomposition to detect dirty solar panels and minimize impact on energy production",
+        "volume": "3",
+        "author": "zamora ramos",
+        "year": "2015",
+        "journal-title": "Advances in Image and Video Processing"
+      },
+      {
+        "key": "ref7",
+        "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+        "author": "ioffe",
+        "year": "0",
+        "journal-title": "arXiv 1502 03167v3 [cs LG] 2015"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.1986.4767851"
+      },
+      {
+        "key": "ref1",
+        "article-title": "Key Note - Digital Image and Digital Video. The Present and the Future",
+        "author": "yfantis",
+        "year": "1999",
+        "journal-title": "International Conference on Industrial and Information Systems IEEE"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIT.1976.1055638"
+      }
+    ],
+    "event": {
+      "name": "2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC)",
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            9
+          ]
+        ]
+      },
+      "location": "Las Vegas, NV, USA",
+      "end": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            11
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/7864800/7868337/07868422.pdf?arnumber=7868422",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          18
+        ]
+      ],
+      "date-time": "2017-03-18T06:49:07Z",
+      "timestamp": 1489819747000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7868422/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "references-count": 16,
+    "URL": "https://doi.org/10.1109/ccwc.2017.7868422",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    }
+  }
+}

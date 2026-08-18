@@ -1,0 +1,784 @@
+{
+  "id": "https://openalex.org/W2594121104",
+  "doi": "https://doi.org/10.1109/ccwc.2017.7868422",
+  "title": "Low-bandwidth transmission algorithm for reliable wireless communication",
+  "display_name": "Low-bandwidth transmission algorithm for reliable wireless communication",
+  "publication_year": 2017,
+  "publication_date": "2017-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2594121104",
+    "doi": "https://doi.org/10.1109/ccwc.2017.7868422",
+    "mag": "2594121104"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/ccwc.2017.7868422",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/ccwc.2017.7868422",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5074949923",
+        "display_name": "Evangelos A. Yfantis",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I133999245",
+          "display_name": "University of Nevada, Las Vegas",
+          "ror": "https://ror.org/0406gha72",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I133999245"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Evangelos A. Yfantis",
+      "raw_affiliation_strings": [
+        "Computer Science Department, University of Nevada Las Vegas, Las Vegas, Nevada, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer Science Department, University of Nevada Las Vegas, Las Vegas, Nevada, USA",
+          "institution_ids": [
+            "https://openalex.org/I133999245"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5003661168",
+        "display_name": "Masanori Nakakuni",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I31784960",
+          "display_name": "Fukuoka University",
+          "ror": "https://ror.org/04nt8b154",
+          "country_code": "JP",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I31784960"
+          ]
+        }
+      ],
+      "countries": [
+        "JP"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Masanori Nakakuni",
+      "raw_affiliation_strings": [
+        "Fukuoka Daigaku, Fukuoka, Fukuoka, JP"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Fukuoka Daigaku, Fukuoka, Fukuoka, JP",
+          "institution_ids": [
+            "https://openalex.org/I31784960"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5010549123",
+        "display_name": "Ernesto Ramos",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I133999245",
+          "display_name": "University of Nevada, Las Vegas",
+          "ror": "https://ror.org/0406gha72",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I133999245"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Ernesto Zamora Ramos",
+      "raw_affiliation_strings": [
+        "Computer Science Department, University of Nevada Las Vegas, Las Vegas, Nevada, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer Science Department, University of Nevada Las Vegas, Las Vegas, Nevada, USA",
+          "institution_ids": [
+            "https://openalex.org/I133999245"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 2,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.124,
+  "has_fulltext": false,
+  "cited_by_count": 5,
+  "citation_normalized_percentile": {
+    "value": 0.75024896,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 90,
+    "max": 97
+  },
+  "biblio": {
+    "volume": "86",
+    "issue": null,
+    "first_page": "1",
+    "last_page": "5"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10080",
+    "display_name": "Energy Efficient Wireless Sensor Networks",
+    "score": 0.9955999851226807,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10080",
+      "display_name": "Energy Efficient Wireless Sensor Networks",
+      "score": 0.9955999851226807,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11269",
+      "display_name": "Algorithms and Data Compression",
+      "score": 0.9948999881744385,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10273",
+      "display_name": "IoT and Edge/Fog Computing",
+      "score": 0.9923999905586243,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.810203492641449
+    },
+    {
+      "id": "https://openalex.org/keywords/datagram",
+      "display_name": "Datagram",
+      "score": 0.6258825659751892
+    },
+    {
+      "id": "https://openalex.org/keywords/user-datagram-protocol",
+      "display_name": "User Datagram Protocol",
+      "score": 0.614949643611908
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.5645990371704102
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.5566603541374207
+    },
+    {
+      "id": "https://openalex.org/keywords/transmission-control-protocol",
+      "display_name": "Transmission Control Protocol",
+      "score": 0.5272342562675476
+    },
+    {
+      "id": "https://openalex.org/keywords/algorithm",
+      "display_name": "Algorithm",
+      "score": 0.518913984298706
+    },
+    {
+      "id": "https://openalex.org/keywords/network-packet",
+      "display_name": "Network packet",
+      "score": 0.5182837843894958
+    },
+    {
+      "id": "https://openalex.org/keywords/bandwidth",
+      "display_name": "Bandwidth (computing)",
+      "score": 0.5126067996025085
+    },
+    {
+      "id": "https://openalex.org/keywords/latency",
+      "display_name": "Latency (audio)",
+      "score": 0.47069764137268066
+    },
+    {
+      "id": "https://openalex.org/keywords/redundancy",
+      "display_name": "Redundancy (engineering)",
+      "score": 0.4682563245296478
+    },
+    {
+      "id": "https://openalex.org/keywords/transmission",
+      "display_name": "Transmission (telecommunications)",
+      "score": 0.4500449597835541
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-protocol",
+      "display_name": "Internet Protocol",
+      "score": 0.17766427993774414
+    },
+    {
+      "id": "https://openalex.org/keywords/the-internet",
+      "display_name": "The Internet",
+      "score": 0.16570118069648743
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.1529885232448578
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.810203492641449
+    },
+    {
+      "id": "https://openalex.org/C152298349",
+      "wikidata": "https://www.wikidata.org/wiki/Q726868",
+      "display_name": "Datagram",
+      "level": 3,
+      "score": 0.6258825659751892
+    },
+    {
+      "id": "https://openalex.org/C20636137",
+      "wikidata": "https://www.wikidata.org/wiki/Q11163",
+      "display_name": "User Datagram Protocol",
+      "level": 4,
+      "score": 0.614949643611908
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.5645990371704102
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.5566603541374207
+    },
+    {
+      "id": "https://openalex.org/C33588617",
+      "wikidata": "https://www.wikidata.org/wiki/Q8803",
+      "display_name": "Transmission Control Protocol",
+      "level": 3,
+      "score": 0.5272342562675476
+    },
+    {
+      "id": "https://openalex.org/C11413529",
+      "wikidata": "https://www.wikidata.org/wiki/Q8366",
+      "display_name": "Algorithm",
+      "level": 1,
+      "score": 0.518913984298706
+    },
+    {
+      "id": "https://openalex.org/C158379750",
+      "wikidata": "https://www.wikidata.org/wiki/Q214111",
+      "display_name": "Network packet",
+      "level": 2,
+      "score": 0.5182837843894958
+    },
+    {
+      "id": "https://openalex.org/C2776257435",
+      "wikidata": "https://www.wikidata.org/wiki/Q1576430",
+      "display_name": "Bandwidth (computing)",
+      "level": 2,
+      "score": 0.5126067996025085
+    },
+    {
+      "id": "https://openalex.org/C82876162",
+      "wikidata": "https://www.wikidata.org/wiki/Q17096504",
+      "display_name": "Latency (audio)",
+      "level": 2,
+      "score": 0.47069764137268066
+    },
+    {
+      "id": "https://openalex.org/C152124472",
+      "wikidata": "https://www.wikidata.org/wiki/Q1204361",
+      "display_name": "Redundancy (engineering)",
+      "level": 2,
+      "score": 0.4682563245296478
+    },
+    {
+      "id": "https://openalex.org/C761482",
+      "wikidata": "https://www.wikidata.org/wiki/Q118093",
+      "display_name": "Transmission (telecommunications)",
+      "level": 2,
+      "score": 0.4500449597835541
+    },
+    {
+      "id": "https://openalex.org/C35341882",
+      "wikidata": "https://www.wikidata.org/wiki/Q8795",
+      "display_name": "Internet Protocol",
+      "level": 3,
+      "score": 0.17766427993774414
+    },
+    {
+      "id": "https://openalex.org/C110875604",
+      "wikidata": "https://www.wikidata.org/wiki/Q75",
+      "display_name": "The Internet",
+      "level": 2,
+      "score": 0.16570118069648743
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.1529885232448578
+    },
+    {
+      "id": "https://openalex.org/C136764020",
+      "wikidata": "https://www.wikidata.org/wiki/Q466",
+      "display_name": "World Wide Web",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/ccwc.2017.7868422",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/ccwc.2017.7868422",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC)",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 13,
+  "referenced_works": [
+    "https://openalex.org/W427326325",
+    "https://openalex.org/W1785492489",
+    "https://openalex.org/W1836465849",
+    "https://openalex.org/W2010595049",
+    "https://openalex.org/W2112796928",
+    "https://openalex.org/W2145023731",
+    "https://openalex.org/W2156186849",
+    "https://openalex.org/W2222996311",
+    "https://openalex.org/W2949117887",
+    "https://openalex.org/W2962714198",
+    "https://openalex.org/W4236096928",
+    "https://openalex.org/W6638317425",
+    "https://openalex.org/W6638667902"
+  ],
+  "related_works": [
+    "https://openalex.org/W1744268783",
+    "https://openalex.org/W2558509227",
+    "https://openalex.org/W1935831680",
+    "https://openalex.org/W2144281574",
+    "https://openalex.org/W2389914602",
+    "https://openalex.org/W2277383114",
+    "https://openalex.org/W2092541666",
+    "https://openalex.org/W3081435530",
+    "https://openalex.org/W4295123894",
+    "https://openalex.org/W2220655586"
+  ],
+  "abstract_inverted_index": {
+    "In": [
+      0,
+      72
+    ],
+    "this": [
+      1
+    ],
+    "research,": [
+      2
+    ],
+    "we": [
+      3,
+      74
+    ],
+    "present": [
+      4
+    ],
+    "a": [
+      5,
+      43,
+      52,
+      60,
+      76
+    ],
+    "dynamic": [
+      6
+    ],
+    "transmission": [
+      7
+    ],
+    "algorithm": [
+      8,
+      95
+    ],
+    "that": [
+      9,
+      25
+    ],
+    "aims": [
+      10
+    ],
+    "to": [
+      11,
+      54,
+      86
+    ],
+    "provide": [
+      12,
+      59,
+      75
+    ],
+    "reliable,": [
+      13
+    ],
+    "low": [
+      14
+    ],
+    "bandwidth": [
+      15
+    ],
+    "communication": [
+      16,
+      102
+    ],
+    "via": [
+      17
+    ],
+    "User": [
+      18
+    ],
+    "Datagram": [
+      19
+    ],
+    "Protocol": [
+      20,
+      35
+    ],
+    "(UDP)": [
+      21
+    ],
+    "in": [
+      22,
+      84,
+      98
+    ],
+    "such": [
+      23,
+      106
+    ],
+    "way": [
+      24
+    ],
+    "it": [
+      26
+    ],
+    "is": [
+      27,
+      42,
+      96
+    ],
+    "lighter": [
+      28
+    ],
+    "and": [
+      29,
+      48
+    ],
+    "less": [
+      30
+    ],
+    "rigid": [
+      31
+    ],
+    "than": [
+      32
+    ],
+    "Transmission": [
+      33
+    ],
+    "Control": [
+      34
+    ],
+    "(TCP),": [
+      36
+    ],
+    "whereby,": [
+      37
+    ],
+    "the": [
+      38,
+      46,
+      49,
+      67,
+      82,
+      88
+    ],
+    "degree": [
+      39
+    ],
+    "of": [
+      40,
+      45,
+      63,
+      69,
+      90
+    ],
+    "redundancy": [
+      41
+    ],
+    "function": [
+      44
+    ],
+    "noise": [
+      47
+    ],
+    "probability": [
+      50,
+      89
+    ],
+    "for": [
+      51
+    ],
+    "bit": [
+      53
+    ],
+    "be": [
+      55
+    ],
+    "corrupted.": [
+      56
+    ],
+    "We": [
+      57
+    ],
+    "also": [
+      58
+    ],
+    "variable": [
+      61,
+      77
+    ],
+    "number": [
+      62
+    ],
+    "protections": [
+      64
+    ],
+    "depending": [
+      65,
+      80
+    ],
+    "on": [
+      66,
+      81
+    ],
+    "importance": [
+      68
+    ],
+    "certain": [
+      70
+    ],
+    "bits.": [
+      71
+    ],
+    "addition": [
+      73
+    ],
+    "packet": [
+      78
+    ],
+    "size": [
+      79
+    ],
+    "noise,": [
+      83
+    ],
+    "order": [
+      85
+    ],
+    "decrease": [
+      87
+    ],
+    "automatic": [
+      91
+    ],
+    "repeat": [
+      92
+    ],
+    "request.": [
+      93
+    ],
+    "This": [
+      94
+    ],
+    "useful": [
+      97
+    ],
+    "providing": [
+      99
+    ],
+    "lower": [
+      100
+    ],
+    "latency": [
+      101
+    ],
+    "through": [
+      103
+    ],
+    "noisy": [
+      104
+    ],
+    "mediums": [
+      105
+    ],
+    "as": [
+      107
+    ],
+    "wireless": [
+      108
+    ],
+    "communication.": [
+      109
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 3
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

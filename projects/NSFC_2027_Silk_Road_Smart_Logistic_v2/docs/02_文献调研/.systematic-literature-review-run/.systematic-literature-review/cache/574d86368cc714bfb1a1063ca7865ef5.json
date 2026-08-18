@@ -1,0 +1,25 @@
+{
+  "paperId": "103c408035c2453c8b9c5b4fca45bd6399e0ba36",
+  "title": "Low-bandwidth transmission algorithm for reliable wireless communication",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CCWC.2017.7868422?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CCWC.2017.7868422, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1807599",
+      "name": "E. Yfantis"
+    },
+    {
+      "authorId": "2098829",
+      "name": "Masanori Nakakuni"
+    },
+    {
+      "authorId": "40462987",
+      "name": "E. Ramos"
+    }
+  ],
+  "abstract": null
+}

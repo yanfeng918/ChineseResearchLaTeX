@@ -1,0 +1,156 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2026-03-17T11:10:59Z",
+      "timestamp": 1773745859390,
+      "version": "3.50.1"
+    },
+    "publisher-location": "United Kingdom",
+    "reference-count": 0,
+    "publisher": "The Institution of Engineering and Technology",
+    "isbn-type": [
+      {
+        "value": "9781839533136",
+        "type": "print"
+      },
+      {
+        "value": "9781839533143",
+        "type": "electronic"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1049/pbtr034e_ch3",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2022-12-16T03:10:57Z",
+      "timestamp": 1671160257000
+    },
+    "page": "71-99",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Global logistics standards development focusing on marine container terminal"
+    ],
+    "prefix": "10.1049",
+    "author": [
+      {
+        "given": "Yoshio",
+        "family": "Kito",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "SMDG e.V., EDI Expert"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "265",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          3
+        ]
+      ]
+    },
+    "container-title": [
+      "ITS for Freight Logistics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://digital-library.theiet.org/content/books/10.1049/pbtr034e_ch3?crawler=true&mimetype=application/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2026-03-17T10:27:39Z",
+      "timestamp": 1773743259000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://digital-library.theiet.org/doi/10.1049/PBTR034E_ch3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          15
+        ]
+      ]
+    },
+    "ISBN": [
+      "9781839533136",
+      "9781839533143"
+    ],
+    "references-count": 0,
+    "alternative-id": [
+      "10.1049/PBTR034E_ch3",
+      "10.1049/PBTR034E"
+    ],
+    "URL": "https://doi.org/10.1049/pbtr034e_ch3",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          15
+        ]
+      ]
+    }
+  }
+}

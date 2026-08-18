@@ -1,0 +1,33 @@
+{
+  "paperId": "05372a58fb6a1a983338a4294c6427de477988e2",
+  "title": "Performance Analysis of NB-IoT Technology for Indoor IoT Applications",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCTEC.2017.00299?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCTEC.2017.00299, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2053672119",
+      "name": "Liang Wan"
+    },
+    {
+      "authorId": "2116216042",
+      "name": "Zhijian Zhang"
+    },
+    {
+      "authorId": "29898232",
+      "name": "Yirui Huang"
+    },
+    {
+      "authorId": "1387841814",
+      "name": "Yunsong Yan"
+    },
+    {
+      "authorId": "2152765645",
+      "name": "Jian Wang"
+    }
+  ],
+  "abstract": null
+}

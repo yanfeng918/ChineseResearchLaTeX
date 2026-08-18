@@ -1,0 +1,108 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2024-09-04T23:39:43Z",
+      "timestamp": 1725493183121
+    },
+    "reference-count": 0,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1109/icmens.2004.1332281",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          11,
+          8
+        ]
+      ],
+      "date-time": "2004-11-08T16:27:50Z",
+      "timestamp": 1099931270000
+    },
+    "page": "98-102",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "The role of electronic container seal (E-Seal)with RFID technology in the container security initiatives"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "family": "Le-Pong Chin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "family": "Chia-Lin Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "event": {
+      "name": "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004.",
+      "location": "Banff, AB, Canada"
+    },
+    "container-title": [
+      "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004."
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2020-10-14T14:38:19Z",
+      "timestamp": 1602686299000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/1332281"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1109/icmens.2004.1332281",
+    "relation": {},
+    "subject": []
+  }
+}

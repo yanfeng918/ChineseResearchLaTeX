@@ -2,16 +2,71 @@
 \NSFCBodyText
 
 \subsubsection{研究方法}
-% 在此处撰写研究方法。
 
-\subsubsection{技术路线}
-% 在此处撰写技术路线，可按需插入技术路线图。
+项目遵循“受控资源输入—联合知识约束—跨模态证据关联—质量门控—独立验证”的路线。原始资源集合为 \(\mathcal{D}=\{d_i\}_{i=1}^{N}\)，课程知识与产业任务知识分别为 \(\mathcal{K}_c,\mathcal{K}_p\)。资源单元表示为
+\begin{equation}
+u=(c,a,m,e,s),
+\end{equation}
+其中，\(c,a,m,e,s\) 分别表示课程知识、专业属性、多模态片段及关系、来源位置和质量状态。材料先登记来源、许可、模态、位置和敏感信息，再切分候选片段；比较条件使用相同资源范围、数据划分和人工复核预算。
 
-\subsubsection{实验手段}
-% 在此处撰写实验手段。
+\textbf{联合知识约束。} 对片段 \(d_i\) 与知识节点 \(k_j\)，定义
+\begin{equation}
+S_{\mathrm{kc}}(d_i,k_j)=
+\lambda_p S_p(d_i,k_j;\mathcal{K}_p)+
+\lambda_c S_c(d_i,k_j;\mathcal{K}_c)+
+\lambda_{pc}S_{pc}(d_i,k_j).
+\end{equation}
+\(S_p,S_c,S_{pc}\) 分别衡量产业属性、课程属性和术语映射兼容性，\(\lambda_p,\lambda_c,\lambda_{pc}\) 为开发集权重；在无知识、单一知识和联合知识条件下比较其作用。单元边界集合 \(\mathcal{B}\) 采用
+\begin{equation}
+\mathcal{L}_{\mathrm{unit}}=
+\mathcal{L}_{\mathrm{cover}}+
+\alpha\mathcal{L}_{\mathrm{dup}}+
+\beta\mathcal{L}_{\mathrm{split}}+
+\gamma\mathcal{L}_{\mathrm{attr}}.
+\end{equation}
+四项分别约束知识遗漏、重复、过度切分和专业属性错配，以边界 F1、知识覆盖和属性错误率检验科学问题一。
 
-\subsubsection{关键技术}
-% 在此处撰写需要突破或掌握的关键技术。
+\textbf{跨模态关联。} 对各模态提取 \(\boldsymbol{z}_i^{(m)}\)，保留专业属性 \(A_i\) 和来源位置 \(e_i\)。先以对比学习获得基础表示：
+\begin{equation}
+\mathcal{L}_{\mathrm{align}}=
+-\frac{1}{B}\sum_{i=1}^{B}
+\log\frac{\exp\bigl(\mathrm{sim}(\boldsymbol{z}_i,\boldsymbol{z}_i^{+})/\tau\bigr)}
+{\sum_{j=1}^{B}\exp\bigl(\mathrm{sim}(\boldsymbol{z}_i,\boldsymbol{z}_j)/\tau\bigr)}.
+\end{equation}
+\(B\) 为批大小，\(\boldsymbol{z}_i^{+}\) 为正确配对表示，\(\tau\) 为温度参数。候选关系再按
+\begin{equation}
+R(i,j)=\eta_s\mathrm{sim}(\boldsymbol{z}_i,\boldsymbol{z}_j)
++\eta_a C_A(A_i,A_j)+\eta_e C_E(e_i,e_j)+\eta_r C_R(i,j)
+\end{equation}
+评分，其中 \(C_A,C_E,C_R\) 分别检查专业属性、来源位置和关系类别，\(\eta_s,\eta_a,\eta_e,\eta_r\) 为权重。评分达阈值且来源完整时方可写入资源单元；按关系类型报告 Recall@1、Recall@5、MRR、F1、来源定位准确率和错配率，检验科学问题二。
 
-\subsubsection{可行性分析}
-% 在此处分析理论、技术与条件的可行性，并说明主要风险及其应对措施。
+\textbf{证据与质量门控。} 对关键断言 \(a\) 及证据 \(e\)，定义
+\begin{equation}
+G(a,e)=\rho_tG_t(a,e)+\rho_vG_v(a,e)+\rho_kG_k(a,e).
+\end{equation}
+\(G_t,G_v,G_k\) 分别表示文本、其他模态和知识关系支持度；不满足 \(G(a,e)\geq\theta_g\) 的断言进入人工核验。四层质量综合为
+\begin{equation}
+Q(u)=w_{\mathrm{con}}q_{\mathrm{con}}+
+w_{\mathrm{cur}}q_{\mathrm{cur}}+
+w_{\mathrm{mod}}q_{\mathrm{mod}}+
+w_{\mathrm{evi}}q_{\mathrm{evi}}-\mu P(u),
+\end{equation}
+\(P(u)\) 覆盖参数矛盾、来源不可追溯、未授权或隐私风险；字段完整、无严重错误且 \(Q(u)\geq\theta_q\) 才通过。主指标为
+\begin{equation}
+\mathrm{VRR}=\frac{\sum_{u\in\mathcal{U}}\mathbb{I}
+\bigl(q_{\mathrm{con}},q_{\mathrm{cur}},q_{\mathrm{mod}},q_{\mathrm{evi}}\ \mathrm{均合格}\bigr)}
+{|\mathcal{U}|}.
+\end{equation}
+\(\mathcal{U}\) 为待验收单元集合，\(\mathbb{I}\) 为指示函数。VRR 与专家盲评、错误检出/误报和修订时间共同报告，权重与阈值仅在开发集确定、测试集冻结。
+
+\subsubsection{技术路线与实验手段}
+
+依次完成材料审查、知识结构与单元切分、跨模态关联、四层门控和独立验证。未通过审查的材料不入池，属性或证据不全的关系进入人工核验，严重错误单元退回修改。资源仅来自公开许可、明确授权或申请人自建材料；核心模态为文本、运行图表和设备图/结构图，代码/案例仅作扩展评价。数据按知识模块、来源或设备类型划分，近重复材料不跨集合。
+
+比较人工整理（B0）、通用大模型（B1）、仅文本检索增强生成（retrieval-augmented generation, RAG）（B2）和完整方法（B3），并逐项去除产业知识、课程知识、专业属性、来源位置或质量层。构建层报告边界 F1、覆盖、重复和属性错误；关联层报告 Recall@K、MRR、关系 F1、来源定位和错配率；质量层报告 VRR、错误检出/误报、五维专家盲评和人工修订时间。评分者不参与规则设计，评分隐藏方法条件；测试采用知识模块、来源或设备类型留出。
+
+\subsubsection{关键技术与可行性}
+
+\textbf{关键技术。} 处理产业术语与课程概念的映射及冲突，识别运行曲线、设备图和代码中的变量、单位、工况、时间窗口和证据位置，并以独立专家盲评、跨来源留出和逐层消融检验四层质量效度。
+
+\textbf{可行性与风险。} 申请人在多模态信息处理、时序建模及新能源功率预测方面有积累，现有 GPU 条件可支持原型与模型实验。若联合约束无稳定增益，收缩至可重复验证的知识模块；若图表或代码关联不稳定，以文本—图像/图表为主验证；若自动门控与专家评价一致性不足，采用“自动初筛—专家复核”；若授权材料不足，仅使用公开许可和自主编写材料。全过程保存资源版本、参数、数据划分、基线和错误记录。

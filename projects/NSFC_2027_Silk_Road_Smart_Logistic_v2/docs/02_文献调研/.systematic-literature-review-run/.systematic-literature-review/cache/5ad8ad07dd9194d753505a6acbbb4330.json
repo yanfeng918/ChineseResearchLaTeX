@@ -1,0 +1,1010 @@
+{
+  "id": "https://openalex.org/W1987527037",
+  "doi": "https://doi.org/10.1109/sahcn.2009.5168903",
+  "title": "A Low-cost, Small-footprint Wireless Sensor for Container Integrity Monitoring",
+  "display_name": "A Low-cost, Small-footprint Wireless Sensor for Container Integrity Monitoring",
+  "publication_year": 2009,
+  "publication_date": "2009-06-01",
+  "ids": {
+    "openalex": "https://openalex.org/W1987527037",
+    "doi": "https://doi.org/10.1109/sahcn.2009.5168903",
+    "mag": "1987527037"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/sahcn.2009.5168903",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/sahcn.2009.5168903",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2009 6th Annual IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc Communications and Networks",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5040107753",
+        "display_name": "Venkatesh Sarangan",
+        "orcid": "https://orcid.org/0000-0002-9119-9435"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "V. Sarangan",
+      "raw_affiliation_strings": [
+        "John Volakis, Stillwater, OK, USA",
+        "Oklahoma State University, Stillwater,OK"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "John Volakis, Stillwater, OK, USA",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University, Stillwater,OK",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5074755934",
+        "display_name": "Jakkrit Kunthong",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "J. Kunthong",
+      "raw_affiliation_strings": [
+        "John Volakis, Stillwater, OK, USA",
+        "Oklahoma State University, Stillwater,OK"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "John Volakis, Stillwater, OK, USA",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University, Stillwater,OK",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5001806790",
+        "display_name": "Xiaoyu Cai",
+        "orcid": "https://orcid.org/0000-0001-9532-6537"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "X. Cai",
+      "raw_affiliation_strings": [
+        "John Volakis, Stillwater, OK, USA",
+        "Oklahoma State University, Stillwater,OK"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "John Volakis, Stillwater, OK, USA",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University, Stillwater,OK",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5064826920",
+        "display_name": "Satish Bukkapatnam",
+        "orcid": "https://orcid.org/0000-0003-3312-8222"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "S. T. S. Bukkapatnam",
+      "raw_affiliation_strings": [
+        "John Volakis, Stillwater, OK, USA",
+        "Oklahoma State University, Stillwater,OK"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "John Volakis, Stillwater, OK, USA",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University, Stillwater,OK",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5062830302",
+        "display_name": "R. Komanduri",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "R. Komanduri",
+      "raw_affiliation_strings": [
+        "John Volakis, Stillwater, OK, USA",
+        "Oklahoma State University, Stillwater,OK"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "John Volakis, Stillwater, OK, USA",
+          "institution_ids": []
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University, Stillwater,OK",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5037180603",
+        "display_name": "John L. Volakis",
+        "orcid": "https://orcid.org/0000-0002-0115-2079"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I52357470",
+          "display_name": "The Ohio State University",
+          "ror": "https://ror.org/00rs6vg23",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I52357470"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "John Volakis",
+      "raw_affiliation_strings": [
+        "Electrical and Computer Engineering Department, Ohio State Uinversity, Columbus, OH, USA",
+        "Electrical and Computer Engineering Department, The Ohio State University, Columbus, OH"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Electrical and Computer Engineering Department, Ohio State Uinversity, Columbus, OH, USA",
+          "institution_ids": [
+            "https://openalex.org/I52357470"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Electrical and Computer Engineering Department, The Ohio State University, Columbus, OH",
+          "institution_ids": [
+            "https://openalex.org/I52357470"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.0277,
+  "has_fulltext": false,
+  "cited_by_count": 3,
+  "citation_normalized_percentile": {
+    "value": 0.68760409,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 95
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "1",
+    "last_page": "9"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10986",
+    "display_name": "RFID technology advancements",
+    "score": 0.9948999881744385,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2214",
+      "display_name": "Media Technology"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10986",
+      "display_name": "RFID technology advancements",
+      "score": 0.9948999881744385,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2214",
+        "display_name": "Media Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11667",
+      "display_name": "Advanced Chemical Sensor Technologies",
+      "score": 0.993399977684021,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2204",
+        "display_name": "Biomedical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12486",
+      "display_name": "Food Supply Chain Traceability",
+      "score": 0.9921000003814697,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6753687262535095
+    },
+    {
+      "id": "https://openalex.org/keywords/small-form-factor",
+      "display_name": "Small form factor",
+      "score": 0.6539334058761597
+    },
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.6364380121231079
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.6352056264877319
+    },
+    {
+      "id": "https://openalex.org/keywords/footprint",
+      "display_name": "Footprint",
+      "score": 0.6126444339752197
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.546042263507843
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.5362251400947571
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.5209497213363647
+    },
+    {
+      "id": "https://openalex.org/keywords/power-consumption",
+      "display_name": "Power consumption",
+      "score": 0.4816126227378845
+    },
+    {
+      "id": "https://openalex.org/keywords/software",
+      "display_name": "Software",
+      "score": 0.46620428562164307
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-hardware",
+      "display_name": "Computer hardware",
+      "score": 0.34546661376953125
+    },
+    {
+      "id": "https://openalex.org/keywords/power",
+      "display_name": "Power (physics)",
+      "score": 0.28092682361602783
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.2720274031162262
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.15125682950019836
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.12457582354545593
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.07499980926513672
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6753687262535095
+    },
+    {
+      "id": "https://openalex.org/C2778080309",
+      "wikidata": "https://www.wikidata.org/wiki/Q99454494",
+      "display_name": "Small form factor",
+      "level": 2,
+      "score": 0.6539334058761597
+    },
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.6364380121231079
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.6352056264877319
+    },
+    {
+      "id": "https://openalex.org/C132943942",
+      "wikidata": "https://www.wikidata.org/wiki/Q2562511",
+      "display_name": "Footprint",
+      "level": 2,
+      "score": 0.6126444339752197
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.546042263507843
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.5362251400947571
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.5209497213363647
+    },
+    {
+      "id": "https://openalex.org/C2984118289",
+      "wikidata": "https://www.wikidata.org/wiki/Q29954",
+      "display_name": "Power consumption",
+      "level": 3,
+      "score": 0.4816126227378845
+    },
+    {
+      "id": "https://openalex.org/C2777904410",
+      "wikidata": "https://www.wikidata.org/wiki/Q7397",
+      "display_name": "Software",
+      "level": 2,
+      "score": 0.46620428562164307
+    },
+    {
+      "id": "https://openalex.org/C9390403",
+      "wikidata": "https://www.wikidata.org/wiki/Q3966",
+      "display_name": "Computer hardware",
+      "level": 1,
+      "score": 0.34546661376953125
+    },
+    {
+      "id": "https://openalex.org/C163258240",
+      "wikidata": "https://www.wikidata.org/wiki/Q25342",
+      "display_name": "Power (physics)",
+      "level": 2,
+      "score": 0.28092682361602783
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.2720274031162262
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.15125682950019836
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.12457582354545593
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.07499980926513672
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C62520636",
+      "wikidata": "https://www.wikidata.org/wiki/Q944",
+      "display_name": "Quantum mechanics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C151730666",
+      "wikidata": "https://www.wikidata.org/wiki/Q7205",
+      "display_name": "Paleontology",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/sahcn.2009.5168903",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/sahcn.2009.5168903",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2009 6th Annual IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc Communications and Networks",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "display_name": "Affordable and clean energy",
+      "score": 0.75,
+      "id": "https://metadata.un.org/sdg/7"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 10,
+  "referenced_works": [
+    "https://openalex.org/W1971944553",
+    "https://openalex.org/W1997281956",
+    "https://openalex.org/W2100617218",
+    "https://openalex.org/W2103966137",
+    "https://openalex.org/W2112267613",
+    "https://openalex.org/W2127949150",
+    "https://openalex.org/W2130837854",
+    "https://openalex.org/W2136497835",
+    "https://openalex.org/W2163144244",
+    "https://openalex.org/W2766242231"
+  ],
+  "related_works": [
+    "https://openalex.org/W2367301169",
+    "https://openalex.org/W2352134912",
+    "https://openalex.org/W2001079144",
+    "https://openalex.org/W4393477817",
+    "https://openalex.org/W2048054615",
+    "https://openalex.org/W2974221847",
+    "https://openalex.org/W2480624181",
+    "https://openalex.org/W2581710029",
+    "https://openalex.org/W2055230095",
+    "https://openalex.org/W3146804403"
+  ],
+  "abstract_inverted_index": {
+    "This": [
+      0,
+      26
+    ],
+    "paper": [
+      1,
+      48,
+      103
+    ],
+    "outlines": [
+      2
+    ],
+    "the": [
+      3,
+      36,
+      52,
+      62,
+      66,
+      74,
+      120
+    ],
+    "design": [
+      4
+    ],
+    "and": [
+      5,
+      16,
+      31,
+      39,
+      92,
+      122
+    ],
+    "development": [
+      6
+    ],
+    "of": [
+      7,
+      14,
+      51,
+      65,
+      124
+    ],
+    "a": [
+      8,
+      114
+    ],
+    "low-cost,": [
+      9
+    ],
+    "small-footprint": [
+      10
+    ],
+    "wireless": [
+      11
+    ],
+    "sensor": [
+      12,
+      27,
+      76
+    ],
+    "capable": [
+      13
+    ],
+    "sampling": [
+      15
+    ],
+    "transmitting": [
+      17
+    ],
+    "sensory": [
+      18,
+      67,
+      86
+    ],
+    "data": [
+      19
+    ],
+    "at": [
+      20
+    ],
+    "frequencies": [
+      21
+    ],
+    "more": [
+      22
+    ],
+    "than": [
+      23,
+      82
+    ],
+    "6000": [
+      24
+    ],
+    "Hz.": [
+      25
+    ],
+    "has": [
+      28,
+      77
+    ],
+    "been": [
+      29,
+      57
+    ],
+    "designed": [
+      30
+    ],
+    "developed": [
+      32,
+      75
+    ],
+    "in-house": [
+      33
+    ],
+    "using": [
+      34
+    ],
+    "off": [
+      35
+    ],
+    "shelf": [
+      37
+    ],
+    "components": [
+      38
+    ],
+    "open": [
+      40
+    ],
+    "source": [
+      41
+    ],
+    "software": [
+      42
+    ],
+    "for": [
+      43,
+      99,
+      118
+    ],
+    "container": [
+      44
+    ],
+    "integrity": [
+      45,
+      123
+    ],
+    "monitoring.": [
+      46
+    ],
+    "The": [
+      47,
+      102
+    ],
+    "presents": [
+      49
+    ],
+    "details": [
+      50
+    ],
+    "various": [
+      53
+    ],
+    "refinements": [
+      54
+    ],
+    "that": [
+      55,
+      72
+    ],
+    "have": [
+      56
+    ],
+    "carried": [
+      58
+    ],
+    "out": [
+      59
+    ],
+    "to": [
+      60,
+      112
+    ],
+    "improve": [
+      61
+    ],
+    "default": [
+      63
+    ],
+    "performance": [
+      64
+    ],
+    "unit.": [
+      68
+    ],
+    "Laboratory": [
+      69
+    ],
+    "tests": [
+      70
+    ],
+    "indicate": [
+      71
+    ],
+    "while": [
+      73
+    ],
+    "comparatively": [
+      78
+    ],
+    "higher": [
+      79
+    ],
+    "power": [
+      80
+    ],
+    "consumption": [
+      81
+    ],
+    "other": [
+      83
+    ],
+    "commercially": [
+      84
+    ],
+    "available": [
+      85
+    ],
+    "units,": [
+      87
+    ],
+    "its": [
+      88
+    ],
+    "small": [
+      89
+    ],
+    "form": [
+      90
+    ],
+    "factor": [
+      91
+    ],
+    "low": [
+      93
+    ],
+    "cost": [
+      94
+    ],
+    "make": [
+      95
+    ],
+    "it": [
+      96
+    ],
+    "attractive": [
+      97
+    ],
+    "enough": [
+      98
+    ],
+    "several": [
+      100
+    ],
+    "applications.": [
+      101
+    ],
+    "then": [
+      104
+    ],
+    "describes": [
+      105
+    ],
+    "how": [
+      106
+    ],
+    "these": [
+      107
+    ],
+    "sensors": [
+      108
+    ],
+    "can": [
+      109
+    ],
+    "be": [
+      110
+    ],
+    "used": [
+      111
+    ],
+    "realize": [
+      113
+    ],
+    "reliable,": [
+      115
+    ],
+    "round-the-clock": [
+      116
+    ],
+    "system": [
+      117
+    ],
+    "monitoring": [
+      119
+    ],
+    "stability": [
+      121
+    ],
+    "cargo": [
+      125
+    ],
+    "containers.": [
+      126
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2025,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

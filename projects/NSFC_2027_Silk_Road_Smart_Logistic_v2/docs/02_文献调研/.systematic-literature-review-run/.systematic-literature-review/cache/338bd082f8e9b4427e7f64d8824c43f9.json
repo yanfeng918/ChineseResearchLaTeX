@@ -1,0 +1,228 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ],
+      "date-time": "2026-07-02T09:47:16Z",
+      "timestamp": 1782985636180,
+      "version": "3.54.5"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 8,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              27
+            ]
+          ],
+          "date-time": "2026-02-27T00:00:00Z",
+          "timestamp": 1772150400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          27
+        ]
+      ]
+    },
+    "DOI": "10.1145/3802463.3802486",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ],
+      "date-time": "2026-07-02T08:55:42Z",
+      "timestamp": 1782982542000
+    },
+    "page": "147-153",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Port-to-Factory Digital Twin for Malaysia's Klang Valley- Port Klang-Penang Logistics Corridor"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5389-1121",
+        "authenticated-orcid": false,
+        "given": "Wai Yie",
+        "family": "Leong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Engineering and Quantity Surveying, INTI International University, Nilai, Negeri Sembilan, Malaysia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_1_1_2",
+        "volume-title": "Port Klang Statistics 2024/2025: Container Throughput and Port Performance Report. Selangor",
+        "author": "Authority Port Klang",
+        "unstructured": "Port Klang Authority, Port Klang Statistics 2024/2025: Container Throughput and Port Performance Report. Selangor, Malaysia: Port Klang Authority. Available: https://www.pka.gov.my"
+      },
+      {
+        "key": "e_1_3_3_1_2_2",
+        "volume-title": "Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems. In Transdisciplinary Perspectives on Complex Systems",
+        "author": "Grieves Michael",
+        "year": "2017",
+        "unstructured": "Michael Grieves and John Vickers. 2017. Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems. In Transdisciplinary Perspectives on Complex Systems. Springer, Cham, Switzerland, 85–113."
+      },
+      {
+        "key": "e_1_3_3_1_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/su17021234"
+      },
+      {
+        "key": "e_1_3_3_1_4_2",
+        "unstructured": "Ministry of International Trade and Industry (MITI). 2018. Industry4WRD: National Policy on Industry 4.0. Government of Malaysia Kuala Lumpur Malaysia."
+      },
+      {
+        "key": "e_1_3_3_1_5_2",
+        "volume-title": "Prime Minister's Department",
+        "author": "Economic Planning",
+        "year": "2021",
+        "unstructured": "Economic Planning Unit (EPU), Prime Minister's Department. 2021. Malaysia Digital Economy Blueprint (MyDIGITAL). Government of Malaysia, Putrajaya, Malaysia."
+      },
+      {
+        "key": "e_1_3_3_1_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2018.2873186"
+      },
+      {
+        "key": "e_1_3_3_1_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejor.2013.11.023"
+      },
+      {
+        "key": "e_1_3_3_1_8_2",
+        "volume-title": "Business Values, Design Aspects, Standards and Use Cases",
+        "author": "Industrial Internet Consortium (IIC). 2020.",
+        "unstructured": "Industrial Internet Consortium (IIC). 2020. Digital Twins for Industrial Applications: Definition, Business Values, Design Aspects, Standards and Use Cases. Industrial Internet Consortium, Needham, MA, USA."
+      }
+    ],
+    "event": {
+      "name": "ICCMB 2026: 2026 9th International Conference on Computers in Management and Business",
+      "location": "Tokyo Japan",
+      "acronym": "ICCMB '26"
+    },
+    "container-title": [
+      "Proceedings of the 2026 9th International Conference on Computers in Management and Business"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3802463.3802486",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ],
+      "date-time": "2026-07-02T09:23:14Z",
+      "timestamp": 1782984194000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3802463.3802486"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          27
+        ]
+      ]
+    },
+    "references-count": 8,
+    "alternative-id": [
+      "10.1145/3802463.3802486",
+      "10.1145/3802463"
+    ],
+    "URL": "https://doi.org/10.1145/3802463.3802486",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          27
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2026-07-02",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

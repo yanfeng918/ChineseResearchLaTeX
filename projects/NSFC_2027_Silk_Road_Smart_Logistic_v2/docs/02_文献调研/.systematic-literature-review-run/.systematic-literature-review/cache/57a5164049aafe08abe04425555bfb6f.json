@@ -1,0 +1,25 @@
+{
+  "paperId": "6a9d6f4e35659b0753142cccd9a488d11f0fddbf",
+  "title": "Adaptive duty-cycling algorithms for efficient energy harvesting in wireless sensor networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ROEDUNET.2016.7753236?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ROEDUNET.2016.7753236, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2394339",
+      "name": "D. Tudose"
+    },
+    {
+      "authorId": "152111876",
+      "name": "Alexandru Marin"
+    },
+    {
+      "authorId": "9216990",
+      "name": "M. Geantă"
+    }
+  ],
+  "abstract": null
+}

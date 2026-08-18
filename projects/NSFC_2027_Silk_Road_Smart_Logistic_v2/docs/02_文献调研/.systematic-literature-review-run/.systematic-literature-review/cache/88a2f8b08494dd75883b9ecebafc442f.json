@@ -1,0 +1,21 @@
+{
+  "paperId": "d57d6eedad72c159d6fb7a42706dfe957fbcf45a",
+  "title": "Cyclic Intermittent Connectivity of Industrial Sensors Impacting Information Freshness",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MetroInd4.0IoT66048.2025.11122097?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MetroInd4.0IoT66048.2025.11122097, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2300688236",
+      "name": "Lucrezia Rossi"
+    },
+    {
+      "authorId": "2276894648",
+      "name": "Leonardo Badia"
+    }
+  ],
+  "abstract": "In industrial sensors, connectivity is often not persistent but subject to duty cycling for energy or multitasking reasons. The presence of off-periods impacts the freshness of the data reported. We present an analytical investigation of the delivery time achieved by a sensor that alternates connection and disconnection at regular intervals of the same duration. Although information staleness can locally increase due to the lack of connectivity during disconnection intervals, we found that its long-term behavior can be kept under control if these intervals are cyclic and of limited duration, which confirms the validity of freshness-based approaches for timely communication even in industrial scenarios without persistent links."
+}

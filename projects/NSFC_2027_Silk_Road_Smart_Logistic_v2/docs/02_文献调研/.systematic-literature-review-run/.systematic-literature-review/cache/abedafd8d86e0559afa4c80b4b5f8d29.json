@@ -1,0 +1,25 @@
+{
+  "paperId": "d1433df9614a0a4dcdec2f329f600ecffc81c0dd",
+  "title": "Retransmission Policy with Frequency Hopping for Ultra-Reliable and Low-Latency Communications",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICC.2018.8422534?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICC.2018.8422534, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "3330862",
+      "name": "Chengjian Sun"
+    },
+    {
+      "authorId": "2443063",
+      "name": "Changyang She"
+    },
+    {
+      "authorId": "9251967",
+      "name": "Chenyang Yang"
+    }
+  ],
+  "abstract": null
+}

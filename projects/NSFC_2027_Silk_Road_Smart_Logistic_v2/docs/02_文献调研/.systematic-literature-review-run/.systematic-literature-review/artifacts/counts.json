@@ -1,0 +1,17 @@
+{
+  "file": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/docs/02_文献调研/.systematic-literature-review-run/跨境物流弱网感知与数字镜像_review.tex",
+  "review_level": "premium",
+  "words_total": 11192,
+  "words_chinese": 11067,
+  "words_english": 125,
+  "words_digits": 1,
+  "words_total_including_digits": 11193,
+  "cite_keys_count": 115,
+  "thresholds": {
+    "min_words": 10000,
+    "max_words": 15000,
+    "min_unique_citations": 80,
+    "max_unique_citations": 150
+  },
+  "passed": true
+}

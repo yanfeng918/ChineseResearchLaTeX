@@ -1,0 +1,37 @@
+{
+  "paperId": "97963aba72a0cba6ff160d19bd6b7231420fce9a",
+  "title": "Research on intelligent warehouse digital twin system based on digital twin",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1117/12.2641102?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1117/12.2641102, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2188027735",
+      "name": "Biao Feng"
+    },
+    {
+      "authorId": "2791618",
+      "name": "Minghua Jiang"
+    },
+    {
+      "authorId": "2362859",
+      "name": "Kunfang Song"
+    },
+    {
+      "authorId": "47110698",
+      "name": "Changlong Zhou"
+    },
+    {
+      "authorId": "2155384744",
+      "name": "Feng Yu"
+    },
+    {
+      "authorId": "2110637455",
+      "name": "Xiong Wei"
+    }
+  ],
+  "abstract": "Intelligent warehouses greatly improve management efficiency and reduce the management cost of enterprises. Now many enterprises are building their own intelligent warehouses. However, the current intelligent warehouse lacks the communication between digital space and physical space, and the efficiency of warehouse management still has a lot of room for improvement. The digital twin technology is a useful way to realize the fusion of virtual warehouse and physical warehouse and optimizes the activities. In order to realize the communication between digital space and physical space of the intelligent warehouse, eliminate information island and improve the efficiency of warehouse management, this paper proposed the digital twin system architecture of intelligent warehouse based on digital twin technology. At the same time, this paper analyzed the system application requirements, designed and constructed an intelligent warehouse digital twin system. Finally, the prototype system is developed with the warehouse of a garment enterprise as an example to verify the feasibility and effectiveness of the system."
+}

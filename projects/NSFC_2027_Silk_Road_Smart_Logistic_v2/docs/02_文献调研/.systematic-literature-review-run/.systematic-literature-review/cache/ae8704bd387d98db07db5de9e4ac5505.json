@@ -1,0 +1,1078 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          6
+        ]
+      ],
+      "date-time": "2026-08-06T16:51:44Z",
+      "timestamp": 1786035104487,
+      "version": "3.56.0"
+    },
+    "reference-count": 86,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2018-07-01T00:00:00Z",
+          "timestamp": 1530403200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Food Control"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.foodcont.2018.01.027",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          3
+        ]
+      ],
+      "date-time": "2018-02-03T06:01:19Z",
+      "timestamp": 1517637679000
+    },
+    "page": "12-21",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 360,
+    "special_numbering": "C",
+    "title": [
+      "Time-temperature abuse in the food cold chain: Review of issues, challenges, and recommendations"
+    ],
+    "prefix": "10.1016",
+    "volume": "89",
+    "author": [
+      {
+        "given": "Nodali",
+        "family": "Ndraha",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hsin-I",
+        "family": "Hsiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jelena",
+        "family": "Vlajic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ming-Feng",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hong-Ting Victor",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib1",
+        "first-page": "1",
+        "article-title": "Blockchain ready manufacturing supply chain using distributed ledger",
+        "volume": "5",
+        "author": "Abeyratne",
+        "year": "2016",
+        "journal-title": "International Journal of Renewable Energy Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "889",
+        "DOI": "10.1016/j.promfg.2017.07.192",
+        "article-title": "Internet-of-things paradigm in food supply chains control and management",
+        "volume": "11",
+        "author": "Accorsi",
+        "year": "2017",
+        "journal-title": "Procedia Manufacturing"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib3",
+        "series-title": "Australian cold chain guidelines 2017",
+        "author": "AFGC [Australian Food and Grocery Council]",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib4",
+        "series-title": "RFID-WSN integrated architecture for energy and delay- aware routing",
+        "first-page": "37",
+        "article-title": "Challenges and issues in the WSN and RFID",
+        "author": "Ahmed",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1016/j.jnca.2017.04.002",
+        "article-title": "Internet of things security: A survey",
+        "volume": "88",
+        "author": "Alaba",
+        "year": "2017",
+        "journal-title": "Journal of Network and Computer Applications"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "258",
+        "DOI": "10.1016/j.foodcont.2014.04.001",
+        "article-title": "Time-temperature integrators as predictive temperature sensors",
+        "volume": "44",
+        "author": "Arias-Mendez",
+        "year": "2014",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "2787",
+        "DOI": "10.1016/j.comnet.2010.05.010",
+        "article-title": "The internet of things: A survey",
+        "volume": "54",
+        "author": "Atzori",
+        "year": "2010",
+        "journal-title": "Computer Networks"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "533",
+        "DOI": "10.4236/jsea.2016.910036",
+        "article-title": "Blockchain platform for industrial internet of things",
+        "volume": "9",
+        "author": "Bahga",
+        "year": "2016",
+        "journal-title": "Journal of Software Engineering and Applications"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib9",
+        "series-title": "IFIP international federation for information processing",
+        "first-page": "14",
+        "article-title": "Experimental study: Link quality and deployment issues in wireless sensor networks",
+        "author": "Becker",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib10",
+        "series-title": "Radio frequency identification from system to applications",
+        "article-title": "RFID under water: Technical issues and applications",
+        "author": "Benelli",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.1016/j.postharvbio.2006.05.011",
+        "article-title": "Applicability of an enzymatic time temperature integrator as a quality indicator for mushrooms in the distribution chain",
+        "volume": "42",
+        "author": "Bobelyn",
+        "year": "2006",
+        "journal-title": "Postharvest Biology and Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "246",
+        "DOI": "10.1016/j.ijrefrig.2013.11.021",
+        "article-title": "Reducing domestic food waste by lowering home refrigerator temperatures",
+        "volume": "40",
+        "author": "Brown",
+        "year": "2014",
+        "journal-title": "International Journal of Refrigeration"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.17660/ActaHortic.2016.1141.10",
+        "article-title": "Temperatures experienced by fresh-cut leafy greens during retail storage and display",
+        "volume": "1141",
+        "author": "Brown",
+        "year": "2016",
+        "journal-title": "Acta Horticulturae"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "146",
+        "DOI": "10.1016/j.foodcont.2015.09.014",
+        "article-title": "Transit temperatures experienced by fresh-cut leafy greens during cross-country shipment",
+        "volume": "61",
+        "author": "Brown",
+        "year": "2016",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib15",
+        "series-title": "General principles of food hygiene",
+        "author": "CAC [Codex Alimentarius Commission]",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "828",
+        "DOI": "10.1016/j.jclepro.2016.08.101",
+        "article-title": "The integration of lean manufacturing, six sigma and sustainability: A literature review and future research directions for developing a specific model",
+        "volume": "139",
+        "author": "Cherrafi",
+        "year": "2016",
+        "journal-title": "Journal of Cleaner Production"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "2292",
+        "DOI": "10.1109/ACCESS.2016.2566339",
+        "article-title": "Blockchains and smart contracts for the internet of things",
+        "volume": "4",
+        "author": "Christidis",
+        "year": "2016",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "343",
+        "DOI": "10.1016/S0168-1605(01)00670-5",
+        "article-title": "Seafood spoilage predictor - development and distribution of a product specific application software",
+        "volume": "73",
+        "author": "Dalgaard",
+        "year": "2002",
+        "journal-title": "International Journal of Food Microbiology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/j.ijrefrig.2014.06.012",
+        "article-title": "Cold chain of chilled food in France",
+        "volume": "52",
+        "author": "Derens-Bertheau",
+        "year": "2015",
+        "journal-title": "International Journal of Refrigeration"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib20",
+        "first-page": "1503",
+        "article-title": "The cold chain of chilled products under supervision in France",
+        "volume": "Vol. 19",
+        "author": "Derens",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib21",
+        "series-title": "Thermal processing and kinetic modeling of inactivation. Modeling Food Processing Operations",
+        "author": "Dolan",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib22",
+        "first-page": "1",
+        "article-title": "Regulation (EC) No 852/2004 on the hygiene of foodstuffs",
+        "volume": "47",
+        "author": "EC [European Commission]",
+        "year": "2004",
+        "journal-title": "Official Journal of the European Communities"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "119",
+        "DOI": "10.1016/j.ijfoodmicro.2009.12.012",
+        "article-title": "Applicability of biological time temperature integrators as quality and safety indicators for meat products",
+        "volume": "138",
+        "author": "Ellouze",
+        "year": "2010",
+        "journal-title": "International Journal of Food Microbiology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "889",
+        "DOI": "10.1016/j.ijrefrig.2006.01.012",
+        "article-title": "Thermal performance indicators for refrigerated road vehicles",
+        "volume": "29",
+        "author": "Estrada-Flores",
+        "year": "2006",
+        "journal-title": "International Journal of Refrigeration"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib25",
+        "series-title": "Logistics and retail management: Insights into current practice and trends from leading experts",
+        "author": "Fernie",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "1369",
+        "DOI": "10.1007/s10796-014-9518-1",
+        "article-title": "RFID in production and service systems: Technology, applications and issues",
+        "volume": "17",
+        "author": "Fescioglu-Unver",
+        "year": "2015",
+        "journal-title": "Information Systems Frontiers"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib27",
+        "series-title": "Autonomous driving",
+        "first-page": "365",
+        "article-title": "Autonomous vehicles and autonomous driving in freight transport",
+        "author": "Flämig",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "323",
+        "DOI": "10.1016/j.ijfoodmicro.2004.11.037",
+        "article-title": "Field evaluation of the application of time temperature integrators for monitoring fish quality in the chill chain",
+        "volume": "102",
+        "author": "Giannakourou",
+        "year": "2005",
+        "journal-title": "International Journal of Food Microbiology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib29",
+        "doi-asserted-by": "crossref",
+        "first-page": "201",
+        "DOI": "10.1111/j.1365-2621.2003.tb14140.x",
+        "article-title": "Application of a TTI-based distribution management system for quality optimization",
+        "volume": "68",
+        "author": "Giannakourou",
+        "year": "2003",
+        "journal-title": "Journal of Food Science: Food Engineering and Physical Properties"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.4102/jtscm.v9i1.201",
+        "article-title": "An analysis of the influence of logistics activities on the export cold chain of temperature sensitive fruit through the Port of Cape Town",
+        "volume": "9",
+        "author": "Goedhals-Gerber",
+        "year": "2015",
+        "journal-title": "Journal of Transport and Supply Chain Management"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib31",
+        "first-page": "362",
+        "article-title": "Maintaining cold chain integrity : Temperature breaks within fruit reefer containers in the Cape Town Container Terminal",
+        "volume": "21",
+        "author": "Goedhals-Gerber",
+        "year": "2017",
+        "journal-title": "Southern African Business Review"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/j.ijrefrig.2015.01.019",
+        "article-title": "Cold chain database development and application as a tool for the cold chain management and food quality evaluation",
+        "volume": "52",
+        "author": "Gogou",
+        "year": "2015",
+        "journal-title": "International Journal of Refrigeration"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib33",
+        "series-title": "Retailing logistics and fresh food packaging: Managing change in the supply chain",
+        "author": "Gustafsson",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib34",
+        "series-title": "Global food losses and food waste",
+        "author": "Gustavsson",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "2",
+        "DOI": "10.1016/j.jfoodeng.2014.06.021",
+        "article-title": "The FRISBEE tool, a software for optimising the trade-off between food quality, energy use, and global warming impact of cold chains",
+        "volume": "148",
+        "author": "Gwanpua",
+        "year": "2015",
+        "journal-title": "Journal of Food Engineering"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib36",
+        "series-title": "Digitalization in supply chain management and Logistics: Proceedings of hamburg international conference of logistics",
+        "first-page": "3",
+        "article-title": "Blockchain in logistics and supply chain: Trick or treat?",
+        "author": "Hackius",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "355",
+        "DOI": "10.1108/09600031211231335",
+        "article-title": "Criteria for temperature alerts in cod supply chains",
+        "volume": "42",
+        "author": "Hafliðason",
+        "year": "2012",
+        "journal-title": "International Journal of Physical Distribution & Logistics Management"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1098/rsta.2013.0302",
+        "article-title": "Reducing food losses by intelligent food logistics. Philosophical transactions of the royal society a: Mathematical",
+        "volume": "372",
+        "author": "Jedermann",
+        "year": "2014",
+        "journal-title": "Physical and Engineering Sciences"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1016/j.lwt.2015.11.034",
+        "article-title": "Kinetic modeling and characterization of a diffusion-based time-temperature indicator (TTI) for monitoring microbial quality of non-pasteurized angelica juice",
+        "volume": "67",
+        "author": "Kim",
+        "year": "2016",
+        "journal-title": "LWT - Food Science and Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "448",
+        "DOI": "10.5851/kosfa.2012.32.4.448",
+        "article-title": "Application of a prototype of microbial time temperature indicator (TTI) to the prediction of ground beef qualities during storage",
+        "volume": "32",
+        "author": "Kim",
+        "year": "2012",
+        "journal-title": "Korean Journal for Food Science of Animal Resources"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1016/j.ijfoodmicro.2005.02.012",
+        "article-title": "Prediction of pathogen growth on iceberg lettuce under real temperature history during distribution from farm to table",
+        "volume": "104",
+        "author": "Koseki",
+        "year": "2005",
+        "journal-title": "International Journal of Food Microbiology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "236",
+        "DOI": "10.1016/j.tifs.2015.02.008",
+        "article-title": "Use of time temperature integrators in food safety management",
+        "volume": "43",
+        "author": "Koutsoumanis",
+        "year": "2015",
+        "journal-title": "Trends in Food Science & Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "2181",
+        "DOI": "10.1128/AEM.02430-09",
+        "article-title": "Probabilistic model for Listeria monocytogenes growth during distribution, retail storage, and domestic storage of pasteurized milk",
+        "volume": "76",
+        "author": "Koutsoumanis",
+        "year": "2010",
+        "journal-title": "Applied and Environmental Microbiology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib44",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1016/j.tifs.2015.02.005",
+        "article-title": "Application of RFID in agri-food sector",
+        "volume": "43",
+        "author": "Kumari",
+        "year": "2015",
+        "journal-title": "Trends in Food Science & Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib45",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1111/jfpe.12311",
+        "article-title": "An innovative shelf life model based on smart logistic unit for an efficient management of the perishable food supply chain",
+        "volume": "40",
+        "author": "La Scalia",
+        "year": "2017",
+        "journal-title": "Journal of Food Process Engineering"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib46",
+        "doi-asserted-by": "crossref",
+        "first-page": "537",
+        "DOI": "10.1016/j.proeng.2012.06.067",
+        "article-title": "Wireless sensor network based alert system for cold chain management",
+        "volume": "38",
+        "author": "Lakshmil",
+        "year": "2012",
+        "journal-title": "Procedia Engineering"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib47",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1016/j.foodcont.2004.09.009",
+        "article-title": "Cold chain maintaining in food trade",
+        "volume": "17",
+        "author": "Likar",
+        "year": "2006",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib48",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.1016/j.foodcont.2013.06.050",
+        "article-title": "Retail food stores' internet-based own-check databank records and health officers' on-site inspection results for cleanliness and food holding temperatures reveal inconsistencies",
+        "volume": "35",
+        "author": "Lundén",
+        "year": "2014",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/j.foodcont.2014.04.041",
+        "article-title": "Temperature control efficacy of retail refrigeration equipment",
+        "volume": "45",
+        "author": "Lundén",
+        "year": "2014",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "291",
+        "DOI": "10.1007/s11740-012-0433-3",
+        "article-title": "Quality driven distribution of intelligent containers in cold chain logistics networks",
+        "volume": "7",
+        "author": "Lütjen",
+        "year": "2013",
+        "journal-title": "Production Engineering"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "622",
+        "DOI": "10.1111/j.1745-4530.2010.00611.x",
+        "article-title": "Temperature mapping of fresh fish supply chains - air and sea transport",
+        "volume": "35",
+        "author": "Mai",
+        "year": "2012",
+        "journal-title": "Journal of Food Process Engineering"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib52",
+        "article-title": "The effect of cooling methods at processing and use of gel-packs on storage life of cod (Gadus morhua) loins – effect of transport via air and sea on temperature control and retail-packaging on cod deterioration",
+        "author": "Martinsdóttir",
+        "year": "2010",
+        "journal-title": "Innovation"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1089/fpd.2011.1025",
+        "article-title": "Simulation of Escherichia coli O157:H7 behavior in fresh-cut lettuce under dynamic temperature conditions during distribution from processing to retail",
+        "volume": "9",
+        "author": "McKellar",
+        "year": "2012",
+        "journal-title": "Foodbourne Pathogens & Disease"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib54",
+        "series-title": "Internet of things: Survey on security and privacy",
+        "author": "Mendez",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib55",
+        "article-title": "Blockchains for business process management - challenges and opportunities",
+        "author": "Mendling",
+        "year": "2017",
+        "journal-title": "ACM Transactions on Management Information Systems"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib56",
+        "first-page": "647",
+        "volume": "Vol. 16",
+        "author": "Mercier",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.1016/j.tifs.2008.03.009",
+        "article-title": "Cold chain tracking: A managerial perspective",
+        "volume": "19",
+        "author": "Montanari",
+        "year": "2008",
+        "journal-title": "Trends in Food Science & Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib58",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1016/j.foodcont.2012.02.002",
+        "article-title": "Performance and conditions of use of refrigerated display cabinets among producer/vendors of foodstuffs",
+        "volume": "26",
+        "author": "Morelli",
+        "year": "2012",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "89",
+        "DOI": "10.1016/S0168-1699(01)00181-8",
+        "article-title": "Analysis of use of insulating pallet covers for shipping heat-sensitive foodstuffs in ambient conditions",
+        "volume": "34",
+        "author": "Moureh",
+        "year": "2002",
+        "journal-title": "Computers and Electronics in Agriculture"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib60",
+        "first-page": "140",
+        "article-title": "Information sharing for supply chain management based on block chain technology",
+        "volume": "Vol. 1",
+        "author": "Nakasumi",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib61",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1016/j.postharvbio.2008.07.016",
+        "article-title": "Environmental conditions encountered during typical consumer retail display affect fruit and vegetable quality and waste",
+        "volume": "51",
+        "author": "Nunes",
+        "year": "2009",
+        "journal-title": "Postharvest Biology and Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib62",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1016/j.comnet.2016.11.007",
+        "article-title": "Access control in the Internet of Things: Big challenges and new opportunities",
+        "volume": "112",
+        "author": "Ouaddah",
+        "year": "2017",
+        "journal-title": "Computer Networks"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib63",
+        "doi-asserted-by": "crossref",
+        "first-page": "3065",
+        "DOI": "10.1098/rstb.2010.0126",
+        "article-title": "Food waste within food supply chains: Quantification and potential for change to 2050",
+        "volume": "365",
+        "author": "Parfitt",
+        "year": "2010",
+        "journal-title": "Philosophical Transactions of the Royal Society B: Biological Sciences"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "482",
+        "DOI": "10.21273/HORTTECH.21.4.482",
+        "article-title": "Quality of strawberries shipped by truck from California to Florida as influenced by postharvest temperature management practices",
+        "volume": "21",
+        "author": "Pelletier",
+        "year": "2011",
+        "journal-title": "HortTechnology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib65",
+        "series-title": "Blockchain technology in supply chain traceability systems: Developing a framework for evaluating the applicability",
+        "author": "Petersen",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib66",
+        "series-title": "Proceedings of the 2017 industrial and systems engineering conference",
+        "first-page": "1589",
+        "article-title": "Blockchain in megacity logistics",
+        "author": "Polim",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "257",
+        "DOI": "10.1016/j.postharvbio.2008.07.017",
+        "article-title": "Evaluation of the cold chain of fresh-cut endive from farmer to plate",
+        "volume": "51",
+        "author": "Rediers",
+        "year": "2009",
+        "journal-title": "Postharvest Biology and Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib68",
+        "doi-asserted-by": "crossref",
+        "first-page": "42",
+        "DOI": "10.1016/j.compag.2011.08.010",
+        "article-title": "The role of RFID in agriculture: Applications, limitations and challenges",
+        "volume": "79",
+        "author": "Ruiz-Garcia",
+        "year": "2011",
+        "journal-title": "Computers and Electronics in Agriculture"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib69",
+        "doi-asserted-by": "crossref",
+        "first-page": "451",
+        "DOI": "10.1016/j.compag.2016.07.004",
+        "article-title": "A webGIS-based system for real time shelf life prediction",
+        "volume": "127",
+        "author": "Sciortino",
+        "year": "2016",
+        "journal-title": "Computers and Electronics in Agriculture"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib70",
+        "doi-asserted-by": "crossref",
+        "first-page": "62",
+        "DOI": "10.1016/j.csi.2015.12.004",
+        "article-title": "Integrating wireless sensor networks with statistical quality control to develop a cold chain system in food industries",
+        "volume": "45",
+        "author": "Shih",
+        "year": "2016",
+        "journal-title": "Computer Standards & Interfaces"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib71",
+        "doi-asserted-by": "crossref",
+        "first-page": "394",
+        "DOI": "10.1016/S0924-2244(01)00023-1",
+        "article-title": "Modeling pathogen growth in meat products: Future challenges",
+        "volume": "11",
+        "author": "Shimoni",
+        "year": "2001",
+        "journal-title": "Trends in Food Science & Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib72",
+        "series-title": "Food cold chain management and optimization. In emerging and traditional technologies for safe, healthy and quality food",
+        "author": "Taoukis",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib73",
+        "series-title": "14th international conference on services systems and services management, ICSSSM 2017-proceedings",
+        "article-title": "A supply chain traceability system for food safety based on HACCP, blockchain & Internet of things",
+        "author": "Tian",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib74",
+        "first-page": "6146",
+        "article-title": "Fish product quality evaluation based on temperature monitoring in cold chain",
+        "volume": "9",
+        "author": "Tingman",
+        "year": "2010",
+        "journal-title": "African Journal of Biotechnology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib75",
+        "doi-asserted-by": "crossref",
+        "first-page": "508",
+        "DOI": "10.1016/j.ijpe.2016.10.003",
+        "article-title": "A systematic approach to preventing chilled-food waste at the retail outlet",
+        "volume": "182",
+        "author": "Tromp",
+        "year": "2016",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib76",
+        "series-title": "Guidance on temperature control legislation in the United Kingdom",
+        "author": "UK FSA [Food Standards Agency]",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib77",
+        "series-title": "FSMA final rule on sanitary transportation of human and animal food",
+        "author": "US FDA",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib78",
+        "series-title": "Organisational resilience",
+        "first-page": "85",
+        "article-title": "Vulnerability and robustness of sme supply chains: An empirical study of risk and disturbance management of fresh food processors in a developing market",
+        "author": "Vlajic",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib79",
+        "series-title": "Developments in logistics and supply chain management",
+        "first-page": "13",
+        "article-title": "Framework for designing robust supply chains",
+        "author": "Vlajic",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib80",
+        "doi-asserted-by": "crossref",
+        "first-page": "133",
+        "DOI": "10.3390/app7020133",
+        "article-title": "Postharvest quality monitoring and variance analysis of peach and nectarine cold chain with multi-sensors technology",
+        "volume": "7",
+        "author": "Wang",
+        "year": "2017",
+        "journal-title": "Applied Sciences"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib81",
+        "doi-asserted-by": "crossref",
+        "first-page": "196",
+        "DOI": "10.1016/j.compag.2014.11.009",
+        "article-title": "Wireless sensor network for real-time perishable food supply chain management",
+        "volume": "110",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "Computers and Electronics in Agriculture"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib82",
+        "doi-asserted-by": "crossref",
+        "first-page": "1100",
+        "DOI": "10.1016/j.lwt.2014.10.011",
+        "article-title": "Development and characterization of an enzymatic time-temperature indicator (TTI) based on Aspergillus Niger lipase",
+        "volume": "60",
+        "author": "Wu",
+        "year": "2015",
+        "journal-title": "LWT - Food Science and Technology"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib83",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1016/j.foodcont.2015.09.012",
+        "article-title": "Applying CS and WSN methods for improving efficiency of frozen and chilled aquatic products monitoring system in cold chain logistics",
+        "volume": "60",
+        "author": "Xiao",
+        "year": "2016",
+        "journal-title": "Food Control"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib84",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.4315/0362-028X.JFP-13-117",
+        "article-title": "Growth of Escherichia coli O157:H7 and Listeria monocytogenes in packaged fresh-cut romaine mix at fluctuating temperatures during commercial transport, retail storage, and display",
+        "volume": "77",
+        "author": "Zeng",
+        "year": "2014",
+        "journal-title": "Journal of Food Protection"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib85",
+        "first-page": "1",
+        "article-title": "Blockchain challenges and opportunities : A survey",
+        "author": "Zheng",
+        "year": "2016",
+        "journal-title": "International Journal of Web and Grid Services"
+      },
+      {
+        "key": "10.1016/j.foodcont.2018.01.027_bib86",
+        "doi-asserted-by": "crossref",
+        "first-page": "614",
+        "DOI": "10.1016/j.foodcont.2015.06.046",
+        "article-title": "Effectiveness of the cold chain control procedure in the retail sector in Southern Spain",
+        "volume": "59",
+        "author": "Zubeldia",
+        "year": "2016",
+        "journal-title": "Food Control"
+      }
+    ],
+    "container-title": [
+      "Food Control"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0956713518300331?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0956713518300331?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2019-10-10T03:06:11Z",
+      "timestamp": 1570676771000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0956713518300331"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "references-count": 86,
+    "alternative-id": [
+      "S0956713518300331"
+    ],
+    "URL": "https://doi.org/10.1016/j.foodcont.2018.01.027",
+    "relation": {},
+    "ISSN": [
+      "0956-7135"
+    ],
+    "issn-type": [
+      {
+        "value": "0956-7135",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Time-temperature abuse in the food cold chain: Review of issues, challenges, and recommendations",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Food Control",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.foodcont.2018.01.027",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2018 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

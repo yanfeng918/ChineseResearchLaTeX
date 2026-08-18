@@ -1,0 +1,25 @@
+{
+  "paperId": "6f6a10ab95b21a43a3d8cc94a91557f720918506",
+  "title": "Self-learning Wavelet Compression Method for Data Transmission from Environmental Monitoring Stations with a Low Bandwidth IoT Interface",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SSCI50451.2021.9660160?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SSCI50451.2021.9660160, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "40480863",
+      "name": "Jaromír Konecny"
+    },
+    {
+      "authorId": "51300937",
+      "name": "Monika Borova"
+    },
+    {
+      "authorId": "2721197",
+      "name": "Michal Prauzek"
+    }
+  ],
+  "abstract": "The Internet of Things concept raises the possibility of connecting monitoring stations to the Internet. In many cases, these devices are equipped with a wireless interface which allows the transmission of data through a low-power wide-area network (LPWAN). This type of network has a limited data throughput due to technological limitations and regional restrictions. There are many research challenges in maximizing the useful transmitted information through a limited transmission channel. The paper presents self-learning wavelet compression method controlled by Q-Learning (QL), which is able to optimize an amount of transmitted data using lossy compression. The aim is to use transmission channel throughput as effectively as possible without the loss of data. A QL agent selects an appropriate compression method according to buffer use and maintains this level at 70 %. The proposed method was tested on environmental historical data. The results showed that our method is able to use more than 96 % of the available transmission channel throughput with minimal data loss, even if the communications channel throughput experiences significant changes."
+}

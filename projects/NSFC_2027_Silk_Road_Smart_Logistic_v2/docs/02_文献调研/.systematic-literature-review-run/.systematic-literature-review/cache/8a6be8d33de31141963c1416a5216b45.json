@@ -1,0 +1,17 @@
+{
+  "paperId": "c38d58c7e4bd3819490fe3e568ebc990e58c0775",
+  "title": "Energy Efficient Battery Discharge Rate Based Asynchronous Duty Cycling Protocol for WSN to improve Network Lifetime",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.9790/0661-15010010151-56",
+    "status": "BRONZE",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at http://iosrjournals.org/iosr-jce/papers/conf.15010/Volume%201/09.%2051-56.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2288914872",
+      "name": "A. Kaur"
+    }
+  ],
+  "abstract": "In Energy Constrained Wireless Sensor Network, maximizing network lifetime is an important issue. The challenge is to find out the optimal schedule of duty cycle for nodes while maintaining the sufficient number of active nodes for network coverage. In this paper we propose the Energy Efficient Battery Discharge Rate Based (E 2 BDRDC) Asynchronous Duty Cycling Protocol for WSN which consider the battery discharge rate of active node to find the duty cycle of inactive nodes. Further the E 2 BDRDC protocol improves the energy consumption and network lifetime 30% and 20% as compared to DCBSP (Discharge Curve Back off Sleep Protocol)."
+}

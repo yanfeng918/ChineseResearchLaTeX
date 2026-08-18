@@ -1,0 +1,984 @@
+{
+  "id": "https://openalex.org/W2020828791",
+  "doi": "https://doi.org/10.1109/iccnc.2012.6167525",
+  "title": "Transparent and autonomous store-carry-forward communication in Delay Tolerant Networks (DTNs)",
+  "display_name": "Transparent and autonomous store-carry-forward communication in Delay Tolerant Networks (DTNs)",
+  "publication_year": 2012,
+  "publication_date": "2012-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2020828791",
+    "doi": "https://doi.org/10.1109/iccnc.2012.6167525",
+    "mag": "2020828791"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/iccnc.2012.6167525",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/iccnc.2012.6167525",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306497804",
+      "display_name": "2012 International Conference on Computing, Networking and Communications (ICNC)",
+      "issn_l": "2325-2626",
+      "issn": [
+        "2325-2626"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": null,
+      "host_organization_name": null,
+      "host_organization_lineage": [],
+      "host_organization_lineage_names": [],
+      "type": "conference"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2012 International Conference on Computing, Networking and Communications (ICNC)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5068425678",
+        "display_name": "Frank Nordemann",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210159638",
+          "display_name": "Hochschule Osnabrück",
+          "ror": "https://ror.org/059vymd37",
+          "country_code": "DE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210159638"
+          ]
+        }
+      ],
+      "countries": [
+        "DE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Frank Nordemann",
+      "raw_affiliation_strings": [
+        "Faculty of Engineering and Computer Science, University of Applied Sciences Osnabrück, Osnabruck, Germany",
+        "Faculty of Engineering and Computer Science University of Applied Sciences Osnabrück Osnabrück, Germany"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Faculty of Engineering and Computer Science, University of Applied Sciences Osnabrück, Osnabruck, Germany",
+          "institution_ids": [
+            "https://openalex.org/I4210159638"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Faculty of Engineering and Computer Science University of Applied Sciences Osnabrück Osnabrück, Germany",
+          "institution_ids": [
+            "https://openalex.org/I4210159638"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5019599462",
+        "display_name": "Ralf Tönjes",
+        "orcid": "https://orcid.org/0000-0003-3239-9282"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210159638",
+          "display_name": "Hochschule Osnabrück",
+          "ror": "https://ror.org/059vymd37",
+          "country_code": "DE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210159638"
+          ]
+        }
+      ],
+      "countries": [
+        "DE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Ralf Tonjes",
+      "raw_affiliation_strings": [
+        "Faculty of Engineering and Computer Science, University of Applied Sciences Osnabrück, Osnabruck, Germany",
+        "Faculty of Engineering and Computer Science University of Applied Sciences Osnabrück Osnabrück, Germany"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Faculty of Engineering and Computer Science, University of Applied Sciences Osnabrück, Osnabruck, Germany",
+          "institution_ids": [
+            "https://openalex.org/I4210159638"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Faculty of Engineering and Computer Science University of Applied Sciences Osnabrück Osnabrück, Germany",
+          "institution_ids": [
+            "https://openalex.org/I4210159638"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I4210159638"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.4148,
+  "has_fulltext": false,
+  "cited_by_count": 9,
+  "citation_normalized_percentile": {
+    "value": 0.80063339,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 96
+  },
+  "biblio": {
+    "volume": "1",
+    "issue": null,
+    "first_page": "761",
+    "last_page": "765"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11896",
+    "display_name": "Opportunistic and Delay-Tolerant Networks",
+    "score": 1.0,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11896",
+      "display_name": "Opportunistic and Delay-Tolerant Networks",
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10246",
+      "display_name": "Mobile Ad Hoc Networks",
+      "score": 0.9943000078201294,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11478",
+      "display_name": "Caching and Content Delivery",
+      "score": 0.9775000214576721,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.8200546503067017
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.7920444011688232
+    },
+    {
+      "id": "https://openalex.org/keywords/store-and-forward",
+      "display_name": "Store and forward",
+      "score": 0.7106677293777466
+    },
+    {
+      "id": "https://openalex.org/keywords/carry",
+      "display_name": "Carry (investment)",
+      "score": 0.648198664188385
+    },
+    {
+      "id": "https://openalex.org/keywords/routing-protocol",
+      "display_name": "Routing protocol",
+      "score": 0.585665225982666
+    },
+    {
+      "id": "https://openalex.org/keywords/delay-tolerant-networking",
+      "display_name": "Delay-tolerant networking",
+      "score": 0.5690789222717285
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-ad-hoc-network",
+      "display_name": "Wireless ad hoc network",
+      "score": 0.48683375120162964
+    },
+    {
+      "id": "https://openalex.org/keywords/mobile-ad-hoc-network",
+      "display_name": "Mobile ad hoc network",
+      "score": 0.47399914264678955
+    },
+    {
+      "id": "https://openalex.org/keywords/link-state-routing-protocol",
+      "display_name": "Link-state routing protocol",
+      "score": 0.4572990834712982
+    },
+    {
+      "id": "https://openalex.org/keywords/routing",
+      "display_name": "Routing (electronic design automation)",
+      "score": 0.43012094497680664
+    },
+    {
+      "id": "https://openalex.org/keywords/distributed-computing",
+      "display_name": "Distributed computing",
+      "score": 0.4115138351917267
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-routing-protocol",
+      "display_name": "Wireless Routing Protocol",
+      "score": 0.37224018573760986
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.3311833143234253
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.20028474926948547
+    },
+    {
+      "id": "https://openalex.org/keywords/network-packet",
+      "display_name": "Network packet",
+      "score": 0.15196511149406433
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.8200546503067017
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.7920444011688232
+    },
+    {
+      "id": "https://openalex.org/C48525174",
+      "wikidata": "https://www.wikidata.org/wiki/Q603357",
+      "display_name": "Store and forward",
+      "level": 2,
+      "score": 0.7106677293777466
+    },
+    {
+      "id": "https://openalex.org/C2776299755",
+      "wikidata": "https://www.wikidata.org/wiki/Q432449",
+      "display_name": "Carry (investment)",
+      "level": 2,
+      "score": 0.648198664188385
+    },
+    {
+      "id": "https://openalex.org/C104954878",
+      "wikidata": "https://www.wikidata.org/wiki/Q1648707",
+      "display_name": "Routing protocol",
+      "level": 3,
+      "score": 0.585665225982666
+    },
+    {
+      "id": "https://openalex.org/C53264328",
+      "wikidata": "https://www.wikidata.org/wiki/Q55320",
+      "display_name": "Delay-tolerant networking",
+      "level": 5,
+      "score": 0.5690789222717285
+    },
+    {
+      "id": "https://openalex.org/C94523657",
+      "wikidata": "https://www.wikidata.org/wiki/Q4085781",
+      "display_name": "Wireless ad hoc network",
+      "level": 3,
+      "score": 0.48683375120162964
+    },
+    {
+      "id": "https://openalex.org/C91280400",
+      "wikidata": "https://www.wikidata.org/wiki/Q4085781",
+      "display_name": "Mobile ad hoc network",
+      "level": 3,
+      "score": 0.47399914264678955
+    },
+    {
+      "id": "https://openalex.org/C89305328",
+      "wikidata": "https://www.wikidata.org/wiki/Q1755411",
+      "display_name": "Link-state routing protocol",
+      "level": 4,
+      "score": 0.4572990834712982
+    },
+    {
+      "id": "https://openalex.org/C74172769",
+      "wikidata": "https://www.wikidata.org/wiki/Q1446839",
+      "display_name": "Routing (electronic design automation)",
+      "level": 2,
+      "score": 0.43012094497680664
+    },
+    {
+      "id": "https://openalex.org/C120314980",
+      "wikidata": "https://www.wikidata.org/wiki/Q180634",
+      "display_name": "Distributed computing",
+      "level": 1,
+      "score": 0.4115138351917267
+    },
+    {
+      "id": "https://openalex.org/C47318570",
+      "wikidata": "https://www.wikidata.org/wiki/Q8026863",
+      "display_name": "Wireless Routing Protocol",
+      "level": 4,
+      "score": 0.37224018573760986
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.3311833143234253
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.20028474926948547
+    },
+    {
+      "id": "https://openalex.org/C158379750",
+      "wikidata": "https://www.wikidata.org/wiki/Q214111",
+      "display_name": "Network packet",
+      "level": 2,
+      "score": 0.15196511149406433
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C10138342",
+      "wikidata": "https://www.wikidata.org/wiki/Q43015",
+      "display_name": "Finance",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/iccnc.2012.6167525",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/iccnc.2012.6167525",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306497804",
+        "display_name": "2012 International Conference on Computing, Networking and Communications (ICNC)",
+        "issn_l": "2325-2626",
+        "issn": [
+          "2325-2626"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "conference"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2012 International Conference on Computing, Networking and Communications (ICNC)",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/3",
+      "display_name": "Good health and well-being",
+      "score": 0.800000011920929
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 19,
+  "referenced_works": [
+    "https://openalex.org/W1572481965",
+    "https://openalex.org/W1607060557",
+    "https://openalex.org/W1627100304",
+    "https://openalex.org/W1923680614",
+    "https://openalex.org/W1965396227",
+    "https://openalex.org/W1977867261",
+    "https://openalex.org/W2027067051",
+    "https://openalex.org/W2092948748",
+    "https://openalex.org/W2111158854",
+    "https://openalex.org/W2112316694",
+    "https://openalex.org/W2131170105",
+    "https://openalex.org/W2142522527",
+    "https://openalex.org/W2162076967",
+    "https://openalex.org/W2253517037",
+    "https://openalex.org/W2273515758",
+    "https://openalex.org/W2538593942",
+    "https://openalex.org/W4234068324",
+    "https://openalex.org/W4253826867",
+    "https://openalex.org/W6728759669"
+  ],
+  "related_works": [
+    "https://openalex.org/W2416817414",
+    "https://openalex.org/W2055056424",
+    "https://openalex.org/W2144907052",
+    "https://openalex.org/W2151422282",
+    "https://openalex.org/W2139978795",
+    "https://openalex.org/W2399648284",
+    "https://openalex.org/W2122558727",
+    "https://openalex.org/W4249464197",
+    "https://openalex.org/W2884568852",
+    "https://openalex.org/W100628529"
+  ],
+  "abstract_inverted_index": {
+    "In": [
+      0,
+      82,
+      104
+    ],
+    "sparsely": [
+      1
+    ],
+    "populated": [
+      2
+    ],
+    "mobile": [
+      3
+    ],
+    "ad-hoc": [
+      4
+    ],
+    "networks": [
+      5
+    ],
+    "(MANETs)": [
+      6
+    ],
+    "communication": [
+      7,
+      79,
+      94,
+      153
+    ],
+    "has": [
+      8
+    ],
+    "to": [
+      9,
+      84,
+      112,
+      119,
+      135
+    ],
+    "cope": [
+      10
+    ],
+    "with": [
+      11,
+      159
+    ],
+    "mobility": [
+      12
+    ],
+    "and": [
+      13,
+      39,
+      59,
+      175
+    ],
+    "in": [
+      14,
+      67,
+      80
+    ],
+    "particular": [
+      15
+    ],
+    "interruptions": [
+      16
+    ],
+    "of": [
+      17,
+      21,
+      46,
+      150,
+      183
+    ],
+    "connections.": [
+      18
+    ],
+    "The": [
+      19,
+      138
+    ],
+    "lack": [
+      20
+    ],
+    "continuous": [
+      22
+    ],
+    "network": [
+      23
+    ],
+    "connectivity": [
+      24
+    ],
+    "is": [
+      25,
+      48,
+      65,
+      95,
+      115,
+      125
+    ],
+    "addressed": [
+      26
+    ],
+    "by": [
+      27,
+      36,
+      128,
+      163
+    ],
+    "Delay": [
+      28
+    ],
+    "Tolerant": [
+      29
+    ],
+    "Network": [
+      30
+    ],
+    "(DTN)": [
+      31,
+      169
+    ],
+    "protocols.": [
+      32
+    ],
+    "DTNs": [
+      33
+    ],
+    "are": [
+      34,
+      148
+    ],
+    "characterized": [
+      35
+    ],
+    "varying": [
+      37
+    ],
+    "delays": [
+      38
+    ],
+    "the": [
+      40,
+      62,
+      68,
+      89,
+      99,
+      106,
+      123,
+      133,
+      145,
+      151,
+      184
+    ],
+    "fact": [
+      41
+    ],
+    "that": [
+      42,
+      56,
+      147
+    ],
+    "a": [
+      43,
+      74
+    ],
+    "successful": [
+      44,
+      181
+    ],
+    "delivery": [
+      45
+    ],
+    "data": [
+      47,
+      134
+    ],
+    "not": [
+      49,
+      111
+    ],
+    "guaranteed.": [
+      50
+    ],
+    "However,": [
+      51
+    ],
+    "today": [
+      52
+    ],
+    "no": [
+      53,
+      116
+    ],
+    "DTN": [
+      54,
+      177
+    ],
+    "protocol": [
+      55
+    ],
+    "functions": [
+      57
+    ],
+    "autonomously": [
+      58,
+      127
+    ],
+    "transparently": [
+      60,
+      97
+    ],
+    "for": [
+      61,
+      77,
+      101
+    ],
+    "application": [
+      63,
+      102
+    ],
+    "level": [
+      64
+    ],
+    "available": [
+      66
+    ],
+    "related": [
+      69
+    ],
+    "literature.": [
+      70
+    ],
+    "This": [
+      71
+    ],
+    "paper": [
+      72
+    ],
+    "introduces": [
+      73
+    ],
+    "new": [
+      75
+    ],
+    "approach": [
+      76,
+      139
+    ],
+    "store-carry-forward": [
+      78,
+      93,
+      114,
+      152,
+      168
+    ],
+    "DTNs.": [
+      81
+    ],
+    "contrast": [
+      83
+    ],
+    "existing": [
+      85
+    ],
+    "protocols": [
+      86
+    ],
+    "such": [
+      87
+    ],
+    "as": [
+      88
+    ],
+    "Bundle": [
+      90
+    ],
+    "Protocol,": [
+      91
+    ],
+    "here": [
+      92
+    ],
+    "supported": [
+      96
+    ],
+    "without": [
+      98
+    ],
+    "need": [
+      100
+    ],
+    "changes.": [
+      103
+    ],
+    "addition,": [
+      105
+    ],
+    "decision": [
+      107,
+      124
+    ],
+    "on": [
+      108,
+      132,
+      144
+    ],
+    "whether": [
+      109
+    ],
+    "or": [
+      110
+    ],
+    "use": [
+      113
+    ],
+    "longer": [
+      117
+    ],
+    "delegated": [
+      118
+    ],
+    "user": [
+      120
+    ],
+    "applications.": [
+      121
+    ],
+    "Instead,": [
+      122
+    ],
+    "taken": [
+      126
+    ],
+    "MANET": [
+      129,
+      161
+    ],
+    "nodes": [
+      130,
+      146
+    ],
+    "based": [
+      131
+    ],
+    "be": [
+      136
+    ],
+    "send.": [
+      137
+    ],
+    "requires": [
+      140
+    ],
+    "only": [
+      141
+    ],
+    "local": [
+      142
+    ],
+    "changes": [
+      143
+    ],
+    "part": [
+      149
+    ],
+    "path.": [
+      154
+    ],
+    "Furthermore,": [
+      155
+    ],
+    "it": [
+      156
+    ],
+    "avoids": [
+      157
+    ],
+    "interfering": [
+      158
+    ],
+    "traditional": [
+      160
+    ],
+    "routing": [
+      162,
+      166,
+      178
+    ],
+    "separating": [
+      164
+    ],
+    "wireless": [
+      165
+    ],
+    "from": [
+      167
+    ],
+    "routing.": [
+      170
+    ],
+    "Evaluations": [
+      171
+    ],
+    "using": [
+      172
+    ],
+    "epidemic,": [
+      173
+    ],
+    "history-based": [
+      174
+    ],
+    "oracle-based": [
+      176
+    ],
+    "techniques": [
+      179
+    ],
+    "illustrate": [
+      180
+    ],
+    "operation": [
+      182
+    ],
+    "introduced": [
+      185
+    ],
+    "approach.": [
+      186
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          3
+        ]
+      ],
+      "date-time": "2026-02-03T18:03:06Z",
+      "timestamp": 1770141786320,
+      "version": "3.49.0"
+    },
+    "reference-count": 7,
+    "publisher": "SPIE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1117/12.2641102",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2022-10-13T13:49:13Z",
+      "timestamp": 1665668953000
+    },
+    "page": "97",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Research on intelligent warehouse digital twin system based on digital twin"
+    ],
+    "prefix": "10.1117",
+    "author": [
+      {
+        "given": "Biao",
+        "family": "Feng",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Minghua",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kunfang",
+        "family": "Song",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Changlong",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Feng",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Xiong",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "189",
+    "reference": [
+      {
+        "issue": "08",
+        "key": "c1",
+        "first-page": "1603",
+        "article-title": "Theory and technology of cyber-physical fusion in digital twin workshop",
+        "volume": "23",
+        "author": "Tao",
+        "year": "2017",
+        "journal-title": "Computer Integrated Manufacturing System"
+      },
+      {
+        "key": "c2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1504/IJPD.2005.006669"
+      },
+      {
+        "issue": "1",
+        "key": "c3",
+        "first-page": "5",
+        "article-title": "Digital twin five-dimensional model and ten major applications",
+        "volume": "25",
+        "author": "Tao",
+        "year": "2019",
+        "journal-title": "Computer Integrated Manufacturing System"
+      },
+      {
+        "key": "c4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procir.2016.11.152"
+      },
+      {
+        "key": "c5",
+        "first-page": "522",
+        "article-title": "Visualising the digital twin using web services and augmented reality",
+        "volume-title": "IEEE 14th international conference on industrial informatics (INDIN). Poitiers",
+        "author": "Schroeder",
+        "year": "2016"
+      },
+      {
+        "key": "c6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12652-018-0953-6"
+      },
+      {
+        "issue": "1",
+        "key": "c7",
+        "first-page": "1",
+        "article-title": "Digital twin workshop: a new paradigm for future workshop",
+        "volume": "23",
+        "author": "Tao",
+        "year": "2017",
+        "journal-title": "Computer Integrated Manufacturing Systems"
+      }
+    ],
+    "event": {
+      "name": "International Conference on Cloud Computing, Performance Computing, and Deep Learning (CCPCDL 2022)",
+      "location": "Wuhan, China",
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            11
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            13
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "International Conference on Cloud Computing, Performance Computing, and Deep Learning (CCPCDL 2022)"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          29
+        ]
+      ],
+      "date-time": "2022-12-29T20:01:14Z",
+      "timestamp": 1672344074000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12287/2641102/Research-on-intelligent-warehouse-digital-twin-system-based-on-digital/10.1117/12.2641102.full"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Sandeep",
+        "family": "Saxena",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "editor",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          13
+        ]
+      ]
+    },
+    "references-count": 7,
+    "URL": "https://doi.org/10.1117/12.2641102",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          13
+        ]
+      ]
+    }
+  }
+}

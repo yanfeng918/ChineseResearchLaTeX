@@ -1,0 +1,1128 @@
+{
+  "id": "https://openalex.org/W2114847419",
+  "doi": "https://doi.org/10.1109/coase.2007.4341790",
+  "title": "Container Integrity and Condition Monitoring using RF Vibration Sensor Tags",
+  "display_name": "Container Integrity and Condition Monitoring using RF Vibration Sensor Tags",
+  "publication_year": 2007,
+  "publication_date": "2007-09-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2114847419",
+    "doi": "https://doi.org/10.1109/coase.2007.4341790",
+    "mag": "2114847419"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/coase.2007.4341790",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/coase.2007.4341790",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2007 IEEE International Conference on Automation Science and Engineering",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5064826920",
+        "display_name": "Satish Bukkapatnam",
+        "orcid": "https://orcid.org/0000-0003-3312-8222"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210131712",
+          "display_name": "Oklahoma State University Oklahoma City",
+          "ror": "https://ror.org/03y1zyv86",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210131712"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Satish T.S. Bukkapatnam",
+      "raw_affiliation_strings": [
+        "Oklahoma State University, USA",
+        "Oklahoma State University - Stillwater"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Oklahoma State University, USA",
+          "institution_ids": [
+            "https://openalex.org/I4210131712"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University - Stillwater",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5062830302",
+        "display_name": "R. Komanduri",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I115475287",
+          "display_name": "Oklahoma State University",
+          "ror": "https://ror.org/01g9vbr38",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I115475287"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210131712",
+          "display_name": "Oklahoma State University Oklahoma City",
+          "ror": "https://ror.org/03y1zyv86",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210131712"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "R. Komanduri",
+      "raw_affiliation_strings": [
+        "Oklahoma State University, USA",
+        "Oklahoma State University - Stillwater"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Oklahoma State University, USA",
+          "institution_ids": [
+            "https://openalex.org/I4210131712"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Oklahoma State University - Stillwater",
+          "institution_ids": [
+            "https://openalex.org/I115475287"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 5.3875,
+  "has_fulltext": false,
+  "cited_by_count": 8,
+  "citation_normalized_percentile": {
+    "value": 0.95143139,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 90,
+    "max": 96
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "585",
+    "last_page": "590"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T12971",
+    "display_name": "Material Properties and Processing",
+    "score": 0.9926999807357788,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2211",
+      "display_name": "Mechanics of Materials"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T12971",
+      "display_name": "Material Properties and Processing",
+      "score": 0.9926999807357788,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2211",
+        "display_name": "Mechanics of Materials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10534",
+      "display_name": "Structural Health Monitoring Techniques",
+      "score": 0.9839000105857849,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2205",
+        "display_name": "Civil and Structural Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12486",
+      "display_name": "Food Supply Chain Traceability",
+      "score": 0.9743000268936157,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.8174538612365723
+    },
+    {
+      "id": "https://openalex.org/keywords/vibration",
+      "display_name": "Vibration",
+      "score": 0.67283695936203
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6638202667236328
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.5742322206497192
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.5334802865982056
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.5324612259864807
+    },
+    {
+      "id": "https://openalex.org/keywords/truck",
+      "display_name": "Truck",
+      "score": 0.530093252658844
+    },
+    {
+      "id": "https://openalex.org/keywords/range",
+      "display_name": "Range (aeronautics)",
+      "score": 0.4130243957042694
+    },
+    {
+      "id": "https://openalex.org/keywords/sensitivity",
+      "display_name": "Sensitivity (control systems)",
+      "score": 0.4119737148284912
+    },
+    {
+      "id": "https://openalex.org/keywords/automotive-engineering",
+      "display_name": "Automotive engineering",
+      "score": 0.32847750186920166
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.2684527039527893
+    },
+    {
+      "id": "https://openalex.org/keywords/electronic-engineering",
+      "display_name": "Electronic engineering",
+      "score": 0.26100119948387146
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.12502631545066833
+    },
+    {
+      "id": "https://openalex.org/keywords/acoustics",
+      "display_name": "Acoustics",
+      "score": 0.11973077058792114
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.10855326056480408
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.8174538612365723
+    },
+    {
+      "id": "https://openalex.org/C198394728",
+      "wikidata": "https://www.wikidata.org/wiki/Q3695508",
+      "display_name": "Vibration",
+      "level": 2,
+      "score": 0.67283695936203
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6638202667236328
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.5742322206497192
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.5334802865982056
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.5324612259864807
+    },
+    {
+      "id": "https://openalex.org/C52121051",
+      "wikidata": "https://www.wikidata.org/wiki/Q43193",
+      "display_name": "Truck",
+      "level": 2,
+      "score": 0.530093252658844
+    },
+    {
+      "id": "https://openalex.org/C204323151",
+      "wikidata": "https://www.wikidata.org/wiki/Q905424",
+      "display_name": "Range (aeronautics)",
+      "level": 2,
+      "score": 0.4130243957042694
+    },
+    {
+      "id": "https://openalex.org/C21200559",
+      "wikidata": "https://www.wikidata.org/wiki/Q7451068",
+      "display_name": "Sensitivity (control systems)",
+      "level": 2,
+      "score": 0.4119737148284912
+    },
+    {
+      "id": "https://openalex.org/C171146098",
+      "wikidata": "https://www.wikidata.org/wiki/Q124192",
+      "display_name": "Automotive engineering",
+      "level": 1,
+      "score": 0.32847750186920166
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.2684527039527893
+    },
+    {
+      "id": "https://openalex.org/C24326235",
+      "wikidata": "https://www.wikidata.org/wiki/Q126095",
+      "display_name": "Electronic engineering",
+      "level": 1,
+      "score": 0.26100119948387146
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.12502631545066833
+    },
+    {
+      "id": "https://openalex.org/C24890656",
+      "wikidata": "https://www.wikidata.org/wiki/Q82811",
+      "display_name": "Acoustics",
+      "level": 1,
+      "score": 0.11973077058792114
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.10855326056480408
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C146978453",
+      "wikidata": "https://www.wikidata.org/wiki/Q3798668",
+      "display_name": "Aerospace engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/coase.2007.4341790",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/coase.2007.4341790",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2007 IEEE International Conference on Automation Science and Engineering",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 14,
+  "referenced_works": [
+    "https://openalex.org/W1565139185",
+    "https://openalex.org/W1825077972",
+    "https://openalex.org/W1980928257",
+    "https://openalex.org/W1983667760",
+    "https://openalex.org/W1992460980",
+    "https://openalex.org/W2028931603",
+    "https://openalex.org/W2078922893",
+    "https://openalex.org/W2087590135",
+    "https://openalex.org/W2090213759",
+    "https://openalex.org/W2144660992",
+    "https://openalex.org/W2164023950",
+    "https://openalex.org/W3124661333",
+    "https://openalex.org/W3143059483",
+    "https://openalex.org/W4299429830"
+  ],
+  "related_works": [
+    "https://openalex.org/W1517019597",
+    "https://openalex.org/W1968776045",
+    "https://openalex.org/W2296713838",
+    "https://openalex.org/W767149399",
+    "https://openalex.org/W3036261569",
+    "https://openalex.org/W2889950528",
+    "https://openalex.org/W575062473",
+    "https://openalex.org/W4297672583",
+    "https://openalex.org/W2357934771",
+    "https://openalex.org/W3033024819"
+  ],
+  "abstract_inverted_index": {
+    "Global": [
+      0
+    ],
+    "supply": [
+      1
+    ],
+    "chain": [
+      2
+    ],
+    "operations": [
+      3
+    ],
+    "use": [
+      4,
+      139
+    ],
+    "hundreds": [
+      5
+    ],
+    "of": [
+      6,
+      8,
+      42,
+      47,
+      55,
+      83,
+      86,
+      111,
+      116,
+      135,
+      140,
+      144,
+      186,
+      241
+    ],
+    "thousands": [
+      7
+    ],
+    "container": [
+      9,
+      57,
+      87,
+      105,
+      118,
+      146,
+      262
+    ],
+    "trucks": [
+      10
+    ],
+    "to": [
+      11,
+      66,
+      96,
+      163,
+      216,
+      228,
+      253
+    ],
+    "transport": [
+      12
+    ],
+    "valuable": [
+      13
+    ],
+    "packages": [
+      14
+    ],
+    "and": [
+      15,
+      18,
+      58,
+      70,
+      75,
+      128,
+      148,
+      196,
+      204,
+      258
+    ],
+    "items": [
+      16
+    ],
+    "within": [
+      17
+    ],
+    "across": [
+      19
+    ],
+    "continents.": [
+      20
+    ],
+    "The": [
+      21,
+      77,
+      160,
+      202,
+      223
+    ],
+    "recent": [
+      22
+    ],
+    "developments": [
+      23
+    ],
+    "in": [
+      24,
+      28
+    ],
+    "wireless": [
+      25,
+      93,
+      150
+    ],
+    "sensing,": [
+      26
+    ],
+    "including": [
+      27
+    ],
+    "the": [
+      29,
+      52,
+      81,
+      84,
+      97,
+      104,
+      112,
+      117,
+      125,
+      129,
+      138,
+      165,
+      170,
+      183,
+      219,
+      230,
+      235,
+      242,
+      247,
+      256
+    ],
+    "so-called": [
+      30
+    ],
+    "RFID": [
+      31
+    ],
+    "sensor": [
+      32,
+      94,
+      151,
+      237
+    ],
+    "tags,": [
+      33
+    ],
+    "offer": [
+      34
+    ],
+    "significant": [
+      35,
+      63
+    ],
+    "potential": [
+      36
+    ],
+    "for": [
+      37,
+      193,
+      198
+    ],
+    "continuous": [
+      38
+    ],
+    "long-range": [
+      39
+    ],
+    "integrity": [
+      40,
+      71,
+      271
+    ],
+    "monitoring": [
+      41
+    ],
+    "containers": [
+      43
+    ],
+    "at": [
+      44,
+      155
+    ],
+    "various": [
+      45
+    ],
+    "phases": [
+      46
+    ],
+    "their": [
+      48
+    ],
+    "shipment.": [
+      49
+    ],
+    "In": [
+      50,
+      244
+    ],
+    "particular,": [
+      51
+    ],
+    "vibration": [
+      53,
+      126,
+      174,
+      236
+    ],
+    "patterns": [
+      54,
+      85,
+      127
+    ],
+    "a": [
+      56,
+      133,
+      141,
+      145,
+      149,
+      213
+    ],
+    "its": [
+      59,
+      67
+    ],
+    "contents": [
+      60
+    ],
+    "can": [
+      61,
+      250
+    ],
+    "reveal": [
+      62
+    ],
+    "information": [
+      64
+    ],
+    "related": [
+      65
+    ],
+    "operating": [
+      68,
+      106,
+      166,
+      221,
+      232,
+      259
+    ],
+    "environment": [
+      69
+    ],
+    "during": [
+      72,
+      261
+    ],
+    "transport,": [
+      73
+    ],
+    "handling": [
+      74
+    ],
+    "storage.": [
+      76
+    ],
+    "present": [
+      78
+    ],
+    "work": [
+      79
+    ],
+    "investigates": [
+      80
+    ],
+    "sensitivity": [
+      82
+    ],
+    "vibrations": [
+      88,
+      154
+    ],
+    "gathered": [
+      89
+    ],
+    "as": [
+      90
+    ],
+    "signals": [
+      91,
+      189
+    ],
+    "from": [
+      92,
+      234
+    ],
+    "tags": [
+      95
+    ],
+    "following": [
+      98
+    ],
+    "four": [
+      99
+    ],
+    "major": [
+      100
+    ],
+    "factors": [
+      101,
+      131
+    ],
+    "that": [
+      102,
+      152,
+      182
+    ],
+    "define": [
+      103
+    ],
+    "conditions:": [
+      107
+    ],
+    "terrain": [
+      108
+    ],
+    "type,": [
+      109
+    ],
+    "speed": [
+      110
+    ],
+    "vehicle,": [
+      113
+    ],
+    "weight": [
+      114
+    ],
+    "dimensions": [
+      115
+    ],
+    "items.": [
+      119
+    ],
+    "Quantitative": [
+      120
+    ],
+    "relationships": [
+      121
+    ],
+    "are": [
+      122,
+      190,
+      209
+    ],
+    "established": [
+      123
+    ],
+    "between": [
+      124,
+      218
+    ],
+    "salient": [
+      130
+    ],
+    "through": [
+      132
+    ],
+    "series": [
+      134
+    ],
+    "experiments": [
+      136
+    ],
+    "involving": [
+      137
+    ],
+    "scaled": [
+      142
+    ],
+    "model": [
+      143
+    ],
+    "truck": [
+      147
+    ],
+    "captures": [
+      153
+    ],
+    "200": [
+      156
+    ],
+    "Hz": [
+      157
+    ],
+    "sampling": [
+      158
+    ],
+    "rates.": [
+      159
+    ],
+    "idea": [
+      161
+    ],
+    "is": [
+      162
+    ],
+    "classify": [
+      164,
+      217
+    ],
+    "conditions": [
+      167,
+      233,
+      260
+    ],
+    "by": [
+      168
+    ],
+    "analyzing": [
+      169
+    ],
+    "complex": [
+      171
+    ],
+    "dynamics": [
+      172,
+      187
+    ],
+    "underlying": [
+      173,
+      188
+    ],
+    "signals.": [
+      175
+    ],
+    "Using": [
+      176
+    ],
+    "nonlinear": [
+      177,
+      205
+    ],
+    "dynamic": [
+      178,
+      206
+    ],
+    "characterization,": [
+      179
+    ],
+    "we": [
+      180
+    ],
+    "find": [
+      181
+    ],
+    "Lyapunov": [
+      184
+    ],
+    "exponents": [
+      185
+    ],
+    "positive": [
+      191
+    ],
+    "(0.01-0.02": [
+      192
+    ],
+    "Stage": [
+      194,
+      199
+    ],
+    "1": [
+      195
+    ],
+    "0.005": [
+      197
+    ],
+    "2": [
+      200
+    ],
+    "experiments).": [
+      201
+    ],
+    "statistical": [
+      203
+    ],
+    "features": [
+      207,
+      238
+    ],
+    "together": [
+      208
+    ],
+    "successfully": [
+      210
+    ],
+    "mapped": [
+      211
+    ],
+    "using": [
+      212
+    ],
+    "neural": [
+      214,
+      224
+    ],
+    "network": [
+      215
+    ],
+    "different": [
+      220
+    ],
+    "conditions.": [
+      222
+    ],
+    "networks": [
+      225
+    ],
+    "were": [
+      226
+    ],
+    "able": [
+      227
+    ],
+    "identify": [
+      229
+    ],
+    "correct": [
+      231
+    ],
+    "about": [
+      239
+    ],
+    "90%": [
+      240
+    ],
+    "times.": [
+      243
+    ],
+    "real": [
+      245
+    ],
+    "life,": [
+      246
+    ],
+    "research": [
+      248
+    ],
+    "results": [
+      249
+    ],
+    "be": [
+      251
+    ],
+    "applied": [
+      252
+    ],
+    "accurately": [
+      254
+    ],
+    "capture": [
+      255
+    ],
+    "environmental": [
+      257
+    ],
+    "transport.": [
+      263
+    ],
+    "This": [
+      264
+    ],
+    "will": [
+      265
+    ],
+    "help": [
+      266
+    ],
+    "proactively": [
+      267
+    ],
+    "address": [
+      268
+    ],
+    "possible": [
+      269
+    ],
+    "serious": [
+      270
+    ],
+    "losses.": [
+      272
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2025,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

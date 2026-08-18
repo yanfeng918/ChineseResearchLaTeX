@@ -1,0 +1,840 @@
+{
+  "id": "https://openalex.org/W2621273433",
+  "doi": "https://doi.org/10.3303/cet1546087",
+  "title": "Quality Monitoring Traceability Platform of Agriculture products Cold Chain Logistics Based on the Internet of Things",
+  "display_name": "Quality Monitoring Traceability Platform of Agriculture products Cold Chain Logistics Based on the Internet of Things",
+  "publication_year": 2015,
+  "publication_date": "2015-12-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2621273433",
+    "doi": "https://doi.org/10.3303/cet1546087",
+    "mag": "2621273433"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "pmh:oai:doaj.org/article:a3c7d13d003a475b9c2af07541255316",
+    "is_oa": true,
+    "landing_page_url": "https://doaj.org/article/a3c7d13d003a475b9c2af07541255316",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306401280",
+      "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": null,
+      "host_organization_name": null,
+      "host_organization_lineage": [],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "cc-by-sa",
+    "license_id": "https://openalex.org/licenses/cc-by-sa",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": "Chemical Engineering Transactions, Vol 46 (2015)",
+    "raw_type": "article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "doaj"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://doaj.org/article/a3c7d13d003a475b9c2af07541255316",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5032298641",
+        "display_name": "Yiru Li",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Y.N. Li",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5104319122",
+        "display_name": "Yanmei Peng",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Y.L. Peng",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5008902482",
+        "display_name": "L. Zhang",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "L. Zhang",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5103753858",
+        "display_name": "Junchong Wei",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "J.F. Wei",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5065157933",
+        "display_name": "D. Li",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "D. Li",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 0,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.8794,
+  "has_fulltext": false,
+  "cited_by_count": 13,
+  "citation_normalized_percentile": {
+    "value": 0.81431433,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 98
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": null,
+    "last_page": null
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T12486",
+    "display_name": "Food Supply Chain Traceability",
+    "score": 0.958299994468689,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1106",
+      "display_name": "Food Science"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/11",
+      "display_name": "Agricultural and Biological Sciences"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T12486",
+      "display_name": "Food Supply Chain Traceability",
+      "score": 0.958299994468689,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/traceability",
+      "display_name": "Traceability",
+      "score": 0.9495058059692383
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.7557197213172913
+    },
+    {
+      "id": "https://openalex.org/keywords/cold-chain",
+      "display_name": "Cold chain",
+      "score": 0.7554930448532104
+    },
+    {
+      "id": "https://openalex.org/keywords/quality",
+      "display_name": "Quality (philosophy)",
+      "score": 0.6248292922973633
+    },
+    {
+      "id": "https://openalex.org/keywords/agriculture",
+      "display_name": "Agriculture",
+      "score": 0.5698556900024414
+    },
+    {
+      "id": "https://openalex.org/keywords/business",
+      "display_name": "Business",
+      "score": 0.5685430765151978
+    },
+    {
+      "id": "https://openalex.org/keywords/the-internet",
+      "display_name": "The Internet",
+      "score": 0.4259990453720093
+    },
+    {
+      "id": "https://openalex.org/keywords/chain",
+      "display_name": "Chain (unit)",
+      "score": 0.4105044901371002
+    },
+    {
+      "id": "https://openalex.org/keywords/commerce",
+      "display_name": "Commerce",
+      "score": 0.3561045825481415
+    },
+    {
+      "id": "https://openalex.org/keywords/manufacturing-engineering",
+      "display_name": "Manufacturing engineering",
+      "score": 0.3303971290588379
+    },
+    {
+      "id": "https://openalex.org/keywords/process-management",
+      "display_name": "Process management",
+      "score": 0.3219457268714905
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.30440080165863037
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.2441202700138092
+    },
+    {
+      "id": "https://openalex.org/keywords/world-wide-web",
+      "display_name": "World Wide Web",
+      "score": 0.18621253967285156
+    },
+    {
+      "id": "https://openalex.org/keywords/software-engineering",
+      "display_name": "Software engineering",
+      "score": 0.10468056797981262
+    },
+    {
+      "id": "https://openalex.org/keywords/geography",
+      "display_name": "Geography",
+      "score": 0.064191073179245
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C153876917",
+      "wikidata": "https://www.wikidata.org/wiki/Q899704",
+      "display_name": "Traceability",
+      "level": 2,
+      "score": 0.9495058059692383
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.7557197213172913
+    },
+    {
+      "id": "https://openalex.org/C2780114722",
+      "wikidata": "https://www.wikidata.org/wiki/Q592197",
+      "display_name": "Cold chain",
+      "level": 2,
+      "score": 0.7554930448532104
+    },
+    {
+      "id": "https://openalex.org/C2779530757",
+      "wikidata": "https://www.wikidata.org/wiki/Q1207505",
+      "display_name": "Quality (philosophy)",
+      "level": 2,
+      "score": 0.6248292922973633
+    },
+    {
+      "id": "https://openalex.org/C118518473",
+      "wikidata": "https://www.wikidata.org/wiki/Q11451",
+      "display_name": "Agriculture",
+      "level": 2,
+      "score": 0.5698556900024414
+    },
+    {
+      "id": "https://openalex.org/C144133560",
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+      "display_name": "Business",
+      "level": 0,
+      "score": 0.5685430765151978
+    },
+    {
+      "id": "https://openalex.org/C110875604",
+      "wikidata": "https://www.wikidata.org/wiki/Q75",
+      "display_name": "The Internet",
+      "level": 2,
+      "score": 0.4259990453720093
+    },
+    {
+      "id": "https://openalex.org/C199185054",
+      "wikidata": "https://www.wikidata.org/wiki/Q552299",
+      "display_name": "Chain (unit)",
+      "level": 2,
+      "score": 0.4105044901371002
+    },
+    {
+      "id": "https://openalex.org/C54750564",
+      "wikidata": "https://www.wikidata.org/wiki/Q26643",
+      "display_name": "Commerce",
+      "level": 1,
+      "score": 0.3561045825481415
+    },
+    {
+      "id": "https://openalex.org/C117671659",
+      "wikidata": "https://www.wikidata.org/wiki/Q11049265",
+      "display_name": "Manufacturing engineering",
+      "level": 1,
+      "score": 0.3303971290588379
+    },
+    {
+      "id": "https://openalex.org/C195094911",
+      "wikidata": "https://www.wikidata.org/wiki/Q14167904",
+      "display_name": "Process management",
+      "level": 1,
+      "score": 0.3219457268714905
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.30440080165863037
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.2441202700138092
+    },
+    {
+      "id": "https://openalex.org/C136764020",
+      "wikidata": "https://www.wikidata.org/wiki/Q466",
+      "display_name": "World Wide Web",
+      "level": 1,
+      "score": 0.18621253967285156
+    },
+    {
+      "id": "https://openalex.org/C115903868",
+      "wikidata": "https://www.wikidata.org/wiki/Q80993",
+      "display_name": "Software engineering",
+      "level": 1,
+      "score": 0.10468056797981262
+    },
+    {
+      "id": "https://openalex.org/C205649164",
+      "wikidata": "https://www.wikidata.org/wiki/Q1071",
+      "display_name": "Geography",
+      "level": 0,
+      "score": 0.064191073179245
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C166957645",
+      "wikidata": "https://www.wikidata.org/wiki/Q23498",
+      "display_name": "Archaeology",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C138885662",
+      "wikidata": "https://www.wikidata.org/wiki/Q5891",
+      "display_name": "Philosophy",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C1276947",
+      "wikidata": "https://www.wikidata.org/wiki/Q333",
+      "display_name": "Astronomy",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C111472728",
+      "wikidata": "https://www.wikidata.org/wiki/Q9471",
+      "display_name": "Epistemology",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "pmh:oai:doaj.org/article:a3c7d13d003a475b9c2af07541255316",
+      "is_oa": true,
+      "landing_page_url": "https://doaj.org/article/a3c7d13d003a475b9c2af07541255316",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306401280",
+        "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by-sa",
+      "license_id": "https://openalex.org/licenses/cc-by-sa",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "Chemical Engineering Transactions, Vol 46 (2015)",
+      "raw_type": "article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:doaj.org/article:a3c7d13d003a475b9c2af07541255316",
+    "is_oa": true,
+    "landing_page_url": "https://doaj.org/article/a3c7d13d003a475b9c2af07541255316",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306401280",
+      "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": null,
+      "host_organization_name": null,
+      "host_organization_lineage": [],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "cc-by-sa",
+    "license_id": "https://openalex.org/licenses/cc-by-sa",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": "Chemical Engineering Transactions, Vol 46 (2015)",
+    "raw_type": "article"
+  },
+  "sustainable_development_goals": [
+    {
+      "score": 0.7400000095367432,
+      "display_name": "Zero hunger",
+      "id": "https://metadata.un.org/sdg/2"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W4312138033",
+    "https://openalex.org/W2235546141",
+    "https://openalex.org/W2789825376",
+    "https://openalex.org/W4249545720",
+    "https://openalex.org/W2378709054",
+    "https://openalex.org/W4380301954",
+    "https://openalex.org/W3126954492",
+    "https://openalex.org/W2370001102",
+    "https://openalex.org/W2782273007",
+    "https://openalex.org/W2803090313"
+  ],
+  "abstract_inverted_index": {
+    "In": [
+      0
+    ],
+    "order": [
+      1
+    ],
+    "to": [
+      2,
+      73
+    ],
+    "realize": [
+      3,
+      87
+    ],
+    "quality": [
+      4,
+      63,
+      76,
+      120,
+      130
+    ],
+    "tracing": [
+      5
+    ],
+    "of": [
+      6,
+      22,
+      77,
+      92
+    ],
+    "cold-chain": [
+      7,
+      27
+    ],
+    "logistics": [
+      8,
+      28
+    ],
+    "and": [
+      9,
+      13,
+      17,
+      31,
+      54,
+      79,
+      95,
+      97,
+      105,
+      127
+    ],
+    "real": [
+      10,
+      83
+    ],
+    "time": [
+      11
+    ],
+    "temperature": [
+      12,
+      96
+    ],
+    "humidity": [
+      14,
+      98
+    ],
+    "data": [
+      15,
+      29
+    ],
+    "acquisition": [
+      16,
+      30
+    ],
+    "transmission,": [
+      18,
+      32
+    ],
+    "based": [
+      19,
+      62
+    ],
+    "on": [
+      20,
+      100
+    ],
+    "analysis": [
+      21
+    ],
+    "the": [
+      23,
+      75,
+      80,
+      89,
+      110,
+      115
+    ],
+    "current": [
+      24
+    ],
+    "method": [
+      25,
+      35
+    ],
+    "for": [
+      26
+    ],
+    "a": [
+      33
+    ],
+    "new": [
+      34
+    ],
+    "which": [
+      36
+    ],
+    "integrating": [
+      37
+    ],
+    "radio": [
+      38
+    ],
+    "frequency": [
+      39
+    ],
+    "identification": [
+      40
+    ],
+    "(RFID)": [
+      41
+    ],
+    "with": [
+      42,
+      109
+    ],
+    "wireless": [
+      43
+    ],
+    "sensor": [
+      44
+    ],
+    "network": [
+      45,
+      55
+    ],
+    "(WSN)": [
+      46
+    ],
+    "was": [
+      47,
+      58,
+      66
+    ],
+    "put": [
+      48
+    ],
+    "forward.": [
+      49
+    ],
+    "The": [
+      50,
+      60
+    ],
+    "system": [
+      51,
+      113
+    ],
+    "scheme": [
+      52
+    ],
+    "design": [
+      53
+    ],
+    "communication": [
+      56
+    ],
+    "protocol": [
+      57
+    ],
+    "investigated.": [
+      59
+    ],
+    "RFID": [
+      61
+    ],
+    "traceability": [
+      64,
+      91,
+      121
+    ],
+    "platform": [
+      65,
+      69,
+      122
+    ],
+    "designed.": [
+      67
+    ],
+    "This": [
+      68
+    ],
+    "can": [
+      70,
+      86,
+      123
+    ],
+    "be": [
+      71
+    ],
+    "used": [
+      72
+    ],
+    "monitor": [
+      74,
+      99
+    ],
+    "products": [
+      78,
+      94
+    ],
+    "environment": [
+      81
+    ],
+    "in": [
+      82
+    ],
+    "time.": [
+      84
+    ],
+    "It": [
+      85
+    ],
+    "all": [
+      88
+    ],
+    "way": [
+      90
+    ],
+    "agriculture": [
+      93
+    ],
+    "cold": [
+      101,
+      116
+    ],
+    "chain": [
+      102,
+      117
+    ],
+    "from": [
+      103
+    ],
+    "transport": [
+      104
+    ],
+    "storage.": [
+      106
+    ],
+    "By": [
+      107
+    ],
+    "comparison": [
+      108
+    ],
+    "previous": [
+      111
+    ],
+    "management": [
+      112
+    ],
+    "about": [
+      114
+    ],
+    "logistics,": [
+      118
+    ],
+    "this": [
+      119
+    ],
+    "reduce": [
+      124
+    ],
+    "product": [
+      125,
+      129
+    ],
+    "loss": [
+      126
+    ],
+    "ensure": [
+      128
+    ],
+    "better.": [
+      131
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 6
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-05-06T06:03:25.996018",
+  "created_date": "2025-10-10T00:00:00"
+}

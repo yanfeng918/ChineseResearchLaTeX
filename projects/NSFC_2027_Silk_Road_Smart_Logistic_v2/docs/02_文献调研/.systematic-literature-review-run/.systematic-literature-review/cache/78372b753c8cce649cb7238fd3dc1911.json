@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          10
+        ]
+      ],
+      "date-time": "2026-04-10T06:07:00Z",
+      "timestamp": 1775801220272,
+      "version": "3.50.1"
+    },
+    "reference-count": 0,
+    "publisher": "SCITEPRESS - Science and Technology Publications",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "DOI": "10.5220/0010676800003062",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          2
+        ]
+      ],
+      "date-time": "2021-11-02T10:21:34Z",
+      "timestamp": 1635848494000
+    },
+    "page": "116-122",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Use of a Virtual Twin for Dynamic Storage Space Monitoring in a Port Terminal"
+    ],
+    "prefix": "10.5220",
+    "author": [
+      {
+        "given": "Andreas",
+        "family": "Höpfner",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fraunhofer IFF, Sandtorstr. 22, 39106 Magdeburg, Germany, --- Select a Country ---"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Olaf",
+        "family": "Poenicke",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fraunhofer IFF, Sandtorstr. 22, 39106 Magdeburg, Germany, --- Select a Country ---"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Christian",
+        "family": "Blobner",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fraunhofer IFF, Sandtorstr. 22, 39106 Magdeburg, Germany, --- Select a Country ---"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "André",
+        "family": "Winge",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fraunhofer IFF, Sandtorstr. 22, 39106 Magdeburg, Germany, --- Select a Country ---"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "3171",
+    "event": {
+      "name": "2nd International Conference on Innovative Intelligent Industrial Production and Logistics",
+      "location": "Online Streaming, --- Select a Country ---",
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            25
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            27
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "Proceedings of the 2nd International Conference on Innovative Intelligent Industrial Production and Logistics"
+    ],
+    "original-title": [
+      "Use of a Virtual Twin for Dynamic Storage Space Monitoring in a Port Terminal"
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          2
+        ]
+      ],
+      "date-time": "2021-11-02T10:40:03Z",
+      "timestamp": 1635849603000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010676800003062"
+      }
+    },
+    "subtitle": [
+      ""
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.5220/0010676800003062",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    }
+  }
+}

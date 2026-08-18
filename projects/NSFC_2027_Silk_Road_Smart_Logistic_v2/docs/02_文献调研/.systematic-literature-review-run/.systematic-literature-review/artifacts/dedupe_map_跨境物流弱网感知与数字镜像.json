@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-08-16T08:44:45",
+  "input": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/docs/02_文献调研/.systematic-literature-review-run/.systematic-literature-review/artifacts/papers_merged.jsonl",
+  "output": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/docs/02_文献调研/.systematic-literature-review-run/.systematic-literature-review/artifacts/papers_deduped_跨境物流弱网感知与数字镜像.jsonl",
+  "input_count": 803,
+  "output_count": 794,
+  "merged_count": 9,
+  "cross_doi_merges": 4,
+  "params": {
+    "title_similarity_threshold": 0.92,
+    "token_jaccard_threshold": 0.8,
+    "year_window": 1
+  },
+  "groups": [
+    {
+      "canonical_index": 27,
+      "canonical": {
+        "title": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+        "doi": "10.1016/j.comnet.2024.110350",
+        "year": 2024,
+        "venue": "Computer Networks",
+        "url": "https://openalex.org/W4393087172",
+        "preprint": false,
+        "heuristic_score": 17
+      },
+      "merged": [
+        {
+          "merged_index": 518,
+          "merged": {
+            "title": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+            "doi": "10.1016/j.comnet.2024.110350",
+            "year": 2024,
+            "venue": "Computer Networks",
+            "url": "https://openalex.org/W4393087172",
+            "preprint": false,
+            "heuristic_score": 17
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 114,
+      "canonical": {
+        "title": "Structural health monitoring of inland navigation structures and ports: a review on developments and challenges",
+        "doi": "10.1177/14759217231170742",
+        "year": 2023,
+        "venue": "Structural Health Monitoring",
+        "url": "https://openalex.org/W4377021354",
+        "preprint": false,
+        "heuristic_score": 19
+      },
+      "merged": [
+        {
+          "merged_index": 539,
+          "merged": {
+            "title": "Structural health monitoring of inland navigation structures and ports: a review on developments and challenges",
+            "doi": "10.1177/14759217231170742",
+            "year": 2023,
+            "venue": "Structural Health Monitoring",
+            "url": "https://openalex.org/W4377021354",
+            "preprint": false,
+            "heuristic_score": 19
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 224,
+      "canonical": {
+        "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+        "doi": "10.1109/tsipn.2015.2448520",
+        "year": 2015,
+        "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+        "url": "https://openalex.org/W1904504745",
+        "preprint": false,
+        "heuristic_score": 19
+      },
+      "merged": [
+        {
+          "merged_index": 515,
+          "merged": {
+            "title": "Joint Optimization of Radio and Computational Resources for Multicell Mobile-Edge Computing",
+            "doi": "10.1109/tsipn.2015.2448520",
+            "year": 2015,
+            "venue": "IEEE Transactions on Signal and Information Processing over Networks",
+            "url": "https://openalex.org/W1904504745",
+            "preprint": false,
+            "heuristic_score": 19
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 260,
+      "canonical": {
+        "title": "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities",
+        "doi": "10.1016/j.jii.2022.100393",
+        "year": 2022,
+        "venue": "Journal of Industrial Information Integration",
+        "url": "https://openalex.org/W4297984666",
+        "preprint": false,
+        "heuristic_score": 17
+      },
+      "merged": [
+        {
+          "merged_index": 542,
+          "merged": {
+            "title": "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities",
+            "doi": "10.1016/j.jii.2022.100393",
+            "year": 2022,
+            "venue": "Journal of Industrial Information Integration",
+            "url": "https://openalex.org/W4297984666",
+            "preprint": false,
+            "heuristic_score": 17
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 320,
+      "canonical": {
+        "title": "Cross-Layer Optimization for Enhanced IoT Connectivity: A Novel Routing Protocol for Opportunistic Networks",
+        "doi": "10.3390/fi16060183",
+        "year": 2024,
+        "venue": "Future Internet",
+        "url": "https://doi.org/10.3390/fi16060183",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 340,
+          "merged": {
+            "title": "Cross-Layer Optimization for Enhanced IoT Connectivity: A Novel Routing Protocol for Opportunistic Networks",
+            "doi": "10.3390/fi16060183",
+            "year": 2024,
+            "venue": "Future Internet",
+            "url": "https://doi.org/10.3390/fi16060183",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 484,
+      "canonical": {
+        "title": "Towards a Digital Twin Modeling Method for Container Terminal Port",
+        "doi": "10.1016/j.procs.2024.09.361",
+        "year": 2024,
+        "venue": "Procedia Computer Science",
+        "url": "https://doi.org/10.1016/j.procs.2024.09.361",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 718,
+          "merged": {
+            "title": "Towards a Digital Twin Modeling Method for Container Terminal Port",
+            "doi": "10.1016/j.procs.2024.09.361",
+            "year": 2024,
+            "venue": "Procedia Computer Science",
+            "url": "https://openalex.org/W4404797468",
+            "preprint": false,
+            "heuristic_score": 19
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 696,
+      "canonical": {
+        "title": "Digital Twins for Ports: Derived From Smart City and Supply Chain Twinning Experience",
+        "doi": "10.1109/access.2023.3295495",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "url": "https://openalex.org/W4384284153",
+        "preprint": false,
+        "heuristic_score": 19
+      },
+      "merged": [
+        {
+          "merged_index": 734,
+          "merged": {
+            "title": "Digital Twins for Ports: Derived from Smart City and Supply Chain Twinning Experience",
+            "doi": "10.48550/arxiv.2301.10224",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "https://openalex.org/W4318149328",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 709,
+      "canonical": {
+        "title": "Insights into How to Enhance Container Terminal Operations with Digital Twins",
+        "doi": "10.3390/computers13060138",
+        "year": 2024,
+        "venue": "Computers",
+        "url": "https://openalex.org/W4399155688",
+        "preprint": false,
+        "heuristic_score": 19
+      },
+      "merged": [
+        {
+          "merged_index": 726,
+          "merged": {
+            "title": "Insights into How to Enhance Container Terminal Operations with Digital Twins",
+            "doi": "10.20944/preprints202404.0857.v1",
+            "year": 2024,
+            "venue": "Preprints.org",
+            "url": "https://openalex.org/W4394922623",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 718,
+      "canonical": {
+        "title": "Assessing the Maturity of Digital Twinning Solutions for Ports",
+        "doi": "10.1109/percomworkshops56833.2023.10150378",
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "url": "https://openalex.org/W4381747038",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 739,
+          "merged": {
+            "title": "Assessing the Maturity of Digital Twinning Solutions for Ports",
+            "doi": "10.48550/arxiv.2212.07722",
+            "year": 2022,
+            "venue": "arXiv (Cornell University)",
+            "url": "https://openalex.org/W4311726259",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "canonical_index": 320,
+      "merged_index": 340,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.3390/fi16060183",
+      "doi_b": "10.3390/fi16060183"
+    },
+    {
+      "canonical_index": 224,
+      "merged_index": 515,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2015,
+      "year_b": 2015,
+      "doi_a": "10.1109/tsipn.2015.2448520",
+      "doi_b": "10.1109/tsipn.2015.2448520"
+    },
+    {
+      "canonical_index": 27,
+      "merged_index": 518,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.1016/j.comnet.2024.110350",
+      "doi_b": "10.1016/j.comnet.2024.110350"
+    },
+    {
+      "canonical_index": 114,
+      "merged_index": 539,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.1177/14759217231170742",
+      "doi_b": "10.1177/14759217231170742"
+    },
+    {
+      "canonical_index": 260,
+      "merged_index": 542,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.1016/j.jii.2022.100393",
+      "doi_b": "10.1016/j.jii.2022.100393"
+    },
+    {
+      "canonical_index": 484,
+      "merged_index": 718,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.1016/j.procs.2024.09.361",
+      "doi_b": "10.1016/j.procs.2024.09.361"
+    },
+    {
+      "canonical_index": 709,
+      "merged_index": 726,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.3390/computers13060138",
+      "doi_b": "10.20944/preprints202404.0857.v1"
+    },
+    {
+      "canonical_index": 696,
+      "merged_index": 734,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.1109/access.2023.3295495",
+      "doi_b": "10.48550/arxiv.2301.10224"
+    },
+    {
+      "canonical_index": 718,
+      "merged_index": 739,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2022,
+      "doi_a": "10.1109/percomworkshops56833.2023.10150378",
+      "doi_b": "10.48550/arxiv.2212.07722"
+    }
+  ]
+}

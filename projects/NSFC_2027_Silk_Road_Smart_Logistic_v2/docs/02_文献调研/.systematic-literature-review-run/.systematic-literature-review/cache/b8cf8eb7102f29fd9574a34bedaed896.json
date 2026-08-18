@@ -1,0 +1,29 @@
+{
+  "paperId": "39a91ed6aaa6e4247022ff5592ade28ff1d8fad8",
+  "title": "Deep Learning-based Framework for Shipping Container Security Seal Detection",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICIEVicIVPR52578.2021.9564154?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICIEVicIVPR52578.2021.9564154, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "7859326",
+      "name": "Zhila Bahrami"
+    },
+    {
+      "authorId": "2110045336",
+      "name": "Ran Zhang"
+    },
+    {
+      "authorId": "9103230",
+      "name": "Rakiba Rayhana"
+    },
+    {
+      "authorId": "2145976585",
+      "name": "Zheng Liu"
+    }
+  ],
+  "abstract": null
+}

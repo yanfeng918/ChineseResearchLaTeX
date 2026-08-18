@@ -1,0 +1,21 @@
+{
+  "paperId": "44d988f1ba5c0940207f6de2a97ec05b2e8ae4e8",
+  "title": "Energy Efficient Link-Delay Aware Data Forwarding in Low-Duty-Cycle LoRa Mesh based IoT Networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1504/ijsnet.2024.10067288?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1504/ijsnet.2024.10067288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2257097841",
+      "name": "Jing Zhang"
+    },
+    {
+      "authorId": "2238912142",
+      "name": "Gary Sun"
+    }
+  ],
+  "abstract": null
+}

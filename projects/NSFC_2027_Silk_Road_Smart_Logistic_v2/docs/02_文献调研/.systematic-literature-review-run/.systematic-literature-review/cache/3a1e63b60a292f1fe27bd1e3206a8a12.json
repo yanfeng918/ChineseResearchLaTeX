@@ -1,0 +1,37 @@
+{
+  "paperId": "60aea7ef06ea3428402021cf2026744806b3b7ff",
+  "title": "Emerging practices and research issues for big data analytics in freight transportation",
+  "openAccessPdf": {
+    "url": "https://link.springer.com/content/pdf/10.1057/s41278-023-00255-z.pdf",
+    "status": "BRONZE",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1057/s41278-023-00255-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1057/s41278-023-00255-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1737200",
+      "name": "M. Gorman"
+    },
+    {
+      "authorId": "2070090833",
+      "name": "John Clarke"
+    },
+    {
+      "authorId": "2277284266",
+      "name": "R. Koster"
+    },
+    {
+      "authorId": "145397232",
+      "name": "M. Hewitt"
+    },
+    {
+      "authorId": "1906274",
+      "name": "D. Roy"
+    },
+    {
+      "authorId": "2117848935",
+      "name": "Mei Zhang"
+    }
+  ],
+  "abstract": null
+}

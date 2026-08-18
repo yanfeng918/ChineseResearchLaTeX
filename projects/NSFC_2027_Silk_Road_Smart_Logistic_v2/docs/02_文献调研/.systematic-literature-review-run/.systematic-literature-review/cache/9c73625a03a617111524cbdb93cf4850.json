@@ -1,0 +1,29 @@
+{
+  "paperId": "e423d0ece392afe54ad26d02e85db450ed6b4cdb",
+  "title": "A green coalitional store-and-forward scheme for delay tolerant networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/PIMRC.2016.7794849?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/PIMRC.2016.7794849, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2066199837",
+      "name": "Sara Arabi"
+    },
+    {
+      "authorId": "3382007",
+      "name": "S. Handouf"
+    },
+    {
+      "authorId": "2098846",
+      "name": "Essaid Sabir"
+    },
+    {
+      "authorId": "2641332",
+      "name": "M. Sadik"
+    }
+  ],
+  "abstract": null
+}

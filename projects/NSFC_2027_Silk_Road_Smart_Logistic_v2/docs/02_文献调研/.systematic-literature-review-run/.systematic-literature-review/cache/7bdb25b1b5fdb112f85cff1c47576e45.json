@@ -1,0 +1,21 @@
+{
+  "paperId": "34caadb27f644c487dcf002d3956c65bd45816ce",
+  "title": "Transparent and autonomous store-carry-forward communication in Delay Tolerant Networks (DTNs)",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCNC.2012.6167525?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCNC.2012.6167525, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "3344240",
+      "name": "Frank Nordemann"
+    },
+    {
+      "authorId": "9329976",
+      "name": "R. Tönjes"
+    }
+  ],
+  "abstract": null
+}

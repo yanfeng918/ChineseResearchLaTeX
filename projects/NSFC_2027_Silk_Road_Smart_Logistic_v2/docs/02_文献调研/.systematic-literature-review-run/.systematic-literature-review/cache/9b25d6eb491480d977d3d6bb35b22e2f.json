@@ -1,0 +1,263 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2025-04-24T05:07:51Z",
+      "timestamp": 1745471271963,
+      "version": "3.28.0"
+    },
+    "reference-count": 13,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1109/wf-iot.2016.7845498",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          9
+        ]
+      ],
+      "date-time": "2017-02-09T21:42:54Z",
+      "timestamp": 1486676574000
+    },
+    "page": "723-728",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+      "OppNet: Enabling citizen-centric urban IoT data collection through opportunistic connectivity service"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Fengrui",
+        "family": "Shi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Usman",
+        "family": "Adeel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Evangelos",
+        "family": "Theodoridis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mo",
+        "family": "Haghighi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Julie",
+        "family": "McCann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "first-page": "161",
+        "article-title": "Self-optimizing citizen-centric mobile urban sensing systems",
+        "author": "adeel",
+        "year": "2014",
+        "journal-title": "11th International Conference on Autonomic Computing (ICAC 14)"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WF-IoT.2015.7389089"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2011.6069707"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2010.5462224"
+      },
+      {
+        "key": "ref4",
+        "first-page": "4250",
+        "volume": "43",
+        "author": "conti",
+        "year": "2010",
+        "journal-title": "Opportunities in Opportunistic Computing"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2010.5560597"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ROBOT.2006.1642013"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1217637"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2013.130614"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2009.4804365"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2070942.2070960"
+      },
+      {
+        "journal-title": "OrganiCity",
+        "year": "0",
+        "key": "ref1"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2013.6567007"
+      }
+    ],
+    "event": {
+      "name": "2016 IEEE 3rd World Forum on Internet of Things (WF-IoT)",
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            12
+          ]
+        ]
+      },
+      "location": "Reston, VA, USA",
+      "end": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            14
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2016 IEEE 3rd World Forum on Internet of Things (WF-IoT)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/7831562/7845389/07845498.pdf?arnumber=7845498",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          1
+        ]
+      ],
+      "date-time": "2017-03-01T22:29:45Z",
+      "timestamp": 1488407385000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7845498/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "references-count": 13,
+    "URL": "https://doi.org/10.1109/wf-iot.2016.7845498",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    }
+  }
+}

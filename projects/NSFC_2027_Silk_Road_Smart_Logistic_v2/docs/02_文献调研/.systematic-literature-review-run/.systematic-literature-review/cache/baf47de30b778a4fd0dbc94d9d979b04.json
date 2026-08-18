@@ -1,0 +1,29 @@
+{
+  "paperId": "2a4884d6fd8b05d435a86256369cfb3d98cf650d",
+  "title": "Container communities: Anti-tampering Wireless Sensor Network for global cargo security",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MED.2009.5164585?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MED.2009.5164585, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "143901037",
+      "name": "J. Bian"
+    },
+    {
+      "authorId": "3263728",
+      "name": "R. Seker"
+    },
+    {
+      "authorId": "145759111",
+      "name": "S. Ramaswamy"
+    },
+    {
+      "authorId": "1723174",
+      "name": "N. Yilmazer"
+    }
+  ],
+  "abstract": null
+}

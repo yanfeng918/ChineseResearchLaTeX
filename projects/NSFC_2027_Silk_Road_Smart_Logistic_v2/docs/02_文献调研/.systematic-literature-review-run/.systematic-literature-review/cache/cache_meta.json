@@ -1,0 +1,1015 @@
+{
+  "version": "v1",
+  "entries": {
+    "0be0e60df5529aaa300c66c58dbb2d47": {
+      "timestamp": "2026-08-16T08:53:26.475767",
+      "url": "https://api.crossref.org/works/10.5539/mas.v1n3p16",
+      "params": false
+    },
+    "e0b8ec5df56a55b193c90d0637ad71de": {
+      "timestamp": "2026-08-16T08:53:26.476208",
+      "url": "https://api.crossref.org/works/10.1109/icmens.2004.1332281",
+      "params": false
+    },
+    "8215fb937ce03d1af295ceee52d669f1": {
+      "timestamp": "2026-08-16T08:53:26.681620",
+      "url": "https://api.crossref.org/works/10.1109/icmens.2004.1508930",
+      "params": false
+    },
+    "d72774cb11f337374765836a7acd4400": {
+      "timestamp": "2026-08-16T08:53:27.090184",
+      "url": "https://api.crossref.org/works/10.1016/j.comnet.2024.110350",
+      "params": false
+    },
+    "1e8f380c322df4eac4a956834f9ee35a": {
+      "timestamp": "2026-08-16T08:53:27.419169",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.5539/mas.v1n3p16?fields=abstract",
+      "params": false
+    },
+    "94fc95b4bfad293f09e868d0b2231f0d": {
+      "timestamp": "2026-08-16T08:53:27.572204",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.comnet.2024.110350?fields=abstract",
+      "params": false
+    },
+    "b6e5de7ad797b6bb6a55f997d70c6f9f": {
+      "timestamp": "2026-08-16T08:53:28.163070",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficmens.2004.1508",
+      "params": false
+    },
+    "3edbbc9128497233eec6b7006ee509d5": {
+      "timestamp": "2026-08-16T08:53:28.258733",
+      "url": "https://api.crossref.org/works/10.1109/ths.2008.4534429",
+      "params": false
+    },
+    "454d3e02ef4e07589387ae4edb040340": {
+      "timestamp": "2026-08-16T08:53:28.578501",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1016%2Fj.comnet.2024.11",
+      "params": false
+    },
+    "bac5b1f3f895e43e059438619fa02cf1": {
+      "timestamp": "2026-08-16T08:53:28.707151",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficmens.2004.1332",
+      "params": false
+    },
+    "22d91c990a3fe62640e80281b32714a4": {
+      "timestamp": "2026-08-16T08:53:28.770778",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icmens.2004.1508930",
+      "params": false
+    },
+    "5339910802e80890c597e2341737c24e": {
+      "timestamp": "2026-08-16T08:53:28.946522",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ths.2008.4534429?fields=abstract",
+      "params": false
+    },
+    "9b5a0b6f17138e7e574daee3864184fa": {
+      "timestamp": "2026-08-16T08:53:29.593922",
+      "url": "https://api.crossref.org/works/10.1109/sies.2018.8442087",
+      "params": false
+    },
+    "64990a63bd9edd1ed566ecca31acf687": {
+      "timestamp": "2026-08-16T08:53:29.618938",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.comnet.2024.110350",
+      "params": false
+    },
+    "42e0db89bf2848d926d7a78678331595": {
+      "timestamp": "2026-08-16T08:53:29.677473",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icmens.2004.1332281",
+      "params": false
+    },
+    "857d9778554bea5888f8ccaabf1f8a4c": {
+      "timestamp": "2026-08-16T08:53:29.929792",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fths.2008.4534429",
+      "params": false
+    },
+    "66a31bbad1cb11652258aee18af207a7": {
+      "timestamp": "2026-08-16T08:53:30.333301",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/sies.2018.8442087?fields=abstract",
+      "params": false
+    },
+    "d0c2c8db1ecdd837fddb09206e274f5e": {
+      "timestamp": "2026-08-16T08:53:30.937747",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/ths.2008.4534429",
+      "params": false
+    },
+    "8d462ca4c7db1fcb8cd6c2191fd4fed0": {
+      "timestamp": "2026-08-16T08:53:31.170010",
+      "url": "https://api.crossref.org/works/10.1109/icievicivpr52578.2021.9564154",
+      "params": false
+    },
+    "e32c62f4e6a206b82c58a9eb4242782b": {
+      "timestamp": "2026-08-16T08:53:31.360982",
+      "url": "https://api.crossref.org/works/10.1109/tim.2021.3117629",
+      "params": false
+    },
+    "491ceb1ef1162cbd4e72ee93e3c71fa0": {
+      "timestamp": "2026-08-16T08:53:31.403626",
+      "url": "https://api.crossref.org/works/10.1109/med.2009.5164585",
+      "params": false
+    },
+    "b8cf8eb7102f29fd9574a34bedaed896": {
+      "timestamp": "2026-08-16T08:53:31.654860",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icievicivpr52578.2021.9564154?fields=abst",
+      "params": false
+    },
+    "096bde55a493e0ea8f61a353dbb34cd3": {
+      "timestamp": "2026-08-16T08:53:31.833854",
+      "url": "https://api.crossref.org/works/10.1016/j.jii.2022.100393",
+      "params": false
+    },
+    "baf47de30b778a4fd0dbc94d9d979b04": {
+      "timestamp": "2026-08-16T08:53:32.174600",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/med.2009.5164585?fields=abstract",
+      "params": false
+    },
+    "7cf98ebe4e4e62ee79ce554c240c86fa": {
+      "timestamp": "2026-08-16T08:53:32.268503",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tim.2021.3117629?fields=abstract",
+      "params": false
+    },
+    "da76089015dca2ec12aaf51d84561aef": {
+      "timestamp": "2026-08-16T08:53:32.447355",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficievicivpr52578",
+      "params": false
+    },
+    "19adad79d4f20d033b3c219beb86213a": {
+      "timestamp": "2026-08-16T08:53:32.533563",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jii.2022.100393?fields=abstract",
+      "params": false
+    },
+    "06146f5aa795276f1aa64c91d3d2a53b": {
+      "timestamp": "2026-08-16T08:53:32.895365",
+      "url": "https://api.crossref.org/works/10.1109/iccnc.2012.6167525",
+      "params": false
+    },
+    "fd56629215f72bfaeca26020d21a0330": {
+      "timestamp": "2026-08-16T08:53:32.965201",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fmed.2009.5164585",
+      "params": false
+    },
+    "8cad3146c398810bd2842397ecfd6f3b": {
+      "timestamp": "2026-08-16T08:53:33.217368",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icievicivpr52578.2021.9564154",
+      "params": false
+    },
+    "7bdb25b1b5fdb112f85cff1c47576e45": {
+      "timestamp": "2026-08-16T08:53:33.581326",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/iccnc.2012.6167525?fields=abstract",
+      "params": false
+    },
+    "ce8dc7af0606d1c8f35a6367b50740ff": {
+      "timestamp": "2026-08-16T08:53:33.863068",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1016%2Fj.jii.2022.10039",
+      "params": false
+    },
+    "ab9338858c9fe28ad8df65cf24eb6e3f": {
+      "timestamp": "2026-08-16T08:53:33.865540",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/med.2009.5164585",
+      "params": false
+    },
+    "a5d29194348d390eb55119f7e9672a63": {
+      "timestamp": "2026-08-16T08:53:34.043288",
+      "url": "https://api.crossref.org/works/10.17487/rfc6255",
+      "params": false
+    },
+    "1e3301aa81dd3bf4bdda61e14a43971b": {
+      "timestamp": "2026-08-16T08:53:34.573835",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficcnc.2012.61675",
+      "params": false
+    },
+    "f97466fb403e1f48d4a498ff8951a507": {
+      "timestamp": "2026-08-16T08:53:35.131874",
+      "url": "https://api.crossref.org/works/10.1109/chinacom.2011.6158204",
+      "params": false
+    },
+    "f0bdb01af7f844091dfe240e081f3811": {
+      "timestamp": "2026-08-16T08:53:35.158849",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.17487/rfc6255?fields=abstract",
+      "params": false
+    },
+    "ce51b0e67b6a4562f861b537f8d879e3": {
+      "timestamp": "2026-08-16T08:53:35.297736",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jii.2022.100393",
+      "params": false
+    },
+    "ffc68aa00a9e2194fde349a8cf5b3245": {
+      "timestamp": "2026-08-16T08:53:35.772633",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/chinacom.2011.6158204?fields=abstract",
+      "params": false
+    },
+    "1bbd2efdfb3c8b5f57e9b5bf636849d9": {
+      "timestamp": "2026-08-16T08:53:35.786219",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/iccnc.2012.6167525",
+      "params": false
+    },
+    "74b1684e61eda43100f8ee01fd281429": {
+      "timestamp": "2026-08-16T08:53:36.480860",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.17487%2Frfc6255%5Bdoi%5",
+      "params": false
+    },
+    "6bc4602fd39f5187fd47d2bb0a12bfe1": {
+      "timestamp": "2026-08-16T08:53:36.582994",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fchinacom.2011.61",
+      "params": false
+    },
+    "7740d81f0c18829ce0ab4e8e1d30051a": {
+      "timestamp": "2026-08-16T08:53:36.627735",
+      "url": "https://api.crossref.org/works/10.17487/rfc7122",
+      "params": false
+    },
+    "d03ef43064c01acba0d2dce64443be3d": {
+      "timestamp": "2026-08-16T08:53:37.169018",
+      "url": "https://api.crossref.org/works/10.1109/lcomm.2013.022713.130123",
+      "params": false
+    },
+    "845b9b86b605cc28ce398aed8d16a19f": {
+      "timestamp": "2026-08-16T08:53:37.228481",
+      "url": "https://api.openalex.org/works/https://doi.org/10.17487/rfc6255",
+      "params": false
+    },
+    "a5e0e1550c6d1dca2cc487e499ed1757": {
+      "timestamp": "2026-08-16T08:53:37.307156",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.17487/rfc7122?fields=abstract",
+      "params": false
+    },
+    "b2fd1e7b8d5817c1009ec94bf143cbab": {
+      "timestamp": "2026-08-16T08:53:37.571522",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/chinacom.2011.6158204",
+      "params": false
+    },
+    "a8207d3bb8eb5490e4db923ef2ee81ac": {
+      "timestamp": "2026-08-16T08:53:37.653682",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/lcomm.2013.022713.130123?fields=abstract",
+      "params": false
+    },
+    "e3fa5a47c4d660512c29b6da250696b0": {
+      "timestamp": "2026-08-16T08:53:38.198258",
+      "url": "https://api.crossref.org/works/10.17487/rfc7242",
+      "params": false
+    },
+    "4c9334b0f2b8c3a9098e3a28d3b33349": {
+      "timestamp": "2026-08-16T08:53:38.258806",
+      "url": "https://api.crossref.org/works/10.1533/9780857098467.2.139",
+      "params": false
+    },
+    "f0ba52a037be42909d4358ba6626f377": {
+      "timestamp": "2026-08-16T08:53:38.551877",
+      "url": "https://api.crossref.org/works/10.1016/b978-0-08-102793-6.00008-4",
+      "params": false
+    },
+    "52d166014a816e8ea8e644a679f6a47e": {
+      "timestamp": "2026-08-16T08:53:38.644882",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Flcomm.2013.02271",
+      "params": false
+    },
+    "d880092ca98a49eba170261c7b6ae0a3": {
+      "timestamp": "2026-08-16T08:53:38.965909",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.17487/rfc7242?fields=abstract",
+      "params": false
+    },
+    "8583f1aa8b678174a05f55fa046c4302": {
+      "timestamp": "2026-08-16T08:53:39.165111",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1533/9780857098467.2.139?fields=abstract",
+      "params": false
+    },
+    "85a630511668041e3903d5fc636de3d3": {
+      "timestamp": "2026-08-16T08:53:39.591806",
+      "url": "https://api.crossref.org/works/10.17487/rfc9174",
+      "params": false
+    },
+    "b0c5a8eeffb6b6c0d9ed985d27383730": {
+      "timestamp": "2026-08-16T08:53:39.911786",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/lcomm.2013.022713.130123",
+      "params": false
+    },
+    "83f80f4310f72d175078991046aa439d": {
+      "timestamp": "2026-08-16T08:53:40.191735",
+      "url": "https://api.crossref.org/works/10.1109/tnet.2010.2091968",
+      "params": false
+    },
+    "d764430736de6adbe0d76c8d9af8325b": {
+      "timestamp": "2026-08-16T08:53:40.289040",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.17487/rfc9174?fields=abstract",
+      "params": false
+    },
+    "d17cce781bf7a77c63a547787acde819": {
+      "timestamp": "2026-08-16T08:53:40.669398",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1016%2Fb978-0-08-102793",
+      "params": false
+    },
+    "f0a51c99258702f3c766bec3f708014a": {
+      "timestamp": "2026-08-16T08:53:40.670148",
+      "url": "https://api.crossref.org/works/10.1109/wcnc.2009.4917536",
+      "params": false
+    },
+    "c41ab17f8754ae7486a7c6798f72d225": {
+      "timestamp": "2026-08-16T08:53:41.133047",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tnet.2010.2091968?fields=abstract",
+      "params": false
+    },
+    "06b1ccd222667e8ac01428b151efcac3": {
+      "timestamp": "2026-08-16T08:53:41.146139",
+      "url": "https://api.crossref.org/works/10.1109/wimob.2019.8923146",
+      "params": false
+    },
+    "6f8e62a2c87ed268565c5cee97dcb71e": {
+      "timestamp": "2026-08-16T08:53:41.152370",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wcnc.2009.4917536?fields=abstract",
+      "params": false
+    },
+    "55262189e244e6f91fc8ad9c601a546d": {
+      "timestamp": "2026-08-16T08:53:41.283687",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/b978-0-08-102793-6.00008-4",
+      "params": false
+    },
+    "7357edf45ad315cbddad75df26878fd7": {
+      "timestamp": "2026-08-16T08:53:41.949159",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fwcnc.2009.491753",
+      "params": false
+    },
+    "f7be75d9759770cdac5565e919a2dec1": {
+      "timestamp": "2026-08-16T08:53:42.123227",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wimob.2019.8923146?fields=abstract",
+      "params": false
+    },
+    "f8cd1d67842eca57c12cb95e795822fd": {
+      "timestamp": "2026-08-16T08:53:42.188143",
+      "url": "https://api.crossref.org/works/10.1109/pimrc.2016.7794849",
+      "params": false
+    },
+    "0840cb0307d384bec8fb5e772fff105f": {
+      "timestamp": "2026-08-16T08:53:42.572608",
+      "url": "https://api.crossref.org/works/10.1109/ict-dm47966.2019.9032944",
+      "params": false
+    },
+    "dbba3b705990239ba57f7fc47334d82a": {
+      "timestamp": "2026-08-16T08:53:42.771657",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/wcnc.2009.4917536",
+      "params": false
+    },
+    "9b25d6eb491480d977d3d6bb35b22e2f": {
+      "timestamp": "2026-08-16T08:53:43.169888",
+      "url": "https://api.crossref.org/works/10.1109/wf-iot.2016.7845498",
+      "params": false
+    },
+    "231a115918f4de1e6afa3fce751212ae": {
+      "timestamp": "2026-08-16T08:53:43.262499",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ict-dm47966.2019.9032944?fields=abstract",
+      "params": false
+    },
+    "9c73625a03a617111524cbdb93cf4850": {
+      "timestamp": "2026-08-16T08:53:43.431532",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/pimrc.2016.7794849?fields=abstract",
+      "params": false
+    },
+    "9d54bf416b6abede48f8d8a375b1475b": {
+      "timestamp": "2026-08-16T08:53:43.598732",
+      "url": "https://api.crossref.org/works/10.31202/ecjse.948125",
+      "params": false
+    },
+    "ac3d90e2ea60c282bd69d2d075968e5c": {
+      "timestamp": "2026-08-16T08:53:43.855413",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wf-iot.2016.7845498?fields=abstract",
+      "params": false
+    },
+    "54f0e6fa7e26208634991f18f9d08fe9": {
+      "timestamp": "2026-08-16T08:53:43.889610",
+      "url": "https://api.crossref.org/works/10.1109/metroind4.0iot66048.2025.11122097",
+      "params": false
+    },
+    "d26c677a31dafa298f698837f2f9bdd8": {
+      "timestamp": "2026-08-16T08:53:44.297052",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.31202/ecjse.948125?fields=abstract",
+      "params": false
+    },
+    "88a2f8b08494dd75883b9ecebafc442f": {
+      "timestamp": "2026-08-16T08:53:44.389623",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/metroind4.0iot66048.2025.11122097?fields=",
+      "params": false
+    },
+    "c1a9f1157f3e7310f62d9f150cd29526": {
+      "timestamp": "2026-08-16T08:53:44.552347",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fpimrc.2016.77948",
+      "params": false
+    },
+    "d0faddde4e2fb475e77413eb04f9a8d8": {
+      "timestamp": "2026-08-16T08:53:44.681571",
+      "url": "https://api.crossref.org/works/10.1109/ccwc.2017.7868422",
+      "params": false
+    },
+    "9f0a1c4d6c7d173fa931ccfb4f838290": {
+      "timestamp": "2026-08-16T08:53:45.026422",
+      "url": "https://api.crossref.org/works/10.1109/ssci50451.2021.9660160",
+      "params": false
+    },
+    "574d86368cc714bfb1a1063ca7865ef5": {
+      "timestamp": "2026-08-16T08:53:45.366876",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ccwc.2017.7868422?fields=abstract",
+      "params": false
+    },
+    "82b1bd5dc57a137eb7047fd4236c55d4": {
+      "timestamp": "2026-08-16T08:53:45.424403",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.31202%2Fecjse.948125%5B",
+      "params": false
+    },
+    "84068fbc34f0893d3905aaa99905cf90": {
+      "timestamp": "2026-08-16T08:53:45.518120",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ssci50451.2021.9660160?fields=abstract",
+      "params": false
+    },
+    "dfd713802da97d1e94a2affc21e667b6": {
+      "timestamp": "2026-08-16T08:53:45.540834",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/pimrc.2016.7794849",
+      "params": false
+    },
+    "27c6a49957130491a75fb36149da24d1": {
+      "timestamp": "2026-08-16T08:53:46.313206",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fccwc.2017.786842",
+      "params": false
+    },
+    "42548278414e1bd1969a5a08c4e32e50": {
+      "timestamp": "2026-08-16T08:53:46.350633",
+      "url": "https://api.crossref.org/works/10.1109/icc.2018.8422534",
+      "params": false
+    },
+    "e64e01bc5d99877887ba4a642a22016f": {
+      "timestamp": "2026-08-16T08:53:46.401403",
+      "url": "https://api.openalex.org/works/https://doi.org/10.31202/ecjse.948125",
+      "params": false
+    },
+    "70a6c2c46c4b391acab3d11b87bc9fce": {
+      "timestamp": "2026-08-16T08:53:46.705505",
+      "url": "https://api.crossref.org/works/10.1109/globecom38437.2019.9013987",
+      "params": false
+    },
+    "abedafd8d86e0559afa4c80b4b5f8d29": {
+      "timestamp": "2026-08-16T08:53:47.029064",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icc.2018.8422534?fields=abstract",
+      "params": false
+    },
+    "bb09a5dac090f93fff46b30a0d4e0f2c": {
+      "timestamp": "2026-08-16T08:53:47.128455",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/ccwc.2017.7868422",
+      "params": false
+    },
+    "c6ffe306fc981e5ab002877f7f879315": {
+      "timestamp": "2026-08-16T08:53:47.223185",
+      "url": "https://api.crossref.org/works/10.1109/lcn53696.2022.9843211",
+      "params": false
+    },
+    "fbfaaba30dcc825080d7a9cdf62072e2": {
+      "timestamp": "2026-08-16T08:53:47.590496",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/globecom38437.2019.9013987?fields=abstrac",
+      "params": false
+    },
+    "44855ab1ddd16b4d4177df38cbb6af7e": {
+      "timestamp": "2026-08-16T08:53:47.746721",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/lcn53696.2022.9843211?fields=abstract",
+      "params": false
+    },
+    "e701e025cbd271da9e23579ccb4bceef": {
+      "timestamp": "2026-08-16T08:53:48.065930",
+      "url": "https://api.crossref.org/works/10.9790/0661-15010010151-56",
+      "params": false
+    },
+    "3d6dbd7aa37ac5742dc009497ab22b10": {
+      "timestamp": "2026-08-16T08:53:48.228574",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficc.2018.8422534",
+      "params": false
+    },
+    "dc8c0408e33dee8f5ed41766569131a2": {
+      "timestamp": "2026-08-16T08:53:48.423732",
+      "url": "https://api.crossref.org/works/10.20508/ijrer.v15i4.16778.g9135",
+      "params": false
+    },
+    "f1f48bba129f8e24c8f54c1f3440c98d": {
+      "timestamp": "2026-08-16T08:53:48.572651",
+      "url": "https://api.crossref.org/works/10.1504/ijsnet.2024.10067288",
+      "params": false
+    },
+    "8a6be8d33de31141963c1416a5216b45": {
+      "timestamp": "2026-08-16T08:53:48.756217",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.9790/0661-15010010151-56?fields=abstract",
+      "params": false
+    },
+    "2eea8f519f836b22a7444d7c097cf6e6": {
+      "timestamp": "2026-08-16T08:53:48.819159",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icc.2018.8422534",
+      "params": false
+    },
+    "76da7dc223735f7a351dbd7bd2694f4a": {
+      "timestamp": "2026-08-16T08:53:48.906778",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.20508/ijrer.v15i4.16778.g9135?fields=abstract",
+      "params": false
+    },
+    "0c4cba5f7e497f9848270fa7bd00c718": {
+      "timestamp": "2026-08-16T08:53:49.063533",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1504/ijsnet.2024.10067288?fields=abstract",
+      "params": false
+    },
+    "14876c06b1c61c5e9488d123e1b6000d": {
+      "timestamp": "2026-08-16T08:53:49.594779",
+      "url": "https://api.crossref.org/works/10.1504/ijsnet.2024.142707",
+      "params": false
+    },
+    "51b0a668e7aa815329c594c5aee37d8e": {
+      "timestamp": "2026-08-16T08:53:49.855930",
+      "url": "https://api.crossref.org/works/10.1109/ipsn.2012.6920956",
+      "params": false
+    },
+    "9f91be36a7514eb6414f90cb4f1d4e91": {
+      "timestamp": "2026-08-16T08:53:49.898550",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.20508%2Fijrer.v15i4.167",
+      "params": false
+    },
+    "34680c5755efc055406ebd120319130c": {
+      "timestamp": "2026-08-16T08:53:49.914567",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1504%2Fijsnet.2024.1006",
+      "params": false
+    },
+    "dd27290b154c39f0b9812152562a33f9": {
+      "timestamp": "2026-08-16T08:53:50.318246",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1504/ijsnet.2024.142707?fields=abstract",
+      "params": false
+    },
+    "c1831b1e6867a4e9eb07e3bb45321dac": {
+      "timestamp": "2026-08-16T08:53:50.796907",
+      "url": "https://api.openalex.org/works/https://doi.org/10.20508/ijrer.v15i4.16778.g9135",
+      "params": false
+    },
+    "21b48db5685bfc50fe1f5626e79a0547": {
+      "timestamp": "2026-08-16T08:53:50.909140",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1504/ijsnet.2024.10067288",
+      "params": false
+    },
+    "b25c0be6303b5f1926512494ee1d874b": {
+      "timestamp": "2026-08-16T08:53:51.197435",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fipsn.2012.692095",
+      "params": false
+    },
+    "4c06b85a46651834eaa141007ed8ee9e": {
+      "timestamp": "2026-08-16T08:53:51.538243",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1504%2Fijsnet.2024.1427",
+      "params": false
+    },
+    "52c2baf2b662b5c7e1f1280d4d0321f8": {
+      "timestamp": "2026-08-16T08:53:51.812004",
+      "url": "https://api.crossref.org/works/10.1145/1869983.1869990",
+      "params": false
+    },
+    "c20d47d0cc2910a97ad1ce6a10e16726": {
+      "timestamp": "2026-08-16T08:53:51.870396",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/ipsn.2012.6920956",
+      "params": false
+    },
+    "acbae9ee4d5145769266214912c7dcfa": {
+      "timestamp": "2026-08-16T08:53:51.880496",
+      "url": "https://api.crossref.org/works/10.1109/roedunet.2016.7753236",
+      "params": false
+    },
+    "9e933de7d0f51926a0168c5e56106e1b": {
+      "timestamp": "2026-08-16T08:53:52.340110",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1504/ijsnet.2024.142707",
+      "params": false
+    },
+    "57a5164049aafe08abe04425555bfb6f": {
+      "timestamp": "2026-08-16T08:53:52.364302",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/roedunet.2016.7753236?fields=abstract",
+      "params": false
+    },
+    "78372b753c8cce649cb7238fd3dc1911": {
+      "timestamp": "2026-08-16T08:53:52.715645",
+      "url": "https://api.crossref.org/works/10.5220/0010676800003062",
+      "params": false
+    },
+    "90057c09a9ee7bc82cdc8a721fd8d570": {
+      "timestamp": "2026-08-16T08:53:52.743219",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/1869983.1869990?fields=abstract",
+      "params": false
+    },
+    "0bb4c4a1fb9c50ad3836ef00e2161e19": {
+      "timestamp": "2026-08-16T08:53:53.409318",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.5220/0010676800003062?fields=abstract",
+      "params": false
+    },
+    "c4c2364f3a05f491a82a4fb208050515": {
+      "timestamp": "2026-08-16T08:53:53.562239",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Froedunet.2016.77",
+      "params": false
+    },
+    "bf8d588ee125f3c5c0a2a04e6228082d": {
+      "timestamp": "2026-08-16T08:53:53.753907",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1145%2F1869983.1869990%",
+      "params": false
+    },
+    "7f7e3bca6e4a88edad7415578b42159d": {
+      "timestamp": "2026-08-16T08:53:54.354860",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/roedunet.2016.7753236",
+      "params": false
+    },
+    "338bd082f8e9b4427e7f64d8824c43f9": {
+      "timestamp": "2026-08-16T08:53:54.631138",
+      "url": "https://api.crossref.org/works/10.1145/3802463.3802486",
+      "params": false
+    },
+    "7cabb925d58533534fc4c32d15c6b8e2": {
+      "timestamp": "2026-08-16T08:53:54.775944",
+      "url": "https://api.crossref.org/works/10.1109/icdsca59871.2023.10392494",
+      "params": false
+    },
+    "97c816ec3a4940b58ede23b179f3492a": {
+      "timestamp": "2026-08-16T08:53:54.848798",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1145/1869983.1869990",
+      "params": false
+    },
+    "815b58749420c0267dba4cd1f622e919": {
+      "timestamp": "2026-08-16T08:53:54.973678",
+      "url": "https://api.crossref.org/works/10.1117/12.2641102",
+      "params": false
+    },
+    "d91dd5d0c88e6f8860a490ac2cb9ac4c": {
+      "timestamp": "2026-08-16T08:53:55.153302",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3802463.3802486?fields=abstract",
+      "params": false
+    },
+    "724336ebd6ccbbc0e913514beae9819a": {
+      "timestamp": "2026-08-16T08:53:55.257021",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icdsca59871.2023.10392494?fields=abstract",
+      "params": false
+    },
+    "4242390524cdd8b3108311c4c3f03268": {
+      "timestamp": "2026-08-16T08:53:55.448366",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1117/12.2641102?fields=abstract",
+      "params": false
+    },
+    "ae8704bd387d98db07db5de9e4ac5505": {
+      "timestamp": "2026-08-16T08:53:55.727406",
+      "url": "https://api.crossref.org/works/10.1016/j.foodcont.2018.01.027",
+      "params": false
+    },
+    "f0688aa5a362679311a6b85c9c09b880": {
+      "timestamp": "2026-08-16T08:53:55.876080",
+      "url": "https://api.crossref.org/works/10.3403/30353975u",
+      "params": false
+    },
+    "48b59568b08ffb3adb39cf05465b2253": {
+      "timestamp": "2026-08-16T08:53:55.906445",
+      "url": "https://api.crossref.org/works/10.1057/s41278-023-00255-z",
+      "params": false
+    },
+    "ed3153071413501921f04dbdf866b3b8": {
+      "timestamp": "2026-08-16T08:53:56.064400",
+      "url": "https://api.crossref.org/works/10.3403/30353975",
+      "params": false
+    },
+    "c45c81283cd16f9ab2fd4671abc26c40": {
+      "timestamp": "2026-08-16T08:53:56.441888",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.foodcont.2018.01.027?fields=abstract",
+      "params": false
+    },
+    "3a1e63b60a292f1fe27bd1e3206a8a12": {
+      "timestamp": "2026-08-16T08:53:56.620835",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1057/s41278-023-00255-z?fields=abstract",
+      "params": false
+    },
+    "15e090ea8099760e2d3d1f0fd8dce0c2": {
+      "timestamp": "2026-08-16T08:53:57.063747",
+      "url": "https://api.crossref.org/works/10.1049/pbtr034e_ch3",
+      "params": false
+    },
+    "9f0e07344db464006314881e8ecc9e61": {
+      "timestamp": "2026-08-16T08:53:57.290934",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.3403%2F30353975u%5Bdoi%",
+      "params": false
+    },
+    "9b4d43060753d00ada63c4a6537c82e3": {
+      "timestamp": "2026-08-16T08:53:57.331050",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.3403%2F30353975%5Bdoi%5",
+      "params": false
+    },
+    "1a9246a4c21b5f14661074e02cee0c09": {
+      "timestamp": "2026-08-16T08:53:57.726965",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1057%2Fs41278-023-00255",
+      "params": false
+    },
+    "c342f0eb7efb564085f01a593881fe90": {
+      "timestamp": "2026-08-16T08:53:57.868066",
+      "url": "https://api.openalex.org/works/https://doi.org/10.3403/30353975u",
+      "params": false
+    },
+    "9ab15421203bbbe3b4991681c6693856": {
+      "timestamp": "2026-08-16T08:53:57.950791",
+      "url": "https://api.openalex.org/works/https://doi.org/10.3403/30353975",
+      "params": false
+    },
+    "9fb43e9103f2af1858e965509b5ae4f7": {
+      "timestamp": "2026-08-16T08:53:58.319206",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1049%2Fpbtr034e_ch3%5Bd",
+      "params": false
+    },
+    "1515b0451b9c08b9d3e9fc4a21426d42": {
+      "timestamp": "2026-08-16T08:53:58.500891",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1057/s41278-023-00255-z",
+      "params": false
+    },
+    "d9307e57c54535b3179e8e059892af89": {
+      "timestamp": "2026-08-16T08:53:58.985797",
+      "url": "https://api.crossref.org/works/10.1109/coase.2007.4341790",
+      "params": false
+    },
+    "c6fc44133c2c76123c480fb18e1f3151": {
+      "timestamp": "2026-08-16T08:53:59.119811",
+      "url": "https://api.crossref.org/works/10.1109/indin.2006.275719",
+      "params": false
+    },
+    "35d6c6e178292a2808892e513e023086": {
+      "timestamp": "2026-08-16T08:53:59.481012",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/coase.2007.4341790?fields=abstract",
+      "params": false
+    },
+    "5ce1434cd2b7845ae7184142fa540ffd": {
+      "timestamp": "2026-08-16T08:53:59.637260",
+      "url": "https://api.crossref.org/works/10.5220/0004705703510359",
+      "params": false
+    },
+    "2097bb2ad0fe8cbc7a7bf7c9cf0e7b4c": {
+      "timestamp": "2026-08-16T08:53:59.678554",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1049/pbtr034e_ch3",
+      "params": false
+    },
+    "baccb2047a6d4d5be3aba42c63860391": {
+      "timestamp": "2026-08-16T08:53:59.799473",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/indin.2006.275719?fields=abstract",
+      "params": false
+    },
+    "21ae8df1245d3d9cae5c73f069a54c5d": {
+      "timestamp": "2026-08-16T08:54:00.158028",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.5220/0004705703510359?fields=abstract",
+      "params": false
+    },
+    "f64e8dbdae1eaa05a8c4b9a0d30c74e6": {
+      "timestamp": "2026-08-16T08:54:00.465705",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fcoase.2007.43417",
+      "params": false
+    },
+    "a41856b7bad10a2c23fe0d028fc14cd1": {
+      "timestamp": "2026-08-16T08:54:00.526168",
+      "url": "https://api.crossref.org/works/10.1109/sahcn.2009.5168903",
+      "params": false
+    },
+    "81e16897d0b221211dc5080b4c198f51": {
+      "timestamp": "2026-08-16T08:54:00.671293",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Findin.2006.27571",
+      "params": false
+    },
+    "19b6c2232ba69b17e253503f19e0f97f": {
+      "timestamp": "2026-08-16T08:54:00.976234",
+      "url": "https://api.crossref.org/works/10.3403/01316012",
+      "params": false
+    },
+    "005d9634542b0a8cc2a026f1faddbb33": {
+      "timestamp": "2026-08-16T08:54:01.010354",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/sahcn.2009.5168903?fields=abstract",
+      "params": false
+    },
+    "d7d0df829c67b41ffbca91a407422922": {
+      "timestamp": "2026-08-16T08:54:01.290230",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/coase.2007.4341790",
+      "params": false
+    },
+    "a138503a3ad0058453ec69cc25b8a657": {
+      "timestamp": "2026-08-16T08:54:01.790364",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fsahcn.2009.51689",
+      "params": false
+    },
+    "48a7714ef62dd96aa2627713d2205241": {
+      "timestamp": "2026-08-16T08:54:01.905794",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/indin.2006.275719",
+      "params": false
+    },
+    "9a9b017c6e1ccd4e1f8985e9c3c533e6": {
+      "timestamp": "2026-08-16T08:54:02.114905",
+      "url": "https://api.crossref.org/works/10.1007/978-3-642-32054-5_130",
+      "params": false
+    },
+    "82e2e2296a94f80272aedd8217aafa97": {
+      "timestamp": "2026-08-16T08:54:02.438499",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.3403%2F01316012%5Bdoi%5",
+      "params": false
+    },
+    "5ad8ad07dd9194d753505a6acbbb4330": {
+      "timestamp": "2026-08-16T08:54:02.565637",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/sahcn.2009.5168903",
+      "params": false
+    },
+    "29347382a488d6541abf275b93a90b56": {
+      "timestamp": "2026-08-16T08:54:02.760239",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-642-32054-5_130?fields=abstract",
+      "params": false
+    },
+    "6137bdd62021ebaab66a9bb6203ac774": {
+      "timestamp": "2026-08-16T08:54:03.004690",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3303/cet1546087?fields=abstract",
+      "params": false
+    },
+    "f3445b099e28352e8b1a3984778e13a3": {
+      "timestamp": "2026-08-16T08:54:03.028393",
+      "url": "https://api.openalex.org/works/https://doi.org/10.3403/01316012",
+      "params": false
+    },
+    "7819f2ec6748b779ea39bbe28a26bc12": {
+      "timestamp": "2026-08-16T08:54:03.195351",
+      "url": "https://api.crossref.org/works/10.1109/icwits.2012.6417745",
+      "params": false
+    },
+    "a58b54096b7de418a6ad8ef75fae2c78": {
+      "timestamp": "2026-08-16T08:54:03.560921",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1007%2F978-3-642-32054-",
+      "params": false
+    },
+    "a34f5adf157614dbecff1eb6c04b0c06": {
+      "timestamp": "2026-08-16T08:54:03.676012",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icwits.2012.6417745?fields=abstract",
+      "params": false
+    },
+    "5a7d6316ad6b67cc1fac070954a98946": {
+      "timestamp": "2026-08-16T08:54:03.794091",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.3303%2Fcet1546087%5Bdoi",
+      "params": false
+    },
+    "8530f4b25c53ec46950274fef88f741a": {
+      "timestamp": "2026-08-16T08:54:04.133854",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1007/978-3-642-32054-5_130",
+      "params": false
+    },
+    "273265ffcf6c2d3189765e19a6d58320": {
+      "timestamp": "2026-08-16T08:54:04.451836",
+      "url": "https://api.openalex.org/works/https://doi.org/10.3303/cet1546087",
+      "params": false
+    },
+    "1c2fc21c2b0a207c10eb3af5d57cbbc6": {
+      "timestamp": "2026-08-16T08:54:04.684032",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficwits.2012.6417",
+      "params": false
+    },
+    "69493577598ece45074bb826faf17b21": {
+      "timestamp": "2026-08-16T08:54:05.655561",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icwits.2012.6417745",
+      "params": false
+    },
+    "ecaad1e126722de295e9898d1460cfdc": {
+      "timestamp": "2026-08-16T08:54:05.863753",
+      "url": "https://api.crossref.org/works/10.1109/ccnc.2009.4784847",
+      "params": false
+    },
+    "f404a44dbf3344022ba746006571ec55": {
+      "timestamp": "2026-08-16T08:54:06.259118",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-662%5Bdoi%5D&retmax",
+      "params": false
+    },
+    "c982cca14a7c1e5845472845b18891d9": {
+      "timestamp": "2026-08-16T08:54:06.512550",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/ccnc.2009.4784847?fields=abstract",
+      "params": false
+    },
+    "a1fafb232b79d282b5ce2a5254c76fe3": {
+      "timestamp": "2026-08-16T08:54:06.533429",
+      "url": "https://api.crossref.org/works/10.1016/j.jfoodeng.2009.02.004",
+      "params": false
+    },
+    "e3f054475d68d578394a064de524ade4": {
+      "timestamp": "2026-08-16T08:54:06.862335",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-664%5Bdoi%5D&retmax",
+      "params": false
+    },
+    "87b5cf298ee6c1ba378acd8ce77c0648": {
+      "timestamp": "2026-08-16T08:54:07.013479",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jfoodeng.2009.02.004?fields=abstract",
+      "params": false
+    },
+    "bb1dded636757e4ea73e2ce900799af0": {
+      "timestamp": "2026-08-16T08:54:07.307199",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fccnc.2009.478484",
+      "params": false
+    },
+    "3b459d21739d726127255a3f012ac2ab": {
+      "timestamp": "2026-08-16T08:54:07.796753",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1016%2Fj.jfoodeng.2009.",
+      "params": false
+    },
+    "eab2718f5d8ee47eaf24a272891d6d89": {
+      "timestamp": "2026-08-16T08:54:08.161767",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/ccnc.2009.4784847",
+      "params": false
+    },
+    "68f2aae17aea7467e29c0aec8079b196": {
+      "timestamp": "2026-08-16T08:54:08.795452",
+      "url": "https://api.crossref.org/works/10.1109/nems.2016.7758259",
+      "params": false
+    },
+    "437bad0b9d19f9a8d49d7ddec8dbcb83": {
+      "timestamp": "2026-08-16T08:54:08.830892",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jfoodeng.2009.02.004",
+      "params": false
+    },
+    "12f0a4f5086a77a711903220e3536b84": {
+      "timestamp": "2026-08-16T08:54:09.279261",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/nems.2016.7758259?fields=abstract",
+      "params": false
+    },
+    "cb5403579bffa637fd889a7d271f4d4a": {
+      "timestamp": "2026-08-16T08:54:09.545934",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-743%5Bdoi%5D&retmax",
+      "params": false
+    },
+    "54be5815a8df8a490f41c7e0a342c7d1": {
+      "timestamp": "2026-08-16T08:54:09.957428",
+      "url": "https://api.crossref.org/works/10.1002/pts.2129",
+      "params": false
+    },
+    "348178c55e3ad5d03ccd505fe0ddae0f": {
+      "timestamp": "2026-08-16T08:54:10.102431",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-759%5Bdoi%5D&retmax",
+      "params": false
+    },
+    "921763abbd99553d5436747df6ca0a35": {
+      "timestamp": "2026-08-16T08:54:10.288846",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Fnems.2016.775825",
+      "params": false
+    },
+    "a5c235021de853420002c0087c6996fa": {
+      "timestamp": "2026-08-16T08:54:11.136076",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/nems.2016.7758259",
+      "params": false
+    },
+    "4351d59b35cb862f53c3c510d693800a": {
+      "timestamp": "2026-08-16T08:54:11.602903",
+      "url": "https://api.crossref.org/works/10.5307/jbe.2008.33.1.045",
+      "params": false
+    },
+    "1349eee11688151faa6345842b39c9eb": {
+      "timestamp": "2026-08-16T08:54:11.815796",
+      "url": "https://api.crossref.org/works/10.1007/s41870-024-02130-3",
+      "params": false
+    },
+    "f8431c71ab4100e165e6b54ed82fd99f": {
+      "timestamp": "2026-08-16T08:54:12.022236",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-764%5Bdoi%5D&retmax",
+      "params": false
+    },
+    "4e5ddeb0a57a356ba603b24ecd38d05c": {
+      "timestamp": "2026-08-16T08:54:12.340429",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.5307/jbe.2008.33.1.045?fields=abstract",
+      "params": false
+    },
+    "480db29b944b9174871e2da78a5edf2e": {
+      "timestamp": "2026-08-16T08:54:12.415983",
+      "url": "https://api.crossref.org/works/10.1109/icctec.2017.00299",
+      "params": false
+    },
+    "151ad07b8be784ff99048c17d28f74b4": {
+      "timestamp": "2026-08-16T08:54:12.546090",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s41870-024-02130-3?fields=abstract",
+      "params": false
+    },
+    "c33585ec59d6f4127fc55e3442373669": {
+      "timestamp": "2026-08-16T08:54:13.206685",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icctec.2017.00299?fields=abstract",
+      "params": false
+    },
+    "b0c66b6127e7c674a68764b5ee5ef414": {
+      "timestamp": "2026-08-16T08:54:13.335523",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1007%2Fs41870-024-02130",
+      "params": false
+    },
+    "cc027b0b2459fa41f331d70895a7c774": {
+      "timestamp": "2026-08-16T08:54:13.353533",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.5307%2Fjbe.2008.33.1.04",
+      "params": false
+    },
+    "48d354770d0f79e730b55fda03d4b8e2": {
+      "timestamp": "2026-08-16T08:54:13.917060",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1007/s41870-024-02130-3",
+      "params": false
+    },
+    "5464f6a48fb61f1d46f128834a1beb02": {
+      "timestamp": "2026-08-16T08:54:14.003574",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1109%2Ficctec.2017.0029",
+      "params": false
+    },
+    "3e292911b120f9fefd82ee9cca737252": {
+      "timestamp": "2026-08-16T08:54:14.205637",
+      "url": "https://api.openalex.org/works/https://doi.org/10.5307/jbe.2008.33.1.045",
+      "params": false
+    },
+    "822bf775d1d5a4bbf4d635953995e9f0": {
+      "timestamp": "2026-08-16T08:54:14.581323",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/icctec.2017.00299",
+      "params": false
+    },
+    "731e1d51155eb46ab29125e0d17bbee1": {
+      "timestamp": "2026-08-16T08:54:15.348829",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=NO-DOI-790%5Bdoi%5D&retmax",
+      "params": false
+    }
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          9
+        ]
+      ],
+      "date-time": "2025-12-09T11:37:36Z",
+      "timestamp": 1765280256824,
+      "version": "3.28.0"
+    },
+    "reference-count": 25,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              8,
+              16
+            ]
+          ],
+          "date-time": "2021-08-16T00:00:00Z",
+          "timestamp": 1629072000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              8,
+              16
+            ]
+          ],
+          "date-time": "2021-08-16T00:00:00Z",
+          "timestamp": 1629072000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          16
+        ]
+      ]
+    },
+    "DOI": "10.1109/icievicivpr52578.2021.9564154",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2021-10-20T05:19:45Z",
+      "timestamp": 1634707185000
+    },
+    "page": "1-7",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Deep Learning-based Framework for Shipping Container Security Seal Detection"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Zhila",
+        "family": "Bahrami",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ran",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Rakiba",
+        "family": "Rayhana",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Zheng",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electrical Engineering,Kelowna,British Columbia,CA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref10",
+        "DOI": "10.3390/rs11070786"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref11",
+        "DOI": "10.1109/ICCV.2019.00832"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref12",
+        "DOI": "10.1109/LGRS.2018.2856921"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref13",
+        "DOI": "10.1109/ACCESS.2018.2825376"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref14",
+        "DOI": "10.1109/TGRS.2019.2923988"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "29742",
+        "DOI": "10.1109/ACCESS.2020.2972338",
+        "article-title": "A cascaded r-cnn with multiscale attention and imbalanced samples for traffic sign detection",
+        "volume": "8",
+        "author": "zhang",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref16",
+        "DOI": "10.3390/a10040127"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref17",
+        "DOI": "10.1109/ICCV.2019.00982"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref18",
+        "DOI": "10.1007/978-3-030-01261-8_13"
+      },
+      {
+        "year": "2018",
+        "author": "lai",
+        "journal-title": "Fast and accurate image super-resolution with deep laplacian pyramid networks",
+        "key": "ref19"
+      },
+      {
+        "key": "ref4",
+        "article-title": "Dssd: Deconvolutional single shot detector",
+        "volume": "abs 1701 6659",
+        "author": "fu",
+        "year": "2017",
+        "journal-title": "ArXiv Preprint"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref3",
+        "DOI": "10.1109/ICCV.2015.169"
+      },
+      {
+        "key": "ref6",
+        "article-title": "Yolov3: An incremental improvement",
+        "author": "redmon",
+        "year": "2018",
+        "journal-title": "ArXiv Preprint"
+      },
+      {
+        "key": "ref5",
+        "first-page": "21",
+        "article-title": "Ssd: Single shot multibox detector",
+        "author": "liu",
+        "year": "0",
+        "journal-title": "European Conference on Computer Vision"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref8",
+        "DOI": "10.1109/ICCV.2013.257"
+      },
+      {
+        "year": "2021",
+        "author": "jocher",
+        "journal-title": "ultralytics/yolov5 v4 0 - nn SiLUO activations Weights & Biases logging PyTorch Hub integration",
+        "key": "ref7"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref2",
+        "DOI": "10.1109/TPAMI.2016.2577031"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref9",
+        "DOI": "10.1109/CVPR.2017.211"
+      },
+      {
+        "key": "ref1",
+        "article-title": "Hrdnet: high-resolution detection network for small objects",
+        "author": "liu",
+        "year": "2020",
+        "journal-title": "ArXiv Preprint"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref20",
+        "DOI": "10.1016/j.asoc.2020.106691"
+      },
+      {
+        "key": "ref22",
+        "article-title": "Mobilenets: Efficient convolutional neural networks for mobile vision applications",
+        "author": "howard",
+        "year": "2017",
+        "journal-title": "ArXiv Preprint"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref21",
+        "DOI": "10.1016/j.compag.2020.105326"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref24",
+        "DOI": "10.1007/978-3-319-46475-6_25"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref23",
+        "DOI": "10.1109/CVPR.2016.90"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "ref25",
+        "DOI": "10.1109/CVPRW.2017.151"
+      }
+    ],
+    "event": {
+      "name": "2021 Joint 10th International Conference on Informatics, Electronics & Vision (ICIEV) and 2021 5th International Conference on Imaging, Vision & Pattern Recognition (icIVPR)",
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            16
+          ]
+        ]
+      },
+      "location": "Kitakyushu, Japan",
+      "end": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            20
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2021 Joint 10th International Conference on Informatics, Electronics &amp; Vision (ICIEV) and 2021 5th International Conference on Imaging, Vision &amp; Pattern Recognition (icIVPR)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/9564090/9563966/09564154.pdf?arnumber=9564154",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2022-08-03T00:19:41Z",
+      "timestamp": 1659485981000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9564154/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          16
+        ]
+      ]
+    },
+    "references-count": 25,
+    "URL": "https://doi.org/10.1109/icievicivpr52578.2021.9564154",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          16
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "paperId": "baae85c9e3e42fd2bea4367fb3c73f8247b3b271",
+  "title": "A Low-cost, Small-footprint Wireless Sensor for Container Integrity Monitoring",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SAHCN.2009.5168903?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SAHCN.2009.5168903, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1799206",
+      "name": "V. Sarangan"
+    },
+    {
+      "authorId": "2636984",
+      "name": "J. Kunthong"
+    },
+    {
+      "authorId": "2758929",
+      "name": "Xinwei Cai"
+    },
+    {
+      "authorId": "1791328",
+      "name": "S. Bukkapatnam"
+    },
+    {
+      "authorId": "2724104",
+      "name": "R. Komanduri"
+    },
+    {
+      "authorId": "2860231",
+      "name": "J. Volakis"
+    }
+  ],
+  "abstract": null
+}

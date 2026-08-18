@@ -1,0 +1,159 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2025-07-30T14:47:15Z",
+      "timestamp": 1753886835254,
+      "version": "3.41.2"
+    },
+    "reference-count": 0,
+    "publisher": "Inderscience Publishers",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IJSNET"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "DOI": "10.1504/ijsnet.2024.142707",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          19
+        ]
+      ],
+      "date-time": "2024-11-19T12:30:46Z",
+      "timestamp": 1732019446000
+    },
+    "page": "197-204",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Energy efficient link-delay aware data forwarding in low-duty-cycle LoRa mesh-based IoT networks"
+    ],
+    "prefix": "10.1504",
+    "volume": "46",
+    "author": [
+      {
+        "given": "Gary",
+        "family": "Sun",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jing",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "378",
+    "container-title": [
+      "International Journal of Sensor Networks"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.inderscienceonline.com/doi/full/10.1504/IJSNET.2024.142707",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          19
+        ]
+      ],
+      "date-time": "2024-11-19T12:30:47Z",
+      "timestamp": 1732019447000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.inderscience.com/link.php?id=142707"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1504/ijsnet.2024.142707",
+    "relation": {},
+    "ISSN": [
+      "1748-1279",
+      "1748-1287"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "1748-1279"
+      },
+      {
+        "type": "electronic",
+        "value": "1748-1287"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "article-number": "142707"
+  }
+}

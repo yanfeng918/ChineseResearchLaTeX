@@ -1,0 +1,591 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2026-06-01T23:26:06Z",
+      "timestamp": 1780356366904,
+      "version": "3.54.1"
+    },
+    "reference-count": 31,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              3
+            ]
+          ],
+          "date-time": "2024-09-03T00:00:00Z",
+          "timestamp": 1725321600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              3
+            ]
+          ],
+          "date-time": "2024-09-03T00:00:00Z",
+          "timestamp": 1725321600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Int. j. inf. tecnol."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1007/s41870-024-02130-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2024-09-03T11:02:06Z",
+      "timestamp": 1725361326000
+    },
+    "page": "4895-4905",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 12,
+    "title": [
+      "WSETO: wild stock exchange trading optimization algorithm enabled routing for NB-IoT tracking system"
+    ],
+    "prefix": "10.1007",
+    "volume": "16",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0700-4074",
+        "authenticated-orcid": false,
+        "given": "Sreeparnesh Sharma",
+        "family": "Sivadevuni",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Naveen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          3
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "1",
+        "key": "2130_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "175",
+        "DOI": "10.1016/j.dcan.2022.04.033",
+        "volume": "9",
+        "author": "E Gambi",
+        "year": "2023",
+        "unstructured": "Gambi E, Senigagliesi L, Barbaresi A, Mellini M, De Santis A (2023) A WKNN-based approach for NB-IoT sensors localization. Digital Commun Netw 9(1):175–182. https://doi.org/10.1016/j.dcan.2022.04.033",
+        "journal-title": "Digital Commun Netw"
+      },
+      {
+        "issue": "18",
+        "key": "2130_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2955",
+        "DOI": "10.3390/electronics11182955",
+        "volume": "11",
+        "author": "STA Jafri",
+        "year": "2022",
+        "unstructured": "Jafri STA, Ahmed I, Ali S (2022) Queue-buffer optimization based on aggressive random early detection in massive NB-IoT MANET for 5G applications. Electron (Basel) 11(18):2955. https://doi.org/10.3390/electronics11182955",
+        "journal-title": "Electron (Basel)"
+      },
+      {
+        "issue": "16",
+        "key": "2130_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "14913",
+        "DOI": "10.1109/JIOT.2021.3123376",
+        "volume": "9",
+        "author": "H Chougrani",
+        "year": "2022",
+        "unstructured": "Chougrani H, Kisseleff S, Martins WA, Chatzinotas S (2022) NB-IoT random access for nonterrestrial networks: preamble detection and uplink synchronization. IEEE Internet Things J 9(16):14913–14927. https://doi.org/10.1109/JIOT.2021.3123376",
+        "journal-title": "IEEE Internet Things J"
+      },
+      {
+        "key": "2130_CR4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41870-024-01893-z",
+        "author": "P Sarkar",
+        "year": "2024",
+        "unstructured": "Sarkar P, Saha M (2024) Optimizing air quality monitoring device deployment: a strategy to enhance distribution efficiency. Int J Inf Technol. https://doi.org/10.1007/s41870-024-01893-z",
+        "journal-title": "Int J Inf Technol"
+      },
+      {
+        "issue": "8",
+        "key": "2130_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "219",
+        "DOI": "10.3390/fi14080219",
+        "volume": "14",
+        "author": "E Kadusic",
+        "year": "2022",
+        "unstructured": "Kadusic E, Zivic N, Ruland C, Hadzajlic N (2022) A Smart Parking Solution by Integrating NB-IoT radio communication technology into the core IoT platform. Future Internet 14(8):219. https://doi.org/10.3390/fi14080219",
+        "journal-title": "Future Internet"
+      },
+      {
+        "key": "2130_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "2525",
+        "DOI": "10.1109/TSP.2021.3072834",
+        "volume": "69",
+        "author": "S Sedighi",
+        "year": "2021",
+        "unstructured": "Sedighi S, Mishra KV, Shankar MRB, Ottersten B (2021) Localization with one-bit passive radars in narrowband internet-of-things using multivariate polynomial optimization. IEEE Trans Signal Process 69:2525–2540. https://doi.org/10.1109/TSP.2021.3072834",
+        "journal-title": "IEEE Trans Signal Process"
+      },
+      {
+        "issue": "21",
+        "key": "2130_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "8859",
+        "DOI": "10.3390/s23218859",
+        "volume": "23",
+        "author": "H Soy",
+        "year": "2023",
+        "unstructured": "Soy H (2023) Coverage analysis of LoRa and NB-IoT technologies on LPWAN-based agricultural vehicle tracking application. Sensors 23(21):8859. https://doi.org/10.3390/s23218859",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "2130_CR8",
+        "volume-title": "2023 International conference on inventive computation technologies (ICICT)",
+        "author": "S Sharma Sivadevuni",
+        "year": "2023",
+        "unstructured": "Sharma Sivadevuni S, Ravichandran SK (2023) Tracking and Localization of Devices —An IoT Review. 2023 International conference on inventive computation technologies (ICICT). IEEE"
+      },
+      {
+        "key": "2130_CR9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.measen.2023.100884",
+        "author": "RV Siva Balan",
+        "year": "2023",
+        "unstructured": "Siva Balan RV et al (2023) Development of smart energy monitoring using NB-IOT and cloud. Meas: Sens. https://doi.org/10.1016/j.measen.2023.100884",
+        "journal-title": "Meas: Sens"
+      },
+      {
+        "key": "2130_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "DOI": "10.1016/j.comcom.2021.05.007",
+        "volume": "176",
+        "author": "A Nauman",
+        "year": "2021",
+        "unstructured": "Nauman A, Jamshed MA, Ali R, Cengiz K, Kim SW (2021) Reinforcement learning-enabled intelligent device-to-device (I-D2D) communication in narrowband internet of things (NB-IoT). Comput Commun 176:13–22. https://doi.org/10.1016/j.comcom.2021.05.007",
+        "journal-title": "Comput Commun"
+      },
+      {
+        "issue": "4",
+        "key": "2130_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "3527",
+        "DOI": "10.1007/s11277-020-07863-5",
+        "volume": "116",
+        "author": "P Kabilamani",
+        "year": "2021",
+        "unstructured": "Kabilamani P, Gomathy C (2021) Implementation of downlink physical channel processing architecture for NB-IoT using LTE/5G networks. Wirel Pers Commun 116(4):3527–3551. https://doi.org/10.1007/s11277-020-07863-5",
+        "journal-title": "Wirel Pers Commun"
+      },
+      {
+        "key": "2130_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "101431",
+        "DOI": "10.1016/j.phycom.2021.101431",
+        "volume": "48",
+        "author": "MS Ali",
+        "year": "2021",
+        "unstructured": "Ali MS, Islam MS, Memon MH, Asif M, Lin F (2021) Optimum DCT type-I based transceiver model and effective channel estimation for uplink NB-IoT system. Phys Commun 48:101431. https://doi.org/10.1016/j.phycom.2021.101431",
+        "journal-title": "Phys Commun"
+      },
+      {
+        "issue": "9",
+        "key": "2130_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1966",
+        "DOI": "10.3390/electronics12091966",
+        "volume": "12",
+        "author": "A Abostait",
+        "year": "2023",
+        "unstructured": "Abostait A, Tawfik RM, Darweesh MS, Mostafa H (2023) Design and FPGA-based hardware implementation of NB-IoT physical uplink shared channel transmitter and physical downlink shared channel receiver. Electron (Basel) 12(9):1966. https://doi.org/10.3390/electronics12091966",
+        "journal-title": "Electron (Basel)"
+      },
+      {
+        "key": "2130_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41870-024-01910-1",
+        "author": "I Hasan",
+        "year": "2024",
+        "unstructured": "Hasan I, Islam R, Sharmin N, Akhtaruzzaman Md (2024) A no-code swarm simulation framework for agent-based modeling using nature-inspired algorithms. Int J Inf Technol. https://doi.org/10.1007/s41870-024-01910-1",
+        "journal-title": "Int J Inf Technol"
+      },
+      {
+        "key": "2130_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "129756",
+        "DOI": "10.1109/ACCESS.2021.3112279",
+        "volume": "9",
+        "author": "MS Ali",
+        "year": "2021",
+        "unstructured": "Ali MS, Islam MS, Asif M, Khan WU, Lin F, Waqar O (2021) On efficient DCT type-I based low complexity channel estimation for uplink NB-IoT systems. IEEE Access 9:129756–129770. https://doi.org/10.1109/ACCESS.2021.3112279",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "2130_CR16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41870-024-01890-2",
+        "author": "SN Manoharan",
+        "year": "2024",
+        "unstructured": "Manoharan SN (2024) Cryptanalysis and security evaluation of optimized algorithms for image encryption in deep optimal network. Int J Inf Technol (Singapore). https://doi.org/10.1007/s41870-024-01890-2",
+        "journal-title": "Int J Inf Technol (Singapore)"
+      },
+      {
+        "issue": "19",
+        "key": "2130_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "14756",
+        "DOI": "10.1109/JIOT.2021.3072769",
+        "volume": "8",
+        "author": "SMZ Khan",
+        "year": "2021",
+        "unstructured": "Khan SMZ, Alam MM, Le Moullec Y, Kuusik A, Parand S, Verikoukis C (2021) An empirical modeling for the baseline energy consumption of an NB-IoT radio transceiver. IEEE Internet Things J 8(19):14756–14772. https://doi.org/10.1109/JIOT.2021.3072769",
+        "journal-title": "IEEE Internet Things J"
+      },
+      {
+        "key": "2130_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/wcnc51071.2022.9771847",
+        "author": "M Stusek",
+        "year": "2022",
+        "unstructured": "Stusek M et al (2022) Optimizing NB-IoT communication patterns for permanently connected mMTC devices. Inst Electr Electr Eng (IEEE). https://doi.org/10.1109/wcnc51071.2022.9771847",
+        "journal-title": "Inst Electr Electr Eng (IEEE)"
+      },
+      {
+        "key": "2130_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41060-023-00504-7",
+        "author": "FY Alghayadh",
+        "year": "2024",
+        "unstructured": "Alghayadh FY, Jena SR, Gupta D, Singh S, Bakhriddinovich IB, Batla Y (2024) Dynamic data-driven resource allocation for NB-IoT performance in mobile devices. Int J Data Sci Anal. https://doi.org/10.1007/s41060-023-00504-7",
+        "journal-title": "Int J Data Sci Anal"
+      },
+      {
+        "key": "2130_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41870-024-01830-0",
+        "author": "MM Gomaa",
+        "year": "2024",
+        "unstructured": "Gomaa MM, Zain Elabdeen AG, Elnashar A, Zaki AM (2024) Brain tumor X-ray images enhancement and classification using anisotropic diffusion filter and transfer learning models. Int J Inf Technol. https://doi.org/10.1007/s41870-024-01830-0",
+        "journal-title": "Int J Inf Technol"
+      },
+      {
+        "key": "2130_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "291",
+        "DOI": "10.1007/978-3-031-18497-0_22",
+        "volume-title": "Intelligent cyber physical systems and internet of things: ICoICI",
+        "author": "SS Sivadevuni",
+        "year": "2023",
+        "unstructured": "Sivadevuni SS, Kumar Ravichandran S (2023) Systematic literature review—IoT-based supply chain management in industry 4.0. Intelligent cyber physical systems and internet of things: ICoICI. Springer, Cham, pp 291–302"
+      },
+      {
+        "issue": "11",
+        "key": "2130_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "3772",
+        "DOI": "10.3390/s21113772",
+        "volume": "21",
+        "author": "S Parrino",
+        "year": "2021",
+        "unstructured": "Parrino S, Peruzzi G, Pozzebon A (2021) LoPATraN: low power asset tracking by means of narrow band IoT (NB-IoT) technology. Sensors 21(11):3772. https://doi.org/10.3390/s21113772",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "2130_CR23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics11162493",
+        "author": "Z Xie",
+        "year": "2022",
+        "unstructured": "Xie Z, Zhang R, Fang J, Zheng L (2022) A monitoring system based on NB-IoT and BDS/GPS dual-mode positioning. Electronics (Switzerland). https://doi.org/10.3390/electronics11162493",
+        "journal-title": "Electronics (Switzerland)"
+      },
+      {
+        "issue": "3",
+        "key": "2130_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "2367",
+        "DOI": "10.1007/s11277-021-08067-1",
+        "volume": "120",
+        "author": "MB Hassan",
+        "year": "2021",
+        "unstructured": "Hassan MB, Alsharif S, Alhumyani H, Ali ES, Mokhtar RA, Saeed RA (2021) An enhanced cooperative communication scheme for physical uplink shared channel in NB-IoT. Wirel Pers Commun 120(3):2367–2386. https://doi.org/10.1007/s11277-021-08067-1",
+        "journal-title": "Wirel Pers Commun"
+      },
+      {
+        "issue": "17",
+        "key": "2130_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "19064",
+        "DOI": "10.1007/s11227-023-05411-z",
+        "volume": "79",
+        "author": "J Tang",
+        "year": "2023",
+        "unstructured": "Tang J, Zhu X, Lin L, Dong C, Zhang L (2023) Monitoring routing status of UAV networks with NB-IoT. Journal of Supercomputing 79(17):19064–19094. https://doi.org/10.1007/s11227-023-05411-z",
+        "journal-title": "Journal of Supercomputing"
+      },
+      {
+        "issue": "11",
+        "key": "2130_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "1246",
+        "DOI": "10.3390/electronics10111246",
+        "volume": "10",
+        "author": "MKH Jewel",
+        "year": "2021",
+        "unstructured": "Jewel MKH, Zakariyya RS, Lin F (2021) On channel estimation in LTE-based downlink narrowband internet of things systems. Electronics (Basel) 10(11):1246. https://doi.org/10.3390/electronics10111246",
+        "journal-title": "Electronics (Basel)"
+      },
+      {
+        "key": "2130_CR27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/icacrs58579.2023.10405137",
+        "author": "SS Sivadevuni",
+        "year": "2024",
+        "unstructured": "Sivadevuni SS, Maiya R, Ganesh D, Krishna AR (2024) Intelligent metering innovations for urban utility management: a review. Inst Electr Electr Eng (IEEE). https://doi.org/10.1109/icacrs58579.2023.10405137",
+        "journal-title": "Inst Electr Electr Eng (IEEE)"
+      },
+      {
+        "key": "2130_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "100074",
+        "DOI": "10.1016/j.array.2021.100074",
+        "volume": "11",
+        "author": "M Ghasemi",
+        "year": "2021",
+        "unstructured": "Ghasemi M, Rahimnejad A, Hemmati R, Akbari E, Gadsden SA (2021) Wild Geese Algorithm: a novel algorithm for large scale optimization based on the natural life and death of wild geese. Array 11:100074. https://doi.org/10.1016/j.array.2021.100074",
+        "journal-title": "Array"
+      },
+      {
+        "issue": "3",
+        "key": "2130_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1276",
+        "DOI": "10.11591/eei.v12i3.4779",
+        "volume": "12",
+        "author": "TT Nguyen",
+        "year": "2023",
+        "unstructured": "Nguyen TT, Nguyen TT, Nguyen TD (2023) Minimizing electricity cost by optimal location and power of battery energy storage system using wild geese algorithm. Bulletin of Electr Eng Inform 12(3):1276–1284. https://doi.org/10.11591/eei.v12i3.4779",
+        "journal-title": "Bulletin of Electr Eng Inform"
+      },
+      {
+        "issue": "2",
+        "key": "2130_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2125",
+        "DOI": "10.1007/s11227-021-03943-w",
+        "volume": "78",
+        "author": "H Emami",
+        "year": "2022",
+        "unstructured": "Emami H (2022) Stock exchange trading optimization algorithm: a human-inspired method for global optimization. J Supercomput 78(2):2125–2174. https://doi.org/10.1007/s11227-021-03943-w",
+        "journal-title": "J Supercomput"
+      },
+      {
+        "key": "2130_CR31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41870-024-01823-z",
+        "author": "K Panneerselvam",
+        "year": "2024",
+        "unstructured": "Panneerselvam K, Nayudu PP, Banu MS, Rekha PM (2024) Multi-objective load balancing based on adaptive osprey optimization algorithm. Int J Inform Technol (Singapore). https://doi.org/10.1007/s41870-024-01823-z",
+        "journal-title": "Int J Inform Technol (Singapore)"
+      }
+    ],
+    "container-title": [
+      "International Journal of Information Technology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s41870-024-02130-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s41870-024-02130-3/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s41870-024-02130-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          30
+        ]
+      ],
+      "date-time": "2024-10-30T16:31:10Z",
+      "timestamp": 1730305870000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s41870-024-02130-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          3
+        ]
+      ]
+    },
+    "references-count": 31,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2130"
+    ],
+    "URL": "https://doi.org/10.1007/s41870-024-02130-3",
+    "relation": {},
+    "ISSN": [
+      "2511-2104",
+      "2511-2112"
+    ],
+    "issn-type": [
+      {
+        "value": "2511-2104",
+        "type": "print"
+      },
+      {
+        "value": "2511-2112",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "30 April 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "2 August 2024",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "3 September 2024",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      }
+    ]
+  }
+}

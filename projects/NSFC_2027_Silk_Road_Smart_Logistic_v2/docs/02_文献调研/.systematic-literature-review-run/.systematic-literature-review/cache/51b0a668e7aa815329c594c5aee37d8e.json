@@ -1,0 +1,372 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          14
+        ]
+      ],
+      "date-time": "2026-01-14T19:36:17Z",
+      "timestamp": 1768419377165,
+      "version": "3.49.0"
+    },
+    "reference-count": 34,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1109/ipsn.2012.6920956",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2014-10-15T14:40:21Z",
+      "timestamp": 1413384021000
+    },
+    "page": "185-196",
+    "source": "Crossref",
+    "is-referenced-by-count": 14,
+    "title": [
+      "Low power, low delay: Opportunistic routing meets duty cycling"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Olaf",
+        "family": "Landsiedel",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Euhanna",
+        "family": "Ghadimi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Simon",
+        "family": "Duquennoy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mikael",
+        "family": "Johansson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1182807.1182839"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/958492.958494"
+      },
+      {
+        "key": "ref31",
+        "article-title": "and RPL Author Team. RPL: IPv6 Routing Protocol for Low power and Lossy Networks",
+        "author": "winter",
+        "year": "0",
+        "journal-title": "Internet Draft Work in Progress draft-ietf-roll-rpl-19"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SUTC.2010.49"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2003.1255648"
+      },
+      {
+        "key": "ref10",
+        "article-title": "Indriya: A Low-Cost, 3D Wireless Sensor Network Testbed",
+        "author": "doddavenkatappa",
+        "year": "2011",
+        "journal-title": "TridentCom Proc of the Int ICST Conference on Testbeds and Research Infrastructures for the Development of Networks and Communities"
+      },
+      {
+        "key": "ref11",
+        "article-title": "Valuable Detours: Least-Cost Anypath Routing",
+        "volume": "19",
+        "author": "dubois-ferrièandre",
+        "year": "2011",
+        "journal-title": "IEEE/ACM Trans Netw"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1869983.1869985"
+      },
+      {
+        "key": "ref13",
+        "article-title": "Four Bit Wireless Link Estimation",
+        "author": "fonseca",
+        "year": "2007",
+        "journal-title": "Proceedings of the 1st Workshop on Hot Topics in Networks HotNets-I"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1644038.1644040"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1322263.1322294"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1132983.1132995"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2009.5061968"
+      },
+      {
+        "key": "ref18",
+        "article-title": "Minimizing Delay and Maximizing Lifetime for Wireless Sensor Networks with Anycast",
+        "volume": "18",
+        "author": "kim",
+        "year": "2010",
+        "journal-title": "IEEE/ACM Trans Netw"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/509506.509517"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/1460412.1460416",
+        "article-title": "The ? Factor: Measuring Wireless Link Burstiness",
+        "author": "srinivasan",
+        "year": "2008",
+        "journal-title": "Proceedings of the 4th international conference on Embedded networked sensor systems SenSys"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1409985.1409991"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1859995.1860032"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-22450-8_9"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1182807.1182838"
+      },
+      {
+        "key": "ref29",
+        "article-title": "Opportunistic, Receiver-Initiated Data-Collection Protocol",
+        "author": "unterschütz",
+        "year": "2012",
+        "journal-title": "European Conference on Wireless Sensor Networks EWSN"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1080091.1080108"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/972374.972388"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1282380.1282400"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1923641.1923659"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/938998.939000"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1644038.1644046"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1614379.1614381"
+      },
+      {
+        "key": "ref22",
+        "article-title": "Energy Efficient Opportunistic Routing in Wireless Networks",
+        "author": "mao",
+        "year": "2009",
+        "journal-title": "MSWiM Proc of the 12th ACM Int Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICFCC.2010.5497651"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2068897.2068929"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1791212.1791246"
+      },
+      {
+        "key": "ref26",
+        "article-title": "Potentials of Opportunistic Routing in Energy-Constrained Wireless Sensor Networks",
+        "author": "schaefer",
+        "year": "2009",
+        "journal-title": "European Conference on Wireless Sensor Networks EWSN"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1031495.1031508"
+      }
+    ],
+    "event": {
+      "name": "2012 ACM/IEEE 11th International Conference on Information Processing in Sensor Networks (IPSN)",
+      "location": "Beijing, China",
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            16
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            20
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2012 ACM/IEEE 11th International Conference on Information Processing in Sensor Networks (IPSN)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/6909388/6920920/06920956.pdf?arnumber=6920956",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2023-07-17T08:32:29Z",
+      "timestamp": 1689582749000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/6920956/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          4
+        ]
+      ]
+    },
+    "references-count": 34,
+    "URL": "https://doi.org/10.1109/ipsn.2012.6920956",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          4
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2024-09-04T13:37:54Z",
+      "timestamp": 1725457074597
+    },
+    "reference-count": 7,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1109/nems.2016.7758259",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          19
+        ]
+      ],
+      "date-time": "2016-12-19T21:10:20Z",
+      "timestamp": 1482181820000
+    },
+    "page": "325-328",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Real-time monitoring via patch-type piezoelectric force sensors for Internet of Thing in logistics"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Cheng-Hsin",
+        "family": "Chuang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wan-Ching",
+        "family": "Weng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wan-Jung",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Da-Huei",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PCI.2011.54"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/VETECS.2010.5493655"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2015.04.001"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2012.10.021"
+      },
+      {
+        "year": "2014",
+        "key": "ref7",
+        "article-title": "The impact indicator and the impact indicator of logistics monitoring and management system"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.sna.2006.02.008"
+      },
+      {
+        "year": "0",
+        "key": "ref1"
+      }
+    ],
+    "event": {
+      "name": "2016 IEEE 11th Annual International Conference on Nano/Micro Engineered and Molecular Systems (NEMS)",
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            17
+          ]
+        ]
+      },
+      "location": "Sendai, Japan",
+      "end": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            20
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2016 IEEE 11th Annual International Conference on Nano/Micro Engineered and Molecular Systems (NEMS)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/7750493/7758182/07758259.pdf?arnumber=7758259",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          20
+        ]
+      ],
+      "date-time": "2016-12-20T03:41:16Z",
+      "timestamp": 1482205276000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7758259/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    },
+    "references-count": 7,
+    "URL": "https://doi.org/10.1109/nems.2016.7758259",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          4
+        ]
+      ]
+    }
+  }
+}

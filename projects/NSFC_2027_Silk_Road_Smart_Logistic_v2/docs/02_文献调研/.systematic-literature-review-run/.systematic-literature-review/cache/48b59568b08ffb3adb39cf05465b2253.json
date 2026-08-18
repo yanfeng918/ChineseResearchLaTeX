@@ -1,0 +1,1410 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2026-07-22T04:26:24Z",
+      "timestamp": 1784694384938,
+      "version": "3.55.0"
+    },
+    "reference-count": 131,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              9
+            ]
+          ],
+          "date-time": "2023-02-09T00:00:00Z",
+          "timestamp": 1675900800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              9
+            ]
+          ],
+          "date-time": "2023-02-09T00:00:00Z",
+          "timestamp": 1675900800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Marit Econ Logist"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1057/s41278-023-00255-z",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          9
+        ]
+      ],
+      "date-time": "2023-02-09T14:05:01Z",
+      "timestamp": 1675951501000
+    },
+    "page": "28-60",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 15,
+    "title": [
+      "Emerging practices and research issues for big data analytics in freight transportation"
+    ],
+    "prefix": "10.1057",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Michael F.",
+        "family": "Gorman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John-Paul",
+        "family": "Clarke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "René",
+        "family": "de Koster",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Hewitt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Debjit",
+        "family": "Roy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mei",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "255_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "51",
+        "DOI": "10.1111/jscm.12269",
+        "volume": "58",
+        "author": "B Acero",
+        "year": "2022",
+        "unstructured": "Acero, B., M.J. Saenz, and D. Luzzini. 2022. Introducing synchromodality: One missing link between transportation and supply chain management. Journal of Supply Chain Management 58: 51–64.",
+        "journal-title": "Journal of Supply Chain Management"
+      },
+      {
+        "key": "255_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "141",
+        "DOI": "10.1016/j.cor.2014.01.011",
+        "volume": "55",
+        "author": "Y Adulyasak",
+        "year": "2015",
+        "unstructured": "Adulyasak, Y., J.F. Cordeau, and R. Jans. 2015. The Production Routing Problem: A Review of Formulations and Solution Algorithms. Computers & Operations Research 55: 141–152.",
+        "journal-title": "Computers & Operations Research"
+      },
+      {
+        "key": "255_CR3",
+        "unstructured": "AIT News Desk. 2019. IBS Software Has Launched an Integrated Revenue Management System at Korean Air to Boost Cargo Profitability. AITHORITY. https://aithority.com/machine-learning/ibs-software-has-launched-an-integrated-revenue-management-system-at-korean-air-to-boost-cargo-profitability/"
+      },
+      {
+        "key": "255_CR4",
+        "unstructured": "Akter, T., S. Hernandez. 2019. Truck Activity Pattern Classification Using Anonymous Mobile Sensor Data. Innovations in Freight Data Workshop."
+      },
+      {
+        "key": "255_CR5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Albakay, N., M. Hempel, H. Sharif. 2019. Big Data Analytics for Proactively Optimizing Rolling Stock Maintenance:2019 Joint Rail Conference. American Society of Mechanical Engineers Digital Collection.",
+        "DOI": "10.1115/JRC2019-1253"
+      },
+      {
+        "key": "255_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.1109/ICTER.2015.7377695",
+        "volume": "2015",
+        "author": "M Amarasinghe",
+        "year": "2015",
+        "unstructured": "Amarasinghe, M., A.S. Kottegoda, S. Arachchi, H. Muramudalige, D. Bandara, and A. Azeez. 2015. Cloud-based driver monitoring and vehicle diagnostic with OBD2 telematics. Fifteenth International Conference on Advances in ICT for Emerging Regions (ICTer) 2015: 243–249.",
+        "journal-title": "Fifteenth International Conference on Advances in ICT for Emerging Regions (ICTer)"
+      },
+      {
+        "key": "255_CR7",
+        "unstructured": "American Trucking Association. 2020. Economics and Industry Data. https://www.trucking.org/economics-and-industry-data"
+      },
+      {
+        "key": "255_CR8",
+        "unstructured": "Association of American Railroads. 2019. Positive Train Control (PTC) Backgrounder. https://www.aar.org/wp-content/uploads/2018/04/AAR-Positive-Train-Control.pdf."
+      },
+      {
+        "key": "255_CR9",
+        "unstructured": "Bassok, A., E. D. McCormack, M. L. Outwater, C. Ta. 2011. Use of truck gps data for freight forecasting. Transportation Research Board, No. 11–3033."
+      },
+      {
+        "issue": "2",
+        "key": "255_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "631",
+        "DOI": "10.1080/23249935.2018.1523249",
+        "volume": "15",
+        "author": "A Baykasoğlu",
+        "year": "2019",
+        "unstructured": "Baykasoğlu, A., K. Subulan, A. Serdar Taşan, and N. Dudaklı. 2019. A review of fleet planning problems in single and multimodal transportation systems. Transportmetrica a: Transport Science 15 (2): 631–697.",
+        "journal-title": "Transportmetrica a: Transport Science"
+      },
+      {
+        "issue": "1",
+        "key": "255_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "38",
+        "DOI": "10.1016/j.cstp.2015.11.005",
+        "volume": "4",
+        "author": "M Ben-Akiva",
+        "year": "2016",
+        "unstructured": "Ben-Akiva, M., T. Toldeo, J. Santos, N. Cox, F. Zhao, Y. Lee, and V. Marzano. 2016. Freight data collection using GPS and web-based surveys: Insights from US truck drivers’ survey and perspectives for urban freight. Case Studies on Transport Policy 4 (1): 38–44.",
+        "journal-title": "Case Studies on Transport Policy"
+      },
+      {
+        "key": "255_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.1175/1520-0493(1991)119<0888:AITHDA>2.0.CO;2",
+        "volume": "119",
+        "author": "SG Benjamin",
+        "year": "1991",
+        "unstructured": "Benjamin, S.G., K.A. Brewster, R. Brümmer, B.F. Jewett, T.W. Schlatter, T.L. Smith, and P.A. Stamus. 1991. An Isentropic Three-Hourly Data Assimilation System Using ACARS Aircraft Observations. Monthly Weather Review 119: 4.",
+        "journal-title": "Monthly Weather Review"
+      },
+      {
+        "key": "255_CR13",
+        "unstructured": "Bhattacharjee, S. 2021. Automatic Identification System (AIS): Integrating and Identifying Marine Communication Channels. Marine Navigation, URL: https://www.marineinsight.com/marine-navigation/automatic-identification-system-ais-integrating-and-identifying-marine-communication-channels/"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "615",
+        "DOI": "10.1016/j.ejor.2009.05.031",
+        "volume": "202",
+        "author": "C Bierwirth",
+        "year": "2010",
+        "unstructured": "Bierwirth, C., and F. Meisel. 2010. A survey of berth allocation and quay crane scheduling problems in container terminals. European Journal of Operational Research 202 (3): 615–627.",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "675",
+        "DOI": "10.1016/j.ejor.2014.12.030",
+        "volume": "244",
+        "author": "C Bierwirth",
+        "year": "2015",
+        "unstructured": "Bierwirth, C., and F. Meisel. 2015. A follow-up survey of berth allocation and quay crane scheduling problems in container terminals. European Journal of Operational Research 244 (3): 675–689.",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "588",
+        "DOI": "10.1287/trsc.2019.0966",
+        "volume": "54",
+        "author": "P Boada-Collado",
+        "year": "2020",
+        "unstructured": "Boada-Collado, P., S. Chopra, and K. Smilowitz. 2020. Partial Demand Information and Commitment in Dynamic Transportation Procurement. Transportation Science 54 (3): 588–605.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "key": "255_CR17",
+        "unstructured": "Bouarfa, S. 2020. Automated Aircraft Visual Inspection. Proceedings of Agifors Aircraft Maintenance Operations Special Session 2020."
+      },
+      {
+        "issue": "2",
+        "key": "255_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "281",
+        "DOI": "10.1287/trsc.2013.0471",
+        "volume": "48",
+        "author": "B Brouer",
+        "year": "2014",
+        "unstructured": "Brouer, B., J.C. Alvarez, C. Plum, D. Pisinger, and M. Sigurd. 2014. A base integer programming model and benchmark suite for liner shipping network design. Transportation Sci. 48 (2): 281–312.",
+        "journal-title": "Transportation Sci."
+      },
+      {
+        "key": "255_CR19",
+        "first-page": "55",
+        "volume": "97",
+        "author": "A Budak",
+        "year": "2017",
+        "unstructured": "Budak, A., A. Ustundag, and B. Gulogu. 2017. A forecasting approach for truckload spot market pricing. Transportation Research Part a: Policy and Practice 97: 55–68.",
+        "journal-title": "Transportation Research Part a: Policy and Practice"
+      },
+      {
+        "key": "255_CR20",
+        "unstructured": "Bullock, C. 2017. Data analysis is keeping planes flying. https://www.raconteur.net/technology/data-analytics/data-analysis-is-keeping-planes-flying/"
+      },
+      {
+        "key": "255_CR21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tre.2020.102054",
+        "volume": "142",
+        "author": "C Caballini",
+        "year": "2020",
+        "unstructured": "Caballini, C., M.D. Gracia, J. Mar-Ortiz, and S. Sacone. 2020. A combined data mining – optimization approach to manage trucks operations in container terminals with the use of a TAS: Application to an Italian and a Mexican port. Transportation Research Part e: Logistics and Transportation Review 142: 102054.",
+        "journal-title": "Transportation Research Part e: Logistics and Transportation Review"
+      },
+      {
+        "key": "255_CR22",
+        "unstructured": "Cambier, Y. 2018. ICF Big Data: Racing to platform maturity. https://www.aircraftit.com/articles/big-data-racing-to-platform-maturity/"
+      },
+      {
+        "key": "255_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "423",
+        "DOI": "10.1111/j.1937-5956.2007.tb00270.x",
+        "volume": "16",
+        "author": "C Caplice",
+        "year": "2007",
+        "unstructured": "Caplice, C. 2007. Electronic Markets for Truckload Transportation. Production and Operations Management 16: 423–436.",
+        "journal-title": "Production and Operations Management"
+      },
+      {
+        "issue": "4",
+        "key": "255_CR24",
+        "first-page": "423",
+        "volume": "16",
+        "author": "C Caplice",
+        "year": "2003",
+        "unstructured": "Caplice, C., and Y. Sheffi. 2003. Optimization-based procurement for transportation services. Journal of Business Logistics 16 (4): 423–436.",
+        "journal-title": "Journal of Business Logistics"
+      },
+      {
+        "key": "255_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ast.2019.105423",
+        "volume": "94",
+        "author": "C Che",
+        "year": "2019",
+        "unstructured": "Che, C., H. Wang, Q. Fu, and X. Ni. 2019. Combining multiple deep learning algorithms for prognostic and health management of aircraft. Aerospace Science and Technology 94: 105423.",
+        "journal-title": "Aerospace Science and Technology"
+      },
+      {
+        "key": "255_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "70",
+        "DOI": "10.1016/j.trpro.2018.09.009",
+        "volume": "30",
+        "author": "A Conca",
+        "year": "2018",
+        "unstructured": "Conca, A., A. Di Febbraro, D. Giglio, and F. Rebora. 2018. Automation in freight port call process: Real time data sharing to improve the stowage planning. ScienceDirect, Transportation Research Procedia 30: 70–79.",
+        "journal-title": "ScienceDirect, Transportation Research Procedia"
+      },
+      {
+        "key": "255_CR27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Consilvio, A., P. Sanetti, D. Anguìta, C. Crovetto, C. Dambra, L. Oneto, N. Sacco. 2019. Prescriptive maintenance of railway infrastructure: From data analytics to decision support. IEEE 2019 6th International Conference on Models and Technologies for Intelligent Transportation Systems (MT-ITS),1–10.",
+        "DOI": "10.1109/MTITS.2019.8883331"
+      },
+      {
+        "key": "255_CR29",
+        "unstructured": "Cruciol, L. L. B. V., L. Weigang, J.-P. Clarke, L. Li. 2105. Air Traffic Flow Management Data Mining and Analysis for In-flight Cost Optimization. Engineering and Applied Sciences Optimization, Computational Methods in Applied Sciences 38, ed. N.D. Lagaros and M. Papadrakakis, Springer International Publishing, Switzerland."
+      },
+      {
+        "key": "255_CR30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Coraddu, A., L. Oneto, F. Baldi, D. Anguita. 2017. Vessels fuel consumption forecast and trim optimization: A data analytics perspective. Ocean Engineering, 130, 351–370. DCSA (2020), https://dcsa.org/",
+        "DOI": "10.1016/j.oceaneng.2016.11.058"
+      },
+      {
+        "key": "255_CR28",
+        "unstructured": "DAT Freight and Analytics. 2016. 63 Percent of Drivers are Detained for More Than 3 Hours Per Stop. https://www.dat.com/company/news-events/news-releases/63-percent-of-drivers-are-detained-for-more-than-3-hours-per-stop-dat-solutions"
+      },
+      {
+        "issue": "2",
+        "key": "255_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "146",
+        "DOI": "10.1177/0361198120905842",
+        "volume": "2674",
+        "author": "A Diaz de Rivera",
+        "year": "2020",
+        "unstructured": "Diaz de Rivera, A., C.T. Dick, and L.E. Evans. 2020. Improving railway operational efficiency with moving blocks, train fleeting, and alternative single-track configurations. Transportation Research Record 2674 (2): 146–157.",
+        "journal-title": "Transportation Research Record"
+      },
+      {
+        "key": "255_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "77",
+        "DOI": "10.3141/2159-10",
+        "volume": "2159",
+        "author": "MH Dingler",
+        "year": "2010",
+        "unstructured": "Dingler, M.H., Y.C. Lai, and C.P.L. Barkan. 2010. Effects of Communications-Based Train Control and Electronically Controlled Pneumatic Brakes on Railroad Capacity. Transportation Research Record: Journal of the Transportation Research Board 2159: 77–84.",
+        "journal-title": "Transportation Research Record: Journal of the Transportation Research Board"
+      },
+      {
+        "key": "255_CR33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dong, Chuanwen, et al. \"The impact of emerging and disruptive technologies on freight transportation in the digital era: current state and future trends.\" The International Journal of Logistics Management (2021).",
+        "DOI": "10.1108/IJLM-01-2020-0043"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "988",
+        "DOI": "10.1016/j.tre.2008.06.004",
+        "volume": "45",
+        "author": "A Erera",
+        "year": "2009",
+        "unstructured": "Erera, A., M. Hewitt, B. Kuracik, and M. Saveslbergh. 2009. Locating drivers in a trucking terminal network. Transportation Research Part e: Logistics and Transportation Review 45 (5): 988–1005.",
+        "journal-title": "Transportation Research Part e: Logistics and Transportation Review"
+      },
+      {
+        "key": "255_CR35",
+        "unstructured": "Eurostat. 2017. Road freight transport by journey characteristics. Eurostat, https://ec.europa.eu/eurostat/statisticsexplained/index.php/Road_freight_transport_by_journey_characteristics#Road_transport_by_type_of_operation."
+      },
+      {
+        "issue": "1",
+        "key": "255_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "113",
+        "DOI": "10.3141/2478-13",
+        "volume": "2478",
+        "author": "M Flaskou",
+        "year": "2015",
+        "unstructured": "Flaskou, M., M.A. Dulebenets, M.M. Golias, S. Mishra, and R.M. Rock. 2015. Analysis of Freight Corridors Using GPS Data on Trucks. Transportation Research Record 2478 (1): 113–122.",
+        "journal-title": "Transportation Research Record"
+      },
+      {
+        "key": "255_CR37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Forest, F., Q. Cochard, C. Noyer, A. Cabut, M. Joncour, J. Lacaille, M. Lebbah, H. Azzag. 2020. Large-scale Vibration Monitoring of Aircraft Engines from Operational Data using Self-organized Models. Proceedings of AGIFORS Annual Symposium 2020.",
+        "DOI": "10.36001/phmconf.2020.v12i1.1131"
+      },
+      {
+        "key": "255_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "234",
+        "DOI": "10.1016/j.ijpe.2014.12.031",
+        "volume": "165",
+        "author": "S Fosso Wamba",
+        "year": "2015",
+        "unstructured": "Fosso Wamba, S., S. Akter, A. Edwards, G. Chopin, and D. Gnanzou. 2015. How “big data” can make big impact: Findings from a systematic review and a longitudinal case study. International Journal of Production Economics 165: 234–246.",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "403",
+        "DOI": "10.1016/S0191-2615(99)00032-6",
+        "volume": "34",
+        "author": "RA Garrido",
+        "year": "2000",
+        "unstructured": "Garrido, R.A., and H.S. Mahmassani. 2000. Forecasting freight transportation demand with the space–time multinomial probit model. Transportation Research Part b: Methodological 34 (5): 403–418.",
+        "journal-title": "Transportation Research Part b: Methodological"
+      },
+      {
+        "key": "255_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "137",
+        "DOI": "10.1016/j.trc.2019.07.020",
+        "volume": "107",
+        "author": "PCL Gerum",
+        "year": "2019",
+        "unstructured": "Gerum, P.C.L., A. Altay, and M. Baykal-Gürsoy. 2019. Data-driven predictive maintenance scheduling policies for railways. Transportation Research Part c: Emerging Technologies 107: 137–154.",
+        "journal-title": "Transportation Research Part c: Emerging Technologies"
+      },
+      {
+        "key": "255_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "103",
+        "DOI": "10.1057/mel.2015.3",
+        "volume": "18",
+        "author": "A Gharehgozli",
+        "year": "2016",
+        "unstructured": "Gharehgozli, A., D. Roy, and R. de Koster. 2016. Sea container terminals: New technologies and OR models. Maritime Economics and Logistics 18: 103–140. https://doi.org/10.1057/mel.2015.3.",
+        "journal-title": "Maritime Economics and Logistics"
+      },
+      {
+        "key": "255_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "226",
+        "DOI": "10.1016/j.trc.2018.03.010",
+        "volume": "90",
+        "author": "F Ghofrani",
+        "year": "2018",
+        "unstructured": "Ghofrani, F., et al. 2018. Recent applications of big data analytics in railway transportation systems: A survey. Transportation Research Part c: Emerging Technologies 90: 226–246.",
+        "journal-title": "Transportation Research Part c: Emerging Technologies"
+      },
+      {
+        "issue": "1",
+        "key": "255_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1287/trsc.36.1.21.570",
+        "volume": "36",
+        "author": "GA Godfrey",
+        "year": "2002",
+        "unstructured": "Godfrey, G.A., and W.B. Powell. 2002. An adaptive dynamic programming algorithm for dynamic fleet management, I: Single period travel times. Transportation Science 36 (1): 21–39.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "key": "255_CR44",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gonzalez, J., G. Battistello, P. Schmiegelt, J. Biermann. 2014. Semi-Automatic extraction of ship lanes and movement corridors from AIS data. KFIE Fraunhofer Institute.",
+        "DOI": "10.1109/IGARSS.2014.6946815"
+      },
+      {
+        "issue": "6",
+        "key": "255_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "535",
+        "DOI": "10.1287/inte.2014.0772",
+        "volume": "44",
+        "author": "MF Gorman",
+        "year": "2014",
+        "unstructured": "Gorman, M.F., J.-P. Clarke, A. Hossein Gharehgozli, M. Hewitt, R. de Koster, and D. Roy. 2014. State of the Practice: A Review of the Application or OR/MS in Freight Transportation. Interfaces 44 (6): 535–554.",
+        "journal-title": "Interfaces"
+      },
+      {
+        "key": "255_CR46",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Huang, L., Y. Wen, Y. Zhang, C. Zhou, F. Zhang, T. Yang. 2020. Dynamic calculation of ship exhaust emissions based on real-time AIS data. Transportation Research Part D: Transport and Environment, 80.",
+        "DOI": "10.1016/j.trd.2020.102277"
+      },
+      {
+        "key": "255_CR47",
+        "unstructured": "IATA. 2019. Airline Maintenance Cost Executive Commentary."
+      },
+      {
+        "key": "255_CR48",
+        "unstructured": "https://www.iata.org/contentassets/bf8ca67c8bcd4358b3d004b0d6d0916f/mctg-fy2018-report-public.pdf"
+      },
+      {
+        "issue": "2",
+        "key": "255_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "211",
+        "DOI": "10.1287/trsc.1050.0114",
+        "volume": "40",
+        "author": "S Ichoua",
+        "year": "2006",
+        "unstructured": "Ichoua, S., M. Gendreau, and J.Y. Potvin. 2006. Exploiting knowledge about future demands for real-time vehicle dispatching. Transportation Science 40 (2): 211–225.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "key": "255_CR51",
+        "unstructured": "11 Incredible facts about the $700 billion US trucking industry. Business Insider, https://markets.businessinsider.com/news/stocks/trucking-industry-facts-us-truckers-2019-5-1028248577#in-2017-the-american-trucking-industry-posted-revenues-higher-than-the-gdp-of-more-than-150-nations-1"
+      },
+      {
+        "key": "255_CR50",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jimenez, V.J., Bouhmala, N. and Gausdal, A.H., 2020. Developing a predictive maintenance model for vessel machinery. Journal of Ocean Engineering and Science, 5(4), pp.358–386. John, S. 2019.",
+        "DOI": "10.1016/j.joes.2020.03.003"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "599",
+        "DOI": "10.1080/01441647.2015.1038741",
+        "volume": "35",
+        "author": "R Jothi Basu",
+        "year": "2015",
+        "unstructured": "Jothi Basu, R., N. Subramanian, and N. Cheikhrouhou. 2015. Review of Full Truckload Transportation Service Procurement. Transport Reviews 35 (5): 599–621.",
+        "journal-title": "Transport Reviews"
+      },
+      {
+        "key": "255_CR53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10696-022-09462-x",
+        "author": "L Kolley",
+        "year": "2022",
+        "unstructured": "Kolley, L., N. Rückert, M. Kastner, C. Jahn, and K. Kathrin Fischer. 2022. Robust berth scheduling using machine learning for vessel arrival time prediction. Flexible Services and Manufacturing Journal. https://doi.org/10.1007/s10696-022-09462-x.",
+        "journal-title": "Flexible Services and Manufacturing Journal"
+      },
+      {
+        "key": "255_CR54",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kontopoulos, I., I. Varlamis, K. Tserpes. 2020a. A distributed framework for extracting maritime traffic patterns. International Journal of Geographical Information Science, 1–26.",
+        "DOI": "10.1080/13658816.2020.1792914"
+      },
+      {
+        "key": "255_CR55",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kontopoulos, I., I. Varlamis, K. Tserpes. 2020b. Uncovering Hidden Concepts from AIS Data: A Network Abstraction of Maritime Traffic for Anomaly Detection. In: Tserpes K., Renso C., Matwin S. (eds) Multiple-Aspect Analysis of Semantic Trajectories. MASTER 2019. Lecture Notes in Computer Science, 11889. Springer, Cham.",
+        "DOI": "10.1007/978-3-030-38081-6_2"
+      },
+      {
+        "key": "255_CR56",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kour, R., A. Thaduri, S. Singh, A. Martinetti. 2019. Big data analytics for maintaining transportation systems. Transportation systems (pp. 73–91). Springer, Singapore.",
+        "DOI": "10.1007/978-981-32-9323-6_6"
+      },
+      {
+        "key": "255_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "348",
+        "DOI": "10.1016/j.tre.2019.03.021",
+        "volume": "125",
+        "author": "M Lafkihi",
+        "year": "2019",
+        "unstructured": "Lafkihi, M., P. Shenle, and E. Ballot. 2019. Freight transportation service procurement: A literature review and future research opportunities in omnichannel E-commerce. Transportation Research Part e: Logistics and Transportation Review 125: 348–365.",
+        "journal-title": "Transportation Research Part e: Logistics and Transportation Review"
+      },
+      {
+        "key": "255_CR58",
+        "unstructured": "Lal, R., S. Johnson. 2018. Maersk betting on blockchain, HBS 9–518–089."
+      },
+      {
+        "issue": "1",
+        "key": "255_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "85",
+        "DOI": "10.1109/EMR.2019.2951559",
+        "volume": "48",
+        "author": "A Land",
+        "year": "2019",
+        "unstructured": "Land, A., A. Buus, and A. Platt. 2019. Data Analytics in Rail Transportation: Applications and Effects for Sustainability. IEEE Engineering Management Review 48 (1): 85–91.",
+        "journal-title": "IEEE Engineering Management Review"
+      },
+      {
+        "issue": "6",
+        "key": "255_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.3390/aerospace7060073",
+        "volume": "7",
+        "author": "HK Lee",
+        "year": "2020",
+        "unstructured": "Lee, H.K., S. Madar, S. Sairam, T.G. Puranik, A.P. Payan, M. Kirby, O.J. Pinon, and D.N. Mavris. 2020. Critical Parameter Identification for Safety Events in Commercial Aviation Using Machine Learning. Aerospace 7 (6): 73.",
+        "journal-title": "Aerospace"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "3137",
+        "DOI": "10.1109/TIE.2016.2519325",
+        "volume": "63",
+        "author": "Y Lei",
+        "year": "2016",
+        "unstructured": "Lei, Y., F. Jia, J. Lin, S. Xing, and S.X. Ding. 2016. An intelligent fault diagnosis method using unsupervised feature learning towards mechanical big data. IEEE Transactions on Industrial Electronics 63 (5): 3137–3147.",
+        "journal-title": "IEEE Transactions on Industrial Electronics"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "751",
+        "DOI": "10.1287/opre.1070.0481",
+        "volume": "56",
+        "author": "A Lim",
+        "year": "2008",
+        "unstructured": "Lim, A., B. Rodrigues, Z. Xu, and Z. 2008. Transportation Procurement with Seasonally Varying Shipper Demand and Volume Guarantees. Operations Research 56 (3): 751–771.",
+        "journal-title": "Operations Research"
+      },
+      {
+        "key": "255_CR63",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Li, N., Haralambides, H., Sheng, H., Jin, Z. 2022. A new vocation queuing model to optimize truck appointments and yard handling-equipment use in dual transactions systems of container terminals, Computers & Industrial Engineering, Volume 169, 2022, https://doi.org/10.1016/j.cie.2022.108216.",
+        "DOI": "10.1016/j.cie.2022.108216"
+      },
+      {
+        "key": "255_CR64",
+        "first-page": "261",
+        "volume": "102",
+        "author": "C Lindsey",
+        "year": "2017",
+        "unstructured": "Lindsey, C., and H. Mahmassani. 2017. Sourcing Truckload Capacity in the Transportation Spot Market: A Framework for Third Party Providers. Transportation Research Part a: Policy and Practice 102: 261–273.",
+        "journal-title": "Transportation Research Part a: Policy and Practice"
+      },
+      {
+        "key": "255_CR65",
+        "unstructured": "Linn, R., J. Liu, Y.-W. Wan, C. Zhang. 2007. Predicting the Performance of Container Terminal Operations using Artificial Neural Networks. Risk Management in Port Operations, Logistics and Supply Chain Security, 1st Edition, 2007, Informa Law from Routledge."
+      },
+      {
+        "key": "255_CR66",
+        "unstructured": "Logistics Management. 2017. Making the Case for Transportation Management Systems,. Logistics Management, www.logisticsmgmt.com/article/making_the_case_for_transportation_management_systems."
+      },
+      {
+        "issue": "1",
+        "key": "255_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.3141/2596-06",
+        "volume": "2596",
+        "author": "X Ma",
+        "year": "2016",
+        "unstructured": "Ma, X., Y. Wang, E. McCormack, and Y. Wang. 2016. Understanding Freight Trip-Chaining Behavior Using a Spatial Data-Mining Approach with GPS Data. Transportation Research Record 2596 (1): 44–54.",
+        "journal-title": "Transportation Research Record"
+      },
+      {
+        "key": "255_CR68",
+        "doi-asserted-by": "publisher",
+        "first-page": "84",
+        "DOI": "10.1016/j.dss.2019.04.006",
+        "volume": "121",
+        "author": "S Maldonado",
+        "year": "2019",
+        "unstructured": "Maldonado, S., R.G. González-Ramírez, F. Quijada, and A. Ramírez-Nafarrate. 2019. Analytics meets port logistics: A decision support system for container stacking operations. Decision Support Systems 121: 84–93.",
+        "journal-title": "Decision Support Systems"
+      },
+      {
+        "key": "255_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "152",
+        "DOI": "10.1016/j.oceaneng.2016.08.033",
+        "volume": "126",
+        "author": "W Mao",
+        "year": "2016",
+        "unstructured": "Mao, W., I. Rychlik, J. Wallin, and G. Storhaug. 2016. Statistical models for the speed prediction of a container shop. Ocean Engineering 126: 152–162.",
+        "journal-title": "Ocean Engineering"
+      },
+      {
+        "key": "255_CR70",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Martey, E. N., L. Ahmed, N. Attoh-Okine. 2017. Track geometry big data analysis: A machine learning approach. IEEE International Conference on Big Data (Big Data), 3800–3809",
+        "DOI": "10.1109/BigData.2017.8258381"
+      },
+      {
+        "key": "255_CR71",
+        "unstructured": "McCrea, B. 2020. The Future of Motor Freight. Logistics Management, https://www.logisticsmgmt.com/article/the_future_of_motor_freight"
+      },
+      {
+        "key": "255_CR72",
+        "doi-asserted-by": "publisher",
+        "first-page": "15543",
+        "DOI": "10.1109/ACCESS.2020.2967436",
+        "volume": "8",
+        "author": "P McMahon",
+        "year": "2020",
+        "unstructured": "McMahon, P., T. Zhang, and R. Dwight. 2020. Requirements for Big Data Adoption for Railway Asset Management. IEEE Access 8: 15543–15564.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "255_CR73",
+        "unstructured": "Mecer, D. 2020. Maintaining a Digital Twin for Aircraft during Operation. Proceedings of Agifors Aircraft Maintenance Operations Special Session 2020."
+      },
+      {
+        "key": "255_CR74",
+        "unstructured": "Meert, W. 2019. Machine Learning for Airplane Maintenance. Proceedings of Agifors Aircraft Maintenance Operations Special Session 2019."
+      },
+      {
+        "key": "255_CR75",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1111/jbl.12207",
+        "volume": "41",
+        "author": "JW Miller",
+        "year": "2020",
+        "unstructured": "Miller, J.W., Y. Bolumole, and M.A. Schwieterman. 2020a. Electronic Logging Device Compliance of Small and Medium Size Motor Carriers Prior to the December 18, 2017. Journal of Business Logistics 41: 67–85.",
+        "journal-title": "Journal of Business Logistics"
+      },
+      {
+        "issue": "6",
+        "key": "255_CR76",
+        "doi-asserted-by": "publisher",
+        "first-page": "1676",
+        "DOI": "10.1287/trsc.2020.0989",
+        "volume": "54",
+        "author": "J Miller",
+        "year": "2020",
+        "unstructured": "Miller, J., Y. Nie, and X. Lui. 2020b. Hyperpath Truck Routing in an Online Freight Exchange Platform. Transportation Science 54 (6): 1676–1696.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "issue": "2",
+        "key": "255_CR77",
+        "doi-asserted-by": "publisher",
+        "first-page": "367",
+        "DOI": "10.1016/j.ejor.2013.09.041",
+        "volume": "235",
+        "author": "J Mulder",
+        "year": "2014",
+        "unstructured": "Mulder, J., and R. Dekker. 2014. Methods for strategic liner shipping network design. European Journal of Operational Research 235 (2): 367–377.",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "issue": "2",
+        "key": "255_CR78",
+        "doi-asserted-by": "publisher",
+        "first-page": "365",
+        "DOI": "10.1287/trsc.2018.0842",
+        "volume": "53",
+        "author": "J Mulder",
+        "year": "2019",
+        "unstructured": "Mulder, J., W. van Jaarsveld, and R. Dekker. 2019. Simultaneous Optimization of Speed and Buffer Times with an Application to Liner Shipping. Transportation Science 53 (2): 365–382.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "key": "255_CR79",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1057/s41278-022-00232-y",
+        "volume": "24",
+        "author": "ZH Munim",
+        "year": "2022",
+        "unstructured": "Munim, Z.H., and H. Haralambides. 2022. Advances in maritime autonomous surface ships (MASS) in merchant shipping. Maritime Economics and Logistics 24: 181–188.",
+        "journal-title": "Maritime Economics and Logistics"
+      },
+      {
+        "key": "255_CR80",
+        "unstructured": "Nandiraju, S., A. Regan. 2008. Freight transportation electronic marketplaces: a survey of the industry and exploration of important research issues. UC Berkeley: University of California Transportation Center, https://escholarship.org/uc/item/9fj2c4jw."
+      },
+      {
+        "key": "255_CR81",
+        "doi-asserted-by": "publisher",
+        "first-page": "251",
+        "DOI": "10.1016/j.ress.2019.03.018",
+        "volume": "188",
+        "author": "KTP Nguyen",
+        "year": "2019",
+        "unstructured": "Nguyen, K.T.P., and K. Medjaher. 2019. A new dynamic predictive maintenance framework using deep learning for failure prognostics. Reliability Engineering and System Safety 188: 251–262.",
+        "journal-title": "Reliability Engineering and System Safety"
+      },
+      {
+        "key": "255_CR82",
+        "unstructured": "Oracle (2018). Oracle Transportation Management Cloud. Oracle, http://www.oracle.com/us/products/applications/046953.pdf"
+      },
+      {
+        "issue": "15",
+        "key": "255_CR83",
+        "doi-asserted-by": "publisher",
+        "first-page": "184",
+        "DOI": "10.1016/j.cam.2018.07.008",
+        "volume": "346",
+        "author": "C Ordóñeza",
+        "year": "2019",
+        "unstructured": "Ordóñeza, C., F.S. Lasherasb, J. Roca-Pardiñasc, and F.J. de CosJueza. 2019. A hybrid ARIMA–SVM model for the study of the remaining useful life of aircraft engines. Journal of Computational and Applied Mathematics 346 (15): 184–191.",
+        "journal-title": "Journal of Computational and Applied Mathematics"
+      },
+      {
+        "key": "255_CR84",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pall, E., K. Mathe, L. Tamas, L. Busoniu. 2014. Railway track following with the AR. Drone using vanishing point detection. Proceedings of 2014 IEEE International Conference on Automation, Quality and Testing, Robotics, AQTR 2014.",
+        "DOI": "10.1109/AQTR.2014.6857870"
+      },
+      {
+        "key": "255_CR85",
+        "unstructured": "Peckham, O. 2020. For American Airlines, Machine Learning Solves an Air Cargo Conundrum. Datanami. https://www.datanami.com/2020/05/14/for-american-airlines-machine-learning-solves-an-air-cargo-conundrum/"
+      },
+      {
+        "key": "255_CR86",
+        "unstructured": "Port of Rotterdam puts Internet of Things platform into operation. 2019. https://www.portofrotterdam.com/en/news-and-press-releases/port-of-rotterdam-puts-internet-of-things-platform-into-operation."
+      },
+      {
+        "key": "255_CR87",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Powell, W. B. 2007. Approximate Dynamic Programming: Solving the curses of dimensionality (Vol. 703). John Wiley & Sons.",
+        "DOI": "10.1002/9780470182963"
+      },
+      {
+        "key": "255_CR88",
+        "unstructured": "Pozzi, S., C. Valbonesi, V. Beato, R. Volpini, F. M. Giustizieri, F. Lieutaud, A. Licu. 2015. Safety Monitoring in the Age of Big Data. Ninth USA/Europe Air Traffic Management Research and Development Seminar."
+      },
+      {
+        "key": "255_CR89",
+        "unstructured": "Rail Safety Improvement Act of 2008, H. R. 2095, 110th Congress, 2nd session, 2008."
+      },
+      {
+        "key": "255_CR90",
+        "doi-asserted-by": "publisher",
+        "first-page": "138",
+        "DOI": "10.1111/poms.12029",
+        "volume": "23",
+        "author": "T Rajapakshe",
+        "year": "2014",
+        "unstructured": "Rajapakshe, T., M. Dawande, S. Gavirneni, C. Sriskandarajah, and P. Rao. 2014. Dedicated Transportation Subnetworks: Design, analysis, and Insights. Production and Operations Management 23: 138–159.",
+        "journal-title": "Production and Operations Management"
+      },
+      {
+        "key": "255_CR91",
+        "unstructured": "Robinson, A. 2020. Sonar Indexes & Insights: What is the outbound tender reject index (OTRI) & What is it saying about freight markets? FreightWaves, https://sonar.freightwaves.com/freight-market-blog/outbound-tender-reject-index."
+      },
+      {
+        "key": "255_CR92",
+        "unstructured": "Rizzo, S. G., J. Lucas, Z. Kaoudi, J.-A. Quiane-Ruiz, S. Chawla. 2019. AI-CARGO: A Data-Driven Air-Cargo Revenue Management System. arXiv:1905.09130 [cs.AI]"
+      },
+      {
+        "key": "255_CR93",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Roy, A. (2001). Secure aircraft communications addressing and reporting system (ACARS). 20th DASC. 20th Digital Avionics Systems Conference (Cat. No.01CH37219), Daytona Beach, FL, USA, 2001, pp. 7A2/1–7A2/11 vol.2.",
+        "DOI": "10.1109/DASC.2001.964182"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR94",
+        "doi-asserted-by": "publisher",
+        "first-page": "686",
+        "DOI": "10.1287/opre.2019.1920",
+        "volume": "68",
+        "author": "D Roy",
+        "year": "2020",
+        "unstructured": "Roy, D., R. De Koster, and R. Bekker. 2020. Modeling and Design of Container Terminal Operations. Operations Research 68 (3): 686–715.",
+        "journal-title": "Operations Research"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR95",
+        "doi-asserted-by": "publisher",
+        "first-page": "1239",
+        "DOI": "10.1109/TITS.2019.2905611",
+        "volume": "21",
+        "author": "M Saki",
+        "year": "2019",
+        "unstructured": "Saki, M., M. Abolhasan, and J. Lipman. 2019. A Novel Approach for Big Data Classification and Transportation in Rail Networks. IEEE Transactions on Intelligent Transportation Systems 21 (3): 1239–1249.",
+        "journal-title": "IEEE Transactions on Intelligent Transportation Systems"
+      },
+      {
+        "key": "255_CR96",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Salierno, G., S. Morvillo, L. Leonardi, G. Cabri. 2020. An Architecture for Predictive Maintenance of Railway Points Based on Big Data Analytics. International Conference on Advanced Information Systems Engineering, 29–40. Springer, Cham.",
+        "DOI": "10.1007/978-3-030-49165-9_3"
+      },
+      {
+        "key": "255_CR97",
+        "unstructured": "Sanchez, I. H., L. P. H. Mukti. 2018. Uberization Effects on Freight Procurement. Master Thesis, Massachusetts Institute of Technology, http://hdl.handle.net/1721.1/118121"
+      },
+      {
+        "issue": "3",
+        "key": "255_CR98",
+        "doi-asserted-by": "publisher",
+        "first-page": "528",
+        "DOI": "10.1175/1520-0434(1995)010<0528:ACOTAW>2.0.CO;2",
+        "volume": "10",
+        "author": "B Schwartz",
+        "year": "1995",
+        "unstructured": "Schwartz, B., and S.G. Benjamin. 1995. A Comparison of Temperature and Wind Measurements from ACARS-Equipped Aircraft and Rawinsondes. Weather and Forecasting 10 (3): 528–544.",
+        "journal-title": "Weather and Forecasting"
+      },
+      {
+        "key": "255_CR99",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Scott, A., A. Balthrop, J. Miller. 2020. Unintended responses to IT‐enabled monitoring: The case of the electronic logging device mandate. Journal of Operations Management, 1– 30.",
+        "DOI": "10.1002/joom.1110"
+      },
+      {
+        "issue": "2",
+        "key": "255_CR100",
+        "doi-asserted-by": "publisher",
+        "first-page": "178",
+        "DOI": "10.1287/trsc.1080.0238",
+        "volume": "43",
+        "author": "HP Simão",
+        "year": "2009",
+        "unstructured": "Simão, H.P., J. Day, A.P. George, T. Gifford, J. Nienow, and W.B. Powell. 2009. An approximate dynamic programming algorithm for large-scale fleet management. Transportation Science 43 (2): 178–197.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR101",
+        "doi-asserted-by": "publisher",
+        "first-page": "342",
+        "DOI": "10.1287/inte.1100.0510",
+        "volume": "40",
+        "author": "HP Simão",
+        "year": "2010",
+        "unstructured": "Simão, H.P., A. George, W.B. Powell, T. Gifford, J. Nienow, and J. Day. 2010. Approximate dynamic programming captures fleet operations for Schneider National. Interfaces 40 (5): 342–352.",
+        "journal-title": "Interfaces"
+      },
+      {
+        "key": "255_CR102",
+        "unstructured": "Slattery, A. 2017. AI takes to the sky with IBM Watson. Computer Business Review, Oct. 2017."
+      },
+      {
+        "key": "255_CR103",
+        "unstructured": "Stephens, B. 2021. BNSF receives patent for moving block system. Trains. February 9, 2021"
+      },
+      {
+        "key": "255_CR104",
+        "unstructured": "STM (2020), https://www.seatrafficmanagement.info/."
+      },
+      {
+        "issue": "3",
+        "key": "255_CR105",
+        "doi-asserted-by": "publisher",
+        "first-page": "947",
+        "DOI": "10.1016/j.cja.2019.03.039",
+        "volume": "33",
+        "author": "J Sun",
+        "year": "2020",
+        "unstructured": "Sun, J., F. Wang, and S. Ning. 2020. Aircraft air conditioning system health state estimation and prediction for predictive maintenance. Chinese Journal of Aeronautics 33 (3): 947–955.",
+        "journal-title": "Chinese Journal of Aeronautics"
+      },
+      {
+        "key": "255_CR106",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tarawneh, C., J. Ley, D. Blackwell, S. Crown, B. Wilson. 2018. Onboard Load Sensor for Use in Freight Railcar Applications. International Journal of Railway Technology",
+        "DOI": "10.4203/ijrt.6.1.3"
+      },
+      {
+        "key": "255_CR107",
+        "doi-asserted-by": "publisher",
+        "first-page": "457",
+        "DOI": "10.1016/j.procs.2015.07.323",
+        "volume": "53",
+        "author": "A Thaduri",
+        "year": "2015",
+        "unstructured": "Thaduri, A., D. Galar, and U. Kumar. 2015. Railway assets: A potential domain for bigdata analytics. Procedia Comput. Sci. 53: 457–467.",
+        "journal-title": "Procedia Comput. Sci."
+      },
+      {
+        "key": "255_CR108",
+        "unstructured": "TB&P. 2020. Driver shortage persists amid COVID-19 pandemic, mixed freight demand. https://talkbusiness.net/2020/12/driver-shortage-persists-amid-covid-19-pandemic-mixed-freight-demand/"
+      },
+      {
+        "key": "255_CR109",
+        "doi-asserted-by": "publisher",
+        "first-page": "920",
+        "DOI": "10.1016/j.tre.2011.03.005",
+        "volume": "47",
+        "author": "M-T Tsai",
+        "year": "2011",
+        "unstructured": "Tsai, M.-T., J.D. Saphores, and A. Regan. 2011. Valuation of Freight Transportation Contracts Under Uncertainty. Transportation Research Part e: Logistics and Transportation Review 47: 920–932.",
+        "journal-title": "Transportation Research Part e: Logistics and Transportation Review"
+      },
+      {
+        "key": "255_CR110",
+        "unstructured": "Unctad 2021. Review of Maritime Transport 2021. https://unctad.org/webflyer/review-maritime-transport-2021"
+      },
+      {
+        "issue": "1",
+        "key": "255_CR111",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1287/trsc.2017.0767",
+        "volume": "53",
+        "author": "MW Ulmer",
+        "year": "2019",
+        "unstructured": "Ulmer, M.W., J.C. Goodson, D.C. Mattfeld, and M. Henning. 2019. Offline-Online Approximate Dynamic Programming for Dynamic Vehicle Routing with Stochastic Requests. Transportation Science 53 (1): 185–202.",
+        "journal-title": "Transportation Science"
+      },
+      {
+        "key": "255_CR112",
+        "unstructured": "Varfis, G. 2020. Predictive Maintenance (PDM) is not an emerging technology- APSYS. Proceedings of Agifors Aircraft Maintenance Operations Special Session 2020."
+      },
+      {
+        "key": "255_CR113",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Venskus J., P. Treigys, J. Bernataviciene, G. Tamulevicius, and V. Medvedev. 2019. Real-Time Maritime Traffic Anomaly Detection Based on Sensors and History Data Embedding. Sensors.",
+        "DOI": "10.3390/s19173782"
+      },
+      {
+        "key": "255_CR114",
+        "unstructured": "Verma, R., S. Saikia, H. Khadilkar, P. Agarwal, G. Shroff, and A. Srinivasan. 2019. A Reinforcement Learning Framework for Container Selection and Ship Load Sequencing in Ports. In Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS '19). International Foundation for Autonomous Agents and Multiagent Systems, Richland, SC, 2250–2252."
+      },
+      {
+        "issue": "2",
+        "key": "255_CR115",
+        "doi-asserted-by": "publisher",
+        "first-page": "165",
+        "DOI": "10.1016/j.compind.2003.07.004",
+        "volume": "53",
+        "author": "M Verwijmeren",
+        "year": "2004",
+        "unstructured": "Verwijmeren, M. 2004. Software component architecture in supply chain management. Computers in Industry 53 (2): 165–178.",
+        "journal-title": "Computers in Industry"
+      },
+      {
+        "issue": "10",
+        "key": "255_CR116",
+        "doi-asserted-by": "publisher",
+        "first-page": "2802",
+        "DOI": "10.1109/TITS.2017.2680468",
+        "volume": "18",
+        "author": "J Wahlström",
+        "year": "2017",
+        "unstructured": "Wahlström, J., I. Skog, and P. Händel. 2017. Smartphone-based vehicle telematics: a ten-year anniversary. IEEE Transactions on Intelligent Transportation Systems 18 (10): 2802–2825.",
+        "journal-title": "IEEE Transactions on Intelligent Transportation Systems"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR117",
+        "doi-asserted-by": "publisher",
+        "first-page": "615",
+        "DOI": "10.1016/j.trb.2012.01.003",
+        "volume": "46",
+        "author": "S Wang",
+        "year": "2012",
+        "unstructured": "Wang, S., and Q. Meng. 2012a. Liner ship route schedule design with sea contingency time and port time uncertainty. Transportation Research Part b: Methodology 46 (5): 615–633.",
+        "journal-title": "Transportation Research Part b: Methodology"
+      },
+      {
+        "key": "255_CR118",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, S. and Q Meng. 2012b. Robust schedule design for liner shipping services. Transportation Res. Part E Logist. Transportation Rev, 48(6), 1093–1106.",
+        "DOI": "10.1016/j.tre.2012.04.007"
+      },
+      {
+        "key": "255_CR119",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, F., J. Sun, and X. Liu. 2019. Aircraft auxiliary power unit performance assessment and remaining useful life evaluation for predictive maintenance. Proceedings of the Institution of Mechanical Engineers, Part A: Journal of Power and Energy.",
+        "DOI": "10.1177/0957650919883718"
+      },
+      {
+        "key": "255_CR120",
+        "doi-asserted-by": "publisher",
+        "first-page": "653",
+        "DOI": "10.1007/s10696-018-9324-z",
+        "volume": "31",
+        "author": "Y Wang",
+        "year": "2019",
+        "unstructured": "Wang, Y., and Q. Meng. 2019. Integrated methods for forecasting container slot booking in intercontinental liner shipping service. Flexible Services and Manufacturing Journal 31: 653–674.",
+        "journal-title": "Flexible Services and Manufacturing Journal"
+      },
+      {
+        "issue": "1",
+        "key": "255_CR121",
+        "doi-asserted-by": "publisher",
+        "first-page": "68",
+        "DOI": "10.1108/IJPDLM-02-2016-0061",
+        "volume": "47",
+        "author": "P-J Wu",
+        "year": "2017",
+        "unstructured": "Wu, P.-J., M.-C. Chen, and C.-K. Tsau. 2017. The data-driven analytics for investigating cargo loss in logistics systems. International Journal of Physical Distribution & Logistics Management 47 (1): 68–83.",
+        "journal-title": "International Journal of Physical Distribution & Logistics Management"
+      },
+      {
+        "key": "255_CR122",
+        "doi-asserted-by": "publisher",
+        "first-page": "81173",
+        "DOI": "10.1109/ACCESS.2020.2990751",
+        "volume": "8",
+        "author": "W Xiao",
+        "year": "2020",
+        "unstructured": "Xiao, W., C. Xu, H. Liu, H. Yang, and X. Lui. 2020. Short-term truckload spot rates’ prediction in consideration of temporal and between-route correlations. IEEE Access 8: 81173–81189.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "255_CR123",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Xin, L., S. Tianyun, and M. Xiaoning. 2020. Research on the Big Data Platform and Its Key Technologies for the Railway Locomotive System. Proceedings of the 2020 5th International Conference on Big Data and Computing, pp. 6–12.",
+        "DOI": "10.1145/3404687.3404693"
+      },
+      {
+        "issue": "4",
+        "key": "255_CR124",
+        "doi-asserted-by": "publisher",
+        "first-page": "269",
+        "DOI": "10.1287/inte.2019.0997",
+        "volume": "49",
+        "author": "G Yeo",
+        "year": "2019",
+        "unstructured": "Yeo, G., S.H. Lim, L. Wynter, and H. Hassan. 2019. MPA-IBM Project SAFER: sense-making analytics for maritime event recognition. INFORMS Journal on Applied Analytics 49 (4): 269–280.",
+        "journal-title": "INFORMS Journal on Applied Analytics"
+      },
+      {
+        "key": "255_CR125",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.1016/j.trb.2015.03.019",
+        "volume": "78",
+        "author": "B Zhang",
+        "year": "2015",
+        "unstructured": "Zhang, B., T. Yao, T.L. Friesz, and Y. Sun. 2015. A tractable two-stage robust winner determination model for truckload service procurement via combinatorial auctions. Transportation Research Part b 78: 16–31.",
+        "journal-title": "Transportation Research Part b"
+      },
+      {
+        "key": "255_CR126",
+        "doi-asserted-by": "publisher",
+        "first-page": "287",
+        "DOI": "10.1016/j.tre.2017.07.011",
+        "volume": "129",
+        "author": "L Zhang",
+        "year": "2019",
+        "unstructured": "Zhang, L., Q. Meng, and F.F. Tien. 2019. Big AIS data based spatial-temporal analyses of ship traffic in Singapore port waters. Transportation Research Part E 129: 287–304.",
+        "journal-title": "Transportation Research Part E"
+      },
+      {
+        "key": "255_CR127",
+        "unstructured": "Zhang, M. 2018. Big Data / Machine Learning at American Airlines Tech. Ops. Proceedings of Agifors Annual Symposium 2018."
+      },
+      {
+        "key": "255_CR128",
+        "doi-asserted-by": "publisher",
+        "first-page": "278",
+        "DOI": "10.1007/s11804-008-7087-8",
+        "volume": "7",
+        "author": "WY Zhang",
+        "year": "2008",
+        "unstructured": "Zhang, W.Y., Y. Lin, Z.S. Ji, and G.F. Zhang. 2008. Review of containership stowage plans for full routes. Journal of Marine Science and Applications 7: 278–285.",
+        "journal-title": "Journal of Marine Science and Applications"
+      },
+      {
+        "issue": "6",
+        "key": "255_CR129",
+        "doi-asserted-by": "publisher",
+        "first-page": "3095",
+        "DOI": "10.1109/TITS.2015.2435515",
+        "volume": "16",
+        "author": "Y Zhao",
+        "year": "2015",
+        "unstructured": "Zhao, Y., and P. Ioannou. 2015. Positive train control with dynamic headway based on an active communication system. IEEE Transactions on Intelligent Transportation Systems 16 (6): 3095–3103.",
+        "journal-title": "IEEE Transactions on Intelligent Transportation Systems"
+      },
+      {
+        "issue": "5",
+        "key": "255_CR130",
+        "doi-asserted-by": "publisher",
+        "first-page": "541",
+        "DOI": "10.1080/03088839.2016.1150610",
+        "volume": "43",
+        "author": "Y Zheng",
+        "year": "2016",
+        "unstructured": "Zheng, Y., W.K. Talley, D. Jin, and M. Ng. 2016. Crew injuries in container vessel accidents. Maritime Policy & Management 43 (5): 541–551.",
+        "journal-title": "Maritime Policy & Management"
+      },
+      {
+        "key": "255_CR131",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang, B., Zhang, N., Li, H., Liu, F., & Miao, K. 2009. An efficient cloud computing-based architecture for freight system application in China railway. In IEEE International Conference on Cloud Computing (pp. 359–368). Springer, Berlin, Heidelberg.",
+        "DOI": "10.1007/978-3-642-10665-1_33"
+      }
+    ],
+    "container-title": [
+      "Maritime Economics &amp; Logistics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1057/s41278-023-00255-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1057/s41278-023-00255-z/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1057/s41278-023-00255-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2023-03-06T12:04:51Z",
+      "timestamp": 1678104291000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1057/s41278-023-00255-z"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          9
+        ]
+      ]
+    },
+    "references-count": 131,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "255"
+    ],
+    "URL": "https://doi.org/10.1057/s41278-023-00255-z",
+    "relation": {},
+    "ISSN": [
+      "1479-2931",
+      "1479-294X"
+    ],
+    "issn-type": [
+      {
+        "value": "1479-2931",
+        "type": "print"
+      },
+      {
+        "value": "1479-294X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "20 January 2023",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "9 February 2023",
+        "order": 2,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "24 February 2023",
+        "order": 3,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Update",
+        "order": 4,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "In this article the author biographies have been omitted. This has been corrected.",
+        "order": 5,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      }
+    ]
+  }
+}

@@ -23,18 +23,27 @@
 
 ### 推荐工作流
 
-1. 先读 `docs/00_项目基本信息.md` 了解项目身份、材料与待确认事项
+1. 先读 `docs/00_项目基本信息.md` 了解项目身份、材料与待确认事项；
+   选题、术语、研究边界与查新缺口见 `docs/01_选题与研究主题.md`
 2. 用户提出写作需求 → 用 `Read` 读取 `content.tex`，定位对应的内容宏
-3. 查 AGENTS.md 第三节确认该栏目的**框高容量**（不是官方标注字数）
+3. 查 AGENTS.md 第三节确认该栏目的**框高容量**（不是官方标注字数）；
+   若改动涉及研究内容，先查第一节的 3 项结构与强关联纽带约束
 4. 只修改 `content.tex`；不得改动 `sections/form-pages.tex` 与 `application-template.sty`
-5. 编译两次 xelatex，然后**必做溢出校验**——固定框溢出不报警告，编译成功不代表版面正确
+5. 编译两次 xelatex，然后**必做溢出校验**——固定框溢出不报警告，编译成功不代表版面正确；
+   且**坐标法单用会漏报**，须与尾句存在性检查并用（见下）
 
 ### 溢出校验命令
 
+两项检查缺一不可。只跑坐标法会漏掉"内容被静默丢弃"这一最严重的情况：
+
 ```bash
-pdftotext -bbox-layout main.pdf /tmp/bbox.html   # 比对框底坐标与文字 yMax
-pdftoppm -f 10 -l 10 -r 100 -png main.pdf /tmp/chk   # 目视抽查
+pdftotext -bbox-layout main.pdf /tmp/bbox.html   # ① 比对框底坐标与文字 yMax
+pdftoppm -f 10 -l 10 -r 100 -png main.pdf /tmp/chk   # ③ 目视抽查
 ```
+
+② 尾句存在性检查：取每个宏正文**末 10 字符**，确认其出现在 `pdftotext main.pdf -` 的输出中。
+缺失即为内容丢失（必修）；存在但越过框底则仅为出框（内容完整，可按需修）。
+用 `Bash` 跑一段 Python 一次性遍历 22 个宏，比逐栏目视快得多。
 
 ### 注意
 

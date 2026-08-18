@@ -18,7 +18,7 @@ python scripts/sync_vscode_configs.py \
 
 python scripts/create_project.py \
   --template NSFC_Local_Clean  \
-  --name NSFC_MyProject
+  --name NSFC_2027_Silk_Road_Smart_Logistic_v2
 
 脚本会：
     拒绝覆盖已有项目

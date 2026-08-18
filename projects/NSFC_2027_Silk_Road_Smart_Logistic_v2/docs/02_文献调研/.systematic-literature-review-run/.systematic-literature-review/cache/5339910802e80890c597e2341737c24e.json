@@ -1,0 +1,29 @@
+{
+  "paperId": "9c70fe20d5d96f0c502e0309f4114e916083e057",
+  "title": "Enhancing Cargo Container Security during Transportation: A Mesh Networking Based Approach",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/THS.2008.4534429?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/THS.2008.4534429, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2129929163",
+      "name": "Su Jin Kim"
+    },
+    {
+      "authorId": "2930048",
+      "name": "G. Deng"
+    },
+    {
+      "authorId": "32187152",
+      "name": "Sandeep K. S. Gupta"
+    },
+    {
+      "authorId": "1401941006",
+      "name": "M. Murphy-Hoye"
+    }
+  ],
+  "abstract": null
+}

@@ -1,0 +1,29 @@
+{
+  "paperId": "73bbc94cc41447c237fe861d9447a5ad44c0c7fc",
+  "title": "Real-time monitoring via patch-type piezoelectric force sensors for Internet of Thing in logistics",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NEMS.2016.7758259?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NEMS.2016.7758259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1709542",
+      "name": "C. Chuang"
+    },
+    {
+      "authorId": "31017672",
+      "name": "Wan-Ching Weng"
+    },
+    {
+      "authorId": "2373765",
+      "name": "Wan-Jung Chang"
+    },
+    {
+      "authorId": "2023774",
+      "name": "Da-Huei Lee"
+    }
+  ],
+  "abstract": null
+}

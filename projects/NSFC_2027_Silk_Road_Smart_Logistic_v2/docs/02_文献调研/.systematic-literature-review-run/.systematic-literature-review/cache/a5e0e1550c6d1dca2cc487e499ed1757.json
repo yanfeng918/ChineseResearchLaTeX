@@ -1,0 +1,25 @@
+{
+  "paperId": "e45b32d4fc2fc129f62b45d4ca07f8f67044f0c0",
+  "title": "Datagram Convergence Layers for the Delay- and Disruption-Tolerant Networking (DTN) Bundle Protocol and Licklider Transmission Protocol (LTP)",
+  "openAccessPdf": {
+    "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc7122.txt.pdf",
+    "status": "GOLD",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17487/RFC7122?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17487/RFC7122, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "4625479",
+      "name": "H. Kruse"
+    },
+    {
+      "authorId": "2360210",
+      "name": "S. Jero"
+    },
+    {
+      "authorId": "2470360",
+      "name": "Shawn Ostermann"
+    }
+  ],
+  "abstract": "This document specifies the preferred method for transporting Delay-\nand Disruption-Tolerant Networking (DTN) protocol data over the\nInternet using datagrams. It covers convergence layers for the Bundle\nProtocol (RFC 5050), as well as the transportation of segments using\nthe Licklider Transmission Protocol (LTP) (RFC 5326). UDP and the\nDatagram Congestion Control Protocol (DCCP) are the candidate datagram\nprotocols discussed. UDP can only be used on a local network or in\ncases where the DTN node implements explicit congestion control. DCCP\naddresses the congestion control problem, and its use is recommended\nwhenever possible. This document is a product of the Delay-Tolerant\nNetworking Research Group (DTNRG) and represents the consensus of the\nDTNRG."
+}

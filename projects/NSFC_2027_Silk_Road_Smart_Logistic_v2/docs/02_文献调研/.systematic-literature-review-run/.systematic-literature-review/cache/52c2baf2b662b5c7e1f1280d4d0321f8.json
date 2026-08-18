@@ -1,0 +1,362 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2026-08-05T20:06:03Z",
+      "timestamp": 1785960363879,
+      "version": "3.56.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 21,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2010,
+              11,
+              3
+            ]
+          ],
+          "date-time": "2010-11-03T00:00:00Z",
+          "timestamp": 1288742400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1145/1869983.1869990",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2010-11-03T14:04:01Z",
+      "timestamp": 1288793041000
+    },
+    "page": "57-70",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 54,
+    "title": [
+      "Adaptive GPS duty cycling and radio ranging for energy-efficient localization"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Raja",
+        "family": "Jurdak",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "CSIRO ICT Centre, Pullenvale, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Corke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Queensland University of Technology, Brisbane, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dhinesh",
+        "family": "Dharman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "CSIRO ICT Centre, Pullenvale, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guillaume",
+        "family": "Salagnac",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "INSA, Lyon, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "volume-title": "The handbook of ad hoc wireless networks",
+        "author": "Ilyas M.",
+        "year": "2003",
+        "unstructured": "M. Ilyas and R. C. Dorf , editors . The handbook of ad hoc wireless networks . CRC Press, Inc. , Boca Raton, FL, USA , 2003 . M. Ilyas and R. C. Dorf, editors. The handbook of ad hoc wireless networks. CRC Press, Inc., Boca Raton, FL, USA, 2003."
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1236360.1236389"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SAHCN.2008.54"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0278364906065375"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "volume-title": "Using accelerometer, high sample rate gps and magnetometer data to develop a cattle movement and behaviour model. Ecological Modelling, 220(17)",
+        "author": "Guo Y.",
+        "year": "2009",
+        "unstructured": "Y. Guo Using accelerometer, high sample rate gps and magnetometer data to develop a cattle movement and behaviour model. Ecological Modelling, 220(17) , 2009 . Y. Guo et al. Using accelerometer, high sample rate gps and magnetometer data to develop a cattle movement and behaviour model. Ecological Modelling, 220(17), 2009."
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "volume-title": "INFOCOM",
+        "author": "Lin G.",
+        "year": "2004",
+        "unstructured": "G. Lin , G. Noubir , and R. Rajaraman . Mobility models for ad hoc network simulation . In INFOCOM , 2004 . G. Lin, G. Noubir, and R. Rajaraman. Mobility models for ad hoc network simulation. In INFOCOM, 2004."
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "volume-title": "EmNets",
+        "author": "Srinivasan K.",
+        "year": "2006",
+        "unstructured": "K. Srinivasan and P. Levis . Rssi is under appreciated . In EmNets , 2006 . K. Srinivasan and P. Levis. Rssi is under appreciated. In EmNets, 2006."
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2007.1037"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "volume-title": "Sadler et al. Habitat Monitoring with ZebraNet: Design and Experiences",
+        "author": "Zhang P.",
+        "year": "2005",
+        "unstructured": "P. Zhang and C. Sadler et al. Habitat Monitoring with ZebraNet: Design and Experiences , chapter Wireless Sensor Networks: A Systems Perspective. Artech House , 2005 . P. Zhang and C. Sadler et al. Habitat Monitoring with ZebraNet: Design and Experiences, chapter Wireless Sensor Networks: A Systems Perspective. Artech House, 2005."
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/990064.990094"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "volume-title": "IEEE ICMDM",
+        "author": "Winter J.",
+        "year": "2004",
+        "unstructured": "J. Winter , Y. Xu , and W. C. Lee . Prediction-based strategies for energy saving in object tracking sensor networks . In IEEE ICMDM , January 2004 . J. Winter, Y. Xu, and W. C. Lee. Prediction-based strategies for energy saving in object tracking sensor networks. In IEEE ICMDM, January 2004."
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PCCC.2005.1460642"
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "volume-title": "IPSN",
+        "author": "Pattern S.",
+        "year": "2003",
+        "unstructured": "S. Pattern , S. Poduri , and B. Krishnamachari . Energy-quality tradeoffs in sensor tracking: Selective activation with noisy measurements . In IPSN , 2003 . S. Pattern, S. Poduri, and B. Krishnamachari. Energy-quality tradeoffs in sensor tracking: Selective activation with noisy measurements. In IPSN, 2003."
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.adhoc.2007.11.007"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1247660.1247678"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/11748625_4"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1132905.1132933"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2009.5062218"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1814433.1814463"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1555816.1555839"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1814433.1814462"
+      }
+    ],
+    "event": {
+      "name": "SenSys10: The 8th ACM Conference on Embedded Network Sensor Systems",
+      "location": "Zürich Switzerland",
+      "acronym": "SenSys10",
+      "sponsor": [
+        "SIGMETRICS ACM Special Interest Group on Measurement and Evaluation",
+        "SIGCOMM ACM Special Interest Group on Data Communication",
+        "SIGMOBILE ACM Special Interest Group on Mobility of Systems, Users, Data and Computing",
+        "SIGOPS ACM Special Interest Group on Operating Systems",
+        "SIGBED ACM Special Interest Group on Embedded Systems",
+        "SIGARCH ACM Special Interest Group on Computer Architecture"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/1869983.1869990",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/1869983.1869990",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T10:52:42Z",
+      "timestamp": 1750243962000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/1869983.1869990"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ]
+    },
+    "references-count": 21,
+    "alternative-id": [
+      "10.1145/1869983.1869990",
+      "10.1145/1869983"
+    ],
+    "URL": "https://doi.org/10.1145/1869983.1869990",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          11,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2010-11-03",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

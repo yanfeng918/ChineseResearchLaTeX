@@ -1,0 +1,1742 @@
+{
+  "schema_version": 2,
+  "run_id": "v202608131515",
+  "generated_at": "2026-08-13T15:25:43",
+  "project_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education",
+  "deliver_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education/QC/v202608131515",
+  "main_tex": "main.tex",
+  "threads": 5,
+  "execution": "serial",
+  "paths_base": {
+    "run_dir": ".",
+    "artifacts_dir": "artifacts",
+    "final_dir": "final",
+    "snapshot_dir": "snapshot"
+  },
+  "precheck": {
+    "citation_stats": {
+      "unique_citations": 34,
+      "missing_bibkeys": 0,
+      "missing_bibkeys_list": [],
+      "incomplete_bib_entries": 0,
+      "incomplete_bibkeys_list": []
+    },
+    "typography": {
+      "straight_double_quotes_with_cjk": {
+        "count": 0,
+        "occurrences_preview": [],
+        "note": "In Chinese-heavy proposals, avoid straight quotes like \"...\"; prefer TeX quotes ``...''."
+      }
+    },
+    "abbreviation_conventions": {
+      "summary": {
+        "abbreviations_detected": 36,
+        "occurrences_detected": 54,
+        "abbreviations_with_definitions": 1,
+        "issues": 36,
+        "issues_by_severity": {
+          "P0": 0,
+          "P1": 36,
+          "P2": 0
+        },
+        "issues_by_kind": {
+          "bare_first_use": 35,
+          "missing_english_full": 1
+        }
+      },
+      "issues_preview": [
+        {
+          "abbr": "UTF8",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "main.tex",
+          "line": 15,
+          "column": 21,
+          "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}",
+          "context": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart} \n\\newcommand{\\NSFCProjectApplyToggle}[2]{\\csname #1#2\\endcsname}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, UTF8）；后文再仅用 UTF8。"
+        },
+        {
+          "abbr": "AutoFakeBold",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "main.tex",
+          "line": 15,
+          "column": 26,
+          "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}",
+          "context": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart} \n\\newcommand{\\NSFCProjectApplyToggle}[2]{\\csname #1#2\\endcsname}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, AutoFakeBold）；后文再仅用 AutoFakeBold。"
+        },
+        {
+          "abbr": "MsBlue",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 185,
+          "column": 47,
+          "excerpt": "\\newcommand{\\NSFCProjectSectionFormat}{\\color{MsBlue} \\sectionzihao \\templatefont \\bfseries}",
+          "context": "\\newcommand{\\NSFCProjectSubsubsectionZihao}{\\fontsize{13.5pt}{20pt}\\selectfont}\n\\newcommand{\\NSFCProjectSectionFormat}{\\color{MsBlue} \\sectionzihao \\templatefont \\bfseries}\n\\newcommand{\\NSFCProjectSectionLabel}{\\hspace*{2em}}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, MsBlue）；后文再仅用 MsBlue。"
+        },
+        {
+          "abbr": "NSFCUseWasysym",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 295,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCUseWasysym}{\\NSFCProjectUseWasysym}",
+          "context": "\\renewcommand{\\NSFCSubsubsectionAfter}{\\NSFCProjectSubsubsectionAfter}\n  \\NSFCProjectApplyToggle{NSFCUseWasysym}{\\NSFCProjectUseWasysym}\n  \\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCUseWasysym）；后文再仅用 NSFCUseWasysym。"
+        },
+        {
+          "abbr": "NSFCRaggedBottom",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 296,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}",
+          "context": "\\NSFCProjectApplyToggle{NSFCUseWasysym}{\\NSFCProjectUseWasysym}\n  \\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}\n  \\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCRaggedBottom）；后文再仅用 NSFCRaggedBottom。"
+        },
+        {
+          "abbr": "NSFCUseFrenchSpacing",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 297,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}",
+          "context": "\\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}\n  \\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}\n  \\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCUseFrenchSpacing）；后文再仅用 NSFCUseFrenchSpacing。"
+        },
+        {
+          "abbr": "NSFCHFuzz",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 298,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}",
+          "context": "\\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}\n  \\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}\n  \\NSFCProjectApplyToggle{NSFCUseAdjustedBlankPara}{\\NSFCProjectUseAdjustedBlankPara}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCHFuzz）；后文再仅用 NSFCHFuzz。"
+        },
+        {
+          "abbr": "NSFCUseAdjustedBlankPara",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 299,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCUseAdjustedBlankPara}{\\NSFCProjectUseAdjustedBlankPara}",
+          "context": "\\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}\n  \\NSFCProjectApplyToggle{NSFCUseAdjustedBlankPara}{\\NSFCProjectUseAdjustedBlankPara}\n  \\NSFCProjectApplyToggle{NSFCUseFigureCaptionSetup}{\\NSFCProjectUseFigureCaptionSetup}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCUseAdjustedBlankPara）；后文再仅用 NSFCUseAdjustedBlankPara。"
+        },
+        {
+          "abbr": "NSFCUseUrlStyleSame",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 302,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCUseUrlStyleSame}{\\NSFCProjectUseUrlStyleSame}",
+          "context": "\\NSFCProjectApplyToggle{NSFCDisablePunctstyleInPdfstring}{\\NSFCProjectDisablePunctstyleInPdfstring}\n  \\NSFCProjectApplyToggle{NSFCUseUrlStyleSame}{\\NSFCProjectUseUrlStyleSame}\n  \\NSFCProjectApplyToggle{NSFCUseDingSubtitle}{\\NSFCProjectUseDingSubtitle}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCUseUrlStyleSame）；后文再仅用 NSFCUseUrlStyleSame。"
+        },
+        {
+          "abbr": "NSFCUseDingSubtitle",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 303,
+          "column": 27,
+          "excerpt": "\\NSFCProjectApplyToggle{NSFCUseDingSubtitle}{\\NSFCProjectUseDingSubtitle}",
+          "context": "\\NSFCProjectApplyToggle{NSFCUseUrlStyleSame}{\\NSFCProjectUseUrlStyleSame}\n  \\NSFCProjectApplyToggle{NSFCUseDingSubtitle}{\\NSFCProjectUseDingSubtitle}\n}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NSFCUseDingSubtitle）；后文再仅用 NSFCUseDingSubtitle。"
+        },
+        {
+          "abbr": "RGB",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/@config.tex",
+          "line": 310,
+          "column": 24,
+          "excerpt": "\\definecolor{MsBlue}{RGB}{\\NSFCProjectMsBlueRGB}",
+          "context": "\\newcommand{\\NSFCProjectConfigAfterPackage}{\n  \\definecolor{MsBlue}{RGB}{\\NSFCProjectMsBlueRGB}\n  \\definecolor{headercolor}{RGB}{\\NSFCProjectHeaderColorRGB}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, RGB）；后文再仅用 RGB。"
+        },
+        {
+          "abbr": "BLIP",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 185,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, BLIP）；后文再仅用 BLIP。"
+        },
+        {
+          "abbr": "BLIP-2",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 190,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, BLIP-2）；后文再仅用 BLIP-2。"
+        },
+        {
+          "abbr": "AltCLIP",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 290,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, AltCLIP）；后文再仅用 AltCLIP。"
+        },
+        {
+          "abbr": "CoCa",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 298,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, CoCa）；后文再仅用 CoCa。"
+        },
+        {
+          "abbr": "CLIP",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 391,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, CLIP）；后文再仅用 CLIP。"
+        },
+        {
+          "abbr": "VideoCLIP",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 20,
+          "column": 398,
+          "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c...",
+          "context": "教育知识图谱为课程概念、资源节点和关系组织提供了重要基础。相关综述表明，教育场景已开展知识图谱构建、课程设计、概念组织和资源管理等研究\\cite{asystematicliterature2024,asurveyof2024}；多模态教育知识图谱将语音等资源纳入知识实体，显示出异构教育材料可被统一描述\\cite{medukgadeep2022}。围绕课程材料的核心概念识别、自动概念抽取和课程知识库构建，也验证了知识表示方法对教育资源组织的价值\\cite{coreconceptidentification2024,automaticconstructionof2023,coursekganeducational2024,cons...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, VideoCLIP）；后文再仅用 VideoCLIP。"
+        },
+        {
+          "abbr": "FActScore",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 24,
+          "column": 166,
+          "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin...",
+          "context": "但通用相似度并不等同于专业教学语义正确。对新能源设备图、运行曲线或实验代码而言，正确关联还取决于对象身份、变量含义、计量单位、工况和时间窗口。图表理解研究已围绕图表摘要、图表问答和图表到表格的预训练建立了数据集与模型\\cite{charttotext2022,chartqaabenchmark2022,chartassistantauniversal2024,automaticchartunderstanding2023}，但其输出通常缺少课程知识和来源位置的联合约束，难以直接保证专业图表解释的可核查性。因而，有必要将专业属性和来源证据引入跨模态关系判定，而不是只以图文相似度或检索排名作为资源关联的充分依据。\n检索增强生成和事...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, FActScore）；后文再仅用 FActScore。"
+        },
+        {
+          "abbr": "ARES",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 24,
+          "column": 225,
+          "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin...",
+          "context": "但通用相似度并不等同于专业教学语义正确。对新能源设备图、运行曲线或实验代码而言，正确关联还取决于对象身份、变量含义、计量单位、工况和时间窗口。图表理解研究已围绕图表摘要、图表问答和图表到表格的预训练建立了数据集与模型\\cite{charttotext2022,chartqaabenchmark2022,chartassistantauniversal2024,automaticchartunderstanding2023}，但其输出通常缺少课程知识和来源位置的联合约束，难以直接保证专业图表解释的可核查性。因而，有必要将专业属性和来源证据引入跨模态关系判定，而不是只以图文相似度或检索排名作为资源关联的充分依据。\n检索增强生成和事...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, ARES）；后文再仅用 ARES。"
+        },
+        {
+          "abbr": "MiniCheck",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 24,
+          "column": 282,
+          "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin...",
+          "context": "但通用相似度并不等同于专业教学语义正确。对新能源设备图、运行曲线或实验代码而言，正确关联还取决于对象身份、变量含义、计量单位、工况和时间窗口。图表理解研究已围绕图表摘要、图表问答和图表到表格的预训练建立了数据集与模型\\cite{charttotext2022,chartqaabenchmark2022,chartassistantauniversal2024,automaticchartunderstanding2023}，但其输出通常缺少课程知识和来源位置的联合约束，难以直接保证专业图表解释的可核查性。因而，有必要将专业属性和来源证据引入跨模态关系判定，而不是只以图文相似度或检索排名作为资源关联的充分依据。\n检索增强生成和事...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, MiniCheck）；后文再仅用 MiniCheck。"
+        },
+        {
+          "abbr": "HaluEval",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.1.立项依据.tex",
+          "line": 24,
+          "column": 346,
+          "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin...",
+          "context": "但通用相似度并不等同于专业教学语义正确。对新能源设备图、运行曲线或实验代码而言，正确关联还取决于对象身份、变量含义、计量单位、工况和时间窗口。图表理解研究已围绕图表摘要、图表问答和图表到表格的预训练建立了数据集与模型\\cite{charttotext2022,chartqaabenchmark2022,chartassistantauniversal2024,automaticchartunderstanding2023}，但其输出通常缺少课程知识和来源位置的联合约束，难以直接保证专业图表解释的可核查性。因而，有必要将专业属性和来源证据引入跨模态关系判定，而不是只以图文相似度或检索排名作为资源关联的充分依据。\n检索增强生成和事...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, HaluEval）；后文再仅用 HaluEval。"
+        },
+        {
+          "abbr": "MRR",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.2.内容目标问题.tex",
+          "line": 26,
+          "column": 113,
+          "excerpt": "\\textbf{目标二：} 建立面向设备图、运行曲线、代码和案例的专业属性与来源证据约束关联方法，验证其对正确关系检索、关系类型判定、来源定位和专业条件错配抑制的作用；在独立测试集上报告 Recall@1、Recall@5、MRR、关系类别 F1 和来源定位准确率。",
+          "context": "相应地，形成资源单元模式、术语映射与冲突记录规范、边界及知识覆盖标注说明，并在相同资源输入、相同人工复核预算下比较不同知识约束条件。判定重点是是否降低可复核的错误，而非是否生成更多文本或标签。\n\\textbf{目标二：} 建立面向设备图、运行曲线、代码和案例的专业属性与来源证据约束关联方法，验证其对正确关系检索、关系类型判定、来源定位和专业条件错配抑制的作用；在独立测试集上报告 Recall@1、Recall@5、MRR、关系类别 F1 和来源定位准确率。\n相应地，形成关系类型本体、专业属性字段表、来源定位格式和困难负例集。评价时按照关系类型、资源模态和错误类型分别报告结果，避免由某一易检索关系掩盖图表、代码等困难关系的失效。",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, MRR）；后文再仅用 MRR。"
+        },
+        {
+          "abbr": "VRR",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.3.方案及可行性.tex",
+          "line": 70,
+          "column": 9,
+          "excerpt": "\\mathrm{VRR}=\\frac{\\sum_{u\\in\\mathcal{U}}\\mathbb{I}",
+          "context": "\\begin{equation}\n\\mathrm{VRR}=\\frac{\\sum_{u\\in\\mathcal{U}}\\mathbb{I}\n\\bigl(q_{\\mathrm{con}},q_{\\mathrm{cur}},q_{\\mathrm{mod}},q_{\\mathrm{evi}}\\ \\mathrm{均合格}\\bigr)}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, VRR）；后文再仅用 VRR。"
+        },
+        {
+          "abbr": "B0--B3",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.3.方案及可行性.tex",
+          "line": 92,
+          "column": 113,
+          "excerpt": "为检验方法的泛化边界，测试划分至少包含知识模块留出、原始来源留出或设备类型留出中的可实施条件；具体采用何种留出方式取决于资源授权后可获得的材料结构。统计检验以配对比较和重采样置信区间为主，阈值、权重和停止规则只在开发集确定。B0--B3 均使用同一合规资源池，人工基线的工时...",
+          "context": "实验评价分为构建、关联和质量三层。构建层比较资源单元边界 F1、目标知识点覆盖、重复率与专业属性错误率；关联层按“知识点—文本、知识点—图表、知识点—设备图、知识点—代码、知识点—案例”等关系类型报告 Recall@K、MRR、关系类别 F1、来源定位准确率和困难负例上的错配率；质量层以 VRR、错误检出率、误报率、专家盲评以及人工修订时间为主。对每一指标同时给出总体结果和按来源、模态、错误类型分层的结果，避免单一平均数掩盖特定资源类型的失效。\n为检验方法的泛化边界，测试划分至少包含知识模块留出、原始来源留出或设备类型留出中的可实施条件；具体采用何种留出方式取决于资源授权后可获得的材料结构。统计检验以配对比较和重采样置信区间为...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, B0--B3）；后文再仅用 B0--B3。"
+        },
+        {
+          "abbr": "GPU",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/1.3.方案及可行性.tex",
+          "line": 106,
+          "column": 99,
+          "excerpt": "\\textbf{研究基础与条件可行性。} 申请人在人工智能、深度学习、多模态信息处理、时序建模及新能源功率预测等方面具有研究积累，具备将设备、曲线、数据和代码资源转化为可计算对象的技术基础；现有 GPU 计算条件可支持原型开发与模型实验。与课程资源授权、专家盲评和试点安排相...",
+          "context": "\\textbf{理论与方法可行性。} 教育知识组织、多模态表示、图表理解、检索增强和事实核验已提供可复用的方法基础；本项目不试图重新发明这些通用组件，而是将其限定于新能源课程资源，并以明确的比较对象、属性约束和反证条件检验组合机制。八个公式块分别服务于资源表示、联合约束、单元切分、跨模态对齐、关系判定、证据支持、质量门控和主指标，构成“输入—训练/判定—输出—评价”的闭环。\n\\textbf{研究基础与条件可行性。} 申请人在人工智能、深度学习、多模态信息处理、时序建模及新能源功率预测等方面具有研究积累，具备将设备、曲线、数据和代码资源转化为可计算对象的技术基础；现有 GPU 计算条件可支持原型开发与模型实验。与课程资源授权、专...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, GPU）；后文再仅用 GPU。"
+        },
+        {
+          "abbr": "DWT-Former",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 8,
+          "column": 55,
+          "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora...",
+          "context": "申请人颜丰为新疆大学副教授、硕士研究生导师，长期从事人工智能、机器学习与深度学习、时间序列预测及多模态信息处理研究。其研究积累可为本项目的三个核心环节提供支撑：一是新能源功率预测和时序建模工作有助于理解光伏、风电等材料中的数据结构、运行曲线、工况与参数属性；二是视觉问答、跨模态检索和多模态表示研究可支撑文本、图像、图表和代码资源的联合表示与关系判定；三是智能知识库与问答系统研发经历可支撑资源元数据、来源证据和质量状态的组织。\n在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Fea...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, DWT-Former）；后文再仅用 DWT-Former。"
+        },
+        {
+          "abbr": "WaveKAN",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 8,
+          "column": 225,
+          "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora...",
+          "context": "申请人颜丰为新疆大学副教授、硕士研究生导师，长期从事人工智能、机器学习与深度学习、时间序列预测及多模态信息处理研究。其研究积累可为本项目的三个核心环节提供支撑：一是新能源功率预测和时序建模工作有助于理解光伏、风电等材料中的数据结构、运行曲线、工况与参数属性；二是视觉问答、跨模态检索和多模态表示研究可支撑文本、图像、图表和代码资源的联合表示与关系判定；三是智能知识库与问答系统研发经历可支撑资源元数据、来源证据和质量状态的组织。\n在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Fea...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, WaveKAN）；后文再仅用 WaveKAN。"
+        },
+        {
+          "abbr": "IEEE",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 12,
+          "column": 130,
+          "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig...",
+          "context": "上述积累与本项目第一、二项研究内容的对应关系在于：功率预测任务通常需要明确预测对象、输入变量、采样频率、时间窗口、评价口径和运行背景，任何一个字段缺失都可能使曲线、数据说明与算法案例发生错误关联。申请人可据此将时序材料从“图片或数据文件”进一步表示为包含变量、单位、时间尺度和工况的专业资源片段，并在关系判定中构造参数或时序错配的困难负例。这里使用的是既有研究形成的对象理解和实验组织能力，而非声称已经完成了本项目的课程资源构建或质量验证。\n在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling fo...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, IEEE）；后文再仅用 IEEE。"
+        },
+        {
+          "abbr": "RSHR",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 12,
+          "column": 170,
+          "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig...",
+          "context": "上述积累与本项目第一、二项研究内容的对应关系在于：功率预测任务通常需要明确预测对象、输入变量、采样频率、时间窗口、评价口径和运行背景，任何一个字段缺失都可能使曲线、数据说明与算法案例发生错误关联。申请人可据此将时序材料从“图片或数据文件”进一步表示为包含变量、单位、时间尺度和工况的专业资源片段，并在关系判定中构造参数或时序错配的困难负例。这里使用的是既有研究形成的对象理解和实验组织能力，而非声称已经完成了本项目的课程资源构建或质量验证。\n在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling fo...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, RSHR）；后文再仅用 RSHR。"
+        },
+        {
+          "abbr": "RSSR",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 12,
+          "column": 370,
+          "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig...",
+          "context": "上述积累与本项目第一、二项研究内容的对应关系在于：功率预测任务通常需要明确预测对象、输入变量、采样频率、时间窗口、评价口径和运行背景，任何一个字段缺失都可能使曲线、数据说明与算法案例发生错误关联。申请人可据此将时序材料从“图片或数据文件”进一步表示为包含变量、单位、时间尺度和工况的专业资源片段，并在关系判定中构造参数或时序错配的困难负例。这里使用的是既有研究形成的对象理解和实验组织能力，而非声称已经完成了本项目的课程资源构建或质量验证。\n在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling fo...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, RSSR）；后文再仅用 RSSR。"
+        },
+        {
+          "abbr": "SPCA-Net",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 12,
+          "column": 729,
+          "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig...",
+          "context": "上述积累与本项目第一、二项研究内容的对应关系在于：功率预测任务通常需要明确预测对象、输入变量、采样频率、时间窗口、评价口径和运行背景，任何一个字段缺失都可能使曲线、数据说明与算法案例发生错误关联。申请人可据此将时序材料从“图片或数据文件”进一步表示为包含变量、单位、时间尺度和工况的专业资源片段，并在关系判定中构造参数或时序错配的困难负例。这里使用的是既有研究形成的对象理解和实验组织能力，而非声称已经完成了本项目的课程资源构建或质量验证。\n在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling fo...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, SPCA-Net）；后文再仅用 SPCA-Net。"
+        },
+        {
+          "abbr": "XJEDU2026P005",
+          "issue_kind": "missing_english_full",
+          "severity": "P1",
+          "path": "extraTex/2.1.研究基础.tex",
+          "line": 16,
+          "column": 56,
+          "excerpt": "申请人主持的相关项目包括自治区高校基本科研业务费科研项目“融合多源数据大模型驱动的光伏发电功率预测方法研究”（XJEDU2026P005，2026.01--2026.12）、自治区天池英才引进计划（青年博士人才）项目“多模态融合技术研究及其在新疆产业集群中的应用”（2025...",
+          "context": "这些多模态研究经验能够支撑项目中“先生成候选、再施加专业约束”的技术路线：视觉或图文模型用于提出可能相关的文本、设备图、曲线和代码片段，知识与属性约束用于排除不满足对象、变量、单位、工况和时序条件的候选，来源位置用于使关系可回溯。申请人已有工作覆盖表示学习、跨模态检索和知识增强等方法环节，因此具备组织基线、实施关系分类与开展消融分析的条件；但专业教学资源的课程对齐、出处证据和四层质量效度仍是本项目需要新开展和验证的内容。\n申请人主持的相关项目包括自治区高校基本科研业务费科研项目“融合多源数据大模型驱动的光伏发电功率预测方法研究”（XJEDU2026P005，2026.01--2026.12）、自治区天池英才引进计划（青年博士人...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次定义建议补全英文全称：中文全称（English Full Name, XJEDU2026P005）；后文仅用 XJEDU2026P005。"
+        },
+        {
+          "abbr": "NVIDIA",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.2.工作条件.tex",
+          "line": 6,
+          "column": 38,
+          "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有...",
+          "context": "\\subsubsection{已具备的实验条件}\n申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有10名研究生，具备人工智能、深度学习、时间序列预测和多模态信息处理的研究基础，可在申请人指导下承担资源整理、标注、模型训练、实验复核和原型实现等任务。\n团队已具有公开光伏和风电数据集的使用与研究基础，可将其中具备明确许可或可公开使用的数据说明、运行曲线和代码案例作为资源构建的候选材料。申请人具有人工智能和深度...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, NVIDIA）；后文再仅用 NVIDIA。"
+        },
+        {
+          "abbr": "GeForce",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.2.工作条件.tex",
+          "line": 6,
+          "column": 64,
+          "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有...",
+          "context": "\\subsubsection{已具备的实验条件}\n申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有10名研究生，具备人工智能、深度学习、时间序列预测和多模态信息处理的研究基础，可在申请人指导下承担资源整理、标注、模型训练、实验复核和原型实现等任务。\n团队已具有公开光伏和风电数据集的使用与研究基础，可将其中具备明确许可或可公开使用的数据说明、运行曲线和代码案例作为资源构建的候选材料。申请人具有人工智能和深度...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, GeForce）；后文再仅用 GeForce。"
+        },
+        {
+          "abbr": "RTX",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.2.工作条件.tex",
+          "line": 6,
+          "column": 72,
+          "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有...",
+          "context": "\\subsubsection{已具备的实验条件}\n申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有10名研究生，具备人工智能、深度学习、时间序列预测和多模态信息处理的研究基础，可在申请人指导下承担资源整理、标注、模型训练、实验复核和原型实现等任务。\n团队已具有公开光伏和风电数据集的使用与研究基础，可将其中具备明确许可或可公开使用的数据说明、运行曲线和代码案例作为资源构建的候选材料。申请人具有人工智能和深度...",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, RTX）；后文再仅用 RTX。"
+        },
+        {
+          "abbr": "CAAI",
+          "issue_kind": "bare_first_use",
+          "severity": "P1",
+          "path": "extraTex/2.3.承担项目.tex",
+          "line": 13,
+          "column": 38,
+          "excerpt": "申请人还参与国家自然科学基金地区科学基金项目（批准号62466056）和 CAAI—蚂蚁科研基金项目（项目编号202604140006）。上述两项项目的名称、起止年月、依托单位、本人角色和负责内容尚待核验，故暂不在本节作超出已知事实的表述；相关信息将在正式申报前补全。",
+          "context": "\\end{enumerate}\n申请人还参与国家自然科学基金地区科学基金项目（批准号62466056）和 CAAI—蚂蚁科研基金项目（项目编号202604140006）。上述两项项目的名称、起止年月、依托单位、本人角色和负责内容尚待核验，故暂不在本节作超出已知事实的表述；相关信息将在正式申报前补全。\n\\subsection{4.~\\textbf{完成国家自然科学基金项目情况}（对申请人负责的前一个资\\linebreak{}助期满的科学基金项目（项目名称及批准号）完成情况、后续研究进\\linebreak{}展及与本申请项目的关系加以详细说明。另附该项目的研究工作总结\\linebreak{}摘要（限500字）和相关成果详细目录）。}",
+          "english_full": "",
+          "chinese_full": "",
+          "details": "",
+          "recommendation": "首次出现建议写成：中文全称（English Full Name, CAAI）；后文再仅用 CAAI。"
+        }
+      ],
+      "registry_preview": [
+        {
+          "abbr": "UTF8",
+          "first_occurrence": {
+            "abbr": "UTF8",
+            "seq": 1,
+            "path": "main.tex",
+            "line": 15,
+            "column": 21,
+            "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}"
+          },
+          "occurrences": [
+            {
+              "abbr": "UTF8",
+              "seq": 1,
+              "path": "main.tex",
+              "line": 15,
+              "column": 21,
+              "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "AutoFakeBold",
+          "first_occurrence": {
+            "abbr": "AutoFakeBold",
+            "seq": 1,
+            "path": "main.tex",
+            "line": 15,
+            "column": 26,
+            "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}"
+          },
+          "occurrences": [
+            {
+              "abbr": "AutoFakeBold",
+              "seq": 1,
+              "path": "main.tex",
+              "line": 15,
+              "column": 26,
+              "excerpt": "\\documentclass[12pt,UTF8,AutoFakeBold=2.5,a4paper,fontset=none]{ctexart}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "MsBlue",
+          "first_occurrence": {
+            "abbr": "MsBlue",
+            "seq": 56,
+            "path": "extraTex/@config.tex",
+            "line": 185,
+            "column": 47,
+            "excerpt": "\\newcommand{\\NSFCProjectSectionFormat}{\\color{MsBlue} \\sectionzihao \\templatefont \\bfseries}"
+          },
+          "occurrences": [
+            {
+              "abbr": "MsBlue",
+              "seq": 56,
+              "path": "extraTex/@config.tex",
+              "line": 185,
+              "column": 47,
+              "excerpt": "\\newcommand{\\NSFCProjectSectionFormat}{\\color{MsBlue} \\sectionzihao \\templatefont \\bfseries}"
+            },
+            {
+              "abbr": "MsBlue",
+              "seq": 60,
+              "path": "extraTex/@config.tex",
+              "line": 190,
+              "column": 50,
+              "excerpt": "\\newcommand{\\NSFCProjectSubsectionFormat}{\\color{MsBlue} \\subsectionzihao \\templatefont}"
+            },
+            {
+              "abbr": "MsBlue",
+              "seq": 83,
+              "path": "extraTex/@config.tex",
+              "line": 230,
+              "column": 85,
+              "excerpt": "\\newcommand{\\NSFCProjectEnumerateLabel}{\\templatefont \\bfseries \\hspace{1em} \\color{MsBlue}（\\arabic*）}"
+            },
+            {
+              "abbr": "MsBlue",
+              "seq": 91,
+              "path": "extraTex/@config.tex",
+              "line": 243,
+              "column": 63,
+              "excerpt": "\\newcommand{\\NSFCProjectItemTitleFormat}[1]{{\\bfseries \\color{MsBlue} #1}}"
+            },
+            {
+              "abbr": "MsBlue",
+              "seq": 122,
+              "path": "extraTex/@config.tex",
+              "line": 310,
+              "column": 16,
+              "excerpt": "\\definecolor{MsBlue}{RGB}{\\NSFCProjectMsBlueRGB}"
+            },
+            {
+              "abbr": "MsBlue",
+              "seq": 247,
+              "path": "main.tex",
+              "line": 32,
+              "column": 72,
+              "excerpt": "{\\sihao \\templatefont \\hspace{2em}参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。{\\color{MsBlue}\\textbf{请勿删除或改动下述提纲标题及括号中的文字。}}}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCUseWasysym",
+          "first_occurrence": {
+            "abbr": "NSFCUseWasysym",
+            "seq": 111,
+            "path": "extraTex/@config.tex",
+            "line": 295,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCUseWasysym}{\\NSFCProjectUseWasysym}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCUseWasysym",
+              "seq": 111,
+              "path": "extraTex/@config.tex",
+              "line": 295,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCUseWasysym}{\\NSFCProjectUseWasysym}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCRaggedBottom",
+          "first_occurrence": {
+            "abbr": "NSFCRaggedBottom",
+            "seq": 112,
+            "path": "extraTex/@config.tex",
+            "line": 296,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCRaggedBottom",
+              "seq": 112,
+              "path": "extraTex/@config.tex",
+              "line": 296,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCRaggedBottom}{\\NSFCProjectRaggedBottom}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCUseFrenchSpacing",
+          "first_occurrence": {
+            "abbr": "NSFCUseFrenchSpacing",
+            "seq": 113,
+            "path": "extraTex/@config.tex",
+            "line": 297,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCUseFrenchSpacing",
+              "seq": 113,
+              "path": "extraTex/@config.tex",
+              "line": 297,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCUseFrenchSpacing}{\\NSFCProjectUseFrenchSpacing}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCHFuzz",
+          "first_occurrence": {
+            "abbr": "NSFCHFuzz",
+            "seq": 114,
+            "path": "extraTex/@config.tex",
+            "line": 298,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCHFuzz",
+              "seq": 114,
+              "path": "extraTex/@config.tex",
+              "line": 298,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCHFuzz}{\\NSFCProjectHFuzz}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCUseAdjustedBlankPara",
+          "first_occurrence": {
+            "abbr": "NSFCUseAdjustedBlankPara",
+            "seq": 115,
+            "path": "extraTex/@config.tex",
+            "line": 299,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCUseAdjustedBlankPara}{\\NSFCProjectUseAdjustedBlankPara}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCUseAdjustedBlankPara",
+              "seq": 115,
+              "path": "extraTex/@config.tex",
+              "line": 299,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCUseAdjustedBlankPara}{\\NSFCProjectUseAdjustedBlankPara}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCUseUrlStyleSame",
+          "first_occurrence": {
+            "abbr": "NSFCUseUrlStyleSame",
+            "seq": 118,
+            "path": "extraTex/@config.tex",
+            "line": 302,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCUseUrlStyleSame}{\\NSFCProjectUseUrlStyleSame}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCUseUrlStyleSame",
+              "seq": 118,
+              "path": "extraTex/@config.tex",
+              "line": 302,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCUseUrlStyleSame}{\\NSFCProjectUseUrlStyleSame}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NSFCUseDingSubtitle",
+          "first_occurrence": {
+            "abbr": "NSFCUseDingSubtitle",
+            "seq": 119,
+            "path": "extraTex/@config.tex",
+            "line": 303,
+            "column": 27,
+            "excerpt": "\\NSFCProjectApplyToggle{NSFCUseDingSubtitle}{\\NSFCProjectUseDingSubtitle}"
+          },
+          "occurrences": [
+            {
+              "abbr": "NSFCUseDingSubtitle",
+              "seq": 119,
+              "path": "extraTex/@config.tex",
+              "line": 303,
+              "column": 27,
+              "excerpt": "\\NSFCProjectApplyToggle{NSFCUseDingSubtitle}{\\NSFCProjectUseDingSubtitle}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "RGB",
+          "first_occurrence": {
+            "abbr": "RGB",
+            "seq": 122,
+            "path": "extraTex/@config.tex",
+            "line": 310,
+            "column": 24,
+            "excerpt": "\\definecolor{MsBlue}{RGB}{\\NSFCProjectMsBlueRGB}"
+          },
+          "occurrences": [
+            {
+              "abbr": "RGB",
+              "seq": 122,
+              "path": "extraTex/@config.tex",
+              "line": 310,
+              "column": 24,
+              "excerpt": "\\definecolor{MsBlue}{RGB}{\\NSFCProjectMsBlueRGB}"
+            },
+            {
+              "abbr": "RGB",
+              "seq": 123,
+              "path": "extraTex/@config.tex",
+              "line": 311,
+              "column": 29,
+              "excerpt": "\\definecolor{headercolor}{RGB}{\\NSFCProjectHeaderColorRGB}"
+            },
+            {
+              "abbr": "RGB",
+              "seq": 124,
+              "path": "extraTex/@config.tex",
+              "line": 312,
+              "column": 29,
+              "excerpt": "\\definecolor{footercolor}{RGB}{\\NSFCProjectFooterColorRGB}"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "BLIP",
+          "first_occurrence": {
+            "abbr": "BLIP",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 185,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "BLIP",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 185,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "BLIP-2",
+          "first_occurrence": {
+            "abbr": "BLIP-2",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 190,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "BLIP-2",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 190,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "AltCLIP",
+          "first_occurrence": {
+            "abbr": "AltCLIP",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 290,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "AltCLIP",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 290,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "CoCa",
+          "first_occurrence": {
+            "abbr": "CoCa",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 298,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "CoCa",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 298,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "CLIP",
+          "first_occurrence": {
+            "abbr": "CLIP",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 391,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "CLIP",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 391,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "VideoCLIP",
+          "first_occurrence": {
+            "abbr": "VideoCLIP",
+            "seq": 261,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 20,
+            "column": 398,
+            "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+          },
+          "occurrences": [
+            {
+              "abbr": "VideoCLIP",
+              "seq": 261,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 20,
+              "column": 398,
+              "excerpt": "多模态学习为文本、图像、视频和图表之间的语义表示与检索提供了方法基础。多模态机器学习的研究已将模态异质性、连接和交互概括为核心挑战\\cite{foundationsamptrends2024}；跨模态检索与图文检索的综述系统梳理了共享表示、细粒度匹配和评价基准\\cite{c..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "FActScore",
+          "first_occurrence": {
+            "abbr": "FActScore",
+            "seq": 263,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 24,
+            "column": 166,
+            "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+          },
+          "occurrences": [
+            {
+              "abbr": "FActScore",
+              "seq": 263,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 24,
+              "column": 166,
+              "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "ARES",
+          "first_occurrence": {
+            "abbr": "ARES",
+            "seq": 263,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 24,
+            "column": 225,
+            "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+          },
+          "occurrences": [
+            {
+              "abbr": "ARES",
+              "seq": 263,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 24,
+              "column": 225,
+              "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "MiniCheck",
+          "first_occurrence": {
+            "abbr": "MiniCheck",
+            "seq": 263,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 24,
+            "column": 282,
+            "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+          },
+          "occurrences": [
+            {
+              "abbr": "MiniCheck",
+              "seq": 263,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 24,
+              "column": 282,
+              "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "HaluEval",
+          "first_occurrence": {
+            "abbr": "HaluEval",
+            "seq": 263,
+            "path": "extraTex/1.1.立项依据.tex",
+            "line": 24,
+            "column": 346,
+            "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+          },
+          "occurrences": [
+            {
+              "abbr": "HaluEval",
+              "seq": 263,
+              "path": "extraTex/1.1.立项依据.tex",
+              "line": 24,
+              "column": 346,
+              "excerpt": "检索增强生成和事实核验为生成内容的知识更新与可追溯性提供了新的技术路径。相关研究将外部检索、上下文组织和语言生成结合，并讨论了检索增强生成的模块化发展\\cite{retrievalaugmentedgeneration2023,asurveyon2024,retrievin..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "MRR",
+          "first_occurrence": {
+            "abbr": "MRR",
+            "seq": 295,
+            "path": "extraTex/1.2.内容目标问题.tex",
+            "line": 26,
+            "column": 113,
+            "excerpt": "\\textbf{目标二：} 建立面向设备图、运行曲线、代码和案例的专业属性与来源证据约束关联方法，验证其对正确关系检索、关系类型判定、来源定位和专业条件错配抑制的作用；在独立测试集上报告 Recall@1、Recall@5、MRR、关系类别 F1 和来源定位准确率。"
+          },
+          "occurrences": [
+            {
+              "abbr": "MRR",
+              "seq": 295,
+              "path": "extraTex/1.2.内容目标问题.tex",
+              "line": 26,
+              "column": 113,
+              "excerpt": "\\textbf{目标二：} 建立面向设备图、运行曲线、代码和案例的专业属性与来源证据约束关联方法，验证其对正确关系检索、关系类型判定、来源定位和专业条件错配抑制的作用；在独立测试集上报告 Recall@1、Recall@5、MRR、关系类别 F1 和来源定位准确率。"
+            },
+            {
+              "abbr": "MRR",
+              "seq": 347,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 51,
+              "column": 205,
+              "excerpt": "其中，\\(C_A\\) 检验对象、变量、单位、工况与时序是否一致，\\(C_E\\) 检验原始文件、页码、图表区域、表格行列或代码位置是否可核查，\\(C_R\\) 检验关系类别是否符合产业—课程知识结构，\\(\\eta_s,\\eta_a,\\eta_e,\\eta_r\\) 为权重。只有在..."
+            },
+            {
+              "abbr": "MRR",
+              "seq": 375,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 90,
+              "column": 111,
+              "excerpt": "实验评价分为构建、关联和质量三层。构建层比较资源单元边界 F1、目标知识点覆盖、重复率与专业属性错误率；关联层按“知识点—文本、知识点—图表、知识点—设备图、知识点—代码、知识点—案例”等关系类型报告 Recall@K、MRR、关系类别 F1、来源定位准确率和困难负例上的错..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "VRR",
+          "first_occurrence": {
+            "abbr": "VRR",
+            "seq": 363,
+            "path": "extraTex/1.3.方案及可行性.tex",
+            "line": 70,
+            "column": 9,
+            "excerpt": "\\mathrm{VRR}=\\frac{\\sum_{u\\in\\mathcal{U}}\\mathbb{I}"
+          },
+          "occurrences": [
+            {
+              "abbr": "VRR",
+              "seq": 363,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 70,
+              "column": 9,
+              "excerpt": "\\mathrm{VRR}=\\frac{\\sum_{u\\in\\mathcal{U}}\\mathbb{I}"
+            },
+            {
+              "abbr": "VRR",
+              "seq": 367,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 74,
+              "column": 59,
+              "excerpt": "其中，\\(\\mathcal{U}\\) 为待验收资源单元集合，\\(\\mathbb{I}(\\cdot)\\) 为指示函数。VRR 表示可以进入课程资源包的资源比例，须与专家盲评、错误检出和人工修订时间共同报告；VRR 的目标值和相对提升幅度属于拟验证指标，待预实验后锁定。"
+            },
+            {
+              "abbr": "VRR",
+              "seq": 367,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 74,
+              "column": 103,
+              "excerpt": "其中，\\(\\mathcal{U}\\) 为待验收资源单元集合，\\(\\mathbb{I}(\\cdot)\\) 为指示函数。VRR 表示可以进入课程资源包的资源比例，须与专家盲评、错误检出和人工修订时间共同报告；VRR 的目标值和相对提升幅度属于拟验证指标，待预实验后锁定。"
+            },
+            {
+              "abbr": "VRR",
+              "seq": 375,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 90,
+              "column": 146,
+              "excerpt": "实验评价分为构建、关联和质量三层。构建层比较资源单元边界 F1、目标知识点覆盖、重复率与专业属性错误率；关联层按“知识点—文本、知识点—图表、知识点—设备图、知识点—代码、知识点—案例”等关系类型报告 Recall@K、MRR、关系类别 F1、来源定位准确率和困难负例上的错..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "B0--B3",
+          "first_occurrence": {
+            "abbr": "B0--B3",
+            "seq": 376,
+            "path": "extraTex/1.3.方案及可行性.tex",
+            "line": 92,
+            "column": 113,
+            "excerpt": "为检验方法的泛化边界，测试划分至少包含知识模块留出、原始来源留出或设备类型留出中的可实施条件；具体采用何种留出方式取决于资源授权后可获得的材料结构。统计检验以配对比较和重采样置信区间为主，阈值、权重和停止规则只在开发集确定。B0--B3 均使用同一合规资源池，人工基线的工时..."
+          },
+          "occurrences": [
+            {
+              "abbr": "B0--B3",
+              "seq": 376,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 92,
+              "column": 113,
+              "excerpt": "为检验方法的泛化边界，测试划分至少包含知识模块留出、原始来源留出或设备类型留出中的可实施条件；具体采用何种留出方式取决于资源授权后可获得的材料结构。统计检验以配对比较和重采样置信区间为主，阈值、权重和停止规则只在开发集确定。B0--B3 均使用同一合规资源池，人工基线的工时..."
+            },
+            {
+              "abbr": "B0--B3",
+              "seq": 406,
+              "path": "extraTex/1.5.研究计划.tex",
+              "line": 12,
+              "column": 15,
+              "excerpt": "阶段性验收以冻结的测试配置、B0--B3 比较、模块消融、分层误差分析、专家盲评一致性和资源质量报告为主。若跨来源验证或专家盲评未支持预设机制，将形成边界与负结果说明，并将原型降级为“自动初筛—人工复核”工具；不将未达到验证条件的资源单元纳入最终资源包。"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "GPU",
+          "first_occurrence": {
+            "abbr": "GPU",
+            "seq": 383,
+            "path": "extraTex/1.3.方案及可行性.tex",
+            "line": 106,
+            "column": 99,
+            "excerpt": "\\textbf{研究基础与条件可行性。} 申请人在人工智能、深度学习、多模态信息处理、时序建模及新能源功率预测等方面具有研究积累，具备将设备、曲线、数据和代码资源转化为可计算对象的技术基础；现有 GPU 计算条件可支持原型开发与模型实验。与课程资源授权、专家盲评和试点安排相..."
+          },
+          "occurrences": [
+            {
+              "abbr": "GPU",
+              "seq": 383,
+              "path": "extraTex/1.3.方案及可行性.tex",
+              "line": 106,
+              "column": 99,
+              "excerpt": "\\textbf{研究基础与条件可行性。} 申请人在人工智能、深度学习、多模态信息处理、时序建模及新能源功率预测等方面具有研究积累，具备将设备、曲线、数据和代码资源转化为可计算对象的技术基础；现有 GPU 计算条件可支持原型开发与模型实验。与课程资源授权、专家盲评和试点安排相..."
+            },
+            {
+              "abbr": "GPU",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 29,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            },
+            {
+              "abbr": "GPU",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 49,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            },
+            {
+              "abbr": "GPU",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 84,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "DWT-Former",
+          "first_occurrence": {
+            "abbr": "DWT-Former",
+            "seq": 425,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 8,
+            "column": 55,
+            "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora..."
+          },
+          "occurrences": [
+            {
+              "abbr": "DWT-Former",
+              "seq": 425,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 8,
+              "column": 55,
+              "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "WaveKAN",
+          "first_occurrence": {
+            "abbr": "WaveKAN",
+            "seq": 425,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 8,
+            "column": 225,
+            "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora..."
+          },
+          "occurrences": [
+            {
+              "abbr": "WaveKAN",
+              "seq": 425,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 8,
+              "column": 225,
+              "excerpt": "在新能源数据智能分析方面，申请人作为通讯作者在 \\textit{Energy} 发表了光伏功率预测相关研究《DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Tempora..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "IEEE",
+          "first_occurrence": {
+            "abbr": "IEEE",
+            "seq": 427,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 12,
+            "column": 130,
+            "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+          },
+          "occurrences": [
+            {
+              "abbr": "IEEE",
+              "seq": 427,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 12,
+              "column": 130,
+              "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "RSHR",
+          "first_occurrence": {
+            "abbr": "RSHR",
+            "seq": 427,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 12,
+            "column": 170,
+            "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+          },
+          "occurrences": [
+            {
+              "abbr": "RSHR",
+              "seq": 427,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 12,
+              "column": 170,
+              "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "RSSR",
+          "first_occurrence": {
+            "abbr": "RSSR",
+            "seq": 427,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 12,
+            "column": 370,
+            "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+          },
+          "occurrences": [
+            {
+              "abbr": "RSSR",
+              "seq": 427,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 12,
+              "column": 370,
+              "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "SPCA-Net",
+          "first_occurrence": {
+            "abbr": "SPCA-Net",
+            "seq": 427,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 12,
+            "column": 729,
+            "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+          },
+          "occurrences": [
+            {
+              "abbr": "SPCA-Net",
+              "seq": 427,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 12,
+              "column": 729,
+              "excerpt": "在多模态理解与跨模态关联方面，申请人作为通讯作者开展了跨模态检索、视觉问答和遥感视觉问答研究，包括《Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval》（\\textit{IEEE Sig..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "XJEDU2026P005",
+          "first_occurrence": {
+            "abbr": "XJEDU2026P005",
+            "seq": 429,
+            "path": "extraTex/2.1.研究基础.tex",
+            "line": 16,
+            "column": 56,
+            "excerpt": "申请人主持的相关项目包括自治区高校基本科研业务费科研项目“融合多源数据大模型驱动的光伏发电功率预测方法研究”（XJEDU2026P005，2026.01--2026.12）、自治区天池英才引进计划（青年博士人才）项目“多模态融合技术研究及其在新疆产业集群中的应用”（2025..."
+          },
+          "occurrences": [
+            {
+              "abbr": "XJEDU2026P005",
+              "seq": 429,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 16,
+              "column": 56,
+              "excerpt": "申请人主持的相关项目包括自治区高校基本科研业务费科研项目“融合多源数据大模型驱动的光伏发电功率预测方法研究”（XJEDU2026P005，2026.01--2026.12）、自治区天池英才引进计划（青年博士人才）项目“多模态融合技术研究及其在新疆产业集群中的应用”（2025..."
+            },
+            {
+              "abbr": "XJEDU2026P005",
+              "seq": 467,
+              "path": "extraTex/2.3.承担项目.tex",
+              "line": 7,
+              "column": 62,
+              "excerpt": "\\item 自治区高校基本科研业务费科研项目（培育类）“融合多源数据大模型驱动的光伏发电功率预测方法研究”，项目编号 XJEDU2026P005，起止年月为2026年1月至2026年12月。申请人主持。该项目围绕新能源功率数据的多源建模和预测开展研究，可为本项目提供光伏功率..."
+            }
+          ],
+          "definitions": [
+            {
+              "abbr": "XJEDU2026P005",
+              "seq": 429,
+              "path": "extraTex/2.1.研究基础.tex",
+              "line": 16,
+              "column": 56,
+              "english_full": "",
+              "chinese_full": "",
+              "english_full_normalized": "",
+              "chinese_full_normalized": "",
+              "matched_text": "（XJEDU2026P005，2026.01--2026.12）",
+              "context": "这些多模态研究经验能够支撑项目中“先生成候选、再施加专业约束”的技术路线：视觉或图文模型用于提出可能相关的文本、设备图、曲线和代码片段，知识与属性约束用于排除不满足对象、变量、单位、工况和时序条件的候选，来源位置用于使关系可回溯。申请人已有工作覆盖表示学习、跨模态检索和知识增强等方法环节，因此具备组织基线、实施关系分类与开展消融分析的条件；但专业教学资源的课程对齐、出处证据和四层质量效度仍是本项目需要新开展和验证的内容。\n申请人主持的相关项目包括自治区高校基本科研业务费科研项目“融合多源数据大模型驱动的光伏发电功率预测方法研究”（XJEDU2026P005，2026.01--2026.12）、自治区天池英才引进计划（青年博士人..."
+            }
+          ],
+          "status": {
+            "first_use": "defined",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "NVIDIA",
+          "first_occurrence": {
+            "abbr": "NVIDIA",
+            "seq": 445,
+            "path": "extraTex/2.2.工作条件.tex",
+            "line": 6,
+            "column": 38,
+            "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+          },
+          "occurrences": [
+            {
+              "abbr": "NVIDIA",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 38,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            },
+            {
+              "abbr": "NVIDIA",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 57,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "GeForce",
+          "first_occurrence": {
+            "abbr": "GeForce",
+            "seq": 445,
+            "path": "extraTex/2.2.工作条件.tex",
+            "line": 6,
+            "column": 64,
+            "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+          },
+          "occurrences": [
+            {
+              "abbr": "GeForce",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 64,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "RTX",
+          "first_occurrence": {
+            "abbr": "RTX",
+            "seq": 445,
+            "path": "extraTex/2.2.工作条件.tex",
+            "line": 6,
+            "column": 72,
+            "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+          },
+          "occurrences": [
+            {
+              "abbr": "RTX",
+              "seq": 445,
+              "path": "extraTex/2.2.工作条件.tex",
+              "line": 6,
+              "column": 72,
+              "excerpt": "申请人及团队已具备人工智能模型训练与实验计算条件，现有 GPU 资源包括 NVIDIA A40 GPU 8张和 NVIDIA GeForce RTX 3090 Ti GPU 6张，可支持多模态模型的参数高效适配、跨模态检索与关联实验、对照和消融实验以及本地原型开发。团队约有..."
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        },
+        {
+          "abbr": "CAAI",
+          "first_occurrence": {
+            "abbr": "CAAI",
+            "seq": 472,
+            "path": "extraTex/2.3.承担项目.tex",
+            "line": 13,
+            "column": 38,
+            "excerpt": "申请人还参与国家自然科学基金地区科学基金项目（批准号62466056）和 CAAI—蚂蚁科研基金项目（项目编号202604140006）。上述两项项目的名称、起止年月、依托单位、本人角色和负责内容尚待核验，故暂不在本节作超出已知事实的表述；相关信息将在正式申报前补全。"
+          },
+          "occurrences": [
+            {
+              "abbr": "CAAI",
+              "seq": 472,
+              "path": "extraTex/2.3.承担项目.tex",
+              "line": 13,
+              "column": 38,
+              "excerpt": "申请人还参与国家自然科学基金地区科学基金项目（批准号62466056）和 CAAI—蚂蚁科研基金项目（项目编号202604140006）。上述两项项目的名称、起止年月、依托单位、本人角色和负责内容尚待核验，故暂不在本节作超出已知事实的表述；相关信息将在正式申报前补全。"
+            }
+          ],
+          "definitions": [],
+          "status": {
+            "first_use": "bare_first_use",
+            "english_full_name": "missing",
+            "chinese_full": "missing",
+            "redefinition": "none"
+          }
+        }
+      ],
+      "note": "Render-order heuristic: abbreviations are checked on the actual main.tex expansion order, then aggregated into a whole-document registry for late definition / conflict / repeated-definition checks."
+    }
+  },
+  "artifacts": {
+    "precheck_json": "artifacts/precheck.json",
+    "citations_index_csv": "artifacts/citations_index.csv",
+    "tex_lengths_csv": "artifacts/tex_lengths.csv",
+    "quote_issues_csv": "artifacts/quote_issues.csv",
+    "abbreviation_issues_csv": "artifacts/abbreviation_issues.csv",
+    "abbreviation_issues_summary_json": "artifacts/abbreviation_issues_summary.json",
+    "abbreviation_registry_json": "artifacts/abbreviation_registry.json",
+    "abbreviation_render_stream_jsonl": "artifacts/abbreviation_render_stream.jsonl",
+    "reference_evidence_jsonl": "artifacts/reference_evidence.jsonl",
+    "reference_evidence_summary_json": "artifacts/reference_evidence_summary.json",
+    "parallel_vibe_summary": "",
+    "thread_results": []
+  },
+  "status": {
+    "threads_detected": false,
+    "note": "This file is a deterministic aggregation of artifacts; findings are produced by QC threads and/or human review."
+  }
+}

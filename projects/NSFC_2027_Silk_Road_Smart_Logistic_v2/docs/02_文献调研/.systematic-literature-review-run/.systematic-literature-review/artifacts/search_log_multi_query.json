@@ -1,0 +1,626 @@
+{
+  "total_queries": 17,
+  "total_returned": 822,
+  "total_unique": 500,
+  "queries": [
+    {
+      "query": "cross-border logistics internet of things sensing monitoring",
+      "rationale": "核心查询",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "cargo tamper detection container security electronic seal",
+      "rationale": "防拆防盗核心",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=cargo+tamper+detection+container+security+electronic+seal&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=cargo+tamper+detection+container+security+electronic+seal&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "multimodal sensor fusion cargo transport condition monitoring",
+      "rationale": "多模态融合方法变体",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "vibration tilt sensor freight anomaly detection logistics",
+      "rationale": "传感模态同义词变体",
+      "returned": 22,
+      "unique": 21,
+      "notes": "",
+      "dedupe_rate": 0.955,
+      "quality_score": 0.741,
+      "quality_label": "良好",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 22,
+          "reason": "",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=vibration+tilt+sensor+freight+anomaly+detection+logistics&limit=28&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        }
+      ]
+    },
+    {
+      "query": "package damage detection visual inspection deep learning logistics",
+      "rationale": "破损图像识别",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "edge computing industrial internet of things logistics inference",
+      "rationale": "边缘计算",
+      "returned": 50,
+      "unique": 42,
+      "notes": "",
+      "dedupe_rate": 0.84,
+      "quality_score": 0.84,
+      "quality_label": "优秀",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "delay tolerant networking store carry forward bundle protocol",
+      "rationale": "弱网容迟传输",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=delay+tolerant+networking+store+carry+forward+bundle+protocol&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=delay+tolerant+networking+store+carry+forward+bundle+protocol&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "intermittent connectivity opportunistic data upload IoT sensor network",
+      "rationale": "间歇连接同义词",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=intermittent+connectivity+opportunistic+data+upload+IoT+sensor+network&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=intermittent+connectivity+opportunistic+data+upload+IoT+sensor+network&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "reliable data transmission low bandwidth cellular IoT retransmission caching",
+      "rationale": "可靠传输限定词",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=reliable+data+transmission+low+bandwidth+cellular+IoT+retransmission+caching&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=reliable+data+transmission+low+bandwidth+cellular+IoT+retransmission+caching&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "energy efficient low power IoT duty cycling battery lifetime sensor node",
+      "rationale": "低功耗管理",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=energy+efficient+low+power+IoT+duty+cycling+battery+lifetime+sensor+node&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=energy+efficient+low+power+IoT+duty+cycling+battery+lifetime+sensor+node&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "digital twin logistics warehouse port terminal state synchronization",
+      "rationale": "数字镜像核心",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=digital+twin+logistics+warehouse+port+terminal+state+synchronization&per-page=50&cursor=%2A&filter=from_publication_date%3A2010-01-01"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=digital+twin+logistics+warehouse+port+terminal+state+synchronization&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "digital twin consistency update latency cyber physical synchronization",
+      "rationale": "镜像一致性与延迟",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (287s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (296s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "out-of-order event processing late arriving data event time watermark stream",
+      "rationale": "乱序迟到数据（docs/01 标记的查新缺口）",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (284s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (293s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "clock synchronization drift distributed sensor network timestamp",
+      "rationale": "多时钟校正",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (281s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (290s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "warehouse environmental monitoring temperature humidity smoke access control IoT",
+      "rationale": "仓储环境监测",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (278s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (287s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "supply chain visibility resilience EPCIS traceability event data",
+      "rationale": "供应链可见性与韧性",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (275s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (284s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "missing modality confidence calibration uncertainty multimodal degradation",
+      "rationale": "缺失模态与置信度标定（查新缺口）",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (272s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (281s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "quality_summary": {
+    "excellent": 16,
+    "good": 1,
+    "fair": 0,
+    "poor": 0,
+    "recommendations": []
+  },
+  "rate_limit_summary": {
+    "semantic_scholar": {
+      "calls_last_minute": 0.0,
+      "total_calls": 0.0,
+      "session_duration_seconds": 122.5585560798645
+    }
+  },
+  "abstract_enrichment_summary": {
+    "enabled": true,
+    "skipped": true,
+    "stage": "post_selection",
+    "reason": "abstract enrichment stage is not search"
+  }
+}

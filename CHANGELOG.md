@@ -8,32 +8,23 @@
 
 ## [Unreleased]
 
-### Fixed（修复）
-
-- **`skills/nsfc-full-pipeline` 跨模板静默写错章节**：该编排器原先把 `extraTex/1.1`–`1.5`、`2.1`–`2.4`、`3.1`–`3.5` 写死在阶段 05/06/07 中，只适配 `NSFC_Local` 与 `NSFC_2026_Education`；而 `NSFC_General` / `NSFC_Young` 使用 `1.1`+`2.1`–`2.3`、`3.1`–`3.4`、`4.1`–`4.6` 的另一套编号，两套编号互相重叠，在面上/青年项目上运行会把研究基础写进研究内容的位置且不报错。新增 `Stage 00: Proposal Layout Resolution`，强制从 `main.tex` 的未注释 `\input{extraTex/...}` 解析真实正文文件并按 `part_one` / `foundation` / `statements` 归类，`SKILL.md` 中已无编号型硬编码路径。
-- **`skills/nsfc-full-pipeline` 编译命令路径不成立**：原命令 `python scripts/nsfc_build.py build --project-dir .` 依赖当前工作目录恰为项目目录，而仓库根 `scripts/` 下并无该脚本。现区分仓库根入口 `packages/bensz-nsfc/scripts/nsfc_project_tool.py` 与项目内 wrapper 两种口径。
-- **`skills/nsfc-full-pipeline` 续跑判定失真**：原判定依据为输出文件是否存在，但 `extraTex/*.tex` 在模板中本就存在且带 `\NSFCBlankPara` 占位，会被误判为已完成而跳过写作；现要求输出同时为非占位态。
-- **`skills/nsfc-full-pipeline` 阶段依赖缺陷**：阶段 06 的 inputs 与 outputs 完全相同形成自引用，且其输入 `docs/研究基础.md` 无任何上游阶段产出；现输入改为 `docs/05_研究基础素材.md` 与已回填的补充问卷。阶段 07 补齐生成式人工智能声明的处理口径（注释态不写入，仅在检查报告中提示）。
-- 修正 `skills/nsfc-full-pipeline/SKILL.md` 中的中英混排残留 `response口径`、`proposal正文`。
-
-### Added（新增）
-
-- 新增 `skills/nsfc-full-pipeline/config.yaml`、`README.md` 与 `CHANGELOG.md`：该 skill 此前仅有 `SKILL.md` 与 `evals/evals.json`，无版本号、无配置、未登记入索引。`config.yaml` 作为版本号唯一真相来源（v0.1.0），同时固化布局解析规则、断点完成判定口径、参考文献充分性闸门、子 skill 编排表、编译命令，并以 `not_covered` 显式登记未覆盖的 `nsfc-abstract` / `nsfc-code` / `nsfc-budget` / 配图链路。
-- `skills/nsfc-full-pipeline/SKILL.md` 新增 `Workspace Convention` 小节：说明 `docs/` 与 `review/` 属于 `skills/WORKSPACE.md` 定义的正式交付物因而不进任务工作区，缓存与日志仍按标准约定隔离。
-- `skills/nsfc-full-pipeline/evals/evals.json` 由 3 条扩充到 14 条：原有 3 条中前两条描述的是修复前行为，已同步更新以免把旧缺陷固化为期望值；新增 11 条覆盖布局解析、注释态与孤儿文件处理、解析失败停机、占位态完成判定、编译口径、缺事实问卷、覆盖边界提示、评审组数与参考文献闸门。
-
 ### Changed（变更）
 
-- `skills/README.md` 补录 `nsfc-full-pipeline`（此前索引仅列 23 个技能，该编排器完全缺席，用户无从发现）；NSFC 写作章节改为「路线 A 一键编排 / 路线 B 手动分步」双路线表述，并在技能协作清单中标注其覆盖边界。
-- `skills/nsfc-full-pipeline` 阶段 12 模拟评审默认 `panel_count` 由 `5` 调整为 `3`，与 `nsfc-reviewers` 自身调优默认值一致；断点文件模板压缩约 60 行，字段语义不变。
-
-
+- **`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 重写"拟解决问题、方法及技术路线"栏**：按 `nsfc-research-content-writer` 的形式化纪律重写 `\ResearchMethodsContent`（751 字 → 799 字）。该 skill 的输出契约与本项目不匹配（它写 `extraTex/2.1~2.3.tex` 三个文件、篇幅目标 12000–15000 字 / 12–15 页，而本栏框高仅 498bp、官方限 800 字，其"4–8 个公式块"会吃掉整栏），故只采用其方法论、不采用其国自然文体与篇幅：保留"输入/输出/约束 → 模型映射 → 优化目标 → 决策规则 → 评价指标"链条、每个方法必须绑定对照基线、以及反模式清单（禁绝对化自夸、禁堆方法不说解决什么、禁指标不可判定、禁对照缺失、禁内部编号 `S1/T2` 渗透正文）。实质变化：四类问题改为直述而不再逐条复述"研究内容一/二/三"；三项方法各自点明所用模型（事件驱动多模态证据融合模型／事件优先级联合调度模型／对象模型+双时间戳增量更新），回应栏目标题要求的"原理、机理、算法、模型"；补入 AGENTS.md 第五节第 9 条要求的指标定义（上传成功率＝平台去重入库条数∶端侧生成序号总数，与设备在线率、数据完整率分别定义分别取证）；补入置信度随模态掩码单调可解释变化（对应 `docs/01` 的 SQ1）与时钟质量标记驱动的自适应等待窗口（对应 SQ3）；四类方法均写明对照基线与消融变体。安全约束按 AGENTS.md 硬规则保留四级优先级（安全联锁＞设备权限＞人工确认＞上层风险策略）与"防拆防盗事件不得绕过权限判断直接驱动设备"，计时口径按中性表述写为"起止口径以任务书为准"，未新增数值承诺。校验：编译 14 页 A4，该栏余 13.8bp、尾句存在性检查通过，22/22 栏无内容丢失。
+- **`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 现状两栏引用核验与回填**：`\ForeignResearchContent` 与 `\DomesticResearchContent` 原有 11 条文献、标准与专利全部逐条联网核实。核出一处实质错误：Leng 等 IJCIM 论文年份写作 2020，实为 2021（卷 34 期 7--8，在线首发 2019，DOI 10.1080/0951192X.2019.1667032），已改。按用户决定移除 4 条：`GB/T 45616.2—2025`、`CN118735417B` 与两条书名号条目（写法像软著/专利名却混排在"代表性文献"中，口径不清）；其中前两条**经核验确为真实条目**，移除理由是内容价值而非真伪（GB/T 45616.2—2025 系制造域数字孪生参考架构，与国外栏已引 ISO 23247-2 重复且非国内研究进展；CN118735417B 仅单一弱信源佐证），已在 AGENTS.md 第七节写明补回方式。`US9142107B2` 经 Google Patents 核实为真且高度切题（服务器远程下发授权指令复位封志告警，正是区分授权查验与非授权拆封的对标前案），予以保留并在正文写明技术内容。回填 5 条经 DOI 核验的新锚点：Jedermann 与 Lang《15 Years of Intelligent Container Research》2021、Zöller 等《Going All the Way》IEEE LCN Workshops 2013（事件检测前移到节点）、Ding 等洋山港自动化码头数字孪生 JAT 2023、Yang 等面向边缘计算的包装箱缺陷 SVM 检测 IEEE Access 2020（填补破损识别在两栏均无着落的缺口）、Liu 等新疆库尔勒香梨冷链多传感监测 Applied Sciences 2019。同时校正 GS1 EPCIS 2.0 表述（五维中第五维"如何"承载传感数据，原写"业务原因和状态…支持传感数据交换"）与 GB/T 38637.1—2020 表述（正式名为"总体要求"非"总则"），并在国内栏不足段写入两处具体缺口（断网回补后事件时间与处理时间乱序致镜像状态回跳、多模态部分模态缺失时告警缺少置信度标定与降级准则），为创新点 1 与 3 铺垫。核验后两栏共 15 条（国外 9、国内 6）；`\ForeignResearchContent` 余 2.8bp、`\DomesticResearchContent` 余 84.5bp，22/22 栏尾句存在性检查全部通过、无内容丢失。
+- **固定框溢出坐标法窗口取值修正（AGENTS.md 第七节）**：继此前"坐标法单用会漏报内容丢失"之后，发现坐标法本身还有第二重漏报——AGENTS 原判定规则"只统计 yMin 落在框内的行"会把**越过框底才起排的溢出行**一并排除，使超框栏被误判为合规（实测 `\ResearchContent` 真实溢出 32.0bp，严格窗口只报 -4.3bp 即"未溢出"）。现记录正确做法：窗口放宽到框底以下、遇下一栏标题才停止，且标题正则须同时覆盖 `一、`、`（一）`、`限 N 字`、`第 N 部分` 四类，否则 `\InternationalCooperationContent` 会把"第四部分 进度安排"误计为自身溢出 27.9bp。
+- **`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 研究内容重构为 3 项顶层结构**：原 `\ResearchContent` 为 4 项并列（多模态感知／弱网传输／仓储联动／数字镜像），与指南研究内容 3 的三条无法逐条对应。现改为 3 项顶层内容 + 7 项强关联子内容，与指南逐条对齐：内容一含多模态监测告警 + 破损图像识别，内容二含弱网可靠上传 + 设备低功耗管理，内容三含仓储监测调控 + 异常预警应急 + 场站数字镜像。数字镜像不再另立第四项，改归内容三子内容（3）——指南关键指标第 3 条本就把仓储调控 ≤30 秒与数字镜像 ≤3 秒写在同一条。四项硬指标依次由内容一、内容二、内容三（两项）承载。级联同步 `\GuideAlignmentContent`（新增与指南逐条对应声明及指标归属）、`\ObjectivesContent`、`\OutcomeFormsContent`、`\ResearchMethodsContent`、`\MethodFeasibilityContentA/B`、`\TaskDivisionContent`、`\ScheduleContent`、`\PartnerAdvantagesContent`、`\BenefitsContent` 共 9 栏；`sections/form-pages.tex` 与 `application-template.sty` 零改动，产出仍为 14 页 A4、编译零警告。
+- **固定框溢出校验流程修正（AGENTS.md 第四节、CLAUDE.md）**：原记录的"比对框底坐标与框内文字 `yMax`"单用会漏报。实测发现固定框溢出不只是压线——超出页面的部分会被**完全丢弃**，不进 PDF 且不报任何警告；此时尾部文字压根不存在，坐标法退化为"框内最后一行"，`\ResearchContent` 实际整段丢失 300 余字而坐标法仅报 13.8bp，是目视渲染才发现的。现新增**尾句存在性检查**作为必做第二项：取每个宏正文末 10 字符，确认其出现在 `pdftotext` 提取的文本中；判定口径为尾句缺失＝内容丢失（必修）、尾句在但越过框底＝仅出框（内容完整，可按需修）。
+- **`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 指南沉淀**：AGENTS.md 增量补入研究内容 3 项结构与强关联纽带约束（第一节）、研究边界三处不做与术语统一规则（第五节，扩充中性表述清单至 9 条）、`docs/01_选题与研究主题.md` 入材料表（第六节）、版面复校状态与"11 条引用至今一条未核实"待办（第七节）；CLAUDE.md 仅补 Claude Code 特定部分（工作流引用 docs/01、两项溢出检查缺一不可），不复制 AGENTS.md 正文。既有 7 个 `##` 标题的文本与顺序未变。
+- **`projects/NSFC_2027_Silk_Road_Smart_Logistic_v2` 改换产品线**：该项目实际申报渠道为自治区重点研发科技专项（现代物流领域）课题二，并非国家自然科学基金，原 NSFC 地区科学基金提纲缺少指南关联、考核指标与评测方式、成果呈现形式、协作单位优势、保障措施、知识产权对策等专项必需栏，无法产出合规申报书。现迁入复刻官方 Word 表格的固定版式工程（`main.tex` + `application-template.sty` + `sections/form-pages.tex` + `content.tex`），依赖仅 `geometry`/`tikz`/fandol，不再调用 `bensz-nsfc` 公共包与 `nsfc_build.py`；正文改由 `content.tex` 的 22 个内容宏承载，产出固定 14 页 A4。原 NSFC 入口备份为 `main-nsfc-template.tex.bak`，`extraTex/` 等残留目录保留但不参与编译。同步重写项目 `AGENTS.md`、`README.md`、`CLAUDE.md`：补充逐栏框高容量表（框高才是真实字数上限，官方标注字数不可依赖，如"科研条件支撑"标注 500 字而框高仅容 346 字）、固定框溢出校验流程（溢出不产生 LaTeX 警告，须用 `pdftotext -bbox-layout` 比对框底坐标与框内文字 `yMax`）、企业牵头写作重心与中性表述红线。
 - **NSFC 地区项目干净模板标题颜色**：`projects/NSFC_Local_Clean` 的 `1.1`、`1.2` 等 `subsubsection` 标题及“参考文献”标题改为黑色，并同步 README 示例；通过该模板新建的项目将继承相同标题颜色。
 - **skills 任务工作区**：新增 `skills/WORKSPACE.md` 并同步当前 Skills 文档与默认配置；中间文件默认收敛到 `./.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/{skill名}/input|output|log/`，同一任务共享一个根目录，旧隐藏目录仅保留显式兼容读取、迁移或清理。
 - **GXNSF 字体对齐**：`projects/GXNSF_General` 现按原 DOCX 声明优先使用系统中的“方正仿宋_GBK / 方正楷体_GBK”（兼容对应简体家族名），标题与条目标题继续使用仿宋加粗；缺少方正字体时仍稳定回退到 `bensz-fonts` 的内置字体，兼顾原稿字形与跨平台编译。
 
 ### Added（新增）
 
+- 新增 `projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/docs/03_科学问题与创新点.md`：用 `research-idea` 把 `docs/01` 的 SQ1–SQ5 收敛为可查新、可证伪的「科学问题-假设」对。流程为 5 个初始候选 → 逐候选查新 → `parallel-vibe` 代码模式 3 轮 × 3 独立审查（共 9 次）→ 收敛为 8 个候选并选出最佳。结论：**原 5 个科学问题无一可原样使用**，收敛为「2 个核心科学问题 + 1 个标准化支撑任务」。淘汰理由均为可查证的硬伤而非风格问题——原 SQ1（缺失模态标定）一般性问题已有 237 篇直接工作（Any2Any 2024、CMI-Net 2023），且"模态越少标定越差"不成立（去掉噪声模态可改善标定）；原 SQ3（乱序镜像收敛）核心机制自 2007 年 Li 等起已成熟（OpenAlex 2406 篇），且"单调收敛到零""到达顺序更新必有残差"两个断言均为假（迟到纠正可使暂态偏差先增大；交换幂等的状态转移与到达顺序无关），后续提出的 δ*(τ) 被判定为把三个不同问题压成一个阈值的伪临界值；原 SQ4 的"断网长度超过撤权传播延迟"是循环定义（断网本身决定传播延迟）；原 SQ5 的"四类证据"不等于四个独立信任域（同进程/同上游/同供电/同固件即同失陷域），且不存在脱离威胁模型的通用最小独立见证集。保留的两个核心问题均显式声明不主张成熟机制的新颖性，贡献限定在现有理论无法直接给出的部分。
+- **同步更正 `docs/02_文献调研/` 的一处新颖性误判**：该文件第十节曾记录"事件时间 vs 处理时间的乱序处理在 794 篇候选中未检出直接相关工作，说明是创新点的差异化空间"。本次独立查新推翻该结论——那是物流域检索池造成的假象，乱序事件流处理是自 2007 年起的成熟领域。已在 `docs/03` 中明确标注该更正，并提示 `\InnovationContent` 现有创新点 3（多时钟事件驱动镜像校正）需重新核对。
 - 新增 `skills/plan-proposal-figures/`：接收科研或基金申报书 PDF，按“Figure Plan → 独立审核、修订与复审 → 全部获批图项的 classic figure spec + 英文 image prompt”三阶段执行；复用 `Academic Paper Analyzer & Figure Planner` 与 `Academic Figure Prompt`，以逐元素原文证据、去重和评审叙事闭环为质量闸门，并明确禁止调用任何图像生成后端。
 - 新增 `scripts/create_project.py`：可在 `projects/` 下从 `NSFC_Local_Clean`（默认）或显式指定的 `NSFC_*` 模板创建独立项目；创建过程校验安全项目名、拒绝覆盖已有目录、过滤 `.latex-cache`、PDF、常见 LaTeX 中间文件与旧工作区文件，并复用 VS Code 配置同步器生成与新目录同名的工作区配置。
 - 新增 `projects/GXNSF_General/`：基于 issue #52 提供的广西自然科学基金面上项目精简“报告正文” DOCX，落地四部分、十五个内容插槽的独立 LaTeX 模板；对齐 A4 页面、页边距、16 pt 字号、28.3 pt 固定行距、两字符首行缩进、仿宋/楷体语义与局部粗体，并提供项目级 XeLaTeX wrapper、VS Code 工作区、Word/PDF 基线与使用边界说明。

@@ -1,0 +1,25 @@
+{
+  "paperId": "af8efcab48da89039da5740d3e32ce72612dba69",
+  "title": "B-DTN7: Browser-based Disruption-tolerant Networking via Bundle Protocol 7",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICT-DM47966.2019.9032944?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICT-DM47966.2019.9032944, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2730665",
+      "name": "Lars Baumgärtner"
+    },
+    {
+      "authorId": "151432653",
+      "name": "Jonas Höchst"
+    },
+    {
+      "authorId": "47038106",
+      "name": "Tobias Meuser"
+    }
+  ],
+  "abstract": "During and after the event of a crisis, means of communication are vital for civilians and professional responders alike. In particular, technologies such as disruption-tolerant networking (DTN) can play a key role to distribute data even under challenging network conditions. Such networks benefit from an increased number of mobile participants since they help distribute messages to remote places. Unfortunately, it is unrealistic to assume that smartphone vendors will ship the necessary software or users will be prepared with the needed apps installed before the crisis happens. Currently, smartphone apps usually need Internet connections to be installed from an app store and/or are very platform-specific, i.e., there is no general device-to-device app distribution. We present a novel solution to let any user with a web browser persistently participate in a DTN network. By leveraging a newly written Bundle Protocol 7 draft implementation in the programming language Rust and deploying it to WebAssembly, we provide a secure and efficient way for backend and frontend DTN networks. The presented solution incorporates classic DTN daemons and access points for web app distribution and bundle synchronization. Through benchmarks, we show the efficient processing of bundles and the feasibility of bundle handling in browsers. All code is available as open-source under a permissive license."
+}

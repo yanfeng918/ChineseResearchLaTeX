@@ -1,0 +1,49 @@
+\justifying
+\NSFCBodyText
+
+\subsubsection{研究方法}
+
+记输入图像为 $I$，场景文字区域为 $\{t_k\}_{k=1}^{K}$，维吾尔语与汉语描述为 $y^{\mathrm{ug}}$、$y^{\mathrm{zh}}$。外观、文字与文本编码器分别给出
+\begin{equation}
+v=f_v(I),\qquad
+s=f_s(\{t_k\}),\qquad
+h^{\ell}=f_{\ell}(y^{\ell}),\quad \ell\in\{\mathrm{ug},\mathrm{zh}\}.
+\end{equation}
+无文字区域时 $s=\mathbf{0}$。融合采用门控残差，使文字通道可关闭：
+\begin{equation}
+z=g(v,s)=v+\alpha\,\sigma\!\left(W[v;s]\right)\odot s,
+\end{equation}
+其中 $\sigma$ 为 Sigmoid，$\alpha$ 为可学习或验证集选择的尺度。检索打分为余弦相似度
+\begin{equation}
+\mathrm{sim}(z,h)=\frac{z^{\top}h}{\|z\|\|h\|}.
+\end{equation}
+对齐使用分通道 InfoNCE\cite{oord2018representation}。以外观—文本为例，批内
+\begin{equation}
+\mathcal{L}_{v\rightarrow t}=-\log\frac{\exp(\mathrm{sim}(v,h^{+})/\tau)}{\sum_{j}\exp(\mathrm{sim}(v,h_j)/\tau)},
+\end{equation}
+文字—文本损失 $\mathcal{L}_{s\rightarrow t}$ 同构。总损失为
+\begin{equation}
+\mathcal{L}=\mathcal{L}_{v\rightarrow t}+\lambda_s\mathcal{L}_{s\rightarrow t}+\lambda_{\mathrm{hub}}\mathcal{L}_{\mathrm{hub}},
+\end{equation}
+其中 $\mathcal{L}_{\mathrm{hub}}$ 将同一图像上的 $h^{\mathrm{ug}}$ 与 $h^{\mathrm{zh}}$ 通过 $z$ 对齐，对应视觉枢纽。$\lambda_s$、$\lambda_{\mathrm{hub}}$ 在验证集选择。主指标定义为
+\begin{equation}
+\mathrm{R@}K=\frac{1}{N}\sum_{i=1}^{N}\mathbf{1}[r_i\le K],\qquad
+\mathrm{MRR}=\frac{1}{N}\sum_{i=1}^{N}\frac{1}{r_i},
+\end{equation}
+$r_i$ 为第 $i$ 个查询的正确匹配秩。理解任务报告准确率。上述公式分别对应表征、融合、优化、枢纽约束与评价，不作装饰。
+
+\subsubsection{技术路线}
+
+研究按“编码—融合—评价”推进。先在 SUST 上得到 $f_s$，在 RUST 上确认文字特征可用；再冻结或低学习率适配 $f_v$ 与文本编码器，训练 $g$ 与对齐损失；最后在 Multi30k-Distant 上做单语与跨语言检索，并在测试图像上执行理解协议。对照顺序固定为：多语 CLIP 零样本、无文字通道、OCR—翻译流水线、完整模型；消融顺序固定为：去 $s$、去门控、去 $\mathcal{L}_{s\rightarrow t}$、去 $\mathcal{L}_{\mathrm{hub}}$。技术路线的可检验节点是三张表：RUST 上文字通道是否可用，Multi30k-Distant 上跨语言检索是否提高，以及去掉 $s$ 后主指标是否回落。任一节点失败，只收缩对应假设，不改写另外两张表的口径。
+
+\subsubsection{实验手段}
+
+数据划分遵循公开协议：Multi30k-Distant 为 Train 29{,}000 / Val 1{,}014 / Test 1{,}000\cite{tayir2024visual,elliott2016multi30k}；SUST 用于 $f_s$ 训练，RUST 按作者划分测试\cite{kong2023sust}。CUTE 与 MC$^2$ 只更新文本编码器，不进入图像测试\cite{zhuang2025cute,zhang2024mc2}。理解题在测试集上编写，问题文本不使用训练集描述原句。实验在课题组现有 GPU 上完成，不从随机初始化训练大型视觉语言模型。
+
+\subsubsection{关键技术}
+
+第一，面向连写、从右向左脚本的维语场景文字区域编码，使 $s$ 对融合稳定。第二，分通道对齐与门控融合，使物体语义与文字语义可分开检验。第三，以图像为枢纽的汉—维互检索协议，以及与翻译流水线的公平对照。
+
+\subsubsection{可行性分析}
+
+理论可行：对比学习、STR 与视觉枢纽均有可复现实现\cite{radford2021learning,fang2021read,huang2020unsupervised}。数据可行：主评测只用公开数据集。条件可行：申请人已有视觉问答与跨模态检索训练经验\cite{yan2024knowledge,xu2026rshr}。主要风险是图像许可、RUST 与 Multi30k 的域差，以及 5 万元经费下的算力上限。应对分别是核验许可后使用合法子集、不把 OCR 准确率解释为检索增益、只训练融合头与轻量适配。若 H1--H3 被证伪，收缩为“文字通道仅对文字主导图像有效”或“枢纽不优于翻译流水线”，不强行维持原主张。

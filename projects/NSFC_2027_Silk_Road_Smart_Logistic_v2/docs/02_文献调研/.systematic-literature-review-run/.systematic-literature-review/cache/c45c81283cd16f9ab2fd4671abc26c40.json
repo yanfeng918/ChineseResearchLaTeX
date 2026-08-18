@@ -1,0 +1,33 @@
+{
+  "paperId": "05d7cd10e174eac904ab04ee631138c83155bfd6",
+  "title": "Time-temperature abuse in the food cold chain: Review of issues, challenges, and recommendations",
+  "openAccessPdf": {
+    "url": "https://pureadmin.qub.ac.uk/ws/files/141088742/Time_Chain.pdf",
+    "status": "GREEN",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.FOODCONT.2018.01.027?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.FOODCONT.2018.01.027, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "88741802",
+      "name": "N. Ndraha"
+    },
+    {
+      "authorId": "4292249",
+      "name": "H. Hsiao"
+    },
+    {
+      "authorId": "66669412",
+      "name": "Jelena V. Vlajic"
+    },
+    {
+      "authorId": "48857304",
+      "name": "Ming-Feng Yang"
+    },
+    {
+      "authorId": "2146353036",
+      "name": "H. Lin"
+    }
+  ],
+  "abstract": "Abstract The management of food cold chains is receiving more and more attention, both in practice and in the scientific literature. In this paper, we review temperature abuse in food cold chains that operate in different countries, as well as cold chain solutions focused on food quality and safety. Our key findings are: 1) temperature management in chilled food products was the main focus of research, the most investigated food categories were meat, dairy, fish, fruit, and vegetable products; 2) most temperature abuse reported is in the cold chains of developed countries, whereas much less is known about the situation in developing countries; 3) recent technology applied in temperature monitoring provides a significant contribution to food cold chain, but, further investigation of its application is necessary to generate appropriate data; and 4) food waste may be reduced with a better temperature management in food cold chains. Additionally, we also investigated a new possibility for future research in food cold chains."
+}

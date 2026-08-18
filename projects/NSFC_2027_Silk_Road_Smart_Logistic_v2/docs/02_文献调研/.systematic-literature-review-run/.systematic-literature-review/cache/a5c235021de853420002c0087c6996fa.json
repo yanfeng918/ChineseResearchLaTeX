@@ -1,0 +1,861 @@
+{
+  "id": "https://openalex.org/W2563339805",
+  "doi": "https://doi.org/10.1109/nems.2016.7758259",
+  "title": "Real-time monitoring via patch-type piezoelectric force sensors for Internet of Thing in logistics",
+  "display_name": "Real-time monitoring via patch-type piezoelectric force sensors for Internet of Thing in logistics",
+  "publication_year": 2016,
+  "publication_date": "2016-04-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2563339805",
+    "doi": "https://doi.org/10.1109/nems.2016.7758259",
+    "mag": "2563339805"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/nems.2016.7758259",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/nems.2016.7758259",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2016 IEEE 11th Annual International Conference on Nano/Micro Engineered and Molecular Systems (NEMS)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5046219750",
+        "display_name": "Cheng‐Hsin Chuang",
+        "orcid": "https://orcid.org/0000-0001-9097-1377"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I92582371",
+          "display_name": "Southern Taiwan University of Science and Technology",
+          "ror": "https://ror.org/0029n1t76",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Cheng-Hsin Chuang",
+      "raw_affiliation_strings": [
+        "Department of Mechanical Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Mechanical Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN",
+          "institution_ids": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5102256039",
+        "display_name": "Wan-Ching Weng",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I92582371",
+          "display_name": "Southern Taiwan University of Science and Technology",
+          "ror": "https://ror.org/0029n1t76",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Wan-Ching Weng",
+      "raw_affiliation_strings": [
+        "Department of Mechanical Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Mechanical Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN",
+          "institution_ids": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5091365037",
+        "display_name": "Wan‐Jung Chang",
+        "orcid": "https://orcid.org/0000-0002-7478-7315"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I92582371",
+          "display_name": "Southern Taiwan University of Science and Technology",
+          "ror": "https://ror.org/0029n1t76",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Wan-Jung Chang",
+      "raw_affiliation_strings": [
+        "Department of Electronic Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electronic Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN",
+          "institution_ids": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5053697470",
+        "display_name": "Da-Huei Lee",
+        "orcid": "https://orcid.org/0000-0002-1870-4634"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I92582371",
+          "display_name": "Southern Taiwan University of Science and Technology",
+          "ror": "https://ror.org/0029n1t76",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Da-Huei Lee",
+      "raw_affiliation_strings": [
+        "Department of Electronic Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN",
+        "Micro And Nano Sensing Technology Lab (MANST Lab), Southern Taiwan University of Science and Technology"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electronic Engineering, Southern Taiwan University of Science and Technology, Tainan, TAIWAN",
+          "institution_ids": [
+            "https://openalex.org/I92582371"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Micro And Nano Sensing Technology Lab (MANST Lab), Southern Taiwan University of Science and Technology",
+          "institution_ids": [
+            "https://openalex.org/I92582371"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I92582371"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.0487,
+  "has_fulltext": false,
+  "cited_by_count": 2,
+  "citation_normalized_percentile": {
+    "value": 0.74265114,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 90,
+    "max": 94
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "325",
+    "last_page": "328"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10986",
+    "display_name": "RFID technology advancements",
+    "score": 0.9991000294685364,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2214",
+      "display_name": "Media Technology"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10986",
+      "display_name": "RFID technology advancements",
+      "score": 0.9991000294685364,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2214",
+        "display_name": "Media Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10326",
+      "display_name": "Indoor and Outdoor Localization Technologies",
+      "score": 0.994700014591217,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12784",
+      "display_name": "Modular Robots and Swarm Intelligence",
+      "score": 0.9916999936103821,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/microcontroller",
+      "display_name": "Microcontroller",
+      "score": 0.7460824251174927
+    },
+    {
+      "id": "https://openalex.org/keywords/upload",
+      "display_name": "Upload",
+      "score": 0.7127360105514526
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.5635707974433899
+    },
+    {
+      "id": "https://openalex.org/keywords/cloud-computing",
+      "display_name": "Cloud computing",
+      "score": 0.49979233741760254
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.445425420999527
+    },
+    {
+      "id": "https://openalex.org/keywords/credibility",
+      "display_name": "Credibility",
+      "score": 0.421764612197876
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-hardware",
+      "display_name": "Computer hardware",
+      "score": 0.3294246196746826
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.1285141110420227
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C173018170",
+      "wikidata": "https://www.wikidata.org/wiki/Q165678",
+      "display_name": "Microcontroller",
+      "level": 2,
+      "score": 0.7460824251174927
+    },
+    {
+      "id": "https://openalex.org/C71901391",
+      "wikidata": "https://www.wikidata.org/wiki/Q7126699",
+      "display_name": "Upload",
+      "level": 2,
+      "score": 0.7127360105514526
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.5635707974433899
+    },
+    {
+      "id": "https://openalex.org/C79974875",
+      "wikidata": "https://www.wikidata.org/wiki/Q483639",
+      "display_name": "Cloud computing",
+      "level": 2,
+      "score": 0.49979233741760254
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.445425420999527
+    },
+    {
+      "id": "https://openalex.org/C2780224610",
+      "wikidata": "https://www.wikidata.org/wiki/Q1530061",
+      "display_name": "Credibility",
+      "level": 2,
+      "score": 0.421764612197876
+    },
+    {
+      "id": "https://openalex.org/C9390403",
+      "wikidata": "https://www.wikidata.org/wiki/Q3966",
+      "display_name": "Computer hardware",
+      "level": 1,
+      "score": 0.3294246196746826
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.1285141110420227
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/nems.2016.7758259",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/nems.2016.7758259",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2016 IEEE 11th Annual International Conference on Nano/Micro Engineered and Molecular Systems (NEMS)",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 5,
+  "referenced_works": [
+    "https://openalex.org/W2043443430",
+    "https://openalex.org/W2067985883",
+    "https://openalex.org/W2075417810",
+    "https://openalex.org/W2094022421",
+    "https://openalex.org/W2136497835"
+  ],
+  "related_works": [
+    "https://openalex.org/W2388687352",
+    "https://openalex.org/W1990162851",
+    "https://openalex.org/W2370187191",
+    "https://openalex.org/W2369854048",
+    "https://openalex.org/W2374291020",
+    "https://openalex.org/W2089988144",
+    "https://openalex.org/W1985703800",
+    "https://openalex.org/W2347749188",
+    "https://openalex.org/W1972388196",
+    "https://openalex.org/W2735419558"
+  ],
+  "abstract_inverted_index": {
+    "We": [
+      0
+    ],
+    "propose": [
+      1
+    ],
+    "the": [
+      2,
+      18,
+      32,
+      35,
+      40,
+      51,
+      55,
+      77,
+      87,
+      116,
+      134,
+      140,
+      164
+    ],
+    "use": [
+      3
+    ],
+    "of": [
+      4,
+      17,
+      34,
+      136
+    ],
+    "simple": [
+      5
+    ],
+    "and": [
+      6,
+      79,
+      102
+    ],
+    "low": [
+      7,
+      64
+    ],
+    "cost": [
+      8
+    ],
+    "piezoelectric": [
+      9
+    ],
+    "based": [
+      10
+    ],
+    "patch": [
+      11,
+      153
+    ],
+    "type": [
+      12,
+      154
+    ],
+    "sensors": [
+      13,
+      59,
+      156
+    ],
+    "that": [
+      14,
+      110,
+      151
+    ],
+    "ensure": [
+      15
+    ],
+    "safety": [
+      16
+    ],
+    "package": [
+      19,
+      36,
+      41
+    ],
+    "while": [
+      20,
+      45,
+      143
+    ],
+    "also": [
+      21,
+      144
+    ],
+    "detecting": [
+      22
+    ],
+    "damage": [
+      23,
+      56
+    ],
+    "during": [
+      24,
+      124
+    ],
+    "shipment.": [
+      25
+    ],
+    "A": [
+      26
+    ],
+    "tear": [
+      27
+    ],
+    "off": [
+      28
+    ],
+    "sensor": [
+      29,
+      48
+    ],
+    "located": [
+      30,
+      49
+    ],
+    "at": [
+      31,
+      50
+    ],
+    "top": [
+      33
+    ],
+    "can": [
+      37,
+      53,
+      112,
+      157
+    ],
+    "identify": [
+      38
+    ],
+    "if": [
+      39
+    ],
+    "has": [
+      42
+    ],
+    "been": [
+      43
+    ],
+    "opened": [
+      44
+    ],
+    "an": [
+      46,
+      96
+    ],
+    "impact": [
+      47
+    ],
+    "bottom": [
+      52
+    ],
+    "monitor": [
+      54
+    ],
+    "suffered.": [
+      57
+    ],
+    "The": [
+      58
+    ],
+    "are": [
+      60
+    ],
+    "connected": [
+      61
+    ],
+    "to": [
+      62,
+      75,
+      85,
+      94,
+      115
+    ],
+    "a": [
+      63,
+      71,
+      80
+    ],
+    "power": [
+      65
+    ],
+    "prototype": [
+      66
+    ],
+    "read": [
+      67
+    ],
+    "out": [
+      68
+    ],
+    "device": [
+      69,
+      99
+    ],
+    "with": [
+      70
+    ],
+    "microcontroller": [
+      72
+    ],
+    "(MCU)": [
+      73
+    ],
+    "unit": [
+      74
+    ],
+    "analyze": [
+      76
+    ],
+    "data": [
+      78,
+      88,
+      104
+    ],
+    "radio": [
+      81
+    ],
+    "frequency": [
+      82
+    ],
+    "(RF)": [
+      83
+    ],
+    "module": [
+      84
+    ],
+    "transfer": [
+      86
+    ],
+    "wirelessly.": [
+      89
+    ],
+    "It": [
+      90
+    ],
+    "would": [
+      91,
+      130
+    ],
+    "be": [
+      92,
+      113,
+      158
+    ],
+    "viable": [
+      93
+    ],
+    "have": [
+      95
+    ],
+    "on-vehicle": [
+      97
+    ],
+    "telematics": [
+      98
+    ],
+    "for": [
+      100,
+      120
+    ],
+    "collecting": [
+      101
+    ],
+    "analyzing": [
+      103
+    ],
+    "from": [
+      105
+    ],
+    "multiple": [
+      106
+    ],
+    "packages": [
+      107
+    ],
+    "wirelessly": [
+      108
+    ],
+    "so": [
+      109
+    ],
+    "it": [
+      111
+    ],
+    "uploaded": [
+      114
+    ],
+    "cloud,": [
+      117
+    ],
+    "thus": [
+      118
+    ],
+    "allowing": [
+      119
+    ],
+    "real": [
+      121
+    ],
+    "time": [
+      122
+    ],
+    "monitoring": [
+      123
+    ],
+    "transport.": [
+      125
+    ],
+    "This": [
+      126
+    ],
+    "logistics": [
+      127,
+      141,
+      162
+    ],
+    "management": [
+      128
+    ],
+    "model": [
+      129
+    ],
+    "aid": [
+      131
+    ],
+    "in": [
+      132,
+      161,
+      163
+    ],
+    "improving": [
+      133
+    ],
+    "quality": [
+      135
+    ],
+    "services": [
+      137
+    ],
+    "provided": [
+      138
+    ],
+    "by": [
+      139
+    ],
+    "company": [
+      142
+    ],
+    "earning": [
+      145
+    ],
+    "consumer": [
+      146
+    ],
+    "credibility.": [
+      147
+    ],
+    "Thus,": [
+      148
+    ],
+    "we": [
+      149
+    ],
+    "believe": [
+      150
+    ],
+    "these": [
+      152
+    ],
+    "force": [
+      155
+    ],
+    "realistically": [
+      159
+    ],
+    "implemented": [
+      160
+    ],
+    "near": [
+      165
+    ],
+    "future.": [
+      166
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

@@ -1,0 +1,261 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          29
+        ]
+      ],
+      "date-time": "2024-10-29T21:09:08Z",
+      "timestamp": 1730236148152,
+      "version": "3.28.0"
+    },
+    "reference-count": 19,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/iccnc.2012.6167525",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2012-08-15T20:14:52Z",
+      "timestamp": 1345061692000
+    },
+    "page": "761-765",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "Transparent and autonomous store-carry-forward communication in Delay Tolerant Networks (DTNs)"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Frank",
+        "family": "Nordemann",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ralf",
+        "family": "Tonjes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/PBEW502E"
+      },
+      {
+        "journal-title": "Omnet++ Simulation Framework [Online]",
+        "year": "0",
+        "key": "17"
+      },
+      {
+        "journal-title": "Inetmanet Framework [Online]",
+        "year": "0",
+        "key": "18"
+      },
+      {
+        "key": "15",
+        "first-page": "92",
+        "article-title": "Qos support in mobile ad hoc networks",
+        "volume": "1",
+        "author": "wu",
+        "year": "2001",
+        "journal-title": "Crossing Boundaries -the GSA Journal of the University of Alberta"
+      },
+      {
+        "key": "16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17487/rfc2475"
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1529282.1529290"
+      },
+      {
+        "key": "14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1080139.1080145"
+      },
+      {
+        "key": "11",
+        "first-page": "239",
+        "author": "lindgren",
+        "year": "2004",
+        "journal-title": "Probabilistic Routing in Intermittently Connected Networks"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2006.228"
+      },
+      {
+        "journal-title": "Custody transfer for reliable delivery in delay tolerant networks",
+        "year": "2003",
+        "author": "fall",
+        "key": "3"
+      },
+      {
+        "journal-title": "Delay-tolerant networking architecture",
+        "year": "2007",
+        "author": "fall",
+        "key": "2"
+      },
+      {
+        "key": "1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/863956.863960"
+      },
+      {
+        "journal-title": "Epidemic Routing for Partially Connected Ad Hoc Networks",
+        "year": "2000",
+        "author": "vahdat",
+        "key": "10"
+      },
+      {
+        "key": "7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MILCOM.2005.1606099"
+      },
+      {
+        "key": "6",
+        "article-title": "Using http for delivery in delay/disruption-tolerant networks",
+        "author": "wood",
+        "year": "2011",
+        "journal-title": "IETF Internet-Draft"
+      },
+      {
+        "key": "5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17487/rfc5050"
+      },
+      {
+        "year": "0",
+        "key": "4"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2006.323440"
+      },
+      {
+        "key": "8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1015467.1015484"
+      }
+    ],
+    "event": {
+      "name": "2012 International Conference on Computing, Networking and Communications (ICNC)",
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            1,
+            30
+          ]
+        ]
+      },
+      "location": "Maui, HI, USA",
+      "end": {
+        "date-parts": [
+          [
+            2012,
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2012 International Conference on Computing, Networking and Communications (ICNC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/6163567/6167355/06167525.pdf?arnumber=6167525",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          21
+        ]
+      ],
+      "date-time": "2017-03-21T15:01:34Z",
+      "timestamp": 1490108494000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/6167525/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "references-count": 19,
+    "URL": "https://doi.org/10.1109/iccnc.2012.6167525",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    }
+  }
+}

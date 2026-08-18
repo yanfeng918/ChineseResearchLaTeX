@@ -1,0 +1,33 @@
+{
+  "paperId": "f1ba78b812fcf6c6f5ce936f93a840cf82c71a0c",
+  "title": "Quality Monitoring Traceability Platform of Agriculture Products Cold Chain Logistics Based on the Internet of Things",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.3303/CET1546087?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3303/CET1546087, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2110466785",
+      "name": "Yanan Li"
+    },
+    {
+      "authorId": "2111035275",
+      "name": "Y. Peng"
+    },
+    {
+      "authorId": "2152839325",
+      "name": "Lei Zhang"
+    },
+    {
+      "authorId": "9078411",
+      "name": "Jiefeng Wei"
+    },
+    {
+      "authorId": "2150383808",
+      "name": "Dan Li"
+    }
+  ],
+  "abstract": null
+}

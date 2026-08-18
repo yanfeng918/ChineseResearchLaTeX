@@ -1,0 +1,877 @@
+{
+  "id": "https://openalex.org/W4297984666",
+  "doi": "https://doi.org/10.1016/j.jii.2022.100393",
+  "title": "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities",
+  "display_name": "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities",
+  "publication_year": 2022,
+  "publication_date": "2022-09-29",
+  "ids": {
+    "openalex": "https://openalex.org/W4297984666",
+    "doi": "https://doi.org/10.1016/j.jii.2022.100393"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.jii.2022.100393",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1016/j.jii.2022.100393",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S2898195457",
+      "display_name": "Journal of Industrial Information Integration",
+      "issn_l": "2452-414X",
+      "issn": [
+        "2452-414X",
+        "2467-964X"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Industrial Information Integration",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://eprints.whiterose.ac.uk/223788/1/Convergence.pdf",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5080018290",
+        "display_name": "Jonas Lopes de Vilas Boas",
+        "orcid": "https://orcid.org/0000-0002-5579-8254"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I71346753",
+          "display_name": "National Institute of Telecommunications",
+          "ror": "https://ror.org/0378w3a30",
+          "country_code": "BR",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I71346753"
+          ]
+        }
+      ],
+      "countries": [
+        "BR"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Jonas L. Vilas-Boas",
+      "raw_affiliation_strings": [
+        "Instituto Nacional de Telecomunicações, João de Camargo 510, Centro, CEP: 37540-000, Santa Rita do Sapucaí, MG, Brazil"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-5579-8254",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Instituto Nacional de Telecomunicações, João de Camargo 510, Centro, CEP: 37540-000, Santa Rita do Sapucaí, MG, Brazil",
+          "institution_ids": [
+            "https://openalex.org/I71346753"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5076776322",
+        "display_name": "Joel J. P. C. Rodrigues",
+        "orcid": "https://orcid.org/0000-0001-8657-3800"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210120471",
+          "display_name": "Instituto de Telecomunicações",
+          "ror": "https://ror.org/02ht4fk33",
+          "country_code": "PT",
+          "type": "nonprofit",
+          "lineage": [
+            "https://openalex.org/I4210120471"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210162190",
+          "display_name": "China University of Petroleum, East China",
+          "ror": "https://ror.org/05gbn2817",
+          "country_code": "CN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210162190"
+          ]
+        }
+      ],
+      "countries": [
+        "CN",
+        "PT"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Joel J.P.C. Rodrigues",
+      "raw_affiliation_strings": [
+        "College of Computer Science and Technology, China University of Petroleum (East China), Qingdao 266555, China",
+        "Instituto de Telecomunicações, Portugal"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-8657-3800",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "College of Computer Science and Technology, China University of Petroleum (East China), Qingdao 266555, China",
+          "institution_ids": [
+            "https://openalex.org/I4210162190"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Instituto de Telecomunicações, Portugal",
+          "institution_ids": [
+            "https://openalex.org/I4210120471"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5002213725",
+        "display_name": "Antônio Marcos Alberti",
+        "orcid": "https://orcid.org/0000-0002-0947-8575"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I71346753",
+          "display_name": "National Institute of Telecommunications",
+          "ror": "https://ror.org/0378w3a30",
+          "country_code": "BR",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I71346753"
+          ]
+        }
+      ],
+      "countries": [
+        "BR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Antonio M. Alberti",
+      "raw_affiliation_strings": [
+        "Instituto Nacional de Telecomunicações, João de Camargo 510, Centro, CEP: 37540-000, Santa Rita do Sapucaí, MG, Brazil"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-0947-8575",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Instituto Nacional de Telecomunicações, João de Camargo 510, Centro, CEP: 37540-000, Santa Rita do Sapucaí, MG, Brazil",
+          "institution_ids": [
+            "https://openalex.org/I71346753"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 3,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5080018290"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I71346753"
+  ],
+  "apc_list": {
+    "value": 2780,
+    "currency": "USD",
+    "value_usd": 2780
+  },
+  "apc_paid": null,
+  "fwci": 21.3277,
+  "has_fulltext": true,
+  "cited_by_count": 179,
+  "citation_normalized_percentile": {
+    "value": 0.99844317,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "31",
+    "issue": null,
+    "first_page": "100393",
+    "last_page": "100393"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T12486",
+    "display_name": "Food Supply Chain Traceability",
+    "score": 0.9980000257492065,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1106",
+      "display_name": "Food Science"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/11",
+      "display_name": "Agricultural and Biological Sciences"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T12486",
+      "display_name": "Food Supply Chain Traceability",
+      "score": 0.9980000257492065,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12583",
+      "display_name": "Food Waste Reduction and Sustainability",
+      "score": 0.9753999710083008,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10763",
+      "display_name": "Digital Transformation in Industry",
+      "score": 0.9599999785423279,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2209",
+        "display_name": "Industrial and Manufacturing Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/convergence",
+      "display_name": "Convergence (economics)",
+      "score": 0.6516333222389221
+    },
+    {
+      "id": "https://openalex.org/keywords/distributed-ledger",
+      "display_name": "Distributed ledger",
+      "score": 0.6221073865890503
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.6136293411254883
+    },
+    {
+      "id": "https://openalex.org/keywords/technological-convergence",
+      "display_name": "Technological convergence",
+      "score": 0.49698570370674133
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.4304131865501404
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.41970184445381165
+    },
+    {
+      "id": "https://openalex.org/keywords/business",
+      "display_name": "Business",
+      "score": 0.4058200716972351
+    },
+    {
+      "id": "https://openalex.org/keywords/commerce",
+      "display_name": "Commerce",
+      "score": 0.3495238423347473
+    },
+    {
+      "id": "https://openalex.org/keywords/biochemical-engineering",
+      "display_name": "Biochemical engineering",
+      "score": 0.3359435200691223
+    },
+    {
+      "id": "https://openalex.org/keywords/process-engineering",
+      "display_name": "Process engineering",
+      "score": 0.32979756593704224
+    },
+    {
+      "id": "https://openalex.org/keywords/manufacturing-engineering",
+      "display_name": "Manufacturing engineering",
+      "score": 0.3206384778022766
+    },
+    {
+      "id": "https://openalex.org/keywords/blockchain",
+      "display_name": "Blockchain",
+      "score": 0.3188980221748352
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.27365440130233765
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.2617092728614807
+    },
+    {
+      "id": "https://openalex.org/keywords/economics",
+      "display_name": "Economics",
+      "score": 0.1278153955936432
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2777303404",
+      "wikidata": "https://www.wikidata.org/wiki/Q759757",
+      "display_name": "Convergence (economics)",
+      "level": 2,
+      "score": 0.6516333222389221
+    },
+    {
+      "id": "https://openalex.org/C2777541363",
+      "wikidata": "https://www.wikidata.org/wiki/Q25110971",
+      "display_name": "Distributed ledger",
+      "level": 3,
+      "score": 0.6221073865890503
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.6136293411254883
+    },
+    {
+      "id": "https://openalex.org/C118916094",
+      "wikidata": "https://www.wikidata.org/wiki/Q2207328",
+      "display_name": "Technological convergence",
+      "level": 2,
+      "score": 0.49698570370674133
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.4304131865501404
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.41970184445381165
+    },
+    {
+      "id": "https://openalex.org/C144133560",
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+      "display_name": "Business",
+      "level": 0,
+      "score": 0.4058200716972351
+    },
+    {
+      "id": "https://openalex.org/C54750564",
+      "wikidata": "https://www.wikidata.org/wiki/Q26643",
+      "display_name": "Commerce",
+      "level": 1,
+      "score": 0.3495238423347473
+    },
+    {
+      "id": "https://openalex.org/C183696295",
+      "wikidata": "https://www.wikidata.org/wiki/Q2487696",
+      "display_name": "Biochemical engineering",
+      "level": 1,
+      "score": 0.3359435200691223
+    },
+    {
+      "id": "https://openalex.org/C21880701",
+      "wikidata": "https://www.wikidata.org/wiki/Q2144042",
+      "display_name": "Process engineering",
+      "level": 1,
+      "score": 0.32979756593704224
+    },
+    {
+      "id": "https://openalex.org/C117671659",
+      "wikidata": "https://www.wikidata.org/wiki/Q11049265",
+      "display_name": "Manufacturing engineering",
+      "level": 1,
+      "score": 0.3206384778022766
+    },
+    {
+      "id": "https://openalex.org/C2779687700",
+      "wikidata": "https://www.wikidata.org/wiki/Q20514253",
+      "display_name": "Blockchain",
+      "level": 2,
+      "score": 0.3188980221748352
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.27365440130233765
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.2617092728614807
+    },
+    {
+      "id": "https://openalex.org/C162324750",
+      "wikidata": "https://www.wikidata.org/wiki/Q8134",
+      "display_name": "Economics",
+      "level": 0,
+      "score": 0.1278153955936432
+    },
+    {
+      "id": "https://openalex.org/C50522688",
+      "wikidata": "https://www.wikidata.org/wiki/Q189833",
+      "display_name": "Economic growth",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.jii.2022.100393",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1016/j.jii.2022.100393",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S2898195457",
+        "display_name": "Journal of Industrial Information Integration",
+        "issn_l": "2452-414X",
+        "issn": [
+          "2452-414X",
+          "2467-964X"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Journal of Industrial Information Integration",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:eprints.whiterose.ac.uk:223788",
+      "is_oa": true,
+      "landing_page_url": "https://orcid.org/0000-0002-0947-8575>",
+      "pdf_url": "https://eprints.whiterose.ac.uk/223788/1/Convergence.pdf",
+      "source": {
+        "id": "https://openalex.org/S4306400854",
+        "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I2800616092",
+        "host_organization_name": "White Rose University Consortium",
+        "host_organization_lineage": [
+          "https://openalex.org/I2800616092"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "Article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:eprints.whiterose.ac.uk:223788",
+    "is_oa": true,
+    "landing_page_url": "https://orcid.org/0000-0002-0947-8575>",
+    "pdf_url": "https://eprints.whiterose.ac.uk/223788/1/Convergence.pdf",
+    "source": {
+      "id": "https://openalex.org/S4306400854",
+      "display_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": "https://openalex.org/I2800616092",
+      "host_organization_name": "White Rose University Consortium",
+      "host_organization_lineage": [
+        "https://openalex.org/I2800616092"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": null,
+    "raw_type": "Article"
+  },
+  "sustainable_development_goals": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G1052767586",
+      "display_name": null,
+      "funder_award_id": "01245.010604/2020‐14",
+      "funder_id": "https://openalex.org/F4320317482",
+      "funder_display_name": "Rede Nacional de Ensino e Pesquisa"
+    },
+    {
+      "id": "https://openalex.org/G2499959356",
+      "display_name": null,
+      "funder_award_id": "UIDB50008/2020",
+      "funder_id": "https://openalex.org/F4320323642",
+      "funder_display_name": "Ministério da Ciência, Tecnologia e Ensino Superior"
+    },
+    {
+      "id": "https://openalex.org/G497239743",
+      "display_name": null,
+      "funder_award_id": "313036/2020-9",
+      "funder_id": "https://openalex.org/F4320322025",
+      "funder_display_name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+    },
+    {
+      "id": "https://openalex.org/G570401112",
+      "display_name": null,
+      "funder_award_id": "431726/2018-3",
+      "funder_id": "https://openalex.org/F4320322025",
+      "funder_display_name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320317482",
+      "display_name": "Rede Nacional de Ensino e Pesquisa",
+      "ror": "https://ror.org/04hztxs45"
+    },
+    {
+      "id": "https://openalex.org/F4320319367",
+      "display_name": "Instituto Nacional de Telecomunicações",
+      "ror": "https://ror.org/0378w3a30"
+    },
+    {
+      "id": "https://openalex.org/F4320322025",
+      "display_name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+      "ror": "https://ror.org/03swz6y49"
+    },
+    {
+      "id": "https://openalex.org/F4320322980",
+      "display_name": "Fundação de Amparo à Pesquisa do Estado de Minas Gerais",
+      "ror": "https://ror.org/00nc55f03"
+    },
+    {
+      "id": "https://openalex.org/F4320323642",
+      "display_name": "Ministério da Ciência, Tecnologia e Ensino Superior",
+      "ror": "https://ror.org/045b9pr88"
+    },
+    {
+      "id": "https://openalex.org/F4320327335",
+      "display_name": "Ministério da Ciência, Tecnologia, Inovações e Comunicações",
+      "ror": null
+    },
+    {
+      "id": "https://openalex.org/F4320334779",
+      "display_name": "Fundação para a Ciência e a Tecnologia",
+      "ror": "https://ror.org/00snfqn58"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": true,
+    "pdf": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4297984666.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4297984666.grobid-xml"
+  },
+  "referenced_works_count": 180,
+  "referenced_works": [
+    "https://openalex.org/W1500436397",
+    "https://openalex.org/W1755227063",
+    "https://openalex.org/W1913502856",
+    "https://openalex.org/W1966180715",
+    "https://openalex.org/W1969344535",
+    "https://openalex.org/W1976782410",
+    "https://openalex.org/W1997549860",
+    "https://openalex.org/W2001925118",
+    "https://openalex.org/W2033380040",
+    "https://openalex.org/W2045031658",
+    "https://openalex.org/W2056184017",
+    "https://openalex.org/W2058263679",
+    "https://openalex.org/W2062882060",
+    "https://openalex.org/W2085718618",
+    "https://openalex.org/W2113663805",
+    "https://openalex.org/W2148333466",
+    "https://openalex.org/W2162126029",
+    "https://openalex.org/W2411030005",
+    "https://openalex.org/W2477357073",
+    "https://openalex.org/W2509049670",
+    "https://openalex.org/W2511059485",
+    "https://openalex.org/W2560557936",
+    "https://openalex.org/W2736821832",
+    "https://openalex.org/W2763376988",
+    "https://openalex.org/W2781507723",
+    "https://openalex.org/W2784792583",
+    "https://openalex.org/W2786470824",
+    "https://openalex.org/W2787932227",
+    "https://openalex.org/W2796004118",
+    "https://openalex.org/W2805552798",
+    "https://openalex.org/W2890916696",
+    "https://openalex.org/W2891345922",
+    "https://openalex.org/W2891479980",
+    "https://openalex.org/W2898312036",
+    "https://openalex.org/W2902527320",
+    "https://openalex.org/W2907683311",
+    "https://openalex.org/W2912637295",
+    "https://openalex.org/W2924000030",
+    "https://openalex.org/W2941702032",
+    "https://openalex.org/W2955298860",
+    "https://openalex.org/W2963828362",
+    "https://openalex.org/W2964132865",
+    "https://openalex.org/W2965537089",
+    "https://openalex.org/W2965761488",
+    "https://openalex.org/W2966318151",
+    "https://openalex.org/W2967114544",
+    "https://openalex.org/W2967981497",
+    "https://openalex.org/W2968827425",
+    "https://openalex.org/W2970093769",
+    "https://openalex.org/W2972955472",
+    "https://openalex.org/W2979852050",
+    "https://openalex.org/W2982936646",
+    "https://openalex.org/W2985861022",
+    "https://openalex.org/W2988134091",
+    "https://openalex.org/W2991440240",
+    "https://openalex.org/W2995946162",
+    "https://openalex.org/W2998028977",
+    "https://openalex.org/W2999241280",
+    "https://openalex.org/W3003667836",
+    "https://openalex.org/W3005644063",
+    "https://openalex.org/W3007107541",
+    "https://openalex.org/W3007306942",
+    "https://openalex.org/W3011748039",
+    "https://openalex.org/W3012296323",
+    "https://openalex.org/W3015631257",
+    "https://openalex.org/W3016428958",
+    "https://openalex.org/W3023266124",
+    "https://openalex.org/W3035815732",
+    "https://openalex.org/W3035883408",
+    "https://openalex.org/W3035976252",
+    "https://openalex.org/W3036600965",
+    "https://openalex.org/W3040016437",
+    "https://openalex.org/W3045405414",
+    "https://openalex.org/W3047155477",
+    "https://openalex.org/W3048002095",
+    "https://openalex.org/W3083918343",
+    "https://openalex.org/W3088400155",
+    "https://openalex.org/W3089252064",
+    "https://openalex.org/W3092327326",
+    "https://openalex.org/W3094297588",
+    "https://openalex.org/W3094717837",
+    "https://openalex.org/W3098698939",
+    "https://openalex.org/W3110867873",
+    "https://openalex.org/W3111859675",
+    "https://openalex.org/W3112314931",
+    "https://openalex.org/W3116341747",
+    "https://openalex.org/W3116656574",
+    "https://openalex.org/W3118910190",
+    "https://openalex.org/W3119768622",
+    "https://openalex.org/W3121901431",
+    "https://openalex.org/W3133607456",
+    "https://openalex.org/W3136653234",
+    "https://openalex.org/W3136753322",
+    "https://openalex.org/W3137711069",
+    "https://openalex.org/W3138191843",
+    "https://openalex.org/W3138616181",
+    "https://openalex.org/W3145728915",
+    "https://openalex.org/W3149018775",
+    "https://openalex.org/W3153056366",
+    "https://openalex.org/W3153775293",
+    "https://openalex.org/W3155874232",
+    "https://openalex.org/W3156028632",
+    "https://openalex.org/W3157239374",
+    "https://openalex.org/W3159877357",
+    "https://openalex.org/W3165735421",
+    "https://openalex.org/W3174303509",
+    "https://openalex.org/W3177280084",
+    "https://openalex.org/W3209398723",
+    "https://openalex.org/W4207055505",
+    "https://openalex.org/W4229499233",
+    "https://openalex.org/W4230846333",
+    "https://openalex.org/W4231101807",
+    "https://openalex.org/W4231631639",
+    "https://openalex.org/W4231739916",
+    "https://openalex.org/W4231846903",
+    "https://openalex.org/W4234604793",
+    "https://openalex.org/W4235177722",
+    "https://openalex.org/W4235773444",
+    "https://openalex.org/W4236443952",
+    "https://openalex.org/W4236821258",
+    "https://openalex.org/W4236888020",
+    "https://openalex.org/W4237628783",
+    "https://openalex.org/W4240303977",
+    "https://openalex.org/W4240751621",
+    "https://openalex.org/W4244142138",
+    "https://openalex.org/W4246568310",
+    "https://openalex.org/W4247058344",
+    "https://openalex.org/W4247603384",
+    "https://openalex.org/W4248042714",
+    "https://openalex.org/W4248175462",
+    "https://openalex.org/W4249824216",
+    "https://openalex.org/W4249909292",
+    "https://openalex.org/W4250106036",
+    "https://openalex.org/W4250465669",
+    "https://openalex.org/W4252656602",
+    "https://openalex.org/W4253253449",
+    "https://openalex.org/W4255192939",
+    "https://openalex.org/W4255952480",
+    "https://openalex.org/W4285751737",
+    "https://openalex.org/W4365806475",
+    "https://openalex.org/W6637618429",
+    "https://openalex.org/W6721266297",
+    "https://openalex.org/W6726689900",
+    "https://openalex.org/W6739584219",
+    "https://openalex.org/W6745211878",
+    "https://openalex.org/W6755109575",
+    "https://openalex.org/W6757973689",
+    "https://openalex.org/W6761300980",
+    "https://openalex.org/W6762525870",
+    "https://openalex.org/W6763177374",
+    "https://openalex.org/W6766778322",
+    "https://openalex.org/W6767095886",
+    "https://openalex.org/W6767714428",
+    "https://openalex.org/W6770383160",
+    "https://openalex.org/W6770775496",
+    "https://openalex.org/W6771590553",
+    "https://openalex.org/W6771610233",
+    "https://openalex.org/W6772211104",
+    "https://openalex.org/W6772320677",
+    "https://openalex.org/W6774309666",
+    "https://openalex.org/W6774661421",
+    "https://openalex.org/W6779392554",
+    "https://openalex.org/W6780424423",
+    "https://openalex.org/W6780719842",
+    "https://openalex.org/W6782067563",
+    "https://openalex.org/W6782407832",
+    "https://openalex.org/W6783455253",
+    "https://openalex.org/W6783857980",
+    "https://openalex.org/W6784334996",
+    "https://openalex.org/W6784680040",
+    "https://openalex.org/W6784995631",
+    "https://openalex.org/W6786143138",
+    "https://openalex.org/W6788950066",
+    "https://openalex.org/W6790621971",
+    "https://openalex.org/W6791736604",
+    "https://openalex.org/W6794117580",
+    "https://openalex.org/W6794459393",
+    "https://openalex.org/W6795002997",
+    "https://openalex.org/W6796018382",
+    "https://openalex.org/W6804193856"
+  ],
+  "related_works": [
+    "https://openalex.org/W4253897078",
+    "https://openalex.org/W4283163498",
+    "https://openalex.org/W2530733036",
+    "https://openalex.org/W3160375675",
+    "https://openalex.org/W4221010187",
+    "https://openalex.org/W4320037181",
+    "https://openalex.org/W3164536060",
+    "https://openalex.org/W4360999634",
+    "https://openalex.org/W4283391561",
+    "https://openalex.org/W4381329650"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 25
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 55
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 64
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 34
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-08-15T07:11:24.734988",
+  "created_date": "2025-10-10T00:00:00"
+}

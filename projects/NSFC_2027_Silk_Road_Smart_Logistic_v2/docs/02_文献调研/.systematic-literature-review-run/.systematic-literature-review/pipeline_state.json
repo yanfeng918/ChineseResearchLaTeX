@@ -1,0 +1,419 @@
+{
+  "version": "2.0",
+  "topic": "面向跨境物流弱网场景的多模态状态感知、可靠传输与数字镜像一致性",
+  "domain": "engineering",
+  "started_at": "2026-08-16T08:50:26.337117",
+  "current_stage": "4_select",
+  "completed_stages": [],
+  "input_files": {},
+  "output_files": {},
+  "config": {
+    "skill_info": {
+      "name": "research-literature-review",
+      "version": "1.1.0",
+      "description": "令人印象深刻的精准、全面的专家级综述；兼容旧名 systematic-literature-review 的 prompt 触发",
+      "author": "Bensz Conan",
+      "category": "writing"
+    },
+    "review_levels": {
+      "default": "premium",
+      "supported": [
+        "premium",
+        "standard",
+        "basic"
+      ],
+      "aliases": {
+        "旗舰级": "premium",
+        "旗舰": "premium",
+        "顶刊级": "premium",
+        "顶刊": "premium",
+        "premium": "premium",
+        "flagship": "premium",
+        "top": "premium",
+        "高级": "premium",
+        "标准级": "standard",
+        "标准": "standard",
+        "standard": "standard",
+        "中等": "standard",
+        "常规": "standard",
+        "快速级": "basic",
+        "快速": "basic",
+        "基础级": "basic",
+        "基础": "basic",
+        "basic": "basic",
+        "入门": "basic",
+        "express": "basic",
+        "fast": "basic",
+        "quick": "basic"
+      }
+    },
+    "search": {
+      "max_results_per_query": 50,
+      "max_total_results": 500,
+      "provider_priority": [
+        "mcp",
+        "openalex",
+        "semantic_scholar",
+        "crossref",
+        "duckduckgo"
+      ],
+      "fallback": {
+        "enabled": true,
+        "max_retries_per_provider": 2,
+        "timeout_per_request": 30,
+        "cache_detections": true,
+        "detection_ttl": 300
+      },
+      "rate_limit_protection": {
+        "enabled": true,
+        "global": {
+          "enabled": true,
+          "max_calls_per_minute": 120,
+          "cooldown_on_limit": 30
+        },
+        "retry": {
+          "enabled": true,
+          "max_retries": 3,
+          "base_delay": 1.0,
+          "max_delay": 60.0,
+          "backoff_factor": 2.0
+        },
+        "health_monitor": {
+          "enabled": true,
+          "failure_threshold": 5,
+          "failure_window": 60,
+          "recovery_check_interval": 300
+        },
+        "semantic_scholar": {
+          "max_calls_per_minute": 80,
+          "max_calls_per_session": 500,
+          "cooldown_on_limit": 60,
+          "fallback_to_openalex": true
+        },
+        "openalex": {
+          "polite_delay": 0.25,
+          "polite_pool_email": null
+        }
+      },
+      "abstract_enrichment": {
+        "enabled": true,
+        "stage": "post_selection",
+        "max_papers_total": 200,
+        "retry_rounds": 3,
+        "backoff_base_seconds": 0.5,
+        "min_abstract_chars": 80,
+        "timeout_seconds": 3
+      },
+      "mcp": {
+        "auto_detect": true,
+        "engines": [
+          "tavily",
+          "searxng",
+          "paper_search",
+          "duckduckgo"
+        ]
+      }
+    },
+    "cache": {
+      "api": {
+        "enabled": true,
+        "mode": "minimal",
+        "ttl_seconds": 86400
+      }
+    },
+    "scoring": {
+      "default_word_range": {
+        "premium": {
+          "min": 10000,
+          "max": 15000
+        },
+        "standard": {
+          "min": 6000,
+          "max": 10000
+        },
+        "basic": {
+          "min": 3000,
+          "max": 6000
+        }
+      },
+      "default_ref_range": {
+        "premium": {
+          "min": 80,
+          "max": 150
+        },
+        "standard": {
+          "min": 50,
+          "max": 90
+        },
+        "basic": {
+          "min": 30,
+          "max": 60
+        }
+      },
+      "high_score_priority": {
+        "fraction_min": 0.6,
+        "fraction_max": 0.8
+      },
+      "score_scale": {
+        "min": 1,
+        "max": 10
+      }
+    },
+    "selection": {
+      "ensure_subtopic_diversity": false,
+      "allow_lower_scores_to_fill": true,
+      "target_refs": {
+        "value": null,
+        "strategy": "midpoint"
+      }
+    },
+    "writing": {
+      "evidence_cards": {
+        "enabled": true,
+        "abstract_max_chars": 800
+      }
+    },
+    "word_budget": {
+      "ratio": {
+        "cited": 0.7,
+        "non_cited": 0.3
+      },
+      "summary_ratio": 0.55,
+      "commentary_ratio": 0.45,
+      "seeds": [
+        17,
+        23,
+        43
+      ],
+      "noise_strength": 0.1,
+      "tolerance": 0.05,
+      "outputs": {
+        "run_pattern": "word_budget_run{n}.csv",
+        "final": "word_budget_final.csv",
+        "non_cited": "non_cited_budget.csv"
+      }
+    },
+    "validation": {
+      "words": {
+        "min": {
+          "premium": 10000,
+          "standard": 6000,
+          "basic": 3000
+        },
+        "max": {
+          "premium": 15000,
+          "standard": 10000,
+          "basic": 6000
+        }
+      },
+      "references": {
+        "min": {
+          "premium": 80,
+          "standard": 50,
+          "basic": 30
+        },
+        "max": {
+          "premium": 150,
+          "standard": 90,
+          "basic": 60
+        }
+      }
+    },
+    "latex": {
+      "template_path": "latex-template/nature-reviews-template.tex",
+      "template_path_override": "",
+      "bibliographystyle": "gbt7714-nsfc",
+      "pandoc_options": [
+        "--standalone",
+        "--pdf-engine=xelatex"
+      ],
+      "chinese_font_support": true,
+      "chinese_font": "SimSun"
+    },
+    "word": {
+      "extract_review_draft_only": true,
+      "heading_level_shift": 2,
+      "include_toc": false,
+      "include_numbering": false
+    },
+    "api": {
+      "semantic_scholar": {
+        "base_url": "https://api.semanticscholar.org/graph/v1",
+        "timeout": 10,
+        "rate_limit": 100
+      },
+      "openalex": {
+        "base_url": "https://api.openalex.org",
+        "timeout": 10,
+        "polite_sleep": 0.25
+      },
+      "crossref": {
+        "base_url": "https://api.crossref.org",
+        "timeout": 10
+      }
+    },
+    "layout": {
+      "hidden_dir_name": ".systematic-literature-review",
+      "artifacts_dir_name": "artifacts",
+      "cache_dir_name": "cache",
+      "reference_dir_name": "reference",
+      "scripts_dir_name": "scripts",
+      "reference_data_extraction_name": "data_extraction_table.md"
+    },
+    "output": {
+      "working_conditions": "{topic}_工作条件.md",
+      "review_tex": "{topic}_review.tex",
+      "references_bib": "{topic}_参考文献.bib",
+      "review_pdf": "{topic}_review.pdf",
+      "review_word": "{topic}_review.docx",
+      "validation_report": "{topic}_验证报告.md",
+      "dedupe_map": "dedupe_map_{topic}.json"
+    },
+    "dedupe": {
+      "title_similarity_threshold": 0.92,
+      "token_jaccard_threshold": 0.8,
+      "year_window": 1
+    },
+    "scripts": {
+      "score_relevance": "scripts/score_relevance.py",
+      "select_references": "scripts/select_references.py",
+      "build_reference_bib": "scripts/build_reference_bib_from_papers.py",
+      "update_data_extraction": "scripts/update_working_conditions_data_extraction.py",
+      "dedupe": "scripts/dedupe_papers.py",
+      "compile_pdf": "scripts/compile_latex_with_bibtex.py",
+      "convert_latex_to_word": "scripts/convert_latex_to_word.py",
+      "openalex_search": "scripts/openalex_search.py",
+      "pipeline_cost": "scripts/pipeline_cost.py"
+    },
+    "cost_tracking": {
+      "enabled": true,
+      "model_providers": [
+        "OpenAI",
+        "Anthropic",
+        "智谱清言"
+      ],
+      "price_cache_max_days": 30,
+      "currency_rates": {
+        "USD_TO_CNY": 7.2
+      }
+    },
+    "multilingual": {
+      "enabled": true,
+      "supported_languages": [
+        {
+          "code": "en",
+          "name": "English",
+          "keywords": [
+            "英语",
+            "英文",
+            "English",
+            "en"
+          ],
+          "latex_packages": [],
+          "ctex_options": null
+        },
+        {
+          "code": "zh",
+          "name": "Chinese",
+          "keywords": [
+            "中文",
+            "汉语",
+            "Chinese",
+            "zh"
+          ],
+          "latex_packages": [
+            "ctex"
+          ],
+          "ctex_options": null
+        },
+        {
+          "code": "ja",
+          "name": "Japanese",
+          "keywords": [
+            "日语",
+            "日文",
+            "Japanese",
+            "ja"
+          ],
+          "latex_packages": [
+            "luatexja-preset"
+          ],
+          "ctex_options": "ja",
+          "font_fallback": "Harano Aji Gothic"
+        },
+        {
+          "code": "de",
+          "name": "German",
+          "keywords": [
+            "德语",
+            "德文",
+            "German",
+            "de",
+            "Deutsch"
+          ],
+          "latex_packages": [
+            "babel",
+            "ngerman"
+          ],
+          "ctex_options": null
+        },
+        {
+          "code": "fr",
+          "name": "French",
+          "keywords": [
+            "法语",
+            "法文",
+            "French",
+            "fr",
+            "Français",
+            "french"
+          ],
+          "latex_packages": [
+            "babel",
+            "french"
+          ],
+          "ctex_options": null
+        },
+        {
+          "code": "es",
+          "name": "Spanish",
+          "keywords": [
+            "西班牙语",
+            "西班牙文",
+            "Spanish",
+            "es",
+            "Español"
+          ],
+          "latex_packages": [
+            "babel",
+            "spanish"
+          ],
+          "ctex_options": null
+        }
+      ],
+      "max_compile_retries": 99,
+      "compile_timeout": 300,
+      "total_timeout": 1800,
+      "translation_prompt_template": "你是一位学术翻译专家。请将以下综述正文翻译为{language}。\n\n要求：\n1. 保持学术语气、专业性和逻辑连贯性\n2. 保留所有 \\cite{key} 引用标记及其位置，绝对不可修改\n3. 保留所有 LaTeX 结构命令（\\section, \\subsection, \\begin{itemize}, \\begin{enumerate} 等）\n4. 保留所有数学公式（$...$, \\[...\\], \\begin{equation} 等）\n5. 保留图表标签和引用（\\label{}, \\ref{} 等）\n6. 专业术语可保留原文或添加译注（如\"Transformer（变换器）\"）\n7. 缩略词首次出现时展开（如\"Artificial Intelligence (AI)\"）\n\n仅输出翻译后的 LaTeX 源码，不要包含任何解释性文字。\n"
+    }
+  },
+  "metrics": {
+    "review_level": "premium",
+    "target_words": {
+      "min": 10000,
+      "max": 15000
+    },
+    "target_refs": {
+      "min": 80,
+      "max": 150
+    },
+    "work_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2027_Silk_Road_Smart_Logistic_v2/docs/02_文献调研/.systematic-literature-review-run",
+    "cache_enabled": true,
+    "timing": {
+      "4_select": {
+        "start": "2026-08-16T08:50:26.337162",
+        "end": "2026-08-16T08:50:26.419011"
+      }
+    }
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "id": "https://openalex.org/W2553789900",
+  "doi": "https://doi.org/10.1109/roedunet.2016.7753236",
+  "title": "Adaptive duty-cycling algorithms for efficient energy harvesting in wireless sensor networks",
+  "display_name": "Adaptive duty-cycling algorithms for efficient energy harvesting in wireless sensor networks",
+  "publication_year": 2016,
+  "publication_date": "2016-09-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2553789900",
+    "doi": "https://doi.org/10.1109/roedunet.2016.7753236",
+    "mag": "2553789900"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/roedunet.2016.7753236",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/roedunet.2016.7753236",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2016 15th RoEduNet Conference: Networking in Education and Research",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5017770713",
+        "display_name": "Dan Tudose",
+        "orcid": "https://orcid.org/0009-0009-8671-6627"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I61641377",
+          "display_name": "Universitatea Națională de Știință și Tehnologie Politehnica București",
+          "ror": "https://ror.org/0558j5q12",
+          "country_code": "RO",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ],
+      "countries": [
+        "RO"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Dan Stefan Tudose",
+      "raw_affiliation_strings": [
+        "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania",
+          "institution_ids": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5035794341",
+        "display_name": "Alexandru Marin",
+        "orcid": "https://orcid.org/0000-0002-8221-1084"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I61641377",
+          "display_name": "Universitatea Națională de Știință și Tehnologie Politehnica București",
+          "ror": "https://ror.org/0558j5q12",
+          "country_code": "RO",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ],
+      "countries": [
+        "RO"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Alexandru Marin",
+      "raw_affiliation_strings": [
+        "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania",
+          "institution_ids": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5113790729",
+        "display_name": "Marius Geanta",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I61641377",
+          "display_name": "Universitatea Națională de Știință și Tehnologie Politehnica București",
+          "ror": "https://ror.org/0558j5q12",
+          "country_code": "RO",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ],
+      "countries": [
+        "RO"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Marius Geanta",
+      "raw_affiliation_strings": [
+        "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Computer Science Department, University Politehnica Bucharest, Bucharest, Romania",
+          "institution_ids": [
+            "https://openalex.org/I61641377"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I61641377"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.6145,
+  "has_fulltext": false,
+  "cited_by_count": 5,
+  "citation_normalized_percentile": {
+    "value": 0.81895221,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 96
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "1",
+    "last_page": "6"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11392",
+    "display_name": "Energy Harvesting in Wireless Networks",
+    "score": 1.0,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2208",
+      "display_name": "Electrical and Electronic Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11392",
+      "display_name": "Energy Harvesting in Wireless Networks",
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11230",
+      "display_name": "Innovative Energy Harvesting Technologies",
+      "score": 0.9984999895095825,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10080",
+      "display_name": "Energy Efficient Wireless Sensor Networks",
+      "score": 0.9905999898910522,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.8821446299552917
+    },
+    {
+      "id": "https://openalex.org/keywords/energy-harvesting",
+      "display_name": "Energy harvesting",
+      "score": 0.7675153017044067
+    },
+    {
+      "id": "https://openalex.org/keywords/duty-cycle",
+      "display_name": "Duty cycle",
+      "score": 0.7216277122497559
+    },
+    {
+      "id": "https://openalex.org/keywords/key-distribution-in-wireless-sensor-networks",
+      "display_name": "Key distribution in wireless sensor networks",
+      "score": 0.691778838634491
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6865434646606445
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.6252673864364624
+    },
+    {
+      "id": "https://openalex.org/keywords/energy",
+      "display_name": "Energy (signal processing)",
+      "score": 0.5666792392730713
+    },
+    {
+      "id": "https://openalex.org/keywords/node",
+      "display_name": "Node (physics)",
+      "score": 0.5573724508285522
+    },
+    {
+      "id": "https://openalex.org/keywords/sensor-node",
+      "display_name": "Sensor node",
+      "score": 0.5257502198219299
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.4712928831577301
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-network",
+      "display_name": "Wireless network",
+      "score": 0.45704182982444763
+    },
+    {
+      "id": "https://openalex.org/keywords/mobile-wireless-sensor-network",
+      "display_name": "Mobile wireless sensor network",
+      "score": 0.4357580244541168
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.3415059447288513
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.17736878991127014
+    },
+    {
+      "id": "https://openalex.org/keywords/electrical-engineering",
+      "display_name": "Electrical engineering",
+      "score": 0.1521994173526764
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.14127182960510254
+    },
+    {
+      "id": "https://openalex.org/keywords/voltage",
+      "display_name": "Voltage",
+      "score": 0.13077843189239502
+    },
+    {
+      "id": "https://openalex.org/keywords/mathematics",
+      "display_name": "Mathematics",
+      "score": 0.05890458822250366
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.8821446299552917
+    },
+    {
+      "id": "https://openalex.org/C101518730",
+      "wikidata": "https://www.wikidata.org/wiki/Q930236",
+      "display_name": "Energy harvesting",
+      "level": 3,
+      "score": 0.7675153017044067
+    },
+    {
+      "id": "https://openalex.org/C199822604",
+      "wikidata": "https://www.wikidata.org/wiki/Q557120",
+      "display_name": "Duty cycle",
+      "level": 3,
+      "score": 0.7216277122497559
+    },
+    {
+      "id": "https://openalex.org/C41971633",
+      "wikidata": "https://www.wikidata.org/wiki/Q6398155",
+      "display_name": "Key distribution in wireless sensor networks",
+      "level": 4,
+      "score": 0.691778838634491
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6865434646606445
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.6252673864364624
+    },
+    {
+      "id": "https://openalex.org/C186370098",
+      "wikidata": "https://www.wikidata.org/wiki/Q442787",
+      "display_name": "Energy (signal processing)",
+      "level": 2,
+      "score": 0.5666792392730713
+    },
+    {
+      "id": "https://openalex.org/C62611344",
+      "wikidata": "https://www.wikidata.org/wiki/Q1062658",
+      "display_name": "Node (physics)",
+      "level": 2,
+      "score": 0.5573724508285522
+    },
+    {
+      "id": "https://openalex.org/C111185680",
+      "wikidata": "https://www.wikidata.org/wiki/Q3866206",
+      "display_name": "Sensor node",
+      "level": 5,
+      "score": 0.5257502198219299
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.4712928831577301
+    },
+    {
+      "id": "https://openalex.org/C108037233",
+      "wikidata": "https://www.wikidata.org/wiki/Q11375",
+      "display_name": "Wireless network",
+      "level": 3,
+      "score": 0.45704182982444763
+    },
+    {
+      "id": "https://openalex.org/C7091991",
+      "wikidata": "https://www.wikidata.org/wiki/Q17149548",
+      "display_name": "Mobile wireless sensor network",
+      "level": 5,
+      "score": 0.4357580244541168
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.3415059447288513
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.17736878991127014
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.1521994173526764
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.14127182960510254
+    },
+    {
+      "id": "https://openalex.org/C165801399",
+      "wikidata": "https://www.wikidata.org/wiki/Q25428",
+      "display_name": "Voltage",
+      "level": 2,
+      "score": 0.13077843189239502
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 0.05890458822250366
+    },
+    {
+      "id": "https://openalex.org/C105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C66938386",
+      "wikidata": "https://www.wikidata.org/wiki/Q633538",
+      "display_name": "Structural engineering",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/roedunet.2016.7753236",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/roedunet.2016.7753236",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2016 15th RoEduNet Conference: Networking in Education and Research",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "display_name": "Affordable and clean energy",
+      "score": 0.8899999856948853,
+      "id": "https://metadata.un.org/sdg/7"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 8,
+  "referenced_works": [
+    "https://openalex.org/W1604992832",
+    "https://openalex.org/W1991781995",
+    "https://openalex.org/W2001308229",
+    "https://openalex.org/W2005280675",
+    "https://openalex.org/W2122021409",
+    "https://openalex.org/W2163900315",
+    "https://openalex.org/W2548972578",
+    "https://openalex.org/W6684257175"
+  ],
+  "related_works": [
+    "https://openalex.org/W2148549110",
+    "https://openalex.org/W1657620843",
+    "https://openalex.org/W2053773563",
+    "https://openalex.org/W1977342959",
+    "https://openalex.org/W1996270948",
+    "https://openalex.org/W2999657022",
+    "https://openalex.org/W2394468541",
+    "https://openalex.org/W3148968234",
+    "https://openalex.org/W4240510232",
+    "https://openalex.org/W2377353089"
+  ],
+  "abstract_inverted_index": {
+    "Wireless": [
+      0
+    ],
+    "sensor": [
+      1,
+      56,
+      75,
+      105
+    ],
+    "nodes": [
+      2
+    ],
+    "which": [
+      3
+    ],
+    "harvest": [
+      4
+    ],
+    "energy": [
+      5,
+      24,
+      72,
+      81
+    ],
+    "from": [
+      6
+    ],
+    "the": [
+      7,
+      22,
+      32,
+      37,
+      51,
+      102,
+      132,
+      137
+    ],
+    "environment": [
+      8
+    ],
+    "have": [
+      9
+    ],
+    "become": [
+      10
+    ],
+    "an": [
+      11
+    ],
+    "alternative": [
+      12
+    ],
+    "to": [
+      13,
+      26,
+      60,
+      71
+    ],
+    "battery": [
+      14
+    ],
+    "powered": [
+      15
+    ],
+    "nodes.": [
+      16
+    ],
+    "Requirements": [
+      17
+    ],
+    "for": [
+      18,
+      113
+    ],
+    "efficient": [
+      19
+    ],
+    "use": [
+      20
+    ],
+    "of": [
+      21,
+      28,
+      39,
+      48,
+      53
+    ],
+    "extracted": [
+      23
+    ],
+    "led": [
+      25
+    ],
+    "development": [
+      27
+    ],
+    "algorithms": [
+      29,
+      67
+    ],
+    "that": [
+      30,
+      101
+    ],
+    "manage": [
+      31
+    ],
+    "node": [
+      33,
+      57
+    ],
+    "functions": [
+      34
+    ],
+    "depending": [
+      35
+    ],
+    "on": [
+      36
+    ],
+    "amount": [
+      38
+    ],
+    "collected": [
+      40
+    ],
+    "energy.": [
+      41
+    ],
+    "This": [
+      42
+    ],
+    "article": [
+      43,
+      99
+    ],
+    "introduces": [
+      44
+    ],
+    "a": [
+      45,
+      54,
+      110
+    ],
+    "novel": [
+      46
+    ],
+    "solution": [
+      47,
+      112
+    ],
+    "adaptively": [
+      49
+    ],
+    "setting": [
+      50
+    ],
+    "duty-cycle": [
+      52
+    ],
+    "wireless": [
+      55,
+      74,
+      104
+    ],
+    "in": [
+      58,
+      78,
+      97,
+      136
+    ],
+    "order": [
+      59
+    ],
+    "maximize": [
+      61
+    ],
+    "its": [
+      62
+    ],
+    "monitoring": [
+      63,
+      114
+    ],
+    "lifetime.": [
+      64
+    ],
+    "The": [
+      65,
+      94,
+      121
+    ],
+    "developed": [
+      66
+    ],
+    "are": [
+      68
+    ],
+    "particularly": [
+      69
+    ],
+    "suited": [
+      70
+    ],
+    "harvesting": [
+      73
+    ],
+    "networks": [
+      76
+    ],
+    "situated": [
+      77
+    ],
+    "locations": [
+      79
+    ],
+    "where": [
+      80,
+      85
+    ],
+    "is": [
+      82
+    ],
+    "scarce": [
+      83
+    ],
+    "or": [
+      84,
+      91
+    ],
+    "harvested": [
+      86
+    ],
+    "power": [
+      87
+    ],
+    "exhibits": [
+      88
+    ],
+    "ample": [
+      89
+    ],
+    "diurnal": [
+      90
+    ],
+    "seasonal": [
+      92
+    ],
+    "variation.": [
+      93
+    ],
+    "results": [
+      95
+    ],
+    "described": [
+      96,
+      135
+    ],
+    "this": [
+      98
+    ],
+    "shows": [
+      100
+    ],
+    "proposed": [
+      103
+    ],
+    "network": [
+      106
+    ],
+    "architecture": [
+      107
+    ],
+    "can": [
+      108
+    ],
+    "represent": [
+      109
+    ],
+    "viable": [
+      111
+    ],
+    "indoor": [
+      115
+    ],
+    "environments": [
+      116
+    ],
+    "characterized": [
+      117
+    ],
+    "by": [
+      118
+    ],
+    "low": [
+      119
+    ],
+    "illumination.": [
+      120
+    ],
+    "setup": [
+      122
+    ],
+    "was": [
+      123
+    ],
+    "tested": [
+      124
+    ],
+    "and": [
+      125
+    ],
+    "validated": [
+      126
+    ],
+    "under": [
+      127
+    ],
+    "various": [
+      128
+    ],
+    "lighting": [
+      129
+    ],
+    "conditions,": [
+      130
+    ],
+    "using": [
+      131
+    ],
+    "adaptive": [
+      133
+    ],
+    "techniques": [
+      134
+    ],
+    "paper.": [
+      138
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2020,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

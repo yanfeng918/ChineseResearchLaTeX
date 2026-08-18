@@ -1,0 +1,12 @@
+\justifying
+\NSFCBodyText
+
+本项目的特色在于把维吾尔语场景文字从识别正确率问题改写为跨语言图像理解问题，并在公开数据上用消融与对照把主张限制为可证伪命题。
+
+\subsubsubsection{创新点一：场景文字作为跨语言图像理解的第三通道}
+
+已有维语 STR 工作提供 SUST/RUST 并报告识别准确率\cite{kong2023sust,yang2024collaborative}，TextVQA 则主要在英文图像上证明“读字”的必要\cite{singh2019towards}。本项目检验的是：把维语文字区域特征送入融合表征后，汉$\leftrightarrow$维检索与理解是否提高。验收看去掉文字通道后 Recall@5 或准确率是否下降，而不是只看 OCR 分数。
+
+\subsubsubsection{创新点二：低资源维—汉条件下的分通道融合与视觉枢纽评价}
+
+多语 CLIP 很少以维吾尔语为主测语言\cite{chen2023altclip,chen2023mclip}；Multi30k-Distant 上的视觉枢纽面向翻译\cite{tayir2024visual}。本项目在同一图像上联合外观、文字与维/汉描述，用分通道 InfoNCE 和枢纽损失服务检索，并以翻译流水线为对照。若枢纽不优于翻译，则如实降级该模块。

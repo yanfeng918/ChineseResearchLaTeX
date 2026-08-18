@@ -1,0 +1,283 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          5
+        ]
+      ],
+      "date-time": "2024-12-05T05:34:05Z",
+      "timestamp": 1733376845550,
+      "version": "3.30.1"
+    },
+    "reference-count": 11,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2008,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2008-05-01T00:00:00Z",
+          "timestamp": 1209600000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2008,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2008-05-01T00:00:00Z",
+          "timestamp": 1209600000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2008,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1109/ths.2008.4534429",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          5,
+          29
+        ]
+      ],
+      "date-time": "2008-05-29T18:27:08Z",
+      "timestamp": 1212085628000
+    },
+    "page": "90-95",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "Enhancing Cargo Container Security during Transportation: A Mesh Networking Based Approach"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Su Jin",
+        "family": "Kim",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: su.kim@asu.edu"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Guofeng",
+        "family": "Deng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: guofeng.deng@asu.edu"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sandeep K.S.",
+        "family": "Gupta",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: sandeep.gupta@asu.edu"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mary",
+        "family": "Murphy-Hoye",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Intel Corp., Chandler, AZ 85226, USA. Email: mary.c.murphy-hoye@intel.com"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "journal-title": "Crossbow moteview user's manual",
+        "year": "0",
+        "key": "3"
+      },
+      {
+        "journal-title": "SBO4 1-005 Marine Asset Tag Tracking System",
+        "year": "2004",
+        "key": "2"
+      },
+      {
+        "year": "0",
+        "author": "crossbow telosb",
+        "key": "10"
+      },
+      {
+        "journal-title": "HSARPA BAA 04-06 Advanced Container Security Device Program",
+        "year": "2004",
+        "key": "1"
+      },
+      {
+        "key": "7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMSWA.2008.4554493"
+      },
+      {
+        "year": "0",
+        "key": "6"
+      },
+      {
+        "journal-title": "Dangerous goods",
+        "year": "2008",
+        "key": "5"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2005.1509968"
+      },
+      {
+        "journal-title": "CrossBow MicaZ 2 4GHz",
+        "year": "0",
+        "key": "9"
+      },
+      {
+        "journal-title": "CrossBow SPB400- Stargate Gateway",
+        "year": "0",
+        "key": "8"
+      },
+      {
+        "year": "0",
+        "key": "11"
+      }
+    ],
+    "event": {
+      "name": "2008 IEEE Conference on Technologies for Homeland Security",
+      "start": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            12
+          ]
+        ]
+      },
+      "location": "Waltham, MA, USA",
+      "end": {
+        "date-parts": [
+          [
+            2008,
+            5,
+            13
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2008 IEEE Conference on Technologies for Homeland Security"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/4524948/4534402/04534429.pdf?arnumber=4534429",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          4
+        ]
+      ],
+      "date-time": "2024-12-04T19:00:28Z",
+      "timestamp": 1733338828000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/4534429/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          5
+        ]
+      ]
+    },
+    "references-count": 11,
+    "URL": "https://doi.org/10.1109/ths.2008.4534429",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2008,
+          5
+        ]
+      ]
+    }
+  }
+}

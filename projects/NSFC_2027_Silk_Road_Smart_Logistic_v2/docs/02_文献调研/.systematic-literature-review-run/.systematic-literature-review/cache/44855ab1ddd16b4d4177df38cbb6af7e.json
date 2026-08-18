@@ -1,0 +1,21 @@
+{
+  "paperId": "f87e20e228f84a13bca8ed99943a447f068d3787",
+  "title": "IoT-Cache: Caching Transient Data at the IoT Edge",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/LCN53696.2022.9843211?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/LCN53696.2022.9843211, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2202427615",
+      "name": "Surabhi Sharma"
+    },
+    {
+      "authorId": "145551043",
+      "name": "S. K. Peddoju"
+    }
+  ],
+  "abstract": "Explosive traffic and service delay are bottlenecks in providing Quality of Service (QoS) to the Internet of Things (IoT) end-users. Edge caching emerged as a promising solution, but data transiency, limited caching capability, and network volatility trigger the dimensionality curse. Therefore, we propose a Deep Reinforcement Learning (DRL) approach, named IoT-Cache, to caching action optimization. An appropriate reward function is designed to increase the cache hit rate and optimize the overall data-cache allocation. A practical scenario with inconsistent requests and data item sizes is considered, and a Distributed Proximal Policy Optimization (DPPO) algorithm is proposed, enabling IoT edge nodes to learn caching policy. RLlib framework is used to scale the training in distributed Publish/Subscribe network. The performance evaluation demonstrates a significant improvement and faster convergence for IoT-Cache cost function, a trade-off between communication cost and data freshness over existing DRL and baseline caching solutions."
+}

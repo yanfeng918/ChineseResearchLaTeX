@@ -1,0 +1,21 @@
+{
+  "paperId": "f418eb4fc007116685b3af35708100b8aa06145f",
+  "title": "Research on the Application of Digital Twin Technology in Intelligent Information System of Modern Logistics Warehouse",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICDSCA59871.2023.10392494?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICDSCA59871.2023.10392494, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2281644490",
+      "name": "Na Li"
+    },
+    {
+      "authorId": "2280464253",
+      "name": "Jie Sun"
+    }
+  ],
+  "abstract": "A 3D warehouse digital twin modeling system is constructed on the platform of Siemens PDPS system. The business logic and control signal in the process of loading and unloading are designed. The \"end to end\" reinforcement learning algorithm is used to realize the cooperative optimal of inventory management and distribution decision for emergencies. In this way, a balance is found between maintenance costs and the stability of the logistics system. The process optimization and simulation test of the system are carried out by using Siemens auxiliary software. The feasibility of the digital twin model is verified, and the operation cost of the warehouse is effectively reduced. It improves the efficiency of maintenance and debugging."
+}

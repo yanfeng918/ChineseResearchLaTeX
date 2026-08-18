@@ -1,0 +1,33 @@
+{
+  "paperId": "1e646d7f160fe74fdec66f99829e8930ebd27442",
+  "title": "Air Cargo Monitoring: A Robust Tamper Detection and Reliable Communication System",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SIES.2018.8442087?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SIES.2018.8442087, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "152863254",
+      "name": "Rathinamala Vijay"
+    },
+    {
+      "authorId": "2107340482",
+      "name": "H. Singh"
+    },
+    {
+      "authorId": "145408131",
+      "name": "T. V. Prabhakar"
+    },
+    {
+      "authorId": "2060581011",
+      "name": "Vinod Hegde"
+    },
+    {
+      "authorId": "51231051",
+      "name": "Pavan Shigehalli"
+    }
+  ],
+  "abstract": "We describe the design and implementation of a reliable IOT based cargo monitoring system which consists of a heterogeneous communication network with wireless and power-line networks to deliver data to an unmanned surveillance centre. We design robust video analytics based tamper detection algorithm that runs on a low cost add-on infrastructure to existing surveillance camera systems to detect a tamper. Our experimental results show that communication reliability is up at 99.35% when we choose a channel adaptively based on average received SINR estimates. Tamper detection of net and strap has a 98% reliability at 2 metre distance from the camera."
+}

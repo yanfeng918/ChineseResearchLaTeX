@@ -1,0 +1,784 @@
+{
+  "id": "https://openalex.org/W2069381991",
+  "doi": "https://doi.org/10.1016/j.jfoodeng.2009.02.004",
+  "title": "RFID smart tag for traceability and cold chain monitoring of foods: Demonstration in an intercontinental fresh fish logistic chain",
+  "display_name": "RFID smart tag for traceability and cold chain monitoring of foods: Demonstration in an intercontinental fresh fish logistic chain",
+  "publication_year": 2009,
+  "publication_date": "2009-02-15",
+  "ids": {
+    "openalex": "https://openalex.org/W2069381991",
+    "doi": "https://doi.org/10.1016/j.jfoodeng.2009.02.004",
+    "mag": "2069381991"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.jfoodeng.2009.02.004",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1016/j.jfoodeng.2009.02.004",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S137362610",
+      "display_name": "Journal of Food Engineering",
+      "issn_l": "0260-8774",
+      "issn": [
+        "0260-8774",
+        "1873-5770"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Food Engineering",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5047001604",
+        "display_name": "E. Abad",
+        "orcid": "https://orcid.org/0000-0003-2605-1140"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136402",
+          "display_name": "Tekniker",
+          "ror": "https://ror.org/033vryh36",
+          "country_code": "ES",
+          "type": "nonprofit",
+          "lineage": [
+            "https://openalex.org/I4210136402"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210165188",
+          "display_name": "Fundación Teknon",
+          "ror": "https://ror.org/05r9t2t65",
+          "country_code": "ES",
+          "type": "nonprofit",
+          "lineage": [
+            "https://openalex.org/I4210165188"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "E. Abad",
+      "raw_affiliation_strings": [
+        "Micro and Nanotechnology Department, Fundación Tekniker, Avda. Otaola 20, 20600 Eibar, Guipúzcoa, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Micro and Nanotechnology Department, Fundación Tekniker, Avda. Otaola 20, 20600 Eibar, Guipúzcoa, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136402",
+            "https://openalex.org/I4210165188"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5080002573",
+        "display_name": "F. Palacio",
+        "orcid": "https://orcid.org/0000-0002-2210-1801"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I71999127",
+          "display_name": "Universitat de Barcelona",
+          "ror": "https://ror.org/021018s57",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "F. Palacio",
+      "raw_affiliation_strings": [
+        "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5016161311",
+        "display_name": "M. Nuin",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "M. Nuin",
+      "raw_affiliation_strings": [
+        "Food Research Division, Fundación Azti, Parque Tecnológico de Vizcaya, Astondoa Bidea. Edif. 609, 48160 Derio, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Food Research Division, Fundación Azti, Parque Tecnológico de Vizcaya, Astondoa Bidea. Edif. 609, 48160 Derio, Spain",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5057153695",
+        "display_name": "Alberto Gonzalez Zárate",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "A. González de Zárate",
+      "raw_affiliation_strings": [
+        "Food Research Division, Fundación Azti, Parque Tecnológico de Vizcaya, Astondoa Bidea. Edif. 609, 48160 Derio, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Food Research Division, Fundación Azti, Parque Tecnológico de Vizcaya, Astondoa Bidea. Edif. 609, 48160 Derio, Spain",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5062156650",
+        "display_name": "A. Juarros",
+        "orcid": "https://orcid.org/0000-0003-3884-7736"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136402",
+          "display_name": "Tekniker",
+          "ror": "https://ror.org/033vryh36",
+          "country_code": "ES",
+          "type": "nonprofit",
+          "lineage": [
+            "https://openalex.org/I4210136402"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210165188",
+          "display_name": "Fundación Teknon",
+          "ror": "https://ror.org/05r9t2t65",
+          "country_code": "ES",
+          "type": "nonprofit",
+          "lineage": [
+            "https://openalex.org/I4210165188"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "A. Juarros",
+      "raw_affiliation_strings": [
+        "Micro and Nanotechnology Department, Fundación Tekniker, Avda. Otaola 20, 20600 Eibar, Guipúzcoa, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Micro and Nanotechnology Department, Fundación Tekniker, Avda. Otaola 20, 20600 Eibar, Guipúzcoa, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136402",
+            "https://openalex.org/I4210165188"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5031412061",
+        "display_name": "José María Gómez",
+        "orcid": "https://orcid.org/0000-0003-0173-5888"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I71999127",
+          "display_name": "Universitat de Barcelona",
+          "ror": "https://ror.org/021018s57",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "J.M. Gómez",
+      "raw_affiliation_strings": [
+        "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5064169996",
+        "display_name": "Santiago Marco",
+        "orcid": "https://orcid.org/0000-0003-2663-2965"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I71999127",
+          "display_name": "Universitat de Barcelona",
+          "ror": "https://ror.org/021018s57",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "S. Marco",
+      "raw_affiliation_strings": [
+        "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electronics, Universitat de Barcelona, Martí i Franqués 1, 08028 Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I71999127"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5047001604"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I4210136402",
+    "https://openalex.org/I4210165188"
+  ],
+  "apc_list": {
+    "value": 4060,
+    "currency": "USD",
+    "value_usd": 4060
+  },
+  "apc_paid": null,
+  "fwci": 34.7812,
+  "has_fulltext": false,
+  "cited_by_count": 541,
+  "citation_normalized_percentile": {
+    "value": 0.9989581,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "93",
+    "issue": "4",
+    "first_page": "394",
+    "last_page": "399"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T12486",
+    "display_name": "Food Supply Chain Traceability",
+    "score": 0.9998999834060669,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1106",
+      "display_name": "Food Science"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/11",
+      "display_name": "Agricultural and Biological Sciences"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T12486",
+      "display_name": "Food Supply Chain Traceability",
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11957",
+      "display_name": "Food Safety and Hygiene",
+      "score": 0.9907000064849854,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1106",
+        "display_name": "Food Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11667",
+      "display_name": "Advanced Chemical Sensor Technologies",
+      "score": 0.9890000224113464,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2204",
+        "display_name": "Biomedical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/traceability",
+      "display_name": "Traceability",
+      "score": 0.9066125750541687
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6130761504173279
+    },
+    {
+      "id": "https://openalex.org/keywords/reading",
+      "display_name": "Reading (process)",
+      "score": 0.6020604372024536
+    },
+    {
+      "id": "https://openalex.org/keywords/visibility",
+      "display_name": "Visibility",
+      "score": 0.5684143900871277
+    },
+    {
+      "id": "https://openalex.org/keywords/microcontroller",
+      "display_name": "Microcontroller",
+      "score": 0.5346450209617615
+    },
+    {
+      "id": "https://openalex.org/keywords/data-logger",
+      "display_name": "Data logger",
+      "score": 0.5121634006500244
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.5027892589569092
+    },
+    {
+      "id": "https://openalex.org/keywords/cold-chain",
+      "display_name": "Cold chain",
+      "score": 0.4600865840911865
+    },
+    {
+      "id": "https://openalex.org/keywords/radio-frequency-identification",
+      "display_name": "Radio-frequency identification",
+      "score": 0.4289083778858185
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.4165270924568176
+    },
+    {
+      "id": "https://openalex.org/keywords/database",
+      "display_name": "Database",
+      "score": 0.3650609254837036
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.34339380264282227
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.26225507259368896
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.20919597148895264
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.17771857976913452
+    },
+    {
+      "id": "https://openalex.org/keywords/software-engineering",
+      "display_name": "Software engineering",
+      "score": 0.13065794110298157
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C153876917",
+      "wikidata": "https://www.wikidata.org/wiki/Q899704",
+      "display_name": "Traceability",
+      "level": 2,
+      "score": 0.9066125750541687
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6130761504173279
+    },
+    {
+      "id": "https://openalex.org/C554936623",
+      "wikidata": "https://www.wikidata.org/wiki/Q199657",
+      "display_name": "Reading (process)",
+      "level": 2,
+      "score": 0.6020604372024536
+    },
+    {
+      "id": "https://openalex.org/C123403432",
+      "wikidata": "https://www.wikidata.org/wiki/Q654068",
+      "display_name": "Visibility",
+      "level": 2,
+      "score": 0.5684143900871277
+    },
+    {
+      "id": "https://openalex.org/C173018170",
+      "wikidata": "https://www.wikidata.org/wiki/Q165678",
+      "display_name": "Microcontroller",
+      "level": 2,
+      "score": 0.5346450209617615
+    },
+    {
+      "id": "https://openalex.org/C159234332",
+      "wikidata": "https://www.wikidata.org/wiki/Q1172468",
+      "display_name": "Data logger",
+      "level": 2,
+      "score": 0.5121634006500244
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.5027892589569092
+    },
+    {
+      "id": "https://openalex.org/C2780114722",
+      "wikidata": "https://www.wikidata.org/wiki/Q592197",
+      "display_name": "Cold chain",
+      "level": 2,
+      "score": 0.4600865840911865
+    },
+    {
+      "id": "https://openalex.org/C204222849",
+      "wikidata": "https://www.wikidata.org/wiki/Q104954",
+      "display_name": "Radio-frequency identification",
+      "level": 2,
+      "score": 0.4289083778858185
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.4165270924568176
+    },
+    {
+      "id": "https://openalex.org/C77088390",
+      "wikidata": "https://www.wikidata.org/wiki/Q8513",
+      "display_name": "Database",
+      "level": 1,
+      "score": 0.3650609254837036
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.34339380264282227
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.26225507259368896
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.20919597148895264
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.17771857976913452
+    },
+    {
+      "id": "https://openalex.org/C115903868",
+      "wikidata": "https://www.wikidata.org/wiki/Q80993",
+      "display_name": "Software engineering",
+      "level": 1,
+      "score": 0.13065794110298157
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C120665830",
+      "wikidata": "https://www.wikidata.org/wiki/Q14620",
+      "display_name": "Optics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.jfoodeng.2009.02.004",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1016/j.jfoodeng.2009.02.004",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S137362610",
+        "display_name": "Journal of Food Engineering",
+        "issn_l": "0260-8774",
+        "issn": [
+          "0260-8774",
+          "1873-5770"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Journal of Food Engineering",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 8,
+  "referenced_works": [
+    "https://openalex.org/W1997281956",
+    "https://openalex.org/W2039015468",
+    "https://openalex.org/W2055045067",
+    "https://openalex.org/W2102888795",
+    "https://openalex.org/W2523169779",
+    "https://openalex.org/W4235547147",
+    "https://openalex.org/W4285719527",
+    "https://openalex.org/W6727374812"
+  ],
+  "related_works": [
+    "https://openalex.org/W4312138033",
+    "https://openalex.org/W2235546141",
+    "https://openalex.org/W4249545720",
+    "https://openalex.org/W2378709054",
+    "https://openalex.org/W4380301954",
+    "https://openalex.org/W3126954492",
+    "https://openalex.org/W2370001102",
+    "https://openalex.org/W2782273007",
+    "https://openalex.org/W2803090313",
+    "https://openalex.org/W2044041230"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 17
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 23
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 27
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 34
+    },
+    {
+      "year": 2021,
+      "cited_by_count": 38
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 44
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 44
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 44
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 33
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 36
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 33
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 41
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 35
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 27
+    }
+  ],
+  "updated_date": "2026-08-16T07:02:28.622633",
+  "created_date": "2025-10-10T00:00:00"
+}

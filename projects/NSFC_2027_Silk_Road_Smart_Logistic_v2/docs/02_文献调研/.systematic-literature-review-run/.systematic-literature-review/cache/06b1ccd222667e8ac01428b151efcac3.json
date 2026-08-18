@@ -1,0 +1,295 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ],
+      "date-time": "2024-09-06T03:34:55Z",
+      "timestamp": 1725593695615
+    },
+    "reference-count": 14,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2019-10-01T00:00:00Z",
+          "timestamp": 1569888000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2019-10-01T00:00:00Z",
+          "timestamp": 1569888000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2019-10-01T00:00:00Z",
+          "timestamp": 1569888000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1109/wimob.2019.8923146",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2019-12-06T07:28:23Z",
+      "timestamp": 1575617303000
+    },
+    "page": "65-70",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "A Demonstrative Study on the Potential of Store-Carry-Forward-Based Contents Delivery by a Beverage Supplier’s Logistics Network"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Yoshito",
+        "family": "Watanabe",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wei",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yozo",
+        "family": "Shoji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "article-title": "Gigabit Wireless LANs : An overview of IEEE 802 . 11ac and 802 . 11ad",
+        "year": "2013",
+        "author": "perahia",
+        "key": "ref10"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2011.5751287"
+      },
+      {
+        "year": "0",
+        "key": "ref12",
+        "article-title": "&#x00A9; OpenStreetMap contributors"
+      },
+      {
+        "journal-title": "IEEE Std 802 15 4g-2012 (Amendment to IEEE Std 802 15 4-2011)",
+        "article-title": "IEEE Standard for Local and Metropolitan Area Networks- Part 15.4: Low-Rate Wireless Personal Area Networks (LR-WPANs) Amendment 3: Physical Layer (PHY) Specifications for Low-Data-Rate, Wireless, Smart Metering Utility Networks",
+        "year": "2012",
+        "key": "ref13"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSP.2007.323282"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2016.2536059"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2006.248176"
+      },
+      {
+        "key": "ref6",
+        "article-title": "A community-based IoT service platform to locally disseminate socially-valuable data",
+        "author": "shoji",
+        "year": "2019",
+        "journal-title": "IEEE World Forum on Internet of Things (WF-IoT)"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.2016.7437024"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2008.080603"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2018.2808356"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2017.1500527CM"
+      },
+      {
+        "article-title": "Cellphone Bills Go Up for First Time in Nearly Two Years - WSJ",
+        "year": "0",
+        "author": "krouse",
+        "key": "ref1"
+      },
+      {
+        "key": "ref9",
+        "first-page": "125",
+        "article-title": "Available bandwidth vs. achievable throughput measurements in 4G mobile networks",
+        "author": "aceto",
+        "year": "2018",
+        "journal-title": "2018 14th International Conference on Network and Service Management (CNSM)"
+      }
+    ],
+    "event": {
+      "name": "2019 International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)",
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            21
+          ]
+        ]
+      },
+      "location": "Barcelona, Spain",
+      "end": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            23
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2019 International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/8913409/8923119/08923146.pdf?arnumber=8923146",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2022-07-17T21:46:36Z",
+      "timestamp": 1658094396000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/8923146/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    },
+    "references-count": 14,
+    "URL": "https://doi.org/10.1109/wimob.2019.8923146",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  }
+}

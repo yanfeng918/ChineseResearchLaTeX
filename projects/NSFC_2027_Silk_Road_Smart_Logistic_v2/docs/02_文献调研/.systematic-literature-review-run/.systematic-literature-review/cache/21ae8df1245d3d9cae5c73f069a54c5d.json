@@ -1,0 +1,25 @@
+{
+  "paperId": "d8642cf396dd29f1c2ef4f8555bc32314b609c57",
+  "title": "The Intelligent Container - A Cognitive Sensor Net for Fruit Logistics",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.5220/0004705703510359",
+    "status": "GOLD",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5220/0004705703510359?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5220/0004705703510359, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "145506068",
+      "name": "W. Lang"
+    },
+    {
+      "authorId": "31270402",
+      "name": "S. Janßen"
+    },
+    {
+      "authorId": "2335910",
+      "name": "R. Jedermann"
+    }
+  ],
+  "abstract": "The Intelligent Container is a wireless sensor network for the control of perishable goods such as vegetables, fruits or meat. Several data interpretation tools are implemented in the sensor nodes. These can estimate temperature related quality losses, supervise sensor deployment and measurement intervals, and detect malfunctioning sensors. In order to retrieve information about the ripening directly from the transported fruits, the ripening indicator ethylene is detected using a newly developed highly sensitive and selective gas measurement system. The intelligent container allows the realisation of the new logistic paradigm of dynamic FEFO (First Expire First Out): the remaining life time—estimated shelf life—of the transported fruits is used to control the logistic process. This paper describes the developments performed on the Intelligent Container by the University of Bremen and its partners."
+}

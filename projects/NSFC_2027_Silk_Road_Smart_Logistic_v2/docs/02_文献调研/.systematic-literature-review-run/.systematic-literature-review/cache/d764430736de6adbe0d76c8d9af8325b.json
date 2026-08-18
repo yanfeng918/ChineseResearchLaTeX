@@ -1,0 +1,12 @@
+{
+  "paperId": "abeb94ef76e980ca181667c04b30d672c0696045",
+  "title": "Delay-Tolerant Networking TCP Convergence-Layer Protocol Version 4",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17487/rfc9174?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17487/rfc9174, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [],
+  "abstract": "This document describes a revised protocol for the TCP-based\nconvergence layer (TCPCL) for Delay-Tolerant Networking (DTN). The\nprotocol revision is based on implementation issues in the original\nTCPCL Version 3 of RFC7242 and updates to the Bundle Protocol\ncontents, encodings, and convergence layer requirements in Bundle\nProtocol Version 7. Specifically, the TCPCLv4 uses CBOR-encoded BPv7\nbundles as its service data unit being transported and provides a\nreliable transport of such bundles. Several new IANA registries are\ndefined for TCPCLv4 which define some behaviors inherited from TCPCLv3\nbut with updated encodings and/or semantics."
+}

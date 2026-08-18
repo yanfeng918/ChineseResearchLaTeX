@@ -1,0 +1,19 @@
+{"queries":[
+{"query":"cross-border logistics internet of things sensing monitoring","rationale":"核心查询"},
+{"query":"cargo tamper detection container security electronic seal","rationale":"防拆防盗核心"},
+{"query":"multimodal sensor fusion cargo transport condition monitoring","rationale":"多模态融合方法变体"},
+{"query":"vibration tilt sensor freight anomaly detection logistics","rationale":"传感模态同义词变体"},
+{"query":"package damage detection visual inspection deep learning logistics","rationale":"破损图像识别"},
+{"query":"edge computing industrial internet of things logistics inference","rationale":"边缘计算"},
+{"query":"delay tolerant networking store carry forward bundle protocol","rationale":"弱网容迟传输"},
+{"query":"intermittent connectivity opportunistic data upload IoT sensor network","rationale":"间歇连接同义词"},
+{"query":"reliable data transmission low bandwidth cellular IoT retransmission caching","rationale":"可靠传输限定词"},
+{"query":"energy efficient low power IoT duty cycling battery lifetime sensor node","rationale":"低功耗管理"},
+{"query":"digital twin logistics warehouse port terminal state synchronization","rationale":"数字镜像核心"},
+{"query":"digital twin consistency update latency cyber physical synchronization","rationale":"镜像一致性与延迟"},
+{"query":"out-of-order event processing late arriving data event time watermark stream","rationale":"乱序迟到数据（docs/01 标记的查新缺口）"},
+{"query":"clock synchronization drift distributed sensor network timestamp","rationale":"多时钟校正"},
+{"query":"warehouse environmental monitoring temperature humidity smoke access control IoT","rationale":"仓储环境监测"},
+{"query":"supply chain visibility resilience EPCIS traceability event data","rationale":"供应链可见性与韧性"},
+{"query":"missing modality confidence calibration uncertainty multimodal degradation","rationale":"缺失模态与置信度标定（查新缺口）"}
+]}

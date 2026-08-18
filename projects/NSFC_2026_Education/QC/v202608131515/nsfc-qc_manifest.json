@@ -1,0 +1,9 @@
+{
+  "run_id": "v202608131515",
+  "deliver_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education/QC/v202608131515",
+  "workspace_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education/.bensz-api/skills/nsfc-qc/v202608131515",
+  "workspace_dir_rel_from_deliver": "../../.bensz-api/skills/nsfc-qc/v202608131515",
+  "run_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education/.bensz-api/skills/nsfc-qc/v202608131515",
+  "project_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education",
+  "note": "deliver_dir contains copied final outputs; full reproducibility data (snapshot/artifacts/.parallel-vibe/final) is in workspace_dir."
+}

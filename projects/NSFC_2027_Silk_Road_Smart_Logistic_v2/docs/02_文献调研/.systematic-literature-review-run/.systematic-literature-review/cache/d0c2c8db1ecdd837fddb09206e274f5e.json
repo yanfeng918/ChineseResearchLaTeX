@@ -1,0 +1,1042 @@
+{
+  "id": "https://openalex.org/W2163449247",
+  "doi": "https://doi.org/10.1109/ths.2008.4534429",
+  "title": "Enhancing Cargo Container Security during Transportation: A Mesh Networking Based Approach",
+  "display_name": "Enhancing Cargo Container Security during Transportation: A Mesh Networking Based Approach",
+  "publication_year": 2008,
+  "publication_date": "2008-05-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2163449247",
+    "doi": "https://doi.org/10.1109/ths.2008.4534429",
+    "mag": "2163449247"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/ths.2008.4534429",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/ths.2008.4534429",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2008 IEEE Conference on Technologies for Homeland Security",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5105594008",
+        "display_name": "Su Jin Kim",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I55732556",
+          "display_name": "Arizona State University",
+          "ror": "https://ror.org/03efmqc40",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Su Jin Kim",
+      "raw_affiliation_strings": [
+        "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: su.kim@asu.edu",
+        "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: su.kim@asu.edu",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5082911466",
+        "display_name": "Guofeng Deng",
+        "orcid": "https://orcid.org/0009-0001-7685-9941"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I55732556",
+          "display_name": "Arizona State University",
+          "ror": "https://ror.org/03efmqc40",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Guofeng Deng",
+      "raw_affiliation_strings": [
+        "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: guofeng.deng@asu.edu",
+        "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: guofeng.deng@asu.edu",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5100601792",
+        "display_name": "Sandeep K. S. Gupta",
+        "orcid": "https://orcid.org/0000-0002-6108-5584"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I55732556",
+          "display_name": "Arizona State University",
+          "ror": "https://ror.org/03efmqc40",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Sandeep K.S. Gupta",
+      "raw_affiliation_strings": [
+        "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: sandeep.gupta@asu.edu",
+        "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Impact Lab, Department of Computer Science and Engineering, Arizona State University, Tempe, Arizona 85281, USA. Email: sandeep.gupta@asu.edu",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Impact Laboratory, Department of Computer Science and Engineering, Arizona State University, Tempe, AZ, USA",
+          "institution_ids": [
+            "https://openalex.org/I55732556"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5022958479",
+        "display_name": "Mary Murphy-Hoye",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I1343180700",
+          "display_name": "Intel (United States)",
+          "ror": "https://ror.org/01ek73717",
+          "country_code": "US",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I1343180700"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Mary Murphy-Hoye",
+      "raw_affiliation_strings": [
+        "Intel Corp., Chandler, AZ 85226, USA. Email: mary.c.murphy-hoye@intel.com",
+        "Intel Corporation, Chandler, AZ, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Intel Corp., Chandler, AZ 85226, USA. Email: mary.c.murphy-hoye@intel.com",
+          "institution_ids": [
+            "https://openalex.org/I1343180700"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Intel Corporation, Chandler, AZ, USA",
+          "institution_ids": [
+            "https://openalex.org/I1343180700"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 1.7821,
+  "has_fulltext": false,
+  "cited_by_count": 19,
+  "citation_normalized_percentile": {
+    "value": 0.86333345,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 97
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "90",
+    "last_page": "95"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10246",
+    "display_name": "Mobile Ad Hoc Networks",
+    "score": 0.9986000061035156,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10246",
+      "display_name": "Mobile Ad Hoc Networks",
+      "score": 0.9986000061035156,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10761",
+      "display_name": "Vehicular Ad Hoc Networks (VANETs)",
+      "score": 0.9968000054359436,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2208",
+        "display_name": "Electrical and Electronic Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10986",
+      "display_name": "RFID technology advancements",
+      "score": 0.9950000047683716,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2214",
+        "display_name": "Media Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.7494863867759705
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6146865487098694
+    },
+    {
+      "id": "https://openalex.org/keywords/scalability",
+      "display_name": "Scalability",
+      "score": 0.559382438659668
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.5482627749443054
+    },
+    {
+      "id": "https://openalex.org/keywords/server",
+      "display_name": "Server",
+      "score": 0.48344215750694275
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-mesh-network",
+      "display_name": "Wireless mesh network",
+      "score": 0.4767283499240875
+    },
+    {
+      "id": "https://openalex.org/keywords/flexibility",
+      "display_name": "Flexibility (engineering)",
+      "score": 0.45282042026519775
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.4483998417854309
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.4279754161834717
+    },
+    {
+      "id": "https://openalex.org/keywords/mesh-networking",
+      "display_name": "Mesh networking",
+      "score": 0.41463911533355713
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-network",
+      "display_name": "Wireless network",
+      "score": 0.3319721817970276
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.3088960647583008
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.23667004704475403
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.19059333205223083
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.18880099058151245
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.7494863867759705
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6146865487098694
+    },
+    {
+      "id": "https://openalex.org/C48044578",
+      "wikidata": "https://www.wikidata.org/wiki/Q727490",
+      "display_name": "Scalability",
+      "level": 2,
+      "score": 0.559382438659668
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.5482627749443054
+    },
+    {
+      "id": "https://openalex.org/C93996380",
+      "wikidata": "https://www.wikidata.org/wiki/Q44127",
+      "display_name": "Server",
+      "level": 2,
+      "score": 0.48344215750694275
+    },
+    {
+      "id": "https://openalex.org/C31548570",
+      "wikidata": "https://www.wikidata.org/wiki/Q6453712",
+      "display_name": "Wireless mesh network",
+      "level": 4,
+      "score": 0.4767283499240875
+    },
+    {
+      "id": "https://openalex.org/C2780598303",
+      "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+      "display_name": "Flexibility (engineering)",
+      "level": 2,
+      "score": 0.45282042026519775
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.4483998417854309
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.4279754161834717
+    },
+    {
+      "id": "https://openalex.org/C123691950",
+      "wikidata": "https://www.wikidata.org/wiki/Q25552104",
+      "display_name": "Mesh networking",
+      "level": 3,
+      "score": 0.41463911533355713
+    },
+    {
+      "id": "https://openalex.org/C108037233",
+      "wikidata": "https://www.wikidata.org/wiki/Q11375",
+      "display_name": "Wireless network",
+      "level": 3,
+      "score": 0.3319721817970276
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.3088960647583008
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.23667004704475403
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.19059333205223083
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.18880099058151245
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1109/ths.2008.4534429",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/ths.2008.4534429",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2008 IEEE Conference on Technologies for Homeland Security",
+      "raw_type": "proceedings-article"
+    },
+    {
+      "id": "pmh:oai:CiteSeerX.psu:10.1.1.139.6432",
+      "is_oa": false,
+      "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.139.6432",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "http://impact.asu.edu/publication/SmartContainer_HST08.pdf",
+      "raw_type": "text"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320307102",
+      "display_name": "Intel Corporation",
+      "ror": "https://ror.org/01ek73717"
+    },
+    {
+      "id": "https://openalex.org/F4320321764",
+      "display_name": "Ministerio de Educación, Cultura y Deporte",
+      "ror": "https://ror.org/03nc27g21"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 2,
+  "referenced_works": [
+    "https://openalex.org/W2046980951",
+    "https://openalex.org/W2139841400"
+  ],
+  "related_works": [
+    "https://openalex.org/W4319302693",
+    "https://openalex.org/W2003342631",
+    "https://openalex.org/W2088516601",
+    "https://openalex.org/W2088748318",
+    "https://openalex.org/W3183712563",
+    "https://openalex.org/W2145803479",
+    "https://openalex.org/W3113618853",
+    "https://openalex.org/W1994262480",
+    "https://openalex.org/W2963761638",
+    "https://openalex.org/W2208184322"
+  ],
+  "abstract_inverted_index": {
+    "Cargo": [
+      0
+    ],
+    "containers": [
+      1,
+      33,
+      110
+    ],
+    "which": [
+      2,
+      143
+    ],
+    "transport": [
+      3
+    ],
+    "90": [
+      4
+    ],
+    "percent": [
+      5,
+      26
+    ],
+    "of": [
+      6,
+      13,
+      20,
+      27,
+      90,
+      109,
+      117,
+      127,
+      137
+    ],
+    "the": [
+      7,
+      11,
+      14,
+      18,
+      28,
+      35,
+      49,
+      64,
+      70,
+      135,
+      145,
+      151,
+      163
+    ],
+    "world's": [
+      8
+    ],
+    "trade": [
+      9
+    ],
+    "transit": [
+      10
+    ],
+    "countries": [
+      12
+    ],
+    "world": [
+      15
+    ],
+    "daily.": [
+      16
+    ],
+    "Despite": [
+      17
+    ],
+    "vulnerability": [
+      19
+    ],
+    "cargo": [
+      21,
+      32,
+      65,
+      176
+    ],
+    "containers,": [
+      22
+    ],
+    "only": [
+      23
+    ],
+    "about": [
+      24
+    ],
+    "5": [
+      25
+    ],
+    "over": [
+      29
+    ],
+    "10": [
+      30
+    ],
+    "million": [
+      31
+    ],
+    "entering": [
+      34
+    ],
+    "U.S.": [
+      36
+    ],
+    "each": [
+      37
+    ],
+    "year": [
+      38
+    ],
+    "can": [
+      39,
+      80,
+      114,
+      167
+    ],
+    "be": [
+      40
+    ],
+    "inspected": [
+      41
+    ],
+    "now.": [
+      42
+    ],
+    "Our": [
+      43
+    ],
+    "primary": [
+      44
+    ],
+    "goal": [
+      45
+    ],
+    "is": [
+      46,
+      144
+    ],
+    "to": [
+      47,
+      62,
+      85,
+      156,
+      162,
+      174
+    ],
+    "develop": [
+      48
+    ],
+    "smart": [
+      50
+    ],
+    "container": [
+      51,
+      66,
+      101,
+      124,
+      177
+    ],
+    "security": [
+      52,
+      178
+    ],
+    "system": [
+      53
+    ],
+    "using": [
+      54
+    ],
+    "RFID": [
+      55
+    ],
+    "and": [
+      56,
+      77,
+      88,
+      150,
+      159,
+      172
+    ],
+    "Wireless": [
+      57
+    ],
+    "Sensor": [
+      58
+    ],
+    "Networks": [
+      59
+    ],
+    "in": [
+      60,
+      154
+    ],
+    "order": [
+      61,
+      155
+    ],
+    "enhance": [
+      63
+    ],
+    "security.": [
+      67
+    ],
+    "In": [
+      68,
+      92
+    ],
+    "addition,": [
+      69
+    ],
+    "end-to-end": [
+      71
+    ],
+    "visibility": [
+      72
+    ],
+    "via": [
+      73,
+      121
+    ],
+    "this": [
+      74,
+      93,
+      122
+    ],
+    "networked": [
+      75
+    ],
+    "tracking": [
+      76
+    ],
+    "sensing": [
+      78
+    ],
+    "capability": [
+      79
+    ],
+    "bring": [
+      81
+    ],
+    "additional": [
+      82
+    ],
+    "commercial": [
+      83
+    ],
+    "benefits": [
+      84
+    ],
+    "supply": [
+      86
+    ],
+    "chain": [
+      87,
+      89
+    ],
+    "custody.": [
+      91
+    ],
+    "paper,": [
+      94
+    ],
+    "we": [
+      95,
+      113,
+      133
+    ],
+    "first": [
+      96
+    ],
+    "propose": [
+      97
+    ],
+    "a": [
+      98,
+      107
+    ],
+    "dynamic": [
+      99
+    ],
+    "mesh": [
+      100,
+      123
+    ],
+    "network": [
+      102,
+      125
+    ],
+    "among": [
+      103
+    ],
+    "neighboring": [
+      104
+    ],
+    "containers.": [
+      105
+    ],
+    "Since": [
+      106
+    ],
+    "group": [
+      108
+    ],
+    "moves": [
+      111
+    ],
+    "together,": [
+      112
+    ],
+    "take": [
+      115
+    ],
+    "advantages": [
+      116
+    ],
+    "interaction": [
+      118
+    ],
+    "between": [
+      119,
+      147
+    ],
+    "them": [
+      120
+    ],
+    "instead": [
+      126
+    ],
+    "focusing": [
+      128
+    ],
+    "an": [
+      129
+    ],
+    "individual": [
+      130
+    ],
+    "container.": [
+      131
+    ],
+    "Second,": [
+      132
+    ],
+    "introduce": [
+      134
+    ],
+    "concept": [
+      136
+    ],
+    "Mobile": [
+      138
+    ],
+    "Edge": [
+      139
+    ],
+    "Computing": [
+      140
+    ],
+    "Devices": [
+      141
+    ],
+    "(MECD)": [
+      142
+    ],
+    "interface": [
+      146
+    ],
+    "distributed": [
+      148
+    ],
+    "sensors": [
+      149
+    ],
+    "end": [
+      152,
+      164
+    ],
+    "server": [
+      153
+    ],
+    "reduce": [
+      157
+    ],
+    "processing": [
+      158
+    ],
+    "bandwidth": [
+      160
+    ],
+    "requirements": [
+      161
+    ],
+    "servers.": [
+      165
+    ],
+    "MECDs": [
+      166
+    ],
+    "give": [
+      168
+    ],
+    "scalability,": [
+      169
+    ],
+    "flexibility,": [
+      170
+    ],
+    "reliability,": [
+      171
+    ],
+    "cost-efficiency": [
+      173
+    ],
+    "our": [
+      175
+    ],
+    "system.": [
+      179
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2021,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 3
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

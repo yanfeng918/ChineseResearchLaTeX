@@ -1,0 +1,52 @@
+{
+  "queries": [
+    {
+      "query": "multimodal learning educational resources higher education",
+      "rationale": "多模态教育资源的表示、组织与高校应用"
+    },
+    {
+      "query": "multimodal educational content generation quality evaluation",
+      "rationale": "生成式教育内容的质量验证与风险"
+    },
+    {
+      "query": "curriculum knowledge graph educational resource construction",
+      "rationale": "课程知识组织、知识图谱与资源构建"
+    },
+    {
+      "query": "multimodal knowledge graph construction provenance evidence",
+      "rationale": "多模态资源的证据关联与可追溯构建"
+    },
+    {
+      "query": "cross modal semantic alignment text image chart code retrieval",
+      "rationale": "文本、图像、图表和代码的跨模态语义对齐"
+    },
+    {
+      "query": "vision language model educational content generation",
+      "rationale": "视觉语言模型用于教育内容构建"
+    },
+    {
+      "query": "evidence grounded generation factuality verification retrieval augmented generation",
+      "rationale": "来源约束、事实性与生成内容核验"
+    },
+    {
+      "query": "quality assurance educational digital resources expert evaluation",
+      "rationale": "数字教育资源质量控制与专家评价"
+    },
+    {
+      "query": "inter rater reliability educational resource evaluation Krippendorff alpha",
+      "rationale": "教育资源专家评价的一致性指标"
+    },
+    {
+      "query": "renewable energy engineering education curriculum resources higher education",
+      "rationale": "新能源高校课程与工程教育场景"
+    },
+    {
+      "query": "photovoltaic wind power forecasting education laboratory course",
+      "rationale": "光伏、风电和功率预测课程资源场景"
+    },
+    {
+      "query": "CLIP contrastive language image pre training cross modal retrieval",
+      "rationale": "跨模态表示与检索的奠基方法"
+    }
+  ]
+}

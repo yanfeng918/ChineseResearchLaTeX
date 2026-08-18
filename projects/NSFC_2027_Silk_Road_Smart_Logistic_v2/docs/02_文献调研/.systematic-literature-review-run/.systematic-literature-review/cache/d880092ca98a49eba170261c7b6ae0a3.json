@@ -1,0 +1,25 @@
+{
+  "paperId": "ebfc65b1d43750211b316cda204e546fbe538213",
+  "title": "Delay-Tolerant Networking TCP Convergence-Layer Protocol",
+  "openAccessPdf": {
+    "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc7242.txt.pdf",
+    "status": "GOLD",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.17487/RFC7242?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.17487/RFC7242, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2278118",
+      "name": "M. Demmer"
+    },
+    {
+      "authorId": "144380603",
+      "name": "J. Ott"
+    },
+    {
+      "authorId": "2001539",
+      "name": "S. Perreault"
+    }
+  ],
+  "abstract": "This document describes the protocol for the TCP-based convergence\nlayer for Delay-Tolerant Networking (DTN). It is the product of the\nIRTF's DTN Research Group (DTNRG)."
+}

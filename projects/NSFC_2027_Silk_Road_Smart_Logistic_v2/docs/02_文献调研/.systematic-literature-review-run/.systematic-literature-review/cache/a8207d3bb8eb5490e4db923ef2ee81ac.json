@@ -1,0 +1,25 @@
+{
+  "paperId": "325c14b3bb35f7a152b4117c923280002536fd95",
+  "title": "Adaptive Carry-Store Forward Scheme in Two-Hop Vehicular Delay Tolerant Networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/LCOMM.2013.022713.130123?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/LCOMM.2013.022713.130123, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2118290098",
+      "name": "Di Wu"
+    },
+    {
+      "authorId": "47412639",
+      "name": "Gang Zhu"
+    },
+    {
+      "authorId": "143603755",
+      "name": "Dongmei Zhao"
+    }
+  ],
+  "abstract": null
+}

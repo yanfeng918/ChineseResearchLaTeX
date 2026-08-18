@@ -1,0 +1,296 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ],
+      "date-time": "2024-09-06T13:48:41Z",
+      "timestamp": 1725630521154
+    },
+    "reference-count": 27,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1109/wcnc.2009.4917536",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2009-05-11T19:30:02Z",
+      "timestamp": 1242070202000
+    },
+    "page": "1-6",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "A Prioritization-Based Application-Oriented Broadcast Protocol for Delay-Tolerant Networks"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Huazhi",
+        "family": "Gong",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "JongWon",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICPP.2003.1240619"
+      },
+      {
+        "key": "17",
+        "article-title": "rapid: reliable probabilistic dissemination in wireless adhoc networks",
+        "author": "drabkin",
+        "year": "2007",
+        "journal-title": "26th International Symposium on Reliable Distributed Systems"
+      },
+      {
+        "journal-title": "Differential services for the Internet",
+        "year": "1999",
+        "author": "kilkki",
+        "key": "18"
+      },
+      {
+        "key": "15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/HICSS.2003.1174853"
+      },
+      {
+        "key": "16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2002.1019424"
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2003.1209244"
+      },
+      {
+        "key": "14",
+        "article-title": "on the reduction of broadcast redundancy in mobile ad hod networks",
+        "author": "peng",
+        "year": "2000",
+        "journal-title": "Proc MobiHoc"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/513800.513825"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/346855.346865"
+      },
+      {
+        "journal-title": "Java in Simulation Time/Scalable Wireless Ad hoc Network Simulator",
+        "year": "0",
+        "key": "21"
+      },
+      {
+        "key": "20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1631/jzus.2007.A1990"
+      },
+      {
+        "journal-title": "The network simulator 2",
+        "year": "0",
+        "key": "22"
+      },
+      {
+        "journal-title": "DTNSim2",
+        "year": "0",
+        "key": "23"
+      },
+      {
+        "key": "24",
+        "article-title": "increasing reality for dtn protocol simulations",
+        "author": "kera?nen",
+        "year": "2007",
+        "journal-title": "Technical Report"
+      },
+      {
+        "journal-title": "Real mobility traces",
+        "year": "0",
+        "key": "25"
+      },
+      {
+        "journal-title": "Vanet info",
+        "year": "0",
+        "key": "26"
+      },
+      {
+        "journal-title": "Simulation of Urban Mobility",
+        "year": "0",
+        "key": "27"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2006.228"
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2003.1204759"
+      },
+      {
+        "year": "0",
+        "key": "10"
+      },
+      {
+        "year": "0",
+        "key": "1"
+      },
+      {
+        "key": "7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/605397.605408"
+      },
+      {
+        "key": "6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2004.1260729"
+      },
+      {
+        "year": "0",
+        "key": "5"
+      },
+      {
+        "key": "4",
+        "article-title": "low-cost communication for rural internet kiosks using mechanical backhaul",
+        "author": "seth",
+        "year": "2006",
+        "journal-title": "Proc ACM MobiCom"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2003.1204759"
+      },
+      {
+        "key": "8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ROBOT.2006.1642013"
+      }
+    ],
+    "event": {
+      "name": "2009 IEEE Wireless Communications and Networking Conference",
+      "start": {
+        "date-parts": [
+          [
+            2009,
+            4,
+            5
+          ]
+        ]
+      },
+      "location": "Budapest, Hungary",
+      "end": {
+        "date-parts": [
+          [
+            2009,
+            4,
+            8
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2009 IEEE Wireless Communications and Networking Conference"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/4917480/4917481/04917536.pdf?arnumber=4917536",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2017-03-17T18:18:45Z",
+      "timestamp": 1489774725000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/4917536/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    },
+    "references-count": 27,
+    "URL": "https://doi.org/10.1109/wcnc.2009.4917536",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          4
+        ]
+      ]
+    }
+  }
+}

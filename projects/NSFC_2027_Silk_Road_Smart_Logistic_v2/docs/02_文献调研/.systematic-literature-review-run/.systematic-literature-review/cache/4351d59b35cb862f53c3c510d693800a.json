@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          14
+        ]
+      ],
+      "date-time": "2026-03-14T02:06:16Z",
+      "timestamp": 1773453976459,
+      "version": "3.50.1"
+    },
+    "reference-count": 0,
+    "publisher": "Korean Society for Agricultural Machinery",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Biosystems Engineering"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2008,
+          2,
+          25
+        ]
+      ]
+    },
+    "DOI": "10.5307/jbe.2008.33.1.045",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          27
+        ]
+      ],
+      "date-time": "2011-06-27T05:41:05Z",
+      "timestamp": 1309153265000
+    },
+    "page": "45-50",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Vibration Characteristics of Packaged Freight and Packaged Apples by Random Vibration Input"
+    ],
+    "prefix": "10.5307",
+    "volume": "33",
+    "author": [
+      {
+        "given": "Ghi-Seok",
+        "family": "Kim",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hyun-Mo",
+        "family": "Jung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ki-Bok",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Man-Soo",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "3259",
+    "container-title": [
+      "Journal of Biosystems Engineering"
+    ],
+    "original-title": [
+      "랜덤 진동에 의한 포장화물 및 포장된 사과의 진동특성"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://ocean.kisti.re.kr/downfile/crosscheck/ksagm/JAKO200818259605854.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          15
+        ]
+      ],
+      "date-time": "2016-12-15T02:35:14Z",
+      "timestamp": 1481769314000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://koreascience.or.kr/journal/view.jsp?kj=NOGGB5&py=2008&vnc=v33n1&sp=45"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          2,
+          25
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2008,
+            2,
+            25
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.5307/jbe.2008.33.1.045",
+    "relation": {},
+    "ISSN": [
+      "1738-1266"
+    ],
+    "issn-type": [
+      {
+        "value": "1738-1266",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2008,
+          2,
+          25
+        ]
+      ]
+    }
+  }
+}

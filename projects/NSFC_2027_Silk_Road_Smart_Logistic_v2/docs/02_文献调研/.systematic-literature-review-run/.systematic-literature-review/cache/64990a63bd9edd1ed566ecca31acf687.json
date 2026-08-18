@@ -1,0 +1,1013 @@
+{
+  "id": "https://openalex.org/W4393087172",
+  "doi": "https://doi.org/10.1016/j.comnet.2024.110350",
+  "title": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+  "display_name": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+  "publication_year": 2024,
+  "publication_date": "2024-03-22",
+  "ids": {
+    "openalex": "https://openalex.org/W4393087172",
+    "doi": "https://doi.org/10.1016/j.comnet.2024.110350"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.comnet.2024.110350",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1016/j.comnet.2024.110350",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S63392143",
+      "display_name": "Computer Networks",
+      "issn_l": "1389-1286",
+      "issn": [
+        "1389-1286",
+        "1872-7069"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Computer Networks",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "green",
+    "oa_url": "https://hal.science/hal-05547474",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5041565980",
+        "display_name": "Akram Hakiri",
+        "orcid": "https://orcid.org/0000-0001-7151-5499"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I144889574",
+          "display_name": "Université de Pau et des Pays de l'Adour",
+          "ror": "https://ror.org/01frn9647",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I144889574"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I179097149",
+          "display_name": "University of Carthage",
+          "ror": "https://ror.org/057x6za15",
+          "country_code": "TN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I179097149"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210155520",
+          "display_name": "Mateur Higher School of Agriculture",
+          "ror": "https://ror.org/053y1tm43",
+          "country_code": "TN",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210155520",
+            "https://openalex.org/I4210166358"
+          ]
+        }
+      ],
+      "countries": [
+        "FR",
+        "TN"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Akram Hakiri",
+      "raw_affiliation_strings": [
+        "University of Carthage, SYSCOM ENIT, ISSAT Mateur, Route de Tabarka, Mateur, 7030, Tunisia",
+        "University of Pau & Pays de l’Adour, College STEE, 1 All. du Parc Montaury, Anglet, 64600, France",
+        "University of Pau & Pays de l'Adour, College STEE, 1 All. du Parc Montaury, Anglet, 64600, France"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-7151-5499",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "University of Carthage, SYSCOM ENIT, ISSAT Mateur, Route de Tabarka, Mateur, 7030, Tunisia",
+          "institution_ids": [
+            "https://openalex.org/I179097149",
+            "https://openalex.org/I4210155520"
+          ]
+        },
+        {
+          "raw_affiliation_string": "University of Pau & Pays de l’Adour, College STEE, 1 All. du Parc Montaury, Anglet, 64600, France",
+          "institution_ids": [
+            "https://openalex.org/I144889574"
+          ]
+        },
+        {
+          "raw_affiliation_string": "University of Pau & Pays de l'Adour, College STEE, 1 All. du Parc Montaury, Anglet, 64600, France",
+          "institution_ids": [
+            "https://openalex.org/I144889574"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5051605434",
+        "display_name": "Aniruddha Gokhale",
+        "orcid": "https://orcid.org/0000-0002-7706-7102"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I200719446",
+          "display_name": "Vanderbilt University",
+          "ror": "https://ror.org/02vm5rt34",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I200719446"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Aniruddha Gokhale",
+      "raw_affiliation_strings": [
+        "Vanderbilt University, Dept of CS, 1025 16th Ave S, Suite 102, Nashville, 37212, TN, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Vanderbilt University, Dept of CS, 1025 16th Ave S, Suite 102, Nashville, 37212, TN, USA",
+          "institution_ids": [
+            "https://openalex.org/I200719446"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5070511935",
+        "display_name": "Sadok Ben Yahia",
+        "orcid": "https://orcid.org/0000-0001-8939-8948"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I111112146",
+          "display_name": "Tallinn University of Technology",
+          "ror": "https://ror.org/0443cwa12",
+          "country_code": "EE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I111112146"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I177969490",
+          "display_name": "University of Southern Denmark",
+          "ror": "https://ror.org/03yrrjy16",
+          "country_code": "DK",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I177969490"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I184886455",
+          "display_name": "Maersk (Denmark)",
+          "ror": "https://ror.org/046gbzb64",
+          "country_code": "DK",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I184886455"
+          ]
+        }
+      ],
+      "countries": [
+        "DK",
+        "EE"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Sadok Ben Yahia",
+      "raw_affiliation_strings": [
+        "Tallinn University of Technology, Department of Software Science, Akadeemia tee 15a, Tallinn, 12618, Estonia",
+        "The Maersk Mc-Kinney Moller Institute, SDU Center for Industrial Software, University of Southern Denmark, Campusvej 55, Odense, 5230, Danemark"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-8939-8948",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Tallinn University of Technology, Department of Software Science, Akadeemia tee 15a, Tallinn, 12618, Estonia",
+          "institution_ids": [
+            "https://openalex.org/I111112146"
+          ]
+        },
+        {
+          "raw_affiliation_string": "The Maersk Mc-Kinney Moller Institute, SDU Center for Industrial Software, University of Southern Denmark, Campusvej 55, Odense, 5230, Danemark",
+          "institution_ids": [
+            "https://openalex.org/I177969490",
+            "https://openalex.org/I184886455"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5057082719",
+        "display_name": "Nédra Mellouli",
+        "orcid": "https://orcid.org/0000-0001-8858-9902"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210141169",
+          "display_name": "Ecole Supérieure d'Ingénieurs Léonard de Vinci",
+          "ror": "https://ror.org/04sgy3p75",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210121459",
+            "https://openalex.org/I4210141169"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I48825208",
+          "display_name": "Université Paris 8",
+          "ror": "https://ror.org/04wez5e68",
+          "country_code": "FR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I48825208"
+          ]
+        }
+      ],
+      "countries": [
+        "FR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Nedra Mellouli",
+      "raw_affiliation_strings": [
+        "ESILV, Devinci Group, 12 avenue Leonard de Vinci, Courbevoie, 92400, France",
+        "University of Paris 8, 2 Rue de la Liberte, Saint-Denis, 93200, France"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "ESILV, Devinci Group, 12 avenue Leonard de Vinci, Courbevoie, 92400, France",
+          "institution_ids": [
+            "https://openalex.org/I4210141169"
+          ]
+        },
+        {
+          "raw_affiliation_string": "University of Paris 8, 2 Rue de la Liberte, Saint-Denis, 93200, France",
+          "institution_ids": [
+            "https://openalex.org/I48825208"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 5,
+  "institutions_distinct_count": 9,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5041565980"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I144889574",
+    "https://openalex.org/I179097149",
+    "https://openalex.org/I4210155520"
+  ],
+  "apc_list": {
+    "value": 2370,
+    "currency": "USD",
+    "value_usd": 2370
+  },
+  "apc_paid": null,
+  "fwci": 28.2402,
+  "has_fulltext": true,
+  "cited_by_count": 136,
+  "citation_normalized_percentile": {
+    "value": 0.99877288,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "244",
+    "issue": null,
+    "first_page": "110350",
+    "last_page": "110350"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10763",
+    "display_name": "Digital Transformation in Industry",
+    "score": 0.9995999932289124,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2209",
+      "display_name": "Industrial and Manufacturing Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10763",
+      "display_name": "Digital Transformation in Industry",
+      "score": 0.9995999932289124,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2209",
+        "display_name": "Industrial and Manufacturing Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10273",
+      "display_name": "IoT and Edge/Fog Computing",
+      "score": 0.972599983215332,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11741",
+      "display_name": "Flexible and Reconfigurable Manufacturing Systems",
+      "score": 0.9621000289916992,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2209",
+        "display_name": "Industrial and Manufacturing Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.7750037312507629
+    },
+    {
+      "id": "https://openalex.org/keywords/flexibility",
+      "display_name": "Flexibility (engineering)",
+      "score": 0.7234560251235962
+    },
+    {
+      "id": "https://openalex.org/keywords/digital-transformation",
+      "display_name": "Digital transformation",
+      "score": 0.5715944766998291
+    },
+    {
+      "id": "https://openalex.org/keywords/scalability",
+      "display_name": "Scalability",
+      "score": 0.5548513531684875
+    },
+    {
+      "id": "https://openalex.org/keywords/emerging-technologies",
+      "display_name": "Emerging technologies",
+      "score": 0.4790581166744232
+    },
+    {
+      "id": "https://openalex.org/keywords/maintainability",
+      "display_name": "Maintainability",
+      "score": 0.45063063502311707
+    },
+    {
+      "id": "https://openalex.org/keywords/industry-4.0",
+      "display_name": "Industry 4.0",
+      "score": 0.44366326928138733
+    },
+    {
+      "id": "https://openalex.org/keywords/software-deployment",
+      "display_name": "Software deployment",
+      "score": 0.4258694052696228
+    },
+    {
+      "id": "https://openalex.org/keywords/standardization",
+      "display_name": "Standardization",
+      "score": 0.4220130443572998
+    },
+    {
+      "id": "https://openalex.org/keywords/data-science",
+      "display_name": "Data science",
+      "score": 0.39718902111053467
+    },
+    {
+      "id": "https://openalex.org/keywords/risk-analysis",
+      "display_name": "Risk analysis (engineering)",
+      "score": 0.34816211462020874
+    },
+    {
+      "id": "https://openalex.org/keywords/software-engineering",
+      "display_name": "Software engineering",
+      "score": 0.1968437135219574
+    },
+    {
+      "id": "https://openalex.org/keywords/world-wide-web",
+      "display_name": "World Wide Web",
+      "score": 0.1823234260082245
+    },
+    {
+      "id": "https://openalex.org/keywords/artificial-intelligence",
+      "display_name": "Artificial intelligence",
+      "score": 0.14588916301727295
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.14372557401657104
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.7750037312507629
+    },
+    {
+      "id": "https://openalex.org/C2780598303",
+      "wikidata": "https://www.wikidata.org/wiki/Q65921492",
+      "display_name": "Flexibility (engineering)",
+      "level": 2,
+      "score": 0.7234560251235962
+    },
+    {
+      "id": "https://openalex.org/C126082660",
+      "wikidata": "https://www.wikidata.org/wiki/Q4252370",
+      "display_name": "Digital transformation",
+      "level": 2,
+      "score": 0.5715944766998291
+    },
+    {
+      "id": "https://openalex.org/C48044578",
+      "wikidata": "https://www.wikidata.org/wiki/Q727490",
+      "display_name": "Scalability",
+      "level": 2,
+      "score": 0.5548513531684875
+    },
+    {
+      "id": "https://openalex.org/C207267971",
+      "wikidata": "https://www.wikidata.org/wiki/Q120208",
+      "display_name": "Emerging technologies",
+      "level": 2,
+      "score": 0.4790581166744232
+    },
+    {
+      "id": "https://openalex.org/C160713754",
+      "wikidata": "https://www.wikidata.org/wiki/Q1389965",
+      "display_name": "Maintainability",
+      "level": 2,
+      "score": 0.45063063502311707
+    },
+    {
+      "id": "https://openalex.org/C2777986313",
+      "wikidata": "https://www.wikidata.org/wiki/Q1661989",
+      "display_name": "Industry 4.0",
+      "level": 2,
+      "score": 0.44366326928138733
+    },
+    {
+      "id": "https://openalex.org/C105339364",
+      "wikidata": "https://www.wikidata.org/wiki/Q2297740",
+      "display_name": "Software deployment",
+      "level": 2,
+      "score": 0.4258694052696228
+    },
+    {
+      "id": "https://openalex.org/C188087704",
+      "wikidata": "https://www.wikidata.org/wiki/Q369577",
+      "display_name": "Standardization",
+      "level": 2,
+      "score": 0.4220130443572998
+    },
+    {
+      "id": "https://openalex.org/C2522767166",
+      "wikidata": "https://www.wikidata.org/wiki/Q2374463",
+      "display_name": "Data science",
+      "level": 1,
+      "score": 0.39718902111053467
+    },
+    {
+      "id": "https://openalex.org/C112930515",
+      "wikidata": "https://www.wikidata.org/wiki/Q4389547",
+      "display_name": "Risk analysis (engineering)",
+      "level": 1,
+      "score": 0.34816211462020874
+    },
+    {
+      "id": "https://openalex.org/C115903868",
+      "wikidata": "https://www.wikidata.org/wiki/Q80993",
+      "display_name": "Software engineering",
+      "level": 1,
+      "score": 0.1968437135219574
+    },
+    {
+      "id": "https://openalex.org/C136764020",
+      "wikidata": "https://www.wikidata.org/wiki/Q466",
+      "display_name": "World Wide Web",
+      "level": 1,
+      "score": 0.1823234260082245
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 0.14588916301727295
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.14372557401657104
+    },
+    {
+      "id": "https://openalex.org/C105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C71924100",
+      "wikidata": "https://www.wikidata.org/wiki/Q11190",
+      "display_name": "Medicine",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C77088390",
+      "wikidata": "https://www.wikidata.org/wiki/Q8513",
+      "display_name": "Database",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.comnet.2024.110350",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1016/j.comnet.2024.110350",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S63392143",
+        "display_name": "Computer Networks",
+        "issn_l": "1389-1286",
+        "issn": [
+          "1389-1286",
+          "1872-7069"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Computer Networks",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:sdu.dk:publications/005c8657-987e-470c-b0be-59aef2816eba",
+      "is_oa": false,
+      "landing_page_url": "https://portal.findresearcher.sdu.dk/da/publications/005c8657-987e-470c-b0be-59aef2816eba",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400423",
+        "display_name": "University of Southern Denmark Research Portal (University of Southern Denmark)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I177969490",
+        "host_organization_name": "University of Southern Denmark",
+        "host_organization_lineage": [
+          "https://openalex.org/I177969490"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Hakiri, A, Gokhale, A, Yahia, S B & Mellouli, N 2024, 'A comprehensive survey on digital twin for future networks and emerging Internet of Things industry', Computer Networks, vol. 244, 110350. https://doi.org/10.1016/j.comnet.2024.110350",
+      "raw_type": "info:eu-repo/semantics/article"
+    },
+    {
+      "id": "pmh:oai:HAL:hal-05547474v1",
+      "is_oa": true,
+      "landing_page_url": "https://hal.science/hal-05547474",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306402512",
+        "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I1294671590",
+        "host_organization_name": "Centre National de la Recherche Scientifique",
+        "host_organization_lineage": [
+          "https://openalex.org/I1294671590"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "Computer Networks, 2024, 244, pp.110350. &#x27E8;10.1016/j.comnet.2024.110350&#x27E9;",
+      "raw_type": "info:eu-repo/semantics/article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "pmh:oai:HAL:hal-05547474v1",
+    "is_oa": true,
+    "landing_page_url": "https://hal.science/hal-05547474",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4306402512",
+      "display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": "https://openalex.org/I1294671590",
+      "host_organization_name": "Centre National de la Recherche Scientifique",
+      "host_organization_lineage": [
+        "https://openalex.org/I1294671590"
+      ],
+      "host_organization_lineage_names": [],
+      "type": "repository"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "submittedVersion",
+    "is_accepted": false,
+    "is_published": false,
+    "raw_source_name": "Computer Networks, 2024, 244, pp.110350. &#x27E8;10.1016/j.comnet.2024.110350&#x27E9;",
+    "raw_type": "info:eu-repo/semantics/article"
+  },
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/9",
+      "display_name": "Industry, innovation and infrastructure",
+      "score": 0.5400000214576721
+    }
+  ],
+  "awards": [],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320322625",
+      "display_name": "Ministère de l’Enseignement Supérieur, de la Recherche Scientifique et des Technologies de l'Information et de la Communication",
+      "ror": "https://ror.org/05v1m8q81"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 218,
+  "referenced_works": [
+    "https://openalex.org/W294474221",
+    "https://openalex.org/W409045608",
+    "https://openalex.org/W2290556040",
+    "https://openalex.org/W2346505350",
+    "https://openalex.org/W2565281388",
+    "https://openalex.org/W2581964379",
+    "https://openalex.org/W2606951990",
+    "https://openalex.org/W2722925682",
+    "https://openalex.org/W2755214325",
+    "https://openalex.org/W2891503716",
+    "https://openalex.org/W2907864265",
+    "https://openalex.org/W2910597635",
+    "https://openalex.org/W2912589244",
+    "https://openalex.org/W2914446816",
+    "https://openalex.org/W2936666060",
+    "https://openalex.org/W2944604407",
+    "https://openalex.org/W2952781004",
+    "https://openalex.org/W2971499434",
+    "https://openalex.org/W2982215737",
+    "https://openalex.org/W2982936646",
+    "https://openalex.org/W2983726051",
+    "https://openalex.org/W2986027206",
+    "https://openalex.org/W2988359971",
+    "https://openalex.org/W2989925413",
+    "https://openalex.org/W2992124668",
+    "https://openalex.org/W2994619798",
+    "https://openalex.org/W3003667836",
+    "https://openalex.org/W3004998292",
+    "https://openalex.org/W3007935701",
+    "https://openalex.org/W3012041784",
+    "https://openalex.org/W3013120860",
+    "https://openalex.org/W3015896415",
+    "https://openalex.org/W3028085118",
+    "https://openalex.org/W3031421697",
+    "https://openalex.org/W3033140640",
+    "https://openalex.org/W3035474257",
+    "https://openalex.org/W3036215542",
+    "https://openalex.org/W3036600965",
+    "https://openalex.org/W3048011930",
+    "https://openalex.org/W3058760796",
+    "https://openalex.org/W3080667742",
+    "https://openalex.org/W3081847297",
+    "https://openalex.org/W3085322747",
+    "https://openalex.org/W3088211916",
+    "https://openalex.org/W3094110753",
+    "https://openalex.org/W3097973207",
+    "https://openalex.org/W3100090196",
+    "https://openalex.org/W3112130234",
+    "https://openalex.org/W3112876055",
+    "https://openalex.org/W3113535661",
+    "https://openalex.org/W3116373906",
+    "https://openalex.org/W3118111714",
+    "https://openalex.org/W3126528282",
+    "https://openalex.org/W3126767140",
+    "https://openalex.org/W3127039706",
+    "https://openalex.org/W3127614346",
+    "https://openalex.org/W3127757142",
+    "https://openalex.org/W3128569956",
+    "https://openalex.org/W3129472311",
+    "https://openalex.org/W3130503957",
+    "https://openalex.org/W3130791602",
+    "https://openalex.org/W3133072174",
+    "https://openalex.org/W3134058792",
+    "https://openalex.org/W3137127698",
+    "https://openalex.org/W3138191843",
+    "https://openalex.org/W3146145139",
+    "https://openalex.org/W3154614378",
+    "https://openalex.org/W3160372581",
+    "https://openalex.org/W3161028394",
+    "https://openalex.org/W3161199950",
+    "https://openalex.org/W3161577794",
+    "https://openalex.org/W3163246710",
+    "https://openalex.org/W3164089829",
+    "https://openalex.org/W3174255936",
+    "https://openalex.org/W3177935389",
+    "https://openalex.org/W3178150555",
+    "https://openalex.org/W3183401888",
+    "https://openalex.org/W3183553643",
+    "https://openalex.org/W3184932975",
+    "https://openalex.org/W3189204085",
+    "https://openalex.org/W3194703151",
+    "https://openalex.org/W3196549611",
+    "https://openalex.org/W3196974186",
+    "https://openalex.org/W3197372034",
+    "https://openalex.org/W3198901528",
+    "https://openalex.org/W3200522861",
+    "https://openalex.org/W3203768829",
+    "https://openalex.org/W3203795157",
+    "https://openalex.org/W3205056669",
+    "https://openalex.org/W3205239936",
+    "https://openalex.org/W3206249633",
+    "https://openalex.org/W3206960510",
+    "https://openalex.org/W3209398723",
+    "https://openalex.org/W3209688096",
+    "https://openalex.org/W3210103646",
+    "https://openalex.org/W3214504486",
+    "https://openalex.org/W3214833250",
+    "https://openalex.org/W3215130116",
+    "https://openalex.org/W3216069328",
+    "https://openalex.org/W4200131351",
+    "https://openalex.org/W4200415632",
+    "https://openalex.org/W4200612054",
+    "https://openalex.org/W4205305895",
+    "https://openalex.org/W4205734066",
+    "https://openalex.org/W4205934968",
+    "https://openalex.org/W4206436720",
+    "https://openalex.org/W4210349096",
+    "https://openalex.org/W4210811460",
+    "https://openalex.org/W4212929843",
+    "https://openalex.org/W4213381911",
+    "https://openalex.org/W4225380803",
+    "https://openalex.org/W4226279003",
+    "https://openalex.org/W4226309815",
+    "https://openalex.org/W4226356748",
+    "https://openalex.org/W4226521992",
+    "https://openalex.org/W4230477078",
+    "https://openalex.org/W4231466504",
+    "https://openalex.org/W4231947494",
+    "https://openalex.org/W4232484810",
+    "https://openalex.org/W4233210494",
+    "https://openalex.org/W4233429319",
+    "https://openalex.org/W4237778405",
+    "https://openalex.org/W4244034183",
+    "https://openalex.org/W4247684541",
+    "https://openalex.org/W4249876446",
+    "https://openalex.org/W4255344359",
+    "https://openalex.org/W4256257383",
+    "https://openalex.org/W4280560923",
+    "https://openalex.org/W4281557581",
+    "https://openalex.org/W4281639892",
+    "https://openalex.org/W4281853153",
+    "https://openalex.org/W4282821649",
+    "https://openalex.org/W4283273598",
+    "https://openalex.org/W4284961738",
+    "https://openalex.org/W4284967644",
+    "https://openalex.org/W4285082855",
+    "https://openalex.org/W4285504886",
+    "https://openalex.org/W4286225021",
+    "https://openalex.org/W4287887880",
+    "https://openalex.org/W4288455776",
+    "https://openalex.org/W4290994955",
+    "https://openalex.org/W4292826080",
+    "https://openalex.org/W4293210198",
+    "https://openalex.org/W4293451277",
+    "https://openalex.org/W4295832344",
+    "https://openalex.org/W4297474423",
+    "https://openalex.org/W4297538652",
+    "https://openalex.org/W4303986394",
+    "https://openalex.org/W4310824776",
+    "https://openalex.org/W4317632579",
+    "https://openalex.org/W4362723353",
+    "https://openalex.org/W4379621691",
+    "https://openalex.org/W4390098486",
+    "https://openalex.org/W6726689900",
+    "https://openalex.org/W6742518708",
+    "https://openalex.org/W6742804318",
+    "https://openalex.org/W6751282640",
+    "https://openalex.org/W6753257085",
+    "https://openalex.org/W6754016024",
+    "https://openalex.org/W6755380103",
+    "https://openalex.org/W6758811804",
+    "https://openalex.org/W6758947479",
+    "https://openalex.org/W6761782720",
+    "https://openalex.org/W6766358170",
+    "https://openalex.org/W6768225413",
+    "https://openalex.org/W6774027173",
+    "https://openalex.org/W6774705030",
+    "https://openalex.org/W6779403752",
+    "https://openalex.org/W6779457996",
+    "https://openalex.org/W6780483829",
+    "https://openalex.org/W6780677980",
+    "https://openalex.org/W6782459352",
+    "https://openalex.org/W6783541179",
+    "https://openalex.org/W6783869278",
+    "https://openalex.org/W6784028078",
+    "https://openalex.org/W6784176536",
+    "https://openalex.org/W6784758910",
+    "https://openalex.org/W6787758650",
+    "https://openalex.org/W6790765408",
+    "https://openalex.org/W6791918587",
+    "https://openalex.org/W6792063092",
+    "https://openalex.org/W6794051778",
+    "https://openalex.org/W6795989060",
+    "https://openalex.org/W6796878330",
+    "https://openalex.org/W6797047778",
+    "https://openalex.org/W6797503909",
+    "https://openalex.org/W6797755808",
+    "https://openalex.org/W6798784466",
+    "https://openalex.org/W6799000204",
+    "https://openalex.org/W6799798799",
+    "https://openalex.org/W6800024610",
+    "https://openalex.org/W6800610635",
+    "https://openalex.org/W6800741469",
+    "https://openalex.org/W6801079601",
+    "https://openalex.org/W6801133912",
+    "https://openalex.org/W6801706649",
+    "https://openalex.org/W6801931661",
+    "https://openalex.org/W6802333926",
+    "https://openalex.org/W6803047059",
+    "https://openalex.org/W6803158229",
+    "https://openalex.org/W6804407232",
+    "https://openalex.org/W6804552065",
+    "https://openalex.org/W6805587398",
+    "https://openalex.org/W6807063894",
+    "https://openalex.org/W6807846939",
+    "https://openalex.org/W6808900858",
+    "https://openalex.org/W6809942244",
+    "https://openalex.org/W6810306718",
+    "https://openalex.org/W6811131525",
+    "https://openalex.org/W6811276477",
+    "https://openalex.org/W6811366633",
+    "https://openalex.org/W6838945159",
+    "https://openalex.org/W6840340090",
+    "https://openalex.org/W6840820315",
+    "https://openalex.org/W6840833635",
+    "https://openalex.org/W6841273127",
+    "https://openalex.org/W6841439307",
+    "https://openalex.org/W6849215531"
+  ],
+  "related_works": [
+    "https://openalex.org/W2160765347",
+    "https://openalex.org/W1784325190",
+    "https://openalex.org/W2505444316",
+    "https://openalex.org/W2243181917",
+    "https://openalex.org/W2378767206",
+    "https://openalex.org/W2372410743",
+    "https://openalex.org/W2064378805",
+    "https://openalex.org/W1540871478",
+    "https://openalex.org/W328308450",
+    "https://openalex.org/W4205584165"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 50
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 72
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 14
+    }
+  ],
+  "updated_date": "2026-08-15T07:11:24.734988",
+  "created_date": "2025-10-10T00:00:00"
+}

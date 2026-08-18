@@ -1,0 +1,21 @@
+{
+  "paperId": "dc61f630cad2422dfd6492b3cb4a1be08cb00f1e",
+  "title": "WSETO: wild stock exchange trading optimization algorithm enabled routing for NB-IoT tracking system",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s41870-024-02130-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s41870-024-02130-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2281350310",
+      "name": "Sreeparnesh Sharma Sivadevuni"
+    },
+    {
+      "authorId": "40699718",
+      "name": "J. Naveen"
+    }
+  ],
+  "abstract": null
+}

@@ -1,0 +1,243 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          10
+        ]
+      ],
+      "date-time": "2026-03-10T15:38:19Z",
+      "timestamp": 1773157099220,
+      "version": "3.50.1"
+    },
+    "reference-count": 13,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/ccnc.2009.4784847",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          2,
+          19
+        ]
+      ],
+      "date-time": "2009-02-19T18:13:08Z",
+      "timestamp": 1235067188000
+    },
+    "page": "1-5",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": [
+      "Using Energy-Efficient Wireless Sensor Network for Cold Chain Monitoring"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Rahim",
+        "family": "Kacimi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Riadh",
+        "family": "Dhaou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Andre-Luc",
+        "family": "Beylot",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "13",
+        "year": "1992",
+        "journal-title": "Qnap2 user's manual"
+      },
+      {
+        "key": "11",
+        "first-page": "364",
+        "article-title": "telos: enabling ultra-low power wireless research, ipsn",
+        "author": "polastre",
+        "year": "2005",
+        "journal-title": "Information Processing in Sensor Networks"
+      },
+      {
+        "key": "12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2008.ECP.99"
+      },
+      {
+        "key": "3",
+        "first-page": "563",
+        "author": "el-hoiydi",
+        "year": "2004",
+        "journal-title": "Low power mac protocols for infrastructure wireless sensor networks"
+      },
+      {
+        "key": "2",
+        "first-page": "171",
+        "article-title": "an adaptive energy-efficient mac protocol for wireless sensor networks",
+        "author": "dam",
+        "year": "2003",
+        "journal-title": "SenSys '03 Proceedings of the 1st international conference on Embedded networked sensor systems"
+      },
+      {
+        "key": "1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2002.1019408"
+      },
+      {
+        "key": "10",
+        "year": "0"
+      },
+      {
+        "key": "7",
+        "first-page": "527",
+        "article-title": "energy efficient network reconfiguration for mostly-off sensor networks",
+        "volume": "2",
+        "author": "yuan",
+        "year": "2006",
+        "journal-title": "Sensor and Ad Hoc Communications and Networks SECON '06"
+      },
+      {
+        "key": "6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1016542229220"
+      },
+      {
+        "key": "5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/381677.381685"
+      },
+      {
+        "key": "4",
+        "year": "0"
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WCNC.2006.1683469"
+      },
+      {
+        "key": "8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EMNETS.2005.1469099"
+      }
+    ],
+    "event": {
+      "name": "2009 6th IEEE Consumer Communications and Networking Conference (CCNC)",
+      "location": "Las Vegas, Nevada, USA",
+      "start": {
+        "date-parts": [
+          [
+            2009,
+            1,
+            10
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2009,
+            1,
+            13
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2009 6th IEEE Consumer Communications and Networking Conference"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/4784683/4784684/04784847.pdf?arnumber=4784847",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2017-03-17T14:43:42Z",
+      "timestamp": 1489761822000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/4784847/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    },
+    "references-count": 13,
+    "URL": "https://doi.org/10.1109/ccnc.2009.4784847",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    }
+  }
+}

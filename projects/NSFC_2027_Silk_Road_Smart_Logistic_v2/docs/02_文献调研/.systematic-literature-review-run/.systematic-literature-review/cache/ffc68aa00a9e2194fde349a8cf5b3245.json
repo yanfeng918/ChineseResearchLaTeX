@@ -1,0 +1,29 @@
+{
+  "paperId": "a778537deb5dd3fc8ff395285b68797f0918a918",
+  "title": "A general model for store-carry-forward routing schemes with multicast in delay tolerant networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ChinaCom.2011.6158204?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ChinaCom.2011.6158204, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "48211895",
+      "name": "Jiajia Liu"
+    },
+    {
+      "authorId": "7325491",
+      "name": "Xiaohong Jiang"
+    },
+    {
+      "authorId": "1776270",
+      "name": "Hiroki Nishiyama"
+    },
+    {
+      "authorId": "145842185",
+      "name": "N. Kato"
+    }
+  ],
+  "abstract": null
+}

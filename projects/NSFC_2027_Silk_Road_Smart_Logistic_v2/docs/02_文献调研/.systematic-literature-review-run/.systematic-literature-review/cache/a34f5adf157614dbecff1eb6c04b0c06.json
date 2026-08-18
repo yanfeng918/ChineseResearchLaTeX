@@ -1,0 +1,29 @@
+{
+  "paperId": "452fad58e1e9c1734e3c3249e39b7353b3ccac5c",
+  "title": "Development of wireless sensor module and network for temperature monitoring in cold chain logistics",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICWITS.2012.6417745?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICWITS.2012.6417745, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "48161991",
+      "name": "Chen-Ming Li"
+    },
+    {
+      "authorId": "1791315",
+      "name": "C. Nien"
+    },
+    {
+      "authorId": "48992289",
+      "name": "Jia-Liang Liao"
+    },
+    {
+      "authorId": "1683948",
+      "name": "Y. Tseng"
+    }
+  ],
+  "abstract": null
+}

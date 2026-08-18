@@ -1,0 +1,335 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          7
+        ]
+      ],
+      "date-time": "2024-09-07T01:07:23Z",
+      "timestamp": 1725671243567
+    },
+    "reference-count": 28,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1109/chinacom.2011.6158204",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          2,
+          28
+        ]
+      ],
+      "date-time": "2012-02-28T20:43:51Z",
+      "timestamp": 1330461831000
+    },
+    "page": "494-500",
+    "source": "Crossref",
+    "is-referenced-by-count": 12,
+    "title": [
+      "A general model for store-carry-forward routing schemes with multicast in delay tolerant networks"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Jiajia",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Xiaohong",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hiroki",
+        "family": "Nishiyama",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Nei",
+        "family": "Kato",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "doi-asserted-by": "publisher",
+        "key": "19",
+        "DOI": "10.1145/1755743.1755751"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "17",
+        "DOI": "10.1145/1190095.1190158"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "18",
+        "DOI": "10.1109/WIOPT.2007.4480026"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "15",
+        "DOI": "10.1016/j.peva.2005.07.018"
+      },
+      {
+        "key": "16",
+        "article-title": "Simple models for the performance evaluation of a class of two-hop relay protocols",
+        "author": "hanbali",
+        "year": "0",
+        "journal-title": "Proc IFIP Networking 2007"
+      },
+      {
+        "key": "13",
+        "article-title": "Delay and energy optimal two-hop relaying in delay tolerant networks",
+        "author": "singh",
+        "year": "2010",
+        "journal-title": "WiOpt"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "14",
+        "DOI": "10.1109/TNET.2005.863461"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "11",
+        "DOI": "10.1109/TIT.2005.847717"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "12",
+        "DOI": "10.1109/HPSR.2011.5986026"
+      },
+      {
+        "year": "2005",
+        "author": "groenevelt",
+        "journal-title": "Stochastic models in mobile ad hoc networks",
+        "key": "21"
+      },
+      {
+        "key": "20",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/1530748.1530790",
+        "article-title": "Multicasting in delay tolerant networks: A social network perspective",
+        "author": "gao",
+        "year": "2009",
+        "journal-title": "MobiHoc"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "22",
+        "DOI": "10.1109/LCOMM.2009.12.091520"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "23",
+        "DOI": "10.1109/LCOMM.2010.093010.100492"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "24",
+        "DOI": "10.1109/INFCOM.2009.5062111"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "25",
+        "DOI": "10.1109/INFCOM.2010.5462259"
+      },
+      {
+        "year": "1997",
+        "author": "grinstead",
+        "journal-title": "Introduction to Probability Second Revised Edition",
+        "key": "26"
+      },
+      {
+        "year": "2011",
+        "author": "liu",
+        "journal-title": "Two-hop Relay with Erasure Coding in Manets",
+        "key": "27"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "28",
+        "DOI": "10.1109/TMC.2010.246"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "3",
+        "DOI": "10.1109/TNET.2007.897964"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "2",
+        "DOI": "10.1109/TMC.2007.1060"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "10",
+        "DOI": "10.1109/INFCOM.2001.916631"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "1",
+        "DOI": "10.1109/MCOM.2003.1204759"
+      },
+      {
+        "key": "7",
+        "article-title": "Delay and capacity in ad hoc mobile networks with f-cast relay algorithms",
+        "author": "liu",
+        "year": "2011",
+        "journal-title": "ICC"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "6",
+        "DOI": "10.1109/JSAC.2008.080609"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "5",
+        "DOI": "10.1109/COMST.2006.323440"
+      },
+      {
+        "doi-asserted-by": "publisher",
+        "key": "4",
+        "DOI": "10.1145/1015467.1015484"
+      },
+      {
+        "key": "9",
+        "article-title": "Performance modeling of epidemic routing",
+        "author": "zhang",
+        "year": "0",
+        "journal-title": "Proc IFIP Networking 2006"
+      },
+      {
+        "year": "2000",
+        "author": "vahdat",
+        "journal-title": "Epidemic Routing for Partially Connected Ad Hoc Networks",
+        "key": "8"
+      }
+    ],
+    "event": {
+      "name": "2011 6th International ICST Conference on Communications and Networking in China (CHINACOM)",
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            17
+          ]
+        ]
+      },
+      "location": "Harbin, China",
+      "end": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            19
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2011 6th International ICST Conference on Communications and Networking in China (CHINACOM)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/6153170/6158103/06158204.pdf?arnumber=6158204",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2020-10-14T16:05:36Z",
+      "timestamp": 1602691536000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/6158204"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          8
+        ]
+      ]
+    },
+    "references-count": 28,
+    "URL": "https://doi.org/10.1109/chinacom.2011.6158204",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          8
+        ]
+      ]
+    }
+  }
+}

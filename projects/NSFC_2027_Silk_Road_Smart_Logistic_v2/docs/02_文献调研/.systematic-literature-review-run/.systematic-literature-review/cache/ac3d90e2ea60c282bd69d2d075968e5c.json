@@ -1,0 +1,33 @@
+{
+  "paperId": "5cfeff2c2bef2103acc392cab3770191b958deec",
+  "title": "OppNet: Enabling citizen-centric urban IoT data collection through opportunistic connectivity service",
+  "openAccessPdf": {
+    "url": "http://spiral.imperial.ac.uk/bitstream/10044/1/45009/6/oppnet.pdf",
+    "status": "GREEN",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/WF-IoT.2016.7845498?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/WF-IoT.2016.7845498, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2189028",
+      "name": "Fengrui Shi"
+    },
+    {
+      "authorId": "2874028",
+      "name": "U. Adeel"
+    },
+    {
+      "authorId": "1817592",
+      "name": "E. Theodoridis"
+    },
+    {
+      "authorId": "3094866",
+      "name": "Mo Haghighi"
+    },
+    {
+      "authorId": "145002459",
+      "name": "J. Mccann"
+    }
+  ],
+  "abstract": "Urban IoT data collection is challenging due to the limitations of the fixed sensing infrastructures. Instead of transmitting data directly through expensive cellular networks, citizen-centric data collection scheme through opportunistic network takes advantage of human mobility as well as cheap WiFi and D2D communication. In this paper, we present OppNet, which implements a context aware data forwarding algorithm and fills the gap between theoretical modelling of opportunistic networking and real deployment of citizen-centric data collection system. According to the results from a 3-day real-life experiment, OppNet shows consistent performance in terms of number of hops and time delay. Moreover, the underlying social structure can be clearly identified by analysing social contact data collected through OppNet."
+}

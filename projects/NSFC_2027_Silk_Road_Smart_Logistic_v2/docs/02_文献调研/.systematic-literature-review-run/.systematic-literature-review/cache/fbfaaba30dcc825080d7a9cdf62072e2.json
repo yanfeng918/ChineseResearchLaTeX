@@ -1,0 +1,25 @@
+{
+  "paperId": "ca1e399b9e3f37f26d15552dd5ee87f8044ff0ed",
+  "title": "Optimal Retransmission Policies for Ultra-Reliable Low Latency Communications with Delayed Feedback",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/GLOBECOM38437.2019.9013987?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/GLOBECOM38437.2019.9013987, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "144344665",
+      "name": "Richard Combes"
+    },
+    {
+      "authorId": "1694897",
+      "name": "Salah-Eddine Elayoubi"
+    },
+    {
+      "authorId": "3492569",
+      "name": "Thomas Varela Santana"
+    }
+  ],
+  "abstract": "We propose a novel resource allocation scheme for Ultra- Reliable and Low Latency communication (URLLC) traffic in the uplink of 5G systems. We consider industrial scenarios where a set of machines transmit packets intermittently to a central controller via a base station. We consider contention-based access in realistic scenarios where the delay budget and the 5G New Radio (NR) design allows the reception of few Acknowledgements (ACK), but always waiting for ACKs before retransmission is insufficient to ensure high reliability. This may be seen as a problem of Automatic Repeat Request (ARQ) with delayed feedback. The goal is to minimize the expected number of retransmissions subject to a reliability constraint within a delay budget. We derive the optimal policy that exploits the tradeoff between waiting for the ACK and achieving the target reliability."
+}

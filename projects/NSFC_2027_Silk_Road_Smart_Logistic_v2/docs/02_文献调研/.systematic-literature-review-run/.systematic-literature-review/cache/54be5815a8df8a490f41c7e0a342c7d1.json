@@ -1,0 +1,681 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          11
+        ]
+      ],
+      "date-time": "2026-07-11T15:13:38Z",
+      "timestamp": 1783782818546,
+      "version": "3.55.0"
+    },
+    "reference-count": 52,
+    "publisher": "Wiley",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 92,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Packag. Technol. Sci."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1002/pts.2129",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          1
+        ]
+      ],
+      "date-time": "2015-06-01T06:42:22Z",
+      "timestamp": 1433140942000
+    },
+    "page": "672-682",
+    "source": "Crossref",
+    "is-referenced-by-count": 37,
+    "title": [
+      "Review Paper on Road Vehicle Vibration Simulation for Packaging Testing Purposes"
+    ],
+    "prefix": "10.1002",
+    "volume": "28",
+    "author": [
+      {
+        "given": "Julien",
+        "family": "Lepine",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Engineering and Science; Victoria University; Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vincent",
+        "family": "Rouillard",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Engineering and Science; Victoria University; Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Sek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Engineering and Science; Victoria University; Melbourne Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "10.1002/pts.2129-BIB0001|pts2129-cit-0001",
+        "unstructured": "Root D Six step method for cushioned package development 1997 www.lansmont.com"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0002|pts2129-cit-0002",
+        "first-page": "23",
+        "article-title": "Review of analysis and assessment methodologies for road transportation vibration and shock data",
+        "volume": "3",
+        "author": "Richards",
+        "year": "1990",
+        "journal-title": "Environmental Engineering"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0003|pts2129-cit-0003",
+        "volume-title": "Standard Test Methods for Vibration Testing of Shipping Containers",
+        "author": "ASTM D999-08",
+        "year": "2008"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0004|pts2129-cit-0004",
+        "unstructured": "Mahajerin E Burgess G Investigation of package vibration during the repetitive shock test Proceedings of the World Congress on Engineering 2010"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0005|pts2129-cit-0005",
+        "volume-title": "Accelerated Random Vibration with Time-History Shock",
+        "author": "Kipp",
+        "year": "2001"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0006|pts2129-cit-0006",
+        "first-page": "4",
+        "volume-title": "Test Methods for Vibration (Vertical Linear Motion) Test of Products",
+        "author": "ASTM D3580-95",
+        "year": "2010"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0007|pts2129-cit-0007",
+        "volume-title": "Environmental Testing - Part 2-6: Tests - Test Fc: Vibration (sinusoidal)",
+        "author": "IEC-60068-2-6",
+        "year": "2007"
+      },
+      {
+        "issue": "3",
+        "key": "10.1002/pts.2129-BIB0008|pts2129-cit-0008",
+        "doi-asserted-by": "crossref",
+        "first-page": "89",
+        "DOI": "10.1002/1099-1522(200005)13:3<89::AID-PTS473>3.0.CO;2-4",
+        "article-title": "Developments in testing products for distribution",
+        "volume": "13",
+        "author": "Kipp",
+        "year": "2000",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0009|pts2129-cit-0009",
+        "volume-title": "Random Vibration Testing of Packaged-Products: Considerations for Methodology Improvement",
+        "author": "Kipp",
+        "year": "2008"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0010|pts2129-cit-0010",
+        "volume-title": "Test Method for Random Vibration Testing of Shipping Containers",
+        "author": "ASTM D4728-06R12",
+        "year": "2012"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0011|pts2129-cit-0011",
+        "volume-title": "Environmental Test Methods and Engineering Guides",
+        "author": "MIL-STD-810 F",
+        "year": "2000"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0012|pts2129-cit-0012",
+        "first-page": "16",
+        "volume-title": "Packaging. Complete, Filled Transport Packages and Unit Loads. Vertical Random Vibration Test",
+        "author": "BS EN ISO 13355:2003",
+        "year": "2002"
+      },
+      {
+        "issue": "2",
+        "key": "10.1002/pts.2129-BIB0013|pts2129-cit-0013",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1002/pts.1967",
+        "article-title": "Creating transport vibration simulation profiles from vehicle and road characteristics",
+        "volume": "26",
+        "author": "Rouillard",
+        "year": "2013",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1002/pts.2129-BIB0014|pts2129-cit-0014",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1002/pts.915",
+        "article-title": "On the time compression (test acceleration) of broadband random vibration tests",
+        "volume": "24",
+        "author": "Shires",
+        "year": "2011",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0015|pts2129-cit-0015",
+        "volume-title": "Vibration Testing Equivalence",
+        "author": "Kipp",
+        "year": "2000"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0016|pts2129-cit-0016",
+        "first-page": "1",
+        "volume-title": "Source Reduction by European Testing schedules (SRETS)",
+        "author": "Ulrich Braunmiller",
+        "year": "1999"
+      },
+      {
+        "issue": "1",
+        "key": "10.1002/pts.2129-BIB0017|pts2129-cit-0017",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.17764/jiet.2.36.1.k285j24551552377",
+        "article-title": "Derivation of environment descriptions and test severities from measured road transportation data",
+        "volume": "36",
+        "author": "Charles",
+        "year": "1993",
+        "journal-title": "Journal of the IES"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0018|pts2129-cit-0018",
+        "volume-title": "On the Synthesis of Non-Gaussian Road Vehicle Vibrations",
+        "author": "Rouillard",
+        "year": "2007"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0019|pts2129-cit-0019",
+        "doi-asserted-by": "crossref",
+        "first-page": "501",
+        "DOI": "10.1002/pts.840",
+        "article-title": "Generating road vibration test schedules from pavement profiles for packaging optimization",
+        "volume": "21",
+        "author": "Rouillard",
+        "year": "2008",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0020|pts2129-cit-0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "467",
+        "DOI": "10.1002/pts.827",
+        "article-title": "On the effects of sampling parameters when surveying distribution vibrations",
+        "volume": "21",
+        "author": "Rouillard",
+        "year": "2008",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "3",
+        "key": "10.1002/pts.2129-BIB0021|pts2129-cit-0021",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.1002/pts.926",
+        "article-title": "Statistical characterization of acceleration levels of random vibrations during transport",
+        "volume": "24",
+        "author": "Otari",
+        "year": "2011",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "10",
+        "key": "10.1002/pts.2129-BIB0022|pts2129-cit-0022",
+        "first-page": "10",
+        "article-title": "The missing knob on your random vibration controller",
+        "volume": "39",
+        "author": "Van Baren",
+        "year": "2005",
+        "journal-title": "Sound and Vibration"
+      },
+      {
+        "issue": "2",
+        "key": "10.1002/pts.2129-BIB0023|pts2129-cit-0023",
+        "first-page": "12",
+        "article-title": "Limitations of the Fourier transform for describing test course profiles",
+        "volume": "39",
+        "author": "Steinwolf",
+        "year": "2005",
+        "journal-title": "Sound and Vibration"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0024|pts2129-cit-0024",
+        "volume-title": "Eighteenth IAPRI World Packaging Conference",
+        "author": "Hosoyamaig",
+        "year": "2012"
+      },
+      {
+        "issue": "10",
+        "key": "10.1002/pts.2129-BIB0025|pts2129-cit-0025",
+        "first-page": "18",
+        "article-title": "Generating non-Gaussian vibration for testing purposes",
+        "volume": "39",
+        "author": "Smallwood",
+        "year": "2005",
+        "journal-title": "Sound and Vibration"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0026|pts2129-cit-0026",
+        "volume-title": "Vibration Research Corporation",
+        "author": "Van Baren",
+        "year": "2008"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0027|pts2129-cit-0027",
+        "volume-title": "Random Data: Analysis and Measurement Procedures",
+        "volume": "729",
+        "author": "Bendat",
+        "year": "2011"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0028|pts2129-cit-0028",
+        "volume-title": "Proceedings of the 5th Australasian Congress on Applied Mechanics",
+        "author": "Rouillard",
+        "year": "2007"
+      },
+      {
+        "issue": "4",
+        "key": "10.1002/pts.2129-BIB0029|pts2129-cit-0029",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1002/1099-1522(200007)13:4<149::AID-PTS508>3.0.CO;2-A",
+        "article-title": "Monitoring and simulating non-stationary vibrations for package optimization",
+        "volume": "13",
+        "author": "Rouillard",
+        "year": "2000",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0030|pts2129-cit-0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "423",
+        "DOI": "10.1002/pts.907",
+        "article-title": "Synthesizing nonstationary, non-Gaussian random vibrations",
+        "volume": "23",
+        "author": "Rouillard",
+        "year": "2010",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0031|pts2129-cit-0031",
+        "volume-title": "The Analysis and Simulation of the Spectral and Statistical Properties of Road Roughness for Package Performance Testing",
+        "author": "Bruscella",
+        "year": "1997"
+      },
+      {
+        "issue": "1",
+        "key": "10.1002/pts.2129-BIB0032|pts2129-cit-0032",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1002/pts.955",
+        "article-title": "Measurement and analysis of vehicle vibration for delivering packages in small-sized and medium-sized trucks and automobiles",
+        "volume": "25",
+        "author": "Chonhenchob",
+        "year": "2012",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "6",
+        "key": "10.1002/pts.2129-BIB0033|pts2129-cit-0033",
+        "doi-asserted-by": "crossref",
+        "first-page": "309",
+        "DOI": "10.1002/pts.732",
+        "article-title": "Measurement and analysis of US truck vibration for leaf spring and air ride suspensions, and development of tests to simulate these conditions",
+        "volume": "19",
+        "author": "Singh",
+        "year": "2006",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0034|pts2129-cit-0034",
+        "volume-title": "Developing a Random Vibration Profile Standard",
+        "author": "Wallin",
+        "year": "2007"
+      },
+      {
+        "issue": "22",
+        "key": "10.1002/pts.2129-BIB0035|pts2129-cit-0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "5867",
+        "DOI": "10.1016/j.jsv.2013.06.012",
+        "article-title": "Fatigue assessment of vibrating rail vehicle bogie components under non-Gaussian random excitations using power spectral densities",
+        "volume": "332",
+        "author": "Wolfsteiner",
+        "year": "2013",
+        "journal-title": "Journal of Sound and Vibration"
+      },
+      {
+        "issue": "3",
+        "key": "10.1002/pts.2129-BIB0036|pts2129-cit-0036",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1002/pts.2024",
+        "article-title": "Quantifying the non-stationarity of vehicle vibrations with the run test",
+        "volume": "27",
+        "author": "Rouillard",
+        "year": "2014",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0037|pts2129-cit-0037",
+        "volume-title": "Handbook of Vehicle-Road Interaction / David Cebon",
+        "author": "Cebon",
+        "year": "1999"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0038|pts2129-cit-0038",
+        "first-page": "29",
+        "volume-title": "Mechanical Vibration - Road Surface Profiles - Reporting of Measured Data",
+        "author": "ISO 8608:1995",
+        "year": "2011"
+      },
+      {
+        "issue": "2",
+        "key": "10.1002/pts.2129-BIB0039|pts2129-cit-0039",
+        "doi-asserted-by": "crossref",
+        "first-page": "101",
+        "DOI": "10.1002/pts.882",
+        "article-title": "Effect of vehicle speed on shock and vibration levels in truck transport",
+        "volume": "23",
+        "author": "Lu",
+        "year": "2010",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0040|pts2129-cit-0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "439",
+        "DOI": "10.1002/pts.798",
+        "article-title": "Measurement and analysis of vibration levels for truck transport in Spain as a function of payload, suspension and speed",
+        "volume": "21",
+        "author": "Garcia-Romeu-Martinez",
+        "year": "2008",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0041|pts2129-cit-0041",
+        "volume-title": "An Improved Method for Simulation of Vehicle Vibration Using a Journey Database and Wavelet Analysis for the Pre-Distribution Testing of Packaging",
+        "author": "Griffiths",
+        "year": "2012"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0042|pts2129-cit-0042",
+        "doi-asserted-by": "crossref",
+        "first-page": "591",
+        "DOI": "10.1061/(ASCE)0733-947X(2005)131:8(591)",
+        "article-title": "Automated road segmentation using a Bayesian algorithm",
+        "volume": "131",
+        "author": "Thomas",
+        "year": "2005",
+        "journal-title": "Journal of Transportation Engineering-ASCE"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0043|pts2129-cit-0043",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1214/lnms/1215463106",
+        "volume-title": "Change-Point Problems",
+        "author": "Carlstein",
+        "year": "1994"
+      },
+      {
+        "issue": "1",
+        "key": "10.1002/pts.2129-BIB0044|pts2129-cit-0044",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1002/pts.739",
+        "article-title": "A novel approach to analysing and simulating railcar shock and vibrations",
+        "volume": "20",
+        "author": "Rouillard",
+        "year": "2007",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0045|pts2129-cit-0045",
+        "volume-title": "World Congress on Engineering",
+        "author": "Garcia-Romeu-Martinez",
+        "year": "2007"
+      },
+      {
+        "issue": "1",
+        "key": "10.1002/pts.2129-BIB0046|pts2129-cit-0046",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1061/(ASCE)0733-947X(1999)125:1(55)",
+        "article-title": "Analysis of road surface profiles",
+        "volume": "125",
+        "author": "Bruscella",
+        "year": "1999",
+        "journal-title": "Journal of Transportation Engineering-ASCE"
+      },
+      {
+        "issue": "1",
+        "key": "10.1002/pts.2129-BIB0047|pts2129-cit-0047",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1061/(ASCE)0733-947X(2000)126:1(41)",
+        "article-title": "Classification of road surface profiles",
+        "volume": "126",
+        "author": "Rouillard",
+        "year": "2000",
+        "journal-title": "Journal of Transportation Engineering-ASCE"
+      },
+      {
+        "issue": "3",
+        "key": "10.1002/pts.2129-BIB0048|pts2129-cit-0048",
+        "first-page": "17",
+        "article-title": "A statistical model for longitudinal road topography",
+        "volume": "11",
+        "author": "Rouillard",
+        "year": "2002",
+        "journal-title": "Road and Transport Research"
+      },
+      {
+        "issue": "8",
+        "key": "10.1002/pts.2129-BIB0049|pts2129-cit-0049",
+        "doi-asserted-by": "crossref",
+        "first-page": "479",
+        "DOI": "10.1002/pts.841",
+        "article-title": "Analysis of shock and vibration in truck transport in Japan",
+        "volume": "21",
+        "author": "Lu",
+        "year": "2008",
+        "journal-title": "Packaging Technology and Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1002/pts.2129-BIB0050|pts2129-cit-0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "120",
+        "DOI": "10.1061/(ASCE)0733-947X(2005)131:2(120)",
+        "article-title": "Wavelet analysis and interpretation of road roughness",
+        "volume": "131",
+        "author": "Wei",
+        "year": "2005",
+        "journal-title": "Journal of Transportation Engineering-ASCE"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0051|pts2129-cit-0051",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gillespie TD Heavy truck ride 1985",
+        "DOI": "10.4271/850001"
+      },
+      {
+        "key": "10.1002/pts.2129-BIB0052|pts2129-cit-0052",
+        "first-page": "58",
+        "volume-title": "Railway applications. Wheelsets and bogies. Method of specifying the structural requirements of bogie frames",
+        "author": "ISO 13749:2011",
+        "year": "2011"
+      }
+    ],
+    "container-title": [
+      "Packaging Technology and Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fpts.2129",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full/10.1002/pts.2129",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2024-06-09T08:43:05Z",
+      "timestamp": 1717922585000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/pts.2129"
+      }
+    },
+    "subtitle": [
+      "Review of Road Vehicle Vibration Simulation for Packaging Testing"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          1
+        ]
+      ]
+    },
+    "references-count": 52,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1002/pts.2129",
+    "relation": {},
+    "ISSN": [
+      "0894-3214"
+    ],
+    "issn-type": [
+      {
+        "value": "0894-3214",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          1
+        ]
+      ]
+    }
+  }
+}

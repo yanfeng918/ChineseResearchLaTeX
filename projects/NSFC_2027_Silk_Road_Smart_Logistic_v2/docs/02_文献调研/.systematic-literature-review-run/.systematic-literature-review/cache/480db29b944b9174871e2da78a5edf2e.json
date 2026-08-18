@@ -1,0 +1,267 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          10
+        ]
+      ],
+      "date-time": "2026-06-10T16:25:24Z",
+      "timestamp": 1781108724580,
+      "version": "3.54.1"
+    },
+    "reference-count": 14,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1109/icctec.2017.00299",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2019-08-08T19:27:07Z",
+      "timestamp": 1565292427000
+    },
+    "page": "1365-1369",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "Performance Analysis of NB-IoT Technology for Indoor IoT Applications"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Liang",
+        "family": "Wan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhijian",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yirui",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yunsong",
+        "family": "Yan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jian",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2017.1600418"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WCNC.2017.7925809"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.icte.2017.03.004"
+      },
+      {
+        "key": "ref13",
+        "year": "2016",
+        "journal-title": "Technical Report TR 36 802 V1 0 0 Technical Specification Group Radio Access Networks"
+      },
+      {
+        "key": "ref14",
+        "author": "rohde",
+        "year": "2016",
+        "journal-title": "Narrowband Internet of Things"
+      },
+      {
+        "key": "ref4",
+        "article-title": "NB-IoT system for M2M communication",
+        "author": "ratasuk",
+        "year": "2016",
+        "journal-title": "IEEE WCNC"
+      },
+      {
+        "key": "ref3",
+        "article-title": "New Study Item on Cellular System Support for Ultra Low Complexity and Low Throughput Internet of Things",
+        "year": "0"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CSCN.2016.7785170"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2016.7497761"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC.2016.7794567"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2017.1600510CM"
+      },
+      {
+        "key": "ref2",
+        "article-title": "Low power wide area networks: A survey",
+        "author": "raza",
+        "year": "2016"
+      },
+      {
+        "key": "ref1",
+        "article-title": "Gartner Says the Internet of Things Installed Base Will Grow to 26 Billion Units By 2020",
+        "year": "2013",
+        "journal-title": "Gartner"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/VTCFall.2016.7880946"
+      }
+    ],
+    "event": {
+      "name": "2017 International Conference on Computer Technology, Electronics and Communication (ICCTEC)",
+      "location": "Dalian, China",
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            19
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            21
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2017 International Conference on Computer Technology, Electronics and Communication (ICCTEC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/8766218/8789023/08789064.pdf?arnumber=8789064",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2019-09-02T20:49:40Z",
+      "timestamp": 1567457380000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/8789064/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "references-count": 14,
+    "URL": "https://doi.org/10.1109/icctec.2017.00299",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    }
+  }
+}

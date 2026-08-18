@@ -1,0 +1,29 @@
+{
+  "paperId": "d8ee7a79cae542b8474d14f6c37cc3f5d423998d",
+  "title": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+  "openAccessPdf": {
+    "url": "https://hal.science/hal-05547474",
+    "status": "GREEN",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.comnet.2024.110350?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.comnet.2024.110350, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2305786610",
+      "name": "Akram Hakiri"
+    },
+    {
+      "authorId": "2293124882",
+      "name": "Aniruddha Gokhale"
+    },
+    {
+      "authorId": "143962778",
+      "name": "S. Yahia"
+    },
+    {
+      "authorId": "2305607",
+      "name": "N. Mellouli"
+    }
+  ],
+  "abstract": null
+}

@@ -1,0 +1,1148 @@
+{
+  "id": "https://openalex.org/W2158914699",
+  "doi": "https://doi.org/10.1109/med.2009.5164585",
+  "title": "Container communities: Anti-tampering Wireless Sensor Network for global cargo security",
+  "display_name": "Container communities: Anti-tampering Wireless Sensor Network for global cargo security",
+  "publication_year": 2009,
+  "publication_date": "2009-06-01",
+  "ids": {
+    "openalex": "https://openalex.org/W2158914699",
+    "doi": "https://doi.org/10.1109/med.2009.5164585",
+    "mag": "2158914699"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/med.2009.5164585",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/med.2009.5164585",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2009 17th Mediterranean Conference on Control and Automation",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5030951014",
+        "display_name": "Jiang Bian",
+        "orcid": "https://orcid.org/0000-0002-2238-5429"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I102401767",
+          "display_name": "University of Arkansas at Little Rock",
+          "ror": "https://ror.org/04fttyv97",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Jiang Bian",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA",
+          "institution_ids": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5028229111",
+        "display_name": "Remzi Seker",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I102401767",
+          "display_name": "University of Arkansas at Little Rock",
+          "ror": "https://ror.org/04fttyv97",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Remzi Seker",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA",
+          "institution_ids": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5029928673",
+        "display_name": "Srini Ramaswamy",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I102401767",
+          "display_name": "University of Arkansas at Little Rock",
+          "ror": "https://ror.org/04fttyv97",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Srini Ramaswamy",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, University of Arkansas, Little Rock, Little Rock, AR, USA",
+          "institution_ids": [
+            "https://openalex.org/I102401767"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5072032483",
+        "display_name": "Nuri Yilmazer",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I181414168",
+          "display_name": "Texas A&M University – Kingsville",
+          "ror": "https://ror.org/05abs3w97",
+          "country_code": "US",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I181414168"
+          ]
+        }
+      ],
+      "countries": [
+        "US"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Nuri Yilmazer",
+      "raw_affiliation_strings": [
+        "Department of Electrical Engineering and Computer Science, Texas A and M University, Kingsville, TX, USA"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Texas A and M University, Kingsville, TX, USA",
+          "institution_ids": [
+            "https://openalex.org/I181414168"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 2,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.2703,
+  "has_fulltext": false,
+  "cited_by_count": 4,
+  "citation_normalized_percentile": {
+    "value": 0.50744856,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 94
+  },
+  "biblio": {
+    "volume": "2",
+    "issue": null,
+    "first_page": "464",
+    "last_page": "468"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11498",
+    "display_name": "Security in Wireless Sensor Networks",
+    "score": 0.9970999956130981,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1705",
+      "display_name": "Computer Networks and Communications"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11498",
+      "display_name": "Security in Wireless Sensor Networks",
+      "score": 0.9970999956130981,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10400",
+      "display_name": "Network Security and Intrusion Detection",
+      "score": 0.9929999709129333,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10080",
+      "display_name": "Energy Efficient Wireless Sensor Networks",
+      "score": 0.9832000136375427,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.7804477214813232
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.7148303985595703
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless-sensor-network",
+      "display_name": "Wireless sensor network",
+      "score": 0.6417021751403809
+    },
+    {
+      "id": "https://openalex.org/keywords/intrusion-detection-system",
+      "display_name": "Intrusion detection system",
+      "score": 0.6168713569641113
+    },
+    {
+      "id": "https://openalex.org/keywords/intrusion",
+      "display_name": "Intrusion",
+      "score": 0.582121729850769
+    },
+    {
+      "id": "https://openalex.org/keywords/port",
+      "display_name": "Port (circuit theory)",
+      "score": 0.5741189122200012
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.5585781335830688
+    },
+    {
+      "id": "https://openalex.org/keywords/enforcement",
+      "display_name": "Enforcement",
+      "score": 0.5532771348953247
+    },
+    {
+      "id": "https://openalex.org/keywords/wireless",
+      "display_name": "Wireless",
+      "score": 0.4951683580875397
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.46624889969825745
+    },
+    {
+      "id": "https://openalex.org/keywords/intrusion-tolerance",
+      "display_name": "Intrusion tolerance",
+      "score": 0.4102744162082672
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.23927158117294312
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.22558516263961792
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.7804477214813232
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.7148303985595703
+    },
+    {
+      "id": "https://openalex.org/C24590314",
+      "wikidata": "https://www.wikidata.org/wiki/Q336038",
+      "display_name": "Wireless sensor network",
+      "level": 2,
+      "score": 0.6417021751403809
+    },
+    {
+      "id": "https://openalex.org/C35525427",
+      "wikidata": "https://www.wikidata.org/wiki/Q745881",
+      "display_name": "Intrusion detection system",
+      "level": 2,
+      "score": 0.6168713569641113
+    },
+    {
+      "id": "https://openalex.org/C158251709",
+      "wikidata": "https://www.wikidata.org/wiki/Q354025",
+      "display_name": "Intrusion",
+      "level": 2,
+      "score": 0.582121729850769
+    },
+    {
+      "id": "https://openalex.org/C32802771",
+      "wikidata": "https://www.wikidata.org/wiki/Q2443617",
+      "display_name": "Port (circuit theory)",
+      "level": 2,
+      "score": 0.5741189122200012
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.5585781335830688
+    },
+    {
+      "id": "https://openalex.org/C2779777834",
+      "wikidata": "https://www.wikidata.org/wiki/Q4202277",
+      "display_name": "Enforcement",
+      "level": 2,
+      "score": 0.5532771348953247
+    },
+    {
+      "id": "https://openalex.org/C555944384",
+      "wikidata": "https://www.wikidata.org/wiki/Q249",
+      "display_name": "Wireless",
+      "level": 2,
+      "score": 0.4951683580875397
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.46624889969825745
+    },
+    {
+      "id": "https://openalex.org/C196903269",
+      "wikidata": "https://www.wikidata.org/wiki/Q6059063",
+      "display_name": "Intrusion tolerance",
+      "level": 3,
+      "score": 0.4102744162082672
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.23927158117294312
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.22558516263961792
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C127313418",
+      "wikidata": "https://www.wikidata.org/wiki/Q1069",
+      "display_name": "Geology",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C17409809",
+      "wikidata": "https://www.wikidata.org/wiki/Q161764",
+      "display_name": "Geochemistry",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/med.2009.5164585",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/med.2009.5164585",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2009 17th Mediterranean Conference on Control and Automation",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "score": 0.5099999904632568,
+      "id": "https://metadata.un.org/sdg/16",
+      "display_name": "Peace, Justice and strong institutions"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 29,
+  "referenced_works": [
+    "https://openalex.org/W1805023694",
+    "https://openalex.org/W1968944075",
+    "https://openalex.org/W1973225261",
+    "https://openalex.org/W1995875735",
+    "https://openalex.org/W2033751220",
+    "https://openalex.org/W2041404167",
+    "https://openalex.org/W2052050157",
+    "https://openalex.org/W2053134894",
+    "https://openalex.org/W2058972589",
+    "https://openalex.org/W2108299551",
+    "https://openalex.org/W2115104320",
+    "https://openalex.org/W2116269350",
+    "https://openalex.org/W2121255383",
+    "https://openalex.org/W2121606987",
+    "https://openalex.org/W2123117681",
+    "https://openalex.org/W2128765501",
+    "https://openalex.org/W2145544977",
+    "https://openalex.org/W2148575324",
+    "https://openalex.org/W2168452204",
+    "https://openalex.org/W2170142216",
+    "https://openalex.org/W2293000460",
+    "https://openalex.org/W2296125569",
+    "https://openalex.org/W2978725006",
+    "https://openalex.org/W2987657883",
+    "https://openalex.org/W3211513184",
+    "https://openalex.org/W4229922087",
+    "https://openalex.org/W4300188436",
+    "https://openalex.org/W6638243009",
+    "https://openalex.org/W6678102121"
+  ],
+  "related_works": [
+    "https://openalex.org/W3203133351",
+    "https://openalex.org/W2352562479",
+    "https://openalex.org/W2389356976",
+    "https://openalex.org/W2356891656",
+    "https://openalex.org/W34565110",
+    "https://openalex.org/W2347413713",
+    "https://openalex.org/W2133389611",
+    "https://openalex.org/W136910588",
+    "https://openalex.org/W2353050426",
+    "https://openalex.org/W1539957869"
+  ],
+  "abstract_inverted_index": {
+    "U.S.": [
+      0,
+      69,
+      83
+    ],
+    "Immigration": [
+      1
+    ],
+    "and": [
+      2,
+      22,
+      113,
+      138,
+      168,
+      183,
+      196,
+      233
+    ],
+    "Customs": [
+      3
+    ],
+    "Enforcement": [
+      4
+    ],
+    "is": [
+      5,
+      73,
+      86,
+      241
+    ],
+    "overwhelmed": [
+      6
+    ],
+    "with": [
+      7,
+      50
+    ],
+    "the": [
+      8,
+      25,
+      55,
+      63,
+      97,
+      100,
+      108,
+      131,
+      135,
+      149,
+      161,
+      172,
+      207,
+      211,
+      214,
+      223,
+      228,
+      238
+    ],
+    "number": [
+      9
+    ],
+    "of": [
+      10,
+      27,
+      57,
+      66,
+      99,
+      121,
+      213
+    ],
+    "containers": [
+      11,
+      19,
+      101
+    ],
+    "entering": [
+      12,
+      68
+    ],
+    "U.S.A.": [
+      13
+    ],
+    "on": [
+      14,
+      180
+    ],
+    "a": [
+      15,
+      58,
+      87,
+      92,
+      119,
+      122,
+      185,
+      250
+    ],
+    "regular": [
+      16
+    ],
+    "basis.": [
+      17
+    ],
+    "Although": [
+      18
+    ],
+    "are": [
+      20,
+      178
+    ],
+    "pre-screened": [
+      21
+    ],
+    "inspected": [
+      23
+    ],
+    "at": [
+      24,
+      106
+    ],
+    "time": [
+      26,
+      43
+    ],
+    "shipment,": [
+      28
+    ],
+    "it": [
+      29,
+      72,
+      144
+    ],
+    "does": [
+      30
+    ],
+    "not": [
+      31,
+      74,
+      205,
+      226
+    ],
+    "necessarily": [
+      32
+    ],
+    "address": [
+      33
+    ],
+    "all": [
+      34
+    ],
+    "security": [
+      35
+    ],
+    "risks.": [
+      36
+    ],
+    "Containers": [
+      37
+    ],
+    "stay": [
+      38
+    ],
+    "en-route": [
+      39
+    ],
+    "for": [
+      40
+    ],
+    "long": [
+      41
+    ],
+    "enough": [
+      42
+    ],
+    "that": [
+      44,
+      96,
+      125
+    ],
+    "their": [
+      45
+    ],
+    "contents": [
+      46
+    ],
+    "can": [
+      47,
+      102,
+      110,
+      152,
+      230
+    ],
+    "be": [
+      48,
+      103,
+      111,
+      153,
+      166,
+      231
+    ],
+    "tempered": [
+      49
+    ],
+    "or": [
+      51,
+      105
+    ],
+    "altered": [
+      52
+    ],
+    "according": [
+      53
+    ],
+    "to": [
+      54,
+      76,
+      90,
+      134,
+      165,
+      190,
+      203
+    ],
+    "procedures/needs": [
+      56
+    ],
+    "terrorist": [
+      59
+    ],
+    "attack.": [
+      60
+    ],
+    "Moreover,": [
+      61
+    ],
+    "considering": [
+      62
+    ],
+    "huge": [
+      64
+    ],
+    "amount": [
+      65
+    ],
+    "shipments": [
+      67
+    ],
+    "board": [
+      70
+    ],
+    "daily,": [
+      71
+    ],
+    "practical": [
+      75
+    ],
+    "inspect": [
+      77
+    ],
+    "every": [
+      78
+    ],
+    "container": [
+      79,
+      151
+    ],
+    "again": [
+      80
+    ],
+    "upon": [
+      81
+    ],
+    "arriving": [
+      82
+    ],
+    "ports.": [
+      84
+    ],
+    "There": [
+      85
+    ],
+    "urgent": [
+      88
+    ],
+    "need": [
+      89
+    ],
+    "develop": [
+      91
+    ],
+    "protection": [
+      93
+    ],
+    "system,": [
+      94,
+      174,
+      225
+    ],
+    "such": [
+      95
+    ],
+    "integrity": [
+      98,
+      129,
+      208
+    ],
+    "persevered": [
+      104
+    ],
+    "least": [
+      107
+    ],
+    "intrusion": [
+      109,
+      141,
+      169,
+      175,
+      192
+    ],
+    "detected": [
+      112
+    ],
+    "properly": [
+      114,
+      234
+    ],
+    "handled.": [
+      115
+    ],
+    "This": [
+      116
+    ],
+    "paper": [
+      117
+    ],
+    "proposes": [
+      118
+    ],
+    "design": [
+      120
+    ],
+    "comprehensive": [
+      123
+    ],
+    "solution": [
+      124
+    ],
+    "would": [
+      126
+    ],
+    "monitor": [
+      127
+    ],
+    "containers'": [
+      128
+    ],
+    "from": [
+      130
+    ],
+    "originating": [
+      132
+    ],
+    "port": [
+      133,
+      137
+    ],
+    "destination": [
+      136
+    ],
+    "report": [
+      139,
+      191
+    ],
+    "any": [
+      140
+    ],
+    "event": [
+      142
+    ],
+    "if": [
+      143
+    ],
+    "has": [
+      145,
+      200
+    ],
+    "taken": [
+      146
+    ],
+    "place": [
+      147
+    ],
+    "so": [
+      148
+    ],
+    "intruded": [
+      150
+    ],
+    "handled": [
+      154
+    ],
+    "in": [
+      155,
+      222,
+      249
+    ],
+    "an": [
+      156
+    ],
+    "appropriate": [
+      157
+    ],
+    "way.": [
+      158
+    ],
+    "More": [
+      159
+    ],
+    "important,": [
+      160
+    ],
+    "system": [
+      162,
+      239
+    ],
+    "itself": [
+      163,
+      240
+    ],
+    "needs": [
+      164
+    ],
+    "secure": [
+      167,
+      195
+    ],
+    "resistant.": [
+      170
+    ],
+    "In": [
+      171
+    ],
+    "proposed": [
+      173,
+      224
+    ],
+    "detection": [
+      176
+    ],
+    "sensors": [
+      177
+    ],
+    "deployed": [
+      179
+    ],
+    "each": [
+      181
+    ],
+    "container,": [
+      182
+    ],
+    "form": [
+      184
+    ],
+    "Wireless": [
+      186,
+      246
+    ],
+    "Sensor": [
+      187,
+      247
+    ],
+    "Network": [
+      188
+    ],
+    "(WSN)": [
+      189
+    ],
+    "incidents.": [
+      193
+    ],
+    "A": [
+      194
+    ],
+    "reliable": [
+      197
+    ],
+    "communication": [
+      198,
+      215
+    ],
+    "protocol": [
+      199
+    ],
+    "been": [
+      201
+    ],
+    "developed": [
+      202
+    ],
+    "ensure": [
+      204
+    ],
+    "only": [
+      206,
+      227
+    ],
+    "but": [
+      209,
+      236
+    ],
+    "also": [
+      210,
+      237
+    ],
+    "authenticity": [
+      212
+    ],
+    "conducted": [
+      216
+    ],
+    "among": [
+      217,
+      218
+    ],
+    "sensor": [
+      219
+    ],
+    "nodes.": [
+      220
+    ],
+    "With": [
+      221
+    ],
+    "intrusions": [
+      229
+    ],
+    "identified": [
+      232
+    ],
+    "handled,": [
+      235
+    ],
+    "attack": [
+      242
+    ],
+    "resistant": [
+      243
+    ],
+    "by": [
+      244
+    ],
+    "utilizing": [
+      245
+    ],
+    "Networks": [
+      248
+    ],
+    "smart": [
+      251
+    ],
+    "fashion.": [
+      252
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2024,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2018,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

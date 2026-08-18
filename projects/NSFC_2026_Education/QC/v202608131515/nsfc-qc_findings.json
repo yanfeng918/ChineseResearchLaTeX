@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "v202608131515",
+  "project_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_Education",
+  "generated_at": "2026-08-13T15:25:43",
+  "findings": [
+    {
+      "id": "P1-003",
+      "severity": "P1",
+      "category": "style",
+      "location": {
+        "path": "",
+        "anchor": "precheck.abbreviation_conventions"
+      },
+      "problem": "检测到缩写首次引入/定义时机问题：P1 级 36 项（按 main.tex 实际渲染顺序判定，需人工复核）。",
+      "evidence": [
+        {
+          "type": "note",
+          "detail": "see `artifacts/abbreviation_issues_summary.json` for quick summary"
+        },
+        {
+          "type": "note",
+          "detail": "see `artifacts/abbreviation_issues.csv` for line-level preview"
+        }
+      ],
+      "recommendation": "一般建议：重要概念首次出现写为“中文全称（English Full Name, ABBR）”；若存在 late_definition，应把定义前移到第一次出现处。",
+      "status": "needs_human_review"
+    }
+  ]
+}

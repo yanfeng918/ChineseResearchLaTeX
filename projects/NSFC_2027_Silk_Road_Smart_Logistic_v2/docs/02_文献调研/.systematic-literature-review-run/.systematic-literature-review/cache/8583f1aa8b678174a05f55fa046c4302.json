@@ -1,0 +1,17 @@
+{
+  "paperId": "09b1e9dc70d71eb2414dc2a4fc74d766ce5533b1",
+  "title": "Assessing the Bundle Protocol (BP) and alternative approaches to data bundling in delay-tolerant networks (DTNs)",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1533/9780857098467.2.139?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1533/9780857098467.2.139, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2272334",
+      "name": "W. Eddy"
+    }
+  ],
+  "abstract": "The delay-tolerant network (DTN) architecture envisions a protocol suite addressing many open issues in networking, and extending far beyond the current Internet suite’s capabilities. The DTN Bundle Protocol (BP) has been implemented multiple times on different platforms with different features and optimizations. DTN and BP is not a singular complete concrete protocol stack, but rather a highly configurable core. Specific challenged networks have different constraints, and need individually optimized BP stacks, which may or may not ultimately be interoperable with one another. This chapter compares some BP configurations with similar non-BP-based designs and concludes with a perspective on future work in DTN, including the open question of whether or not a common underlying protocol like BP is necessary."
+}

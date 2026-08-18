@@ -1,0 +1,854 @@
+{
+  "id": "https://openalex.org/W2130675004",
+  "doi": "https://doi.org/10.1109/icmens.2004.1508930",
+  "title": "The Role of Electronic Container Seal (E-Seal) with RFID Technology in the Container Security Initiatives",
+  "display_name": "The Role of Electronic Container Seal (E-Seal) with RFID Technology in the Container Security Initiatives",
+  "publication_year": 2006,
+  "publication_date": "2006-10-11",
+  "ids": {
+    "openalex": "https://openalex.org/W2130675004",
+    "doi": "https://doi.org/10.1109/icmens.2004.1508930",
+    "mag": "2130675004"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/icmens.2004.1508930",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/icmens.2004.1508930",
+    "pdf_url": null,
+    "source": null,
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "2004 International Conference on MEMS, NANO and Smart Systems (ICMENS'04)",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5044998574",
+        "display_name": "Le-Pong Chin",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I14140830",
+          "display_name": "Shih Chien University",
+          "ror": "https://ror.org/01c3hyk82",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I14140830"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Le-Pong Chin",
+      "raw_affiliation_strings": [
+        "Department of Information Management, Shih Chien University, Taipei, Taiwan",
+        "Shih-Chien University#TAB#"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Information Management, Shih Chien University, Taipei, Taiwan",
+          "institution_ids": [
+            "https://openalex.org/I14140830"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Shih-Chien University#TAB#",
+          "institution_ids": [
+            "https://openalex.org/I14140830"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5101426751",
+        "display_name": "Chialin Wu",
+        "orcid": "https://orcid.org/0000-0002-1201-7104"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I14140830",
+          "display_name": "Shih Chien University",
+          "ror": "https://ror.org/01c3hyk82",
+          "country_code": "TW",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I14140830"
+          ]
+        }
+      ],
+      "countries": [
+        "TW"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Chia-Lin Wu",
+      "raw_affiliation_strings": [
+        "Graduate School of Business Administration, Shih Chien University, Taipei, Taiwan",
+        "Shih-Chien University#TAB#"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Graduate School of Business Administration, Shih Chien University, Taipei, Taiwan",
+          "institution_ids": [
+            "https://openalex.org/I14140830"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Shih-Chien University#TAB#",
+          "institution_ids": [
+            "https://openalex.org/I14140830"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I14140830"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 4.2784,
+  "has_fulltext": false,
+  "cited_by_count": 33,
+  "citation_normalized_percentile": {
+    "value": 0.9596137,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 98
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "116",
+    "last_page": "120"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10986",
+    "display_name": "RFID technology advancements",
+    "score": 0.9775000214576721,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2214",
+      "display_name": "Media Technology"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10986",
+      "display_name": "RFID technology advancements",
+      "score": 0.9775000214576721,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2214",
+        "display_name": "Media Technology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.8419936895370483
+    },
+    {
+      "id": "https://openalex.org/keywords/seal",
+      "display_name": "Seal (emblem)",
+      "score": 0.7209641933441162
+    },
+    {
+      "id": "https://openalex.org/keywords/radio-frequency-identification",
+      "display_name": "Radio-frequency identification",
+      "score": 0.7166632413864136
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.6428334712982178
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.3534371852874756
+    },
+    {
+      "id": "https://openalex.org/keywords/business",
+      "display_name": "Business",
+      "score": 0.32883983850479126
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.32349637150764465
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.8419936895370483
+    },
+    {
+      "id": "https://openalex.org/C2777755289",
+      "wikidata": "https://www.wikidata.org/wiki/Q162919",
+      "display_name": "Seal (emblem)",
+      "level": 2,
+      "score": 0.7209641933441162
+    },
+    {
+      "id": "https://openalex.org/C204222849",
+      "wikidata": "https://www.wikidata.org/wiki/Q104954",
+      "display_name": "Radio-frequency identification",
+      "level": 2,
+      "score": 0.7166632413864136
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.6428334712982178
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.3534371852874756
+    },
+    {
+      "id": "https://openalex.org/C144133560",
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+      "display_name": "Business",
+      "level": 0,
+      "score": 0.32883983850479126
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.32349637150764465
+    },
+    {
+      "id": "https://openalex.org/C142362112",
+      "wikidata": "https://www.wikidata.org/wiki/Q735",
+      "display_name": "Art",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C153349607",
+      "wikidata": "https://www.wikidata.org/wiki/Q36649",
+      "display_name": "Visual arts",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/icmens.2004.1508930",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/icmens.2004.1508930",
+      "pdf_url": null,
+      "source": null,
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "2004 International Conference on MEMS, NANO and Smart Systems (ICMENS'04)",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/14",
+      "score": 0.6600000262260437,
+      "display_name": "Life below water"
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W2367301169",
+    "https://openalex.org/W1577771720",
+    "https://openalex.org/W2352134912",
+    "https://openalex.org/W4237333278",
+    "https://openalex.org/W2001079144",
+    "https://openalex.org/W4393477817",
+    "https://openalex.org/W2048054615",
+    "https://openalex.org/W2974221847",
+    "https://openalex.org/W2480624181",
+    "https://openalex.org/W15399841"
+  ],
+  "abstract_inverted_index": {
+    "After": [
+      0
+    ],
+    "the": [
+      1,
+      6,
+      12,
+      27,
+      51,
+      60,
+      70,
+      76,
+      94,
+      100,
+      114,
+      117,
+      122,
+      138,
+      150,
+      159,
+      163,
+      169,
+      178
+    ],
+    "September": [
+      2,
+      23
+    ],
+    "11": [
+      3,
+      24
+    ],
+    "events,": [
+      4
+    ],
+    "both": [
+      5
+    ],
+    "governments": [
+      7
+    ],
+    "and": [
+      8,
+      42,
+      91,
+      127,
+      147,
+      167,
+      177,
+      188
+    ],
+    "industries": [
+      9
+    ],
+    "have": [
+      10
+    ],
+    "illustrated": [
+      11
+    ],
+    "importance": [
+      13
+    ],
+    "of": [
+      14,
+      53,
+      67,
+      116,
+      142,
+      181
+    ],
+    "transportation": [
+      15,
+      55
+    ],
+    "security": [
+      16,
+      56,
+      119
+    ],
+    "as": [
+      17,
+      19,
+      96
+    ],
+    "well": [
+      18,
+      89
+    ],
+    "cargo": [
+      20,
+      68
+    ],
+    "security.": [
+      21,
+      62
+    ],
+    "The": [
+      22
+    ],
+    "terrorists": [
+      25
+    ],
+    "hijacked": [
+      26
+    ],
+    "commercial": [
+      28
+    ],
+    "passenger": [
+      29
+    ],
+    "aircrafts": [
+      30
+    ],
+    "to": [
+      31,
+      33,
+      84,
+      149
+    ],
+    "attack": [
+      32
+    ],
+    "World": [
+      34
+    ],
+    "Trade": [
+      35
+    ],
+    "Center": [
+      36
+    ],
+    "Towers": [
+      37
+    ],
+    "in": [
+      38,
+      75,
+      99,
+      162
+    ],
+    "New": [
+      39
+    ],
+    "York": [
+      40
+    ],
+    "City": [
+      41
+    ],
+    "Pentagon": [
+      43
+    ],
+    "Building": [
+      44
+    ],
+    "near": [
+      45
+    ],
+    "Washington": [
+      46
+    ],
+    "D.C.": [
+      47
+    ],
+    "These": [
+      48
+    ],
+    "attacks": [
+      49
+    ],
+    "remind": [
+      50
+    ],
+    "public": [
+      52
+    ],
+    "how": [
+      54,
+      158
+    ],
+    "establishments": [
+      57
+    ],
+    "directly": [
+      58
+    ],
+    "affect": [
+      59
+    ],
+    "national": [
+      61
+    ],
+    "Today": [
+      63
+    ],
+    "more": [
+      64
+    ],
+    "than": [
+      65
+    ],
+    "85%": [
+      66
+    ],
+    "entering": [
+      69
+    ],
+    "United": [
+      71
+    ],
+    "States": [
+      72
+    ],
+    "is": [
+      73,
+      81
+    ],
+    "coming": [
+      74
+    ],
+    "standard": [
+      77
+    ],
+    "ocean": [
+      78
+    ],
+    "containers.": [
+      79
+    ],
+    "It": [
+      80
+    ],
+    "now": [
+      82
+    ],
+    "essential": [
+      83
+    ],
+    "ensure": [
+      85
+    ],
+    "these": [
+      86
+    ],
+    "containers": [
+      87
+    ],
+    "are": [
+      88,
+      108,
+      133,
+      145
+    ],
+    "monitored": [
+      90
+    ],
+    "inspected": [
+      92
+    ],
+    "along": [
+      93
+    ],
+    "way": [
+      95
+    ],
+    "they": [
+      97
+    ],
+    "arrive": [
+      98
+    ],
+    "U.S.": [
+      101
+    ],
+    "ports": [
+      102
+    ],
+    "so": [
+      103
+    ],
+    "no": [
+      104
+    ],
+    "mass": [
+      105
+    ],
+    "destruction": [
+      106
+    ],
+    "materials": [
+      107
+    ],
+    "smuggling": [
+      109
+    ],
+    "into": [
+      110
+    ],
+    "this": [
+      111,
+      136
+    ],
+    "country.": [
+      112
+    ],
+    "In": [
+      113,
+      135
+    ],
+    "wake": [
+      115
+    ],
+    "container": [
+      118
+    ],
+    "initiative": [
+      120
+    ],
+    "(CSI),": [
+      121
+    ],
+    "Electronic": [
+      123
+    ],
+    "Container": [
+      124
+    ],
+    "Seal": [
+      125
+    ],
+    "(E-Seal)": [
+      126
+    ],
+    "Radio": [
+      128
+    ],
+    "Frequency": [
+      129
+    ],
+    "Identification": [
+      130
+    ],
+    "(RFID)": [
+      131
+    ],
+    "technology": [
+      132
+    ],
+    "introduced.": [
+      134
+    ],
+    "paper,": [
+      137
+    ],
+    "basic": [
+      139
+    ],
+    "technical": [
+      140
+    ],
+    "features": [
+      141
+    ],
+    "RFID": [
+      143
+    ],
+    "systems": [
+      144
+    ],
+    "described": [
+      146
+    ],
+    "linked": [
+      148
+    ],
+    "practical": [
+      151
+    ],
+    "applications.": [
+      152
+    ],
+    "This": [
+      153
+    ],
+    "paper": [
+      154
+    ],
+    "will": [
+      155
+    ],
+    "also": [
+      156
+    ],
+    "determine": [
+      157
+    ],
+    "technologies": [
+      160
+    ],
+    "perform": [
+      161
+    ],
+    "real-world": [
+      164
+    ],
+    "operational": [
+      165
+    ],
+    "environments": [
+      166
+    ],
+    "evaluate": [
+      168
+    ],
+    "various": [
+      170
+    ],
+    "trade-offs": [
+      171,
+      183
+    ],
+    "that": [
+      172
+    ],
+    "exist": [
+      173
+    ],
+    "with": [
+      174
+    ],
+    "e-seal": [
+      175
+    ],
+    "design": [
+      176
+    ],
+    "potential": [
+      179
+    ],
+    "impact": [
+      180
+    ],
+    "those": [
+      182
+    ],
+    "on": [
+      184
+    ],
+    "functionality,": [
+      185
+    ],
+    "reliability,": [
+      186
+    ],
+    "utility,": [
+      187
+    ],
+    "cost.": [
+      189
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2023,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2020,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2017,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2013,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 4
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

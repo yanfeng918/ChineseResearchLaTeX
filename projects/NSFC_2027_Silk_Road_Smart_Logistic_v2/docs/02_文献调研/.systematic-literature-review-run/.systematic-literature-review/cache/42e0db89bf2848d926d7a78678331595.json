@@ -1,0 +1,326 @@
+{
+  "id": "https://openalex.org/W4240024981",
+  "doi": "https://doi.org/10.1109/icmens.2004.1332281",
+  "title": "The role of electronic container seal (E-Seal)with RFID technology in the container security initiatives",
+  "display_name": "The role of electronic container seal (E-Seal)with RFID technology in the container security initiatives",
+  "publication_year": 2004,
+  "publication_date": "2004-11-08",
+  "ids": {
+    "openalex": "https://openalex.org/W4240024981",
+    "doi": "https://doi.org/10.1109/icmens.2004.1332281"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1109/icmens.2004.1332281",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1109/icmens.2004.1332281",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4363608913",
+      "display_name": "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004.",
+      "issn_l": null,
+      "issn": null,
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": false,
+      "host_organization": null,
+      "host_organization_name": null,
+      "host_organization_lineage": [],
+      "host_organization_lineage_names": [],
+      "type": "conference"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004.",
+    "raw_type": "proceedings-article"
+  },
+  "type": "conference-paper",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5044998574",
+        "display_name": "Le-Pong Chin",
+        "orcid": null
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Le-Pong Chin",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5101426751",
+        "display_name": "Chialin Wu",
+        "orcid": "https://orcid.org/0000-0002-1201-7104"
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Chia-Lin Wu",
+      "raw_affiliation_strings": [],
+      "raw_orcid": null,
+      "affiliations": []
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 0,
+  "institutions_distinct_count": 0,
+  "corresponding_author_ids": [],
+  "corresponding_institution_ids": [],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.0,
+  "has_fulltext": false,
+  "cited_by_count": 7,
+  "citation_normalized_percentile": {
+    "value": 0.62645012,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 89,
+    "max": 94
+  },
+  "biblio": {
+    "volume": null,
+    "issue": null,
+    "first_page": "98",
+    "last_page": "102"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T14180",
+    "display_name": "Law, logistics, and international trade",
+    "score": 0.9965999722480774,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1402",
+      "display_name": "Accounting"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/14",
+      "display_name": "Business, Management and Accounting"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T14180",
+      "display_name": "Law, logistics, and international trade",
+      "score": 0.9965999722480774,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1402",
+        "display_name": "Accounting"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/14",
+        "display_name": "Business, Management and Accounting"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.9177864789962769
+    },
+    {
+      "id": "https://openalex.org/keywords/seal",
+      "display_name": "Seal (emblem)",
+      "score": 0.8463895916938782
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.4321939945220947
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.3469422459602356
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.24152642488479614
+    },
+    {
+      "id": "https://openalex.org/keywords/mechanical-engineering",
+      "display_name": "Mechanical engineering",
+      "score": 0.10730329155921936
+    },
+    {
+      "id": "https://openalex.org/keywords/art",
+      "display_name": "Art",
+      "score": 0.05247923731803894
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.9177864789962769
+    },
+    {
+      "id": "https://openalex.org/C2777755289",
+      "wikidata": "https://www.wikidata.org/wiki/Q162919",
+      "display_name": "Seal (emblem)",
+      "level": 2,
+      "score": 0.8463895916938782
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.4321939945220947
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.3469422459602356
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.24152642488479614
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.10730329155921936
+    },
+    {
+      "id": "https://openalex.org/C142362112",
+      "wikidata": "https://www.wikidata.org/wiki/Q735",
+      "display_name": "Art",
+      "level": 0,
+      "score": 0.05247923731803894
+    },
+    {
+      "id": "https://openalex.org/C153349607",
+      "wikidata": "https://www.wikidata.org/wiki/Q36649",
+      "display_name": "Visual arts",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1109/icmens.2004.1332281",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1109/icmens.2004.1332281",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4363608913",
+        "display_name": "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004.",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "conference"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Proceedings. 2004 International Conference on MEMS, NANO and Smart Systems, 2004. ICMENS 2004.",
+      "raw_type": "proceedings-article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [
+    {
+      "display_name": "Industry, innovation and infrastructure",
+      "id": "https://metadata.un.org/sdg/9",
+      "score": 0.4699999988079071
+    }
+  ],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 0,
+  "referenced_works": [],
+  "related_works": [
+    "https://openalex.org/W4391375266",
+    "https://openalex.org/W2748952813",
+    "https://openalex.org/W2367301169",
+    "https://openalex.org/W2352134912",
+    "https://openalex.org/W4237333278",
+    "https://openalex.org/W2001079144",
+    "https://openalex.org/W2390279801",
+    "https://openalex.org/W4393477817",
+    "https://openalex.org/W2048054615",
+    "https://openalex.org/W2974221847"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2019,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2016,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2015,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2014,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2012,
+      "cited_by_count": 1
+    }
+  ],
+  "updated_date": "2026-07-29T14:22:42.915294",
+  "created_date": "2025-10-10T00:00:00"
+}

@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2024-09-04T05:25:03Z",
+      "timestamp": 1725427503302
+    },
+    "reference-count": 3,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.1109/icmens.2004.1508930",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2006-10-11T12:54:11Z",
+      "timestamp": 1160571251000
+    },
+    "page": "116-120",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "The Role of Electronic Container Seal (E-Seal) with RFID Technology in the Container Security Initiatives"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "family": "Le-Pong Chin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "family": "Chia-Lin Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "year": "0",
+        "key": "3"
+      },
+      {
+        "key": "2",
+        "first-page": "64",
+        "article-title": "Predictions and trends in the RFID industry - How to nurture prediction into fact",
+        "author": "manning",
+        "year": "1998",
+        "journal-title": "Automatic ID - News Europe"
+      },
+      {
+        "journal-title": "All Set Marine Security",
+        "year": "0",
+        "key": "1"
+      }
+    ],
+    "event": {
+      "name": "2004 International Conference on MEMS, NANO and Smart Systems (ICMENS'04)",
+      "location": "Banff, AB, Canada"
+    },
+    "container-title": [
+      "2004 International Conference on MEMS, NANO and Smart Systems (ICMENS'04)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/10085/32318/01508930.pdf?arnumber=1508930",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          14
+        ]
+      ],
+      "date-time": "2017-03-14T18:38:55Z",
+      "timestamp": 1489516735000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/1508930/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 3,
+    "URL": "https://doi.org/10.1109/icmens.2004.1508930",
+    "relation": {},
+    "subject": []
+  }
+}

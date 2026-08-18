@@ -1,0 +1,257 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2025-03-27T02:36:20Z",
+      "timestamp": 1743042980239,
+      "version": "3.40.3"
+    },
+    "publisher-location": "Berlin, Heidelberg",
+    "reference-count": 12,
+    "publisher": "Springer Berlin Heidelberg",
+    "isbn-type": [
+      {
+        "type": "print",
+        "value": "9783642320538"
+      },
+      {
+        "type": "electronic",
+        "value": "9783642320545"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2013-01-01T00:00:00Z",
+          "timestamp": 1356998400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2013-01-01T00:00:00Z",
+          "timestamp": 1356998400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-3-642-32054-5_130",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          3,
+          18
+        ]
+      ],
+      "date-time": "2013-03-18T15:44:48Z",
+      "timestamp": 1363621488000
+    },
+    "page": "931-936",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Applying RFID and GPS Tracker for Ensuring Cargo Transportation Security"
+    ],
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "Ruijian",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "130_CR1",
+        "unstructured": "IBM Corporation, Team Focus Facilitation Services (2004) U.S. customs and border protection trade support network, e-manifest: trucks, Washington, DC, USA, 10 Nov 2004"
+      },
+      {
+        "key": "130_CR2",
+        "unstructured": "Denning M, CBP, Davenport R, eCP (2004) ACE development and trade engagement, Washington, DC, USA, 30 June 2004"
+      },
+      {
+        "key": "130_CR3",
+        "unstructured": "Richardson M, UPS (2004) How large carriers may participate in ACE. American Trucking Associations EDI workshop, Washington, DC, USA, July 2004"
+      },
+      {
+        "key": "130_CR4",
+        "unstructured": "McQueary S, Brown Line Inc (2004) Participation of smaller carriers. American Trucking Associations EDI workshop, Washington, DC, USA, July 2004"
+      },
+      {
+        "key": "130_CR5",
+        "unstructured": "Chen PS, Lee J (2007) RFID solution applying on freight container security management. In: Proceedings of the Stockholm-Taipei 2007 international conflict management conference, Mar 2007"
+      },
+      {
+        "issue": "3",
+        "key": "130_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.1016/j.ijpe.2003.06.003",
+        "volume": "96",
+        "author": "HL Lee",
+        "year": "2005",
+        "unstructured": "Lee HL(2005) Higher supply chain security with low cost: lessons from total quality management. Int J Prod Econ 96(3):73–79",
+        "journal-title": "Int J Prod Econ"
+      },
+      {
+        "key": "130_CR7",
+        "unstructured": "Lee HL (2004) Coping with security costs of terrorist threats to supply chain management, Stanford, USA"
+      },
+      {
+        "key": "130_CR8",
+        "unstructured": "Karkkainen M, Ala-Risku T, Department of industrial and Management, Helsinki University of Technology, Espoo and Helsinki, Finland (2003) Automatic identification: applications and technologies"
+      },
+      {
+        "key": "130_CR9",
+        "isbn-type": "print",
+        "doi-asserted-by": "publisher",
+        "first-page": "205",
+        "DOI": "10.1002/9780470610978",
+        "volume-title": "Nanocomputers and swarm intelligence",
+        "author": "J-B Waldner",
+        "year": "2008",
+        "unstructured": "Waldner J-B (2008) Nanocomputers and swarm intelligence. ISTE/Wiley, London, pp 205–214. ISBN 1-84704-002-0",
+        "ISBN": "https://id.crossref.org/isbn/1847040020"
+      },
+      {
+        "key": "130_CR10",
+        "unstructured": "Auto-ID Center. The new network. Retrieved 23, Institute for Manufacturing, Department of Engineering, the University of Cambridge, UK, June 2011"
+      },
+      {
+        "key": "130_CR11",
+        "unstructured": "AIDC 100. Professionals who excel in serving the AIDC industry. Retrieved 2, Institute for Manufacturing, Department of Engineering, the University of Cambridge, UK, Aug 2011"
+      },
+      {
+        "key": "130_CR12",
+        "unstructured": "Battelle (2003) Hazmat safety and security field operational test task 4: system requirements and design, federal motor carrier safety administration, Washington, DC, USA, 17 July 2003"
+      }
+    ],
+    "container-title": [
+      "LISS 2012"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/978-3-642-32054-5_130",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          30
+        ]
+      ],
+      "date-time": "2023-01-30T21:14:27Z",
+      "timestamp": 1675113267000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/978-3-642-32054-5_130"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "ISBN": [
+      "9783642320538",
+      "9783642320545"
+    ],
+    "references-count": 12,
+    "URL": "https://doi.org/10.1007/978-3-642-32054-5_130",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2 January 2013",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ChapterHistory",
+          "label": "Chapter History"
+        }
+      }
+    ]
+  }
+}

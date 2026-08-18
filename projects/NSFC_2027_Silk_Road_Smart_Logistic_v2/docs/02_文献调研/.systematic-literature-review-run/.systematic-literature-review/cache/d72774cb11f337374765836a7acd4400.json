@@ -1,0 +1,2471 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2026-08-08T05:29:22Z",
+      "timestamp": 1786166962899,
+      "version": "3.56.0"
+    },
+    "reference-count": 247,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004409",
+        "name": "Ministry of Higher Education and Scientific Research",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100004409",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computer Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.comnet.2024.110350",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          22
+        ]
+      ],
+      "date-time": "2024-03-22T10:23:04Z",
+      "timestamp": 1711102984000
+    },
+    "page": "110350",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 141,
+    "special_numbering": "C",
+    "title": [
+      "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry"
+    ],
+    "prefix": "10.1016",
+    "volume": "244",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7151-5499",
+        "authenticated-orcid": false,
+        "given": "Akram",
+        "family": "Hakiri",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aniruddha",
+        "family": "Gokhale",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8939-8948",
+        "authenticated-orcid": false,
+        "given": "Sadok Ben",
+        "family": "Yahia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nedra",
+        "family": "Mellouli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.comnet.2024.110350_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "19990",
+        "DOI": "10.1109/ACCESS.2018.2890566",
+        "article-title": "A digital-twin-assisted fault diagnosis using deep transfer learning",
+        "volume": "7",
+        "author": "Xu",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "18",
+        "key": "10.1016/j.comnet.2024.110350_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "13789",
+        "DOI": "10.1109/JIOT.2021.3079510",
+        "article-title": "Digital twin networks: A survey",
+        "volume": "8",
+        "author": "Wu",
+        "year": "2021",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.comnet.2024.110350_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "567",
+        "DOI": "10.1016/j.ifacol.2015.06.141",
+        "article-title": "About the importance of autonomy and digital twins for the future of manufacturing",
+        "volume": "48",
+        "author": "Rosen",
+        "year": "2015",
+        "journal-title": "IFAC-PapersOnLine"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b4",
+        "series-title": "Digital Twin: Manufacturing Excellence through Virtual Factory Replication",
+        "author": "Grieves",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b5",
+        "series-title": "Transdisciplinary Perspectives on Complex Systems: New Findings and Approaches",
+        "first-page": "85",
+        "article-title": "Digital twin: Mitigating unpredictable, undesirable emergent behavior in complex systems",
+        "author": "Grieves",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b6",
+        "article-title": "Digital twin in smart manufacturing",
+        "volume": "26",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "J. Ind. Inf. Integr."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "201900",
+        "DOI": "10.1109/ACCESS.2020.3034324",
+        "article-title": "Cyber resilience in healthcare digital twin on lung cancer",
+        "volume": "8",
+        "author": "Zhang",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b8",
+        "series-title": "2021 IEEE 1st International Conference on Digital Twins and Parallel Intelligence",
+        "first-page": "58",
+        "article-title": "Applications of digital twin system in a smart city system with multi-energy",
+        "author": "Lu",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b9",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.agsy.2020.103046",
+        "article-title": "Digital twins in smart farming",
+        "volume": "189",
+        "author": "Verdouw",
+        "year": "2021",
+        "journal-title": "Agric. Syst."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.comnet.2024.110350_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "5138",
+        "DOI": "10.1109/TSG.2020.3000958",
+        "article-title": "On the implementation of IoT-based digital twin for networked microgrids resiliency against cyberattacks",
+        "volume": "11",
+        "author": "Saad",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Smart Grid"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "177284",
+        "DOI": "10.1109/ACCESS.2019.2957202",
+        "article-title": "Data super-network fault prediction model and maintenance strategy for mechanical product based on digital twin",
+        "volume": "7",
+        "author": "Liu",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b12",
+        "article-title": "Leveraging digital twin technology in model-based systems engineering",
+        "volume": "7",
+        "author": "Madni",
+        "year": "2019",
+        "journal-title": "Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.comnet.2024.110350_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2405",
+        "DOI": "10.1109/TII.2018.2873186",
+        "article-title": "Digital twin in industry: State-of-the-art",
+        "volume": "15",
+        "author": "Tao",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "108952",
+        "DOI": "10.1109/ACCESS.2020.2998358",
+        "article-title": "Digital twin: Enabling technologies, challenges, and open research",
+        "volume": "8",
+        "author": "Fuller",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.comnet.2024.110350_b15",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.23919/JCC.2020.09.008",
+        "article-title": "Vision, requirements and network architecture of 6G mobile network beyond 2030",
+        "volume": "17",
+        "author": "Liu",
+        "year": "2020",
+        "journal-title": "China Commun."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.comnet.2024.110350_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1109/MCOM.001.2000343",
+        "article-title": "Digital twin for 5G and beyond",
+        "volume": "59",
+        "author": "Nguyen",
+        "year": "2021",
+        "journal-title": "IEEE Commun. Mag."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.comnet.2024.110350_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "1785",
+        "DOI": "10.1109/JPROC.2020.2998530",
+        "article-title": "Digital twin in the IoT context: A survey on technical features, scenarios, and architectural models",
+        "volume": "108",
+        "author": "Minerva",
+        "year": "2020",
+        "journal-title": "Proc. IEEE"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2021.103469",
+        "article-title": "Digital twin paradigm: A systematic literature review",
+        "volume": "130",
+        "author": "Semeraro",
+        "year": "2021",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b19",
+        "series-title": "Discovering the Digital Twin Web - from Singular Applications to a Scalable Network",
+        "author": "Autiosalo",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b20",
+        "series-title": "2018 International Conference on Intelligent Systems",
+        "first-page": "272",
+        "article-title": "A digital twin-based privacy enhancement mechanism for the automotive industry",
+        "author": "Damjanovic-Behrendt",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b21",
+        "series-title": "2022 IEEE 23rd International Symposium on a World of Wireless, Mobile and Multimedia Networks",
+        "first-page": "567",
+        "article-title": "A digital twin for the 5G era: the SPIDER cyber range",
+        "author": "Rebecchi",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "75365",
+        "DOI": "10.1109/ACCESS.2022.3191414",
+        "article-title": "On the design of a privacy-preserving communication scheme for cloud-based digital twin environments using blockchain",
+        "volume": "10",
+        "author": "Son",
+        "year": "2022",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b23",
+        "first-page": "1",
+        "article-title": "The emergence of cognitive digital twin: vision, challenges and opportunities",
+        "author": "Zheng",
+        "year": "2021",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b24",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jnca.2021.103309",
+        "article-title": "Industrial digital twins at the nexus of nextg wireless networks and computational intelligence: A survey",
+        "volume": "200",
+        "author": "Zeb",
+        "year": "2022",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b25",
+        "series-title": "Automation systems and integration — Digital twin framework for manufacturing - Part 1: Overview and general principles",
+        "first-page": "1",
+        "author": "for Standardization",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b26",
+        "series-title": "Reality Capture: A Digital Twin Foundation",
+        "author": "John Niles",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b27",
+        "article-title": "Web of digital twins",
+        "author": "Ricci",
+        "year": "2021",
+        "journal-title": "ACM Trans. Internet Technol."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1016/j.procir.2020.01.049",
+        "article-title": "Shifting value stream patterns along the product lifecycle with digital twins",
+        "volume": "86",
+        "author": "Schleich",
+        "year": "2019",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.comnet.2024.110350_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "1313",
+        "DOI": "10.1007/s10845-019-01512-w",
+        "article-title": "A state-of-the-art survey of digital twin: techniques, engineering product lifecycle management and business innovation perspectives",
+        "volume": "31",
+        "author": "Lim",
+        "year": "2020",
+        "journal-title": "J. Intell. Manuf."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b30",
+        "series-title": "Building Industrial Digital Twins: Design, Develop, and Deploy Digital Twin Solutions for Real-World Industries Using Azure Digital Twins",
+        "author": "Shyam Varan Nath",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b31",
+        "series-title": "2019 IEEE Global Humanitarian Technology Conference",
+        "first-page": "1",
+        "article-title": "A digital twin for smart farming",
+        "author": "Alves",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1016/j.cirpj.2020.02.002",
+        "article-title": "Characterising the digital twin: A systematic literature review",
+        "volume": "29",
+        "author": "Jones",
+        "year": "2020",
+        "journal-title": "CIRP J. Manuf. Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b33",
+        "doi-asserted-by": "crossref",
+        "first-page": "167653",
+        "DOI": "10.1109/ACCESS.2019.2953499",
+        "article-title": "A survey on digital twin: Definitions, characteristics, applications, and design implications",
+        "volume": "7",
+        "author": "Barricelli",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b34",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.dss.2021.113524",
+        "article-title": "Digital twin: Generalization, characterization and implementation",
+        "volume": "145",
+        "author": "VanDerHorn",
+        "year": "2021",
+        "journal-title": "Decis. Support Syst."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.comnet.2024.110350_b35",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1115/1.4048414",
+        "article-title": "Toward a digital twin: Time series prediction based on a hybrid ensemble empirical mode decomposition and BO-LSTM neural networks",
+        "volume": "143",
+        "author": "Hu",
+        "year": "2020",
+        "journal-title": "J. Mech. Des."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b36",
+        "series-title": "Proceedings of the 2017 ACM on Web Science Conference",
+        "first-page": "425",
+        "article-title": "Generating digital twin models using knowledge graphs for industrial production lines",
+        "author": "Banerjee",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/dce.2021.10",
+        "article-title": "Universal digital twin : A dynamic knowledge graph",
+        "volume": "2",
+        "author": "Akroyd",
+        "year": "2021",
+        "journal-title": "Data-Centric Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ymssp.2021.107614",
+        "article-title": "Digital twin, physics-based model, and machine learning applied to damage detection in structures",
+        "volume": "155",
+        "author": "Ritto",
+        "year": "2021",
+        "journal-title": "Mech. Syst. Signal Process."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b39",
+        "series-title": "2020 IEEE 11th International Conference on Dependable Systems, Services and Technologies",
+        "first-page": "196",
+        "article-title": "Combination of digital twin and artificial intelligence in manufacturing using industrial IoT",
+        "author": "Kharchenko",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b40",
+        "first-page": "1",
+        "article-title": "A dynamic hierarchical framework for IoT-assisted digital twin synchronization in the metaverse",
+        "author": "Han",
+        "year": "2022",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "414",
+        "DOI": "10.1016/j.ifacol.2021.08.164",
+        "article-title": "A discrete event simulation based approach for digital twin implementation",
+        "volume": "54",
+        "author": "Morabito",
+        "year": "2021",
+        "journal-title": "IFAC-PapersOnLine"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.comnet.2024.110350_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1109/MIC.2021.3059320",
+        "article-title": "Trustworthy digital twins in the industrial internet of things with blockchain",
+        "volume": "26",
+        "author": "Suhail",
+        "year": "2022",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b43",
+        "series-title": "Proceedings of the 2018 Workshop on Cyber-Physical Systems Security and PrivaCy",
+        "first-page": "36",
+        "article-title": "A specification-based state replication approach for digital twins",
+        "author": "Eckhart",
+        "year": "2018"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.1109/MITP.2020.2982896",
+        "article-title": "Digital twins: Properties, software frameworks, and application scenarios",
+        "volume": "23",
+        "author": "Minerva",
+        "year": "2021",
+        "journal-title": "IT Prof."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b45",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1016/j.mfglet.2020.04.004",
+        "article-title": "Framework for a digital twin in manufacturing: Scope and requirements",
+        "volume": "24",
+        "author": "Shao",
+        "year": "2020",
+        "journal-title": "Manuf. Lett."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b46",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1016/j.procir.2021.02.010",
+        "article-title": "The concept of digital twin and digital shadow in manufacturing",
+        "volume": "101",
+        "author": "Bergs",
+        "year": "2021",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "1176",
+        "DOI": "10.3390/met9111176",
+        "article-title": "Spreading process maps for powder-bed additive manufacturing derived from physics model-based machine learning",
+        "volume": "9",
+        "author": "Desai",
+        "year": "2019",
+        "journal-title": "Metals"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b48",
+        "series-title": "Digital Twin System Interoperability Framework",
+        "author": "Budiardjo",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b49",
+        "series-title": "Infrastructure Lifecycle: A Case for Change",
+        "author": "Ferris",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b50",
+        "series-title": "Infrastructure Digital Twin Maturity: A Model for Measuring Progress",
+        "author": "Turner",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b51",
+        "series-title": "Digital Twin Capabilities Periodic Table",
+        "author": "van Schalkwyk",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b52",
+        "series-title": "DTC Open Collaboration Projects - Overview and Guidelines",
+        "author": "Consortium",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b53",
+        "series-title": "IoT Security Maturity Model Digital Twin Profile",
+        "author": "Geater",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b54",
+        "series-title": "Details of the Asset Administration Shell, Part 1: The Exchange of Information Between Partners in the Value Chain of Industrie 4.0",
+        "author": "Association",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b55",
+        "series-title": "Submodel for Contact Information",
+        "author": "Association",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b56",
+        "series-title": "Generic Frame for Technical Data for Industrial Equipment in Manufacturing",
+        "author": "Association",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b57",
+        "series-title": "AutomationML: A Practical Guide",
+        "author": "Drath",
+        "year": "2021"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.comnet.2024.110350_b58",
+        "doi-asserted-by": "crossref",
+        "first-page": "429",
+        "DOI": "10.1515/auto-2019-0020",
+        "article-title": "Authorization in asset administration shells using OPC UA",
+        "volume": "67",
+        "author": "Schmitt",
+        "year": "2019",
+        "journal-title": "at - Automatisierungstechnik"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b59",
+        "unstructured": "K.E. Harper, S. Malakuti, C. Ganz, Digital Twin Architecture and Standards, Tech. rep., 2019, pp. 1–12, IIC Journal of Innovation."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b60",
+        "unstructured": "K.E. Harper, S. Malakuti, C. Ganz, Digital Twins for Industrial Applications: Definition, business values, design aspects, standards, and use cases, Tech. rep., 2020, IIC Journal of Innovation, URL."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b61",
+        "series-title": "Digital Twin Network: Concepts and Reference Architecture",
+        "author": "Zhou",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b62",
+        "series-title": "Automation systems and integration — Digital twin framework for manufacturing - Part 2: Reference architecture",
+        "first-page": "1",
+        "author": "for Standardization",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b63",
+        "series-title": "Automation systems and integration — Digital twin framework for manufacturing - Part 3: Digital representation of manufacturing elements",
+        "first-page": "1",
+        "author": "for Standardization",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b64",
+        "series-title": "Automation systems and integration — Digital twin framework for manufacturing - part 4: Information exchange",
+        "first-page": "1",
+        "author": "for Standardization",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b65",
+        "series-title": "Traffic Control and Congestion Control in B-ISDN",
+        "author": "ITU-T",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b66",
+        "series-title": "Eclipse ditto: Digital twin framework of eclipse IoT. Optional W3C web of things (WoT) integration",
+        "author": "Foundation",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b67",
+        "series-title": "Proceedings of the 1st Eclipse Research International Conference on Security, Artificial Intelligence and Modeling for the Next Generation Internet of Things, Virtual Event, September 17th - To - 18th, 2020",
+        "first-page": "72",
+        "article-title": "Bringing clouds down to earth: Modeling arrowhead deployments via eclipse vorto",
+        "volume": "vol. 2739",
+        "author": "Kulscár",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b68",
+        "series-title": "Software Architecture",
+        "first-page": "277",
+        "article-title": "Enabling SMEs to industry 4.0 using the BaSyx middleware: A case study",
+        "author": "Kannoth",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b69",
+        "series-title": "ScaleOut digital twin streaming service",
+        "author": "ScaleOut",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b70",
+        "series-title": "Davra platform: an IoT AEP platform",
+        "author": "Davra",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b71",
+        "series-title": "FIWARE for Digital Twins",
+        "author": "Abella",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b72",
+        "series-title": "iTwin platform: Develop on the infrastructure tech platform of the future",
+        "author": "Bentley",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b73",
+        "series-title": "DUET: Digital urban European twins",
+        "author": "Lieven Raes",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b74",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.softx.2021.100661",
+        "article-title": "WLDT: A general purpose library to build IoT digital twins",
+        "volume": "13",
+        "author": "Picone",
+        "year": "2021",
+        "journal-title": "SoftwareX"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b75",
+        "series-title": "FAAAST-service: Fraunhofer advanced asset administration shell tools for digital twins",
+        "author": "Jacoby",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b76",
+        "series-title": "Proceedings of the 4th ACM Workshop on Cyber-Physical System Security",
+        "first-page": "61",
+        "article-title": "Towards security-aware virtual environments for digital twins",
+        "author": "Eckhart",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b77",
+        "series-title": "The ultimate guide to digital twins",
+        "first-page": "1",
+        "author": "XMPro",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b78",
+        "series-title": "Reflexer digital twin",
+        "author": "Bernardineli",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b79",
+        "series-title": "A library to help data services talk to one another",
+        "author": "Clark",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b80",
+        "series-title": "AR remote control of an industrial plant using a digital twin",
+        "author": "Menne",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b81",
+        "doi-asserted-by": "crossref",
+        "first-page": "140779",
+        "DOI": "10.1109/ACCESS.2021.3119487",
+        "article-title": "Twinbase: Open-source server software for the digital twin web",
+        "volume": "9",
+        "author": "Autiosalo",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.comnet.2024.110350_b82",
+        "doi-asserted-by": "crossref",
+        "first-page": "1296",
+        "DOI": "10.1109/TASE.2020.3043393",
+        "article-title": "Adaptive optimization method in digital twin conveyor systems via range-inspection control",
+        "volume": "19",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Autom. Sci. Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b83",
+        "series-title": "2018 Chinese Automation Congress",
+        "first-page": "289",
+        "article-title": "Optimal look-ahead control of CSPS system by deep Q-network and profit sharing",
+        "author": "Cheng",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b84",
+        "series-title": "Equinox analysis server",
+        "author": "Artim",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b85",
+        "series-title": "Quanser interactive labs for MATLAB",
+        "author": "Purser",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b86",
+        "series-title": "Digital Twins Definition Language - Version 2",
+        "author": "Microsoft",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b87",
+        "series-title": "About the oracle IoT digital twin implementation",
+        "author": "Oracle",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b88",
+        "series-title": "IBM digital twin exchange",
+        "author": "IBM",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b89",
+        "series-title": "AWS IoT TwinMaker",
+        "author": "Amazon",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b90",
+        "series-title": "Connected Business: Create Value in a Networked Economy",
+        "first-page": "267",
+        "article-title": "Bosch IoT suite: Exploiting the potential of smart connected products",
+        "author": "Jung",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b91",
+        "first-page": "1",
+        "article-title": "INTERLINK: A digital twin-assisted storage strategy for satellite-terrestrial networks",
+        "author": "Zhao",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Aerosp. Electron. Syst."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b92",
+        "series-title": "SmartM2M: Digital twins communication support in oneM2M",
+        "author": "ETSI",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b93",
+        "series-title": "Context Information Management (CIM): NGSI-LD API",
+        "first-page": "1",
+        "author": "ETSI",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b94",
+        "series-title": "2022 Thirteenth International Conference on Ubiquitous and Future Networks",
+        "first-page": "366",
+        "article-title": "Design and implementation of a digital twin platform in vertical farming systems",
+        "author": "Ko",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b95",
+        "series-title": "2020 Global Internet of Things Summit",
+        "first-page": "1",
+        "article-title": "Industrial IoT and digital twins for a smart factory : An open source toolkit for application design and benchmarking",
+        "author": "Kamath",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b96",
+        "series-title": "2020 IEEE International Conference on Engineering, Technology and Innovation",
+        "first-page": "1",
+        "article-title": "COGNITWIN – hybrid and cognitive digital twins for the process industry",
+        "author": "Abburu",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b97",
+        "series-title": "2020 IEEE International Conference on Software Architecture Companion",
+        "first-page": "3",
+        "article-title": "Towards the factory of the future with digital twins and SOA",
+        "author": "Kuhn",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b98",
+        "series-title": "Building an active digital twin using NVIDIA omniverse and project gemini",
+        "author": "Long",
+        "year": "2022"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.comnet.2024.110350_b99",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1109/MIC.2021.3056923",
+        "article-title": "Modeling digital twin data and architecture: A building guide with FIWARE as enabling technology",
+        "volume": "26",
+        "author": "Conde",
+        "year": "2022",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b100",
+        "series-title": "Evaluation of Implementation of iTwin.js for the Integration of Digital Twins in the Port of Buenaventura",
+        "author": "Pedraza López",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b101",
+        "series-title": "2021 IEEE 22nd International Symposium on a World of Wireless, Mobile, and Multimedia Networks",
+        "first-page": "256",
+        "article-title": "WIP: Preliminary evaluation of digital twins on MEC software architecture",
+        "author": "Picone",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b102",
+        "series-title": "Details of the Asset Administration Shell, Part 2 – Interoperability at Runtime – Exchanging Information via Application Programming Interfaces",
+        "author": "Association",
+        "year": "2022"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.comnet.2024.110350_b103",
+        "doi-asserted-by": "crossref",
+        "first-page": "717",
+        "DOI": "10.3390/iot2040036",
+        "article-title": "Methodology and tools for digital twin management - the FA3ST approach",
+        "volume": "2",
+        "author": "Stojanovic",
+        "year": "2021",
+        "journal-title": "IoT"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.comnet.2024.110350_b104",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/info12060217",
+        "article-title": "An approach for realizing hybrid digital twins using asset administration shells and apache StreamPipes",
+        "volume": "12",
+        "author": "Jacoby",
+        "year": "2021",
+        "journal-title": "Information"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b105",
+        "series-title": "Platform for hosting digital twin documents on GitHub pages",
+        "author": "Autiosalo",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b106",
+        "doi-asserted-by": "crossref",
+        "first-page": "228675",
+        "DOI": "10.1109/ACCESS.2020.3045856",
+        "article-title": "Data link for the creation of digital twins",
+        "volume": "8",
+        "author": "Ala-Laurinaho",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b107",
+        "doi-asserted-by": "crossref",
+        "first-page": "1193",
+        "DOI": "10.1109/ACCESS.2019.2950507",
+        "article-title": "A feature-based framework for structuring industrial digital twins",
+        "volume": "8",
+        "author": "Autiosalo",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b108",
+        "doi-asserted-by": "crossref",
+        "first-page": "140779",
+        "DOI": "10.1109/ACCESS.2021.3119487",
+        "article-title": "Twinbase: Open-source server software for the digital twin web",
+        "volume": "9",
+        "author": "Autiosalo",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b109",
+        "series-title": "Hands-On Azure Digital Twins: A Practical Guide to Building Distributed IoT Solutions",
+        "author": "Meijers",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b110",
+        "series-title": "A cybersecurity platform for virtualised 5G cyber range services",
+        "author": "Polvanesi",
+        "year": "2019"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.comnet.2024.110350_b111",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/s22114106",
+        "article-title": "B5GEMINI: AI-driven network digital twin",
+        "volume": "22",
+        "author": "Mozo",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b112",
+        "series-title": "2021 IEEE 1st International Conference on Digital Twins and Parallel Intelligence",
+        "first-page": "395",
+        "article-title": "A digital twin network for security training in 5G industrial environments",
+        "author": "Vakaruk",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b113",
+        "series-title": "Proceedings of the 13th International Conference on Availability, Reliability and Security",
+        "first-page": "1",
+        "article-title": "The mouseworld, a security traffic analysis lab based on NFV/sdn",
+        "author": "Pastor",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b114",
+        "series-title": "Low-Emission Adaptive Last Mile Logistics Supporting on Demand Economy Through Digital Twins",
+        "author": "Jimenez",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b115",
+        "series-title": "Technical Requirements – Solution Architecture",
+        "first-page": "1",
+        "author": "Belfadel",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b116",
+        "first-page": "1",
+        "article-title": "DUET: A framework for building interoperable and trusted digital twins of smart cities",
+        "author": "Raes",
+        "year": "2021",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b117",
+        "doi-asserted-by": "crossref",
+        "first-page": "25",
+        "DOI": "10.5194/isprs-annals-VIII-4-W1-2021-25-2021",
+        "article-title": "From an inside-in towards an outside-out urban digital twin: Business models and implementation challenges",
+        "volume": "VIII-4/W1-2021",
+        "author": "D’Hauwers",
+        "year": "2021",
+        "journal-title": "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b118",
+        "series-title": "5G-DIVE: eDge intelligence for vertical experimentation",
+        "author": "oliva",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b119",
+        "doi-asserted-by": "crossref",
+        "first-page": "102862",
+        "DOI": "10.1109/ACCESS.2021.3098109",
+        "article-title": "Dissecting the impact of information and communication technologies on digital twins as a service",
+        "volume": "9",
+        "author": "Groshev",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b120",
+        "series-title": "2020 IEEE Globecom Workshops",
+        "first-page": "1",
+        "article-title": "An intelligent edge-based digital twin for robotics",
+        "author": "Girletti",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b121",
+        "series-title": "5G-enabled growth in vertical industries",
+        "author": "Bernardos",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b122",
+        "series-title": "2020 European Conference on Networks and Communications",
+        "first-page": "17",
+        "article-title": "5Growth: AI-driven 5G for automation in vertical industries",
+        "author": "Papagianni",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b123",
+        "series-title": "Communication Networks and Service Management in the Era of Artificial Intelligence and Machine Learning",
+        "first-page": "69",
+        "article-title": "Self-managed 5G networks 1",
+        "author": "Martín-Pérez",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b124",
+        "series-title": "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications Workshops",
+        "first-page": "1",
+        "article-title": "Demo: AIML-as-a-service for SLA management of a digital twin virtual network service",
+        "author": "Baranda",
+        "year": "2021"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.comnet.2024.110350_b125",
+        "doi-asserted-by": "crossref",
+        "first-page": "14",
+        "DOI": "10.1109/MCOM.001.2001237",
+        "article-title": "Toward intelligent cyber-physical systems: Digital twin meets artificial intelligence",
+        "volume": "59",
+        "author": "Groshev",
+        "year": "2021",
+        "journal-title": "IEEE Commun. Mag."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b126",
+        "series-title": "Proceedings of the 14th International Workshop on Wireless Network Testbeds, Experimental Evaluation and Characterization",
+        "first-page": "126",
+        "article-title": "Assessing the need for 5G driven edge and fog solution for digital twin systems",
+        "author": "Groshev",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b127",
+        "series-title": "ICC 2022 - IEEE International Conference on Communications",
+        "first-page": "4456",
+        "article-title": "Model-based reinforcement learning framework of online network resource allocation",
+        "author": "Bakhshi",
+        "year": "2022"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.comnet.2024.110350_b128",
+        "doi-asserted-by": "crossref",
+        "first-page": "1489",
+        "DOI": "10.1109/TNSM.2022.3150586",
+        "article-title": "Monitoring platform evolution toward serverless computing for 5G and beyond systems",
+        "volume": "19",
+        "author": "Perez",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Netw. Serv. Manag."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b129",
+        "series-title": "Next generation IoT as part of next generation internet",
+        "author": "Consortium",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b130",
+        "series-title": "IoT Meta-Architecture, Components, and Benchmarking",
+        "author": "Services",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b131",
+        "series-title": "Web of Things (WoT): Use Cases and Requirements",
+        "author": "Lagally",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b132",
+        "series-title": "Digipredict – Wearable Devices to Predict Disease Outcome",
+        "author": "Ionescu",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b133",
+        "article-title": "An improved analysis of gradient tracking for decentralized machine learning",
+        "author": "Koloskova",
+        "year": "2022",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b134",
+        "series-title": "Smart water management platform",
+        "author": "Group",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b135",
+        "series-title": "2018 48th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops",
+        "first-page": "49",
+        "article-title": "SWAMP: Smart water management platform overview and security challenges",
+        "author": "Kamienski",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b136",
+        "series-title": "2020 IEEE International Workshop on Metrology for Agriculture and Forestry",
+        "first-page": "109",
+        "article-title": "The SWAMP farmer app for IoT-based smart water status monitoring and irrigation control",
+        "author": "Augusto Sales Dantas",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b137",
+        "doi-asserted-by": "crossref",
+        "first-page": "160004",
+        "DOI": "10.1109/ACCESS.2021.3130030",
+        "article-title": "6G vision, value, use cases and technologies from European 6G flagship project hexa-x",
+        "volume": "9",
+        "author": "Uusitalo",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b138",
+        "series-title": "2021 Joint European Conference on Networks and Communications & 6G Summit",
+        "first-page": "580",
+        "article-title": "Hexa-x the European 6G flagship project",
+        "author": "Uusitalo",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b139",
+        "series-title": "2021 IEEE/ACM 21st International Symposium on Cluster, Cloud and Internet Computing",
+        "first-page": "625",
+        "article-title": "IoTwins: Design and implementation of a platform for the management of digital twins in industrial scenarios",
+        "author": "Borghesi",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b140",
+        "series-title": "An Interview with Dr. Ubaldo Cella, Project Manager of the MeDiTATe Project",
+        "author": "Cella",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b141",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jocs.2021.101327",
+        "article-title": "High fidelity fluid-structure interaction by radial basis functions mesh adaption of moving walls: A workflow applied to an aortic valve",
+        "volume": "51",
+        "author": "Geronzi",
+        "year": "2021",
+        "journal-title": "J. Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b142",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.advengsoft.2022.103173",
+        "article-title": "EndoBeams.jl: A julia finite element package for beam-to-surface contact problems in cardiovascular mechanics",
+        "volume": "171",
+        "author": "Bisighini",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Softw."
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.comnet.2024.110350_b143",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/electronics11131930",
+        "article-title": "The hemodynamic effect of modified blalock–taussig shunt morphologies: A computational analysis based on reduced order modeling",
+        "volume": "11",
+        "author": "Kardampiki",
+        "year": "2022",
+        "journal-title": "Electronics"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b144",
+        "series-title": "Digital twins in PREDIS: A digital twin/tool for waste package evolution",
+        "author": "Miron",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b145",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.pnucene.2022.104251",
+        "article-title": "A detailed design for a radioactive waste safety management system using ICT technologies",
+        "volume": "149",
+        "author": "Park",
+        "year": "2022",
+        "journal-title": "Prog. Nucl. Energy"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b146",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jnca.2023.103638",
+        "article-title": "An open-source implementation and validation of 5G NR configured grant for URLLC in ns-3 5G LENA: A scheduling case study in industry 4.0 scenarios",
+        "volume": "215",
+        "author": "Larrañaga",
+        "year": "2023",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b147",
+        "series-title": "2022 IEEE Conference on Standards for Communications and Networking",
+        "first-page": "91",
+        "article-title": "Digital & green transitions of the European manufacturing sector through beyond 5G-enabled technologies & innovations",
+        "author": "Lazaridis",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b148",
+        "doi-asserted-by": "crossref",
+        "first-page": "143222",
+        "DOI": "10.1109/ACCESS.2021.3120843",
+        "article-title": "Digital twins from smart manufacturing to smart cities: A survey",
+        "volume": "9",
+        "author": "Mylonas",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b149",
+        "article-title": "Digital twin of a city: Review of technology serving city needs",
+        "author": "Lehtola",
+        "year": "2022",
+        "journal-title": "Int. J. Appl. Earth Obs. Geoinf."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b150",
+        "doi-asserted-by": "crossref",
+        "first-page": "16221",
+        "DOI": "10.1038/s41598-022-20178-8",
+        "article-title": "Towards a digital twin for supporting multi-agency incident management in a smart city",
+        "volume": "12",
+        "author": "Wolf",
+        "year": "2022",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.comnet.2024.110350_b151",
+        "doi-asserted-by": "crossref",
+        "first-page": "1106",
+        "DOI": "10.1515/auto-2021-0083",
+        "article-title": "Urban digital twins – A FIWARE-based model",
+        "volume": "69",
+        "author": "Bauer",
+        "year": "2021",
+        "journal-title": "at - Automatisierungstechnik"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b152",
+        "article-title": "Digital twin of an urban-integrated hydroponic farm",
+        "volume": "1",
+        "author": "Jans-Singh",
+        "year": "2020",
+        "journal-title": "Data-Cent. Eng."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.comnet.2024.110350_b153",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1371/journal.pone.0150015",
+        "article-title": "From observation to information: Data-driven understanding of on farm yield variation",
+        "volume": "11",
+        "author": "Jiménez",
+        "year": "2016",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b154",
+        "series-title": "2021 IEEE International Conference on Intelligence and Security Informatics",
+        "first-page": "1",
+        "article-title": "Cyber-physical system security surveillance using knowledge graph based digital twins - a smart farming usecase",
+        "author": "Chukkapalli",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b155",
+        "doi-asserted-by": "crossref",
+        "first-page": "141421",
+        "DOI": "10.1109/ACCESS.2021.3117727",
+        "article-title": "Symbiotic system of systems design for safe and resilient autonomous robotics in offshore wind farms",
+        "volume": "9",
+        "author": "Mitchell",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b156",
+        "series-title": "Transforming agrifood production systems and supply chains with digital twins",
+        "author": "Tzachor",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b157",
+        "series-title": "Advances in Production Management Systems. Artificial Intelligence for Sustainable and Resilient Production Systems",
+        "first-page": "276",
+        "article-title": "Digital twin in the agri-food supply chain: A literature review",
+        "author": "Tebaldi",
+        "year": "2021"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.comnet.2024.110350_b158",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/s22020498",
+        "article-title": "Toward the next generation of digitalization in agriculture based on digital twin paradigm",
+        "volume": "22",
+        "author": "Nasirahmadi",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b159",
+        "series-title": "2019 IEEE International Conference on Engineering, Technology and Innovation",
+        "first-page": "1",
+        "article-title": "Digital twins in ehealth – : Prospects and challenges focussing on information management",
+        "author": "Lutze",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b160",
+        "series-title": "2019 IEEE EMBS International Conference on Biomedical Health Informatics",
+        "first-page": "1",
+        "article-title": "Hospit’win: A predictive simulation-based digital twin for patients pathways in hospital",
+        "author": "Karakra",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b161",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cmpbup.2021.100014",
+        "article-title": "Is human digital twin possible?",
+        "volume": "1",
+        "author": "Shengli",
+        "year": "2021",
+        "journal-title": "Comput. Methods Programs Biomed. Update"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.comnet.2024.110350_b162",
+        "doi-asserted-by": "crossref",
+        "first-page": "2087",
+        "DOI": "10.1109/TASE.2020.3034401",
+        "article-title": "Data-driven structural health monitoring using feature fusion and hybrid deep learning",
+        "volume": "18",
+        "author": "Dang",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Autom. Sci. Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b163",
+        "series-title": "An overview of digital twins application domains in smart energy grid",
+        "author": "Cioara",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b164",
+        "series-title": "2020 IEEE International Workshop on Metrology for Industry 4.0 IoT",
+        "first-page": "435",
+        "article-title": "A digital twins approach to smart grid security testing and standardization",
+        "author": "Atalay",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b165",
+        "doi-asserted-by": "crossref",
+        "first-page": "14184",
+        "DOI": "10.1109/ACCESS.2022.3147602",
+        "article-title": "Machine learning-based digital twin for predictive modeling in wind turbines",
+        "volume": "10",
+        "author": "Fahim",
+        "year": "2022",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b166",
+        "series-title": "2022 IEEE International Conference on Omni-Layer Intelligent Systems",
+        "first-page": "1",
+        "article-title": "A machine learning-based digital twin for electric vehicle battery modeling",
+        "author": "Alamin",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b167",
+        "first-page": "1",
+        "article-title": "Digital twin for networking: A data-driven performance modeling perspective",
+        "author": "Hui",
+        "year": "2022",
+        "journal-title": "IEEE Netw."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b168",
+        "series-title": "Satellite communication digital twin for evaluating novel solutions: Dynamic link emulation architecture",
+        "author": "Petersen",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b169",
+        "series-title": "Proceedings of the 17th International Conference on Evaluation of Novel Approaches To Software Engineering - ENASE",
+        "first-page": "536",
+        "article-title": "Dynamic link network emulation: A model-based design",
+        "author": "Petersen",
+        "year": "2022"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b170",
+        "doi-asserted-by": "crossref",
+        "first-page": "74",
+        "DOI": "10.1109/MCOM.001.21143",
+        "article-title": "Digital-twin-enabled 6G: Vision, architectural trends, and future directions",
+        "volume": "60",
+        "author": "Khan",
+        "year": "2022",
+        "journal-title": "IEEE Commun. Mag."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b171",
+        "series-title": "A digital twin for reconfigurable intelligent surface assisted wireless communication",
+        "author": "Sheen",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b172",
+        "series-title": "Social Computing and Social Media: Experience Design and Social Network Analysis",
+        "first-page": "511",
+        "article-title": "Drone-based AI and 3D reconstruction for digital twin augmentation",
+        "author": "To",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b173",
+        "series-title": "Proceedings of the 2021 European Conference on Computing in Construction",
+        "first-page": "204",
+        "article-title": "BIM, digital twin and cyber-physical systems: crossing and blurring boundaries",
+        "volume": "vol. 2",
+        "author": "Douglas",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b174",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103179",
+        "article-title": "Towards a semantic construction digital twin: Directions for future research",
+        "volume": "114",
+        "author": "Boje",
+        "year": "2020",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b175",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2021.103981",
+        "article-title": "Digital building twins and blockchain for performance-based (smart) contracts",
+        "volume": "133",
+        "author": "Hunhevicz",
+        "year": "2022",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b176",
+        "article-title": "Digital twin: Benefits, use cases, challenges, and opportunities",
+        "volume": "6",
+        "author": "Attaran",
+        "year": "2023",
+        "journal-title": "Decis. Anal. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b177",
+        "doi-asserted-by": "crossref",
+        "first-page": "2050",
+        "DOI": "10.1109/ACCESS.2017.2657006",
+        "article-title": "C2PS: A digital twin architecture reference model for the cloud-based cyber-physical systems",
+        "volume": "5",
+        "author": "Alam",
+        "year": "2017",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b178",
+        "series-title": "Futuristic intelligent transportation system",
+        "author": "Hui",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b179",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2021.103586",
+        "article-title": "A framework for data-driven digital twins of smart manufacturing systems",
+        "volume": "136",
+        "author": "Friederich",
+        "year": "2022",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b180",
+        "doi-asserted-by": "crossref",
+        "first-page": "661",
+        "DOI": "10.1016/j.procir.2022.05.042",
+        "article-title": "An IIoT platform for human-aware factory digital twins",
+        "volume": "107",
+        "author": "Montini",
+        "year": "2022",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "issue": "4–5",
+        "key": "10.1016/j.comnet.2024.110350_b181",
+        "doi-asserted-by": "crossref",
+        "first-page": "366",
+        "DOI": "10.1080/0951192X.2019.1599436",
+        "article-title": "An open source approach to the design and implementation of digital twins for smart manufacturing",
+        "volume": "32",
+        "author": "Damjanovic-Behrendt",
+        "year": "2019",
+        "journal-title": "Int. J. Comput. Integr. Manuf."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b182",
+        "doi-asserted-by": "crossref",
+        "first-page": "435",
+        "DOI": "10.1515/auto-2020-0003",
+        "article-title": "Digital twin of manufacturing systems: A case study on increasing the efficiency of reconfiguration",
+        "volume": "68",
+        "author": "Talkhestani",
+        "year": "2020",
+        "journal-title": "at - Automatisierungstechnik"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b183",
+        "doi-asserted-by": "crossref",
+        "first-page": "145",
+        "DOI": "10.1016/j.cirp.2020.04.086",
+        "article-title": "A design framework for adaptive digital twins",
+        "volume": "69",
+        "author": "Erkoyuncu",
+        "year": "2020",
+        "journal-title": "CIRP Ann."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b184",
+        "doi-asserted-by": "crossref",
+        "first-page": "1213",
+        "DOI": "10.1016/j.promfg.2020.01.212",
+        "article-title": "Using open-source microcontrollers to enable digital twin communication for smart manufacturing",
+        "volume": "38",
+        "author": "Hinchy",
+        "year": "2019",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b185",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2020.101225",
+        "article-title": "Digital twin as a service (DTaaS) in industry 4.0: An architecture reference model",
+        "volume": "47",
+        "author": "Aheleroff",
+        "year": "2021",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b186",
+        "first-page": "1",
+        "article-title": "Demonstration: A cloud-native digital twin with adaptive cloud-based control and intrusion detection",
+        "volume": "vol. 80",
+        "author": "Tarneberg",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b187",
+        "series-title": "2021 International Symposium on Software Engineering for Adaptive and Self-Managing Systems",
+        "first-page": "156",
+        "article-title": "Self-adaptive manufacturing with digital twins",
+        "author": "Bolender",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b188",
+        "series-title": "Proc. IPAC’21",
+        "first-page": "2268",
+        "article-title": "Developing Robust Digital Twins and Reinforcement Learning for Accelerator Control Systems at the Fermilab Booster",
+        "author": "Kafkes",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b189",
+        "series-title": "2020 2nd International Conference on Industrial Artificial Intelligence",
+        "first-page": "1",
+        "article-title": "Digital twin enabled smart control engineering as an industrial AI: A new framework and case study",
+        "author": "Viola",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b190",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.jnca.2019.05.005",
+        "article-title": "Edge computing for internet of things: A survey, e-healthcare case study and future direction",
+        "volume": "140",
+        "author": "Ray",
+        "year": "2019",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b191",
+        "series-title": "Digital Twin Network: Concepts and Reference Architecture",
+        "author": "Zhou",
+        "year": "2022"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.comnet.2024.110350_b192",
+        "doi-asserted-by": "crossref",
+        "first-page": "5098",
+        "DOI": "10.1109/TII.2020.3017668",
+        "article-title": "Low-latency federated learning and blockchain for edge association in digital twin empowered 6G networks",
+        "volume": "17",
+        "author": "Lu",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.comnet.2024.110350_b193",
+        "doi-asserted-by": "crossref",
+        "first-page": "12240",
+        "DOI": "10.1109/TVT.2020.3018817",
+        "article-title": "Reducing offloading latency for digital twin edge networks in 6G",
+        "volume": "69",
+        "author": "Sun",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Veh. Technol."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b194",
+        "series-title": "Digital Twins: Thought Leadership in the Satellite Industry",
+        "first-page": "1",
+        "author": "Martinez",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b195",
+        "series-title": "2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference",
+        "first-page": "1",
+        "article-title": "Digital twins and cybersecurity – solution or challenge?",
+        "author": "Holmes",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b196",
+        "series-title": "Proceedings of the 15th International Conference on Availability, Reliability, and Security",
+        "first-page": "1",
+        "article-title": "Integrating digital twin security simulations in the security operations center",
+        "author": "Dietz",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b197",
+        "series-title": "2019 North American Power Symposium",
+        "first-page": "1",
+        "article-title": "ANGEL: An intelligent digital twin framework for microgrid security",
+        "author": "Danilczyk",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b198",
+        "series-title": "Proceedings of the 15th International Conference on Availability, Reliability, and Security",
+        "first-page": "1",
+        "article-title": "Integrating digital twin security simulations in the security operations center",
+        "author": "Dietz",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b199",
+        "doi-asserted-by": "crossref",
+        "first-page": "107574",
+        "DOI": "10.1109/ACCESS.2021.3100708",
+        "article-title": "ELEGANT: Security of critical infrastructures with digital twins",
+        "volume": "9",
+        "author": "Sousa",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b200",
+        "series-title": "2022 IEEE Security and Privacy Workshops",
+        "first-page": "222",
+        "article-title": "Capabilities-based access control for IoT devices using verifiable credentials",
+        "author": "Fotiou",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b201",
+        "series-title": "2021 IEEE International Conference on Cybersecurity and Resilience",
+        "first-page": "168",
+        "article-title": "Resilience learning through self adaptation in digital twins of human-cyber-physical systems",
+        "author": "Bellini",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b202",
+        "series-title": "2020 IEEE 28th International Requirements Engineering Conference",
+        "first-page": "250",
+        "article-title": "Cyber digital twin simulator for automatic gathering and prioritization of security controls’ requirements",
+        "author": "Hadar",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b203",
+        "series-title": "Populating the digital space for cultural heritage with heritage digital twins",
+        "author": "Niccolucci",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b204",
+        "series-title": "Digital Twins for Digital Transformation: Innovation in Industry",
+        "first-page": "1",
+        "article-title": "IoHCT: Internet of cultural heritage things digital twins for conservation and health monitoring of cultural in the age of digital transformation",
+        "author": "Darwish",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b205",
+        "article-title": "Towards digital twin driven cultural heritage management: A hbim-based workflow for energy improvement of modern buildings",
+        "author": "Massafra",
+        "year": "2022",
+        "journal-title": "ISPRS J. Photogramm. Remote Sens."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b206",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2022.103763",
+        "article-title": "Digital twins: An analysis framework and open issues",
+        "volume": "143",
+        "author": "Boyes",
+        "year": "2022",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b207",
+        "doi-asserted-by": "crossref",
+        "first-page": "88",
+        "DOI": "10.1016/j.procir.2019.04.219",
+        "article-title": "Challenges and potentials of digital twins and industry 4.0 in product design and production for high performance products",
+        "volume": "84",
+        "author": "Wagner",
+        "year": "2019",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b208",
+        "series-title": "Security attacks and solutions for digital twins",
+        "author": "Suhail",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b209",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1016/j.promfg.2017.07.198",
+        "article-title": "A review of the roles of digital twin in CPS-based production systems",
+        "volume": "11",
+        "author": "Negri",
+        "year": "2017",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.comnet.2024.110350_b210",
+        "doi-asserted-by": "crossref",
+        "first-page": "48",
+        "DOI": "10.1109/MWC.001.2000336",
+        "article-title": "Digital twins for intelligent authorization in the B5G-enabled smart grid",
+        "volume": "28",
+        "author": "Lopez",
+        "year": "2021",
+        "journal-title": "IEEE Wirel. Commun."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b211",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1016/j.ceh.2022.07.002",
+        "article-title": "The metaverse in current digital medicine",
+        "volume": "5",
+        "author": "Sun",
+        "year": "2022",
+        "journal-title": "Clin. eHealth"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b212",
+        "series-title": "2017 Global Internet of Things Summit",
+        "first-page": "1",
+        "article-title": "Securing User Identity and Transactions Symbiotically: Iot Meets Blockchain",
+        "author": "Kravitz",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b213",
+        "series-title": "Digital twins: Potentials, ethical issues, and limitations",
+        "author": "Helbing",
+        "year": "2022"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b214",
+        "first-page": "98",
+        "article-title": "Digital twins in agri-food : Societal and ethical themes and questions for further research",
+        "volume": "93",
+        "author": "van der Burg",
+        "year": "2021",
+        "journal-title": "NJAS: Impact Agric. Life Sci."
+      },
+      {
+        "issue": "2207",
+        "key": "10.1016/j.comnet.2024.110350_b215",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1098/rsta.2020.0367",
+        "article-title": "The personal digital twin, ethical considerations",
+        "volume": "379",
+        "author": "de Kerckhove",
+        "year": "2021",
+        "journal-title": "Phil. Trans. R. Soc. A"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.comnet.2024.110350_b216",
+        "doi-asserted-by": "crossref",
+        "first-page": "6",
+        "DOI": "10.1186/s40504-021-00113-x",
+        "article-title": "The use of digital twins in healthcare: socio-ethical benefits and socio-ethical risks",
+        "volume": "17",
+        "author": "Popa",
+        "year": "2021",
+        "journal-title": "Life Sci., Soc. Policy"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.comnet.2024.110350_b217",
+        "doi-asserted-by": "crossref",
+        "first-page": "394",
+        "DOI": "10.1136/medethics-2020-106134",
+        "article-title": "Represent me: please! towards an ethics of digital twins in medicine",
+        "volume": "47",
+        "author": "Braun",
+        "year": "2021",
+        "journal-title": "J. Med. Ethics"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.comnet.2024.110350_b218",
+        "doi-asserted-by": "crossref",
+        "first-page": "412",
+        "DOI": "10.1136/medethics-2020-106134",
+        "article-title": "Represent me: please! towards an ethics of digital twins in medicine",
+        "volume": "47",
+        "author": "Braun",
+        "year": "2021",
+        "journal-title": "J. Med. Ethics"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b219",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1016/j.promfg.2017.04.043",
+        "article-title": "The digital twin: Demonstrating the potential of real time data acquisition in production systems",
+        "volume": "9",
+        "author": "Uhlemann",
+        "year": "2017",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b220",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1016/j.mfglet.2021.05.007",
+        "article-title": "A scalable digital platform for the use of digital twins in additive manufacturing",
+        "volume": "31",
+        "author": "Scime",
+        "year": "2022",
+        "journal-title": "Manuf. Lett."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b221",
+        "doi-asserted-by": "crossref",
+        "first-page": "157",
+        "DOI": "10.1016/j.procir.2021.01.069",
+        "article-title": "Towards a scalable implementation of digital twins - A generic method to acquire shopfloor data",
+        "volume": "96",
+        "author": "Dittmann",
+        "year": "2021",
+        "journal-title": "Procedia CIRP"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b222",
+        "doi-asserted-by": "crossref",
+        "first-page": "20325",
+        "DOI": "10.1109/ACCESS.2019.2897018",
+        "article-title": "Prototyping a digital twin for real time remote control over mobile networks: Application of remote surgery",
+        "volume": "7",
+        "author": "Laaki",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b223",
+        "series-title": "Modules interoperability",
+        "author": "García",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b224",
+        "doi-asserted-by": "crossref",
+        "first-page": "21980",
+        "DOI": "10.1109/ACCESS.2020.2970143",
+        "article-title": "Digital twin: Values, challenges and enablers from a modeling perspective",
+        "volume": "8",
+        "author": "Rasheed",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b225",
+        "doi-asserted-by": "crossref",
+        "first-page": "1815",
+        "DOI": "10.1017/pds.2022.184",
+        "article-title": "Sysml 4 digital twins – utilization of system models for the design and operation of digital twins",
+        "volume": "2",
+        "author": "Wilking",
+        "year": "2022",
+        "journal-title": "Proc. Des. Soc."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b226",
+        "series-title": "2020 25th IEEE International Conference on Emerging Technologies and Factory Automation",
+        "first-page": "1035",
+        "article-title": "Digital twins for manufacturing using UML and behavioral specifications",
+        "volume": "vol. 1",
+        "author": "Azangoo",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b227",
+        "series-title": "2021 ACM/IEEE International Conference on Model Driven Engineering Languages and Systems Companion",
+        "first-page": "212",
+        "article-title": "Using UML and OCL models to realize high-level digital twins",
+        "author": "Munoz",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b228",
+        "series-title": "Digital twin modeling framework",
+        "author": "Muñoz",
+        "year": "2022"
+      },
+      {
+        "issue": "30",
+        "key": "10.1016/j.comnet.2024.110350_b229",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/j.ifacol.2016.11.115",
+        "article-title": "Digital twin data modeling with automationml and a communication methodology for data exchange",
+        "volume": "49",
+        "author": "Schroeder",
+        "year": "2016",
+        "journal-title": "IFAC-PapersOnLine"
+      },
+      {
+        "key": "#cr-split#-10.1016/j.comnet.2024.110350_b230.1",
+        "unstructured": "B. Kessels, R. Fey, N. van de Wouw, Model updating for Digital Twins using inverse mapping models, in: 24th Engineering Mechanics Symposium , EM 2021"
+      },
+      {
+        "key": "#cr-split#-10.1016/j.comnet.2024.110350_b230.2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Conference Date: 26-10-2021 Through 02-11-2021, 2021, pp. 1-8.",
+        "DOI": "10.1007/s35778-021-0488-x"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b231",
+        "doi-asserted-by": "crossref",
+        "first-page": "113826",
+        "DOI": "10.1109/ACCESS.2020.3003723",
+        "article-title": "A product quality monitor model with the digital twin model and the stacked auto encoder",
+        "volume": "8",
+        "author": "Zhang",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b232",
+        "series-title": "BAMM aspect meta model",
+        "author": "Platform",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b233",
+        "series-title": "Blockchain Applications in IoT Ecosystem",
+        "first-page": "177",
+        "article-title": "BlockTwins: A blockchain-based digital twins framework",
+        "author": "Hemdan",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b234",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/3517189",
+        "article-title": "Blockchain-based digital twins: Research trends, issues, and future challenges",
+        "author": "Suhail",
+        "year": "2022",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b235",
+        "doi-asserted-by": "crossref",
+        "first-page": "52138",
+        "DOI": "10.1109/ACCESS.2018.2870052",
+        "article-title": "Peeking inside the black-box: A survey on explainable artificial intelligence (XAI)",
+        "volume": "6",
+        "author": "Adadi",
+        "year": "2018",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b236",
+        "doi-asserted-by": "crossref",
+        "first-page": "152900",
+        "DOI": "10.1109/ACCESS.2019.2948430",
+        "article-title": "Explainable prediction of chronic renal disease in the Colombian population using neural networks and case-based reasoning",
+        "volume": "7",
+        "author": "Vásquez-Morales",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b237",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1016/j.trpro.2021.09.007",
+        "article-title": "An AI-based digital twin case study in the MRO sector",
+        "volume": "56",
+        "author": "Apostolidis",
+        "year": "2021",
+        "journal-title": "Transp. Res. Procedia"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b238",
+        "first-page": "621",
+        "article-title": "Explainable online lane change predictions on a digital twin with a layer normalized LSTM and layer-wise relevance propagation",
+        "volume": "vol. 13343",
+        "author": "Wehner",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b239",
+        "series-title": "Explainable human-in-the-loop dynamic data-driven digital twins",
+        "first-page": "1",
+        "author": "Zhang",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b240",
+        "series-title": "2021 Winter Simulation Conference",
+        "first-page": "1",
+        "article-title": "Explainable modeling in digital twin",
+        "author": "Wang",
+        "year": "2021"
+      },
+      {
+        "issue": "05",
+        "key": "10.1016/j.comnet.2024.110350_b241",
+        "doi-asserted-by": "crossref",
+        "first-page": "76",
+        "DOI": "10.1109/MIC.2022.3182349",
+        "article-title": "Process knowledge-infused AI: Toward user-level explainability, interpretability, and safety",
+        "volume": "26",
+        "author": "Sheth",
+        "year": "2022",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b242",
+        "series-title": "Proceedings of TRA2020, the 8th Transport Research Arena: Rethinking Transport – Towards Clean and Inclusive Mobility",
+        "first-page": "1",
+        "article-title": "Using digital twin technology to ensure data quality in transport systems",
+        "author": "Björkqvist",
+        "year": "2020"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.comnet.2024.110350_b243",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/machines10100861",
+        "article-title": "Ontology-driven guidelines for architecting digital twins in factory automation applications",
+        "volume": "10",
+        "author": "Mohammed",
+        "year": "2022",
+        "journal-title": "Machines"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b244",
+        "series-title": "Cell-based architecture: A decentralized reference architecture for cloud-native applications",
+        "author": "Abeysinghe",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2024.110350_b245",
+        "series-title": "Change2twin community platform deliverable D7.1",
+        "author": "Albújar",
+        "year": "2020"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.comnet.2024.110350_b246",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1109/MCOM.001.1900072",
+        "article-title": "Liberalization of digital twins of IoT-enabled home appliances via blockchains and absolute ownership rights",
+        "volume": "57",
+        "author": "Altun",
+        "year": "2019",
+        "journal-title": "IEEE Commun. Mag."
+      }
+    ],
+    "container-title": [
+      "Computer Networks"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1389128624001828?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1389128624001828?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          11
+        ]
+      ],
+      "date-time": "2024-04-11T12:01:48Z",
+      "timestamp": 1712836908000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1389128624001828"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "references-count": 247,
+    "alternative-id": [
+      "S1389128624001828"
+    ],
+    "URL": "https://doi.org/10.1016/j.comnet.2024.110350",
+    "relation": {},
+    "ISSN": [
+      "1389-1286"
+    ],
+    "issn-type": [
+      {
+        "value": "1389-1286",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A comprehensive survey on digital twin for future networks and emerging Internet of Things industry",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computer Networks",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.comnet.2024.110350",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "110350"
+  }
+}

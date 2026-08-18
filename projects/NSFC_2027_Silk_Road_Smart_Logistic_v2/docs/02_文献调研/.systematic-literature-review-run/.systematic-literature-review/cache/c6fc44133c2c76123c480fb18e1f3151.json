@@ -1,0 +1,265 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          19
+        ]
+      ],
+      "date-time": "2025-11-19T09:26:37Z",
+      "timestamp": 1763544397791,
+      "version": "3.28.0"
+    },
+    "reference-count": 13,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1109/indin.2006.275719",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          1,
+          10
+        ]
+      ],
+      "date-time": "2007-01-10T11:05:47Z",
+      "timestamp": 1168427147000
+    },
+    "page": "67-72",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+      "Freight Container Yard Management System with Electronic Seal Technology"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Joo-sang",
+        "family": "Park",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sewon",
+        "family": "Oh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Taesu",
+        "family": "Cheong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yongjoon",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "year": "0",
+        "key": "13"
+      },
+      {
+        "key": "11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3141/1763-20"
+      },
+      {
+        "key": "12",
+        "article-title": "The ParcelCall Security Approach: A Security Concept for Multi-Carrier Real-Time Tracking and Tracing",
+        "volume": "ist 2001",
+        "author": "wallbaum",
+        "year": "2001",
+        "journal-title": "1ST Mobile Summit"
+      },
+      {
+        "year": "0",
+        "key": "3"
+      },
+      {
+        "key": "2",
+        "first-page": "7",
+        "volume": "16 225",
+        "author": "buhptani",
+        "year": "2005",
+        "journal-title": "RFID Field Guide -Developing Radio Frequency Identification Systems"
+      },
+      {
+        "key": "1",
+        "first-page": "13",
+        "volume": "1",
+        "author": "finkenzeller",
+        "year": "2003",
+        "journal-title": "RFID Handbook - Fundamentals and Applications in Contactless Smart Cards and Identification"
+      },
+      {
+        "key": "10",
+        "first-page": "61",
+        "article-title": "Ubiquitous Computing Security",
+        "volume": "21",
+        "author": "hwang",
+        "year": "2003",
+        "journal-title": "Journal of Korea Information Science Society"
+      },
+      {
+        "key": "7",
+        "first-page": "3",
+        "article-title": "Wireless Track and Trace: Market Needs and Solution",
+        "author": "prasad",
+        "year": "2002",
+        "journal-title": "Whitepaper"
+      },
+      {
+        "key": "6",
+        "first-page": "13",
+        "author": "hsrc",
+        "year": "2004",
+        "journal-title": "Maritime Smart Containers-Product Comparison Service"
+      },
+      {
+        "key": "5",
+        "article-title": "RFID-based Middleware System for Automatic Identification",
+        "author": "oh",
+        "year": "2005",
+        "journal-title": "IEEE International Conference on Service Operations and Logistics and Information"
+      },
+      {
+        "article-title": "Evolution of Supply Chain Management - Symbiosis ofAdaptive Value Network and ICT",
+        "year": "2004",
+        "author": "chang",
+        "key": "4"
+      },
+      {
+        "year": "0",
+        "key": "9"
+      },
+      {
+        "key": "8",
+        "first-page": "25",
+        "author": "epcglobal inctm",
+        "year": "2004",
+        "journal-title": "The EPCGlobal Network Overview of Design Benefits & Security EPCGlobal IncTM"
+      }
+    ],
+    "event": {
+      "name": "2006 IEEE International Conference on Industrial Informatics",
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            8,
+            16
+          ]
+        ]
+      },
+      "location": "Singapore",
+      "end": {
+        "date-parts": [
+          [
+            2006,
+            8,
+            18
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2006 IEEE International Conference on Industrial Informatics"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/4053335/4053336/04053364.pdf?arnumber=4053364",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          15
+        ]
+      ],
+      "date-time": "2017-03-15T14:26:09Z",
+      "timestamp": 1489587969000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/4053364/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          8
+        ]
+      ]
+    },
+    "references-count": 13,
+    "URL": "https://doi.org/10.1109/indin.2006.275719",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          8
+        ]
+      ]
+    }
+  }
+}

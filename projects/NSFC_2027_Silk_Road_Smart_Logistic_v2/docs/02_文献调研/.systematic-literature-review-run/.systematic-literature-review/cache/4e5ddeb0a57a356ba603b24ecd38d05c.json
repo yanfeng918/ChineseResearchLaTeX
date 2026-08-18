@@ -1,0 +1,29 @@
+{
+  "paperId": "32ca574af44dc53f41be92e1aba7b24042a49101",
+  "title": "Vibration Characteristics of Packaged Freight and Packaged Apples by Random Vibration Input",
+  "openAccessPdf": {
+    "url": "http://koreascience.or.kr:80/article/JAKO200818259605854.pdf",
+    "status": "BRONZE",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.5307/JBE.2008.33.1.045?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5307/JBE.2008.33.1.045, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "95572568",
+      "name": "Ghiseok Kim"
+    },
+    {
+      "authorId": "98651584",
+      "name": "H. Jung"
+    },
+    {
+      "authorId": "33051144",
+      "name": "Ki-Bok Kim"
+    },
+    {
+      "authorId": "2110096049",
+      "name": "M. Kim"
+    }
+  ],
+  "abstract": null
+}

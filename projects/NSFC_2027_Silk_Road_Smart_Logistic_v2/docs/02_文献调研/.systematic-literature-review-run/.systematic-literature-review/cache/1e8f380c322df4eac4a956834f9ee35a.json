@@ -1,0 +1,29 @@
+{
+  "paperId": "1cc6b671a276edfaa4772af4ad6688b3545ca53e",
+  "title": "Smart Container Security: the E-seal with RFID Technology",
+  "openAccessPdf": {
+    "url": "https://ccsenet.org/journal/index.php/mas/article/download/2791/2582",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5539/MAS.V1N3P16?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5539/MAS.V1N3P16, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "73329404",
+      "name": "J. Zhang"
+    },
+    {
+      "authorId": "21738031",
+      "name": "Y. Liu"
+    },
+    {
+      "authorId": "2218982549",
+      "name": "C. Y. Yu"
+    },
+    {
+      "authorId": "50445747",
+      "name": "C. Zhang"
+    }
+  ],
+  "abstract": "In order to protect cargo from damage, theft, and terrorist threats, business and government turn to wireless sensors and RFID tags, and tradition container is replaced by smart container. In this paper, the basic technical features of RFID systems are described and linked to the practical applications. This paper will also determine how the technologies perform in the real-world operational environments and evaluate the various trade-offs that exist with E-seal design."
+}

@@ -1,0 +1,29 @@
+{
+  "paperId": "7ebcf1ec19d87bc8cfe815c98e8010595f7d9dcb",
+  "title": "An HRCR-CNN Framework for Automated Security Seal Detection on the Shipping Container",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2021.3117629?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2021.3117629, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "7859326",
+      "name": "Zhila Bahrami"
+    },
+    {
+      "authorId": "2110045336",
+      "name": "Ran Zhang"
+    },
+    {
+      "authorId": "9103230",
+      "name": "Rakiba Rayhana"
+    },
+    {
+      "authorId": "2145976585",
+      "name": "Zheng Liu"
+    }
+  ],
+  "abstract": "Shipping containers play a significant role in the global transportation industry. Containerization has improved the way cargo is transported all around the world by ensuring the security of cargo during transit. To ensure the security of shipments, security seals are applied to the containers to prevent any unauthorized entry. During the transition, customs officers need to inspect security seals when containers pass the gate of terminals. The existing inspection mechanism is based on human visual observation, which is labor-intensive, time-consuming, and potentially hazardous. This article aims to propose a deep learning-based framework with a machine vision system to effectively and efficiently inspect security seals. The proposed high-resolution with context R-CNN (HRCR-CNN) framework consists of two modules, i.e., multidepth super-resolved features generation (MDSRFG) and attention block along with the long-term memory, for seal detection. The MDSRFG reserves the multiple position information by employing multiple depth backbones. To achieve this, high-resolution images are fed to the shallow network to reserve the position information, whereas low-resolution images are fed to the deep network to extract semantic information. Attention along with long-term memory module is utilized to leverage context information of unlabeled images to improve the performance of the framework. The experimental results conducted on the security seal dataset show that our approach achieves high performance in terms of accuracy and robustness under various conditions. This technique will accelerate the process of seal detection at the terminals and thus contribute to container logistics and supply chain management."
+}

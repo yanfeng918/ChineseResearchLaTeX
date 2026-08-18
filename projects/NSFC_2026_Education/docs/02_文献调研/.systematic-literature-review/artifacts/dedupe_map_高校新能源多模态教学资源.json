@@ -1,0 +1,1414 @@
+{
+  "generated_at": "2026-08-13T14:18:56",
+  "input": "docs/02_文献调研/.systematic-literature-review/artifacts/papers_高校新能源多模态教学资源.jsonl",
+  "output": "docs/02_文献调研/.systematic-literature-review/artifacts/papers_deduped_高校新能源多模态教学资源.jsonl",
+  "input_count": 540,
+  "output_count": 503,
+  "merged_count": 37,
+  "cross_doi_merges": 2,
+  "params": {
+    "title_similarity_threshold": 0.92,
+    "token_jaccard_threshold": 0.8,
+    "year_window": 1
+  },
+  "groups": [
+    {
+      "canonical_index": 3,
+      "canonical": {
+        "title": "What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature",
+        "doi": "10.3390/educsci13040410",
+        "year": 2023,
+        "venue": "Education Sciences",
+        "url": "https://doi.org/10.3390/educsci13040410",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 58,
+          "merged": {
+            "title": "What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature",
+            "doi": "10.3390/educsci13040410",
+            "year": 2023,
+            "venue": "Education Sciences",
+            "url": "https://doi.org/10.3390/educsci13040410",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 6,
+      "canonical": {
+        "title": "A Review of Artificial Intelligence (AI) in Education from 2010 to 2020",
+        "doi": "10.1155/2021/8812542",
+        "year": 2021,
+        "venue": "Complexity",
+        "url": "https://doi.org/10.1155/2021/8812542",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 59,
+          "merged": {
+            "title": "A Review of Artificial Intelligence (AI) in Education from 2010 to 2020",
+            "doi": "10.1155/2021/8812542",
+            "year": 2021,
+            "venue": "Complexity",
+            "url": "https://doi.org/10.1155/2021/8812542",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 406,
+          "merged": {
+            "title": "A Review of Artificial Intelligence (AI) in Education from 2010 to 2020",
+            "doi": "10.1155/2021/8812542",
+            "year": 2021,
+            "venue": "Complexity",
+            "url": "https://doi.org/10.1155/2021/8812542",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 7,
+      "canonical": {
+        "title": "Interacting with educational chatbots: A systematic review",
+        "doi": "10.1007/s10639-022-11177-3",
+        "year": 2022,
+        "venue": "Education and Information Technologies",
+        "url": "https://doi.org/10.1007/s10639-022-11177-3",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 45,
+          "merged": {
+            "title": "Interacting with educational chatbots: A systematic review",
+            "doi": "10.1007/s10639-022-11177-3",
+            "year": 2022,
+            "venue": "Education and Information Technologies",
+            "url": "https://doi.org/10.1007/s10639-022-11177-3",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 8,
+      "canonical": {
+        "title": "<scp>AI</scp>‐driven adaptive learning for sustainable educational transformation",
+        "doi": "10.1002/sd.3221",
+        "year": 2024,
+        "venue": "Sustainable Development",
+        "url": "https://doi.org/10.1002/sd.3221",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 48,
+          "merged": {
+            "title": "<scp>AI</scp>‐driven adaptive learning for sustainable educational transformation",
+            "doi": "10.1002/sd.3221",
+            "year": 2024,
+            "venue": "Sustainable Development",
+            "url": "https://doi.org/10.1002/sd.3221",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 11,
+      "canonical": {
+        "title": "Application and theory gaps during the rise of Artificial Intelligence in Education",
+        "doi": "10.1016/j.caeai.2020.100002",
+        "year": 2020,
+        "venue": "Computers and Education Artificial Intelligence",
+        "url": "https://doi.org/10.1016/j.caeai.2020.100002",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 76,
+          "merged": {
+            "title": "Application and theory gaps during the rise of Artificial Intelligence in Education",
+            "doi": "10.1016/j.caeai.2020.100002",
+            "year": 2020,
+            "venue": "Computers and Education Artificial Intelligence",
+            "url": "https://doi.org/10.1016/j.caeai.2020.100002",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 12,
+      "canonical": {
+        "title": "Managing the Strategic Transformation of Higher Education through Artificial Intelligence",
+        "doi": "10.3390/admsci13090196",
+        "year": 2023,
+        "venue": "Administrative Sciences",
+        "url": "https://doi.org/10.3390/admsci13090196",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 407,
+          "merged": {
+            "title": "Managing the Strategic Transformation of Higher Education through Artificial Intelligence",
+            "doi": "10.3390/admsci13090196",
+            "year": 2023,
+            "venue": "Administrative Sciences",
+            "url": "https://doi.org/10.3390/admsci13090196",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 24,
+      "canonical": {
+        "title": "Tackling Climate Change with Machine Learning",
+        "doi": "10.1145/3485128",
+        "year": 2022,
+        "venue": "OPUS 4 (Zuse Institute Berlin)",
+        "url": "https://opus4.kobv.de/opus4-hsog/frontdoor/index/index/docId/4117",
+        "preprint": false,
+        "heuristic_score": 18
+      },
+      "merged": [
+        {
+          "merged_index": 485,
+          "merged": {
+            "title": "Tackling Climate Change with Machine Learning",
+            "doi": "10.1145/3485128",
+            "year": 2022,
+            "venue": "OPUS 4 (Zuse Institute Berlin)",
+            "url": "https://opus4.kobv.de/opus4-hsog/frontdoor/index/index/docId/4117",
+            "preprint": false,
+            "heuristic_score": 18
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 26,
+      "canonical": {
+        "title": "Is Metaverse in education a blessing or a curse: a combined content and bibliometric analysis",
+        "doi": "10.1186/s40561-022-00205-x",
+        "year": 2022,
+        "venue": "Smart Learning Environments",
+        "url": "https://doi.org/10.1186/s40561-022-00205-x",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 46,
+          "merged": {
+            "title": "Is Metaverse in education a blessing or a curse: a combined content and bibliometric analysis",
+            "doi": "10.1186/s40561-022-00205-x",
+            "year": 2022,
+            "venue": "Smart Learning Environments",
+            "url": "https://doi.org/10.1186/s40561-022-00205-x",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 245,
+          "merged": {
+            "title": "Is Metaverse in education a blessing or a curse: a combined content and bibliometric analysis",
+            "doi": "10.1186/s40561-022-00205-x",
+            "year": 2022,
+            "venue": "Smart Learning Environments",
+            "url": "https://doi.org/10.1186/s40561-022-00205-x",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 27,
+      "canonical": {
+        "title": "Practical and ethical challenges of large language models in education: A systematic scoping review",
+        "doi": "10.1111/bjet.13370",
+        "year": 2023,
+        "venue": "British Journal of Educational Technology",
+        "url": "https://doi.org/10.1111/bjet.13370",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 49,
+          "merged": {
+            "title": "Practical and ethical challenges of large language models in education: A systematic scoping review",
+            "doi": "10.1111/bjet.13370",
+            "year": 2023,
+            "venue": "British Journal of Educational Technology",
+            "url": "https://doi.org/10.1111/bjet.13370",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 101,
+          "merged": {
+            "title": "Practical and ethical challenges of large language models in education: A systematic scoping review",
+            "doi": "10.1111/bjet.13370",
+            "year": 2023,
+            "venue": "British Journal of Educational Technology",
+            "url": "https://doi.org/10.1111/bjet.13370",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 28,
+      "canonical": {
+        "title": "Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence in Redefining Learning Efficacy",
+        "doi": "10.3390/brainsci15020203",
+        "year": 2025,
+        "venue": "Brain Sciences",
+        "url": "https://doi.org/10.3390/brainsci15020203",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 102,
+          "merged": {
+            "title": "Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence in Redefining Learning Efficacy",
+            "doi": "10.3390/brainsci15020203",
+            "year": 2025,
+            "venue": "Brain Sciences",
+            "url": "https://doi.org/10.3390/brainsci15020203",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 344,
+          "merged": {
+            "title": "Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence in Redefining Learning Efficacy",
+            "doi": "10.3390/brainsci15020203",
+            "year": 2025,
+            "venue": "Brain Sciences",
+            "url": "https://doi.org/10.3390/brainsci15020203",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 45,
+      "canonical": {
+        "title": "Multimodal Large Language Models in Health Care: Applications, Challenges, and Future Outlook",
+        "doi": "10.2196/59505",
+        "year": 2024,
+        "venue": "Journal of Medical Internet Research",
+        "url": "https://doi.org/10.2196/59505",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 248,
+          "merged": {
+            "title": "Multimodal Large Language Models in Health Care: Applications, Challenges, and Future Outlook",
+            "doi": "10.2196/59505",
+            "year": 2024,
+            "venue": "Journal of Medical Internet Research",
+            "url": "https://doi.org/10.2196/59505",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 53,
+      "canonical": {
+        "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+        "doi": "10.48550/arxiv.2402.19473",
+        "year": 2024,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2402.19473",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 278,
+          "merged": {
+            "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+            "doi": "10.48550/arxiv.2402.19473",
+            "year": 2024,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2402.19473",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 54,
+      "canonical": {
+        "title": "Teacher’s Perceptions of Using an Artificial Intelligence-Based Educational Tool for Scientific Writing",
+        "doi": "10.3389/feduc.2022.755914",
+        "year": 2022,
+        "venue": "Frontiers in Education",
+        "url": "https://doi.org/10.3389/feduc.2022.755914",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 361,
+          "merged": {
+            "title": "Teacher’s Perceptions of Using an Artificial Intelligence-Based Educational Tool for Scientific Writing",
+            "doi": "10.3389/feduc.2022.755914",
+            "year": 2022,
+            "venue": "Frontiers in Education",
+            "url": "https://doi.org/10.3389/feduc.2022.755914",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 67,
+      "canonical": {
+        "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+        "doi": "10.18653/v1/2023.emnlp-main.397",
+        "year": 2023,
+        "venue": "",
+        "url": "https://doi.org/10.18653/v1/2023.emnlp-main.397",
+        "preprint": false,
+        "heuristic_score": 18
+      },
+      "merged": [
+        {
+          "merged_index": 255,
+          "merged": {
+            "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+            "doi": "10.18653/v1/2023.emnlp-main.397",
+            "year": 2023,
+            "venue": "",
+            "url": "https://doi.org/10.18653/v1/2023.emnlp-main.397",
+            "preprint": false,
+            "heuristic_score": 18
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 69,
+      "canonical": {
+        "title": "Vision, challenges, roles and research issues of Artificial Intelligence in Education",
+        "doi": "10.1016/j.caeai.2020.100001",
+        "year": 2020,
+        "venue": "Computers and Education Artificial Intelligence",
+        "url": "https://doi.org/10.1016/j.caeai.2020.100001",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 230,
+          "merged": {
+            "title": "Vision, challenges, roles and research issues of Artificial Intelligence in Education",
+            "doi": "10.1016/j.caeai.2020.100001",
+            "year": 2020,
+            "venue": "Computers and Education Artificial Intelligence",
+            "url": "https://doi.org/10.1016/j.caeai.2020.100001",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 72,
+      "canonical": {
+        "title": "GPT-4 Technical Report",
+        "doi": "10.4230/lipics.cosit.2024.11",
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2303.08774",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 267,
+          "merged": {
+            "title": "GPT-4 Technical Report",
+            "doi": "10.4230/lipics.cosit.2024.11",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2303.08774",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 353,
+          "merged": {
+            "title": "GPT-4 Technical Report",
+            "doi": "10.4230/lipics.cosit.2024.11",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2303.08774",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 73,
+      "canonical": {
+        "title": "A framework for human evaluation of large language models in healthcare derived from literature review",
+        "doi": "10.1038/s41746-024-01258-7",
+        "year": 2024,
+        "venue": "npj Digital Medicine",
+        "url": "https://doi.org/10.1038/s41746-024-01258-7",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 268,
+          "merged": {
+            "title": "A framework for human evaluation of large language models in healthcare derived from literature review",
+            "doi": "10.1038/s41746-024-01258-7",
+            "year": 2024,
+            "venue": "npj Digital Medicine",
+            "url": "https://doi.org/10.1038/s41746-024-01258-7",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 78,
+      "canonical": {
+        "title": "The role of large language models in personalized learning: a systematic review of educational impact",
+        "doi": "10.1007/s43621-025-01094-z",
+        "year": 2025,
+        "venue": "Discover Sustainability",
+        "url": "https://doi.org/10.1007/s43621-025-01094-z",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 264,
+          "merged": {
+            "title": "The role of large language models in personalized learning: a systematic review of educational impact",
+            "doi": "10.1007/s43621-025-01094-z",
+            "year": 2025,
+            "venue": "Discover Sustainability",
+            "url": "https://doi.org/10.1007/s43621-025-01094-z",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 86,
+      "canonical": {
+        "title": "Trends in Educational Research about e-Learning: A Systematic Literature Review (2009–2018)",
+        "doi": "10.3390/su12125153",
+        "year": 2020,
+        "venue": "Sustainability",
+        "url": "https://doi.org/10.3390/su12125153",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 324,
+          "merged": {
+            "title": "Trends in Educational Research about e-Learning: A Systematic Literature Review (2009–2018)",
+            "doi": "10.3390/su12125153",
+            "year": 2020,
+            "venue": "Sustainability",
+            "url": "https://doi.org/10.3390/su12125153",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 94,
+      "canonical": {
+        "title": "Artificial Intelligence Alone Will Not Democratise Education: On Educational Inequality, Techno-Solutionism and Inclusive Tools",
+        "doi": "10.3390/su16020781",
+        "year": 2024,
+        "venue": "Sustainability",
+        "url": "https://doi.org/10.3390/su16020781",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 329,
+          "merged": {
+            "title": "Artificial Intelligence Alone Will Not Democratise Education: On Educational Inequality, Techno-Solutionism and Inclusive Tools",
+            "doi": "10.3390/su16020781",
+            "year": 2024,
+            "venue": "Sustainability",
+            "url": "https://doi.org/10.3390/su16020781",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 133,
+      "canonical": {
+        "title": "Large Language Models and Knowledge Graphs: Opportunities and Challenges",
+        "doi": "10.4230/tgdk.1.1.2",
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2308.06374",
+        "preprint": true,
+        "heuristic_score": 14
+      },
+      "merged": [
+        {
+          "merged_index": 176,
+          "merged": {
+            "title": "Large Language Models and Knowledge Graphs: Opportunities and Challenges",
+            "doi": "10.4230/tgdk.1.1.2",
+            "year": 2023,
+            "venue": "UvA-DARE (University of Amsterdam)",
+            "url": "https://handle.uba.uva.nl/personal/pure/en/publications/large-language-models-and-knowledge-graphs-opportunities-and-challenges(7120f7c5-a11d-4a3e-bea3-3e2de8afa523).html",
+            "preprint": false,
+            "heuristic_score": 18
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 170,
+      "canonical": {
+        "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+        "doi": "10.48550/arxiv.2312.10997",
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2312.10997",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 270,
+          "merged": {
+            "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+            "doi": "10.48550/arxiv.2312.10997",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2312.10997",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        },
+        {
+          "merged_index": 501,
+          "merged": {
+            "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+            "doi": "10.48550/arxiv.2312.10997",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2312.10997",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 200,
+      "canonical": {
+        "title": "A survey on retrieval-augmentation generation (RAG) models for healthcare applications",
+        "doi": "10.1007/s00521-025-11666-9",
+        "year": 2025,
+        "venue": "Neural Computing and Applications",
+        "url": "https://doi.org/10.1007/s00521-025-11666-9",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 308,
+          "merged": {
+            "title": "A survey on retrieval-augmentation generation (RAG) models for healthcare applications",
+            "doi": "10.1007/s00521-025-11666-9",
+            "year": 2025,
+            "venue": "Neural Computing and Applications",
+            "url": "https://doi.org/10.1007/s00521-025-11666-9",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 208,
+      "canonical": {
+        "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+        "doi": "10.3390/bdcc9120320",
+        "year": 2025,
+        "venue": "Big Data and Cognitive Computing",
+        "url": "https://doi.org/10.3390/bdcc9120320",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 299,
+          "merged": {
+            "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+            "doi": "10.3390/bdcc9120320",
+            "year": 2025,
+            "venue": "Big Data and Cognitive Computing",
+            "url": "https://doi.org/10.3390/bdcc9120320",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 218,
+      "canonical": {
+        "title": "LaMDA: Language Models for Dialog Applications",
+        "doi": "10.48550/arxiv.2201.08239",
+        "year": 2022,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2201.08239",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 292,
+          "merged": {
+            "title": "LaMDA: Language Models for Dialog Applications",
+            "doi": "10.48550/arxiv.2201.08239",
+            "year": 2022,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2201.08239",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 225,
+      "canonical": {
+        "title": "VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts",
+        "doi": "10.48550/arxiv.2111.02358",
+        "year": 2021,
+        "venue": "arXiv (Cornell University)",
+        "url": "http://arxiv.org/abs/2111.02358",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 498,
+          "merged": {
+            "title": "VLMo: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts",
+            "doi": "10.48550/arxiv.2111.02358",
+            "year": 2021,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2111.02358",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 232,
+      "canonical": {
+        "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+        "doi": "10.1109/access.2020.2970143",
+        "year": 2020,
+        "venue": "IEEE Access",
+        "url": "https://doi.org/10.1109/access.2020.2970143",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 315,
+          "merged": {
+            "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+            "doi": "10.1109/access.2020.2970143",
+            "year": 2020,
+            "venue": "IEEE Access",
+            "url": "https://doi.org/10.1109/access.2020.2970143",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 237,
+      "canonical": {
+        "title": "Integrating Retrieval-Augmented Generation with Large Language Models in Nephrology: Advancing Practical Applications",
+        "doi": "10.3390/medicina60030445",
+        "year": 2024,
+        "venue": "Medicina",
+        "url": "https://doi.org/10.3390/medicina60030445",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 276,
+          "merged": {
+            "title": "Integrating Retrieval-Augmented Generation with Large Language Models in Nephrology: Advancing Practical Applications",
+            "doi": "10.3390/medicina60030445",
+            "year": 2024,
+            "venue": "Medicina",
+            "url": "https://doi.org/10.3390/medicina60030445",
+            "preprint": false,
+            "heuristic_score": 20
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 253,
+      "canonical": {
+        "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+        "doi": "10.1145/3637528.3671470",
+        "year": 2024,
+        "venue": "",
+        "url": "https://doi.org/10.1145/3637528.3671470",
+        "preprint": false,
+        "heuristic_score": 18
+      },
+      "merged": [
+        {
+          "merged_index": 507,
+          "merged": {
+            "title": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+            "doi": "10.1145/3637528.3671470",
+            "year": 2024,
+            "venue": "",
+            "url": "https://doi.org/10.1145/3637528.3671470",
+            "preprint": false,
+            "heuristic_score": 18
+          },
+          "reason": "same_doi",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 256,
+      "canonical": {
+        "title": "Generation-Augmented Retrieval for Open-Domain Question Answering",
+        "doi": "10.18653/v1/2021.acl-long.316",
+        "year": 2021,
+        "venue": "arXiv (Cornell University)",
+        "url": "https://doi.org/10.18653/v1/2021.acl-long.316",
+        "preprint": true,
+        "heuristic_score": 14
+      },
+      "merged": [
+        {
+          "merged_index": 291,
+          "merged": {
+            "title": "Generation-Augmented Retrieval for Open-domain Question Answering",
+            "doi": "10.48550/arxiv.2009.08553",
+            "year": 2020,
+            "venue": "arXiv (Cornell University)",
+            "url": "http://arxiv.org/abs/2009.08553",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 264,
+      "canonical": {
+        "title": "Retrieval-Augmented Generation (RAG) in Healthcare: A Comprehensive Review",
+        "doi": "10.3390/ai6090226",
+        "year": 2025,
+        "venue": "AI",
+        "url": "https://doi.org/10.3390/ai6090226",
+        "preprint": false,
+        "heuristic_score": 20
+      },
+      "merged": [
+        {
+          "merged_index": 313,
+          "merged": {
+            "title": "Retrieval-Augmented Generation (RAG) in Healthcare: A Comprehensive Review",
+            "doi": "10.20944/preprints202508.1022.v1",
+            "year": 2025,
+            "venue": "Preprints.org",
+            "url": "https://doi.org/10.20944/preprints202508.1022.v1",
+            "preprint": true,
+            "heuristic_score": 16
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "canonical_index": 7,
+      "merged_index": 45,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.1007/s10639-022-11177-3",
+      "doi_b": "10.1007/s10639-022-11177-3"
+    },
+    {
+      "canonical_index": 26,
+      "merged_index": 46,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.1186/s40561-022-00205-x",
+      "doi_b": "10.1186/s40561-022-00205-x"
+    },
+    {
+      "canonical_index": 8,
+      "merged_index": 48,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.1002/sd.3221",
+      "doi_b": "10.1002/sd.3221"
+    },
+    {
+      "canonical_index": 27,
+      "merged_index": 49,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.1111/bjet.13370",
+      "doi_b": "10.1111/bjet.13370"
+    },
+    {
+      "canonical_index": 3,
+      "merged_index": 58,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.3390/educsci13040410",
+      "doi_b": "10.3390/educsci13040410"
+    },
+    {
+      "canonical_index": 6,
+      "merged_index": 59,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2021,
+      "year_b": 2021,
+      "doi_a": "10.1155/2021/8812542",
+      "doi_b": "10.1155/2021/8812542"
+    },
+    {
+      "canonical_index": 11,
+      "merged_index": 76,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2020,
+      "year_b": 2020,
+      "doi_a": "10.1016/j.caeai.2020.100002",
+      "doi_b": "10.1016/j.caeai.2020.100002"
+    },
+    {
+      "canonical_index": 27,
+      "merged_index": 101,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.1111/bjet.13370",
+      "doi_b": "10.1111/bjet.13370"
+    },
+    {
+      "canonical_index": 28,
+      "merged_index": 102,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.3390/brainsci15020203",
+      "doi_b": "10.3390/brainsci15020203"
+    },
+    {
+      "canonical_index": 133,
+      "merged_index": 176,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.4230/tgdk.1.1.2",
+      "doi_b": "10.4230/tgdk.1.1.2"
+    },
+    {
+      "canonical_index": 69,
+      "merged_index": 230,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2020,
+      "year_b": 2020,
+      "doi_a": "10.1016/j.caeai.2020.100001",
+      "doi_b": "10.1016/j.caeai.2020.100001"
+    },
+    {
+      "canonical_index": 26,
+      "merged_index": 245,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.1186/s40561-022-00205-x",
+      "doi_b": "10.1186/s40561-022-00205-x"
+    },
+    {
+      "canonical_index": 45,
+      "merged_index": 248,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.2196/59505",
+      "doi_b": "10.2196/59505"
+    },
+    {
+      "canonical_index": 67,
+      "merged_index": 255,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.18653/v1/2023.emnlp-main.397",
+      "doi_b": "10.18653/v1/2023.emnlp-main.397"
+    },
+    {
+      "canonical_index": 78,
+      "merged_index": 264,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.1007/s43621-025-01094-z",
+      "doi_b": "10.1007/s43621-025-01094-z"
+    },
+    {
+      "canonical_index": 72,
+      "merged_index": 267,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.4230/lipics.cosit.2024.11",
+      "doi_b": "10.4230/lipics.cosit.2024.11"
+    },
+    {
+      "canonical_index": 73,
+      "merged_index": 268,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.1038/s41746-024-01258-7",
+      "doi_b": "10.1038/s41746-024-01258-7"
+    },
+    {
+      "canonical_index": 170,
+      "merged_index": 270,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.48550/arxiv.2312.10997",
+      "doi_b": "10.48550/arxiv.2312.10997"
+    },
+    {
+      "canonical_index": 237,
+      "merged_index": 276,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.3390/medicina60030445",
+      "doi_b": "10.3390/medicina60030445"
+    },
+    {
+      "canonical_index": 53,
+      "merged_index": 278,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.48550/arxiv.2402.19473",
+      "doi_b": "10.48550/arxiv.2402.19473"
+    },
+    {
+      "canonical_index": 256,
+      "merged_index": 291,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2021,
+      "year_b": 2020,
+      "doi_a": "10.18653/v1/2021.acl-long.316",
+      "doi_b": "10.48550/arxiv.2009.08553"
+    },
+    {
+      "canonical_index": 218,
+      "merged_index": 292,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.48550/arxiv.2201.08239",
+      "doi_b": "10.48550/arxiv.2201.08239"
+    },
+    {
+      "canonical_index": 208,
+      "merged_index": 299,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.3390/bdcc9120320",
+      "doi_b": "10.3390/bdcc9120320"
+    },
+    {
+      "canonical_index": 200,
+      "merged_index": 308,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.1007/s00521-025-11666-9",
+      "doi_b": "10.1007/s00521-025-11666-9"
+    },
+    {
+      "canonical_index": 264,
+      "merged_index": 313,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.3390/ai6090226",
+      "doi_b": "10.20944/preprints202508.1022.v1"
+    },
+    {
+      "canonical_index": 232,
+      "merged_index": 315,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2020,
+      "year_b": 2020,
+      "doi_a": "10.1109/access.2020.2970143",
+      "doi_b": "10.1109/access.2020.2970143"
+    },
+    {
+      "canonical_index": 86,
+      "merged_index": 324,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2020,
+      "year_b": 2020,
+      "doi_a": "10.3390/su12125153",
+      "doi_b": "10.3390/su12125153"
+    },
+    {
+      "canonical_index": 94,
+      "merged_index": 329,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.3390/su16020781",
+      "doi_b": "10.3390/su16020781"
+    },
+    {
+      "canonical_index": 28,
+      "merged_index": 344,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.3390/brainsci15020203",
+      "doi_b": "10.3390/brainsci15020203"
+    },
+    {
+      "canonical_index": 72,
+      "merged_index": 353,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.4230/lipics.cosit.2024.11",
+      "doi_b": "10.4230/lipics.cosit.2024.11"
+    },
+    {
+      "canonical_index": 54,
+      "merged_index": 361,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.3389/feduc.2022.755914",
+      "doi_b": "10.3389/feduc.2022.755914"
+    },
+    {
+      "canonical_index": 6,
+      "merged_index": 406,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2021,
+      "year_b": 2021,
+      "doi_a": "10.1155/2021/8812542",
+      "doi_b": "10.1155/2021/8812542"
+    },
+    {
+      "canonical_index": 12,
+      "merged_index": 407,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.3390/admsci13090196",
+      "doi_b": "10.3390/admsci13090196"
+    },
+    {
+      "canonical_index": 24,
+      "merged_index": 485,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2022,
+      "year_b": 2022,
+      "doi_a": "10.1145/3485128",
+      "doi_b": "10.1145/3485128"
+    },
+    {
+      "canonical_index": 225,
+      "merged_index": 498,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2021,
+      "year_b": 2021,
+      "doi_a": "10.48550/arxiv.2111.02358",
+      "doi_b": "10.48550/arxiv.2111.02358"
+    },
+    {
+      "canonical_index": 170,
+      "merged_index": 501,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.48550/arxiv.2312.10997",
+      "doi_b": "10.48550/arxiv.2312.10997"
+    },
+    {
+      "canonical_index": 253,
+      "merged_index": 507,
+      "reason": "same_doi",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2024,
+      "year_b": 2024,
+      "doi_a": "10.1145/3637528.3671470",
+      "doi_b": "10.1145/3637528.3671470"
+    }
+  ]
+}

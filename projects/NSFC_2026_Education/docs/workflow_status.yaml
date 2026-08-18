@@ -1,0 +1,211 @@
+project:
+  type: NSFC_Regional
+  proposal_path: "."
+  body_dir: "extraTex"
+  bib_file: "references/myexample.bib"
+  guide_file: "AGENTS.md"
+  stage_output_dir: "docs"
+  review_output_dir: "review"
+  source_funding_context: "新疆教育云技术与资源重点实验室2026年度开放课题；按用户明确要求采用NSFC地区科学基金正文结构与流程撰写"
+
+run:
+  current_mode: resume_after_fact_confirmation
+  last_started: "2026-08-13"
+  last_finished: "2026-08-13"
+  last_summary: "已根据补充问卷完成P0/P1定点修复：其他说明、项目完成情况、示范课程模块、资源规模、盲评口径、参与研究生和成果目标均已写入；完成引用、篇幅、增量QC、模拟评审及复编译。正文P0为0，实际提交前仍需核验资源/专家登记和实验室表单字段。"
+  next_stage: "取得资源许可、专家登记或实验室系统字段后，仅作等值替换并复编译"
+
+stages:
+  "01_topic_extraction":
+    name: "Topic Extraction"
+    status: completed
+    inputs:
+      - "AGENTS.md"
+      - "README.md"
+      - "main.tex"
+      - "docs/00_项目基本信息.md"
+    outputs:
+      - "docs/01_选题与研究主题.md"
+    last_updated: "2026-08-13"
+    notes: "已输出选题、检索关键词、研究问题、稳定边界和下游写作约束，并同步至AGENTS.md。"
+    blockers: []
+
+  "02_literature_review":
+    name: "Literature Review"
+    status: completed
+    inputs:
+      - "AGENTS.md"
+      - "docs/01_选题与研究主题.md"
+      - "references/myexample.bib"
+    outputs:
+      - "docs/02_文献调研/"
+    last_updated: "2026-08-13"
+    notes: "初检540条、去重后503条；完成45篇可追溯文献的主题筛选、综述写作、PDF/Word导出、数据抽取和引用校验。"
+    blockers: []
+
+  "03_scientific_questions":
+    name: "Scientific Questions and Innovation"
+    status: completed
+    inputs:
+      - "AGENTS.md"
+      - "docs/01_选题与研究主题.md"
+      - "docs/02_文献调研/"
+    outputs:
+      - "docs/03_科学问题与创新点.md"
+    last_updated: "2026-08-13"
+    notes: "已形成三项可证伪科学问题、H1--H3、反证路径与可守创新口径；明确不将系统组件、隐私边界或指标工具包装为创新。"
+    blockers: []
+
+  "04_research_plan":
+    name: "Research Plan"
+    status: completed
+    inputs:
+      - "AGENTS.md"
+      - "docs/03_科学问题与创新点.md"
+    outputs:
+      - "docs/04_研究方案与技术路线.md"
+    last_updated: "2026-08-13"
+    notes: "已完成三模块技术路线、6个公式块、对照/消融、数据泄漏防控与替代路线。"
+    blockers: []
+
+  "05_part_one_writing":
+    name: "NSFC Part One Writing"
+    status: completed
+    inputs:
+      - "AGENTS.md"
+      - "docs/04_研究方案与技术路线.md"
+      - "references/myexample.bib"
+    outputs:
+      - "extraTex/1.1.立项依据.tex"
+      - "extraTex/1.2.内容目标问题.tex"
+      - "extraTex/1.3.方案及可行性.tex"
+      - "extraTex/1.4.特色与创新.tex"
+      - "extraTex/1.5.研究计划.tex"
+    last_updated: "2026-08-13"
+    notes: "已写入立项依据、研究内容/目标/问题、公式化方案、特色创新和两年研究计划；1.1含34条有效引用，1.3含8个可解释公式。"
+    blockers: []
+
+  "06_research_foundation":
+    name: "Research Foundation and Work Conditions"
+    status: completed
+    inputs:
+      - "docs/00_研究基础.md"
+      - "AGENTS.md"
+      - "extraTex/2.1.研究基础.tex"
+      - "extraTex/2.2.工作条件.tex"
+      - "extraTex/2.3.承担项目.tex"
+      - "extraTex/2.4.项目完成情况.tex"
+    outputs:
+      - "extraTex/2.1.研究基础.tex"
+      - "extraTex/2.2.工作条件.tex"
+      - "extraTex/2.3.承担项目.tex"
+      - "extraTex/2.4.项目完成情况.tex"
+    last_updated: "2026-08-13"
+    notes: "已按补充问卷完成研究基础、工作条件、相关在研项目和项目完成情况修订；申请人确认未主持过已资助期满NSFC项目。实际合同字段、资源许可和专家登记仅影响表单/附件核验。"
+    blockers:
+      - "实际提交前需以立项通知书、合同和资源登记补齐缺失正式字段；正文未据此虚构事实。"
+
+  "07_other_statements":
+    name: "Other Statements"
+    status: completed
+    inputs:
+      - "extraTex/3.1.不同类型国基情况.tex"
+      - "extraTex/3.2.同年单位不一致.tex"
+      - "extraTex/3.3.承担中单位不一致.tex"
+      - "extraTex/3.4.不同专业技术职务的申请.tex"
+      - "extraTex/3.5.其它.tex"
+    outputs:
+      - "docs/其他说明检查报告.md"
+    last_updated: "2026-08-13"
+    notes: "申请人已确认2026年无其他NSFC申请/参与、无同年或在研单位不一致、无不同职称情形；3.1--3.4已写为正式表述。"
+    blockers: []
+
+  "08_reference_alignment":
+    name: "Reference Alignment"
+    status: completed
+    inputs:
+      - "extraTex/"
+      - "references/myexample.bib"
+    outputs:
+      - "review/NSFC-REF-ALIGNMENT-v2026-08-13-16-21.md"
+    last_updated: "2026-08-13"
+    notes: "本轮34个已引用bibkey均存在，无重复键、字段缺失或DOI格式错误；逐条人工语义核查未发现错引。正文所引会议论文的venue字段已补齐。"
+    blockers: []
+
+  "09_length_control":
+    name: "Length Control"
+    status: completed
+    inputs:
+      - "extraTex/"
+      - "AGENTS.md"
+    outputs:
+      - "review/篇幅控制报告.md"
+    last_updated: "2026-08-13"
+    notes: "最终复编译PDF为A4共21页；第（一）部分5节合计6244个中文字符，符合项目内建议8000字以下及建议≤28页、硬上限30页的通用NSFC版式口径。"
+    blockers: []
+
+  "10_humanization":
+    name: "Humanization"
+    status: completed
+    inputs:
+      - "extraTex/"
+    outputs:
+      - "review/去AI味修改报告.md"
+    last_updated: "2026-08-13"
+    notes: "已在语义零损失前提下清理伪对立和过强边界声明，保留全部研究动作、事实和LaTeX结构。"
+    blockers: []
+
+  "11_qc":
+    name: "Quality Control"
+    status: completed
+    inputs:
+      - "extraTex/"
+      - "references/myexample.bib"
+      - "AGENTS.md"
+    outputs:
+      - "review/质量控制报告.md"
+    last_updated: "2026-08-13"
+    notes: "本轮完成占位、范围、事实一致性、引用、篇幅、PDF与编译日志的增量QC；联网预检再次受已记录的无界等待缺陷影响，引用元数据因未变更而复用既有证据。"
+    blockers: []
+
+  "12_simulated_review":
+    name: "Simulated Review"
+    status: completed
+    inputs:
+      - "extraTex/"
+      - "references/myexample.bib"
+      - "AGENTS.md"
+    outputs:
+      - "review/comments-from-nsfc-reviewers.md"
+    last_updated: "2026-08-13"
+    notes: "本轮单组7类专家视角模拟评审完成；函评给过（中），会评不给过（中）。P0事实已消除，会评短板为真实资源样例、许可和专家登记的可审计性。"
+    blockers: []
+
+  "13_targeted_repair":
+    name: "P0/P1 Targeted Repair"
+    status: completed
+    inputs:
+      - "review/质量控制报告.md"
+      - "review/comments-from-nsfc-reviewers.md"
+    outputs:
+      - "docs/05_待确认事实问卷.md"
+      - "docs/评审意见修复清单.md"
+      - "review/P0P1定点修复报告.md"
+      - "review/comments-from-nsfc-reviewers.md"
+    last_updated: "2026-08-13"
+    notes: "已完成补充问卷可支持的全部P0/P1修订，并生成定点修复报告；剩余事项仅为实际表单/附件的资源、专家、合同和内部代码核验。"
+    blockers: []
+
+  "14_compile":
+    name: "Compile"
+    status: completed
+    inputs:
+      - "main.tex"
+      - "extraTex/"
+      - "references/myexample.bib"
+    outputs:
+      - "main.pdf"
+      - "review/编译检查报告.md"
+    last_updated: "2026-08-13"
+    notes: "官方构建链路最终成功生成main.pdf；PDF为A4共21页；无LaTeX Error、未定义引用或BibTeX错误，仅保留既有模板的recorder/caption类warning。"
+    blockers: []

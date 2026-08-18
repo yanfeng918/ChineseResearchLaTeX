@@ -1,0 +1,229 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2024-09-08T04:03:33Z",
+      "timestamp": 1725768213869
+    },
+    "reference-count": 12,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1109/roedunet.2016.7753236",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          11,
+          24
+        ]
+      ],
+      "date-time": "2016-11-24T16:37:43Z",
+      "timestamp": 1480005463000
+    },
+    "page": "1-6",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Adaptive duty-cycling algorithms for efficient energy harvesting in wireless sensor networks"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Dan Stefan",
+        "family": "Tudose",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Alexandru",
+        "family": "Marin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Marius",
+        "family": "Geanta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref4",
+        "first-page": "6",
+        "article-title": "Prediction and management in energy harvested wireless sensor nodes",
+        "author": "piorno",
+        "year": "0"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MASS.2012.6502504"
+      },
+      {
+        "journal-title": "Datasheet 2015 BQ25504 datasheet",
+        "year": "0",
+        "key": "ref10"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CSCS.2015.94"
+      },
+      {
+        "journal-title": "Datasheet 2013 LTC3129 datasheet",
+        "year": "0",
+        "key": "ref11"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1165573.1165616"
+      },
+      {
+        "journal-title": "Datasheet 2010 LTC3105 datasheet",
+        "year": "0",
+        "key": "ref12"
+      },
+      {
+        "journal-title": "Datasheet 2014 ATmega128RFA1 datasheet",
+        "year": "0",
+        "key": "ref8"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/RoEduNet.2013.6714202"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SAHCN.2007.4292814"
+      },
+      {
+        "journal-title": "Datasheet 2009 IXOLARTMHigh Efficiency SolarBIT datasheet",
+        "year": "0",
+        "key": "ref9"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1274858.1274870"
+      }
+    ],
+    "event": {
+      "name": "2016 15th RoEduNet Conference: Networking in Education and Research",
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            7
+          ]
+        ]
+      },
+      "location": "Bucharest, Romania",
+      "end": {
+        "date-parts": [
+          [
+            2016,
+            9,
+            9
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2016 15th RoEduNet Conference: Networking in Education and Research"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/7733872/7753195/07753236.pdf?arnumber=7753236",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          17
+        ]
+      ],
+      "date-time": "2016-12-17T04:00:53Z",
+      "timestamp": 1481947253000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7753236/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    },
+    "references-count": 12,
+    "URL": "https://doi.org/10.1109/roedunet.2016.7753236",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    }
+  }
+}

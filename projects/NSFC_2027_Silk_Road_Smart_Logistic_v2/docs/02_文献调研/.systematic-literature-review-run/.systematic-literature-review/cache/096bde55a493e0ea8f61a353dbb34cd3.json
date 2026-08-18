@@ -1,0 +1,1928 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2026-07-25T16:46:58Z",
+      "timestamp": 1784998018331,
+      "version": "3.55.0"
+    },
+    "reference-count": 147,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2023-02-01T00:00:00Z",
+          "timestamp": 1675209600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100017580",
+        "name": "Rede Nacional de Ensino e Pesquisa",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "01245.010604/2020-14"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "01245.010604/2020-14"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100017580",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100011875",
+        "name": "Ministério da Ciência, Tecnologia, Inovações e Comunicações",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100011875",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100019928",
+        "name": "Instituto Nacional de Telecomunicações",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100019928",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001871",
+        "name": "Fundação para a Ciência e a Tecnologia",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001871",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003593",
+        "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "313036/2020-9"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "313036/2020-9"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003593",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003593",
+        "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "431726/2018-3"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "431726/2018-3"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003593",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004901",
+        "name": "Fundação de Amparo à Pesquisa do Estado de Minas Gerais",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100004901",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100006111",
+        "name": "Ministério da Ciência, Tecnologia e Ensino Superior",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "UIDB/50008/2020"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "UIDB/50008/2020"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100006111",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Industrial Information Integration"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jii.2022.100393",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2022-09-29T15:30:48Z",
+      "timestamp": 1664465448000
+    },
+    "page": "100393",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 109,
+    "special_numbering": "C",
+    "title": [
+      "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities"
+    ],
+    "prefix": "10.1016",
+    "volume": "31",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5579-8254",
+        "authenticated-orcid": false,
+        "given": "Jonas L.",
+        "family": "Vilas-Boas",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8657-3800",
+        "authenticated-orcid": false,
+        "given": "Joel J.P.C.",
+        "family": "Rodrigues",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0947-8575",
+        "authenticated-orcid": false,
+        "given": "Antonio M.",
+        "family": "Alberti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "76",
+        "DOI": "10.1109/MC.2018.1451665",
+        "article-title": "IoT-based sensing and communications infrastructure for the fresh food supply chain",
+        "volume": "51",
+        "author": "Pal",
+        "year": "2018",
+        "journal-title": "Computer"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b2",
+        "series-title": "Food loss and food waste",
+        "year": "2015"
+      },
+      {
+        "issue": "5967",
+        "key": "10.1016/j.jii.2022.100393_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "812",
+        "DOI": "10.1126/science.1185383",
+        "article-title": "Food security: The challenge of feeding 9 billion people",
+        "volume": "327",
+        "author": "Godfray",
+        "year": "2010",
+        "journal-title": "Science"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1016/j.tifs.2019.07.024",
+        "article-title": "Transparency in food supply chains: A review of enabling technology solutions",
+        "volume": "91",
+        "author": "Astill",
+        "year": "2019",
+        "journal-title": "Trends Food Sci. Technol."
+      },
+      {
+        "issue": "14",
+        "key": "10.1016/j.jii.2022.100393_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "4267",
+        "DOI": "10.1080/00207543.2019.1651457",
+        "article-title": "Horizontal collaboration: opportunities for improved logistics planning",
+        "volume": "58",
+        "author": "Ferrell",
+        "year": "2019",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.3390/asi4020029",
+        "article-title": "Digital twins driven supply chain visibility within logistics: A new paradigm for future logistics",
+        "volume": "4",
+        "author": "Moshood",
+        "year": "2021",
+        "journal-title": "Appl. Syst. Innov."
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.jii.2022.100393_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "2104",
+        "DOI": "10.1016/j.ifacol.2019.11.516",
+        "article-title": "Implementation of an IoT- and cloud-based digital twin for real-time decision support in port operations",
+        "volume": "52",
+        "author": "Hofmann",
+        "year": "2019",
+        "journal-title": "IFAC-PapersOnLine"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b8",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cor.2020.105183",
+        "article-title": "IoT and digital twin enabled smart tracking for safety management",
+        "volume": "128",
+        "author": "Zhao",
+        "year": "2021",
+        "journal-title": "Comput. Oper. Res."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jii.2022.100393_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.2495/DNE-V13-N3-260-271",
+        "article-title": "Digital twins for decision making in complex production and logistic enterprises",
+        "volume": "13",
+        "author": "Kuehn",
+        "year": "2018",
+        "journal-title": "Int. J. Des. Nat. Ecodyn."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1636",
+        "DOI": "10.1016/j.promfg.2020.10.228",
+        "article-title": "Discrete event simulation and digital twins: Review and challenges for logistics",
+        "volume": "51",
+        "author": "Agalianos",
+        "year": "2020",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "640",
+        "DOI": "10.1016/j.tifs.2019.07.034",
+        "article-title": "The rise of blockchain technology in agriculture and food supply chains",
+        "volume": "91",
+        "author": "Kamilaris",
+        "year": "2019",
+        "journal-title": "Trends Food Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b12",
+        "series-title": "Proceedings of the 3rd International Conference on Crowd Science and Engineering - ICCSE’18",
+        "first-page": "1",
+        "article-title": "Blockchain and IoT based food traceability for smart agriculture",
+        "author": "Lin",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b13",
+        "article-title": "IoT-blockchain driven traceability techniques for improved safety measures in food supply chain",
+        "author": "Balamurugan",
+        "year": "2021",
+        "journal-title": "Int. J. Inf. Technol."
+      },
+      {
+        "issue": "14",
+        "key": "10.1016/j.jii.2022.100393_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "6129",
+        "DOI": "10.1002/jsfa.9912",
+        "article-title": "A review on blockchain applications in the agri-food sector",
+        "volume": "99",
+        "author": "Antonucci",
+        "year": "2019",
+        "journal-title": "J. Sci. Food Agric."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b15",
+        "series-title": "Essentials of Supply Chain Management",
+        "author": "Hugos",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.foodcont.2020.107501",
+        "article-title": "Food quality and safety risk diagnosis in the food cold chain through failure mode and effect analysis",
+        "volume": "120",
+        "author": "Wu",
+        "year": "2021",
+        "journal-title": "Food Control"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.jii.2022.100393_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "5004",
+        "DOI": "10.3390/su12125004",
+        "article-title": "Managing a sustainable and resilient perishable food supply chain (PFSC) after an outbreak",
+        "volume": "12",
+        "author": "Zhu",
+        "year": "2020",
+        "journal-title": "Sustainability"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1108/SCM-09-2017-0287",
+        "article-title": "Innovative adoption of hybrid supply chain strategies in urban local fresh food supply chain",
+        "volume": "24",
+        "author": "Nakandala",
+        "year": "2019",
+        "journal-title": "Supply Chain Manag.: Int. J."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.jii.2022.100393_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1253",
+        "DOI": "10.3390/su9071253",
+        "article-title": "Collaboration for sustainability in the food supply chain: A multi-stage study in Italy",
+        "volume": "9",
+        "author": "León-Bravo",
+        "year": "2017",
+        "journal-title": "Sustainability"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "96",
+        "DOI": "10.31217/p.31.2.3",
+        "article-title": "The role of the 4PL Model in a contemporary supply chain",
+        "volume": "31",
+        "author": "Skender",
+        "year": "2017",
+        "journal-title": "Pomorstvo"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.1016/j.tre.2019.07.009",
+        "article-title": "Synchromodal logistics: An overview of critical success factors, enabling technologies, and open research issues",
+        "volume": "129",
+        "author": "Giusti",
+        "year": "2019",
+        "journal-title": "Transp. Res. E"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b22",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.techfore.2020.120166",
+        "article-title": "How blockchain can impact financial services – The overview, challenges and recommendations from expert interviewees",
+        "volume": "158",
+        "author": "Chang",
+        "year": "2020",
+        "journal-title": "Technol. Forecast. Soc. Change"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b23",
+        "series-title": "2017 International Conference on Service Systems and Service Management",
+        "first-page": "1",
+        "article-title": "A supply chain traceability system for food safety based on HACCP, blockchain & Internet of things",
+        "author": "Tian",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "198",
+        "DOI": "10.1016/j.foodcont.2013.11.016",
+        "article-title": "Temperature management for the quality assurance of a perishable food supply chain",
+        "volume": "40",
+        "author": "Aung",
+        "year": "2014",
+        "journal-title": "Food Control"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b25",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1108/02635570710723804",
+        "article-title": "RFID-enabled traceability in the food supply chain",
+        "volume": "107",
+        "author": "Kelepouris",
+        "year": "2007",
+        "journal-title": "Ind. Manag. Data Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b26",
+        "series-title": "Instrução normativa conjunta - Inc n° 2, de 7 de fevereiro de 2018",
+        "author": "da Saúde Agência Nacional de Vigilância Sanitária",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b27",
+        "first-page": "18",
+        "article-title": "1169/2011 of the European Parliament and of the Council of 25 October 2011 on the provision of food information to consumers",
+        "volume": "304",
+        "author": "Regulation",
+        "year": "2011",
+        "journal-title": "Off. J. Eur. Communities L"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1016/j.biosystemseng.2013.09.006",
+        "article-title": "Traceability issues in food supply chain management: A review",
+        "volume": "120",
+        "author": "Dabbene",
+        "year": "2014",
+        "journal-title": "Biosyst. Eng."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jii.2022.100393_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "839",
+        "DOI": "10.1108/IJLM-03-2017-0059",
+        "article-title": "Decision-making in cold chain logistics using data analytics: a literature review",
+        "volume": "29",
+        "author": "Chaudhuri",
+        "year": "2018",
+        "journal-title": "Int. J. Logist. Manag."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b30",
+        "doi-asserted-by": "crossref",
+        "first-page": "178",
+        "DOI": "10.1016/j.trd.2018.08.010",
+        "article-title": "Quantifying the environmental and economic benefits of cooperation: A case study in temperature-controlled food logistics",
+        "volume": "65",
+        "author": "Stellingwerf",
+        "year": "2018",
+        "journal-title": "Transp. Res. D"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1111/cjag.12237",
+        "article-title": "Food supply chains during the COVID-19 pandemic",
+        "volume": "68",
+        "author": "Hobbs",
+        "year": "2020",
+        "journal-title": "Can. J. Agric. Econ./Rev. Can. Agroecon."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.jii.2022.100393_b32",
+        "first-page": "97",
+        "article-title": "That ‘internet of things’ thing",
+        "volume": "22",
+        "author": "Ashton",
+        "year": "2009",
+        "journal-title": "RFID J."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b33",
+        "doi-asserted-by": "crossref",
+        "first-page": "234",
+        "DOI": "10.1016/j.jmsy.2015.02.005",
+        "article-title": "RFID-wireless sensor networks integration: Decision models and optimization of logistics systems operations",
+        "volume": "35",
+        "author": "Mejjaouli",
+        "year": "2015",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b34",
+        "series-title": "2017 8th International Conference on Information Technology (ICIT)",
+        "first-page": "685",
+        "article-title": "Internet of Things (IoT) communication protocols: Review",
+        "author": "Al-Sarawi",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jii.2022.100393_b35",
+        "first-page": "11",
+        "article-title": "A survey on application layer protocols for the internet of things",
+        "volume": "3",
+        "author": "Karagiannis",
+        "year": "2015",
+        "journal-title": "Trans. IoT Cloud Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "871",
+        "DOI": "10.1109/JIOT.2018.2796561",
+        "article-title": "A reference model for internet of things middleware",
+        "volume": "5",
+        "author": "da Cruz",
+        "year": "2018",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jii.2022.100393_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1016/j.ejor.2009.09.008",
+        "article-title": "Mathematical programming models for supply chain production and transport planning",
+        "volume": "204",
+        "author": "Mula",
+        "year": "2010",
+        "journal-title": "European J. Oper. Res."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b38",
+        "doi-asserted-by": "crossref",
+        "first-page": "502",
+        "DOI": "10.1016/j.jbusres.2020.09.009",
+        "article-title": "Artificial intelligence in supply chain management: A systematic literature review",
+        "volume": "122",
+        "author": "Toorajipour",
+        "year": "2021",
+        "journal-title": "J. Bus. Res."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jii.2022.100393_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "8",
+        "DOI": "10.1109/JRPROC.1961.287775",
+        "article-title": "Steps toward artificial intelligence",
+        "volume": "49",
+        "author": "Minsky",
+        "year": "1961",
+        "journal-title": "Proc. IRE"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b40",
+        "series-title": "2016 International Conference on Global Trends in Signal Processing, Information Computing and Communication (ICGTSPICC)",
+        "first-page": "261",
+        "article-title": "Evolutionary algorithms: A critical review and its future prospects",
+        "author": "Vikhar",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.engappai.2018.08.011",
+        "article-title": "A review of applications of genetic algorithms in operations management",
+        "volume": "76",
+        "author": "Lee",
+        "year": "2018",
+        "journal-title": "Eng. Appl. Artif. Intell."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jii.2022.100393_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1016/0377-2217(84)90150-4",
+        "article-title": "A review of expert systems",
+        "volume": "18",
+        "author": "Kastner",
+        "year": "1984",
+        "journal-title": "European J. Oper. Res."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jii.2022.100393_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "83",
+        "DOI": "10.1109/2.53",
+        "article-title": "Fuzzy logic",
+        "volume": "21",
+        "author": "Zadeh",
+        "year": "1988",
+        "journal-title": "Computer"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b44",
+        "series-title": "Machine Learning",
+        "author": "Mitchell",
+        "year": "1997"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b45",
+        "first-page": "1",
+        "article-title": "Digital twin: manufacturing excellence through virtual factory replication",
+        "volume": "1",
+        "author": "Grieves",
+        "year": "2014",
+        "journal-title": "White Paper"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b46",
+        "series-title": "Transdisciplinary Perspectives on Complex Systems",
+        "first-page": "85",
+        "article-title": "Digital twin: Mitigating unpredictable, undesirable emergent behavior in complex systems",
+        "author": "Grieves",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/j.jmsy.2020.11.017",
+        "article-title": "Cyber-physical systems architectures for industrial internet of things applications in Industry 4.0: A literature review",
+        "volume": "58",
+        "author": "Pivoto",
+        "year": "2021",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.jii.2022.100393_b48",
+        "doi-asserted-by": "crossref",
+        "first-page": "1785",
+        "DOI": "10.1109/JPROC.2020.2998530",
+        "article-title": "Digital twin in the IoT context: A survey on technical features, scenarios, and architectural models",
+        "volume": "108",
+        "author": "Minerva",
+        "year": "2020",
+        "journal-title": "Proc. IEEE"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "108952",
+        "DOI": "10.1109/ACCESS.2020.2998358",
+        "article-title": "Digital twin: Enabling technologies, challenges and open research",
+        "volume": "8",
+        "author": "Fuller",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b50",
+        "doi-asserted-by": "crossref",
+        "first-page": "21980",
+        "DOI": "10.1109/ACCESS.2020.2970143",
+        "article-title": "Digital twin: Values, challenges and enablers from a modeling perspective",
+        "volume": "8",
+        "author": "Rasheed",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b51",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.fpsl.2019.100369",
+        "article-title": "Unveiling how ventilated packaging design and cold chain scenarios affect the cooling kinetics and fruit quality for each single citrus fruit in an entire pallet",
+        "volume": "21",
+        "author": "Wu",
+        "year": "2019",
+        "journal-title": "Food Packag. Shelf Life"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b52",
+        "doi-asserted-by": "crossref",
+        "first-page": "167930",
+        "DOI": "10.1109/ACCESS.2019.2953729",
+        "article-title": "A comparative analysis of distributed ledger technology platforms",
+        "volume": "7",
+        "author": "Chowdhury",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b53",
+        "series-title": "Bitcoin: a peer-to-peer electronic cash system (2008)",
+        "author": "Nakamoto",
+        "year": "2008"
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.jii.2022.100393_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "4354",
+        "DOI": "10.3390/s21134354",
+        "article-title": "Efficient data communication using distributed ledger technology and IOTA-enabled internet of things for a future machine-to-machine economy",
+        "volume": "21",
+        "author": "Akhtar",
+        "year": "2021",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b55",
+        "series-title": "2019 6th International Conference on Signal Processing and Integrated Networks (SPIN)",
+        "first-page": "1069",
+        "article-title": "Enhancing IoT security and privacy using distributed ledgers with IOTA and the tangle",
+        "author": "Shabandri",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b56",
+        "doi-asserted-by": "crossref",
+        "first-page": "43620",
+        "DOI": "10.1109/ACCESS.2021.3065880",
+        "article-title": "A comprehensive review of blockchain consensus mechanisms",
+        "volume": "9",
+        "author": "Lashkari",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.jii.2022.100393_b57",
+        "doi-asserted-by": "crossref",
+        "first-page": "290",
+        "DOI": "10.1109/MNET.001.1900661",
+        "article-title": "Blockchain for digital twins: Recent advances and future research challenges",
+        "volume": "34",
+        "author": "Yaqoob",
+        "year": "2020",
+        "journal-title": "IEEE Netw."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b58",
+        "series-title": "Blockchain-based digital twins: Research trends, issues, and future challenges",
+        "author": "Suhail",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b59",
+        "doi-asserted-by": "crossref",
+        "first-page": "10127",
+        "DOI": "10.1109/ACCESS.2018.2890507",
+        "article-title": "Blockchain for AI: Review and open research challenges",
+        "volume": "7",
+        "author": "Salah",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b60",
+        "article-title": "SingularityNET: A decentralized, open market and inter-network for AIs",
+        "author": "Goertzel",
+        "year": "2017",
+        "journal-title": "Thoughts Theor. Stud. Artif. Intell. Res."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b61",
+        "doi-asserted-by": "crossref",
+        "first-page": "50759",
+        "DOI": "10.1109/ACCESS.2019.2911031",
+        "article-title": "Security, performance, and applications of smart contracts: A systematic survey",
+        "volume": "7",
+        "author": "Rouhani",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b62",
+        "series-title": "Formalizing and Securing Relationships on Public Networks",
+        "author": "Szabo",
+        "year": "1997"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b63",
+        "series-title": "2020 International Conference on Broadband Communications for Next Generation Networks and Multimedia Applications (CoBCom)",
+        "first-page": "1",
+        "article-title": "Distributed ledger technologies for IoT and business DApps",
+        "author": "Dolenc",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b64",
+        "doi-asserted-by": "crossref",
+        "first-page": "85675",
+        "DOI": "10.1109/ACCESS.2020.2992698",
+        "article-title": "Trustworthy blockchain oracles: Review, comparison, and open research challenges",
+        "volume": "8",
+        "author": "Al-Breiki",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b65",
+        "series-title": "2019 IEEE International Conference on Blockchain (Blockchain)",
+        "first-page": "496",
+        "article-title": "From oracles to trustworthy data on-chaining systems",
+        "author": "Heiss",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b66",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2020.103187",
+        "article-title": "Agri-food 4.0: A survey of the supply chains and technologies for the future agriculture",
+        "volume": "117",
+        "author": "Lezoche",
+        "year": "2020",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.jii.2022.100393_b67",
+        "doi-asserted-by": "crossref",
+        "first-page": "4322",
+        "DOI": "10.1109/TII.2020.3003910",
+        "article-title": "From industry 4.0 to agriculture 4.0: Current status, enabling technologies, and research challenges",
+        "volume": "17",
+        "author": "Liu",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jii.2022.100393_b68",
+        "doi-asserted-by": "crossref",
+        "first-page": "2",
+        "DOI": "10.3390/logistics5010002",
+        "article-title": "Food logistics 4.0: Opportunities and challenges",
+        "volume": "5",
+        "author": "Jagtap",
+        "year": "2020",
+        "journal-title": "Logistics"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jii.2022.100393_b69",
+        "doi-asserted-by": "crossref",
+        "first-page": "718",
+        "DOI": "10.1109/JAS.2021.1003925",
+        "article-title": "Internet of things for the future of smart agriculture: A comprehensive survey of emerging technologies",
+        "volume": "8",
+        "author": "Friha",
+        "year": "2021",
+        "journal-title": "IEEE/CAA J. Autom. Sin."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b70",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compag.2019.105092",
+        "article-title": "Research directions in technology development to support real-time decisions of fresh produce logistics: A review and research agenda",
+        "author": "Villalobos",
+        "year": "2019",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jii.2022.100393_b71",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3360726",
+        "article-title": "Smart sensing, communication, and control in perishable food supply chain",
+        "volume": "16",
+        "author": "Pal",
+        "year": "2020",
+        "journal-title": "ACM Trans. Sensor Netw."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b72",
+        "first-page": "1",
+        "article-title": "Internet of things for food sector: Status quo and projected potential",
+        "author": "Kodan",
+        "year": "2019",
+        "journal-title": "Food Rev. Int."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b73",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compag.2020.105942",
+        "article-title": "Introducing digital twins to agriculture",
+        "volume": "184",
+        "author": "Pylianidis",
+        "year": "2021",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b74",
+        "doi-asserted-by": "crossref",
+        "first-page": "245",
+        "DOI": "10.1016/j.tifs.2021.01.025",
+        "article-title": "Digital twins are coming: Will we need them in supply chains of fresh horticultural produce?",
+        "volume": "109",
+        "author": "Defraeye",
+        "year": "2021",
+        "journal-title": "Trends Food Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b75",
+        "doi-asserted-by": "crossref",
+        "first-page": "414",
+        "DOI": "10.1016/j.promfg.2020.02.054",
+        "article-title": "Blockchain and agricultural supply chains traceability: research trends and future challenges",
+        "volume": "42",
+        "author": "Mirabelli",
+        "year": "2020",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b76",
+        "doi-asserted-by": "crossref",
+        "first-page": "143920",
+        "DOI": "10.1109/ACCESS.2020.3014522",
+        "article-title": "Blockchain technology in current agricultural systems: From techniques to applications",
+        "volume": "8",
+        "author": "Lin",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b77",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jclepro.2020.121031",
+        "article-title": "Applying blockchain technology to improve agri-food traceability: A review of development methods, benefits and challenges",
+        "volume": "260",
+        "author": "Feng",
+        "year": "2020",
+        "journal-title": "J. Clean. Prod."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.jii.2022.100393_b78",
+        "doi-asserted-by": "crossref",
+        "first-page": "4206",
+        "DOI": "10.3390/su13084206",
+        "article-title": "Distributed ledger technology applications in food supply chains: A review of challenges and future research directions",
+        "volume": "13",
+        "author": "Nurgazina",
+        "year": "2021",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b79",
+        "series-title": "2019 21st International Conference on Advanced Communication Technology (ICACT)",
+        "first-page": "138",
+        "article-title": "A review on benefits of IoT integrated blockchain based supply chain management implementations across different sectors with case study",
+        "author": "Aich",
+        "year": "2019"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.jii.2022.100393_b80",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1109/MC.2019.2942111",
+        "article-title": "Using blockchain for provenance and traceability in internet of things-integrated food logistics",
+        "volume": "52",
+        "author": "Pal",
+        "year": "2019",
+        "journal-title": "Computer"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b81",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compag.2020.105476",
+        "article-title": "Integrating blockchain and the internet of things in precision agriculture: Analysis, opportunities, and challenges",
+        "volume": "178",
+        "author": "Torky",
+        "year": "2020",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b82",
+        "series-title": "2018 IEEE 9th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
+        "first-page": "335",
+        "article-title": "Integrating blockchain, smart contract-tokens, and IoT to design a food traceability solution",
+        "author": "Kim",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b83",
+        "series-title": "2020 IEEE International Conference on Smart Computing (SMARTCOMP)",
+        "first-page": "440",
+        "article-title": "Internet of things and blockchain technologies for food safety systems",
+        "author": "Biscotti",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b84",
+        "series-title": "2020 IEEE XXVII International Conference on Electronics, Electrical Engineering and Computing (INTERCON)",
+        "first-page": "1",
+        "article-title": "Analysis of the implementation of blockchain as a mechanism for digital and transparent food traceability in peruvian social programs",
+        "author": "Perez",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b85",
+        "first-page": "1",
+        "article-title": "Edge computing and lightning network empowered secure food supply management",
+        "author": "Gai",
+        "year": "2020",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jii.2022.100393_b86",
+        "doi-asserted-by": "crossref",
+        "first-page": "5803",
+        "DOI": "10.1109/JIOT.2019.2907658",
+        "article-title": "Blockchain inspired RFID-based information architecture for food supply chain",
+        "volume": "6",
+        "author": "Mondal",
+        "year": "2019",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b87",
+        "doi-asserted-by": "crossref",
+        "first-page": "20698",
+        "DOI": "10.1109/ACCESS.2019.2897792",
+        "article-title": "Food safety traceability system based on blockchain and EPCIS",
+        "volume": "7",
+        "author": "Lin",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b88",
+        "series-title": "2019 TEQIP III Sponsored International Conference on Microwave Integrated Circuits, Photonics and Wireless Networks (IMICPW)",
+        "first-page": "174",
+        "article-title": "A theoretical implementation: Agriculture-food supply chain management using blockchain technology",
+        "author": "Madumidha",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b89",
+        "series-title": "2021 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+        "first-page": "669",
+        "article-title": "Blockchain in agri-food traceability systems: a model proposal for a typical Italian food product",
+        "author": "Cocco",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b90",
+        "doi-asserted-by": "crossref",
+        "first-page": "62899",
+        "DOI": "10.1109/ACCESS.2021.3074874",
+        "article-title": "A blockchain-based traceability system in agri-food SME: Case study of a traditional bakery",
+        "volume": "9",
+        "author": "Cocco",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b91",
+        "series-title": "2021 International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME)",
+        "first-page": "1",
+        "article-title": "An ecosystem for the dairy logistics supply chain with blockchain technology",
+        "author": "Fang",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b92",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1016/j.jmsy.2020.01.009",
+        "article-title": "Blockchain-based data management for digital twin of product",
+        "volume": "54",
+        "author": "Huang",
+        "year": "2020",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b93",
+        "doi-asserted-by": "crossref",
+        "first-page": "115122",
+        "DOI": "10.1109/ACCESS.2019.2935873",
+        "article-title": "Smart contract-based product traceability system in the supply chain scenario",
+        "volume": "7",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b94",
+        "series-title": "2019 IEEE 10th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
+        "first-page": "13",
+        "article-title": "Internet of things platform for transparency and traceability of food supply chain",
+        "author": "Haroon",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b95",
+        "series-title": "2019 IEEE 30th Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+        "first-page": "1",
+        "article-title": "An IoT blockchain architecture using oracles and smart contracts: the use-case of a food supply chain",
+        "author": "Moudoud",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b96",
+        "series-title": "2020 European Conference on Networks and Communications (EuCNC)",
+        "first-page": "139",
+        "article-title": "Hierarchical blockchain topologies for quality control in food supply chains",
+        "author": "Voulgaris",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b97",
+        "article-title": "A blockchain use case in food distribution: Do you know where your food has been?",
+        "volume": "52",
+        "author": "Bumblauskas",
+        "year": "2020",
+        "journal-title": "Int. J. Inf. Manage."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b98",
+        "series-title": "2019 Sixth International Conference on Internet of Things: Systems, Management and Security (IOTSMS)",
+        "first-page": "116",
+        "article-title": "Recording provenance of food delivery using IoT, semantics and business blockchain networks",
+        "author": "Markovic",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b99",
+        "series-title": "2018 IoT Vertical and Topical Summit on Agriculture - Tuscany (IOT Tuscany)",
+        "first-page": "1",
+        "article-title": "Blockchain-based traceability in Agri-Food supply chain management: A practical implementation",
+        "author": "Caro",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b100",
+        "series-title": "2018 International Conference on Computing, Engineering, and Design (ICCED)",
+        "first-page": "235",
+        "article-title": "Rice donation system in orphanage based on internet of things, raspberry-pi, and blockchain",
+        "author": "Junfithrana",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b101",
+        "series-title": "2021 10th Mediterranean Conference on Embedded Computing (MECO)",
+        "first-page": "1",
+        "article-title": "Architecture & system design of TERRA+: The wine production use case",
+        "author": "Karadimas",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b102",
+        "doi-asserted-by": "crossref",
+        "first-page": "72",
+        "DOI": "10.1109/OJCS.2021.3053032",
+        "article-title": "A survey on privacy-preserving blockchain systems (PPBS) and a novel PPBS-based framework for smart agriculture",
+        "volume": "2",
+        "author": "Tran",
+        "year": "2021",
+        "journal-title": "IEEE Open J. Comput. Soc."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b103",
+        "series-title": "2019 IEEE International Conference on Smart Computing (SMARTCOMP)",
+        "first-page": "173",
+        "article-title": "Bruschetta: An IoT blockchain-based framework for certifying extra virgin olive oil supply chain",
+        "author": "Arena",
+        "year": "2019"
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.jii.2022.100393_b104",
+        "doi-asserted-by": "crossref",
+        "first-page": "3820",
+        "DOI": "10.3390/en13153820",
+        "article-title": "Combining blockchain and IoT: Food-chain traceability and beyond",
+        "volume": "13",
+        "author": "Grecuccio",
+        "year": "2020",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b105",
+        "doi-asserted-by": "crossref",
+        "first-page": "310",
+        "DOI": "10.1016/j.fbp.2019.07.013",
+        "article-title": "Multiphysics modeling of convective cooling of non-spherical, multi-material fruit to unveil its quality evolution throughout the cold chain",
+        "volume": "117",
+        "author": "Tagliavini",
+        "year": "2019",
+        "journal-title": "Food Bioprod. Process."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b106",
+        "doi-asserted-by": "crossref",
+        "first-page": "778",
+        "DOI": "10.1016/j.resconrec.2019.06.002",
+        "article-title": "Digital twins probe into food cooling and biochemical quality changes for reducing losses in refrigerated supply chains",
+        "volume": "149",
+        "author": "Defraeye",
+        "year": "2019",
+        "journal-title": "Resour. Conserv. Recy."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b107",
+        "series-title": "2020 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)",
+        "first-page": "1",
+        "article-title": "An autonomous food wastage control warehouse: Distributed ledger and machine learning based approach",
+        "author": "S.V.",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b108",
+        "doi-asserted-by": "crossref",
+        "first-page": "53786",
+        "DOI": "10.1109/ACCESS.2021.3070911",
+        "article-title": "Design and implementation of CryptoCargo: A blockchain-powered smart shipping container for vaccine distribution",
+        "volume": "9",
+        "author": "Alkhoori",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b109",
+        "series-title": "2020 Winter Simulation Conference (WSC)",
+        "first-page": "3200",
+        "article-title": "Simulation-based digital twin development for blockchain enabled end-to-end industrial hemp supply chain risk management",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b110",
+        "doi-asserted-by": "crossref",
+        "first-page": "127190",
+        "DOI": "10.1109/ACCESS.2020.3007064",
+        "article-title": "Drive through robotics: Robotic automation for last mile distribution of food and essentials during pandemics",
+        "volume": "8",
+        "author": "Sharma",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b111",
+        "doi-asserted-by": "crossref",
+        "first-page": "129000",
+        "DOI": "10.1109/ACCESS.2019.2940227",
+        "article-title": "Blockchain-driven IoT for food traceability with an integrated consensus mechanism",
+        "volume": "7",
+        "author": "Tsang",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jii.2022.100393_b112",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.3390/electronics10010041",
+        "article-title": "A procedure for tracing supply chains for perishable food based on blockchain, machine learning and fuzzy logic",
+        "volume": "10",
+        "author": "Shahbazi",
+        "year": "2020",
+        "journal-title": "Electronics"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b113",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tre.2021.102412",
+        "article-title": "Food retail supply chain resilience and the COVID-19 pandemic: A digital twin-based impact analysis and improvement directions",
+        "volume": "152",
+        "author": "Burgos",
+        "year": "2021",
+        "journal-title": "Transp. Res. E"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b114",
+        "doi-asserted-by": "crossref",
+        "first-page": "65660",
+        "DOI": "10.1109/ACCESS.2021.3076373",
+        "article-title": "Secure identification, traceability and real-time tracking of agricultural food supply during transportation using internet of things",
+        "volume": "9",
+        "author": "Bhutta",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b115",
+        "doi-asserted-by": "crossref",
+        "first-page": "36008",
+        "DOI": "10.1109/ACCESS.2021.3062410",
+        "article-title": "Effective management for blockchain-based agri-food supply chains using deep reinforcement learning",
+        "volume": "9",
+        "author": "Chen",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b116",
+        "first-page": "92",
+        "article-title": "A reinforcement learning integrated in heuristic search method for self-driving vehicle using blockchain in supply chain management",
+        "volume": "1",
+        "author": "Ahamed",
+        "year": "2020",
+        "journal-title": "Int. J. Intell. Netw."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b117",
+        "series-title": "2021 International Conference on Artificial Intelligence and Smart Systems (ICAIS)",
+        "first-page": "1289",
+        "article-title": "Blockchain based solution to improve the supply chain management in Indian agriculture",
+        "author": "Sudha",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b118",
+        "series-title": "2019 4th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)",
+        "first-page": "1",
+        "article-title": "Smart agriculture: An open field for smart contracts",
+        "author": "Voutos",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b119",
+        "series-title": "2019 IEEE International WIE Conference on Electrical and Computer Engineering (WIECON-ECE)",
+        "first-page": "1",
+        "article-title": "A framework for next generation agricultural marketing system in Indian context",
+        "author": "Shrivastava",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b120",
+        "series-title": "2021 International Conference on Artificial Intelligence and Smart Systems (ICAIS)",
+        "first-page": "1727",
+        "article-title": "Blockchain driven IoT based delish2go decentralized food delivery application",
+        "author": "Sasikala Rani",
+        "year": "2021"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b121",
+        "doi-asserted-by": "crossref",
+        "first-page": "196",
+        "DOI": "10.1109/MAP.2014.6837090",
+        "article-title": "Rfid-based traceability along the food-production chain [wireless corner]",
+        "volume": "56",
+        "author": "Cuinas",
+        "year": "2014",
+        "journal-title": "IEEE Antennas Propag. Mag."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b122",
+        "doi-asserted-by": "crossref",
+        "first-page": "200",
+        "DOI": "10.1016/j.ijpe.2013.12.010",
+        "article-title": "Mining logistics data to assure the quality in a sustainable food supply chain: A case in the red wine industry",
+        "volume": "152",
+        "author": "Ting",
+        "year": "2014",
+        "journal-title": "Int. J. Prod. Econ."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.jii.2022.100393_b123",
+        "doi-asserted-by": "crossref",
+        "first-page": "1906",
+        "DOI": "10.1108/IMDS-11-2016-0489",
+        "article-title": "IoT-based tracking and tracing platform for prepackaged food supply chain",
+        "volume": "117",
+        "author": "Li",
+        "year": "2017",
+        "journal-title": "Ind. Manag. Data Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b124",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1155/2013/531364",
+        "article-title": "An RFID-based tracing and tracking system for the fresh vegetables supply chain",
+        "volume": "2013",
+        "author": "Mainetti",
+        "year": "2013",
+        "journal-title": "Int. J. Antennas Propag."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b125",
+        "series-title": "2020 43rd International Conference on Telecommunications and Signal Processing (TSP)",
+        "first-page": "337",
+        "article-title": "Secure cattle stock infrastructure for the internet of things using blockchain",
+        "author": "Leme",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b126",
+        "doi-asserted-by": "crossref",
+        "first-page": "64333",
+        "DOI": "10.1109/ACCESS.2018.2877970",
+        "article-title": "An early detection system for proactive management of raw milk quality: An Australian case study",
+        "volume": "6",
+        "author": "Zakeri",
+        "year": "2018",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b127",
+        "doi-asserted-by": "crossref",
+        "first-page": "34113",
+        "DOI": "10.1109/ACCESS.2020.2974810",
+        "article-title": "A blockchain-based approach for the creation of digital twins",
+        "volume": "8",
+        "author": "Hasan",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b128",
+        "doi-asserted-by": "crossref",
+        "first-page": "36398",
+        "DOI": "10.1109/ACCESS.2020.2975415",
+        "article-title": "Blockchain-based safety management system for the grain supply chain",
+        "volume": "8",
+        "author": "Zhang",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b129",
+        "series-title": "IECON 2020 the 46th Annual Conference of the IEEE Industrial Electronics Society",
+        "first-page": "3095",
+        "article-title": "Numerical analysis of cooling characteristics of Indian mangoes using digital twin",
+        "author": "Pattanaik",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b130",
+        "series-title": "2019 IEEE International Conference on Intelligent Techniques in Control, Optimization and Signal Processing",
+        "first-page": "1",
+        "article-title": "Fresh fruit supply chain sensing and transaction using IoT",
+        "author": "Elavarasi",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b131",
+        "doi-asserted-by": "crossref",
+        "first-page": "196",
+        "DOI": "10.1016/j.compag.2014.11.009",
+        "article-title": "Wireless sensor network for real-time perishable food supply chain management",
+        "volume": "110",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b132",
+        "doi-asserted-by": "crossref",
+        "first-page": "289",
+        "DOI": "10.1007/s10796-012-9374-9",
+        "article-title": "Value-centric design of the internet-of-things solution for food supply chain: Value creation, sensor portfolio and information fusion",
+        "volume": "17",
+        "author": "Pang",
+        "year": "2015",
+        "journal-title": "Inf. Syst. Front."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b133",
+        "series-title": "2020 7th International Conference on Information, Cybernetics, and Computational Social Systems (ICCSS)",
+        "first-page": "864",
+        "article-title": "A warehouse management system with UAV based on digital twin and 5g technologies",
+        "author": "Chen",
+        "year": "2020"
+      },
+      {
+        "issue": "18",
+        "key": "10.1016/j.jii.2022.100393_b134",
+        "doi-asserted-by": "crossref",
+        "first-page": "6810",
+        "DOI": "10.1109/JSEN.2016.2576287",
+        "article-title": "What can MEMS do for logistics of food? Intelligent container technologies: A review",
+        "volume": "16",
+        "author": "Lang",
+        "year": "2016",
+        "journal-title": "IEEE Sensors J."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b135",
+        "series-title": "2020 International Conference on Computer Engineering and Application (ICCEA)",
+        "first-page": "537",
+        "article-title": "Research on logistics vehicle scheduling optimization based on cyber-physical system",
+        "author": "Li",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b136",
+        "doi-asserted-by": "crossref",
+        "first-page": "93",
+        "DOI": "10.1016/j.jmsy.2016.10.004",
+        "article-title": "A genetic algorithm approach for location-inventory-routing problem with perishable products",
+        "volume": "42",
+        "author": "Hiassat",
+        "year": "2017",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b137",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1016/j.jmsy.2020.02.001",
+        "article-title": "Designing a closed-loop supply chain network for citrus fruits crates considering environmental and economic issues",
+        "volume": "55",
+        "author": "Liao",
+        "year": "2020",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b138",
+        "doi-asserted-by": "crossref",
+        "first-page": "223",
+        "DOI": "10.1016/j.jmsy.2020.12.001",
+        "article-title": "A production and distribution planning of perishable products with a fixed lifetime under vertical competition in the seller-buyer systems: A real-world application",
+        "volume": "58",
+        "author": "Aazami",
+        "year": "2021",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b139",
+        "series-title": "2020 International Conference on E-Commerce and Internet Technology (ECIT)",
+        "first-page": "24",
+        "article-title": "Research on decision support system of E-commerce agricultural products based on blockchain",
+        "author": "Xie",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b140",
+        "series-title": "2019 IEEE 16th India Council International Conference (INDICON)",
+        "first-page": "1",
+        "article-title": "A conceptual framework for trustworthy and incentivized trading of food grains using distributed ledger and smart contracts",
+        "author": "Jaiswal",
+        "year": "2019"
+      },
+      {
+        "issue": "17",
+        "key": "10.1016/j.jii.2022.100393_b141",
+        "doi-asserted-by": "crossref",
+        "first-page": "5127",
+        "DOI": "10.1080/00207543.2015.1047976",
+        "article-title": "Dynamic supply chain decisions based on networked sensor data: an application in the chilled food retail chain",
+        "volume": "55",
+        "author": "Li",
+        "year": "2015",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jii.2022.100393_b142",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1109/LSENS.2018.2822305",
+        "article-title": "A wireless RFID compatible sensor tag using gold nanoparticle markers for pathogen detection in the liquid food supply chain",
+        "volume": "2",
+        "author": "Karuppuswami",
+        "year": "2018",
+        "journal-title": "IEEE Sensors Lett."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b143",
+        "series-title": "2020 European Conference on Networks and Communications (EuCNC)",
+        "first-page": "100",
+        "article-title": "5G-RANGE: A transceiver for remote areas based on software-defined radio",
+        "author": "Dias",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b144",
+        "first-page": "1",
+        "article-title": "A digital twin-assisted real-time traffic data prediction method for 5G-enabled internet of vehicles",
+        "author": "Hu",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b145",
+        "first-page": "1",
+        "article-title": "Survey on blockchain based smart contracts: Technical aspects and future research",
+        "author": "Hewa",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b146",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2020.103334",
+        "article-title": "Orchestrating product provenance story: When IOTA ecosystem meets electronics supply chain space",
+        "volume": "123",
+        "author": "Suhail",
+        "year": "2020",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "key": "10.1016/j.jii.2022.100393_b147",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1016/j.future.2016.07.015",
+        "article-title": "Naming and name resolution in the future internet: Introducing the NovaGenesis approach",
+        "volume": "67",
+        "author": "Alberti",
+        "year": "2017",
+        "journal-title": "Future Gener. Comput. Syst."
+      }
+    ],
+    "container-title": [
+      "Journal of Industrial Information Integration"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2452414X22000607?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2452414X22000607?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          11
+        ]
+      ],
+      "date-time": "2025-11-11T01:06:21Z",
+      "timestamp": 1762823181000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2452414X22000607"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "references-count": 147,
+    "alternative-id": [
+      "S2452414X22000607"
+    ],
+    "URL": "https://doi.org/10.1016/j.jii.2022.100393",
+    "relation": {},
+    "ISSN": [
+      "2452-414X"
+    ],
+    "issn-type": [
+      {
+        "value": "2452-414X",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Convergence of Distributed Ledger Technologies with Digital Twins, IoT, and AI for fresh food logistics: Challenges and opportunities",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Industrial Information Integration",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jii.2022.100393",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2022 Published by Elsevier Inc.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100393"
+  }
+}

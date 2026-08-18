@@ -1,0 +1,29 @@
+{
+  "paperId": "054b6fe67116fc92bcda8d81e0b6dd9bb2c0734e",
+  "title": "Adaptive GPS duty cycling and radio ranging for energy-efficient localization",
+  "openAccessPdf": {
+    "url": "https://eprints.qut.edu.au/41589/1/2011005202.Corke.ePrints.pdf",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1145/1869983.1869990?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/1869983.1869990, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1770270",
+      "name": "R. Jurdak"
+    },
+    {
+      "authorId": "1714296",
+      "name": "Peter Corke"
+    },
+    {
+      "authorId": "2908544",
+      "name": "Dhinesh Dharman"
+    },
+    {
+      "authorId": "3061168",
+      "name": "Guillaume Salagnac"
+    }
+  ],
+  "abstract": null
+}

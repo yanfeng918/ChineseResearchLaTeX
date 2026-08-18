@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          24
+        ]
+      ],
+      "date-time": "2025-12-24T09:50:21Z",
+      "timestamp": 1766569821074,
+      "version": "3.48.0"
+    },
+    "reference-count": 0,
+    "publisher": "International Journal of Renewable Energy Research",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "DOI": "10.20508/ijrer.v15i4.16778.g9135",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          24
+        ]
+      ],
+      "date-time": "2025-12-24T09:46:22Z",
+      "timestamp": 1766569582000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Balancing Quality of Service and Lifetime in Solar-Powered IoT via Hyper-Adaptive Duty Cycling"
+    ],
+    "prefix": "10.20508",
+    "author": [
+      {
+        "given": "Lei",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "8406",
+    "published-online": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "container-title": [
+      "International Journal of Renewable Energy Research"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          24
+        ]
+      ],
+      "date-time": "2025-12-24T09:46:23Z",
+      "timestamp": 1766569583000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ijrer.org/ijrer/index.php/ijrer/article/view/16778"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.20508/ijrer.v15i4.16778.g9135",
+    "relation": {},
+    "ISSN": [
+      "1309-0127"
+    ],
+    "issn-type": [
+      {
+        "value": "1309-0127",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  }
+}
