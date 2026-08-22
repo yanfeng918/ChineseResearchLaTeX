@@ -1,0 +1,831 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2026-08-15T10:44:43Z",
+      "timestamp": 1786790683747,
+      "version": "3.56.0"
+    },
+    "reference-count": 52,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2016-05-01T00:00:00Z",
+          "timestamp": 1462060800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2016-05-01T00:00:00Z",
+          "timestamp": 1462060800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              12,
+              4
+            ]
+          ],
+          "date-time": "2015-12-04T00:00:00Z",
+          "timestamp": 1449187200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "European Community's Seventh Framework program",
+        "award": [
+          "623 857"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "623 857"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dutch Institute for Advanced Logistics (DINALOG)",
+        "award": [
+          "20102034R"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "20102034R"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Food Engineering"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jfoodeng.2015.11.009",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          12,
+          1
+        ]
+      ],
+      "date-time": "2015-12-01T08:48:41Z",
+      "timestamp": 1448959721000
+    },
+    "page": "128-136",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 418,
+    "special_numbering": "C",
+    "title": [
+      "Virtualization of food supply chains with the internet of things"
+    ],
+    "prefix": "10.1016",
+    "volume": "176",
+    "author": [
+      {
+        "given": "C.N.",
+        "family": "Verdouw",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.",
+        "family": "Wolfert",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A.J.M.",
+        "family": "Beulens",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A.",
+        "family": "Rialland",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "394",
+        "DOI": "10.1016/j.jfoodeng.2009.02.004",
+        "article-title": "RFID smart tag for traceability and cold chain monitoring of foods: demonstration in an intercontinental fresh fish logistic chain",
+        "volume": "93",
+        "author": "Abad",
+        "year": "2009",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "2787",
+        "DOI": "10.1016/j.comnet.2010.05.010",
+        "article-title": "The internet of things: a survey",
+        "volume": "54",
+        "author": "Atzori",
+        "year": "2010",
+        "journal-title": "Comput. Netw."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.2307/248684",
+        "article-title": "The case research stratey in studies of information systems",
+        "volume": "11",
+        "author": "Benbasat",
+        "year": "1987",
+        "journal-title": "MIS Q."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "481",
+        "DOI": "10.1016/j.foodcont.2003.10.010",
+        "article-title": "Food safety and transparency in food chains and networks - relationships and challenges",
+        "volume": "16",
+        "author": "Beulens",
+        "year": "2005",
+        "journal-title": "Food control."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "391",
+        "DOI": "10.1016/j.biosystemseng.2007.07.011",
+        "article-title": "Agricultural supply system traceability, Part I: role of packing procedures and effects of fruit mixing",
+        "volume": "98",
+        "author": "Bollen",
+        "year": "2007",
+        "journal-title": "Biosyst. Eng."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "548",
+        "DOI": "10.1016/j.ijpe.2007.05.007",
+        "article-title": "Economical assessment of the impact of RFID technology and EPC system on the fast-moving consumer goods supply chain",
+        "volume": "112",
+        "author": "Bottani",
+        "year": "2008",
+        "journal-title": "Int. J. Prod. Econ."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "486",
+        "DOI": "10.1108/09600039810247461",
+        "article-title": "Virtual logistics: an introduction and overview of the concepts",
+        "volume": "28",
+        "author": "Clarke",
+        "year": "1998",
+        "journal-title": "Int. J. Phys. Distribution Logist. Manag."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1007/s11947-012-0958-7",
+        "article-title": "A review on agri-food Supply chain traceability by means of RFID technology",
+        "volume": "6",
+        "author": "Costa",
+        "year": "2013",
+        "journal-title": "Food Bioprocess Technol."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib9",
+        "series-title": "Virtuality and Virtualization, Virtuality and Virtualization",
+        "first-page": "1",
+        "author": "Crowston",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib10",
+        "first-page": "65",
+        "article-title": "Regulation No. 911/2004 of 29 April 2004 implementing regulation (EC) No 1760/2000 of the European Parliament and of the Council as regards ear tags, passports and holding registers",
+        "volume": "163",
+        "author": "EC",
+        "year": "2004",
+        "journal-title": "Official J. Eur. Union"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "532",
+        "DOI": "10.2307/258557",
+        "article-title": "Building theories from case-study research",
+        "volume": "14",
+        "author": "Eisenhardt",
+        "year": "1989",
+        "journal-title": "Acad. Manag. Rev."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib12",
+        "series-title": "FIWARE Catalogue",
+        "author": "FIWARE",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib13",
+        "series-title": "Agile Competitors and Virtual Organizations",
+        "author": "Goldman",
+        "year": "1995"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib14",
+        "series-title": "GS1 Global Traceability Standard; Issue 1.3.0",
+        "first-page": "67",
+        "author": "GS1",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib15",
+        "series-title": "EPC Information Services (EPCIS) Version 1.1 Specification",
+        "first-page": "169",
+        "author": "GS1",
+        "year": "2014"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "645",
+        "DOI": "10.1080/10408398.2011.600477",
+        "article-title": "Monitoring the quality of perishable foods: opportunities for intelligent packaging",
+        "volume": "54",
+        "author": "Heising",
+        "year": "2013",
+        "journal-title": "Crit. Rev. Food Sci. Nutr."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.2307/25148625",
+        "article-title": "Design science in information systems research",
+        "volume": "28",
+        "author": "Hevner",
+        "year": "2004",
+        "journal-title": "MIS Q."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib18",
+        "series-title": "Web Services and Formal Methods",
+        "first-page": "1",
+        "article-title": "Introducing the guard-stage-milestone approach for specifying business entity lifecycles",
+        "author": "Hull",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib19",
+        "series-title": "European Commission DG Infso & European Technology Platform on Smart Systems Integration",
+        "first-page": "32",
+        "article-title": "Internet of things in 2020: a roadmap for the future",
+        "author": "Infso",
+        "year": "2008"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib20",
+        "first-page": "19",
+        "article-title": "Communication techniques and challenges for wireless food quality monitoring",
+        "author": "Jedermann",
+        "year": "2014",
+        "journal-title": "Phil. Trans. R. Soc."
+      },
+      {
+        "issue": "1–2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1016/j.jfoodeng.2012.03.025",
+        "article-title": "Granularity and its role in implementation of seafood traceability",
+        "volume": "112",
+        "author": "Karlsen",
+        "year": "2012",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.1016/j.compag.2014.10.002",
+        "article-title": "Enabling chain-wide transparency in meat supply chains based on the EPCIS global standard and cloud-based services",
+        "volume": "109",
+        "author": "Kassahun",
+        "year": "2014",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1109/MIC.2009.143",
+        "article-title": "Smart objects as building blocks for the internet of things",
+        "volume": "14",
+        "author": "Kortuem",
+        "year": "2010",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "471",
+        "DOI": "10.1016/S0007-8506(07)63229-6",
+        "article-title": "Virtual and augmented reality technologies for product realization",
+        "volume": "48",
+        "author": "Lu",
+        "year": "1999",
+        "journal-title": "CIRP Ann. - Manuf. Technol."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "919",
+        "DOI": "10.1007/s11390-011-1189-5",
+        "article-title": "Internet of things: objectives and scientific challenges",
+        "volume": "26",
+        "author": "Ma",
+        "year": "2011",
+        "journal-title": "J. Comput. Sci. Technol."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "976",
+        "DOI": "10.1108/00070701011074354",
+        "article-title": "Benefits of traceability in fish supply chains – case studies",
+        "volume": "112",
+        "author": "Mai",
+        "year": "2010",
+        "journal-title": "Br. Food J."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/0167-9236(94)00041-2",
+        "article-title": "Design and natural-science research on information technology",
+        "volume": "15",
+        "author": "March",
+        "year": "1995",
+        "journal-title": "Decis. Support Syst."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib29",
+        "doi-asserted-by": "crossref",
+        "first-page": "725",
+        "DOI": "10.2307/25148869",
+        "article-title": "Design science in the information systems discipline: an introduction to the special issue on design science research",
+        "volume": "32",
+        "author": "March",
+        "year": "2008",
+        "journal-title": "MIS Q."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "137",
+        "DOI": "10.1016/j.compind.2008.12.005",
+        "article-title": "Intelligent products: a survey",
+        "volume": "60",
+        "author": "Meyer",
+        "year": "2009",
+        "journal-title": "Comput. Industry"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib33",
+        "series-title": "How Smart Connected Objects Are Transforming Competition",
+        "author": "Porter",
+        "year": "2014"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib34",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.1108/BFJ-03-2012-0055",
+        "article-title": "Effects on logistic operations from RFID- and EPCIS-enabled traceability",
+        "volume": "116",
+        "author": "Ringsberg",
+        "year": "2013",
+        "journal-title": "Br. Food J."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1109/MC.2005.176",
+        "article-title": "Virtual machine monitors: current technology and future trends",
+        "volume": "38",
+        "author": "Rosenblum",
+        "year": "2005",
+        "journal-title": "Computer"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "42",
+        "DOI": "10.1016/j.compag.2011.08.010",
+        "article-title": "The role of RFID in agriculture: applications, limitations and challenges",
+        "volume": "79",
+        "author": "Ruiz-Garcia",
+        "year": "2011",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "332",
+        "DOI": "10.1016/j.jfoodeng.2013.05.031",
+        "article-title": "Challenges facing food engineering",
+        "volume": "119",
+        "author": "Saguy",
+        "year": "2013",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1016/j.ijpe.2010.07.039",
+        "article-title": "A literature review on the impact of RFID technologies on supply chain management",
+        "volume": "128",
+        "author": "Sarac",
+        "year": "2010",
+        "journal-title": "Int. J. Prod. Econ."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib39",
+        "series-title": "The Internet of Things",
+        "author": "Schoenberger",
+        "year": "2002"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "62",
+        "DOI": "10.1016/j.compag.2008.12.002",
+        "article-title": "A framework for beef traceability from farm to slaughter using global standards: an Irish perspective",
+        "volume": "66",
+        "author": "Shanahan",
+        "year": "2009",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib41",
+        "series-title": "Virtual Experiments in Food Processing",
+        "author": "Singh",
+        "year": "2004"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib42",
+        "first-page": "73",
+        "article-title": "Defining virtual reality: dimensions determining telepresence",
+        "volume": "42",
+        "author": "Steuer",
+        "year": "1992",
+        "journal-title": "J. Commun."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1016/j.jfoodeng.2012.09.018",
+        "article-title": "The tracefood framework – principles and guidelines for implementing traceability in food value chains",
+        "volume": "115",
+        "author": "Storøy",
+        "year": "2013",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib44",
+        "series-title": "Vision and Challenges for Realising the Internet of Things",
+        "author": "Sundmaeker",
+        "year": "2010"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib45",
+        "doi-asserted-by": "crossref",
+        "first-page": "417",
+        "DOI": "10.1016/j.jfoodeng.2010.11.012",
+        "article-title": "Managing food traceability information using EPCIS framework",
+        "volume": "103",
+        "author": "Thakur",
+        "year": "2011",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib46",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1016/j.aei.2011.07.007",
+        "article-title": "Transparency in complex dynamic food supply chains",
+        "volume": "26",
+        "author": "Trienekens",
+        "year": "2012",
+        "journal-title": "Adv. Eng. Inf."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib47",
+        "series-title": "Architecting the Internet of Things",
+        "first-page": "1",
+        "article-title": "An architectural approach towards the future internet of things",
+        "author": "Uckelmann",
+        "year": "2011"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib48",
+        "first-page": "219",
+        "article-title": "Management research based on the paradigm of the design sciences: the quest for field-tested and grounded technological rules",
+        "volume": "41",
+        "author": "van Aken",
+        "year": "2004",
+        "journal-title": "J. Manag. Stud."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib49",
+        "first-page": "33",
+        "article-title": "Real strategies for virtual organizing",
+        "volume": "40",
+        "author": "Venkatraman",
+        "year": "1998",
+        "journal-title": "MIT Sloan Manag. Rev."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1016/j.compag.2010.05.005",
+        "article-title": "Process modelling in demand-driven supply chains: a reference model for the fruit industry",
+        "volume": "73",
+        "author": "Verdouw",
+        "year": "2010",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "160",
+        "DOI": "10.1016/j.compag.2013.09.006",
+        "article-title": "Virtualisation of floricultural supply chains: a review from an internet of things perspective",
+        "volume": "99",
+        "author": "Verdouw",
+        "year": "2013",
+        "journal-title": "Comput. Electron. Agric."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib52",
+        "series-title": "Annual SRII Global Conference",
+        "first-page": "106",
+        "article-title": "Towards software mass customization for business collaboration",
+        "author": "Verdouw",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "116",
+        "DOI": "10.1016/j.compind.2014.12.011",
+        "article-title": "A control model for object virtualization in Supply chain management",
+        "volume": "68",
+        "author": "Verdouw",
+        "year": "2015",
+        "journal-title": "Comput. Industry"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1089",
+        "DOI": "10.1109/MIC.2009.52",
+        "article-title": "Building the internet of things using RFID: the RFID ecosystem experience",
+        "volume": "13",
+        "author": "Welbourne",
+        "year": "2009",
+        "journal-title": "IEEE Internet Comput."
+      },
+      {
+        "key": "10.1016/j.jfoodeng.2015.11.009_bib55",
+        "series-title": "Case Study Research: Design and Methods",
+        "author": "Yin",
+        "year": "2002"
+      }
+    ],
+    "container-title": [
+      "Journal of Food Engineering"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S026087741530056X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S026087741530056X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2025-10-01T23:28:45Z",
+      "timestamp": 1759361325000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S026087741530056X"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "references-count": 52,
+    "alternative-id": [
+      "S026087741530056X"
+    ],
+    "URL": "https://doi.org/10.1016/j.jfoodeng.2015.11.009",
+    "relation": {},
+    "ISSN": [
+      "0260-8774"
+    ],
+    "issn-type": [
+      {
+        "value": "0260-8774",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Virtualization of food supply chains with the internet of things",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Food Engineering",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jfoodeng.2015.11.009",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

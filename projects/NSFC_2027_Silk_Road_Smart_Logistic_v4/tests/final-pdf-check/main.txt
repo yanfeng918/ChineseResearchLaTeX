@@ -1,0 +1,560 @@
+               报告正文（2026 版）
+
+  参照以下提纲撰写，要求内容翔实、清晰，层次分明，标题突出。
+请勿删除或改动下述提纲标题及括号中的文字。
+  （一）立项依据与研究内容（建议 8000 字以下）：
+   1. 项目的立项依据（研究意义、国内外研究现状及发展动态分
+析，需结合科学研究发展趋势来论述科学意义；或结合国民经济和社
+会发展中迫切需要解决的关键科技问题来论述其应用前景。附主要参
+考文献目录）；
+ 1.1 研究背景与意义
+  跨境物流监测正在由“位置可见”转向“货物状态与风险可解释”。物流物联
+网、智能运输和港口数字化研究表明，传感器、边缘计算与智能分析能够提高过
+程透明度，但异构数据、动态链路和跨主体协同仍是落地中的持续约束 [1, 2, 3, 4]。
+本项目面向可能经历新疆口岸至中亚长距离运输、覆盖间歇和带宽波动的应用条
+件，研究车辆端带宽、算力、能量及缓存共同受限时的异常证据保全。冲击、倾
+斜、封志开启和包装破损需要运输阶段多模态相互印证，温湿度、烟雾、门禁与
+视频则要在仓储阶段形成连续风险判断。冷链监测与物联网风险研究也显示，单
+点传感或事后追溯难以同时满足状态感知和风险管理要求 [5, 6]。
+  本项目关注的基本矛盾是：异常决策要求连续证据，而弱网使事件发生、设
+备采样与数据到达彼此错位；资源受限又迫使系统在证据尚不完整时决定“采什
+么、保什么、先传什么”。这种错位具有状态相关性，不能按普通随机丢失处理。
+当剧烈振动触发高频采样、低电量压低采样频率、弱链路延迟图像送达时，“可
+见数据”本身已受到事件和系统状态选择。若仍把缺失位置当作无信息的缺失掩
+码，模型可能把“没有看到异常”误解为“异常没有发生”；若只追求平均压缩
+率或吞吐量，又可能优先发送大量冗余正常片段而丢失少量关键原始证据。提高
+单一识别模型精度、增加缓存或提高压缩率，均不足以解决该问题。需要回答的
+是：决策时刻已经到达的证据在何种条件下足以辨识事件风险，资源动作如何安
+全改变这一证据状态，以及仓储本地风险在环境漂移后如何保持校准。厘清上述
+机制，有助于建立弱网环境下“可辨识—可保全—可校准”的异常证据理论，也
+为跨境物流全过程监测、可靠上传和分级预警提供方法基础。
+ 1.2 国内外研究现状及发展动态分析
+ （1）异步、缺失多模态异常感知。不规则时序建模已从插值和缺失掩码扩展
+到连续时间状态模型，GRU-D、潜在常微分方程等工作为不规则采样与缺失数据
+学习提供了基础 [7, 8]；异步多变量异常检测进一步考虑变量间时间错位和异常定
+位 [9, 10, 11]。在视觉与传感融合方面，缺失模态恢复、工业多模态异常检测和真
+实场景基准持续发展 [12, 13, 14, 15, 16]。这些工作主要把缺失作为输入现象，较
+少区分“设备未采样”和“已经采样但尚未送达”；当缺失概率受网络、能量或
+事件状态影响时，普通缺失掩码与时间编码难以给出风险何时仍可辨识、何时应
+拒判的边界。
+ （2）任务导向通信与边缘资源协同。语义/任务导向通信从传输比特转向保留
+下游任务信息，DeepSC 及其后续任务通信研究验证了任务损失驱动的传输思路
+[17, 18, 19, 20]。延迟容忍网络、适应性采样、分裂推理和资源分配分别处理间歇
+连接、能量、带宽与计算约束 [21, 22, 23, 24, 25, 26]。现有策略多按单包置信度、
+数据新鲜度、大小或即时任务损失排序，难以表达一次异常由振动片段、封志状
+态和图像共同证实时的互补性；压缩、缓存、续传和卸载也常被分别优化，缺少
+“截止期前证据链是否充分”这一统一决策量及未知异常原始证据的安全下界。
+ （3）仓储多源风险与漂移校准。时间序列异常检测正在由静态判别转向异常
+—变点区分、概念漂移适应和预测不确定性估计 [27, 28, 29, 30]。概率校准和选择
+性预测说明，高风险应用除分类正确外，还需在证据不足时暴露不确定性或拒绝
+判断 [31, 32]。然而，仓储温湿度缓变与烟雾、门禁、视频突发事件具有不同时间
+尺度，静态阈值难以在仓库、季节和设备变化下同时维持判别性能、校准程度与
+预警提前量。对完成货物级配对的冲击/倾斜或非法开启事件，入库后是否还存在
+事件特异的附加预测信息，也需要与仓储本地风险分开检验。
+
+ 1.3 现有研究不足
+  现有研究仍有三处相互关联的缺口。其一，事件过程与观测/到达过程未被充
+分解耦，无法在状态相关缺失下区分“未发生、未采到、未送达”，完整轨迹重
+建也容易掩盖不可辨识性。其二，资源调度缺少相对于当前证据集合、同时考虑
+互补、冗余和迟到失效的条件价值；平均精度或吞吐改善不能保证关键证据得到
+保全。其三，仓储多源风险缺少漂移条件下的校准、拒判和可检验响应规则；运
+输事件摘要能否增加预测信息，则尚需在实体配对条件具备时单独验证。三处缺
+口共同指向一个认知问题：弱网状态相关观测下的可靠证据状态如何形成、受控
+改变并服务于后续风险判断。
+
+  1.4 本项目的研究切入点
+    本项目以“决策时刻可靠证据状态”为共同对象，沿三步展开：分离事件、采
+样和到达三个时钟，研究运输事件风险的条件辨识、风险界与拒判；把候选数据
+的价值定义为其加入现有证据集合并在截止期前交付后带来的风险降低，在关键
+原始证据保留、端侧最低告警、压缩保真和幂等续传约束下协调资源；建立漂移
+条件下可校准、可拒判的仓储本地多源风险，并在货物级配对和统计功效达到进
+入条件后检验运输事件摘要的附加预测价值。
+    据此提出三层可证伪假设：在时间元数据、可观测锚点和支持条件成立时，三
+时钟机制能够给出校准的运输事件风险；条件偏离时，敏感性风险区间应变宽或
+触发拒判。以该风险为基础的集合条件证据价值，在预算匹配且硬安全约束不变
+时，应降低关键异常的截止期漏警风险。仓储本地多源风险在漂移下应保持校准，
+并在证据不足时拒判；只有完成实体配对且达到统计进入条件，才进一步检验冲
+击/倾斜或非法开启摘要的条件预测增益。任一机制若只相对弱基线有效、依赖未
+来信息，或在条件破坏与负对照下仍给出同样结论，即被否证。
+
+参考文献
+[1] Golpîra H, Khan S A R, Safaeipour S. A Review of Logistics Internet-of-Things: Current Trends
+    and Scope for Future Research[J/OL]. Journal of Industrial Information Integration, 22 : 100194,
+    2021. http://dx.doi.org/10.1016/j.jii.2020.100194.
+[2] Rejeb A, Simske S, Rejeb K, Treiblmaier H, Zailani S. Internet of Things Research in Sup-
+    ply Chain Management and Logistics: A Bibliometric Analysis[J/OL]. Internet of Things, 12 :
+    100318, 2020. http://dx.doi.org/10.1016/j.iot.2020.100318.
+[3] Chung S-H. Applications of Smart Technologies in Logistics and Transport: A Review[J/OL].
+    Transportation Research Part E: Logistics and Transportation Review, 153 : 102455, 2021. http:
+    //dx.doi.org/10.1016/j.tre.2021.102455.
+[4] Klar R, Fredriksson A, Angelakis V. Digital Twins for Ports: Derived From Smart City
+    and Supply Chain Twinning Experience[J/OL]. IEEE Access, 2023. https://openalex.org/
+    W4384284153.
+[5] Badia-Melis R, Mc Carthy U, Ruiz-Garcia L, Garcia-Hierro J, Robla Villalba J I. New Trends
+    in Cold Chain Monitoring Applications—A Review[J/OL]. Food Control, 86 : 170 – 182, 2018.
+    http://dx.doi.org/10.1016/j.foodcont.2017.11.022.
+[6] Tsang Y P, Choy K L, Wu C H, Ho G T S, Lam C H Y, Koo P S. An Internet of Things
+    (IoT)-Based Risk Monitoring System for Managing Cold Supply Chain Risks[J/OL]. In-
+    dustrial Management & Data Systems, 118(7) : 1432 – 1462, 2018. http://dx.doi.org/10.1108/
+    IMDS-09-2017-0384.
+[7] Che Z, Purushotham S, Cho K, Sontag D, Liu Y. Recurrent Neural Networks for Multivariate
+    Time Series with Missing Values[J/OL]. Scientific Reports, 8(1), 2018. http://dx.doi.org/10.
+    1038/s41598-018-24271-9.
+ [8] Rubanova Y, Chen R T Q, Duvenaud D K. Latent Ordinary Differential Equa-
+     tions for Irregularly-Sampled Time Series[C/OL] // Advances in Neural Information
+     Processing Systems : Vol 32. 2019. https://proceedings.neurips.cc/paper/2019/hash/
+     42a6845a557bef704ad8ac9cb4461d43-Abstract.html.
+ [9] Abdulaal A, Liu Z, Lancewicki T. Practical Approach to Asynchronous Multivariate Time Se-
+     ries Anomaly Detection and Localization[C/OL] // Proceedings of the 27th ACM SIGKDD
+     Conference on Knowledge Discovery & Data Mining. 2021. https://doi.org/10.1145/3447548.
+     3467174.
+[10] Liu H, Huang X, Jia M, Zhang L, Jia T, Wu Z, Li Y. AAAD: Asynchronous Inter-Variable
+     Relationship-Aware Anomaly Detection for Multivariate Time Series[C/OL] // 2025 IEEE
+     International Conference on Multimedia and Expo (ICME). 2025. https://doi.org/10.1109/
+     icme59968.2025.11210144.
+[11] Tuli S, Casale G, Jennings N R. TranAD: Deep Transformer Networks for Anomaly Detection
+     in Multivariate Time Series Data[J/OL]. Proceedings of the VLDB Endowment, 15(6) : 1201 –
+     1214, 2022. http://dx.doi.org/10.14778/3514061.3514067.
+[12] Wang Y, Cui Z, Li Y. Distribution-Consistent Modal Recovering for Incomplete Multimodal
+     Learning[C/OL] // 2023 IEEE/CVF International Conference on Computer Vision (ICCV).
+     2023. https://doi.org/10.1109/iccv51070.2023.02013.
+[13] Qu X, Liu Z, Wu C, Hou A, Yin X, Chen Z. MFGAN: Multimodal Fusion for
+     Industrial Anomaly Detection Using Attention-Based Autoencoder and Generative
+     Adversarial Network[J/OL]. Sensors, 2024. https://www.semanticscholar.org/paper/
+     d5c8d0fd6bbd677b32e1c588ccd31ae2ff7d8f9b.
+[14] Wang C, Zhu H, Peng J, Wang Y, Yi R, Wu Y, Ma L, Zhang J. M3DM-NR: RGB-3D Noisy-
+     Resistant Industrial Anomaly Detection via Multimodal Denoising[J/OL]. IEEE Transactions
+     on Pattern Analysis and Machine Intelligence, 2025. https://www.semanticscholar.org/paper/
+     813d2c710c2f5189c81c9c7dfc6f3dcd95cc299d.
+[15] Pemula L, Zhang D, Dabeer O. Robust AD: A Real World Benchmark Dataset for Robustness
+     in Industrial Anomaly Detection[C/OL] // 2025 IEEE/CVF Conference on Computer Vision
+     and Pattern Recognition Workshops (CVPRW). 2025. https://www.semanticscholar.org/paper/
+     7b9c2f23ab00c10120daaac3a0f4c89680133c56.
+[16] Zhu W, Wang L, Zhou Z, Wang C, Pan Y, Zhang R, Chen Z, Cheng L, Gao B-B, Zhang J.
+     Real-IAD D3: A Real-World 2D/Pseudo-3D/3D Dataset for Industrial Anomaly Detection[C/
+     OL] // 2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). 2025.
+     https://www.semanticscholar.org/paper/4b87919e9247275878c7aa48b5a152d79c61d613.
+[17] Xie H, Qin Z, Li G Y, Juang B-H. Deep Learning Enabled Semantic Communication Sys-
+     tems[J/OL]. IEEE Transactions on Signal Processing, 69 : 2663 – 2675, 2021. http://dx.doi.org/
+     10.1109/TSP.2021.3071210.
+[18] Liu C, Guo C, Wang S, Li Y, Hu D. Task-Oriented Semantic Communication Based on Semantic
+     Triplets[C/OL] // 2023 IEEE Wireless Communications and Networking Conference (WCNC).
+     2023. https://doi.org/10.1109/wcnc55385.2023.10118916.
+[19] Guo J, Chen H, Song B, Chi Y, Yuen C, Yu F R, Li G Y, Niyato D. Distributed Task-Oriented
+     Communication Networks with Multimodal Semantic Relay and Edge Intelligence[J/OL]. IEEE
+     Communications Magazine, 2024. https://doi.org/10.1109/mcom.001.2300155.
+[20] Bijanrostami H, Sousa E, Farshbafan M K. Goal-Oriented Semantic Communication for DNN
+     Task Inference in IoT Networks[C/OL] // 2024 IEEE International Conference on Communi-
+     cations Workshops (ICC Workshops). 2024. https://doi.org/10.1109/iccworkshops59551.2024.
+     10615907.
+[21] More A P, Kale R S. Review on Recent Research Trends and Applications in
+     Delay Tolerant Networks[C/OL] // International Conference on Computing Com-
+     munication Control and Automation. 2022. https://www.semanticscholar.org/paper/
+     a11b4882f21ffa0ff47e274ec7c95fd00894d24c.
+[22] Qin Y, Kishk M A, Alouini M. Delay Tolerant Networks for Connectivity Enhancement in
+     Remote Areas: Modeling, Analysis, and Design[J/OL]. IEEE Internet of Things Journal, 2025.
+     https://www.semanticscholar.org/paper/7248d97c09b18fa9bf4125e0e1a6535624103f59.
+[23] Algabroun H, Håkansson L. Parametric Machine Learning-Based Adaptive Sampling Algo-
+     rithm for Efficient IoT Data Collection in Environmental Monitoring[J/OL]. Journal of Network
+     and Systems Management, 2025. https://doi.org/10.1007/s10922-024-09881-1.
+[24] Giordano M, Cortesi S, Mekikis P-V, Crabolu M, Bellusci G, Magno M. Energy-Aware
+     Adaptive Sampling for Self-Sustainability in Resource-Constrained IoT Devices[C/OL]
+     // Proceedings of the 11th International Workshop on Energy Harvesting & Energy-Neutral
+     Sensing Systems. 2023. https://doi.org/10.1145/3628353.3628545.
+[25] Bajpai D J, Jaiswal A, Hanawal M. I-SplitEE: Image Classification in Split Computing DNNs
+     with Early Exits[C/OL] // ICC 2024 - IEEE International Conference on Communications. 2024.
+     https://www.semanticscholar.org/paper/255fc7da7850245ddd732d41333b220ab9a34ea1.
+[26] Shah S, Gregory M A, Bouhafs F, Hartog F D. Artificial Intelligence-Defined Wireless
+     Networking for Computational Offloading and Resource Allocation in Edge Computing
+     Networks[J/OL]. IEEE Open Journal of the Communications Society, 2024. https://www.
+     semanticscholar.org/paper/78183a51195d2854b4c46bac02ad4c92330f8f9c.
+[27] Liu J, Yang D, Zhang K, Gao H, Li J. Anomaly and change point detection for time series with
+     concept drift[J/OL]. World Wide Web, 2023. https://doi.org/10.1007/s11280-023-01181-z.
+[28] Ding C, Zhao J, Sun S. Concept Drift Adaptation for Time Series Anomaly Detection via Trans-
+     former[J/OL]. Neural Processing Letters, 2023. https://doi.org/10.1007/s11063-022-11015-0.
+[29] Lu P, Lu J, Liu A, Zhang G. Early Concept Drift Detection via Prediction Uncertainty[J/OL].
+     Proceedings of the AAAI Conference on Artificial Intelligence, 2025. https://doi.org/10.1609/
+     aaai.v39i18.34105.
+[30] Wiessner P, Bezirganyan G, Sellami S, Chbeir R, Bungartz H-J. Uncertainty-Aware Time Series
+     Anomaly Detection[J/OL]. Future Internet, 2024. https://doi.org/10.3390/fi16110403.
+[31] Guo C, Pleiss G, Sun Y, Weinberger K Q. On Calibration of Modern Neural Networks[C/
+     OL] // Proceedings of Machine Learning Research, Vol 70 : Proceedings of the 34th Interna-
+     tional Conference on Machine Learning. 2017 : 1321 – 1330. https://proceedings.mlr.press/v70/
+     guo17a.html.
+[32] Geifman Y, El-Yaniv R. Selective Classification for Deep Neural Networks[C/OL] // Advances
+     in Neural Information Processing Systems : Vol 30. 2017. https://proceedings.neurips.cc/paper/
+     2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html.
+  2. 项目的研究内容、研究目标，以及拟解决的关键科学问题（此
+部分为重点阐述内容）；
+ （1）研究内容
+ （1）三时钟观测机制下的运输事件风险辨识。面向振动、倾斜、电子封志、光
+感和包装图像，建立事件时间、设备采样时间与决策端到达时间的数据规范，显
+式建模状态相关采样和延迟交付。在可观测锚点和支持条件成立时估计运输关键
+状态、冲击/倾斜、非法开启、包装破损或变形的风险与时间区间；条件偏离时通
+过敏感性分析给出部分辨识区间或拒判，形成包含事件候选、证据完整度和不确
+定性的可靠证据状态。
+ （2）截止期约束下的事件证据集合价值与安全资源决策。在 2G/3G 弱网、有
+限缓存、算力和能量条件下，研究候选证据相对于现有集合的截止期条件价值，刻
+画多模态证据的互补、冗余和迟到失效。以价值置信下界协调采样与数据压缩、离
+线缓存与状态保持、断点续传及边缘计算，并用端侧最低告警、关键原始证据保
+留、压缩保真和幂等续传约束稳定通信与可靠上传；以按期完整交付、通信字节、
+估算或实测能耗及续航代理量评价弱网和低功耗效果。
+ （3）漂移环境下的仓储风险校准与条件性事件记忆。融合温湿度、安防视频、
+烟雾和门禁信息，分别刻画缓变暴露与突发风险，在仓库、季节和设备漂移下形
+成可校准、可拒判的实时监测状态，输出异常识别、分级预警和应急响应建议。仓
+储本地校准与拒判为必做主问题；货物级配对和统计功效达到进入条件后，再对
+冲击/倾斜—包装损伤、非法开启—货物安全等合理链条检验事件特异衰减与附加
+预测价值。
+ （2）研究目标
+  总体目标是揭示弱网状态相关观测下可靠证据状态的形成、保全和后续风险
+使用规律，建立“可辨识—可保全—可校准”的跨境物流异常感知与边缘协同方
+法。具体目标为：形成能够区分未发生、未采到和未送达的三时钟风险辨识方法；
+形成以截止期集合条件价值为核心、受安全屏障约束的弱网资源策略；形成漂移
+条件下仓储多源风险校准、拒判和分级响应方法，并在配对门通过时检验条件性
+事件记忆。各目标分别以组平衡时间依赖 Brier 分数、截止期加权关键异常漏警风
+险、选择性风险—覆盖、证据链交付/资源指标及协议硬违例为验收口径，具体效
+应阈值由预实验和功效分析预先冻结。
+ （3）拟解决的关键科学问题
+  （1）状态相关缺失与三时钟错位下，已到达多模态证据在什么条件下仍能辨
+识运输事件风险？关键在于区分事件、采样和到达过程；条件不足时输出部分辨
+识区间或拒判，避免对未观测轨迹作过度自信的补全。
+  （2）资源动作对事件证据集合的截止期条件价值如何度量？关键在于仅用当
+时可得信息刻画证据互补、冗余、交付概率和迟到失效，并使通信/计算/能量优化
+服从关键证据安全下界。
+  （3）仓储多源风险在环境漂移下如何保持校准并形成可检验的分级响应？关
+键在于以仓储本地数据完成校准与拒判；只有实体配对条件具备时，才用摘要置
+换和时间外推检验运输事件记忆的附加预测价值，避免把普通相关性解释为因果
+作用。
+
+     3. 拟采取的研究方案及可行性分析（包括研究方法、技术路线、
+实验手段、关键技术等说明）；
+  3.1 研究方法
+   对货物或运输批次 i、模态 m、样本 j 和事件 k，记事件时间为 τ ，采样时间为
+simj ，到达时间为 aimj ，观测与质量量为 Oimj , Qimj ，链路与资源状态为 Ni (t), Bi (t)。
+在同一在线信息边界下，分别定义运输回溯检测风险和仓储前瞻预测风险：
+
+         Fi,t = σ({simj , aimj , Rimj , Oimj , Qimj : aimj ≤ t}, Ni ([0, t]), Bi ([0, t])) ,
+   det
+  θik  (t, h− ) = Pr(Yik (τ ) = 1, τ ∈ (t − h− , t] | Fi,t ) ,                                 (1)
+  pred
+ rik   (t, h+ ) = Pr(Yik (τ ) = 1, τ ∈ (t, t + h+ ] | Fi,t ) .
+
+式中 Rimj 为采样指示。C1 估计已经发生但证据异步到达的运输事件，C2 降低这
+类关键事件在截止期前的漏警风险，C3 预测仓储未来风险；三者的在线输出均只
+能是 Fi,t 的函数，截止期后补传数据和事后标签只用于评分。
+   运输事件风险辨识。以低速常开记录、设备健康、链路状态、采样指令及队
+列/重传日志组成可观测锚点 W ，将潜在事件、采样、观测和到达过程分解为
+                                                            Y
+     p(X, Y, O, R, A | W, Q, N, B) = p(X, Y | W )                 p(Rmj | Hs , W, Q, N, B)
+                                                            m,j
+                                                                                               (2)
+                                            × p(Omj | X(smj ), Y, Q)
+
+                                            × p(Amj | Rmj , Omj , Hs , W, Q, N, B).
+其中 X, Y 为状态和事件，R, A 分别表示是否形成样本和何时送达。在锚点覆盖的
+支持域内，检验给定历史后的序贯可忽略性近似和正值性；满足条件时估计点风
+险。若事件状态对采样/到达仍有未观测依赖，则用选择优势比敏感性参数 Γ ≥ 1
+约束偏离程度，给出部分辨识区间 [LΓik,t , Uik,t
+                           Γ
+                                ]；支持不足时拒判。训练目标为
+       X
+L1 =           wk (yik,t −θ̂ik,t
+                            det 2
+                                 ) −λo log pψ (R, A | H, W, Q, N, B)+λc Ωcov ([LΓik,t , Uik,t
+                                                                                         Γ
+                                                                                              ], yik,t ).
+       i,k,t
+                                                                                                     (3)
+覆盖项用于检验区间而不替代辨识假设。通过去采样时钟、去到达时钟、合并未
+采/未达及破坏锚点的压力试验，联合评价点风险校准、区间覆盖、区间宽度和拒
+判率。
+     事件证据价值与安全决策。令 Et 为已到达证据集合，It 包含缓存摘要、网络、
+能量和截止期余量，at 为采样/压缩、缓存/传输或边缘计算动作，∆ED (at ) 为截
+止期 D 前实际新增且可解码的证据。冻结事件判别器 δ，以单实体条件期望损失
+ρD (E, I) = E[ℓD (Y, δ(E)) | E, I] 定义价值，并以置信下界（lower confidence bound，
+LCB）抑制高不确定动作：
+
+Vt (at | Et , It ) = ρD (Et , It ) − E[ρD (Et ∪ ∆ED (at ), It+1 ) | It , at ],    VtLCB = Vbϕ − κb
+                                                                                                 σϕ .
+                                                                                                     (4)
+LCB 用价值估计减去不确定性惩罚。受控试验先以高可靠参考采集形成带完整时
+间戳的母流，再以共同随机数重放候选采样、压缩、链路、缓存和续传动作，使未
+执行动作的潜在证据及资源状态可追溯；真实单路径日志只在行为策略支持重叠
+域内用于离策略估计，支持不足时不给动作外推。预测器、价值模型和策略按上
+层实体交叉拟合，最终测试标签封存并只开启一次，不参与在线动作或价值监督。
+     安全屏障先过滤会破坏端侧最低告警、关键原始证据保留、压缩保真或幂等
+续传的动作，再求解
+
+min Eπ [RD (ED )]+λB Eπ [Cbyte ]+λP Eπ [Cenergy ],           s.t. Cbyte ≤ B̄, Cenergy ≤ P̄ , at ∈ Asafe .
+ π
+                                                                                                     (5)
+式中 π 为策略，B̄, P̄ 为通信和能量预算。证据不可静默丢弃、分片校验一致和续
+传状态幂等属于协议层硬不变量；极端断连且无可行动作时转入端侧最低告警或
+拒判。识别漏警、误警与超期属于统计风险终点，不承诺在所有链路条件下为零。
+     仓储风险校准与条件性事件记忆。H3a 以温湿度、烟雾、门禁和视频 Ziw (t) 建
+立独立的仓储本地风险；H3b 只在货物级配对和统计功效达到进入条件后检验运
+输事件记忆：
+
+Hiw (t) = Fη (Hiw (t− ), Ziw (t), Qw
+                                   i (t)),
+                                             pred
+                                            rik,0 (t, h+ ) = gk,0 (Hiw (t), Ci ),
+           X
+Uik (t) =          wik,e exp[−λk (t − te )], rik  pred
+                                                       (t, h+ ) = gk (Hiw (t), Uik (t), Ci ),   t ≥ t0 .
+              tr (t )
+           e∈Eik   0
+
+                                                                                                   (6)
+运输事件集合 Eik
+        tr
+           (t0 ) 在入库时冻结，记忆在仓储阶段继续衰减；比较无衰减、共
+享衰减和事件特异衰减。H3b 仅保留冲击/倾斜—包装损伤、非法开启—货物安全
+等合理链条，烟雾、外部侵入和仓储温湿度风险由 H3a 判断。校准风险与不确定
+性映射为记录、人工复核和处置建议三级响应，并用漏触发、误触发和触发时延
+评价；支持域外或关键证据不足时拒判。
+
+   3.2 技术路线
+     项目采用“一套数据结构、一个边缘原型、三项递进实验”。事件、采样、到
+达、质量、缓存/重传和标签规范构成统一数据底座，可控异常与参数可追溯网络
+回放形成母流。三时钟风险及辨识区间用于驱动集合价值、安全采样/压缩、离线
+缓存、断点续传、可靠上传和边缘计算。仓储本地实时监测、漂移校准和分级响
+应构成必做闭环，事件记忆只在配对门通过后检验。各内容共享数据规范、基线、
+评估脚本和原型，每种模态不再另建独立算法。
+
+   3.3 实验手段
+     数据按货物/运输批次、车辆、路段、仓库和时间分组，同一事件窗口、近重复
+视频帧、增强及网络扰动副本不得跨集合。训练、校准/阈值选择和最终测试严格
+分离。C1 与具有相同时间戳、质量变量和容量的缺失掩码连续时间模型比较，并
+做 Γ 敏感性分析；C2 用同一母流、随机数、动作、安全屏障和预算，与逐包可加
+截止期调度比较；C3 的 H3a 比较规则阈值、后处理校准、漂移再校准和同覆盖率
+选择性预测，H3b 再比较真实、分层置换和时间错配运输摘要。统一采用组平衡
+时间依赖 Brier 分数（group-balanced Brier score，GBS）和截止期加权漏警风险：
+                                               P
+      1 X 1 X                              1 X o∈Og ck(o) I(o 在Dk(o) 前漏报)
+GBS =               (yg,t − p̂g,t ) , RD =
+                                   2
+                                                       P                  .
+      G g |Tg | t∈T                        G g             o∈Og ck(o)
+                          g
+                                                                                                   (7)
+GBS 避免长轨迹支配，RD 按每个上层实体的异常机会归一化。以最上层独立实
+体自助重采样报告区间；另报告校准斜率/可靠性图、选择性风险—覆盖曲线、固
+定召回下误报、证据链交付率、通信字节、估算或实测能耗、缓存溢出和 P95/P99
+时延。效应量、非劣界、样本量、截止期和主次终点层级均由不进入正式测试集
+的预实验与功效分析冻结。
+
+ 3.4 关键技术
+  关键技术包括：在可观测锚点和敏感性分析下统一三时钟风险辨识、区间与
+拒判；用可重放母流和支持域诊断估计集合条件价值，并使硬安全屏障先于资源
+优化；在 H3a 独立校准基础上，以门控配对、负对照和组外测试检验 H3b 事件记
+忆。
+
+ 3.5 可行性分析
+  申请人在时间序列、长时序预测、多源信息融合、多模态视觉理解、状态空
+间建模、机器学习和软件研发方面具有积累，可支撑风险建模、价值学习和原型
+实现；新疆大学相关平台与人工智能算力中心可支撑训练、仿真和数据处理。现
+有材料不能证明现场准入、传感/边缘设备、真实 2G/3G 轨迹、物理功耗测量或货
+物级运输—仓储配对已具备，因此先在基础可控场景中建立母流和参数化弱网模
+拟，再根据设备与授权条件进入代表性板卡和有限场景验证。没有实测时只报告
+仿真或估算结果；配对门不通过时只完成 H3a，不宣称 H3b 得到验证。
+
+     4. 本项目的特色与创新之处；
+ （1）支撑创新一：三时钟观测下的条件辨识
+  本项目分离事件发生、设备采样和决策端到达过程，使“未采”与“未达”保
+留不同的风险含义。可观测锚点和支持条件成立时估计事件风险；条件偏离时用
+敏感性区间与拒判暴露不可辨识性，并以同等时间信息强基线和条件破坏实验检
+验。
+ （2）主创新：集合条件证据价值与安全资源决策
+  项目把候选证据加入现有集合并在截止期前交付后的风险降低作为统一决策
+量，使互补、冗余和迟到失效进入同一价值估计。高可靠母流和共同随机数重放
+提供反事实核验，真实日志只在行为支持域内使用；策略仅在关键原始证据保留、
+最低告警、压缩保真和幂等续传构成的安全动作集中优化。该机制区别于按单包
+置信度、新鲜度或大小排序，是项目的主创新。
+ （3）支撑创新二：漂移校准与条件性事件记忆
+  仓储部分先以本地温湿度、烟雾、门禁和视频风险的漂移校准、选择性预测
+与分级响应构成独立主问题。货物级配对和统计功效满足后，再检验冲击/倾斜或
+非法开启摘要的事件特异衰减及组外增益，并用摘要置换、时间错配和支持域外
+拒判排除普通历史拼接造成的伪增益。
+
+  5. 年度研究计划及预期研究结果（包括拟组织的重要学术交流
+活动、国际合作与交流计划等）。
+ 5.1 年度研究计划
+  第一年：可靠证据状态与运输风险辨识。完成事件、三类时间戳、模态质量、
+缓存/重传和标签的数据规范；同步启动运输与仓储数据准备，建立可控异常、弱
+网回放、强基线和泄漏审计。完成三时钟观测模型、敏感性区间与拒判方法，形成
+事件风险、证据完整度和不确定性输出；以预实验和功效分析冻结主要终点与统
+计计划。年度门控为可观测锚点、三时钟日志和关键分层支持达到预设标准；未
+通过时只报告部分辨识与拒判，不主张点风险可辨识。
+  第二年：集合条件价值与弱网安全协同。研究证据互补、冗余、交付概率和迟
+到失效下的价值估计及置信下界；完成采样/压缩—缓存/传输两级决策、边缘计算
+和安全屏障。在相同 2G/3G 模拟轨迹与资源预算下完成价值校准、成对重放、断
+点续传、可靠上传和低功耗评价；同步建立仓储本地风险与漂移基线。年度门控
+为母流覆盖、动作支持和资源记录可追溯；未通过时限于受控重放，不从单路径
+日志外推未执行动作价值。
+  第三年：仓储校准预警与有限闭环。完成温湿度、烟雾、门禁和视频的多时间
+尺度风险校准、异常识别、分级预警、拒判和应急响应建议。仓储本地任务独立
+验收；统一货物标识、实体配对和统计功效同时达标后，才检验事件特异运输记
+忆。完成运输感知—弱网保全—仓储预警的离线/半实物闭环和误差传播分析，明
+确适用范围与失败条件。
+
+ 5.2 预期研究结果
+  形成三时钟弱网多模态风险辨识方法、事件证据集合价值与安全资源决策方
+法、漂移环境下仓储风险校准及条件性预测记忆方法；交付可复现的数据与三时
+钟日志规范、弱网回放及评测代码、边缘原型和反证实验报告，并据此形成论文、
+软件或数据成果。
+  5.3 学术交流与合作计划
+   围绕多模态时序异常、边缘智能和智能物流，参加相关国内外学术会议并开
+展阶段成果交流；结合数据、设备和场景条件的落实情况，与校内外相关团队就
+网络回放、端侧测量和物流场景验证开展合作。
+    （二）研究基础与工作条件
+    1. 研究基础（与本项目相关的研究工作积累和已取得的研究工
+ 作成绩等）；
+  1.1 与本项目相关的研究工作积累
+   申请人颜丰博士现为新疆大学副教授、硕士研究生导师，长期开展时间序列
+分析、多源信息融合、多模态视觉理解以及机器学习与深度学习研究，并具有科
+研技术与软件研发经历。现有积累主要来自算法与软件研究，尚未形成跨境物流
+现场成果；其方法可迁移到本项目三项任务：时序预测和状态空间建模用于不规
+则观测、动态风险与漂移分析；视觉问答、跨模态检索和小目标检测用于包装图
+像、安防视频与传感证据融合；软件研发及应用项目经验用于数据管线、弱网回
+放和边缘原型实现。
+   在时序建模方面，申请人以通讯作者发表 DWT-Former（Energy, 2025），研究
+小波多尺度特征与 Transformer 时间表征的融合；以共同第一作者发表 WaveKAN
+（Neurocomputing, 2026），研究自适应小波分解与长时序预测。
+   申请人主持的 XJEDU2026P005 项目聚焦多源数据驱动的光伏功率预测，创
+建的 ALPHA Group 也持续开展长时序预测与多源时序融合。这些工作为本项目
+三时钟观测、事件状态估计和仓储缓变风险建模提供方法储备。
+   在多模态与视觉方面，申请人在视觉问答、遥感视觉理解、跨模态检索方向
+形成 SPCA-Net、Knowledge-Aware Image Understanding、RSSR、RSHR+ 和 Feature
+Fusion Mamba Hashing 等成果，并以共同第一作者发表 S-YOLO（Neural Networks,
+2025）。申请人主持自治区天池英才“多模态融合技术研究及其在新疆产业集群
+中的应用”项目、自治区优秀博士后“面向通用领域的多模态视觉问答关键技术
+研究”，以及贴片二极管表面缺陷检测横向项目。上述事实能够证明多模态表示、
+视觉异常分析和模型研发能力，但不据此声称已经完成货物破损或仓储预警的前
+期实验。
+  1.2 已取得的研究工作成绩
+    申请人已在 Energy、Neurocomputing、Neural Networks、Machine Learning、The
+Visual Computer、Computer Vision and Image Understanding、Expert Systems with
+Applications 和 IEEE Signal Processing Letters 等期刊发表或列示相关成果，研究主
+题覆盖多尺度时序、长时预测、多模态交互、状态空间推理、跨模态检索和视觉
+检测。申请人主持项目 7 项，内容涉及多源预测、多模态融合、视觉问答、缺陷检
+测、数据采集和软件底座；参与低空安全管控、无人平台语义表征、公路沙害智能
+预警及场所安全服务等项目。上述成果构成算法研究与软件验证的证据链。2026
+年论文的卷期、DOI 和最终检索状态仍以正式申报前核验结果为准。
+
+  1.3 项目组能力与任务分工
+    申请人具备项目总体组织、时间序列与多模态模型设计、实验评估和软件原
+型研发能力。项目组参与者均为研究生，按研究任务安排如下：孔哲、张建宏参
+与运输阶段振动、倾斜、电子封志、光感和包装图像的时序对齐、异常样本整理
+与模型复现；杨铄、孟星宇参与 2G/3G 弱网仿真、离线缓存与断点续传原型、集
+合条件证据价值策略和端侧资源评估；桑乐吕、中原参与温湿度、视频、烟雾和
+门禁数据的仓储风险建模、校准与预警实验；于得武参与跨任务数据规范、公共
+基线、分组测试与复现实验。上述内容是本项目拟执行的任务分工，不据此声称
+成员已具备通信硬件或物流现场专长；申请人负责总体方案、关键模型、质量控
+制和三项任务之间的证据状态衔接。
+
+  1.4 前期基础与本项目的衔接
+    前期基础与项目形成三层衔接：长时序、多尺度与状态空间建模可迁移到事
+件—采样—到达错位下的风险表示；多模态交互、跨模态检索和小目标检测可迁
+移到振动/封志/图像及温湿度/视频/门禁/烟雾的证据融合；软件技术和应用研发经
+历可支撑离线缓存、断点续传、价值调度与端边协同的原型实现。申请人的优势
+集中在算法与软件，新型通信协议和低功耗硬件不作为已有基础或原创主张，网
+络、能量、缓存与设备均作为可测约束处理。
+    申请人确认目前尚无与本申请直接对应的物流数据、代码、原型、软件著作
+权、专利或预实验结果。本节据此只用已公开论文、项目经历和平台条件证明相
+邻方法能力；直接证据将从基础可控场景、弱网模拟和可复现实验开始建立，跨
+领域迁移不作为已经获得的物流实验结论。
+ 1.5 研究风险及应对措施
+  技术风险：集合条件价值或风险记忆缺少独立增益。早期信号是预算匹配后
+价值策略不优于逐包强基线，或真实运输摘要与置换摘要表现相近。应对措施是
+保留成对重放和负对照，若假设被否证则将成果收敛为三时钟风险界与安全截止
+期调度；仓储主体风险校准仍独立交付，不用增加模型复杂度掩盖阴性结果。
+  进度风险：真实数据、三时钟日志或现场准入晚于计划。早期信号是第一年
+度数据规范确定后仍无法获得完整采样/到达日志或授权场景。应对措施是先以可
+控异常和参数可追溯网络回放完成机制验证，同时持续准备有限真实场景；无货
+物级配对时不启动跨阶段记忆强验证，并明确降低外推论断。
+  资源风险：端侧设备、功耗仪或算力服务不能覆盖预定实验。早期信号是无法
+形成可复现实测资源记录，或 A100 服务可用期/配额不能覆盖关键训练。应对措
+施是采用 1–2 类可获得代表性板卡、记录时延/内存/字节并把能耗明确标为估算；
+通过模型压缩、分阶段训练和共享计算资源完成主要假设检验，不宣称未经实测
+的续航倍数。
+
+   2. 工作条件（包括已具备的实验条件，尚缺少的实验条件和拟
+解决的途径，包括利用国家实验室、全国重点实验室和部门重点实验
+室等研究基地的计划与落实情况）；
+ 2.1 已具备的实验条件
+  新疆大学计算机科学与技术学科具有多语言多模态认知计算与内容安全、信
+号检测与智能处理、大数据分析与智能控制等建设方向。可依托的科研平台包括
+教育部丝路多语言认知计算国际合作联合实验室、鹏城实验室新疆网络节点、新
+疆信号检测与处理重点实验室、新疆多语种信息技术重点实验室、国家语委新疆多
+语种信息技术研究中心及新疆多模态智能处理与信息安全工程技术研究中心，可
+为多模态、时序、网络与安全相关研究提供学科环境。
+  计算资源方面，学院人工智能算力中心材料记载拥有 GPU/NPU 训练及推理
+服务器/工作站 130 余台、各型加速卡 600 余块，FP32/FP16 精度下人工智能算力
+分别为 43/120 PFLOPS；2025 年购买 A100 8 卡服务器三年租赁服务。上述条件可
+以支撑模型训练、对照实验、弱网与资源策略仿真和数据处理。A100 服务的确切
+起止日期、申请人可用配额及能否覆盖本项目全周期，仍需在正式申报前核验，故
+不将其写成项目全周期专用算力。
+ 2.2 尚缺少的实验条件
+  申请人确认目前可落实的是基础可控实验场景，弱网链路需要采用模拟方式
+构造。尚未形成可写入申请书的新疆口岸/中亚运输车辆/边境仓储合作准入、现场
+数据规模、统一货物标识下的运输—入库—仓储配对记录，以及振动、倾斜、电
+子封志、光感、温湿度、烟雾、门禁、视频、边缘网关和功耗设备的具体型号与数
+量。视频及跨境数据若进入后续试验，须先落实授权、脱敏和合规边界。计算平
+台不能替代上述现场与端侧条件。
+
+ 2.3 拟解决的途径
+  项目按“基础可控异常—参数化弱网模拟—代表性边缘验证—条件成熟后的
+有限场景核验”分层落实。在可控环境中依据三时钟和证据质量规范完成异常触
+发、完整原始流和日志采集；利用参数化网络仿真或流量整形改变带宽、时延、丢
+包率与断连时长，开展 2G/3G 弱网机制试验，并将结论标注为模拟结果；在后续
+可获得的代表性板卡上测试时延、内存和通信字节，具备功耗仪后再报告实测能
+耗，否则只给出可复核的估算口径。有限现场及跨阶段验证仅在合作、授权、实
+体配对和统计功效满足后开展，拟合作和模拟续航结果不作为已落实条件或真实
+设备测量结果。
+
+ 2.4 利用研究基地的计划与落实情况
+  依托多模态智能处理、信号检测、网络节点和人工智能算力条件，开展多源
+时序建模、视觉异常分析、网络/系统仿真和模型训练；边缘原型和物流场景试验
+按照设备与合作条件分阶段接入。项目将把训练数据、模型版本、弱网参数、资
+源日志和评估脚本统一归档，保证成对重放、分组测试和结果追溯；平台共享算
+力按校内实际审批与配额使用，不写成项目专用资源。
+
+  3. 正在承担的与本项目相关的科研项目情况（申请人和主要参
+与者正在承担的与本项目相关的科研项目情况，包括国家自然科学基
+金的项目和国家其他科技计划项目，要注明项目的资助机构、项目类
+别、批准号、项目名称、获资助金额、起止年月、与本项目的关系及
+负责的内容等）；
+  经申请人确认，本节无需要列报的与本申请相关在研项目。
+  4. 完成国家自然科学基金项目情况（对申请人负责的前一个资
+助期满的科学基金项目（项目名称及批准号）完成情况、后续研究进
+展及与本申请项目的关系加以详细说明。另附该项目的研究工作总结
+摘要（限 500 字）和相关成果详细目录）。
+ 申请人无作为项目负责人承担并已资助期满的国家自然科学基金项目。
+  （三）其他需要说明的情况
+  1. 申请人同年申请不同类型的国家自然科学基金项目情况（列
+明同年申请的其他项目的项目类型、项目名称信息，并说明与本项目
+之间的区别与联系；已收到自然科学基金委不予受理或不予资助决定
+的，无需列出）。
+ 无相关情况。
+
+  2. 具有高级专业技术职务（职称）的申请人或者主要参与者是
+否存在同年申请或者参与申请国家自然科学基金项目的单位不一致
+的情况；如存在上述情况，列明所涉及人员的姓名，申请或参与申请
+的其他项目的项目类型、项目名称、单位名称、上述人员在该项目中
+是申请人还是参与者，并说明单位不一致原因。
+ 无相关情况。
+
+  3. 具有高级专业技术职务（职称）的申请人或者主要参与者是
+否存在与正在承担的国家自然科学基金项目的单位不一致的情况；如
+存在上述情况，列明所涉及人员的姓名，正在承担项目的批准号、项
+目类型、项目名称、单位名称、起止年月，并说明单位不一致原因。
+ 无相关情况。
+
+  4. 申请人和主要参与者同年以不同专业技术职务（职称）申请
+或参与申请科学基金项目的情况（应详细说明原因）。
+ 无相关情况。
+
+  5. 其他。
+ 无相关情况。
+

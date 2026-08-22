@@ -1,0 +1,114 @@
+schema_version: "1.0"
+manifest_status: "placeholder"
+created_at: null
+created_by: null
+
+run:
+  run_id: null
+  entity_id: null
+  session_id: null
+  mother_stream_id: null
+  phase: null
+  dataset_split: "not_assigned"
+  scenario_id: null
+  event_type: null
+  start_time_utc: null
+  end_time_utc: null
+
+responsibility:
+  operator: null
+  label_reviewer: null
+  evidence_reviewer: null
+
+environment:
+  location_class: "controlled_laboratory_or_desk"
+  location_detail: null
+  operating_system: null
+  kernel_version: null
+  software_commit_or_archive_hash: null
+  container_or_environment_lockfile: null
+
+hardware:
+  acquisition_devices: []
+  reference_devices: []
+  edge_or_receiver_device: null
+  device_claim_status: "to_be_filled"
+
+timekeeping:
+  event_reference_clock: null
+  sample_clock: null
+  arrival_clock: null
+  wall_clock_timezone: "Asia/Shanghai"
+  monotonic_clock_used: null
+  alignment_method: null
+  start_sync_residual_ms: null
+  end_sync_residual_ms: null
+  preregistered_max_residual_ms: null
+
+event_label:
+  operational_definition_version: "pilot/schema/event_dictionary.yaml@1.0"
+  label_source: null
+  event_time_start_reference_ns: null
+  event_time_end_reference_ns: null
+  label_confidence: null
+  disagreement_resolution: null
+
+acquisition:
+  modalities: []
+  sampling_policy_id: null
+  nominal_sampling_rates: {}
+  quality_and_health_anchors: []
+  raw_payload_paths: []
+
+network:
+  profile_id: null
+  profile_version: "pilot/config/weak_network_profiles.yaml@1.0"
+  profile_source_class: "parameterized_simulation"
+  interface_or_namespace: null
+  seed: null
+  configured_parameters: {}
+  achieved_measurement_paths: []
+
+resources:
+  initial_buffer_bytes: null
+  resource_log_path: null
+  energy_source: "not_available"
+  energy_unit: null
+  power_meter_or_estimator: null
+  board_or_device_model: null
+
+replay:
+  parent_mother_stream_id: null
+  method_id: null
+  decision_deadline_s: null
+  action_config_path: null
+  common_random_number_key: null
+
+data_integrity:
+  raw_layer_read_only: false
+  sequence_check_passed: null
+  chunk_hash_check_passed: null
+  manifest_path: null
+  evidence_manifest_path: null
+
+privacy_safety:
+  contains_people: null
+  contains_personal_information: null
+  contains_real_cargo_or_commercial_data: null
+  authorization_or_consent_path: null
+  safety_deviation: null
+
+claim_boundary:
+  allowed_claims: []
+  forbidden_claims:
+    - "real_2g_3g_trace_without_T_or_F_profile"
+    - "electronic_seal_measurement_without_documented_device"
+    - "representative_edge_board_without_documented_model"
+    - "measured_power_or_battery_life_without_physical_measurement"
+    - "field_or_cross_border_validation_without_authorization_and_field_evidence"
+
+signoff:
+  operator_signed_at: null
+  label_reviewer_signed_at: null
+  evidence_reviewer_signed_at: null
+  final_status: "placeholder"

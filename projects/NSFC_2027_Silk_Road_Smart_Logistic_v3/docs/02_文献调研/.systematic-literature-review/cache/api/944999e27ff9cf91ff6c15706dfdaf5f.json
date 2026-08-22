@@ -1,0 +1,1128 @@
+{
+  "id": "https://openalex.org/W4389661935",
+  "doi": "https://doi.org/10.1016/j.trpro.2023.11.831",
+  "title": "Maritime terminals’ cargo handling equipment cooperation leveraging IoT and edge computing: The ASSIST-IoT approach",
+  "display_name": "Maritime terminals’ cargo handling equipment cooperation leveraging IoT and edge computing: The ASSIST-IoT approach",
+  "publication_year": 2023,
+  "publication_date": "2023-01-01",
+  "ids": {
+    "openalex": "https://openalex.org/W4389661935",
+    "doi": "https://doi.org/10.1016/j.trpro.2023.11.831"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.trpro.2023.11.831",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.trpro.2023.11.831",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S2764743394",
+      "display_name": "Transportation research procedia",
+      "issn_l": "2352-1457",
+      "issn": [
+        "2352-1457",
+        "2352-1465"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Transportation Research Procedia",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "diamond",
+    "oa_url": "https://doi.org/10.1016/j.trpro.2023.11.831",
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5023233897",
+        "display_name": "Eduardo Garro",
+        "orcid": "https://orcid.org/0000-0002-8160-0125"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136377",
+          "display_name": "Prodevelop (Spain)",
+          "ror": "https://ror.org/0412jyn76",
+          "country_code": "ES",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Eduardo Garro",
+      "raw_affiliation_strings": [
+        "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5067835871",
+        "display_name": "Ignacio Lacalle",
+        "orcid": "https://orcid.org/0000-0002-6002-4050"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I60053951",
+          "display_name": "Universitat Politècnica de València",
+          "ror": "https://ror.org/01460j859",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I60053951"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Ignacio Lacalle",
+      "raw_affiliation_strings": [
+        "Universitat Politecnica de Valencia, Camino de Vera, SN, Valencia, 46022, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Universitat Politecnica de Valencia, Camino de Vera, SN, Valencia, 46022, Spain",
+          "institution_ids": [
+            "https://openalex.org/I60053951"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5015509377",
+        "display_name": "Francisco Blanquer",
+        "orcid": "https://orcid.org/0009-0003-6644-7112"
+      },
+      "institutions": [],
+      "countries": [],
+      "is_corresponding": false,
+      "raw_author_name": "Francisco Blanquer",
+      "raw_affiliation_strings": [
+        "CMA-CGM, Quai d'Arenc, 4, Marseille, 13002, France"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "CMA-CGM, Quai d'Arenc, 4, Marseille, 13002, France",
+          "institution_ids": []
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5104212998",
+        "display_name": "Adrian Ramos",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136377",
+          "display_name": "Prodevelop (Spain)",
+          "ror": "https://ror.org/0412jyn76",
+          "country_code": "ES",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Adrian Ramos",
+      "raw_affiliation_strings": [
+        "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5029060974",
+        "display_name": "Angel Martinez",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136377",
+          "display_name": "Prodevelop (Spain)",
+          "ror": "https://ror.org/0412jyn76",
+          "country_code": "ES",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Angel Martinez",
+      "raw_affiliation_strings": [
+        "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5069048632",
+        "display_name": "Piotr Sowiński",
+        "orcid": "https://orcid.org/0000-0002-2543-9461"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I66083562",
+          "display_name": "Systems Research Institute",
+          "ror": "https://ror.org/0111cp837",
+          "country_code": "PL",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I66083562",
+            "https://openalex.org/I99542240"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I99542240",
+          "display_name": "Polish Academy of Sciences",
+          "ror": "https://ror.org/01dr6c206",
+          "country_code": "PL",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I99542240"
+          ]
+        }
+      ],
+      "countries": [
+        "PL"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Piotr Sowiński",
+      "raw_affiliation_strings": [
+        "Systems Research Institute Polish Academy of Sciences, Warszawa, Poland"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Systems Research Institute Polish Academy of Sciences, Warszawa, Poland",
+          "institution_ids": [
+            "https://openalex.org/I66083562",
+            "https://openalex.org/I99542240"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5066833797",
+        "display_name": "Miguel Angel Llorente",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210136377",
+          "display_name": "Prodevelop (Spain)",
+          "ror": "https://ror.org/0412jyn76",
+          "country_code": "ES",
+          "type": "company",
+          "lineage": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Miguel Angel Llorente",
+      "raw_affiliation_strings": [
+        "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Prodevelop S.L., Carrer del Cronista Carreres, 13, Valencia, 46003, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210136377"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5016316427",
+        "display_name": "Carlos E. Palau",
+        "orcid": "https://orcid.org/0000-0002-3795-5404"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I60053951",
+          "display_name": "Universitat Politècnica de València",
+          "ror": "https://ror.org/01460j859",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I60053951"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Carlos Palau",
+      "raw_affiliation_strings": [
+        "Universitat Politecnica de Valencia, Camino de Vera, SN, Valencia, 46022, Spain"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Universitat Politecnica de Valencia, Camino de Vera, SN, Valencia, 46022, Spain",
+          "institution_ids": [
+            "https://openalex.org/I60053951"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 2,
+  "institutions_distinct_count": 4,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5023233897"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I4210136377"
+  ],
+  "apc_list": null,
+  "apc_paid": null,
+  "fwci": 0.4183,
+  "has_fulltext": false,
+  "cited_by_count": 3,
+  "citation_normalized_percentile": {
+    "value": 0.6821439,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 94,
+    "max": 97
+  },
+  "biblio": {
+    "volume": "72",
+    "issue": null,
+    "first_page": "2864",
+    "last_page": "2871"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11223",
+    "display_name": "Maritime Ports and Logistics",
+    "score": 0.9943000078201294,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2209",
+      "display_name": "Industrial and Manufacturing Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11223",
+      "display_name": "Maritime Ports and Logistics",
+      "score": 0.9943000078201294,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2209",
+        "display_name": "Industrial and Manufacturing Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T14180",
+      "display_name": "Law, logistics, and international trade",
+      "score": 0.9639000296592712,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1402",
+        "display_name": "Accounting"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/14",
+        "display_name": "Business, Management and Accounting"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11622",
+      "display_name": "Maritime Navigation and Safety",
+      "score": 0.911899983882904,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2212",
+        "display_name": "Ocean Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/container",
+      "display_name": "Container (type theory)",
+      "score": 0.8664330244064331
+    },
+    {
+      "id": "https://openalex.org/keywords/software-deployment",
+      "display_name": "Software deployment",
+      "score": 0.6997212767601013
+    },
+    {
+      "id": "https://openalex.org/keywords/port",
+      "display_name": "Port (circuit theory)",
+      "score": 0.6567216515541077
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.6094971299171448
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6085125207901001
+    },
+    {
+      "id": "https://openalex.org/keywords/architecture",
+      "display_name": "Architecture",
+      "score": 0.5919782519340515
+    },
+    {
+      "id": "https://openalex.org/keywords/terminal",
+      "display_name": "Terminal (telecommunication)",
+      "score": 0.5616116523742676
+    },
+    {
+      "id": "https://openalex.org/keywords/edge-computing",
+      "display_name": "Edge computing",
+      "score": 0.560123860836029
+    },
+    {
+      "id": "https://openalex.org/keywords/enhanced-data-rates-for-gsm-evolution",
+      "display_name": "Enhanced Data Rates for GSM Evolution",
+      "score": 0.5260529518127441
+    },
+    {
+      "id": "https://openalex.org/keywords/low-latency",
+      "display_name": "Low latency (capital markets)",
+      "score": 0.5241056680679321
+    },
+    {
+      "id": "https://openalex.org/keywords/latency",
+      "display_name": "Latency (audio)",
+      "score": 0.43220919370651245
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.3878479301929474
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.3107566833496094
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.29930275678634644
+    },
+    {
+      "id": "https://openalex.org/keywords/engineering",
+      "display_name": "Engineering",
+      "score": 0.22807961702346802
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.10580557584762573
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C2781018962",
+      "wikidata": "https://www.wikidata.org/wiki/Q5164884",
+      "display_name": "Container (type theory)",
+      "level": 2,
+      "score": 0.8664330244064331
+    },
+    {
+      "id": "https://openalex.org/C105339364",
+      "wikidata": "https://www.wikidata.org/wiki/Q2297740",
+      "display_name": "Software deployment",
+      "level": 2,
+      "score": 0.6997212767601013
+    },
+    {
+      "id": "https://openalex.org/C32802771",
+      "wikidata": "https://www.wikidata.org/wiki/Q2443617",
+      "display_name": "Port (circuit theory)",
+      "level": 2,
+      "score": 0.6567216515541077
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.6094971299171448
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6085125207901001
+    },
+    {
+      "id": "https://openalex.org/C123657996",
+      "wikidata": "https://www.wikidata.org/wiki/Q12271",
+      "display_name": "Architecture",
+      "level": 2,
+      "score": 0.5919782519340515
+    },
+    {
+      "id": "https://openalex.org/C2779664074",
+      "wikidata": "https://www.wikidata.org/wiki/Q3518405",
+      "display_name": "Terminal (telecommunication)",
+      "level": 2,
+      "score": 0.5616116523742676
+    },
+    {
+      "id": "https://openalex.org/C2778456923",
+      "wikidata": "https://www.wikidata.org/wiki/Q5337692",
+      "display_name": "Edge computing",
+      "level": 3,
+      "score": 0.560123860836029
+    },
+    {
+      "id": "https://openalex.org/C162307627",
+      "wikidata": "https://www.wikidata.org/wiki/Q204833",
+      "display_name": "Enhanced Data Rates for GSM Evolution",
+      "level": 2,
+      "score": 0.5260529518127441
+    },
+    {
+      "id": "https://openalex.org/C46637626",
+      "wikidata": "https://www.wikidata.org/wiki/Q6693015",
+      "display_name": "Low latency (capital markets)",
+      "level": 2,
+      "score": 0.5241056680679321
+    },
+    {
+      "id": "https://openalex.org/C82876162",
+      "wikidata": "https://www.wikidata.org/wiki/Q17096504",
+      "display_name": "Latency (audio)",
+      "level": 2,
+      "score": 0.43220919370651245
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.3878479301929474
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.3107566833496094
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.29930275678634644
+    },
+    {
+      "id": "https://openalex.org/C127413603",
+      "wikidata": "https://www.wikidata.org/wiki/Q11023",
+      "display_name": "Engineering",
+      "level": 0,
+      "score": 0.22807961702346802
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.10580557584762573
+    },
+    {
+      "id": "https://openalex.org/C119599485",
+      "wikidata": "https://www.wikidata.org/wiki/Q43035",
+      "display_name": "Electrical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C153349607",
+      "wikidata": "https://www.wikidata.org/wiki/Q36649",
+      "display_name": "Visual arts",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C78519656",
+      "wikidata": "https://www.wikidata.org/wiki/Q101333",
+      "display_name": "Mechanical engineering",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C142362112",
+      "wikidata": "https://www.wikidata.org/wiki/Q735",
+      "display_name": "Art",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.trpro.2023.11.831",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.trpro.2023.11.831",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S2764743394",
+        "display_name": "Transportation research procedia",
+        "issn_l": "2352-1457",
+        "issn": [
+          "2352-1457",
+          "2352-1465"
+        ],
+        "is_oa": true,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by-nc-nd",
+      "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Transportation Research Procedia",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.trpro.2023.11.831",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.trpro.2023.11.831",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S2764743394",
+      "display_name": "Transportation research procedia",
+      "issn_l": "2352-1457",
+      "issn": [
+        "2352-1457",
+        "2352-1465"
+      ],
+      "is_oa": true,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by-nc-nd",
+    "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Transportation Research Procedia",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [
+    {
+      "id": "https://metadata.un.org/sdg/9",
+      "score": 0.47999998927116394,
+      "display_name": "Industry, innovation and infrastructure"
+    }
+  ],
+  "awards": [
+    {
+      "id": "https://openalex.org/G3351381825",
+      "display_name": null,
+      "funder_award_id": "957258",
+      "funder_id": "https://openalex.org/F4320332999",
+      "funder_display_name": "Horizon 2020 Framework Programme"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320320300",
+      "display_name": "European Commission",
+      "ror": "https://ror.org/00k4n6c32"
+    },
+    {
+      "id": "https://openalex.org/F4320332999",
+      "display_name": "Horizon 2020 Framework Programme",
+      "ror": "https://ror.org/00k4n6c32"
+    }
+  ],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 4,
+  "referenced_works": [
+    "https://openalex.org/W169614712",
+    "https://openalex.org/W2473149034",
+    "https://openalex.org/W6606840848",
+    "https://openalex.org/W6720568312"
+  ],
+  "related_works": [
+    "https://openalex.org/W2385513635",
+    "https://openalex.org/W3091902527",
+    "https://openalex.org/W2285417236",
+    "https://openalex.org/W3083144655",
+    "https://openalex.org/W2810978322",
+    "https://openalex.org/W2139400310",
+    "https://openalex.org/W3211575585",
+    "https://openalex.org/W2387963103",
+    "https://openalex.org/W1508129380",
+    "https://openalex.org/W1574983280"
+  ],
+  "abstract_inverted_index": {
+    "Port": [
+      0
+    ],
+    "container": [
+      1
+    ],
+    "terminals": [
+      2
+    ],
+    "with": [
+      3,
+      48,
+      116
+    ],
+    "their": [
+      4,
+      91
+    ],
+    "logistic": [
+      5
+    ],
+    "infrastructure": [
+      6
+    ],
+    "are": [
+      7
+    ],
+    "essential": [
+      8
+    ],
+    "nodes": [
+      9
+    ],
+    "for": [
+      10,
+      90
+    ],
+    "a": [
+      11,
+      28,
+      34,
+      66,
+      82,
+      112
+    ],
+    "functional": [
+      12
+    ],
+    "economic": [
+      13
+    ],
+    "activity": [
+      14
+    ],
+    "in": [
+      15,
+      21,
+      69,
+      81
+    ],
+    "the": [
+      16,
+      24,
+      41,
+      49,
+      60,
+      119
+    ],
+    "developed": [
+      17
+    ],
+    "world.": [
+      18
+    ],
+    "Hence,": [
+      19
+    ],
+    "innovation": [
+      20
+    ],
+    "efficiency": [
+      22
+    ],
+    "of": [
+      23,
+      43,
+      51,
+      65,
+      118,
+      122
+    ],
+    "port-container": [
+      25
+    ],
+    "industry": [
+      26
+    ],
+    "is": [
+      27,
+      56
+    ],
+    "fundamental": [
+      29
+    ],
+    "issue.": [
+      30
+    ],
+    "This": [
+      31,
+      88
+    ],
+    "paper": [
+      32,
+      110
+    ],
+    "presents": [
+      33
+    ],
+    "Next": [
+      35
+    ],
+    "Generation": [
+      36
+    ],
+    "IoT": [
+      37
+    ],
+    "architecture": [
+      38,
+      55
+    ],
+    "inspired": [
+      39
+    ],
+    "by": [
+      40
+    ],
+    "merging": [
+      42
+    ],
+    "commercial": [
+      44
+    ],
+    "terminal-oriented": [
+      45
+    ],
+    "ICT": [
+      46
+    ],
+    "solutions": [
+      47
+    ],
+    "results": [
+      50
+    ],
+    "H2020": [
+      52
+    ],
+    "research.": [
+      53
+    ],
+    "The": [
+      54,
+      109
+    ],
+    "designed": [
+      57
+    ],
+    "to": [
+      58,
+      106
+    ],
+    "overcome": [
+      59
+    ],
+    "constraints": [
+      61
+    ],
+    "and": [
+      62,
+      94,
+      98
+    ],
+    "meet": [
+      63
+    ],
+    "requirements": [
+      64
+    ],
+    "real": [
+      67
+    ],
+    "scenario": [
+      68
+    ],
+    "maritime": [
+      70
+    ],
+    "ports": [
+      71
+    ],
+    "where": [
+      72
+    ],
+    "different": [
+      73
+    ],
+    "Container": [
+      74
+    ],
+    "Handling": [
+      75
+    ],
+    "Equipment": [
+      76
+    ],
+    "must": [
+      77
+    ],
+    "share": [
+      78
+    ],
+    "heterogeneous": [
+      79
+    ],
+    "data": [
+      80
+    ],
+    "decentralized": [
+      83
+    ],
+    "way,": [
+      84
+    ],
+    "leveraging": [
+      85
+    ],
+    "edge": [
+      86
+    ],
+    "computing.": [
+      87
+    ],
+    "allows": [
+      89
+    ],
+    "easier": [
+      92
+    ],
+    "cooperation": [
+      93
+    ],
+    "avoiding": [
+      95
+    ],
+    "unproductive": [
+      96
+    ],
+    "movements": [
+      97
+    ],
+    "central": [
+      99
+    ],
+    "communication,": [
+      100
+    ],
+    "while": [
+      101
+    ],
+    "reducing": [
+      102
+    ],
+    "communication": [
+      103
+    ],
+    "latency": [
+      104
+    ],
+    "related": [
+      105
+    ],
+    "terminal": [
+      107
+    ],
+    "operations.": [
+      108
+    ],
+    "describes": [
+      111
+    ],
+    "usage": [
+      113
+    ],
+    "example,": [
+      114
+    ],
+    "accompanied": [
+      115
+    ],
+    "evidence": [
+      117
+    ],
+    "first": [
+      120
+    ],
+    "stages": [
+      121
+    ],
+    "deployment.": [
+      123
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-08-14T07:06:38.338062",
+  "created_date": "2025-10-10T00:00:00"
+}

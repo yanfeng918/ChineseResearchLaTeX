@@ -1,0 +1,21 @@
+{
+  "paperId": "64256f8a05e08e4939706d1e591596406af45c03",
+  "title": "Energy-Efficient Federated Edge Learning with Joint Communication and Computation Design",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2003.00199",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.00199, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2062795552",
+      "name": "Xiaopeng Mo"
+    },
+    {
+      "authorId": "1720015",
+      "name": "Jie Xu"
+    }
+  ],
+  "abstract": "This paper studies a federated edge learning system, in which an edge server coordinates a set of edge devices to train a shared machine learning model based on their locally distributed data samples. During the distributed training, we exploit the joint communication and computation design for improving the system energy efficiency, in which both the communication resource allocation for global ML parameters aggregation and the computation resource allocation for locally updating MLparameters are jointly optimized. In particular, we consider two transmission protocols for edge devices to upload ML parameters to edge server, based on the non orthogonal multiple access and time division multiple access, respectively. Under both protocols, we minimize the total energy consumption at all edge devices over a particular finite training duration subject to a given training accuracy, by jointly optimizing the transmission power and rates at edge devices for uploading MLparameters and their central processing unit frequencies for local update. We propose efficient algorithms to optimally solve the formulated energy minimization problems by using the techniques from convex optimization. Numerical results show that as compared to other benchmark schemes, our proposed joint communication and computation design significantly improves the energy efficiency of the federated edge learning system, by properly balancing the energy tradeoff between communication and computation."
+}

@@ -1,0 +1,400 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T09:07:25Z",
+      "timestamp": 1780564045331,
+      "version": "3.54.1"
+    },
+    "reference-count": 23,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2023-03-01T00:00:00Z",
+          "timestamp": 1677628800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2023-03-01T00:00:00Z",
+          "timestamp": 1677628800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100012226",
+        "name": "Fundamental Research Funds for the Central Universities",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100012226",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1109/wcnc55385.2023.10118916",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2023-05-12T17:35:33Z",
+      "timestamp": 1683912933000
+    },
+    "page": "1-6",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "title": [
+      "Task-Oriented Semantic Communication Based on Semantic Triplets"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Chuanhong",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Beijing University of Posts and Telecommunications,Beijing Key Laboratory of Network System Architecture and Convergence, School of Information and Communication Engineering,Beijing,China,100876"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Caili",
+        "family": "Guo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing University of Posts and Telecommunications,Beijing Key Laboratory of Network System Architecture and Convergence, School of Information and Communication Engineering,Beijing,China,100876"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siyi",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing University of Posts and Telecommunications,School of Artificial Intelligence,Beijing,China,100876"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuze",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing University of Posts and Telecommunications,School of Artificial Intelligence,Beijing,China,100876"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dingxin",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing University of Posts and Telecommunications,School of Artificial Intelligence,Beijing,China,100876"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/e24060846"
+      },
+      {
+        "key": "ref12",
+        "article-title": "Intelligent task-oriented semantic communication method in artificial intelligence of things",
+        "volume": "42",
+        "author": "liu",
+        "year": "2021",
+        "journal-title": "Journal on Communications"
+      },
+      {
+        "key": "ref23",
+        "article-title": "Self-Attentive Associative Memory",
+        "author": "le",
+        "year": "2020",
+        "journal-title": "International Conference on Machine Learning (ICML)"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2022.3191112"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOBECOM46510.2021.9685056"
+      },
+      {
+        "key": "ref20",
+        "first-page": "73",
+        "article-title": "Bidirectional long short-term memory networks for relation classification",
+        "author": "zhang",
+        "year": "2015",
+        "journal-title": "Proceedings of the 29th Pacific Asia conference on language information and computation"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCCN.2019.2919300"
+      },
+      {
+        "key": "ref22",
+        "article-title": "Roberta: A robustly optimized bert pretraining approach",
+        "author": "liu",
+        "year": "2019"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2020.3036968"
+      },
+      {
+        "key": "ref21",
+        "article-title": "End-to-end memory networks",
+        "volume": "28",
+        "author": "sukhbaatar",
+        "year": "2015",
+        "journal-title": "Advances in neural information processing systems"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.001.1900287"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.006.2100543"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3115/v1/P15-1034"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "crossref",
+        "first-page": "68",
+        "DOI": "10.1145/1409360.1409378",
+        "article-title": "Open information extraction from the web",
+        "volume": "51",
+        "author": "banko",
+        "year": "2008",
+        "journal-title": "Communications of the ACM"
+      },
+      {
+        "key": "ref19",
+        "article-title": "Towards Ai-Complete Question Answering: A Set of Prerequisite Toy Tasks",
+        "author": "weston",
+        "year": "2015"
+      },
+      {
+        "key": "ref18",
+        "first-page": "1631",
+        "article-title": "Recursive deep models for semantic compositionality over a sentiment treebank",
+        "author": "socher",
+        "year": "2013",
+        "journal-title": "Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICASSP.2018.8461983"
+      },
+      {
+        "key": "ref7",
+        "article-title": "Semantic communications: Principles and challenges",
+        "author": "qin",
+        "year": "2022"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSP.2021.3071210"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2019.1900271"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2021.3118346"
+      },
+      {
+        "key": "ref6",
+        "author": "shannon",
+        "year": "1949",
+        "journal-title": "The Mathematical Theory of Communication"
+      },
+      {
+        "key": "ref5",
+        "article-title": "Semantic Communications With AI Tasks",
+        "author": "yang",
+        "year": "2021"
+      }
+    ],
+    "event": {
+      "name": "2023 IEEE Wireless Communications and Networking Conference (WCNC)",
+      "location": "Glasgow, United Kingdom",
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            26
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            29
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2023 IEEE Wireless Communications and Networking Conference (WCNC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/10118584/10118587/10118916.pdf?arnumber=10118916",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2023-06-12T17:51:35Z",
+      "timestamp": 1686592295000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10118916/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "references-count": 23,
+    "URL": "https://doi.org/10.1109/wcnc55385.2023.10118916",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    }
+  }
+}

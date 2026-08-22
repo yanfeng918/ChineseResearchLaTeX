@@ -1,0 +1,25 @@
+{
+  "paperId": "a84c523ebe62c9bd7dbab8b415bc8bf00397dd5c",
+  "title": "Distribution-Consistent Modal Recovering for Incomplete Multimodal Learning",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCV51070.2023.02013?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCV51070.2023.02013, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2266221826",
+      "name": "Yuanzhi Wang"
+    },
+    {
+      "authorId": "2237803553",
+      "name": "Zhen Cui"
+    },
+    {
+      "authorId": "2154404294",
+      "name": "Yong Li"
+    }
+  ],
+  "abstract": "Recovering missing modality is popular in incomplete multimodal learning because it usually benefits downstream tasks. However, the existing methods often directly estimate missing modalities from the observed ones by deep neural networks, lacking consideration of the distribution gap between modalities, resulting in the inconsistency of distributions between the recovered and the true data. To mitigate this issue, in this work, we propose a novel recovery paradigm, Distribution-Consistent Modal Recovering (DiCMoR), to transfer the distributions from available modalities to missing modalities, which thus maintains the distribution consistency of recovered data. In particular, we design a class-specific flow based modality recovery method to transform cross-modal distributions on the condition of sample class, which could well predict a distribution-consistent space for missing modality by virtue of the invertibility and exact density estimation of normalizing flow. The generated data from the predicted distribution is integrated with available modalities for the task of classification. Experiments show that DiCMoR gains superior performances and is more robust than existing state-of-the-art methods under various missing patterns. Visualization results show that the distribution gaps between recovered modalities and missing modalities are mitigated. Codes are released at https://github.com/mdswyz/DiCMoR."
+}

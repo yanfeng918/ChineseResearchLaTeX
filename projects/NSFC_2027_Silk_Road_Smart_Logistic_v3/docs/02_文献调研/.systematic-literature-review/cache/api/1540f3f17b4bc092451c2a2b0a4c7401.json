@@ -1,0 +1,21 @@
+{
+  "paperId": "7c97742e52e652d61a1736e0752be9838d94c8b5",
+  "title": "LightESD: Fully-Automated and Lightweight Anomaly Detection Framework for Edge Computing",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2305.12266",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.12266, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1996196477",
+      "name": "Ronit Das"
+    },
+    {
+      "authorId": "144238694",
+      "name": "Tie Luo"
+    }
+  ],
+  "abstract": "Anomaly detection is widely used in a broad range of domains from cybersecurity to manufacturing, finance, and so on. Deep learning based anomaly detection has recently drawn much attention because of its superior capability of recognizing complex data patterns and identifying outliers accurately. However, deep learning models are typically iteratively optimized in a central server with input data gathered from edge devices, and such data transfer between edge devices and the central server impose substantial overhead on the network and incur additional latency and energy consumption. To overcome this problem, we propose a fully-automated, lightweight, statistical learning based anomaly detection framework called LightESD. It is an on-device learning method without the need for data transfer between edge and server, and is extremely lightweight that most low-end edge devices can easily afford with negligible delay, CPU/memory utilization, and power consumption. Yet, it achieves highly competitive detection accuracy. Another salient feature is that it can auto-adapt to probably any dataset without manually setting or configuring model parameters or hyperparameters, which is a drawback of most existing methods. We focus on time series data due to its pervasiveness in edge applications such as IoT. Our evaluation demonstrates that LightESD outperforms other SOTA methods on detection accuracy, efficiency, and resource consumption. Additionally, its fully automated feature gives it another competitive advantage in terms of practical usability and generalizability."
+}

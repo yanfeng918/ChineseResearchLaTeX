@@ -1,0 +1,430 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2026-07-17T15:16:20Z",
+      "timestamp": 1784301380709,
+      "version": "3.55.0"
+    },
+    "reference-count": 36,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2024-02-01T00:00:00Z",
+          "timestamp": 1706745600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2024-02-01T00:00:00Z",
+          "timestamp": 1706745600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2024-02-01T00:00:00Z",
+          "timestamp": 1706745600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Sensors J."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1109/jsen.2023.3339335",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          12
+        ]
+      ],
+      "date-time": "2023-12-12T14:00:12Z",
+      "timestamp": 1702389612000
+    },
+    "page": "3144-3156",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "MAD-MEL: Combining Entity and Metric Learning for Anomaly Detection in Multivariate Time Series"
+    ],
+    "prefix": "10.1109",
+    "volume": "24",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4860-6998",
+        "authenticated-orcid": false,
+        "given": "Jyoti",
+        "family": "Kumari",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Indian Institute of Technology Patna, Patna, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8247-9040",
+        "authenticated-orcid": false,
+        "given": "Jimson",
+        "family": "Mathew",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Indian Institute of Technology Patna, Patna, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5060-1427",
+        "authenticated-orcid": false,
+        "given": "Arijit",
+        "family": "Mondal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Indian Institute of Technology Patna, Patna, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3447744"
+      },
+      {
+        "key": "ref2",
+        "first-page": "17766",
+        "article-title": "Spectral temporal graph neural network for multivariate time-series forecasting",
+        "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+        "volume": "33",
+        "author": "Cao"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.33011409"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3219845"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MILCOM47813.2019.9021055"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIM.2022.3151930"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPRW53098.2021.00223"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNNLS.2021.3105827"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM50108.2020.00093"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3292500.3330672"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICTAI52525.2021.00097"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIM.2022.3223142"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IPCCC51483.2021.9679367"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s23031352"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2021.3107975"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNNLS.2021.3083401"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2020.3041850"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IROS.2017.8206437"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COASE.2010.5584452"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2021.3059002"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2022.3171562"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3292500.3330680"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2021.3128667"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2021.3100509"
+      },
+      {
+        "key": "ref25",
+        "first-page": "3621",
+        "article-title": "Deep variational graph convolutional recurrent network for multivariate time series anomaly detection",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Chen"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/13.485235"
+      },
+      {
+        "key": "ref27",
+        "article-title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+        "author": "Oreshkin",
+        "year": "2019",
+        "journal-title": "arXiv:1905.10437"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/asmb.501"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIM.2007.907967"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14778/3407790.3407792"
+      },
+      {
+        "key": "ref31",
+        "volume-title": "GitHub Repository—Telemanom",
+        "year": "2022"
+      },
+      {
+        "key": "ref32",
+        "volume-title": "GitHub Repository—OmniAnomaly",
+        "year": "2022"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3097983.3098144"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3219845"
+      },
+      {
+        "key": "ref35",
+        "volume-title": "GitHub repository—MTAD-GAT-Pytorch",
+        "year": "2023"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3209978.3210006"
+      }
+    ],
+    "container-title": [
+      "IEEE Sensors Journal"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/7361/10418056/10353930.pdf?arnumber=10353930",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          10
+        ]
+      ],
+      "date-time": "2026-06-10T20:04:32Z",
+      "timestamp": 1781121872000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10353930/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          1
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "3"
+    },
+    "URL": "https://doi.org/10.1109/jsen.2023.3339335",
+    "relation": {},
+    "ISSN": [
+      "1530-437X",
+      "1558-1748",
+      "2379-9153"
+    ],
+    "issn-type": [
+      {
+        "value": "1530-437X",
+        "type": "print"
+      },
+      {
+        "value": "1558-1748",
+        "type": "electronic"
+      },
+      {
+        "value": "2379-9153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          1
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "paperId": "1d73e00c3ccaf44d1021d42e81d08e3b7944a30b",
+  "title": "Intelligent Monitoring and Management of Trade Logistics Based on Big Data and Computer Vision Technology",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.procs.2024.09.084",
+    "status": "GOLD",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.procs.2024.09.084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.procs.2024.09.084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2311524649",
+      "name": "Zhongpo Gao"
+    },
+    {
+      "authorId": "2313478035",
+      "name": "Chengwen Kang"
+    },
+    {
+      "authorId": "2374190560",
+      "name": "Xufeng Wu"
+    }
+  ],
+  "abstract": null
+}

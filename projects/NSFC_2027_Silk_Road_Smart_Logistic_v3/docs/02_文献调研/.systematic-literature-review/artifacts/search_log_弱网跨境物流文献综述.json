@@ -1,0 +1,594 @@
+{
+  "total_queries": 14,
+  "total_returned": 700,
+  "total_unique": 500,
+  "queries": [
+    {
+      "query": "multimodal sensor fusion anomaly detection missing modalities uncertainty",
+      "rationale": "核心查询：异构传感、缺失模态、异常识别与不确定性",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=multimodal+sensor+fusion+anomaly+detection+missing+modalities+uncertainty&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=multimodal+sensor+fusion+anomaly+detection+missing+modalities+uncertainty&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "multimodal time series anomaly detection asynchronous sensors",
+      "rationale": "方法变体：异步多变量时序异常检测",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=multimodal+time+series+anomaly+detection+asynchronous+sensors&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "multimodal industrial anomaly detection vision sensor fusion",
+      "rationale": "应用变体：视觉与物联网传感器联合异常检测",
+      "returned": 50,
+      "unique": 23,
+      "notes": "",
+      "dedupe_rate": 0.46,
+      "quality_score": 0.46,
+      "quality_label": "一般",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=multimodal+industrial+anomaly+detection+vision+sensor+fusion&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=multimodal+industrial+anomaly+detection+vision+sensor+fusion&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "edge intelligence intermittent connectivity IoT adaptive transmission",
+      "rationale": "核心查询：间歇连接下的边缘智能与自适应传输",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=edge+intelligence+intermittent+connectivity+IoT+adaptive+transmission&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=edge+intelligence+intermittent+connectivity+IoT+adaptive+transmission&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "delay tolerant networking Internet of Things edge computing",
+      "rationale": "通信基础：容迟网络、物联网与边缘计算",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=delay+tolerant+networking+Internet+of+Things+edge+computing&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=delay+tolerant+networking+Internet+of+Things+edge+computing&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "semantic communication task oriented edge intelligence resource constrained IoT",
+      "rationale": "方法前沿：任务导向通信与资源受限边缘推理",
+      "returned": 50,
+      "unique": 49,
+      "notes": "",
+      "dedupe_rate": 0.98,
+      "quality_score": 0.98,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (279s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=semantic+communication+task+oriented+edge+intelligence+resource+constrained+IoT&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "energy efficient edge computing joint communication computation optimization IoT",
+      "rationale": "优化查询：通信—计算—能耗联合约束",
+      "returned": 50,
+      "unique": 49,
+      "notes": "",
+      "dedupe_rate": 0.98,
+      "quality_score": 0.98,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (268s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=energy+efficient+edge+computing+joint+communication+computation+optimization+IoT&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "age of information energy harvesting wireless sensor networks edge",
+      "rationale": "理论基础：信息时效与低功耗传感网络",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (255s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (296s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "federated learning intermittent connectivity edge devices robustness",
+      "rationale": "协同学习：弱连接与异构边缘设备",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (252s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (293s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "smart logistics IoT condition monitoring cargo anomaly detection",
+      "rationale": "领域查询：物流货物状态监测与异常识别",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (249s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (290s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "cold chain logistics multimodal sensing anomaly detection edge computing",
+      "rationale": "邻近场景：冷链多源感知、风险与边缘计算",
+      "returned": 50,
+      "unique": 49,
+      "notes": "",
+      "dedupe_rate": 0.98,
+      "quality_score": 0.98,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (245s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (286s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "warehouse safety multimodal sensor fusion risk prediction",
+      "rationale": "场景查询：仓储安全多源融合与风险预警",
+      "returned": 50,
+      "unique": 47,
+      "notes": "",
+      "dedupe_rate": 0.94,
+      "quality_score": 0.94,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (244s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (285s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "domain generalization time series anomaly detection distribution shift",
+      "rationale": "泛化查询：跨口岸跨季节分布漂移与时序异常检测",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (241s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (282s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "calibration uncertainty anomaly detection deep learning sensor",
+      "rationale": "评价查询：异常检测置信度与不确定性校准",
+      "returned": 50,
+      "unique": 48,
+      "notes": "",
+      "dedupe_rate": 0.96,
+      "quality_score": 0.96,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (238s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (279s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "quality_summary": {
+    "excellent": 13,
+    "good": 0,
+    "fair": 1,
+    "poor": 0,
+    "recommendations": []
+  },
+  "rate_limit_summary": {
+    "semantic_scholar": {
+      "calls_last_minute": 0.0,
+      "total_calls": 0.0,
+      "session_duration_seconds": 112.72214150428772
+    }
+  },
+  "abstract_enrichment_summary": {
+    "enabled": true,
+    "skipped": true,
+    "stage": "post_selection",
+    "reason": "abstract enrichment stage is not search"
+  }
+}

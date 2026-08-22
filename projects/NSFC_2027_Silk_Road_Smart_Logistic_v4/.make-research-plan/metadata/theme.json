@@ -1,0 +1,13 @@
+{
+  "primary_topic": {
+    "name": "弱网跨境物流可靠证据状态建模与边缘协同",
+    "description": "面向新疆口岸—中亚运输—边境仓储，在三时钟错位、信息性缺失和资源约束下研究异常证据的辨识、保全与风险校准。",
+    "keywords": ["asynchronous multimodal anomaly detection", "informative missingness", "task-oriented communication", "delay-tolerant edge intelligence", "uncertainty calibration"]
+  },
+  "secondary_topics": [
+    {"name": "三时钟观测与部分辨识", "keywords": ["irregular sampling", "delayed observations", "selective prediction"]},
+    {"name": "集合条件证据价值", "keywords": ["value of information", "deadline-aware scheduling", "evidence preservation"]},
+    {"name": "仓储风险校准与预测记忆", "keywords": ["concept drift", "time-dependent risk", "multimodal early warning"]}
+  ],
+  "extracted_at": "2026-08-18T00:00:00+08:00"
+}

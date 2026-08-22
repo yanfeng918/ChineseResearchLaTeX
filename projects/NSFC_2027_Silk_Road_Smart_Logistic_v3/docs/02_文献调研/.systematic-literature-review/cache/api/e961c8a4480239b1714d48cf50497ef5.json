@@ -1,0 +1,33 @@
+{
+  "paperId": "e3a442aa24e5df7e6b2a25e21e75c4c325f9eedf",
+  "title": "Edge Computing: Vision and Challenges",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2016.2579198?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2016.2579198, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2154038240",
+      "name": "Weisong Shi"
+    },
+    {
+      "authorId": "2109811503",
+      "name": "Jie Cao"
+    },
+    {
+      "authorId": "2116366816",
+      "name": "Quan Zhang"
+    },
+    {
+      "authorId": "49034115",
+      "name": "Youhuizi Li"
+    },
+    {
+      "authorId": "2818962",
+      "name": "Lanyu Xu"
+    }
+  ],
+  "abstract": "The proliferation of Internet of Things (IoT) and the success of rich cloud services have pushed the horizon of a new computing paradigm, edge computing, which calls for processing the data at the edge of the network. Edge computing has the potential to address the concerns of response time requirement, battery life constraint, bandwidth cost saving, as well as data safety and privacy. In this paper, we introduce the definition of edge computing, followed by several case studies, ranging from cloud offloading to smart home and city, as well as collaborative edge to materialize the concept of edge computing. Finally, we present several challenges and opportunities in the field of edge computing, and hope this paper will gain attention from the community and inspire more research in this direction."
+}

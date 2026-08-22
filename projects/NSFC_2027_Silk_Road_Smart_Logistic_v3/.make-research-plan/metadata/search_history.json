@@ -1,0 +1,13 @@
+{
+  "source": "复用项目第 02 阶段 Premium 系统文献调研",
+  "deduplicated_candidates": 659,
+  "verified_core_papers": 50,
+  "recent_share_2022_plus": 0.66,
+  "evidence_groups": [
+    "missing-modality robust learning and calibration",
+    "multivariate time-series anomaly detection",
+    "edge intelligence and intermittent connectivity",
+    "age of information and task-oriented communication",
+    "logistics and warehouse IoT monitoring"
+  ]
+}

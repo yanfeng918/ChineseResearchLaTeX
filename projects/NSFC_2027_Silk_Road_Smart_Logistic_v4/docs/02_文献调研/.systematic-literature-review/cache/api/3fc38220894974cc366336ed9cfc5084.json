@@ -1,0 +1,505 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2025-06-11T12:44:05Z",
+      "timestamp": 1749645845621,
+      "version": "3.40.3"
+    },
+    "reference-count": 38,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              2
+            ]
+          ],
+          "date-time": "2024-12-02T00:00:00Z",
+          "timestamp": 1733097600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              2
+            ]
+          ],
+          "date-time": "2024-12-02T00:00:00Z",
+          "timestamp": 1733097600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100017557",
+        "name": "QuakeCoRE",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100017557",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100007879",
+        "name": "Tertiary Education Commission",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100007879",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1109/swc62898.2024.00091",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          24
+        ]
+      ],
+      "date-time": "2025-03-24T17:52:22Z",
+      "timestamp": 1742838742000
+    },
+    "page": "434-441",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Ensemble based unsupervised anomaly detection with concept drift adaptation for time series data"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Danlei",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Auckland,Department of Electrical, Computer and Software Engineering,Auckland,New Zealand"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Nirmal",
+        "family": "Nair",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Auckland,Department of Electrical, Computer and Software Engineering,Auckland,New Zealand"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kevin I-Kai",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Auckland,Department of Electrical, Computer and Software Engineering,Auckland,New Zealand"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Kouichi",
+        "family": "Sakurai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Kyushu University,Department of Informatics Faculty of Information Science and Electrical Engineering,Fukuoka,Japan"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2021.3052449"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2958185"
+      },
+      {
+        "key": "ref3",
+        "article-title": "Learning under concept drift: A review",
+        "volume": "abs/2004.05785",
+        "author": "Lu",
+        "year": "2020",
+        "journal-title": "CoRR"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10586-017-1117-8"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knosys.2021.107153"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-58388-9_6"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knosys.2022.108632"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jksuci.2021.11.006"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOBECOM46510.2021.9685338"
+      },
+      {
+        "issue": "3",
+        "key": "ref10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3381028",
+        "article-title": "Outlier detection: Methods, models, and classification",
+        "volume": "53",
+        "author": "Boukerche",
+        "year": "2020",
+        "journal-title": "ACM Computing Surveys (CSUR)"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2958185"
+      },
+      {
+        "issue": "3",
+        "key": "ref12",
+        "first-page": "829",
+        "article-title": "A comprehensive survey of anomaly detection algorithms",
+        "volume": "10",
+        "author": "Samariya",
+        "year": "2023",
+        "journal-title": "Annals of Data Science"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40537-020-0285-1"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app11073194"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDMW.2015.62"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3152494.3152501"
+      },
+      {
+        "key": "ref17",
+        "first-page": "2282",
+        "article-title": "Fastlof: An expectation-maximization based local outlier detection algorithm",
+        "volume-title": "Proceedings of the 21st International Conference on Pattern Recognition (ICPR 2012)",
+        "author": "Goldstein"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2014.01.013"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0167-8655(03)00003-5"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asoc.2020.106919"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2133360.2133363"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2019.2947676"
+      },
+      {
+        "article-title": "Deep learning for anomaly detection: Asurvey",
+        "year": "2019",
+        "author": "Chalapathy",
+        "key": "ref23"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3439950"
+      },
+      {
+        "key": "ref25",
+        "first-page": "894",
+        "article-title": "Deep learning for anomaly detection",
+        "volume-title": "Proceedings of the 13th international conference on web search and data mining",
+        "author": "Wang"
+      },
+      {
+        "key": "ref26",
+        "article-title": "Generative adversarial nets",
+        "volume": "27",
+        "author": "Goodfellow",
+        "year": "2014",
+        "journal-title": "Advances in neural information processing systems"
+      },
+      {
+        "issue": "4",
+        "key": "ref27",
+        "doi-asserted-by": "crossref",
+        "first-page": "964",
+        "DOI": "10.1007/s10618-015-0448-4",
+        "article-title": "Characterizing concept drift",
+        "volume": "30",
+        "author": "Webb",
+        "year": "2016",
+        "journal-title": "Data Mining and Knowledge Discovery"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10115-018-1257-z"
+      },
+      {
+        "key": "ref29",
+        "article-title": "Anomaly detection in univariate time-series: A survey on the state-of-the-art",
+        "author": "Braei",
+        "year": "2020",
+        "journal-title": "arXiv preprint arXiv:2004.00433"
+      },
+      {
+        "article-title": "Data Structure and Algorithms: With Object-oriented Design Patterns in Java. John Wiley & Sons",
+        "year": "1999",
+        "author": "Preiss",
+        "key": "ref30"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "crossref",
+        "first-page": "101672",
+        "DOI": "10.1016/j.ecoinf.2022.101672",
+        "article-title": "Detecting outliers in a univariate time series dataset using unsupervised combined statistical methods: A case study on surface water temperature",
+        "volume": "69",
+        "author": "Jamshidi",
+        "year": "2022",
+        "journal-title": "Ecological Informatics"
+      },
+      {
+        "issue": "2",
+        "key": "ref32",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1007/s10994-015-5521-0",
+        "article-title": "Loda: Lightweight on-line detector of anomalies",
+        "volume": "102",
+        "author": "Pevný",
+        "year": "2016",
+        "journal-title": "Mach. Learn"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/089976600300015565"
+      },
+      {
+        "article-title": "Deep autoencoding gaussian mixture model for unsupervised anomaly detection",
+        "volume-title": "International conference on learning representations",
+        "author": "Zong",
+        "key": "ref34"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2022.3159580"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2139/ssrn.4266498",
+        "article-title": "Adbench: Anomaly detection benchmark",
+        "volume-title": "Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track",
+        "author": "Han"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1051/ps:2006001",
+        "article-title": "How many bins should be put in a regular histogram",
+        "volume": "10",
+        "author": "Birgé",
+        "year": "2006",
+        "journal-title": "ESAIM: Probability and Statistics"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2008.17"
+      }
+    ],
+    "event": {
+      "name": "2024 IEEE Smart World Congress (SWC)",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            2
+          ]
+        ]
+      },
+      "location": "Nadi, Fiji",
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            7
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2024 IEEE Smart World Congress (SWC)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/10924778/10924781/10924862.pdf?arnumber=10924862",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          25
+        ]
+      ],
+      "date-time": "2025-03-25T09:38:09Z",
+      "timestamp": 1742895489000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10924862/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          2
+        ]
+      ]
+    },
+    "references-count": 38,
+    "URL": "https://doi.org/10.1109/swc62898.2024.00091",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          2
+        ]
+      ]
+    }
+  }
+}

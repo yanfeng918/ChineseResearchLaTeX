@@ -1,0 +1,685 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          31
+        ]
+      ],
+      "date-time": "2026-07-31T11:55:40Z",
+      "timestamp": 1785498940254,
+      "version": "3.56.0"
+    },
+    "reference-count": 45,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2024-04-01T00:00:00Z",
+          "timestamp": 1711929600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2024-04-01T00:00:00Z",
+          "timestamp": 1711929600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              4
+            ]
+          ],
+          "date-time": "2024-06-04T00:00:00Z",
+          "timestamp": 1717459200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 64,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.aei.2024.102444",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          2
+        ]
+      ],
+      "date-time": "2024-03-02T16:40:03Z",
+      "timestamp": 1709397603000
+    },
+    "page": "102444",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 13,
+    "special_numbering": "C",
+    "title": [
+      "Unsupervised constrained discord detection in IoT-based online crane monitoring"
+    ],
+    "prefix": "10.1016",
+    "volume": "60",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3165-1151",
+        "authenticated-orcid": false,
+        "given": "Anandarup",
+        "family": "Mukherjee",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manu",
+        "family": "Sasidharan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manuel",
+        "family": "Herrera",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ajith Kumar",
+        "family": "Parlikad",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.aei.2024.102444_b1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ress.2022.108578",
+        "article-title": "Exploring the vulnerability of transportation networks by entropy: A case study of Asia–Europe maritime transportation network",
+        "author": "Wen",
+        "year": "2022",
+        "journal-title": "Reliab. Eng. Syst. Saf."
+      },
+      {
+        "issue": "16",
+        "key": "10.1016/j.aei.2024.102444_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "4820",
+        "DOI": "10.1080/00207543.2013.774489",
+        "article-title": "A workload balancing genetic algorithm for the quay crane scheduling problem",
+        "volume": "51",
+        "author": "Chung",
+        "year": "2013",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.aei.2024.102444_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "4672",
+        "DOI": "10.1109/JIOT.2018.2807408",
+        "article-title": "Towards a practical crowdsensing system for road surface conditions monitoring",
+        "volume": "5",
+        "author": "El-Wakeel",
+        "year": "2018",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b4",
+        "series-title": "2019 3rd International Conference on Internet of Things and Applications (IoT)",
+        "first-page": "1",
+        "article-title": "IoT enabled vibration monitoring toward smart maintenance",
+        "author": "Khademi",
+        "year": "2019"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.aei.2024.102444_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "134",
+        "DOI": "10.3390/modelling1020009",
+        "article-title": "Overview of energy management and leakage control systems for smart water grids and digital water",
+        "volume": "1",
+        "author": "Giudicianni",
+        "year": "2020",
+        "journal-title": "Modelling"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.aei.2024.102444_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1706",
+        "DOI": "10.1109/TPWRD.2019.2918289",
+        "article-title": "Insulation condition monitoring in distribution power grid via IoT-based sensing network",
+        "volume": "34",
+        "author": "Zhuang",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Power Deliv."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "374",
+        "DOI": "10.1016/j.arcontrol.2021.04.007",
+        "article-title": "Monitoring on a shoestring: Low cost solutions for digital manufacturing",
+        "volume": "51",
+        "author": "Hawkridge",
+        "year": "2021",
+        "journal-title": "Annu. Rev. Control"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b8",
+        "article-title": "Industry 4.0 in the port and maritime industry: A literature review",
+        "volume": "20",
+        "author": "de la Peña Zarzuelo",
+        "year": "2020",
+        "journal-title": "J. Ind. Inf. Integr."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b9",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.measurement.2022.110759",
+        "article-title": "Fault detection and diagnosis in electric motors using 1d convolutional neural networks with multi-channel vibration signals",
+        "author": "Junior",
+        "year": "2022",
+        "journal-title": "Measurement"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b10",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.measurement.2021.110330",
+        "article-title": "Automatic fault detection system for mining conveyor using distributed acoustic sensor",
+        "volume": "187",
+        "author": "Wijaya",
+        "year": "2022",
+        "journal-title": "Measurement"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.aei.2024.102444_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "1949",
+        "DOI": "10.1109/TII.2021.3102158",
+        "article-title": "SEGA: Secured edge gateway microservices architecture for iIoT-based machine monitoring",
+        "volume": "18",
+        "author": "Ghosh",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b12",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.apacoust.2021.108463",
+        "article-title": "Intelligent worm gearbox fault diagnosis under various working conditions using vibration, sound and thermal features",
+        "volume": "186",
+        "author": "Karabacak",
+        "year": "2022",
+        "journal-title": "Appl. Acoust."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b13",
+        "article-title": "Non-conductor-contact surface wave reflectometry for cable insulation damage detection",
+        "author": "Arman",
+        "year": "2022",
+        "journal-title": "IEEE Sens. J."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b14",
+        "unstructured": "T. Olsson, A. Holst, A probabilistic approach to aggregating anomalies for unsupervised anomaly detection with industrial applications, in: The Twenty-Eighth International Flairs Conference, 2015."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b15",
+        "series-title": "Smart Ports",
+        "first-page": "171",
+        "article-title": "Smart port and digital monitoring and diagnosis",
+        "author": "Mi",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b16",
+        "series-title": "Fifth IEEE International Conference on Data Mining",
+        "first-page": "8",
+        "article-title": "HOT sax: efficiently finding the most unusual time series subsequence",
+        "author": "Keogh",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b17",
+        "article-title": "On-line rotor systems condition monitoring using nonlinear output frequency response functions under harmonic excitations",
+        "author": "Zhu",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ymssp.2021.108752",
+        "article-title": "Vibration-based anomaly detection using LSTM/SVM approaches",
+        "volume": "169",
+        "author": "Vos",
+        "year": "2022",
+        "journal-title": "Mech. Syst. Signal Process."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compeleceng.2023.108760",
+        "article-title": "Artificial intelligence of things based approach for anomaly detection in rotating machines",
+        "volume": "109",
+        "author": "Mian",
+        "year": "2023",
+        "journal-title": "Comput. Electr. Eng."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.aei.2024.102444_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "1009",
+        "DOI": "10.3390/s23021009",
+        "article-title": "LSTM-autoencoder for vibration anomaly detection in vertical carousel storage and retrieval system (VCSRS)",
+        "volume": "23",
+        "author": "Do",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2022.101750",
+        "article-title": "A deep feature enhanced reinforcement learning method for rolling bearing fault diagnosis",
+        "volume": "54",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b22",
+        "series-title": "Electromechanics and Robotics",
+        "first-page": "497",
+        "article-title": "Induction motor fault detection in ESP systems based on vibration measurements",
+        "author": "Alikhani",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b23",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ymssp.2021.108280",
+        "article-title": "Vibration characteristics and condition monitoring of internal radial clearance within a ball bearing in a gear-shaft-bearing system",
+        "volume": "165",
+        "author": "Xu",
+        "year": "2022",
+        "journal-title": "Mech. Syst. Signal Process."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b24",
+        "article-title": "Tremors: Privacy-breaching inference of computing tasks using vibration-based condition monitors",
+        "author": "Mukherjee",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Comput."
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.aei.2024.102444_b25",
+        "doi-asserted-by": "crossref",
+        "first-page": "5787",
+        "DOI": "10.1016/j.eswa.2013.04.024",
+        "article-title": "Anomaly detection of cooling fan and fault classification of induction motor using mahalanobis–taguchi system",
+        "volume": "40",
+        "author": "Jin",
+        "year": "2013",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b26",
+        "article-title": "KBRDBN: An interpretable deep belief network for the fault diagnosis of the trolley mechanism in ship-to-shore cranes",
+        "author": "Liao",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Instrum. Meas."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.aei.2024.102444_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "963",
+        "DOI": "10.1109/TIA.2005.851001",
+        "article-title": "Diagnosis tool for motor condition monitoring",
+        "volume": "41",
+        "author": "Ilonen",
+        "year": "2005",
+        "journal-title": "IEEE Trans. Ind. Appl."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b28",
+        "article-title": "Bearing fault detection in three-phase induction motors using support vector machine and fiber bragg grating",
+        "author": "Brusamarello",
+        "year": "2022",
+        "journal-title": "IEEE Sens. J."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1016/j.procs.2022.01.210",
+        "article-title": "A two-phase machine learning approach for predictive maintenance of low voltage industrial motors",
+        "volume": "200",
+        "author": "Nikfar",
+        "year": "2022",
+        "journal-title": "Procedia Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b30",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.comnet.2022.108906",
+        "article-title": "Personalized federated learning framework for network traffic anomaly detection",
+        "author": "Pei",
+        "year": "2022",
+        "journal-title": "Comput. Netw."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1184",
+        "DOI": "10.1016/j.procs.2022.01.318",
+        "article-title": "Predictive maintenance on sensorized stamping presses by time series segmentation, anomaly detection, and classification algorithms",
+        "volume": "200",
+        "author": "Coelho",
+        "year": "2022",
+        "journal-title": "Procedia Comput. Sci."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b32",
+        "article-title": "Time series anomaly detection with adversarial reconstruction networks",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Knowl. Data Eng."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b33",
+        "article-title": "Variational transformer-based anomaly detection approach for multivariate time series",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Measurement"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b34",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TNNLS.2021.3136171",
+        "article-title": "Graph convolutional adversarial networks for spatiotemporal anomaly detection",
+        "author": "Deng",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b35",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eswa.2021.115744",
+        "article-title": "Anomaly detection based on a granular Markov model",
+        "volume": "187",
+        "author": "Zhou",
+        "year": "2022",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/JIOT.2022.3150048",
+        "article-title": "Data-correlation-aware unsupervised deep-learning model for anomaly detection in cyber-physical systems",
+        "author": "Xi",
+        "year": "2022",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2022.101771",
+        "article-title": "Time series clustering via matrix profile and community detection",
+        "volume": "54",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2022.101762",
+        "article-title": "Machine fault diagnosis with small sample based on variational information constrained generative adversarial network",
+        "volume": "54",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.aei.2024.102444_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "227",
+        "DOI": "10.1038/s41598-021-03526-y",
+        "article-title": "Model-free detection of unique events in time series",
+        "volume": "12",
+        "author": "Benkő",
+        "year": "2022",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M.M. Breunig, H.-P. Kriegel, R.T. Ng, J. Sander, LOF: Identifying Density-Based Local Outliers, in: Proc. ACM SIGMOD Int. Conf. on Management of Data, 2000, pp. 93–104.",
+        "DOI": "10.1145/335191.335388"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.aei.2024.102444_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "358",
+        "DOI": "10.1007/s10115-004-0154-9",
+        "article-title": "Exact indexing of dynamic time warping",
+        "volume": "7",
+        "author": "Keogh",
+        "year": "2005",
+        "journal-title": "Knowl. Inf. Syst."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.aei.2024.102444_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "107",
+        "DOI": "10.1007/s10618-007-0064-z",
+        "article-title": "Experiencing SAX: a novel symbolic representation of time series",
+        "volume": "15",
+        "author": "Lin",
+        "year": "2007",
+        "journal-title": "Data Min. Knowl. Discov."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b43",
+        "doi-asserted-by": "crossref",
+        "unstructured": "E. Keogh, J. Lin, A. Fu, HOT SAX: Efficiently Finding the Most Unusual Time Series Subsequence, in: Proceedings of the 5th IEEE International Conference on Data Mining, ICDM, 2005, pp. 226–233.",
+        "DOI": "10.1109/ICDM.2005.79"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b44",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C.-C.M. Yeh, Y. Zhu, L. Ulanova, N. Begum, Y. Ding, H.A. Dau, D.F. Silva, A. Mueen, E. Keogh, Matrix Profile I: All Pairs Similarity Joins for Time Series: A Unifying View that Includes Motifs, Discords and Shapelets, in: 2016 IEEE 16th International Conference on Data Mining (ICDM), 2016, pp. 1317–1322.",
+        "DOI": "10.1109/ICDM.2016.0179"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102444_b45",
+        "unstructured": "D.J. Berndt, J. Clifford, Using Dynamic Time Warping to Find Patterns in Time Series, in: Proc. of the 3rd International Conference on Knowledge Discovery and Data Mining (KDD Workshop), 1994, pp. 359–370."
+      }
+    ],
+    "container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1474034624000922?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1474034624000922?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          13
+        ]
+      ],
+      "date-time": "2024-11-13T18:41:16Z",
+      "timestamp": 1731523276000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1474034624000922"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "references-count": 45,
+    "alternative-id": [
+      "S1474034624000922"
+    ],
+    "URL": "https://doi.org/10.1016/j.aei.2024.102444",
+    "relation": {},
+    "ISSN": [
+      "1474-0346"
+    ],
+    "issn-type": [
+      {
+        "value": "1474-0346",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Unsupervised constrained discord detection in IoT-based online crane monitoring",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Advanced Engineering Informatics",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.aei.2024.102444",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102444"
+  }
+}

@@ -1,0 +1,2075 @@
+{
+  "total": 1931,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "c3f7bb144864b39493ab07e44ea5cc8eb20b51be",
+      "externalIds": {
+        "DBLP": "conf/iclr/00090D0GZLWZ25",
+        "ArXiv": "2410.09453",
+        "CorpusId": 273346680
+      },
+      "url": "https://www.semanticscholar.org/paper/c3f7bb144864b39493ab07e44ea5cc8eb20b51be",
+      "title": "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "venue": "International Conference on Learning Representations",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.09453, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292216612",
+          "name": "Xi Jiang"
+        },
+        {
+          "authorId": "2316588022",
+          "name": "Jian Li"
+        },
+        {
+          "authorId": "2325893625",
+          "name": "Hanqiu Deng"
+        },
+        {
+          "authorId": "2272715996",
+          "name": "Yong Liu"
+        },
+        {
+          "authorId": "2271664924",
+          "name": "Bin-Bin Gao"
+        },
+        {
+          "authorId": "2304829252",
+          "name": "Yifeng Zhou"
+        },
+        {
+          "authorId": "2324841686",
+          "name": "Jialin Li"
+        },
+        {
+          "authorId": "2290751399",
+          "name": "Chengjie Wang"
+        },
+        {
+          "authorId": "2275196068",
+          "name": "Feng Zheng"
+        }
+      ],
+      "abstract": "In the field of industrial inspection, Multimodal Large Language Models (MLLMs) have a high potential to renew the paradigms in practical applications due to their robust language capabilities and generalization abilities. However, despite their impressive problem-solving skills in many domains, MLLMs' ability in industrial anomaly detection has not been systematically studied. To bridge this gap, we present MMAD, the first-ever full-spectrum MLLMs benchmark in industrial Anomaly Detection. We defined seven key subtasks of MLLMs in industrial inspection and designed a novel pipeline to generate the MMAD dataset with 39,672 questions for 8,366 industrial images. With MMAD, we have conducted a comprehensive, quantitative evaluation of various state-of-the-art MLLMs. The commercial models performed the best, with the average accuracy of GPT-4o models reaching 74.9%. However, this result falls far short of industrial requirements. Our analysis reveals that current MLLMs still have significant room for improvement in answering questions related to industrial anomalies and defects. We further explore two training-free performance enhancement strategies to help models improve in industrial scenarios, highlighting their promising potential for future research."
+    },
+    {
+      "paperId": "a2aef504e323691dab8ebc816f42003ff6b6b0f2",
+      "externalIds": {
+        "DBLP": "conf/iccv/CostanzinoRLROLS25",
+        "ArXiv": "2506.21549",
+        "DOI": "10.1109/ICCV51701.2025.01947",
+        "CorpusId": 280012444
+      },
+      "url": "https://www.semanticscholar.org/paper/a2aef504e323691dab8ebc816f42003ff6b6b0f2",
+      "title": "SiM3D: Single-Instance Multiview Multimodal and Multisetup 3D Anomaly Detection Benchmark",
+      "venue": "IEEE International Conference on Computer Vision",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2506.21549",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.21549, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2202032302",
+          "name": "Alex Costanzino"
+        },
+        {
+          "authorId": "80804241",
+          "name": "Pierluigi Zama Ramirez"
+        },
+        {
+          "authorId": "72358773",
+          "name": "L. Lella"
+        },
+        {
+          "authorId": "2371074331",
+          "name": "Matteo Ragaglia"
+        },
+        {
+          "authorId": "152908965",
+          "name": "A. Oliva"
+        },
+        {
+          "authorId": "2240529123",
+          "name": "Giuseppe Lisanti"
+        },
+        {
+          "authorId": "2213727247",
+          "name": "Luigi Di Stefano"
+        }
+      ],
+      "abstract": "We propose SiM3D, the first benchmark considering the integration of multiview and multimodal information for comprehensive 3D anomaly detection and segmentation (ADS), where the task is to produce a voxel-based Anomaly Volume. Moreover, SiM3D focuses on a scenario of high interest in manufacturing: single-instance anomaly detection, where only one object, either real or synthetic, is available for training. In this respect, SiM3D stands out as the first ADS benchmark that addresses the challenge of generalising from synthetic training data to real test data. SiM3D includes a novel multimodal multiview dataset acquired using top-tier industrial sensors and robots. The dataset features multiview high-resolution images (12 Mpx) and point clouds ($\\sim 7 \\mathrm{M}$ points) for 333 instances of eight types of objects, alongside a CAD model for each type. We also provide manually annotated 3D segmentation GTs for anomalous test samples. To establish reference baselines for the proposed multiview 3D ADS task, we adapt prominent singleview methods and assess their performance using novel metrics that operate on Anomaly Volumes."
+    },
+    {
+      "paperId": "8abe1b84f9ce0467a6991cae28e22e630ee211df",
+      "externalIds": {
+        "DOI": "10.3390/data11070165",
+        "CorpusId": 289969204
+      },
+      "url": "https://www.semanticscholar.org/paper/8abe1b84f9ce0467a6991cae28e22e630ee211df",
+      "title": "A Pilot-Real-Calibrated Indoor Robotic IoT Benchmark Dataset for Edge-Assisted Mobile Robot Navigation and Anomaly Detection",
+      "venue": "International Conference on Data Technologies and Applications",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/data11070165",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/data11070165?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/data11070165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2448323882",
+          "name": "Burak Aggul"
+        }
+      ],
+      "abstract": "Mobile robots used in edge-assisted Industrial Internet-of-Things (IIoT) settings generate coupled motion, LiDAR, edge-compute, and network telemetry. Public datasets that place these streams in one tabular format, with scenario labels suitable for machine-learning experiments, are still limited. This data descriptor presents a pilot-real-calibrated indoor robotic IoT benchmark dataset with 120,000 records sampled at 2 Hz across nominal navigation and nine anomaly scenarios. The benchmark rows are generated from physically constrained simulation rules and are explicitly labeled as synthetic benchmark data. Real pilot evidence is included separately: ROS Noetic runs on a TurtleBot3 Burger, successful LD08 LiDAR bringup after resolving a driver mismatch, and NVIDIA Jetson Nano tegrastats logs under normal-navigation workloads. The calibrated file aligns normal-navigation LiDAR and edge-compute distributions with these pilot measurements while keeping the multi-scenario structure needed for controlled anomaly-detection experiments. The package includes CSV files, metadata, a data dictionary, validation reports, baseline scripts, ROS collection utilities, and a plan for future fully physical data collection. The complete dataset is openly available on Zenodo."
+    },
+    {
+      "paperId": "4b87919e9247275878c7aa48b5a152d79c61d613",
+      "externalIds": {
+        "DBLP": "conf/cvpr/ZhuWZWPZCCGZGWC25",
+        "ArXiv": "2504.14221",
+        "DOI": "10.1109/CVPR52734.2025.01417",
+        "CorpusId": 277954682
+      },
+      "url": "https://www.semanticscholar.org/paper/4b87919e9247275878c7aa48b5a152d79c61d613",
+      "title": "Real-IAD D3: A Real-World 2D/Pseudo-3D/3D Dataset for Industrial Anomaly Detection",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.14221, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292310195",
+          "name": "Wenbing Zhu"
+        },
+        {
+          "authorId": "2348269779",
+          "name": "Lidong Wang"
+        },
+        {
+          "authorId": "2356574328",
+          "name": "Ziqing Zhou"
+        },
+        {
+          "authorId": "2352511918",
+          "name": "Chengjie Wang"
+        },
+        {
+          "authorId": "2349791298",
+          "name": "Yurui Pan"
+        },
+        {
+          "authorId": "2338035857",
+          "name": "Ruoyi Zhang"
+        },
+        {
+          "authorId": "2372726554",
+          "name": "Zhuhao Chen"
+        },
+        {
+          "authorId": "2356789199",
+          "name": "Linjie Cheng"
+        },
+        {
+          "authorId": "2271664924",
+          "name": "Bin-Bin Gao"
+        },
+        {
+          "authorId": "2290008427",
+          "name": "Jiangning Zhang"
+        },
+        {
+          "authorId": "2066402135",
+          "name": "Zhenye Gan"
+        },
+        {
+          "authorId": "2115830532",
+          "name": "Yuxiao Wang"
+        },
+        {
+          "authorId": "2324993037",
+          "name": "Yulong Chen"
+        },
+        {
+          "authorId": "2292154398",
+          "name": "Shuguang Qian"
+        },
+        {
+          "authorId": "2293473246",
+          "name": "Mingmin Chi"
+        },
+        {
+          "authorId": "2311475299",
+          "name": "Bo Peng"
+        },
+        {
+          "authorId": "8452947",
+          "name": "Lizhuang Ma"
+        }
+      ],
+      "abstract": "The increasing complexity of industrial anomaly detection (IAD) has positioned multimodal detection methods as a focal area of machine vision research. However, dedicated multimodal datasets specifically tailored for IAD remain limited. Pioneering datasets like MVTec 3D have laid essential groundwork in multimodal IAD by incorporating RGB+3D data, but still face challenges in bridging the gap with real industrial environments due to limitations in scale and resolution. To address these challenges, we introduce Real-IAD D3, a high-precision multimodal dataset that uniquely incorporates an additional pseudo-3D modality generated through photometric stereo, alongside high-resolution RGB images and micrometer-level 3D point clouds. Real-IAD D3 features finer defects, diverse anomalies, and greater scale across 20 categories, providing a challenging benchmark for multimodal IAD Additionally, we introduce an effective approach that integrates RGB, point cloud, and pseudo-3D depth information to leverage the complementary strengths of each modality, enhancing detection performance. Our experiments highlight the importance of these modalities in boosting detection robustness and overall IAD performance. The dataset and code are publicly accessible for research purposes at https://realiad4ad.github.io/Real-IAD_D3."
+    },
+    {
+      "paperId": "7b9c2f23ab00c10120daaac3a0f4c89680133c56",
+      "externalIds": {
+        "DBLP": "conf/cvpr/PemulaZD25",
+        "DOI": "10.1109/CVPRW67362.2025.00389",
+        "CorpusId": 280017698
+      },
+      "url": "https://www.semanticscholar.org/paper/7b9c2f23ab00c10120daaac3a0f4c89680133c56",
+      "title": "Robust AD: A Real World Benchmark Dataset for Robustness in Industrial Anomaly Detection",
+      "venue": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CVPRW67362.2025.00389?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CVPRW67362.2025.00389, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3407972",
+          "name": "Latha Pemula"
+        },
+        {
+          "authorId": "2109552037",
+          "name": "Dongqing Zhang"
+        },
+        {
+          "authorId": "1716416",
+          "name": "O. Dabeer"
+        }
+      ],
+      "abstract": "Successful deployment of anomaly detection algorithms in real-world industrial settings, particularly for defect detection tasks, is often hampered by performance degradation due to discrepancies between the training environment and deployment conditions. These discrepancies, known as domain shifts, can encompass variations in lighting, object pose, background clutter, and other factors. Existing benchmarks for measuring robustness of anomaly detection [4] rely on synthetic transformations that often fail to capture the complexities of real-world variations. We address this gap by proposing a novel benchmark, RobustAD, specifically designed to evaluate the robustness of anomaly detection models in real-world scenarios. RobustAD features a curated dataset of defect detection images with meticulously controlled distribution shifts across multiple dimensions relevant to practical applications and more closely mirrors real-world deployment scenarios. Furthermore, we introduce a novel metric, “Average Relative Drop,” which measures the relative performance drop in target domains with domain shifts, compared to the training domain. This practitioner-centric metric provides a more meaningful evaluation of a model's robustness in real-world scenarios. By leveraging RobustAD and the Average Relative Drop metric, researchers can evaluate their model against real-world domain shifts, under diverse real-world conditions, providing a more accurate assessment of model's suitability for practical deployment. We evaluate state-of-the-art models on RobustAD across a spectrum of tasks establishing a comprehensive benchmark for assessing real-world robustness in industrial anomaly detection. The dataset is available at https://huggingface.co/datasets/AmazonScience/RobustAD"
+    },
+    {
+      "paperId": "952176cee1855c91bb90c2865de47d611ee5c975",
+      "externalIds": {
+        "PubMedCentral": "12621317",
+        "DOI": "10.1016/j.dib.2025.112207",
+        "CorpusId": 282358188,
+        "PubMed": "41255855"
+      },
+      "url": "https://www.semanticscholar.org/paper/952176cee1855c91bb90c2865de47d611ee5c975",
+      "title": "A multimodal dataset for process monitoring and anomaly detection in industrial CNC milling",
+      "venue": "Data in Brief",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.dib.2025.112207",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12621317, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2166564311",
+          "name": "Robin Ströbel"
+        },
+        {
+          "authorId": "48305645",
+          "name": "M. Kuck"
+        },
+        {
+          "authorId": "2158569178",
+          "name": "Florian Oexle"
+        },
+        {
+          "authorId": "2325074519",
+          "name": "Hafez Kader"
+        },
+        {
+          "authorId": "40929258",
+          "name": "A. Puchta"
+        },
+        {
+          "authorId": "2268694639",
+          "name": "Benjamin Noack"
+        },
+        {
+          "authorId": "2258131192",
+          "name": "Jürgen Fleischer"
+        }
+      ],
+      "abstract": "During the fourth industrial revolution, agile production methods have gained increasing importance to meet the growing demand for product individualization. Conventional process monitoring systems, which predominantly rely on static, statistically based approaches, are insufficient for the requirements of flexible manufacturing environments. Although numerous research initiatives have proposed machine learning (ML) based solutions for agile process monitoring, widespread adoption in industrial practice has not yet been achieved. This is partly due to a lack of system comparability and insufficient validation under realistic production conditions. To address this, a comprehensive dataset was recorded on a DMC 60 H three-axis milling machine by Deckel Maho. The dataset comprises multiple signals from a Siemens SINUMERIK 840D controller, recorded at 500 Hz via a Siemens SINUMERIK Edge. These were synchronized with force and acceleration data (sampled at 10 kHz) captured via a force measurement platform and acceleration sensors. A total of 32 experiments were conducted (15 with 8 distinct anomaly types), resulting in nearly 8 million data points per signal and six hours of process data. Key features include: • Realistic workpiece geometries (thermoforming molds, injection molds, pump impellers) representing diverse milling scenarios. • Multiple anomalies (e.g., tool wear, chatter, material defects) to enable targeted validation. • Full reproducibility through provided NC codes, CAD models, and raw/processed data formats (.json, .mat, .csv, .stp, .nc). The dataset is intended to serve as a benchmark for industrial stakeholders to evaluate monitoring systems, as well as providing researchers with a secondary resource for benchmarking and optimizing ML-based approaches. By fostering comparability, it aims to bridge the gap between theoretical frameworks and industrial application."
+    },
+    {
+      "paperId": "2519ad0bf69d7cdb4d825ecdc7faa4b19c830fcf",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2410-09453",
+        "DOI": "10.48550/arXiv.2410.09453",
+        "CorpusId": 276840748
+      },
+      "url": "https://www.semanticscholar.org/paper/2519ad0bf69d7cdb4d825ecdc7faa4b19c830fcf",
+      "title": "MMAD: The First-Ever Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2410.09453?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2410.09453, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292216612",
+          "name": "Xi Jiang"
+        },
+        {
+          "authorId": "2316588022",
+          "name": "Jian Li"
+        },
+        {
+          "authorId": "2325893625",
+          "name": "Hanqiu Deng"
+        },
+        {
+          "authorId": "2272715996",
+          "name": "Yong Liu"
+        },
+        {
+          "authorId": "2271664924",
+          "name": "Bin-Bin Gao"
+        },
+        {
+          "authorId": "2304829252",
+          "name": "Yifeng Zhou"
+        },
+        {
+          "authorId": "2324841686",
+          "name": "Jialin Li"
+        },
+        {
+          "authorId": "2290751399",
+          "name": "Chengjie Wang"
+        },
+        {
+          "authorId": "2275196068",
+          "name": "Feng Zheng"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "8145d49a07b86171d214a34bc9c7bd4a4c637f8c",
+      "externalIds": {
+        "ArXiv": "2604.10971",
+        "DBLP": "journals/corr/abs-2604-10971",
+        "DOI": "10.48550/arXiv.2604.10971",
+        "CorpusId": 287432171
+      },
+      "url": "https://www.semanticscholar.org/paper/8145d49a07b86171d214a34bc9c7bd4a4c637f8c",
+      "title": "MMR-AD: A Large-Scale Multimodal Dataset for Benchmarking General Anomaly Detection with Multimodal Large Language Models",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.10971, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2213687136",
+          "name": "Xincheng Yao"
+        },
+        {
+          "authorId": "2189746705",
+          "name": "Zefeng Qian"
+        },
+        {
+          "authorId": "2175688965",
+          "name": "Chao Shi"
+        },
+        {
+          "authorId": "3427937",
+          "name": "Jiayang Song"
+        },
+        {
+          "authorId": "2240268728",
+          "name": "Chongyang Zhang"
+        }
+      ],
+      "abstract": "In the progress of industrial anomaly detection, general anomaly detection (GAD) is an emerging trend and also the ultimate goal. Unlike the conventional single- and multi-class AD, general AD aims to train a general AD model that can directly detect anomalies in diverse novel classes without any retraining or fine-tuning on the target data. Recently, Multimodal Large Language Models (MLLMs) have shown great promise in achieving general anomaly detection due to their revolutionary visual understanding and language reasoning capabilities. However, MLLM's general AD ability remains underexplored due to: (1) MLLMs are pretrained on amounts of data sourced from the Web, these data still have significant gaps with the data in AD scenarios. Moreover, the image-text pairs during pretraining are also not specifically for AD tasks. (2) The current mainstream AD datasets are image-based and not yet suitable for post-training MLLMs. To facilitate MLLM-based general AD research, we present MMR-AD, which is a comprehensive benchmark for both training and evaluating MLLM-based AD models. With MMR-AD, we reveal that the AD performance of current SOTA generalist MLLMs still falls far behind the industrial requirements. Based on MMR-AD, we also propose a baseline model, Anomaly-R1, which is a reasoning-based AD model that learns from the CoT data in MMR-AD and is further enhanced by reinforcement learning. Extensive experiments show that our Anomaly-R1 achieves remarkable improvements over generalist MLLMs in both anomaly detection and localization."
+    },
+    {
+      "paperId": "80a3c12fb5c47cc9dfb21026ff3c7b8e4f02602b",
+      "externalIds": {
+        "DOI": "10.1109/ICICCS67901.2026.11502609",
+        "CorpusId": 288079693
+      },
+      "url": "https://www.semanticscholar.org/paper/80a3c12fb5c47cc9dfb21026ff3c7b8e4f02602b",
+      "title": "Smart Industry Anomaly Detection Dataset (SIADD) for Cyber-Physical Threat Monitoring in Industrial IOT Environments",
+      "venue": "International Conference Intelligent Computing and Control Systems",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICICCS67901.2026.11502609?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICICCS67901.2026.11502609, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2433579347",
+          "name": "Padarthi Harshika"
+        },
+        {
+          "authorId": "2433570051",
+          "name": "Somalaraju Hemanth Kumar Raju"
+        },
+        {
+          "authorId": "2309576050",
+          "name": "P. Harshitha"
+        },
+        {
+          "authorId": "2433578302",
+          "name": "M. V. Vardhan"
+        },
+        {
+          "authorId": "2162256271",
+          "name": "Cuddapah Anitha"
+        }
+      ],
+      "abstract": "The proposal of the project is based on the detection and classification of the cyber-physical attacks, relying on the specifics of the network traffic, around the Industrial IoT (IIoT). Application of the system helps to high level machine learning algorithms, also known as Stacking Classifier, XGBoost, normal, probing and Denial of service (DoS) in classifying the traffic existing in the network as one of five classes. Other features and samples that this model is trained and tested on are 41 and 973 respectively. Through this research study, the researcher will be guided towards the elaboration of a robust tracking system that can be relied on to identify the possible cyber-attacks, and enhance the safety and security of the industrial networks. The highest score of 99.66 and 99.72 is in XGBoost model and the Stacking Classifier model respectively. The two models proved to be very useful in identifying the cyber threats and anomaly of the IIoT systems."
+    },
+    {
+      "paperId": "fd652d4d9d8492771d52ee61276685060e9f3139",
+      "externalIds": {
+        "PubMedCentral": "12526619",
+        "DOI": "10.3390/s25196122",
+        "CorpusId": 281867686,
+        "PubMed": "41094943"
+      },
+      "url": "https://www.semanticscholar.org/paper/fd652d4d9d8492771d52ee61276685060e9f3139",
+      "title": "An Explainable Markov Chain–Machine Learning Sequential-Aware Anomaly Detection Framework for Industrial IoT Systems Based on OPC UA",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/25/19/6122/pdf?version=1759483609",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12526619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2384256909",
+          "name": "Youness Ghazi"
+        },
+        {
+          "authorId": "2335943897",
+          "name": "Mohamed Tabaa"
+        },
+        {
+          "authorId": "2384257304",
+          "name": "Mohamed Ennaji"
+        },
+        {
+          "authorId": "2376802040",
+          "name": "Ghita Zaz"
+        }
+      ],
+      "abstract": "Stealth attacks targeting industrial control systems (ICS) exploit subtle sequences of malicious actions, making them difficult to detect with conventional methods. The OPC Unified Architecture (OPC UA) protocol—now widely adopted in SCADA/ICS environments—enhances OT–IT integration but simultaneously increases the exposure of critical infrastructures to sophisticated cyberattacks. Traditional detection approaches, which rely on instantaneous traffic features and static models, neglect the sequential dimension that is essential for uncovering such gradual intrusions. To address this limitation, we propose a hybrid sequential anomaly detection pipeline that combines Markov chain modeling to capture temporal dependencies with machine learning algorithms for anomaly detection. The pipeline is further augmented by explainability through SHapley Additive exPlanations (SHAP) and causal inference using the PC algorithm. Experimental evaluation on an OPC UA dataset simulating Man-In-The-Middle (MITM) and denial-of-service (DoS) attacks demonstrates that incorporating a second-order sequential memory significantly improves detection: F1-score increases by +2.27%, precision by +2.33%, and recall by +3.02%. SHAP analysis identifies the most influential features and transitions, while the causal graph highlights deviations from the system’s normal structure under attack, thereby providing interpretable insights into the root causes of anomalies."
+    },
+    {
+      "paperId": "30cb8f7658073a12f5c6c5e0c76d5ccc0d848250",
+      "externalIds": {
+        "DOI": "10.53608/estudambilisim.1574345",
+        "CorpusId": 276386116
+      },
+      "url": "https://www.semanticscholar.org/paper/30cb8f7658073a12f5c6c5e0c76d5ccc0d848250",
+      "title": "Enhancing Predictive Maintenance in Industrial IoT: A Machine Learning Approach for Real-time Anomaly Detection in Pressure Switches",
+      "venue": "Eskişehir Türk Dünyası Uygulama ve Araştırma Merkezi Bilişim Dergisi",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.53608/estudambilisim.1574345?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.53608/estudambilisim.1574345, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2345624855",
+          "name": "Buket Soyhan"
+        },
+        {
+          "authorId": "2220574430",
+          "name": "Zuhal Can"
+        }
+      ],
+      "abstract": "This study investigates the real-time integration of machine learning techniques with Internet of Things (IoT) data to monitor and predict the behavior of pressure switches in an industrial environment. Predictive maintenance in industrial IoT systems is critical to increase operational efficiency and minimize unexpected failures. The increasing complexity of industrial processes has made integrating machine learning algorithms and IoT data a powerful solution for proactive maintenance. In this context, the study aims to perform anomaly detection and failure prediction in pressure switches by analyzing real-time sensor data and applying Random Forest, Isolation Forest, and Local Outlier Factor algorithms. The performance of the models is evaluated using the MetroPT-3 Train Dataset. Performance metrics like accuracy, precision, recall, and F1 score assess the models' effectiveness. The Random Forest Classifier showed the highest performance in anomaly detection with an accuracy rate of 99.92%. The findings emphasize the significant potential of machine learning and the Internet of Things in enhancing predictive maintenance, improving system reliability, and contributing to the broader field of industrial IoT."
+    },
+    {
+      "paperId": "0c81f8f82f5a1e2fc50eceeb11cba4dc3ee186ba",
+      "externalIds": {
+        "DBLP": "conf/cvpr/XuL0PD25",
+        "ArXiv": "2502.07601",
+        "DOI": "10.1109/CVPR52734.2025.01897",
+        "CorpusId": 276258966
+      },
+      "url": "https://www.semanticscholar.org/paper/0c81f8f82f5a1e2fc50eceeb11cba4dc3ee186ba",
+      "title": "Towards Zero-Shot Anomaly Detection and Reasoning with Multimodal Large Language Models",
+      "venue": "Computer Vision and Pattern Recognition",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.07601, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292419231",
+          "name": "Jiacong Xu"
+        },
+        {
+          "authorId": "80977068",
+          "name": "Shao-Yuan Lo"
+        },
+        {
+          "authorId": "2286447684",
+          "name": "Bardia Safaei"
+        },
+        {
+          "authorId": "2303255240",
+          "name": "Vishal M. Patel"
+        },
+        {
+          "authorId": "2065347254",
+          "name": "Isht Dwivedi"
+        }
+      ],
+      "abstract": "Zero-Shot Anomaly Detection (ZSAD) is an emerging AD paradigm. Unlike the traditional unsupervised AD setting that requires a large number of normal samples to train a model, ZSAD is more practical for handling data-restricted real-world scenarios. Recently, Multimodal Large Language Models (MLLMs) have shown revolutionary reasoning capabilities in various vision tasks. However, the reasoning of image abnormalities remains underexplored due to the lack of corresponding datasets and benchmarks. To facilitate research in AD & reasoning, we establish the first visual instruction tuning dataset, Anomaly-Instruct-125k, and the evaluation benchmark, VisA-D&R. Through investigation with our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect and describe fine-grained anomalous details in images. To address this, we propose Anomaly-OneVision (Anomaly-OV), the first specialist visual assistant for ZSAD and reasoning. Inspired by human behavior in visual inspection, Anomaly-OV leverages a Look-Twice Feature Matching (LTFM) mechanism to adaptively select and emphasize abnormal visual tokens. Extensive experiments demonstrate that Anomaly-OV achieves significant improvements over advanced generalist models in both detection and reasoning. Extensions to medical and 3D AD are provided for future study. The link to our project page: https://xujiacong.github.io/Anomaly-OV/"
+    },
+    {
+      "paperId": "d3ff88d3d9f8db934d9c1e38b24be21e9370ace9",
+      "externalIds": {
+        "DOI": "10.3390/electronics14112153",
+        "CorpusId": 278951886
+      },
+      "url": "https://www.semanticscholar.org/paper/d3ff88d3d9f8db934d9c1e38b24be21e9370ace9",
+      "title": "SAFEL-IoT: Secure Adaptive Federated Learning with Explainability for Anomaly Detection in 6G-Enabled Smart Industry 5.0",
+      "venue": "Electronics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2079-9292/14/11/2153/pdf?version=1748250490",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/electronics14112153?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/electronics14112153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1395267326",
+          "name": "M. Alatawi"
+        }
+      ],
+      "abstract": "The rise of 6G-enabled smart industries necessitates secure, adaptive, and interpretable anomaly detection frameworks capable of operating under dynamic, adversarial, and resource-constrained environments. This study presents SAFEL-IoT, a novel Secure Adaptive Federated Learning framework with integrated explainability, specifically designed for anomaly detection in Industrial Internet-of-Things (IIoT) systems under Industry 5.0 paradigms. SAFEL-IoT introduces a dynamic aggregation mechanism based on temporal model divergence, a hybrid encryption scheme combining partial homomorphic encryption with differential privacy, and an interpretable anomaly scoring pipeline leveraging SHapley Additive exPlanations (SHAP) values and temporal attention mechanisms. Extensive experimentation on the SKAB industrial dataset demonstrates that SAFEL-IoT achieves a superior F1 score of 0.93, reduces training time to 63.7 s, and maintains explanation fidelity with only a 0.15 explanation error. Communication efficiency is improved by 70.3% through 6G network slicing, while detection latency remains below 12 ms across 100 distributed edge clients. Further analysis shows a 41.7% improvement in drift robustness and a 68.9% reduction in false positives compared to traditional federated learning baselines. Theoretical convergence guarantees, scalability under large node deployments, and resilience against adversarial attacks validate SAFEL-IoT as a comprehensive and practical solution for secure, explainable, and scalable anomaly detection in next-generation industrial ecosystems."
+    },
+    {
+      "paperId": "c097490a8a3205415730762bf9645e1d15a8e6d6",
+      "externalIds": {
+        "ArXiv": "2608.07958",
+        "CorpusId": 290984360
+      },
+      "url": "https://www.semanticscholar.org/paper/c097490a8a3205415730762bf9645e1d15a8e6d6",
+      "title": "LIBAD: A Multimodal Anomaly Detection Benchmark for Li-Ion Battery Electrode Manufacturing",
+      "venue": "",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2608.07958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "153799202",
+          "name": "Wenbo Sui"
+        },
+        {
+          "authorId": "2302801248",
+          "name": "Daniel Lichau"
+        },
+        {
+          "authorId": "2311119464",
+          "name": "Harold Phelippeau"
+        },
+        {
+          "authorId": "2453394603",
+          "name": "Zhaoheng Liu"
+        }
+      ],
+      "abstract": "Multimodal industrial anomaly detection has largely focused on discrete products using strongly correlated RGB and 3D observations, leaving continuous process manufacturing and weakly correlated sensing modalities underexplored. We introduce LIBAD, the first multimodal anomaly detection benchmark for Li-ion battery electrode manufacturing. Collected from real roll-to-roll production lines, LIBAD provides aligned double-sided visible-light imaging, high-resolution X-ray radiography, and inline-compatible low-resolution X-ray radiography. Electrode patches in LIBAD exhibit highly homogeneous material appearance, while defect evidence can be strong in one modality but weak or absent in another, resulting in pronounced cross-modal anomaly inconsistency. Benchmarks of representative methods under the inline-compatible visible-light and low-resolution X-ray setting exhibit limited transferability and consistently high false-positive rates. We therefore propose DA-Core, a memory-based method that jointly considers feature-space coverage and local density of normal features during coreset selection, allowing compact memory banks to better preserve fine-grained normal variations. With a coreset ratio of 0.05, DA-Core reduces FPR95 from 60.4% to 54.3% compared with standard farthest point sampling. At this ratio, DA-Core also outperforms the best standard coreset result (obtained at 0.20) while reducing inference time by 43.9%. These results suggest that both the data distribution of normal features and the modality relationship itself require explicit consideration when designing anomaly detection methods for process manufacturing."
+    },
+    {
+      "paperId": "d7a4d8c52517db798fd8fea79ae5602f4b2e49d2",
+      "externalIds": {
+        "DBLP": "journals/tii/ChenXLHGL25",
+        "DOI": "10.1109/TII.2025.3538127",
+        "CorpusId": 276767116
+      },
+      "url": "https://www.semanticscholar.org/paper/d7a4d8c52517db798fd8fea79ae5602f4b2e49d2",
+      "title": "Privacy-Preserving Lightweight Time-Series Anomaly Detection for Resource-Limited Industrial IoT Edge Devices",
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TII.2025.3538127?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TII.2025.3538127, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2146070975",
+          "name": "Lei Chen"
+        },
+        {
+          "authorId": "2345679160",
+          "name": "Yepeng Xu"
+        },
+        {
+          "authorId": "2345645304",
+          "name": "Ming Li"
+        },
+        {
+          "authorId": "2352065390",
+          "name": "Bowen Hu"
+        },
+        {
+          "authorId": "2317977184",
+          "name": "Haomiao Guo"
+        },
+        {
+          "authorId": "1750320",
+          "name": "Zhaohua Liu"
+        }
+      ],
+      "abstract": "Identifying anomalies directly on edge devices rather than in the cloud, known as edge computing, is essential for Industry 4.0. However, the limited computing and storage resources on edge devices render traditional cloud-based anomaly detection models ineffective. To solve this issue, a privacy-preserving lightweight time-series anomaly detection model, named PPLAD, is proposed for resource-limited industrial Internet of Things (IoT) edge devices via global and local similarity discrepancy. First, PPLAD directly uses data similarity instead of raw data as model input, to achieve privacy-preserving. Second, PPLAD applies trainable Gaussian distribution rather than deep neural network as model structure, to achieve high timeliness and low cost. Specifically, PPLAD constructs a trainable Gaussian distribution with only one parameter for each timestamp to model its similarity with neighbors. Third, a global and local adversarial learning strategy is developed to amplify the discrepancy between local similarity and global similarity for each timestamp. Finally, the discrepancy is used to accurately identify timestamp-level anomalies. To the best of authors' knowledge, this is the first work to build an industrial anomaly detection model using only learnable Gaussian distributions. Extensive experiments on eight public industrial multisensor datasets and three edge devices demonstrate that PPLAD outperforms several state-of-the-art models."
+    },
+    {
+      "paperId": "66a9bd4a1659c1b308fc5cdecd94dd4626cc837c",
+      "externalIds": {
+        "DOI": "10.1109/ICBDML68582.2026.11544167",
+        "CorpusId": 289120684
+      },
+      "url": "https://www.semanticscholar.org/paper/66a9bd4a1659c1b308fc5cdecd94dd4626cc837c",
+      "title": "Contrastive Learning for Multimodal Anomaly Detection in IoT Systems",
+      "venue": "2026 2nd International Conference on Big Data & Machine Learning (ICBDML)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBDML68582.2026.11544167?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBDML68582.2026.11544167, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30322731",
+          "name": "M. Sidhu"
+        },
+        {
+          "authorId": "2292590023",
+          "name": "Gollanapalli V. Prasad"
+        },
+        {
+          "authorId": "2209834317",
+          "name": "F. Firdouse"
+        },
+        {
+          "authorId": "2176950425",
+          "name": "Shubham Soni"
+        },
+        {
+          "authorId": "2387001977",
+          "name": "Neera Batra"
+        }
+      ],
+      "abstract": "The high rate of the growth of the Internet of Things (IoT) ecosystems has further increased the necessity to develop durable anomaly detection to maintain the reliability of the system. The present paper presents a new contrastive learning system to detect anomalies in multimodal time-series, image, and text logs to improve monitoring in a complex IoT setup. By relying on a CLIP-inspired architecture, the framework uses natural language processing, motion analysis, and predictive modeling in order to have high detection accuracy. It is tested on WADI dataset where it achieves 94.2 per cent precision and 0.961 AUC-ROC, and is better than unimodal baselines. Interpretable information about cross-modal interactions is provided by visual aids, such as t-SNE embeddings and attention heatmaps. Although recent computational methods are difficult to execute, it is an approach that can give a scalable, transparent solution to smart grids and industrial IoT, with implications on future Human-System Interaction developments."
+    },
+    {
+      "paperId": "4c6690e261ce414a814ba6f1497b8a42ee0a3f9a",
+      "externalIds": {
+        "DBLP": "conf/icassp/AnK25",
+        "DOI": "10.1109/ICASSP49660.2025.10888757",
+        "CorpusId": 276969801
+      },
+      "url": "https://www.semanticscholar.org/paper/4c6690e261ce414a814ba6f1497b8a42ee0a3f9a",
+      "title": "GPT-LAD: Leveraging Large Multimodal Models for Logical Anomaly Detection",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASSP49660.2025.10888757?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASSP49660.2025.10888757, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2350154053",
+          "name": "Yoojin An"
+        },
+        {
+          "authorId": "2271064455",
+          "name": "Dong-Joong Kang"
+        }
+      ],
+      "abstract": "As detecting both structural and logical anomalies becomes crucial for robust anomaly detection, recent research has been focusing on logical anomaly detection that can identify both types of anomalies. In actual industrial environments, inspectors are usually supplied with predefined criteria for normal conditions to evaluate whether the produced items are normal or abnormal. However, no existing methods replicate the way humans set and compare against normality criteria to judge normality. To address this gap, we propose a novel framework that mimics human reasoning by defining normality criteria and leveraging GPT-4V’s advanced logical reasoning capabilities. By combining GPT-4V with domain-specific CNN-based models, our approach achieves state-of-the-art or competitive performance on the MVTec LOCO benchmark dataset, offering a more human-like and efficient solution for logical anomaly detection."
+    },
+    {
+      "paperId": "d5040bcb5f36e4733e27b13cd655b04f08477202",
+      "externalIds": {
+        "DOI": "10.1109/OTCON65728.2025.11070793",
+        "CorpusId": 280104061
+      },
+      "url": "https://www.semanticscholar.org/paper/d5040bcb5f36e4733e27b13cd655b04f08477202",
+      "title": "XGBoost-Based Anomaly Detection in IoT Networks Using the RT-IoT2022 Dataset",
+      "venue": "2025 4th OPJU International Technology Conference (OTCON) on Smart Computing for Innovation and Advancement in Industry 5.0",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/OTCON65728.2025.11070793?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/OTCON65728.2025.11070793, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2297394913",
+          "name": "Gaurav Tuteja"
+        },
+        {
+          "authorId": "2277758518",
+          "name": "Anmol Rattan Singh"
+        },
+        {
+          "authorId": "2259948353",
+          "name": "G. R. Kumar"
+        },
+        {
+          "authorId": "2352467480",
+          "name": "Mohhamied Husaein Fallaah"
+        }
+      ],
+      "abstract": "The research presents a robust methodology for anomaly detection in IoT networks using the XGBoost Classifier, evaluated on the RT-IoT2022 dataset. The methodology begins with comprehensive data preprocessing and addresses class imbalance through the Synthetic Minority Oversampling Technique (SMOTE), ensuring balanced representation of both normal and anomalous traffic. The RT-IoT2022 dataset, 12 traffic classes, including 9 attack types and 3 normal behaviors, provides a diverse and realistic benchmark. The proposed approach achieves an overall accuracy of 99%, with a weighted F1-score of 0.99, indicating strong performance across all classes. High precision, recall, and F1-scores are observed for major attack classes such as DOS SYN_Hping and NMAP XMAS TREE SCAN. Error analysis highlights challenges in low-performing classes like Wipro bulb, where false negatives impacted recall. The ROC curve confirms excellent discriminative ability, with most classes achieving an Area Under the Curve (AUC) of 1.00. Feature importance rankings demonstrate the significance of temporal and flow-based features, such as Flow Duration and Flow IAT Mean, in identifying anomalies. The proposed methodology showcases effective classification of diverse IoT traffic patterns, providing a reliable solution for anomaly detection in resource-constrained IoT environments. The findings emphasize the potential of XGBoost-based models in enhancing IoT security and reliability across critical applications."
+    },
+    {
+      "paperId": "050da73adb220016e2decadbbf64d0f7bfd43d53",
+      "externalIds": {
+        "DOI": "10.11591/ijeecs.v43.i1.pp345-354",
+        "CorpusId": 290419147
+      },
+      "url": "https://www.semanticscholar.org/paper/050da73adb220016e2decadbbf64d0f7bfd43d53",
+      "title": "Hybrid machine learning framework for anomaly detection in industrial IoT environments",
+      "venue": "Indonesian Journal of Electrical Engineering and Computer Science",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://ijeecs.iaescore.com/index.php/IJEECS/article/download/45796/20115",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.11591/ijeecs.v43.i1.pp345-354?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.11591/ijeecs.v43.i1.pp345-354, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2452040147",
+          "name": "I. D. Made Widia"
+        },
+        {
+          "authorId": "2184688350",
+          "name": "Toni Anwar"
+        }
+      ],
+      "abstract": "The industrial internet of things (IIoT) has become a core component of Industry 4.0, enabling highly connected and data-driven industrial systems while simultaneously increasing exposure to cyber threats. Conventional intrusion detection systems (IDS), especially rule-based and signature-driven approaches, often struggle to cope with the dynamic, high-dimensional, and heterogeneous nature of IIoT traffic. This study proposes a hybrid anomaly detection framework that integrates autoencoder, isolation forest, and long short-term memory (LSTM) models using a weighted decision fusion strategy. Each component contributes complementary capabilities, including nonlinear feature learning, efficient outlier detection, and temporal pattern modeling. The framework is evaluated on the botnet of things (BoT-IoT) dataset and further validated using IoT-23. Experimental results show that the proposed hybrid approach achieves a precision of 0.999, recall of 0.970, and an F1-score of 0.985, while maintaining a false-negative rate below 0.001%. Although its area under the curve (AUC) is slightly lower than that of a standalone light gradient boosting machine (LightGBM) baseline, the hybrid framework consistently reduces missed detections, making it well suited for reliable real-time IIoT security monitoring."
+    },
+    {
+      "paperId": "cd7aca7613e9d2b8d45634c05c08bd7f1b24f903",
+      "externalIds": {
+        "DBLP": "conf/aaaisus/ZhukabayevaAKMB26",
+        "DOI": "10.1609/aaaiss.v9i1.42915",
+        "CorpusId": 289512000
+      },
+      "url": "https://www.semanticscholar.org/paper/cd7aca7613e9d2b8d45634c05c08bd7f1b24f903",
+      "title": "Trustworthy Anomaly Detection in Industrial IoT-Enabled Cyber-Physical Systems Using Explainable Ensemble Learning",
+      "venue": "AAAI Summer Symposia",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1609/aaaiss.v9i1.42915",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1609/aaaiss.v9i1.42915?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1609/aaaiss.v9i1.42915, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2437550",
+          "name": "T. Zhukabayeva"
+        },
+        {
+          "authorId": "2352078810",
+          "name": "Zulfiqar Ahmad"
+        },
+        {
+          "authorId": "2291674406",
+          "name": "N. Karabayev"
+        },
+        {
+          "authorId": "2235714533",
+          "name": "Y. Mardenov"
+        },
+        {
+          "authorId": "2313437865",
+          "name": "D. Baumuratova"
+        },
+        {
+          "authorId": "2393608493",
+          "name": "H. Elmannai"
+        }
+      ],
+      "abstract": "Cyber-physical manufacturing systems based on industrial IoT generate large amounts of diverse sensor data. This makes them more vulnerable to operational abnormalities that can lead to equipment failure, safety risks, and produc-tion downtime. Intelligent manufacturing systems must therefore have accurate and reliable anomaly detection. This paper suggests a credible system of anomaly detection with the use of explainable ensemble learning on cyber-physical systems of industrial IoT. The given solution combines mul-tiple machine learning models, such as XGBoost, logistic re-gression, random forest, support vector machine, and multi-layer perceptron, into the stacking ensemble architecture to consider the different characteristics of data and minimize the bias of individual models. The probabilistic outputs of the base learners are combined using a meta-model, which leads to better detection accuracy and high strength. Through experiments applied to a real-world smart manufacturing IoT dataset, it can be observed that the proposed ensemble model has an accuracy of 97.98%, which is the highest of all the single classifiers and balanced across normal and anomalous classes. Moreover, the explainable AI with SHAP is imple-mented to allow transparency into the decision-making pro-cess. The findings validate that the proposed framework pro-vides a scalable, reliable, and interpretable solution to real-time anomaly detection in industrial IoT-enabled cyber-physical manufacturing systems."
+    },
+    {
+      "paperId": "71dccd72aea33dde3906eeb99198b39f2071bac9",
+      "externalIds": {
+        "PubMedCentral": "12229705",
+        "DOI": "10.1038/s41598-025-08436-x",
+        "CorpusId": 279897717,
+        "PubMed": "40610511"
+      },
+      "url": "https://www.semanticscholar.org/paper/71dccd72aea33dde3906eeb99198b39f2071bac9",
+      "title": "Enhancing anomaly detection in IoT-driven factories using Logistic Boosting, Random Forest, and SVM: A comparative machine learning approach",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-025-08436-x.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12229705, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2279288419",
+          "name": "M. Aly"
+        },
+        {
+          "authorId": "2174411261",
+          "name": "Mohamed H. Behiry"
+        }
+      ],
+      "abstract": "Three machine learning algorithms—Logistic Boosting, Random Forest, and Support Vector Machines (SVM)—were evaluated for anomaly detection in IoT-driven industrial environments. A real-world dataset of 15,000 instances from factory sensors was analyzed using ROC curves, confusion matrices, and standard metrics. Logistic Boosting outperformed other models with an AUC of 0.992 (96.6% accuracy, 93.5% precision, 94.8% recall, F1-score = 0.941), demonstrating superior handling of imbalanced data (134 FPs, 117 FNs). While Random Forest achieved strong results (AUC = 0.982) and SVM showed high recall, Logistic Boosting’s ensemble approach proved most effective for industrial IoT classification. The findings provide actionable insights for real-time detection systems and suggest future directions in hybrid architectures and edge optimization."
+    },
+    {
+      "paperId": "b3572f0a9a524d54b5ca51884a18b768d27e2d53",
+      "externalIds": {
+        "DOI": "10.12913/22998624/210686",
+        "CorpusId": 283232024
+      },
+      "url": "https://www.semanticscholar.org/paper/b3572f0a9a524d54b5ca51884a18b768d27e2d53",
+      "title": "Optimization of machine learning models for effective anomaly detection in industrial IoT systems",
+      "venue": "Advances in Science and Technology Research Journal",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://www.astrj.com/pdf-210686-132253?filename=Optimization of machine.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.12913/22998624/210686?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.12913/22998624/210686, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3003422",
+          "name": "Paweł Kuraś"
+        },
+        {
+          "authorId": "2005702062",
+          "name": "M. Bolanowski"
+        },
+        {
+          "authorId": "2393982289",
+          "name": "Mateusz Łoza"
+        }
+      ],
+      "abstract": "In the era of increasing industrial internet of things (IIoT) devices, effective and efficient anomaly detection in network traffic is crucial for ensuring the security and reliability of industrial systems. This paper introduces a systematic methodology for optimizing machine learning models by focusing on the critical trade-off between detection accuracy and computational efficiency for resource-constrained IIoT environments. The methodology was evaluated using decision tree-based algorithms (RandomForest, ExtraTrees, AdaBoost, XGBoost, CatBoost) on a realistic dataset with simulated network attacks. The analysis involved a comprehensive evaluation of data preparation strategies, including class balancing, data aggregation, sampling, feature selection, and hyperparam - eter tuning, with a specific focus on the XGBoost model. The results demonstrate that this holistic optimization enables high detection accuracy (over 92% for binary classification and 87% for multi-class classification) while simultaneously maintaining high computational efficiency (short training time, small model size). This approach provides a practical pathway for developing resilient and resource-aware cybersecurity systems for industry, smart city, and IIoT environments."
+    },
+    {
+      "paperId": "092ae3267fbf3ce72bb8fc011bb6aeea6ba63c66",
+      "externalIds": {
+        "DBLP": "journals/computers/PaoliniDSS25",
+        "DOI": "10.3390/computers14070281",
+        "CorpusId": 280312965
+      },
+      "url": "https://www.semanticscholar.org/paper/092ae3267fbf3ce72bb8fc011bb6aeea6ba63c66",
+      "title": "One-Class Anomaly Detection for Industrial Applications: A Comparative Survey and Experimental Study",
+      "venue": "De Computis",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2073-431X/14/7/281/pdf?version=1752668702",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/computers14070281?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/computers14070281, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2323828923",
+          "name": "Davide Paolini"
+        },
+        {
+          "authorId": "151167097",
+          "name": "Pierpaolo Dini"
+        },
+        {
+          "authorId": "2342151322",
+          "name": "Ettore Soldaini"
+        },
+        {
+          "authorId": "2265132907",
+          "name": "Sergio Saponara"
+        }
+      ],
+      "abstract": "This article aims to evaluate the runtime effectiveness of various one-class classification (OCC) techniques for anomaly detection in an industrial scenario reproduced in a laboratory setting. To address the limitations posed by restricted access to proprietary data, the study explores OCC methods that learn solely from legitimate network traffic, without requiring labeled malicious samples. After analyzing major publicly available datasets, such as KDD Cup 1999 and TON-IoT, as well as the most widely used OCC techniques, a lightweight and modular intrusion detection system (IDS) was developed in Python. The system was tested in real time on an experimental platform based on Raspberry Pi, within a simulated client–server environment using the NFSv4 protocol over TCP/UDP. Several OCC models were compared, including One-Class SVM, Autoencoder, VAE, and Isolation Forest. The results showed strong performance in terms of detection accuracy and low latency, with the best outcomes achieved using the UNSW-NB15 dataset. The article concludes with a discussion of additional strategies to enhance the runtime analysis of these algorithms, offering insights into potential future applications and improvement directions."
+    },
+    {
+      "paperId": "0e3990f379124bec3bb89fd3396f7622d03aa1b2",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2504-11914",
+        "ArXiv": "2504.11914",
+        "DOI": "10.48550/arXiv.2504.11914",
+        "CorpusId": 277824550
+      },
+      "url": "https://www.semanticscholar.org/paper/0e3990f379124bec3bb89fd3396f7622d03aa1b2",
+      "title": "AnomalyR1: A GRPO-based End-to-end MLLM for Industrial Anomaly Detection",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.11914, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2355627479",
+          "name": "Yuhao Chao"
+        },
+        {
+          "authorId": "2311699279",
+          "name": "Jie Liu"
+        },
+        {
+          "authorId": "2109541562",
+          "name": "Jie Tang"
+        },
+        {
+          "authorId": "2281716293",
+          "name": "Gangshan Wu"
+        }
+      ],
+      "abstract": "Industrial Anomaly Detection (IAD) poses a formidable challenge due to the scarcity of defective samples, making it imperative to deploy models capable of robust generalization to detect unseen anomalies effectively. Traditional approaches, often constrained by hand-crafted features or domain-specific expert models, struggle to address this limitation, underscoring the need for a paradigm shift. We introduce AnomalyR1, a pioneering framework that leverages VLM-R1, a Multimodal Large Language Model (MLLM) renowned for its exceptional generalization and interpretability, to revolutionize IAD. By integrating MLLM with Group Relative Policy Optimization (GRPO), enhanced by our novel Reasoned Outcome Alignment Metric (ROAM), AnomalyR1 achieves a fully end-to-end solution that autonomously processes inputs of image and domain knowledge, reasons through analysis, and generates precise anomaly localizations and masks. Based on the latest multimodal IAD benchmark, our compact 3-billion-parameter model outperforms existing methods, establishing state-of-the-art results. As MLLM capabilities continue to advance, this study is the first to deliver an end-to-end VLM-based IAD solution that demonstrates the transformative potential of ROAM-enhanced GRPO, positioning our framework as a forward-looking cornerstone for next-generation intelligent anomaly detection systems in industrial applications with limited defective data."
+    },
+    {
+      "paperId": "6fe6568f00472611ed3c7df2ac2eaeda598ba5f5",
+      "externalIds": {
+        "DOI": "10.1109/ICAAIC64647.2025.11330585",
+        "CorpusId": 284922747
+      },
+      "url": "https://www.semanticscholar.org/paper/6fe6568f00472611ed3c7df2ac2eaeda598ba5f5",
+      "title": "Proactive Anomaly Detection Framework Utilizing Edge-Driven Ubiquitous IoT for Industrial Automation Systems",
+      "venue": "2025 4th International Conference on Applied Artificial Intelligence and Computing (ICAAIC)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICAAIC64647.2025.11330585?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICAAIC64647.2025.11330585, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2086801883",
+          "name": "Glenn John O. Fernando"
+        }
+      ],
+      "abstract": "Industry 4.0 consists of automating operations with the help of IIoT systems, monitoring their state in real time and ensuring that nothing goes wrong. Nevertheless, these systems can be easily disturbed by any unusual events that can interrupt the work and provoke some safety problems. The study is aimed at resolving this urgent problem, and the purpose of the research is to create a proactive system of detecting anomalies that will identify a failure in the network of industrial mechanisms in real-time. The proposed solution, EAD-IoTNet (Edge-based Anomaly Detection for Industrial IoT Networks) uses edge computing and ubiquitous sensor data to identify anomalies with a low latency. Python-based software and machine learning libraries were used to train and test the model by using the Industrial IoT Fault Detection Dataset available on Kaggle. With the results of 99.98 % accuracy, it was found that EAD-IoTNet is superior to conventional centralized approaches in all major performance indicators. This proves that this model can be efficient to perform proactive maintenance and prompt reaction. To summarize, EAD-IoTNet provides a more intelligent and scalable way on how to guarantee reliability and safety in industrial settings of the current era."
+    },
+    {
+      "paperId": "f36159ad455cafb759f0fddde1ebf0645c52a9d8",
+      "externalIds": {
+        "ArXiv": "2505.22039",
+        "DBLP": "journals/corr/abs-2505-22039",
+        "DOI": "10.48550/arXiv.2505.22039",
+        "CorpusId": 278959277
+      },
+      "url": "https://www.semanticscholar.org/paper/f36159ad455cafb759f0fddde1ebf0645c52a9d8",
+      "title": "OmniAD: Detect and Understand Industrial Anomaly via Multimodal Reasoning",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.22039, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2363900614",
+          "name": "Shifang Zhao"
+        },
+        {
+          "authorId": "2273638138",
+          "name": "Yiheng Lin"
+        },
+        {
+          "authorId": "2148416693",
+          "name": "Lu Han"
+        },
+        {
+          "authorId": "2248324278",
+          "name": "Yao Zhao"
+        },
+        {
+          "authorId": "2238213573",
+          "name": "Yunchao Wei"
+        }
+      ],
+      "abstract": "While anomaly detection has made significant progress, generating detailed analyses that incorporate industrial knowledge remains a challenge. To address this gap, we introduce OmniAD, a novel framework that unifies anomaly detection and understanding for fine-grained analysis. OmniAD is a multimodal reasoner that combines visual and textual reasoning processes. The visual reasoning provides detailed inspection by leveraging Text-as-Mask Encoding to perform anomaly detection through text generation without manually selected thresholds. Following this, Visual Guided Textual Reasoning conducts comprehensive analysis by integrating visual perception. To enhance few-shot generalization, we employ an integrated training strategy that combines supervised fine-tuning (SFT) with reinforcement learning (GRPO), incorporating three sophisticated reward functions. Experimental results demonstrate that OmniAD achieves a performance of 79.1 on the MMAD benchmark, surpassing models such as Qwen2.5-VL-7B and GPT-4o. It also shows strong results across multiple anomaly detection benchmarks. These results highlight the importance of enhancing visual perception for effective reasoning in anomaly understanding. All codes and models will be publicly available."
+    },
+    {
+      "paperId": "d5c8d0fd6bbd677b32e1c588ccd31ae2ff7d8f9b",
+      "externalIds": {
+        "PubMedCentral": "10818673",
+        "DBLP": "journals/sensors/QuLWHYC24",
+        "DOI": "10.3390/s24020637",
+        "CorpusId": 267138601,
+        "PubMed": "38276328"
+      },
+      "url": "https://www.semanticscholar.org/paper/d5c8d0fd6bbd677b32e1c588ccd31ae2ff7d8f9b",
+      "title": "MFGAN: Multimodal Fusion for Industrial Anomaly Detection Using Attention-Based Autoencoder and Generative Adversarial Network",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/24/2/637/pdf?version=1705652663",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10818673, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2280397926",
+          "name": "Xinji Qu"
+        },
+        {
+          "authorId": "2187667157",
+          "name": "Zhuo Liu"
+        },
+        {
+          "authorId": "2175233917",
+          "name": "C. Wu"
+        },
+        {
+          "authorId": "1471641481",
+          "name": "Aiqin Hou"
+        },
+        {
+          "authorId": "2184498517",
+          "name": "Xiaoyan Yin"
+        },
+        {
+          "authorId": "2280893714",
+          "name": "Zhulian Chen"
+        }
+      ],
+      "abstract": "Anomaly detection plays a critical role in ensuring safe, smooth, and efficient operation of machinery and equipment in industrial environments. With the wide deployment of multimodal sensors and the rapid development of Internet of Things (IoT), the data generated in modern industrial production has become increasingly diverse and complex. However, traditional methods for anomaly detection based on a single data source cannot fully utilize multimodal data to capture anomalies in industrial systems. To address this challenge, we propose a new model for anomaly detection in industrial environments using multimodal temporal data. This model integrates an attention-based autoencoder (AAE) and a generative adversarial network (GAN) to capture and fuse rich information from different data sources. Specifically, the AAE captures time-series dependencies and relevant features in each modality, and the GAN introduces adversarial regularization to enhance the model’s ability to reconstruct normal time-series data. We conduct extensive experiments on real industrial data containing both measurements from a distributed control system (DCS) and acoustic signals, and the results demonstrate the performance superiority of the proposed model over the state-of-the-art TimesNet for anomaly detection, with an improvement of 5.6% in F1 score."
+    },
+    {
+      "paperId": "8109a1772976343abd287e252ab8e2c64f9c8204",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2511-00540",
+        "ArXiv": "2511.00540",
+        "DOI": "10.48550/arXiv.2511.00540",
+        "CorpusId": 282739826
+      },
+      "url": "https://www.semanticscholar.org/paper/8109a1772976343abd287e252ab8e2c64f9c8204",
+      "title": "Real-IAD Variety: Pushing Industrial Anomaly Detection Dataset to a Modern Era",
+      "venue": "Pattern Recognition",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.00540, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292310195",
+          "name": "Wenbing Zhu"
+        },
+        {
+          "authorId": "2352511918",
+          "name": "Chengjie Wang"
+        },
+        {
+          "authorId": "2271664924",
+          "name": "Bin-Bin Gao"
+        },
+        {
+          "authorId": "2290008427",
+          "name": "Jiangning Zhang"
+        },
+        {
+          "authorId": "2279723581",
+          "name": "Guannan Jiang"
+        },
+        {
+          "authorId": "2299120314",
+          "name": "Jie Hu"
+        },
+        {
+          "authorId": "2066402135",
+          "name": "Zhenye Gan"
+        },
+        {
+          "authorId": "2348269779",
+          "name": "Lidong Wang"
+        },
+        {
+          "authorId": "2356574328",
+          "name": "Ziqing Zhou"
+        },
+        {
+          "authorId": "2356789199",
+          "name": "Linjie Cheng"
+        },
+        {
+          "authorId": "2349791298",
+          "name": "Yurui Pan"
+        },
+        {
+          "authorId": "2311475299",
+          "name": "Bo Peng"
+        },
+        {
+          "authorId": "2293473246",
+          "name": "Mingmin Chi"
+        },
+        {
+          "authorId": "8452947",
+          "name": "Lizhuang Ma"
+        }
+      ],
+      "abstract": "Industrial Anomaly Detection (IAD) is a cornerstone for ensuring operational safety, maintaining product quality, and optimizing manufacturing efficiency. However, the advancement of IAD algorithms is severely hindered by the limitations of existing public benchmarks. Current datasets often suffer from restricted category diversity and insufficient scale, leading to performance saturation and poor model transferability in complex, real-world scenarios. To bridge this gap, we introduce Real-IAD Variety, the largest and most diverse IAD benchmark. It comprises 198,950 high-resolution images across 160 distinct object categories. The dataset ensures unprecedented diversity by covering 28 industries, 24 material types, 22 color variations, and 27 defect types. Our extensive experimental analysis highlights the substantial challenges posed by this benchmark: state-of-the-art multi-class unsupervised anomaly detection methods suffer significant performance degradation (ranging from 10% to 20%) when scaled from 30 to 160 categories. Conversely, we demonstrate that zero-shot and few-shot IAD models exhibit remarkable robustness to category scale-up, maintaining consistent performance and significantly enhancing generalization across diverse industrial contexts. This unprecedented scale positions Real-IAD Variety as an essential resource for training and evaluating next-generation foundation IAD models."
+    },
+    {
+      "paperId": "3bf83f94503369084323b43584d88d34567bd9d7",
+      "externalIds": {
+        "DBLP": "journals/iotj/TangWXTWHC25",
+        "DOI": "10.1109/JIOT.2025.3537864",
+        "CorpusId": 276353341
+      },
+      "url": "https://www.semanticscholar.org/paper/3bf83f94503369084323b43584d88d34567bd9d7",
+      "title": "Online Anomaly Detection in Industrial IoT Networks Using a Supervised Contrastive Learning-Based Spatiotemporal Variational Autoencoder",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2025.3537864?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2025.3537864, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2238908078",
+          "name": "Lu Tang"
+        },
+        {
+          "authorId": "2345463460",
+          "name": "Ruiyu Wei"
+        },
+        {
+          "authorId": "2058910417",
+          "name": "Bingsen Xia"
+        },
+        {
+          "authorId": "2284971271",
+          "name": "Yuanchun Tang"
+        },
+        {
+          "authorId": "2108488352",
+          "name": "Weili Wang"
+        },
+        {
+          "authorId": "2336922822",
+          "name": "Qiong Huang"
+        },
+        {
+          "authorId": "2240254417",
+          "name": "Qianbin Chen"
+        }
+      ],
+      "abstract": "As industrial IoT networks evolve, they become increasingly vulnerable to cyberattacks, such as Denial of Service and backdoor attacks, which lead to anomalies in data streams (e.g., unusual spikes or drops in traffic, sudden changes in device behavior, or irregular communication patterns). To address the challenge of detecting these anomalies amidst dynamic data distributions and diverse abnormal patterns, this article proposes a supervised contrastive learning-based spatiotemporal variational autoencoder (SC-STVAE) for anomaly detection in online data streams. A multihead graph attention network (MD-GAT) is utilized to capture feature correlations, while a temporal convolution network serves as the hidden layer in the variational autoencoder. This enables SC-STVAE to learn both feature correlations and temporal dependencies. To resolve the issue of ambiguous positive and negative boundaries, supervised contrastive learning is introduced within the STVAE, improving boundary distinction and detection accuracy. To mitigate performance degradation due to data drift, an event-triggered elastic weight consolidation algorithm is introduced, which updates model parameters based on reliability thresholds. Additionally, a fuzzy entropy-weighted anomaly score, which measures the error between reconstructed data and original inputs by computing the weighted sum of the mean squared error across each dimension, is introduced. Experimental results demonstrate superior performance in terms of accuracy, recall, and F1 score compared to benchmark algorithms."
+    },
+    {
+      "paperId": "2171493a14c7a55f781244755d1fb24f7d87a39d",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2405-07865",
+        "ArXiv": "2405.07865",
+        "DOI": "10.1007/978-3-031-91767-7_15",
+        "CorpusId": 269757471
+      },
+      "url": "https://www.semanticscholar.org/paper/2171493a14c7a55f781244755d1fb24f7d87a39d",
+      "title": "AnoVox: A Benchmark for Multimodal Anomaly Detection in Autonomous Driving",
+      "venue": "ECCV Workshops",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.07865, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2275278292",
+          "name": "Daniel Bogdoll"
+        },
+        {
+          "authorId": "2301155689",
+          "name": "Iramm Hamdard"
+        },
+        {
+          "authorId": "2306794568",
+          "name": "L. Rößler"
+        },
+        {
+          "authorId": "14608623",
+          "name": "Felix Geisler"
+        },
+        {
+          "authorId": "2319308668",
+          "name": "M. Bayram"
+        },
+        {
+          "authorId": "2359965621",
+          "name": "F. Wang"
+        },
+        {
+          "authorId": "2301153619",
+          "name": "Jan Imhof"
+        },
+        {
+          "authorId": "2065939589",
+          "name": "M. Campos"
+        },
+        {
+          "authorId": "2404869324",
+          "name": "A. Tabarov"
+        },
+        {
+          "authorId": "2267360955",
+          "name": "Yitian Yang"
+        },
+        {
+          "authorId": "2238628539",
+          "name": "Hanno Gottschalk"
+        },
+        {
+          "authorId": "32244386",
+          "name": "J. M. Zöllner"
+        }
+      ],
+      "abstract": "The scale-up of autonomous vehicles depends heavily on their ability to deal with anomalies, such as rare objects on the road. In order to handle such situations, it is necessary to detect anomalies in the first place. Anomaly detection for autonomous driving has made great progress in the past years but suffers from poorly designed benchmarks with a strong focus on camera data. In this work, we propose AnoVox, the largest benchmark for ANOmaly detection in autonomous driving to date. AnoVox incorporates large-scale multimodal sensor data and spatial VOXel ground truth, allowing for the comparison of methods independent of their used sensor. We propose a formal definition of normality and provide a compliant training dataset. AnoVox is the first benchmark to contain both content and temporal anomalies."
+    },
+    {
+      "paperId": "813d2c710c2f5189c81c9c7dfc6f3dcd95cc299d",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2406-02263",
+        "ArXiv": "2406.02263",
+        "DOI": "10.1109/TPAMI.2025.3592089",
+        "CorpusId": 270226021,
+        "PubMed": "40699962"
+      },
+      "url": "https://www.semanticscholar.org/paper/813d2c710c2f5189c81c9c7dfc6f3dcd95cc299d",
+      "title": "M3DM-NR: RGB-3D Noisy-Resistant Industrial Anomaly Detection via Multimodal Denoising",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.02263, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2238285797",
+          "name": "Chengjie Wang"
+        },
+        {
+          "authorId": "2238384304",
+          "name": "Haokun Zhu"
+        },
+        {
+          "authorId": "2122806600",
+          "name": "Jinlong Peng"
+        },
+        {
+          "authorId": "2304588073",
+          "name": "Yue Wang"
+        },
+        {
+          "authorId": "2210185130",
+          "name": "Ran Yi"
+        },
+        {
+          "authorId": "2264733017",
+          "name": "Yunsheng Wu"
+        },
+        {
+          "authorId": "8452947",
+          "name": "Lizhuang Ma"
+        },
+        {
+          "authorId": "2290008427",
+          "name": "Jiangning Zhang"
+        }
+      ],
+      "abstract": "Existing industrial anomaly detection methods primarily concentrate on unsupervised learning with pristine RGB images. Yet, both RGB and 3D data are crucial for anomaly detection, and the datasets are seldom completely clean in practical scenarios. To address above challenges, this paper initially delves into the RGB-3D multi-modal noisy anomaly detection, proposing a novel noise-resistant M3DM-NR framework to leveraging strong multi-modal discriminative capabilities of CLIP. M3DM-NR consists of three stages: Stage-I introduces the Suspected References Selection module to filter a few normal samples from the training dataset, using the multimodal features extracted by the Initial Feature Extraction, and a Suspected Anomaly Map Computation module to generate a suspected anomaly map to focus on abnormal regions as reference. Stage-II uses the suspected anomaly maps of the reference samples as reference, and inputs image, point cloud, and text information to achieve denoising of the training samples through intra-modal comparison and multi-scale aggregation operations. Finally, Stage-III proposes the Point Feature Alignment, Unsupervised Feature Fusion, Noise Discriminative Coreset Selection, and Decision Layer Fusion modules to learn the pattern of the training dataset, enabling anomaly detection and segmentation while filtering out noise. Extensive experiments show that M3DM-NR outperforms state-of-the-art methods in 3D-RGB multi-modal noisy anomaly detection."
+    },
+    {
+      "paperId": "6c00264809a23316410763861fdb8527dd4d8c12",
+      "externalIds": {
+        "DOI": "10.1109/NMITCON65824.2025.11187706",
+        "CorpusId": 281987661
+      },
+      "url": "https://www.semanticscholar.org/paper/6c00264809a23316410763861fdb8527dd4d8c12",
+      "title": "Multimodal Self-Supervised Anomaly Detection in Industrial Systems Using TCN and Swin Transformer",
+      "venue": "2025 Third International Conference on Networks, Multimedia and Information Technology (NMITCON)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NMITCON65824.2025.11187706?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NMITCON65824.2025.11187706, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2267847546",
+          "name": "B. Neeraja"
+        },
+        {
+          "authorId": "2385562024",
+          "name": "Sarumathiy. C K"
+        },
+        {
+          "authorId": "2383195906",
+          "name": "Zahrah Sataar"
+        },
+        {
+          "authorId": "2385025901",
+          "name": "K. K"
+        },
+        {
+          "authorId": "2367332873",
+          "name": "Y. Ramaswamy"
+        }
+      ],
+      "abstract": "Over the past few years, anomaly detection in industrial systems has gained significant attention for ensuring safety, equipment reliability, and operational efficiency. However, the existing 1D Convolutional Neural Network (CNN)-based approach primarily relies on unimodal sensor data and struggles to capture the complex temporal dynamics. Hence, to address these limitations, a multimodal selfsupervised learning framework that integrates both sensor and image data is proposed. Initially, sensor data is collected from an industrial environment and image data is collected from an industrial defect image dataset. The collected sensor readings are then subjected to preprocessing using K Nearest Neighbor (KNN) imputation, z-score normalization, and sliding window segmentation. Similarly, the collected images are preprocessed using resizing, normalization, and feature enhancement. Next, a Temporal Convolutional Network (TCN) is employed for time-series modeling, and a Swin transformer is employed for structural image analysis. Finally, an attention-based mechanism is used to align the feature embedding and fusing, followed by anomaly detection through weighted loss-based scoring. The proposed TCN-Swin-based method achieved better results with 0.947 precision, 0.862 recall, and 0.902 f1 score."
+    },
+    {
+      "paperId": "de5ea879137b3e02ea742fd0966fabc4b6056f6d",
+      "externalIds": {
+        "DBLP": "journals/access/GaggeroAPM24",
+        "DOI": "10.1109/ACCESS.2024.3395991",
+        "CorpusId": 269512936
+      },
+      "url": "https://www.semanticscholar.org/paper/de5ea879137b3e02ea742fd0966fabc4b6056f6d",
+      "title": "Industrial Control System-Anomaly Detection Dataset (ICS-ADD) for Cyber-Physical Security Monitoring in Smart Industry Environments",
+      "venue": "IEEE Access",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/access.2024.3395991",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2024.3395991?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2024.3395991, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1646633609",
+          "name": "G. Gaggero"
+        },
+        {
+          "authorId": "2166641442",
+          "name": "Alessandro Armellin"
+        },
+        {
+          "authorId": "2013151",
+          "name": "G. Portomauro"
+        },
+        {
+          "authorId": "2166640185",
+          "name": "Mario Marchese"
+        }
+      ],
+      "abstract": "The increasing integration of cyber-physical systems in industrial environments has underscored the critical need of robust security mechanisms to counteract evolving cyber threats. To allow a full performance evaluation of these security mechanisms as well as the extension of their detection skills concerning new cyber-physical-attacks, this paper introduces an open-source dataset, called Industrial Control System - Anomaly Detection Dataset (ICS-ADD). ICS-ADD would like to be a valuable resource for researchers and practitioners who aim to develop, test, and benchmark new cyber-physical security monitoring and detection technologies. ICS-ADD comprises raw network traffic captures of an industrial control system (ICS) subjected to a variety of simulated cyber-attacks, including but not limited to denial of service (DoS), man-in-the-middle (MITM), and malware infiltration. In addition to raw network traffic, ICS-ADD includes the output of two widely utilized open-source security monitoring tools, OSSIM (Open Source Security Information Management) and Suricata, which offer insights concerning the detection and analysis capabilities of existing security frameworks against threats. The analysis appearing in this paper highlights the complexity and variety of modern cyber threats in industrial environments and the novelty of ICS-ADD with respect to publicly available datasets. The reported performance analysis of OSSIM and Suricata by using ICS-ADD reveals areas of improvement for the detection of new attacks, which will be object of future research concerning the protection of industrial control systems."
+    },
+    {
+      "paperId": "54aad64e6249a5f5f19725f3598c247873240e33",
+      "externalIds": {
+        "DBLP": "conf/apsec/SunKLY25",
+        "DOI": "10.1109/APSEC66846.2025.00054",
+        "CorpusId": 286019738
+      },
+      "url": "https://www.semanticscholar.org/paper/54aad64e6249a5f5f19725f3598c247873240e33",
+      "title": "Understanding Industrial Log Analysis: A Multi-Dataset Evaluation of Parsing and Anomaly Detection",
+      "venue": "Asia-Pacific Software Engineering Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/APSEC66846.2025.00054?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/APSEC66846.2025.00054, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317121616",
+          "name": "Yicheng Sun"
+        },
+        {
+          "authorId": "2275607294",
+          "name": "J. Keung"
+        },
+        {
+          "authorId": "2283820314",
+          "name": "Yihan Liao"
+        },
+        {
+          "authorId": "2317119841",
+          "name": "H. Yu"
+        }
+      ],
+      "abstract": "Log analysis plays a critical role in monitoring and maintaining the safety of industrial software systems. However, most existing research relies heavily on benchmark datasets derived from legacy or open-source systems, which fail to capture the structural diversity and operational complexity of real-world industrial logs. In this study, we present a comprehensive empirical evaluation of log parsing and anomaly detection models across four diverse datasets, including three collected from largescale industrial software deployed in manufacturing, process control, and energy monitoring environments. Our analysis reveals that state-of-the-art models—particularly rule-based parsers and supervised detectors—experience substantial performance degradation when applied to industrial settings. To address this gap, we introduce a unified evaluation framework using representative training subsets, and we highlight the effectiveness of semisupervised and LLM-based approaches in handling heterogeneous, low-resource log environments. The findings offer practical insights into the limitations of current log analysis techniques and suggest design principles for building more robust, domain-adaptive solutions for industrial software risk mitigation."
+    },
+    {
+      "paperId": "931aff37906761262ade125be17d9aaeb54656b5",
+      "externalIds": {
+        "ArXiv": "2505.03412",
+        "DBLP": "journals/corr/abs-2505-03412",
+        "DOI": "10.48550/arXiv.2505.03412",
+        "CorpusId": 278339006
+      },
+      "url": "https://www.semanticscholar.org/paper/931aff37906761262ade125be17d9aaeb54656b5",
+      "title": "CXR-AD: Component X-ray Image Dataset for Industrial Anomaly Detection",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.03412, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2303577076",
+          "name": "Haoyu Bai"
+        },
+        {
+          "authorId": "2146042109",
+          "name": "Jie Wang"
+        },
+        {
+          "authorId": "2223154994",
+          "name": "Gaomin Li"
+        },
+        {
+          "authorId": "2144461546",
+          "name": "Xuan Li"
+        },
+        {
+          "authorId": "2108584148",
+          "name": "Xiaohu Zhang"
+        },
+        {
+          "authorId": "2339979758",
+          "name": "Xia Yang"
+        }
+      ],
+      "abstract": "Internal defect detection constitutes a critical process in ensuring component quality, for which anomaly detection serves as an effective solution. However, existing anomaly detection datasets predominantly focus on surface defects in visible-light images, lacking publicly available X-ray datasets targeting internal defects in components. To address this gap, we construct the first publicly accessible component X-ray anomaly detection (CXR-AD) dataset, comprising real-world X-ray images. The dataset covers five industrial component categories, including 653 normal samples and 561 defect samples with precise pixel-level mask annotations. We systematically analyze the dataset characteristics and identify three major technical challenges: (1) strong coupling between complex internal structures and defect regions, (2) inherent low contrast and high noise interference in X-ray imaging, and (3) significant variations in defect scales and morphologies. To evaluate dataset complexity, we benchmark three state-of-the-art anomaly detection frameworks (feature-based, reconstruction-based, and zero-shot learning methods). Experimental results demonstrate a 29.78% average performance degradation on CXR-AD compared to MVTec AD, highlighting the limitations of current algorithms in handling internal defect detection tasks. To the best of our knowledge, CXR-AD represents the first publicly available X-ray dataset for component anomaly detection, providing a real-world industrial benchmark to advance algorithm development and enhance precision in internal defect inspection technologies."
+    },
+    {
+      "paperId": "5e4f4945046b8ba3aa4c1a77582eafa3bdc4a7b3",
+      "externalIds": {
+        "DBLP": "journals/tii/YaoTGQ25",
+        "DOI": "10.1109/TII.2024.3421600",
+        "CorpusId": 272869616
+      },
+      "url": "https://www.semanticscholar.org/paper/5e4f4945046b8ba3aa4c1a77582eafa3bdc4a7b3",
+      "title": "Anomaly Detection for MEC Enabled Hierarchical Industrial IoT With Transformer Enhanced Variational Auto Encoder",
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TII.2024.3421600?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TII.2024.3421600, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2061368726",
+          "name": "Muyan Yao"
+        },
+        {
+          "authorId": "2056606563",
+          "name": "Dan Tao"
+        },
+        {
+          "authorId": "2257361390",
+          "name": "Ruipeng Gao"
+        },
+        {
+          "authorId": "2269231093",
+          "name": "Peng Qi"
+        }
+      ],
+      "abstract": "Most existing works in Industrial Internet of Things (IIoT) anomaly detection either depend on computationally intensive models that exceed the capabilities of multiaccess edge computing (MEC) servers, or lightweight models that lack robustness, making them unadaptable in IIoT infrastructures. To address these challenges, we propose THREADS, a hierarchical anomaly detection framework tailored for IIoT applications. The Instance thread utilizes an efficient variational auto encoder to produce instant feedback and offloads most of the workload to MECs. On the other hand, the Shadow thread employs an attention-enhanced transformer discriminator to examine low-confidence results in the cloud. Experimental results on five large-scale datasets show THREADS achieves an average F1-Score of 0.8537 in the hierarchical mode where most of the workloads are handled by MECs, and the random access memory and CPU usage is reduced by up to 29% and 88%, respectively. Meanwhile, THREADS achieves an F1-Score of 0.8563 in a cloud-based mode, consistently outperforming state-of-the-art approaches."
+    },
+    {
+      "paperId": "990d7687da573f41c6fd5e0c6f154260a492aa85",
+      "externalIds": {
+        "DBLP": "journals/tii/WangZQW25",
+        "DOI": "10.1109/TII.2025.3558341",
+        "CorpusId": 278183573
+      },
+      "url": "https://www.semanticscholar.org/paper/990d7687da573f41c6fd5e0c6f154260a492aa85",
+      "title": "MAGE: Multiperiodic Adaptive Graph Evolution Guided Anomaly Detection in Industrial IoT",
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TII.2025.3558341?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TII.2025.3558341, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2154559578",
+          "name": "Weixu Wang"
+        },
+        {
+          "authorId": "2306093689",
+          "name": "Xiaobo Zhou"
+        },
+        {
+          "authorId": "2054332918",
+          "name": "Tie Qiu"
+        },
+        {
+          "authorId": "2276535462",
+          "name": "Lei Wang"
+        }
+      ],
+      "abstract": "Identifying and detecting anomalies in industrial Internet of Things (IIoT) systems is vital for maintaining industrial safety. In IIoT scenarios, various industrial machines operate with differing periods that overlap temporally, resulting in complex multiperiodic temporal patterns. In addition, varying production tasks and environmental conditions alter sensor dependencies, complicating the modeling of intersensor dependency topologies. Existing methods, which rely on a fixed global topologies, struggle to adapt to these complex multiperiodic temporal patterns and evolving dependency topologies, leading to low anomaly detection accuracy. To tackle these problems, we propose MAGE, a multiperiodic adaptive graph evolution guided anomaly detection framework. MAGE first segments sensor data into distinct temporal periods, then employs a dynamic graph structure learning module to model evolving dependencies. Finally, a global-local association discrepancy module is employed to enhance the anomaly detection capability. Comprehensive experiments on five real-world datasets demonstrate MAGE's superior performance compared to state-of-the-art approaches."
+    },
+    {
+      "paperId": "921bc173449a7d0399c95079e5b3d7685ca31e22",
+      "externalIds": {
+        "ArXiv": "2410.00713",
+        "CorpusId": 273023010
+      },
+      "url": "https://www.semanticscholar.org/paper/921bc173449a7d0399c95079e5b3d7685ca31e22",
+      "title": "RAD: A Dataset and Benchmark for Real-Life Anomaly Detection with Robotic Observations",
+      "venue": "",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.00713, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268495679",
+          "name": "Kaichen Zhou"
+        },
+        {
+          "authorId": "2355792838",
+          "name": "Xinhai Chang"
+        },
+        {
+          "authorId": "2335518582",
+          "name": "Taewhan Kim"
+        },
+        {
+          "authorId": "2452143193",
+          "name": "Jiadong Zhang"
+        },
+        {
+          "authorId": "2292166867",
+          "name": "Yang Cao"
+        },
+        {
+          "authorId": "2402855669",
+          "name": "Chufei Peng"
+        },
+        {
+          "authorId": "2332346476",
+          "name": "Fangneng Zhan"
+        },
+        {
+          "authorId": "2323766037",
+          "name": "Hao Zhao"
+        },
+        {
+          "authorId": "2293669444",
+          "name": "Hao Dong"
+        },
+        {
+          "authorId": "2256995478",
+          "name": "Kai Ming Ting"
+        },
+        {
+          "authorId": "2257079130",
+          "name": "Ye Zhu"
+        }
+      ],
+      "abstract": "Anomaly detection is essential for robotic perception and industrial inspection, yet most benchmarks are collected under controlled conditions with fixed viewpoints and stable illumination. These settings do not reflect robotic deployment, where camera pose, lighting, and surface reflectance vary continuously. We present RAD (Realistic Anomaly Detection), a robot-captured multi-view benchmark for pose-agnostic anomaly detection. RAD contains 5,848 RGB images from 13 everyday object categories, captured from 68 viewpoints per object with a Franka robotic arm and an RGB-D camera under uncontrolled lighting. The dataset covers four realistic defect types: scratched, missing, stained, and squeezed, with pixel-level annotations for localization. We benchmark representative 2D feature-based methods, 3D reconstruction pipelines, and vision-language models under a realistic setting in which test poses are unknown. Results show a clear gap between performance on conventional benchmarks and performance on RAD. Strong 2D feature-embedding methods remain the most reliable at image-level detection, whereas 3D approaches are more competitive for pixel-level localization but remain vulnerable to reflective materials, geometric symmetry, and sparse viewpoint coverage. Vision-language models perform poorly in both classification and localization. RAD provides a challenging testbed for robust robotic inspection and highlights open problems in jointly modeling appearance, geometry, and viewpoint uncertainty. Our website and code are available at https://chang-xinhai.github.io/rad-website/."
+    },
+    {
+      "paperId": "d3ab1d17f5fe568d0fb2942eb986ca44aa8305c0",
+      "externalIds": {
+        "ArXiv": "2507.21619",
+        "DBLP": "journals/corr/abs-2507-21619",
+        "DOI": "10.48550/arXiv.2507.21619",
+        "CorpusId": 280338041
+      },
+      "url": "https://www.semanticscholar.org/paper/d3ab1d17f5fe568d0fb2942eb986ca44aa8305c0",
+      "title": "EMIT: Enhancing MLLMs for Industrial Anomaly Detection via Difficulty-Aware GRPO",
+      "venue": "arXiv.org",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.21619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2192215874",
+          "name": "Wei Guan"
+        },
+        {
+          "authorId": "2158820459",
+          "name": "Jun Lan"
+        },
+        {
+          "authorId": "2384061931",
+          "name": "Jian Cao"
+        },
+        {
+          "authorId": "2374401963",
+          "name": "Hao Tan"
+        },
+        {
+          "authorId": "2267508970",
+          "name": "Huijia Zhu"
+        },
+        {
+          "authorId": "2289900569",
+          "name": "Weiqiang Wang"
+        }
+      ],
+      "abstract": "Industrial anomaly detection (IAD) plays a crucial role in maintaining the safety and reliability of manufacturing systems. While multimodal large language models (MLLMs) show strong vision-language reasoning abilities, their effectiveness in IAD remains limited without domain-specific adaptation. In this work, we propose EMIT, a unified framework that enhances MLLMs for IAD via difficulty-aware group relative policy optimization (GRPO). EMIT constructs a multi-task IAD dataset and utilizes GPT-generated object text descriptions to compensate for missing defective images. For few-shot anomaly detection, it integrates a soft prompt and heatmap-guided contrastive embeddings derived from patch-level comparisons. To better handle difficult data samples, i.e., cases where the MLLM struggles to generate correct answers, we propose a difficulty-aware GRPO that extends the original GRPO by incorporating a response resampling strategy to ensure the inclusion of correct answers in the sampled responses, as well as an advantage reweighting mechanism to strengthen learning from such difficult data samples. Extensive experiments on the MMAD benchmark demonstrate that EMIT significantly enhances the IAD performance of MLLMs, achieving an average improvement of 7.77\\% over the base model (InternVL3-8B) across seven tasks."
+    },
+    {
+      "paperId": "27a152c5a90f2bc244a1ae348b2ccabf3399ebec",
+      "externalIds": {
+        "DOI": "10.1109/ACCESS57397.2023.10199711",
+        "CorpusId": 260724304
+      },
+      "url": "https://www.semanticscholar.org/paper/27a152c5a90f2bc244a1ae348b2ccabf3399ebec",
+      "title": "A Hybrid Machine Learning Approach to Anomaly Detection in Industrial IoT",
+      "venue": "Access",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS57397.2023.10199711?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS57397.2023.10199711, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2230580243",
+          "name": "Jayesh T P"
+        },
+        {
+          "authorId": "2228197978",
+          "name": "Pandiaraj K"
+        },
+        {
+          "authorId": "2146764832",
+          "name": "Arya Paul"
+        },
+        {
+          "authorId": "2119161061",
+          "name": "Ranjeesh R. Chandran"
+        },
+        {
+          "authorId": "2056832674",
+          "name": "Prasanth P Menon"
+        }
+      ],
+      "abstract": "IIoT is the integration of conventional IoT principles into industrial operations. IIoT has a wide range of practical applications, including but not limited to supply chain management, connected cars, smart grids, smart cities, and smart homes. Regrettably, these systems are increasingly becoming the focus of cybercrime attacks. Machine learning is a promising technology for creating and implementing resilient security measures in IIoT networks. A new and innovative approach to detecting cyberattacks in the IIoT is proposed in this document, through the use of a hybrid machine classifier (HMC). The HMC model is a unique amalgamation of different ML models, such as K-nearest neighbor (KNN), extra trees (ET), gradient boosting (GB), AdaBoost (AB), linear discriminant analysis (LDA), ), naive Bayes (NB), support vector machine (SVM), random forest (RFlinear regression (LR), and classification and regression tree (CART). The DS2OS dataset is used to evaluate the proposed method's effectiveness. Several performance metrics, including recall, precision, accuracy, specificity, F1 score, detection rate, and ROC are used to evaluate the system's performance. The proposed model successfully distinguishes between normal and attack traffic, achieving an accuracy rate of 99.7% and 99.8%, respectively. To evaluate the effectiveness of the proposed method, its performance metrics were compared to those of other advanced attack detection algorithms. The outcomes demonstrated that the proposed model outperformed other ML and DL-based techniques"
+    },
+    {
+      "paperId": "fbff002f3c8d48a8bb5597fae259d2636b686196",
+      "externalIds": {
+        "ArXiv": "2409.06367",
+        "DBLP": "journals/corr/abs-2409-06367",
+        "DOI": "10.48550/arXiv.2409.06367",
+        "CorpusId": 272551103
+      },
+      "url": "https://www.semanticscholar.org/paper/fbff002f3c8d48a8bb5597fae259d2636b686196",
+      "title": "Texture-AD: An Anomaly Detection Dataset and Benchmark for Real Algorithm Development",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.06367, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2320307846",
+          "name": "Tianwu Lei"
+        },
+        {
+          "authorId": "2321155916",
+          "name": "Bohan Wang"
+        },
+        {
+          "authorId": "2320455079",
+          "name": "Silin Chen"
+        },
+        {
+          "authorId": "2320370488",
+          "name": "Shurong Cao"
+        },
+        {
+          "authorId": "39058451",
+          "name": "Ningmu Zou"
+        }
+      ],
+      "abstract": "Anomaly detection is a crucial process in industrial manufacturing and has made significant advancements recently. However, there is a large variance between the data used in the development and the data collected by the production environment. Therefore, we present the Texture-AD benchmark based on representative texture-based anomaly detection to evaluate the effectiveness of unsupervised anomaly detection algorithms in real-world applications. This dataset includes images of 15 different cloth, 14 semiconductor wafers and 10 metal plates acquired under different optical schemes. In addition, it includes more than 10 different types of defects produced during real manufacturing processes, such as scratches, wrinkles, color variations and point defects, which are often more difficult to detect than existing datasets. All anomalous areas are provided with pixel-level annotations to facilitate comprehensive evaluation using anomaly detection models. Specifically, to adapt to diverse products in automated pipelines, we present a new evaluation method and results of baseline algorithms. The experimental results show that Texture-AD is a difficult challenge for state-of-the-art algorithms. To our knowledge, Texture-AD is the first dataset to be devoted to evaluating industrial defect detection algorithms in the real world. The dataset is available at https://XXX."
+    },
+    {
+      "paperId": "ee06812773ab2613d9d8a4d06f0f6466ae3d7db7",
+      "externalIds": {
+        "DOI": "10.1109/CIES64955.2025.11007631",
+        "CorpusId": 278823381
+      },
+      "url": "https://www.semanticscholar.org/paper/ee06812773ab2613d9d8a4d06f0f6466ae3d7db7",
+      "title": "Digital Twin-Based Federated Transfer Learning for Anomaly Detection in Industrial IoT",
+      "venue": "IEEE Symposium on Computational Intelligence for Engineering Solutions",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CIES64955.2025.11007631?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CIES64955.2025.11007631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1581604399",
+          "name": "Mohammed Ayalew Belay"
+        },
+        {
+          "authorId": "2265981625",
+          "name": "Adil Rasheed"
+        },
+        {
+          "authorId": "2156408339",
+          "name": "P. Rossi"
+        }
+      ],
+      "abstract": "Anomaly detection is increasingly becoming crucial for maintaining the safety, reliability, and efficiency of industrial systems. Recently, with the advent of data-driven decisionmaking, several statistical and machine-learning methods have been proposed. However, these methods face several challenges, such as dependence on only real sensor datasets, limited labeled data, high false alarm rates, and privacy concerns due to centralized data processing. To address these issues, we propose a digital twin-based anomaly detection approach using federated transfer learning. Digital twins allow effective anomaly detection without requiring extensive real-world failure data. The integration of digital twins with federated learning offers a powerful solution to the challenges of anomaly detection in industrial systems. The proposed method integrates digital twin data for initial training with real physical system data for model refinement. Federated learning enhances this process by maintaining data privacy through the sharing of model updates instead of raw data. The proposed combination improves model generalization, training efficiency, and performance while ensuring data privacy. We perform an extensive analysis using publicly available datasets from real-world digital and physical asset counterparts. The results demonstrate significant improvements in anomaly detection performance, highlighting the effectiveness of integrating digital twins with federated learning."
+    },
+    {
+      "paperId": "e05531f801325412b05591b802e9e89722540056",
+      "externalIds": {
+        "DOI": "10.1109/LSENS.2025.3554491",
+        "CorpusId": 277355808
+      },
+      "url": "https://www.semanticscholar.org/paper/e05531f801325412b05591b802e9e89722540056",
+      "title": "Fed-RAM: Federated Learning-Based Robust and Adaptive Method for Anomaly Detection in Industrial IoT Systems",
+      "venue": "IEEE Sensors Letters",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/LSENS.2025.3554491?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/LSENS.2025.3554491, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2187502384",
+          "name": "Hussain Nizam"
+        },
+        {
+          "authorId": "2352405903",
+          "name": "Xiopeng Hu"
+        },
+        {
+          "authorId": "30072196",
+          "name": "Samra Zafar"
+        },
+        {
+          "authorId": "2352944154",
+          "name": "Fan Wang"
+        }
+      ],
+      "abstract": "Traditional machine learning (ML) approaches for anomaly detection rely on centralized data and struggle to manage the complexity, privacy, and scale of data generated by the industrial Internet of Things (IIoT). Recently, Federated learning (FL) offers a viable solution by enabling diverse IIoT devices and smart machines to collaboratively train high-quality ML models without transmitting sensitive data to ensure privacy and data security. However, the widespread adoption of FL in heterogeneous IIoT systems is primarily caused by model training inefficiencies, delays, and communication overhead, specifically for time-sensitive IIoT applications. With this focus, in this letter, an FL-based robust and adaptive method for anomaly detection, Fed-RAM, is proposed for edge-assisted IIoT. Specifically, we design adaptive mechanisms aiming to improve anomaly detection through an adaptive anomaly score technique based on the reconstruction error that enables local models to dynamically adjust the anomaly threshold according to the unique data distribution of individual edge devices. By incorporating adaptive mechanisms at each edge device, Fed-RAM ensures that only significant and critical updates are communicated to the server for aggregation. The experimental results obtained on two widely known datasets, i.e., MNIST and CIFAR-10, demonstrate that Fed-RAM reduces communication costs by approximately 50$\\%$ and improves anomaly detection accuracy by 14$\\%$ compared to baseline models."
+    },
+    {
+      "paperId": "edb7856f5514d4a9187335af491e1c776660e493",
+      "externalIds": {
+        "DOI": "10.23919/INDIACom66777.2025.11115572",
+        "CorpusId": 280705568
+      },
+      "url": "https://www.semanticscholar.org/paper/edb7856f5514d4a9187335af491e1c776660e493",
+      "title": "Real-Time Anomaly Detection in Industrial IoT: AI-Based Predictive Maintenance",
+      "venue": "International Conference on Computing for Sustainable Global Development",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.23919/INDIACom66777.2025.11115572?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.23919/INDIACom66777.2025.11115572, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223443246",
+          "name": "Ayushi Chopra"
+        },
+        {
+          "authorId": "2248028250",
+          "name": "Jyoti Gupta"
+        },
+        {
+          "authorId": "134828195",
+          "name": "Vanshika Bhatia"
+        },
+        {
+          "authorId": "2155754179",
+          "name": "Sheel Nidhi Tripathi"
+        },
+        {
+          "authorId": "2376449819",
+          "name": "Jagriti Basera"
+        },
+        {
+          "authorId": "2261458370",
+          "name": "Sakshi Aggarwal"
+        },
+        {
+          "authorId": "2376449357",
+          "name": "Rinku Sethi"
+        },
+        {
+          "authorId": "2376449817",
+          "name": "R. Trivedi"
+        }
+      ],
+      "abstract": "The increasing adoption of the Industrial Internet of Things (IIoT) has enabled real-time monitoring of industrial systems, yet unexpected failures remain a critical challenge. This paper presents an AI-based anomaly detection framework for real-time predictive maintenance in IIoT networks. The proposed approach leverages machine learning and deep learning techniques, including Isolation Forest, Autoencoders, and Long Short-Term Memory (LSTM) networks, to detect anomalies in sensor data streams. The system is evaluated using publicly available IIoT datasets, achieving an accuracy of 97.3%, an F1score of 96.9%, and a false positive rate of 1.9%. The hybrid LSTM-CNN model outperformed traditional methods, reducing detection latency to 120 milliseconds and optimizing predictive maintenance schedules. This indicates that real-time AI-based anomaly detection enhances predictive maintenance in the industrial environment."
+    },
+    {
+      "paperId": "74b6e5b6ed61b98a3c29273afac0b1b4eb001db3",
+      "externalIds": {
+        "PubMedCentral": "13181063",
+        "DOI": "10.1038/s41598-026-42041-w",
+        "CorpusId": 287039114,
+        "PubMed": "41917091"
+      },
+      "url": "https://www.semanticscholar.org/paper/74b6e5b6ed61b98a3c29273afac0b1b4eb001db3",
+      "title": "A zero-trust digital twin framework for privacy-preserving multi-dataset intrusion detection in industrial IoT with lightweight blockchain auditing",
+      "venue": "Scientific Reports",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-026-42041-w_reference.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13181063, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2294311822",
+          "name": "Shailendra Mishra"
+        },
+        {
+          "authorId": "2427222774",
+          "name": "Tariq Saleh M. Aldafas"
+        },
+        {
+          "authorId": "2123183946",
+          "name": "Naif S. Alshammari"
+        }
+      ],
+      "abstract": "Industrial IoT (IIoT) environments face growing cyber threats due to device heterogeneity and cyber-physical integration. This study proposes a Zero Trust-enhanced intrusion detection framework integrating deep learning anomaly detection, differential privacy, lightweight blockchain-inspired hash-chained ledger and Digital Twin-based situational awareness and visualization of device trust states, designed for low-latency inference suitable for near-real-time IIoT monitoring .A unified dataset was constructed by merging NSL-KDD, CICIDS-2017, and IoT-23 (2,513,419 raw samples unified to 143 features, balanced to 100,000 samples across Normal, DoS, Probe, R2L, U2R classes using SMOTE). Mutual information-based feature selection reduced features to 25. Optimized Multilayer Perceptron (MLP) and CNN–BiLSTM models achieved 89–91% accuracy and 0.89–0.91 macro F1-score, with near-perfect rare-attack detection (F1 ≈ 1.00 for R2L/U2R). Differential privacy (Laplace, ε = 25) reduced accuracy to ~ 78%, quantifying the privacy-utility trade-off. The decoupled Zero-Trust Manager dynamically updates trust scores based on prediction confidence, with tamper-evident SHA-256 hash-chained logging adding negligible latency (~ 1.04–1.06 s for 500 samples). This lightweight, centralized design offers strong cross-domain generalization and deployability for resource-constrained IIoT."
+    },
+    {
+      "paperId": "b6938c520c6bba58fc9b8b350c824495c6870a2e",
+      "externalIds": {
+        "DOI": "10.55529/jaimlnn.52.79.87",
+        "CorpusId": 288848530
+      },
+      "url": "https://www.semanticscholar.org/paper/b6938c520c6bba58fc9b8b350c824495c6870a2e",
+      "title": "Temporal graph attention networks for real-time anomaly detection in industrial IOT: a multi-scale hierarchical approach (TGA-Net)",
+      "venue": "Journal of Artificial Intelligence, Machine Learning and Neural Network",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://journal.hmjournals.com/index.php/JAIMLNN/article/download/6342/4031",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55529/jaimlnn.52.79.87?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55529/jaimlnn.52.79.87, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "73387704",
+          "name": "R. Asaad"
+        }
+      ],
+      "abstract": "In the Industrial Internet of Things (IIoT) networks, anomaly detection is a safety-critical task that is challenging due to dynamic, non-stationary and graph-structured sensor data. Current methods do not consider the sensor topology, either adopting a fixed one or treating time-series independently, ignoring spatial correlations among sensors. In this paper, the novel multi-scale hierarchical architecture of TGA-Net is proposed to capture temporal dependencies within a sensor as well as spatial correlation between different sensors by two novel modules, Gated Dilated Causal Convolutional Layer (GDCC) and Dynamic Multi-Head Graph Attention (DMHGA) layer, respectively. TGA-Net proposes a learnable Cross-Scale Hierarchical Fusion (CSHF) module to fuse the anomaly evidence collected from three temporal resolutions (1 s, 10 s, 60 s) in a learnable gating mechanism, and an adaptive graph structure that is updated at each inference step, according to the similarity of node features. Evaluation on four public benchmarks for IIoT (SWAT, WADI, MSL and SMD) shows state-of-the-art performance. On SWAT, TGA-Net obtains an F1 score of 95.7% while the best-reported baseline is 91.3% with an inference latency of 8.3ms/window, where it outperforms the baseline by 4.4%. TGA-Net is well suited for real-time deployment. Ablation tests have verified that each architectural element is a valuable one with regard to overall performance. Interpretability analysis by visualisation of attention weights shows patterns of anomaly localisation consistent with expert labelling of ground truth anomalies, thereby giving actionable diagnostic information beyond just identifying whether an anomaly occurred or not, and explaining its occurrence physically. Future research will include variants of online continual learning to deal with the problem of distribution shift without periodic retraining, and extension of the framework for heterogeneous, federated IIoT environments."
+    },
+    {
+      "paperId": "67f6753983bed02d93ca8539554395bd6be05519",
+      "externalIds": {
+        "DOI": "10.55041/ijsrem54379",
+        "CorpusId": 283233440
+      },
+      "url": "https://www.semanticscholar.org/paper/67f6753983bed02d93ca8539554395bd6be05519",
+      "title": "Real-Time Anomaly Detection in Smart Grids,Industrial IOT,Autonomous Vehicles.",
+      "venue": "International Journal of Scientific Research in Engineering and Management",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55041/ijsrem54379?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55041/ijsrem54379, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2393985783",
+          "name": "Suhas Bhimrao Veer"
+        }
+      ],
+      "abstract": "Abstract - The rapid expansion of cyber-physical systems such as smart grids, Industrial Internet of Things (IIoT),and autonomous vehicles has increased the demand for reliable, real-time anomaly detection systems.These systems are critical for maintaining operational safety,reducing downtime, optimizing energy usage,and preventing cyberattacks. However,traditional anomaly detection approaches suffer from high latency,limited scalability, and lack of adaptability to dynamic environments.This paper proposes an integrated real-time anomaly detection framework using a hybrid approach combining Edge AI,recurrent neural networks (RNN-LSTM), and unsupervised clustering (Isolation Forest). The model is deployed on edge devices for low-latency processing and uses a multi-stream data fusion mechanism to analyze sensor,communication, and control signals simultaneously.Experimental simulations across smart grid load datasets, IIoT factory sensor datasets,and vehicular CAN-bus datasets show detection accuracies of 96.4%, 94.8%, and 97.1%,respectively.The proposed solution demonstrates superior performance in terms of detection speed, false-positive rate, and adaptability compared to traditional systems, making it suitable for high-reliability real-time environments.\n\nKey Words:  Real-time anomaly detection,Smart grid security, Industrial IoT,Autonomous vehicles,Edge AI, RNN-LSTM, Isolation Forest,Cyber-physical systems."
+    },
+    {
+      "paperId": "db8145fd1066fedd6672f59ef552a5dc388b315b",
+      "externalIds": {
+        "DOI": "10.1109/CICT67193.2025.11399172",
+        "CorpusId": 286016035
+      },
+      "url": "https://www.semanticscholar.org/paper/db8145fd1066fedd6672f59ef552a5dc388b315b",
+      "title": "An Integrated GCN–GAT–AE Framework for Robust Anomaly Detection in Industrial IoT Environments",
+      "venue": "Conference Information and Communication Technology",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CICT67193.2025.11399172?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CICT67193.2025.11399172, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2419540589",
+          "name": "Suhani Panda"
+        },
+        {
+          "authorId": "2136280313",
+          "name": "S. B"
+        },
+        {
+          "authorId": "2329228720",
+          "name": "Harsha Rajkumar"
+        },
+        {
+          "authorId": "2360776034",
+          "name": "S. Palani"
+        }
+      ],
+      "abstract": "Over the past few years, the Industrial Internet of Things (IIoT) has quickly changed long established industries by connecting large networks of smart sensors, machines, and devices to permit real-time monitoring, data driven decision making, and automation. Yet, the growing scale and complexity of IIoT environments also make them highly exposed to various cyber threats and anomalies, which can disrupt operations, cause financial losses, and create danger. Existing anomaly detection methods often struggle to accurately capture the complex spatial, temporal, and structural dependencies in IIoT data, especially in real time and under resource-constrained edge deployments.To address these issues, a seven -stage hybrid deep learning framework combining Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), Autoencoders (AE), and residual connections is proposed for robust real-time anomaly detection in Industrial Internet of Things (IIoT) environments. The architecture shows spatial, temporal, and structural relationships among IIoT sensor data by transforming tabular traffic logs from the Edge-IIoTset dataset into graph representations using cosine-based KNN connectivity. This allows the model to detect subtle and complex anomalies in highly dynamic IIoT systems. By combining attention-based feature refinement with reconstruction loss, the model enhances sensitivity to rare attacks and improves robustness. The proposed approach achieves high performance on key metrics of 95.0% classification accuracy, ROC-AUC of 0.98, PR-AUC of 0.97, and an inference latency of just 8.1 milliseconds which makes it highly suitable for deployment on edge devices in real-time industrial monitoring systems."
+    },
+    {
+      "paperId": "233fb49f10333fdca553cd1cb1bc28a0a8fd0ead",
+      "externalIds": {
+        "DOI": "10.1109/GCWCN66157.2025.11448332",
+        "CorpusId": 286777596
+      },
+      "url": "https://www.semanticscholar.org/paper/233fb49f10333fdca553cd1cb1bc28a0a8fd0ead",
+      "title": "Employ the Machine Learning Models for immediate Predictive Diagnostics: Anomaly detection of Industrial IoT",
+      "venue": "2025 IEEE 3rd Global Conference on Wireless Computing and Networking (GCWCN)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/GCWCN66157.2025.11448332?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/GCWCN66157.2025.11448332, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2302591997",
+          "name": "Jubert R. Pagunuran"
+        },
+        {
+          "authorId": "2345995925",
+          "name": "Khaled AlQawasmi"
+        },
+        {
+          "authorId": "2271297261",
+          "name": "V. Pandi"
+        },
+        {
+          "authorId": "2329216028",
+          "name": "Navyatha Ravi"
+        },
+        {
+          "authorId": "2313102524",
+          "name": "M. Dinesh"
+        },
+        {
+          "authorId": "2286435415",
+          "name": "A.Rajalingam"
+        }
+      ],
+      "abstract": "Industrial Internet of Things (IIoT) has transformed plants and factories, facilitating real-time monitoring, automation, and informed decision-making. Nevertheless, in such complex data-rich environments, identification of the fault in a timely manner, detection of the anomaly, has become one of the most important challenges. Unresolved anomalies in IIoT systems can cause unscheduled maintenance, slippage in quality, or even catastrophic failure. The conventional rule-based models are not capable of accommodating the complicated dynamics and the non-linear dependencies that widely exist in industrial systems. In this study, the mixture machine learning (ML) models are applied for real-time predictive diagnostics and anomaly detection in the IIoT networks. System Overview The proposed system combines both supervised and unsupervised ML models getting the best of each of them such as Random Forest, Support Vector Machine (SVM), Autoencoders, Isolation Forest, Long Short-Term Memory (LSTM) networks. These models are learned and tested over massive time-series sensor data derived from IIoT ready industrial machines (e.g., pumps, motors, turbines, and conveyors). Method of feature extraction and the detection of temporal patterns are applied to find the abnormal behavior in the operational parameters: temperature, vibration, pressure and energy consumption. One of the key contributions in our study is that models could be deployed in real time and this is made possible by edge computation. By moving ML inference to the edge, the system provides quick response times even under bandwidth-constrained conditions. Alongside, long-term analytics trend forecasting and cross-facility model improvement is made possible via cloud-based aggregation. The combined alerting and strategic system along with hybrid structure allows operators to avoid catastrophic failures before they occur. Experiments on benchmark IIoT datasets show that the proposed models achieved excellent detection performance, e.g., more than 95% precision and recall for the temporal based model-LSTM. The ML-based approach is shown to vastly outperform conventional threshold-based detections in the presence of noisy, multivariate and asynchronous data. In addition, machine behavior evolves, and with it the ability to learn adapts diagnostic accuracy. This work underlines the disruptive nature of the ML for predictive maintenance and real-time industry diagnosis. Through a transition from reactive to proactive approaches, the developed framework minimizes downtime, lowers maintenance costs, and extends asset life. Incorporating smart diagnostics into the IIoT networks not only promotes operational efficiency, but also provides an infrastructural building block for the next-generation autonomous industrial systems that are data, intelligence, and connectivity enabled."
+    },
+    {
+      "paperId": "6121582d2d062d9e8b11127f18da6e17f508d5d0",
+      "externalIds": {
+        "DOI": "10.55529/jaimlnn.52.48.57",
+        "CorpusId": 288729860
+      },
+      "url": "https://www.semanticscholar.org/paper/6121582d2d062d9e8b11127f18da6e17f508d5d0",
+      "title": "BlocksecIOT: a lightweight ecc-block-chain framework for decentralized device authentication and anomaly detection in industrial IOT environments",
+      "venue": "Journal of Artificial Intelligence, Machine Learning and Neural Network",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://journal.hmjournals.com/index.php/JAIMLNN/article/download/6334/4026",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55529/jaimlnn.52.48.57?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55529/jaimlnn.52.48.57, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "89997000",
+          "name": "Saman M. Almufti"
+        }
+      ],
+      "abstract": "The attack surface of the Industrial Internet of Things (IIOT) is rapidly expanding, exposing systems to threats such as device impersonation, Sybil attacks, and insider adversaries. Traditional centralized Public Key Infrastructure (PKI) schemes struggle to address these challenges due to single points of failure, certificate revocation delays, and computational overhead on resource-constrained devices. This paper proposes BlockSecIOT, a lightweight authentication and anomaly detection framework for heterogeneous IIOT environments. The framework integrates ECC-256 for efficient key management, Hyperledger Fabric for decentralized device identity governance, and a Deep Autoencoder with Isolation Forest (DAE-IF) for real-time anomaly detection without labeled attack data. Smart contracts implement Role-Based Access Control (RBAC) and automatic device quarantine, enabling closed-loop security response. BlockSecIOT employs a three-message mutual authentication protocol based on ECDH-derived session keys and ECDSA verification, eliminating dependence on centralized certificate authorities. Experimental evaluation achieved F1-scores of 0.963, 0.978, and 0.941 on BATADAL, SWaT, and UNSW-NB15 datasets, respectively. The framework recorded authentication latency of 8.7 ms, detection latency of 12.4 ms, and combined response time of 21.1 ms, within the 50 ms control-cycle requirement. Hyperledger Fabric supported 847 transactions per second with 500 concurrent devices and 2.1-second block finality, while each device required only 3.1 KB storage. Results demonstrate the practicality, scalability, robustness, and energy efficiency of BlockSecIOT for enterprise-grade IIOT security deployment, ensuring resilient and secure communication across industrial cyber-physical infrastructures."
+    }
+  ]
+}

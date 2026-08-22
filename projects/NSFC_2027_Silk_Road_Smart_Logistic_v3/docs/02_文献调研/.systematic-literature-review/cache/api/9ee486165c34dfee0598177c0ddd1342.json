@@ -1,0 +1,31 @@
+{
+  "total": 1,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "25eb609e5516e25d32d88c5922caaf9a53d5fd25",
+      "title": "A systematic literature review of supply chain decision making supported by the Internet of Things and Big Data Analytics",
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1016/j.cie.2020.107076",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cie.2020.107076?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cie.2020.107076, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "74409403",
+          "name": "M. Koot"
+        },
+        {
+          "authorId": "143711539",
+          "name": "M. Mes"
+        },
+        {
+          "authorId": "144357127",
+          "name": "M. Iacob"
+        }
+      ],
+      "abstract": "The willingness to invest in Internet of Things (IoT) and Big Data Analytics (BDA) seems not to depend on supply nor demand of technological innovations. The required sensing and communication technologies have already matured and became affordable for most organizations. Businesses on the other hand require more operational data to address the dynamic and stochastic nature of supply chains. So why should we wait for the actual implementation of tracking and monitoring devices within the supply chain itself? This paper provides an objective overview of state-of-the-art IoT developments in today ’ s supply chain and logistics research. The main aim is to find examples of academic literature that explain how organizations can incorporate real-time data of physically operating objects into their decision making. A systematic literature review is conducted to gain insight into the IoT ’ s analytical capabilities, resulting into a list of 79 cross-disciplinary publications. Most researchers integrate the newly developed measuring devices with more traditional ICT infrastructures to either visualize the current way of operating, or to better predict the system ’ s future state. The resulting health/condition monitoring systems seem to benefit production environments in terms of dependability and quality, while logistics operations are becoming more flexible and faster due to the stronger emphasis on prescriptive analytics (e.g., association and clustering). Further research should extend the IoT ’ s perception layer with more context-aware devices to promote autonomous decision making, invest in wireless communication networks to stimulate distributed data processing, bridge the gap in between predictive and prescriptive analytics by enriching the spectrum of pattern recognition models used, and validate the benefits of the monitoring systems developed."
+    }
+  ]
+}

@@ -1,0 +1,1349 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T18:25:20Z",
+      "timestamp": 1786991120911,
+      "version": "3.56.0"
+    },
+    "reference-count": 100,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2024-04-01T00:00:00Z",
+          "timestamp": 1711929600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2024-04-01T00:00:00Z",
+          "timestamp": 1711929600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              5
+            ]
+          ],
+          "date-time": "2024-01-05T00:00:00Z",
+          "timestamp": 1704412800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PID2022-141813OB-I00"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PID2022-141813OB-I00"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003359",
+        "name": "Generalitat Valenciana",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100003359",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004837",
+        "name": "Ministerio de Ciencia e Innovación",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "IJC2018-035017-I"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "IJC2018-035017-I"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004837",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004837",
+        "name": "Ministerio de Ciencia e Innovación",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PID2019-104065GA-I00"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PID2019-104065GA-I00"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004837",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100008530",
+        "name": "European Regional Development Fund",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008530",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Internet of Things"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.iot.2024.101063",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          11
+        ]
+      ],
+      "date-time": "2024-01-11T03:41:09Z",
+      "timestamp": 1704944469000
+    },
+    "page": "101063",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 89,
+    "special_numbering": "C",
+    "title": [
+      "Anomaly detection based on Artificial Intelligence of Things: A Systematic Literature Mapping"
+    ],
+    "prefix": "10.1016",
+    "volume": "25",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9304-0719",
+        "authenticated-orcid": false,
+        "given": "Sergio",
+        "family": "Trilles",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2524-6299",
+        "authenticated-orcid": false,
+        "given": "Sahibzada Saadoon",
+        "family": "Hammad",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6668-2700",
+        "authenticated-orcid": false,
+        "given": "Ditsuhi",
+        "family": "Iskandaryan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.iot.2024.101063_b1",
+        "series-title": "Manual of Digital Earth",
+        "first-page": "387",
+        "article-title": "Internet of things",
+        "author": "Granell",
+        "year": "2020"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2024.101063_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "637",
+        "DOI": "10.1109/JIOT.2016.2579198",
+        "article-title": "Edge computing: Vision and challenges",
+        "volume": "3",
+        "author": "Shi",
+        "year": "2016",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2024.101063_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1109/MC.2016.145",
+        "article-title": "The promise of edge computing",
+        "volume": "49",
+        "author": "Shi",
+        "year": "2016",
+        "journal-title": "Computer"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/j.future.2019.02.050",
+        "article-title": "Edge computing: A survey",
+        "volume": "97",
+        "author": "Khan",
+        "year": "2019",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.iot.2024.101063_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "2787",
+        "DOI": "10.1016/j.comnet.2010.05.010",
+        "article-title": "The internet of things: A survey",
+        "volume": "54",
+        "author": "Atzori",
+        "year": "2010",
+        "journal-title": "Comput Netw."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101063_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "5555",
+        "DOI": "10.3390/s150305555",
+        "article-title": "SEnviro: A sensorized platform proposal using open hardware and open standards",
+        "volume": "15",
+        "author": "Trilles",
+        "year": "2015",
+        "journal-title": "Sensors"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101063_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1080/17538947.2016.1209583",
+        "article-title": "A domain-independent methodology to analyze IoT data streams in real-time. A proof of concept implementation for anomaly detection from environmental data",
+        "volume": "10",
+        "author": "Trilles",
+        "year": "2017",
+        "journal-title": "Int. J. Digit. Earth"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b8",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2022.100568",
+        "article-title": "IoT anomaly detection methods and applications: A survey",
+        "volume": "19",
+        "author": "Chatterjee",
+        "year": "2022",
+        "journal-title": "Internet Things"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b9",
+        "series-title": "2016 IEEE 30th International Conference on Advanced Information Networking and Applications",
+        "first-page": "994",
+        "article-title": "IoT healthcare analytics: The importance of anomaly detection",
+        "author": "Ukil",
+        "year": "2016"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2024.101063_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "6481",
+        "DOI": "10.1109/JIOT.2019.2958185",
+        "article-title": "Anomaly detection for IoT time-series data: A survey",
+        "volume": "7",
+        "author": "Cook",
+        "year": "2019",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b11",
+        "series-title": "Identification of Outliers, Vol. 11",
+        "author": "Hawkins",
+        "year": "1980"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b12",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1080/00401706.1989.10488517",
+        "article-title": "Outlier detection and time series modeling",
+        "volume": "31",
+        "author": "Abraham",
+        "year": "1989",
+        "journal-title": "Technometrics"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.iot.2024.101063_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2499",
+        "DOI": "10.1016/j.sigpro.2003.07.019",
+        "article-title": "Novelty detection: a review—part 2:: Neural network based approaches",
+        "volume": "83",
+        "author": "Markou",
+        "year": "2003",
+        "journal-title": "Signal Process."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.iot.2024.101063_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "2481",
+        "DOI": "10.1016/j.sigpro.2003.07.018",
+        "article-title": "Novelty detection: A review—part 1: Statistical approaches",
+        "volume": "83",
+        "author": "Markou",
+        "year": "2003",
+        "journal-title": "Signal Process."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101063_b15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/1541880.1541882",
+        "article-title": "Anomaly detection: A survey",
+        "volume": "41",
+        "author": "Chandola",
+        "year": "2009",
+        "journal-title": "ACM Comput. Surv. (CSUR)"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1109/SURV.2010.021510.00088",
+        "article-title": "Outlier detection techniques for wireless sensor networks: A survey",
+        "volume": "12",
+        "author": "Zhang",
+        "year": "2010",
+        "journal-title": "IEEE Commun. Surv. Tutor."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b17",
+        "series-title": "Deep learning for anomaly detection: A survey",
+        "author": "Chalapathy",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "81664",
+        "DOI": "10.1109/ACCESS.2019.2921912",
+        "article-title": "Anomaly detection, analysis and prediction techniques in IoT environment: A systematic literature review",
+        "volume": "7",
+        "author": "Fahim",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101063_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/j.dcan.2017.10.002",
+        "article-title": "Machine learning for internet of things data analysis: A survey",
+        "volume": "4",
+        "author": "Mahdavinejad",
+        "year": "2018",
+        "journal-title": "Digit. Commun. Netw."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "1706",
+        "DOI": "10.1109/ACCESS.2017.2780087",
+        "article-title": "Edge of things: The big picture on the integration of edge, IoT and the cloud in a distributed computing environment",
+        "volume": "6",
+        "author": "El-Sayed",
+        "year": "2017",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2024.101063_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1109/MC.2016.145",
+        "article-title": "The promise of edge computing",
+        "volume": "49",
+        "author": "Shi",
+        "year": "2016",
+        "journal-title": "Computer"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2024.101063_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "3641",
+        "DOI": "10.1007/s40747-021-00434-6",
+        "article-title": "Implementation analysis of IoT-based offloading frameworks on cloud/edge computing for sensor generated big data",
+        "volume": "8",
+        "author": "Bajaj",
+        "year": "2022",
+        "journal-title": "Complex Intell. Syst."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b23",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.nanoen.2020.105414",
+        "article-title": "Technology evolution from self-powered sensors to AIoT enabled smart homes",
+        "volume": "79",
+        "author": "Dong",
+        "year": "2021",
+        "journal-title": "Nano Energy"
+      },
+      {
+        "issue": "01",
+        "key": "10.1016/j.iot.2024.101063_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.38094/jastt20190",
+        "article-title": "IoT provisioning QoS based on cloud and fog computing",
+        "volume": "2",
+        "author": "Samann",
+        "year": "2021",
+        "journal-title": "J. Appl. Sci. Technol. Trends"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b25",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2021.100461",
+        "article-title": "Tinyml meets iot: A comprehensive survey",
+        "volume": "16",
+        "author": "Dutta",
+        "year": "2021",
+        "journal-title": "Internet Things"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b26",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.comnet.2019.107094",
+        "article-title": "Cyber-security on smart grid: Threats and potential solutions",
+        "volume": "169",
+        "author": "Gunduz",
+        "year": "2020",
+        "journal-title": "Comput. Netw."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b27",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2022.100615",
+        "article-title": "A comprehensive review on detection of cyber-attacks: Data sets, methods, challenges, and future research directions",
+        "volume": "20",
+        "author": "Ahmetoglu",
+        "year": "2022",
+        "journal-title": "Internet Things"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1595",
+        "DOI": "10.1016/j.jksuci.2021.11.019",
+        "article-title": "A review on TinyML: State-of-the-art and prospects",
+        "volume": "34",
+        "author": "Ray",
+        "year": "2022",
+        "journal-title": "J. King Saud Univ.-Comput. Inf. Sci."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b29",
+        "series-title": "2022 International Conference on Artificial Intelligence in Information and Communication",
+        "first-page": "269",
+        "article-title": "TinyML: A systematic review and synthesis of existing research",
+        "author": "Han",
+        "year": "2022"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101063_b30",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/1541880.1541882",
+        "article-title": "Anomaly detection: A survey",
+        "volume": "41",
+        "author": "Chandola",
+        "year": "2009",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b31",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/3439950",
+        "article-title": "Deep learning for anomaly detection: A review",
+        "volume": "54",
+        "author": "Pang",
+        "year": "2021",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2024.101063_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "6481",
+        "DOI": "10.1109/JIOT.2019.2958185",
+        "article-title": "Anomaly detection for IoT time-series data: A survey",
+        "volume": "7",
+        "author": "Cook",
+        "year": "2020",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b33",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2022.100568",
+        "article-title": "IoT anomaly detection methods and applications: A survey",
+        "volume": "19",
+        "author": "Chatterjee",
+        "year": "2022",
+        "journal-title": "Internet Things"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b34",
+        "doi-asserted-by": "crossref",
+        "first-page": "264",
+        "DOI": "10.7326/0003-4819-151-4-200908180-00135",
+        "article-title": "Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement",
+        "volume": "151",
+        "author": "Moher",
+        "year": "2009",
+        "journal-title": "Ann. Intern. Med."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b35",
+        "doi-asserted-by": "crossref",
+        "first-page": "1160",
+        "DOI": "10.1016/j.joi.2018.09.002",
+        "article-title": "Google Scholar, Web of Science, and Scopus: A systematic comparison of citations in 252 subject categories",
+        "volume": "12",
+        "author": "Martín-Martín",
+        "year": "2018",
+        "journal-title": "J. Informetrics"
+      },
+      {
+        "issue": "05",
+        "key": "10.1016/j.iot.2024.101063_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "164",
+        "DOI": "10.4236/jcc.2015.35021",
+        "article-title": "Internet of things (IoT): A literature review",
+        "volume": "3",
+        "author": "Madakam",
+        "year": "2015",
+        "journal-title": "J. Comput. Commun."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2024.101063_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1069",
+        "DOI": "10.3390/s16071069",
+        "article-title": "Internet of things: A review of surveys based on context aware intelligent services",
+        "volume": "16",
+        "author": "Gil",
+        "year": "2016",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.comcom.2014.09.008",
+        "article-title": "The internet of things vision: Key features, applications and open issues",
+        "volume": "54",
+        "author": "Borgia",
+        "year": "2014",
+        "journal-title": "Comput. Commun."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "6900",
+        "DOI": "10.1109/ACCESS.2017.2778504",
+        "article-title": "A survey on the edge computing for the internet of things",
+        "volume": "6",
+        "author": "Yu",
+        "year": "2017",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1275",
+        "DOI": "10.1109/JIOT.2018.2805263",
+        "article-title": "Edge computing for the internet of things: A case study",
+        "volume": "5",
+        "author": "Premsankar",
+        "year": "2018",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b41",
+        "series-title": "2016 IEEE International Conference on Smart Cloud",
+        "first-page": "20",
+        "article-title": "Challenges and opportunities in edge computing",
+        "author": "Varghese",
+        "year": "2016"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.iot.2024.101063_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1537",
+        "DOI": "10.1109/JPROC.2019.2920341",
+        "article-title": "A survey on edge computing systems and tools",
+        "volume": "107",
+        "author": "Liu",
+        "year": "2019",
+        "journal-title": "Proc. IEEE"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b43",
+        "series-title": "Foundations of Machine Learning",
+        "author": "Mohri",
+        "year": "2018"
+      },
+      {
+        "issue": "5136",
+        "key": "10.1016/j.iot.2024.101063_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1038/218019a0",
+        "article-title": "“Memo” functions and machine learning",
+        "volume": "218",
+        "author": "Michie",
+        "year": "1968",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b45",
+        "series-title": "Proceedings of ANZIIS’94-Australian New Zealnd Intelligent Information Systems Conference",
+        "first-page": "357",
+        "article-title": "Weka: A machine learning workbench",
+        "author": "Holmes",
+        "year": "1994"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b46",
+        "series-title": "Introduction to Machine Learning",
+        "author": "Alpaydin",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.20544/HORIZONS.B.04.1.17.P05",
+        "article-title": "An overview of the supervised machine learning methods",
+        "volume": "4",
+        "author": "Nasteski",
+        "year": "2017",
+        "journal-title": "Horizons. b"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.iot.2024.101063_b48",
+        "doi-asserted-by": "crossref",
+        "first-page": "11994",
+        "DOI": "10.1016/j.eswa.2009.05.029",
+        "article-title": "Intrusion detection by machine learning: A review",
+        "volume": "36",
+        "author": "Tsai",
+        "year": "2009",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.3390/fi11040094",
+        "article-title": "A review of machine learning and IoT in smart transportation",
+        "volume": "11",
+        "author": "Zantalis",
+        "year": "2019",
+        "journal-title": "Future Internet"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b50",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1016/j.neucom.2015.09.116",
+        "article-title": "Deep learning for visual understanding: A review",
+        "volume": "187",
+        "author": "Guo",
+        "year": "2016",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2024.101063_b51",
+        "doi-asserted-by": "crossref",
+        "first-page": "1301",
+        "DOI": "10.3390/en12071301",
+        "article-title": "State of the art of machine learning models in energy systems, a systematic review",
+        "volume": "12",
+        "author": "Mosavi",
+        "year": "2019",
+        "journal-title": "Energies"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101063_b52",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3301282",
+        "article-title": "How generative adversarial networks and their variants work: An overview",
+        "volume": "52",
+        "author": "Hong",
+        "year": "2019",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b53",
+        "doi-asserted-by": "crossref",
+        "first-page": "233",
+        "DOI": "10.1016/j.eswa.2018.03.056",
+        "article-title": "Deep learning algorithms for human activity recognition using mobile and wearable sensor networks: State of the art and research challenges",
+        "volume": "105",
+        "author": "Nweke",
+        "year": "2018",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "53040",
+        "DOI": "10.1109/ACCESS.2019.2912200",
+        "article-title": "Review of deep learning algorithms and architectures",
+        "volume": "7",
+        "author": "Shrestha",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b55",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jnca.2020.102781",
+        "article-title": "A survey on computation offloading modeling for edge computing",
+        "volume": "169",
+        "author": "Lin",
+        "year": "2020",
+        "journal-title": "J. Netw. Comput. Appl."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b56",
+        "article-title": "A review on fog computing: Issues, characteristics, challenges, and potential applications",
+        "volume": "10",
+        "author": "Das",
+        "year": "2023",
+        "journal-title": "Telemat. Inform. Rep."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b57",
+        "series-title": "Outliers in Statistical Data, Vol. 3. no. 1",
+        "author": "Barnett",
+        "year": "1994"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b58",
+        "doi-asserted-by": "crossref",
+        "unstructured": "G.S. Madhuri, M.U. Rani, Anomaly Detection Techniques, in: 2018 IADS International Conference on Computing, Communications & Data Engineering, CCODE, 2018.",
+        "DOI": "10.2139/ssrn.3167172"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b59",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1016/j.comcom.2022.06.027",
+        "article-title": "Hierarchical pattern matching for anomaly detection in time series",
+        "volume": "193",
+        "author": "Van Onsem",
+        "year": "2022",
+        "journal-title": "Comput. Commun."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b60",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.14778/3425879.3425885",
+        "article-title": "Real-time distance-based outlier detection in data streams",
+        "volume": "14",
+        "author": "Tran",
+        "year": "2020",
+        "journal-title": "Proc. VLDB Endow."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b61",
+        "doi-asserted-by": "crossref",
+        "first-page": "417",
+        "DOI": "10.1016/j.future.2016.12.040",
+        "article-title": "CLAPP: A self constructing feature clustering approach for anomaly detection",
+        "volume": "74",
+        "author": "Gunupudi",
+        "year": "2017",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101063_b62",
+        "doi-asserted-by": "crossref",
+        "first-page": "212",
+        "DOI": "10.1109/MNET.001.1800552",
+        "article-title": "Anomaly detection/prediction for the internet of things: State of the art and the future",
+        "volume": "35",
+        "author": "Lin",
+        "year": "2020",
+        "journal-title": "IEEE Network"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b63",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cose.2022.102684",
+        "article-title": "Chameleon: Optimized feature selection using particle swarm optimization and ensemble methods for network anomaly detection",
+        "volume": "117",
+        "author": "Chohra",
+        "year": "2022",
+        "journal-title": "Comput. Secur."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101063_b64",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1080/14775080600985150",
+        "article-title": "Sports tourism research 2000–2004: A systematic review of knowledge and a meta-evaluation of methods",
+        "volume": "11",
+        "author": "Weed",
+        "year": "2006",
+        "journal-title": "J. Sport Tourism"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b65",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1136/bmj.g7647",
+        "article-title": "Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-p) 2015: elaboration and explanation",
+        "volume": "349",
+        "author": "Shamseer",
+        "year": "2015",
+        "journal-title": "Bmj"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b66",
+        "series-title": "Guidelines for performing systematic literature reviews in software engineering",
+        "author": "Keele",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b67",
+        "series-title": "Systematic Reviews in the Social Sciences: A Practical Guide",
+        "author": "Petticrew",
+        "year": "2008"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b68",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D. Budgen, P. Brereton, Performing systematic literature reviews in software engineering, in: Proceedings of the 28th International Conference on Software Engineering, 2006, pp. 1051–1052.",
+        "DOI": "10.1145/1134285.1134500"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b69",
+        "series-title": "Analysis of anomaly detection for artificial intelligence of things: A systematic literature mapping",
+        "author": "Oliver",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b70",
+        "doi-asserted-by": "crossref",
+        "unstructured": "H. Ren, D. Anicic, T.A. Runkler, The synergy of complex event processing and tiny machine learning in industrial IoT, in: Proceedings of the 15th ACM International Conference on Distributed and Event-Based Systems, 2021, pp. 126–135.",
+        "DOI": "10.1145/3465480.3466928"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b71",
+        "doi-asserted-by": "crossref",
+        "first-page": "395",
+        "DOI": "10.1016/j.future.2021.10.023",
+        "article-title": "Federated intelligence of anomaly detection agent in IoTMD-enabled diabetes management control system",
+        "volume": "128",
+        "author": "Astillo",
+        "year": "2022",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b72",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eswa.2022.119016",
+        "article-title": "TinyML-enabled edge implementation of transfer learning framework for domain generalization in machine fault diagnosis",
+        "volume": "213",
+        "author": "Asutkar",
+        "year": "2023",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b73",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.engappai.2022.105459",
+        "article-title": "An embedded solution for fault detection and diagnosis of photovoltaic modules using thermographic images and deep convolutional neural networks",
+        "volume": "116",
+        "author": "Mellit",
+        "year": "2022",
+        "journal-title": "Eng. Appl. Artif. Intell."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b74",
+        "unstructured": "D. Wang, F. Li, K. Liu, X. Zhang, Real-time Cyber-Physical Security Solution Leveraging an Integrated Learning-Based Approach: An Integrated Learning-Based Cyber-Physical Security Solution, ACM Trans. Sensor Netw.."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2024.101063_b75",
+        "doi-asserted-by": "crossref",
+        "first-page": "1575",
+        "DOI": "10.1109/JSEN.2022.3225227",
+        "article-title": "Tiny machine learning for high accuracy product quality inspection",
+        "volume": "23",
+        "author": "Albanese",
+        "year": "2022",
+        "journal-title": "IEEE Sens. J."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b76",
+        "doi-asserted-by": "crossref",
+        "first-page": "2358",
+        "DOI": "10.3390/s23042358",
+        "article-title": "An IoT enable anomaly detection system for smart city surveillance",
+        "volume": "23",
+        "author": "Islam",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b77",
+        "doi-asserted-by": "crossref",
+        "first-page": "2344",
+        "DOI": "10.3390/s23042344",
+        "article-title": "An adaptable and unsupervised TinyML anomaly detection system for extreme industrial environments",
+        "volume": "23",
+        "author": "Antonini",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "issue": "21",
+        "key": "10.1016/j.iot.2024.101063_b78",
+        "doi-asserted-by": "crossref",
+        "first-page": "8143",
+        "DOI": "10.3390/s22218143",
+        "article-title": "Health, security and fire safety process optimisation using intelligence at the edge",
+        "volume": "22",
+        "author": "D’Souza",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "issue": "14",
+        "key": "10.1016/j.iot.2024.101063_b79",
+        "doi-asserted-by": "crossref",
+        "first-page": "4652",
+        "DOI": "10.3390/s21144652",
+        "article-title": "Intelligent platform based on smart PPE for safety in workplaces",
+        "volume": "21",
+        "author": "Márquez-Sánchez",
+        "year": "2021",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b80",
+        "series-title": "2021 IEEE International Conference on Consumer Electronics",
+        "first-page": "1",
+        "article-title": "Comparing industry frameworks with deeply quantized neural networks on microcontrollers",
+        "author": "Pau",
+        "year": "2021"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.iot.2024.101063_b81",
+        "doi-asserted-by": "crossref",
+        "first-page": "3372",
+        "DOI": "10.3390/s21103372",
+        "article-title": "Besafe b2. 0 smart multisensory platform for safety in workplaces",
+        "volume": "21",
+        "author": "Márquez-Sánchez",
+        "year": "2021",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b82",
+        "doi-asserted-by": "crossref",
+        "first-page": "327",
+        "DOI": "10.1016/j.future.2022.12.028",
+        "article-title": "Sparse random neural networks for online anomaly detection on sensor nodes",
+        "volume": "144",
+        "author": "Leroux",
+        "year": "2023",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b83",
+        "unstructured": "K. Sai Charan, An Auto-Encoder Based TinyML Approach for Real-Time Anomaly Detection, in: 10TH SAE India International Mobility Conference, no. 2022-28-0406, 2022."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b84",
+        "series-title": "2022 IEEE 19th International Conference on Mobile Ad Hoc and Smart Systems",
+        "first-page": "754",
+        "article-title": "Malware network traffic classification on the edge",
+        "author": "Chen",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b85",
+        "series-title": "2022 ASABE Annual International Meeting",
+        "first-page": "1",
+        "article-title": "AIoT-based system for indoor plant growth monitoring and early nutrient deficiency detection",
+        "author": "Hacinas",
+        "year": "2022"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.iot.2024.101063_b86",
+        "doi-asserted-by": "crossref",
+        "first-page": "7162",
+        "DOI": "10.1109/TII.2022.3147831",
+        "article-title": "Edge-based collaborative training system for artificial intelligence-of-things",
+        "volume": "18",
+        "author": "Jin",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.iot.2024.101063_b87",
+        "doi-asserted-by": "crossref",
+        "first-page": "3838",
+        "DOI": "10.3390/s22103838",
+        "article-title": "A tinyml soft-sensor approach for low-cost detection and monitoring of vehicular emissions",
+        "volume": "22",
+        "author": "Andrade",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b88",
+        "series-title": "2022 IEEE International Workshop on Metrology for Industry 4.0 & IoT",
+        "first-page": "397",
+        "article-title": "A TinyML approach to non-repudiable anomaly detection in extreme industrial environments",
+        "author": "Antonini",
+        "year": "2022"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.iot.2024.101063_b89",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.3390/fi14120363",
+        "article-title": "TinyML for ultra-low power AI and large scale IoT deployments: A systematic review",
+        "volume": "14",
+        "author": "Schizas",
+        "year": "2022",
+        "journal-title": "Future Internet"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.iot.2024.101063_b90",
+        "doi-asserted-by": "crossref",
+        "first-page": "4125",
+        "DOI": "10.1109/JIOT.2021.3103053",
+        "article-title": "Con-pi: A distributed container-based edge and fog computing framework",
+        "volume": "9",
+        "author": "Mahmud",
+        "year": "2021",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b91",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2023.100848",
+        "article-title": "An unsupervised TinyML approach applied to the detection of urban noise anomalies under the smart cities environment",
+        "volume": "23",
+        "author": "Hammad",
+        "year": "2023",
+        "journal-title": "Internet Things"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.iot.2024.101063_b92",
+        "doi-asserted-by": "crossref",
+        "first-page": "4:1",
+        "DOI": "10.1147/JRD.2009.5429058",
+        "article-title": "The reservoir model and architecture for open federated cloud computing",
+        "volume": "53",
+        "author": "Rochwerger",
+        "year": "2009",
+        "journal-title": "IBM J. Res. Dev."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b93",
+        "series-title": "Optimized preprocessing and tiny ML for attention state classification",
+        "author": "Wang",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b94",
+        "doi-asserted-by": "crossref",
+        "first-page": "142",
+        "DOI": "10.1016/j.adhoc.2019.01.008",
+        "article-title": "Self-calibration methods for uncontrolled environments in sensor networks: A reference survey",
+        "volume": "88",
+        "author": "Barcelo-Ordinas",
+        "year": "2019",
+        "journal-title": "Ad Hoc Netw."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b95",
+        "series-title": "2021 36th International Technical Conference on Circuits/Systems, Computers and Communications",
+        "first-page": "1",
+        "article-title": "Exploitation pattern for machine learning systems",
+        "author": "Okuda",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b96",
+        "series-title": "ML for mobile and edge devices - TensorFlow lite",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b97",
+        "series-title": "Utensor/utensor: Tinyml AI inference library",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b98",
+        "series-title": "CMSIS NN software library",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b99",
+        "series-title": "TinyOL: TinyML with online-learning on microcontrollers",
+        "author": "Ren",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101063_b100",
+        "series-title": "Benchmarking tinyml systems: Challenges and direction",
+        "author": "Banbury",
+        "year": "2020"
+      }
+    ],
+    "container-title": [
+      "Internet of Things"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2542660524000052?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2542660524000052?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          8
+        ]
+      ],
+      "date-time": "2025-11-08T19:23:50Z",
+      "timestamp": 1762629830000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2542660524000052"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "references-count": 100,
+    "alternative-id": [
+      "S2542660524000052"
+    ],
+    "URL": "https://doi.org/10.1016/j.iot.2024.101063",
+    "relation": {},
+    "ISSN": [
+      "2542-6605"
+    ],
+    "issn-type": [
+      {
+        "value": "2542-6605",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Anomaly detection based on Artificial Intelligence of Things: A Systematic Literature Mapping",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Internet of Things",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.iot.2024.101063",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "101063"
+  }
+}

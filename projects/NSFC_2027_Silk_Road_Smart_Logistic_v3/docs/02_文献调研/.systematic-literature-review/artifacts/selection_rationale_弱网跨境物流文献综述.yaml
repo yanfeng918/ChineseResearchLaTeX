@@ -1,0 +1,17 @@
+total_candidates: 50
+selected: 50
+high_score_fraction_used: 0.7
+high_score_bucket: 35
+min_refs: 30
+max_refs: 50
+target_refs: 50
+min_abstract_chars: 0
+score_distribution:
+  high_score_count: 50
+  mid_score_count: 0
+  low_score_count: 0
+  max_score: 9.4
+  min_score: 9.4
+  avg_score: 9.4
+missing_abstract_candidates: 0
+missing_abstract_selected: 0

@@ -1,0 +1,99 @@
+{
+  "tier1": {
+    "structure_ok": true,
+    "subsubsection_count": 4,
+    "missing_subsubsections": [],
+    "citation_ok": true,
+    "missing_citation_keys": [],
+    "missing_doi_keys": [
+      "anomalytransformertime2022",
+      "calibratingmultimodallearning2023",
+      "canyoutrust2019",
+      "mcunettinydeep2020",
+      "oncalibrationof2017"
+    ],
+    "invalid_doi_keys": [],
+    "word_count": 2319,
+    "forbidden_phrases_hits": [],
+    "avoid_commands_hits": [],
+    "constraints": {
+      "page_limit": {
+        "min": 6,
+        "max": 10,
+        "recommended": [
+          6,
+          8
+        ],
+        "warning_threshold": 9,
+        "chars_per_page": 1000
+      },
+      "estimated_pages": 2.3,
+      "page_status": "too_short",
+      "word_count_stripped": 2319,
+      "word_count_range": {
+        "min": 8000,
+        "max": 10000,
+        "status": "too_few"
+      },
+      "references_unique": 32,
+      "references_range": {
+        "min": 30,
+        "max": 50,
+        "status": "within"
+      },
+      "opening": {
+        "cjk_chars": 300,
+        "head_cjk_len": 300,
+        "ok": false,
+        "hit_gap": true,
+        "hit_breakthrough": false,
+        "issues": [
+          "开篇未明显给出“本项目的突破式切入/关键思路”（建议用 1 句指出拟突破的关键切口）"
+        ]
+      }
+    }
+  },
+  "tier2": null,
+  "dimension_coverage": {
+    "dimensions": {
+      "价值与必要性": {
+        "covered": true,
+        "confidence": 0.55,
+        "evidence": "问题"
+      },
+      "现状与不足": {
+        "covered": true,
+        "confidence": 0.55,
+        "evidence": "已有"
+      },
+      "科学问题/假说": {
+        "covered": true,
+        "confidence": 0.55,
+        "evidence": "科学问题"
+      },
+      "项目切入点": {
+        "covered": true,
+        "confidence": 0.55,
+        "evidence": "本项目"
+      }
+    },
+    "missing_dimensions": [],
+    "suggestions": [],
+    "_mode": "fallback"
+  },
+  "boastful_expressions": {
+    "issues": [],
+    "summary": {
+      "total_issues": 0,
+      "by_category": {}
+    },
+    "_mode": "fallback"
+  },
+  "word_target": {
+    "target": 9000,
+    "tolerance": 800,
+    "source": "config_default",
+    "evidence": ""
+  },
+  "notes": []
+}

@@ -1,0 +1,17 @@
+total_candidates: 45
+selected: 45
+high_score_fraction_used: 0.7
+high_score_bucket: 32
+min_refs: 45
+max_refs: 45
+target_refs: 45
+min_abstract_chars: 80
+score_distribution:
+  high_score_count: 45
+  mid_score_count: 0
+  low_score_count: 0
+  max_score: 9.8
+  min_score: 8.4
+  avg_score: 9.03
+missing_abstract_candidates: 13
+missing_abstract_selected: 13

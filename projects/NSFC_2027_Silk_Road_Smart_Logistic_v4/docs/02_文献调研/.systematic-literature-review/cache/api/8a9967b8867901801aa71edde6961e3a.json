@@ -1,0 +1,33 @@
+{
+  "paperId": "08ce0d65de8134ef120f1cf18bcfa843e3e2fd87",
+  "title": "Task-oriented semantic communication with foundation models",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.23919/JCC.fa.2024-0024.202407?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.23919/JCC.fa.2024-0024.202407, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2224747",
+      "name": "Mingkai Chen"
+    },
+    {
+      "authorId": "2238163550",
+      "name": "Minghao Liu"
+    },
+    {
+      "authorId": "2185619950",
+      "name": "Z. Zhe"
+    },
+    {
+      "authorId": "2312528750",
+      "name": "Zhiping Xu"
+    },
+    {
+      "authorId": "2072607270",
+      "name": "Wang Lei"
+    }
+  ],
+  "abstract": "In the future development direction of the sixth generation (6G) mobile communication, several communication models are proposed to face the growing challenges of the task. The rapid development of artificial intelligence (AI) foundation models provides significant support for efficient and intelligent communication interactions. In this paper, we propose an innovative semantic communication paradigm called task-oriented semantic communication system with foundation models. First, we segment the image by using task prompts based on the segment anything model (SAM) and contrastive language-image pretraining (CLIP). Meanwhile, we adopt Bezier curve to enhance the mask to improve the segmentation accuracy. Second, we have differentiated semantic compression and transmission approaches for segmented content. Third, we fuse different semantic information based on the conditional diffusion model to generate high-quality images that satisfy the users' specific task requirements. Finally, the experimental results show that the proposed system compresses the semantic information effectively and improves the robustness of semantic communication."
+}

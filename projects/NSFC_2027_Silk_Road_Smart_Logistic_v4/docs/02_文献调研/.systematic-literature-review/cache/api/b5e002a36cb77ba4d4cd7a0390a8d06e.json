@@ -1,0 +1,33 @@
+{
+  "paperId": "860afd13f998687b7ddaa37e27282bd28872dd68",
+  "title": "Task-Oriented Semantic Communication Based on Semantic Triplets",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/WCNC55385.2023.10118916?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/WCNC55385.2023.10118916, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2116348202",
+      "name": "Chuanhong Liu"
+    },
+    {
+      "authorId": "1784002",
+      "name": "Caili Guo"
+    },
+    {
+      "authorId": "2363510476",
+      "name": "Siyi Wang"
+    },
+    {
+      "authorId": "2187074005",
+      "name": "Yuze Li"
+    },
+    {
+      "authorId": "2147393457",
+      "name": "Dingxing Hu"
+    }
+  ],
+  "abstract": "Task-oriented semantic communication has received growing interests, which can significantly reduce the amount of transmitted data without affecting task performance. In this paper, a novel semantic communication system based on semantic triplets (SCST) is proposed, in which the semantics is represented via the explainable semantic triplets. Specifically, we propose a semantic extraction method to convert the transmitted texts into semantic triplets, which can be further compressed via the designed semantic filtering method. The semantic triplets then will be encoded and transmitted via the wireless channel to complete intelligent tasks at the receiver. Moreover, we then apply the SCST to sentiment analysis task and question-answering task to verify the effectiveness, where the semantic encoder and decoder are designed respectively considering the final task. The experiment results show that the proposed SCST can obtain at least 43.5% and 52% accuracy gains, compared to the baselines using traditional communication method."
+}

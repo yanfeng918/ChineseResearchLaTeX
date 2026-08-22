@@ -1,0 +1,50 @@
+{
+  "total": 1,
+  "offset": 0,
+  "data": [
+    {
+      "paperId": "16bce69bc91f0126b8bb801d8acecef2e2fd4d47",
+      "externalIds": {
+        "DOI": "10.9734/jerr/2026/v28i71968",
+        "CorpusId": 290794362
+      },
+      "url": "https://www.semanticscholar.org/paper/16bce69bc91f0126b8bb801d8acecef2e2fd4d47",
+      "title": "Integration of CCTV and IoT Sensors for Context-aware Intelligent Surveillance Systems",
+      "venue": "Journal of Engineering Research and Reports",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.9734/jerr/2026/v28i71968",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.9734/jerr/2026/v28i71968?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.9734/jerr/2026/v28i71968, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2374647790",
+          "name": "O. M. Nwakeze"
+        },
+        {
+          "authorId": "151456004",
+          "name": "Ugoji Frank Godric Chidubem"
+        },
+        {
+          "authorId": "2441846253",
+          "name": "Nwafor Anthony Chigozie"
+        },
+        {
+          "authorId": "2356555286",
+          "name": "Naveed Uddin Mohammed"
+        },
+        {
+          "authorId": "2382546517",
+          "name": "Oboti Nwamaka Peace"
+        },
+        {
+          "authorId": "2432782551",
+          "name": "Ogochukwu Patience Okechukwu"
+        }
+      ],
+      "abstract": "The growing demand for smarter and more dependable surveillance systems has driven the integration of advanced technologies capable of providing real-time situational awareness and accurate anomaly detection. Conventional Closed-Circuit Television (CCTV) systems are typically constrained by their reliance on manual monitoring and lack of contextual insight, leading to slow response times and high false-alarm rates. This paper presents the design and simulation-based implementation of a context-aware intelligent surveillance system that fuses CCTV video streams with Internet of Things (IoT) sensor data to enhance detection accuracy and system responsiveness, specifically for indoor fire detection. The system employs a Variational Autoencoder (VAE) trained on multimodal data to learn normal behavioural patterns and identify anomalies through reconstruction-error analysis. Training and testing were conducted using simulated sensor data and the MmodalFire dataset, which provides synchronised video and environmental sensing data across diverse indoor environments. The system was implemented within a MATLAB–Python co-simulation framework, enabling effective modelling of both hardware behaviour and software intelligence without physical deployment. Experimental results demonstrate strong performance, with an accuracy of 96.8%, precision of 95.4%, recall of 97.1%, and a low false-alarm rate of 3.2%, representing a significant improvement over a traditional CCTV-only system. The system also exhibits low detection latency, high robustness, and sensitivity under varying environmental conditions, including smoke interference and low visibility. These findings indicate the potential of multimodal data fusion and unsupervised learning to improve surveillance intelligence."
+    }
+  ]
+}

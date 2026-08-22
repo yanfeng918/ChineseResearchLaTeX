@@ -1,0 +1,1186 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          8
+        ]
+      ],
+      "date-time": "2026-06-08T10:15:09Z",
+      "timestamp": 1780913709651,
+      "version": "3.54.1"
+    },
+    "reference-count": 79,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100014440",
+        "name": "Ministerio de Ciencia, Innovación y Universidades",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PTEP-20241026 - HERMESS"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PTEP-20241026 - HERMESS"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100014440",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100014440",
+        "name": "Ministerio de Ciencia, Innovación y Universidades",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PTEP-20241026"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PTEP-20241026"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100014440",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100017407",
+        "name": "International University of La Rioja",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PP-2024-13"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PP-2024-13"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100017407",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computer Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.comnet.2025.111627",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          13
+        ]
+      ],
+      "date-time": "2025-08-13T15:59:36Z",
+      "timestamp": 1755100776000
+    },
+    "page": "111627",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "special_numbering": "C",
+    "title": [
+      "Hybrid IoT network for real-time monitoring of maritime containers"
+    ],
+    "prefix": "10.1016",
+    "volume": "271",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-3097-5783",
+        "authenticated-orcid": false,
+        "given": "Oscar",
+        "family": "Ledesma",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5877-045X",
+        "authenticated-orcid": false,
+        "given": "Paula",
+        "family": "Lamo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0001",
+        "doi-asserted-by": "crossref",
+        "first-page": "20498",
+        "DOI": "10.1109/JIOT.2023.3287196",
+        "article-title": "Marine IoT systems with space–air–sea integrated networks: hybrid LEO and UAV edge computing",
+        "volume": "10",
+        "author": "Jung",
+        "year": "2023",
+        "journal-title": "IEEe Internet. Things. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0002",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.oceaneng.2024.120043",
+        "article-title": "Vessel classification using AIS data",
+        "volume": "319",
+        "author": "Meyer",
+        "year": "2025",
+        "journal-title": "Ocean Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0003",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2023.100982",
+        "article-title": "IoT-based supply chain management: a systematic literature review",
+        "volume": "24",
+        "author": "Taj",
+        "year": "2023",
+        "journal-title": "Internet Thing."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0004",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1186/s41072-022-00110-z",
+        "article-title": "Internet of Things enabled real time cold chain monitoring in a container port",
+        "volume": "7",
+        "author": "Cil",
+        "year": "2022",
+        "journal-title": "J. Shipp. Trade"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "9742",
+        "DOI": "10.3390/app13179742",
+        "article-title": "Navigating the sea of data: a comprehensive review on data analysis in maritime IoT applications",
+        "volume": "13",
+        "author": "Durlik",
+        "year": "2023",
+        "journal-title": "Appl. Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0006",
+        "doi-asserted-by": "crossref",
+        "first-page": "1227",
+        "DOI": "10.3390/s24041227",
+        "article-title": "Non-terrestrial networks for energy-efficient connectivity of remote IoT devices in the 6G era: a survey",
+        "volume": "24",
+        "author": "Plastras",
+        "year": "2024",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0007",
+        "doi-asserted-by": "crossref",
+        "first-page": "1640",
+        "DOI": "10.3390/rs16091640",
+        "article-title": "Space–air–ground–sea integrated network with federated learning",
+        "volume": "16",
+        "author": "Zhao",
+        "year": "2024",
+        "journal-title": "Remote Sens."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0008",
+        "first-page": "1",
+        "article-title": "Fundamentals of satellite-Maritime Communications: downlink and uplink analysis",
+        "author": "Li",
+        "year": "2024",
+        "journal-title": "IEEe Trans. Commun."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0009",
+        "doi-asserted-by": "crossref",
+        "first-page": "1444",
+        "DOI": "10.3390/rs13081444",
+        "article-title": "Synergy between Low Earth Orbit (LEO)—MODIS and geostationary earth orbit (GEO)—GOES sensors for Sargassum monitoring in the Atlantic Ocean",
+        "volume": "13",
+        "author": "Minghelli",
+        "year": "2021",
+        "journal-title": "Remote Sens."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0010",
+        "series-title": "2021 13th International Conference on Wireless Communications and Signal Processing (WCSP)",
+        "first-page": "1",
+        "article-title": "LoRa performance analysis for LEO satellite IoT networks",
+        "author": "Zhou",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0011",
+        "doi-asserted-by": "crossref",
+        "first-page": "21659",
+        "DOI": "10.1109/JIOT.2024.3378177",
+        "article-title": "Network coding-based multipath transmission for LEO satellite networks with domain cluster",
+        "volume": "11",
+        "author": "Ouyang",
+        "year": "2024",
+        "journal-title": "IEEe Internet. Things. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0012",
+        "doi-asserted-by": "crossref",
+        "first-page": "2507",
+        "DOI": "10.3390/rs12152507",
+        "article-title": "Integrated satellite–Terrestrial connectivity for autonomous ships: survey and future research directions",
+        "volume": "12",
+        "author": "Höyhtyä",
+        "year": "2020",
+        "journal-title": "Remote Sens."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0013",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.3390/iot5020010",
+        "article-title": "Development of a multi-radio device for dry container monitoring and tracking",
+        "volume": "5",
+        "author": "Falcitelli",
+        "year": "2024",
+        "journal-title": "IoT"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0014",
+        "doi-asserted-by": "crossref",
+        "first-page": "579",
+        "DOI": "10.3390/electronics13030579",
+        "article-title": "Trends in LPWAN technologies for LEO satellite constellations in the NewSpace context",
+        "volume": "13",
+        "author": "Ledesma",
+        "year": "2024",
+        "journal-title": "Electronics"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0015",
+        "series-title": "IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium",
+        "first-page": "7424",
+        "article-title": "Multiple ship tracking across multiple LEO satellites",
+        "author": "Liu",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0016",
+        "series-title": "2023 IEEE/CIC International Conference on Communications in China (ICCC)",
+        "first-page": "1",
+        "article-title": "Modeling and analysis of end-to-end LEO satellite-aided shore-to-ship communications",
+        "author": "Hu",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0017",
+        "doi-asserted-by": "crossref",
+        "first-page": "9198",
+        "DOI": "10.3390/s23229198",
+        "article-title": "ConGPS: A smart container positioning system using inertial sensor and electronic map with infrequent GPS",
+        "volume": "23",
+        "author": "Huang",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0018",
+        "doi-asserted-by": "crossref",
+        "first-page": "9714",
+        "DOI": "10.1109/JIOT.2020.2993411",
+        "article-title": "Internet of ships: a survey on architectures, emerging applications, and challenges",
+        "volume": "7",
+        "author": "Aslam",
+        "year": "2020",
+        "journal-title": "IEEe Internet. Things. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0019",
+        "doi-asserted-by": "crossref",
+        "first-page": "2083",
+        "DOI": "10.3390/electronics9122083",
+        "article-title": "Data Quality and trust: review of challenges and opportunities for Data sharing in IoT",
+        "volume": "9",
+        "author": "Byabazaire",
+        "year": "2020",
+        "journal-title": "Electronics"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.3390/s25010079",
+        "article-title": "Securing cloud-based internet of things: challenges and mitigations",
+        "volume": "25",
+        "author": "Singh",
+        "year": "2025",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0021",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2023.101005",
+        "article-title": "Connectivity standards alliance matter: state of the art and opportunities",
+        "volume": "25",
+        "author": "Belli",
+        "year": "2024",
+        "journal-title": "Internet Thing."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0022",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.3390/iot5020010",
+        "article-title": "Development of a multi-radio device for dry container monitoring and tracking",
+        "volume": "5",
+        "author": "Falcitelli",
+        "year": "2024",
+        "journal-title": "IoT"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0023",
+        "doi-asserted-by": "crossref",
+        "first-page": "6450",
+        "DOI": "10.3390/s22176450",
+        "article-title": "Enhanced communications on satellite-based IoT systems to support maritime transportation services",
+        "volume": "22",
+        "author": "Monzon Baeza",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0024",
+        "series-title": "2020 IEEE 17th Annual Consumer Communications & Networking Conference (CCNC)",
+        "first-page": "1",
+        "article-title": "IoT-enabled shipping container with environmental monitoring and location tracking",
+        "author": "Salah",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0025",
+        "series-title": "2024 10th International Conference on Communication and Signal Processing (ICCSP)",
+        "first-page": "1106",
+        "article-title": "Smart ports solutions for cargo container tracking and vessel traffic counting systems using IoT and cloud computing",
+        "author": "Priya",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0026",
+        "doi-asserted-by": "crossref",
+        "first-page": "4895",
+        "DOI": "10.3390/s22134895",
+        "article-title": "Towards a secure and scalable maritime monitoring system using blockchain and low-cost IoT technology",
+        "volume": "22",
+        "author": "Freire",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0027",
+        "doi-asserted-by": "crossref",
+        "first-page": "2928",
+        "DOI": "10.1109/JIOT.2020.2964245",
+        "article-title": "Performance analysis of onshore NB-IoT for container tracking during near-the-shore vessel navigation",
+        "volume": "7",
+        "author": "Kavuri",
+        "year": "2020",
+        "journal-title": "IEEe Internet. Things. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0028",
+        "series-title": "2024 3rd International Conference on Sentiment Analysis and Deep Learning (ICSADL)",
+        "first-page": "581",
+        "article-title": "An advanced container tracking system for real-time monitoring and automated alerting of container security and logistics",
+        "author": "Rajan",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0029",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1109/MCOM.008.2200215",
+        "article-title": "Space-terrestrial integrated internet of things: challenges and opportunities",
+        "volume": "60",
+        "author": "Fraire",
+        "year": "2022",
+        "journal-title": "IEEe Commun. Mag."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0030",
+        "series-title": "2024 IEEE Biennial Congress of Argentina (ARGENCON)",
+        "first-page": "1",
+        "article-title": "Performance assessment of LoRaWAN DtS-IoT networks: operation modes and server placement",
+        "author": "Scapin",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0031",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.3390/aerospace10010053",
+        "article-title": "LoRaWAN CubeSat with an adaptive data rate: an experimental analysis of path loss link margin",
+        "volume": "10",
+        "author": "Mehdi",
+        "year": "2023",
+        "journal-title": "Aerospace"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0032",
+        "doi-asserted-by": "crossref",
+        "first-page": "26630",
+        "DOI": "10.1109/JSEN.2024.3418728",
+        "article-title": "Satellite visibility prediction for constrained devices in direct-to-Satellite IoT systems",
+        "volume": "24",
+        "author": "Ortigueira",
+        "year": "2024",
+        "journal-title": "IEEe Sens. J."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0033",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.3390/logistics8010028",
+        "article-title": "Smart Ports in Industry 4.0: a systematic literature review",
+        "volume": "8",
+        "author": "Paraskevas",
+        "year": "2024",
+        "journal-title": "Logistics"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0034",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1109/MCOM.008.2200215",
+        "article-title": "Space-terrestrial integrated internet of things: challenges and opportunities",
+        "volume": "60",
+        "author": "Fraire",
+        "year": "2022",
+        "journal-title": "IEEe Commun. Mag."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "6450",
+        "DOI": "10.3390/s22176450",
+        "article-title": "Enhanced communications on satellite-based IoT systems to support maritime transportation services",
+        "volume": "22",
+        "author": "Monzon Baeza",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0036",
+        "series-title": "2023 IEEE International Conference on Big Data (BigData)",
+        "first-page": "1782",
+        "article-title": "Sensorless monitoring of shipping containers",
+        "author": "Mito",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0037",
+        "doi-asserted-by": "crossref",
+        "first-page": "2532",
+        "DOI": "10.3390/app12052532",
+        "article-title": "Digitalizing maritime containers shipping companies: impacts on their processes",
+        "volume": "12",
+        "author": "Sanchez-Gonzalez",
+        "year": "2022",
+        "journal-title": "Appl. Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0038",
+        "doi-asserted-by": "crossref",
+        "first-page": "9172",
+        "DOI": "10.3390/s23229172",
+        "article-title": "Leveraging larger AES keys in LoRaWAN: a practical evaluation of energy and time costs",
+        "volume": "23",
+        "author": "Thaenkaew",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0039",
+        "doi-asserted-by": "crossref",
+        "first-page": "2897",
+        "DOI": "10.3390/s24092897",
+        "article-title": "A survey on satellite communication system security",
+        "volume": "24",
+        "author": "Kang",
+        "year": "2024",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "9248",
+        "DOI": "10.3390/su13169248",
+        "article-title": "Exploring and validating container operational risk scale in container shipping: the case of Ethiopian shipping and logistics service enterprise",
+        "volume": "13",
+        "author": "Abdulahi",
+        "year": "2021",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0041",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.3390/computers13100261",
+        "article-title": "Enhancing information exchange in ship maintenance through digital twins and IoT: a comprehensive framework",
+        "volume": "13",
+        "author": "Golovan",
+        "year": "2024",
+        "journal-title": "Computers"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0043",
+        "doi-asserted-by": "crossref",
+        "first-page": "e8349",
+        "DOI": "10.1002/cpe.8349",
+        "article-title": "An innovative performance assessment method for increasing the efficiency of AODV routing protocol in VANETs through colored timed petri nets",
+        "volume": "37",
+        "author": "Heidari",
+        "year": "2025",
+        "journal-title": "Concurr. Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0044",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1038/s41598-025-95854-6",
+        "article-title": "Unmanned aerial vehicle routing based on frog-leaping optimization algorithm",
+        "volume": "15",
+        "author": "Maleki",
+        "year": "2025",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "e8252",
+        "DOI": "10.1002/cpe.8252",
+        "article-title": "Assessment of reliability and availability of wireless sensor networks in industrial applications by considering permanent faults",
+        "volume": "36",
+        "author": "Heidari",
+        "year": "2024",
+        "journal-title": "Concurr. Comput."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0046",
+        "doi-asserted-by": "crossref",
+        "first-page": "3255",
+        "DOI": "10.1007/s11276-025-03932-4",
+        "article-title": "Securing and optimizing IoT offloading with blockchain and deep reinforcement learning in multi-user environments",
+        "volume": "31",
+        "author": "Heidari",
+        "year": "2025",
+        "journal-title": "Wirel. Netw."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0047",
+        "doi-asserted-by": "crossref",
+        "first-page": "4232",
+        "DOI": "10.3390/rs14174232",
+        "article-title": "Performance evaluation of random access methods for IoT-over-satellite",
+        "volume": "14",
+        "author": "Chan",
+        "year": "2022",
+        "journal-title": "Remote Sens."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0048",
+        "doi-asserted-by": "crossref",
+        "first-page": "5654",
+        "DOI": "10.3390/app13095654",
+        "article-title": "Lower inclination orbit concept for direct-communication-to-satellite internet-of-things using lean satellite standard in near-equatorial regions",
+        "volume": "13",
+        "author": "Haitaamar",
+        "year": "2023",
+        "journal-title": "Appl. Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0049",
+        "series-title": "2024 IEEE Biennial Congress of Argentina (ARGENCON)",
+        "first-page": "1",
+        "article-title": "Performance assessment of LoRaWAN DtS-IoT networks: operation modes and server placement",
+        "author": "Scapin",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.3390/aerospace10010053",
+        "article-title": "LoRaWAN CubeSat with an adaptive data rate: an experimental analysis of path loss link margin",
+        "volume": "10",
+        "author": "Mehdi",
+        "year": "2023",
+        "journal-title": "Aerospace"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0051",
+        "doi-asserted-by": "crossref",
+        "first-page": "3412",
+        "DOI": "10.3390/s24113412",
+        "article-title": "Caching policy in low earth orbit satellite mega-constellation information-centric networking for internet of things",
+        "volume": "24",
+        "author": "Luo",
+        "year": "2024",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0052",
+        "series-title": "2024 12th International Conference on Information Systems and Computing Technology (ISCTech)",
+        "first-page": "1",
+        "article-title": "Traffic scheduling mechanism of satellite-terrestrial integrated networks for internet of vehicles",
+        "author": "Pan",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0053",
+        "doi-asserted-by": "crossref",
+        "first-page": "1575",
+        "DOI": "10.1109/TII.2023.3280315",
+        "article-title": "Nonorthogonal replication scheme for ALOHA uplink in LPWAN",
+        "volume": "20",
+        "author": "de",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Ind. Inform."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0054",
+        "first-page": "1",
+        "article-title": "A survey on random access protocols in direct-access LEO satellite-based IoT communication",
+        "author": "Le",
+        "year": "2024",
+        "journal-title": "IEEE Commun. Surv. Tutor."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0055",
+        "first-page": "30",
+        "article-title": "LoRaWAN in environmental monitoring: balancing end-to-end encryption and low-latency requirements for real-time hazard alerts",
+        "volume": "2",
+        "author": "Koushik",
+        "year": "2025",
+        "journal-title": "Int. J. Comput. Model. Appl."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0056",
+        "series-title": "2023 SBMO/IEEE MTT-S International Microwave and Optoelectronics Conference (IMOC)",
+        "first-page": "22",
+        "article-title": "Uplink performance of massive LoRaWAN",
+        "author": "Sousa",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0057",
+        "series-title": "2025 IEEE 21st International Conference on Factory Communication Systems (WFCS)",
+        "first-page": "1",
+        "article-title": "Achieving reduced latency and energy efficiency in direct-to-satellite LoRaWAN communications",
+        "author": "Rolland",
+        "year": "2025"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0058",
+        "doi-asserted-by": "crossref",
+        "first-page": "1013",
+        "DOI": "10.1007/s11276-023-03542-y",
+        "article-title": "LoRaWAN sensor: energy analysis and modeling",
+        "volume": "30",
+        "author": "Ghaderi",
+        "year": "2024",
+        "journal-title": "Wirel. Netw."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0059",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/su152216014",
+        "article-title": "Digital technique-enabled container logistics supply chain sustainability achievement",
+        "volume": "15",
+        "author": "Lyu",
+        "year": "2023",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.3390/fi16010027",
+        "article-title": "Service function chain deployment algorithm based on deep reinforcement learning in space–air–ground integrated network",
+        "volume": "16",
+        "author": "Feng",
+        "year": "2024",
+        "journal-title": "Future Internet."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0061",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1038/s44287-024-00088-9",
+        "article-title": "Low-Earth orbit satellite constellations for global communication network connectivity",
+        "volume": "1",
+        "author": "Lagunas",
+        "year": "2024",
+        "journal-title": "Nat. Rev. Electr. Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0063",
+        "doi-asserted-by": "crossref",
+        "first-page": "9439",
+        "DOI": "10.3390/app14209439",
+        "article-title": "AI-driven predictive maintenance in modern maritime transport—enhancing operational efficiency and reliability",
+        "volume": "14",
+        "author": "Simion",
+        "year": "2024",
+        "journal-title": "Appl. Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0064",
+        "doi-asserted-by": "crossref",
+        "first-page": "6400",
+        "DOI": "10.3390/s23146400",
+        "article-title": "A CNN-LSTM architecture for marine vessel track association using automatic identification system (AIS) data",
+        "volume": "23",
+        "author": "Syed",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0065",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/5.0247642",
+        "article-title": "A nano-design of a quantum-based arithmetic and logic unit for enhancing the efficiency of the future IoT applications",
+        "volume": "15",
+        "author": "Ahmadpour",
+        "year": "2025",
+        "journal-title": "AIP. Adv."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0066",
+        "doi-asserted-by": "crossref",
+        "first-page": "7286",
+        "DOI": "10.3390/s22197286",
+        "article-title": "Security performance analysis of LEO satellite constellation networks under DDoS attack",
+        "volume": "22",
+        "author": "Zhang",
+        "year": "2022",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0067",
+        "doi-asserted-by": "crossref",
+        "first-page": "8320",
+        "DOI": "10.3390/s23198320",
+        "article-title": "Robust symbol timing synchronization for initial access under LEO satellite channel",
+        "volume": "23",
+        "author": "Kim",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0068",
+        "doi-asserted-by": "crossref",
+        "first-page": "e5056",
+        "DOI": "10.1002/ett.5056",
+        "article-title": "Botnets unveiled: A comprehensive survey on evolving threats and defense strategies",
+        "volume": "35",
+        "author": "Asadi",
+        "year": "2024",
+        "journal-title": "Trans. Emerg. Telecommun. Technol."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0069",
+        "doi-asserted-by": "crossref",
+        "first-page": "22",
+        "DOI": "10.3390/info13010022",
+        "article-title": "Cyber Security in the maritime industry: a systematic survey of recent advances and future trends",
+        "volume": "13",
+        "author": "Ben Farah",
+        "year": "2022",
+        "journal-title": "Information"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "1711",
+        "DOI": "10.3390/s19071711",
+        "article-title": "Internet of Things in Marine Environment monitoring: a review",
+        "volume": "19",
+        "author": "Xu",
+        "year": "2019",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0072",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.3390/asi6030058",
+        "article-title": "Experimental evaluation of an IoT-based platform for Maritime transport services",
+        "volume": "6",
+        "author": "Noto",
+        "year": "2023",
+        "journal-title": "Appl. Syst. Innov."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0073",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1029/2021RS007423",
+        "article-title": "Energy consumption of IoT devices: an accurate evaluation to better predict battery lifetime",
+        "volume": "57",
+        "author": "Faye",
+        "year": "2022",
+        "journal-title": "Radio Sci."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0074",
+        "doi-asserted-by": "crossref",
+        "first-page": "4896",
+        "DOI": "10.3390/s23104896",
+        "article-title": "Comparative analysis of power consumption between MQTT and HTTP protocols in an IoT platform designed and implemented for remote real-time monitoring of long-term cold chain transport operations",
+        "volume": "23",
+        "author": "Jara Ochoa",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "987",
+        "DOI": "10.3390/en18040987",
+        "article-title": "Optimizing IoT energy efficiency: real-time adaptive algorithms for smart meters with LoRaWAN and NB-IoT",
+        "volume": "18",
+        "author": "Al-Sammak",
+        "year": "2025",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0076",
+        "series-title": "2024 4th International Conference on Computer Science, Electronic Information Engineering and Intelligent Control Technology (CEI)",
+        "first-page": "288",
+        "article-title": "Optimization design and performance research of 5G P-IOT passive tags based on LPWAN and transformer in long range coverage transmission",
+        "author": "Hu",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0077",
+        "first-page": "13",
+        "article-title": "LoRa Alliance certification",
+        "author": "Hunt",
+        "year": "2021",
+        "journal-title": "J. ICT Stand."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0078",
+        "unstructured": "LoRa Alliance®,RP002-1.0.4 regional parameters, (2023). https://resources.lora-alliance.org/technical-specifications/rp002-1-0-4-regional-parameters (accessed July 10, 2025)."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0079",
+        "doi-asserted-by": "crossref",
+        "first-page": "9172",
+        "DOI": "10.3390/s23229172",
+        "article-title": "Leveraging larger AES keys in LoRaWAN: A practical evaluation of energy and time costs",
+        "volume": "23",
+        "author": "Thaenkaew",
+        "year": "2023",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "3421",
+        "DOI": "10.3390/math10193421",
+        "article-title": "A comprehensive analysis of LoRaWAN key security models and possible attack solutions",
+        "volume": "10",
+        "author": "Ntshabele",
+        "year": "2022",
+        "journal-title": "Mathematics"
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0081",
+        "doi-asserted-by": "crossref",
+        "first-page": "439",
+        "DOI": "10.3390/jmse12030439",
+        "article-title": "Application of artificial intelligence in maritime transportation",
+        "volume": "12",
+        "author": "Chen",
+        "year": "2024",
+        "journal-title": "J. Mar. Sci. Eng."
+      },
+      {
+        "key": "10.1016/j.comnet.2025.111627_bib0082",
+        "doi-asserted-by": "crossref",
+        "first-page": "106",
+        "DOI": "10.3390/inventions9050106",
+        "article-title": "Energy analysis of standardized shipping containers for housing",
+        "volume": "9",
+        "author": "Fariña",
+        "year": "2024",
+        "journal-title": "Inventions"
+      }
+    ],
+    "container-title": [
+      "Computer Networks"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1389128625005948?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1389128625005948?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2026-05-12T19:23:16Z",
+      "timestamp": 1778613796000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1389128625005948"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "references-count": 79,
+    "alternative-id": [
+      "S1389128625005948"
+    ],
+    "URL": "https://doi.org/10.1016/j.comnet.2025.111627",
+    "relation": {},
+    "ISSN": [
+      "1389-1286"
+    ],
+    "issn-type": [
+      {
+        "value": "1389-1286",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Hybrid IoT network for real-time monitoring of maritime containers",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computer Networks",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.comnet.2025.111627",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2025 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "111627"
+  }
+}

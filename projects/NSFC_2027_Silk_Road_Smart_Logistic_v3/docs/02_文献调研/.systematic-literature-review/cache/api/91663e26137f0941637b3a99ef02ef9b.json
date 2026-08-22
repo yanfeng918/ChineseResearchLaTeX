@@ -1,0 +1,431 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          29
+        ]
+      ],
+      "date-time": "2026-07-29T14:50:07Z",
+      "timestamp": 1785336607324,
+      "version": "3.55.0"
+    },
+    "reference-count": 40,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2023-07-01T00:00:00Z",
+          "timestamp": 1688169600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1109/edge60047.2023.00032",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2023-09-01T17:24:43Z",
+      "timestamp": 1693589083000
+    },
+    "page": "150-158",
+    "source": "Crossref",
+    "is-referenced-by-count": 15,
+    "title": [
+      "LightESD: Fully-Automated and Lightweight Anomaly Detection Framework for Edge Computing"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Ronit",
+        "family": "Das",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Missouri University of Science and Technology,Department of Computer Engineering,Rolla,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tie",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Missouri University of Science and Technology,Department of Computer Science,Rolla,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2977114"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2291267"
+      },
+      {
+        "key": "ref12",
+        "article-title": "Automatic anomaly detection in the cloud via statistical learning",
+        "author": "hochenbaum",
+        "year": "2017"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aoms/1177729885"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.26599/TST.2019.9010051"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-04898-2_594"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijar.2013.03.012"
+      },
+      {
+        "key": "ref36",
+        "article-title": "Volume 16: how to detect and handle outliers, the asqc basic references in quality control: statistical techniques, edward f. mykytka",
+        "author": "iglewicz",
+        "year": "1993",
+        "journal-title": "Ph D dissertation Ph D Editor"
+      },
+      {
+        "key": "ref31",
+        "first-page": "38",
+        "article-title": "Peirce&#x2019;s criterion for the elimination of suspect experimental data",
+        "volume": "20",
+        "author": "ross",
+        "year": "2003",
+        "journal-title": "Engineering and Technology Journal"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.33015409"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1541880.1541882"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1983.10487848"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF00994018"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1972.10488948"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/342009.335388"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1086/100259",
+        "article-title": "Criterion for the rejection of doubtful observations",
+        "volume": "2",
+        "author": "peirce",
+        "year": "1852",
+        "journal-title": "The Astronomical Journal"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2019.01.010"
+      },
+      {
+        "key": "ref39",
+        "article-title": "Support vector method for novelty detection",
+        "volume": "12",
+        "author": "scholköpf",
+        "year": "1999",
+        "journal-title": "Advances in neural information processing systems"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3292500.3330871"
+      },
+      {
+        "key": "ref38",
+        "article-title": "S5-a labeled anomaly detection dataset, version 1.0 (16m)",
+        "author": "laptev",
+        "year": "2015"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNN.2006.880583"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.2020.2973631"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICMLA.2015.141"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611972757.40"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24963/ijcai.2019/535"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3448016.3457557"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2022.3151853"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "crossref",
+        "first-page": "773",
+        "DOI": "10.1093/mnras/213.4.773",
+        "article-title": "An algorithm for significantly reducing the time necessary to compute a discrete fourier transform periodogram of unequally spaced data",
+        "volume": "213",
+        "author": "kurtz",
+        "year": "1985",
+        "journal-title": "Monthly Notices of the Royal Astronomical Society"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "crossref",
+        "first-page": "70",
+        "DOI": "10.1109/TAU.1967.1161901",
+        "article-title": "The use of fast fourier transform for the estimation of power spectra: a method based on time averaging over short, modified periodograms",
+        "volume": "15",
+        "author": "welch",
+        "year": "1967",
+        "journal-title": "IEEE Transactions on Audio and Electroacoustics"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSP.2016.2601299"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3394486.3403271"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2172/1165751"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2018.2876857"
+      },
+      {
+        "key": "ref7",
+        "first-page": "1",
+        "article-title": "Variational autoencoder based anomaly detection using reconstruction probability",
+        "volume": "2",
+        "author": "an",
+        "year": "2015",
+        "journal-title": "Special Lecture on IE"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511801389"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2021.108616"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDM.2008.17"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TBCAS.2021.3137646"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/BigData50022.2020.9378139"
+      },
+      {
+        "key": "ref40",
+        "article-title": "GitHub - amanusk/s-tui: Terminal-based CPU stress and monitoring utility &#x2014; github.com",
+        "year": "2017"
+      }
+    ],
+    "event": {
+      "name": "2023 IEEE International Conference on Edge Computing and Communications (EDGE)",
+      "location": "Chicago, IL, USA",
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            2
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            8
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2023 IEEE International Conference on Edge Computing and Communications (EDGE)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/10234182/10234229/10234322.pdf?arnumber=10234322",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2023-09-25T17:57:13Z",
+      "timestamp": 1695664633000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10234322/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "references-count": 40,
+    "URL": "https://doi.org/10.1109/edge60047.2023.00032",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    }
+  }
+}

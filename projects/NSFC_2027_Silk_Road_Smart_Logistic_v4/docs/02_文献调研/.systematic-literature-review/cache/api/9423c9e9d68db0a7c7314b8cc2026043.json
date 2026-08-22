@@ -1,0 +1,1720 @@
+{
+  "total": 704,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "8ae836713d717416e0201ec66feb2f64fb42ac6c",
+      "externalIds": {
+        "DBLP": "journals/internet/NowshinDY25",
+        "DOI": "10.1109/MIC.2025.3594330",
+        "CorpusId": 280469493
+      },
+      "url": "https://www.semanticscholar.org/paper/8ae836713d717416e0201ec66feb2f64fb42ac6c",
+      "title": "Memory-Augmented Autoencoder with Reservoir Computing for Edge-Based Anomaly Detection in Autonomous Systems",
+      "venue": "IEEE Internet Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/MIC.2025.3594330?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/MIC.2025.3594330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1931826661",
+          "name": "Fabiha Nowshin"
+        },
+        {
+          "authorId": "2314093276",
+          "name": "Zheng Dong"
+        },
+        {
+          "authorId": "2313999349",
+          "name": "Yang Yi"
+        }
+      ],
+      "abstract": "Real-time anomaly detection and trajectory prediction in autonomous vehicles demand models both computationally efficient and accurate. Traditional deep learning approaches often suffer from high latency, energy inefficiency, and complex training, limiting their suitability for edge-based inference. We propose a hardware-optimized architecture combining an autoencoder (AE) and reservoir computing (RC) implemented on a 22-nm CMOS ASIC. The AE extracts spatial features from multisensor data, while the RC captures temporal patterns for robust anomaly detection and trajectory forecasting. With ultralow power consumption and high-speed processing, our system is well-suited for resource-constrained Internet of Things (IoT) environments like autonomous vehicles. Evaluated on the KITTI dataset, the AE–RC model achieves 96.8% accuracy, with 5.6-mW power usage and 5-μs inference latency. This work advances energy-efficient, high-performance artificial intelligence hardware for safety-critical automotive applications and enables scalable edge intelligence in next-generation IoT systems."
+    },
+    {
+      "paperId": "2d65f1d3f0b43e207aa7021e5cc8117e6f009aa3",
+      "externalIds": {
+        "DOI": "10.65923/bwveet47",
+        "CorpusId": 291062286
+      },
+      "url": "https://www.semanticscholar.org/paper/2d65f1d3f0b43e207aa7021e5cc8117e6f009aa3",
+      "title": "Adaptive Deep Learning Models for Real-Time Anomaly Detection in IoT Networks",
+      "venue": "Euro Vantage Journal of Artificial Intelligence",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.65923/bwveet47?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.65923/bwveet47, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2437966266",
+          "name": "Hadia Azmat"
+        },
+        {
+          "authorId": "2457156397",
+          "name": "Ifrah Ikram"
+        }
+      ],
+      "abstract": "The exponential growth of Internet of Things (IoT) networks has introduced unprecedented volumes of data and new avenues for cyber threats and operational anomalies. Traditional anomaly detection techniques struggle to meet the dynamic, heterogeneous, and resource-constrained nature of IoT environments. This paper explores the potential of adaptive deep learning models in providing real-time anomaly detection within IoT systems. By leveraging architectures such as Autoencoders, LSTM networks, and Convolutional Neural Networks, these models can learn complex data patterns and adapt to evolving threats without requiring frequent human intervention. The study discusses key implementation challenges, including computational constraints, latency requirements, and data privacy concerns. It also highlights practical applications in domains such as healthcare, industrial automation, and smart energy grids, where adaptive models have demonstrated significant value. Future directions are explored, focusing on federated learning, edge computing, and explainable AI to enhance scalability and trust. The findings underscore the promise of adaptive deep learning as a cornerstone for securing and optimizing real-time IoT ecosystems."
+    },
+    {
+      "paperId": "af7a8e39b18be9a46818348eaf2a2e18d1f52813",
+      "externalIds": {
+        "DOI": "10.1109/SIU71813.2026.11636531",
+        "CorpusId": 291042461
+      },
+      "url": "https://www.semanticscholar.org/paper/af7a8e39b18be9a46818348eaf2a2e18d1f52813",
+      "title": "Anomaly Detection on Resource-Constrained IoT Devices Using an Energy-Efficient Dynamic Artificial Intelligence Architecture",
+      "venue": "Signal Processing and Communications Applications Conference",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SIU71813.2026.11636531?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SIU71813.2026.11636531, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2389528883",
+          "name": "Rıdvan Şevik"
+        },
+        {
+          "authorId": "51462800",
+          "name": "Yıldıran Yılmaz"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "c430aca240d93ee55bb3011b2610dcab81fa9c72",
+      "externalIds": {
+        "ArXiv": "2511.18235",
+        "CorpusId": 283243412
+      },
+      "url": "https://www.semanticscholar.org/paper/c430aca240d93ee55bb3011b2610dcab81fa9c72",
+      "title": "EcoDefender: Energy-Efficient Hybrid Anomaly Detection for IoT Edge Gateways",
+      "venue": "",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.18235, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310536098",
+          "name": "Saeid Jamshidi"
+        },
+        {
+          "authorId": "16932745",
+          "name": "M. Bellaiche"
+        },
+        {
+          "authorId": "2330191763",
+          "name": "Omar Abdul Wahab"
+        }
+      ],
+      "abstract": "The rapid growth of the Internet of Things (IoT) has created large-scale, heterogeneous ecosystems that are increasingly vulnerable to sophisticated, distributed cyber threats. However, many existing anomaly detection systems prioritize detection accuracy while overlooking system-level constraints, such as latency, computational overhead, and energy consumption, thereby limiting their practicality for resource-constrained edge gateways. This paper presents EcoDefender, an edge-oriented hybrid anomaly detection framework that combines Autoencoder (AE)-based latent representation learning with Isolation Forest (IF) anomaly scoring for IoT traffic analysis. The proposed architecture introduces several enhancements over conventional AE-IF pipelines, including anomaly-aware latent manifold regularization, variance-weighted isolation splits in the latent space, and a learnable fusion mechanism that adaptively combines reconstruction error and isolation-based anomaly scores in the presence of potential distributional drift. By compressing high-dimensional traffic features into compact latent representations and performing anomaly scoring in this reduced space, EcoDefender enables lightweight and fully unsupervised anomaly detection suitable for edge deployment. An experimental evaluation of realistic IoT traffic and a distributed Raspberry Pi edge testbed demonstrates that EcoDefender achieves up to 94% detection accuracy while maintaining low computational overhead, with an average CPU usage of 22% and an end-to-end inference latency of 27 ms. Furthermore, energy-aware measurements obtained through device-level power monitoring show an average energy consumption of 0.45 J per inference (0.28 g CO2 emissions), representing a 30% reduction in energy consumption compared with AE-only baselines while sustaining inference throughput of up to 5,000 samples per second."
+    },
+    {
+      "paperId": "ed945ff5b73a45dfddd579424137b655c35da39f",
+      "externalIds": {
+        "DOI": "10.3390/iot6030048",
+        "CorpusId": 280993647
+      },
+      "url": "https://www.semanticscholar.org/paper/ed945ff5b73a45dfddd579424137b655c35da39f",
+      "title": "A Two-Stage Hybrid Federated Learning Framework for Privacy-Preserving IoT Anomaly Detection and Classification",
+      "venue": "IoT",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2624-831X/6/3/48/pdf?version=1756473658",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/iot6030048?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/iot6030048, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "7896616",
+          "name": "Mohammad Shahin"
+        },
+        {
+          "authorId": "2073294574",
+          "name": "Aliakbar Hosseinzadeh"
+        },
+        {
+          "authorId": "2107179535",
+          "name": "F. F. Chen"
+        }
+      ],
+      "abstract": "The rapid surge of Artificial Internet-of-Things (AIoT) devices has outpaced the deployment of robust, privacy-preserving anomaly detection solutions suitable for resource-constrained edge environments. This paper presents a two-stage hybrid Federated Learning (FL) framework for IoT anomaly detection and classification, validated on the real-world N-BaIoT dataset. In the first stage, each device trains a generative Artificial Intelligence (AI) model on benign traffic only, and in the second stage a Histogram-based Gradient-Boosting (HGB) classifier labels flagged traffic. All models operate under a synchronous, collaborative FL architecture across nine commercial IoT devices, thus preserving data privacy and minimizing communication. Through both inter- and intra-benchmarking against state-of-the-art baselines, the Variational Autoencoder–HGB (VAE-HGB) pipeline emerges as the top performer, achieving an average end-to-end accuracy of 99.14% across all classes. These results demonstrate that reconstruction-driven generative AI models, when combined with federated averaging and efficient classification, deliver a highly scalable, accurate, and privacy-preserving solution for securing resource-constrained IoT environments."
+    },
+    {
+      "paperId": "3234813fc4f861bd1043fdaeb86a378b141045ff",
+      "externalIds": {
+        "DOI": "10.54254/2755-2721/2025.22280",
+        "CorpusId": 278089798
+      },
+      "url": "https://www.semanticscholar.org/paper/3234813fc4f861bd1043fdaeb86a378b141045ff",
+      "title": "Energy-Aware Edge Computing Optimization for Real-Time Anomaly Detection in IoT Networks",
+      "venue": "Applied and Computational Engineering",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.ewadirect.com/proceedings/ace/article/view/22280/pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.54254/2755-2721/2025.22280?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.54254/2755-2721/2025.22280, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2284761221",
+          "name": "Chunhe Ni"
+        },
+        {
+          "authorId": "2284832779",
+          "name": "Jiang Wu"
+        },
+        {
+          "authorId": "2284792925",
+          "name": "Hongbo Wang"
+        }
+      ],
+      "abstract": "This research addresses the critical challenge of energy-efficient anomaly detection in resource-constrained edge computing environments for IoT networks. With the proliferation of IoT devices generating exponential data volumes and information technology energy consumption projected to reach 20% of global electricity production by 2030, sustainable computing approaches at the network edge are imperative. We propose a novel optimization framework that dynamically balances computation offloading decisions with local processing capabilities to minimize energy consumption while maintaining detection accuracy and meeting real-time requirements. The framework incorporates: (1) a calibrated energy consumption model for heterogeneous edge environments, (2) an adaptive resource allocation strategy responding to network conditions, (3) lightweight machine learning architecture optimized for minimal energy footprint, and (4) intelligent computation offloading based on device energy states. Experimental evaluation on a testbed of 16 heterogeneous edge devices processing real-world IoT traffic demonstrates energy consumption reduction of 23.8% compared to traditional approaches, while maintaining detection accuracy above 92.5% across diverse anomaly types. The system extends battery life by up to 165% in energy-constrained scenarios through dynamic adjustment of detection parameters. Comparative analysis confirms superior performance against state-of-the-art methods in both energy efficiency and detection capability, particularly in environments with variable energy availability."
+    },
+    {
+      "paperId": "665f790c246168ba080e8d5bca2370a0d8867f77",
+      "externalIds": {
+        "DBLP": "journals/iotj/OrtegaSCC25",
+        "DOI": "10.1109/JIOT.2024.3468950",
+        "CorpusId": 273017061
+      },
+      "url": "https://www.semanticscholar.org/paper/665f790c246168ba080e8d5bca2370a0d8867f77",
+      "title": "Discretized-Isolation Forest: Memory- and Compute-Efficient Unsupervised Anomaly Detection for Resource-Constrained Internet of Things Edge Devices",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2024.3468950?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2024.3468950, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2275898737",
+          "name": "Eduardo Ortega"
+        },
+        {
+          "authorId": "2243340001",
+          "name": "Fei Su"
+        },
+        {
+          "authorId": "2323687486",
+          "name": "Rita Chattopadhyay"
+        },
+        {
+          "authorId": "2242955212",
+          "name": "Krishnendu Chakrabarty"
+        }
+      ],
+      "abstract": "Memory and compute constraints make anomaly detection model training infeasible on Internet of Things (IoT) resource-limited edge devices. Many solutions train anomaly detection models (e.g., deep neural networks or DNNs) on the cloud and deploy them on IoT edge devices for inferencing. However, cloud-based training does not address overall communication latency and potential data leakage. Moreover, because anomalies rarely occur, using labels to define anomalies is impractical. Hence, supervised learning mechanisms are unsuitable for anomaly detection. There is a need for effective unsupervised anomaly detection for resource-constrained edge devices. We present the discretized isolation Forest (DIF) to address memory- and compute-efficient unsupervised anomaly detection for resource-constrained edge devices. We also present a discretization function, based on information entropy, to inform the growth of the isolation Forest (IF) ensemble to create the DIF. The DIF reduces the training time (memory usage) of the original IF by $79.38\\times (166.66\\times)$ . We test the DIF against general anomaly detection benchmarks and edge-anomaly detection benchmarks. The edge-anomaly detection benchmarks were curated from the built-in iPhone edge sensors. Across all the edge-sensor anomaly detection datasets and against all the other considered models, the discretized isolation resulted in the lowest training time, lowest memory usage, preserved anomaly detection performance, and highest inference speeds. In addition, across all general anomaly detection benchmarks and against all considered models, DIF incurs lower training time and memory usage while retaining competitive inferencing execution time and anomaly detection performance."
+    },
+    {
+      "paperId": "8375f92ced1bd95e94ede94d3e45dfad59aeaf1d",
+      "externalIds": {
+        "DOI": "10.1109/ICCMC69250.2026.11624910",
+        "CorpusId": 290650781
+      },
+      "url": "https://www.semanticscholar.org/paper/8375f92ced1bd95e94ede94d3e45dfad59aeaf1d",
+      "title": "Adaptive Three-Tier Federated Intelligence for Real-Time Anomaly Detection and Threat Prediction in Resource-Constrained IoT Systems",
+      "venue": "International Conference Computing Methodologies and Communication",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCMC69250.2026.11624910?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCMC69250.2026.11624910, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2454122694",
+          "name": "Syed Muzibuddin"
+        },
+        {
+          "authorId": "2454145703",
+          "name": "P. Rao"
+        }
+      ],
+      "abstract": "The blistering development of the Internet of Things (IoT) systems has made them more vulnerable to the cyber threat, especially when it comes to resources and the decentralization of data production. This paper suggests a three-level federated intelligence model, which is flexible in real-time anomaly detection and predictive threat analysis of IoTs. The model combines on-device lightweight detection, edge-level federated learning and cloud-based global optimization to facilitate privacy-preserving and scalable security. A resource conscious adaptive feature selection system is used to dynamically scale the computational complexity, and a time prediction algorithm used to predict early threats. To ensure realistic validation of the model in various attack scenarios, benchmark IoT intrusion detection datasets are used to evaluate the model, which are widely used in federated anomaly detection research. The experimental evidence indicates that the offered method can reach the accuracy of 96.8% and F1-score of 96.0% and decrease the volume of communication by 85% and the execution time to 18 ms, instead of 42 ms. Moreover, the prediction module attains 93.7% accuracy and has a lead time of 6.8 seconds. These results point to the proposed framework as being a successful balance of accuracy, efficiency, and scalability to real-world IoT security applications."
+    },
+    {
+      "paperId": "7e212b4adb3177d6b2e7e42d11313bd0915c0904",
+      "externalIds": {
+        "DBLP": "conf/cscs/SerbanNHS25",
+        "DOI": "10.1109/CSCS66924.2025.00066",
+        "CorpusId": 281711434
+      },
+      "url": "https://www.semanticscholar.org/paper/7e212b4adb3177d6b2e7e42d11313bd0915c0904",
+      "title": "Towards Trustworthy IoT Ecosystems: Efficient Encryption and Anomaly Detection for Resource-Constrained Devices",
+      "venue": "Computer Science in Cars Symposium",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CSCS66924.2025.00066?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CSCS66924.2025.00066, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2173043307",
+          "name": "Codruta Maria Serban"
+        },
+        {
+          "authorId": "2169161",
+          "name": "M. Neagu"
+        },
+        {
+          "authorId": "2346630",
+          "name": "A. Hangan"
+        },
+        {
+          "authorId": "145944992",
+          "name": "G. Sebestyen"
+        }
+      ],
+      "abstract": "Ensuring data protection and trustworthiness is a critical challenge in the context of Internet of Things (IoT) deployments for resource-constrained environments. In this paper, a holistic security architecture is proposed, which adopts low-cost devices like ESP microcontrollers and Raspberry Pi processing nodes for IoT systems. We outline compelling methods to implement encryption, authentication, and anomaly detection on resource-constrained hardware, while maintaining usability and security. The experimental results confirm the feasibility of deploying standardized security protocols on constrained devices, such as encrypted payloads and message authentication mechanisms. Also, lightweight anomaly detection is implemented at the edge to boost system resilience against adversarial inputs. This work quantifies performance trade-offs like latency and memory usage, for design insights in building scalable and reliable IoT systems for use-cases demanding both security and resource efficiency."
+    },
+    {
+      "paperId": "01daf3aa77eddcee2e9ec60380e8037740b3364f",
+      "externalIds": {
+        "DBLP": "journals/informaticaSI/BenabbesAB26",
+        "DOI": "10.31449/inf.v50i1.12670",
+        "CorpusId": 287463241
+      },
+      "url": "https://www.semanticscholar.org/paper/01daf3aa77eddcee2e9ec60380e8037740b3364f",
+      "title": "A Lightweight Edge-Deployable ANN Model for Real-Time Energy Anomaly Detection in IoT-Driven Smart Grids",
+      "venue": "Informatica",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://www.informatica.si/index.php/informatica/article/download/12670/6607",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.31449/inf.v50i1.12670?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.31449/inf.v50i1.12670, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1419512896",
+          "name": "S. Benabbes"
+        },
+        {
+          "authorId": "2429561614",
+          "name": "Wael Aissaoui"
+        },
+        {
+          "authorId": "2051455916",
+          "name": "Rabah Boucetti"
+        }
+      ],
+      "abstract": "The rapid expansion of the Internet of Things (IoT) in smart cities has necessitated efficient, real-time energy anomaly detection. However, complex hybrid deep learning models often exceed the computational capacity of Edge devices. This paper proposes a lightweight, 3-layer Artificial Neural Network (ANN) framework designed for Edge deployment. Using the LEAD (Large-scale Energy Anomaly Detection) dataset, we address class imbalance via the Synthetic Minority Over-sampling Technique (SMOTE). Our model achieves 98.4% accuracy, a macro F1-score of 0.93, and an AUC of 0.91. While these metrics are competitive with state-of-the-art hybrid models, our framework provides a significantly lower memory footprint and sub-millisecond inference latency, making it ideal for resource-constrained Edge environments."
+    },
+    {
+      "paperId": "1e8104d04a884fff6730a9f65235cf0cb0d72eb7",
+      "externalIds": {
+        "DOI": "10.1109/ICCIAA68481.2026.11543629",
+        "CorpusId": 289127819
+      },
+      "url": "https://www.semanticscholar.org/paper/1e8104d04a884fff6730a9f65235cf0cb0d72eb7",
+      "title": "Constraint-Aware Hybrid Metaheuristic Optimization for Joint IDS Placement and Key-Refresh Scheduling in Resource-Constrained IoT Edge Networks",
+      "venue": "2026 2nd International Conference on Computational Intelligence Approaches and Applications (ICCIAA)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCIAA68481.2026.11543629?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCIAA68481.2026.11543629, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2278071060",
+          "name": "Hasan Kanaker"
+        },
+        {
+          "authorId": "30682559",
+          "name": "S. Awwad"
+        }
+      ],
+      "abstract": "Security controls in Internet-of-Things (IoT) deployments must operate under tight energy, memory, and latency budgets, making how and where security is enforced an optimization problem rather than a fixed design choice. This paper formulates a joint IoT security optimization that selects (i) the placement of lightweight intrusion detection system (IDS) agents on edge nodes and (ii) per-device cryptographic key-refresh periods, while assigning devices to deployed IDS agents under capacity and distance constraints. The resulting mixed-integer nonlinear program is NP-hard due to combinatorial placement/assignment and nonlinear risk/overhead terms. To solve it, we propose a constraint-aware hybrid optimizer (CHPDE) that couples binary particle swarm optimization (BPSO) for placement with differential evolution (DE) operators for continuous key-refresh variables and a repair mechanism for feasibility. Using a synthetic IoT-edge benchmark generator, we provide theoretical performance tables and plots comparing genetic algorithm (GA), PSO, DE, and grey wolf optimizer (GWO) against CHPDE. Theoretical results indicate that CHPDE converges faster and achieves lower objective values with improved security-risk reduction under the same compute budget."
+    },
+    {
+      "paperId": "3cb85f94ab2460c256c4f77672a199ead4105844",
+      "externalIds": {
+        "DBLP": "journals/virology/RahmatiR25",
+        "DOI": "10.1007/s11416-025-00582-0",
+        "CorpusId": 282302088
+      },
+      "url": "https://www.semanticscholar.org/paper/3cb85f94ab2460c256c4f77672a199ead4105844",
+      "title": "Adaptive Federated Edge Intelligence for Real-Time Cyberthreat Detection in Resource-Constrained IoT Environments: A Lightweight Deep Learning Approach",
+      "venue": "Journal of Computer Virology and Hacking Techniques",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11416-025-00582-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11416-025-00582-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2345824371",
+          "name": "Milad Rahmati"
+        },
+        {
+          "authorId": "2385208252",
+          "name": "Nima Rahmati"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "b22defc873be89bef2ceaa645908f699e8e5b1ff",
+      "externalIds": {
+        "DOI": "10.1109/ICSCAN66520.2026.11588322",
+        "CorpusId": 289979976
+      },
+      "url": "https://www.semanticscholar.org/paper/b22defc873be89bef2ceaa645908f699e8e5b1ff",
+      "title": "Energy-Constrained Neuromorphic Edge AI Using Spiking Graph Neural Networks for Autonomous IoT Anomaly Detection",
+      "venue": "2026 International Conference on System, Computation, Automation and Networking (ICSCAN)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSCAN66520.2026.11588322?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSCAN66520.2026.11588322, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2090475809",
+          "name": "S. Suneel"
+        },
+        {
+          "authorId": "2344257235",
+          "name": "K. Devi"
+        },
+        {
+          "authorId": "2448458964",
+          "name": "R. Rajalakshmi"
+        },
+        {
+          "authorId": "2322786459",
+          "name": "B. Bharathidevi"
+        },
+        {
+          "authorId": "2372475114",
+          "name": "Lalitha Palthiya"
+        },
+        {
+          "authorId": "2343844214",
+          "name": "D. Jayaprakash"
+        }
+      ],
+      "abstract": "The evolutionary speed of Internet of Things ecosystems has increased the demand of secure, real-time and energy efficient mechanisms of anomaly detection that could be deployed at the edge. Traditional deep learning designs are computationally expensive and energy-intensive, with high detection performance, but are too expensive and resourceintensive to run in resource-restricted IoT devices. In this paper, a graph of energy-conscious Spiking Graph Neural Network is suggested, offering an autonomous framework of IoT detection of anomalies with temporal encoding and temporal features presented as spikes and the relational learning of a graph. The model assumes representation of device interactions as a normalized graph and uses an event driven spiking neuron dynamics to eliminate redundant computation. On the CICIoT2023 dataset, the suggested methodology has 95 percent classification accuracy and an AUC of 0.97 and has much less per-inference energy use than the standard DNN, CNN, GNN, and SNN models. Experimental testing proves good generalization capacity and capability of low power edge conditions. The findings indicate that neuromorphic processing in conjunction with graph learning can be used to develop effective and dependable security intelligence of the IoT."
+    },
+    {
+      "paperId": "2306e400e78f357cc22921b6f76142e977c8bc34",
+      "externalIds": {
+        "PubMedCentral": "12610206",
+        "DOI": "10.3390/s25216629",
+        "CorpusId": 282683530,
+        "PubMed": "41228852"
+      },
+      "url": "https://www.semanticscholar.org/paper/2306e400e78f357cc22921b6f76142e977c8bc34",
+      "title": "Lightweight Signal Processing and Edge AI for Real-Time Anomaly Detection in IoT Sensor Networks",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/25/21/6629/pdf?version=1761665250",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12610206, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2341561416",
+          "name": "M. Reis"
+        }
+      ],
+      "abstract": "The proliferation of IoT devices has created vast sensor networks that generate continuous time-series data. Efficient and real-time processing of these signals is crucial for applications such as predictive maintenance, healthcare monitoring, and environmental sensing. This paper proposes a lightweight framework that combines classical signal processing techniques (Fourier and Wavelet-based feature extraction) with edge-deployed machine learning models for anomaly detection. By performing feature extraction and classification locally, the approach reduces communication overhead, minimizes latency, and improves energy efficiency in IoT nodes. Experiments with synthetic vibration, acoustic, and environmental datasets showed that the proposed Shallow Neural Network achieved the highest detection performance (F1-score ≈ 0.94), while a Quantized TinyML model offered a favorable trade-off (F1-score ≈ 0.92) with a 3× reduction in memory footprint and 60% lower energy consumption. Decision Trees remained competitive for ultra-constrained devices, providing sub-millisecond latency with limited recall. Additional analyses confirmed robustness against noise, missing data, and variations in anomaly characteristics, while ablation studies highlighted the contributions of each pipeline component. These results demonstrate the feasibility of accurate, resource-efficient anomaly detection at the edge, paving the way for practical deployment in large-scale IoT sensor networks."
+    },
+    {
+      "paperId": "6590658f6b776fb8ce2b27a3b29810c4f3dfda18",
+      "externalIds": {
+        "DOI": "10.3390/electronics15132879",
+        "CorpusId": 289762053
+      },
+      "url": "https://www.semanticscholar.org/paper/6590658f6b776fb8ce2b27a3b29810c4f3dfda18",
+      "title": "EPC-TinyAD: An Energy- and Privacy-Aware Compressed TinyML Framework for Reliable Industrial Anomaly Detection on Resource-Constrained Edge Devices",
+      "venue": "Electronics",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/electronics15132879",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/electronics15132879?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/electronics15132879, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2337513140",
+          "name": "Yu Sun"
+        },
+        {
+          "authorId": "2369218476",
+          "name": "Yihang Qin"
+        },
+        {
+          "authorId": "2369275593",
+          "name": "Wenhao Chen"
+        },
+        {
+          "authorId": "2430780519",
+          "name": "Wenhui Zhao"
+        },
+        {
+          "authorId": "2118181158",
+          "name": "Haoran Sun"
+        }
+      ],
+      "abstract": "Real-time industrial anomaly detection is increasingly shifting from cloud-based diagnosis to edge intelligence deployed close to machines. However, practical industrial scenarios are constrained by scarce fault samples, unknown anomaly types, cross-machine distribution shifts, strict false alarm requirements, data privacy restrictions, and limited edge device resources. To address these challenges, this paper proposes EPC-TinyAD, an energy- and privacy-aware compressed TinyML framework for reliable industrial anomaly detection on resource-constrained edge devices. EPC-TinyAD follows a normal-only learning paradigm and employs a tiny depthwise-separable CNN autoencoder as the deployable student model, guided by a wider teacher autoencoder during training. Instead of relying solely on reconstruction error, the proposed anomaly score integrates spectrogram reconstruction deviation, compact normal-center distance, and teacher–student distillation discrepancy. Masked spectrogram modeling is introduced to enhance few-shot normal representation learning, while domain-adversarial invariant embedding improves cross-machine generalization. To support reliable deployment, split and adaptive conformal thresholding calibrate anomaly decisions under target false alarm rates. Furthermore, federated training with clipped and noisy updates reduces raw industrial data exposure, and energy-aware compression integrates pruning, INT8 size estimation, model export, latency benchmarking, and Pareto analysis. Experiments on industrial anomaly detection data demonstrate that EPC-TinyAD achieves 96.5% accuracy, 95.4% recall, 96.1% F1 score, 0.964 AUROC, and 0.952 AUPRC over five random seeds. These results indicate that EPC-TinyAD provides a reliable, lightweight, privacy-aware, and deployment-oriented framework for industrial edge anomaly detection, while future work will further validate its runtime memory, latency, and power consumption on physical Raspberry Pi-, Jetson-, or MCU-class edge devices."
+    },
+    {
+      "paperId": "461d08496fe7d37ce250d6513487773ebe76bebc",
+      "externalIds": {
+        "ArXiv": "2607.12599",
+        "CorpusId": 290148498
+      },
+      "url": "https://www.semanticscholar.org/paper/461d08496fe7d37ce250d6513487773ebe76bebc",
+      "title": "Lightweight Multi-Scale Anomaly Detection for Resource-Constrained Edge Devices",
+      "venue": "",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2607.12599, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2449773958",
+          "name": "Raheen Junaid Wani"
+        },
+        {
+          "authorId": "2550384",
+          "name": "S. Sarangi"
+        }
+      ],
+      "abstract": "Time-series anomaly detection is increasingly important in IoT systems, sensor networks, and edge monitoring applications, where models must operate under strict constraints on memory, latency, and power consumption. While recent deep-learning approaches have improved detection accuracy, many remain computationally expensive and often fail to capture subtle anomalies due to limited multi-scale sensitivity. Autoencoders are widely used for anomaly detection because they reconstruct normal patterns well, leading to elevated reconstruction errors for anomalous inputs. Their simplicity and efficiency also make them suitable lightweight backbones for handling multi-scale inputs. To address these challenges, we propose a Lightweight MultiScale AutoEncoder (LMSAE) network for univariate time-series anomaly detection, designed to be compact and computationally efficient. LMSAE leverages the Discrete Wavelet Transform (DWT) to extract multi-scale features and employs a multi-scale loss function to improve sensitivity to subtle or hidden anomalies. Experiments on benchmark datasets demonstrate competitive or superior detection performance despite using significantly fewer parameters and a model size of less than 500 KB. LMSAE also achieves low-latency, low-power inference on the NVIDIA Jetson Nano, with 9x reduction in inference latency and 2x reduction in power consumption, making it ideal for edge deployment."
+    },
+    {
+      "paperId": "c6f19065bdc851af13936ec029594500307d51d2",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2025.3583496",
+        "CorpusId": 279877141
+      },
+      "url": "https://www.semanticscholar.org/paper/c6f19065bdc851af13936ec029594500307d51d2",
+      "title": "A Hybrid Energy Prediction Model for Resource-Constrained IoT Devices With Energy Harvesting",
+      "venue": "IEEE Sensors Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2025.3583496?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2025.3583496, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2223364624",
+          "name": "Sami Acik"
+        },
+        {
+          "authorId": "2258856877",
+          "name": "S. Kosunalp"
+        }
+      ],
+      "abstract": "In energy-harvesting Internet of Things (EH-IoT) environments, edge devices face significant challenges due to limited computational and energy resources. Accurate energy prediction is essential to ensure uninterrupted operation, particularly when relying on intermittent renewable sources like solar energy. This article proposes a novel hybrid energy prediction model (HEP-IoT) designed specifically for resource-constrained IoT devices. HEP-IoT integrates adaptive weighting strategies derived from historical trends, recent slot observations, and the same-slot values from previous days. The model dynamically adjusts its prediction weights based on environmental variability and includes a rapid anomaly detection mechanism to improve responsiveness during sudden energy drops. Unlike conventional fixed-weight models, HEP-IoT achieves a balance between prediction accuracy and computational efficiency. Extensive experiments on three real-world solar energy datasets demonstrate that HEP-IoT outperforms the existing models, such as exponentially weighted moving average (EWMA), weather-conditioned moving average (WCMA), and Pro-Energy in terms of root mean square error (RMSE) and mean absolute percentage error (MAPE), making it a practical and reliable solution for EH-IoT scenarios."
+    },
+    {
+      "paperId": "1ef38b920fb30d22abb8db684d0697d0cf0e2012",
+      "externalIds": {
+        "DOI": "10.63964/jatuc.43.1.2026.32",
+        "CorpusId": 289103510
+      },
+      "url": "https://www.semanticscholar.org/paper/1ef38b920fb30d22abb8db684d0697d0cf0e2012",
+      "title": "Lightweight Federated Intrusion Detection System for Resource Constrained IoT Networks Using Edge-Assisted Learning",
+      "venue": "Journal of Al-Turath University College",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://jatuc.uoturath.edu.iq/index.php/jatuc/article/download/68/34",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.63964/jatuc.43.1.2026.32?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.63964/jatuc.43.1.2026.32, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2174609602",
+          "name": "Hanan Zainel"
+        }
+      ],
+      "abstract": "The rapid growth of the Internet of Things (IoT) has expanded the attack surface, while many endpoints operate on microcontroller-class hardware with tight limits on CPU, memory and energy, making conventional intrusion detection systems (IDS) difficult to deploy. This work proposes and evaluates a lightweight federated intrusion detection system (LF-IDS) that enables accurate, privacy-preserving intrusion detection on resource-constrained IoT devices through edge-assisted learning. The architecture proposed will be an integration of a small 1D-CNN student on the IoT node and a more profound teacher on the edge. Pruning and 8-bit quantization of the student model are done in a structured manner to the original and result in 132 kB of the student model but with the same discriminative capacity. Gradient sparsification (top-10%) and hierarchical edge aggregation is a federated learning that has a proximal goal to train the IDS on non-IID Bot-IoT-like, NSL-KDD-like and TON_IoT-like datasets. The latency, communication cost and energy are tested on an emulated ARM Cortex-M4-based platform.LF-IDS obtained an accuracy of 98.3, 96.8 and 95.5 and macro F1-scores of up to 0.979 and a false positive of less than 3 percent in the three datasets. Latency on-device inference was 3.4 ms/flow and energy was 0.26 mJ/inference, which were both well within 256kB RAM. The compression and sparsification pipeline proposed in comparison with dense 32-bit federated updates decreased uplink communication per client per round, by up to 640 kB to 52 kB (91.9% reduction) without significantly affecting the accuracy.The findings indicate that co-designed lightweight models and edge-assisted federated learning can deliver high-quality intrusion detection while remaining compatible with the stringent resource budgets of large-scale IoT deployments."
+    },
+    {
+      "paperId": "1a644b8e00e00321424a1a20ae3979650092307b",
+      "externalIds": {
+        "DOI": "10.1109/CCICT65753.2025.00062",
+        "CorpusId": 280394163
+      },
+      "url": "https://www.semanticscholar.org/paper/1a644b8e00e00321424a1a20ae3979650092307b",
+      "title": "A Survey on Anomaly Detection in IoT Networks: From Classical Methods to AI-Powered Solutions",
+      "venue": "2025 Seventh International Conference on Computational Intelligence andCommunication Technologies (CCICT)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CCICT65753.2025.00062?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CCICT65753.2025.00062, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268067129",
+          "name": "Kumkum Dubey"
+        },
+        {
+          "authorId": "48964407",
+          "name": "Isha Batra"
+        },
+        {
+          "authorId": "2241622206",
+          "name": "Abhishek Bajpai"
+        },
+        {
+          "authorId": "2114083520",
+          "name": "Arun Malik"
+        }
+      ],
+      "abstract": "IoT networks enable seamless connectivity but face security challenges due to their scale and complexity. This survey reviews anomaly detection techniques, including machine learning, deep learning, and statistical methods, analyzing their effectiveness, scalability, and limitations. More recent studies on edge and fog computing systems aim to enable real-time detection with lower latency. Most research focuses on centralized anomaly detection, making it ideal for resource-constrained IoT scenarios. The findings also show that graph neural networks (GNNs) and federated learning are promising approaches for scalable and privacy-preserving anomaly identification in large IoT networks. Despite these advances, many unanswered questions remain in areas such as data imbalance, the interpretability of ML models, and processing constraints in IoT devices."
+    },
+    {
+      "paperId": "68693fed699282a763e1782f9a508e01a5ca3c9b",
+      "externalIds": {
+        "DBLP": "journals/computation/AlanaziAA26",
+        "DOI": "10.3390/computation14040084",
+        "CorpusId": 287245918
+      },
+      "url": "https://www.semanticscholar.org/paper/68693fed699282a763e1782f9a508e01a5ca3c9b",
+      "title": "EdgeRescue: Lightweight AI-Based Self-Healing for Energy-Constrained IoT Meshes",
+      "venue": "De Computis",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/computation14040084",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/computation14040084?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/computation14040084, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2423348972",
+          "name": "Haifa A. Alanazi"
+        },
+        {
+          "authorId": "2343676092",
+          "name": "Abdulaziz G. Alanazi"
+        },
+        {
+          "authorId": "2368893872",
+          "name": "Nasser S. Albalawi"
+        }
+      ],
+      "abstract": "As the scale and complexity of Internet of Things (IoT) deployments increase, maintaining resilience in resource-constrained mesh networks becomes a significant challenge. Frequent node failures due to battery depletion, environmental interference, or hardware degradation can disrupt data flows and lead to operational downtime. To address this, we propose EdgeRescue, a novel lightweight AI-driven framework for self-healing in energy-constrained IoT mesh environments. EdgeRescue enables each node to perform local anomaly detection using compact 1D Convolutional Neural Networks (1D-CNNs) and initiates distributed, energy-aware routing reconfiguration when faults are detected. Unlike cloud-dependent methods, EdgeRescue operates entirely at the edge, requiring minimal computation, memory, and communication overhead. Extensive simulations on a 100-node testbed demonstrate that EdgeRescue improves packet delivery by 13.2%, reduces recovery latency by 57%, and lowers average node energy consumption by 18.8% compared to state-of-the-art baselines. These results establish EdgeRescue as a scalable and practical solution for achieving real-time resilience in next-generation IoT mesh networks."
+    },
+    {
+      "paperId": "11337bf5ffd3aacc113657a6d317fc51577883a0",
+      "externalIds": {
+        "DOI": "10.69968/ijisem.2026v5i3247-253",
+        "CorpusId": 291013390
+      },
+      "url": "https://www.semanticscholar.org/paper/11337bf5ffd3aacc113657a6d317fc51577883a0",
+      "title": "Light weight Intelligence-TinyML based Energy Usage Prediction for Resource-Constrained IoT Edges Nodes",
+      "venue": "International Journal of Innovations in Science, Engineering And Management",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.69968/ijisem.2026v5i3247-253",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.69968/ijisem.2026v5i3247-253?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.69968/ijisem.2026v5i3247-253, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2456800220",
+          "name": "Sandeep Kumar Rawat"
+        },
+        {
+          "authorId": "2456800190",
+          "name": "Neha Tuli"
+        }
+      ],
+      "abstract": "The extensive deployment of battery-powered and resource-constrained edge devices makes energy efficiency a major challenge in Internet of Things (IoT) systems. Accurate energy prediction is important to enable intelligent energy management. However, traditional machine learning models are usually computationally expensive and unsuitable for micro-controller based platforms. In this paper, we present a TinyML-based energy prediction framework for low-power IoT edge devices. The proposed approach employs lightweight machine learning models which are optimized for ultra-low memory and computation footprints, but still retain acceptable prediction accuracy. We collect energy consumption data from a real IoT testbed, and train and evaluate several TinyML compatible models. The experimental results show that the proposed TinyML-based predictor can provide reliable energy estimation with low inference latency and low memory overhead, and thus can be deployed on resource-constrained IoT devices. This work lays a fundamental foundation for intelligent and adaptive energy management in future IoT systems."
+    },
+    {
+      "paperId": "a3cd176f506dc8ba4879db27d3bf660607612d1a",
+      "externalIds": {
+        "DBLP": "journals/sncs/RadhaSI26",
+        "DOI": "10.1007/s42979-026-05125-y",
+        "CorpusId": 289169416
+      },
+      "url": "https://www.semanticscholar.org/paper/a3cd176f506dc8ba4879db27d3bf660607612d1a",
+      "title": "Lightweight Edge Computing Framework Using Federated Learning for Real-Time Anomaly Detection in Resource-Constrained IoT Environments",
+      "venue": "SN Computer Science",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s42979-026-05125-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s42979-026-05125-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2289978173",
+          "name": "N. Radha"
+        },
+        {
+          "authorId": "9079858",
+          "name": "R. Swathika"
+        },
+        {
+          "authorId": "2442001343",
+          "name": "Joe Louis'"
+        },
+        {
+          "authorId": "120936803",
+          "name": "Paul R. Ignatius"
+        },
+        {
+          "authorId": "2442001303",
+          "name": "·. R. Swathika"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "ca1be52c62ebf39c0a2b23bddad81ea99cc27904",
+      "externalIds": {
+        "DBLP": "journals/fi/ReisS25",
+        "DOI": "10.3390/fi17040179",
+        "CorpusId": 277923258
+      },
+      "url": "https://www.semanticscholar.org/paper/ca1be52c62ebf39c0a2b23bddad81ea99cc27904",
+      "title": "Edge AI for Real-Time Anomaly Detection in Smart Homes",
+      "venue": "Future Internet",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/fi17040179",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/fi17040179?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/fi17040179, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2341561416",
+          "name": "M. Reis"
+        },
+        {
+          "authorId": "1971020",
+          "name": "Carlos Serôdio"
+        }
+      ],
+      "abstract": "The increasing adoption of smart home technologies has intensified the demand for real-time anomaly detection to improve security, energy efficiency, and device reliability. Traditional cloud-based approaches introduce latency, privacy concerns, and network dependency, making Edge AI a compelling alternative for low-latency, on-device processing. This paper presents an Edge AI-based anomaly detection framework that combines Isolation Forest (IF) and Long Short-Term Memory Autoencoder (LSTM-AE) models to identify anomalies in IoT sensor data. The system is evaluated on both synthetic and real-world smart home datasets, including temperature, motion, and energy consumption signals. Experimental results show that LSTM-AE achieves higher detection accuracy (up to 93.6%) and recall but requires more computational resources. In contrast, IF offers faster inference and lower power consumption, making it suitable for constrained environments. A hybrid architecture integrating both models is proposed to balance accuracy and efficiency, achieving sub-50 ms inference latency on embedded platforms such as Raspberry Pi and NVIDEA Jetson Nano. Optimization strategies such as quantization reduced LSTM-AE inference time by 76% and power consumption by 35%. Adaptive learning mechanisms, including federated learning, are also explored to minimize cloud dependency and enhance data privacy. These findings demonstrate the feasibility of deploying real-time, privacy-preserving, and energy-efficient anomaly detection directly on edge devices. The proposed framework can be extended to other domains such as smart buildings and industrial IoT. Future work will investigate self-supervised learning, transformer-based detection, and deployment in real-world operational settings."
+    },
+    {
+      "paperId": "daded9ebcec176f83622d2484d55c64bb2049909",
+      "externalIds": {
+        "DOI": "10.1109/ICUIS67429.2025.11380628",
+        "CorpusId": 285553304
+      },
+      "url": "https://www.semanticscholar.org/paper/daded9ebcec176f83622d2484d55c64bb2049909",
+      "title": "Bio-Inspired Edge AI Framework for Real-Time Anomaly Detection in IoT Sensor Networks",
+      "venue": "2025 5th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICUIS67429.2025.11380628?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICUIS67429.2025.11380628, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2353860590",
+          "name": "B. Prakash"
+        },
+        {
+          "authorId": "2410542656",
+          "name": "Reddy Yenna"
+        },
+        {
+          "authorId": "2310831800",
+          "name": "B. Rambabu"
+        },
+        {
+          "authorId": "2313117092",
+          "name": "M. Archana"
+        }
+      ],
+      "abstract": "The rapid proliferation of Internet of Things devices has led to a surge in real-time data generation, requiring efficient and accurate anomaly detection mechanisms, especially in resource-constrained edge environments. Traditional centralized methods often suffer from high latency, excessive bandwidth usage, and privacy concerns, making them less suitable for modern IoT deployments. This paper proposes a novel bio-inspired Edge AI framework designed for real-time anomaly detection in distributed IoT sensor networks. Drawing inspiration from biological systems such as the human immune response, the framework integrates adaptive temporal feature extraction with an Artificial Immune System based anomaly detection module. It is optimized for lightweight, decentralized processing to support low-power edge devices. The system architecture includes preprocessing, bio-inspired feature computation, self-organizing anomaly classification, and efficient communication modules. Comparative evaluations against baseline algorithms Support Vector Machine and Isolation Forest demonstrate the superiority of the proposed model in terms of detection accuracy (94.6%), reduced latency (28 ms), and lower energy consumption (15 mJ). These results confirm the framework’s effectiveness for real-time deployment in dynamic IoT environments. The proposed approach enables scalable, energy-efficient, and privacy preserving anomaly detection, paving the way for next-generation edge intelligence in mission-critical applications such as smart grids, healthcare, and industrial monitoring"
+    },
+    {
+      "paperId": "b1cb4972ceabd2436b6672294b9ff4f7edceb3c9",
+      "externalIds": {
+        "DOI": "10.1109/ICSC65596.2025.11140446",
+        "CorpusId": 281094290
+      },
+      "url": "https://www.semanticscholar.org/paper/b1cb4972ceabd2436b6672294b9ff4f7edceb3c9",
+      "title": "Edge-Based AI for Real-Time Threat Detection in 5G-IoT Networks: A Comparative and Architectural Review",
+      "venue": "International Computer Science Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSC65596.2025.11140446?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSC65596.2025.11140446, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2322303994",
+          "name": "Alexandre Sousa"
+        },
+        {
+          "authorId": "2378864359",
+          "name": "Luís Correia"
+        },
+        {
+          "authorId": "2321768768",
+          "name": "Manuel J. C. S. Reis"
+        }
+      ],
+      "abstract": "The convergence of 5G and the Internet of Things (IoT) has created unprecedented opportunities for ultra-low latency, high-throughput, and massive device connectivity. However, this transformation introduces complex cybersecurity challenges, especially in scenarios where real-time threat detection is critical. Traditional cloud-based solutions are increasingly unsuitable due to latency constraints, bandwidth overhead, and privacy concerns. This paper investigates the role of edge-based Artificial Intelligence (AI) as a decentralized, responsive, and scalable solution for real-time anomaly detection in 5G-enabled IoT networks. We present a critical analysis of recent advancements in lightweight AI models deployed at the network edge, including federated learning, behavior-based intrusion detection, and AI-enhanced threat analytics. The paper evaluates these approaches in terms of latency, detection accuracy, computational efficiency, and adaptability to resource-constrained environments. Furthermore, we discuss key implementation challenges such as model drift, secure model updates, and hardware limitations. Our findings highlight the potential of edge-AI to fortify the 5G-IoT ecosystem, while underscoring the need for continued research to bridge existing performance and scalability gaps."
+    },
+    {
+      "paperId": "5796c0c5ca7ba33168de957e745c1541b0329009",
+      "externalIds": {
+        "DOI": "10.1109/AISummit66170.2025.11410931",
+        "CorpusId": 286244746
+      },
+      "url": "https://www.semanticscholar.org/paper/5796c0c5ca7ba33168de957e745c1541b0329009",
+      "title": "IoT Edge Security: A Lightweight Multi-Layer Protocol Framework for Resource-Constrained Devices",
+      "venue": "2025 2nd Global AI Summit - International Conference on Artificial Intelligence and Emerging Technology (AI Summit)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/AISummit66170.2025.11410931?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/AISummit66170.2025.11410931, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2394174499",
+          "name": "Ajay Kushwaha"
+        },
+        {
+          "authorId": "2421854702",
+          "name": "Nassir Ali Nassir El-Anqoudy"
+        },
+        {
+          "authorId": "2284343966",
+          "name": "Ravi Prakash Chaturvedi"
+        },
+        {
+          "authorId": "2421854687",
+          "name": "Mark William Hakim Adolfo"
+        }
+      ],
+      "abstract": "The proliferation of Internet of Things (IoT) devices has created critical security challenges, particularly at the network edge where resource constraints limit implementation of robust security measures. This paper presents a lightweight multi-layered security framework specifically designed for edgebased IoT environments that balances security effectiveness with computational efficiency. In this context, \"lightweight\" refers to algorithms requiring 2KB RAM, 2KB ROM for software implementations, or 3,000 gate equivalents (GE) for hardware implementations, with power consumption below 200mW and energy efficiency under 10J/bit. Our approach integrates optimized cryptographic algorithms, context-aware authentication mechanisms, and edge-based threat detection into a unified security architecture. Through experimental evaluation using the IoT-EdgeSec dataset containing 15,000 network traffic samples across 35 heterogeneous IoT devices, we demonstrate that our framework achieves 94.7% attack detection accuracy while reducing computational overhead by 37% and latency by 74% compared to conventional approaches. The proposed framework introduces only 4.2ms average latency while providing comprehensive protection against common attack vectors including authentication bypass (98.7% prevention rate) and data interception (99.5% prevention rate). Our comparative analysis shows 91.2% energy efficiency improvement and 60% reduction in cyberattack risks versus traditional implementations. Our results validate the efficacy of lightweight, layered security approaches for resource-constrained IoT environments at the network edge."
+    },
+    {
+      "paperId": "42b5e025d52435fc63db4e771d06d4b52f3b3b16",
+      "externalIds": {
+        "DOI": "10.1109/ICSCSS69635.2026.11645936",
+        "CorpusId": 291116476
+      },
+      "url": "https://www.semanticscholar.org/paper/42b5e025d52435fc63db4e771d06d4b52f3b3b16",
+      "title": "Graph Convolution Network – Long Short Term Memory based Reliable and Intelligent Fault Aware Fog Edge Computing Framework for Resource Constrained IoT Devices",
+      "venue": "2026 4th International Conference on Sustainable Computing and Smart Systems (ICSCSS)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSCSS69635.2026.11645936?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSCSS69635.2026.11645936, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2457586113",
+          "name": "M.V.Surabhi"
+        },
+        {
+          "authorId": "2286072265",
+          "name": "Research Scholar"
+        },
+        {
+          "authorId": "2457723686",
+          "name": "Dr. L.N. Swamy"
+        }
+      ],
+      "abstract": "The rapid growth of Internet of Things (IoT) applications has increased the demand for predictable, high-performance Edge–Fog–Cloud computing to support seamless data acquisition, transmission, and processing across billions of resource-constrained distributed devices. Edge–Fog-driven IoT architectures, positioned between IoT devices and centralized cloud infrastructure, improve reliability and efficiency by extending network services to the Internet edge and supporting the storage and processing of sensor data. Fog nodes deployed near end users and devices offer mobility support, low latency, bandwidth conservation, reduced energy consumption, and location awareness. Therefore, an efficient computing framework for scheduling fog nodes for edge users and IoT end devices is essential. Existing fog-node scheduling approaches based on metaheuristic techniques and advanced artificial intelligence address load balancing, computational offloading, and service orchestration; however, they often fail to proactively manage dynamic workload fluctuations, network anomalies, and unpredictable node failures. This paper proposes a multi-tier deep learning framework based on a Graph Convolutional Network (GCN) and Long Short-Term Memory (LSTM) model for reliable, fault-aware fog-edge computing. The architecture supports intelligent task delegation and predictive fault management for lightweight edge offloading on resource-constrained IoT devices. The IoT ecosystem, consisting of resource-constrained devices, fog nodes, and end users, is first represented as a graph. In this graph, IoT devices, edge gateways, and fog servers act as nodes, while their relationships, defined by parameters such as bandwidth and latency, act as edges. An adjacency matrix quantifies link weights, and a feature matrix captures each node’s resource characteristics, such as CPU utilization and battery status, at a given time. The proposed model is evaluated in a Python environment using the Google cluster dataset, a benchmark trace-log dataset. Experimental results show that the model effectively detects dynamic workload fluctuations, network anomalies, and unpredictable node failures. Performance analysis confirms that the proposed framework achieves 98.9% accuracy in detecting node failures and workload fluctuations."
+    },
+    {
+      "paperId": "d04bbb2b7302f5b2c44632c12a0c93ece261d624",
+      "externalIds": {
+        "DOI": "10.1109/ICASST68917.2026.11484497",
+        "CorpusId": 287736314
+      },
+      "url": "https://www.semanticscholar.org/paper/d04bbb2b7302f5b2c44632c12a0c93ece261d624",
+      "title": "Low-Power AI: A Survey on Edge Learning Models for Resource-Constrained IoT Systems",
+      "venue": "2026 1st International Conference on Advancing Sustainable Solutions through Technologies (ICASST)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASST68917.2026.11484497?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASST68917.2026.11484497, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2378508651",
+          "name": "Sajjan Singh"
+        },
+        {
+          "authorId": "2283567723",
+          "name": "Anu Priya Sharma"
+        },
+        {
+          "authorId": "2308919820",
+          "name": "Gopal Krishna"
+        },
+        {
+          "authorId": "101287190",
+          "name": "Nagendar Yamsani"
+        }
+      ],
+      "abstract": "The widespread use of IoT calls for energy-efficient edge artificial intelligence (AI) models for both learning and inference in real-time. In this survey, we provide a review of low-power AI techniques in edge computing, including model compression, lightweight architecture, and hardware-software cooperation. The main techniques involve quantisation, pruning, and knowledge distillation for Neural Networks, namely MobileNet, SqueezeNet, and Spiking Neural Networks. This review also addresses specialised hardware such as edge TPUs and neuromorphic chips. Case studies in intelligent agriculture, health monitoring, and industrial automation illustrate the possibility of AI deployment at the extreme edge. The results show that there are important trade-offs between model accuracy, latency, and power consumption. The paper concludes with a call for unified benchmarks and design automation for energy-aware edge intelligence. Further studies should focus on a co-optimisation framework, adaptive AI pipeline, and cross-layer integration for sustainable AI deployment on resource-constrained devices."
+    },
+    {
+      "paperId": "0be479cd78a5d11cc6075c3f6482e31ed69a6827",
+      "externalIds": {
+        "DOI": "10.3390/fi18060306",
+        "CorpusId": 288994154
+      },
+      "url": "https://www.semanticscholar.org/paper/0be479cd78a5d11cc6075c3f6482e31ed69a6827",
+      "title": "Secure Federated Intrusion Detection for Resource-Constrained IoT Devices Using Lightweight Cryptography: A Hardware-Validated Study",
+      "venue": "Future Internet",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/fi18060306",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/fi18060306?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/fi18060306, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2372027453",
+          "name": "Yerlan Tursynbek"
+        },
+        {
+          "authorId": "2005076332",
+          "name": "Nurtay Albanbay"
+        },
+        {
+          "authorId": "1716718",
+          "name": "D. Djenouri"
+        },
+        {
+          "authorId": "2353660530",
+          "name": "Shahid Latif"
+        },
+        {
+          "authorId": "2320831063",
+          "name": "A. Akhmediyarova"
+        },
+        {
+          "authorId": "2309973172",
+          "name": "Z. Alibiyeva"
+        },
+        {
+          "authorId": "2294613688",
+          "name": "Janna Alimkulova"
+        },
+        {
+          "authorId": "2006012207",
+          "name": "D. Oralbekova"
+        }
+      ],
+      "abstract": "Federated learning (FL) enables distributed model training in IoT environments while keeping raw data on local devices. However, protecting model-update exchange is difficult on microcontroller-class devices due to strict latency, memory, and energy constraints. Existing studies often evaluate lightweight cryptography outside complete FL pipelines or on more powerful hardware, leaving its practical overhead on MCU-class devices insufficiently explored. This paper presents an end-to-end, hardware-validated secure framework for exchanging model updates in federated learning on resource-constrained IoT microcontrollers. Implemented on ESP32-based edge devices, the framework combines lightweight block ciphers (SPECK, SIMON, and PRESENT), HMAC-SHA256 for integrity verification, and ECDH-HKDF for session-key establishment. The evaluation assessed latency, throughput, RAM/ROM footprint, and energy consumption. Results show that SPECK provides the lowest overhead (0.13 µs/byte, 8.68 MB/s, 138.3 mJ), SIMON offers intermediate performance (0.41 µs/byte, 1.96 MB/s, 184.9 mJ), and PRESENT incurs the highest computational cost (89.37 µs/byte, 0.011 MB/s, 446.2 mJ). In the CICIoT2023 federated intrusion-detection evaluation, the secure model maintained stable convergence and achieved 85.43% accuracy after 20 rounds, remaining close to the centralized baseline. These findings demonstrate the practical feasibility of secure model-update exchange in FL on real IoT microcontrollers and provide hardware-grounded guidance for cipher selection under tight resource budgets."
+    },
+    {
+      "paperId": "71d115687b6d7001c6f04fb4a2c7ff77f6246cfc",
+      "externalIds": {
+        "DBLP": "conf/isqed/NgouenRPP26",
+        "DOI": "10.1109/ISQED69900.2026.11534709",
+        "CorpusId": 288775909
+      },
+      "url": "https://www.semanticscholar.org/paper/71d115687b6d7001c6f04fb4a2c7ff77f6246cfc",
+      "title": "TinyQL: A Quantum Machine Learning Framework at Edge for Resource-Constrained IoT Devices",
+      "venue": "IEEE International Symposium on Quality Electronic Design",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISQED69900.2026.11534709?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISQED69900.2026.11534709, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2190043970",
+          "name": "Maurice Ngouen"
+        },
+        {
+          "authorId": "2305048972",
+          "name": "Mohammad Ashiqur Rahman"
+        },
+        {
+          "authorId": "1409059407",
+          "name": "A. Perez-Pons"
+        },
+        {
+          "authorId": "2258487710",
+          "name": "Nagarajan Prabakar"
+        }
+      ],
+      "abstract": "Implementing efficient machine learning (ML) is extremely difficult for Internet of Things (IoT) devices with limited computational power, memory, and energy resources. We introduce TinyQL, a quantum machine learning framework for Internet of Things (IoT) devices with limited resources. The framework tackles three main issues: dimensionality reduction using variational quantum circuits while maintaining anomaly detection capabilities; model compression using entropy-based structured pruning and parameter quantization; and effective encoding of classical network traffic data into quantum states using amplitude embedding. TinyQL can be deployed on devices with limited quantum simulation capabilities by combining a quantum autoencoder with traditional optimization approaches. The CICIDS 2017 intrusion detection dataset is used to assess the framework, and it is contrasted with traditional autoencoder methods. According to experimental data, TinyQL requires substantially fewer parameters and has a smaller memory footprint than classical approaches without degradation of detection accuracy. Deployment on resource-constrained IoT devices is made possible by the optimized models’ $\\mathbf{9 8. 0 8 \\%}$ detection accuracy and up to 93.75% memory savings when compared to the original quantum model. An entropy-based pruning strategy tailored for quantum circuits, a novel quantum autoencoder architecture optimized for IoT constraints, a thorough evaluation framework contrasting quantum and classical approaches for IoT anomaly detection, and useful recommendations for implementing quantum machine learning models on edge devices are among the contributions."
+    },
+    {
+      "paperId": "e11bf488ebef05244c4c4f9b46e020a5a42b2cef",
+      "externalIds": {
+        "DOI": "10.1109/IoTAAI66837.2025.11212901",
+        "CorpusId": 282576640
+      },
+      "url": "https://www.semanticscholar.org/paper/e11bf488ebef05244c4c4f9b46e020a5a42b2cef",
+      "title": "Design and Optimization of an Edge Intelligence Object Detection System",
+      "venue": "2025 7th International Conference on Internet of Things, Automation and Artificial Intelligence (IoTAAI)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IoTAAI66837.2025.11212901?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IoTAAI66837.2025.11212901, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2110224478",
+          "name": "Changsheng Guo"
+        },
+        {
+          "authorId": "2389034426",
+          "name": "Yueweu Xu"
+        },
+        {
+          "authorId": "2359551697",
+          "name": "Zeyao Wang"
+        },
+        {
+          "authorId": "2388797194",
+          "name": "Qiuxia Huang"
+        },
+        {
+          "authorId": "2379883728",
+          "name": "Jian Liu"
+        }
+      ],
+      "abstract": "In the evolving landscape where Internet of Things (IoT) devices meet artificial intelligence (AI), edge computing is transforming how real-time intelligent applications operate. This paper introduces a tailored system design for resource-constrained edge devices, focusing on efficient, low-latency object detection. By integrating lightweight YOLO models, model quantization techniques, hardware-software co-optimization, and edge-cloud collaboration strategies, we enhance detection performance, energy efficiency, and deployment flexibility in edge environments. The system architecture encompasses data acquisition and preprocessing, model inference optimization, device management, and collaboration mechanisms, offering strong adaptability and scalability. Through an in-depth analysis of recent advancements in edge AI, including novel quantization techniques and hardware accelerators, we further validate the system’s robustness for applications such as smart security and industrial inspection. Through an analysis of cutting-edge trends and theoretical foundations, we demonstrate the feasibility and advantages of this approach. This work provides practical guidance and a framework for deploying reliable edge AI on platforms like Raspberry Pi, paving the way for broader advancements in edge intelligence. In addition, the integration of recent hardware accelerators and dynamic model update mechanisms further enhances system robustness. Comprehensive evaluations and comparative studies with traditional approaches are also presented to validate performance improvements and scalability for applications such as smart security and industrial inspection."
+    },
+    {
+      "paperId": "c3dd2836426a5f22ef0cd302446e4dbb4c03122b",
+      "externalIds": {
+        "DOI": "10.1109/ICOSST69113.2025.11315205",
+        "CorpusId": 284356278
+      },
+      "url": "https://www.semanticscholar.org/paper/c3dd2836426a5f22ef0cd302446e4dbb4c03122b",
+      "title": "Energy-Aware Federated Deep Learning for Real-Time IoT Intrusion Detection: Toward Scalable and Trustworthy Edge Intelligence",
+      "venue": "2025 IEEE 19th International Conference on Open Source Systems and Technologies (ICOSST)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICOSST69113.2025.11315205?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICOSST69113.2025.11315205, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2401882509",
+          "name": "Suhaib Kashif"
+        },
+        {
+          "authorId": "144807005",
+          "name": "Eman Omar"
+        },
+        {
+          "authorId": "144618151",
+          "name": "M. Z. Hussain"
+        },
+        {
+          "authorId": "2350594951",
+          "name": "Muhammad Zulkifl Hasan"
+        }
+      ],
+      "abstract": "The proliferation of the Internet of Things (IoT) has created an unprecedentedly massive and vulnerable surface of attack, demanding intelligent, scalable and real-time security solutions. Traditional centralized Intrusion Detection Systems (IDS) are poorly suited to the modern IoT paradigm, introducing prohibitive communication latency, devouring too much bandwidth, and raising vast data privacy concerns. Federated Learning (FL) has become a promising decentralized approach, enabling collaborative model training on edge devices without centralizing raw data. However, the practical deployment of FL in IoT environments is severely hampered by two basic problems: the high energy and computational demands of edge devices, and the statistical heterogeneity (non-IID) that is inherent of data distributed throughout the network. This paper proposes E-FIT (Energy-aware Federated Intrusion detection toward Trustworthiness), which is a holistic framework aims to overcome these challenges. The E-FIT framework is built on three basic contributions. First, for on-device threat detection, we propose a light-weight hybrid deep learning model based on Convolutional Neural Network (CNN) and Bidirectional Gated Recurrent Unit (BiGRU), which is systematically compressed using structured pruning and quantization to make sure operational feasibility on resource constrained hardware. Second, we present a novel energy-aware adaptive client selection protocol which intelligently orchestrates the training process by prioritizing clients based on combination of their data utility and real-time energy availability. Third, E-FIT uses a powerful global model aggregation mechanism for coping with the performance degradation caused by non-IID data. Using massive computer simulations on a benchmark intrusion detection dataset, we show that the E- FIT framework greatly outperforms both traditional centralized models and standard federated learning strategies. It obtains better detection accuracy under realistic non-IID conditions while optimizing the trade-off between local computation and world communications energy."
+    },
+    {
+      "paperId": "c64ea50f069f8d96c5f529f64f80b147fb7b477e",
+      "externalIds": {
+        "PubMedCentral": "12216444",
+        "DOI": "10.1038/s41598-025-06452-5",
+        "CorpusId": 279796226,
+        "PubMed": "40593124"
+      },
+      "url": "https://www.semanticscholar.org/paper/c64ea50f069f8d96c5f529f64f80b147fb7b477e",
+      "title": "AI and IoT-powered edge device optimized for crop pest and disease detection",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-025-06452-5.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12216444, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2135390739",
+          "name": "Jean Pierre Nyakuri"
+        },
+        {
+          "authorId": "95736337",
+          "name": "Celestin Nkundineza"
+        },
+        {
+          "authorId": "2264784708",
+          "name": "Omar Gatera"
+        },
+        {
+          "authorId": "31374382",
+          "name": "Kizito Nkurikiyeyezu"
+        },
+        {
+          "authorId": "2369589020",
+          "name": "Gervais Mwitende"
+        }
+      ],
+      "abstract": "Climate change exacerbates the challenges of maintaining crop health by influencing invasive pest and disease infestations, especially for cereal crops, leading to enormous yield losses. Consequently, innovative solutions are needed to monitor crop health from early development stages through harvesting. While various technologies, such as the Internet of Things (IoT), machine learning (ML), and artificial intelligence (AI), have been used, portable, cost-effective, and energy-efficient solutions suitable for resource-constrained environments such as edge applications in agriculture are needed. This study presents the development of a portable smart IoT device that integrates a lightweight convolutional neural network (CNN), called Tiny-LiteNet, optimized for edge applications with built-in support of model explainability. The system consists of a high-definition camera for real-time plant image acquisition, a Raspberry-Pi 5 integrated with the Tiny-LiteNet model for edge processing, and a GSM/GPRS module for cloud communication. The experimental results demonstrated that Tiny-LiteNet achieved up to 98.6% accuracy, 98.4% F1-score, 98.2% Recall, 80 ms inference time, while maintaining a compact model size of 1.2 MB with 1.48 million parameters, outperforming traditional CNN architectures such as VGGNet-16, Inception, ResNet50, DenseNet121, MobileNetv2, and EfficientNetB0 in terms of efficiency and suitability for edge computing. Additionally, the low power consumption and user-friendly design of this smart device make it a practical tool for farmers, enabling real-time pest and disease detection, promoting sustainable agriculture, and enhancing food security."
+    },
+    {
+      "paperId": "aa07b2176c6a66f42cbddf704e9a36d8bb650643",
+      "externalIds": {
+        "DBLP": "conf/iwcmc/BohliBB26a",
+        "DOI": "10.1109/IWCMC69287.2026.11580086",
+        "CorpusId": 289842225
+      },
+      "url": "https://www.semanticscholar.org/paper/aa07b2176c6a66f42cbddf704e9a36d8bb650643",
+      "title": "Edge-Based Anomaly Detection in IoT Networks: A Comparative Study of Deep Learning Models",
+      "venue": "International Conference on Wireless Communications and Mobile Computing",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IWCMC69287.2026.11580086?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IWCMC69287.2026.11580086, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2056833",
+          "name": "Afef Bohli"
+        },
+        {
+          "authorId": "2447164010",
+          "name": "Houssem Bousmina"
+        },
+        {
+          "authorId": "144693056",
+          "name": "R. Bouallègue"
+        }
+      ],
+      "abstract": "The rapid expansion of the Internet of Things (IoT) is transforming digital infrastructures by connecting massive numbers of heterogeneous devices that continuously generate network and telemetry data. This growth increases the attack surface and operational risk, making anomaly detection a key capability to protect IoT and Industrial IoT (IIoT) systems. However, cloud-centric anomaly detection can be constrained by communication overhead, latency, privacy exposure, and high operational costs, which become critical for time-sensitive applications. In addition, IoT deployments often operate under strict resource constraints where energy is a central concern for long-term sustainability.Edge computing offers a practical alternative by enabling local analytics closer to data sources, reducing data transmission while improving responsiveness. In this paper, we present a comparative study of four deep learning architectures for edge-based IoT anomaly detection: 1D Convolutional Neural Network (1D-CNN), Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), and Autoencoder. A unified processing pipeline is adopted to ensure fair and reproducible experimentation across two cybersecurity datasets with different characteristics, Edge-IIoTset and ACI-IoT. Beyond standard detection metrics, the study reports execution time, memory footprint, and estimated energy consumption as deployment-oriented indicators under resource constraints. Practical guidance is provided on selecting architectures that generalize across heterogeneous datasets while remaining deployable for secure and scalable edge-enabled IoT systems."
+    },
+    {
+      "paperId": "46fb2055ca4a2cb77fd4518e794c3cf36238d8a4",
+      "externalIds": {
+        "DBLP": "journals/mta/NaveenK25",
+        "DOI": "10.1007/s11042-024-20523-1",
+        "CorpusId": 275070866
+      },
+      "url": "https://www.semanticscholar.org/paper/46fb2055ca4a2cb77fd4518e794c3cf36238d8a4",
+      "title": "Optimized Convolutional Neural Network at the IoT edge for image detection using pruning and quantization",
+      "venue": "Multimedia tools and applications",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1007/s11042-024-20523-1",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11042-024-20523-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11042-024-20523-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2100057591",
+          "name": "Soumyalatha Naveen"
+        },
+        {
+          "authorId": "3169998",
+          "name": "Manjunath R. Kounte"
+        }
+      ],
+      "abstract": "Most real-time computer vision applications heavily rely on Convolutional Neural Network (CNN) based models, for image classification and recognition. Due to the computationally and memory-intensive nature of the CNN model, it’s challenging to deploy on resource-constrained Internet of Things (IoT) devices to enable Edge intelligence for real-time decision-making. Edge intelligence requires minimum inference latency, memory footprint, and energy-efficient model. This work aims to develop an energy-efficient deep learning accelerator using a 3-stage pipeline: Training, Weight-pruning, and Quantization to reduce the model size and optimize the resources. First, we employ YOLOv3, a CNN architecture to detect objects in an image on the trained data. In addition, a sparse network of YOLO has been created by using pruning, which helps to improve the network’s performance and efficiency by reducing the computational requirements. Finally, we utilize 8-bit quantization to reduce the precision of the weights and activations, in a neural network. The evaluation of our proposed model shows that combining pruning and 8-bit quantization improves the efficiency and performance of the model. While pruning shows a decline of 80.39% in model parameters. The combination of 8-bit quantization results in an improvement in inference latency by 22.72% compared to existing SQuantization approach and a reduction of energy consumption by 29.41%."
+    },
+    {
+      "paperId": "464817ad1e9b08b0d52db1c201d7e6f0bbb383a0",
+      "externalIds": {
+        "DBLP": "conf/isc2/Al-SadiR25",
+        "DOI": "10.1109/ISC266238.2025.11293319",
+        "CorpusId": 284157823
+      },
+      "url": "https://www.semanticscholar.org/paper/464817ad1e9b08b0d52db1c201d7e6f0bbb383a0",
+      "title": "Federated Edge AI for Adaptive Zero-Trust Security in Resource-Constrained IoT Networks",
+      "venue": "2025 IEEE International Smart Cities Conference (ISC2)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISC266238.2025.11293319?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISC266238.2025.11293319, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2400580298",
+          "name": "Dina Al-Sadi"
+        },
+        {
+          "authorId": "2376820836",
+          "name": "Abdoul Rjoub"
+        }
+      ],
+      "abstract": "This paper proposes a Federated Edge AI framework with Adaptive Zero-Trust Security designed for resource constrained IoT networks used mainly in smart cities applications. The framework harnesses and deploys lightweight machine learning models, real-time anomaly detection capabilities, and dynamic trust scoring. Each IoT device can also deploy differential privacy and lightweight encryption as optional features. Dynamic trust scoring enables the federated learning process to identify and mitigate malicious clients in adversarial environments, while trust-weighted aggregation prioritizes reliable model updates. The framework is simulated under both IID and non-IID datasets from IoT-23 dataset, with up to $\\mathbf{4 0 \\%}$ malicious clients to ensure there was a significant amount of anomalous client behavior, control groups and dependent groups to make comparisons and assess precision, false positive-negative, communication and computational load. The lightweight framework is an applicable idea to real-world like smart cities applications, as it is scalable and highly privacy preserving. Use Case Examples include intelligent traffic management, smart energy grids, and security of UAV swarms - where IoT devices must operate in a secure fashion, under strict latencies, power, and resource limitations."
+    },
+    {
+      "paperId": "be96c83a8288785118bee70175319ad8054b725c",
+      "externalIds": {
+        "PubMedCentral": "12774896",
+        "DOI": "10.1038/s41598-025-30150-x",
+        "CorpusId": 283930054,
+        "PubMed": "41408088"
+      },
+      "url": "https://www.semanticscholar.org/paper/be96c83a8288785118bee70175319ad8054b725c",
+      "title": "Edge-AI integrated secure wireless IoT architecture for real time healthcare monitoring and federated anomaly detection",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12774896, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301336332",
+          "name": "M. Prabha"
+        },
+        {
+          "authorId": "2277546755",
+          "name": "S. Nandhini"
+        },
+        {
+          "authorId": "2399128568",
+          "name": "M. Dayanidhy"
+        },
+        {
+          "authorId": "2285204992",
+          "name": "R. Pradeep"
+        }
+      ],
+      "abstract": "The rapid digitalization of healthcare demands intelligent, low-latency, and privacy-preserving systems capable of operating at the network edge. This study introduces a unified Edge-AI framework that seamlessly combines dual wireless connectivity (LoRaWAN + 5G), federated learning (FL), Proof-of-Authority (PoA) block chain, and homomorphic encryption (HE) to achieve secure real-time anomaly detection in patient monitoring. A quantized CNN–LSTM model was deployed on NVIDIA Jetson Nano devices and trained using a synthetic dataset statistically modelled from the MIT-BIH Arrhythmia Database, capturing vital signals such as heart rate, temperature, and oxygen saturation. The integrated system attained 91.9% accuracy and 90.8% F1-score, with only an 8.7% latency overhead attributed to HE operations. A paired two-tailed t-test (p < 0.01) confirmed that these gains are both statistically and clinically significant, indicating reliable diagnostic performance under constrained conditions. Beyond performance, the proposed framework ensures end-to-end data confidentiality, tamper-proof auditability, and energy-efficient edge inference, offering a scalable pathway toward trustworthy, next-generation smart-healthcare ecosystems."
+    },
+    {
+      "paperId": "17db3021f0ede6bb713be1a0dd0a8c72d7dbe110",
+      "externalIds": {
+        "ArXiv": "2511.18240",
+        "CorpusId": 283243721
+      },
+      "url": "https://www.semanticscholar.org/paper/17db3021f0ede6bb713be1a0dd0a8c72d7dbe110",
+      "title": "Green Deep Reinforcement Learning for IoT Edge Intrusion Detection",
+      "venue": "",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.18240, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310536098",
+          "name": "Saeid Jamshidi"
+        },
+        {
+          "authorId": "1703493",
+          "name": "F. Khomh"
+        },
+        {
+          "authorId": "2330515515",
+          "name": "Rolando Herrero"
+        },
+        {
+          "authorId": "2442421569",
+          "name": "Omar Abdul-Wahab"
+        },
+        {
+          "authorId": "16932745",
+          "name": "M. Bellaiche"
+        }
+      ],
+      "abstract": "The rapid expansion of the Internet of Things (IoT) has intensified cybersecurity challenges, particularly in detecting and mitigating Distributed Denial-of-Service (DDoS) attacks at the network edge. Traditional Intrusion Detection Systems (IDSs) remain limited by static signatures, dependence on labeled data, poor adaptability to evolving and zero-day attacks, and high computational overhead on resource-constrained edge gateways. Moreover, most Deep Reinforcement Learning (DRL)-based IDS studies prioritize detection performance while overlooking energy consumption and carbon impact. To address these limitations, this paper proposes two carbon-aware DRL-based IDS frameworks: DeepEdgeIDS, a label-free Autoencoder-DQN architecture for anomaly-guided online mitigation, and AutoDRL-IDS, a supervised LSTM-DQN model for temporally informed detection and response. Both systems incorporate multi-objective reward functions that jointly consider security performance, response latency, energy consumption, memory utilization, and estimated carbon emissions, using learning-paradigm-specific detection feedback. AutoDRL-IDS employs ground-truth-dependent detection metrics during supervised training, whereas DeepEdgeIDS relies on anomaly confidence and post-mitigation traffic stabilization for label-free online learning. The proposed systems are theoretically analyzed and experimentally evaluated on physical IoT edge gateways under DDoS traffic. The results show that AutoDRL-IDS achieves 94 percent detection accuracy, while DeepEdgeIDS attains 98 percent offline evaluation accuracy and demonstrates stronger adaptability to previously unseen attack patterns."
+    },
+    {
+      "paperId": "600eb4e055c94a2e83e4085ad23c49945f7e7250",
+      "externalIds": {
+        "DOI": "10.1109/ICCoSD66074.2025.11348379",
+        "CorpusId": 285107408
+      },
+      "url": "https://www.semanticscholar.org/paper/600eb4e055c94a2e83e4085ad23c49945f7e7250",
+      "title": "Low-Power Machine Learning Models for Edge-Based Anomaly Detection in Wearable IoT Healthcare Devices",
+      "venue": "2025 International Conference on Communication and Smart Devices (ICCoSD)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCoSD66074.2025.11348379?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCoSD66074.2025.11348379, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "3273645",
+          "name": "Vindhya P. Malagi"
+        },
+        {
+          "authorId": "2280159334",
+          "name": "S. Shaikh"
+        },
+        {
+          "authorId": "2103301578",
+          "name": "M. Ghamande"
+        },
+        {
+          "authorId": "2407264730",
+          "name": "Monica Bhutani"
+        },
+        {
+          "authorId": "2407270476",
+          "name": "D. Ramva"
+        },
+        {
+          "authorId": "2406280574",
+          "name": "P. Nisha"
+        }
+      ],
+      "abstract": "Wearable IoT devices: With the fast development of wearable technologies in the field of IoT., there is now the possibility of constant monitoring of the health of individuals and spotting any anomaly at an early stage., which can be greatly beneficial in providing personal health care. Nevertheless., it is still not hard to imagine using machine learning (ML) in resource-constrained edge devices because of the shortages in memory, energy, and processing capabilities. The current paper explores the most recent breakthroughs in the area of low-power ML models - namely, TinyML, model pruning, and quantization - that enables real-time anomaly detection in wearable healthcare systems. Besides the overview of edge computing frameworks (TensorFlow Lite for Microcontrollers and Edge Impulse), the given research provides a mathematical model and parametric investigation of a TinyML-based anomaly detection model. Through emulating a shallow CNN on the ARM Cortex-M4 architecture in respect to detecting ECG anomalies, we evaluate how well different models perform along with different latency, energy, and accuracy limits. Findings demonstrate that model size can be minimized by ~83%., energy use by ~65%., as well as latency by~61.” Compared to current compressed deep learning models, our results match them and are even better, which demonstrates the feasibility of shallow TinyML models in realistic edge-based healthcare systems that have low latencies, low power, and high accuracy. In this paper, the concluding observations are made on the scalability, interpretability, and moral concerns, which lead to a systematic roadmap on developing an effective wearable health system that is not only secure but also intelligent."
+    },
+    {
+      "paperId": "1b60d8a0c9a084b27c0e2553ba21d9345ed8875e",
+      "externalIds": {
+        "DOI": "10.1109/SWC57546.2023.10448698",
+        "CorpusId": 268096697
+      },
+      "url": "https://www.semanticscholar.org/paper/1b60d8a0c9a084b27c0e2553ba21d9345ed8875e",
+      "title": "Fast-DAVAD : Domain Adaptation for Fast Video Anomaly Detection on Resource-Constrained Edge Devices",
+      "venue": "2023 IEEE Smart World Congress (SWC)",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SWC57546.2023.10448698?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SWC57546.2023.10448698, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2192858528",
+          "name": "Haocheng Shen"
+        },
+        {
+          "authorId": "2209648697",
+          "name": "Bin Guo"
+        },
+        {
+          "authorId": "151260226",
+          "name": "Yasan Ding"
+        },
+        {
+          "authorId": "2289334353",
+          "name": "Jie Xiao"
+        },
+        {
+          "authorId": "2264101697",
+          "name": "Mingze Lv"
+        },
+        {
+          "authorId": "2257879340",
+          "name": "Zhiwen Yu"
+        }
+      ],
+      "abstract": "The development of artificial intelligence of things (AIoT) makes it possible to detect video anomalies on intelligent edge devices with low transmission delay and data privacy. However, the performance of these applications is constrained by the domain shift between the diverse real-world environment and the training data. Despite the existence of many advanced domain adaptation methods, it is difficult to deploy these methods on resource-constrained intelligent edge devices due to their model complexity. In addition, there is a lack of large amounts of labeled real-scenario data to complete model training. In this paper, we propose the Fast-DAVAD, an unsupervised end-to-end lightweight adaptive video anomaly detection framework. It solves the domain shift problem through multi-level adversarial domain adaptation. Furthermore, it achieves short training time and inference latency on resource-constrained edge devices with Residual Unet, and applies a memory module to guarantee detection accuracy. Extensive experiments on public datasets and multiple platforms, such as PC and NVIDIA Jetson, demonstrate that the effectiveness and superiority of Fast-DAVAD compared with state-of-the-art domain adaptation-based video anomaly detection solutions."
+    },
+    {
+      "paperId": "472caf678b4507facbf828c9883f1475e5f3bfad",
+      "externalIds": {
+        "DBLP": "conf/iotsms/AthamenaHA25",
+        "DOI": "10.1109/IOTSMS68530.2025.11408555",
+        "CorpusId": 286245398
+      },
+      "url": "https://www.semanticscholar.org/paper/472caf678b4507facbf828c9883f1475e5f3bfad",
+      "title": "Edge—Based Lightweight AI for Real—Time Intrusion Detection in IoT Networks",
+      "venue": "2025 12th International Conference on Internet of Things: Systems, Management and Security (IOTSMS)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IOTSMS68530.2025.11408555?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IOTSMS68530.2025.11408555, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2345966626",
+          "name": "Mohamed Raid Athamena"
+        },
+        {
+          "authorId": "2511158",
+          "name": "Z. Houhamdi"
+        },
+        {
+          "authorId": "2948607",
+          "name": "Belkacem Athamena"
+        }
+      ],
+      "abstract": "The explosive growth of Internet of Things (IoT) deployments has introduced critical security challenges, as resource-constrained devices often lack the computer and energy to support traditional defenses. Signature-based IDS techniques cannot catch novel attacks, while heavyweight anomaly detectors (e.g., deep neural networks or SVMs) incur unacceptable latency and resource use. To address this, we propose an edge-centric intrusion detection framework that integrates lightweight AI models with edge computing. In our design, IoT devices send network data to a local edge gateway, which performs realtime anomaly detection using a pruned machine learning model (e.g., a small LSTM or decision-tree ensemble) optimized for limited hardware. This on-device approach reduces communication overhead and latency compared to cloud-based IDS (Intrusion Detection System). Key features are selected and optimized to keep the model compact (using techniques like tree-based feature importance) while retaining high detection capability. The expected impact is a low-power, real-time IDS that can promptly identify threats (e.g., IoT DDoS, spoofing, or data injection) with minimal false alarms, improving the robustness of smart homes, healthcare, and industrial IoT systems. Future work may extend this framework with adaptive learning at the edge and decentralized coordination for large-scale IoT security."
+    },
+    {
+      "paperId": "29c59ec345012b65dbd0b0b5c158b9cc4cc58855",
+      "externalIds": {
+        "DOI": "10.1109/EEI70303.2026.11640464",
+        "CorpusId": 291038169
+      },
+      "url": "https://www.semanticscholar.org/paper/29c59ec345012b65dbd0b0b5c158b9cc4cc58855",
+      "title": "Digital Twin Graph Transformer Edge Intelligence for Secure Industrial IoT Anomaly Detection",
+      "venue": "2026 8th International Conference on Electronic Engineering and Informatics (EEI)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/EEI70303.2026.11640464?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/EEI70303.2026.11640464, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2457050436",
+          "name": "Na Liu"
+        },
+        {
+          "authorId": "2358198892",
+          "name": "Jun Zeng"
+        }
+      ],
+      "abstract": "Industrial Internet of Things (IIoT) systems integrate embedded sensors, programmable controllers, edge gateways, and wireless industrial networks, but their multivariate signals are vulnerable to sensor drift, cyber-physical attacks, equipment degradation, and rare fault propagation. Existing anomaly detection methods usually treat sensor channels as independent time series or rely on centralized cloud inference, resulting in insufficient spatial dependency modeling, high communication cost, and delayed response. This paper proposes DT-GTEI, a digital-twin-driven graph transformer edge intelligence framework for secure IIoT anomaly detection. Different from a simple stacking of digital twin, graph transformer, edge intelligence, and federated learning, the main technical contribution is a twin-regularized graph-temporal transformer: physically constrained digital-twin perturbations enrich rare fault states, a dynamic sparse sensor graph constrains spatial attention, and a lightweight temporal transformer performs edge inference under latency and privacy constraints. Edge-cloud federated aggregation is used as a deployment layer for privacy-preserving update sharing. To clarify benchmark validity, the DT-IIoT-Proto benchmark is described in terms of sensor scale, sampling frequency, fault taxonomy, and public benchmark compatibility. The security discussion is also extended to data poisoning, replay/communication attacks, and compromised edge nodes. Experimental results show that DT-GTEI achieves an F1-score of 0.948, AUC of 0.973, and average edge inference latency of 24.9 ms, outperforming LSTM-AE, TCN, GDN, Anomaly Transformer, and federated edge autoencoder baselines. The proposed framework provides a practical and extensible solution for intelligent monitoring, network security, and real-time control in next-generation electronic information systems."
+    },
+    {
+      "paperId": "d92bd2b4581e1fa4b5ae0e354dab691c118f378e",
+      "externalIds": {
+        "DOI": "10.3390/math13172711",
+        "CorpusId": 280770863
+      },
+      "url": "https://www.semanticscholar.org/paper/d92bd2b4581e1fa4b5ae0e354dab691c118f378e",
+      "title": "Industrial-AdaVAD: Adaptive Industrial Video Anomaly Detection Empowered by Edge Intelligence",
+      "venue": "Mathematics",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2227-7390/13/17/2711/pdf?version=1755871190",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/math13172711?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/math13172711, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2289334353",
+          "name": "Jie Xiao"
+        },
+        {
+          "authorId": "2192858528",
+          "name": "Haocheng Shen"
+        },
+        {
+          "authorId": "151260226",
+          "name": "Yasan Ding"
+        },
+        {
+          "authorId": "2237328799",
+          "name": "Bin Guo"
+        }
+      ],
+      "abstract": "The rapid advancement of Artificial Intelligence of Things (AIoT) has driven an urgent demand for intelligent video anomaly detection (VAD) to ensure industrial safety. However, traditional approaches struggle to detect unknown anomalies in complex and dynamic environments due to the scarcity of abnormal samples and limited generalization capabilities. To address these challenges, this paper presents an adaptive VAD framework powered by edge intelligence tailored for resource-constrained industrial settings. Specifically, a lightweight feature extractor is developed by integrating residual networks with channel attention mechanisms, achieving a 58% reduction in model parameters through dense connectivity and output pruning. A multidimensional evaluation strategy is introduced to dynamically select optimal models for deployment on heterogeneous edge devices. To enhance cross-scene adaptability, we propose a multilayer adversarial domain adaptation mechanism that effectively aligns feature distributions across diverse industrial environments. Extensive experiments on a real-world coal mine surveillance dataset demonstrate that the proposed framework achieves an accuracy of 86.7% with an inference latency of 23 ms per frame on edge hardware, improving both detection efficiency and transferability."
+    },
+    {
+      "paperId": "1fc54641b8df44cfb92c0769adb4c6e1c1c9c6aa",
+      "externalIds": {
+        "DOI": "10.3217/ygz6-6892",
+        "CorpusId": 290870389
+      },
+      "url": "https://www.semanticscholar.org/paper/1fc54641b8df44cfb92c0769adb4c6e1c1c9c6aa",
+      "title": "Workshop: Energy-Efficient Change Point Detection Algorithm for Resource-Constrained Devices",
+      "venue": "",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.3217/ygz6-6892?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3217/ygz6-6892, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2381835915",
+          "name": "Ruitao Xue"
+        },
+        {
+          "authorId": "2122691777",
+          "name": "Kamil Faber"
+        },
+        {
+          "authorId": "2312132858",
+          "name": "Wojciech Kalka"
+        },
+        {
+          "authorId": "31633516",
+          "name": "D. Jha"
+        },
+        {
+          "authorId": "145716483",
+          "name": "B. Sniezynski"
+        },
+        {
+          "authorId": "2294473",
+          "name": "Roberto Corizzo"
+        },
+        {
+          "authorId": "115452174",
+          "name": "R. Ranjan"
+        },
+        {
+          "authorId": "2800909",
+          "name": "T. Szydło"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "34e8f94742129febb888dc549912d4c8819b75b8",
+      "externalIds": {
+        "DOI": "10.1109/ICRTEECT67512.2025.11448868",
+        "CorpusId": 286876252
+      },
+      "url": "https://www.semanticscholar.org/paper/34e8f94742129febb888dc549912d4c8819b75b8",
+      "title": "A Hybrid Intelligence-Driven Model for Enhancing Security and Trust in Integrated Edge to Cloud Networks Through Real-Time Anomaly Detection and Tamper-Proof Storage",
+      "venue": "2025 2nd International Conference on Recent Trends in Electrical, Electronics and Computing Technologies (ICRTEECT)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICRTEECT67512.2025.11448868?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICRTEECT67512.2025.11448868, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2412128979",
+          "name": "T. Srilekha"
+        },
+        {
+          "authorId": "2426086742",
+          "name": "Srilatha Komakula"
+        },
+        {
+          "authorId": "2426086088",
+          "name": "Hemanth Manthena"
+        }
+      ],
+      "abstract": "The rapid expansion of edge-to-cloud networks in the Internet of Things (IoT) era has introduced new security challenges, as resource-constrained edge devices and ubiquitous connectivity expose systems to sophisticated cyber-attacks. Traditional centralized defenses and static rule-based intrusion detection systems often fail to detect emerging anomalies and attacks in real-time. In this work, we propose a hybrid intelligence-driven model that synergistically combines edge and cloud artificial intelligence (AI) with blockchain technology to enhance security and trust in integrated edge–cloud IoT networks. The model deploys real-time anomaly detection using advanced machine learning at both the edge and cloud layers, enabling early identification of threats such as distributed denial- of-service (DDoS) attacks, malware injections, and insider misuse. Detected anomalies are logged to a tamper-proof storage network underpinned by blockchain, ensuring that security events are recorded on an immutable, decentralized ledger. This blockchain-based logging guarantees data integrity and transparency, preventing malicious actors from altering or erasing evidence. The proposed edge–cloud security framework was evaluated using a real-world intrusion detection dataset, demonstrating high attack detection accuracy (~99%) and low false alarm rates, while smart contract–driven responses significantly improved incident response time and system resilience. By leveraging hybrid AI for detection and blockchain for trustworthy storage, our approach provides a robust, scalable, and adaptive security solution for modern IoT deployments, enhancing network security and stakeholder trust through real- time threat mitigation and verifiable, tamper-proof audit trails."
+    },
+    {
+      "paperId": "e5881738b206f49bf5d967049bd0472761f8f191",
+      "externalIds": {
+        "DBLP": "journals/diot/OrtizGarcesVL25",
+        "DOI": "10.1007/s43926-025-00196-4",
+        "CorpusId": 282192729
+      },
+      "url": "https://www.semanticscholar.org/paper/e5881738b206f49bf5d967049bd0472761f8f191",
+      "title": "Implementation of edge AI for early fault detection in IoT networks: evaluation of performance and scalability in complex applications",
+      "venue": "Discover Internet of Things",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s43926-025-00196-4.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s43926-025-00196-4?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s43926-025-00196-4, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1415069761",
+          "name": "Iván Ortiz-Garcés"
+        },
+        {
+          "authorId": "1410234504",
+          "name": "W. Villegas-Ch."
+        },
+        {
+          "authorId": "2321843319",
+          "name": "Sergio Luján-Mora"
+        }
+      ],
+      "abstract": "The exponential growth of Internet of Things (IoT) deployments has introduced critical demands in reliability, energy efficiency, and real-time fault detection. Traditional cloud-based solutions suffer from excessive latency and energy overhead due to continuous data transmission and centralized analysis. To address these limitations, this study introduces an edge-based artificial intelligence (AI) architecture tailored for early fault detection in heterogeneous IoT networks. The architecture leverages recurrent neural networks and autoencoders optimized for time-series anomaly detection, enabling local inference directly on edge nodes. The system was evaluated under realistic laboratory conditions using a range of IoT devices and edge computing platforms, including Raspberry Pi and Nvidia Jetson. Experimental results demonstrate a 92.0% fault detection rate with a response time consistently under 150 ms, significantly outperforming cloud-based approaches in both latency and energy metrics. Energy consumption was reduced to 50 Wh under standard conditions, and the architecture successfully scaled to support up to 500 IoT devices, maintaining stable detection accuracy above 88%. These results validate the proposed edge AI system as a scalable and energy-efficient alternative for real-time fault monitoring. Its low-latency, decentralized nature makes it suitable for deployment in industrial automation, smart city infrastructure, and mission-critical IoT applications where operational continuity and autonomous decision-making are essential."
+    },
+    {
+      "paperId": "6590ca8b033a02fcb99b17fc986f327778dd9db4",
+      "externalIds": {
+        "DBLP": "journals/tgcn/BushehriABKMN24",
+        "DOI": "10.1109/TGCN.2023.3335342",
+        "CorpusId": 265389291
+      },
+      "url": "https://www.semanticscholar.org/paper/6590ca8b033a02fcb99b17fc986f327778dd9db4",
+      "title": "Deep Learning-Driven Anomaly Detection for Green IoT Edge Networks",
+      "venue": "IEEE Transactions on Green Communications and Networking",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/tgcn.2023.3335342",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TGCN.2023.3335342?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TGCN.2023.3335342, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2213439324",
+          "name": "A. Shahnejat Bushehri"
+        },
+        {
+          "authorId": "2236816581",
+          "name": "Ashkan Amirnia"
+        },
+        {
+          "authorId": "2124477601",
+          "name": "Adel Belkhiri"
+        },
+        {
+          "authorId": "2278677708",
+          "name": "Samira Keivanpour"
+        },
+        {
+          "authorId": "2221866751",
+          "name": "Felipe Gohring de Magalhães"
+        },
+        {
+          "authorId": "2237801409",
+          "name": "G. Nicolescu"
+        }
+      ],
+      "abstract": "The widespread use of sensor devices in IoT networks imposes a significant burden on energy consumption at the network’s edge. To address energy concerns, a prompt anomaly detection strategy is required on demand for troubleshooting resource-constrained IoT devices. It enables devices to adapt their configuration according to the dynamic signal quality and transmission settings. However, obtaining accurate energy data from IoT nodes without external devices is unfeasible. This paper proposes a framework for energy anomaly detection of IoT nodes using data transmission analysis. We use a public dataset that contains peer-to-peer IoT communication energy and link quality data. Our framework first utilizes linear regression to analyze and identify the dominant features of data communication for IoT transceivers. Later, a deep neural network modifies the gradient flow to focus on the dominant features. This modification improves the detection accuracy of anomalies by minimizing the associated reconstruction error. Finally, the energy stabilization feedback provides nodes with insight to change their transmission configuration for future communication. The experimental results show that the proposed approach outperforms other unsupervised models in anomalous energy detection. It also proves that redesigning the conventional loss function by enhancing the impact of our dominant features can dramatically improve the reliability of the anomaly detection method."
+    },
+    {
+      "paperId": "1a14adfa943b05b80db76af58c6a6b53886ad80d",
+      "externalIds": {
+        "DBLP": "conf/noms/LubbenP23a",
+        "DOI": "10.1109/NOMS56928.2023.10154372",
+        "CorpusId": 259215755
+      },
+      "url": "https://www.semanticscholar.org/paper/1a14adfa943b05b80db76af58c6a6b53886ad80d",
+      "title": "Distributed Device-Specific Anomaly Detection for Resource-Constrained Devices",
+      "venue": "IEEE/IFIP Network Operations and Management Symposium",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NOMS56928.2023.10154372?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NOMS56928.2023.10154372, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1397173003",
+          "name": "Christian Lübben"
+        },
+        {
+          "authorId": "2659011",
+          "name": "Marc-Oliver Pahl"
+        }
+      ],
+      "abstract": "The Internet of Things (IoT) requires security mechanisms that account for heterogeneous devices and resource constraints. Current Anomaly Detection (AD) approaches typically apply centralized data processing. This lacks scalability as well as privacy, bandwidth consumption, latency, and availability. The combination of device-specific AD models and distributed edge computing provides a solution to these challenges. It allows the creation of simplified, lightweight AD models that run on constrained hardware. The hands-on environment described allows interactive exploration of the impact of model simplification. This includes live evaluation of performance metrics and processing latency on a constrained device."
+    },
+    {
+      "paperId": "96a509c461ae0f7498c4aa84cb21b46f6bca17d2",
+      "externalIds": {
+        "DBLP": "conf/nof/Ibraheem25",
+        "DOI": "10.1109/NoF66640.2025.11223294",
+        "CorpusId": 282759725
+      },
+      "url": "https://www.semanticscholar.org/paper/96a509c461ae0f7498c4aa84cb21b46f6bca17d2",
+      "title": "Lightweight and Energy-Efficient Anomaly Detection for Green IoT Networks",
+      "venue": "International Conference on Network of the Future",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NoF66640.2025.11223294?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NoF66640.2025.11223294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2119149500",
+          "name": "Amani Ibraheem"
+        }
+      ],
+      "abstract": "The Internet of Things (IoT) is highly susceptible to cyberattacks due to its vast attack surface and the limited security capabilities of connected devices. These devices are often resource-constrained, lacking the computational power, memory, and energy capacity to support conventional anomaly detection methods. To address this challenge, we propose a lightweight and energy-efficient anomaly detection framework based on Tiny Machine Learning (TinyML). Our approach employs a quantized neural network, enabling real-time detection while operating within the tight resource budgets of IoT edge devices. The model achieves a $\\mathbf{9 1 . 6 5 \\%}$ reduction in model size and a $\\mathbf{4, 4 9 2} \\times$ speedup in inference time, with only a minor drop in performance, maintaining $93.99 \\%$ accuracy and strong F1-score results with $\\mathbf{9 6 . 7 1 \\%}$. This work demonstrates the feasibility of deploying sustainable, on-device AI for IoT cybersecurity and provides a detailed evaluation of the trade-offs between detection accuracy and energy efficiency."
+    },
+    {
+      "paperId": "c35fabef8a3f6eff58c2ae21b5b84328b9e94b95",
+      "externalIds": {
+        "PubMedCentral": "13165929",
+        "DOI": "10.3390/s26092662",
+        "CorpusId": 288017748,
+        "PubMed": "42122383"
+      },
+      "url": "https://www.semanticscholar.org/paper/c35fabef8a3f6eff58c2ae21b5b84328b9e94b95",
+      "title": "DeepSense: An Adaptive Scalable Ensemble Framework for Industrial IoT Anomaly Detection",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/s26092662",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13165929, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2259011864",
+          "name": "Amir Firouzi"
+        },
+        {
+          "authorId": "2406271844",
+          "name": "Ali.A Ghorbani"
+        }
+      ],
+      "abstract": "The Industrial Internet of Things (IIoT) has become a cornerstone of modern industrial automation, enabling real-time monitoring, intelligent decision-making, and large-scale connectivity across cyber–physical systems. However, the growing scale, heterogeneity, and dynamic behavior of IIoT environments significantly expand the attack surface and challenge the effectiveness of conventional security mechanisms. In this paper, we propose DeepSense, a hybrid and adaptive anomaly and intrusion detection framework specifically designed for resource-constrained and heterogeneous IIoT deployments. DeepSense integrates three complementary components: DataSense, a realistic data pipeline and experimental testbed supporting synchronized sensor and network data processing; RuleSense, a lightweight rule-based detection layer that provides fast, deterministic, and interpretable anomaly screening at the edge; and NeuroSense, a learning-driven detection module comprising an adaptive ensemble of 22 machine learning and deep learning models spanning classical, neural, hybrid, and Transformer-based architectures. NeuroSense operates as a second detection stage that validates suspicious events flagged by RuleSense and enables both coarse-grained and fine-grained attack classification. To support rigorous and practical assessment, this work further introduces a comprehensive performance evaluation framework that extends beyond accuracy-centric metrics by jointly considering detection quality, latency, resource efficiency, and detection coverage, alongside an optimization-based process for selecting Pareto-optimal model ensembles under realistic IIoT constraints. Extensive experiments across diverse detection scenarios demonstrate that DeepSense exhibits strong generalization, lower false positive rates, and robust performance under evolving attack behaviors. The proposed framework provides a scalable and efficient IIoT security solution that meets the operational requirements of Industry 4.0 and the resilience-oriented objectives of Industry 5.0."
+    }
+  ]
+}

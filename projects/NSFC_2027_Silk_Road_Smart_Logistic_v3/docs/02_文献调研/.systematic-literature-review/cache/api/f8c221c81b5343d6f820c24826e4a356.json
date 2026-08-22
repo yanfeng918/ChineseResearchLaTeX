@@ -1,0 +1,1404 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T17:15:21Z",
+      "timestamp": 1786986921624,
+      "version": "3.56.0"
+    },
+    "reference-count": 104,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computers &amp; Industrial Engineering"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cie.2022.108455",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          13
+        ]
+      ],
+      "date-time": "2022-07-13T22:12:35Z",
+      "timestamp": 1657750355000
+    },
+    "page": "108455",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 94,
+    "special_numbering": "C",
+    "title": [
+      "Applications of the internet of things for optimizing warehousing and logistics operations: A systematic literature review and future research directions"
+    ],
+    "prefix": "10.1016",
+    "volume": "171",
+    "author": [
+      {
+        "given": "Devinder",
+        "family": "Kumar",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rajesh",
+        "family": "Kr Singh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruchi",
+        "family": "Mishra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samuel",
+        "family": "Fosso Wamba",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.cie.2022.108455_b0005",
+        "article-title": "An internet of things-based smart warehouse infrastructure: Design and application",
+        "author": "Affia",
+        "year": "2021",
+        "journal-title": "Journal of Science and Technology Policy Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0015",
+        "article-title": "Design and application of data analytics in an internet-of-things enabled warehouse",
+        "author": "Arumsari",
+        "year": "2021",
+        "journal-title": "Journal of Science and Technology Policy Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0020",
+        "first-page": "1399",
+        "article-title": "Smart glass based augmented reality for warehouse management",
+        "volume": "8",
+        "author": "Aruna",
+        "year": "2019",
+        "journal-title": "International Journal of Recent Technology and Engineering"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0030",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jclepro.2020.125233",
+        "article-title": "Key resources for industry 4.0 adoption and its effect on sustainable production and circular economy: An empirical study",
+        "volume": "281",
+        "author": "Bag",
+        "year": "2021",
+        "journal-title": "Journal of Cleaner Production"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0035",
+        "first-page": "1184",
+        "article-title": "Iot based supply chain traceability using enhanced naive bayes approach for scheming the food safety issues",
+        "volume": "9",
+        "author": "Balamurugan",
+        "year": "2020",
+        "journal-title": "International Journal of Scientific and Technology Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "837",
+        "DOI": "10.1177/0049124118799372",
+        "article-title": "Interrater Reliability in Systematic Review Methodology: Exploring Variation in Coder Decision-Making",
+        "volume": "50",
+        "author": "Belur",
+        "year": "2018",
+        "journal-title": "Sociological Methods & Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1108/IntR-02-2014-0043",
+        "article-title": "A visualization platform for internet of things in manufacturing applications",
+        "volume": "26",
+        "author": "Bi",
+        "year": "2016",
+        "journal-title": "Internet Research"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.3127/ajis.v25i0.2845",
+        "article-title": "Intelligent agent based framework to augment warehouse management systems for dynamic demand environments",
+        "volume": "25",
+        "author": "Binos",
+        "year": "2021",
+        "journal-title": "Australasian Journal of Information Systems"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0055",
+        "article-title": "Diffusion of the “internet of things” on the world of skilled work and resulting consequences for the man-machine interaction. Empirical Research in Vocational",
+        "volume": "7",
+        "author": "Bremer",
+        "year": "2015",
+        "journal-title": "Education and Training"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0060",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2020.106774",
+        "article-title": "Smart production planning and control in the Industry 4.0 context: A systematic literature review",
+        "volume": "149",
+        "author": "Bueno",
+        "year": "2020",
+        "journal-title": "Computers & Industrial Engineering"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "47",
+        "DOI": "10.1016/j.bushor.2018.08.002",
+        "article-title": "The Internet of Things (IoT) in retail: Bridging supply and demand",
+        "volume": "62",
+        "author": "Caro",
+        "year": "2019",
+        "journal-title": "Business Horizons"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0080",
+        "article-title": "Developing IT-enabled performance monitoring system for green logistics: A case study",
+        "author": "Chhabra",
+        "year": "2021",
+        "journal-title": "International Journal of Productivity and Performance Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0085",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tre.2021.102455",
+        "article-title": "Applications of smart technologies in logistics and transport: A review",
+        "volume": "153",
+        "author": "Chung",
+        "year": "2021",
+        "journal-title": "Transportation Research Part E: Logistics and Transportation Review"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0090",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2022.108111",
+        "article-title": "Human resources management 4.0: Literature review and trends",
+        "volume": "168",
+        "author": "da Silva",
+        "year": "2022",
+        "journal-title": "Computers & Industrial Engineering"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "280",
+        "DOI": "10.1080/1097198X.2019.1679588",
+        "article-title": "The Early Bird Catches the Worm - First Mover Advantage through IoT Adoption for Indian Public Sector Retail Oil Outlets",
+        "volume": "22",
+        "author": "Das",
+        "year": "2019",
+        "journal-title": "Journal of Global Information Technology Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0100",
+        "article-title": "Data management and internet of things: A methodological review in smart farming",
+        "volume": "14",
+        "author": "Debauche",
+        "year": "2021",
+        "journal-title": "Internet of Things (Netherlands)"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0105",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3127/ajis.v22i0.1734",
+        "article-title": "The effect of “Internet of Things” on supply chain integration and performance: An organisational capability perspective",
+        "volume": "22",
+        "author": "de Vass",
+        "year": "2018",
+        "journal-title": "Australasian Journal of Information Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "869",
+        "DOI": "10.1108/TQM-10-2019-0243",
+        "article-title": "Role of artificial intelligence in operations environment: A review and bibliometric analysis",
+        "volume": "32",
+        "author": "Dhamija",
+        "year": "2020",
+        "journal-title": "TQM Journal"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.4018/IJBAN.2020010101",
+        "article-title": "Industry 4.0 and supply chain management: A methodological review",
+        "volume": "7",
+        "author": "Dhamija",
+        "year": "2020",
+        "journal-title": "International Journal of Business Analytics"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "323",
+        "DOI": "10.1080/13675567.2020.1757053",
+        "article-title": "Smart logistics based on the internet of things technology: An overview",
+        "volume": "24",
+        "author": "Ding",
+        "year": "2021",
+        "journal-title": "International Journal of Logistics Research and Applications"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0125",
+        "first-page": "386",
+        "article-title": "The impact of emerging and disruptive technologies on freight transportation in the digital era: Current state and future trends",
+        "volume": "32",
+        "author": "Dong",
+        "year": "2021",
+        "journal-title": "International Journal of Logistics Management"
+      },
+      {
+        "issue": "21",
+        "key": "10.1016/j.cie.2022.108455_b0130",
+        "article-title": "Industry 4.0 technologies and their impact in contemporary logistics: A systematic literature review",
+        "volume": "13",
+        "author": "Efthymiou",
+        "year": "2021",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0135",
+        "unstructured": "Evdokimov, S., Fabian, B., & Gunther, O. (2011). RFID and the internet of things: Technology, applications, and security challenges. https://books.google.com/books?hl=en&lr=&id=O-l9Se4li9sC&oi=fnd&pg=PA1&dq=RFID+and+the+Internet+of+Things:+Technology,+Applications,+and+Security+Challenges&ots=Nb6F3Q7BzK&sig=KxmtsXs2wT21KWXIGDIB5wEO6ow."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0140",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1561/0200000020",
+        "article-title": "RFID and the Internet of Things: Technology, applications, and security challenges",
+        "volume": "4",
+        "author": "Evdokimov",
+        "year": "2011",
+        "journal-title": "Foundations and Trends in Technology, Information and Operations Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0145",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1108/JGOSS-09-2021-0079",
+        "article-title": "Blockchain technology adoption in government organizations: A systematic literature review",
+        "author": "Falwadiya",
+        "year": "2022",
+        "journal-title": "Journal of Global Operations and Strategic Sourcing"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0150",
+        "article-title": "Role of iot technology in agriculture: A systematic literature review",
+        "volume": "9",
+        "author": "Farooq",
+        "year": "2020",
+        "journal-title": "Electronics (Switzerland)"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0160",
+        "series-title": "Industry 4.0 technologies: Implementation patterns in manufacturing companies",
+        "author": "Frank",
+        "year": "2019"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0165",
+        "first-page": "100",
+        "article-title": "Cutting-edge process monitoring and data analytics systems in internet of things-based real-time production logistics",
+        "volume": "8",
+        "author": "Gaffney",
+        "year": "2020",
+        "journal-title": "Journal of Self-Governance and Management Economics"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0170",
+        "first-page": "1",
+        "article-title": "Circular bioeconomy business models to overcome the valley of death. A systematic statistical analysis of studies and projects in emerging bio-based technologies and trends linked to the sme instrument support",
+        "volume": "13",
+        "author": "Gatto",
+        "year": "2021",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1177/1059601115576425",
+        "article-title": "Editors’ Comment: So, What Is a Conceptual Paper?",
+        "volume": "40",
+        "author": "Gilson",
+        "year": "2015",
+        "journal-title": "Group & Organization Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0180",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gładysz, B. (2015). An assessment of RFID applications in manufacturing companies. Management and Production Engineering Review, 6(4), 33–42. https://doi.org/10.1515/mper-2015-0034.",
+        "DOI": "10.1515/mper-2015-0034"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1016/j.jclepro.2018.02.302",
+        "article-title": "Minimizing the trade-off between sustainability and cost effective performance by using autonomous vehicles",
+        "volume": "184",
+        "author": "Gružauskas",
+        "year": "2018",
+        "journal-title": "Journal of Cleaner Production"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "963",
+        "DOI": "10.3926/jiem.793",
+        "article-title": "Research on the application of the internet of things in reverse logistics information management",
+        "volume": "6",
+        "author": "Gu",
+        "year": "2013",
+        "journal-title": "Journal of Industrial Engineering and Management"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2022.108455_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "764",
+        "DOI": "10.1108/EL-02-2019-0052",
+        "article-title": "Smart libraries: An emerging and innovative technological habitat of 21st century",
+        "volume": "37",
+        "author": "Gul",
+        "year": "2019",
+        "journal-title": "Electronic Library"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "355",
+        "DOI": "10.1108/09600031211231335",
+        "article-title": "Criteria for temperature alerts in cod supply chains",
+        "volume": "42",
+        "author": "Haflidason",
+        "year": "2012",
+        "journal-title": "International Journal of Physical Distribution and Logistics Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0215",
+        "first-page": "81",
+        "article-title": "An Architecture for Data Management, Visualisation and Supervision of Cyber- Physical Production Systems",
+        "volume": "9",
+        "author": "Havard",
+        "year": "2019",
+        "journal-title": "Advances in Transdisciplinary Engineering"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1080/13675567.2019.1667314",
+        "article-title": "Joint distribution: Service paradigm, key technologies and its application in the context of Chinese express industry",
+        "volume": "23",
+        "author": "He",
+        "year": "2020",
+        "journal-title": "International Journal of Logistics Research and Applications"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0225",
+        "article-title": "Uncovering the impact of COVID-19 on shipping and logistics",
+        "author": "Hirata",
+        "year": "2021",
+        "journal-title": "Maritime Business Review"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0230",
+        "first-page": "575",
+        "article-title": "Big Data Analytics and IoT in logistics: A case study",
+        "volume": "29",
+        "author": "Hopkins",
+        "year": "2018",
+        "journal-title": "International Journal of Logistics Management"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "484",
+        "DOI": "10.1108/IntR-11-2014-0295",
+        "article-title": "Customized logistics service and online shoppers’ satisfaction: An empirical study",
+        "volume": "26",
+        "author": "Hu",
+        "year": "2016",
+        "journal-title": "Internet Research"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0240",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Imran, M., ul Hameed, W., & ul Haque, A. (2018). Influence of Industry 4.0 on the production and service sectors in Pakistan: Evidence from textile and logistics industries. Social Sciences, 7(12). https://doi.org/10.3390/socsci7120246.",
+        "DOI": "10.3390/socsci7120246"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.cie.2022.108455_b0245",
+        "first-page": "1181",
+        "article-title": "An overview of the rising challenges in implementing industry 4.0",
+        "volume": "8",
+        "author": "Ing",
+        "year": "2019",
+        "journal-title": "International Journal of Supply Chain Management"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "2055",
+        "DOI": "10.1080/00207543.2020.1798035",
+        "article-title": "Researchers’ perspectives on Industry 4.0: Multi-disciplinary analysis and opportunities for operations management",
+        "volume": "59",
+        "author": "Ivanov",
+        "year": "2021",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0265",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.31387/oscm0300198",
+        "article-title": "Role of big data in decision making",
+        "volume": "11",
+        "author": "Jeble",
+        "year": "2018",
+        "journal-title": "Operations and Supply Chain Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0270",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4018/IJISSCM.290018",
+        "article-title": "Milk-run collection monitoring system using the internet of things based on swarm intelligence",
+        "volume": "15",
+        "author": "Karouani",
+        "year": "2022",
+        "journal-title": "International Journal of Information Systems and Supply Chain Management"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0275",
+        "doi-asserted-by": "crossref",
+        "first-page": "623",
+        "DOI": "10.1108/IJPDLM-02-2017-0112",
+        "article-title": "Network video technology: Exploring an innovative approach to improving warehouse operations",
+        "volume": "47",
+        "author": "Kembro",
+        "year": "2017",
+        "journal-title": "International Journal of Physical Distribution and Logistics Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0280",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/pa.2150",
+        "article-title": "IoT-enabled services in online food retailing",
+        "volume": "21",
+        "author": "Khan",
+        "year": "2021",
+        "journal-title": "Journal of Public Affairs"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0285",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/ICGSE.2009.28",
+        "article-title": "Critical success factors for offshore software development outsourcing vendors: A systematic literature review",
+        "volume": "207–216",
+        "author": "Khan",
+        "year": "2009",
+        "journal-title": "Fourth IEEE International Conference on Global Software Engineering"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0290",
+        "first-page": "129",
+        "article-title": "The innovation of the internet: A semantic network analysis of the Internet of Things",
+        "volume": "25",
+        "author": "Kim",
+        "year": "2017",
+        "journal-title": "Https://Doi.Org/10.1080/19761597.2017.1302549"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0295",
+        "doi-asserted-by": "crossref",
+        "first-page": "229",
+        "DOI": "10.1504/IJSM.2014.065653",
+        "article-title": "ICT supported lifecycle thinking and information integration for sustainable manufacturing",
+        "volume": "3",
+        "author": "Kiritsis",
+        "year": "2014",
+        "journal-title": "International Journal of Sustainable Manufacturing"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "722",
+        "DOI": "10.1108/JMTM-04-2019-0144",
+        "article-title": "Condition-based maintenance for major airport baggage systems",
+        "volume": "32",
+        "author": "Koenig",
+        "year": "2021",
+        "journal-title": "Journal of Manufacturing Technology Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1108/MABR-03-2020-0016",
+        "article-title": "The global trends of automated container terminal: A systematic literature review",
+        "volume": "6",
+        "author": "Kon",
+        "year": "2020",
+        "journal-title": "Maritime Business Review"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0310",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2020.107076",
+        "article-title": "A systematic literature review of supply chain decision making supported by the Internet of Things and Big Data Analytics",
+        "volume": "154",
+        "author": "Koot",
+        "year": "2021",
+        "journal-title": "Computers & Industrial Engineering"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0315",
+        "article-title": "Depiction of possible solutions to improve the cold supply chain performance system",
+        "author": "Kumar",
+        "year": "2021",
+        "journal-title": "Journal of Advances in Management Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0320",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1109/EMR.2019.2951559",
+        "article-title": "Data Analytics in Rail Transportation: Applications and Effects for Sustainability",
+        "volume": "48",
+        "author": "Land",
+        "year": "2020",
+        "journal-title": "IEEE Engineering Management Review"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.cie.2022.108455_b0325",
+        "doi-asserted-by": "crossref",
+        "first-page": "2753",
+        "DOI": "10.1080/00207543.2017.1394592",
+        "article-title": "Design and application of internet of things-based warehouse management system for smart logistics",
+        "volume": "56",
+        "author": "Lee",
+        "year": "2018",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.cie.2022.108455_b0330",
+        "article-title": "A novel collaborative optimization model for job shop production-delivery considering time window and carbon emission",
+        "volume": "11",
+        "author": "Liao",
+        "year": "2019",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.cie.2022.108455_b0335",
+        "doi-asserted-by": "crossref",
+        "first-page": "1733",
+        "DOI": "10.1108/IMDS-02-2020-0078",
+        "article-title": "A novel method for green delivery mode considering shared vehicles in the IoT environment",
+        "volume": "120",
+        "author": "Lim",
+        "year": "2020",
+        "journal-title": "Industrial Management and Data Systems"
+      },
+      {
+        "issue": "17",
+        "key": "10.1016/j.cie.2022.108455_b0340",
+        "doi-asserted-by": "crossref",
+        "first-page": "5113",
+        "DOI": "10.1080/00207543.2019.1677961",
+        "article-title": "Iot based laundry services: An application of big data analytics, intelligent logistics management, and machine learning techniques",
+        "volume": "58",
+        "author": "Liu",
+        "year": "2020",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2022.108455_b0345",
+        "doi-asserted-by": "crossref",
+        "first-page": "1429",
+        "DOI": "10.1108/JEIM-12-2020-0510",
+        "article-title": "Mitigating information asymmetry in inventory pledge financing through the Internet of things and blockchain",
+        "volume": "34",
+        "author": "Liu",
+        "year": "2021",
+        "journal-title": "Journal of Enterprise Information Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0355",
+        "doi-asserted-by": "crossref",
+        "first-page": "587",
+        "DOI": "10.1111/j.1468-2958.2002.tb00826.x",
+        "article-title": "Content analysis in mass communication: Assessment and reporting of intercoder reliability",
+        "volume": "28",
+        "author": "Lombard",
+        "year": "2002",
+        "journal-title": "Human Communication Research"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0360",
+        "article-title": "The role of iot in the relationship between strategic logistics management and operational performance",
+        "volume": "22",
+        "author": "Lopes",
+        "year": "2021",
+        "journal-title": "Revista de Administracao Mackenzie"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0365",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.rcim.2020.101932",
+        "article-title": "Towards Zero-Warehousing Smart Manufacturing from Zero-Inventory Just-In-Time production",
+        "volume": "64",
+        "author": "Lyu",
+        "year": "2020",
+        "journal-title": "Robotics and Computer-Integrated Manufacturing"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0370",
+        "article-title": "Internet of things for perishable inventory management systems: An application and managerial insights for micro, small and medium enterprises",
+        "author": "Maheshwari",
+        "year": "2021",
+        "journal-title": "Annals of Operations Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0375",
+        "first-page": "25",
+        "article-title": "Internet of things (IoT) embedded future supply chains for industry 4.0: An assessment from an ERP-based fashion apparel and footwear industry",
+        "volume": "6",
+        "author": "Majeed",
+        "year": "2017",
+        "journal-title": "International Journal of Supply Chain Management"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0380",
+        "doi-asserted-by": "crossref",
+        "first-page": "391",
+        "DOI": "10.1002/asmb.2621",
+        "article-title": "A comprehensive review of blockchain applications in industrial Internet of Things and supply chain systems",
+        "volume": "37",
+        "author": "Malik",
+        "year": "2021",
+        "journal-title": "Applied Stochastic Models in Business and Industry"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0385",
+        "unstructured": "Mann, H., Gullaiya, N., & Mann, I. J. S. (2018). Consumer-driven Demand Estimation: Smart storage IoT in SSCM of perishables. International Conference on Information Systems 2018, ICIS 2018."
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0390",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijpe.2020.107845",
+        "article-title": "Method to assess the adherence of internal logistics equipment to the concept of CPS for industry 4.0",
+        "volume": "228",
+        "author": "Matana",
+        "year": "2020",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0395",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1016/j.tranpol.2018.07.003",
+        "article-title": "Capacity-sharing in logistics solutions: A new pathway towards sustainability",
+        "volume": "73",
+        "author": "Melo",
+        "year": "2019",
+        "journal-title": "Transport Policy"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0400",
+        "first-page": "770",
+        "article-title": "Consumer adoption of the Uber mobile application: Insights from diffusion of innovation theory and technology acceptance model",
+        "volume": "36",
+        "author": "Min",
+        "year": "2018",
+        "journal-title": "Https://Doi.Org/10.1080/10548408.2018.1507866"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0405",
+        "first-page": "1",
+        "article-title": "Blockchain mechanisms for IoT security",
+        "volume": "1–2",
+        "author": "Minoli",
+        "year": "2018",
+        "journal-title": "Internet of Things (Netherlands)"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0410",
+        "doi-asserted-by": "crossref",
+        "first-page": "147",
+        "DOI": "10.1111/ijcs.12617",
+        "article-title": "Consumer decision-making in omnichannel retailing: Literature review and future research agenda",
+        "volume": "45",
+        "author": "Mishra",
+        "year": "2021",
+        "journal-title": "International Journal of Consumer Studies"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0415",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pmed.1000097",
+        "article-title": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement",
+        "volume": "6",
+        "author": "Moher",
+        "year": "2009",
+        "journal-title": "PLOS Medicine"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0420",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/socsci8030084",
+        "article-title": "Impacts of internet of things on supply chains: A framework for warehousing",
+        "volume": "8",
+        "author": "Mostafa",
+        "year": "2019",
+        "journal-title": "Social Sciences"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0425",
+        "doi-asserted-by": "crossref",
+        "first-page": "98",
+        "DOI": "10.4018/IJBAN.2020010106",
+        "article-title": "Logistics 4.0 energy modelling",
+        "volume": "7",
+        "author": "Munsamy",
+        "year": "2020",
+        "journal-title": "International Journal of Business Analytics"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0430",
+        "doi-asserted-by": "crossref",
+        "first-page": "333",
+        "DOI": "10.1108/BIJ-04-2020-0137",
+        "article-title": "Service supply chain: From bibliometric analysis to content analysis, current research trends and future research directions",
+        "volume": "28",
+        "author": "Nagariya",
+        "year": "2021",
+        "journal-title": "Benchmarking"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2022.108455_b0435",
+        "first-page": "744",
+        "article-title": "An augmented reality assisted order picking system using IoT",
+        "volume": "8",
+        "author": "Nagda",
+        "year": "2019",
+        "journal-title": "International Journal of Recent Technology and Engineering"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.cie.2022.108455_b0440",
+        "article-title": "The role and impact of industry 4.0 and the internet of things on the business strategy of the value chain-the case of hungary",
+        "volume": "10",
+        "author": "Nagy",
+        "year": "2018",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0445",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1177/030630701303900202",
+        "article-title": "How do human resource development strategies influence performance? A contingency perspective",
+        "volume": "39",
+        "author": "Neirotti",
+        "year": "2013",
+        "journal-title": "Journal of General Management"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0450",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Paul, J., & Feliciano.-Cestero, M.M. (2021). Five decades of research on foreign direct investment by MNEs: An overview and research agenda. Elsevier. Retrieved November 18, 2021, from https://www.sciencedirect.com/science/article/pii/S0148296320302332.",
+        "DOI": "10.1016/j.jbusres.2020.04.017"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0455",
+        "series-title": "The art of writing literature review: What do we know and what do we need to know?",
+        "author": "Paul",
+        "year": "2020"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0460",
+        "doi-asserted-by": "crossref",
+        "first-page": "O1",
+        "DOI": "10.1111/ijcs.12695",
+        "article-title": "Scientific procedures and rationales for systematic literature reviews (SPAR-4-SLR)",
+        "volume": "45",
+        "author": "Paul",
+        "year": "2021",
+        "journal-title": "International Journal of Consumer Studies"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.cie.2022.108455_b0465",
+        "doi-asserted-by": "crossref",
+        "first-page": "830",
+        "DOI": "10.1108/IMR-10-2018-0280",
+        "article-title": "Gradual Internationalization vs Born-Global/International new venture models: A review and research agenda",
+        "volume": "36",
+        "author": "Paul",
+        "year": "2019",
+        "journal-title": "International Marketing Review"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.cie.2022.108455_b0470",
+        "doi-asserted-by": "crossref",
+        "first-page": "2622",
+        "DOI": "10.1080/00207543.2016.1173738",
+        "article-title": "System dynamics analysis for an Internet-of-Things-enabled production logistics system",
+        "volume": "55",
+        "author": "Qu",
+        "year": "2017",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0475",
+        "article-title": "Impact of Industry 4.0 drivers on the performance of the service sector: Comparative study of cargo logistic firms in developed and developing regions",
+        "author": "Rahman",
+        "year": "2020",
+        "journal-title": "Production Planning and Control."
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0480",
+        "article-title": "Internet of Things research in supply chain management and logistics: A bibliometric analysis",
+        "volume": "12",
+        "author": "Rejeb",
+        "year": "2020",
+        "journal-title": "Internet of Things (Netherlands)"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0485",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1108/WHATT-10-2019-0068",
+        "article-title": "Understanding the paradigm shift in education in the twenty-first century: The role of technology and the Internet of Things",
+        "volume": "12",
+        "author": "Rodney",
+        "year": "2020",
+        "journal-title": "Worldwide Hospitality and Tourism Themes"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0490",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1186/s13731-015-0025-5",
+        "article-title": "Exploring regulations and scope of the Internet of Things in contemporary companies: A first literature analysis",
+        "volume": "4",
+        "author": "Russo",
+        "year": "2015",
+        "journal-title": "Journal of Innovation and Entrepreneurship"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0495",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.bdr.2021.100225",
+        "article-title": "A Security Management Framework for Big Data in Smart Healthcare",
+        "volume": "25",
+        "author": "Sarosh",
+        "year": "2021",
+        "journal-title": "Big Data Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2022.108455_b0515",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.22552/jijmr/2020/v6/i2/205283",
+        "article-title": "The Future of Supply Chain-Data Logging Via Internet of Things (IoT)",
+        "volume": "6",
+        "author": "Singh",
+        "year": "2020",
+        "journal-title": "Jaipuria International Journal of Management Research"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0520",
+        "article-title": "Impact of selected intelligent systems in logistics on the creation of a sustainable market position of manufacturing companies in poland in the context of industry 4.0",
+        "volume": "13",
+        "author": "Stanisławski",
+        "year": "2021",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0525",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1016/j.jclepro.2012.02.021",
+        "article-title": "Carbon accounting: A systematic literature review",
+        "volume": "36",
+        "author": "Stechemesser",
+        "year": "2012",
+        "journal-title": "Journal of Cleaner Production"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.cie.2022.108455_b0530",
+        "article-title": "A blockchain-based framework for green logistics in supply chains",
+        "volume": "12",
+        "author": "Tan",
+        "year": "2020",
+        "journal-title": "Sustainability (Switzerland)"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0535",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jretconser.2021.102659",
+        "article-title": "Consumer perceptions to support IoT based smart parcel locker logistics in China",
+        "volume": "62",
+        "author": "Tang",
+        "year": "2021",
+        "journal-title": "Journal of Retailing and Consumer Services"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2022.108455_b0540",
+        "doi-asserted-by": "crossref",
+        "first-page": "1432",
+        "DOI": "10.1108/IMDS-09-2017-0384",
+        "article-title": "An Internet of Things (IoT)-based risk monitoring system for managing cold supply chain risks",
+        "volume": "118",
+        "author": "Tsang",
+        "year": "2018",
+        "journal-title": "Industrial Management and Data Systems"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2022.108455_b0545",
+        "doi-asserted-by": "crossref",
+        "first-page": "1534",
+        "DOI": "10.1080/00207543.2020.1841315",
+        "article-title": "Integrating Internet of Things and multi-temperature delivery planning for perishable food E-commerce logistics: A model and application",
+        "volume": "59",
+        "author": "Tsang",
+        "year": "2021",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0550",
+        "doi-asserted-by": "crossref",
+        "first-page": "96",
+        "DOI": "10.1108/IMDS-11-2016-0504",
+        "article-title": "IoT-based production logistics and supply chain system – part 2 IoT-based cyber-physical system: A framework and evaluation",
+        "volume": "118",
+        "author": "Tu",
+        "year": "2018",
+        "journal-title": "Industrial Management and Data Systems"
+      },
+      {
+        "key": "10.1016/j.cie.2022.108455_b0555",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1016/j.jbusres.2020.06.057",
+        "article-title": "Investigating the emerging COVID-19 research trends in the field of business and management: A bibliometric analysis approach",
+        "volume": "118",
+        "author": "Verma",
+        "year": "2020",
+        "journal-title": "Journal of Business Research"
+      },
+      {
+        "issue": "1–2",
+        "key": "10.1016/j.cie.2022.108455_b0560",
+        "doi-asserted-by": "crossref",
+        "first-page": "604",
+        "DOI": "10.1080/00207543.2017.1413259",
+        "article-title": "A comprehensive survey of ubiquitous manufacturing research",
+        "volume": "56",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2022.108455_b0575",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1080/00207543.2019.1612964",
+        "article-title": "Logistics 4.0: A systematic review towards a new logistics system",
+        "volume": "58",
+        "author": "Winkelhaus",
+        "year": "2020",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0580",
+        "doi-asserted-by": "crossref",
+        "first-page": "729",
+        "DOI": "10.1108/IMDS-07-2016-0297",
+        "article-title": "Optimization approach for increasing revenue of perishable product supply chain with the Internet of Things",
+        "volume": "117",
+        "author": "Yan",
+        "year": "2017",
+        "journal-title": "Industrial Management and Data Systems"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0585",
+        "doi-asserted-by": "crossref",
+        "first-page": "548",
+        "DOI": "10.1108/BEPAM-05-2018-0078",
+        "article-title": "A systematic review of the applications of multi-criteria decision-making methods in site selection problems",
+        "volume": "9",
+        "author": "Yap",
+        "year": "2019",
+        "journal-title": "Built Environment Project and Asset Management"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2022.108455_b0590",
+        "doi-asserted-by": "crossref",
+        "first-page": "1107",
+        "DOI": "10.1080/00207543.2020.1720927",
+        "article-title": "A multi-objective optimisation study for the design of an AVS/RS warehouse",
+        "volume": "59",
+        "author": "Yetkin Ekren",
+        "year": "2021",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.cie.2022.108455_b0595",
+        "doi-asserted-by": "crossref",
+        "first-page": "1890",
+        "DOI": "10.1108/IMDS-10-2016-0456",
+        "article-title": "Modeling of an IoT-enabled supply chain for perishable food with two-echelon supply hubs",
+        "volume": "117",
+        "author": "Zhang",
+        "year": "2017",
+        "journal-title": "Industrial Management and Data Systems"
+      }
+    ],
+    "container-title": [
+      "Computers &amp; Industrial Engineering"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360835222004892?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360835222004892?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2025-10-06T18:56:09Z",
+      "timestamp": 1759776969000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0360835222004892"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    },
+    "references-count": 104,
+    "alternative-id": [
+      "S0360835222004892"
+    ],
+    "URL": "https://doi.org/10.1016/j.cie.2022.108455",
+    "relation": {},
+    "ISSN": [
+      "0360-8352"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-8352",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Applications of the internet of things for optimizing warehousing and logistics operations: A systematic literature review and future research directions",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computers & Industrial Engineering",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.cie.2022.108455",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2022 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "108455"
+  }
+}

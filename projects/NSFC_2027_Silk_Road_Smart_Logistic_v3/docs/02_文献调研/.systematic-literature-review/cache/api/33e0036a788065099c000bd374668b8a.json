@@ -1,0 +1,559 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2026-08-04T02:14:24Z",
+      "timestamp": 1785809664024,
+      "version": "3.56.0"
+    },
+    "reference-count": 50,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2021-01-01T00:00:00Z",
+          "timestamp": 1609459200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "funder": [
+      {
+        "name": "European Commission’s Horizon 2020 Research and Innovation Programme",
+        "award": [
+          "833828"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "833828"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Access"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "DOI": "10.1109/access.2021.3072916",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2021-04-13T23:55:12Z",
+      "timestamp": 1618358112000
+    },
+    "page": "59406-59419",
+    "source": "Crossref",
+    "is-referenced-by-count": 75,
+    "title": [
+      "Deep Learning Anomaly Detection for Cellular IoT With Applications in Smart Logistics"
+    ],
+    "prefix": "10.1109",
+    "volume": "9",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-1267-5411",
+        "authenticated-orcid": false,
+        "given": "Milos",
+        "family": "Savic",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3761-4175",
+        "authenticated-orcid": false,
+        "given": "Milan",
+        "family": "Lukic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dragan",
+        "family": "Danilovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0102-3090",
+        "authenticated-orcid": false,
+        "given": "Zarko",
+        "family": "Bodroski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1783-8734",
+        "authenticated-orcid": false,
+        "given": "Dragana",
+        "family": "Bajovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1727-1670",
+        "authenticated-orcid": false,
+        "given": "Ivan",
+        "family": "Mezei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5305-8420",
+        "authenticated-orcid": false,
+        "given": "Dejan",
+        "family": "Vukobratovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3993-4092",
+        "authenticated-orcid": false,
+        "given": "Srdjan",
+        "family": "Skrbic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3497-5589",
+        "authenticated-orcid": false,
+        "given": "Dusan",
+        "family": "Jakovetic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MILCOM.2017.8170817"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2018.03.007"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOBECOM38437.2019.9014102"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2019.2904348"
+      },
+      {
+        "key": "ref31",
+        "first-page": "756",
+        "article-title": "D&#x00CF;oT: A federated self-learning anomaly detection system for IoT",
+        "author": "nguyen",
+        "year": "2019",
+        "journal-title": "Proc IEEE 39th Int Conf Distrib Comput Syst (ICDCS)"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2019.2938778"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SPW.2018.00013"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asoc.2018.05.049"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "crossref",
+        "first-page": "3188",
+        "DOI": "10.3390/s19143188",
+        "article-title": "IoTDS: A one-class classification approach to detect botnets in Internet of Things devices",
+        "volume": "19",
+        "author": "bezerra",
+        "year": "2019",
+        "journal-title": "SENSORS"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MPRV.2018.03367731"
+      },
+      {
+        "key": "ref28",
+        "first-page": "1",
+        "article-title": "Neural architecture search with reinforcement learning",
+        "author": "zoph",
+        "year": "2017",
+        "journal-title": "Proc Int Conf Learn Represent (ICLR)"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01234-2_48"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CIC.2018.00042"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2017.2783682"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2014.2300753"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2017.2780172"
+      },
+      {
+        "key": "ref22",
+        "author": "liberg",
+        "year": "2017",
+        "journal-title": "Cellular Internet of Things Technologies Standards and Performance"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CSCN.2017.8088619"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2020.2986444"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2017.1600510CM"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2019.2918951"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2937347"
+      },
+      {
+        "key": "ref50",
+        "first-page": "265",
+        "article-title": "TensorFlow: A system for large-scale machine learning",
+        "author": "abadi",
+        "year": "2016",
+        "journal-title": "Proc of USENIX Symp on Operating Systems Design and Implementation (OSDI)"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2912022"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2958962"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/APSIPAASC47483.2019.9023207"
+      },
+      {
+        "key": "ref12",
+        "article-title": "Deep learning for anomaly detection: A survey",
+        "author": "chalapathy",
+        "year": "2019",
+        "journal-title": "arXiv 1901 03407"
+      },
+      {
+        "key": "ref13",
+        "article-title": "Machine learning at the network edge: A survey",
+        "author": "murshed",
+        "year": "2019",
+        "journal-title": "arXiv 1908 00080"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSP.2018.2825478"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INDIN41052.2019.8972305"
+      },
+      {
+        "key": "ref16",
+        "article-title": "Cellular system support for ultra-low complexity and low throughput Internet of Things",
+        "year": "2016",
+        "journal-title": "3GPP"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2016.7497761"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2020.107209"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2525418"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3016330"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2011.101911.00087"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2018.2855563"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2018.01.059"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3000179"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10586-018-2823-6"
+      },
+      {
+        "key": "ref49",
+        "first-page": "1",
+        "article-title": "PyOD: A Python toolbox for scalable outlier detection",
+        "volume": "20",
+        "author": "zhao",
+        "year": "2019",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.001.1800510"
+      },
+      {
+        "key": "ref46",
+        "article-title": "Adam: A method for stochastic optimization",
+        "author": "kingma",
+        "year": "2014",
+        "journal-title": "arXiv 1412 6980"
+      },
+      {
+        "key": "ref45",
+        "article-title": "A survey on physical unclonable function (PUF)-based security solutions for Internet of Things",
+        "author": "shamsoshoara",
+        "year": "2019",
+        "journal-title": "arXiv 1907 12525"
+      },
+      {
+        "key": "ref48",
+        "first-page": "249",
+        "article-title": "Understanding the difficulty of training deep feedforward neural networks",
+        "volume": "9",
+        "author": "glorot",
+        "year": "2010",
+        "journal-title": "Proc 13th Int Conf Artif Intell Statist (PMLR)"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.simpat.2019.102019"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/en14061758"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2904799"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC.2019.8904267"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/VTCSpring.2017.8108666"
+      }
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/6287639/9312710/09402912.pdf?arnumber=9402912",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          17
+        ]
+      ],
+      "date-time": "2021-12-17T19:55:35Z",
+      "timestamp": 1639770935000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9402912/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "references-count": 50,
+    "URL": "https://doi.org/10.1109/access.2021.3072916",
+    "relation": {},
+    "ISSN": [
+      "2169-3536"
+    ],
+    "issn-type": [
+      {
+        "value": "2169-3536",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    }
+  }
+}

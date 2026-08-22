@@ -1,0 +1,338 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          3
+        ]
+      ],
+      "date-time": "2026-06-03T03:37:44Z",
+      "timestamp": 1780457864357,
+      "version": "3.54.1"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 23,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              13
+            ]
+          ],
+          "date-time": "2022-12-13T00:00:00Z",
+          "timestamp": 1670889600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1145/3551626.3564965",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2022-12-07T00:55:45Z",
+      "timestamp": 1670374545000
+    },
+    "page": "1-5",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 8,
+    "title": [
+      "A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Vijay",
+        "family": "John",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Guardian Robot Project, RIKEN, Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yasutomo",
+        "family": "Kawanishi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Guardian Robot Project, RIKEN, Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          13
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Madina Abdrakhmanova Askat Kuzdeuov Sheikh Jarju Yerbolat Khassanov Michael Lewis and Huseyin Atakan Varol. 2020. SpeakingFaces: A Large-Scale Multimodal Dataset of Voice Commands with Visual and Thermal Video Streams. arXiv:2012.02961 [cs]  Madina Abdrakhmanova Askat Kuzdeuov Sheikh Jarju Yerbolat Khassanov Michael Lewis and Huseyin Atakan Varol. 2020. SpeakingFaces: A Large-Scale Multimodal Dataset of Voice Commands with Visual and Thermal Video Streams. arXiv:2012.02961 [cs]",
+        "DOI": "10.3390/s21103465"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.imavis.2006.01.017"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "volume-title": "Proceedings of the 2005 NICTA-HCSNet Multimodal User Interaction Workshop ---",
+        "volume": "57",
+        "author": "Chetty Girija",
+        "year": "2006",
+        "unstructured": "Girija Chetty and Michael Wagner . 2006 . Audio-Visual Multimodal Fusion for Biometric Person Authentication and Liveness Verification . In Proceedings of the 2005 NICTA-HCSNet Multimodal User Interaction Workshop --- Volume 57 . 17--24. Girija Chetty and Michael Wagner. 2006. Audio-Visual Multimodal Fusion for Biometric Person Authentication and Liveness Verification. In Proceedings of the 2005 NICTA-HCSNet Multimodal User Interaction Workshop --- Volume 57. 17--24."
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "volume-title": "Proceedings of the International Conference on Audio- and Video-Based Biometric Person Authentication. 176--181",
+        "author": "Choudhury Tanzeem",
+        "year": "1998",
+        "unstructured": "Tanzeem Choudhury , Brian Clarkson , Tony Jebara , and Alex Pentland . 1998 . Multimodal Person Recognition using Unconstrained Audio and Video . In Proceedings of the International Conference on Audio- and Video-Based Biometric Person Authentication. 176--181 . Tanzeem Choudhury, Brian Clarkson, Tony Jebara, and Alex Pentland. 1998. Multimodal Person Recognition using Unconstrained Audio and Video. In Proceedings of the International Conference on Audio- and Video-Based Biometric Person Authentication. 176--181."
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "volume-title": "Proceedings of APSIPA, Annual Summit and Conference. 605--609",
+        "author": "Das R. K.",
+        "unstructured": "R. K. Das , R. Tao , J. Yang , W. Rao , C. Yu , and H. Li . 2020. HLT-NUS submission for 2019 NIST Multimedia Speaker Recognition Evaluation . In Proceedings of APSIPA, Annual Summit and Conference. 605--609 . R. K. Das, R. Tao, J. Yang, W. Rao, C. Yu, and H. Li. 2020. HLT-NUS submission for 2019 NIST Multimedia Speaker Recognition Evaluation. In Proceedings of APSIPA, Annual Summit and Conference. 605--609."
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "volume-title": "Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing. 5861--5865",
+        "author": "Han Jing",
+        "year": "2019",
+        "unstructured": "Jing Han , Zixing Zhang , Zhao Ren , and Björn Schuller . 2019 . Implicit Fusion by Joint Audiovisual Training for Emotion Recognition in Monomodality . In Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing. 5861--5865 . Jing Han, Zixing Zhang, Zhao Ren, and Björn Schuller. 2019. Implicit Fusion by Joint Audiovisual Training for Emotion Recognition in Monomodality. In Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing. 5861--5865."
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11042-020-08628-9"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-006-6655-0"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-92273-3_13"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v35i3.16330"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "volume-title": "Learnable PINs: Cross-modal Embeddings for Person Identity. In in Proceedings of the European Conference on Computer Vision. 71--88",
+        "author": "Nagrani A.",
+        "unstructured": "A. Nagrani , S. Albanie , and A. Zisserman . 2018 . Learnable PINs: Cross-modal Embeddings for Person Identity. In in Proceedings of the European Conference on Computer Vision. 71--88 . A. Nagrani, S. Albanie, and A. Zisserman. 2018. Learnable PINs: Cross-modal Embeddings for Person Identity. In in Proceedings of the European Conference on Computer Vision. 71--88."
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "volume-title": "Proceedings of the Digital Image Computing: Techniques and Applications. 1--7.",
+        "author": "Nawaz S.",
+        "unstructured": "S. Nawaz , M. K. Janjua , I. Gallo , A. Mahmood , and A. Calefati . 2019. Deep Latent Space Learning for Cross-modal Mapping of Audio and Visual Signals . In Proceedings of the Digital Image Computing: Techniques and Applications. 1--7. S. Nawaz, M. K. Janjua, I. Gallo, A. Mahmood, and A. Calefati. 2019. Deep Latent Space Learning for Cross-modal Mapping of Audio and Visual Signals. In Proceedings of the Digital Image Computing: Techniques and Applications. 1--7."
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3395035.3425202"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.33016892"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21437/Odyssey.2020-37"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/S0218001417560055"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICASSP.2018.8462122"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "volume-title": "Proceedings of SPIE 5405",
+        "volume": "5404",
+        "author": "Singh Saurabh",
+        "year": "2004",
+        "unstructured": "Saurabh Singh , Aglika Gyaourova , George Bebis , and Ioannis Pavlidis . 2004 . Infrared and Visible Image Fusion for Face Recognition . In Proceedings of SPIE 5405 , Biometric Technology for Human Identification , Vol. 5404 . 585--596. Saurabh Singh, Aglika Gyaourova, George Bebis, and Ioannis Pavlidis. 2004. Infrared and Visible Image Fusion for Face Recognition. In Proceedings of SPIE 5405, Biometric Technology for Human Identification, Vol. 5404. 585--596."
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21437/Interspeech.2020-1814"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "volume-title": "Proceedings of the 31st Annual Conference on Neural Information Processing Systems 30 (Dec.",
+        "author": "Vaswani Ashish",
+        "year": "2017",
+        "unstructured": "Ashish Vaswani , Noam Shazeer , Niki Parmar , Jakob Uszkoreit , Llion Jones , Aidan N. Gomez , Łukasz Kaiser , and Illia Polosukhin . 2017 . Attention is All You Need . Proceedings of the 31st Annual Conference on Neural Information Processing Systems 30 (Dec. 2017), 6000--6010. Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is All You Need. Proceedings of the 31st Annual Conference on Neural Information Processing Systems 30 (Dec. 2017), 6000--6010."
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3366423.3380000"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "volume-title": "Proceedings of the International Conference on Learning Representations. 1--17",
+        "author": "Wen Y.",
+        "unstructured": "Y. Wen , M. A. Ismail , W. Liu , B. Raj , and R. Singh . 2019. Disjoint Mapping Network for Cross-modal Matching of Voices and Faces . In Proceedings of the International Conference on Learning Representations. 1--17 . Y. Wen, M. A. Ismail, W. Liu, B. Raj, and R. Singh. 2019. Disjoint Mapping Network for Cross-modal Matching of Voices and Faces. In Proceedings of the International Conference on Learning Representations. 1--17."
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2021.acl-long.203"
+      }
+    ],
+    "event": {
+      "name": "MMAsia '22: ACM Multimedia Asia",
+      "location": "Tokyo Japan",
+      "acronym": "MMAsia '22",
+      "sponsor": [
+        "SIGMM ACM Special Interest Group on Multimedia"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 4th ACM International Conference on Multimedia in Asia"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3551626.3564965",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3551626.3564965",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2025-06-17T19:00:26Z",
+      "timestamp": 1750186826000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3551626.3564965"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          13
+        ]
+      ]
+    },
+    "references-count": 23,
+    "alternative-id": [
+      "10.1145/3551626.3564965",
+      "10.1145/3551626"
+    ],
+    "URL": "https://doi.org/10.1145/3551626.3564965",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          13
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2022-12-13",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

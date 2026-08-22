@@ -1,0 +1,1349 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2026-08-15T20:25:49Z",
+      "timestamp": 1786825549180,
+      "version": "3.56.0"
+    },
+    "reference-count": 199,
+    "publisher": "Informa UK Limited",
+    "issue": "15-16",
+    "funder": [
+      {
+        "DOI": "10.13039/501100002724",
+        "name": "American University of Sharjah",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100002724",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000038",
+        "name": "Natural Sciences and Engineering Research Council of Canada",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100000038",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Production Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          29
+        ]
+      ]
+    },
+    "DOI": "10.1080/00207543.2017.1402140",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          17
+        ]
+      ],
+      "date-time": "2017-11-17T07:15:33Z",
+      "timestamp": 1510902933000
+    },
+    "page": "4719-4742",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 1137,
+    "title": [
+      "Internet of things and supply chain management: a literature review"
+    ],
+    "prefix": "10.1080",
+    "volume": "57",
+    "author": [
+      {
+        "given": "Mohamed",
+        "family": "Ben-Daya",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Industrial Engineering Department, American University of Sharjah , Sharjah, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elkafi",
+        "family": "Hassini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "DeGroote School of Business, McMaster University , Hamilton, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zied",
+        "family": "Bahroun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Industrial Engineering Department, American University of Sharjah , Sharjah, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "CIT0001",
+        "volume-title": "2011 Nirma University International Conference on Engineering",
+        "author": "Agrawal S.",
+        "year": "2011"
+      },
+      {
+        "key": "CIT0002",
+        "volume-title": "2015 IEEE 1st International Forum on Research and Technologies for Society and Industry Leveraging a Better Tomorrow (RTSI)",
+        "author": "Alexandru A. M.",
+        "year": "2015"
+      },
+      {
+        "key": "CIT0003",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jii.2016.08.001"
+      },
+      {
+        "key": "CIT0004",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1201/1078/44912.22.1.20051201/85739.7"
+      },
+      {
+        "key": "CIT0005",
+        "unstructured": "APICS . 2015. “Supply Chain Operations Reference Model, Revision 11.0.” http://www.apics.org/docs/default-source/scor-p-toolkits/apics-scc-scor-quick-reference-guide.pdf?sfvrsn=2."
+      },
+      {
+        "key": "CIT0006",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2010.05.010"
+      },
+      {
+        "key": "CIT0007",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s150304781"
+      },
+      {
+        "key": "CIT0008",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0267257X.2016.1217914"
+      },
+      {
+        "key": "CIT0009",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jom.2007.01.003"
+      },
+      {
+        "key": "CIT0010",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2014.2300338"
+      },
+      {
+        "key": "CIT0011",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.tifs.2017.01.013"
+      },
+      {
+        "key": "CIT0012",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2017.06.028"
+      },
+      {
+        "key": "CIT0013",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2017.06.010"
+      },
+      {
+        "key": "CIT0014",
+        "volume-title": "Proceedings of the First Edition of the MCC Workshop on Mobile Cloud Computing - MCC 12",
+        "author": "Bonomi F.",
+        "year": "2012"
+      },
+      {
+        "key": "CIT0015",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-05029-4_7"
+      },
+      {
+        "key": "CIT0016",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comcom.2014.09.008"
+      },
+      {
+        "key": "CIT0017",
+        "author": "Bowman P.",
+        "year": "2009",
+        "journal-title": "Building Radio Frequency Identification for the Global Environment (Bridge) Euro RFID Project"
+      },
+      {
+        "key": "CIT0018",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/10878571011009859"
+      },
+      {
+        "key": "CIT0019",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2010.01.004"
+      },
+      {
+        "key": "CIT0020",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4018/IJBAN.2015070104"
+      },
+      {
+        "key": "CIT0021",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.foodcont.2016.06.042"
+      },
+      {
+        "key": "CIT0022",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rcim.2016.01.001"
+      },
+      {
+        "key": "CIT0023",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2012.12.047"
+      },
+      {
+        "key": "CIT0024",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00170-013-5016-8"
+      },
+      {
+        "key": "CIT0025",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LRA.2016.2517208"
+      },
+      {
+        "key": "CIT0026",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12541-015-0143-9"
+      },
+      {
+        "key": "CIT0027",
+        "volume-title": "Supply Chain Management: Strategy, Planning, and Operation",
+        "author": "Chopra S.",
+        "year": "2013",
+        "edition": "5"
+      },
+      {
+        "key": "CIT0028",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10845-014-0965-9"
+      },
+      {
+        "key": "CIT0029",
+        "volume-title": "Logistics & Supply Chain Management",
+        "author": "Christopher M.",
+        "year": "2016"
+      },
+      {
+        "key": "CIT0030",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/09600031111101439"
+      },
+      {
+        "key": "CIT0031",
+        "volume-title": "EFNMS Euro Maintenance Conference",
+        "author": "Chukwuekwe D. O.",
+        "year": "2016"
+      },
+      {
+        "key": "CIT0032",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/13598541211246558"
+      },
+      {
+        "key": "CIT0033",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dss.2011.11.018"
+      },
+      {
+        "key": "CIT0034",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclepro.2016.11.081"
+      },
+      {
+        "key": "CIT0035",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-78731-0"
+      },
+      {
+        "key": "CIT0036",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2012.06.005"
+      },
+      {
+        "key": "CIT0037",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.24840/2183-0606_004.003_0002"
+      },
+      {
+        "key": "CIT0038",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.autcon.2015.10.009"
+      },
+      {
+        "key": "CIT0039",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-78731-0"
+      },
+      {
+        "key": "CIT0040",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.autcon.2012.02.005"
+      },
+      {
+        "issue": "1",
+        "key": "CIT0041",
+        "first-page": "80",
+        "volume": "18",
+        "author": "Dey S.",
+        "year": "2016",
+        "journal-title": "IOSR Journal of Computer Engineering"
+      },
+      {
+        "key": "CIT0042",
+        "volume-title": "9th International Conference on Next Generation Mobile Applications, Services and Technologies, Cambridge, UK.",
+        "author": "Dorsemaine B.",
+        "year": "2015"
+      },
+      {
+        "key": "CIT0043",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IMDS-03-2016-0096"
+      },
+      {
+        "issue": "4",
+        "key": "CIT0044",
+        "first-page": "93",
+        "volume": "2",
+        "author": "El Ghazali Y.",
+        "year": "2013",
+        "journal-title": "International Journal of Construction Engineering and Management"
+      },
+      {
+        "key": "CIT0045",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TENCONSpring.2013.6584443"
+      },
+      {
+        "key": "CIT0046",
+        "author": "Ellis S.",
+        "year": "2015",
+        "journal-title": "International Data Corporation (IDC) White Paper"
+      },
+      {
+        "key": "CIT0047",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2015.01.003"
+      },
+      {
+        "key": "CIT0048",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2013.05.007"
+      },
+      {
+        "key": "CIT0049",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.10.004"
+      },
+      {
+        "key": "CIT0050",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00170-015-7593-1"
+      },
+      {
+        "key": "CIT0051",
+        "volume-title": "Food Wastage Footprint",
+        "author": "FAO",
+        "year": "2013"
+      },
+      {
+        "key": "CIT0052",
+        "first-page": "611",
+        "author": "Ferreira P.",
+        "year": "2010",
+        "journal-title": "INForum 2010 – II Simposio de Informatica, Braga; 2010"
+      },
+      {
+        "key": "CIT0053",
+        "first-page": "121",
+        "author": "Foidl H.",
+        "year": "2016",
+        "journal-title": "Innovations in Enterprise Information Systems Management and Engineering Lecture Notes in Business Information Processing"
+      },
+      {
+        "key": "CIT0054",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-00491-4"
+      },
+      {
+        "key": "CIT0055",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.repl.2015.09.004"
+      },
+      {
+        "key": "CIT0056",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1937-5956.2007.tb00166.x"
+      },
+      {
+        "key": "CIT0057",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cie.2016.09.007"
+      },
+      {
+        "key": "CIT0058",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jfds.2003.68.issue-1"
+      },
+      {
+        "key": "CIT0059",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2015.07.251"
+      },
+      {
+        "key": "CIT0060",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IJLM-03-2015-0051"
+      },
+      {
+        "key": "CIT0061",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7551/mitpress/10277.001.0001"
+      },
+      {
+        "key": "CIT0062",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2013.08.028"
+      },
+      {
+        "key": "CIT0063",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3926/jiem.793"
+      },
+      {
+        "key": "CIT0064",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2013.01.010"
+      },
+      {
+        "key": "CIT0065",
+        "volume-title": "Global Food Losses and Food Waste",
+        "author": "Gustavsson J.",
+        "year": "2011"
+      },
+      {
+        "key": "CIT0066",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.12.013"
+      },
+      {
+        "key": "CIT0067",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-00985-3_2"
+      },
+      {
+        "key": "CIT0068",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.09.005"
+      },
+      {
+        "key": "CIT0069",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3138/infor.46.2.93"
+      },
+      {
+        "key": "CIT0070",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1937-5956.2007.tb00279.x"
+      },
+      {
+        "key": "CIT0071",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/19440049.2017.1315776"
+      },
+      {
+        "key": "CIT0072",
+        "first-page": "54",
+        "volume-title": "Proceedings of the 12th International MITIP Conference on Information Technology & Innovation Processes of the Enterprises",
+        "author": "Hribernik K. A.",
+        "year": "2010"
+      },
+      {
+        "key": "CIT0073",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2016.1245883"
+      },
+      {
+        "key": "CIT0074",
+        "unstructured": "Information Society and Media Directorate General of the European Commission (INFSO) . 2008. “Internet of Things in 2020 - Roadmap for the Future.” Accessed August 2017. https://www.smart-systems-integration.org/public/documents/publications/Internet-of-Things_in_2020_EC-EPoSS_Workshop_Report_2008_v3.pdf/download."
+      },
+      {
+        "key": "CIT0075",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2014.999958"
+      },
+      {
+        "key": "CIT0076",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-41688-5"
+      },
+      {
+        "key": "CIT0077",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-78731-0"
+      },
+      {
+        "key": "CIT0078",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1098/rsta.2013.0302"
+      },
+      {
+        "key": "CIT0079",
+        "author": "Kagermann H.",
+        "year": "2013",
+        "journal-title": "Acatech-National Academy of Science and Engineering, Munich, Germany."
+      },
+      {
+        "key": "CIT0080",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.protcy.2013.11.009"
+      },
+      {
+        "key": "CIT0081",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2013.06.079"
+      },
+      {
+        "key": "CIT0082",
+        "first-page": "357",
+        "author": "Kinnunen S. K.",
+        "year": "2016",
+        "journal-title": "Proceedings of the 10th World Congress on Engineering Asset Management (WCEAM 2015) Lecture Notes in Mechanical Engineering"
+      },
+      {
+        "key": "CIT0083",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cad.2010.03.002"
+      },
+      {
+        "key": "CIT0084",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ifacol.2015.06.359"
+      },
+      {
+        "key": "CIT0085",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2015.1117149"
+      },
+      {
+        "key": "CIT0086",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2016.1198057"
+      },
+      {
+        "key": "CIT0087",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2016.2587754"
+      },
+      {
+        "key": "CIT0088",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0019-8501(99)00113-3"
+      },
+      {
+        "key": "CIT0089",
+        "first-page": "1",
+        "author": "Lang W.",
+        "year": "2015",
+        "journal-title": "Proc. IEEE SENSORS"
+      },
+      {
+        "key": "CIT0090",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bushor.2015.03.008"
+      },
+      {
+        "key": "CIT0091",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.mfglet.2013.09.005"
+      },
+      {
+        "key": "CIT0092",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.mfglet.2014.12.001"
+      },
+      {
+        "key": "CIT0093",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.im.2013.11.010"
+      },
+      {
+        "key": "CIT0094",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compchemeng.2016.03.006"
+      },
+      {
+        "key": "CIT0095",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17517575.2011.654266"
+      },
+      {
+        "key": "CIT0096",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10796-014-9492-7"
+      },
+      {
+        "key": "CIT0097",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2017.1308576"
+      },
+      {
+        "key": "CIT0098",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2013.05.006"
+      },
+      {
+        "key": "CIT0099",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jii.2016.06.001"
+      },
+      {
+        "key": "CIT0100",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/23270012.2016.1214540"
+      },
+      {
+        "key": "CIT0101",
+        "author": "Lopez Research LLC",
+        "year": "2014",
+        "journal-title": "Building Smarter Manufacturing with the Internet of Things (IoT): Part 2 of the IoT Series"
+      },
+      {
+        "key": "CIT0102",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10796-009-9218-4"
+      },
+      {
+        "key": "CIT0103",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jfoodeng.2016.06.016"
+      },
+      {
+        "key": "CIT0104",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICMSS.2011.5998314"
+      },
+      {
+        "key": "CIT0105",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jii.2017.04.005"
+      },
+      {
+        "key": "CIT0106",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/02635570110406730"
+      },
+      {
+        "key": "CIT0199",
+        "unstructured": "Manyika, J. , J. Woetzel , R. Dobbs , M. Chui , P. Bisson , J. Bughin , and D. Aharon . 2015.The Internet of Things: Mapping the Value Beyond the Hype. McKinsey Global Institute."
+      },
+      {
+        "key": "CIT0107",
+        "unstructured": "M&S Consulting . 2017. “Industrial Internet of Things Platform Comparison.” Accessed October 5, 2017. https://www.mandsconsulting.com/industrial-iot-platform-comparison"
+      },
+      {
+        "key": "CIT0108",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compind.2008.12.003"
+      },
+      {
+        "key": "CIT0109",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3233/JIFS-169252"
+      },
+      {
+        "key": "CIT0110",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cor.2013.02.001"
+      },
+      {
+        "key": "CIT0111",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compind.2008.12.005"
+      },
+      {
+        "key": "CIT0112",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2010.518742"
+      },
+      {
+        "key": "CIT0113",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.adhoc.2012.02.016"
+      },
+      {
+        "key": "CIT0114",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IMDS-11-2015-0478"
+      },
+      {
+        "key": "CIT0115",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40171-016-0136-2"
+      },
+      {
+        "key": "CIT0116",
+        "first-page": "1",
+        "author": "Naskar S",
+        "year": "2017",
+        "journal-title": "The Internet of Things in the Modern Business Environment Advances in E-Business Research"
+      },
+      {
+        "key": "CIT0117",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2011.12.024"
+      },
+      {
+        "key": "CIT0118",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijresmar.2016.11.003"
+      },
+      {
+        "key": "CIT0119",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.09.007"
+      },
+      {
+        "key": "CIT0120",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2012.09.017"
+      },
+      {
+        "key": "CIT0121",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-45117-6"
+      },
+      {
+        "issue": "10",
+        "key": "CIT0122",
+        "first-page": "332",
+        "volume": "12",
+        "author": "Nowodzinski P.",
+        "year": "2016",
+        "journal-title": "European Scientific Journal, ESJ"
+      },
+      {
+        "issue": "1",
+        "key": "CIT0123",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s40537-014-0007-7",
+        "volume": "2",
+        "author": "O’Donovan P.",
+        "year": "2015",
+        "journal-title": "Journal of Big Data"
+      },
+      {
+        "key": "CIT0124",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compind.2013.11.006"
+      },
+      {
+        "key": "CIT0125",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jfoodeng.2007.07.008"
+      },
+      {
+        "issue": "1",
+        "key": "CIT0126",
+        "first-page": "1",
+        "volume": "3",
+        "author": "Paksoy T.",
+        "year": "2016",
+        "journal-title": "Journal of Economics Bibliography"
+      },
+      {
+        "key": "CIT0127",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10796-012-9374-9"
+      },
+      {
+        "key": "CIT0128",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IJPDLM-06-2016-0151"
+      },
+      {
+        "key": "CIT0129",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/SCM-10-2015-0386"
+      },
+      {
+        "key": "CIT0130",
+        "first-page": "9",
+        "volume": "5",
+        "author": "Persson O.",
+        "year": "2009",
+        "journal-title": "Celebrating Scholarly Communication Studies: A Festschrift for Olle Persson at His 60th Birthday"
+      },
+      {
+        "key": "CIT0131",
+        "unstructured": "Postcapes . 2017. “IoT Standards and Protocols.” Accessed September 28, 2017. https://www.postscapes.com/internet-of-things-protocols/"
+      },
+      {
+        "issue": "1",
+        "key": "CIT0132",
+        "first-page": "151",
+        "volume": "9",
+        "author": "Putnik G.",
+        "year": "2015",
+        "journal-title": "International Journal for Quality Research"
+      },
+      {
+        "key": "CIT0133",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.09.001"
+      },
+      {
+        "key": "CIT0134",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2016.1173738"
+      },
+      {
+        "key": "CIT0135",
+        "author": "Rayes A.",
+        "year": "2016",
+        "journal-title": "Internet of Things From Hype to Reality"
+      },
+      {
+        "key": "CIT0136",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.02.017"
+      },
+      {
+        "key": "CIT0137",
+        "volume-title": "Introduction to Supply Chain Management Technologies",
+        "author": "Ross D. F.",
+        "year": "2016"
+      },
+      {
+        "key": "CIT0138",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cirp.2016.06.006"
+      },
+      {
+        "key": "CIT0139",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2017.02.016"
+      },
+      {
+        "key": "CIT0140",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2010.07.039"
+      },
+      {
+        "key": "CIT0141",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procir.2014.05.016"
+      },
+      {
+        "key": "CIT0142",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csi.2015.12.004"
+      },
+      {
+        "key": "CIT0143",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2015.02.016"
+      },
+      {
+        "key": "CIT0144",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.autcon.2010.12.002"
+      },
+      {
+        "key": "CIT0145",
+        "volume-title": "Designing and Managing the Supply Chain: Concepts, Strategies, and Case Studies",
+        "author": "Simchi-Levi D.",
+        "year": "2003"
+      },
+      {
+        "key": "CIT0146",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1590/2238-1031.jtl.v9n2a6"
+      },
+      {
+        "key": "CIT0147",
+        "volume-title": "2017 IEEE 15th International Symposium on Applied Machine Intelligence and Informatics (SAMI), Herl'any, Slovakia",
+        "author": "Spendla L.",
+        "year": "2017"
+      },
+      {
+        "key": "CIT0148",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ijmr.2007.9.issue-1"
+      },
+      {
+        "key": "CIT0149",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procir.2016.01.129"
+      },
+      {
+        "key": "CIT0150",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2017.1326643"
+      },
+      {
+        "key": "CIT0151",
+        "volume-title": "Waste. Uncovering the Global Food Scandal",
+        "author": "Stuart T.",
+        "year": "2009"
+      },
+      {
+        "key": "CIT0152",
+        "volume-title": "European Transport Conference 2011, Glasgow, Scotland",
+        "author": "Sund A. B.",
+        "year": "2011"
+      },
+      {
+        "key": "CIT0153",
+        "first-page": "129",
+        "author": "Sundmaeker H.",
+        "year": "2016",
+        "journal-title": "Digitising the Industry-Internet of Things Connecting Physical, Digital and Virtual Worlds"
+      },
+      {
+        "issue": "4",
+        "key": "CIT0155",
+        "first-page": "54",
+        "volume": "7",
+        "author": "Tadejko P.",
+        "year": "2015",
+        "journal-title": "Economics and Management"
+      },
+      {
+        "key": "CIT0156",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pursup.2007.11.001"
+      },
+      {
+        "key": "CIT0157",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2014.2306397"
+      },
+      {
+        "key": "CIT0158",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ifacol.2015.06.138"
+      },
+      {
+        "key": "CIT0159",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/41165792"
+      },
+      {
+        "key": "CIT0160",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.09.002"
+      },
+      {
+        "key": "CIT0161",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.20965/ijat.2017.p0004"
+      },
+      {
+        "key": "CIT0162",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10845-016-1278-y"
+      },
+      {
+        "key": "CIT0163",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2015.12.033"
+      },
+      {
+        "key": "CIT0164",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bjom.2003.14.issue-3"
+      },
+      {
+        "key": "CIT0165",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2006.11.030"
+      },
+      {
+        "key": "CIT0166",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclepro.2008.04.012"
+      },
+      {
+        "issue": "1",
+        "key": "CIT0167",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.18461/ijfsd.v2i1.217",
+        "volume": "2",
+        "author": "Van der Vorst J. G. A. J.",
+        "year": "2011",
+        "journal-title": "International Journal on Food System Dynamics"
+      },
+      {
+        "key": "CIT0168",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rcim.2016.02.004"
+      },
+      {
+        "key": "CIT0169",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compag.2013.09.006"
+      },
+      {
+        "key": "CIT0170",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jfoodeng.2015.11.009"
+      },
+      {
+        "key": "CIT0171",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ifacol.2015.06.139"
+      },
+      {
+        "key": "CIT0172",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2013.07.006"
+      },
+      {
+        "key": "CIT0173",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/14637151211215019"
+      },
+      {
+        "key": "CIT0154",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2991/978-94-6239-180-2_72"
+      },
+      {
+        "key": "CIT0174",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.foodcont.2016.09.048"
+      },
+      {
+        "key": "CIT0175",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ifacol.2015.06.143"
+      },
+      {
+        "key": "CIT0176",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10796-014-9489-2"
+      },
+      {
+        "key": "CIT0177",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MIE.2017.2649104"
+      },
+      {
+        "key": "CIT0178",
+        "volume-title": "The Future of Manufacturing: Opportunities to Drive Economic Growth",
+        "author": "World Economic Forum (WEF) Deloitte Touche Tohmatsu (Firm)",
+        "year": "2012"
+      },
+      {
+        "key": "CIT0179",
+        "volume-title": "Proceedings of the Fifth International Conference on Advanced Engineering Computing and Applications in Sciences, Lisbon, Portugal.",
+        "author": "Xing B.",
+        "year": "2011"
+      },
+      {
+        "key": "CIT0180",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2010.508944"
+      },
+      {
+        "key": "CIT0181",
+        "volume-title": "2013 IEEE International Conference on Green Computing and Communications and IEEE Internet of Things and IEEE Cyber, Physical and Social Computing, Beijing, China.",
+        "author": "Xu R.",
+        "year": "2013"
+      },
+      {
+        "key": "CIT0182",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2014.2300753"
+      },
+      {
+        "key": "CIT0183",
+        "volume-title": "2016 Fourth International Symposium on Computing and Networking (CANDAR), Hiroshima, Japan.",
+        "author": "Yamato Y.",
+        "year": "2016"
+      },
+      {
+        "key": "CIT0184",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2014/624839"
+      },
+      {
+        "key": "CIT0185",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/IMDS-12-2015-0512"
+      },
+      {
+        "key": "CIT0186",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2016.1176266"
+      },
+      {
+        "key": "CIT0187",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpe.2014.09.031"
+      },
+      {
+        "key": "CIT0188",
+        "volume-title": "2016 International Conference on Wireless Communications, Signal Processing and Networking (WiSPNET), Chennai, India.",
+        "author": "Yuvaraj S.",
+        "year": "2016"
+      },
+      {
+        "key": "CIT0189",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/mper-2016-0030"
+      },
+      {
+        "key": "CIT0190",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1108/01443571211212600"
+      },
+      {
+        "key": "CIT0191",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2014/270749"
+      },
+      {
+        "key": "CIT0192",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TASE.2015.2497800"
+      },
+      {
+        "key": "CIT0193",
+        "first-page": "441",
+        "volume": "4",
+        "author": "Zhiduan X.",
+        "year": "2005",
+        "journal-title": "Chinese Journal of Management"
+      },
+      {
+        "key": "CIT0194",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00207543.2015.1086037"
+      },
+      {
+        "key": "CIT0195",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.autcon.2017.01.006"
+      },
+      {
+        "key": "CIT0196",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/FSKD.2015.7382284"
+      },
+      {
+        "key": "CIT0197",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jom.2004.01.005"
+      },
+      {
+        "key": "CIT0198",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jengtecman.2011.09.011"
+      }
+    ],
+    "container-title": [
+      "International Journal of Production Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2017.1402140",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          27
+        ]
+      ],
+      "date-time": "2025-06-27T03:35:05Z",
+      "timestamp": 1750995305000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/00207543.2017.1402140"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          16
+        ]
+      ]
+    },
+    "references-count": 199,
+    "journal-issue": {
+      "issue": "15-16",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            29
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/00207543.2017.1402140"
+    ],
+    "URL": "https://doi.org/10.1080/00207543.2017.1402140",
+    "relation": {},
+    "ISSN": [
+      "0020-7543",
+      "1366-588X"
+    ],
+    "issn-type": [
+      {
+        "value": "0020-7543",
+        "type": "print"
+      },
+      {
+        "value": "1366-588X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          16
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tprs20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tprs20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2017-08-06",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2017-10-31",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2017-11-16",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

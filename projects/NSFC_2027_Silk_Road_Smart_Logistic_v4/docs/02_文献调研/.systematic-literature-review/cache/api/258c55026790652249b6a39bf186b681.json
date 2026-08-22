@@ -1,0 +1,284 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          20
+        ]
+      ],
+      "date-time": "2026-06-20T16:37:34Z",
+      "timestamp": 1781973454933,
+      "version": "3.54.5"
+    },
+    "reference-count": 12,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              9
+            ]
+          ],
+          "date-time": "2024-06-09T00:00:00Z",
+          "timestamp": 1717891200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              9
+            ]
+          ],
+          "date-time": "2024-06-09T00:00:00Z",
+          "timestamp": 1717891200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1109/iccworkshops59551.2024.10615907",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2024-08-12T17:23:42Z",
+      "timestamp": 1723483422000
+    },
+    "page": "1660-1665",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Goal-Oriented Semantic Communication for DNN Task Inference in IoT Networks"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Hossein",
+        "family": "Bijanrostami",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Toronto,Department of Electrical and Computer Engineering,Toronto,ON,CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elvino",
+        "family": "Sousa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Toronto,Department of Electrical and Computer Engineering,Toronto,ON,CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohammad Karimzadeh",
+        "family": "Farshbafan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Wireless@VT, Virginia Tech,Bradley Department of Electrical and Computer Engineering,Blacksburg,VA,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41745-020-00165-6"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2021.107930"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2015.178"
+      },
+      {
+        "key": "ref4",
+        "volume-title": "A semantic-aware strategy for automatic speech recognition incorporating deep learning models",
+        "author": "Santhanavijayan",
+        "year": "2020"
+      },
+      {
+        "key": "ref5",
+        "article-title": "Topicrnn: A recurrent neural network with long-range semantic dependency",
+        "volume": "abs/1611.01702",
+        "author": "Dieng",
+        "year": "2016",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "ref6",
+        "article-title": "A unified multi-task semantic communication system for multimodal data",
+        "author": "Zhang",
+        "year": "2022",
+        "journal-title": "arXiv preprint"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/NSW.2011.6004632"
+      },
+      {
+        "key": "ref8",
+        "volume-title": "Semantic conceptions of information",
+        "author": "Floridi",
+        "year": "2005"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2017.2761740"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2021.3068255"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2019.2959035"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2019.2947893"
+      }
+    ],
+    "event": {
+      "name": "2024 IEEE International Conference on Communications Workshops (ICC Workshops)",
+      "location": "Denver, CO, USA",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            9
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            13
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2024 IEEE International Conference on Communications Workshops (ICC Workshops)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/10615255/10615259/10615907.pdf?arnumber=10615907",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          13
+        ]
+      ],
+      "date-time": "2024-08-13T05:37:55Z",
+      "timestamp": 1723527475000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10615907/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          9
+        ]
+      ]
+    },
+    "references-count": 12,
+    "URL": "https://doi.org/10.1109/iccworkshops59551.2024.10615907",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          9
+        ]
+      ]
+    }
+  }
+}

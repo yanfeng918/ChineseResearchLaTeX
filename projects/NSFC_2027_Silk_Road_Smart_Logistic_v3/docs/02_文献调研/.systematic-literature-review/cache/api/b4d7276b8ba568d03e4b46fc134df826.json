@@ -1,0 +1,1592 @@
+{
+  "id": "https://openalex.org/W4390748831",
+  "doi": "https://doi.org/10.1016/j.iot.2024.101063",
+  "title": "Anomaly detection based on Artificial Intelligence of Things: A Systematic Literature Mapping",
+  "display_name": "Anomaly detection based on Artificial Intelligence of Things: A Systematic Literature Mapping",
+  "publication_year": 2024,
+  "publication_date": "2024-01-11",
+  "ids": {
+    "openalex": "https://openalex.org/W4390748831",
+    "doi": "https://doi.org/10.1016/j.iot.2024.101063"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.iot.2024.101063",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.iot.2024.101063",
+    "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2542660524000052-ga1_lrg.jpg",
+    "source": {
+      "id": "https://openalex.org/S4210174276",
+      "display_name": "Internet of Things",
+      "issn_l": "2542-6605",
+      "issn": [
+        "2542-6605",
+        "2543-1536"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Internet of Things",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "hybrid",
+    "oa_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2542660524000052-ga1_lrg.jpg",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5014771012",
+        "display_name": "Sergio Trilles",
+        "orcid": "https://orcid.org/0000-0002-9304-0719"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I10902133",
+          "display_name": "Universitat Jaume I",
+          "ror": "https://ror.org/02ws1xc11",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I10902133"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210160299",
+          "display_name": "Universidad Isabel I",
+          "ror": "https://ror.org/055sgt471",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210160299"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Sergio Trilles",
+      "raw_affiliation_strings": [
+        "Facultat de Ciencias y Tecnología, Universidad Isabel I, Calle Fernán González, 76, 09003, Burgos, Spain",
+        "Institute of New Imaging Technologies, Universitat Jaume I, Avda. Sos Baynat, s/n, 12071, Castelló de la Plana, Spain"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-9304-0719",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Facultat de Ciencias y Tecnología, Universidad Isabel I, Calle Fernán González, 76, 09003, Burgos, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210160299"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Institute of New Imaging Technologies, Universitat Jaume I, Avda. Sos Baynat, s/n, 12071, Castelló de la Plana, Spain",
+          "institution_ids": [
+            "https://openalex.org/I10902133"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5035722384",
+        "display_name": "Sahibzada Saadoon Hammad",
+        "orcid": "https://orcid.org/0000-0002-2524-6299"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I10902133",
+          "display_name": "Universitat Jaume I",
+          "ror": "https://ror.org/02ws1xc11",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I10902133"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Sahibzada Saadoon Hammad",
+      "raw_affiliation_strings": [
+        "Institute of New Imaging Technologies, Universitat Jaume I, Avda. Sos Baynat, s/n, 12071, Castelló de la Plana, Spain"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-2524-6299",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Institute of New Imaging Technologies, Universitat Jaume I, Avda. Sos Baynat, s/n, 12071, Castelló de la Plana, Spain",
+          "institution_ids": [
+            "https://openalex.org/I10902133"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5029331962",
+        "display_name": "Ditsuhi Iskandaryan",
+        "orcid": "https://orcid.org/0000-0001-6668-2700"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210087039",
+          "display_name": "Institut d'Investigació Biomédica de Bellvitge",
+          "ror": "https://ror.org/0008xqs48",
+          "country_code": "ES",
+          "type": "facility",
+          "lineage": [
+            "https://openalex.org/I157913058",
+            "https://openalex.org/I2802050225",
+            "https://openalex.org/I4210087039",
+            "https://openalex.org/I4210096656",
+            "https://openalex.org/I4210106543",
+            "https://openalex.org/I4210107147",
+            "https://openalex.org/I4210153292",
+            "https://openalex.org/I4387153040",
+            "https://openalex.org/I71999127"
+          ]
+        },
+        {
+          "id": "https://openalex.org/I4210107147",
+          "display_name": "Institut Català d'Oncologia",
+          "ror": "https://ror.org/01j1eb875",
+          "country_code": "ES",
+          "type": "government",
+          "lineage": [
+            "https://openalex.org/I4210107147"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Ditsuhi Iskandaryan",
+      "raw_affiliation_strings": [
+        "Colorectal Cancer Group, ONCOBELL Program, Institut de Recerca Biomedica de Bellvitge (IDIBELL), Avinguda de la Gran via de l’Hospitalet, 199, 08908, Barcelona, Spain",
+        "Oncology Data Analytics Program, Catalan Institute of Oncology (ICO), Avinguda de la Gran via de l’Hospitalet, 199, 08908, Barcelona, Spain",
+        "Colorectal Cancer Group, ONCOBELL Program, Institut de Recerca Biomedica de Bellvitge (IDIBELL), Avinguda de la Gran via de l'Hospitalet, 199, 08908, Barcelona, Spain",
+        "Oncology Data Analytics Program, Catalan Institute of Oncology (ICO), Avinguda de la Gran via de l'Hospitalet, 199, 08908, Barcelona, Spain"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-6668-2700",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Colorectal Cancer Group, ONCOBELL Program, Institut de Recerca Biomedica de Bellvitge (IDIBELL), Avinguda de la Gran via de l’Hospitalet, 199, 08908, Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210087039"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Oncology Data Analytics Program, Catalan Institute of Oncology (ICO), Avinguda de la Gran via de l’Hospitalet, 199, 08908, Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210107147"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Colorectal Cancer Group, ONCOBELL Program, Institut de Recerca Biomedica de Bellvitge (IDIBELL), Avinguda de la Gran via de l'Hospitalet, 199, 08908, Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210087039"
+          ]
+        },
+        {
+          "raw_affiliation_string": "Oncology Data Analytics Program, Catalan Institute of Oncology (ICO), Avinguda de la Gran via de l'Hospitalet, 199, 08908, Barcelona, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210107147"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 4,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5014771012"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I10902133",
+    "https://openalex.org/I4210160299"
+  ],
+  "apc_list": {
+    "value": 2010,
+    "currency": "USD",
+    "value_usd": 2010
+  },
+  "apc_paid": {
+    "value": 2010,
+    "currency": "USD",
+    "value_usd": 2010
+  },
+  "fwci": 20.1971,
+  "has_fulltext": true,
+  "cited_by_count": 88,
+  "citation_normalized_percentile": {
+    "value": 0.9954572,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "25",
+    "issue": null,
+    "first_page": "101063",
+    "last_page": "101063"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11512",
+    "display_name": "Anomaly Detection Techniques and Applications",
+    "score": 0.9998999834060669,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1702",
+      "display_name": "Artificial Intelligence"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/17",
+      "display_name": "Computer Science"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11512",
+      "display_name": "Anomaly Detection Techniques and Applications",
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1702",
+        "display_name": "Artificial Intelligence"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10400",
+      "display_name": "Network Security and Intrusion Detection",
+      "score": 0.9962999820709229,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10917",
+      "display_name": "Smart Grid Security and Resilience",
+      "score": 0.9932000041007996,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2207",
+        "display_name": "Control and Systems Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/anomaly-detection",
+      "display_name": "Anomaly detection",
+      "score": 0.746707022190094
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.6889188289642334
+    },
+    {
+      "id": "https://openalex.org/keywords/microcontroller",
+      "display_name": "Microcontroller",
+      "score": 0.6462522745132446
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.5883256196975708
+    },
+    {
+      "id": "https://openalex.org/keywords/field",
+      "display_name": "Field (mathematics)",
+      "score": 0.5163575410842896
+    },
+    {
+      "id": "https://openalex.org/keywords/software",
+      "display_name": "Software",
+      "score": 0.4546920657157898
+    },
+    {
+      "id": "https://openalex.org/keywords/artificial-intelligence",
+      "display_name": "Artificial intelligence",
+      "score": 0.4489910304546356
+    },
+    {
+      "id": "https://openalex.org/keywords/anomaly",
+      "display_name": "Anomaly (physics)",
+      "score": 0.4110686182975769
+    },
+    {
+      "id": "https://openalex.org/keywords/data-mining",
+      "display_name": "Data mining",
+      "score": 0.3799203634262085
+    },
+    {
+      "id": "https://openalex.org/keywords/machine-learning",
+      "display_name": "Machine learning",
+      "score": 0.36007803678512573
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.22359421849250793
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.10065585374832153
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C739882",
+      "wikidata": "https://www.wikidata.org/wiki/Q3560506",
+      "display_name": "Anomaly detection",
+      "level": 2,
+      "score": 0.746707022190094
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.6889188289642334
+    },
+    {
+      "id": "https://openalex.org/C173018170",
+      "wikidata": "https://www.wikidata.org/wiki/Q165678",
+      "display_name": "Microcontroller",
+      "level": 2,
+      "score": 0.6462522745132446
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.5883256196975708
+    },
+    {
+      "id": "https://openalex.org/C9652623",
+      "wikidata": "https://www.wikidata.org/wiki/Q190109",
+      "display_name": "Field (mathematics)",
+      "level": 2,
+      "score": 0.5163575410842896
+    },
+    {
+      "id": "https://openalex.org/C2777904410",
+      "wikidata": "https://www.wikidata.org/wiki/Q7397",
+      "display_name": "Software",
+      "level": 2,
+      "score": 0.4546920657157898
+    },
+    {
+      "id": "https://openalex.org/C154945302",
+      "wikidata": "https://www.wikidata.org/wiki/Q11660",
+      "display_name": "Artificial intelligence",
+      "level": 1,
+      "score": 0.4489910304546356
+    },
+    {
+      "id": "https://openalex.org/C12997251",
+      "wikidata": "https://www.wikidata.org/wiki/Q567560",
+      "display_name": "Anomaly (physics)",
+      "level": 2,
+      "score": 0.4110686182975769
+    },
+    {
+      "id": "https://openalex.org/C124101348",
+      "wikidata": "https://www.wikidata.org/wiki/Q172491",
+      "display_name": "Data mining",
+      "level": 1,
+      "score": 0.3799203634262085
+    },
+    {
+      "id": "https://openalex.org/C119857082",
+      "wikidata": "https://www.wikidata.org/wiki/Q2539",
+      "display_name": "Machine learning",
+      "level": 1,
+      "score": 0.36007803678512573
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.22359421849250793
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.10065585374832153
+    },
+    {
+      "id": "https://openalex.org/C26873012",
+      "wikidata": "https://www.wikidata.org/wiki/Q214781",
+      "display_name": "Condensed matter physics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C202444582",
+      "wikidata": "https://www.wikidata.org/wiki/Q837863",
+      "display_name": "Pure mathematics",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C121332964",
+      "wikidata": "https://www.wikidata.org/wiki/Q413",
+      "display_name": "Physics",
+      "level": 0,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C33923547",
+      "wikidata": "https://www.wikidata.org/wiki/Q395",
+      "display_name": "Mathematics",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 3,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.iot.2024.101063",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.iot.2024.101063",
+      "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2542660524000052-ga1_lrg.jpg",
+      "source": {
+        "id": "https://openalex.org/S4210174276",
+        "display_name": "Internet of Things",
+        "issn_l": "2542-6605",
+        "issn": [
+          "2542-6605",
+          "2543-1536"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Internet of Things",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:diposit.ub.edu:2445/209549",
+      "is_oa": true,
+      "landing_page_url": "https://hdl.handle.net/2445/209549",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306401653",
+        "display_name": "Dipòsit Digital de la Universitat de Barcelona (Universitat de Barcelona)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I71999127",
+        "host_organization_name": "Universitat de Barcelona",
+        "host_organization_lineage": [
+          "https://openalex.org/I71999127"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "Articles publicats en revistes (Institut d'lnvestigació Biomèdica de Bellvitge (IDIBELL))",
+      "raw_type": "info:eu-repo/semantics/article"
+    },
+    {
+      "id": "pmh:oai:repositori.uji.es:10234/205799",
+      "is_oa": true,
+      "landing_page_url": "http://hdl.handle.net/10234/205799",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400303",
+        "display_name": "Repositori UJI (Universitat Jaume I)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I10902133",
+        "host_organization_name": "Universitat Jaume I",
+        "host_organization_lineage": [
+          "https://openalex.org/I10902133"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": "",
+      "raw_type": "info:eu-repo/semantics/article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.iot.2024.101063",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.iot.2024.101063",
+    "pdf_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2542660524000052-ga1_lrg.jpg",
+    "source": {
+      "id": "https://openalex.org/S4210174276",
+      "display_name": "Internet of Things",
+      "issn_l": "2542-6605",
+      "issn": [
+        "2542-6605",
+        "2543-1536"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Internet of Things",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G1175115578",
+      "display_name": null,
+      "funder_award_id": "AEI//10.13039/501100011033/",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G121809054",
+      "display_name": null,
+      "funder_award_id": "MCIN/AEI/10",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G1422035950",
+      "display_name": null,
+      "funder_award_id": "501100011033",
+      "funder_id": "https://openalex.org/F4320321864",
+      "funder_display_name": "Generalitat Valenciana"
+    },
+    {
+      "id": "https://openalex.org/G1622782223",
+      "display_name": null,
+      "funder_award_id": "MCIN/AEI/10",
+      "funder_id": "https://openalex.org/F4320335322",
+      "funder_display_name": "European Regional Development Fund"
+    },
+    {
+      "id": "https://openalex.org/G1855990336",
+      "display_name": null,
+      "funder_award_id": ".13039/501100011033",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G210041235",
+      "display_name": null,
+      "funder_award_id": "MCIN /AEI/ 10.13039/501100011033",
+      "funder_id": "https://openalex.org/F4320320300",
+      "funder_display_name": "European Commission"
+    },
+    {
+      "id": "https://openalex.org/G2262748287",
+      "display_name": null,
+      "funder_award_id": "501100011033",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G2309174360",
+      "display_name": null,
+      "funder_award_id": "10.13039",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G2601397997",
+      "display_name": null,
+      "funder_award_id": "10.13039/501100011033",
+      "funder_id": "https://openalex.org/F4320320300",
+      "funder_display_name": "European Commission"
+    },
+    {
+      "id": "https://openalex.org/G2660406951",
+      "display_name": null,
+      "funder_award_id": "/ AEI/10",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G279363373",
+      "display_name": null,
+      "funder_award_id": "MCIN/AEI/10.13039/501100011033,",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G300979063",
+      "display_name": null,
+      "funder_award_id": "10.13039/501100011033",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G34346518",
+      "display_name": null,
+      "funder_award_id": "MCIN/AEI/10.13039/501 100 011 033",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G3480869486",
+      "display_name": null,
+      "funder_award_id": "13039",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G3681454997",
+      "display_name": null,
+      "funder_award_id": "13039/501100011033",
+      "funder_id": "https://openalex.org/F4320320300",
+      "funder_display_name": "European Commission"
+    },
+    {
+      "id": "https://openalex.org/G3690828678",
+      "display_name": null,
+      "funder_award_id": "PID2019",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G4042783231",
+      "display_name": null,
+      "funder_award_id": "501100011033",
+      "funder_id": "https://openalex.org/F4320320300",
+      "funder_display_name": "European Commission"
+    },
+    {
+      "id": "https://openalex.org/G410571670",
+      "display_name": null,
+      "funder_award_id": "10.13039/501100011033",
+      "funder_id": "https://openalex.org/F4320335322",
+      "funder_display_name": "European Regional Development Fund"
+    },
+    {
+      "id": "https://openalex.org/G425668148",
+      "display_name": null,
+      "funder_award_id": ".13039/501100011033",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G430777504",
+      "display_name": null,
+      "funder_award_id": "10.13039/501100011033/",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G451917667",
+      "display_name": null,
+      "funder_award_id": "13039/501100011033",
+      "funder_id": "https://openalex.org/F4320335322",
+      "funder_display_name": "European Regional Development Fund"
+    },
+    {
+      "id": "https://openalex.org/G5080475149",
+      "display_name": null,
+      "funder_award_id": "10.13039",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G5346126",
+      "display_name": null,
+      "funder_award_id": "IJC2018- 035017-I",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G5421974903",
+      "display_name": null,
+      "funder_award_id": "501100011033",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G5617450843",
+      "display_name": null,
+      "funder_award_id": "PID2019-104065GA-I00",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G5967599077",
+      "display_name": null,
+      "funder_award_id": "501100011033",
+      "funder_id": "https://openalex.org/F4320335322",
+      "funder_display_name": "European Regional Development Fund"
+    },
+    {
+      "id": "https://openalex.org/G7084143925",
+      "display_name": null,
+      "funder_award_id": "AEI/10",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G7319271814",
+      "display_name": null,
+      "funder_award_id": "PID2022-141813OB-I00",
+      "funder_id": "https://openalex.org/F4320320300",
+      "funder_display_name": "European Commission"
+    },
+    {
+      "id": "https://openalex.org/G792975244",
+      "display_name": null,
+      "funder_award_id": "MCIN/AEI/10.13039/501100011033/",
+      "funder_id": "https://openalex.org/F4320321864",
+      "funder_display_name": "Generalitat Valenciana"
+    },
+    {
+      "id": "https://openalex.org/G8684520763",
+      "display_name": null,
+      "funder_award_id": "PID2019",
+      "funder_id": "https://openalex.org/F4320335598",
+      "funder_display_name": "Agencia Estatal de Investigación"
+    },
+    {
+      "id": "https://openalex.org/G8920660035",
+      "display_name": null,
+      "funder_award_id": "PID2022",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G897484643",
+      "display_name": null,
+      "funder_award_id": "MCIN /AEI /10.13039",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    },
+    {
+      "id": "https://openalex.org/G929308097",
+      "display_name": null,
+      "funder_award_id": "MCIN/ AEI/ 10.13039/501100011033",
+      "funder_id": "https://openalex.org/F4320335322",
+      "funder_display_name": "European Regional Development Fund"
+    },
+    {
+      "id": "https://openalex.org/G99296377",
+      "display_name": null,
+      "funder_award_id": "/AEI/10.13039/ 501100011033",
+      "funder_id": "https://openalex.org/F4320322930",
+      "funder_display_name": "Ministerio de Ciencia e Innovación"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320320300",
+      "display_name": "European Commission",
+      "ror": "https://ror.org/00k4n6c32"
+    },
+    {
+      "id": "https://openalex.org/F4320321864",
+      "display_name": "Generalitat Valenciana",
+      "ror": "https://ror.org/0097mvx21"
+    },
+    {
+      "id": "https://openalex.org/F4320322930",
+      "display_name": "Ministerio de Ciencia e Innovación",
+      "ror": "https://ror.org/034900433"
+    },
+    {
+      "id": "https://openalex.org/F4320335322",
+      "display_name": "European Regional Development Fund",
+      "ror": "https://ror.org/00k4n6c32"
+    },
+    {
+      "id": "https://openalex.org/F4320335598",
+      "display_name": "Agencia Estatal de Investigación",
+      "ror": null
+    }
+  ],
+  "has_content": {
+    "grobid_xml": true,
+    "pdf": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4390748831.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4390748831.grobid-xml"
+  },
+  "referenced_works_count": 99,
+  "referenced_works": [
+    "https://openalex.org/W1499399937",
+    "https://openalex.org/W1548644355",
+    "https://openalex.org/W1562463929",
+    "https://openalex.org/W1965784613",
+    "https://openalex.org/W1992025196",
+    "https://openalex.org/W2005501262",
+    "https://openalex.org/W2029426840",
+    "https://openalex.org/W2032860265",
+    "https://openalex.org/W2095113799",
+    "https://openalex.org/W2095345875",
+    "https://openalex.org/W2101109743",
+    "https://openalex.org/W2105103777",
+    "https://openalex.org/W2122053769",
+    "https://openalex.org/W2122646361",
+    "https://openalex.org/W2134522095",
+    "https://openalex.org/W2169205464",
+    "https://openalex.org/W2176950688",
+    "https://openalex.org/W2392395307",
+    "https://openalex.org/W2416799949",
+    "https://openalex.org/W2474093732",
+    "https://openalex.org/W2477820874",
+    "https://openalex.org/W2570160403",
+    "https://openalex.org/W2590544588",
+    "https://openalex.org/W2762644836",
+    "https://openalex.org/W2768475350",
+    "https://openalex.org/W2772726293",
+    "https://openalex.org/W2786027963",
+    "https://openalex.org/W2795342689",
+    "https://openalex.org/W2886599162",
+    "https://openalex.org/W2895951708",
+    "https://openalex.org/W2899901572",
+    "https://openalex.org/W2910068345",
+    "https://openalex.org/W2911884683",
+    "https://openalex.org/W2915771847",
+    "https://openalex.org/W2933878133",
+    "https://openalex.org/W2936286953",
+    "https://openalex.org/W2942231644",
+    "https://openalex.org/W2952589828",
+    "https://openalex.org/W2953738034",
+    "https://openalex.org/W2998233014",
+    "https://openalex.org/W3004207920",
+    "https://openalex.org/W3010521003",
+    "https://openalex.org/W3011347095",
+    "https://openalex.org/W3040266635",
+    "https://openalex.org/W3048697798",
+    "https://openalex.org/W3088194607",
+    "https://openalex.org/W3099185017",
+    "https://openalex.org/W3099407153",
+    "https://openalex.org/W3107582219",
+    "https://openalex.org/W3114882055",
+    "https://openalex.org/W3123608679",
+    "https://openalex.org/W3135550350",
+    "https://openalex.org/W3143739303",
+    "https://openalex.org/W3159649695",
+    "https://openalex.org/W3160564244",
+    "https://openalex.org/W3162713913",
+    "https://openalex.org/W3163817051",
+    "https://openalex.org/W3169383506",
+    "https://openalex.org/W3174134520",
+    "https://openalex.org/W3179471534",
+    "https://openalex.org/W3189862813",
+    "https://openalex.org/W3194661225",
+    "https://openalex.org/W3199421948",
+    "https://openalex.org/W3202905974",
+    "https://openalex.org/W3211335652",
+    "https://openalex.org/W3215329466",
+    "https://openalex.org/W3216221236",
+    "https://openalex.org/W4221004701",
+    "https://openalex.org/W4225879972",
+    "https://openalex.org/W4234845324",
+    "https://openalex.org/W4243749534",
+    "https://openalex.org/W4245493408",
+    "https://openalex.org/W4280527816",
+    "https://openalex.org/W4285082635",
+    "https://openalex.org/W4293200489",
+    "https://openalex.org/W4296342837",
+    "https://openalex.org/W4302425360",
+    "https://openalex.org/W4307040799",
+    "https://openalex.org/W4307268604",
+    "https://openalex.org/W4311120686",
+    "https://openalex.org/W4312817580",
+    "https://openalex.org/W4313611645",
+    "https://openalex.org/W4321372735",
+    "https://openalex.org/W4321458511",
+    "https://openalex.org/W4322487615",
+    "https://openalex.org/W4353113039",
+    "https://openalex.org/W4382874334",
+    "https://openalex.org/W4393742043",
+    "https://openalex.org/W6633912811",
+    "https://openalex.org/W6713515468",
+    "https://openalex.org/W6725709625",
+    "https://openalex.org/W6795740512",
+    "https://openalex.org/W6800182025",
+    "https://openalex.org/W6808311475",
+    "https://openalex.org/W6809483617",
+    "https://openalex.org/W6839702532",
+    "https://openalex.org/W6841938482",
+    "https://openalex.org/W6847700177",
+    "https://openalex.org/W6850299256"
+  ],
+  "related_works": [
+    "https://openalex.org/W2806741695",
+    "https://openalex.org/W4290647774",
+    "https://openalex.org/W3189286258",
+    "https://openalex.org/W3207797160",
+    "https://openalex.org/W3210364259",
+    "https://openalex.org/W4300558037",
+    "https://openalex.org/W2667207928",
+    "https://openalex.org/W2912112202",
+    "https://openalex.org/W4377864969",
+    "https://openalex.org/W3120251014"
+  ],
+  "abstract_inverted_index": {
+    "Advanced": [
+      0
+    ],
+    "Machine": [
+      1
+    ],
+    "Learning": [
+      2,
+      48
+    ],
+    "(ML)": [
+      3
+    ],
+    "algorithms": [
+      4,
+      221
+    ],
+    "can": [
+      5
+    ],
+    "be": [
+      6
+    ],
+    "applied": [
+      7,
+      195
+    ],
+    "using": [
+      8,
+      112,
+      149,
+      198
+    ],
+    "Edge": [
+      9
+    ],
+    "Computing": [
+      10
+    ],
+    "(EC)": [
+      11
+    ],
+    "to": [
+      12,
+      42,
+      87,
+      223
+    ],
+    "detect": [
+      13,
+      224
+    ],
+    "anomalies,": [
+      14
+    ],
+    "which": [
+      15
+    ],
+    "is": [
+      16,
+      194
+    ],
+    "the": [
+      17,
+      44,
+      71,
+      77,
+      88,
+      104,
+      121,
+      160,
+      179,
+      186,
+      204,
+      229
+    ],
+    "basis": [
+      18
+    ],
+    "of": [
+      19,
+      22,
+      46,
+      61,
+      73,
+      91,
+      100,
+      106,
+      116,
+      129,
+      134,
+      139,
+      146,
+      156,
+      188,
+      208,
+      219,
+      233,
+      236
+    ],
+    "Artificial": [
+      20
+    ],
+    "Intelligence": [
+      21
+    ],
+    "Things": [
+      23,
+      62
+    ],
+    "(AIoT).": [
+      24
+    ],
+    "EC": [
+      25,
+      111,
+      197
+    ],
+    "has": [
+      26
+    ],
+    "emerged": [
+      27
+    ],
+    "as": [
+      28,
+      68
+    ],
+    "a": [
+      29,
+      84,
+      96,
+      127,
+      143,
+      217
+    ],
+    "solution": [
+      30
+    ],
+    "for": [
+      31,
+      169
+    ],
+    "processing": [
+      32
+    ],
+    "and": [
+      33,
+      151,
+      174,
+      211,
+      214,
+      231
+    ],
+    "analysing": [
+      34
+    ],
+    "information": [
+      35
+    ],
+    "on": [
+      36,
+      51,
+      59,
+      103
+    ],
+    "IoT": [
+      37
+    ],
+    "devices.": [
+      38
+    ],
+    "This": [
+      39,
+      93
+    ],
+    "field": [
+      40
+    ],
+    "aims": [
+      41,
+      164
+    ],
+    "allow": [
+      43
+    ],
+    "implementation": [
+      45
+    ],
+    "Machine/Deep": [
+      47
+    ],
+    "(DL)": [
+      49
+    ],
+    "models": [
+      50
+    ],
+    "MicroController": [
+      52
+    ],
+    "Units": [
+      53
+    ],
+    "(MCUs).": [
+      54
+    ],
+    "Integrating": [
+      55
+    ],
+    "anomaly": [
+      56,
+      107,
+      147,
+      170
+    ],
+    "detection": [
+      57,
+      108,
+      148,
+      171
+    ],
+    "analysis": [
+      58,
+      238
+    ],
+    "Internet": [
+      60
+    ],
+    "(IoT)": [
+      63
+    ],
+    "devices": [
+      64
+    ],
+    "produces": [
+      65
+    ],
+    "clear": [
+      66
+    ],
+    "benefits": [
+      67,
+      230
+    ],
+    "it": [
+      69,
+      163
+    ],
+    "ensures": [
+      70
+    ],
+    "use": [
+      72
+    ],
+    "accurate": [
+      74
+    ],
+    "data": [
+      75,
+      183
+    ],
+    "from": [
+      76,
+      126
+    ],
+    "initial": [
+      78
+    ],
+    "stage.": [
+      79
+    ],
+    "However,": [
+      80
+    ],
+    "this": [
+      81,
+      140,
+      157,
+      234
+    ],
+    "process": [
+      82
+    ],
+    "poses": [
+      83
+    ],
+    "challenge": [
+      85
+    ],
+    "due": [
+      86
+    ],
+    "unique": [
+      89
+    ],
+    "characteristics": [
+      90
+    ],
+    "IoT.": [
+      92
+    ],
+    "article": [
+      94
+    ],
+    "presents": [
+      95
+    ],
+    "Systematic": [
+      97
+    ],
+    "Literature": [
+      98
+    ],
+    "Mapping": [
+      99
+    ],
+    "scientific": [
+      101,
+      135
+    ],
+    "research": [
+      102
+    ],
+    "application": [
+      105
+    ],
+    "techniques": [
+      109,
+      168
+    ],
+    "in": [
+      110,
+      131,
+      172,
+      178,
+      185,
+      196,
+      226
+    ],
+    "MCUs.": [
+      113,
+      152
+    ],
+    "A": [
+      114
+    ],
+    "total": [
+      115,
+      128
+    ],
+    "18": [
+      117
+    ],
+    "papers": [
+      118
+    ],
+    "published": [
+      119
+    ],
+    "over": [
+      120
+    ],
+    "period": [
+      122
+    ],
+    "2021-2023": [
+      123
+    ],
+    "were": [
+      124
+    ],
+    "selected": [
+      125
+    ],
+    "162": [
+      130
+    ],
+    "four": [
+      132
+    ],
+    "databases": [
+      133
+    ],
+    "papers.": [
+      136
+    ],
+    "The": [
+      137,
+      153
+    ],
+    "results": [
+      138
+    ],
+    "paper": [
+      141
+    ],
+    "provide": [
+      142
+    ],
+    "comprehensive": [
+      144
+    ],
+    "overview": [
+      145
+    ],
+    "TinyML": [
+      150,
+      237
+    ],
+    "main": [
+      154,
+      205
+    ],
+    "contributions": [
+      155
+    ],
+    "survey": [
+      158
+    ],
+    "are": [
+      159,
+      239
+    ],
+    "fact": [
+      161
+    ],
+    "that": [
+      162
+    ],
+    "to:": [
+      165
+    ],
+    "a)": [
+      166
+    ],
+    "study": [
+      167
+    ],
+    "ML/DL": [
+      173,
+      220
+    ],
+    "validation": [
+      175
+    ],
+    "metrics": [
+      176
+    ],
+    "used": [
+      177,
+      184,
+      222
+    ],
+    "AIoT;": [
+      180
+    ],
+    "b)": [
+      181
+    ],
+    "analyse": [
+      182
+    ],
+    "estimation": [
+      187
+    ],
+    "models;": [
+      189
+    ],
+    "c)": [
+      190
+    ],
+    "show": [
+      191
+    ],
+    "how": [
+      192
+    ],
+    "ML": [
+      193
+    ],
+    "hardware": [
+      199
+    ],
+    "or": [
+      200
+    ],
+    "software;": [
+      201
+    ],
+    "d)": [
+      202
+    ],
+    "investigate": [
+      203
+    ],
+    "microcontrollers,": [
+      206
+    ],
+    "types": [
+      207
+    ],
+    "power": [
+      209
+    ],
+    "supply,": [
+      210
+    ],
+    "communication": [
+      212
+    ],
+    "technology;": [
+      213
+    ],
+    "e)": [
+      215
+    ],
+    "develop": [
+      216
+    ],
+    "taxonomy": [
+      218
+    ],
+    "anomalies": [
+      225
+    ],
+    "TinyML.": [
+      227
+    ],
+    "Finally,": [
+      228
+    ],
+    "challenges": [
+      232
+    ],
+    "kind": [
+      235
+    ],
+    "described.": [
+      240
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 31
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 39
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 18
+    }
+  ],
+  "updated_date": "2026-08-13T07:04:57.449891",
+  "created_date": "2025-10-10T00:00:00"
+}

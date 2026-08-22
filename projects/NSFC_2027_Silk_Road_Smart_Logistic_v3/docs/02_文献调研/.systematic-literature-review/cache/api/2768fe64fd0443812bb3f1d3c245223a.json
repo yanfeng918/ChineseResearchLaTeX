@@ -1,0 +1,719 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          23
+        ]
+      ],
+      "date-time": "2026-07-23T06:13:25Z",
+      "timestamp": 1784787205931,
+      "version": "3.55.0"
+    },
+    "reference-count": 33,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2022-08-01T00:00:00Z",
+          "timestamp": 1659312000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004500",
+        "name": "Chongqing Technology and Business University",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "950121016"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "950121016"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004500",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100015295",
+        "name": "Chongqing Social Science Planning Fund",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2020BS63"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2020BS63"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100015295",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007957",
+        "name": "Chongqing Municipal Education Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "KJQN202100829"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "KJQN202100829"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007957",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007957",
+        "name": "Chongqing Municipal Education Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "No.KJQN202100829"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "No.KJQN202100829"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007957",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Safety Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.ssci.2022.105766",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          28
+        ]
+      ],
+      "date-time": "2022-03-28T18:58:32Z",
+      "timestamp": 1648493912000
+    },
+    "page": "105766",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 73,
+    "special_numbering": "C",
+    "title": [
+      "Industrial internet of things and unsupervised deep learning enabled real-time occupational safety monitoring in cold storage warehouse"
+    ],
+    "prefix": "10.1016",
+    "volume": "152",
+    "author": [
+      {
+        "given": "Xuegang",
+        "family": "Zhan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6838-4993",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Leidi",
+        "family": "Shen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wangyunyan",
+        "family": "Liao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhiheng",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jing",
+        "family": "Xia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "278",
+        "DOI": "10.1016/j.future.2015.01.001",
+        "article-title": "A survey of anomaly detection techniques in financial domain",
+        "volume": "55",
+        "author": "Ahmed",
+        "year": "2016",
+        "journal-title": "Future Generation Computer Systems"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0010",
+        "unstructured": "Attia, F., 2021. Five Insightful Statistics Related to Warehouse Safety. Damotech. https://www.damotech.com/blog/5-insightful-statistics-related-to-warehouse-safety."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0015",
+        "unstructured": "Chalapathy, R., Chawla, S., 2019. Deep learning for anomaly detection: A survey.arXiv preprint arXiv:1901.03407."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0020",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.tre.2020.102190",
+        "article-title": "Risk analysis in logistics systems: a research agenda during and after the COVID-19 pandemic",
+        "volume": "145",
+        "author": "Choi",
+        "year": "2021",
+        "journal-title": "Transport. Res. Part E, Logistics and Transport. Rev."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0025",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2020.101105",
+        "article-title": "Anomaly detection of defects on concrete structures with the convolutional autoencoder",
+        "volume": "45",
+        "author": "Chow",
+        "year": "2020",
+        "journal-title": "Adv. Eng. Inf."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0030",
+        "unstructured": "Conde Carvalhal, C., 2020. Safety Optimization of Material Handling Forklift Truck Operations (Master's thesis). Digitala Vetenskapliga Arkivet."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0035",
+        "unstructured": "Giri, R., Tenneti, S.V., Cheng, F., Helwani, K., Isik, U., Krishnaswamy, A., 2020. Unsupervised anomalous sound detection using self-supervised classification and group masked autoencoder for density estimation. Challenge on Detection and Classification of Acoustic Scenes and Events (DCASE 2020 Challenge), Tech. Rep."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0040",
+        "article-title": "Synchroperation in industry 4.0 manufacturing",
+        "volume": "108171",
+        "author": "Guo",
+        "year": "2021",
+        "journal-title": "Int. J. Prod. Econ."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0045",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijpe.2019.107541",
+        "article-title": "Introduction of a real time location system to enhance the warehouse safety and operational efficiency",
+        "volume": "224",
+        "author": "Halawa",
+        "year": "2020",
+        "journal-title": "Int. J. Prod. Econ."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "134",
+        "DOI": "10.1016/j.ssci.2018.02.010",
+        "article-title": "Assessing and facilitating warehouse safety",
+        "volume": "105",
+        "author": "Hofstra",
+        "year": "2018",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0055",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmr.2021.106936",
+        "article-title": "Unsupervised anomaly detection using generative adversarial networks in 1H-MRS of the brain",
+        "volume": "325",
+        "author": "Jang",
+        "year": "2021",
+        "journal-title": "J. Magn. Reson."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0060",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2019.106170",
+        "article-title": "Cyber physical ecommerce logistics system: An implementation case in Hong Kong",
+        "volume": "139",
+        "author": "Kong",
+        "year": "2020",
+        "journal-title": "Comput. Ind. Eng."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0065",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li, C.L., Sohn, K., Yoon, J., Pfister, T., 2021. CutPaste: Self-Supervised Learning for Anomaly Detection and Localization. In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 9664-9674.",
+        "DOI": "10.1109/CVPR46437.2021.00954"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0070",
+        "unstructured": "Li, D., Chen, D., Goh, J., Ng, S.K., 2018. Anomaly detection with generative adversarial networks for multivariate time series.arXiv preprint arXiv:1809.04758."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0075",
+        "first-page": "5640",
+        "article-title": "Research on warehouse safety warning system based on multi-sensor fusion",
+        "volume": "556–562",
+        "author": "Li",
+        "year": "2014",
+        "journal-title": "Appl. Mecha. Mater."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0080",
+        "unstructured": "Liu, D.A., Lai, N.Q., 2018. Two deads at one night in the airport super one terminal. HK01."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0085",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu, W., Luo, W., Lian, D., Gao, S., 2018. Future frame prediction for anomaly detection–a new baseline. In: Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 6536-6545.",
+        "DOI": "10.1109/CVPR.2018.00684"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0911",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1016/j.jmsy.2020.06.017",
+        "article-title": "Review of Digital Twin about Concepts, Technologies, and Industrial Applications",
+        "volume": "58",
+        "author": "Liu",
+        "year": "2021",
+        "journal-title": "Journal of Manufacturing Systems"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0090",
+        "series-title": "Distributed anomaly detection using autoencoder neural networks in wsn for iot",
+        "first-page": "1",
+        "author": "Luo",
+        "year": "2018"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.ssci.2022.105766_b0095",
+        "article-title": "Securing of safety by monitoring of technical parameters in warehouse racks, in high-bay warehouses and high storage warehouses – literature review of the problem",
+        "volume": "13",
+        "author": "Mariusz",
+        "year": "2017",
+        "journal-title": "LogForum"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0100",
+        "article-title": "Forecasting and Anomaly Detection approaches using LSTM and LSTM Autoencoder techniques with the applications in supply chain management",
+        "volume": "57",
+        "author": "Nguyen",
+        "year": "2021",
+        "journal-title": "Int. J. Inf. Manage."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.ssci.2022.105766_b0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3439950",
+        "article-title": "Deep learning for anomaly detection: a review",
+        "volume": "54",
+        "author": "Pang",
+        "year": "2021",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0110",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ssci.2021.105356",
+        "article-title": "An automated deep learning based anomaly detection in pedestrian walkways for vulnerable road users safety",
+        "volume": "142",
+        "author": "Pustokhina",
+        "year": "2021",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0115",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ssci.2021.105602",
+        "article-title": "An informal institution comparative study of occupational safety knowledge sharing via French and English Tweets: languaculture, weak-strong ties and AI sentiment perspectives",
+        "volume": "147",
+        "author": "Song",
+        "year": "2022",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.ssci.2022.105766_b0120",
+        "first-page": "149",
+        "article-title": "Dangerous goods warehouse storage accident and safety management: evidence from Chinese data analysis",
+        "volume": "46",
+        "author": "Su",
+        "year": "2021",
+        "journal-title": "무역학회지"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.ssci.2022.105766_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1108/VJIKMS-01-2017-0004",
+        "article-title": "A fuzzy association rule-based knowledge management system for occupational safety and health programs in cold storage facilities",
+        "volume": "48",
+        "author": "Tsang",
+        "year": "2018",
+        "journal-title": "VINE J. Inform. Knowledge Manage. Syst."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0130",
+        "unstructured": "Wahid, A., Nordin, L., Hazman, M.A.H., 2020. A study safety awareness among warehouse workers in pasirgudang industrial area."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0135",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, R., Nie, K., Wang, T., Yang, Y., Long, B., 2020, January. Deep learning for anomaly detection. In: Proceedings of the 13th International Conference on Web Search and Data Mining, pp. 894-896.",
+        "DOI": "10.1145/3336191.3371876"
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0140",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TII.2022.3146598",
+        "article-title": "Industrial IoT and Long Short-Term Memory Network Enabled Genetic Indoor Tracking for Factory Logistics",
+        "author": "Wu",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Ind. Inf."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.ssci.2022.105766_b0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "6182",
+        "DOI": "10.1109/TII.2020.2975227",
+        "article-title": "Trustworthy network anomaly detection based on an adaptive learning rate and momentum in iiot",
+        "volume": "16",
+        "author": "Yan",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Ind. Inf."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0150",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ssci.2021.105411",
+        "article-title": "Construction safety knowledge sharing on Twitter: a social network analysis",
+        "volume": "143",
+        "author": "Yao",
+        "year": "2021",
+        "journal-title": "Saf. Sci."
+      },
+      {
+        "key": "10.1016/j.ssci.2022.105766_b0155",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ye, M., Peng, X., Gan, W., Wu, W., Qiao, Y., 2019, October. Anopcn: Video anomaly detection via deep predictive coding network. In: Proceedings of the 27th ACM International Conference on Multimedia, pp. 1805-1813.",
+        "DOI": "10.1145/3343031.3350899"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.ssci.2022.105766_b0160",
+        "first-page": "3641",
+        "article-title": "Anomaly detection for medical images using self-supervised and translation-consistent features",
+        "volume": "40",
+        "author": "Zhao",
+        "year": "2021",
+        "journal-title": "TMI"
+      }
+    ],
+    "container-title": [
+      "Safety Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0925753522001060?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0925753522001060?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          12
+        ]
+      ],
+      "date-time": "2026-05-12T02:16:37Z",
+      "timestamp": 1778552197000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0925753522001060"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "references-count": 33,
+    "alternative-id": [
+      "S0925753522001060"
+    ],
+    "URL": "https://doi.org/10.1016/j.ssci.2022.105766",
+    "relation": {},
+    "ISSN": [
+      "0925-7535"
+    ],
+    "issn-type": [
+      {
+        "value": "0925-7535",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Industrial internet of things and unsupervised deep learning enabled real-time occupational safety monitoring in cold storage warehouse",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Safety Science",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.ssci.2022.105766",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2022 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "105766"
+  }
+}

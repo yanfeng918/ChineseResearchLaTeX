@@ -1,0 +1,204 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2026-08-18T03:53:14Z",
+      "timestamp": 1787025194129,
+      "version": "3.56.0"
+    },
+    "reference-count": 0,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "7",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "China Commun."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.23919/jcc.fa.2024-0024.202407",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2024-07-22T14:03:03Z",
+      "timestamp": 1721656983000
+    },
+    "page": "65-77",
+    "source": "Crossref",
+    "is-referenced-by-count": 12,
+    "title": [
+      "Task-oriented semantic communication with foundation models"
+    ],
+    "prefix": "10.23919",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Chen",
+        "family": "Mingkai",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Key Laboratory of Broadband Wireless Communication and Sensor Network Technology, Ministry of Education, Nanjing University of Posts and Telecommunications, Nanjing 210003, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Liu",
+        "family": "Minghao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Key Laboratory of Broadband Wireless Communication and Sensor Network Technology, Ministry of Education, Nanjing University of Posts and Telecommunications, Nanjing 210003, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhang",
+        "family": "Zhe",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Key Laboratory of Broadband Wireless Communication and Sensor Network Technology, Ministry of Education, Nanjing University of Posts and Telecommunications, Nanjing 210003, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xu",
+        "family": "Zhiping",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Ocean Information Engineering, Jimei University, Xiamen 361021, China; Key Laboratory of Underwater Acoustic Communication and Marine Information Technology (Xiamen University), Ministry Education, Xiamen 361005, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wang",
+        "family": "Lei",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Key Laboratory of Broadband Wireless Communication and Sensor Network Technology, Ministry of Education, Nanjing University of Posts and Telecommunications, Nanjing 210003, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "container-title": [
+      "China Communications"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/6245522/10606341/10606415.pdf?arnumber=10606415",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          13
+        ]
+      ],
+      "date-time": "2026-03-13T19:54:44Z",
+      "timestamp": 1773431684000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10606415/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "7"
+    },
+    "URL": "https://doi.org/10.23919/jcc.fa.2024-0024.202407",
+    "relation": {},
+    "ISSN": [
+      "1673-5447"
+    ],
+    "issn-type": [
+      {
+        "value": "1673-5447",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7
+        ]
+      ]
+    }
+  }
+}

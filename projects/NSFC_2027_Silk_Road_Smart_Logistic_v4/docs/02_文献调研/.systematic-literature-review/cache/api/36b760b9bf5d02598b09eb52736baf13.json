@@ -1,0 +1,45 @@
+{
+  "paperId": "3dfc6c80487868e6b84aa444d38edeff6eaee3c2",
+  "title": "Distributed Task-Oriented Communication Networks with Multimodal Semantic Relay and Edge Intelligence",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2401.09904, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2128170425",
+      "name": "Jie Guo"
+    },
+    {
+      "authorId": "2279897999",
+      "name": "Hao Chen"
+    },
+    {
+      "authorId": "2291682713",
+      "name": "Bin Song"
+    },
+    {
+      "authorId": "2675634",
+      "name": "Yuhao Chi"
+    },
+    {
+      "authorId": "2237799336",
+      "name": "Chau Yuen"
+    },
+    {
+      "authorId": "2155385513",
+      "name": "F. Yu"
+    },
+    {
+      "authorId": "2270990241",
+      "name": "Geoffrey Ye Li"
+    },
+    {
+      "authorId": "1713586",
+      "name": "D. Niyato"
+    }
+  ],
+  "abstract": "In this article, we present a novel framework, named distributed task-oriented communication networks (DTCN), based on recent advances in multimodal semantic transmission and edge intelligence. In DTCN, the multimodal knowledge of semantic relays and the adaptive adjustment capability of edge intelligence can be integrated to improve task performance. Specifically, we propose the key techniques in the framework, such as semantic alignment and complement, a semantic relay scheme for deep joint source-channel relay coding, and collaborative device-server optimization and inference. Furthermore, a multimodal classification task is used as an example to demonstrate the benefits of the proposed DTCN over existing methods. Numerical results validate that DTCN can significantly improve the accuracy of classification tasks, even in harsh communication scenarios (e.g., low signal-to-noise regime), thanks to multimodal semantic relay and edge intelligence."
+}

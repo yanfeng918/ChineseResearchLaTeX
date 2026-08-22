@@ -1,0 +1,1560 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T10:29:55Z",
+      "timestamp": 1786962595706,
+      "version": "3.56.0"
+    },
+    "reference-count": 157,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2021-04-01T00:00:00Z",
+          "timestamp": 1617235200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              12,
+              18
+            ]
+          ],
+          "date-time": "2020-12-18T00:00:00Z",
+          "timestamp": 1608249600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100003246",
+        "name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100003246",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computers &amp; Industrial Engineering"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cie.2020.107076",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2020-12-18T23:13:55Z",
+      "timestamp": 1608333235000
+    },
+    "page": "107076",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 172,
+    "special_numbering": "C",
+    "title": [
+      "A systematic literature review of supply chain decision making supported by the Internet of Things and Big Data Analytics"
+    ],
+    "prefix": "10.1016",
+    "volume": "154",
+    "author": [
+      {
+        "given": "Martijn",
+        "family": "Koot",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martijn R.K.",
+        "family": "Mes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria E.",
+        "family": "Iacob",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.cie.2020.107076_b0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "528",
+        "DOI": "10.1016/j.cie.2016.09.023",
+        "article-title": "Big data applications in operations/supply-chain management: A literature review",
+        "volume": "101",
+        "author": "Addo-Tenkorang",
+        "year": "2016",
+        "journal-title": "Computers & Industrial Engineering"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "2347",
+        "DOI": "10.1109/COMST.2015.2444095",
+        "article-title": "Internet of Things: A survey on enabling technologies, protocols, and applications",
+        "volume": "17",
+        "author": "Al-Fuqaha",
+        "year": "2015",
+        "journal-title": "IEEE Communications Surveys and Tutorials"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/S0166-3615(97)00052-3",
+        "article-title": "Future directions of R & D in the process industries",
+        "volume": "34",
+        "author": "Anderson",
+        "year": "1997",
+        "journal-title": "Computers in Industry"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0020",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Athani, S., Tejeshwar, C. H., Patil, M. M., Patil, P., & Kulkarni, R. (2017). Soil moisture monitoring using IoT enabled therne sensors with neural networks for improving soil management for farmers and predict seasonal rainfall for planning future harvest in North Karnataka – India. International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC), Coimbatore, 2017 (pp. 43-48). New York: IEEE. Doi:10.1109/I-SMAC.2017.8058385.",
+        "DOI": "10.1109/I-SMAC.2017.8058385"
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.cie.2020.107076_b0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "2787",
+        "DOI": "10.1016/j.comnet.2010.05.010",
+        "article-title": "The Internet of Things: A survey",
+        "volume": "54",
+        "author": "Atzori",
+        "year": "2010",
+        "journal-title": "Computer Networks"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1109/JSEN.2017.2766364",
+        "article-title": "Wireless sensor’s civil applications, prototypes, and future integration possibilities: A review",
+        "volume": "18",
+        "author": "Ayaz",
+        "year": "2018",
+        "journal-title": "IEEE Sensors Journal"
+      },
+      {
+        "issue": "13/14",
+        "key": "10.1016/j.cie.2020.107076_b0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "818",
+        "DOI": "10.1108/F-02-2016-0021",
+        "article-title": "Leveraging BIM and Big Data to deliver well maintained highways",
+        "volume": "35",
+        "author": "Aziz",
+        "year": "2017",
+        "journal-title": "Facilities"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0040",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bacon, J., Bejan, A. I., Beresford, A. R., Evans, D., Gibbens, R. J., & Moody, K. (2011). Using Real-Time Road Traffic Data to Evaluate Congestion. In C. B. Jones, & J. L. Lloyd, Dependable and Historic Computing (Vol. 6875 LNCS, pp. 93-117). Berlin, Heidelberg: Springer-Verlag. Doi:10.1007/978-3-642-24541-1_9.",
+        "DOI": "10.1007/978-3-642-24541-1_9"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0045",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bagheri, M., & Movahed, S. H. (2016). The Effect of the Internet of Things (IoT) on Education Business Model. 12th international conference on signal image technology and internet-based systems (SITIS), Naples, 2016 (pp. 435-441). New York: IEEE. Doi:10.1109/SITIS.2016.74.",
+        "DOI": "10.1109/SITIS.2016.74"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0050",
+        "unstructured": "Barton, D., & Court, D. (2012). Making advanced analytics work for you: A practical guide to capitalizing on big data. Harvard Business Review, 90(10), 78-83. Retrieved from."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2020.107076_b0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "2179",
+        "DOI": "10.1080/00207543.2018.1530476",
+        "article-title": "Supply chain risk management and artificial intelligence: State of the art and future research directions",
+        "volume": "57",
+        "author": "Baryannis",
+        "year": "2019",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1016/j.jup.2014.12.006",
+        "article-title": "Toward the digital water age: Survey and case studies of Australian water utility smart-metering programs",
+        "volume": "32",
+        "author": "Beal",
+        "year": "2015",
+        "journal-title": "Utilities Policy"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0065",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Belkaroui, R., Bertaux, A., Labbani, O., Hugol-Gential, C., & Christophe, N. (2018). Towards events ontology based on data sensors network for viticulture domain. 8th international conference on the internet of things (IOT), New York, 2018 (pp. 1-7). New York: ACM Press. Doi:10.1145/3277593.3277619.",
+        "DOI": "10.1145/3277593.3277619"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1016/j.jvlc.2017.08.005",
+        "article-title": "Wi-Fi based city users’ behaviour analysis for smart city",
+        "volume": "42",
+        "author": "Bellini",
+        "year": "2017",
+        "journal-title": "Journal of Visual Languages & Computing"
+      },
+      {
+        "issue": "15–16",
+        "key": "10.1016/j.cie.2020.107076_b0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "4719",
+        "DOI": "10.1080/00207543.2017.1402140",
+        "article-title": "Internet of things and supply chain management: A literature review",
+        "volume": "57",
+        "author": "Ben-Daya",
+        "year": "2019",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1007/s11047-008-9098-4",
+        "article-title": "A survey on metaheuristics for stochastic combinatorial optimization",
+        "volume": "8",
+        "author": "Bianchi",
+        "year": "2009",
+        "journal-title": "Natural Computing"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1016/j.scs.2017.12.034",
+        "article-title": "The IoT for smart sustainable cities of the future: An analytical framework for sensor-based big data applications for environmental sustainability",
+        "volume": "38",
+        "author": "Bibri",
+        "year": "2018",
+        "journal-title": "Sustainable Cities and Society"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0090",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Birken, R., Schirner, G., & Wang, M. (2012). VOTERS: Design of a mobile multi-modal multi-sensor system. 6th International workshop on knowledge discovery from sensor data – (SensorKDD ‘12), Beijing, 2010 (pp. 8-15). New York: ACM Press. Doi:10.1145/2350182.2350183.",
+        "DOI": "10.1145/2350182.2350183"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0095",
+        "series-title": "Pattern recognition and machine learning",
+        "author": "Bishop",
+        "year": "2006"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1109/JIOT.2016.2619369",
+        "article-title": "IoT-based big data storage systems in cloud computing: Perspectives and challenges",
+        "volume": "4",
+        "author": "Cai",
+        "year": "2017",
+        "journal-title": "IEEE Internet of Things Journal"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0105",
+        "unstructured": "Carfagni, M., Daou, M., & Furferi, R. (2008). Real-time estimation of olive oil quality parameters: a combined approach based on ANNs and machine vision. 12th WSEAS international conference on computers, Heraklion, 2008 (pp. 387-392). Sofia: World Scientific and Engineering Academy and Society (WSEAS). Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0110",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chakurkar, P., Shikalgar, S., & Mukhopadhyay, D. (2018). An Internet of Things (IOT) based monitoring system for efficient milk distribution. International conference on advances in computing, communication and control (ICAC3), Mumbai, 2017 (pp. 1-5). New York: IEEE. Doi:10.1109/ICAC3.2017.8318780.",
+        "DOI": "10.1109/ICAC3.2017.8318780"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0115",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chan, C. O., Lau, H. C., & Fan, Y. (2018). IoT data acquisition in fashion retail application: Fuzzy logic approach. 2018 International Conference on Artificial Intelligence and Big Data (ICAIBD), Chengdu, 2018 (pp. 52-56). New York: IEEE.",
+        "DOI": "10.1109/ICAIBD.2018.8396166"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0120",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chaudhary, K., Singh, M., Sandhya, T., Chauhan, D. K., & Srivastava, V. M. (2018). Machine learning based adaptive framework for logistic planning in industry 4.0. 2nd International conference on advances in computing and data sciences (ICACDS), Dehradun, 2018. 905, pp. 431-438. Singapore: Springer Nature. Doi:10.1007/978-981-13-1810-8_43.",
+        "DOI": "10.1007/978-981-13-1810-8_43"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.cie.2020.107076_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1155/2015/431047",
+        "article-title": "Data mining for the internet of things: Literature review and challenges",
+        "volume": "11",
+        "author": "Chen",
+        "year": "2015",
+        "journal-title": "International Journal of Distributed Sensor Networks"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0130",
+        "doi-asserted-by": "crossref",
+        "first-page": "1165",
+        "DOI": "10.2307/41703503",
+        "article-title": "Business intelligence and analytics: From big data to big impact",
+        "volume": "36",
+        "author": "Chen",
+        "year": "2012",
+        "journal-title": "MIS Quarterly"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1007/s11036-013-0489-0",
+        "article-title": "Big data: A survey",
+        "volume": "19",
+        "author": "Chen",
+        "year": "2014",
+        "journal-title": "Mobile Networks and Applications"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0140",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cherkasova, L., Ozonat, K., Mi, N., Symons, J., & Smirni, E. (2008). Anomaly? Application change? Or Workload change? Towards automated detection of application performance anomaly and change. International Conference on Dependable Systems and Networks, Anchorage, 2008 (pp. 452-461). New York: IEEE. Doi:10.1109/DSN.2008.4630116.",
+        "DOI": "10.1109/DSN.2008.4630116"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.cie.2020.107076_b0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "854",
+        "DOI": "10.1109/JIOT.2016.2584538",
+        "article-title": "Fog and IoT: An overview of research opportunities",
+        "volume": "3",
+        "author": "Chiang",
+        "year": "2016",
+        "journal-title": "IEEE Internet of Things Journal"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2020.107076_b0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "552",
+        "DOI": "10.1080/02533839.2017.1372220",
+        "article-title": "An empirical study for smart production for TFT-LCD to empower Industry 3.5",
+        "volume": "40",
+        "author": "Chien",
+        "year": "2017",
+        "journal-title": "Journal of the Chinese Institute of Engineers"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0155",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chiu, R. K., Chang, C. M., & Chang, Y. C. (2008). A forecasting model for deciding annual vaccine demand. 2008 Fourth international conference on natural computation, Jinan, 2008. 7, pp. 107-111. New York: IEEE. Doi:10.1109/ICNC.2008.862.",
+        "DOI": "10.1109/ICNC.2008.862"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0160",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cho, S., May, G., Tourkogiorgis, I., Perez, R., Lazaro, O., de la Maza, B., & Kiritsis, D. (2018). A hybrid machine learning approach for predictive maintenance in smart factories of the future. IFIP WG 5.7 international conference on advances in production management systems (APMS), Seoul, 2018. 536, pp. 311-317. Basel: Springer Nature. Doi:10.1007/978-3-319-99707-0_39.",
+        "DOI": "10.1007/978-3-319-99707-0_39"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0165",
+        "unstructured": "Chung, G., Gesing, B., Chaturvedi, K., & Bodenbenner, P. (2018). Logistics trend radar 2018/2019. DHL Customer Solutions & Innovations, 1-56. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0170",
+        "unstructured": "Clayton, E. H., Qian, Y., Orjih, O., Dyke, S. J., Mita, A., & Lu, C. (2006). Off-the-shelf modal analysis: Structural health monitoring with Motes. 24th Conference and Exposition on Structural Dynamics (IMAC-XXIV), St Louis, 2006 (pp. 1-13). Red Hook: Curran Associates Inc. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1016/j.comnet.2018.07.017",
+        "article-title": "Internet of Things (IoT): A review of enabling technologies, challenges, and open research issues",
+        "volume": "144",
+        "author": "Čolaković",
+        "year": "2018",
+        "journal-title": "Computer Networks"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0180",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Darrah, M., Rubenstein, A., Sorton, E., & DeRoos, B. (2018). On-board health-state awareness to detect degradation in multirotor systems. International Conference on Unmanned Aircraft Systems (ICUAS), Dallas, 2018 (pp. 1134-1141). New York: IEEE. Doi:10.1109/ICUAS.2018.8453459.",
+        "DOI": "10.1109/ICUAS.2018.8453459"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0185",
+        "series-title": "The Sage handbook of organizational research methods",
+        "first-page": "671",
+        "article-title": "Producing a systematic review",
+        "author": "Denyer",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0190",
+        "article-title": "Experience with data mining for the anaerobic wastewater treatment process",
+        "volume": "315–322",
+        "author": "Dixon",
+        "year": "2007",
+        "journal-title": "Environmental Modelling & Software"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0195",
+        "unstructured": "Dragan, K., Dziendzikowski, M., Kurnyta, A., Leski, A., & Uhl, T. (2013). Active structural integrity monitoring of the aircraft based on the PZT sensor network-the symost project. 9th International workshop on structural health monitoring: A roadmap to intelligent structures (IWSHM), Stanford, 2013. 1, pp. 1015-1022. Lancaster: DEStech Publications. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.1016/j.engappai.2015.07.004",
+        "article-title": "A cognitive robotic ecology approach to self-configuring and evolving AAL systems",
+        "volume": "45",
+        "author": "Dragone",
+        "year": "2015",
+        "journal-title": "Engineering Applications of Artificial Intelligence"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.cie.2020.107076_b0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "2092",
+        "DOI": "10.1108/MD-01-2018-0119",
+        "article-title": "Big data analytics capability in supply chain agility: The moderating effect of organizational flexibility",
+        "volume": "57",
+        "author": "Dubey",
+        "year": "2019",
+        "journal-title": "Management Decision"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1111/1467-8551.12355",
+        "article-title": "Big data and predictive analytics and manufacturing performance: Integrating institutional theory, resource-based view and big data culture",
+        "volume": "30",
+        "author": "Dubey",
+        "year": "2019",
+        "journal-title": "British Journal of Management"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0215",
+        "doi-asserted-by": "crossref",
+        "unstructured": "ElMoaqet, H., Ismael, I., Patzolt, F., & Ryalat, M. (2018). Design and integration of an IoT device for training purposes of industry 4.0. 2nd International symposium on computer science and intelligent control (ISCSIC), Stockholm, 2018 (pp. 1-5). New York: ACM Press. Doi:10.1145/3284557.3284740.",
+        "DOI": "10.1145/3284557.3284740"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "8",
+        "DOI": "10.1109/MIC.2018.112102418",
+        "article-title": "The internet of things for dementia care",
+        "volume": "22",
+        "author": "Enshaeifar",
+        "year": "2018",
+        "journal-title": "IEEE Internet Computing"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0225",
+        "unstructured": "Ernest, A., Fattic, J., Chang, N. B., Chitrapu, S., & Davenport, P. (2010). WRmt case study: GIS with rule-based expert system for optimal planning of sensor network in drinking water systems. ASEE Annual Conference and Exposition, Louisville, 2010 (pp. 1-9). Washington DC: American Society for Engineering Education (ASEE). Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0230",
+        "series-title": "Straightforward statistics for the behavioral sciences",
+        "author": "Evans",
+        "year": "1996"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0235",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Faizul, A. H., Rashid, R. A., Hamid, A. H., Sarijari, M. A., Mohd, A., & Abdullah, A. S. (2017). Modelling of application-centric IoT solution for guard touring communication network. 17th International conference on asia simulation (AsiaSim), Melaka, 2017. 751, pp. 580-590. Singapore: Springer Nature. Doi:10.1007/978-981-10-6463-0_50.",
+        "DOI": "10.1007/978-981-10-6463-0_50"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0240",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fathy, M., & Mohammadi, M. (2018). A method to predict travel time in large-scale urban areas using Vehicular Networks. International conference on smart cities and internet of things (SCIOT), Mashhad, 2018 (pp. 1-6). New York: ACM Press. Doi:10.1145/3269961.3269974.",
+        "DOI": "10.1145/3269961.3269974"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0245",
+        "unstructured": "Fayyad, U., Piatetsky-Shapiro, G., & Smyth, P. (1996). Knowledge discovery and data mining: Towards a unifying framework. International conference on knowledge discovery and data mining. 96, pp. 82-88. Portland: AAAI. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0250",
+        "unstructured": "Gartner. (2018, August 16). 5 Trends emerge in the gartner hype cycle for emerging technologies, 2018. (K. Panetta, Editor) Retrieved from Smarter with Gartner:."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/j.proeng.2017.06.038",
+        "article-title": "Advanced industrial tools of ergonomics based on industry 4.0 concept",
+        "volume": "192",
+        "author": "Gašová",
+        "year": "2017",
+        "journal-title": "Procedia Engineering"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0260",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gat, N., Subramanian, S., Barhen, J., & Toomarian, N. B. (1997). Spectral imaging applications: remote sensing, environmental monitoring, medicine, military operations, factory automation, and manufacturing. 25th AIPR workshop: Emerging applications of computer vision, Washington DC, 1997. 2962, pp. 63-77. Bellingham: SPIE. Doi:10.1117/12.267840.",
+        "DOI": "10.1117/12.267840"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0265",
+        "unstructured": "Gesing, B., Peterson, S. J., & Michelsen, D. (2018). Artificial Intelligence in Logistics – A collaborative report by DHL and IBM on implications and use cases for the logistics industry. Troisdorf: DHL Customer Solutions & Innovation. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0270",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ghiani, E., Mocci, S., Franceschelli, M., Anedda, M., Desogus, C., & Fadda, G. (2018). VIRTUALENERGY: A project for testing ICT for virtual energy management. 2018 AEIT international annual conference, Bari, 2018 (pp. 1-6). New York: IEEE. Doi:10.23919/AEIT.2018.8577309.",
+        "DOI": "10.23919/AEIT.2018.8577309"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0275",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Großwindhager, B., Rupp, A., Tappler, M., Tranninger, M., Weiser, S., Aichernig, B. K., . . . Römer, K. (2017). Dependable internet of things for networked cars. International Journal of Computing, 16(4), 226-237. Retrieved from.",
+        "DOI": "10.47839/ijc.16.4.911"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "963",
+        "DOI": "10.3926/jiem.793",
+        "article-title": "Research on the application of the internet of things in reverse logistics information management",
+        "volume": "6",
+        "author": "Gu",
+        "year": "2013",
+        "journal-title": "Journal of Industrial Engineering and Management"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.cie.2020.107076_b0285",
+        "doi-asserted-by": "crossref",
+        "first-page": "1645",
+        "DOI": "10.1016/j.future.2013.01.010",
+        "article-title": "Internet of Things (IoT): A vision, architectural elements, and future directions",
+        "volume": "29",
+        "author": "Gubbi",
+        "year": "2013",
+        "journal-title": "Future Generation Computer Systems"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0290",
+        "doi-asserted-by": "crossref",
+        "first-page": "308",
+        "DOI": "10.1016/j.jbusres.2016.08.004",
+        "article-title": "Big data and predictive analytics for supply chain and organizational performance",
+        "volume": "70",
+        "author": "Gunasekaran",
+        "year": "2017",
+        "journal-title": "Journal of Business Research"
+      },
+      {
+        "issue": "1–2",
+        "key": "10.1016/j.cie.2020.107076_b0295",
+        "doi-asserted-by": "crossref",
+        "first-page": "385",
+        "DOI": "10.1080/00207543.2017.1395488",
+        "article-title": "Agile manufacturing practices: The role of big data and business analytics with multiple case studies",
+        "volume": "56",
+        "author": "Gunasekaran",
+        "year": "2018",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2020.107076_b0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "563",
+        "DOI": "10.1016/j.omega.2005.10.004",
+        "article-title": "A hierarchical approach to multi-project planning under uncertainty",
+        "volume": "35",
+        "author": "Hans",
+        "year": "2007",
+        "journal-title": "Omega"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "98",
+        "DOI": "10.1016/j.is.2014.07.006",
+        "article-title": "The rise of “big data” on cloud computing: Review and open research issues",
+        "volume": "47",
+        "author": "Hashem",
+        "year": "2015",
+        "journal-title": "Information Systems"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0310",
+        "first-page": "575",
+        "article-title": "Big Data Analytics and IoT in logistics: A case study",
+        "volume": "29",
+        "author": "Hopkins",
+        "year": "2018",
+        "journal-title": "International Journal of Logistics Management"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0315",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Howell, S. K., Rezgui, Y., & Yuce, B. (2014). Knowledge-based holistic energy management of public buildings. International conference on computing in civil and building engineering, Orlando, 2014 (pp. 1667-1674). Reston: American Society of Civil Engineers (ASCE). Doi:10.1061/9780784413616.207.",
+        "DOI": "10.1061/9780784413616.207"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0320",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Huang, Y. (2018). Infrastructural development for farm-scale remote sensing big data service. SPIE Asia-Pacific Remote Sensing, Honolulu, 2018. 1078017, pp. 1-9. Bellingham: SPIE. Doi:10.1117/12.2324327.",
+        "DOI": "10.1117/12.2324327"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0325",
+        "unstructured": "Iyyver, N., Bradfield, S., Sarkar, S., McColl, C., Algera, D., Flores, E., & Phan, N. (2009). Architecture for dynamic component life tracking in an advanced HUMS, RFID, and direct load sensor environment. 6th DSTO international conference on health & usage monitoring, Melbourne, 2009. 3, pp. 2654-2677. Melbourne: Defence Science and Technology Organisation (DSTO). Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0330",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jeske, M., Grüner, M., & Weiß, F. (2013). Big Data in Logistics. Troisdors: DHL Customer Solutions & Innovation. Doi:10.1016/j.nimb.2005.01.012.",
+        "DOI": "10.1016/j.nimb.2005.01.012"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0335",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kadar, M., Covaciu, C., Jardim-Gonçalves, R., & Bullon, S. (2017). Intelligent defect management system for porcelain industry through cyber-physical systems. International conference on engineering, technology and innovation (ICE/ITMC), Madeira, 2017 (pp. 1338-1343). New York: IEEE. Retrieved from.",
+        "DOI": "10.1109/ICE.2017.8280036"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0340",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kolodziejczyk, T., Toscanno, R., Fillon, C., Fouvry, S., Poloni, C., Morales-Espejel, G., & Lyonnet, P. (2008). A methodological approach ball bearing damage prediction under fretting wear conditions. 4th International IEEE Conference Intelligent Systems, Varna, 2008. 3, pp. 10-53-10-59. New York: IEEE. Doi:10.1109/IS.2008.4670497.",
+        "DOI": "10.1109/IS.2008.4670497"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0345",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Koot, M. (2019). Towards a framework for smart resilient logistics. 2019 IEEE 23rd international enterprise distributed object computing workshop (EDOCW) (pp. 202-207). Paris: IEEE. Doi:10.1109/EDOCW.2019.00043.",
+        "DOI": "10.1109/EDOCW.2019.00043"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0350",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kuhl, M., Wiener, T., & Krauß, M. (2013). Multisensorial self-learning systems for quality monitoring of carbon fiber composites in aircraft production. 8th CIRP conference on intelligent computation in manufacturing engineering (CIRP), Ischia, 2012. 12, pp. 103-108. Amsterdam: Elsevier B.V. doi:10.1016/j.procir.2013.09.019.",
+        "DOI": "10.1016/j.procir.2013.09.019"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0355",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kuo, R. (1993). Intelligent robotic die polishing system through fuzzy neural networks and multi-sensor fusion. 1993 international joint conference on neural networks (IJCNN), Nagoya, 1993. 3, pp. 2925-2928. New York: IEEE. Doi:10.1109/IJCNN.1993.714335.",
+        "DOI": "10.1109/IJCNN.1993.714335"
+      },
+      {
+        "issue": "1–2",
+        "key": "10.1016/j.cie.2020.107076_b0360",
+        "doi-asserted-by": "crossref",
+        "first-page": "508",
+        "DOI": "10.1080/00207543.2017.1351644",
+        "article-title": "Smart manufacturing",
+        "volume": "56",
+        "author": "Kusiak",
+        "year": "2018",
+        "journal-title": "International Journal of Production Research"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0365",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kviesis, A., & Zacepins, A. (2016). Application of neural networks for honey bee colony state identification. 2016 17th international carpathian control conference (ICCC), Tatranská Lomnica, 2016 (pp. 413-417). New York: IEEE. Doi:10.1109/CarpathianCC.2016.7501133.",
+        "DOI": "10.1109/CarpathianCC.2016.7501133"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0370",
+        "unstructured": "Lambert, D. M. (2008). Chapter 1: Supply chain management. In D. M. Lambert, Supply Chain Management (pp. 1-22). Sarasota: Supply Chain Management Institute. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0375",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1088/1757-899X/477/1/012045",
+        "article-title": "Big Data as the basis for the innovative development strategy of the Industry 4.0",
+        "volume": "477",
+        "author": "Latinovic",
+        "year": "2019",
+        "journal-title": "IOP Conference Series: Materials Science and Engineering"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0380",
+        "series-title": "Management information systems: Managing the digital firm",
+        "author": "Laudon",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0385",
+        "series-title": "Simulation modeling and analysis",
+        "author": "Law",
+        "year": "2015"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0390",
+        "doi-asserted-by": "crossref",
+        "first-page": "431",
+        "DOI": "10.1016/j.bushor.2015.03.008",
+        "article-title": "The Internet of Things (IoT): Applications, investments, and challenges for enterprises",
+        "volume": "58",
+        "author": "Lee",
+        "year": "2015",
+        "journal-title": "Business Horizons"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0395",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1108/02635570110365989",
+        "article-title": "A review of data mining techniques",
+        "volume": "101",
+        "author": "Lee",
+        "year": "2001",
+        "journal-title": "Industrial Management and Data Systems"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0400",
+        "unstructured": "Lee, S., Funk II, K., Feuerbacher, R., & Hsiao, Y. C. (2007). Development of an emergency C-section facilitator using a human-machine systems engineering approach. IIE annual conference and expo 2007 – industrial engineering’s critical role in a flat world, Nashville, 2007 (pp. 1630-1635). New York: IIE. Retrieved from."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0405",
+        "doi-asserted-by": "crossref",
+        "first-page": "243",
+        "DOI": "10.1007/s10796-014-9492-7",
+        "article-title": "The internet of things: A survey",
+        "volume": "17",
+        "author": "Li",
+        "year": "2015",
+        "journal-title": "Information Systems Frontiers"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.cie.2020.107076_b0410",
+        "doi-asserted-by": "crossref",
+        "first-page": "11303",
+        "DOI": "10.1016/j.eswa.2012.02.063",
+        "article-title": "Data mining techniques and applications – A decade review from 2000 to 2011",
+        "volume": "39",
+        "author": "Liao",
+        "year": "2012",
+        "journal-title": "Expert Systems with Applications"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0415",
+        "doi-asserted-by": "crossref",
+        "first-page": "169",
+        "DOI": "10.14257/ijgdc.2014.7.1.15",
+        "article-title": "Study on IOT based architecture of logistics service supply chain",
+        "volume": "7",
+        "author": "Liu",
+        "year": "2014",
+        "journal-title": "International Journal of Grid and Distributed Computing"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0420",
+        "doi-asserted-by": "crossref",
+        "first-page": "100",
+        "DOI": "10.1016/j.autcon.2014.10.003",
+        "article-title": "Study on real-time construction quality monitoring of storehouse surfaces for RCC dams",
+        "volume": "49",
+        "author": "Liu",
+        "year": "2015",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0425",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lou, P., Liu, Q., Zhou, Z., & Wang, H. (2011). Agile supply chain management over the internet of things. 2011 International conference on management and service science (pp. 1-4). Wuhan: IEEE. Doi:10.1109/icmss.2011.5998314.",
+        "DOI": "10.1109/ICMSS.2011.5998314"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0430",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Luján, E., Otero, A., Valenzuela, S., Mocskos, E., Steffenel, L. A., & Nesmachnow, S. (2019). Cloud computing for smart energy management (CC-SEM Project). Ibero-American congress on information management and big data, Soria, 2018. 978, pp. 116-131. Basel: Springer. Doi:10.1007/978-3-030-12804-3.",
+        "DOI": "10.1007/978-3-030-12804-3_10"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0435",
+        "unstructured": "Macaulay, J., Buckalew, L., & Chung, G. (2015). Internet of Things in Logistics. Troisdorf: DHL Customer Solutions & Innovation. Retrieved from."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2020.107076_b0440",
+        "doi-asserted-by": "crossref",
+        "first-page": "164",
+        "DOI": "10.4236/jcc.2015.35021",
+        "article-title": "Internet of things (IoT): A literature review",
+        "volume": "3",
+        "author": "Madakam",
+        "year": "2015",
+        "journal-title": "Journal of Computer and Communications"
+      },
+      {
+        "issue": "9–10",
+        "key": "10.1016/j.cie.2020.107076_b0445",
+        "doi-asserted-by": "crossref",
+        "first-page": "1216",
+        "DOI": "10.1016/j.actaastro.2009.03.058",
+        "article-title": "Technology readiness assessments: A retrospective",
+        "volume": "65",
+        "author": "Mankins",
+        "year": "2009",
+        "journal-title": "Acta Astronautica"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0450",
+        "doi-asserted-by": "crossref",
+        "first-page": "5247",
+        "DOI": "10.1109/ACCESS.2017.2689040",
+        "article-title": "Big IoT data analytics: Architecture, opportunities, and open research challenges",
+        "volume": "5",
+        "author": "Marjani",
+        "year": "2017",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0455",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Matarazzo, D., D’Addona, D. M., Caramiello, C., Di Foggia, M., & Teti, R. (2015). Cognitive decision-making systems for scraps control in aerospace turbine blade casting. 48th CIRP Conference on Manufacturing Systems (CIRP CMS), Naples, 2015. 41, pp. 466-471. Amsterdam: Elsevier B.V. doi:10.1016/j.procir.2016.01.027.",
+        "DOI": "10.1016/j.procir.2016.01.027"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0460",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1108/IJOPM-02-2015-0084",
+        "article-title": "Making sense of Big Data – can it transform operations management?",
+        "volume": "37",
+        "author": "Matthias",
+        "year": "2017",
+        "journal-title": "International Journal of Operations and Production Management"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0465",
+        "unstructured": "Mehdiyev, N., Emrich, A., Stahmer, B., Fettke, P., & Loos, P. (2017). iPRODICT – Intelligent process prediction based on big data analytics. BPM Industry Track, Barcelona, 2017. 1985, pp. 13-24. Aachen: CEUR-WS. Retrieved from."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2020.107076_b0470",
+        "doi-asserted-by": "crossref",
+        "first-page": "547",
+        "DOI": "10.1007/s10257-017-0362-y",
+        "article-title": "Big data analytics capabilities: A systematic literature review and research agenda",
+        "volume": "16",
+        "author": "Mikalef",
+        "year": "2018",
+        "journal-title": "Information Systems and e-Business Management"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0475",
+        "unstructured": "Moi, M., & Rodehutskors, N. (2016). Design of an ontology for the use of social media in emergency management. International conference on web based communities and social media, Madeira, 2016 (pp. 129-136). IADIS Press. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0480",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Morales, M. A., & Haas, D. J. (2004). Adaptive sensors for aircraft operational monitoring. 45th AIAA/ASME/ASCE/AHS/ASC structures, structural dynamics & materials conference, palm springs, 2004. 2, pp. 2357-2372. Reston: AIAA. Doi:10.2514/6.2004-1892.",
+        "DOI": "10.2514/6.2004-1892"
+      },
+      {
+        "issue": "19",
+        "key": "10.1016/j.cie.2020.107076_b0485",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.3182/20071002-MX-4-3906.00024",
+        "article-title": "Low-cost cutting tool diagnosis based on sensor-fusion",
+        "volume": "40",
+        "author": "Morales-Menéndez",
+        "year": "2007",
+        "journal-title": "IFAC Proceedings Volumes"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0490",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Moreno, M. V., Skarmeta, A. F., & Jara, A. J. (2015). How to intelligently make sense of real data of smart cities. International Conference on Recent Advances in Internet of Things (RioT), Singapore, 2015 (pp. 1-6). New York: IEEE. Doi:10.1109/RIOT.2015.7104899.",
+        "DOI": "10.1109/RIOT.2015.7104899"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0495",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mourtzis, D., Vlachou, E., & Milas, N. (2016). Industrial Big Data as a Result of IoT Adoption in Manufacturing. 5th CIRP Global Web Conference Research and Innovation for Future. 55, pp. 290-295. Patras: Elsevier B.V. doi:10.1016/j.procir.2016.07.038.",
+        "DOI": "10.1016/j.procir.2016.07.038"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0500",
+        "first-page": "25",
+        "article-title": "Issues in organizational data mining: A survey of current practices",
+        "volume": "6",
+        "author": "Nemati",
+        "year": "2001",
+        "journal-title": "Journal of Data Warehousing"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0505",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1016/j.cor.2017.07.004",
+        "article-title": "Big data analytics in supply chain management: A state-of-the-art literature review",
+        "volume": "98",
+        "author": "Nguyen",
+        "year": "2018",
+        "journal-title": "Computers and Operations Research"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0510",
+        "unstructured": "Niggemann, O., Biswas, G., Kinnebrew, J. S., Khorasgani, H., Volgmann, S., & Bunte, A. (2015). Data-driven monitoring of cyber-physical systems leveraging on big data and the internet-of-things for diagnosis and control. 26th International workshop on principles of diagnosis, Paris, 2015. 1507, pp. 185-192. Aachen: CEUR-WS. Retrieved from."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0515",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1016/j.accinf.2008.09.001",
+        "article-title": "Gartner’s hype cycle and information system research issues",
+        "volume": "9",
+        "author": "O’Leary",
+        "year": "2008",
+        "journal-title": "International Journal of Accounting Information Systems"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0520",
+        "doi-asserted-by": "crossref",
+        "first-page": "1108",
+        "DOI": "10.1016/j.jclepro.2016.03.059",
+        "article-title": "The role of Big Data in explaining disaster resilience in supply chains for sustainability",
+        "volume": "142",
+        "author": "Papadopoulos",
+        "year": "2017",
+        "journal-title": "Journal of Cleaner Production"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0525",
+        "unstructured": "Papaefthimiou, D., Ventouris, A., Tabakis, I. M., Valsamidis, S., Kazanidis, I., & Kontogiannis, S. (2017). OLEA Framework for non refined olive oil traceability and quality assurance. 8th International conference on information and communication technologies in agriculture, food and environment (HAICTA), Chania, 2017. 2030, pp. 91-103. Aachen: CEUR-WS. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0530",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Papas, I., Estibals, B., Ecrepont, C., & Alonso, C. (2018). Energy consumption optimization through dynamic simulations for an intelligent energy management of a BIPV building. 7th International conference on renewable energy research and applications (ICRERA), Brasov, 2018. 5, pp. 853-857. New York: IEEE. Doi:10.1109/ICRERA.2018.8566915.",
+        "DOI": "10.1109/ICRERA.2018.8566915"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0535",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pasic, A., Martinez-Salio, J. R., Zarzosa, S. G., & Diaz, R. (2017). ZONESEC: built-in cyber-security for wide area surveillance system. 12th International conference on availability, reliability and security (ARES), Reggio Calabria, 2017 (pp. 1-5). New York: ACM Press. Doi:10.1145/3098954.3103167.",
+        "DOI": "10.1145/3098954.3103167"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.cie.2020.107076_b0540",
+        "first-page": "6122",
+        "article-title": "Internet of things-IOT: Definition, characteristics, architecture, enabling technologies, application & future challenges",
+        "volume": "6",
+        "author": "Patel",
+        "year": "2016",
+        "journal-title": "International Journal of Engineering Science and Computing"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0545",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pawar, K., & Attar, V. (2016). A survey on data analytic platforms for internet of things. International conference on computing, analytics and security trends (CAST), Pune, 2016 (pp. 605-610). New York: IEEE. Doi:10.1109/CAST.2016.7915039.",
+        "DOI": "10.1109/CAST.2016.7915039"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0550",
+        "unstructured": "Pickard, J., Linn, J. B., Awojana, T. B., & Lunsford, P. J. (2018). Designing a converged plant-wide thernet/IP lab for hands-on distance learning: An interdisciplinary graduate project. 125th ASEE Annual Conference and Exposition, Salt Lake City, 2018. 2018-June, pp. 1-17. Washington DC: ASEE. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0555",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pilgerstorfer, P., & Pournaras, E. (2017). Self-adaptive learning in decentralized combinatorial optimization – a design paradigm for sharing economies. 12th IEEE/ACM international symposium on software engineering for adaptive and self-managing systems (SEAMS), Buenos Aires, 2017 (pp. 54-64). New York: IEEE. Doi:10.1109/SEAMS.2017.8.",
+        "DOI": "10.1109/SEAMS.2017.8"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0560",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.ejor.2012.08.015",
+        "article-title": "A review of dynamic vehicle routing problems",
+        "volume": "225",
+        "author": "Pillac",
+        "year": "2013",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0565",
+        "doi-asserted-by": "crossref",
+        "first-page": "124",
+        "DOI": "10.1108/09574090910954873",
+        "article-title": "Understanding the concept of supply chain resilience",
+        "volume": "20",
+        "author": "Ponomarov",
+        "year": "2009",
+        "journal-title": "The International Journal of Logistics Management"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0570",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.1089/big.2013.1508",
+        "article-title": "Data science and its relationship to big data and data-driven decision making",
+        "volume": "1",
+        "author": "Provost",
+        "year": "2013",
+        "journal-title": "Big Data"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0575",
+        "doi-asserted-by": "crossref",
+        "first-page": "600",
+        "DOI": "10.1016/j.scs.2017.12.022",
+        "article-title": "Exploiting IoT and big data analytics: Defining smart digital city using real-time urban data",
+        "volume": "40",
+        "author": "Rathore",
+        "year": "2018",
+        "journal-title": "Sustainable Cities and Society"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0580",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ray, S., Tapadar, S., Chatterjee, S. K., Karlose, R., Saha, S., & Saha, H. N. (2018). Optimizing routine collection efficiency in IoT based garbage collection monitoring systems. 8th IEEE annual computing and communication workshop and conference (CCWC), Las Vegas, 2018 (pp. 84-90). New York: IEEE. Doi:10.1109/CCWC.2018.8301629.",
+        "DOI": "10.1109/CCWC.2018.8301629"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0585",
+        "unstructured": "Reinsel, D., Gantz, J., & Rydning, J. (2018). Data age 2025: The digitization of the world from edge to core. Framingham: IDC. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0590",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Richardson, A., Keairns, D., & White, B. M. (2018). The role of sensors and controls in transforming the energy landscape. Micro- and nanotechnology sensors, systems, and applications X,l Orlando, 2018. 10639, pp. 1-11. Bellingham: SPIE. Doi:10.1117/12.2303722.",
+        "DOI": "10.1117/12.2303722"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.cie.2020.107076_b0595",
+        "doi-asserted-by": "crossref",
+        "first-page": "969",
+        "DOI": "10.1080/002077200412122",
+        "article-title": "Modelling the dynamics of supply chains",
+        "volume": "31",
+        "author": "Riddals",
+        "year": "2000",
+        "journal-title": "International Journal of Systems Science"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0600",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Riggins, F. J., & Wamba, S. F. (2015). Research directions on the adoption, usage, and impact of the internet of things through the use of big data analytics. Proceedings of the Annual Hawaii International Conference on System Sciences (pp. 1531-1540). Kauai, Hawaii, USA: IEEE. Doi:10.1109/HICSS.2015.186.",
+        "DOI": "10.1109/HICSS.2015.186"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0605",
+        "doi-asserted-by": "crossref",
+        "first-page": "306",
+        "DOI": "10.1016/j.procs.2017.11.042",
+        "article-title": "A system for the monitoring and predicting of data in precision agriculture in a rose greenhouse based on wireless sensor networks",
+        "volume": "121",
+        "author": "Rodríguez",
+        "year": "2017",
+        "journal-title": "Procedia Computer Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0610",
+        "doi-asserted-by": "crossref",
+        "first-page": "1350",
+        "DOI": "10.4271/2011-01-2714",
+        "article-title": "Smart monitoring system for aircraft structures",
+        "volume": "4",
+        "author": "Rouet",
+        "year": "2011",
+        "journal-title": "SAE International Journal of Aerospace"
+      },
+      {
+        "issue": "24",
+        "key": "10.1016/j.cie.2020.107076_b0615",
+        "doi-asserted-by": "crossref",
+        "first-page": "8166",
+        "DOI": "10.1109/JSEN.2017.2746748",
+        "article-title": "Practical implementation of electrical tomography in a distributed system to examine the condition of objects",
+        "volume": "17",
+        "author": "Rymarczyk",
+        "year": "2017",
+        "journal-title": "IEEE Sensors Journal"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0620",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sabeur, Z., Zlatev, Z., Melas, P., Veres, G., Arbab-Zavar, B., Middleton, L., & Museux, N. (2017). Large scale surveillance, detection and alerts information management system for critical infrastructure. 12th International symposium on environmental software systems (ISESS), Zadar,2017. 507, pp. 237-246. Cham: Springer international Publishing. Doi:10.1007/978-3-319-89935-0_20.",
+        "DOI": "10.1007/978-3-319-89935-0_20"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0625",
+        "unstructured": "Sallis, P., Jarur, M., Trujillo, M., & Ghobakhlou, A. (2009). Frost prediction using a combinational model of supervised and unsupervised neural networks for crop management in vineyards. 18th World IMACS congress and international congress on modelling and simulation: Interfacing modelling and simulation with mathematical and computational sciences (MODSIM), Cairns, 2009 (pp. 789-795). MSSANZ. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0630",
+        "doi-asserted-by": "crossref",
+        "first-page": "3530",
+        "DOI": "10.1016/j.cor.2007.01.017",
+        "article-title": "Dynamic modeling and control of supply chain systems: A review",
+        "volume": "35",
+        "author": "Sarimveis",
+        "year": "2008",
+        "journal-title": "Computers & Operations Research"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0635",
+        "series-title": "Smart and sustainable planning for cities and regions",
+        "first-page": "83",
+        "article-title": "Taxi of the future: Big Data analysis as a framework for future urban fleets in smart cities",
+        "author": "Schatzinger",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0640",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schneider, S. (2017). The industrial internet of things (IioT): Applications and taxonomy. In G. Hwaiyu, & J. McKeeth, Internet of things and data analytics handbook (pp. 41-81). Hoboken: John Wiley & Sons, Inc. doi:10.1002/9781119173601.ch3.",
+        "DOI": "10.1002/9781119173601.ch3"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0645",
+        "unstructured": "Senthilkumar, D., Kumar, S., Ozturk, Y., & Lee, G. (2010). An ANFIS based sensor network for a residential energy management system. 2nd International conference on sensor networks and applications, Las Vegas, 2010 (pp. 1-6). Cary: ISCA. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0650",
+        "series-title": "Operations management",
+        "author": "Slack",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0655",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sosunova, I., Zaslavsky, A., Anagnostopoulos, T., Fedchenkov, P., Sadov, O., & Medvedev, A. (2013). SWM-PnR: Ontology-based context-driven knowledge representation for IoT-enabled waste management. In O. Galinina, S. Andreev, S. Balandin, & Y. Koucheryavy, Internet of Things, Smart Spaces, and Next Generation Networking (Vol. 8121, pp. 151-162). Cham: Springer International Publishing. Doi:10.1007/978-3-319-67380-6_14.",
+        "DOI": "10.1007/978-3-319-67380-6_14"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0660",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Spanias, A. S. (2017). Solar energy management as an Internet of Things (IoT) application. 8th International conference on information, intelligence, systems & applications (IISA), Larnaca,, 2017 (pp. 1-4). New York: IEEE. Doi:10.1109/IISA.2017.8316460.",
+        "DOI": "10.1109/IISA.2017.8316460"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0665",
+        "article-title": "Trends in transporation and logistics",
+        "volume": "830–836",
+        "author": "Speranza",
+        "year": "2018",
+        "journal-title": "European Journal of Operational Research"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0670",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sramota, J., & Skavhaug, A. (2018). RailCheck: A WSN-Based system for condition monitoring of railway infrastructure. 21st Euromicro conference on digital system design (DSD), Prague, 2018 (pp. 347-351). New York: IEEE. Doi:10.1109/DSD.2018.00067.",
+        "DOI": "10.1109/DSD.2018.00067"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0675",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.5325/transportationj.54.1.0007",
+        "article-title": "Reimagining the 10 megatrends that will revolutionize supply chain logistics",
+        "volume": "54",
+        "author": "Stank",
+        "year": "2015",
+        "journal-title": "Transporation Journal"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0680",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sun, C. (2012). Application of RFID technology for logistics on internet of things. 2012 AASRI conference on computational intelligence and bioinformatics. 1, pp. 106-111. Changsha: Elsevier Ltd. Doi:10.1016/j.aasri.2012.06.019.",
+        "DOI": "10.1016/j.aasri.2012.06.019"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0685",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sun, Z., Zou, H., & Strang, K. (2015). Big data analytics as a service for business intelligence. Conference on e-Business, e-Services and e-Society, Delft, 2015 (pp. 200-211). Springer: Cham. Doi:10.1007/978-3-319-25013-7_16.",
+        "DOI": "10.1007/978-3-319-25013-7_16"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0690",
+        "series-title": "Springer tracts in civil engineering",
+        "doi-asserted-by": "crossref",
+        "first-page": "201",
+        "DOI": "10.1007/978-3-030-04009-3_8",
+        "article-title": "FM services procurement and management: scenarios of innovation",
+        "author": "Talamo",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0695",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tan, H. (2008). Application research of RFID in supply chain logistics management. Proceedings of 2008 IEEE international conference on service operations and logistics, and informatics, IEEE/SOLI 2008. 2, pp. 2456-2459. Beijing: IEEE. Doi:10.1109/SOLI.2008.4682948.",
+        "DOI": "10.1109/SOLI.2008.4682948"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0700",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.4028/www.scientific.net/KEM.167-168.205",
+        "article-title": "Adaptive fusion devices for condition monitoring: Local fusion systems of the NEURAL-MAINE project",
+        "volume": "167–168",
+        "author": "Taylor",
+        "year": "1999",
+        "journal-title": "Key Engineering Materials"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0705",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.1016/j.cie.2017.11.017",
+        "article-title": "Big data analytics in supply chain management between 2010 and 2016: Insights to industries",
+        "volume": "115",
+        "author": "Tiwari",
+        "year": "2018",
+        "journal-title": "Computers and Industrial Engineering"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.cie.2020.107076_b0710",
+        "first-page": "131",
+        "article-title": "An exploratory study of internet of things (IoT) adoption intention in logistics and supply chain management a mixed research approach",
+        "volume": "29",
+        "author": "Tu",
+        "year": "2018",
+        "journal-title": "International Journal of Logistics Management"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0715",
+        "series-title": "Business intelligence: A managerial approach",
+        "author": "Turban",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0720",
+        "series-title": "Business intelligence: Data mining and optimization for decision making",
+        "author": "Vercellis",
+        "year": "2009"
+      },
+      {
+        "key": "#cr-split#-10.1016/j.cie.2020.107076_b0725.1",
+        "unstructured": "Verhoosel, J., & Spek, J. (2016). Applying ontologies in the dairy farming domain for big data analysis. Joint 3rd stream reasoning"
+      },
+      {
+        "key": "#cr-split#-10.1016/j.cie.2020.107076_b0725.2",
+        "unstructured": "(SR) and 1st semantic web technologies for the internet of things (SWIT), Kobe, 2016. 1783, pp. 91-100. Aachen: CEUR-WS. Retrieved from."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0730",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1111/jbl.12010",
+        "article-title": "Data science, predictive analytics, and big data: A revolution that will transform supply chain design and management",
+        "volume": "34",
+        "author": "Waller",
+        "year": "2013",
+        "journal-title": "Journal of Business Logistics"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0735",
+        "doi-asserted-by": "crossref",
+        "first-page": "98",
+        "DOI": "10.1016/j.ijpe.2016.03.014",
+        "article-title": "Big data analytics in logistics and supply chain management: Certain investigations for research and applications",
+        "volume": "176",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "International Journal of Production Economics"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0740",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, M., Birken, R., & Shamsabadi, S. S. (2014). Framework and implementation of a continuous network-wide health monitoring system for roadways. Proc. SPIE 9063, Nondestructive characterization for composite materials, aerospace engineering, civil infrastructure, and homeland security 2014. 90630H, pp. 1-12. San Diego: SPIE. Doi:10.1117/12.2047681.",
+        "DOI": "10.1117/12.2047681"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0745",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, W. Q., Zhang, X., Zhang, J., & Lim, H. B. (2012). Smart traffic cloud: An infrastructure for traffic applications. IEEE 18th international conference on parallel and distributed systems, Singapore, 2012 (pp. 822-827). New York: IEEE. Doi:10.1109/ICPADS.2012.134.",
+        "DOI": "10.1109/ICPADS.2012.134"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.cie.2020.107076_b0750",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/T-UFFC.1987.26922",
+        "article-title": "A sensor classification scheme",
+        "volume": "34",
+        "author": "White",
+        "year": "1987",
+        "journal-title": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0755",
+        "unstructured": "Whittle, A., Allen, M., Preis, A., & Iqbal, M. (2012). Sensor networks for monitoring and control of water distribution systems. 6th International conference on structural health monitoring of intelligent infrastructure (SHMII), Hong Kong, 2013. 14, p. 96. Winnipeg: International Society for Structural Health Monitoring of Intelligent Infrastructure. Retrieved from."
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0760",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Won, M., Zhang, Y., Jin, X., & Eun, Y. (2018). WiParkFind: Finding empty parking slots using WiFi. IEEE International Conference on Communications (ICC), Kansas City, 2018 (pp. 1-6). New York: IEEE. Doi:10.1109/ICC.2018.8422973.",
+        "DOI": "10.1109/ICC.2018.8422973"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.cie.2020.107076_b0765",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1007/s12599-015-0383-3",
+        "article-title": "Internet of Things: Technology and value added",
+        "volume": "57",
+        "author": "Wortmann",
+        "year": "2015",
+        "journal-title": "Business and Information System Engineering"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.cie.2020.107076_b0770",
+        "doi-asserted-by": "crossref",
+        "first-page": "2233",
+        "DOI": "10.1109/TII.2014.2300753",
+        "article-title": "Internet of things in industries: A survey",
+        "volume": "10",
+        "author": "Xu",
+        "year": "2014",
+        "journal-title": "IEEE Transactions on Industrial Informatics"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0775",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yang, L., Yang, S. H., Magiera, E., Froelich, W., Jach, T., & Laspidou, C. (2017). Domestic water consumption monitoring and behaviour intervention by employing the internet of things technologies. 8th international conference on advances in information technology (IAIT), Macau, 2016. 111, pp. 367-375. Amsterdam: Elsevier B.V. doi:10.1016/j.procs.2017.06.036.",
+        "DOI": "10.1016/j.procs.2017.06.036"
+      },
+      {
+        "key": "10.1016/j.cie.2020.107076_b0780",
+        "doi-asserted-by": "crossref",
+        "first-page": "572",
+        "DOI": "10.1016/j.cie.2016.07.013",
+        "article-title": "Big Data for supply chain management in the service and manufacturing sectors: Challenges, opportunities, and future perspectives",
+        "volume": "101",
+        "author": "Zhong",
+        "year": "2016",
+        "journal-title": "Computers and Industrial Engineering"
+      }
+    ],
+    "container-title": [
+      "Computers &amp; Industrial Engineering"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360835220307464?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0360835220307464?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2025-10-06T18:39:35Z",
+      "timestamp": 1759775975000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0360835220307464"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "references-count": 157,
+    "alternative-id": [
+      "S0360835220307464"
+    ],
+    "URL": "https://doi.org/10.1016/j.cie.2020.107076",
+    "relation": {},
+    "ISSN": [
+      "0360-8352"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-8352",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A systematic literature review of supply chain decision making supported by the Internet of Things and Big Data Analytics",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computers & Industrial Engineering",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.cie.2020.107076",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "107076"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T20:15:15Z",
+      "timestamp": 1786997715042,
+      "version": "3.56.0"
+    },
+    "reference-count": 9,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              26
+            ]
+          ],
+          "date-time": "2023-11-26T00:00:00Z",
+          "timestamp": 1700956800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 329,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Commission",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100010661",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "957258"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "957258"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100010661",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Transportation Research Procedia"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.trpro.2023.11.831",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2023-12-13T16:30:08Z",
+      "timestamp": 1702485008000
+    },
+    "page": "2864-2871",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "special_numbering": "C",
+    "title": [
+      "Maritime terminals’ cargo handling equipment cooperation leveraging IoT and edge computing: The ASSIST-IoT approach"
+    ],
+    "prefix": "10.1016",
+    "volume": "72",
+    "author": [
+      {
+        "given": "Eduardo",
+        "family": "Garro",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ignacio",
+        "family": "Lacalle",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Francisco",
+        "family": "Blanquer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrian",
+        "family": "Ramos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Angel",
+        "family": "Martinez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Piotr",
+        "family": "Sowiński",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Miguel Angel",
+        "family": "Llorente",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Palau",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0001",
+        "year": "2019",
+        "journal-title": "IMP Profile"
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0002",
+        "unstructured": "Wackett, M., 2018, Global fleet capacity to bulge as more containerships are delivered in 2018."
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0003",
+        "unstructured": "Nightingale, L., 2015, Tesco raises concern over bigger boxships."
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0004",
+        "unstructured": "Merk, O. and Dang, T.T., 2012, Efficiency of World Ports in Container and Bulk Cargo (oil, coal, ores and grain), Paris, OECD Publishing."
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0005",
+        "article-title": "ICT evolution in container terminals",
+        "author": "Tijan",
+        "year": "2010",
+        "journal-title": "Scientific Journal of Maritime Research"
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0006",
+        "unstructured": "Rintanen, K.and Thomas, A., 2016, “Container terminal automation”."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.trpro.2023.11.831_bib0007",
+        "first-page": "111",
+        "article-title": "Automation of ship-to-shore container cranes: A review of state-of-the-art",
+        "volume": "33",
+        "author": "Zrnic",
+        "year": "2005",
+        "journal-title": "FME Trans"
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0008",
+        "unstructured": "Kompany, R., 2019, “5G and MEC can significantly improve smart port operations”."
+      },
+      {
+        "key": "10.1016/j.trpro.2023.11.831_bib0009",
+        "unstructured": "Huawei, 2017, Working with China Telecom Huawei will Build the MEC Network of Ningbo Zhenhai Smart Refinery."
+      }
+    ],
+    "container-title": [
+      "Transportation Research Procedia"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352146523011298?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2352146523011298?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2025-11-06T13:35:12Z",
+      "timestamp": 1762436112000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352146523011298"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "references-count": 9,
+    "alternative-id": [
+      "S2352146523011298"
+    ],
+    "URL": "https://doi.org/10.1016/j.trpro.2023.11.831",
+    "relation": {},
+    "ISSN": [
+      "2352-1465"
+    ],
+    "issn-type": [
+      {
+        "value": "2352-1465",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Maritime terminals’ cargo handling equipment cooperation leveraging IoT and edge computing: The ASSIST-IoT approach",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Transportation Research Procedia",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.trpro.2023.11.831",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2023 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

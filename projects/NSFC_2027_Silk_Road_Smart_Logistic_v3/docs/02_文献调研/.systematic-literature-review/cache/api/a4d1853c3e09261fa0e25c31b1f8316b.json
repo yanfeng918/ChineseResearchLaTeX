@@ -1,0 +1,25 @@
+{
+  "paperId": "16e0f5cf165cc2ec86aedd7bd97b39d49d235afb",
+  "title": "Anomaly detection based on Artificial Intelligence of Things: A Systematic Literature Mapping",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.iot.2024.101063",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.iot.2024.101063?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.iot.2024.101063, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2421106",
+      "name": "S. Trilles"
+    },
+    {
+      "authorId": "2222812950",
+      "name": "Sahibzada Saadoon Hammad"
+    },
+    {
+      "authorId": "72174433",
+      "name": "Ditsuhi Iskandaryan"
+    }
+  ],
+  "abstract": null
+}

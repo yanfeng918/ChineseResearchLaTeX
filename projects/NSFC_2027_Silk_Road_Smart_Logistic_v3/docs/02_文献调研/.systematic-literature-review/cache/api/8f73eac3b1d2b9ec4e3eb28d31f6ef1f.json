@@ -1,0 +1,891 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2026-08-08T01:57:41Z",
+      "timestamp": 1786154261625,
+      "version": "3.56.0"
+    },
+    "reference-count": 56,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2023-12-01T00:00:00Z",
+          "timestamp": 1701388800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2023-12-01T00:00:00Z",
+          "timestamp": 1701388800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              25
+            ]
+          ],
+          "date-time": "2023-10-25T00:00:00Z",
+          "timestamp": 1698192000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Internet of Things"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.iot.2023.100982",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2023-10-31T22:19:37Z",
+      "timestamp": 1698790777000
+    },
+    "page": "100982",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 114,
+    "special_numbering": "C",
+    "title": [
+      "IoT-based supply chain management: A systematic literature review"
+    ],
+    "prefix": "10.1016",
+    "volume": "24",
+    "author": [
+      {
+        "given": "Soonh",
+        "family": "Taj",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ali Shariq",
+        "family": "Imran",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zenun",
+        "family": "Kastrati",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sher Muhammad",
+        "family": "Daudpota",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raheel Ahmed",
+        "family": "Memon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Javed",
+        "family": "Ahmed",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2023.100982_b1",
+        "first-page": "97",
+        "article-title": "That ‘internet of things’ thing",
+        "volume": "22",
+        "author": "Ashton",
+        "year": "2009",
+        "journal-title": "RFID J."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.comcom.2014.09.008",
+        "article-title": "The internet of things vision: Key features, applications and open issues",
+        "volume": "54",
+        "author": "Borgia",
+        "year": "2014",
+        "journal-title": "Comput. Commun."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b3",
+        "series-title": "2016 Future Technologies Conference",
+        "first-page": "731",
+        "article-title": "IoT architecture challenges and issues: Lack of standardization",
+        "author": "Al-Qaseemi",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b4",
+        "series-title": "SCM Definitions and Glossary of Terms",
+        "year": "2018"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.iot.2023.100982_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "614",
+        "DOI": "10.1016/j.future.2018.04.051",
+        "article-title": "Internet of things (IoT) and its impact on supply chain: A framework for building smart, secure and efficient systems",
+        "volume": "86",
+        "author": "Abdel-Basset",
+        "year": "2018",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "issue": "15–16",
+        "key": "10.1016/j.iot.2023.100982_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "4719",
+        "DOI": "10.1080/00207543.2017.1402140",
+        "article-title": "Internet of things and supply chain management: a literature review",
+        "volume": "57",
+        "author": "Ben-Daya",
+        "year": "2019",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b7",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.iot.2020.100318",
+        "article-title": "Internet of things research in supply chain management and logistics: A bibliometric analysis",
+        "volume": "12",
+        "author": "Rejeb",
+        "year": "2020",
+        "journal-title": "Internet Things"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2023.100982_b8",
+        "doi-asserted-by": "crossref",
+        "first-page": "683",
+        "DOI": "10.1108/BIJ-02-2021-0085",
+        "article-title": "The interplay between the internet of things and supply chain management: Challenges and opportunities based on a systematic literature review",
+        "volume": "29",
+        "author": "Rebelo",
+        "year": "2022",
+        "journal-title": "Benchmarking: Int. J."
+      },
+      {
+        "issue": "24",
+        "key": "10.1016/j.iot.2023.100982_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "13646",
+        "DOI": "10.3390/su132413646",
+        "article-title": "Blockchain-based IoT devices in supply chain management: a systematic literature review",
+        "volume": "13",
+        "author": "Hussain",
+        "year": "2021",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b10",
+        "series-title": "Procedures for Performing Systematic Reviews, Vol. 33, No. 2004",
+        "first-page": "1",
+        "author": "Kitchenham",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijsu.2021.105906",
+        "article-title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+        "volume": "88",
+        "author": "Page",
+        "year": "2021",
+        "journal-title": "Int. J. Surg."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.iot.2023.100982_b12",
+        "first-page": "172",
+        "article-title": "Smart supply chain management using internet of things",
+        "volume": "9",
+        "author": "Sangeetha",
+        "year": "2018",
+        "journal-title": "Int. J. Syst. Control Commun."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2023.100982_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1432",
+        "DOI": "10.1108/IMDS-09-2017-0384",
+        "article-title": "An internet of things (IoT)-based risk monitoring system for managing cold supply chain risks",
+        "volume": "118",
+        "author": "Tsang",
+        "year": "2018",
+        "journal-title": "Ind. Manag. Data Syst."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.iot.2023.100982_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "755",
+        "DOI": "10.1080/17517575.2015.1072643",
+        "article-title": "A reference architecture for IoT-based logistic information systems in agri-food supply chains",
+        "volume": "12",
+        "author": "Verdouw",
+        "year": "2018",
+        "journal-title": "Enterp. Inf. Syst."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b15",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1007/s10799-017-0279-7",
+        "article-title": "IoT security perspective of a flexible healthcare supply chain",
+        "volume": "19",
+        "author": "Zhou",
+        "year": "2018",
+        "journal-title": "Inf. Technol. Manag."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "46198",
+        "DOI": "10.1109/ACCESS.2019.2909170",
+        "article-title": "DL-Tags: DLT and smart tags for decentralized, privacy-preserving, and verifiable supply chain management",
+        "volume": "7",
+        "author": "Benčić",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "157113",
+        "DOI": "10.1109/ACCESS.2019.2949951",
+        "article-title": "A blockchain-based framework for supply chain provenance",
+        "volume": "7",
+        "author": "Cui",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "71686",
+        "DOI": "10.1109/ACCESS.2019.2919582",
+        "article-title": "Theoretical basis and system establishment of China food safety intelligent supervision in the perspective of internet of things",
+        "volume": "7",
+        "author": "Fan",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compind.2019.103127",
+        "article-title": "An end-to-end internet of things solution for reverse supply chain management in industry 4.0",
+        "volume": "112",
+        "author": "Garrido-Hidalgo",
+        "year": "2019",
+        "journal-title": "Comput. Ind."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2023.100982_b20",
+        "article-title": "Asset supply chain management system-based IoT technology for higher education institutions.",
+        "volume": "15",
+        "author": "Kuandee",
+        "year": "2019",
+        "journal-title": "Int. J. Online & Biomed. Eng."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "8919",
+        "DOI": "10.1007/s10586-018-2021-6",
+        "article-title": "Research on agricultural products supply chain inspection system based on internet of things",
+        "volume": "22",
+        "author": "Leng",
+        "year": "2019",
+        "journal-title": "Cluster Comput."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "20698",
+        "DOI": "10.1109/ACCESS.2019.2897792",
+        "article-title": "Food safety traceability system based on blockchain and EPCIS",
+        "volume": "7",
+        "author": "Lin",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "155489",
+        "DOI": "10.1109/ACCESS.2019.2948269",
+        "article-title": "Estimating service quality in industrial internet-of-things monitoring applications with blockchain",
+        "volume": "7",
+        "author": "Maiti",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2023.100982_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "5803",
+        "DOI": "10.1109/JIOT.2019.2907658",
+        "article-title": "Blockchain inspired RFID-based information architecture for food supply chain",
+        "volume": "6",
+        "author": "Mondal",
+        "year": "2019",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2023.100982_b25",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.3390/socsci8030084",
+        "article-title": "Impacts of internet of things on supply chains: a framework for warehousing",
+        "volume": "8",
+        "author": "Mostafa",
+        "year": "2019",
+        "journal-title": "Soc. Sci."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2023.100982_b26",
+        "first-page": "198",
+        "article-title": "Development of a smart supply-chain management solution based on logistics standards utilizing artificial intelligence and the internet of things",
+        "volume": "17",
+        "author": "Oh",
+        "year": "2019",
+        "journal-title": "J. Inf. Commun. Converg. Eng."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "129000",
+        "DOI": "10.1109/ACCESS.2019.2940227",
+        "article-title": "Blockchain-driven IoT for food traceability with an integrated consensus mechanism",
+        "volume": "7",
+        "author": "Tsang",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "110323",
+        "DOI": "10.1109/ACCESS.2019.2932475",
+        "article-title": "Construction of supply chain financial risk management mode based on internet of things",
+        "volume": "7",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "115122",
+        "DOI": "10.1109/ACCESS.2019.2935873",
+        "article-title": "Smart contract-based product traceability system in the supply chain scenario",
+        "volume": "7",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b30",
+        "doi-asserted-by": "crossref",
+        "first-page": "188363",
+        "DOI": "10.1109/ACCESS.2020.3031536",
+        "article-title": "Blockchain-based traceability and management for additive manufacturing",
+        "volume": "8",
+        "author": "Alkaabi",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "9–10",
+        "key": "10.1016/j.iot.2023.100982_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1354",
+        "DOI": "10.1080/17517575.2019.1644671",
+        "article-title": "Simulation analysis of supply chain risk management system based on IoT information platform",
+        "volume": "14",
+        "author": "Gao",
+        "year": "2020",
+        "journal-title": "Enterp. Inf. Syst."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2023.100982_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s13638-020-01753-x",
+        "article-title": "Research on simulation of school uniform supply chain optimal model based on internet of things",
+        "volume": "2020",
+        "author": "Jun",
+        "year": "2020",
+        "journal-title": "EURASIP J. Wireless Commun. Networking"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b33",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2019.01.042",
+        "article-title": "Using IoT data and applications to improve port-based intermodal supply chains",
+        "volume": "139",
+        "author": "Muñuzuri",
+        "year": "2020",
+        "journal-title": "Comput. Ind. Eng."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b34",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.comnet.2020.107558",
+        "article-title": "IoT in medical & pharmaceutical: Designing lightweight RFID security protocols for ensuring supply chain integrity",
+        "volume": "181",
+        "author": "Safkhani",
+        "year": "2020",
+        "journal-title": "Comput. Netw."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2023.100982_b35",
+        "first-page": "1069",
+        "article-title": "Smart monitoring system design for perishable food supply chain management based on IoT in Bangladesh",
+        "volume": "29",
+        "author": "Sourav",
+        "year": "2020",
+        "journal-title": "Int. J. Adv. Sci. Technol."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2023.100982_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "292",
+        "DOI": "10.1108/JEIM-11-2019-0369",
+        "article-title": "Development of IoT-based data-driven agriculture supply chain performance measurement framework",
+        "volume": "34",
+        "author": "Yadav",
+        "year": "2021",
+        "journal-title": "J. Enterp. Inf. Manag."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "137923",
+        "DOI": "10.1109/ACCESS.2021.3118085",
+        "article-title": "Blockchain-based decentralized digital manufacturing and supply for COVID-19 medical devices and supplies",
+        "volume": "9",
+        "author": "Alkhader",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b38",
+        "doi-asserted-by": "crossref",
+        "first-page": "53786",
+        "DOI": "10.1109/ACCESS.2021.3070911",
+        "article-title": "Design and implementation of CryptoCargo: A blockchain-powered smart shipping container for vaccine distribution",
+        "volume": "9",
+        "author": "Alkhoori",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "10070",
+        "DOI": "10.1109/ACCESS.2021.3050391",
+        "article-title": "IIoT-based multimodal communication model for agriculture and agro-industries",
+        "volume": "9",
+        "author": "Almadani",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2023.100982_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1759",
+        "DOI": "10.3390/s21051759",
+        "article-title": "A blockchain-based trust model for the internet of things supply chain management",
+        "volume": "21",
+        "author": "Al-Rakhami",
+        "year": "2021",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1155/2021/5580179",
+        "article-title": "IoT with blockchain: A futuristic approach in agriculture and food supply chain",
+        "volume": "2021",
+        "author": "Awan",
+        "year": "2021",
+        "journal-title": "Wirel. Commun. Mob. Comput."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "65660",
+        "DOI": "10.1109/ACCESS.2021.3076373",
+        "article-title": "Secure identification, traceability and real-time tracking of agricultural food supply during transportation using internet of things",
+        "volume": "9",
+        "author": "Bhutta",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "62899",
+        "DOI": "10.1109/ACCESS.2021.3074874",
+        "article-title": "A blockchain-based traceability system in agri-food SME: Case study of a traditional bakery",
+        "volume": "9",
+        "author": "Cocco",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "82435",
+        "DOI": "10.1109/ACCESS.2021.3084942",
+        "article-title": "Implementation of hybrid blockchain in a pre-owned electric vehicle supply chain",
+        "volume": "9",
+        "author": "Subramanian",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b45",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1109/OJCS.2021.3049330",
+        "article-title": "Crypto pharmacy–digital medicine: A mobile application integrated with hybrid blockchain to tackle the issues in pharma supply chain",
+        "volume": "2",
+        "author": "Subramanian",
+        "year": "2021",
+        "journal-title": "IEEE Open J. Comput. Soc."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.iot.2023.100982_b46",
+        "doi-asserted-by": "crossref",
+        "first-page": "6372",
+        "DOI": "10.3390/su13116372",
+        "article-title": "Sustainable supply chains with blockchain, IoT and RFID: A simulation on order management",
+        "volume": "13",
+        "author": "Varriale",
+        "year": "2021",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b47",
+        "first-page": "1",
+        "article-title": "Optimization of E-commerce supply chain management process based on internet of things technology",
+        "volume": "2021",
+        "author": "Wu",
+        "year": "2021",
+        "journal-title": "Complexity"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b48",
+        "doi-asserted-by": "crossref",
+        "first-page": "11843",
+        "DOI": "10.1109/ACCESS.2021.3049256",
+        "article-title": "Intelligent agent-based predict system with cloud computing for enterprise service platform in IoT environment",
+        "volume": "9",
+        "author": "Yang",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b49",
+        "first-page": "1",
+        "article-title": "Supply chain inventory collaborative management and information sharing mechanism based on cloud computing and 5G internet of things",
+        "volume": "2021",
+        "author": "Zhang",
+        "year": "2021",
+        "journal-title": "Math. Probl. Eng."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b50",
+        "first-page": "1",
+        "article-title": "Blockchain-based agile supply chain framework with IoT",
+        "author": "Zhu",
+        "year": "2021",
+        "journal-title": "Inf. Syst. Front."
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b51",
+        "doi-asserted-by": "crossref",
+        "first-page": "3631",
+        "DOI": "10.1109/ACCESS.2021.3135371",
+        "article-title": "ProChain: provenance-aware traceability framework for IoT-based supply chain systems",
+        "volume": "10",
+        "author": "Al-Rakhami",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.iot.2023.100982_b52",
+        "first-page": "1",
+        "article-title": "IoT-blockchain driven traceability techniques for improved safety measures in food supply chain",
+        "author": "Balamurugan",
+        "year": "2021",
+        "journal-title": "Int. J. Inf. Technol."
+      },
+      {
+        "issue": "Suppl 1",
+        "key": "10.1016/j.iot.2023.100982_b53",
+        "doi-asserted-by": "crossref",
+        "first-page": "673",
+        "DOI": "10.1007/s13198-021-01581-2",
+        "article-title": "Industrial IoT and AI implementation in vehicular logistics and supply chain management for vehicle mediated transportation systems",
+        "volume": "13",
+        "author": "Bhargava",
+        "year": "2022",
+        "journal-title": "Int. J. Syst. Assur. Eng. Manag."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2023.100982_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "360",
+        "DOI": "10.1108/09600030810882816",
+        "article-title": "A framework of sustainable supply chain management: moving toward new theory",
+        "volume": "38",
+        "author": "Carter",
+        "year": "2008",
+        "journal-title": "Int. J. Phys. Distrib. Logist. Manag."
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.iot.2023.100982_b55",
+        "doi-asserted-by": "crossref",
+        "first-page": "1699",
+        "DOI": "10.1016/j.jclepro.2008.04.020",
+        "article-title": "From a literature review to a conceptual framework for sustainable supply chain management",
+        "volume": "16",
+        "author": "Seuring",
+        "year": "2008",
+        "journal-title": "J. Clean. Prod."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2023.100982_b56",
+        "doi-asserted-by": "crossref",
+        "first-page": "1147",
+        "DOI": "10.1108/MEQ-04-2019-0079",
+        "article-title": "Sustainable supply chain management practices and performance: An integrated perspective from a developing economy",
+        "volume": "31",
+        "author": "Baliga",
+        "year": "2020",
+        "journal-title": "Manag. Environ. Qual. Int. J."
+      }
+    ],
+    "container-title": [
+      "Internet of Things"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2542660523003050?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2542660523003050?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          11
+        ]
+      ],
+      "date-time": "2025-11-11T14:55:00Z",
+      "timestamp": 1762872900000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2542660523003050"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "references-count": 56,
+    "alternative-id": [
+      "S2542660523003050"
+    ],
+    "URL": "https://doi.org/10.1016/j.iot.2023.100982",
+    "relation": {},
+    "ISSN": [
+      "2542-6605"
+    ],
+    "issn-type": [
+      {
+        "value": "2542-6605",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "IoT-based supply chain management: A systematic literature review",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Internet of Things",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.iot.2023.100982",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2023 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100982"
+  }
+}

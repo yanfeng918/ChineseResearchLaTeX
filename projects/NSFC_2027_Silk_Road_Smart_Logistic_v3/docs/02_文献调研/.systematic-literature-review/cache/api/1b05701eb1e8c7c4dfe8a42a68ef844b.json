@@ -1,0 +1,1267 @@
+{
+  "id": "https://openalex.org/W4388078767",
+  "doi": "https://doi.org/10.1016/j.iot.2023.100982",
+  "title": "IoT-based supply chain management: A systematic literature review",
+  "display_name": "IoT-based supply chain management: A systematic literature review",
+  "publication_year": 2023,
+  "publication_date": "2023-10-31",
+  "ids": {
+    "openalex": "https://openalex.org/W4388078767",
+    "doi": "https://doi.org/10.1016/j.iot.2023.100982"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.iot.2023.100982",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.iot.2023.100982",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4210174276",
+      "display_name": "Internet of Things",
+      "issn_l": "2542-6605",
+      "issn": [
+        "2542-6605",
+        "2543-1536"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Internet of Things",
+    "raw_type": "journal-article"
+  },
+  "type": "review",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "hybrid",
+    "oa_url": "https://doi.org/10.1016/j.iot.2023.100982",
+    "any_repository_has_fulltext": true
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5002064861",
+        "display_name": "Soonh Taj",
+        "orcid": "https://orcid.org/0000-0003-4856-7092"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I68288478",
+          "display_name": "Sukkur IBA University",
+          "ror": "https://ror.org/03e5jvk98",
+          "country_code": "PK",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ],
+      "countries": [
+        "PK"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Soonh Taj",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan",
+          "institution_ids": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5044015235",
+        "display_name": "Ali Shariq Imran",
+        "orcid": "https://orcid.org/0000-0002-2416-2878"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I204778367",
+          "display_name": "Norwegian University of Science and Technology",
+          "ror": "https://ror.org/05xg72x27",
+          "country_code": "NO",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I204778367"
+          ]
+        }
+      ],
+      "countries": [
+        "NO"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Ali Shariq Imran",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, Norwegian University of Science and Technology (NTNU), 2815, Gjøvik, Norway"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, Norwegian University of Science and Technology (NTNU), 2815, Gjøvik, Norway",
+          "institution_ids": [
+            "https://openalex.org/I204778367"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5052954560",
+        "display_name": "Zenun Kastrati",
+        "orcid": "https://orcid.org/0000-0002-0199-2377"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I223464139",
+          "display_name": "Linnaeus University",
+          "ror": "https://ror.org/00j9qag85",
+          "country_code": "SE",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I223464139"
+          ]
+        }
+      ],
+      "countries": [
+        "SE"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Zenun Kastrati",
+      "raw_affiliation_strings": [
+        "Department of Informatics, Linnaeus University, 351 95, Växjö, Sweden"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Informatics, Linnaeus University, 351 95, Växjö, Sweden",
+          "institution_ids": [
+            "https://openalex.org/I223464139"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5045728872",
+        "display_name": "Sher Muhammad Daudpota",
+        "orcid": "https://orcid.org/0000-0001-6684-751X"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I68288478",
+          "display_name": "Sukkur IBA University",
+          "ror": "https://ror.org/03e5jvk98",
+          "country_code": "PK",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ],
+      "countries": [
+        "PK"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Sher Muhammad Daudpota",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan",
+          "institution_ids": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "middle",
+      "author": {
+        "id": "https://openalex.org/A5086803981",
+        "display_name": "Raheel Ahmed Memon",
+        "orcid": "https://orcid.org/0000-0003-1206-3837"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I68288478",
+          "display_name": "Sukkur IBA University",
+          "ror": "https://ror.org/03e5jvk98",
+          "country_code": "PK",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ],
+      "countries": [
+        "PK"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Raheel Ahmed Memon",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan",
+          "institution_ids": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5113034386",
+        "display_name": "Javed Ahmed",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I68288478",
+          "display_name": "Sukkur IBA University",
+          "ror": "https://ror.org/03e5jvk98",
+          "country_code": "PK",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ],
+      "countries": [
+        "PK"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Javed Ahmed",
+      "raw_affiliation_strings": [
+        "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Science, Sukkur IBA University, Nisar Ahmed Siddiqui Road, Sukkur, 65200, Sindh, Pakistan",
+          "institution_ids": [
+            "https://openalex.org/I68288478"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 3,
+  "institutions_distinct_count": 3,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5052954560"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I223464139"
+  ],
+  "apc_list": {
+    "value": 2010,
+    "currency": "USD",
+    "value_usd": 2010
+  },
+  "apc_paid": {
+    "value": 2010,
+    "currency": "USD",
+    "value_usd": 2010
+  },
+  "fwci": 6.0335,
+  "has_fulltext": true,
+  "cited_by_count": 134,
+  "citation_normalized_percentile": {
+    "value": 0.97647059,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 94,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "24",
+    "issue": null,
+    "first_page": "100982",
+    "last_page": "100982"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T10539",
+    "display_name": "Sustainable Supply Chain Management",
+    "score": 0.972000002861023,
+    "subfield": {
+      "id": "https://openalex.org/subfields/1408",
+      "display_name": "Strategy and Management"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/14",
+      "display_name": "Business, Management and Accounting"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T10539",
+      "display_name": "Sustainable Supply Chain Management",
+      "score": 0.972000002861023,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1408",
+        "display_name": "Strategy and Management"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/14",
+        "display_name": "Business, Management and Accounting"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11864",
+      "display_name": "Supply Chain Resilience and Risk Management",
+      "score": 0.9524000287055969,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1408",
+        "display_name": "Strategy and Management"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/14",
+        "display_name": "Business, Management and Accounting"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/2",
+        "display_name": "Social Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10270",
+      "display_name": "Blockchain Technology Applications and Security",
+      "score": 0.9376999735832214,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1710",
+        "display_name": "Information Systems"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/supply-chain-management",
+      "display_name": "Supply chain management",
+      "score": 0.5556252598762512
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.519349217414856
+    },
+    {
+      "id": "https://openalex.org/keywords/supply-chain",
+      "display_name": "Supply chain",
+      "score": 0.5154217481613159
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.43100783228874207
+    },
+    {
+      "id": "https://openalex.org/keywords/business",
+      "display_name": "Business",
+      "score": 0.4221903085708618
+    },
+    {
+      "id": "https://openalex.org/keywords/systematic-review",
+      "display_name": "Systematic review",
+      "score": 0.415368914604187
+    },
+    {
+      "id": "https://openalex.org/keywords/medline",
+      "display_name": "MEDLINE",
+      "score": 0.17133355140686035
+    },
+    {
+      "id": "https://openalex.org/keywords/world-wide-web",
+      "display_name": "World Wide Web",
+      "score": 0.15557020902633667
+    },
+    {
+      "id": "https://openalex.org/keywords/political-science",
+      "display_name": "Political science",
+      "score": 0.0964449942111969
+    },
+    {
+      "id": "https://openalex.org/keywords/marketing",
+      "display_name": "Marketing",
+      "score": 0.08705267310142517
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C44104985",
+      "wikidata": "https://www.wikidata.org/wiki/Q492886",
+      "display_name": "Supply chain management",
+      "level": 3,
+      "score": 0.5556252598762512
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.519349217414856
+    },
+    {
+      "id": "https://openalex.org/C108713360",
+      "wikidata": "https://www.wikidata.org/wiki/Q1824206",
+      "display_name": "Supply chain",
+      "level": 2,
+      "score": 0.5154217481613159
+    },
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.43100783228874207
+    },
+    {
+      "id": "https://openalex.org/C144133560",
+      "wikidata": "https://www.wikidata.org/wiki/Q4830453",
+      "display_name": "Business",
+      "level": 0,
+      "score": 0.4221903085708618
+    },
+    {
+      "id": "https://openalex.org/C189708586",
+      "wikidata": "https://www.wikidata.org/wiki/Q1504425",
+      "display_name": "Systematic review",
+      "level": 3,
+      "score": 0.415368914604187
+    },
+    {
+      "id": "https://openalex.org/C2779473830",
+      "wikidata": "https://www.wikidata.org/wiki/Q1540899",
+      "display_name": "MEDLINE",
+      "level": 2,
+      "score": 0.17133355140686035
+    },
+    {
+      "id": "https://openalex.org/C136764020",
+      "wikidata": "https://www.wikidata.org/wiki/Q466",
+      "display_name": "World Wide Web",
+      "level": 1,
+      "score": 0.15557020902633667
+    },
+    {
+      "id": "https://openalex.org/C17744445",
+      "wikidata": "https://www.wikidata.org/wiki/Q36442",
+      "display_name": "Political science",
+      "level": 0,
+      "score": 0.0964449942111969
+    },
+    {
+      "id": "https://openalex.org/C162853370",
+      "wikidata": "https://www.wikidata.org/wiki/Q39809",
+      "display_name": "Marketing",
+      "level": 1,
+      "score": 0.08705267310142517
+    },
+    {
+      "id": "https://openalex.org/C199539241",
+      "wikidata": "https://www.wikidata.org/wiki/Q7748",
+      "display_name": "Law",
+      "level": 1,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.iot.2023.100982",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.iot.2023.100982",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4210174276",
+        "display_name": "Internet of Things",
+        "issn_l": "2542-6605",
+        "issn": [
+          "2542-6605",
+          "2543-1536"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Internet of Things",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:DiVA.org:lnu-125448",
+      "is_oa": true,
+      "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:lnu:diva-125448",
+      "pdf_url": "https://lnu.diva-portal.org/smash/get/diva2:1809097/FULLTEXT01",
+      "source": {
+        "id": "https://openalex.org/S4306401559",
+        "display_name": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": "https://openalex.org/I86987016",
+        "host_organization_name": "KTH Royal Institute of Technology",
+        "host_organization_lineage": [
+          "https://openalex.org/I86987016"
+        ],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": "other-oa",
+      "license_id": "https://openalex.org/licenses/other-oa",
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "info:eu-repo/semantics/article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.iot.2023.100982",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.iot.2023.100982",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S4210174276",
+      "display_name": "Internet of Things",
+      "issn_l": "2542-6605",
+      "issn": [
+        "2542-6605",
+        "2543-1536"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Internet of Things",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [],
+  "awards": [],
+  "funders": [],
+  "has_content": {
+    "pdf": false,
+    "grobid_xml": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 58,
+  "referenced_works": [
+    "https://openalex.org/W1755227063",
+    "https://openalex.org/W1992025196",
+    "https://openalex.org/W2025883194",
+    "https://openalex.org/W2026816730",
+    "https://openalex.org/W2289416724",
+    "https://openalex.org/W2745246954",
+    "https://openalex.org/W2769593477",
+    "https://openalex.org/W2787456680",
+    "https://openalex.org/W2802538926",
+    "https://openalex.org/W2876758168",
+    "https://openalex.org/W2911615526",
+    "https://openalex.org/W2912531270",
+    "https://openalex.org/W2912637295",
+    "https://openalex.org/W2919842188",
+    "https://openalex.org/W2924000030",
+    "https://openalex.org/W2943404941",
+    "https://openalex.org/W2947603590",
+    "https://openalex.org/W2963907970",
+    "https://openalex.org/W2965155801",
+    "https://openalex.org/W2967981497",
+    "https://openalex.org/W2972955472",
+    "https://openalex.org/W2976161203",
+    "https://openalex.org/W2976576190",
+    "https://openalex.org/W2980647128",
+    "https://openalex.org/W2982523999",
+    "https://openalex.org/W3010894904",
+    "https://openalex.org/W3037202621",
+    "https://openalex.org/W3039574725",
+    "https://openalex.org/W3087454209",
+    "https://openalex.org/W3093508570",
+    "https://openalex.org/W3096341508",
+    "https://openalex.org/W3118277262",
+    "https://openalex.org/W3119479490",
+    "https://openalex.org/W3119768622",
+    "https://openalex.org/W3120323987",
+    "https://openalex.org/W3129506026",
+    "https://openalex.org/W3132902539",
+    "https://openalex.org/W3135586544",
+    "https://openalex.org/W3145728915",
+    "https://openalex.org/W3146142859",
+    "https://openalex.org/W3157239374",
+    "https://openalex.org/W3159877357",
+    "https://openalex.org/W3166204465",
+    "https://openalex.org/W3167983870",
+    "https://openalex.org/W3174245551",
+    "https://openalex.org/W3174619536",
+    "https://openalex.org/W3203235631",
+    "https://openalex.org/W4200364479",
+    "https://openalex.org/W4205904685",
+    "https://openalex.org/W4206411857",
+    "https://openalex.org/W4241415736",
+    "https://openalex.org/W6637618429",
+    "https://openalex.org/W6732125615",
+    "https://openalex.org/W6758412287",
+    "https://openalex.org/W6775091203",
+    "https://openalex.org/W6788950066",
+    "https://openalex.org/W6790620847",
+    "https://openalex.org/W6791242656"
+  ],
+  "related_works": [
+    "https://openalex.org/W4245926026",
+    "https://openalex.org/W4311097251",
+    "https://openalex.org/W2586548817",
+    "https://openalex.org/W2625093826",
+    "https://openalex.org/W2950174689",
+    "https://openalex.org/W2983500849",
+    "https://openalex.org/W3024999678",
+    "https://openalex.org/W388184414",
+    "https://openalex.org/W2026811664",
+    "https://openalex.org/W3189480424"
+  ],
+  "abstract_inverted_index": {
+    "Supply": [
+      0
+    ],
+    "Chain": [
+      1
+    ],
+    "Management": [
+      2
+    ],
+    "(SCM)": [
+      3
+    ],
+    "consists": [
+      4
+    ],
+    "of": [
+      5,
+      12,
+      17,
+      33,
+      59,
+      108,
+      125,
+      151,
+      181,
+      193,
+      228
+    ],
+    "handling": [
+      6
+    ],
+    "and": [
+      7,
+      19,
+      30,
+      41,
+      74,
+      96,
+      202,
+      217,
+      240,
+      242
+    ],
+    "optimizing": [
+      8
+    ],
+    "all": [
+      9
+    ],
+    "the": [
+      10,
+      13,
+      25,
+      28,
+      43,
+      69,
+      78,
+      109,
+      120,
+      191,
+      229
+    ],
+    "facets": [
+      11
+    ],
+    "supply": [
+      14,
+      44,
+      64,
+      70,
+      110
+    ],
+    "chain": [
+      15,
+      45,
+      71,
+      111
+    ],
+    "process": [
+      16,
+      72
+    ],
+    "goods": [
+      18
+    ],
+    "services.": [
+      20
+    ],
+    "Modern": [
+      21
+    ],
+    "SCM": [
+      22,
+      116,
+      153,
+      176,
+      183,
+      208,
+      222
+    ],
+    "is": [
+      23,
+      117,
+      128,
+      157
+    ],
+    "reaping": [
+      24
+    ],
+    "benefits": [
+      26
+    ],
+    "from": [
+      27,
+      184
+    ],
+    "emerging": [
+      29
+    ],
+    "growing": [
+      31,
+      121
+    ],
+    "Internet": [
+      32
+    ],
+    "Things": [
+      34
+    ],
+    "(IoT)": [
+      35
+    ],
+    "field.": [
+      36
+    ],
+    "IoT": [
+      37,
+      60,
+      66,
+      85,
+      100
+    ],
+    "technology": [
+      38,
+      95
+    ],
+    "can": [
+      39
+    ],
+    "automate": [
+      40
+    ],
+    "digitalize": [
+      42
+    ],
+    "processes": [
+      46
+    ],
+    "to": [
+      47,
+      186,
+      205
+    ],
+    "get": [
+      48
+    ],
+    "maximum": [
+      49
+    ],
+    "operational": [
+      50
+    ],
+    "efficiencies": [
+      51
+    ],
+    "by": [
+      52,
+      170,
+      223
+    ],
+    "reducing": [
+      53
+    ],
+    "operating": [
+      54
+    ],
+    "costs.": [
+      55
+    ],
+    "The": [
+      56,
+      148,
+      210
+    ],
+    "mass": [
+      57
+    ],
+    "proliferation": [
+      58
+    ],
+    "devices": [
+      61,
+      67,
+      86,
+      101,
+      203
+    ],
+    "has": [
+      62
+    ],
+    "revolutionized": [
+      63
+    ],
+    "chains.": [
+      65
+    ],
+    "in": [
+      68,
+      104,
+      119,
+      161,
+      220
+    ],
+    "track": [
+      73
+    ],
+    "trace": [
+      75
+    ],
+    "shipments": [
+      76
+    ],
+    "using": [
+      77,
+      93
+    ],
+    "latest": [
+      79
+    ],
+    "real-time": [
+      80
+    ],
+    "monitoring": [
+      81
+    ],
+    "technologies,": [
+      82,
+      200
+    ],
+    "including": [
+      83,
+      234
+    ],
+    "GPS.": [
+      84
+    ],
+    "are": [
+      87,
+      102
+    ],
+    "also": [
+      88
+    ],
+    "used": [
+      89,
+      103,
+      204
+    ],
+    "for": [
+      90,
+      145
+    ],
+    "asset": [
+      91
+    ],
+    "management": [
+      92
+    ],
+    "NFC": [
+      94
+    ],
+    "RFID": [
+      97
+    ],
+    "tags.": [
+      98
+    ],
+    "Overall,": [
+      99
+    ],
+    "almost": [
+      105
+    ],
+    "every": [
+      106
+    ],
+    "stage": [
+      107
+    ],
+    "process.": [
+      112
+    ],
+    "Research": [
+      113
+    ],
+    "on": [
+      114,
+      132,
+      174,
+      231,
+      237
+    ],
+    "IoT-based": [
+      115,
+      133,
+      146,
+      152,
+      175,
+      182,
+      194,
+      207,
+      221,
+      232
+    ],
+    "still": [
+      118,
+      158
+    ],
+    "phase.": [
+      122
+    ],
+    "A": [
+      123
+    ],
+    "lot": [
+      124
+    ],
+    "technical": [
+      126
+    ],
+    "work": [
+      127
+    ],
+    "currently": [
+      129
+    ],
+    "being": [
+      130
+    ],
+    "published": [
+      131
+    ],
+    "SCM,": [
+      134,
+      195,
+      233
+    ],
+    "but": [
+      135
+    ],
+    "a": [
+      136,
+      178
+    ],
+    "few": [
+      137
+    ],
+    "Systematic": [
+      138
+    ],
+    "Literature": [
+      139
+    ],
+    "Reviews": [
+      140
+    ],
+    "(SLRs)": [
+      141
+    ],
+    "have": [
+      142
+    ],
+    "been": [
+      143
+    ],
+    "found": [
+      144
+    ],
+    "SCM.": [
+      147
+    ],
+    "holistic": [
+      149
+    ],
+    "view": [
+      150
+    ],
+    "with": [
+      154,
+      177
+    ],
+    "detailed": [
+      155,
+      179
+    ],
+    "analysis": [
+      156,
+      180
+    ],
+    "not": [
+      159
+    ],
+    "reported": [
+      160
+    ],
+    "any": [
+      162
+    ],
+    "review.": [
+      163
+    ],
+    "This": [
+      164,
+      188
+    ],
+    "paper": [
+      165
+    ],
+    "addresses": [
+      166
+    ],
+    "this": [
+      167
+    ],
+    "knowledge": [
+      168
+    ],
+    "gap": [
+      169
+    ],
+    "presenting": [
+      171
+    ],
+    "an": [
+      172,
+      225
+    ],
+    "SLR": [
+      173,
+      211
+    ],
+    "2018": [
+      185
+    ],
+    "2022.": [
+      187
+    ],
+    "review": [
+      189
+    ],
+    "covers": [
+      190
+    ],
+    "aspects": [
+      192
+    ],
+    "such": [
+      196
+    ],
+    "as": [
+      197
+    ],
+    "application": [
+      198
+    ],
+    "domains,": [
+      199
+    ],
+    "sensors,": [
+      201
+    ],
+    "implement": [
+      206
+    ],
+    "systems.": [
+      209
+    ],
+    "findings": [
+      212
+    ],
+    "will": [
+      213
+    ],
+    "assist": [
+      214
+    ],
+    "future": [
+      215
+    ],
+    "researchers": [
+      216
+    ],
+    "practitioners": [
+      218
+    ],
+    "interested": [
+      219
+    ],
+    "offering": [
+      224
+    ],
+    "in-depth": [
+      226
+    ],
+    "study": [
+      227
+    ],
+    "literature": [
+      230
+    ],
+    "helpful": [
+      235
+    ],
+    "insights": [
+      236
+    ],
+    "challenges,": [
+      238
+    ],
+    "benefits,": [
+      239
+    ],
+    "economic": [
+      241
+    ],
+    "business": [
+      243
+    ],
+    "implications.": [
+      244
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 25
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 64
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 43
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-08-13T07:04:57.449891",
+  "created_date": "2025-10-10T00:00:00"
+}

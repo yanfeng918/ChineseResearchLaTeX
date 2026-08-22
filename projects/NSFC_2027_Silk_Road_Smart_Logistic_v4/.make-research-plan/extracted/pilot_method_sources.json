@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "title": "tc-netem(8) — Linux manual page",
+      "url": "https://man7.org/linux/man-pages/man8/tc-netem.8.html",
+      "evidence_used": [
+        "netem can emulate delay, loss, corruption, duplication, reordering, rate, slotting, and seeded randomness",
+        "kernel timer granularity and queue placement are limitations that must be reported"
+      ],
+      "design_decision": "Use Linux netem for the minimum pilot; log both configured values and achieved measurements."
+    },
+    {
+      "title": "ns-3 Documentation",
+      "url": "https://www.nsnam.org/documentation/",
+      "evidence_used": [
+        "ns-3 provides tutorials, a reference manual, a model library, and API documentation for network simulation"
+      ],
+      "design_decision": "Reserve ns-3 for later protocol-level studies instead of duplicating simulators in the minimum pilot."
+    },
+    {
+      "title": "ACM Artifact Review and Badging - Current",
+      "url": "https://www.acm.org/publications/policies/artifact-review-and-badging-current",
+      "evidence_used": [
+        "functional artifacts are documented, consistent, complete, exercisable, and include verification and validation evidence"
+      ],
+      "design_decision": "Use these dimensions as internal acceptance targets without claiming an ACM badge or external audit."
+    },
+    {
+      "title": "Datasheets for Datasets",
+      "url": "https://arxiv.org/abs/1803.09010",
+      "evidence_used": [
+        "dataset documentation should cover motivation, composition, collection process, recommended uses, assumptions, and limitations"
+      ],
+      "design_decision": "Include a dataset card that is completed throughout collection and maintenance."
+    }
+  ]
+}

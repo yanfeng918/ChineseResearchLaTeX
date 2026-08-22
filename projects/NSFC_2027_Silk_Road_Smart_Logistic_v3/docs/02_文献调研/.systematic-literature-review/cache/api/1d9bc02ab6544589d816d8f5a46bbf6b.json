@@ -1,0 +1,2002 @@
+{
+  "total": 2195,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "d2870f3396b4bc73f31d67bc4100ca79baff3b7e",
+      "externalIds": {
+        "ArXiv": "2603.21612",
+        "DBLP": "journals/corr/abs-2603-21612",
+        "DOI": "10.48550/arXiv.2603.21612",
+        "CorpusId": 286766686
+      },
+      "url": "https://www.semanticscholar.org/paper/d2870f3396b4bc73f31d67bc4100ca79baff3b7e",
+      "title": "Towards Multimodal Time Series Anomaly Detection with Semantic Alignment and Condensed Interaction",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.21612, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2327158336",
+          "name": "Shiyan Hu"
+        },
+        {
+          "authorId": "2188972279",
+          "name": "Jianxin Jin"
+        },
+        {
+          "authorId": "2283771366",
+          "name": "Yang Shu"
+        },
+        {
+          "authorId": "2242905889",
+          "name": "Peng Chen"
+        },
+        {
+          "authorId": "2284076479",
+          "name": "Bin Yang"
+        },
+        {
+          "authorId": "2637615",
+          "name": "Chenjuan Guo"
+        }
+      ],
+      "abstract": "Time series anomaly detection plays a critical role in many dynamic systems. Despite its importance, previous approaches have primarily relied on unimodal numerical data, overlooking the importance of complementary information from other modalities. In this paper, we propose a novel multimodal time series anomaly detection model (MindTS) that focuses on addressing two key challenges: (1) how to achieve semantically consistent alignment across heterogeneous multimodal data, and (2) how to filter out redundant modality information to enhance cross-modal interaction effectively. To address the first challenge, we propose Fine-grained Time-text Semantic Alignment. It integrates exogenous and endogenous text information through cross-view text fusion and a multimodal alignment mechanism, achieving semantically consistent alignment between time and text modalities. For the second challenge, we introduce Content Condenser Reconstruction, which filters redundant information within the aligned text modality and performs cross-modal reconstruction to enable interaction. Extensive experiments on six real-world multimodal datasets demonstrate that the proposed MindTS achieves competitive or superior results compared to existing methods. The code is available at: https://github.com/decisionintelligence/MindTS."
+    },
+    {
+      "paperId": "fc6b3ce994c60f1b85738c28ef5bee4ef2ce3b3d",
+      "externalIds": {
+        "DBLP": "conf/www/XuWLYZS26",
+        "ArXiv": "2502.17812",
+        "DOI": "10.1145/3774904.3792376",
+        "CorpusId": 276580600
+      },
+      "url": "https://www.semanticscholar.org/paper/fc6b3ce994c60f1b85738c28ef5bee4ef2ce3b3d",
+      "title": "Can Multimodal LLMs Perform Time Series Anomaly Detection?",
+      "venue": "The Web Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1145/3774904.3792376",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.17812, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2140517981",
+          "name": "Xiongxiao Xu"
+        },
+        {
+          "authorId": "2308566557",
+          "name": "Haoran Wang"
+        },
+        {
+          "authorId": "2152485663",
+          "name": "Yueqing Liang"
+        },
+        {
+          "authorId": "2294345363",
+          "name": "Philip S. Yu"
+        },
+        {
+          "authorId": "2347176644",
+          "name": "Yue Zhao"
+        },
+        {
+          "authorId": "2241470375",
+          "name": "Kai Shu"
+        }
+      ],
+      "abstract": "Time series anomaly detection (TSAD) has been a long-standing pillar problem in Web-scale systems and online infrastructures, such as service reliability monitoring, system fault diagnosis, and performance optimization. Large language models (LLMs) have demonstrated unprecedented capabilities in time series analysis, the potential of multimodal LLMs (MLLMs), particularly vision-language models, in TSAD remains largely under-explored. One natural way for humans to detect time series anomalies is through visualization and textual description. It motivates our research question: Can multimodal LLMs perform time series anomaly detection? Existing studies often oversimplify the problem by treating point-wise anomalies as special cases of range-wise ones or by aggregating point anomalies to approximate range-wise scenarios. They limit our understanding for realistic scenarios such as multi-granular anomalies and irregular time series. To address the gap, we build a VisualTimeAnomaly benchmark to comprehensively investigate zero-shot capabilities of MLLMs for TSAD, progressively from point-, range-, to variate-wise anomalies, and extends to irregular sampling conditions. Our study reveals several key insights. 1) MLLMs and traditional TSAD methods are complementary: MLLMs excel at coarse-grained anomalies while traditional methods are effective at fine-grained anomalies. 2) MLLMs are resilient to irregular time series. 3) Input time series modality changing from text to image makes information focus shift from quantitative variations to qualitative patterns while significantly reducing hallucinations. Built on the findings, we propose a MLLMs-based multi-agent framework TSAD-Agents to achieve automatic TSAD. Our framework comprises scanning, planning, detection, and checking agents that synergistically collaborate to reason, plan, and self-reflect to enable automatic TSAD. These agents adaptively invoke tools such as traditional methods and MLLMs and dynamically switch between text and image modalities to optimize detection performance."
+    },
+    {
+      "paperId": "36ba4d731b1d9a16082859f7adada9657595b1ac",
+      "externalIds": {
+        "DBLP": "journals/sensors/YiZYZC24",
+        "PubMedCentral": "11086118",
+        "DOI": "10.3390/s24092845",
+        "CorpusId": 269546609,
+        "PubMed": "38732951"
+      },
+      "url": "https://www.semanticscholar.org/paper/36ba4d731b1d9a16082859f7adada9657595b1ac",
+      "title": "Anomaly Detection for Asynchronous Multivariate Time Series of Nuclear Power Plants Using a Temporal-Spatial Transformer",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/24/9/2845/pdf?version=1714401986",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11086118, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2183654275",
+          "name": "Shuang Yi"
+        },
+        {
+          "authorId": "2268644062",
+          "name": "Sheng Zheng"
+        },
+        {
+          "authorId": "2268372803",
+          "name": "Senquan Yang"
+        },
+        {
+          "authorId": "2268320911",
+          "name": "Guangrong Zhou"
+        },
+        {
+          "authorId": "2205731192",
+          "name": "Jiajun Cai"
+        }
+      ],
+      "abstract": "Industrial process monitoring is a critical application of multivariate time-series (MTS) anomaly detection, especially crucial for safety-critical systems such as nuclear power plants (NPPs). However, some current data-driven process monitoring approaches may not fully capitalize on the temporal-spatial correlations inherent in operational MTS data. Particularly, asynchronous time-lagged correlations may exist among variables in actual NPPs, which further complicates this challenge. In this work, a reconstruction-based MTS anomaly detection approach based on a temporal-spatial transformer is proposed. It employs a two-stage temporal-spatial attention mechanism combined with a multi-scale strategy to learn the dependencies within normal operational data at various scales, thereby facilitating the extraction of temporal-spatial correlations from asynchronous MTS. Experiments on simulated datasets and real NPP datasets demonstrate that the proposed model possesses stronger feature learning capabilities, as evidenced by its improved performance in signal reconstruction and anomaly detection for asynchronous MTS data. Moreover, the proposed TS-Trans model enables earlier detection of anomalous events, which holds significant importance for enhancing operational safety and reducing potential losses in NPPs."
+    },
+    {
+      "paperId": "dc3a8c26e1b485aaf820a9bf2bb95c8537b883b0",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2506-17457",
+        "ArXiv": "2506.17457",
+        "DOI": "10.48550/arXiv.2506.17457",
+        "CorpusId": 280000655
+      },
+      "url": "https://www.semanticscholar.org/paper/dc3a8c26e1b485aaf820a9bf2bb95c8537b883b0",
+      "title": "When Every Millisecond Counts: Real-Time Anomaly Detection via the Multimodal Asynchronous Hybrid Network",
+      "venue": "International Conference on Machine Learning",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.17457, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2370942595",
+          "name": "Dong Xiao"
+        },
+        {
+          "authorId": "1745485",
+          "name": "Guangyao Chen"
+        },
+        {
+          "authorId": "2200852",
+          "name": "Peixi Peng"
+        },
+        {
+          "authorId": "121240526",
+          "name": "Yangru Huang"
+        },
+        {
+          "authorId": "151469503",
+          "name": "Yifan Zhao"
+        },
+        {
+          "authorId": "2397567095",
+          "name": "Yongxing Dai"
+        },
+        {
+          "authorId": "2258424723",
+          "name": "Yonghong Tian"
+        }
+      ],
+      "abstract": "Anomaly detection is essential for the safety and reliability of autonomous driving systems. Current methods often focus on detection accuracy but neglect response time, which is critical in time-sensitive driving scenarios. In this paper, we introduce real-time anomaly detection for autonomous driving, prioritizing both minimal response time and high accuracy. We propose a novel multimodal asynchronous hybrid network that combines event streams from event cameras with image data from RGB cameras. Our network utilizes the high temporal resolution of event cameras through an asynchronous Graph Neural Network and integrates it with spatial features extracted by a CNN from RGB images. This combination effectively captures both the temporal dynamics and spatial details of the driving environment, enabling swift and precise anomaly detection. Extensive experiments on benchmark datasets show that our approach outperforms existing methods in both accuracy and response time, achieving millisecond-level real-time performance."
+    },
+    {
+      "paperId": "1b0ef4afadc616dd0c18fb4e9b8aae1945970a6a",
+      "externalIds": {
+        "DBLP": "conf/icca/ZhuDZYC22",
+        "DOI": "10.1109/icca54724.2022.9831885",
+        "CorpusId": 251083747
+      },
+      "url": "https://www.semanticscholar.org/paper/1b0ef4afadc616dd0c18fb4e9b8aae1945970a6a",
+      "title": "Gaussian Mixture Variational Autoencoder with Whitening Score for Multimodal Time Series Anomaly Detection",
+      "venue": "2022 IEEE 17th International Conference on Control & Automation (ICCA)",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/icca54724.2022.9831885?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/icca54724.2022.9831885, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2108678212",
+          "name": "Jiaqi Zhu"
+        },
+        {
+          "authorId": "144688691",
+          "name": "Fang Deng"
+        },
+        {
+          "authorId": "46508951",
+          "name": "Jiachen Zhao"
+        },
+        {
+          "authorId": "2031484511",
+          "name": "Ziman Ye"
+        },
+        {
+          "authorId": "48080171",
+          "name": "Jie Chen"
+        }
+      ],
+      "abstract": "Time series anomaly detection has attracted great attention due to its widespread existence in real life. With the increasing development and advancement of deep learning, many unsupervised deep learning methods have been proposed for time series anomaly detection since labeling time series is prohibitively expensive. In this paper, we propose an unsupervised anomaly detection method: Gaussian Mixture Variational Autoencoder with Whitening Distance Anomaly Score (WGVAE). Concretely, we employ an LSTM-based variational autoencoder to capture the long-term dependence of time series and learn the low-dimensional feature representation and distribution, in which the Gaussian mixture prior are used to characterize multimodal time series. Further, whitening distance anomaly scores are used to make the multidimensional time series independently and identically distributed among each dimension, which combines the distribution characteristics of the samples to measure the degree of outliers. When the anomaly score is below the threshold, the sample is detected as anomalous. Finally, comprehensive experiments are given to verify the effectiveness of our method."
+    },
+    {
+      "paperId": "ab016afbd768e4664fa940fb2f4bb4540efb228f",
+      "externalIds": {
+        "DBLP": "conf/bigdataconf/SeokH25",
+        "DOI": "10.1109/BigData66926.2025.11402523",
+        "CorpusId": 286329579
+      },
+      "url": "https://www.semanticscholar.org/paper/ab016afbd768e4664fa940fb2f4bb4540efb228f",
+      "title": "MAD: Multimodal Framework for Adaptive Time-Series Anomaly Detection",
+      "venue": "BigData Congress [Services Society]",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData66926.2025.11402523?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData66926.2025.11402523, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2208417629",
+          "name": "J. Seok"
+        },
+        {
+          "authorId": "2294367075",
+          "name": "Wook-Shin Han"
+        }
+      ],
+      "abstract": "Pre-trained time-series anomaly detector TSPulse relies on multiple specialized heads, yet picks a single static head per dataset, which is less effective for diverse series and infeasible on unseen datasets. We propose MAD, a two-stage framework that (i) performs selective dimensionality reduction, using bestchannel selection when a consistent channel scheme and a small tuning set exist or PCA otherwise, and (ii) uses a Large Multimodal Model (LMM) to visually select the most appropriate head per channel with a few-shot, dataset-agnostic prompt. On the TSB-AD-M benchmark, MAD attains a mean VUS-PR of 0.437, improving over TSPulse (ZS 0.361) and xLSTMAD (0.37) without gradient-based training, while remaining competitive with a static triangulation rule (0.442) that presupposes labeled tuning data and dataset identity. Ablations show the reduction stage is essential for practicality, cutting runtime by $>93 \\%$ and API cost by $>94 \\%$ relative to scoring every channel. These results indicate that visual, dataset-agnostic head selection is a robust alternative to static rules, especially when prior dataset knowledge is unavailable. The source code is available at https://github.com/seokjeongeum/MAD."
+    },
+    {
+      "paperId": "f29a096dbb339fe5e5de54b177f71f765a93616c",
+      "externalIds": {
+        "DBLP": "conf/icmcs/LiuHJZJWL25",
+        "DOI": "10.1109/ICME59968.2025.11210144",
+        "CorpusId": 282611136
+      },
+      "url": "https://www.semanticscholar.org/paper/f29a096dbb339fe5e5de54b177f71f765a93616c",
+      "title": "AAAD: Asynchronous Inter-Variable Relationship-Aware Anomaly Detection for Multivariate Time Series",
+      "venue": "IEEE International Conference on Multimedia and Expo",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICME59968.2025.11210144?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICME59968.2025.11210144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2305457095",
+          "name": "Hongyi Liu"
+        },
+        {
+          "authorId": "2217880766",
+          "name": "Xiaosong Huang"
+        },
+        {
+          "authorId": "2305360009",
+          "name": "Mengxi Jia"
+        },
+        {
+          "authorId": "2306121651",
+          "name": "Lingzhe Zhang"
+        },
+        {
+          "authorId": "2242950960",
+          "name": "Tong Jia"
+        },
+        {
+          "authorId": "2260608757",
+          "name": "Zhonghai Wu"
+        },
+        {
+          "authorId": "2243918738",
+          "name": "Ying Li"
+        }
+      ],
+      "abstract": "Anomaly detection in multivariate time series (MTS) plays a crucial role in various domains, particularly in multimedia. While significant progress has been made in modeling normal data patterns and detecting anomalies based on deviations, existing methods face challenges in capturing complex inter-variable relationships, particularly in the presence of asynchronous dependencies. To address the challenges of detecting anomalies in MTS with complex inter-variable relationships, we propose an asynchronous inter-variable relationship-aware anomaly detection method. This approach simultaneously extracts both synchronous and asynchronous feature pairs between variables and leverages attention mechanisms to automatically learn unified inter-variable relationships across these dependencies. Additionally, we utilize a memory network to store and dynamically update the normal patterns of inter-variable relationships, computing anomaly scores based on deviations in these relationships. Extensive experiments demonstrate that our method outperforms existing baseline approaches, achieving an average F1 score of 97.05% across five benchmark datasets. Ablation studies further validate the effectiveness of each component of our method."
+    },
+    {
+      "paperId": "fd831b2891b84dd13ce31d8acce272496f01d2fe",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2024.3480133",
+        "CorpusId": 273524074
+      },
+      "url": "https://www.semanticscholar.org/paper/fd831b2891b84dd13ce31d8acce272496f01d2fe",
+      "title": "ExTAD: Embedding Exchange Inspired Time Series Anomaly Detection With Modal Consistency",
+      "venue": "IEEE Sensors Journal",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2024.3480133?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2024.3480133, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2318577943",
+          "name": "Han Liu"
+        },
+        {
+          "authorId": "2239943528",
+          "name": "Liang Xi"
+        },
+        {
+          "authorId": "2360085217",
+          "name": "Minghao Gu"
+        },
+        {
+          "authorId": "2221050758",
+          "name": "Sizhe Huang"
+        },
+        {
+          "authorId": "2327134421",
+          "name": "Chaoyang Sheng"
+        },
+        {
+          "authorId": "2854772",
+          "name": "Fengbin Zhang"
+        }
+      ],
+      "abstract": "Comprehensive learning of temporal representations is crucial for time series anomaly detection (TSAD). Frequency domain analysis has been proven to be an effective strategy for detecting diverse patterns of anomalies. However, existing methods ignore the exploration of complementary information of modalities and the anomaly misjudgments caused by time-frequency distribution shifts. In this article, we propose Embedding exchange-inspired unsupervised Time-series Anomaly Detection (ExTAD) with modal consistency to learn multimodal representations that improve detection performance. Specifically, we employ a weight-sharing dual-autoencoder (dual-AE) to extract the time-frequency embedding. Then, embedding exchange is used to learn robust perturbation-invariant representations for mining multimodal complementary information. Furthermore, we design a modal consistency strategy to align time-frequency representations to a unified scale, alleviating anomaly misjudgments caused by distribution shifts. Finally, we combine modal consistency loss and reconstruction errors to perform time series anomaly detection tasks. Experimental results on six benchmark datasets show that ExTAD achieves state-of-the-art performance compared to existing methods."
+    },
+    {
+      "paperId": "c153db5649a8fdcff6249e157a0274618a51ba15",
+      "externalIds": {
+        "DOI": "10.1109/ICSECE65727.2025.11256903",
+        "CorpusId": 283471158
+      },
+      "url": "https://www.semanticscholar.org/paper/c153db5649a8fdcff6249e157a0274618a51ba15",
+      "title": "Research on electrical equipment state time series modeling and anomaly detection based on Transformer",
+      "venue": "2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSECE65727.2025.11256903?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSECE65727.2025.11256903, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2396662686",
+          "name": "Bo Jiang"
+        },
+        {
+          "authorId": "2397445875",
+          "name": "Wenyun Zhou"
+        },
+        {
+          "authorId": "2395921495",
+          "name": "Endong Xu"
+        },
+        {
+          "authorId": "2397521480",
+          "name": "Ziqing Li"
+        },
+        {
+          "authorId": "2396099843",
+          "name": "Wenxue Wang"
+        },
+        {
+          "authorId": "49768107",
+          "name": "S. Song"
+        }
+      ],
+      "abstract": "This study proposes a time series modeling and anomaly detection method based on the Transformer architecture. Firstly, the evolution characteristics of electrical equipment state time series data are analyzed, and then the input feature sequence suitable for state modeling is constructed by combining multivariate embedding, position encoding and sliding window strategy. In the model design, a multi-head attention mechanism and a layer normalization structure are introduced to enhance the model's ability to model long-range dependencies and asynchronous disturbances; through residual discrimination and dynamic adjustment of thresholds, accurate detection of multiple types of abnormal states is achieved. The experimental part was verified based on the TimeSeriesBench dataset released in 2024. The results showed that this method exhibited excellent detection accuracy and robustness in scenarios such as sudden anomalies and slowly changing trend shifts. Compared with the mainstream models, the proposed method has significant advantages in F1 value, AUC and detection delay, and has strong engineering applicability and promotion potential."
+    },
+    {
+      "paperId": "ec94e049c1de035ceba8e45ae434c2a78523eab2",
+      "externalIds": {
+        "DBLP": "journals/tim/HeGLXS25",
+        "DOI": "10.1109/TIM.2024.3493890",
+        "CorpusId": 274188414
+      },
+      "url": "https://www.semanticscholar.org/paper/ec94e049c1de035ceba8e45ae434c2a78523eab2",
+      "title": "Multivariate Time Series Anomaly Detection Based on Multiple Spatiotemporal Graph Convolution",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2024.3493890?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2024.3493890, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2253048614",
+          "name": "Shiming He"
+        },
+        {
+          "authorId": "2331840193",
+          "name": "Qingqing Guo"
+        },
+        {
+          "authorId": "2303409360",
+          "name": "Genxin Li"
+        },
+        {
+          "authorId": "2264974331",
+          "name": "Kun Xie"
+        },
+        {
+          "authorId": "9198774",
+          "name": "P. Sharma"
+        }
+      ],
+      "abstract": "Multivariate time series anomaly detection (MTSAD) plays a crucial role in the Internet of Things (IoT), identifying device malfunction or system attacks. Graph neural networks (GNNs) are widely applied in MTSAD to capture the spatial features among sensors. However, GNN requires an explicit graph structure and cannot work when spatial relationships are lacking or sensor dependencies are unknown. Hence, graph structure learning (GSL) emerges as a promising solution, which learns graph structures with the downstream tasks without requiring spatial relationships. However, a general cascade effect occurs in the industrial scene. Moreover, an attack event changes sensor data sequentially instead of simultaneously due to the multiple serial process that occurs (i.e., delay correlation). Existing GSL-based anomaly detection methods fail to tackle delay correlation and focus on low prediction errors. However, the low prediction error distribution is always dispersed, making it difficult to differentiate between normal and abnormal samples based on a threshold. Therefore, we propose an MTSAD based on multiple spatiotemporal graph convolution (MSTGAD). MSTGAD uses dynamic time warping (DTW) distance as prior knowledge instead of Euclidean, guiding graph learning to capture delay correlations effectively. MSTGAD designs an ensemble predictor, which uses two subpredictors with a shared and learnable graph to ensure high prediction accuracy while maintaining stable anomaly scores. Furthermore, we conduct extensive experiments to evaluate the MSTGAD method’s effectiveness. Our method outperforms existing GSL-based methods in anomaly detection on four publicly available real-world datasets, demonstrating our proposed approach’s effectiveness. Compared with the best GSL-based method, MSTGAD achieves an additional 0.83% improvement on average."
+    },
+    {
+      "paperId": "e5edb7b186906d7411f782ec05a92e529dcf8c9f",
+      "externalIds": {
+        "DOI": "10.1109/IACIS61494.2024.10721738",
+        "CorpusId": 273591443
+      },
+      "url": "https://www.semanticscholar.org/paper/e5edb7b186906d7411f782ec05a92e529dcf8c9f",
+      "title": "Time Series Anomaly Detection and Prediction Model Integrating Multimodal Data",
+      "venue": "2024 International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS)",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/IACIS61494.2024.10721738?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/IACIS61494.2024.10721738, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2327903112",
+          "name": "Zhenghui Zhao"
+        },
+        {
+          "authorId": "2327634472",
+          "name": "Miao Chen"
+        }
+      ],
+      "abstract": "Time series anomaly detection in multimodal data is crucial for data analysis and mining. However, existing multimodal detection methods mainly focus on single-mode data and fail to effectively explore the distribution characteristics of multimodal data in multimodal space, the adaptive fusion of multimodal features, and the extraction of spatiotemporal dependencies between multimodal features. To address the above issues, this project aims to study a multi-modal feature adaptive fusion method based on one-dimensional convolutional networks, in order to solve the problem of adaptive fusion between multi-source temporal and multi-modal features. For the fused multimodal features, a spatiotemporal attention model can be established that includes both temporal and spatial attention dimensions, and its spatiotemporal correlation can be extracted to obtain spatiotemporal attention vectors, thereby obtaining prediction results. Through testing on three public datasets, the results show that the time series anomaly detection method based on multimodal feature fusion has significant advantages."
+    },
+    {
+      "paperId": "01f4e9711c2dbc8ab0662aee6dde368c68b04026",
+      "externalIds": {
+        "DBLP": "journals/tits/ZhangYHFTT24",
+        "DOI": "10.1109/TITS.2024.3415435",
+        "CorpusId": 272342078
+      },
+      "url": "https://www.semanticscholar.org/paper/01f4e9711c2dbc8ab0662aee6dde368c68b04026",
+      "title": "Time Series Anomaly Detection in Vehicle Sensors Using Self-Attention Mechanisms",
+      "venue": "IEEE transactions on intelligent transportation systems (Print)",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/tits.2024.3415435",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TITS.2024.3415435?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TITS.2024.3415435, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2320810780",
+          "name": "Ze Zhang"
+        },
+        {
+          "authorId": "2319384648",
+          "name": "Yue Yao"
+        },
+        {
+          "authorId": "2344608",
+          "name": "W. Hutabarat"
+        },
+        {
+          "authorId": "145756878",
+          "name": "Michael Farnsworth"
+        },
+        {
+          "authorId": "47849434",
+          "name": "D. Tiwari"
+        },
+        {
+          "authorId": "2275846045",
+          "name": "Ashutosh Tiwari"
+        }
+      ],
+      "abstract": "Connected autonomous vehicles (CAVs) offer significant enhancements in coordinated traffic and safety through real-time vehicle-to-vehicle or vehicle-to-infrastructure communications, establishing them as a potent tool for augmenting driving tasks. However, the extensive information-sharing framework inherent in CAVs amplifies the risk associated with sensor anomalies, posing challenges to the reliability and security of the system. Responding to this timely research challenge, this study proposes a novel anomaly detection method, namely Dual-channel Self-attention-based Convolutional Neural Network (DSA-CNN) for multivariate time series data. Through the introduction of the Dual-channel Self-attention Mechanism, DSA-CNN can progressively and autonomously extract spatiotemporal features from multivariate time series data. The proposed method was tested under a variety of common threatening sensor anomaly patterns of CAVs summarised in the literature, and evaluated under multiple different performance metrics. The results demonstrate its advantages in detecting minor anomalies and enhancing sensitivity, outperforming previously reported methods in the literature. Across all experimental scenarios, an average sensitivity improvement of 2.53% was observed, complemented by an average F1 score increase of 1.47%. In CAV settings, maintaining high sensitivity to ensure fewer undetected anomalies, alongside the ability to detect small anomalies, can be more important for the robustness and safety measures of CAV systems."
+    },
+    {
+      "paperId": "e3b0758c85aafaf084dda1d7614e9e5706fb04de",
+      "externalIds": {
+        "DOI": "10.3390/app15052861",
+        "CorpusId": 276856407
+      },
+      "url": "https://www.semanticscholar.org/paper/e3b0758c85aafaf084dda1d7614e9e5706fb04de",
+      "title": "Multivariate Time Series Anomaly Detection Using Working Memory Connections in Bi-Directional Long Short-Term Memory Autoencoder Network",
+      "venue": "Applied Sciences",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2076-3417/15/5/2861/pdf?version=1741269153",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app15052861?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app15052861, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2376147911",
+          "name": "X. Ding"
+        },
+        {
+          "authorId": "2390405969",
+          "name": "Jingnan Wang"
+        },
+        {
+          "authorId": "2271579351",
+          "name": "Yiqi Liu"
+        },
+        {
+          "authorId": "2349027216",
+          "name": "Uk Jung"
+        }
+      ],
+      "abstract": "“Normal” events are characterized as data patterns or behaviors that align with expected operational conditions, while “anomalies” are defined as deviations from these patterns, potentially signaling faults, errors, or unexpected system behaviors. The timely and accurate detection of anomalies plays a critical role in domains such as industrial manufacturing, financial transactions, and other related domains. In the context of Industry 4.0, the proliferation of sensors has resulted in a massive influx of time series data, making the anomaly detection of such multivariate time series data a popular research area. Long Short-Term Memory (LSTM) has been extensively recognized as an effective framework for modeling and processing time series data. Previous studies have combined Bi-directional Long Short-Term Memory (Bi-LSTM) architecture with Autoencoder (AE) for multivariate time series anomaly detection. However, due to the inherent limitations of LSTM, Bi-LSTM-AE still cannot overcome these drawbacks. Our study replaces the LSTM units within the Bi-LSTM-AE architecture of existing research with Working Memory Connections for LSTM units and demonstrates that this architecture performs better in the field of multivariate time series anomaly detection compared to using standard LSTM units. The model we proposed not only outperforms the baseline models but also demonstrates greater robustness across various scenarios."
+    },
+    {
+      "paperId": "b13bd528e99c189a328238123e24bd82d1b00fd8",
+      "externalIds": {
+        "DBLP": "journals/jiis/GaoSBC25",
+        "DOI": "10.1007/s10844-025-00918-8",
+        "CorpusId": 275453567
+      },
+      "url": "https://www.semanticscholar.org/paper/b13bd528e99c189a328238123e24bd82d1b00fd8",
+      "title": "EST transformer: enhanced spatiotemporal representation learning for time series anomaly detection",
+      "venue": "Journal of Intelligence and Information Systems",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10844-025-00918-8?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10844-025-00918-8, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268024251",
+          "name": "Yao Gao"
+        },
+        {
+          "authorId": "2333274524",
+          "name": "Rui Su"
+        },
+        {
+          "authorId": "2163652",
+          "name": "Xianye Ben"
+        },
+        {
+          "authorId": "2311830980",
+          "name": "Lei Chen"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "82a4641d92605306ded4e0bbe0e049aa7c86ad38",
+      "externalIds": {
+        "PubMedCentral": "12251651",
+        "DOI": "10.3390/s25134014",
+        "CorpusId": 279728927,
+        "PubMed": "40648269"
+      },
+      "url": "https://www.semanticscholar.org/paper/82a4641d92605306ded4e0bbe0e049aa7c86ad38",
+      "title": "FedSW-TSAD: SWGAN-Based Federated Time Series Anomaly Detection",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/25/13/4014/pdf?version=1751027627",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12251651, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2350432225",
+          "name": "Xiuxian Zhang"
+        },
+        {
+          "authorId": "2271411694",
+          "name": "Hongwei Zhao"
+        },
+        {
+          "authorId": "2108238370",
+          "name": "Weishan Zhang"
+        },
+        {
+          "authorId": "2191433768",
+          "name": "Shaohua Cao"
+        },
+        {
+          "authorId": "66725426",
+          "name": "Haoyun Sun"
+        },
+        {
+          "authorId": "2275889164",
+          "name": "Baoyu Zhang"
+        }
+      ],
+      "abstract": "As distributed sensing technologies evolve, the collection of time series data is becoming increasingly decentralized, which introduces serious challenges for both model training and data privacy protection. In response to this trend, federated time series anomaly detection enables collaborative analysis across distributed sensing nodes without exposing raw data. However, federated anomaly detection experiences issues with unstable training and poor generalization due to client heterogeneity and the limited expressiveness of single-path detection methods. To address these challenges, this study proposes FedSW-TSAD, a federated time series anomaly detection method based on the Sobolev–Wasserstein GAN (SWGAN). It leverages the Sobolev–Wasserstein constraint to stabilize adversarial training and combines discriminative signals from both reconstruction and prediction modules, thereby improving robustness against diverse anomalies. In addition, FedSW-TSAD adopts a differential privacy mechanism with L2-norm-constrained noise injection, ensuring privacy in model updates under the federated setting. The experimental results determined using four real-world sensor datasets demonstrate that FedSW-TSAD outperforms existing methods by an average of 14.37% in the F1-score while also enhancing gradient privacy under the differential privacy mechanism. This highlights the practical value of FedSW-TSAD for privacy-preserving anomaly detection in sensor-based monitoring systems such as industrial IoT, remote diagnostics, and predictive maintenance."
+    },
+    {
+      "paperId": "e9e6e876376deb5b83922507aa4293d3c710b1f3",
+      "externalIds": {
+        "DBLP": "conf/ichi/KhatunBED24",
+        "ArXiv": "2407.20695",
+        "DOI": "10.1109/ICHI61247.2024.00075",
+        "CorpusId": 271543845
+      },
+      "url": "https://www.semanticscholar.org/paper/e9e6e876376deb5b83922507aa4293d3c710b1f3",
+      "title": "Time Series Anomaly Detection with CNN for Environmental Sensors in Healthcare-IoT",
+      "venue": "IEEE International Conference on Healthcare Informatics",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2407.20695",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.20695, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1576672260",
+          "name": "Mirza Akhi Khatun"
+        },
+        {
+          "authorId": "2310628542",
+          "name": "Mangolika Bhattacharya"
+        },
+        {
+          "authorId": "2030984704",
+          "name": "Ciarán Eising"
+        },
+        {
+          "authorId": "46619343",
+          "name": "L. L. Dhirani"
+        }
+      ],
+      "abstract": "This research develops a new method to detect anomalies in time series data using Convolutional Neural Net-works (CNNs) in healthcare-IoT. The proposed method creates a Distributed Denial of Service (DDoS) attack using an loT network simulator, Cooja, which emulates environmental sensors such as temperature and humidity. CNNs detect anomalies in time series data, resulting in a 92 % accuracy in identifying possible attacks."
+    },
+    {
+      "paperId": "a8eee046d67722f9d6d4aab67a67ebf87b545d91",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2024.3452088",
+        "CorpusId": 272640152
+      },
+      "url": "https://www.semanticscholar.org/paper/a8eee046d67722f9d6d4aab67a67ebf87b545d91",
+      "title": "Graph-Based Time-Series Decomposition for Multisource Sensors Anomaly Detection",
+      "venue": "IEEE Sensors Journal",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2024.3452088?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2024.3452088, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2153605494",
+          "name": "Yu Wang"
+        },
+        {
+          "authorId": "2317993806",
+          "name": "Liwei Ma"
+        },
+        {
+          "authorId": "2112103196",
+          "name": "Mingquan Zhang"
+        },
+        {
+          "authorId": "2321039909",
+          "name": "Shangjing Peng"
+        },
+        {
+          "authorId": "2200548296",
+          "name": "Yanzhuo Lin"
+        },
+        {
+          "authorId": "2321448657",
+          "name": "Junpeng Zhao"
+        }
+      ],
+      "abstract": "The detection of anomalies in multisource time-series data is crucial for the efficient operation of the Internet of Things (IoT) devices and large-scale cross-domain systems. Recent methods have primarily focused on using deep learning to model time series directly. However, these approaches often overlook intricate inherent patterns within the data. We have introduced time-series decomposition into anomaly detection, allowing algorithms to explicitly uncover underlying periodicities. Additionally, to address the lead-lag effects among multiple sensors, we integrated the dynamic time warping (DTW) algorithm into the construction of graph neural networks. This integration enables the efficient and accurate construction of adjacency matrices based on sensor similarity. Furthermore, by leveraging graph networks for spatiotemporal modeling of time series and employing a joint loss function, our approach achieves greater accuracy and stability in anomaly detection performance. Comparative analysis with multiple datasets and algorithms demonstrates the consistent superiority and stability of our method."
+    },
+    {
+      "paperId": "19d70fa72dddbf527c0902a94798c71e66ab3cd2",
+      "externalIds": {
+        "DOI": "10.3390/buildings14072223",
+        "CorpusId": 271373424
+      },
+      "url": "https://www.semanticscholar.org/paper/19d70fa72dddbf527c0902a94798c71e66ab3cd2",
+      "title": "Enhancing Data Quality Management in Structural Health Monitoring through Irregular Time-Series Data Anomaly Detection Using IoT Sensors",
+      "venue": "Buildings",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/buildings14072223",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/buildings14072223?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/buildings14072223, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2264656139",
+          "name": "Junhwi Cho"
+        },
+        {
+          "authorId": "2257436350",
+          "name": "K. Lim"
+        },
+        {
+          "authorId": "2275527735",
+          "name": "Jonggun Kim"
+        },
+        {
+          "authorId": "2266602445",
+          "name": "Yongchul Shin"
+        },
+        {
+          "authorId": "2248976",
+          "name": "Y. Park"
+        },
+        {
+          "authorId": "49760377",
+          "name": "Jaeheum Yeon"
+        }
+      ],
+      "abstract": "The importance of monitoring in assessing structural safety and durability continues to grow. With recent technological advancements, Internet of Things (IoT) sensors have garnered attention for their complex scalability and varied detection capabilities, becoming essential devices for monitoring. However, during the data collection process of IoT sensors, anomalies arise due to network instability, sensor noise, and malfunctions, degrading data quality and compromising monitoring system reliability. In this study, Interquartile Range (IQR), Long Short-Term Memory Autoencoder (LSTM-AE), and time-series decomposition were employed for anomaly detection in Structural Health Monitoring (SHM) processes. IQR and LSTM-AE produce irregular patterns; however, time-series decomposition effectively detects such anomalies. In road monitoring influenced by weather and traffic, the time-series decomposition approach is expected to play a crucial role in enhancing monitoring accuracy."
+    },
+    {
+      "paperId": "06d26ef71caa1d1f41c2551781e20ed1ddfef824",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2025.3543835",
+        "CorpusId": 276657674
+      },
+      "url": "https://www.semanticscholar.org/paper/06d26ef71caa1d1f41c2551781e20ed1ddfef824",
+      "title": "AD2T: Multivariate Time-Series Anomaly Detection With Association Discrepancy Dual-Decoder Transformer",
+      "venue": "IEEE Sensors Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2025.3543835?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2025.3543835, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2329143245",
+          "name": "Zezhong Li"
+        },
+        {
+          "authorId": "2283870717",
+          "name": "Wei Guo"
+        },
+        {
+          "authorId": "2030731809",
+          "name": "Jianpeng An"
+        },
+        {
+          "authorId": "2291070530",
+          "name": "Qi Wang"
+        },
+        {
+          "authorId": "2347627959",
+          "name": "Yingchun Mei"
+        },
+        {
+          "authorId": "2303135155",
+          "name": "Rongshun Juan"
+        },
+        {
+          "authorId": "2311376835",
+          "name": "Tianshu Wang"
+        },
+        {
+          "authorId": "2347853296",
+          "name": "Yang Li"
+        },
+        {
+          "authorId": "2153265517",
+          "name": "Zhongke Gao"
+        }
+      ],
+      "abstract": "Multivariate time-series (MTS) anomaly detection is of great importance in both condition monitoring and malfunction identification in multisensor systems. Current MTS anomaly detection approaches are typically based on reconstruction, prediction, or association discrepancy learning algorithms. These methods detect anomalies by learning hidden representations of entire sequences, modeling dependencies at a single time-step level, or calculating an association-based metric inherently distinguishable between regular and deviant points. However, most existing methods typically fail to leverage all three types of models simultaneously to enhance overall performance as well as often disregard the correlations between different sensors. To address the issues above, this article proposes a novel deep learning-based unsupervised MTS anomaly detection algorithm called association discrepancy dual-decoder transformer (AD2T). AD2T employs a dual-decoder architecture to accommodate reconstruction, prediction, and association discrepancy learning tasks, thereby effectively utilizing information across these tasks to better characterize MTS data. We further develop a min-max training strategy to jointly optimize all the aforementioned tasks. Additionally, we propose a compound embedding module based on dilated causal convolution to simultaneously capture correlations in both temporal and sensor dimensions. Extensive empirical studies on five multisensor system datasets from the aerospace, server, and water treatment domains have demonstrated the superiority of our method, achieving an average improvement of 1.96% in the $F1$ -score compared to state-of-the-art (SOTA) methods."
+    },
+    {
+      "paperId": "1da7de146210d5cad5e27e7c99e90d9de998738b",
+      "externalIds": {
+        "DBLP": "journals/tim/GaoQYSHDS25",
+        "DOI": "10.1109/TIM.2024.3502890",
+        "CorpusId": 274272832
+      },
+      "url": "https://www.semanticscholar.org/paper/1da7de146210d5cad5e27e7c99e90d9de998738b",
+      "title": "Variational Graph Attention Networks With Self-Supervised Learning for Multivariate Time Series Anomaly Detection",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIM.2024.3502890?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIM.2024.3502890, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2268932307",
+          "name": "Yu Gao"
+        },
+        {
+          "authorId": "2292340538",
+          "name": "Jin Qi"
+        },
+        {
+          "authorId": "2333530963",
+          "name": "Hongjiang Ye"
+        },
+        {
+          "authorId": "2334062721",
+          "name": "Ying Sun"
+        },
+        {
+          "authorId": "2269011304",
+          "name": "Xiaoxuan Hu"
+        },
+        {
+          "authorId": "2276076101",
+          "name": "Zhenjiang Dong"
+        },
+        {
+          "authorId": "2275899481",
+          "name": "Yanfei Sun"
+        }
+      ],
+      "abstract": "Cyber-physical systems (CPSs) are multidimensional and complex systems that integrate computing, networking, and physical environment, including various sensors that can produce vast multivariate time series data. Recently, scholars have proposed many unsupervised anomaly detection methods to monitor and alarm potential faults of CPSs. However, current methods still have some limitations. First of all, it is challenging to capture spatial-temporal relationships explicitly. In the second place, the anomaly detection model based on the variational autoencoder (VAE) may not use the latent variable and often falls into a kind of collapse, which is encouraged by the Kullback–Leibler (KL) divergence term. In the end, more information about the anomalies is needed. This article proposes a novel anomaly detection method called variational graph attention networks with self-supervised learning (VGATSL). We use stacked spatial-temporal graph attention (STGAT) networks to capture the temporal and feature correlations. Next, a VAE is constructed based on bidirectional gated recurrent units (BiGRUs), and the von Mises-Fisher (vMF) distribution is used as its latent space. Indeed, this distribution places latent representation on the surface of a unit hypersphere to allow for uninformed priors, thus preventing the model collapse. Additionally, self-supervised learning is introduced to simulate abnormal behaviors and to help the model form more explicit normality boundaries. Extensive experiments on three public real-world datasets demonstrate that VGATSL outperforms the baseline methods. We also illustrate that VGATSL has superior interpretability and flexibility."
+    },
+    {
+      "paperId": "ce5284a8ae0c37ae45edb9c23d926446f6e6e444",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2025.3616395",
+        "CorpusId": 281919190
+      },
+      "url": "https://www.semanticscholar.org/paper/ce5284a8ae0c37ae45edb9c23d926446f6e6e444",
+      "title": "Time-Series Anomaly Detection for Sensor Data: Models, Metrics, and Methodologies—A Review",
+      "venue": "IEEE Sensors Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2025.3616395?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2025.3616395, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2213316182",
+          "name": "Mohamad Issam Sayyaf"
+        },
+        {
+          "authorId": "2292662201",
+          "name": "Pavel Pascacio"
+        },
+        {
+          "authorId": "2343941031",
+          "name": "Ni Zhu"
+        },
+        {
+          "authorId": "2242083806",
+          "name": "Valérie Renaudin"
+        }
+      ],
+      "abstract": "Detecting anomalies in time-series data is essential for identifying outliers and issuing early warnings of system failures in applications, such as industrial control systems (ICSs), Internet of Things (IoT), and networks or medical risks in healthcare applications. Deep learning has greatly advanced time-series anomaly detection. However, a comprehensive view of the latest architectures and their practical characteristics remains limited. This review surveys the current state of the art of 43 papers for the years 2019–2025, focusing on the most effective models (Transformers, graph neural network (GNN), and attention networks-based designs) and analyzes them through different metrics. Our analysis shows that many studies do not report essential metrics, such as parameter count, computational cost, and predictive uncertainty, all of which govern real time use on resource-constrained hardware. We also quantify the share of papers that use public datasets, highlight papers that released new public datasets, and papers that provide open-source code and now serve as community benchmarks. With the rapid proliferation of time-series anomaly detection models, researchers can struggle to choose the framework that is best suited to their own data and constraints. This article proposes a methodology-driven taxonomy. It classifies frameworks into six categories of methodologies: clustering, prediction, reconstruction, representation learning, statistical, and hybrid. The classification is based on the underlying methodology rather than the specific framework technology that is employed. For each methodology, we explain the core idea, examine the latest leading frameworks in this methodology, identify the most appropriate data types and use cases, indicate the commonly used implementation technologies, list typical application domains, and summarize its main strengths and limitations. We also discuss open research challenges to guide future work in the field."
+    },
+    {
+      "paperId": "948e78a69aceeb5398ffe90cdd685448397ba4e4",
+      "externalIds": {
+        "DBLP": "conf/aaai/JangK25",
+        "DOI": "10.1609/aaai.v39i17.33933",
+        "CorpusId": 277766717
+      },
+      "url": "https://www.semanticscholar.org/paper/948e78a69aceeb5398ffe90cdd685448397ba4e4",
+      "title": "TAIL-MIL: Time-Aware and Instance-Learnable Multiple Instance Learning for Multivariate Time Series Anomaly Detection",
+      "venue": "AAAI Conference on Artificial Intelligence",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/33933/36088",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1609/aaai.v39i17.33933?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1609/aaai.v39i17.33933, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2213805365",
+          "name": "Jaeseok Jang"
+        },
+        {
+          "authorId": "2343828460",
+          "name": "Hyuk-Yoon Kwon"
+        }
+      ],
+      "abstract": "This study addresses the challenge of detecting anomalies in multivariate time series data. Considering a bag (e.g., multi-sensor data) consisting of two-dimensional spaces of time points and multivariate instances (e.g., individual sensors), we aim to detect anomalies at both the bag and instance level with a unified model. To circumvent the practical difficulties of labeling at the instance level in such spaces, we adopt a multiple instance learning (MIL)-based approach, which enables learning at both the bag- and instance- levels using only the bag-level labels. In this study, we introduce time-aware and instance-learnable MIL (simply, TAIL-MIL). We propose two specialized attention mechanisms designed to effectively capture the relationships between different types of instances. We innovatively integrate these attention mechanisms with conjunctive pooling applied to the two-dimensional structure at different levels (i.e., bag- and instance-level), enabling TAIL-MIL to effectively pinpoint both the timing and causative multivariate factors of anomalies. We provide theoretical evidence demonstrating TAIL-MIL's efficacy in detecting instances with two-dimensional structures. Furthermore, we empirically validate the superior performance of TAIL-MIL over the state-of-the-art MIL methods and multivariate time-series anomaly detection methods."
+    },
+    {
+      "paperId": "5901e9ca2b84212738362019e57de08f971bfd8c",
+      "externalIds": {
+        "PubMedCentral": "12031051",
+        "DOI": "10.3390/s25082510",
+        "CorpusId": 277860145,
+        "PubMed": "40285200"
+      },
+      "url": "https://www.semanticscholar.org/paper/5901e9ca2b84212738362019e57de08f971bfd8c",
+      "title": "Reevaluating the Potential of a Vanilla Transformer Encoder for Unsupervised Time Series Anomaly Detection in Sensor Applications",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/25/8/2510/pdf?version=1744808335",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12031051, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "48020914",
+          "name": "C. Han"
+        },
+        {
+          "authorId": "2271645609",
+          "name": "Hyungwon Kim"
+        },
+        {
+          "authorId": "2161659179",
+          "name": "K. Lee"
+        }
+      ],
+      "abstract": "Sensors generate extensive time series data across various domains, and effective methods for detecting anomalies in such data are still in high demand. Unsupervised time series anomaly detection provides practical approaches to addressing the challenges of collecting anomalous data. For effective anomaly detection, a range of deep-learning-based models have been explored to handle temporal patterns inherent in time series data. In particular, Transformer encoders have gained significant attention due to their ability to efficiently capture temporal dependencies. Various studies have attempted the architectural improvements of Transformer encoders to address the inherent complexity of time series data analysis. Unlike the previous studies, this work demonstrates that a vanilla Transformer encoder-based framework remains yet a competitive model for time series anomaly detection. Instead of architectural modification of the Transformer encoder, we identify key design choices and propose an asymmetric autoencoder-based framework incorporating those design choices with a vanilla Transformer encoder and a linear layer decoder. The proposed framework has been evaluated on a range of unsupervised time series anomaly detection benchmarks, and the experimental results show that it achieves performance that is either superior or competitive compared to state-of-the-art models."
+    },
+    {
+      "paperId": "da99c08a9c3d6bf3e371cd0c68aa314a03baa7bf",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2602-08868",
+        "ArXiv": "2602.08868",
+        "DOI": "10.48550/arXiv.2602.08868",
+        "CorpusId": 285451602
+      },
+      "url": "https://www.semanticscholar.org/paper/da99c08a9c3d6bf3e371cd0c68aa314a03baa7bf",
+      "title": "AnomSeer: Reinforcing Multimodal LLMs to Reason for Time-Series Anomaly Detection",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.08868, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2239916075",
+          "name": "Junru Zhang"
+        },
+        {
+          "authorId": "2349401037",
+          "name": "Lang Feng"
+        },
+        {
+          "authorId": "2395958340",
+          "name": "Haoran Shi"
+        },
+        {
+          "authorId": "2290239663",
+          "name": "Xu Guo"
+        },
+        {
+          "authorId": "2285992664",
+          "name": "Han Yu"
+        },
+        {
+          "authorId": "2243623125",
+          "name": "Yabo Dong"
+        },
+        {
+          "authorId": "2305566285",
+          "name": "Duanqing Xu"
+        }
+      ],
+      "abstract": "Time-series anomaly detection (TSAD) with multimodal large language models (MLLMs) is an emerging area, yet a persistent challenge remains: MLLMs rely on coarse time-series heuristics but struggle with multi-dimensional, detailed reasoning, which is vital for understanding complex time-series data. We present AnomSeer to address this by reinforcing the model to ground its reasoning in precise, structural details of time series, unifying anomaly classification, localization, and explanation. At its core, an expert chain-of-thought trace is generated to provide a verifiable, fine-grained reasoning from classical analyses (e.g., statistical measures, frequency transforms). Building on this, we propose a novel time-series grounded policy optimization (TimerPO) that incorporates two additional components beyond standard reinforcement learning: a time-series grounded advantage based on optimal transport and an orthogonal projection to ensure this auxiliary granular signal does not interfere with the primary detection objective. Across diverse anomaly scenarios, AnomSeer, with Qwen2.5-VL-3B/7B-Instruct, outperforms larger commercial baselines (e.g., GPT-4o) in classification and localization accuracy, particularly on point- and frequency-driven exceptions. Moreover, it produces plausible time-series reasoning traces that support its conclusions."
+    },
+    {
+      "paperId": "6e5268382bf55a4d8baf95166cf5d34553952945",
+      "externalIds": {
+        "DBLP": "journals/tase/PengHLLLGLC26",
+        "DOI": "10.1109/TASE.2026.3683936",
+        "CorpusId": 287671325
+      },
+      "url": "https://www.semanticscholar.org/paper/6e5268382bf55a4d8baf95166cf5d34553952945",
+      "title": "MFAD: A Multimodal Feature Fusion-Enhanced Time Series Anomaly Detection Framework in Industrial Cyber-Physical Systems",
+      "venue": "IEEE Transactions on Automation Science and Engineering",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TASE.2026.3683936?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TASE.2026.3683936, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2346518748",
+          "name": "Silin Peng"
+        },
+        {
+          "authorId": "2347303606",
+          "name": "Yu Han"
+        },
+        {
+          "authorId": "2366309590",
+          "name": "Lichen Liu"
+        },
+        {
+          "authorId": "2238714348",
+          "name": "Jinlong Li"
+        },
+        {
+          "authorId": "2407415122",
+          "name": "Ruonan Li"
+        },
+        {
+          "authorId": "2257017432",
+          "name": "Zhaoquan Gu"
+        },
+        {
+          "authorId": "2262104790",
+          "name": "Jie Liu"
+        },
+        {
+          "authorId": "2295543750",
+          "name": "Xiao-Xia Chu"
+        }
+      ],
+      "abstract": "Industrial Cyber-Physical Systems (ICPS) are increasingly vulnerable to sophisticated attacks and operational disturbances that induce subtle and hard-to-detect anomalies, particularly in industrial edge environments. Existing anomaly detection methods often rely on sufficient labeled data and involve excessive computational overhead, hindering real-time detection and lightweight deployment. To address these challenges, we propose a Multimodal Feature fusion-enhanced time series Anomaly Detection framework (MFAD) in ICPS. MFAD enhances the representation of subtle anomalies by jointly modeling temporal dynamics and industrial characteristics through a unified multimodal feature fusion mechanism. Moreover, MFAD adopts a three-stage detection strategy with adaptive thresholding, which further improves robustness under varying operating conditions, while its lightweight overall architecture supports edge deployment. In addition, we provide the Industrial Gas Cyber-Physical System (IGCPS) dataset collected from real-world industrial operations. Experiments on ICPS benchmark datasets of varying scales, including IGCPS, PUMP, WADI, and SWaT, demonstrate that MFAD achieves an F1 score exceeding 96.7% with efficient resource utilization, validating its effectiveness for real-time detection and lightweight deployment in resource-constrained industrial edge environments. Note to Practitioners—This paper is motivated by the increasing need for reliable and efficient anomaly detection in Industrial Cyber-Physical Systems (ICPS), particularly deployed in resource-constrained industrial edge environments. Existing approaches often treat temporal and industrial features separately, rely on sufficient labeled data, and require substantial computational resources, which limits their applicability in real-world industrial settings. In contrast, the proposed MFAD provides a lightweight and practical solution that integrates multimodal feature fusion with robust semi-supervised detection mechanisms to effectively capture subtle anomalies in time series industrial data. The framework is designed with deployment feasibility that it offers strong detection accuracy, low latency, and efficient resource consumption suitable for industrial edge devices. The methods presented here can inform practitioners seeking to enhance the reliability and real-time performance of ICPS anomaly detection systems. Future extensions may focus on expanding MFAD for broader online industrial applications, integrating it with more edge platforms, and enabling large-scale distributed deployment."
+    },
+    {
+      "paperId": "c4456d4cf311bc663094fddd16592c9a64b786d1",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2409-17841",
+        "ArXiv": "2409.17841",
+        "DOI": "10.5281/zenodo.13885631",
+        "CorpusId": 272911003
+      },
+      "url": "https://www.semanticscholar.org/paper/c4456d4cf311bc663094fddd16592c9a64b786d1",
+      "title": "Machine Learning-based vs Deep Learning-based Anomaly Detection in Multivariate Time Series for Spacecraft Attitude Sensors",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.17841, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2325900313",
+          "name": "Riccardo Gallon"
+        },
+        {
+          "authorId": "2324348848",
+          "name": "Fabian Schiemenz"
+        },
+        {
+          "authorId": "2343552972",
+          "name": "A. Krstova"
+        },
+        {
+          "authorId": "3408979",
+          "name": "A. Menicucci"
+        },
+        {
+          "authorId": "2065647740",
+          "name": "E. Gill"
+        }
+      ],
+      "abstract": "In the framework of Failure Detection, Isolation and Recovery (FDIR) on spacecraft, new AI-based approaches are emerging in the state of the art to overcome the limitations commonly imposed by traditional threshold checking. The present research aims at characterizing two different approaches to the problem of stuck values detection in multivariate time series coming from spacecraft attitude sensors. The analysis reveals the performance differences in the two approaches, while commenting on their interpretability and generalization to different scenarios."
+    },
+    {
+      "paperId": "6b25693450284ddec7074ffee9ab35163fd1837b",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2501-08628",
+        "ArXiv": "2501.08628",
+        "DOI": "10.1109/CIES64955.2025.11007637",
+        "CorpusId": 275544753
+      },
+      "url": "https://www.semanticscholar.org/paper/6b25693450284ddec7074ffee9ab35163fd1837b",
+      "title": "Transformer-Based Multivariate Time Series Anomaly Localization",
+      "venue": "IEEE Symposium on Computational Intelligence for Engineering Solutions",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.08628, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2340225732",
+          "name": "Charalampos Shimillas"
+        },
+        {
+          "authorId": "2304870593",
+          "name": "Kleanthis Malialis"
+        },
+        {
+          "authorId": "2294080270",
+          "name": "Konstantinos Fokianos"
+        },
+        {
+          "authorId": "2326738769",
+          "name": "Marios M. Polycarpou"
+        }
+      ],
+      "abstract": "With the growing complexity of Cyber-Physical Systems (CPS) and the integration of Internet of Things (IoT), the use of sensors for online monitoring generates large volume of multivariate time series (MTS) data. Consequently, the need for robust anomaly diagnosis in MTS is paramount to maintaining system reliability and safety. While significant advancements have been made in anomaly detection, localization remains a largely underexplored area, though crucial for intelligent decisionmaking. This paper introduces a novel transformer-based model for unsupervised anomaly diagnosis in MTS, with a focus on improving localization performance, through an in-depth analysis of the self-attention mechanism's learning behavior under both normal and anomalous conditions. We formulate the anomaly localization problem as a three-stage process: time-step, window, and segment-based. This leads to the development of the SpaceTime Anomaly Score (STAS), a new metric inspired by the connection between transformer latent representations and spacetime statistical models. STAS is designed to capture individual anomaly behaviors and inter-series dependencies, delivering enhanced localization performance. Additionally, the Statistical Feature Anomaly Score (SFAS) complements STAS by analyzing statistical features around anomalies, with their combination helping to reduce false alarms. Experiments on real world and synthetic datasets illustrate the model's superiority over state-of-the-art methods in both detection and localization tasks."
+    },
+    {
+      "paperId": "f08f07f03eca2e066e04f22e36bafb3533561d23",
+      "externalIds": {
+        "DOI": "10.1109/JSEN.2024.3452318",
+        "CorpusId": 272678840
+      },
+      "url": "https://www.semanticscholar.org/paper/f08f07f03eca2e066e04f22e36bafb3533561d23",
+      "title": "Multivariate Time Series Anomaly Detection via Low-Rank and Sparse Decomposition",
+      "venue": "IEEE Sensors Journal",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2024.3452318?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2024.3452318, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1581604399",
+          "name": "Mohammed Ayalew Belay"
+        },
+        {
+          "authorId": "2265981625",
+          "name": "Adil Rasheed"
+        },
+        {
+          "authorId": "2156408339",
+          "name": "P. Rossi"
+        }
+      ],
+      "abstract": "In the era of data-driven decision-making, multisensor systems acquire complex, high-dimensional streams capturing temporal dynamics, and multivariate time series anomaly detection has become significantly relevant in several application domains. Conventional methods relying on supervised and semi-supervised learning require labeled data, which might not be available in various scenarios. Conversely, noise and outliers present in real-world sensor measurements negatively impact unsupervised methods. Furthermore, several methods rely on black-box architectures, which limit their use in safety-critical applications where interpretability and explainability are often necessary. To address these challenges, we propose a novel unsupervised multivariate time series anomaly detection method that exploits low-rank and sparse (LRS) decomposition combined with spectral detection. More specifically, we use augmented Lagrange multiplier (ALM)-based optimization with eigenvalue soft thresholding for decomposition. Data points are projected onto a low-dimensional subspace, capturing the underlying data structure and enabling robust anomaly detection in noisy multisensor environments. Finally, the effectiveness of the proposed approach is presented via performance comparison to several existing methods using publicly available datasets collecting real-world sensor measurements from testbeds of water treatment systems."
+    },
+    {
+      "paperId": "94a90627e673081f8b3dce718bb6b394dccb547b",
+      "externalIds": {
+        "DOI": "10.70286/isu-18.02.2026.012",
+        "CorpusId": 285818614
+      },
+      "url": "https://www.semanticscholar.org/paper/94a90627e673081f8b3dce718bb6b394dccb547b",
+      "title": "RELIABILITY-AWARE ANOMALY DETECTION FOR STREAMING MULTIMODAL TIME SERIES IN DECISION SUPPORT SYSTEMS",
+      "venue": "International Scientific Unity",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.70286/isu-18.02.2026.012",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.70286/isu-18.02.2026.012?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.70286/isu-18.02.2026.012, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2132553484",
+          "name": "I. Uzun"
+        }
+      ],
+      "abstract": "In streaming multimodal monitoring, modality degradations (e.g.,\nsensor noise or missing data) often trigger false alarms in anomaly detectors, violating\noperational constraints on the False Alarm Rate (FAR). This paper formulates the\nproblem of FAR-budgeted anomaly detection and proposes a Reliability-Constrained\nAnomaly Detection (RC-AD) method. RC-AD utilizes online modality reliability\nestimates to gate the contribution of degraded channels to the anomaly score and to\ndynamically adjust thresholding logic. Evaluation on controlled streams and real air\nquality data demonstrates that RC-AD maintains the FAR budget while achieving\nsignificantly higher recall on degraded segments compared to naive multimodal\nbaselines."
+    },
+    {
+      "paperId": "9b29fc7b6330dbe9592b76f12540e65f99d194e1",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2508-00047",
+        "ArXiv": "2508.00047",
+        "DOI": "10.1109/ACCESS.2025.3613663",
+        "CorpusId": 280416919
+      },
+      "url": "https://www.semanticscholar.org/paper/9b29fc7b6330dbe9592b76f12540e65f99d194e1",
+      "title": "TriP-LLM: A Tri-Branch Patch-Wise Large Language Model Framework for Time-Series Anomaly Detection",
+      "venue": "IEEE Access",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/access.2025.3613663",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.00047, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2317532667",
+          "name": "Yuan-Cheng Yu"
+        },
+        {
+          "authorId": "2365077811",
+          "name": "Yen-Chieh Ouyang"
+        },
+        {
+          "authorId": "2318012491",
+          "name": "Chun-An Lin"
+        }
+      ],
+      "abstract": "Time-series anomaly detection plays a central role across a wide range of application domains. With the increasing proliferation of the Internet of Things (IoT) and smart manufacturing, time-series data has dramatically increased in both scale and dimensionality. This growth has exposed the limitations of traditional statistical methods in handling the high heterogeneity and complexity of such data. Inspired by the recent success of large language models (LLMs) in multimodal tasks across language and vision domains, we propose a novel unsupervised anomaly detection framework: A Tri-Branch Patch-wise Large Language Model Framework for Time-Series Anomaly Detection (TriP-LLM). TriP-LLM integrates local and global temporal features through a triple-branch design comprising Patching, Selecting, and Global modules, to encode the input time-series into patch-wise representations, which are then processed by a frozen, pretrained LLM. A lightweight patch-wise decoder reconstructs the input, from which anomaly scores are derived. We evaluate TriP-LLM on several public benchmark datasets using PATE, a recently proposed threshold-free evaluation metric, and conduct all comparisons within a unified open-source framework to ensure fairness. Experimental results show that TriP-LLM consistently outperforms recent state-of-the-art (SOTA) methods across all datasets, demonstrating strong detection capabilities. Furthermore, through extensive ablation studies, we verify the substantial contribution of the LLM to the overall architecture. Compared to LLM-based approaches using Channel Independence (CI) patch processing, TriP-LLM achieves significantly lower memory consumption, making it more suitable for GPU memory-constrained environments. All code and model checkpoints of TriP-LLM are publicly available on https://github.com/YYZStart/TriP-LLM.git"
+    },
+    {
+      "paperId": "9580cccabd673ac2fe18935f338f956baeafa1e2",
+      "externalIds": {
+        "DBLP": "conf/icassp/ChenXJZLY25",
+        "DOI": "10.1109/ICASSP49660.2025.10888204",
+        "CorpusId": 276966933
+      },
+      "url": "https://www.semanticscholar.org/paper/9580cccabd673ac2fe18935f338f956baeafa1e2",
+      "title": "Frequency-enhanced Comprehensive Dependency Attention for Time Series Anomaly Detection",
+      "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASSP49660.2025.10888204?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASSP49660.2025.10888204, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292645501",
+          "name": "Haonan Chen"
+        },
+        {
+          "authorId": "2146235009",
+          "name": "Hongzuo Xu"
+        },
+        {
+          "authorId": "2264972834",
+          "name": "Songlei Jian"
+        },
+        {
+          "authorId": "2213138580",
+          "name": "Ruyi Zhang"
+        },
+        {
+          "authorId": "2332601876",
+          "name": "Xingming Li"
+        },
+        {
+          "authorId": "9039365",
+          "name": "Zibo Yi"
+        }
+      ],
+      "abstract": "Deep time series anomaly detection (TSAD) essentially relies on learning data \"normality\". Current approaches leverage various neural network architectures, including RNNs, CNNs, Transformers, and graph neural networks, effectively modeling temporal and inter-variable dependencies within time series data. However, these approaches often overlook the equally crucial asynchronous inter-variable dependencies, potentially missing anomalous patterns that arise from intricate, temporally offset interactions among variables. Therefore, we propose a novel time series anomaly detection method by perceiving comprehensive intrinsic dependencies of time series data. Specifically, we propose a Comprehensive Dependency-aware Attention (CDA) that computes attention between each element and its criss-cross counterparts (i.e., intra-variable values across the whole temporal dimension and synchronous values of different variables) and captures asynchronous inter-variable dependency by repeating this step. Additionally, to facilitate more effective downstream dependency learning, we propose a Frequency Domain Rectifier (FDR) to capture the signal’s underlying patterns and reduce noise in the frequency domain. We replace the self-attention in the classic Transformer with CDA, and introduce the FDR module to construct a new method for TSAD, i.e., Frequency-enhanced Comprehensive Dependency Attention-based Time Series Anomaly Detection (FCDATA). Extensive experiments show that: (i) our detection method significantly outperforms state-of-the-art competitors by 15% in the F1-score; and (ii) by incorporating the proposed network architecture, existing anomaly detectors achieve over 20% performance gain compared to current temporal network structures."
+    },
+    {
+      "paperId": "c2e78b37a075b5b3c62e4b9e467c04a2724d488d",
+      "externalIds": {
+        "DBLP": "conf/newcas/MaZGZMDG25",
+        "DOI": "10.1109/NewCAS64648.2025.11107158",
+        "CorpusId": 280663692
+      },
+      "url": "https://www.semanticscholar.org/paper/c2e78b37a075b5b3c62e4b9e467c04a2724d488d",
+      "title": "ST-MambaAD: Spatial-Temporal Mamba for Multivariate Time Series Anomaly Detection",
+      "venue": "IEEE International New Circuits and Systems Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/NewCAS64648.2025.11107158?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/NewCAS64648.2025.11107158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2238195573",
+          "name": "Shenhui Ma"
+        },
+        {
+          "authorId": "2376064909",
+          "name": "Huanbin Zheng"
+        },
+        {
+          "authorId": "2166883327",
+          "name": "Siwei Guan"
+        },
+        {
+          "authorId": "2180959429",
+          "name": "Xiaorong Zheng"
+        },
+        {
+          "authorId": "2392591098",
+          "name": "Teng Ma"
+        },
+        {
+          "authorId": "2320475815",
+          "name": "Zhekang Dong"
+        },
+        {
+          "authorId": "2298025525",
+          "name": "Mingyu Gao"
+        }
+      ],
+      "abstract": "Multivariate Time Series Anomaly Detection (MTSAD) plays a crucial role in various real-world fields. It detects anomalous data that deviates from normal patterns by modeling the representation of normal time series. With the rise of Internet of Things (IoT) and the widespread use of numerous monitoring sensors, multivariate time series data grow explosively. These time series data exhibit complex dependencies in both temporal and spatial dimensions, making their representation modeling challenging. Consequently, Transformer-based models are widely used due to the long-range dependency modeling capabilities. However, their computational cost grows quadratically with the sequence length, limiting their deployment on real-world edge devices. Recently, a novel state-space model called Mamba has been proposed. Due to its selective mechanism, it can capture complex sequence dependencies while maintaining nearly linear computational complexity. For the MTSAD task, Mamba provides dependency modeling capabilities similar to Transformer while reducing computational consumption. In this paper, we propose ST-MambaAD, which applies dual-branch Mamba to model the temporal and spatial representations of multivariate time series to capture comprehensive spatial-temporal dependencies, and uses a Spatial Temporal Fusion layer to integrate these representations through learnable weights and output reconstruction. Experimental results show that ST-MambaAD achieves superior performance and efficiency in MTSAD tasks."
+    },
+    {
+      "paperId": "a5c06f8dcd3ad544323e34ae4ad72e7f57943b2a",
+      "externalIds": {
+        "DOI": "10.1109/ETCOM66606.2025.11436417",
+        "CorpusId": 286876201
+      },
+      "url": "https://www.semanticscholar.org/paper/a5c06f8dcd3ad544323e34ae4ad72e7f57943b2a",
+      "title": "A Comparative Study of Deep Learning Architectures for Multivariate Time Series Anomaly Detection in Industrial Control Systems",
+      "venue": "2025 IEEE International Conference on Emerging Trends in Computing and Communication (ETCOM)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ETCOM66606.2025.11436417?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ETCOM66606.2025.11436417, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2408666516",
+          "name": "Shubha Dhali"
+        },
+        {
+          "authorId": "2395939549",
+          "name": "Kuntal Ghosh"
+        },
+        {
+          "authorId": "2296925975",
+          "name": "S. Duttagupta"
+        }
+      ],
+      "abstract": "The main goal of multivariate time series anomaly detection is to identify unusual patterns or deviations in data collected from multiple sensors and systems that monitor critical infrastructure. This approach captures both temporal relationships and correlations among different variables. In this study, we present a data-driven model that computes individual sensor-level anomaly scores to pinpoint faulty or rogue sensors for system monitoring. At each time step, the reconstruction error for every sensor is converted into a normalized anomaly score, followed by sensor-specific thresholding to detect abnormal behavior. These sensor-wise scores are then aggregated to produce a global anomaly score, reflecting the overall system health at that moment. Our framework explores several architectures, including LSTM, GRU, BiLSTM, and BiGRU, trained and tested on the SWaT dataset. We further enhance the BiLSTM-VAE and BiGRU-VAE models with a temporal attention mechanism to better capture complex temporal dependencies and intersensor correlations. Experimental results show that the BiLSTMVAE with attention achieves the best performance, reaching a precision of 91.31 %, effectively reducing the performance overestimation often observed in traditional time series anomaly detection methods."
+    },
+    {
+      "paperId": "0c8ae604e40eae1568cd7b0c854c7520906b4575",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2503-01260",
+        "ArXiv": "2503.01260",
+        "DOI": "10.1109/TDSC.2025.3638405",
+        "CorpusId": 276742429
+      },
+      "url": "https://www.semanticscholar.org/paper/0c8ae604e40eae1568cd7b0c854c7520906b4575",
+      "title": "OIPR: Evaluation for Time-Series Anomaly Detection Inspired by Operator Interest",
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.01260, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2312169057",
+          "name": "Yuhan Jing"
+        },
+        {
+          "authorId": "1519274136",
+          "name": "Jingyu Wang"
+        },
+        {
+          "authorId": "2152829471",
+          "name": "Lei Zhang"
+        },
+        {
+          "authorId": "3211546",
+          "name": "Haifeng Sun"
+        },
+        {
+          "authorId": "2082464463",
+          "name": "Bo He"
+        },
+        {
+          "authorId": "70647186",
+          "name": "Zirui Zhuang"
+        },
+        {
+          "authorId": "2108815924",
+          "name": "Chengsen Wang"
+        },
+        {
+          "authorId": "2253567598",
+          "name": "Qi Qi"
+        },
+        {
+          "authorId": "2153704848",
+          "name": "Jianxin Liao"
+        }
+      ],
+      "abstract": "With the growing adoption of time-series anomaly detection (TAD) technology, numerous studies have employed deep learning-based detectors to analyze time-series data in the fields of Internet services, industrial systems, and sensors. The selection and optimization of anomaly detectors strongly rely on the availability of an effective evaluation for TAD performance. Since anomalies in time-series data often manifest as a sequence of points, conventional metrics that solely consider the detection of individual points are inadequate. Existing TAD evaluators typically employ point-based or event-based metrics to capture the temporal context. However, point-based evaluators tend to overestimate detectors that excel only in detecting long anomalies, while event-based evaluators are susceptible to being misled by fragmented detection results. To address these limitations, we propose OIPR (Operator Interest-based Precision and Recall metrics), a novel TAD evaluator with area-based metrics. It models the process of operators receiving detector alarms and handling anomalies, utilizing area under the operator interest curve to evaluate TAD performance. Furthermore, we build a special scenario dataset to compare the characteristics of different evaluators. Through experiments conducted on the special scenario dataset and five real-world datasets, we demonstrate the remarkable performance of OIPR in extreme and complex scenarios. It achieves a balance between point and event perspectives, overcoming their primary limitations and offering applicability to broader situations."
+    },
+    {
+      "paperId": "a73e3ff4ff8ad0e74d9a097434dd71fd4038c250",
+      "externalIds": {
+        "DOI": "10.1109/CPSI66656.2025.11343958",
+        "CorpusId": 284965644
+      },
+      "url": "https://www.semanticscholar.org/paper/a73e3ff4ff8ad0e74d9a097434dd71fd4038c250",
+      "title": "Attentive LSTM-Driven Dynamic Graph Neural Networks for Multivariate Time Series Anomaly Detection",
+      "venue": "2025 International Conference on Cyber-Physical Social Intelligence (CPSI)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CPSI66656.2025.11343958?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CPSI66656.2025.11343958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2281382614",
+          "name": "Yuan Li"
+        },
+        {
+          "authorId": "2344401867",
+          "name": "Yuhang Zhou"
+        },
+        {
+          "authorId": "2344592165",
+          "name": "Qingzhong Yan"
+        },
+        {
+          "authorId": "2270719679",
+          "name": "Yuming Bo"
+        },
+        {
+          "authorId": "2380066566",
+          "name": "Xiang Wu"
+        },
+        {
+          "authorId": "33247953",
+          "name": "Wencheng Zou"
+        }
+      ],
+      "abstract": "The anomaly detection for multivariate time series in complex cyber-physical systems represents a critical and challenging task for system safety and reliability. Graph Neural Networks (GNNs) have proven to be effective tools for multivariate time series anomaly detection, as they can explicitly model the relational patterns between sensors to boost detection performance. However, the effectiveness of most GNN-based methods is limited by a reliance on pre-defined, static graphs, which fail to capture the time-varying dependencies between sensors in dynamic systems. To address this, we propose the Attentive LSTM-driven Dynamic Graph Neural Network (DynA-GNN). Our framework first utilizes a LSTM network to generate context-aware representations for each sensor. An attention mechanism then computes a dynamic, instance-specific graph from these representations. Finally, a GNN operates on this dynamic graph, assigning attention-based weights to aggregate features from the learned neighbors to detect anomalous deviations. Extensive experiments on two public benchmark datasets, SWaT and WADI, demonstrate that our model significantly outperforms classic and mainstream baseline methods."
+    },
+    {
+      "paperId": "988d4eeaa1c8b194830cd106a27de3ae91447113",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2511-12351",
+        "ArXiv": "2511.12351",
+        "DOI": "10.1109/CogMI67134.2025.00034",
+        "CorpusId": 283073545
+      },
+      "url": "https://www.semanticscholar.org/paper/988d4eeaa1c8b194830cd106a27de3ae91447113",
+      "title": "Dynamic Reward Scaling for Multivariate Time Series Anomaly Detection: A VAE-Enhanced Reinforcement Learning Approach",
+      "venue": "International Conference on Cognitive Machine Intelligence",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.12351, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2333656312",
+          "name": "Bahareh Golchin"
+        },
+        {
+          "authorId": "2279712974",
+          "name": "Banafsheh Rekabdar"
+        }
+      ],
+      "abstract": "Detecting anomalies in multivariate time series is essential for monitoring complex industrial systems, where high dimensionality, limited labeled data, and subtle dependencies between sensors cause significant challenges. This paper presents a deep reinforcement learning framework that combines a Variational Autoencoder (VAE), an LSTM-based Deep Q-Network (DQN), dynamic reward shaping, and an active learning module to address these issues in a unified learning framework. The main contribution is the implementation of Dynamic Reward Scaling for Multivariate Time Series Anomaly Detection (DRSMT), which demonstrates how each component enhances the detection process. The VAE captures compact latent representations and reduces noise. The DQN enables adaptive, sequential anomaly classification, and the dynamic reward shaping balances exploration and exploitation during training by adjusting the importance of reconstruction and classification signals. In addition, active learning identifies the most uncertain samples for labeling, reducing the need for extensive manual supervision. Experiments on two multivariate benchmarks, namely Server Machine Dataset (SMD) and Water Distribution Testbed (WADI), show that the proposed method outperforms existing baselines in F1-score and AU-PR. These results highlight the effectiveness of combining generative modeling, reinforcement learning, and selective supervision for accurate and scalable anomaly detection in real-world multivariate systems.1"
+    },
+    {
+      "paperId": "cf4ea18bc02e8c97d239379bfa42dcccd9993424",
+      "externalIds": {
+        "DOI": "10.1145/3778450.3778526",
+        "CorpusId": 284019360
+      },
+      "url": "https://www.semanticscholar.org/paper/cf4ea18bc02e8c97d239379bfa42dcccd9993424",
+      "title": "KGL: An Efficient Time Series Anomaly Detection Approach for the Industrial Internet of Things",
+      "venue": "Proceedings of the 2025 International Symposium on Machine Learning and Social Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3778450.3778526?download=true",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3778450.3778526?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3778450.3778526, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2399759865",
+          "name": "Bingfeng Wang"
+        },
+        {
+          "authorId": "2331798445",
+          "name": "Yaodong Tao"
+        },
+        {
+          "authorId": "2402757275",
+          "name": "Yong Wang"
+        },
+        {
+          "authorId": "2343417635",
+          "name": "Lin Zhou"
+        }
+      ],
+      "abstract": "The rapid expansion of the Industrial Internet of Things (IIoT) has led to the generation of massive volumes of high-dimensional multivariate time series data from interconnected sensors and devices. Detecting anomalies in such data is critical for ensuring the security, reliability, and efficiency of industrial systems. However, existing methods often struggle to jointly capture the complex inter-variable dependencies, heterogeneous nonlinear patterns, and long-term temporal correlations inherent in real-world IIoT environments. In this paper, we propose KGL, a unified anomaly detection framework that integrates Graph Attention Networks (GAT) for adaptive modeling of inter-variable relationships, Kolmogorov–Arnold Networks (KAN) for learnable nonlinear activation, and Long Short-Term Memory (LSTM) networks for capturing long-range temporal dependencies. This hybrid design enables KGL to effectively represent both structural and sequential patterns in multivariate time series, improving robustness against diverse anomaly types. Extensive experiments on two widely used benchmark datasets, SMD and SMAP, demonstrate that KGL consistently outperforms state-of-the-art baselines in terms of F1-score, precision, recall, and ROC-AUC. Ablation studies further confirm the complementary contributions of each module. The results highlight the potential of KGL as a practical and reliable solution for real-world IIoT anomaly detection."
+    },
+    {
+      "paperId": "abda75b0fd5181abea7d258551b0c869c08f329c",
+      "externalIds": {
+        "PubMedCentral": "11946349",
+        "DOI": "10.3390/s25061849",
+        "CorpusId": 277099348,
+        "PubMed": "40292940"
+      },
+      "url": "https://www.semanticscholar.org/paper/abda75b0fd5181abea7d258551b0c869c08f329c",
+      "title": "Learning in Two-Scales Through LSTM-GPT2 Fusion Network: A Hybrid Approach for Time Series Anomaly Detection",
+      "venue": "Italian National Conference on Sensors",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/1424-8220/25/6/1849/pdf?version=1742125690",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11946349, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2257009347",
+          "name": "Tao Wang"
+        },
+        {
+          "authorId": "2350820205",
+          "name": "Dan Wu"
+        },
+        {
+          "authorId": "2322610599",
+          "name": "Jun Wang"
+        },
+        {
+          "authorId": "3082104",
+          "name": "Jinwei Zhao"
+        },
+        {
+          "authorId": "46507321",
+          "name": "Haoming Wang"
+        },
+        {
+          "authorId": "2054593261",
+          "name": "Dong Xie"
+        },
+        {
+          "authorId": "2320718566",
+          "name": "Hongtao Zhang"
+        },
+        {
+          "authorId": "143967270",
+          "name": "Xinhong Hei"
+        }
+      ],
+      "abstract": "Anomaly detection (AD) in multivariate time series data (MTS) collected by industrial sensors is a crucial undertaking for the damage estimation and damage monitoring of machinery like rocket engines, wind turbine blades, and aircraft turbines. Due to the complex structure of industrial systems and the varying working environments, the collected MTS often contain a significant amount of noise. Current AD studies mostly depend on extracting features from data to obtain the information associated with various working states, and they attempt to detect the abnormal states in the space of the original data. Nevertheless, the latent space, which includes the most essential knowledge learned by the network, is often overlooked. In this paper, a multi-scale feature extraction and data reconstruction deep learning neural network, designated as LGFN, is proposed. It is specifically designed to detect anomalies in MTS in both the original input space and the latent space. In the experimental section, a comparison is made between the proposed AD process and five well-acknowledged AD methods on five public MTS datasets. The outcomes demonstrate that the proposed method attains state-of-the-art or comparable performance. The memory usage experiment illustrates the space efficiency of LGFN in comparison to another AD method based on GPT-2. The ablation studies emphasise the indispensable role of each module in the proposed AD process."
+    },
+    {
+      "paperId": "7380ba7ba5186aa48cf1cec65be35114d78a9ed3",
+      "externalIds": {
+        "DOI": "10.1109/ICSGGE64667.2025.10984485",
+        "CorpusId": 278553668
+      },
+      "url": "https://www.semanticscholar.org/paper/7380ba7ba5186aa48cf1cec65be35114d78a9ed3",
+      "title": "ShapeDiff: A Universal Source-Load Time Series Anomaly Detection and Imputation Model",
+      "venue": "2025 4th International Conference on Smart Grid and Green Energy (ICSGGE)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSGGE64667.2025.10984485?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSGGE64667.2025.10984485, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2361268054",
+          "name": "Ziyue Wang"
+        },
+        {
+          "authorId": "2360966956",
+          "name": "Dawei Chen"
+        },
+        {
+          "authorId": "2360760188",
+          "name": "Can Wan"
+        },
+        {
+          "authorId": "2360847532",
+          "name": "Qingliang Wang"
+        },
+        {
+          "authorId": "2297996308",
+          "name": "Biao Li"
+        },
+        {
+          "authorId": "2360995092",
+          "name": "Lixuan Zhu"
+        }
+      ],
+      "abstract": "The rapid proliferation of sensors in modern power systems has generated vast time-series datasets that are rich in critical operational information. To maximize the utility of these datasets and support the development of high-quality pre-trained models, it is crucial to implement efficient preprocessing methods that effectively address both anomaly detection and data imputation. This paper introduces ShapeDiff, a novel integrated framework that addresses anomaly detection and imputation inefficiencies within time-series preprocessing. ShapeDiff combines shapelet-based anomaly detection for enhanced stability and interpretability with diffusion model-based imputation to ensure superior performance and adaptability to non-stationary data. A self-supervised parallel training strategy facilitates the efficient processing of large-scale datasets while maintaining inference consistency. Experiments demonstrate that ShapeDiff achieves efficient anomaly detection, provides accurate and reliable imputation for common source-load time series, and significantly improves preprocessing efficiency."
+    },
+    {
+      "paperId": "74f94eb32dc16a919a7a518ad7382bc5cbd41c6e",
+      "externalIds": {
+        "DBLP": "journals/entropy/Wang25b",
+        "PubMedCentral": "12840401",
+        "DOI": "10.3390/e28010014",
+        "CorpusId": 284169803,
+        "PubMed": "41593921"
+      },
+      "url": "https://www.semanticscholar.org/paper/74f94eb32dc16a919a7a518ad7382bc5cbd41c6e",
+      "title": "Improving Multivariate Time-Series Anomaly Detection in Industrial Sensor Networks Using Entropy-Based Feature Aggregation",
+      "venue": "Entropy",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12840401, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2340727144",
+          "name": "Bowen Wang"
+        }
+      ],
+      "abstract": "Anomaly detection using multivariate time-series data remains a significant challenge for complex industrial systems, such as Cyber–Physical Systems (CPSs), Industrial Control Systems (ICSs), Intrusion Detection Systems (IDSs), the Internet of Things (IoT), and Remote Sensing Monitoring Platforms, including satellite Earth observation systems and Mars Rovers. In these systems, sensors are highly interconnected, and local anomalies frequently affect multiple components. Because these interconnections are often implicit and involve complex interactions, systematic characterization is required. To address this, our study employs graph neural networks with a structure-entropy-based attention mechanism, which models multi-element relationships and formally represents implicit relationships within complex industrial systems using a network-based structural model. Specifically, our method distinguishes the weights of different high-order neighbor nodes based on their locations, rather than treating all nodes equally. Through this formalization, we identify and represent key adjacent elements by analyzing system entropy. We validate our method on SMAT, MSL, SWaT, and WADI datasets, and experimental results demonstrate improved detection performance compared to baseline approaches."
+    },
+    {
+      "paperId": "15d0f8f47e0eaf34540d1f052320c3e002e00660",
+      "externalIds": {
+        "DBLP": "journals/apin/HuangCDH24",
+        "DOI": "10.1007/s10489-024-05575-y",
+        "CorpusId": 270424967
+      },
+      "url": "https://www.semanticscholar.org/paper/15d0f8f47e0eaf34540d1f052320c3e002e00660",
+      "title": "Multivariate time series anomaly detection via dynamic graph attention network and Informer",
+      "venue": "Applied intelligence (Boston)",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10489-024-05575-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10489-024-05575-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2306172354",
+          "name": "Xiangheng Huang"
+        },
+        {
+          "authorId": "2315486064",
+          "name": "Ningjiang Chen"
+        },
+        {
+          "authorId": "2308981383",
+          "name": "Ziyue Deng"
+        },
+        {
+          "authorId": "2220479686",
+          "name": "Suqun Huang"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "cd8453788a203534aca5ba1cff4d7b811529cee9",
+      "externalIds": {
+        "DOI": "10.1109/ICNSoC66817.2025.00078",
+        "CorpusId": 284968670
+      },
+      "url": "https://www.semanticscholar.org/paper/cd8453788a203534aca5ba1cff4d7b811529cee9",
+      "title": "Spacecraft Time Series Anomaly Detection Using Unsupervised Deep Learning and a Novel Statistical Approach",
+      "venue": "2025 Second International Conference on Networks and Soft Computing (ICNSoC)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICNSoC66817.2025.00078?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICNSoC66817.2025.00078, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310651201",
+          "name": "Sumit Verma"
+        },
+        {
+          "authorId": "2302921929",
+          "name": "Prakash Kodali"
+        }
+      ],
+      "abstract": "Anomaly detection plays a vital role in maintaining the stability of spacecraft systems. During operations, spacecraft generate massive amounts of high-dimensional telemetry data with long-term periodic patterns through various sensors and control units. A key challenge is to accurately and promptly detect anomalies by extracting meaningful features from this vast dataset. This task is complicated by intricate inter dependencies among telemetry signals and their temporal dynamics. With thousands of telemetry channels per satellite system, there is a clear need for an automated anomaly detection solution. This paper explores the use of unsupervised deep learning models along with statistical technique to identify abnormal behavior in spacecraft telemetry, aiming to detect faults without prior fault-type information. The experimental findings show that the suggested approach surpasses current leading methods in anomaly detection, while also demanding much less time for training."
+    },
+    {
+      "paperId": "03196117fb43fef669482119d2032655185465f3",
+      "externalIds": {
+        "ArXiv": "2605.18188",
+        "DBLP": "journals/corr/abs-2605-18188",
+        "DOI": "10.48550/arXiv.2605.18188",
+        "CorpusId": 288657094
+      },
+      "url": "https://www.semanticscholar.org/paper/03196117fb43fef669482119d2032655185465f3",
+      "title": "UTOPYA: A Multimodal Deep Learning Framework for Physics-Informed Anomaly Detection and Time-Series Prediction",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2605.18188, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2273122009",
+          "name": "R. Pessoa"
+        },
+        {
+          "authorId": "2224581382",
+          "name": "Julien Amblard"
+        },
+        {
+          "authorId": "2335558837",
+          "name": "Alessandra Russo"
+        },
+        {
+          "authorId": "2259926779",
+          "name": "Idelfonso B. R. Nogueira"
+        }
+      ],
+      "abstract": "Anomaly detection in batch processes is hindered by transient dynamics, scarce fault labels, and reliance on single-modality sensor data. This work introduces UTOPYA (Unified Temporal Observation for Physics-Informed Anomaly Detection and Time-Series Prediction), a 15.2M-parameter multimodal framework that jointly addresses anomaly detection, time-series prediction, and phase classification in batch distillation by fusing eight data modalities through Feature-wise Linear Modulation (FiLM) conditioned cross-modal attention and gated fusion. A physics-informed regularisation scheme introduced in this work enforces temporal smoothness and thermodynamic monotonicity, while curriculum learning introduces training samples in order of physical difficulty. On the 119-experiment multimodal batch distillation dataset of Arweiler et al. (2026), UTOPYA achieves a window-level test AUROC of 0.832 and 0.874 under multi-signal experiment-level scoring, substantially outperforming four external baselines (PCA, autoencoder, Isolation Forest, and LSTM autoencoder) evaluated under identical conditions (+0.147 window-level AUROC over the best baseline). A multimodal ablation over 15~architectural configurations shows that static context via FiLM conditioning is the key enabler, lifting experiment-level multi-signal AUROC by +0.145 over the unimodal baseline (0.729 to 0.874). Separately, a training ablation across 14 design choices reveals that several widely-adopted techniques, including instance normalisation, Mixup, ensembling, test-time augmentation, and stochastic weight averaging, fail to improve or actively degrade generalisation in this data-scarce setting. These negative results expose a fundamental tension between smoothing-based regularisation and anomaly detection, providing practical guidance for multimodal process monitoring deployment."
+    },
+    {
+      "paperId": "803e979582d43ea3ceee89466ba858168f99110c",
+      "externalIds": {
+        "ArXiv": "2608.08859",
+        "CorpusId": 290989908
+      },
+      "url": "https://www.semanticscholar.org/paper/803e979582d43ea3ceee89466ba858168f99110c",
+      "title": "Agentic Anomaly Detection with ORCA-Style Dynamic Inductive Bias Adaptation in Multimodal Wearable Time Series Data",
+      "venue": "",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2608.08859, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2456698777",
+          "name": "A. Roy"
+        },
+        {
+          "authorId": "2456725730",
+          "name": "Jyotirmoy Singh"
+        },
+        {
+          "authorId": "2363046422",
+          "name": "Shreea Bose"
+        },
+        {
+          "authorId": "2276019506",
+          "name": "Chittaranjan Hota"
+        }
+      ],
+      "abstract": "Wireless Body Area Networks (WBANs) generate multivariate physiological time series that are highly nonstationary and must often be processed under strict computational and memory constraints. A critical yet underexplored challenge in this setting is selecting an appropriate temporal receptive field, which serves as a strong inductive bias for anomaly detection models. Existing approaches typically rely on fixed temporal contexts, which can perform inconsistently across heterogeneous signal regimes and require dataset-specific tuning. We propose ORCA, an agentically controlled anomaly detection framework that dynamically adapts the temporal receptive field at inference time based on lightweight signal statistics. Rather than introducing additional trainable parameters or learned policies, ORCA employs a supervisory controller that autonomously selects among discrete temporal contexts, enabling state-dependent inductive bias adaptation without retraining. Across a custom WBAN dataset, ORCA achieves performance comparable to the strongest fixed-context baselines (AUROC = 0.99) while eliminating the need to tune temporal horizons in advance. We further evaluate ORCA on MIMIC-IV as a challenging out-of-distribution benchmark, observing conservative generalization behavior without performance collapse under heterogeneous clinical conditions. These results highlight adaptive temporal inductive bias control as a practical and robust design principle for anomaly detection in resource-constrained, nonstationary physiological time series."
+    },
+    {
+      "paperId": "d1783f19a62f0d05d9ea34fa2db6bf6c85d93d0c",
+      "externalIds": {
+        "DOI": "10.1007/s40964-025-01199-x",
+        "CorpusId": 279388696
+      },
+      "url": "https://www.semanticscholar.org/paper/d1783f19a62f0d05d9ea34fa2db6bf6c85d93d0c",
+      "title": "Optimized multimodal anomaly detection in fused deposition modeling: real-time monitoring with clustering classifiers and data fusion",
+      "venue": "Progress in Additive Manufacturing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s40964-025-01199-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s40964-025-01199-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "69004916",
+          "name": "A. Khusheef"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "f6b8bb87c78ff29b4bf8081b863d2fbc2e0e3623",
+      "externalIds": {
+        "DBLP": "journals/tifs/HeLXS24",
+        "DOI": "10.1109/TIFS.2024.3459631",
+        "CorpusId": 272621694
+      },
+      "url": "https://www.semanticscholar.org/paper/f6b8bb87c78ff29b4bf8081b863d2fbc2e0e3623",
+      "title": "Fusion Graph Structure Learning-Based Multivariate Time Series Anomaly Detection With Structured Prior Knowledge",
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TIFS.2024.3459631?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TIFS.2024.3459631, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2253048614",
+          "name": "Shiming He"
+        },
+        {
+          "authorId": "2303409360",
+          "name": "Genxin Li"
+        },
+        {
+          "authorId": "2264974331",
+          "name": "Kun Xie"
+        },
+        {
+          "authorId": "9198774",
+          "name": "P. Sharma"
+        }
+      ],
+      "abstract": "Multivariate time series anomaly detection (MTSAD) plays a crucial role in the Internet of Things (IoT) to identify device malfunction or system attacks. Graph neural networks (GNN) are widely applied in MTSAD to capture the spatial features among sensors. However, GNNs depend on a graph structure and explicit graph structures are not always available. To solve the problem of missing explicit graph structure, graph structure learning is introduced to learn an accurate graph structure joint with a GNNs-based anomaly detection task. However, the existing GSL-based methods provide only a partial view of the graph structure and cannot represent multiple and complex relationships. The noise of data also brings noisy edges. Therefore, we propose a fusion graph structure learning-based multivariate time-series anomaly detection with structured prior knowledge (FuGLAD). To the best of our knowledge, it appears to be the first application of fusion graphs in time series anomaly detection. FuGLAD selects three kinds of typical graph structure learners to learn as many relationship types among sensors as possible and exploits the prior similarity to evaluate the importance of all learned graphs and adaptively learn the fusion weight instead of the direct average weight. To handle noise in raw data, FuGLAD compares the neighbors of nodes by Jaccard similarity to identify and remove the noisy edges in the prior graph. Extensive experiments demonstrate that our approach outperforms state-of-the-art single-graph structure learning techniques in detection performance across four public and real-world datasets."
+    },
+    {
+      "paperId": "e8d1c5c93a5941181e511ab0234a9b0b66907a8f",
+      "externalIds": {
+        "DBLP": "journals/cluster/GaoCWYZ25",
+        "DOI": "10.1007/s10586-024-04707-w",
+        "CorpusId": 273444181
+      },
+      "url": "https://www.semanticscholar.org/paper/e8d1c5c93a5941181e511ab0234a9b0b66907a8f",
+      "title": "Dynamic deep graph convolution with enhanced transformer networks for time series anomaly detection in IoT",
+      "venue": "Cluster Computing",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10586-024-04707-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10586-024-04707-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2326964576",
+          "name": "Rong Gao"
+        },
+        {
+          "authorId": "2311991138",
+          "name": "Zhiwei Chen"
+        },
+        {
+          "authorId": "2326803123",
+          "name": "Xinyun Wu"
+        },
+        {
+          "authorId": "2256461709",
+          "name": "Yonghong Yu"
+        },
+        {
+          "authorId": "2326792278",
+          "name": "Li Zhang"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "9f5005f13057a224940779a8f325262b6eb2e7d9",
+      "externalIds": {
+        "DOI": "10.15276/eltecs.46.122.2026.10",
+        "CorpusId": 288878226
+      },
+      "url": "https://www.semanticscholar.org/paper/9f5005f13057a224940779a8f325262b6eb2e7d9",
+      "title": "Reliability-Constrained Multimodal Anomaly Detection for Streaming Non-Stationary Time Series Data Analysis",
+      "venue": "ELECTRICAL AND COMPUTER SYSTEMS",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.15276/eltecs.46.122.2026.10",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.15276/eltecs.46.122.2026.10?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.15276/eltecs.46.122.2026.10, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2132553484",
+          "name": "I. Uzun"
+        },
+        {
+          "authorId": "2269192147",
+          "name": "M. Lobachev"
+        }
+      ],
+      "abstract": "Abstract. Streaming decision support systems frequently face two coupled operational constraints: multimodal input streams are non-stationary and periodically exhibit modality degradation (missing values, additive noise, gain or scale shifts), while alarm frequency must be limited by an explicit false alarm rate (FAR) budget. Naive multimodal residual scoring then inflates anomaly scores during degraded segments, pushing FAR-constrained thresholds upward and reducing detector sensitivity to genuine anomaly events.\nThe aim is to design and empirically validate a residual scoring policy that retains anomaly sensitivity under alternating modality degradation at a fixed FAR budget. The research tasks are to formalise the streaming multimodal anomaly detection problem under a FAR budget in a causal setting, to design an online modality reliability estimator from cheap causal degradation cues (missingness and feature-energy inflation), to construct a reliability-gated rule for selecting the source of the residual evidence, and to validate the approach on a controlled stream and on the UCI Air Quality dataset.\nThe paper proposes RC-AD, a reliability-constrained residual scoring policy that combines standardised residual scores from modality-specific and early-fusion multimodal predictors, online modality reliability weights estimated from short causal windows using the missingness and feature-energy inflation, and a winner-takes-all rule: in clean windows the early-fusion residual score is used, otherwise the residual score of the currently more reliable modality. RC-AD is a control policy on top of an arbitrary forecasting backbone, which makes it lightweight, auditable, and easy to integrate into existing monitoring pipelines.\nThe empirical study uses a causal protocol with ten fixed seeds and 95% confidence intervals: on a controlled benchmark with alternating modality degradation and injected event anomalies, RC-AD improves Recall@FAR from 0.103 to 0.335 at FAR 0.05 and from 0.182 to 0.426 at FAR 0.10, outperforming naive multimodal, equal-weight fusion and single-modality baselines; a demonstration on UCI Air Quality at FAR 0.01 confirms the same trend against the multimodal baselines. The scientific novelty consists in formulating a multimodal anomaly detection policy with an explicit online reliability constraint that, for the first time, combines gating of early-fusion evidence by causal degradation cues with selection of the most reliable single modality at a prescribed FAR budget. The practical significance is supported by reproducible Recall@FAR improvements on both controlled and real sensor data and by the lightness and interpretability of the method, which suits auditable decision support systems\nKeywords: machine learning, data analysis, information systems, decision support systems, multimodal time series, non-stationary time series, streaming anomaly detection, data quality degradation, modality reliability estimation, false alarm rate budget."
+    },
+    {
+      "paperId": "cead61ae025cc2e01c5a5f7255c8f1e5b5be2f7c",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2411-02465",
+        "ArXiv": "2411.02465",
+        "DOI": "10.48550/arXiv.2411.02465",
+        "CorpusId": 273821668
+      },
+      "url": "https://www.semanticscholar.org/paper/cead61ae025cc2e01c5a5f7255c8f1e5b5be2f7c",
+      "title": "See it, Think it, Sorted: Large Multimodal Models are Few-shot Time Series Anomaly Analyzers",
+      "venue": "arXiv.org",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.02465, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2305677311",
+          "name": "Jiaxin Zhuang"
+        },
+        {
+          "authorId": "2244139620",
+          "name": "Leon Yan"
+        },
+        {
+          "authorId": "2130682939",
+          "name": "Zhenwei Zhang"
+        },
+        {
+          "authorId": "2252379676",
+          "name": "Ruiqi Wang"
+        },
+        {
+          "authorId": "2277687098",
+          "name": "Jiawei Zhang"
+        },
+        {
+          "authorId": "2221153911",
+          "name": "Yuantao Gu"
+        }
+      ],
+      "abstract": "Time series anomaly detection (TSAD) is becoming increasingly vital due to the rapid growth of time series data across various sectors. Anomalies in web service data, for example, can signal critical incidents such as system failures or server malfunctions, necessitating timely detection and response. However, most existing TSAD methodologies rely heavily on manual feature engineering or require extensive labeled training data, while also offering limited interpretability. To address these challenges, we introduce a pioneering framework called the Time Series Anomaly Multimodal Analyzer (TAMA), which leverages the power of Large Multimodal Models (LMMs) to enhance both the detection and interpretation of anomalies in time series data. By converting time series into visual formats that LMMs can efficiently process, TAMA leverages few-shot in-context learning capabilities to reduce dependence on extensive labeled datasets. Our methodology is validated through rigorous experimentation on multiple real-world datasets, where TAMA consistently outperforms state-of-the-art methods in TSAD tasks. Additionally, TAMA provides rich, natural language-based semantic analysis, offering deeper insights into the nature of detected anomalies. Furthermore, we contribute one of the first open-source datasets that includes anomaly detection labels, anomaly type labels, and contextual description, facilitating broader exploration and advancement within this critical field. Ultimately, TAMA not only excels in anomaly detection but also provides a comprehensive approach for understanding the underlying causes of anomalies, pushing TSAD forward through innovative methodologies and insights."
+    },
+    {
+      "paperId": "1993c4deabaf66d8da4f5e82996671a91a76895b",
+      "externalIds": {
+        "DBLP": "journals/tjs/NazKF25",
+        "DOI": "10.1007/s11227-025-07370-z",
+        "CorpusId": 278913957
+      },
+      "url": "https://www.semanticscholar.org/paper/1993c4deabaf66d8da4f5e82996671a91a76895b",
+      "title": "Enhancing fall detection using multimodal time-series sensory data and VLAD encoding: a framework",
+      "venue": "Journal of Supercomputing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s11227-025-07370-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s11227-025-07370-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2280203624",
+          "name": "Sidra Naz"
+        },
+        {
+          "authorId": "2305826440",
+          "name": "Muhammad Hassan Khan"
+        },
+        {
+          "authorId": "49803789",
+          "name": "Muhammad Shahid Farid"
+        }
+      ],
+      "abstract": null
+    }
+  ]
+}

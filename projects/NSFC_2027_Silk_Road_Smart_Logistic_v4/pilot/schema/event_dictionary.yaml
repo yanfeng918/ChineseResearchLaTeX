@@ -1,0 +1,47 @@
+schema_version: "1.0"
+status: "planned"
+common_rules:
+  - "Every event label must record label_source, labeler, reference_clock, start_time, end_time, and confidence."
+  - "Event boundaries are never inferred from the same model being evaluated."
+  - "Proxies are named as proxies in all reports."
+
+events:
+  - event_type: "normal"
+    scenario_id: "S0"
+    operational_definition: "No planned tilt, opening, or appearance-change operation during the registered interval."
+    reference_label: "Run schedule plus independent video or operator log when available."
+    allowed_claim: "Controlled normal operation."
+    forbidden_claim: "Representative distribution of real cross-border transport."
+
+  - event_type: "controlled_tilt_proxy"
+    scenario_id: "S1"
+    operational_definition: "A reversible box or package tilt performed within a preregistered angle or operation class."
+    reference_label: "External angle reference or synchronized reference video; record which one was used."
+    fallback_if_no_angle_reference: "Label only as controlled tilt proxy and omit angle accuracy."
+    allowed_claim: "Controlled tilt event."
+    forbidden_claim: "Real cargo damage or vehicle vibration event."
+
+  - event_type: "controlled_opening_or_light_proxy"
+    scenario_id: "S2"
+    operational_definition: "A planned lid-opening or internal-light change with registered start and end."
+    reference_label: "Manual trigger plus synchronized reference video or independent binary logger."
+    allowed_claim: "Controlled opening or light-change proxy."
+    forbidden_claim: "Electronic seal measurement unless an actual seal device and its logs are documented."
+
+  - event_type: "controlled_appearance_change_proxy"
+    scenario_id: "S3"
+    operational_definition: "A reversible visible change using a replaceable panel, marker, or non-destructive package proxy."
+    reference_label: "Before/after reference image and operation timestamp."
+    allowed_claim: "Controlled appearance-change proxy."
+    forbidden_claim: "Real package breakage, deformation rate, or cargo loss."
+
+h3a_events:
+  - event_type: "controlled_environment_drift"
+    status: "optional"
+    operational_definition: "A preregistered temperature/humidity offset, time shift, or sensor offset under safe laboratory limits."
+    forbidden_claim: "Actual warehouse seasonal drift without local warehouse observations."
+  - event_type: "controlled_access_proxy"
+    status: "optional"
+    operational_definition: "A door/light state change or fixed-view intrusion proxy without personal identification."
+    forbidden_claim: "Real warehouse intrusion statistics."
+

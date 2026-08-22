@@ -1,0 +1,25 @@
+{
+  "paperId": "eb508187657fcc24bb4d0557c25c939cedb3eb47",
+  "title": "Internet of things and supply chain management: a literature review",
+  "openAccessPdf": {
+    "url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2017.1402140?needAccess=true",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1080/00207543.2017.1402140?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/00207543.2017.1402140, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1398958545",
+      "name": "M. Ben-Daya"
+    },
+    {
+      "authorId": "1832549",
+      "name": "E. Hassini"
+    },
+    {
+      "authorId": "1900495",
+      "name": "Zied Bahroun"
+    }
+  ],
+  "abstract": null
+}

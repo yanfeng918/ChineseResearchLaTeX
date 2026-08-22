@@ -1,0 +1,174 @@
+project:
+  type: NSFC_Regional
+  layout: five-part
+  proposal_path: "."
+  body_dir: "extraTex"
+  bib_file: "references/myexample.bib"
+  guide_file: "AGENTS.md"
+  stage_output_dir: "docs"
+  review_output_dir: "review"
+  body_files:
+    part_one:
+      - "extraTex/1.1.立项依据.tex"
+      - "extraTex/1.2.内容目标问题.tex"
+      - "extraTex/1.3.方案及可行性.tex"
+      - "extraTex/1.4.特色与创新.tex"
+      - "extraTex/1.5.研究计划.tex"
+    foundation:
+      - "extraTex/2.1.研究基础.tex"
+      - "extraTex/2.2.工作条件.tex"
+      - "extraTex/2.3.承担项目.tex"
+      - "extraTex/2.4.项目完成情况.tex"
+    statements:
+      - "extraTex/3.1.不同类型国基情况.tex"
+      - "extraTex/3.2.同年单位不一致.tex"
+      - "extraTex/3.3.承担中单位不一致.tex"
+      - "extraTex/3.4.不同专业技术职务的申请.tex"
+      - "extraTex/3.5.其它.tex"
+
+run:
+  current_mode: resume
+  last_started: "2026-08-19"
+  last_finished: null
+  last_summary: "已完成C1/C2为主、H3a为扩展的最小先导实验方案与证据包骨架；尚无实验数据或结果。项目披露继续待申请人与依托单位核验，流程仍停留在研究基础事实门。"
+  next_stage: "06_research_foundation"
+
+stages:
+  "00_layout_resolution":
+    name: "Proposal Layout Resolution"
+    status: completed
+    inputs: ["main.tex", "extraTex/"]
+    outputs: ["docs/workflow_status.yaml#project.body_files"]
+    last_updated: "2026-08-18"
+    notes: "确认 main.tex 中 14 个活动正文输入，布局与 five-part 地区基金模板一致；extraTex/@config.tex 已排除。"
+    blockers: null
+
+  "01_topic_extraction":
+    name: "Topic Extraction"
+    status: completed
+    inputs: ["AGENTS.md", "README.md", "main.tex", "docs/00_项目基本信息.md"]
+    outputs: ["docs/01_选题与研究主题.md"]
+    last_updated: "2026-08-18"
+    notes: "已用 research-topic-extractor 形成主题、10 个英文检索词和 3 个具体科学挑战；用 research-guide-updater 将稳定范围边界增量同步至 AGENTS.md。"
+    blockers: null
+
+  "02_literature_review":
+    name: "Literature Review"
+    status: completed
+    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "references/myexample.bib"]
+    outputs: ["docs/02_文献调研/"]
+    last_updated: "2026-08-18"
+    notes: "使用 research-literature-review 完成 12 组检索、去重、相关性评分、45 篇选文、4052 字综述、结构/引用校验和 PDF/DOCX 导出；稳定证据边界已增量同步至 AGENTS.md。"
+    blockers: null
+
+  "03_scientific_questions":
+    name: "Scientific Questions and Innovation"
+    status: completed
+    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "docs/02_文献调研/"]
+    outputs: ["docs/03_科学问题与创新点.md"]
+    last_updated: "2026-08-18"
+    notes: "已按 research-idea 完成 3 轮、每轮 3 路独立审查，形成可靠证据状态主线、3 个可证伪问题与创新边界；稳定表述已增量同步至 AGENTS.md。"
+    blockers: null
+
+  "04_research_plan":
+    name: "Research Plan"
+    status: completed
+    inputs: ["AGENTS.md", "docs/03_科学问题与创新点.md"]
+    outputs: ["docs/04_研究方案与技术路线.md", "docs/06_最小先导实验执行方案.md", "pilot/"]
+    last_updated: "2026-08-19"
+    notes: "已完成总体方案，并进一步建立最小先导实验执行方案、W0-W4参数化弱网压力配置、三时钟数据字典、运行清单、数据说明卡、结果/证据登记与G0-G5验收表；当前仅为可执行骨架，无数据和结果。"
+    blockers: null
+
+  "05_part_one_writing":
+    name: "NSFC Part One Writing"
+    status: completed
+    inputs: ["AGENTS.md", "docs/04_研究方案与技术路线.md", "references/myexample.bib"]
+    outputs: ["@part_one"]
+    last_updated: "2026-08-18"
+    notes: "已写入第（一）部分五个活动正文文件；参考文献库47条，近五年占72.3%，1.1引用32条；方案含7个有实验对应的公式块，五节合计约5295个中文字符。"
+    blockers: null
+
+  "06_research_foundation":
+    name: "Research Foundation and Work Conditions"
+    status: need_user_input
+    inputs: ["AGENTS.md", "docs/05_研究基础素材.md", "docs/研究基础信息补充问卷.md"]
+    outputs: ["@foundation"]
+    last_updated: "2026-08-19"
+    notes: "申请人将公开简历所列在研项目的披露口径改为待定；2.3仅保留核验后据实填写的工作稿表述。最小先导方案与证据包骨架已建立，但尚未执行，不能作为已有预实验结果。"
+    blockers: "XJEDU2026P005、自治区天池英才多模态项目、NSFC 62466056等项目的状态、本人角色、经费、相关性及是否列报尚待申请人与依托单位确认。"
+
+  "07_other_statements":
+    name: "Other Statements"
+    status: completed
+    inputs: ["docs/其他说明信息补充问卷.md"]
+    outputs: ["@statements", "docs/其他说明检查报告.md"]
+    last_updated: "2026-08-18"
+    notes: "申请人明确确认五项均无相关情况，五个活动正文文件已写入正式表述；AIGC 声明章节未启用。"
+    blockers: null
+
+  "08_reference_alignment":
+    name: "Reference Alignment"
+    status: completed
+    inputs: ["extraTex/", "references/myexample.bib"]
+    outputs: ["review/引用一致性审核报告.md"]
+    last_updated: "2026-08-18"
+    notes: "已核对32个唯一引用键：缺失/重复/非法DOI均为0，语义分组与正文主张匹配；保留1项P1（m3dmnrrgb2024年份与2025 DOI口径不一致），两个缺标题警告确认为后备解析器误报。"
+    blockers: null
+    blockers: null
+
+  "09_length_control":
+    name: "Length Control"
+    status: completed
+    inputs: ["extraTex/", "AGENTS.md"]
+    outputs: ["review/篇幅控制报告.md"]
+    last_updated: "2026-08-18"
+    notes: "第（一）部分5296个中文字符，低于8000字上限并保留约33.8%缓冲；14个活动正文合计7997个中文字符。通用技能的25000字示例下限与本项目地区基金五文件合并预算冲突，未机械扩写；页数待最终编译复核。"
+    blockers: null
+    blockers: null
+
+  "10_humanization":
+    name: "Humanization"
+    status: completed
+    inputs: ["extraTex/"]
+    outputs: ["review/去AI味修改报告.md"]
+    last_updated: "2026-08-18"
+    notes: "已定点清理伪对立、综上式总结和首先/其次/最后流水账；引用键32个、公式编号7个均保持，第（一）部分由5296调整为5292个中文字符。"
+    blockers: null
+    blockers: null
+
+  "11_qc":
+    name: "Quality Control"
+    status: completed
+    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
+    outputs: ["review/质量控制报告.md"]
+    last_updated: "2026-08-18"
+    notes: "完成只读预检、元数据抓取和3路独立QC；聚合为5项P0、14项P1、6项P2。P0聚焦数学模式、时间目标、C1辨识、C2反事实估计与C3配对依赖，均进入定点修复清单。"
+    blockers: null
+    blockers: null
+
+  "12_simulated_review":
+    name: "Simulated Review"
+    status: completed
+    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
+    outputs: ["review/模拟专家评审_全稿.md"]
+    last_updated: "2026-08-18"
+    notes: "完成3个独立面板、每组7类专家视角的地区基金模拟评审；三组均判函评/会评不通过，聚合置信度分别为0.89/0.94。共识区分可自动修复的方法/文本问题与必须由申请人补证的事实条件。"
+    blockers: null
+
+  "13_targeted_repair":
+    name: "P0/P1 Targeted Repair"
+    status: need_user_input
+    inputs: ["review/质量控制报告.md", "review/模拟专家评审_全稿.md"]
+    outputs: ["review/P0P1定点修复报告.md", "docs/评审意见修复清单.md"]
+    last_updated: "2026-08-19"
+    notes: "全部自动修复仍然有效；在研项目披露因最新口径为待定，重新标记为needs_user_fact。"
+    blockers: "在研项目披露未核验，当前申请书不可作为正式提交版本。"
+
+  "14_compile":
+    name: "Compile"
+    status: need_user_input
+    inputs: ["main.tex", "extraTex/", "references/myexample.bib"]
+    outputs: ["main.pdf", "review/编译检查报告.md"]
+    last_updated: "2026-08-19"
+    notes: "2026-08-18版曾成功冷构建16页PDF；2026-08-19修改2.3后未重新编译，现有main.pdf为历史工作稿。"
+    blockers: "待在研项目披露核验并形成正式2.3文本后再生成提交版PDF。"

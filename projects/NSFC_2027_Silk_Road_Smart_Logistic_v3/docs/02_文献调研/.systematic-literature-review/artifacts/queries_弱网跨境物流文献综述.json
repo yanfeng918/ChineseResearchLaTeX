@@ -1,0 +1,60 @@
+{
+  "queries": [
+    {
+      "query": "multimodal sensor fusion anomaly detection missing modalities uncertainty",
+      "rationale": "核心查询：异构传感、缺失模态、异常识别与不确定性"
+    },
+    {
+      "query": "multimodal time series anomaly detection asynchronous sensors",
+      "rationale": "方法变体：异步多变量时序异常检测"
+    },
+    {
+      "query": "multimodal industrial anomaly detection vision sensor fusion",
+      "rationale": "应用变体：视觉与物联网传感器联合异常检测"
+    },
+    {
+      "query": "edge intelligence intermittent connectivity IoT adaptive transmission",
+      "rationale": "核心查询：间歇连接下的边缘智能与自适应传输"
+    },
+    {
+      "query": "delay tolerant networking Internet of Things edge computing",
+      "rationale": "通信基础：容迟网络、物联网与边缘计算"
+    },
+    {
+      "query": "semantic communication task oriented edge intelligence resource constrained IoT",
+      "rationale": "方法前沿：任务导向通信与资源受限边缘推理"
+    },
+    {
+      "query": "energy efficient edge computing joint communication computation optimization IoT",
+      "rationale": "优化查询：通信—计算—能耗联合约束"
+    },
+    {
+      "query": "age of information energy harvesting wireless sensor networks edge",
+      "rationale": "理论基础：信息时效与低功耗传感网络"
+    },
+    {
+      "query": "federated learning intermittent connectivity edge devices robustness",
+      "rationale": "协同学习：弱连接与异构边缘设备"
+    },
+    {
+      "query": "smart logistics IoT condition monitoring cargo anomaly detection",
+      "rationale": "领域查询：物流货物状态监测与异常识别"
+    },
+    {
+      "query": "cold chain logistics multimodal sensing anomaly detection edge computing",
+      "rationale": "邻近场景：冷链多源感知、风险与边缘计算"
+    },
+    {
+      "query": "warehouse safety multimodal sensor fusion risk prediction",
+      "rationale": "场景查询：仓储安全多源融合与风险预警"
+    },
+    {
+      "query": "domain generalization time series anomaly detection distribution shift",
+      "rationale": "泛化查询：跨口岸跨季节分布漂移与时序异常检测"
+    },
+    {
+      "query": "calibration uncertainty anomaly detection deep learning sensor",
+      "rationale": "评价查询：异常检测置信度与不确定性校准"
+    }
+  ]
+}

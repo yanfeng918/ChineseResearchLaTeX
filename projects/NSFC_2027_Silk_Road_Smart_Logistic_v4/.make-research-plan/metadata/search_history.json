@@ -1,0 +1,13 @@
+{
+  "searches": [
+    {"topic": "异步与缺失多模态异常", "query": "asynchronous multimodal time series anomaly detection informative missingness", "source": "OpenAlex/Crossref", "results_count": 50, "timestamp": "2026-08-18T00:00:00+08:00"},
+    {"topic": "任务价值与弱网协同", "query": "task-oriented communication value of information delay tolerant edge intelligence", "source": "OpenAlex/Crossref", "results_count": 50, "timestamp": "2026-08-18T00:00:00+08:00"},
+    {"topic": "仓储风险与漂移校准", "query": "multimodal warehouse anomaly early warning concept drift uncertainty calibration", "source": "OpenAlex/Crossref", "results_count": 50, "timestamp": "2026-08-18T00:00:00+08:00"}
+  ],
+  "source": "复用项目阶段02的12组定向检索",
+  "query_groups": 12,
+  "deduplicated_candidates": 498,
+  "selected_papers": 45,
+  "coverage": ["异步/缺失多模态异常", "任务导向通信", "延迟容忍网络", "端边云协同", "资源受限推理", "概念漂移", "不确定性校准", "物流与仓储监测"],
+  "note": "方案阶段不重复下载论文；方法选择只复用已核验材料，并在正式正文中仅引用可验证条目。"
+}

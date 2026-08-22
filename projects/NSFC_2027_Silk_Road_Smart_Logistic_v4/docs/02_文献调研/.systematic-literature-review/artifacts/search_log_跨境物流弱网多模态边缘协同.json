@@ -1,0 +1,463 @@
+{
+  "total_queries": 12,
+  "total_returned": 551,
+  "total_unique": 500,
+  "queries": [
+    {
+      "query": "multimodal sensor fusion cargo condition monitoring logistics anomaly detection IoT",
+      "rationale": "核心应用查询：货物状态监测、多传感器融合与物流异常识别",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "multimodal time series anomaly detection missing modality asynchronous sensors",
+      "rationale": "方法查询：异步采样、模态缺失与多变量时序异常检测",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=multimodal+time+series+anomaly+detection+missing+modality+asynchronous+sensors&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=multimodal+time+series+anomaly+detection+missing+modality+asynchronous+sensors&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "incomplete multimodal learning robust sensor fusion distribution shift",
+      "rationale": "方法查询：不完整模态、鲁棒融合与跨设备/跨场景分布漂移",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=incomplete+multimodal+learning+robust+sensor+fusion+distribution+shift&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=incomplete+multimodal+learning+robust+sensor+fusion+distribution+shift&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "edge intelligence resource constrained IoT anomaly detection energy latency",
+      "rationale": "边缘智能查询：精度、时延、能耗和端侧算力联合约束",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=edge+intelligence+resource+constrained+IoT+anomaly+detection+energy+latency&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "task oriented semantic communication edge inference multimodal sensing",
+      "rationale": "弱网协同查询：面向任务价值的语义传输与边缘推理",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=task+oriented+semantic+communication+edge+inference+multimodal+sensing&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=task+oriented+semantic+communication+edge+inference+multimodal+sensing&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "split computing adaptive offloading intermittent network edge AI",
+      "rationale": "边云协同查询：间歇网络下模型切分、卸载与动态推理",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=split+computing+adaptive+offloading+intermittent+network+edge+AI&per-page=50&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "delay tolerant networking IoT intermittent connectivity reliable data delivery",
+      "rationale": "通信查询：断续连接、缓存转发、断点续传和可靠交付",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (295s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "event triggered sensing adaptive sampling energy efficient IoT monitoring",
+      "rationale": "低功耗查询：事件触发采样、自适应感知与能量效率",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (288s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=event+triggered+sensing+adaptive+sampling+energy+efficient+IoT+monitoring&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "warehouse multimodal anomaly detection video environmental sensors fire intrusion",
+      "rationale": "仓储场景查询：视频、环境和门禁等多源异常融合",
+      "returned": 1,
+      "unique": 1,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.608,
+      "quality_label": "良好",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (274s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 1,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "uncertainty calibration early warning time series anomaly detection concept drift",
+      "rationale": "预警查询：不确定性校准、提前预警与概念漂移",
+      "returned": 50,
+      "unique": 45,
+      "notes": "",
+      "dedupe_rate": 0.9,
+      "quality_score": 0.9,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (267s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=uncertainty+calibration+early+warning+time+series+anomaly+detection+concept+drift&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "industrial IoT multimodal dataset anomaly detection benchmark",
+      "rationale": "数据与评价查询：工业物联网多模态异常数据集和基准",
+      "returned": 50,
+      "unique": 50,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 1.0,
+      "quality_label": "优秀",
+      "provider_used": "semantic_scholar",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (253s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "edge AI survey IoT resource management collaborative inference",
+      "rationale": "综述查询：边缘智能、资源管理与协同推理全景",
+      "returned": 50,
+      "unique": 48,
+      "notes": "",
+      "dedupe_rate": 0.96,
+      "quality_score": 0.96,
+      "quality_label": "优秀",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (241s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=edge+AI+survey+IoT+resource+management+collaborative+inference&limit=50&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 50,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "quality_summary": {
+    "excellent": 11,
+    "good": 1,
+    "fair": 0,
+    "poor": 0,
+    "recommendations": []
+  },
+  "rate_limit_summary": {
+    "semantic_scholar": {
+      "calls_last_minute": 2.0,
+      "total_calls": 3.0,
+      "session_duration_seconds": 121.24510502815247
+    }
+  },
+  "abstract_enrichment_summary": {
+    "enabled": true,
+    "skipped": true,
+    "stage": "post_selection",
+    "reason": "abstract enrichment stage is not search"
+  }
+}

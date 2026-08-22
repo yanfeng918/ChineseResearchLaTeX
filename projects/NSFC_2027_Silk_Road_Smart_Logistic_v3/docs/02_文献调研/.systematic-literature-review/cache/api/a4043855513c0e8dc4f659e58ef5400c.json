@@ -1,0 +1,25 @@
+{
+  "paperId": "ee462c075bd99209356277f744d2af1523f2e7b0",
+  "title": "Task-Oriented Communication Design in Cyber-Physical Systems: A Survey on Theory and Applications",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1109/access.2022.3231039",
+    "status": "GOLD",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.07166, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2144933",
+      "name": "Arsham Mostaani"
+    },
+    {
+      "authorId": "2135653377",
+      "name": "T. Vu"
+    },
+    {
+      "authorId": "1760292",
+      "name": "S. Chatzinotas"
+    }
+  ],
+  "abstract": "Communication system design has been traditionally guided by task-agnostic principles, which aim at efficiently transmitting as many correct bits as possible through a given channel. However, in the era of cyber-physical systems, the effectiveness of communications is not dictated simply by the bit rate, but most importantly by the efficient completion of the task in hand, e.g., controlling remotely a robot, automating a production line or collaboratively sensing through a drone swarm. In parallel, it is projected that by 2023, half of the worldwide network connections will be among machines rather than humans. In this context, it is crucial to establish a new paradigm for designing communication strategies for multi-agent cyber-physical systems. This is a daunting task, since it requires a combination of principles from information, communication, control theories and computer science in order to formalize a general framework for task-oriented communication designs. In this direction, this paper reviews and structures the relevant theoretical work across a wide range of scientific communities. Subsequently, it proposes a general conceptual framework for task-oriented communication design, along with its specializations according to targeted use cases. Furthermore, it provides a survey of relevant contributions in dominant applications, such as industrial internet of things, multi-unmanned aerial vehicle (UAV) systems, autonomous vehicles, distributed learning systems, smart manufacturing plants, 5G and beyond self-organizing networks, and tactile internet. Finally, this paper also highlights the most important open research topics from both the theoretical framework and application points of view."
+}

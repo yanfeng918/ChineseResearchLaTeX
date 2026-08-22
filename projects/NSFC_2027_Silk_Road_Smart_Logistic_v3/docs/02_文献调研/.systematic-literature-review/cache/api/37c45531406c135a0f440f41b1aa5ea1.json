@@ -1,0 +1,161 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          10
+        ]
+      ],
+      "date-time": "2026-08-10T23:22:27Z",
+      "timestamp": 1786404147142,
+      "version": "3.56.0"
+    },
+    "reference-count": 0,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Commun. Inf. Netw."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.23919/jcin.2021.9475121",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2022-06-28T19:53:23Z",
+      "timestamp": 1656446003000
+    },
+    "page": "110-124",
+    "source": "Crossref",
+    "is-referenced-by-count": 139,
+    "title": [
+      "Energy-Efficient Federated Edge Learning with Joint Communication and Computation Design"
+    ],
+    "prefix": "10.23919",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Xiaopeng",
+        "family": "Mo",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Information Engineering, Guangdong University of Technology, Guangzhou 510006, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jie",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Science and Engineering, the Chinese University of Hong Kong, Shenzhen, Shenzhen 518172, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "container-title": [
+      "Journal of Communications and Information Networks"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/8892389/9475117/09475121.pdf?arnumber=9475121",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2022-06-28T19:53:32Z",
+      "timestamp": 1656446012000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9475121/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "2"
+    },
+    "URL": "https://doi.org/10.23919/jcin.2021.9475121",
+    "relation": {},
+    "ISSN": [
+      "2096-1081",
+      "2509-3312"
+    ],
+    "issn-type": [
+      {
+        "value": "2096-1081",
+        "type": "print"
+      },
+      {
+        "value": "2509-3312",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    }
+  }
+}

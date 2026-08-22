@@ -1,0 +1,29 @@
+{
+  "paperId": "820badaa2a3ebfb7b2f5830a376e96a89f634914",
+  "title": "Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping",
+  "openAccessPdf": {
+    "url": "https://cris.unibo.it/bitstream/11585/968592/3/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.pdf",
+    "status": "GREEN",
+    "license": "other-oa",
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2312.04521, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2202032302",
+      "name": "Alex Costanzino"
+    },
+    {
+      "authorId": "80804241",
+      "name": "Pierluigi Zama Ramirez"
+    },
+    {
+      "authorId": "2240529123",
+      "name": "Giuseppe Lisanti"
+    },
+    {
+      "authorId": "2213727247",
+      "name": "Luigi Di Stefano"
+    }
+  ],
+  "abstract": "Recent advancements have shown the potential of lever-aging both point clouds and images to localize anomalies. Nevertheless, their applicability in industrial manufacturing is often constrained by significant drawbacks, such as the use of memory banks, which leads to a substantial in-crease in terms of memory footprint and inference times. We propose a novel light and fast framework that learns to map features from one modality to the other on nominal samples and detect anomalies by pinpointing inconsisten-cies between observed and mapped features. Extensive ex-periments show that our approach achieves state-of-the-art detection and segmentation performance in both the stan-dard and few-shot settings on the MVTec 3D-AD dataset while achieving faster inference and occupying less memory than previous multimodal AD methods. Furthermore, we propose a layer pruning technique to improve memory and time efficiency with a marginal sacrifice in performance."
+}

@@ -1,0 +1,37 @@
+{
+  "paperId": "4bf6f7bfcc80ab24f7ad63895210efe6e905bc0c",
+  "title": "IoT-based supply chain management: A systematic literature review",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.iot.2023.100982",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.iot.2023.100982?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.iot.2023.100982, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "123088926",
+      "name": "Soonh Taj"
+    },
+    {
+      "authorId": "2090622572",
+      "name": "A. Imran"
+    },
+    {
+      "authorId": "2429723",
+      "name": "Zenun Kastrati"
+    },
+    {
+      "authorId": "2122983592",
+      "name": "Sher Muhammad Daudpota"
+    },
+    {
+      "authorId": "35080001",
+      "name": "R. Memon"
+    },
+    {
+      "authorId": "47348081",
+      "name": "J. Ahmed"
+    }
+  ],
+  "abstract": null
+}

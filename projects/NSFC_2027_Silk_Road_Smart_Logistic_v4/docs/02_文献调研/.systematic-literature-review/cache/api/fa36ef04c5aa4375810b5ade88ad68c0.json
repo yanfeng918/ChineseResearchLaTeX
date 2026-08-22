@@ -1,0 +1,25 @@
+{
+  "paperId": "5760e1ea941cf955a3f26a204ba00c0d7299e389",
+  "title": "Practical Approach to Asynchronous Multivariate Time Series Anomaly Detection and Localization",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3447548.3467174?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3447548.3467174, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2365933770",
+      "name": "Ahmed Abdulaal"
+    },
+    {
+      "authorId": "9562527",
+      "name": "Zhuanghua Liu"
+    },
+    {
+      "authorId": "2596604",
+      "name": "Tomer Lancewicki"
+    }
+  ],
+  "abstract": "Engineers at eBay utilize robust methods in monitoring IT system signals for anomalies. However, the growing scale of signals, both in volumes and dimensions, overpowers traditional statistical state-space or supervised learning tools. Thus, state-of-the-art methods based on unsupervised deep learning are sought in recent research. However, we experienced flaws when implementing those methods, such as requiring partial supervision and weaknesses to high dimensional datasets, among other reasons discussed in this paper. We propose a practical approach for inferring anomalies from large multivariate sets. We observe an abundance of time series in real-world applications, which exhibit asynchronous and consistent repetitive variations, such as IT, weather, utility, and transportation. Our solution is designed to leverage this behavior. The solution utilizes spectral analysis on the latent representation of a pre-trained autoencoder to extract dominant frequencies across the signals, which are then used in a subsequent network that learns the phase shifts across the signals and produces a synchronized representation of the raw multivariate. Random subsets of the synchronous multivariate are then fed into an array of autoencoders learning to minimize the quantile reconstruction losses, which are then used to infer and localize anomalies based on a majority vote. We benchmark this method against state-of-the-art approaches on public datasets and eBay's data using their referenced evaluation methods. Furthermore, we address the limitations of the referenced evaluation methods and propose a more realistic evaluation method."
+}

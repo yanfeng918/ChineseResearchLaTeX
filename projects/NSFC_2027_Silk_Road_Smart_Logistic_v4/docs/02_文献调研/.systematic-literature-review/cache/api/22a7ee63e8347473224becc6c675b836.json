@@ -1,0 +1,538 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2026-08-12T00:05:31Z",
+      "timestamp": 1786493131646,
+      "version": "3.56.0"
+    },
+    "reference-count": 37,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              28
+            ]
+          ],
+          "date-time": "2022-08-28T00:00:00Z",
+          "timestamp": 1661644800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              28
+            ]
+          ],
+          "date-time": "2022-08-28T00:00:00Z",
+          "timestamp": 1661644800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Neural Process Lett"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11063-022-11015-0",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          28
+        ]
+      ],
+      "date-time": "2022-08-28T05:02:41Z",
+      "timestamp": 1661662961000
+    },
+    "page": "2081-2101",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 28,
+    "title": [
+      "Concept Drift Adaptation for Time Series Anomaly Detection via Transformer"
+    ],
+    "prefix": "10.1007",
+    "volume": "55",
+    "author": [
+      {
+        "given": "Chaoyue",
+        "family": "Ding",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0158-5330",
+        "authenticated-orcid": false,
+        "given": "Jing",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shiliang",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          28
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "11015_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "275",
+        "DOI": "10.1023/B:DAMI.0000023676.72185.7c",
+        "volume": "8",
+        "author": "K Yamanishi",
+        "year": "2004",
+        "unstructured": "Yamanishi K, Takeuchi J-I, Williams G, Milne P (2004) On-line unsupervised outlier detection using finite mixtures with discounting learning algorithms. Data Mining and Knowledge Discovery 8(3):275–300",
+        "journal-title": "Data Mining and Knowledge Discovery"
+      },
+      {
+        "issue": "9",
+        "key": "11015_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1635",
+        "DOI": "10.1016/j.compchemeng.2004.01.009",
+        "volume": "28",
+        "author": "H Liu",
+        "year": "2004",
+        "unstructured": "Liu H, Shah S, Jiang W (2004) On-line outlier detection and data cleaning. Computers & Chemical Engineering 28(9):1635–1647",
+        "journal-title": "Computers & Chemical Engineering"
+      },
+      {
+        "key": "11015_CR3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang C, Song D, Chen Y, Feng X, Lumezanu C, Cheng W, Ni J, Zong B, Chen H, Chawla NV (2019) A deep neural network for unsupervised anomaly detection and diagnosis in multivariate time series data. In: AAAI Conference on Artificial Intelligence, pp 1409–1416",
+        "DOI": "10.1609/aaai.v33i01.33011409"
+      },
+      {
+        "key": "11015_CR4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.engappai.2020.103919",
+        "volume": "95",
+        "author": "M Yu",
+        "year": "2020",
+        "unstructured": "Yu M, Sun S (2020) Policy-based reinforcement learning for time series anomaly detection. Engineering Applications of Artificial Intelligence 95:103919",
+        "journal-title": "Engineering Applications of Artificial Intelligence"
+      },
+      {
+        "key": "11015_CR5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dashdondov K, Kim M-H (2021) Mahalanobis distance based multivariate outlier detection to improve performance of hypertension prediction. Neural Processing Letters, pp 1–13",
+        "DOI": "10.1007/s11063-021-10663-y"
+      },
+      {
+        "issue": "2",
+        "key": "11015_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1485",
+        "DOI": "10.1007/s11063-020-10319-3",
+        "volume": "52",
+        "author": "J Hu",
+        "year": "2020",
+        "unstructured": "Hu J, Wang X, Zhang Y, Zhang D, Zhang M, Xue J (2020) Time series prediction method based on variant lstm recurrent neural network. Neural Processing Letters 52(2):1485–1500",
+        "journal-title": "Neural Processing Letters"
+      },
+      {
+        "key": "11015_CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang X, Cai Z, Luo Y, Wen Z, Ying S (2022) Long time series deep forecasting with multiscale feature extraction and seq2seq attention mechanism. Neural Processing Letters pp 1–24",
+        "DOI": "10.1007/s11063-022-10774-0"
+      },
+      {
+        "key": "11015_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wu Z, Pan S, Long G, Jiang J, Chang X, Zhang C (2020) Connecting the dots: Multivariate time series forecasting with graph neural networks. In: ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp 753–763",
+        "DOI": "10.1145/3394486.3403118"
+      },
+      {
+        "key": "11015_CR9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhou H, Zhang S, Peng J, Zhang S, Li J, Xiong H, Zhang W (2021) Informer: Beyond efficient Transformer for long sequence time-series forecasting. In: AAAI Conference on Artificial Intelligence, pp 11106–11115",
+        "DOI": "10.1609/aaai.v35i12.17325"
+      },
+      {
+        "key": "11015_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hundman K, Constantinou V, Laporte C, Colwell I, Soderstrom T (2018) Detecting spacecraft anomalies using LSTMs and nonparametric dynamic thresholding. In: ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp 387–395",
+        "DOI": "10.1145/3219819.3219845"
+      },
+      {
+        "key": "11015_CR11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Su Y, Zhao Y, Niu C, Liu R, Sun W, Pei D (2019) Robust anomaly detection for multivariate time series through stochastic recurrent neural network. In: ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp 2828–2837",
+        "DOI": "10.1145/3292500.3330672"
+      },
+      {
+        "key": "11015_CR12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Deng A, Hooi B (2021) Graph neural network-based anomaly detection in multivariate time series. In: AAAI Conference on Artificial Intelligence, pp 4027–4035",
+        "DOI": "10.1609/aaai.v35i5.16523"
+      },
+      {
+        "key": "11015_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "634",
+        "DOI": "10.1016/j.engappai.2019.07.008",
+        "volume": "85",
+        "author": "A Borghesi",
+        "year": "2019",
+        "unstructured": "Borghesi A, Bartolini A, Lombardi M, Milano M, Benini L (2019) A semisupervised autoencoder-based approach for anomaly detection in high performance computing systems. Engineering Applications of Artificial Intelligence 85:634–644",
+        "journal-title": "Engineering Applications of Artificial Intelligence"
+      },
+      {
+        "key": "11015_CR14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li D, Chen D, Jin B, Shi L, Goh J, Ng S-K (2019) Mad-gan: Multivariate anomaly detection for time series data with generative adversarial networks. In: International Conference on Artificial Neural Networks, pp 703–716",
+        "DOI": "10.1007/978-3-030-30490-4_56"
+      },
+      {
+        "key": "11015_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cheng M, Xu Q, Lv J, Liu W, Li Q, Wang J (2016) MS-LSTM: A multi-scale LSTM model for bgp anomaly detection. In: International Conference on Network Protocols, pp 1–6",
+        "DOI": "10.1109/ICNP.2016.7785326"
+      },
+      {
+        "key": "11015_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1991",
+        "DOI": "10.1109/ACCESS.2018.2886457",
+        "volume": "7",
+        "author": "M Munir",
+        "year": "2018",
+        "unstructured": "Munir M, Siddiqui SA, Dengel A, Ahmed S (2018) Deepant: A deep learning approach for unsupervised anomaly detection in time series. IEEE Access 7:1991–2005",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "12",
+        "key": "11015_CR17",
+        "first-page": "2346",
+        "volume": "31",
+        "author": "J Lu",
+        "year": "2018",
+        "unstructured": "Lu J, Liu A, Dong F, Gu F, Gama J, Zhang G (2018) Learning under concept drift: A review. IEEE Transactions on Knowledge and Data Engineering 31(12):2346–2363",
+        "journal-title": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "issue": "1",
+        "key": "11015_CR18",
+        "first-page": "1345",
+        "volume": "22",
+        "author": "SJ Pan",
+        "year": "2009",
+        "unstructured": "Pan SJ, Yang Q (2009) A survey on transfer learning. IEEE Transactions on Knowledge and Data Engineering 22(1):1345–1359",
+        "journal-title": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "key": "11015_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "96",
+        "DOI": "10.1109/IOTM.0001.2100012",
+        "volume": "2",
+        "author": "L Yang",
+        "year": "2021",
+        "unstructured": "Yang L, Shami A (2021) A lightweight concept drift detection and adaptation framework for iot data streams. IEEE Internet of Things Magazine 2:96–101",
+        "journal-title": "IEEE Internet of Things Magazine"
+      },
+      {
+        "key": "11015_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Du Y, Wang J, Feng W, Pan S, Qin T, Xu R, Wang C (2021) Adarnn: Adaptive learning and forecasting of time series. In: Proceedings of the ACM International Conference on Information & Knowledge Management, pp 402–411",
+        "DOI": "10.1145/3459637.3482315"
+      },
+      {
+        "key": "11015_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "383",
+        "DOI": "10.1016/j.neucom.2020.04.077",
+        "volume": "403",
+        "author": "M Gu",
+        "year": "2020",
+        "unstructured": "Gu M, Fei J, Sun S (2020) Online anomaly detection with sparse Gaussian processes. Neurocomputing 403:383–399",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "11015_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Saurav S, Malhotra P, TV V, Gugulothu N, Vig L, Agarwal P, Shroff G (2018) Online anomaly detection with concept drift adaptation using recurrent neural networks. In: ACM India Joint International Conference on Data Science and Management of Data, pp 78–87",
+        "DOI": "10.1145/3152494.3152501"
+      },
+      {
+        "key": "11015_CR23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cho K, Van Merriënboer B, Bahdanau D, Bengio Y (2014) On the properties of neural machine translation: Encoder-decoder approaches. arXiv preprint arXiv:1409.1259",
+        "DOI": "10.3115/v1/W14-4012"
+      },
+      {
+        "issue": "6088",
+        "key": "11015_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "533",
+        "DOI": "10.1038/323533a0",
+        "volume": "323",
+        "author": "DE Rumelhart",
+        "year": "1986",
+        "unstructured": "Rumelhart DE, Hinton GE, Williams RJ (1986) Learning representations by back-propagating errors. Nature 323(6088):533–536",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "8",
+        "key": "11015_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "1735",
+        "DOI": "10.1162/neco.1997.9.8.1735",
+        "volume": "9",
+        "author": "S Hochreiter",
+        "year": "1997",
+        "unstructured": "Hochreiter S, Schmidhuber J (1997) Long short-term memory. Neural Computation 9(8):1735–1780",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "11015_CR26",
+        "unstructured": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser Ł, Polosukhin I (2017) Attention is all you need. In: Advances in Neural Information Processing Systems, pp 5998–6008"
+      },
+      {
+        "key": "11015_CR27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang H, Wu Z, Liu Z, Cai H, Zhu L, Gan C, Han S (2020) Hat: Hardware-aware Transformers for efficient natural language processing. In: Annual Meeting of the Association for Computational Linguistics, pp 7675–7688",
+        "DOI": "10.18653/v1/2020.acl-main.686"
+      },
+      {
+        "key": "11015_CR28",
+        "unstructured": "Wu S, Xiao X, Ding Q, Zhao P, Wei Y, Huang J (2020) Adversarial sparse transformer for time series forecasting. In: Advances in Neural Information Processing Systems, pp 17105–17115"
+      },
+      {
+        "key": "11015_CR29",
+        "unstructured": "Wu N, Green B, Ben X, O’Banion S (2020) Deep transformer models for time series forecasting: The influenza prevalence case. arXiv preprint arXiv:2001.08317"
+      },
+      {
+        "key": "11015_CR30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gama J, Medas P, Castillo G, Rodrigues P (2004) Learning with drift detection. In: Brazilian Symposium on Artificial Intelligence, pp 286–295",
+        "DOI": "10.1007/978-3-540-28645-5_29"
+      },
+      {
+        "key": "11015_CR31",
+        "unstructured": "Li S, Jin X, Xuan Y, Zhou X, Chen W, Wang Y-X, Yan X (2019) Enhancing the locality and breaking the memory bottleneck of Transformer on time series forecasting. In: Advances in Neural Information Processing Systems, pp 5244–5254"
+      },
+      {
+        "key": "11015_CR32",
+        "unstructured": "Laptev N, Amizadeh A, Billawala Y (2015) Yahoo Labs News: Announcing A Benchmark Dataset For Time Series Anomaly Detection"
+      },
+      {
+        "key": "11015_CR33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lavin A, Ahmad S (2015) Evaluating real-time anomaly detection algorithms–the numenta anomaly benchmark. In: International Conference on Machine Learning and Applications, pp 38–44",
+        "DOI": "10.1109/ICMLA.2015.141"
+      },
+      {
+        "key": "11015_CR34",
+        "unstructured": "Stanway A (2013) Etsy skyline. https://github.com/etsy/skyline"
+      },
+      {
+        "key": "11015_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "134",
+        "DOI": "10.1016/j.neucom.2017.04.070",
+        "volume": "262",
+        "author": "S Ahmad",
+        "year": "2017",
+        "unstructured": "Ahmad S, Lavin A, Purdy S, Agha Z (2017) Unsupervised real-time anomaly detection for streaming data. Neurocomputing 262:134–147",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "11015_CR36",
+        "unstructured": "Kingma DP, Ba J (2015) Adam: A method for stochastic optimization. In: International Conference on Learning Representations, pp 1–15"
+      },
+      {
+        "key": "11015_CR37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Siffer A, Fouque P-A, Termier A, Largouet C (2017) Anomaly detection in streams with extreme value theory. In: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp 1067–1075",
+        "DOI": "10.1145/3097983.3098144"
+      }
+    ],
+    "container-title": [
+      "Neural Processing Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11063-022-11015-0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s11063-022-11015-0/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s11063-022-11015-0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          8
+        ]
+      ],
+      "date-time": "2023-07-08T12:13:31Z",
+      "timestamp": 1688818411000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s11063-022-11015-0"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          28
+        ]
+      ]
+    },
+    "references-count": 37,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "11015"
+    ],
+    "URL": "https://doi.org/10.1007/s11063-022-11015-0",
+    "relation": {},
+    "ISSN": [
+      "1370-4621",
+      "1573-773X"
+    ],
+    "issn-type": [
+      {
+        "value": "1370-4621",
+        "type": "print"
+      },
+      {
+        "value": "1573-773X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          28
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "16 August 2022",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "28 August 2022",
+        "order": 2,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      }
+    ]
+  }
+}

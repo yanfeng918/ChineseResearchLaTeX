@@ -1,0 +1,326 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          13
+        ]
+      ],
+      "date-time": "2026-06-13T16:38:20Z",
+      "timestamp": 1781368700797,
+      "version": "3.54.1"
+    },
+    "reference-count": 23,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              13
+            ]
+          ],
+          "date-time": "2025-03-13T00:00:00Z",
+          "timestamp": 1741824000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              13
+            ]
+          ],
+          "date-time": "2025-03-13T00:00:00Z",
+          "timestamp": 1741824000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1109/icbda65366.2025.11211409",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          4
+        ]
+      ],
+      "date-time": "2025-11-04T18:33:50Z",
+      "timestamp": 1762281230000
+    },
+    "page": "152-157",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Unsupervised Concept Drift Detection and Adaptation for Hashing Based Multivariate Time Series Anomaly Detection"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Takehiko",
+        "family": "Mizoguchi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "NEC Corporation,Kawasaki,Kanagawa,Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuji",
+        "family": "Kobayashi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Corporation,Kawasaki,Kanagawa,Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-23854-3_46"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TITB.2005.856863"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s17102219"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3220108"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v34i02.5497"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CIDUE.2011.5948491"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDMW.2011.70"
+      },
+      {
+        "key": "ref8",
+        "article-title": "Towards non-parametric drift detection via dynamic adapting window independence drift detection (DAWIDD)",
+        "volume-title": "Proc. Int’l Conf. Machine Learning (ICML)",
+        "author": "Hinder",
+        "year": "2020"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IJCNN52387.2021.9534340"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICASSP.2019.8683072"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3459637.3482209"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JAS.2023.123228"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611977653.ch76"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPRW59228.2023.00297"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3534678.3539348"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/bigdata59044.2023.10386160"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2018.2876857"
+      },
+      {
+        "key": "ref18",
+        "article-title": "Deep one-class classification",
+        "volume-title": "Proc. Int’l Conf. Machine Learning (ICML)",
+        "author": "Ruff",
+        "year": "2018"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2012.193"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2011.06.019"
+      },
+      {
+        "key": "ref21",
+        "article-title": "LSTM-based encoder-decoder for multi-sensor anomaly detection",
+        "volume-title": "Proc. ICML Anomaly Detection Workshop",
+        "author": "Malhotra",
+        "year": "2016"
+      },
+      {
+        "key": "ref22",
+        "first-page": "4393",
+        "article-title": "Deep one-class classification",
+        "volume-title": "Proc. Int’l Conf. Machine Learning (ICML)",
+        "author": "Ruff",
+        "year": "2018"
+      },
+      {
+        "key": "ref23",
+        "volume-title": "Skoltech anomaly benchmark (skab)",
+        "author": "Katser",
+        "year": "2020"
+      }
+    ],
+    "event": {
+      "name": "2025 10th International Conference on Big Data Analytics (ICBDA)",
+      "location": "Singapore, Singapore",
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            13
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            15
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2025 10th International Conference on Big Data Analytics (ICBDA)"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/11210857/11210884/11211409.pdf?arnumber=11211409",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          5
+        ]
+      ],
+      "date-time": "2025-11-05T06:30:13Z",
+      "timestamp": 1762324213000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11211409/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          13
+        ]
+      ]
+    },
+    "references-count": 23,
+    "URL": "https://doi.org/10.1109/icbda65366.2025.11211409",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          13
+        ]
+      ]
+    }
+  }
+}

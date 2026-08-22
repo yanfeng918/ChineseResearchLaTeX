@@ -1,0 +1,1 @@
+✓ LaTeX review validation passed (cites=50, bib_keys=50) SECTIONS:{"abstract": true, "intro": true, "body_count": 5, "body_titles": ["不完备观测下的多模态可靠感知", "非平稳多变量时序异常与风险演化", "弱网下的信息价值与端边协同", "物流与仓储场景证据", "不确定性、跨域泛化与评价"], "discussion": true, "outlook": true}

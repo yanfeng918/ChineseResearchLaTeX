@@ -1,0 +1,1519 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2026-08-15T20:35:49Z",
+      "timestamp": 1786826149758,
+      "version": "3.56.0"
+    },
+    "reference-count": 242,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2017-01-01T00:00:00Z",
+          "timestamp": 1483228800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Hong Kong Research Grants Council",
+        "award": [
+          "16200214"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "16200214"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong Research Grants Council",
+        "award": [
+          "17209917"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "17209917"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hong Kong Research Grants Council",
+        "award": [
+          "17259416"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "17259416"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Commun. Surv. Tutorials"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.1109/comst.2017.2745201",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2017-08-25T18:34:46Z",
+      "timestamp": 1503686086000
+    },
+    "page": "2322-2358",
+    "source": "Crossref",
+    "is-referenced-by-count": 5051,
+    "title": [
+      "A Survey on Mobile Edge Computing: The Communication Perspective"
+    ],
+    "prefix": "10.1109",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Yuyi",
+        "family": "Mao",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3245-9361",
+        "authenticated-orcid": false,
+        "given": "Changsheng",
+        "family": "You",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5222-1898",
+        "authenticated-orcid": false,
+        "given": "Jun",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kaibin",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Khaled B.",
+        "family": "Letaief",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref170",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2011.5876496"
+      },
+      {
+        "key": "ref172",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LCOMM.2014.2347272"
+      },
+      {
+        "key": "ref171",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comcom.2008.01.044"
+      },
+      {
+        "key": "ref174",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5626/JCSE.2015.9.3.155"
+      },
+      {
+        "key": "ref173",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2015.2405539"
+      },
+      {
+        "key": "ref176",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC.2015.7343580"
+      },
+      {
+        "key": "ref175",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CLOUD.2013.100"
+      },
+      {
+        "key": "ref178",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2017.2674665"
+      },
+      {
+        "key": "ref177",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2016.7537180"
+      },
+      {
+        "key": "ref168",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2014.2363454"
+      },
+      {
+        "key": "ref169",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2012.6384454"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2733373.2806402"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISM.2009.21"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/RTEICT.2016.7807775"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSC.2013.53"
+      },
+      {
+        "key": "ref31",
+        "year": "2015",
+        "journal-title": "5G Automotive Vision"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MPRV.2009.82"
+      },
+      {
+        "key": "ref37",
+        "article-title": "Powering IoT devices: Technologies and opportunities",
+        "author": "somov",
+        "year": "2015",
+        "journal-title": "The IEEE IoT Newsletter"
+      },
+      {
+        "key": "ref36",
+        "year": "2014",
+        "journal-title": "Understanding 5G Perspectives on Future Technological Advancements in Mobile"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2014.2300846"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2015.08.415"
+      },
+      {
+        "key": "ref181",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CloudNet.2016.13"
+      },
+      {
+        "key": "ref180",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCC.2014.2326169"
+      },
+      {
+        "key": "ref185",
+        "author": "jin",
+        "year": "0",
+        "journal-title": "Green data centers A survey perspectives and future directions"
+      },
+      {
+        "key": "ref184",
+        "first-page": "962",
+        "article-title": "Reservation-based resource scheduling and code partition in mobile cloud computing",
+        "author": "zhang",
+        "year": "2016",
+        "journal-title": "Proc IEEE Int Conf Comput Commun Workshops (INFOCOM WKSHPS)"
+      },
+      {
+        "key": "ref183",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSC.2011.7"
+      },
+      {
+        "key": "ref182",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2016.06.024"
+      },
+      {
+        "key": "ref189",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IGCC.2012.6322266"
+      },
+      {
+        "key": "ref188",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNET.2012.2226216"
+      },
+      {
+        "key": "ref187",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2007.443"
+      },
+      {
+        "key": "ref186",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.2017.1500293NM"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CC.2016.7405733"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2017.2685434"
+      },
+      {
+        "key": "ref179",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2009.5350367"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1814433.1814441"
+      },
+      {
+        "key": "ref20",
+        "year": "2016",
+        "journal-title": "Mobile edge computing use cases & deployment options"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2013.062613.00160"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1721654.1721672"
+      },
+      {
+        "key": "ref24",
+        "article-title": "Overview of largest data centers",
+        "author": "ghiasi",
+        "year": "0"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2012.090512.00043"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2017.1600863"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PerCom.2012.6199858"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2017.2705720"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSYST.2017.2654119"
+      },
+      {
+        "key": "ref154",
+        "year": "2016",
+        "journal-title": "Cisco Visual Networking Index Global Mobile Data Traffic Forecast Update"
+      },
+      {
+        "key": "ref153",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12652-012-0118-y"
+      },
+      {
+        "key": "ref156",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2014.6871674"
+      },
+      {
+        "key": "ref155",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2014.6736753"
+      },
+      {
+        "key": "ref150",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2011.100411.100541"
+      },
+      {
+        "key": "ref152",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2016.2531719"
+      },
+      {
+        "key": "ref151",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9781139043816"
+      },
+      {
+        "key": "ref146",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CloudCom.2014.32"
+      },
+      {
+        "key": "ref147",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2016.1500119RP"
+      },
+      {
+        "key": "ref148",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2016.2532863"
+      },
+      {
+        "key": "ref149",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2009.090902"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOMW.2014.6849257"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/945445.945460"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CCNC.2017.7983099"
+      },
+      {
+        "key": "ref56",
+        "first-page": "1",
+        "article-title": "Energy efficiency of mobile clients in cloud computing",
+        "author": "miettinen",
+        "year": "2010",
+        "journal-title": "Proc USENIX Conf Hot Topics Cloud Comput"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2016.09.015"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCE.2016.2590118"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2017.2682318"
+      },
+      {
+        "key": "ref52",
+        "first-page": "48",
+        "article-title": "Mobile edge computing: A taxonomy",
+        "author": "beck",
+        "year": "2014",
+        "journal-title": "Proc Int Conf Adv Future Internet (AFIN)"
+      },
+      {
+        "key": "ref40",
+        "article-title": "A system architecture for context-aware mobile computing",
+        "author": "schilit",
+        "year": "1995"
+      },
+      {
+        "key": "ref167",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2015.7417114"
+      },
+      {
+        "key": "ref166",
+        "first-page": "1",
+        "article-title": "Cache-enabled small cell networks: Modeling and tradeoffs",
+        "volume": "2015",
+        "author": "ba?tu?",
+        "year": "2015",
+        "journal-title": "EURASIP J Wireless Commun Netw"
+      },
+      {
+        "key": "ref165",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WONS.2017.7888772"
+      },
+      {
+        "key": "ref164",
+        "author": "rheingold",
+        "year": "1991",
+        "journal-title": "Virtual Reality Exploring the Brave New Technologies"
+      },
+      {
+        "key": "ref163",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2012.01.007"
+      },
+      {
+        "key": "ref162",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcss.2013.02.004"
+      },
+      {
+        "key": "ref161",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CLOUD.2009.72"
+      },
+      {
+        "key": "ref160",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2011.07.003"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2016.2584538"
+      },
+      {
+        "key": "ref3",
+        "author": "wingfield",
+        "year": "2016",
+        "journal-title": "Amazon&#x2019;s profits grow more than 800 percent lifted by cloud services"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MVT.2013.2295069"
+      },
+      {
+        "key": "ref5",
+        "year": "2014",
+        "journal-title": "Mobile-Edge Computing&#x2014;Introductory Technical White Paper"
+      },
+      {
+        "key": "ref8",
+        "year": "2015",
+        "journal-title": "Smart wireless devices and the Internet of Me"
+      },
+      {
+        "key": "ref159",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.2015.2435781"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2015.2444095"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISCO.2016.7727082"
+      },
+      {
+        "key": "ref157",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFCOM.2012.6195469"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2014.2328098"
+      },
+      {
+        "key": "ref158",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2016.06.022"
+      },
+      {
+        "key": "ref46",
+        "year": "2015",
+        "journal-title": "Mobile-Edge Computing (MEC) Service Scenarios"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IWCMC.2013.6583635"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WF-IoT.2015.7389122"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2016.145"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ITNG.2015.155"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2013.042313.00197"
+      },
+      {
+        "key": "ref44",
+        "first-page": "267",
+        "article-title": "Accurate, low-energy trajectory mapping for mobile devices",
+        "author": "thiagarajan",
+        "year": "2011",
+        "journal-title": "Proc 1st USENIX Symp Netw Syst Design Implement (NSDI '04)"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISUVR.2009.13"
+      },
+      {
+        "key": "ref73",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2604998"
+      },
+      {
+        "key": "ref72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2015.2418196"
+      },
+      {
+        "key": "ref71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2012.120405"
+      },
+      {
+        "key": "ref70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2012.120401"
+      },
+      {
+        "key": "ref76",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF01130406"
+      },
+      {
+        "key": "ref77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1151690.1151693"
+      },
+      {
+        "key": "ref74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2604999"
+      },
+      {
+        "key": "ref75",
+        "year": "2016",
+        "journal-title": "5G Radio Access&#x2014;Capabilities and Technologies"
+      },
+      {
+        "key": "ref78",
+        "first-page": "793",
+        "article-title": "The energy/frequency convexity rule: Modeling and experimental validation on mobile devices",
+        "author": "vogeleer",
+        "year": "2013",
+        "journal-title": "Proc Int Conf Parallel Process Appl Math (PPAM)"
+      },
+      {
+        "key": "ref79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2013.072513.121842"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCC.2016.2560808"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2010.101202"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511841224"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIT.2013.2285151"
+      },
+      {
+        "key": "ref64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2015.2402121"
+      },
+      {
+        "key": "ref65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2011.092911.101843"
+      },
+      {
+        "key": "ref66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTSP.2016.2523903"
+      },
+      {
+        "key": "ref67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/49.730453"
+      },
+      {
+        "key": "ref68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2003.810294"
+      },
+      {
+        "key": "ref69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2014.6736761"
+      },
+      {
+        "key": "ref197",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2015.7120023"
+      },
+      {
+        "key": "ref198",
+        "year": "2005",
+        "journal-title": "Battery Life Concerns Mobile Users"
+      },
+      {
+        "key": "ref199",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2016.7842069"
+      },
+      {
+        "key": "ref193",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2014.6848033"
+      },
+      {
+        "key": "ref194",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2016.7524384"
+      },
+      {
+        "key": "ref195",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SURV.2011.060710.00094"
+      },
+      {
+        "key": "ref196",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2015.2391531"
+      },
+      {
+        "key": "ref95",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2016.2599530"
+      },
+      {
+        "key": "ref94",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSP.2014.2334709"
+      },
+      {
+        "key": "ref190",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2014.2325836"
+      },
+      {
+        "key": "ref93",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11036-012-0368-0"
+      },
+      {
+        "key": "ref191",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CCGRID.2010.46"
+      },
+      {
+        "key": "ref92",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.2010.98"
+      },
+      {
+        "key": "ref192",
+        "first-page": "1842",
+        "article-title": "Let&#x2019;s stay together: Towards traffic aware virtual machine placement in data centers",
+        "author": "li",
+        "year": "2014",
+        "journal-title": "Proc IEEE Int Conf Comput Commun (INFOCOM)"
+      },
+      {
+        "key": "ref91",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2011.04.017"
+      },
+      {
+        "key": "ref90",
+        "first-page": "81",
+        "article-title": "Energy-efficient virtual machine provision algorithms for cloud systems",
+        "author": "lin",
+        "year": "2011",
+        "journal-title": "Utility and Cloud Computing (UCC)"
+      },
+      {
+        "key": "ref98",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ett.3028"
+      },
+      {
+        "key": "ref99",
+        "author": "lorenzo",
+        "year": "0",
+        "journal-title": "Joint optimization of radio resources and code partitioning in mobile edge computing"
+      },
+      {
+        "key": "ref96",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2015.7218572"
+      },
+      {
+        "key": "ref97",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2014.2331051"
+      },
+      {
+        "key": "ref82",
+        "doi-asserted-by": "crossref",
+        "first-page": "1397",
+        "DOI": "10.1109/TWC.2016.2633522",
+        "article-title": "Energy-efficient resource allocation for mobile-edge computation offloading",
+        "volume": "16",
+        "author": "you",
+        "year": "2016",
+        "journal-title": "IEEE Trans Wireless Commun"
+      },
+      {
+        "key": "ref81",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2545382"
+      },
+      {
+        "key": "ref84",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SPAWC.2013.6612005"
+      },
+      {
+        "key": "ref83",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/945461.945462"
+      },
+      {
+        "key": "ref80",
+        "first-page": "1",
+        "article-title": "An analysis of power consumption in a smartphone",
+        "author": "carroll",
+        "year": "2010",
+        "journal-title": "Proc USENIX Annu Tech Conf"
+      },
+      {
+        "key": "ref89",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1250662.1250665"
+      },
+      {
+        "key": "ref85",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNET.2015.2487344"
+      },
+      {
+        "key": "ref86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2016.2593486"
+      },
+      {
+        "key": "ref87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2015.08.030"
+      },
+      {
+        "key": "ref88",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2013.67"
+      },
+      {
+        "key": "ref200",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2611964"
+      },
+      {
+        "key": "ref101",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2012.041912.110912"
+      },
+      {
+        "key": "ref100",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC.2015.7249194"
+      },
+      {
+        "key": "ref209",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMTT.1984.1132833"
+      },
+      {
+        "key": "ref203",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CloudCom.2015.23"
+      },
+      {
+        "key": "ref204",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2525618"
+      },
+      {
+        "key": "ref201",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CloudCom.2012.6427545"
+      },
+      {
+        "key": "ref202",
+        "first-page": "1",
+        "article-title": "Green power analysis for geographical load balancing based datacenters",
+        "author": "dong",
+        "year": "2013",
+        "journal-title": "Proc IEEE Int Green Comput Conf (IGCC)"
+      },
+      {
+        "key": "ref207",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2013.051313.121249"
+      },
+      {
+        "key": "ref208",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2016.2523981"
+      },
+      {
+        "key": "ref205",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2016.2519418"
+      },
+      {
+        "key": "ref206",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2013.05301313.120705"
+      },
+      {
+        "key": "ref211",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2013.122313.130727"
+      },
+      {
+        "key": "ref210",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2013.112513.130760"
+      },
+      {
+        "key": "ref212",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2016.2611843"
+      },
+      {
+        "key": "ref213",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2016.11.009"
+      },
+      {
+        "key": "ref214",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-21837-3_67"
+      },
+      {
+        "key": "ref215",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSG.2011.2160661"
+      },
+      {
+        "key": "ref216",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IAdCC.2013.6514206"
+      },
+      {
+        "key": "ref217",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TDSC.2013.2297110"
+      },
+      {
+        "key": "ref218",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-14081-5_19"
+      },
+      {
+        "key": "ref219",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comcom.2015.07.026"
+      },
+      {
+        "key": "ref220",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSP.2016.82"
+      },
+      {
+        "key": "ref222",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/9781316771655.005"
+      },
+      {
+        "key": "ref221",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/NETSOFT.2016.7502434"
+      },
+      {
+        "key": "ref229",
+        "year": "2016",
+        "journal-title": "ETSI first mobile edge computing proof of concepts at MEC world congress"
+      },
+      {
+        "key": "ref228",
+        "year": "2016",
+        "journal-title": "Mobile Edge Computing (MEC) Framework and Reference Architecture"
+      },
+      {
+        "key": "ref227",
+        "year": "2016",
+        "journal-title": "Mobile edge computing (MEC) Terminology"
+      },
+      {
+        "key": "ref226",
+        "year": "2014",
+        "journal-title": "Executive Briefing Mobile Edge Computing (MEC) Initiative"
+      },
+      {
+        "key": "ref225",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-14623-7_25"
+      },
+      {
+        "key": "ref224",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.2015.2417542"
+      },
+      {
+        "key": "ref223",
+        "year": "2014",
+        "journal-title": "Providing security in NFV Challenges and opportunities"
+      },
+      {
+        "key": "ref127",
+        "author": "chen",
+        "year": "0",
+        "journal-title": "Computation peer offloading for energy-constrained mobile edge computing in small-cell networks"
+      },
+      {
+        "key": "ref126",
+        "author": "you",
+        "year": "0",
+        "journal-title": "Exploiting non-causal CPU-state information for energy-efficient mobile cooperative computing"
+      },
+      {
+        "key": "ref125",
+        "author": "cao",
+        "year": "0",
+        "journal-title": "Joint computation and communication cooperation for mobile edge computing"
+      },
+      {
+        "key": "ref124",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IWQoS.2014.6914329"
+      },
+      {
+        "key": "ref129",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOMW.2015.7414063"
+      },
+      {
+        "key": "ref128",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2013.6549281"
+      },
+      {
+        "key": "ref130",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2333660.2333724"
+      },
+      {
+        "key": "ref133",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TETC.2015.2479093"
+      },
+      {
+        "key": "ref134",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EuCNC.2017.7980678"
+      },
+      {
+        "key": "ref131",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2017.2699660"
+      },
+      {
+        "key": "ref132",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2013.131209"
+      },
+      {
+        "key": "ref232",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCC.2016.2517653"
+      },
+      {
+        "key": "ref233",
+        "year": "2016",
+        "journal-title": "Intel mobile edge computing technology improves the augmented reality experience"
+      },
+      {
+        "key": "ref230",
+        "author": "sprecher",
+        "year": "2016",
+        "journal-title": "Edge computing prepares for a multi-access future"
+      },
+      {
+        "key": "ref231",
+        "year": "2017",
+        "journal-title": "Technical specification group services and system aspects System architecture for the 5G systems Stage 2 (Release 15)"
+      },
+      {
+        "key": "ref239",
+        "year": "2017",
+        "journal-title": "Policy control function in 5G"
+      },
+      {
+        "key": "ref238",
+        "year": "2016",
+        "journal-title": "Using mobile edge computing to improve mobile network performance and profitability"
+      },
+      {
+        "key": "ref235",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2014.2327587"
+      },
+      {
+        "key": "ref234",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2009.5307471"
+      },
+      {
+        "key": "ref237",
+        "year": "2016",
+        "journal-title": "UTM infrastructure and connected society"
+      },
+      {
+        "key": "ref236",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MVT.2015.2390920"
+      },
+      {
+        "key": "ref136",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.peva.2015.06.013"
+      },
+      {
+        "key": "ref135",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MILCOM.2014.145"
+      },
+      {
+        "key": "ref138",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TVT.2014.2372852"
+      },
+      {
+        "key": "ref137",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICASSP.2016.7472331"
+      },
+      {
+        "key": "ref139",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2009.5425784"
+      },
+      {
+        "key": "ref140",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2017.2665971"
+      },
+      {
+        "key": "ref141",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSP.2015.2443731"
+      },
+      {
+        "key": "ref142",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCE.2016.2590100"
+      },
+      {
+        "key": "ref143",
+        "author": "luan",
+        "year": "0",
+        "journal-title": "Fog Computing Focusing on Mobile Users at the Edge"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13174-010-0007-6"
+      },
+      {
+        "key": "ref144",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2016.7524340"
+      },
+      {
+        "key": "ref1",
+        "author": "armbrust",
+        "year": "2012",
+        "journal-title": "Above the Clouds A Berkeley View of Cloud Computing"
+      },
+      {
+        "key": "ref145",
+        "author": "kirby",
+        "year": "0",
+        "journal-title": "An Approach to Ad Hoc Cloud Computing"
+      },
+      {
+        "key": "ref241",
+        "article-title": "Network softwarization and slicing: Ongoing developments in standard developing organizations",
+        "author": "nakao",
+        "year": "0"
+      },
+      {
+        "key": "ref242",
+        "year": "2016",
+        "journal-title": "Mobile Edge Computing (MEC) Technical Requirements"
+      },
+      {
+        "key": "ref240",
+        "year": "2016",
+        "journal-title": "Description of Network Slicing Concept"
+      },
+      {
+        "key": "ref109",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCC.2016.2522439"
+      },
+      {
+        "key": "ref108",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2016.7842160"
+      },
+      {
+        "key": "ref107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WCNC.2012.6214347"
+      },
+      {
+        "key": "ref106",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2015.2499300"
+      },
+      {
+        "key": "ref105",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSAC.2015.2478718"
+      },
+      {
+        "key": "ref104",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SAHCN.2016.7733009"
+      },
+      {
+        "key": "ref103",
+        "first-page": "2885",
+        "article-title": "A semi-Markovian decision process based control method for offloading tasks from mobile devices to the cloud",
+        "author": "chen",
+        "year": "2013",
+        "journal-title": "Proc IEEE Global Communication Conf (GLOBECOM)"
+      },
+      {
+        "key": "ref102",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISIT.2016.7541539"
+      },
+      {
+        "key": "ref111",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC.2016.7510999"
+      },
+      {
+        "key": "ref112",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2017.8057150"
+      },
+      {
+        "key": "ref110",
+        "author": "ren",
+        "year": "0",
+        "journal-title": "Latency optimization for resource allocation in mobile-edge computation offloading"
+      },
+      {
+        "key": "ref10",
+        "year": "2011",
+        "journal-title": "The Internet of Things How the next Evolution of the Internet Is Changing Everything"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2342509.2342513"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2757384.2757397"
+      },
+      {
+        "key": "ref13",
+        "author": "klas",
+        "year": "2015",
+        "journal-title": "Fog Computing and Mobile Edge Cloud Gain Momentum Open Fog Consortium Etsi Mec and Cloudlets"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MC.1974.6323581"
+      },
+      {
+        "key": "ref15",
+        "author": "hu",
+        "year": "2015",
+        "journal-title": "Mobile edge computing A key technology towards 5G"
+      },
+      {
+        "key": "ref118",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC.2014.7136330"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2980137.2980139"
+      },
+      {
+        "key": "ref117",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSIPN.2015.2448520"
+      },
+      {
+        "key": "ref17",
+        "first-page": "15",
+        "article-title": "Design and implementation of real time face recognition system (RTFRS)",
+        "volume": "94",
+        "author": "jaber",
+        "year": "2014",
+        "journal-title": "Int J Comput Appl"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MPRV.2013.66"
+      },
+      {
+        "key": "ref119",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOCOM.2016.7841937"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LWC.2017.2696539"
+      },
+      {
+        "key": "ref114",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CloudNet.2016.52"
+      },
+      {
+        "key": "ref113",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPDS.2014.2316834"
+      },
+      {
+        "key": "ref116",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2016.7524497"
+      },
+      {
+        "key": "ref115",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2811587.2811598"
+      },
+      {
+        "key": "ref120",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TC.2014.2366735"
+      },
+      {
+        "key": "ref121",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC.2014.6883656"
+      },
+      {
+        "key": "ref122",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2015.7143326"
+      },
+      {
+        "key": "ref123",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCC.2015.2458272"
+      }
+    ],
+    "container-title": [
+      "IEEE Communications Surveys &amp; Tutorials"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/9739/8115327/08016573.pdf?arnumber=8016573",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2022-01-12T16:24:11Z",
+      "timestamp": 1642004651000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/8016573/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 242,
+    "journal-issue": {
+      "issue": "4"
+    },
+    "URL": "https://doi.org/10.1109/comst.2017.2745201",
+    "relation": {},
+    "ISSN": [
+      "1553-877X"
+    ],
+    "issn-type": [
+      {
+        "value": "1553-877X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    }
+  }
+}

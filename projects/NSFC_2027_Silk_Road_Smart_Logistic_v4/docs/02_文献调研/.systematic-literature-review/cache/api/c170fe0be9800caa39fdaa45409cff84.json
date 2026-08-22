@@ -1,0 +1,25 @@
+{
+  "paperId": "0c6d78b6a2cebd52fa9daf7b60b867111dcb123d",
+  "title": "Goal-Oriented Semantic Communication for DNN Task Inference in IoT Networks",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCWorkshops59551.2024.10615907?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCWorkshops59551.2024.10615907, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2316066589",
+      "name": "Hossein Bijanrostami"
+    },
+    {
+      "authorId": "2264470255",
+      "name": "Elvino S. Sousa"
+    },
+    {
+      "authorId": "2316555666",
+      "name": "Mohammad Karimzadeh-Farshbafan"
+    }
+  ],
+  "abstract": "Goal-oriented semantic communication as a pillar of next-generation wireless networks, is a missing concept in Internet of Things (IoT) networks. In this paper, we present a holistic model to address this issue by leveraging goal-oriented semantic communication to improve the performance of IoT networks. More specifically, we define a deep neural network (DNN) task inference resource allocation problem for a proposed 3-layered architecture to meet the requirements of IoT devices. For this purpose, users may utilize the computing resources available at access point (AP) nodes to enable semantic communication before offloading their data to higher levels. We aim to maximize the average inference accuracy while the quality of service (QoS) of tasks is met. Then, we formulate an optimization problem which is in the form of a Mixed Integer Non-linear programming (MINLP). Since the proposed problem is an NP-hard problem, we devise a heuristic algorithm and a linear programming (LP) algorithm for a simplified linear version of the proposed problem to efficiently solve it. Extensive simulations show that leveraging semantic communication in the proposed architecture improves the network's admission rate by approximately 15% compared to state of the art classical IoT networks without the deployment of semantic communication."
+}

@@ -1,0 +1,33 @@
+{
+  "paperId": "8c5293da3ad1a463cb9694edfbf1bf19b8cbd698",
+  "title": "A Survey on Mobile Edge Computing: The Communication Perspective",
+  "openAccessPdf": {
+    "url": "http://arxiv.org/pdf/1701.01090",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/COMST.2017.2745201?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/COMST.2017.2745201, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1887624",
+      "name": "Yuyi Mao"
+    },
+    {
+      "authorId": "1974803",
+      "name": "Changsheng You"
+    },
+    {
+      "authorId": "31653740",
+      "name": "Jun Zhang"
+    },
+    {
+      "authorId": "1697582",
+      "name": "Kaibin Huang"
+    },
+    {
+      "authorId": "145142172",
+      "name": "K. Letaief"
+    }
+  ],
+  "abstract": null
+}

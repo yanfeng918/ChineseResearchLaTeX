@@ -1,0 +1,29 @@
+{
+  "paperId": "f398f978fc7230de601acf7a48dd29622d9517df",
+  "title": "Ensemble based unsupervised anomaly detection with concept drift adaptation for time series data",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SWC62898.2024.00091?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SWC62898.2024.00091, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2346126735",
+      "name": "Danlei Li"
+    },
+    {
+      "authorId": "2293313597",
+      "name": "Nirmal Nair"
+    },
+    {
+      "authorId": "2258935391",
+      "name": "Kevin I-Kai Wang"
+    },
+    {
+      "authorId": "2258707908",
+      "name": "Kouichi Sakurai"
+    }
+  ],
+  "abstract": "Anomaly detection is the identification of instances that substantially deviate from the majority of the data and do not conform to a well-defined normal behavior. Investigating time series anomalies has become increasingly popular in recent years due to widely deployed IoT devices and sensors. Although most existing methods apply image anomaly detection algorithms directly on time series and commonly assume the data is IID (independent and identically distributed). However, in most realworld applications, the underlying data distribution alters over time. Changes in data over time are referred to as concept drift and can significantly degrade the efficacy of an anomaly detection model. Existing research also indicates that the majority of anomaly detection frameworks ignored concept drift, resulting in poor long-term model performance. This paper presents an ensemble-based, unsupervised anomaly detection framework that is adaptive to the concept drift in time series data. Both distribution and performance-based techniques are used to detect concept drift and update the model to ensure the framework’s longterm performance reliability. The proposed method is evaluated using a real-world univariate time series data that captures sea surface temperature data over a 2 -year period. By comparing our proposed framework to other state-of-the-art algorithms, we demonstrate our proposed method has obvious benefits in accuracy and long-term stability."
+}

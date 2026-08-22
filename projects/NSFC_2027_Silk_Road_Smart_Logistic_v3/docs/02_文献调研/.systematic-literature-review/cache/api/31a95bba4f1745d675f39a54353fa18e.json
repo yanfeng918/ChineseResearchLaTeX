@@ -1,0 +1,29 @@
+{
+  "paperId": "ea7d63d0f887b9ca3e929e5f05b795ccb3938d5f",
+  "title": "Virtualization of food supply chains with the internet of things",
+  "openAccessPdf": {
+    "url": "https://www.sciencedirect.com/science/article/pii/S026087741530056X/pdf",
+    "status": "HYBRID",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.JFOODENG.2015.11.009?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.JFOODENG.2015.11.009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "3059861",
+      "name": "C. Verdouw"
+    },
+    {
+      "authorId": "3361726",
+      "name": "J. Wolfert"
+    },
+    {
+      "authorId": "153680364",
+      "name": "A. Beulens"
+    },
+    {
+      "authorId": "101775604",
+      "name": "A. Rialland"
+    }
+  ],
+  "abstract": "Internet technologies allow supply chains to use virtualizations dynamically in operational management processes. This will improve support for food companies in dealing with perishable products, unpredictable supply variations and stringent food safety and sustainability requirements. Virtualization enables supply chain actors to monitor, control, plan and optimize business processes remotely and in real-time through the Internet, based on virtual objects instead of observation on-site. This paper analyses the concept of virtual food supply chains from an Internet of Things perspective and proposes an architecture to implement enabling information systems. As a proof of concept, the architecture is applied to a case study of a fish supply chain. These developments are expected to establish a basis for virtual supply chain optimization, simulation and decision support based on on-line operational data. In the Internet of Things food supply chains can become self-adaptive systems in which smart objects operate, decide and learn autonomously."
+}

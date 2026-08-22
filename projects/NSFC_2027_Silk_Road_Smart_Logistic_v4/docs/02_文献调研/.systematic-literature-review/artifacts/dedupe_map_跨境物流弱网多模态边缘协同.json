@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-08-18T22:06:32",
+  "input": "/home/yanfeng/fund-writing/ChineseResearchLaTeX-dev/projects/NSFC_2027_Silk_Road_Smart_Logistic_v4/docs/02_文献调研/.systematic-literature-review/artifacts/papers_跨境物流弱网多模态边缘协同.jsonl",
+  "output": "/home/yanfeng/fund-writing/ChineseResearchLaTeX-dev/projects/NSFC_2027_Silk_Road_Smart_Logistic_v4/docs/02_文献调研/.systematic-literature-review/artifacts/papers_deduped_跨境物流弱网多模态边缘协同.jsonl",
+  "input_count": 500,
+  "output_count": 498,
+  "merged_count": 2,
+  "cross_doi_merges": 2,
+  "params": {
+    "title_similarity_threshold": 0.92,
+    "token_jaccard_threshold": 0.8,
+    "year_window": 1
+  },
+  "groups": [
+    {
+      "canonical_index": 11,
+      "canonical": {
+        "title": "Digital Twins for Ports: Derived From Smart City and Supply Chain Twinning Experience",
+        "doi": "10.1109/access.2023.3295495",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "url": "https://openalex.org/W4384284153",
+        "preprint": false,
+        "heuristic_score": 19
+      },
+      "merged": [
+        {
+          "merged_index": 35,
+          "merged": {
+            "title": "Digital Twins for Ports: Derived from Smart City and Supply Chain Twinning Experience",
+            "doi": "10.48550/arxiv.2301.10224",
+            "year": 2023,
+            "venue": "arXiv (Cornell University)",
+            "url": "https://openalex.org/W4318149328",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "canonical_index": 29,
+      "canonical": {
+        "title": "Assessing the Maturity of Digital Twinning Solutions for Ports",
+        "doi": "10.1109/percomworkshops56833.2023.10150378",
+        "year": 2023,
+        "venue": "arXiv (Cornell University)",
+        "url": "https://openalex.org/W4381747038",
+        "preprint": true,
+        "heuristic_score": 15
+      },
+      "merged": [
+        {
+          "merged_index": 37,
+          "merged": {
+            "title": "Assessing the Maturity of Digital Twinning Solutions for Ports",
+            "doi": "10.48550/arxiv.2212.07722",
+            "year": 2022,
+            "venue": "arXiv (Cornell University)",
+            "url": "https://openalex.org/W4311726259",
+            "preprint": true,
+            "heuristic_score": 15
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "canonical_index": 11,
+      "merged_index": 35,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2023,
+      "doi_a": "10.1109/access.2023.3295495",
+      "doi_b": "10.48550/arxiv.2301.10224"
+    },
+    {
+      "canonical_index": 29,
+      "merged_index": 37,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2023,
+      "year_b": 2022,
+      "doi_a": "10.1109/percomworkshops56833.2023.10150378",
+      "doi_b": "10.48550/arxiv.2212.07722"
+    }
+  ]
+}

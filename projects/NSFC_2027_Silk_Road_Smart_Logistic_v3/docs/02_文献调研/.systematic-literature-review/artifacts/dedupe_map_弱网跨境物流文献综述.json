@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-08-18T19:32:59",
+  "input": "/home/yanfeng/fund-writing/ChineseResearchLaTeX-dev/projects/NSFC_2027_Silk_Road_Smart_Logistic_v3/docs/02_文献调研/.systematic-literature-review/artifacts/papers_弱网跨境物流文献综述.jsonl",
+  "output": "/home/yanfeng/fund-writing/ChineseResearchLaTeX-dev/projects/NSFC_2027_Silk_Road_Smart_Logistic_v3/docs/02_文献调研/.systematic-literature-review/artifacts/papers_deduped_弱网跨境物流文献综述.jsonl",
+  "input_count": 500,
+  "output_count": 499,
+  "merged_count": 1,
+  "cross_doi_merges": 1,
+  "params": {
+    "title_similarity_threshold": 0.92,
+    "token_jaccard_threshold": 0.8,
+    "year_window": 1
+  },
+  "groups": [
+    {
+      "canonical_index": 263,
+      "canonical": {
+        "title": "Secure Local Communication Between Browser Clients and Resource-Constrained Embedded IoT Devices",
+        "doi": "10.20944/preprints202510.1808.v2",
+        "year": 2025,
+        "venue": "",
+        "url": "https://doi.org/10.20944/preprints202510.1808.v2",
+        "preprint": true,
+        "heuristic_score": 14
+      },
+      "merged": [
+        {
+          "merged_index": 264,
+          "merged": {
+            "title": "Secure Local Communication Between Browser Clients and Resource-Constrained Embedded IoT Devices",
+            "doi": "10.20944/preprints202510.1808.v1",
+            "year": 2025,
+            "venue": "",
+            "url": "https://doi.org/10.20944/preprints202510.1808.v1",
+            "preprint": true,
+            "heuristic_score": 14
+          },
+          "reason": "cross_doi_preprint_to_published",
+          "similarity": 1.0,
+          "jaccard": 1.0
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "canonical_index": 263,
+      "merged_index": 264,
+      "reason": "cross_doi_preprint_to_published",
+      "similarity": 1.0,
+      "jaccard": 1.0,
+      "year_a": 2025,
+      "year_b": 2025,
+      "doi_a": "10.20944/preprints202510.1808.v2",
+      "doi_b": "10.20944/preprints202510.1808.v1"
+    }
+  ]
+}

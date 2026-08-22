@@ -1,0 +1,173 @@
+project:
+  type: NSFC_Regional
+  layout: five-part
+  proposal_path: "."
+  body_dir: "extraTex"
+  bib_file: "references/myexample.bib"
+  guide_file: "AGENTS.md"
+  stage_output_dir: "docs"
+  review_output_dir: "review"
+  body_files:
+    part_one:
+      - "extraTex/1.1.立项依据.tex"
+      - "extraTex/1.2.内容目标问题.tex"
+      - "extraTex/1.3.方案及可行性.tex"
+      - "extraTex/1.4.特色与创新.tex"
+      - "extraTex/1.5.研究计划.tex"
+    foundation:
+      - "extraTex/2.1.研究基础.tex"
+      - "extraTex/2.2.工作条件.tex"
+      - "extraTex/2.3.承担项目.tex"
+      - "extraTex/2.4.项目完成情况.tex"
+    statements:
+      - "extraTex/3.1.不同类型国基情况.tex"
+      - "extraTex/3.2.同年单位不一致.tex"
+      - "extraTex/3.3.承担中单位不一致.tex"
+      - "extraTex/3.4.不同专业技术职务的申请.tex"
+      - "extraTex/3.5.其它.tex"
+
+run:
+  current_mode: resume
+  last_started: "2026-08-18T20:21:54+08:00"
+  last_finished: "2026-08-18T20:55:23+08:00"
+  last_summary: "已按 docs/00 原始指南纠正范围漂移：重写 AGENTS、docs/03、docs/04 和第（一）部分五个正文文件，恢复货物多模态感知、弱网边缘/低功耗、仓储多源预警三条主线。第（一）部分约 7641 个汉字，1.1 含 34 个有效引用，1.3 含 8 个公式；PDF 17 页，编译成功。"
+  next_stage: "06_research_foundation"
+
+stages:
+  "00_layout_resolution":
+    name: "Proposal Layout Resolution"
+    status: completed
+    inputs: ["main.tex", "extraTex/"]
+    outputs: ["docs/workflow_status.yaml#project.body_files"]
+    last_updated: "2026-08-18T19:02:26+08:00"
+    notes: "由 main.tex 的活动 input 解析为 five-part 地区基金版式；未发现活动的生成式人工智能声明章节。"
+    blockers:
+
+  "01_topic_extraction":
+    name: "Topic Extraction"
+    status: completed
+    inputs: ["AGENTS.md", "README.md", "main.tex", "docs/00_项目基本信息.md"]
+    outputs: ["docs/01_选题与研究主题.md"]
+    last_updated: "2026-08-18T19:26:42+08:00"
+    notes: "项目类型、场景与研究对象已经明确；申请代码和实测条件不阻塞选题，转入后续人工核验。"
+    blockers:
+
+  "02_literature_review":
+    name: "Literature Review"
+    status: completed
+    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "references/myexample.bib"]
+    outputs: ["docs/02_文献调研/"]
+    last_updated: "2026-08-18T19:57:00+08:00"
+    notes: "659 条评分候选中定向选取 50 条核心文献；综述 4705 字，50 个唯一引用全部对齐，PDF/DOCX 导出成功。"
+    blockers:
+
+  "03_scientific_questions":
+    name: "Scientific Questions and Innovation"
+    status: completed
+    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "docs/02_文献调研/"]
+    outputs: ["docs/03_科学问题与创新点.md"]
+    last_updated: "2026-08-18T20:55:23+08:00"
+    notes: "按 docs/00 固定三项任务重新凝练为 Q1/H1 货物多模态可靠表征、Q2/H2 通信—计算—能量协同、Q3/H3 仓储复合风险预警；缺少现场事实只影响验证层级，不再触发删除或降级主线。"
+    blockers:
+
+  "04_research_plan":
+    name: "Research Plan"
+    status: completed
+    inputs: ["AGENTS.md", "docs/03_科学问题与创新点.md"]
+    outputs: ["docs/04_研究方案与技术路线.md"]
+    last_updated: "2026-08-18T20:55:23+08:00"
+    notes: "围绕三条主线重建方案：8 个公式块覆盖货物多模态表征、弱网缓存/续传/压缩/边缘推理/低功耗协同及仓储多源风险演化；三项均给出基线、指标、泄漏防控和失败判据。"
+    blockers:
+
+  "05_part_one_writing":
+    name: "NSFC Part One Writing"
+    status: completed
+    inputs: ["AGENTS.md", "docs/04_研究方案与技术路线.md", "references/myexample.bib"]
+    outputs: ["@part_one"]
+    last_updated: "2026-08-18T20:55:23+08:00"
+    notes: "五个正文文件已按三条主线重写并编译；第（一）部分约 7641 个汉字，1.1 使用 34 个唯一引用且全部存在，1.3 含 8 个公式，无内部规划编号、夸大措辞、未定义引用或公式越界。当前 PDF 17 页。"
+    blockers:
+
+  "06_research_foundation":
+    name: "Research Foundation and Work Conditions"
+    status: need_user_input
+    inputs: ["AGENTS.md", "docs/05_研究基础素材.md", "docs/研究基础信息补充问卷.md"]
+    outputs: ["@foundation"]
+    last_updated: "2026-08-18T20:21:54+08:00"
+    notes: "2.1/2.2 已按公开可核验事实写入；2.3/2.4 保持未填。需申请人回答研究基础补充问卷后才能如实完成本阶段。"
+    blockers:
+      - "缺少与拟题直接相关的先导数据、端侧设备、弱网日志与真实场景落实情况。"
+      - "缺少项目组成员具体分工及相关在研项目的本人角色、状态、经费和边界。"
+      - "未确认申请人是否曾主持并完成国家自然科学基金项目。"
+
+  "07_other_statements":
+    name: "Other Statements"
+    status: pending
+    inputs: ["docs/其他说明信息补充问卷.md"]
+    outputs: ["@statements", "docs/其他说明检查报告.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "08_reference_alignment":
+    name: "Reference Alignment"
+    status: pending
+    inputs: ["extraTex/", "references/myexample.bib"]
+    outputs: ["review/引用一致性审核报告.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "09_length_control":
+    name: "Length Control"
+    status: pending
+    inputs: ["extraTex/", "AGENTS.md"]
+    outputs: ["review/篇幅控制报告.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "10_humanization":
+    name: "Humanization"
+    status: pending
+    inputs: ["extraTex/"]
+    outputs: ["review/去AI味修改报告.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "11_qc":
+    name: "Quality Control"
+    status: pending
+    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
+    outputs: ["review/质量控制报告.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "12_simulated_review":
+    name: "Simulated Review"
+    status: pending
+    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
+    outputs: ["review/模拟专家评审_全稿.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "13_targeted_repair":
+    name: "P0/P1 Targeted Repair"
+    status: pending
+    inputs: ["review/质量控制报告.md", "review/模拟专家评审_全稿.md"]
+    outputs: ["review/P0P1定点修复报告.md", "docs/评审意见修复清单.md"]
+    last_updated:
+    notes:
+    blockers:
+
+  "14_compile":
+    name: "Compile"
+    status: pending
+    inputs: ["main.tex", "extraTex/", "references/myexample.bib"]
+    outputs: ["main.pdf", "review/编译检查报告.md"]
+    last_updated:
+    notes:
+    blockers:

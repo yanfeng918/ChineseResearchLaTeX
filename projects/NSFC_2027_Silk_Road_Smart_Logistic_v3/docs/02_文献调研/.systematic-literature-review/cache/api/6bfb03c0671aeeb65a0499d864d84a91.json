@@ -1,0 +1,45 @@
+{
+  "paperId": "766f628bd2eb81de1cbe21ab7ad302ca9c1c5749",
+  "title": "Maritime terminals’ cargo handling equipment cooperation leveraging IoT and edge computing: The ASSIST-IoT approach",
+  "openAccessPdf": {
+    "url": "https://doi.org/10.1016/j.trpro.2023.11.831",
+    "status": "GOLD",
+    "license": "CCBYNCND",
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.trpro.2023.11.831?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.trpro.2023.11.831, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2258479211",
+      "name": "Eduardo Garro"
+    },
+    {
+      "authorId": "151035824",
+      "name": "Ignacio Lacalle"
+    },
+    {
+      "authorId": "2203415430",
+      "name": "Francisco Blanquer"
+    },
+    {
+      "authorId": "67176919",
+      "name": "A. Ramos"
+    },
+    {
+      "authorId": "2274790527",
+      "name": "Ángel Martínez"
+    },
+    {
+      "authorId": "2326302344",
+      "name": "Piotr Sowiński"
+    },
+    {
+      "authorId": "2274605756",
+      "name": "M. A. Llorente"
+    },
+    {
+      "authorId": "2274445740",
+      "name": "C. Palau"
+    }
+  ],
+  "abstract": null
+}

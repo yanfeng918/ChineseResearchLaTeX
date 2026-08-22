@@ -1,0 +1,49 @@
+{
+  "paperId": "02feb9550f1287a2af36333b2f368e227cc7ce07",
+  "title": "Deep Learning Anomaly Detection for Cellular IoT With Applications in Smart Logistics",
+  "openAccessPdf": {
+    "url": "https://ieeexplore.ieee.org/ielx7/6287639/9312710/09402912.pdf",
+    "status": "GOLD",
+    "license": "CCBY",
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.08936, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "51048022",
+      "name": "Milos Savic"
+    },
+    {
+      "authorId": "144943094",
+      "name": "Milan Lukić"
+    },
+    {
+      "authorId": "153324239",
+      "name": "Dragan Danilovic"
+    },
+    {
+      "authorId": "1757012",
+      "name": "Zarko Bodroski"
+    },
+    {
+      "authorId": "144814590",
+      "name": "D. Bajović"
+    },
+    {
+      "authorId": "1690873",
+      "name": "I. Mezei"
+    },
+    {
+      "authorId": "1749325",
+      "name": "D. Vukobratović"
+    },
+    {
+      "authorId": "1759462",
+      "name": "S. Skrbic"
+    },
+    {
+      "authorId": "51234607",
+      "name": "D. Jakovetić"
+    }
+  ],
+  "abstract": "The number of connected Internet of Things (IoT) devices within cyber-physical infrastructure systems grows at an increasing rate. This poses significant device management and security challenges to current IoT networks. Among several approaches to cope with these challenges, data-based methods rooted in deep learning (DL) are receiving an increased interest. In this paper, motivated by the upcoming surge of 5G IoT connectivity in industrial environments, we propose to integrate a DL-based anomaly detection (AD) as a service into the 3GPP mobile cellular IoT architecture. The proposed architecture embeds autoencoder based anomaly detection modules both at the IoT devices (ADM-EDGE) and in the mobile core network (ADM-FOG), thereby balancing between the system responsiveness and accuracy. We design, integrate, demonstrate and evaluate a testbed that implements the above service in a real-world deployment integrated within the 3GPP Narrow-Band IoT (NB-IoT) mobile operator network."
+}

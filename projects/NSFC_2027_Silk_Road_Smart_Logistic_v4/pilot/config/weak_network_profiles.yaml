@@ -1,0 +1,143 @@
+schema_version: "1.0"
+package_status: "planned"
+profile_class: "parameterized_weak_network_stress"
+claim_boundary: "W0-W4 are designed stress profiles; they are not measured 2G/3G traces."
+
+emulator:
+  primary: "linux_netem"
+  official_reference: "https://man7.org/linux/man-pages/man8/tc-netem.8.html"
+  fallback_for_protocol_level_studies: "ns-3"
+  fallback_reference: "https://www.nsnam.org/documentation/"
+  isolation_requirement: "Run inside a dedicated network namespace, container, VM, or noncritical test interface."
+  safety_note: "Never attach an impairment profile to the interface carrying the active remote administration session."
+
+common:
+  interface: "__FILL_BEFORE_RUN__"
+  direction: "egress"
+  receiver_ingress_required_for_tcp_realism: true
+  seeds: [1101, 2202, 3303]
+  log_before_each_run:
+    - "kernel_version"
+    - "iproute2_tc_version"
+    - "interface_name_and_mtu"
+    - "qdisc_before"
+    - "qdisc_after"
+    - "profile_id"
+    - "seed"
+    - "start_and_end_time"
+  measured_outputs:
+    - "achieved_goodput_kbit_s"
+    - "rtt_ms_distribution"
+    - "packet_loss_observed"
+    - "reordering_observed"
+    - "outage_intervals"
+
+profiles:
+  - id: "W0"
+    name: "unshaped_reference"
+    status: "provisional"
+    purpose: "Reference path without intentional impairment."
+    parameters:
+      rate_kbit: null
+      delay_ms: null
+      jitter_ms: null
+      random_loss_percent: null
+      reorder_percent: null
+      outage_schedule: null
+    command_template: "tc qdisc del dev {interface} root"
+    interpretation: "Local or laboratory reference only."
+
+  - id: "W1"
+    name: "mild_rate_delay"
+    status: "provisional"
+    purpose: "Low-intensity rate and delay pressure."
+    parameters:
+      rate_kbit: 512
+      delay_ms: 150
+      jitter_ms: 50
+      delay_distribution: "normal"
+      random_loss_percent: 1
+      reorder_percent: 0
+      outage_schedule: null
+    command_template: "tc qdisc replace dev {interface} root netem rate 512kbit delay 150ms 50ms distribution normal loss random 1% seed {seed}"
+    interpretation: "Designed pressure value; no cellular-generation label."
+
+  - id: "W2"
+    name: "moderate_rate_delay_loss"
+    status: "provisional"
+    purpose: "Joint rate limit, long delay, jitter, and random loss."
+    parameters:
+      rate_kbit: 256
+      delay_ms: 400
+      jitter_ms: 150
+      delay_distribution: "normal"
+      random_loss_percent: 3
+      reorder_percent: 0
+      outage_schedule: null
+    command_template: "tc qdisc replace dev {interface} root netem rate 256kbit delay 400ms 150ms distribution normal loss random 3% seed {seed}"
+    interpretation: "Designed pressure value; no cellular-generation label."
+
+  - id: "W3"
+    name: "severe_rate_delay_loss"
+    status: "provisional"
+    purpose: "Severe continuous impairment before adding outages."
+    parameters:
+      rate_kbit: 128
+      delay_ms: 800
+      jitter_ms: 300
+      delay_distribution: "paretonormal"
+      random_loss_percent: 5
+      reorder_percent: 1
+      outage_schedule: null
+    command_template: "tc qdisc replace dev {interface} root netem rate 128kbit delay 800ms 300ms distribution paretonormal loss random 5% reorder 1% seed {seed}"
+    interpretation: "Designed stress ceiling for the minimum pilot."
+
+  - id: "W4"
+    name: "intermittent_connectivity"
+    status: "provisional_controller_required"
+    purpose: "Test offline cache, reconnect, integrity checking, and idempotent resume."
+    parameters:
+      connected_state:
+        rate_kbit: 128
+        delay_ms: 600
+        jitter_ms: 200
+        random_loss_percent: 3
+      outage_schedule:
+        warmup_s: 60
+        connected_s: 120
+        disconnected_s: 30
+        cycles: 3
+    connected_state_command_template: "tc qdisc replace dev {interface} root netem rate 128kbit delay 600ms 200ms distribution normal loss random 3% seed {seed}"
+    controller_requirement: "Toggle only an isolated test link or proxy; record actual transition timestamps."
+    interpretation: "Intermittent laboratory stress; not field coverage data."
+
+external_trace_profiles:
+  id_prefix: "T-"
+  current_status: "absent"
+  required_metadata:
+    - "source_or_owner"
+    - "collection_time"
+    - "collection_location_or_context"
+    - "measurement_tool_and_version"
+    - "field_definitions_and_units"
+    - "license_or_permission"
+    - "raw_file_sha256"
+
+field_measurement_profiles:
+  id_prefix: "F-"
+  current_status: "absent"
+  required_metadata:
+    - "site_authorization"
+    - "collection_protocol"
+    - "device_and_subscription"
+    - "time_and_location"
+    - "raw_measurements"
+    - "privacy_and_security_review"
+
+limitations_to_report:
+  - "Kernel timer granularity can affect delay and rate."
+  - "Rate shaping may create artificial packet compression or bursts."
+  - "TCP realism depends on where netem is placed relative to the receiver."
+  - "Configured impairment values must be distinguished from achieved measurements."
+  - "Profile parameters are frozen before locked evaluation and cannot be selected by final performance."
+

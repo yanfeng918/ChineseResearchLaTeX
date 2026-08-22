@@ -1,0 +1,1176 @@
+{
+  "total_queries": 30,
+  "total_returned": 150,
+  "total_unique": 147,
+  "queries": [
+    {
+      "query": "Multimodal Machine Learning A Survey and Taxonomy",
+      "rationale": "多模态学习基础综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "EmbraceNet A robust deep learning architecture for multimodal classification",
+      "rationale": "缺失模态鲁棒融合基础方法",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=EmbraceNet+A+robust+deep+learning+architecture+for+multimodal+classification&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=EmbraceNet+A+robust+deep+learning+architecture+for+multimodal+classification&limit=5&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Are Multimodal Transformers Robust to Missing Modality",
+      "rationale": "缺失模态鲁棒性",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Are+Multimodal+Transformers+Robust+to+Missing+Modality&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Are+Multimodal+Transformers+Robust+to+Missing+Modality&limit=5&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Calibrating Multimodal Learning",
+      "rationale": "多模态置信度校准",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Calibrating+Multimodal+Learning&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Calibrating+Multimodal+Learning&limit=5&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Deep Multimodal Learning with Missing Modality A Survey",
+      "rationale": "缺失模态最新综述",
+      "returned": 5,
+      "unique": 4,
+      "notes": "",
+      "dedupe_rate": 0.8,
+      "quality_score": 0.512,
+      "quality_label": "一般",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Deep+Multimodal+Learning+with+Missing+Modality+A+Survey&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Deep+Multimodal+Learning+with+Missing+Modality+A+Survey&limit=5&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "MVTec 3D-AD comprehensive real-world dataset unsupervised 3D anomaly detection",
+      "rationale": "多模态异常检测数据集",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Multimodal Industrial Anomaly Detection via Hybrid Fusion",
+      "rationale": "多模态异常检测代表方法",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Multimodal+Industrial+Anomaly+Detection+via+Hybrid+Fusion&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Multimodal+Industrial+Anomaly+Detection+via+Hybrid+Fusion&limit=5&offset=0&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds%2Curl%2CpaperId"
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping",
+      "rationale": "轻量多模态异常检测",
+      "returned": 5,
+      "unique": 3,
+      "notes": "",
+      "dedupe_rate": 0.6,
+      "quality_score": 0.384,
+      "quality_label": "较差",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Multimodal+Industrial+Anomaly+Detection+by+Crossmodal+Feature+Mapping&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (297s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Deep Learning for Time Series Anomaly Detection A Survey",
+      "rationale": "时序异常检测综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "The Elephant in the Room Towards A Reliable Time-Series Anomaly Detection Benchmark",
+      "rationale": "异常检测评价风险",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "openalex",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Anomaly Transformer Time Series Anomaly Detection with Association Discrepancy",
+      "rationale": "时序异常检测代表方法",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Anomaly+Transformer+Time+Series+Anomaly+Detection+with+Association+Discrepancy&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (290s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Drift doesn't Matter Dynamic Decomposition with Diffusion Reconstruction",
+      "rationale": "非平稳漂移异常检测",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Drift+doesn%27t+Matter+Dynamic+Decomposition+with+Diffusion+Reconstruction&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (286s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Edge Computing Vision and Challenges",
+      "rationale": "边缘计算奠基工作",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Edge+Computing+Vision+and+Challenges&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (282s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Edge Intelligence Paving the Last Mile of Artificial Intelligence With Edge Computing",
+      "rationale": "边缘智能综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Edge+Intelligence+Paving+the+Last+Mile+of+Artificial+Intelligence+With+Edge+Computing&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (278s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Mobile Edge Computing A Survey on Architecture and Computation Offloading",
+      "rationale": "边缘卸载综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "error",
+          "results": 0,
+          "reason": "",
+          "error": "429 Client Error: Too Many Requests for url: https://api.openalex.org/works?search=Mobile+Edge+Computing+A+Survey+on+Architecture+and+Computation+Offloading&per-page=5&cursor=%2A"
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (276s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Age of Information An Introduction and Survey",
+      "rationale": "信息时效理论",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (297s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (273s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Task-Oriented Communication Design in Cyber-Physical Systems A Survey on Theory and Applications",
+      "rationale": "任务导向通信",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (294s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (271s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "A Delay-Tolerant Network Architecture for Challenged Internets",
+      "rationale": "间歇连接与容迟网络基础",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (291s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (268s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Applications of the internet of things for optimizing warehousing and logistics operations",
+      "rationale": "物流仓储物联网综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (289s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (266s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Industrial internet of things unsupervised deep learning real-time occupational safety cold storage warehouse",
+      "rationale": "真实仓储异常监测案例",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (287s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (263s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Deep Learning Anomaly Detection for Cellular IoT With Applications in Smart Logistics",
+      "rationale": "智能物流异常检测",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (285s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (261s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Hybrid IoT network for real-time monitoring of maritime containers",
+      "rationale": "弱连接集装箱监测",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (282s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (259s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Internet of things and supply chain management a literature review",
+      "rationale": "物联网物流基础综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (279s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (256s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Domain Generalization A Survey",
+      "rationale": "跨口岸跨季节泛化",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (277s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (254s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Can You Trust Your Model's Uncertainty Under Dataset Shift",
+      "rationale": "分布漂移与不确定性",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (275s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (252s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "On Calibration of Modern Neural Networks",
+      "rationale": "置信度校准基础",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (273s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (249s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+      "rationale": "风险可控不确定性",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (270s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (246s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "Anomaly detection based on Artificial Intelligence of Things systematic literature mapping",
+      "rationale": "端侧异常检测综述",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (268s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (244s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "TinyML Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers survey",
+      "rationale": "资源受限端侧学习",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (265s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (241s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "query": "MCUNet Tiny Deep Learning on IoT Devices",
+      "rationale": "端侧轻量模型代表方法",
+      "returned": 5,
+      "unique": 5,
+      "notes": "",
+      "dedupe_rate": 1.0,
+      "quality_score": 0.64,
+      "quality_label": "良好",
+      "provider_used": "crossref",
+      "attempts": [
+        {
+          "provider": "openalex",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (264s)",
+          "error": ""
+        },
+        {
+          "provider": "mcp",
+          "status": "skipped",
+          "results": 0,
+          "reason": "provider not supported in python script (host tool required)",
+          "error": ""
+        },
+        {
+          "provider": "semantic_scholar",
+          "status": "skipped",
+          "results": 0,
+          "reason": "health blacklisted (240s)",
+          "error": ""
+        },
+        {
+          "provider": "crossref",
+          "status": "success",
+          "results": 5,
+          "reason": "",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "quality_summary": {
+    "excellent": 0,
+    "good": 28,
+    "fair": 1,
+    "poor": 1,
+    "recommendations": [
+      "查询 'Deep Multimodal Learning with Missing Mo...' 贡献一般（4 篇），可考虑优化或与其他查询合并",
+      "查询 'Multimodal Industrial Anomaly Detection ...' 召献贡献低（仅 3 篇），可考虑移除或调整"
+    ]
+  },
+  "rate_limit_summary": {
+    "semantic_scholar": {
+      "calls_last_minute": 0.0,
+      "total_calls": 0.0,
+      "session_duration_seconds": 125.03840589523315
+    }
+  },
+  "abstract_enrichment_summary": {
+    "enabled": true,
+    "skipped": true,
+    "stage": "post_selection",
+    "reason": "abstract enrichment stage is not search"
+  }
+}

@@ -1,0 +1,1180 @@
+{
+  "id": "https://openalex.org/W4210673662",
+  "doi": "https://doi.org/10.1016/j.jnca.2022.103341",
+  "title": "Survey on computation offloading in UAV-Enabled mobile edge computing",
+  "display_name": "Survey on computation offloading in UAV-Enabled mobile edge computing",
+  "publication_year": 2022,
+  "publication_date": "2022-02-01",
+  "ids": {
+    "openalex": "https://openalex.org/W4210673662",
+    "doi": "https://doi.org/10.1016/j.jnca.2022.103341"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.jnca.2022.103341",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.jnca.2022.103341",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1084804522000108/pdf",
+    "source": {
+      "id": "https://openalex.org/S30128005",
+      "display_name": "Journal of Network and Computer Applications",
+      "issn_l": "1084-8045",
+      "issn": [
+        "1084-8045",
+        "1095-8592"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Network and Computer Applications",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": true,
+    "oa_status": "hybrid",
+    "oa_url": "https://www.sciencedirect.com/science/article/pii/S1084804522000108/pdf",
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5005341221",
+        "display_name": "S. M. Asiful Huda",
+        "orcid": "https://orcid.org/0000-0002-7192-1654"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I152238500",
+          "display_name": "Chosun University",
+          "ror": "https://ror.org/01zt9a375",
+          "country_code": "KR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I152238500"
+          ]
+        }
+      ],
+      "countries": [
+        "KR"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "S.M. Asiful Huda",
+      "raw_affiliation_strings": [
+        "Department of Computer Engineering, Chosun University, Gwangju, 61452, South Korea"
+      ],
+      "raw_orcid": null,
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Engineering, Chosun University, Gwangju, 61452, South Korea",
+          "institution_ids": [
+            "https://openalex.org/I152238500"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5019400688",
+        "display_name": "Sangman Moh",
+        "orcid": "https://orcid.org/0000-0001-9175-3400"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I152238500",
+          "display_name": "Chosun University",
+          "ror": "https://ror.org/01zt9a375",
+          "country_code": "KR",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I152238500"
+          ]
+        }
+      ],
+      "countries": [
+        "KR"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Sangman Moh",
+      "raw_affiliation_strings": [
+        "Department of Computer Engineering, Chosun University, Gwangju, 61452, South Korea"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0001-9175-3400",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Department of Computer Engineering, Chosun University, Gwangju, 61452, South Korea",
+          "institution_ids": [
+            "https://openalex.org/I152238500"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5019400688"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I152238500"
+  ],
+  "apc_list": {
+    "value": 3140,
+    "currency": "USD",
+    "value_usd": 3140
+  },
+  "apc_paid": {
+    "value": 3140,
+    "currency": "USD",
+    "value_usd": 3140
+  },
+  "fwci": 111.175,
+  "has_fulltext": true,
+  "cited_by_count": 222,
+  "citation_normalized_percentile": {
+    "value": 0.99974659,
+    "is_in_top_1_percent": true,
+    "is_in_top_10_percent": true
+  },
+  "cited_by_percentile_year": {
+    "min": 99,
+    "max": 100
+  },
+  "biblio": {
+    "volume": "201",
+    "issue": null,
+    "first_page": "103341",
+    "last_page": "103341"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11133",
+    "display_name": "UAV Applications and Optimization",
+    "score": 0.9997000098228455,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2202",
+      "display_name": "Aerospace Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11133",
+      "display_name": "UAV Applications and Optimization",
+      "score": 0.9997000098228455,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2202",
+        "display_name": "Aerospace Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10036",
+      "display_name": "Advanced Neural Network Applications",
+      "score": 0.9955999851226807,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1707",
+        "display_name": "Computer Vision and Pattern Recognition"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10273",
+      "display_name": "IoT and Edge/Fog Computing",
+      "score": 0.9954000115394592,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1705",
+        "display_name": "Computer Networks and Communications"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/17",
+        "display_name": "Computer Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.9114917516708374
+    },
+    {
+      "id": "https://openalex.org/keywords/computation-offloading",
+      "display_name": "Computation offloading",
+      "score": 0.6742088794708252
+    },
+    {
+      "id": "https://openalex.org/keywords/server",
+      "display_name": "Server",
+      "score": 0.6636514663696289
+    },
+    {
+      "id": "https://openalex.org/keywords/mobile-edge-computing",
+      "display_name": "Mobile edge computing",
+      "score": 0.6275480389595032
+    },
+    {
+      "id": "https://openalex.org/keywords/overhead",
+      "display_name": "Overhead (engineering)",
+      "score": 0.552625298500061
+    },
+    {
+      "id": "https://openalex.org/keywords/edge-computing",
+      "display_name": "Edge computing",
+      "score": 0.5459434986114502
+    },
+    {
+      "id": "https://openalex.org/keywords/mobile-device",
+      "display_name": "Mobile device",
+      "score": 0.5151685476303101
+    },
+    {
+      "id": "https://openalex.org/keywords/distributed-computing",
+      "display_name": "Distributed computing",
+      "score": 0.5114516019821167
+    },
+    {
+      "id": "https://openalex.org/keywords/energy-consumption",
+      "display_name": "Energy consumption",
+      "score": 0.5067000985145569
+    },
+    {
+      "id": "https://openalex.org/keywords/augmented-reality",
+      "display_name": "Augmented reality",
+      "score": 0.4607999622821808
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.43313318490982056
+    },
+    {
+      "id": "https://openalex.org/keywords/latency",
+      "display_name": "Latency (audio)",
+      "score": 0.41972485184669495
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.3742775321006775
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.2722542881965637
+    },
+    {
+      "id": "https://openalex.org/keywords/operating-system",
+      "display_name": "Operating system",
+      "score": 0.11910954117774963
+    },
+    {
+      "id": "https://openalex.org/keywords/human–computer-interaction",
+      "display_name": "Human–computer interaction",
+      "score": 0.11394745111465454
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.09855771064758301
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.9114917516708374
+    },
+    {
+      "id": "https://openalex.org/C2781041963",
+      "wikidata": "https://www.wikidata.org/wiki/Q18348618",
+      "display_name": "Computation offloading",
+      "level": 4,
+      "score": 0.6742088794708252
+    },
+    {
+      "id": "https://openalex.org/C93996380",
+      "wikidata": "https://www.wikidata.org/wiki/Q44127",
+      "display_name": "Server",
+      "level": 2,
+      "score": 0.6636514663696289
+    },
+    {
+      "id": "https://openalex.org/C2776061582",
+      "wikidata": "https://www.wikidata.org/wiki/Q25325231",
+      "display_name": "Mobile edge computing",
+      "level": 3,
+      "score": 0.6275480389595032
+    },
+    {
+      "id": "https://openalex.org/C2779960059",
+      "wikidata": "https://www.wikidata.org/wiki/Q7113681",
+      "display_name": "Overhead (engineering)",
+      "level": 2,
+      "score": 0.552625298500061
+    },
+    {
+      "id": "https://openalex.org/C2778456923",
+      "wikidata": "https://www.wikidata.org/wiki/Q5337692",
+      "display_name": "Edge computing",
+      "level": 3,
+      "score": 0.5459434986114502
+    },
+    {
+      "id": "https://openalex.org/C186967261",
+      "wikidata": "https://www.wikidata.org/wiki/Q5082128",
+      "display_name": "Mobile device",
+      "level": 2,
+      "score": 0.5151685476303101
+    },
+    {
+      "id": "https://openalex.org/C120314980",
+      "wikidata": "https://www.wikidata.org/wiki/Q180634",
+      "display_name": "Distributed computing",
+      "level": 1,
+      "score": 0.5114516019821167
+    },
+    {
+      "id": "https://openalex.org/C2780165032",
+      "wikidata": "https://www.wikidata.org/wiki/Q16869822",
+      "display_name": "Energy consumption",
+      "level": 2,
+      "score": 0.5067000985145569
+    },
+    {
+      "id": "https://openalex.org/C153715457",
+      "wikidata": "https://www.wikidata.org/wiki/Q254183",
+      "display_name": "Augmented reality",
+      "level": 2,
+      "score": 0.4607999622821808
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.43313318490982056
+    },
+    {
+      "id": "https://openalex.org/C82876162",
+      "wikidata": "https://www.wikidata.org/wiki/Q17096504",
+      "display_name": "Latency (audio)",
+      "level": 2,
+      "score": 0.41972485184669495
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.3742775321006775
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.2722542881965637
+    },
+    {
+      "id": "https://openalex.org/C111919701",
+      "wikidata": "https://www.wikidata.org/wiki/Q9135",
+      "display_name": "Operating system",
+      "level": 1,
+      "score": 0.11910954117774963
+    },
+    {
+      "id": "https://openalex.org/C107457646",
+      "wikidata": "https://www.wikidata.org/wiki/Q207434",
+      "display_name": "Human–computer interaction",
+      "level": 1,
+      "score": 0.11394745111465454
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.09855771064758301
+    },
+    {
+      "id": "https://openalex.org/C18903297",
+      "wikidata": "https://www.wikidata.org/wiki/Q7150",
+      "display_name": "Ecology",
+      "level": 1,
+      "score": 0.0
+    },
+    {
+      "id": "https://openalex.org/C86803240",
+      "wikidata": "https://www.wikidata.org/wiki/Q420",
+      "display_name": "Biology",
+      "level": 0,
+      "score": 0.0
+    }
+  ],
+  "mesh": [],
+  "locations_count": 1,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.jnca.2022.103341",
+      "is_oa": true,
+      "landing_page_url": "https://doi.org/10.1016/j.jnca.2022.103341",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1084804522000108/pdf",
+      "source": {
+        "id": "https://openalex.org/S30128005",
+        "display_name": "Journal of Network and Computer Applications",
+        "issn_l": "1084-8045",
+        "issn": [
+          "1084-8045",
+          "1095-8592"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": "cc-by",
+      "license_id": "https://openalex.org/licenses/cc-by",
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Journal of Network and Computer Applications",
+      "raw_type": "journal-article"
+    }
+  ],
+  "best_oa_location": {
+    "id": "doi:10.1016/j.jnca.2022.103341",
+    "is_oa": true,
+    "landing_page_url": "https://doi.org/10.1016/j.jnca.2022.103341",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1084804522000108/pdf",
+    "source": {
+      "id": "https://openalex.org/S30128005",
+      "display_name": "Journal of Network and Computer Applications",
+      "issn_l": "1084-8045",
+      "issn": [
+        "1084-8045",
+        "1095-8592"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": "cc-by",
+    "license_id": "https://openalex.org/licenses/cc-by",
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Journal of Network and Computer Applications",
+    "raw_type": "journal-article"
+  },
+  "sustainable_development_goals": [
+    {
+      "score": 0.8399999737739563,
+      "id": "https://metadata.un.org/sdg/7",
+      "display_name": "Affordable and clean energy"
+    }
+  ],
+  "awards": [
+    {
+      "id": "https://openalex.org/G6403142413",
+      "display_name": null,
+      "funder_award_id": "2019R1F1A1060501",
+      "funder_id": "https://openalex.org/F4320322120",
+      "funder_display_name": "National Research Foundation of Korea"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320320671",
+      "display_name": "National Research Foundation",
+      "ror": "https://ror.org/05s0g1g46"
+    },
+    {
+      "id": "https://openalex.org/F4320322120",
+      "display_name": "National Research Foundation of Korea",
+      "ror": "https://ror.org/013aysd81"
+    },
+    {
+      "id": "https://openalex.org/F4320328359",
+      "display_name": "Ministry of Science and ICT, South Korea",
+      "ror": "https://ror.org/01wpjm123"
+    }
+  ],
+  "has_content": {
+    "pdf": true,
+    "grobid_xml": true
+  },
+  "content_urls": {
+    "pdf": "https://content.openalex.org/works/W4210673662.pdf",
+    "grobid_xml": "https://content.openalex.org/works/W4210673662.grobid-xml"
+  },
+  "referenced_works_count": 149,
+  "referenced_works": [
+    "https://openalex.org/W2001027366",
+    "https://openalex.org/W2114623221",
+    "https://openalex.org/W2155968351",
+    "https://openalex.org/W2327622231",
+    "https://openalex.org/W2343823234",
+    "https://openalex.org/W2490612150",
+    "https://openalex.org/W2549104061",
+    "https://openalex.org/W2586992378",
+    "https://openalex.org/W2594560857",
+    "https://openalex.org/W2746553466",
+    "https://openalex.org/W2790860712",
+    "https://openalex.org/W2806526175",
+    "https://openalex.org/W2885631546",
+    "https://openalex.org/W2897732390",
+    "https://openalex.org/W2898035736",
+    "https://openalex.org/W2903254326",
+    "https://openalex.org/W2904258566",
+    "https://openalex.org/W2908537295",
+    "https://openalex.org/W2924948991",
+    "https://openalex.org/W2929534590",
+    "https://openalex.org/W2941351277",
+    "https://openalex.org/W2944519100",
+    "https://openalex.org/W2944942904",
+    "https://openalex.org/W2947491547",
+    "https://openalex.org/W2951054802",
+    "https://openalex.org/W2955809904",
+    "https://openalex.org/W2962753615",
+    "https://openalex.org/W2962804345",
+    "https://openalex.org/W2962804513",
+    "https://openalex.org/W2962889437",
+    "https://openalex.org/W2962943958",
+    "https://openalex.org/W2963287938",
+    "https://openalex.org/W2964129085",
+    "https://openalex.org/W2970982242",
+    "https://openalex.org/W2972503844",
+    "https://openalex.org/W2975128548",
+    "https://openalex.org/W2975807524",
+    "https://openalex.org/W2981262799",
+    "https://openalex.org/W2981726317",
+    "https://openalex.org/W2989743749",
+    "https://openalex.org/W2990467641",
+    "https://openalex.org/W2990589660",
+    "https://openalex.org/W2994270777",
+    "https://openalex.org/W2995862989",
+    "https://openalex.org/W2998472647",
+    "https://openalex.org/W2998868602",
+    "https://openalex.org/W2999225051",
+    "https://openalex.org/W2999672258",
+    "https://openalex.org/W3000315811",
+    "https://openalex.org/W3002033136",
+    "https://openalex.org/W3005056871",
+    "https://openalex.org/W3005478472",
+    "https://openalex.org/W3008565796",
+    "https://openalex.org/W3013960924",
+    "https://openalex.org/W3018740610",
+    "https://openalex.org/W3022291517",
+    "https://openalex.org/W3025789438",
+    "https://openalex.org/W3033021874",
+    "https://openalex.org/W3034211362",
+    "https://openalex.org/W3037858978",
+    "https://openalex.org/W3038454252",
+    "https://openalex.org/W3038926823",
+    "https://openalex.org/W3040591519",
+    "https://openalex.org/W3048135502",
+    "https://openalex.org/W3048697798",
+    "https://openalex.org/W3048981883",
+    "https://openalex.org/W3049663264",
+    "https://openalex.org/W3069042888",
+    "https://openalex.org/W3072523976",
+    "https://openalex.org/W3081088023",
+    "https://openalex.org/W3081638697",
+    "https://openalex.org/W3081699468",
+    "https://openalex.org/W3088579369",
+    "https://openalex.org/W3089147436",
+    "https://openalex.org/W3089190064",
+    "https://openalex.org/W3090573937",
+    "https://openalex.org/W3091968794",
+    "https://openalex.org/W3092022783",
+    "https://openalex.org/W3092628553",
+    "https://openalex.org/W3095406007",
+    "https://openalex.org/W3096813197",
+    "https://openalex.org/W3097335007",
+    "https://openalex.org/W3099804118",
+    "https://openalex.org/W3113682412",
+    "https://openalex.org/W3119882941",
+    "https://openalex.org/W3120923500",
+    "https://openalex.org/W3121837868",
+    "https://openalex.org/W3126571692",
+    "https://openalex.org/W3131765381",
+    "https://openalex.org/W3135506433",
+    "https://openalex.org/W3135702594",
+    "https://openalex.org/W3136774798",
+    "https://openalex.org/W3140381130",
+    "https://openalex.org/W3140453182",
+    "https://openalex.org/W3144404977",
+    "https://openalex.org/W3144494418",
+    "https://openalex.org/W3145159167",
+    "https://openalex.org/W3148946438",
+    "https://openalex.org/W3152848449",
+    "https://openalex.org/W3152953026",
+    "https://openalex.org/W3153837211",
+    "https://openalex.org/W3159879283",
+    "https://openalex.org/W3169421330",
+    "https://openalex.org/W3177092023",
+    "https://openalex.org/W3178459768",
+    "https://openalex.org/W3178550699",
+    "https://openalex.org/W3179018212",
+    "https://openalex.org/W3183047104",
+    "https://openalex.org/W3186017499",
+    "https://openalex.org/W3187950552",
+    "https://openalex.org/W3194521778",
+    "https://openalex.org/W3196542329",
+    "https://openalex.org/W3196921428",
+    "https://openalex.org/W3197958915",
+    "https://openalex.org/W3200602197",
+    "https://openalex.org/W3200723785",
+    "https://openalex.org/W3203598252",
+    "https://openalex.org/W3206994654",
+    "https://openalex.org/W3207661877",
+    "https://openalex.org/W3209940515",
+    "https://openalex.org/W3210716582",
+    "https://openalex.org/W3212796478",
+    "https://openalex.org/W3213970494",
+    "https://openalex.org/W3214825004",
+    "https://openalex.org/W3215667011",
+    "https://openalex.org/W3216768220",
+    "https://openalex.org/W3217783515",
+    "https://openalex.org/W4200323219",
+    "https://openalex.org/W4206336484",
+    "https://openalex.org/W6677253087",
+    "https://openalex.org/W6770702667",
+    "https://openalex.org/W6773970062",
+    "https://openalex.org/W6780277229",
+    "https://openalex.org/W6784696566",
+    "https://openalex.org/W6792501230",
+    "https://openalex.org/W6792976959",
+    "https://openalex.org/W6797827461",
+    "https://openalex.org/W6798523676",
+    "https://openalex.org/W6798801526",
+    "https://openalex.org/W6799439452",
+    "https://openalex.org/W6800310777",
+    "https://openalex.org/W6800559156",
+    "https://openalex.org/W6801711609",
+    "https://openalex.org/W6802371140",
+    "https://openalex.org/W6802805883",
+    "https://openalex.org/W6803074072",
+    "https://openalex.org/W6803881933",
+    "https://openalex.org/W6804583276",
+    "https://openalex.org/W6804741485"
+  ],
+  "related_works": [
+    "https://openalex.org/W4200420173",
+    "https://openalex.org/W4225987626",
+    "https://openalex.org/W3120617837",
+    "https://openalex.org/W3127808443",
+    "https://openalex.org/W2916011811",
+    "https://openalex.org/W3034137700",
+    "https://openalex.org/W4362496467",
+    "https://openalex.org/W2896883851",
+    "https://openalex.org/W2902693277",
+    "https://openalex.org/W4378977105"
+  ],
+  "abstract_inverted_index": {
+    "With": [
+      0,
+      81
+    ],
+    "the": [
+      1,
+      55,
+      82,
+      130,
+      136
+    ],
+    "increasing": [
+      2
+    ],
+    "growth": [
+      3
+    ],
+    "of": [
+      4,
+      59,
+      84,
+      132,
+      154
+    ],
+    "internet-of-things": [
+      5
+    ],
+    "(IoT)": [
+      6
+    ],
+    "devices,": [
+      7
+    ],
+    "effective": [
+      8
+    ],
+    "computation": [
+      9
+    ],
+    "performance": [
+      10
+    ],
+    "has": [
+      11,
+      45
+    ],
+    "become": [
+      12
+    ],
+    "a": [
+      13,
+      60
+    ],
+    "critical": [
+      14
+    ],
+    "issue.": [
+      15
+    ],
+    "Many": [
+      16
+    ],
+    "services": [
+      17
+    ],
+    "provided": [
+      18
+    ],
+    "by": [
+      19,
+      98
+    ],
+    "IoT": [
+      20,
+      71
+    ],
+    "devices": [
+      21
+    ],
+    "(e.g.,": [
+      22
+    ],
+    "augmented": [
+      23
+    ],
+    "reality,": [
+      24
+    ],
+    "location-tracking,": [
+      25
+    ],
+    "traffic": [
+      26
+    ],
+    "systems,": [
+      27
+    ],
+    "and": [
+      28,
+      76,
+      87,
+      114,
+      142,
+      149,
+      156
+    ],
+    "autonomous": [
+      29
+    ],
+    "driving)": [
+      30
+    ],
+    "require": [
+      31
+    ],
+    "intensive": [
+      32,
+      65
+    ],
+    "real-time": [
+      33
+    ],
+    "data": [
+      34
+    ],
+    "processing,": [
+      35
+    ],
+    "which": [
+      36,
+      127
+    ],
+    "demands": [
+      37
+    ],
+    "powerful": [
+      38
+    ],
+    "computational": [
+      39
+    ],
+    "resources.": [
+      40
+    ],
+    "Mobile": [
+      41
+    ],
+    "edge": [
+      42
+    ],
+    "computing": [
+      43
+    ],
+    "(MEC)": [
+      44
+    ],
+    "been": [
+      46
+    ],
+    "introduced": [
+      47
+    ],
+    "to": [
+      48,
+      67,
+      139
+    ],
+    "effectively": [
+      49
+    ],
+    "handle": [
+      50
+    ],
+    "this": [
+      51,
+      96,
+      118,
+      120
+    ],
+    "problem": [
+      52
+    ],
+    "reliably": [
+      53
+    ],
+    "over": [
+      54
+    ],
+    "internet.": [
+      56
+    ],
+    "The": [
+      57,
+      103
+    ],
+    "inclusion": [
+      58
+    ],
+    "MEC": [
+      61,
+      101,
+      124
+    ],
+    "server": [
+      62
+    ],
+    "allows": [
+      63
+    ],
+    "computationally": [
+      64
+    ],
+    "tasks": [
+      66
+    ],
+    "be": [
+      68
+    ],
+    "offloaded": [
+      69
+    ],
+    "from": [
+      70
+    ],
+    "devices.": [
+      72
+    ],
+    "However,": [
+      73
+    ],
+    "communication": [
+      74
+    ],
+    "overhead": [
+      75
+    ],
+    "delays": [
+      77
+    ],
+    "are": [
+      78
+    ],
+    "major": [
+      79
+    ],
+    "drawbacks.": [
+      80
+    ],
+    "advantages": [
+      83
+    ],
+    "high": [
+      85
+    ],
+    "mobility": [
+      86
+    ],
+    "low": [
+      88
+    ],
+    "cost,": [
+      89
+    ],
+    "unmanned": [
+      90
+    ],
+    "aerial": [
+      91
+    ],
+    "vehicles": [
+      92
+    ],
+    "(UAVs)": [
+      93
+    ],
+    "can": [
+      94
+    ],
+    "mitigate": [
+      95
+    ],
+    "issue": [
+      97
+    ],
+    "acting": [
+      99
+    ],
+    "as": [
+      100
+    ],
+    "servers.": [
+      102
+    ],
+    "offloading": [
+      104,
+      128
+    ],
+    "decisions": [
+      105
+    ],
+    "for": [
+      106
+    ],
+    "such": [
+      107
+    ],
+    "scenarios": [
+      108
+    ],
+    "involve": [
+      109
+    ],
+    "service": [
+      110
+    ],
+    "latency,": [
+      111
+    ],
+    "energy/power": [
+      112
+    ],
+    "consumption,": [
+      113
+    ],
+    "execution": [
+      115
+    ],
+    "delays.": [
+      116
+    ],
+    "For": [
+      117
+    ],
+    "reason,": [
+      119
+    ],
+    "study": [
+      121
+    ],
+    "reviews": [
+      122
+    ],
+    "UAV-enabled": [
+      123
+    ],
+    "solutions": [
+      125
+    ],
+    "in": [
+      126,
+      152
+    ],
+    "was": [
+      129
+    ],
+    "focus": [
+      131
+    ],
+    "research.": [
+      133
+    ],
+    "We": [
+      134
+    ],
+    "compare": [
+      135
+    ],
+    "algorithms": [
+      137
+    ],
+    "qualitatively": [
+      138
+    ],
+    "assess": [
+      140
+    ],
+    "features": [
+      141
+    ],
+    "performance.": [
+      143
+    ],
+    "Finally,": [
+      144
+    ],
+    "we": [
+      145
+    ],
+    "discuss": [
+      146
+    ],
+    "open": [
+      147
+    ],
+    "issues": [
+      148
+    ],
+    "research": [
+      150
+    ],
+    "challenges": [
+      151
+    ],
+    "terms": [
+      153
+    ],
+    "design": [
+      155
+    ],
+    "implementation.": [
+      157
+    ]
+  },
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 25
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 48
+    },
+    {
+      "year": 2024,
+      "cited_by_count": 67
+    },
+    {
+      "year": 2023,
+      "cited_by_count": 57
+    },
+    {
+      "year": 2022,
+      "cited_by_count": 25
+    }
+  ],
+  "updated_date": "2026-08-12T21:12:35.861297",
+  "created_date": "2025-10-10T00:00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "paperId": "2c762fc73b4fc8ad7d4b722e0aa544ce2bc0f951",
+  "title": "MAD-MEL: Combining Entity and Metric Learning for Anomaly Detection in Multivariate Time Series",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2023.3339335?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2023.3339335, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2135874817",
+      "name": "Jyoti Kumari"
+    },
+    {
+      "authorId": "2111724608",
+      "name": "Jimson Mathew"
+    },
+    {
+      "authorId": "2144631353",
+      "name": "Arijit Mondal"
+    }
+  ],
+  "abstract": "Detection of anomalies in multivariate time series (MVTS) data has been crucial for various application areas. Though recent approaches have addressed such issues, still the problem is challenging not only due to identifying anomalous behavior but also to reducing false alarms. The problem becomes more exciting and challenging when the model takes care of errors due to measurement, environmental effects, and temporal dependency among the observations. Toward this, we propose a framework MAD-MEL, an MVTS Anomaly Detection Method using metric and entity learning (EL) approaches. The metric learning-based model identifies the behavior of individual series as well as the relationship between different attributes, whereas the entity-based model learns the behavior of MVTS as a single entity. An empirical mode decomposition-based feature learning (FL) component is incorporated to learn more generalized behavior of data and to handle the problem of minor disturbances. Also, the proposed method combines a linear component to control the spatial scaling effect in the train and test set. The idea is to learn the normal behavior of MVTS by combining all the components as a prediction-based model and to use prediction error for anomaly detection. We adopt transfer learning to reduce the time complexity while learning the individual series in case of a large number of attributes or multiple instances of MVTS. Our proposed multivariate time series anomaly detection using metric and entity learning (MAD-MEL) achieves the F1-score of 94% on public dataset, which is an improvement of 3% from SOTA."
+}

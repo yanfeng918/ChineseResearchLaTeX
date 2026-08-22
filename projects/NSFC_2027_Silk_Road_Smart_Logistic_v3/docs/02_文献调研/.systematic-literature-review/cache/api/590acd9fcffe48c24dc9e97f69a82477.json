@@ -1,0 +1,33 @@
+{
+  "paperId": "834b5b5b25e99186f900a7eb1c8d641caf024fcb",
+  "title": "Are Multimodal Transformers Robust to Missing Modality?",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2204.05454",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.05454, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "50658039",
+      "name": "Mengmeng Ma"
+    },
+    {
+      "authorId": "144139198",
+      "name": "Jian Ren"
+    },
+    {
+      "authorId": "48096253",
+      "name": "Long Zhao"
+    },
+    {
+      "authorId": "1389630028",
+      "name": "Davide Testuggine"
+    },
+    {
+      "authorId": "144152346",
+      "name": "Xi Peng"
+    }
+  ],
+  "abstract": "Multimodal data collected from the real world are often imperfect due to missing modalities. Therefore multimodal models that are robust against modal-incomplete data are highly preferred. Recently, Transformer models have shown great success in processing multimodal data. However, existing work has been limited to either architecture designs or pre-training strategies; whether Transformer models are naturally robust against missing-modal data has rarely been investigated. In this paper, we present the first-of-its-kind work to comprehensively investigate the behavior of Transformers in the presence of modal-incomplete data. Unsurprising, we find Transformer models are sensitive to missing modalities while different modal fusion strategies will significantly affect the robustness. What surprised us is that the optimal fusion strategy is dataset dependent even for the same Transformer model; there does not exist a universal strategy that works in general cases. Based on these findings, we propose a principle method to improve the robustness of Transformer models byautomatically searching for an optimal fusion strategy regarding input data. Experimental validations on three benchmarks support the superior performance of the proposed method."
+}

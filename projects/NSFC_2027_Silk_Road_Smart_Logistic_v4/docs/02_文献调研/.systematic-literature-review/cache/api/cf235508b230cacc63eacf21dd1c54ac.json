@@ -1,0 +1,1906 @@
+{
+  "total": 187,
+  "offset": 0,
+  "next": 50,
+  "data": [
+    {
+      "paperId": "c5e929339b9fd6132791e3b029b4904f9c63226d",
+      "externalIds": {
+        "PubMedCentral": "12045960",
+        "DOI": "10.1038/s41598-025-00409-4",
+        "CorpusId": 278256436,
+        "PubMed": "40312423"
+      },
+      "url": "https://www.semanticscholar.org/paper/c5e929339b9fd6132791e3b029b4904f9c63226d",
+      "title": "Adaptive AI-enhanced computation offloading with machine learning for QoE optimization and energy-efficient mobile edge systems",
+      "venue": "Scientific Reports",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41598-025-00409-4.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12045960, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2384738770",
+          "name": "D. K. Nishad"
+        },
+        {
+          "authorId": "2261553142",
+          "name": "V. Verma"
+        },
+        {
+          "authorId": "2358607812",
+          "name": "Pushkar Rajput"
+        },
+        {
+          "authorId": "2284447955",
+          "name": "Sandeep Gupta"
+        },
+        {
+          "authorId": "2144765836",
+          "name": "Anurag Dwivedi"
+        },
+        {
+          "authorId": "2339256155",
+          "name": "Dharti raj Shah"
+        }
+      ],
+      "abstract": "Mobile Edge Computing (MEC) systems face critical challenges in optimizing computation offloading decisions while maintaining quality of experience (QoE) and energy efficiency, particularly in dynamic multi-user environments. This paper introduces a novel Adaptive AI-enhanced offloading (AAEO) framework that uniquely integrates three complementary AI approaches: deep reinforcement learning for real-time decision-making, evolutionary algorithms for global optimization, and federated learning for distributed knowledge sharing. The key innovation lies in our hybrid architecture’s ability to dynamically adjust offloading strategies based on real-time network conditions, user mobility patterns, and application requirements, addressing limitations of existing single-algorithm solutions. Through extensive MATLAB simulations with 50–200 mobile users and 4–10 edge servers, our framework demonstrates superior performance compared to state-of-the-art methods. The AAEO framework achieves up to a 35% improvement in QoE and a 40% reduction in energy consumption, while maintaining stable task completion times with only a 12% increase under maximum user load. The system’s security analysis yields a 98% threat detection rate, with response times under 100 ms. Meanwhile, reliability metrics indicate a 99.8% task completion rate and a mean time to failure of 1,200 h. These results validate the proposed hybrid AI approach’s effectiveness in addressing the complex challenges of next-generation MEC systems, particularly in heterogeneous environments requiring real-time adaptation."
+    },
+    {
+      "paperId": "d6404d755737d00426bdaa94af3597764a2037e6",
+      "externalIds": {
+        "DBLP": "conf/iscas/YangYCY26",
+        "DOI": "10.1109/ISCAS66217.2026.11562351",
+        "CorpusId": 289397271
+      },
+      "url": "https://www.semanticscholar.org/paper/d6404d755737d00426bdaa94af3597764a2037e6",
+      "title": "A Hybrid RRAM-FeRAM Computing-in-Memory Architecture with Adaptive Quantization Scheme for Edge AI Devices",
+      "venue": "International Symposium on Circuits and Systems",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISCAS66217.2026.11562351?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISCAS66217.2026.11562351, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2124638149",
+          "name": "Honghu Yang"
+        },
+        {
+          "authorId": "2292949367",
+          "name": "Runru Yu"
+        },
+        {
+          "authorId": "2368640386",
+          "name": "Tianci Cai"
+        },
+        {
+          "authorId": "2342887685",
+          "name": "Jianguo Yang"
+        }
+      ],
+      "abstract": "Compute-in-Memory (CIM) is critical for edge AI acceleration, but single non-volatile memory (NVM)-based designs suffer from inherent trade-offs. RRAM lacks endurance and has long write latency, while FeRAM faces destructive readout. Additionally, Convolutional Neural Network (CNN) weight sparsity causes redundant computations in conventional CIM. To address these, this paper proposes a hybrid RRAM-FeRAM CIM architecture with adaptive quantization scheme. Key innovations: 1) Split signed INT8 storage—2T1R RRAM for stable upper 4-bit weights, 2T1C FeRAM for fast-updating lower 4-bit weights; 2) Adaptive quantization module that switches the Flash ADC between 2/4-bit based on sparsity. The hybrid 8kb RRAM-FeRAM CIM macro shows: 32.42 TOPS/W (50% sparsity) and 74.65 TOPS/W (80% sparsity) at 25°C (TT corner), peak 87.28 TOPS/W at -40°C (SS corner). It outperforms state-of-the-art CIM macros by 3.3×–34.2× (50% sparsity) and 7.4×–76.7× (80% sparsity) in normalized energy efficiency."
+    },
+    {
+      "paperId": "1ac6274d59c219184f698f03b1c7d00f35cc6a29",
+      "externalIds": {
+        "DOI": "10.1109/SmartIoT66867.2025.00072",
+        "CorpusId": 284353057
+      },
+      "url": "https://www.semanticscholar.org/paper/1ac6274d59c219184f698f03b1c7d00f35cc6a29",
+      "title": "Quantum Meta-Learning for Adaptive Task Offloading in Dynamic Edge Computing Networks",
+      "venue": "International Conferences on Smart Internet of Things",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SmartIoT66867.2025.00072?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SmartIoT66867.2025.00072, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1409630262",
+          "name": "Hoa Tran-Dang"
+        },
+        {
+          "authorId": "2239066275",
+          "name": "Dong-Seong Kim"
+        }
+      ],
+      "abstract": "The integration of edge computing and AI is vital for supporting latency-sensitive, computation-intensive applications at the network edge. However, the dynamic and resource-limited nature of edge environments challenges efficient task offloading. This paper introduces QML-TO (Quantum Meta-Learning for Task Offloading), a framework that combines meta-learning with Grover’s quantum algorithm to enable adaptive and efficient task offloading. QML-TO rapidly adapts to changing task contexts and efficiently explores large, uncertain decision spaces with minimal data. Simulations show that QML-TO outperforms classical baselines in task completion rate, and adaptability, particularly in dynamic edge networks."
+    },
+    {
+      "paperId": "36b42dae3af2776914d32a58f1098f380a386a6f",
+      "externalIds": {
+        "DBLP": "conf/isncc/WahidI25",
+        "DOI": "10.1109/ISNCC66965.2025.11250386",
+        "CorpusId": 283146001
+      },
+      "url": "https://www.semanticscholar.org/paper/36b42dae3af2776914d32a58f1098f380a386a6f",
+      "title": "Deep Reinforcement Learning-Driven Quality of Service and Energy-Aware Adaptive Scheduling Framework for Vehicular Edge Computing",
+      "venue": "International Symposium on Networks, Computers and Communications",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ISNCC66965.2025.11250386?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ISNCC66965.2025.11250386, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2219139240",
+          "name": "Abdul Wahid"
+        },
+        {
+          "authorId": "2243417491",
+          "name": "Leila Ismail"
+        }
+      ],
+      "abstract": "Vehicular Edge Computing (VEC) is increasingly recognized as essential for managing intensive computational demands in connected and autonomous vehicles. Due to limited onboard processing capabilities, vehicles must offload computational tasks to edge computing nodes, such as Road Side Units, to meet stringent latency and energy efficiency requirements. However, the inherent dynamic mobility of vehicles, intermittent connectivity, and fluctuating resource availability pose significant challenges to efficient task scheduling and offloading. Traditional static or heuristic-based approaches frequently result in deadline violations and inefficient energy usage under such dynamic conditions. This paper proposes an adaptive task scheduling framework using Deep Reinforcement Learning (DRL) to address these challenges. Our framework dynamically manages computational offloading decisions, optimizing for minimal deadline violations and reduced energy consumption. By integrating real-time state information, including server loads, network bandwidth, and task parameters, the DRL agent autonomously learns optimal scheduling policies through interaction with the vehicular environment. Our results indicate that this DRL-based scheduling significantly enhances adherence to task deadlines and improves energy efficiency. Furthermore, this foundational framework sets the stage for future expansions to include comprehensive Quality of Service (QoS) metrics and Service Level Agreement (SLA) compliance."
+    },
+    {
+      "paperId": "6e4ac103b4a76bee2d1c436b23c47eff9f6bdd90",
+      "externalIds": {
+        "ArXiv": "2501.03265",
+        "CorpusId": 275342899
+      },
+      "url": "https://www.semanticscholar.org/paper/6e4ac103b4a76bee2d1c436b23c47eff9f6bdd90",
+      "title": "Cognitive Edge Computing: A Comprehensive Survey on Optimizing Large Models and AI Agents for Pervasive Deployment",
+      "venue": "",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.03265, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2321412685",
+          "name": "Xubin Wang"
+        },
+        {
+          "authorId": "2146067024",
+          "name": "Qing Li"
+        },
+        {
+          "authorId": "2321432219",
+          "name": "Weijia Jia"
+        }
+      ],
+      "abstract": "This article surveys Cognitive Edge Computing as a practical and methodical pathway for deploying reasoning-capable Large Language Models (LLMs) and autonomous AI agents on resource-constrained devices at the network edge. We present a unified, cognition-preserving framework spanning: (1) model optimization (quantization, sparsity, low-rank adaptation, distillation) aimed at retaining multi-step reasoning under tight memory/compute budgets; (2) system architecture (on-device inference, elastic offloading, cloud-edge collaboration) that trades off latency, energy, privacy, and capacity; and (3) adaptive intelligence (context compression, dynamic routing, federated personalization) that tailors computation to task difficulty and device constraints. We synthesize advances in efficient Transformer design, multimodal integration, hardware-aware compilation, privacy-preserving learning, and agentic tool use, and map them to edge-specific operating envelopes. We further outline a standardized evaluation protocol covering latency, throughput, energy per token, accuracy, robustness, privacy, and sustainability, with explicit measurement assumptions to enhance comparability. Remaining challenges include modality-aware reasoning benchmarks, transparent and reproducible energy reporting, edge-oriented safety/alignment evaluation, and multi-agent testbeds. We conclude with practitioner guidelines for cross-layer co-design of algorithms, runtime, and hardware to deliver reliable, efficient, and privacy-preserving cognitive capabilities on edge devices."
+    },
+    {
+      "paperId": "9d137957e0538403f48d656032bf627ba6675647",
+      "externalIds": {
+        "DOI": "10.1109/lcn65610.2025.11146061",
+        "CorpusId": 281349898
+      },
+      "url": "https://www.semanticscholar.org/paper/9d137957e0538403f48d656032bf627ba6675647",
+      "title": "Freshness-Aware Inference Services in Edge Computing via Offloading or Local Processing",
+      "venue": "IEEE Conference on Local Computer Networks",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/lcn65610.2025.11146061?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/lcn65610.2025.11146061, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2370259122",
+          "name": "Xuan Ai"
+        },
+        {
+          "authorId": "2269755352",
+          "name": "Weifa Liang"
+        }
+      ],
+      "abstract": "—The collaboration between end devices and edge servers has been extensively investigated to enable adaptive service provisioning, particularly in scenarios requiring trade-offs between differential model accuracies and heterogeneous resource consumption costs. In this paper, we propose freshness-aware hierarchical inference service provisioning in a Mobile Edge Computing (MEC) network, where inference models are trained and maintained in edge servers to address resource limitations on devices. Devices dynamically download updated models to maintain local inference ﬁdelity, mitigating performance degradation caused by model staleness. We formulate a freshness and cost minimization problem that maximizes overall inference ﬁdelity while minimizing total costs, subject to long-term average energy budgets on devices and computing capacities on cloudlets. We design an online algorithm with provable competitive ratio, by leveraging Lyapunov optimization and randomized rounding techniques. We conduct simulations to evaluate the performance of the proposed online algorithm. Simulation results demonstrate that the proposed algorithm is promising."
+    },
+    {
+      "paperId": "24faeb38fb5081e628c81fa45b8c99321bc93889",
+      "externalIds": {
+        "DOI": "10.22214/ijraset.2025.75250",
+        "CorpusId": 283040551
+      },
+      "url": "https://www.semanticscholar.org/paper/24faeb38fb5081e628c81fa45b8c99321bc93889",
+      "title": "Adaptive Task Offloading in IoT Networks Using AI and Reinforcement Learning for Energy and Latency Optimization",
+      "venue": "International Journal for Research in Applied Science and Engineering Technology",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.22214/ijraset.2025.75250",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.22214/ijraset.2025.75250?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.22214/ijraset.2025.75250, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2392565882",
+          "name": "Rodan Kumar Dharwaiya"
+        }
+      ],
+      "abstract": "The exponential growth of Internet of Things (IoT) devices has led to increased energy consumption and latency in\nconventional network architectures, where devices process all tasks locally. This research investigates the use of AI-based edge\ncomputing to optimize task allocation in IoT networks, aiming to reduce energy consumption and latency while maintaining\nadaptability under dynamic conditions. Three strategies are compared: conventional local-only processing, AI-only predictive\noffloading, and AI combined with Reinforcement Learning (AI + RL) adaptive offloading. The simulation results demonstrate\nthat the AI-only system significantly reduces total energy consumption by approximately 60% and average latency by around\n62% compared to conventional processing, while the AI + RL system provides adaptive task allocation that balances energy\nefficiency with network performance. Additional performance metrics, including maximum latency, minimum latency, latency\nstandard deviation, and task offloading percentage, further validate the effectiveness of AI-based edge computing. These\nfindings indicate that integrating AI and RL into edge computing can substantially improve the efficiency, responsiveness, and\nrobustness of IoT networks, making them suitable for real-time, latency-sensitive applications."
+    },
+    {
+      "paperId": "cd68e692863b801e2fcc5f9c8212b217cda0e89c",
+      "externalIds": {
+        "DBLP": "journals/tcc/YuanGZWXL24",
+        "DOI": "10.1109/TCC.2024.3361858",
+        "CorpusId": 267516277
+      },
+      "url": "https://www.semanticscholar.org/paper/cd68e692863b801e2fcc5f9c8212b217cda0e89c",
+      "title": "Edge-Cloud Collaborative UAV Object Detection: Edge-Embedded Lightweight Algorithm Design and Task Offloading Using Fuzzy Neural Network",
+      "venue": "IEEE Transactions on Cloud Computing",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCC.2024.3361858?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCC.2024.3361858, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "145412873",
+          "name": "Yazhou Yuan"
+        },
+        {
+          "authorId": "2283505687",
+          "name": "Shicong Gao"
+        },
+        {
+          "authorId": "2185353283",
+          "name": "Ziteng Zhang"
+        },
+        {
+          "authorId": "2108497341",
+          "name": "Wenye Wang"
+        },
+        {
+          "authorId": "2256935805",
+          "name": "Zhezhuang Xu"
+        },
+        {
+          "authorId": "2278388480",
+          "name": "Zhixin Liu"
+        }
+      ],
+      "abstract": "With the rapid development of artificial intelligence and Unmanned Aerial Vehicle (UAV) technology, AI-based UAVs are increasingly utilized in various industrial and civilian applications. This paper presents a distributed Edge-Cloud collaborative framework for UAV object detection, aiming to achieve real-time and accurate detection of ground moving targets. The framework incorporates an Edge-Embedded Lightweight (<inline-formula><tex-math notation=\"LaTeX\">${{\\text{E}}^{2}}\\text{L}$</tex-math><alternatives><mml:math><mml:mrow><mml:msup><mml:mrow><mml:mtext>E</mml:mtext></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mtext>L</mml:mtext></mml:mrow></mml:math><inline-graphic xlink:href=\"yuan-ieq1-3361858.gif\"/></alternatives></inline-formula>) object algorithm with an attention mechanism, enabling real-time object detection on edge-side embedded devices while maintaining high accuracy. Additionally, a decision-making mechanism based on fuzzy neural network facilitates adaptive task allocation between the edge-side and cloud-side. Experimental results demonstrate the improved running rate of the proposed algorithm compared to YOLOv4 on the edge-side NVIDIA Jetson Xavier NX, and the superior performance of the distributed Edge-Cloud collaborative framework over traditional edge computing or cloud computing algorithms in terms of speed and accuracy"
+    },
+    {
+      "paperId": "d931d60e8cf0e227d3c520083f7426be7e6a1eb4",
+      "externalIds": {
+        "DOI": "10.1109/ICDSBS63635.2025.11031978",
+        "CorpusId": 279454855
+      },
+      "url": "https://www.semanticscholar.org/paper/d931d60e8cf0e227d3c520083f7426be7e6a1eb4",
+      "title": "Towards Efficient Mobile Edge Computing: A Comparative Assessment of Offloading Techniques",
+      "venue": "2025 International Conference on Data Science and Business Systems (ICDSBS)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICDSBS63635.2025.11031978?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICDSBS63635.2025.11031978, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2295393437",
+          "name": "V. S."
+        },
+        {
+          "authorId": "2297386246",
+          "name": "R. Gopalakrishnan"
+        }
+      ],
+      "abstract": "Task offloading in MEC is the transfer of computation intensive tasks off to the server or cloud to accelerate the high demanding applications to be efficiently handled by the network. This process can vividly optimize the resource utilization and could achieve energy efficiency especially in the MEC paradigm. Intelligent task offloading schemes are the need of the hour, due to their adaptive and evolving behavior. Lot of AI based models in the Machine Learning and Deep Learning domains have been developed as a strategic decision-making model in task offloading. This work performs a comparative assessment of the efficacy of different models like Random Forest, Extremely Randomized Trees, Extreme Gradient Boosting, Artificial Neural Network, Deep Neural Network (DNN) and Convolutional Neural network in intelligent task offloading. The experimental evidences were evaluated on standard classification benchmark metrics. The results indicated that DNN architecture showed better performance than the other compared models because of its ability to learn complex relations among the data through its dense connections. This work can lead the way to many futuristic intelligent task offloading strategies that could handle large massive amounts of network data."
+    },
+    {
+      "paperId": "0b5451fc4ddf2760446c78c0eb2f86bde0642cd2",
+      "externalIds": {
+        "DBLP": "conf/itsc/YanLL23",
+        "DOI": "10.1109/ITSC57777.2023.10422172",
+        "CorpusId": 267659729
+      },
+      "url": "https://www.semanticscholar.org/paper/0b5451fc4ddf2760446c78c0eb2f86bde0642cd2",
+      "title": "ASPM: Reliability-Oriented DNN Inference Partition and Offloading in Vehicular Edge Computing",
+      "venue": "2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ITSC57777.2023.10422172?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ITSC57777.2023.10422172, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "31279878",
+          "name": "Guozhi Yan"
+        },
+        {
+          "authorId": "2128566380",
+          "name": "Chunhui Liu"
+        },
+        {
+          "authorId": "2146385039",
+          "name": "Kai Liu"
+        }
+      ],
+      "abstract": "Recent years have witnessed a surge in the deployment of Deep Neural Network (DNN)-based services, which drives the development of emerging intelligent transportation systems (ITSs). However, it is still challenging to enable efficient and reliable DNN inference in Vehicular Edge Computing (VEC) environments due to resource constraints and system dynamics. In view of this, this work investigates a DNN inference partition and offloading scenario with environmental uncertainties in VEC, which motivates the necessity to strike a balance between inference delay and the success ratio of receiving the offloading outputs. Then, by considering communication and computation overheads as well as failed offloading conditions in an analytical model, we propose an Adaptive Splitting, Partitioning, and Merging (ASPM) strategy that reduces the inference delay while maintaining a decent offloading success ratio. Specifically, ASPM first splits and partitions the DNN model in a recursive way to find the optimal split blocks with the aim of minimizing inference delay. On this basis, it further merges DNN blocks in a greedy way to reduce the number of blocks to be offloaded thus, enhancing the offloading success ratio for the whole DNN inference. Finally, we conduct comprehensive performance evaluations to demonstrate the superiority of our design."
+    },
+    {
+      "paperId": "10fa69510371bf97f0be73ac60dc8833ecf96815",
+      "externalIds": {
+        "DOI": "10.9734/jsrr/2026/v32i24006",
+        "CorpusId": 285985715
+      },
+      "url": "https://www.semanticscholar.org/paper/10fa69510371bf97f0be73ac60dc8833ecf96815",
+      "title": "Performance Analysis of AI-based Intelligent Computation Offloading in Edge Computing Using Reinforcement Learning, ACO and GA",
+      "venue": "Journal of Scientific Research and Reports",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.9734/jsrr/2026/v32i24006",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.9734/jsrr/2026/v32i24006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.9734/jsrr/2026/v32i24006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2228256358",
+          "name": "Priyanka Sarma"
+        },
+        {
+          "authorId": "143886752",
+          "name": "Atowar-Ul Islam"
+        }
+      ],
+      "abstract": "Computation offloading in Edge Computing (EC) plays a vital role in reducing execution latency and improving quality of service for resource-constrained devices. This paper presents a comparative performance analysis of three intelligent task offloading strategies, namely Reinforcement Learning (RL), Ant Colony Optimization (ACO), and Genetic Algorithm (GA), with the objective of minimizing overall system latency. A simulation-based system model is developed to evaluate the effectiveness of these approaches under dynamic network conditions. The experimental results demonstrate that the RL-based method achieves superior performance, attaining an average latency of approximately 42 ms, which is significantly lower than ACO and GA. This improvement highlights the adaptive learning capability and faster convergence of RL in making optimal offloading decisions. The findings indicate that RL-based offloading is more suitable for dynamic EC environments, and the proposed framework can be extended to incorporate additional metrics such as energy efficiency and throughput in future work."
+    },
+    {
+      "paperId": "bbc2f340da509ff9bd10375d87da7bf932bdc702",
+      "externalIds": {
+        "DOI": "10.1109/ICOECA68095.2026.11485334",
+        "CorpusId": 287736484
+      },
+      "url": "https://www.semanticscholar.org/paper/bbc2f340da509ff9bd10375d87da7bf932bdc702",
+      "title": "An Adaptive Edge-Cloud Task Offloading Framework using Reinforcement Learning for Latency-Sensitive AI Applications",
+      "venue": "2026 6th International Conference on Expert Clouds and Applications (ICOECA)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICOECA68095.2026.11485334?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICOECA68095.2026.11485334, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "151393104",
+          "name": "Anshu Vashisth"
+        },
+        {
+          "authorId": "2411993654",
+          "name": "Gagandeep Kaur"
+        },
+        {
+          "authorId": "2370344407",
+          "name": "Bhupinder Kaur"
+        },
+        {
+          "authorId": "2372121510",
+          "name": "Gaurav Sethi"
+        }
+      ],
+      "abstract": "Applications of artificial intelligence (AI) and real-time video analytics, autonomous perception, augmented reality, and intelligent healthcare are latency-constrained and cannot be supported by cloud-centric architectures alone. Although edge computing can reduce the latency by executing tasks nearer to the data sources, the scarcity of edge resources and dynamic networks render static or heuristic-based offloading schemes of tasks not optimal. Current methods are usually dependent on fixed thresholds, decision by rules, or offline optimization, and thus provide no flexibility to the changes in workload, network traffic, and service level demands at runtime. The paper presents a dynamically task placement-based adaptive edge-cloud task offloading framework, constructed based on reinforcement learning or the use of reinforcing learning (RL), to address latency-sensitive AI task workloads dynamically. The model of the offloading decision process is the Markov Decision Process (MDP), in which the agent will learn an optimal policy by taking into account the characteristics of different tasks, availability of edge resources, network latency, and cloud processing delay. A reward mechanism is constructed to ensure a reduction in end-to-end latency and energy efficiency, as well as reliability in task completion. Larger-scale simulations also show that the proposed framework lowers the average latency by 18-25% relative to both the static and heuristic baselines, converges faster on dynamically changing workloads, and remains stable to network changes. The findings show that adaptive offloading that is RL-based offers a high-quality and scalable solution to next-generation edge-cloud AI systems."
+    },
+    {
+      "paperId": "1f18a46999263e391d946102a58ece2d68f583d2",
+      "externalIds": {
+        "DBLP": "conf/sac/KatareZ0JD25",
+        "DOI": "10.1145/3672608.3707792",
+        "CorpusId": 278603306
+      },
+      "url": "https://www.semanticscholar.org/paper/1f18a46999263e391d946102a58ece2d68f583d2",
+      "title": "Energy-Aware Vision Model Partitioning for Edge AI",
+      "venue": "ACM Symposium on Applied Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://dl.acm.org/doi/pdf/10.1145/3672608.3707792",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3672608.3707792?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3672608.3707792, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1412876546",
+          "name": "Dewant Katare"
+        },
+        {
+          "authorId": "2152967232",
+          "name": "Mengying Zhou"
+        },
+        {
+          "authorId": "2171380890",
+          "name": "Yang Chen"
+        },
+        {
+          "authorId": "2301211969",
+          "name": "Marijn Janssen"
+        },
+        {
+          "authorId": "2257801350",
+          "name": "A. Ding"
+        }
+      ],
+      "abstract": "Deploying scalable Vision Transformer applications on mobile and edge devices is constrained by limited memory and computational resources. Existing model development and deployment strategies include distributed computing and inference methods such as federated learning, split computing, collaborative inference and edge-cloud offloading mechanisms. While these strategies have deployment advantages, they fail to optimize memory usage and processing efficiency, resulting in increased energy consumption. This paper optimizes energy consumption by introducing adaptive model partitioning mechanisms and dynamic scaling methods for ViTs such as EfficientViT and TinyViT, adjusting model complexity based on the available computational resources and operating conditions. We implement energy-efficient strategies that minimize inter-layer communication for distributed machine learning across edge devices, thereby reducing energy consumption from data flow and computation. Our evaluations on a series of benchmark models show improvements, including up to a 32.6% reduction in latency and 16.6% energy savings, while maintaining mean average precision sacrifices within 2.5 to 4.5% of baseline models. These results show that our proposal is a practical approach for improving edge AI sustainability and efficiency."
+    },
+    {
+      "paperId": "0abd790280d1a67fc41afc7d9ec1f12540f41c93",
+      "externalIds": {
+        "DBLP": "journals/ojcs/KolliR26",
+        "DOI": "10.1109/OJCOMS.2026.3686051",
+        "CorpusId": 287712933
+      },
+      "url": "https://www.semanticscholar.org/paper/0abd790280d1a67fc41afc7d9ec1f12540f41c93",
+      "title": "An AI-Enabled Federated Edge–Cloud Communication Framework for Dynamic Task Offloading and Network Anomaly Detection in IoT System",
+      "venue": "IEEE Open Journal of the Communications Society",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/ojcoms.2026.3686051",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/OJCOMS.2026.3686051?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/OJCOMS.2026.3686051, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "30910178",
+          "name": "S.R. Kolli"
+        },
+        {
+          "authorId": "9001877",
+          "name": "M. Z. U. Rahman"
+        }
+      ],
+      "abstract": "The rapid explosion of Internet of Things (IoT) devices is primarily reshaping modern communication networks. However, they introduce unique challenges in resource management, latency control, and secure data exchange across large-scale edge–cloud infrastructures. Conventional task offloading mechanisms fail to adapt effectively to highly dynamic network conditions and suffer significant communication overhead. This paper presents a task-aware federated learning framework for efficient computation offloading and anomaly detection in Internet of Things based mobile edge computing (MEC) environments. It integrates a hybrid deep learning architecture with adaptive federated learning to jointly optimize task execution decisions and network security. In contrast to the conventional approaches which treat offloading and intrusion detection as isolated entities, the proposed framework provides coordinated decision-making across edge and cloud resources and also reduces communication overhead. The model is evaluated to validate its performance and results demonstrate that the proposed method achieves up to 38–42% reduction in latency, 22–27% improvement in throughput, and nearly 30% reduction in federated learning communication overhead compared to state-of-the-art approaches. Moreover, the anomaly detection module achieves an accuracy of 99.61%, with very low false positive and false negative rates. This indicates that the model is superior in identifying malicious activity in IoT networks. These results highlight the efficiency of combining task-aware federated learning with intelligent offloading strategies for scalable, efficient, and secure edge computing systems."
+    },
+    {
+      "paperId": "3b06c5ba0c57a783e046a33ee2d08a52534b3163",
+      "externalIds": {
+        "DBLP": "journals/iotj/QiangCHLH25",
+        "ArXiv": "2405.18707",
+        "DOI": "10.1109/JIOT.2024.3479158",
+        "CorpusId": 270095175
+      },
+      "url": "https://www.semanticscholar.org/paper/3b06c5ba0c57a783e046a33ee2d08a52534b3163",
+      "title": "Adaptive and Parallel Split Federated Learning in Vehicular Edge Computing",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2405.18707",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.18707, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2275969162",
+          "name": "Xianke Qiang"
+        },
+        {
+          "authorId": "2253571459",
+          "name": "Zheng Chang"
+        },
+        {
+          "authorId": "2276029162",
+          "name": "Yun Hu"
+        },
+        {
+          "authorId": "2150801882",
+          "name": "Lei Liu"
+        },
+        {
+          "authorId": "2055748618",
+          "name": "Timo Hämäläinen"
+        }
+      ],
+      "abstract": "Vehicular edge intelligence (VEI) is a promising paradigm for enabling future intelligent transportation systems by accommodating artificial intelligence (AI) at the vehicular edge computing (VEC) system. Federated learning (FL) stands as one of the fundamental technologies facilitating collaborative model training locally and aggregation, while safeguarding the privacy of vehicle data in VEI. However, traditional FL faces challenges in adapting to vehicle heterogeneity, training large models on resource-constrained vehicles, and remaining susceptible to model weight privacy leakage. Meanwhile, split learning (SL) is proposed as a promising collaborative learning framework which can mitigate the risk of model wights leakage, and release the training workload on vehicles. SL sequentially trains a model between a vehicle and an edge-cloud (EC) by dividing the entire model into a vehicle-side model and an EC-side model at a given cut layer. In this work, we combine the advantages of SL and FL to develop an adaptive split FL scheme for VEC (ASFV). The ASFV scheme adaptively splits the model and parallelizes the training process, taking into account mobile vehicle selection and resource allocation. Our extensive simulations, conducted on nonindependent and identically distributed data, demonstrate that the proposed ASFV solution significantly reduces training latency compared to existing benchmarks, while adapting to network dynamics and vehicles’ mobility."
+    },
+    {
+      "paperId": "4b5004837abb7aa29995b112bab49df72b7c7576",
+      "externalIds": {
+        "DBLP": "journals/access/KoSP25",
+        "DOI": "10.1109/ACCESS.2025.3578009",
+        "CorpusId": 279287154
+      },
+      "url": "https://www.semanticscholar.org/paper/4b5004837abb7aa29995b112bab49df72b7c7576",
+      "title": "Dynamic Split Computing Framework for Multi-Task Learning Models: A Deep Reinforcement Learning Approach",
+      "venue": "IEEE Access",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/access.2025.3578009",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2025.3578009?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2025.3578009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2239405",
+          "name": "Haneul Ko"
+        },
+        {
+          "authorId": "1410321197",
+          "name": "S. Seo"
+        },
+        {
+          "authorId": "2285789549",
+          "name": "Sangheon Pack"
+        }
+      ],
+      "abstract": "Split computing has emerged as a promising approach to alleviate the resource constraints of IoT devices by offloading computation to edge servers. However, conventional split computing schemes fail to effectively support multi-task learning (MTL) models, which feature a shared backbone and multiple task-specific branches. These structural characteristics, combined with the variability of network conditions, require a more flexible and adaptive offloading strategy. In this paper, we propose a deep reinforcement learning (DRL)-based dynamic split computing framework (D2SCF) tailored for the MTL model. In D2SCF, the MTL model is first split into a head model of the shared layers and several tail models for the task-specific layers (i.e., individual output branches). Subsequently, an IoT device makes decisions regarding the split computing of the head and tail models. To minimize the average task completion time across multiple tasks and the energy consumption of the IoT device, we formulate a Markov decision process problem. The formulated problem is solved using a model-free DRL algorithm (i.e., a deep deterministic policy gradient). Evaluation results demonstrate that D2SCF reduces the average task completion time by more than 50% compared to conventional split computing schemes, while maintaining low energy consumption on the IoT device. Moreover, it consistently outperforms baseline methods across heterogeneous network settings, confirming its robustness in dynamic environments."
+    },
+    {
+      "paperId": "1212802a711f5d8baa62e50f37528d3d68648c24",
+      "externalIds": {
+        "DOI": "10.1109/ICCCWorkshops67136.2025.11148170",
+        "CorpusId": 281246635
+      },
+      "url": "https://www.semanticscholar.org/paper/1212802a711f5d8baa62e50f37528d3d68648c24",
+      "title": "Joint Split Inference Design and Bandwidth Allocation for Intelligent Edge Perception Network",
+      "venue": "2025 IEEE/CIC International Conference on Communications in China (ICCC Workshops)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCCWorkshops67136.2025.11148170?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCCWorkshops67136.2025.11148170, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2264338747",
+          "name": "Peng Liu"
+        },
+        {
+          "authorId": "2302341712",
+          "name": "Shuntian Tang"
+        },
+        {
+          "authorId": "2408482807",
+          "name": "Ke Lin"
+        },
+        {
+          "authorId": "2054382436",
+          "name": "Nan Ha"
+        },
+        {
+          "authorId": "2115553373",
+          "name": "Xinyi Wang"
+        },
+        {
+          "authorId": "2272994095",
+          "name": "Zesong Fei"
+        }
+      ],
+      "abstract": null
+    },
+    {
+      "paperId": "7a40f3a2d518e2f97384645e327135d4f52ef28f",
+      "externalIds": {
+        "DOI": "10.1109/HPCC64274.2024.00071",
+        "CorpusId": 280154463
+      },
+      "url": "https://www.semanticscholar.org/paper/7a40f3a2d518e2f97384645e327135d4f52ef28f",
+      "title": "Federated Multi-Objective Meta-Reinforcement Learning for Adaptive Edge Task Offloading",
+      "venue": "IEEE International Conference on High Performance Computing and Communications",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/HPCC64274.2024.00071?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/HPCC64274.2024.00071, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2152322300",
+          "name": "Xiaoyu Jia"
+        },
+        {
+          "authorId": "2302339005",
+          "name": "Ting Wang"
+        },
+        {
+          "authorId": "2164891284",
+          "name": "Xiao Du"
+        }
+      ],
+      "abstract": "With the proliferation of the Internet of Things (IoT) and mobile network technologies, efficient task offloading in edge computing has become pivotal for optimizing network resource allocation and enhancing data processing speed. However, edge task offloading for diverse applications of different users is typically multi-objective, where the complexity of multi-objective optimization presents significant challenges as wireless channel state and idle resources as well as the interference can change rapidly and the importance attached to different objectives by users may vary depending on the situation. Particularly in cases where the preference weights of these objectives fluctuate over time, traditional optimization techniques are typically unable to provide effective solutions. Moreover, the centralized training utilized by most Artificial Intelligence (AI)-based optimization algorithms raises concerns regarding the potential leakage of local private data to third parties. To address these challenges, we propose a novel federated multi-objective reinforcement learning (FMORL) algorithm, which employs a federated learning framework to perform collaborative learning on distributed nodes working in parallel, allowing for the fast and flexible acquisition of the optimal offloading strategy from dynamic environments, and introduces a meta-learning mechanism to enhance the fast adaptation of the model. Simulation experiments demonstrate that compared with the traditional MORL algorithm, the FMORL algorithm, embedded with meta-learning, improves the overall performance while preserving data privacy."
+    },
+    {
+      "paperId": "891007c271b1d6e7c3e73de5230846b2059ef026",
+      "externalIds": {
+        "DOI": "10.22399/ijcesen.1268",
+        "CorpusId": 277306506
+      },
+      "url": "https://www.semanticscholar.org/paper/891007c271b1d6e7c3e73de5230846b2059ef026",
+      "title": "Optimizing Energy-Efficient Task Offloading in Edge Computing: A Hybrid AI-Based Approach",
+      "venue": "International Journal of Computational and Experimental Science and Engineering",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://ijcesen.com/index.php/ijcesen/article/download/1268/640",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.22399/ijcesen.1268?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.22399/ijcesen.1268, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2352096585",
+          "name": "Siva Satya"
+        },
+        {
+          "authorId": "2075239330",
+          "name": "I. Carol"
+        },
+        {
+          "authorId": "2170012010",
+          "name": "Meenakshi"
+        },
+        {
+          "authorId": "2065387417",
+          "name": "H. R. Suresh"
+        },
+        {
+          "authorId": "6017571",
+          "name": "M. Thillai"
+        },
+        {
+          "authorId": "2092910795",
+          "name": "J. Parvin"
+        }
+      ],
+      "abstract": "Edge computing has emerged as a pivotal technology for managing computational workloads in latency-sensitive applications by offloading tasks from resource-constrained Internet of Things (IoT) devices to nearby edge servers. However, optimizing task offloading while ensuring energy efficiency remains a significant challenge. This paper proposes a Hybrid AI-Based Task Offloading (HATO) model, integrating Reinforcement Learning (RL) with Deep Neural Networks (DNNs) to dynamically allocate computational resources while minimizing energy consumption. The HATO framework formulates task offloading as a multi-objective optimization problem, considering factors such as device workload, network latency, edge server availability, and energy constraints. \nExperimental evaluations demonstrate that the proposed model achieves a 27.3% reduction in energy consumption, a 19.6% improvement in task completion time, and a 31.2% enhancement in overall edge server utilization compared to conventional heuristic-based methods. The reinforcement learning module adapts task offloading strategies in real-time, ensuring optimal computational load balancing while minimizing latency. The proposed Hybrid AI-Based Approach outperforms baseline models in diverse edge computing scenarios, making it a scalable and efficient solution for next-generation IoT applications."
+    },
+    {
+      "paperId": "91ebf13471dc22e2fa69dc4229ec3d981dfafedc",
+      "externalIds": {
+        "DBLP": "conf/percom/MendulaBLC24",
+        "DOI": "10.1109/PerCom59722.2024.10494426",
+        "CorpusId": 269091680
+      },
+      "url": "https://www.semanticscholar.org/paper/91ebf13471dc22e2fa69dc4229ec3d981dfafedc",
+      "title": "Furcifer: a Context Adaptive Middleware for Real-world Object Detection Exploiting Local, Edge, and Split Computing in the Cloud Continuum",
+      "venue": "Annual IEEE International Conference on Pervasive Computing and Communications",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/PerCom59722.2024.10494426?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/PerCom59722.2024.10494426, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2028212965",
+          "name": "Matteo Mendula"
+        },
+        {
+          "authorId": "2255647288",
+          "name": "Paolo Bellavista"
+        },
+        {
+          "authorId": "2257052512",
+          "name": "Marco Levorato"
+        },
+        {
+          "authorId": "2184787978",
+          "name": "Sharon L. G. Contreras"
+        }
+      ],
+      "abstract": "Modern real-time applications widely embed compute intense neural algorithms at their core. Current solutions to support such algorithms either deploy highly-optimized Deep Neural Networks at mobile devices or offload the execution of possibly larger higher-performance neural models to edge servers. While the former solution typically maps to higher energy consumption and lower performance, the latter necessitates the low-latency wireless transfer of high volumes of data. Time-varying variables describing the state of these systems, such as connection quality and system load, determine the optimality of the different computing configurations in terms of energy consumption, task performance, and latency. Herein, we propose Furcifer, a framework capable of dynamically adapting the cloud continuum computing configuration in response to the perceived state of the system. Our container-based approach incorporates low-complexity predictors that generalize well across operating environments. In addition, we develop a highly optimized split Deep Neural Network model, which achieves in-model supervised compression and enhances task offloading. Experimental results for object detection across diverse conditions, environments, and wireless technologies, show Furcifer's remarkable outcomes, including a 2x energy reduction, 30% higher mean Average Precision score than pure local computing, and a notable three-fold increase in frame per second rate compared to static offloading."
+    },
+    {
+      "paperId": "32b19cbd98763b2d8b68452f60e3a6942f3381c7",
+      "externalIds": {
+        "ArXiv": "2406.15804",
+        "DBLP": "journals/wc/QiangCYHM25",
+        "DOI": "10.1109/MWC.009.2400219",
+        "CorpusId": 279305871
+      },
+      "url": "https://www.semanticscholar.org/paper/32b19cbd98763b2d8b68452f60e3a6942f3381c7",
+      "title": "Split Federated Learning Empowered Vehicular Edge Intelligence: Concept, Adaptive Design, and Future Directions",
+      "venue": "IEEE wireless communications",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.15804, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2275969162",
+          "name": "Xianke Qiang"
+        },
+        {
+          "authorId": "2297869629",
+          "name": "Zheng Chang"
+        },
+        {
+          "authorId": "2298012682",
+          "name": "Chaoxiong Ye"
+        },
+        {
+          "authorId": "2055748618",
+          "name": "Timo Hämäläinen"
+        },
+        {
+          "authorId": "2261542132",
+          "name": "Geyong Min"
+        }
+      ],
+      "abstract": "To achieve ubiquitous intelligence in future vehicular networks, artificial intelligence (AI) is essential for extracting valuable insights from vehicular data to enhance AI-driven services. By integrating AI technologies into vehicular edge computing (VEC) platforms, which provide essential storage, computing, and network resources, vehicular edge intelligence (VEI) can be fully realized. Traditional centralized learning, as one of the enabling technologies for VEI, places significant strain on network bandwidth while also increasing latency and privacy concerns. Nowadays, distributed machine learning methods, such as federated learning (FL), split learning (SL), and split federated learning (SFL), are widely applied in vehicular networks to support VEI. However, these methods still face significant challenges due to the mobility and constrained resources inherent in vehicular networks. In this article, we first provide an over-view of the system architecture, performance metrics, and challenges associated with VEI design. Then, the adaptive design of SFL, namely adaptive split federated learning (ASFL) is introduced. The proposed ASFL scheme dynamically adapts the cut layer selection process and operates in parallel, optimizing both communication and computation efficiency while improving model performance under non-IID data distribution. Finally, we high-light future research directions to shed the light on the efficient design of SFL."
+    },
+    {
+      "paperId": "28870cb0c04fccbea96a90a8a9791acc34c62006",
+      "externalIds": {
+        "DBLP": "journals/tase/LongXZLMA25",
+        "DOI": "10.1109/TASE.2025.3557934",
+        "CorpusId": 277717605
+      },
+      "url": "https://www.semanticscholar.org/paper/28870cb0c04fccbea96a90a8a9791acc34c62006",
+      "title": "Fault-Tolerant Mobile Service Offloading in Mobile Edge Computing",
+      "venue": "IEEE Transactions on Automation Science and Engineering",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TASE.2025.3557934?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TASE.2025.3557934, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2155038227",
+          "name": "Tingyan Long"
+        },
+        {
+          "authorId": "2269766050",
+          "name": "Yunni Xia"
+        },
+        {
+          "authorId": "2152967237",
+          "name": "Mengchu Zhou"
+        },
+        {
+          "authorId": "2200575417",
+          "name": "Jianqi Li"
+        },
+        {
+          "authorId": "2146239126",
+          "name": "Yong Ma"
+        },
+        {
+          "authorId": "2283023970",
+          "name": "Yusuf Al-Turki"
+        }
+      ],
+      "abstract": "Mobile edge computing (MEC) is an evolving paradigm for rendering services through network-accessible resources deployed over Internet of Things (IoT) nodes at the edge. Nevertheless, an MEC environment usually employs thousands of physical machines connected via hundreds of switches/routers that communicate and coordinate to deliver computing service. In such complicated systems, faults caused by software, human errors, and hardware are often unavoidable. The edge of network presents a dynamic environment with great quantities of terminals, high mobility of mobile devices, heterogeneous applications, and intermittent traffic. In such an environment, MEC can suffer from unbalanced resource provisioning and interruptions of faults occurring at different levels, which further causes task faults and affects service quality. To address this challenge, this work proposes a novel fault-tolerant offloading method for handling faults by leveraging a reinforcement-learning-based service offloading decision model. The model synthesizes a Dueling Deep Q Network (DQN)-based algorithm for deciding user offloading behaviors and an adaptive checkpointing method for improving task execution reliability. For the purpose of model validation and comparison, extensive simulations are conducted. Numerical results clearly demonstrate that the proposed method is highly effective and outperforms existing methods. Note to Practitioners—Motivated by industrial demands for task offloading in a fault-prone mobile edge computing (MEC) scenarios, this work aims at achieving the high reliability and fault-tolerability of all offloadable tasks. The proposed method leverages a reinforcement learning-based Dueling DQN model for deciding user offloading behaviors and an adaptive checkpointing method for improving task execution reliability. In the experiments, compared with its peers, the proposed approach reduces the completion time of offloading tasks by 9.29% and fault rate by 48.69% on average, respectively. This is very significant to industrial MEC applications, e.g., smart cities."
+    },
+    {
+      "paperId": "e4d855c826ac341ecd94bda88b2afb11ab5e185f",
+      "externalIds": {
+        "DBLP": "journals/tccn/YuanWWZYYJ26",
+        "DOI": "10.1109/TCCN.2026.3697300",
+        "CorpusId": 288712525
+      },
+      "url": "https://www.semanticscholar.org/paper/e4d855c826ac341ecd94bda88b2afb11ab5e185f",
+      "title": "Diffusion-DDPG: An Edge Intelligence Offloading Algorithm Empowering Agentic AI for Autonomous Decision-Making",
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCCN.2026.3697300?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCCN.2026.3697300, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2325858159",
+          "name": "Xiaoming Yuan"
+        },
+        {
+          "authorId": "2370005643",
+          "name": "Songyu Wang"
+        },
+        {
+          "authorId": "2378721822",
+          "name": "Aiwen Wang"
+        },
+        {
+          "authorId": "2153009389",
+          "name": "Ning Zhang"
+        },
+        {
+          "authorId": "2237808038",
+          "name": "Qiang Ye"
+        },
+        {
+          "authorId": "48028117",
+          "name": "Lei Yan"
+        },
+        {
+          "authorId": "2213149995",
+          "name": "Xinjie Jin"
+        }
+      ],
+      "abstract": "The rapid growth of Connected and Autonomous Vehicles (CAVs) has increased the demand for low-latency, high-efficiency computation. Traditional edge computing offloading faces challenges such as limited resources, task heterogeneity, and dynamic wireless environments. Agentic Artificial Intelligence (Agentic AI) addresses these challenges by enabling real-time perception, adaptive decision-making, and dynamic resource allocation. These capabilities allow Agentic AI to autonomously make effective computation offloading decisions. To enable such decisions, a robust offloading algorithm is required. Therefore, this paper proposes a novel Diffusion-DDPG algorithm, deployed on Agentic AI agents, to generate adaptive and efficient offloading strategies. The algorithm integrates diffusion models with Deep Reinforcement Learning (DRL), where the diffusion model acts as a generative policy network and the critic module evaluates and refines the strategies. Additionally, an Exponential Moving Average (EMA) mechanism stabilizes actor parameters, and Inverse Reinforcement Learning (IRL) enhances adaptability by deriving the reward function from expert data. Experimental results demonstrate that the proposed algorithm outperforms conventional baselines in efficiency and stability, showcasing its potential as a practical application of Agentic AI in computation offloading."
+    },
+    {
+      "paperId": "49b44bf1e1d3f6a148c569aa57d7d3d4b54cf858",
+      "externalIds": {
+        "DBLP": "conf/icfec/ZhangTM25",
+        "DOI": "10.1109/ICFEC65699.2025.00017",
+        "CorpusId": 279611364
+      },
+      "url": "https://www.semanticscholar.org/paper/49b44bf1e1d3f6a148c569aa57d7d3d4b54cf858",
+      "title": "FTFormer: Fault-Tolerant Layer Offloading in Edge-Fog-Cloud Federated Split Learning",
+      "venue": "International Conference on Fog and Edge Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICFEC65699.2025.00017?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICFEC65699.2025.00017, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2368669702",
+          "name": "Jianbo Zhang"
+        },
+        {
+          "authorId": "2305257014",
+          "name": "B. Thapa"
+        },
+        {
+          "authorId": "2454327",
+          "name": "Lena Mashayekhy"
+        }
+      ],
+      "abstract": "Federated Learning (FL) has emerged as a powerful approach for decentralized model training, yet its deployment in large-scale Internet of Things (IoT) environments faces significant challenges. These challenges include fluctuating bandwidth, frequent node failures, and the resource constraints. Such issues are particularly amplified in multilayer Edge-Fog-Cloud infrastructures. Traditional single-layer FL frameworks often fail to address these issues, leading to disrupted training and poor scalability. To tackle these challenges, we propose FTFormer, a novel fault-tolerant, Transformer-based layer offloading framework designed for multilayer federated split learning. FTFormer leverages a Transformer-based policy network to capture the complex interdependencies among Edge, Fog, and Cloud nodes, including bandwidth variability, compute power, and failure probabilities. Combined with an online Proximal Policy Optimization (PPO) algorithm, the framework dynamically adapts offloading decisions in real time, ensuring efficient task allocation under dynamic conditions. Additionally, FTFormer integrates fault-tolerance mechanisms that enable task re-routing and backup deployment to mitigate the impact of node failures and overloads, maintaining smooth training progress. Using a large-scale event-driven simulator capable of modeling thousands of Edge devices and hundreds of Fog/Cloud nodes, we validate FTFormer's performance. Experimental results show that FTFormer significantly improves training speed, fault resilience, and scalability, outperforming state-of-the-art techniques under high-load and failure-prone scenarios. This work highlights FTFormer as a robust solution for deploying resilient FL in real-world IoT systems."
+    },
+    {
+      "paperId": "f89a0b30cec40bfee444e90cb08efc89c3363e9f",
+      "externalIds": {
+        "DBLP": "conf/smartcomp/KhoaDNZ24",
+        "DOI": "10.1109/SMARTCOMP61445.2024.00039",
+        "CorpusId": 271405315
+      },
+      "url": "https://www.semanticscholar.org/paper/f89a0b30cec40bfee444e90cb08efc89c3363e9f",
+      "title": "Clustering-Enhanced Reinforcement Learning for Adaptive Offloading in Resource-Constrained Devices",
+      "venue": "International Conference on Smart Computing",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/SMARTCOMP61445.2024.00039?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/SMARTCOMP61445.2024.00039, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2374404604",
+          "name": "Tran Anh Khoa"
+        },
+        {
+          "authorId": "2260782421",
+          "name": "Minh-son Dao"
+        },
+        {
+          "authorId": "2153960597",
+          "name": "D. Nguyen"
+        },
+        {
+          "authorId": "2238657258",
+          "name": "Koji Zettsu"
+        }
+      ],
+      "abstract": "The Federated Edge Artificial Intelligence (Edge AI) deploys AI applications on Internet-of-Things (IoT) devices, addressing data privacy concerns in the real world. To achieve effective Federated Learning (FL), three challenges must be addressed: i) limited computing power on devices, ii) non-uniform impacts on devices, and iii) adaptability to changing network conditions. This study introduces a new algorithm called Adaptive Offloading Point (AOP), designed to accelerate local training on constrained devices. It decomposes deep neural network (DNN) layer blocks, enabling training on both client and server sides. The novelty of the proposed method lies in using a reinforcement learning-based Gaussian mixture model (GMM) clustering to dynamically determine DNN layer offloading, addressing nullability, computation uniformity, training time, and network bandwidth variation issues. Experimental results on real devices, using vision transformer (ViT) models with an identification image dataset, show that AOP's training time is significantly faster than that of previous baseline methods."
+    },
+    {
+      "paperId": "7f2849aad2fe578f6b92e26a007abac7d6fab9f8",
+      "externalIds": {
+        "DBLP": "journals/ojcs/AmanatidisMKKIL25",
+        "DOI": "10.1109/OJCOMS.2025.3555947",
+        "CorpusId": 277445029
+      },
+      "url": "https://www.semanticscholar.org/paper/7f2849aad2fe578f6b92e26a007abac7d6fab9f8",
+      "title": "Multi-Objective Reverse Offloading in Edge Computing for AI Tasks",
+      "venue": "IEEE Open Journal of the Communications Society",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1109/ojcoms.2025.3555947",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/OJCOMS.2025.3555947?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/OJCOMS.2025.3555947, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2047301570",
+          "name": "P. Amanatidis"
+        },
+        {
+          "authorId": "2273521110",
+          "name": "George Michailidis"
+        },
+        {
+          "authorId": "40476731",
+          "name": "D. Karampatzakis"
+        },
+        {
+          "authorId": "2352860046",
+          "name": "Vasileios Kalenteridis"
+        },
+        {
+          "authorId": "2285181922",
+          "name": "Georgios Iosifidis"
+        },
+        {
+          "authorId": "1949300",
+          "name": "Thomas D. Lagkas"
+        }
+      ],
+      "abstract": "Offloading tasks between edge nodes is a subject that has drawn a lot of attention since edge computing first emerged. A large number of edge IoT devices utilizing increased computing resources such as autonomous vehicles and UAVs can be used to execute AI tasks close to users. We present a novel approach that deviates from the conventional edge computing offloading concept namely offloading computationally intensive tasks from cloudlets to nearby end nodes. Specifically, we enhance a scenario where end nodes assist more powerful nodes (like cloudlets) in executing AI inference tasks. In edge computing networks, as end nodes grow in number, they build an idle computing capacity which can solve and provide efficient solutions. Our goal is to solve a defined Multi-Objective optimization problem with three objectives namely the overall execution time (slowest substasks), the execution accuracy, and the total energy consumption. We address this challenging optimization problem using a novel method with our released Multi-Objective Edge AI-Adaptive Reverse Offloading, or MOEAI-ARO, algorithm. Using an edge computing testbed and a representative AI service, we demonstrate the effectiveness of our reverse offloading proposal and method. The results indicate that our method further optimizes the system’s performance compared to baseline algorithms."
+    },
+    {
+      "paperId": "8096e025c0769e322431c22aa9248aa028048d8e",
+      "externalIds": {
+        "ArXiv": "2504.20735",
+        "DBLP": "journals/corr/abs-2504-20735",
+        "DOI": "10.1109/IWCMC65282.2025.11059584",
+        "CorpusId": 278171724
+      },
+      "url": "https://www.semanticscholar.org/paper/8096e025c0769e322431c22aa9248aa028048d8e",
+      "title": "Intelligent Task Offloading in VANETs: A Hybrid AI-Driven Approach for Low-Latency and Energy Efficiency",
+      "venue": "International Conference on Wireless Communications and Mobile Computing",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.20735, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "117605364",
+          "name": "Tariq Qayyum"
+        },
+        {
+          "authorId": "2276471129",
+          "name": "A. Tariq"
+        },
+        {
+          "authorId": "2269598491",
+          "name": "Muhammad Ali"
+        },
+        {
+          "authorId": "2394689",
+          "name": "M. Serhani"
+        },
+        {
+          "authorId": "2276522689",
+          "name": "Zouheir Trabelsi"
+        },
+        {
+          "authorId": "2242875040",
+          "name": "Maite López-Sánchez"
+        }
+      ],
+      "abstract": "Vehicular Ad-hoc Networks (VANETs) are integral to intelligent transportation systems, enabling vehicles to offload computational tasks to nearby roadside units (RSUs) and mobile edge computing (MEC) servers for real-time processing. However, the highly dynamic nature of VANETs introduces challenges, such as unpredictable network conditions, high latency, energy inefficiency, and task failure. This research addresses these issues by proposing a hybrid AI framework that integrates supervised learning, reinforcement learning, and Particle Swarm Optimization (PSO) for intelligent task offloading and resource allocation. The framework leverages supervised models for predicting optimal offloading strategies, reinforcement learning for adaptive decision-making, and PSO for optimizing latency and energy consumption. Extensive simulations demonstrate that the proposed framework achieves significant reductions in latency and energy usage while improving task success rates and network throughput. By offering an efficient, and scalable solution, this framework sets the foundation for enhancing real-time applications in dynamic vehicular environments."
+    },
+    {
+      "paperId": "4ba295341cf642b40ceb664a0c31c282a22f6027",
+      "externalIds": {
+        "ArXiv": "2511.18151",
+        "CorpusId": 283243416
+      },
+      "url": "https://www.semanticscholar.org/paper/4ba295341cf642b40ceb664a0c31c282a22f6027",
+      "title": "AVERY: Intent-Driven Adaptive VLM Split Computing via Embodied Self-Awareness for Efficient Disaster Response Systems",
+      "venue": "",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.18151, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "1919420336",
+          "name": "Rajat Bhattacharjya"
+        },
+        {
+          "authorId": "2107775466",
+          "name": "Sing-Yao Wu"
+        },
+        {
+          "authorId": "2356016929",
+          "name": "Hyunwoo Oh"
+        },
+        {
+          "authorId": "2394073772",
+          "name": "Chaewon Nam"
+        },
+        {
+          "authorId": "2394070644",
+          "name": "Suyeon Koo"
+        },
+        {
+          "authorId": "2353418664",
+          "name": "Mohsen Imani"
+        },
+        {
+          "authorId": "1783973",
+          "name": "E. Bozorgzadeh"
+        },
+        {
+          "authorId": "2286954342",
+          "name": "Nikil D. Dutt"
+        }
+      ],
+      "abstract": "Unmanned Aerial Vehicles (UAVs) in disaster response require complex, queryable intelligence that onboard CNNs cannot provide. While Vision-Language Models (VLMs) offer this semantic reasoning, their high resource demands make on-device deployment infeasible, and naive cloud offloading fails under the low-bandwidth, unstable networks endemic to disaster zones. We present AVERY, an intent-driven adaptive split computing framework for efficient VLM deployment on resource-constrained platforms. AVERY is motivated by the observation that operator intent must be treated as a first-class system objective, since missions such as broad situational monitoring and precise, spatially grounded investigation require different semantic products, latency targets, and resource allocations. To reflect this, AVERY advances split computing beyond traditional depth-wise partitioning through a functional, cognitive-inspired dual-stream split: a high-frequency, low-resolution Context stream for real-time awareness, and a low-frequency, high-fidelity Insight stream for deep analysis. This design enables a hierarchical split strategy: computation is first separated by function, then partitioned depth-wise across edge and cloud when the Insight stream is required. A lightweight, self-aware onboard controller monitors network conditions and operator intent to select from pre-trained compression models, navigating the accuracy-throughput trade-off at runtime. Evaluated using LISA-7B in an edge-cloud setting under fluctuating network conditions, AVERY achieves 11.2% higher accuracy than raw image compression, 93.98% lower energy consumption than full-edge execution, and average accuracy within 0.75% of the static High-Accuracy baseline during dynamic adaptation. Overall, AVERY enhances mission efficiency and enables real-time, queryable intelligence in dynamic disaster environments."
+    },
+    {
+      "paperId": "bc65cfef0358ad9e0d7786d90e9bb88cc9043a53",
+      "externalIds": {
+        "ArXiv": "2509.01906",
+        "DBLP": "conf/globecom/NguyenNLPNCQ25",
+        "DOI": "10.1109/GLOBECOM59602.2025.11432469",
+        "CorpusId": 281081134
+      },
+      "url": "https://www.semanticscholar.org/paper/bc65cfef0358ad9e0d7786d90e9bb88cc9043a53",
+      "title": "Adaptive AI Model Partitioning over 5G Networks",
+      "venue": "Global Communications Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.01906, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2432011493",
+          "name": "Tam Thanh Nguyen"
+        },
+        {
+          "authorId": "2324783496",
+          "name": "Tuan V. Ngo"
+        },
+        {
+          "authorId": "31612702",
+          "name": "Long Thanh Le"
+        },
+        {
+          "authorId": "2297572319",
+          "name": "Y. Pua"
+        },
+        {
+          "authorId": "2316059949",
+          "name": "Mao V. Ngo"
+        },
+        {
+          "authorId": "2316174216",
+          "name": "Binbin Chen"
+        },
+        {
+          "authorId": "2283641144",
+          "name": "Tony Q. S. Quek"
+        }
+      ],
+      "abstract": "Mobile devices increasingly rely on deep neural networks (DNNs) for complex inference tasks, but running entire models locally drains the device battery quickly. Offloading computation entirely to cloud or edge servers reduces processing load at devices but poses privacy risks and can incur high network bandwidth consumption and long delays. Split computing (SC) mitigates these challenges by partitioning DNNs between user equipment (UE) and edge servers. However, 5G wireless channels are time-varying and a fixed splitting scheme can lead to sub-optimal solutions. This paper addresses the limitations of fixed model partitioning in privacy-focused image processing and explores trade-offs in key performance metrics, including end-to-end (E2E) latency, energy consumption, and privacy, by developing an adaptive ML partitioning scheme based on realtime AI-powered throughput estimation. Evaluation in multiple scenarios demonstrates significant performance gains of our scheme."
+    },
+    {
+      "paperId": "d37869e9eb1dff228243983aea6edd0ca2d2d175",
+      "externalIds": {
+        "DBLP": "journals/tce/ZhaoUMSMR26",
+        "DOI": "10.1109/TCE.2026.3656201",
+        "CorpusId": 284999802
+      },
+      "url": "https://www.semanticscholar.org/paper/d37869e9eb1dff228243983aea6edd0ca2d2d175",
+      "title": "XAI-EdgeSFL: Explainable Edge Intelligence With Adaptive Intrusion-Resilient Split Federated Learning for Consumer Healthcare Ecosystems",
+      "venue": "IEEE transactions on consumer electronics",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "https://figshare.com/articles/journal_contribution/XAI-EdgeSFL_Explainable_Edge_Intelligence_with_Adaptive_Intrusion-Resilient_Split_Federated_Learning_for_Consumer_Healthcare_Ecosystems/32556663",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCE.2026.3656201?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCE.2026.3656201, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2264209484",
+          "name": "Yue Zhao"
+        },
+        {
+          "authorId": "2277541628",
+          "name": "Farhan Ullah"
+        },
+        {
+          "authorId": "2198672458",
+          "name": "Khalid Mahmood"
+        },
+        {
+          "authorId": "2057626576",
+          "name": "Saqib Saeed"
+        },
+        {
+          "authorId": "2330647562",
+          "name": "Nazeeruddin Mohammad"
+        },
+        {
+          "authorId": "49622837",
+          "name": "Umar Raza"
+        }
+      ],
+      "abstract": "The fast growth of consumer electronics, particularly Internet of Things (IoT) devices and wearables, has significantly changed healthcare systems by enabling real-time monitoring and customized medical treatment. Edge computing is changing healthcare by enabling the secure and distributed processing of data on consumer devices. However, this integration presents substantial security issues, raising significant concerns regarding AI-driven decision-making, model understandability, and privacy protection. This paper introduces XAI- EdgeSFL, a novel framework that integrates Explainable Artificial Intelligence (XAI) with an Adaptive Intrusion-Resilient Split Federated Learning (SFL) architecture to provide reliable and transparent edge health monitoring. The SFL loop computes important features of sensitive health data using a lightweight Temporal Convolutional Network (TCN) on edge devices and a more complex classifier on a global server. This method enhances privacy by retaining raw data on the device. In addition, we present an adaptive aggregation approach that dynamically weights client model updates to evaluate intrinsic resilience against emerging cyberthreats. SHapley Additive exPlanations (SHAP), Local Interpretable Model-agnostic Explanations (LIME), and Integrated Gradient (IG) are a multi-modal XAI suite that offers feature-level explanations for clinical trust. The proposed method performs well across all datasets, achieving 86.15% accuracy and 86.01% F1-score on CICIoMT2024, 93.73% accuracy and 93.65% F1-score on N-BaIoT, and 99.46% accuracy and 99.47% F1-score on CICIDS2017. The results show that XAI-EdgeSFL improves security, privacy, and transparency for AI-driven consumer healthcare systems."
+    },
+    {
+      "paperId": "fe81a636ade6a01ae4416d54a06b51f4d6448d1a",
+      "externalIds": {
+        "DBLP": "conf/icc/WangWFC25",
+        "DOI": "10.1109/ICCWorkshops67674.2025.11162373",
+        "CorpusId": 281508559
+      },
+      "url": "https://www.semanticscholar.org/paper/fe81a636ade6a01ae4416d54a06b51f4d6448d1a",
+      "title": "Coordinated UAV Deployment and Task Offloading in UAV-Assisted LEO Satellite Edge Computing Systems via Proximal Policy Optimization",
+      "venue": "2025 IEEE International Conference on Communications Workshops (ICC Workshops)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICCWorkshops67674.2025.11162373?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICCWorkshops67674.2025.11162373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2264039059",
+          "name": "Yuhui Wang"
+        },
+        {
+          "authorId": "2262055768",
+          "name": "Xingqi Wu"
+        },
+        {
+          "authorId": "2064725437",
+          "name": "Junaid Farooq"
+        },
+        {
+          "authorId": "2248964393",
+          "name": "Juntao Chen"
+        }
+      ],
+      "abstract": "Low earth orbit (LEO) satellites and unmanned aerial vehicles (UAVs) are emerging as key enablers of next-generation edge computing, providing connectivity and computational support in remote and infrastructure-limited regions. While LEO satellites offer global coverage, their constrained computational resources and intermittent connectivity pose significant challenges for handling dynamic workloads. UAVs, with their flexible mobility, can serve as intermediate edge nodes, augmenting satellite-based processing and reducing latency. However, efficiently coordinating UAV positioning and task offloading in such networks remains a complex problem due to their dynamic topologies, limited energy reserves, and heterogeneous service demands. This paper introduces a proximal policy optimization (PPO)-driven reinforcement learning framework that intelligently adapts UAV placement and computation offloading strategies to minimize latency and optimize resource utilization. Unlike traditional approaches, which rely on static heuristics or predefined rules, our method continuously learns and refines decision-making based on real-time network conditions. By dynamically balancing computational loads between UAVs and satellites, our approach enhances task execution efficiency while respecting coverage constraints and energy limitations. Simulation results demonstrate that the proposed framework significantly outperforms baseline methods in latency reduction, resource efficiency, and energy conservation."
+    },
+    {
+      "paperId": "22592dfb197b2f5c92136a364f7dc36193241877",
+      "externalIds": {
+        "DBLP": "conf/globecom/LiangFXLX25",
+        "DOI": "10.1109/GLOBECOM59602.2025.11431678",
+        "CorpusId": 286685513
+      },
+      "url": "https://www.semanticscholar.org/paper/22592dfb197b2f5c92136a364f7dc36193241877",
+      "title": "Joint Sensing Communication and Computation Service Caching and Task Offloading for Edge Computing",
+      "venue": "Global Communications Conference",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/GLOBECOM59602.2025.11431678?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/GLOBECOM59602.2025.11431678, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49174489",
+          "name": "Jishen Liang"
+        },
+        {
+          "authorId": "104033126",
+          "name": "Shuimiao Fan"
+        },
+        {
+          "authorId": "32713544",
+          "name": "Shichao Xia"
+        },
+        {
+          "authorId": "2117014991",
+          "name": "Yun Li"
+        },
+        {
+          "authorId": "2424808307",
+          "name": "Maomei Xu"
+        }
+      ],
+      "abstract": "By integrating multi-dimensional capability elements such as communication, sensing, computing and AI, the fusion of telepathy and computing can enable multi-functional collaboration, resource sharing, cost reduction, and stronger synergies. The traditional service caching and task offloading strategies for mobile edge computing (MEC) no longer adapt to the competition and coupling between the performance matching of multi-dimensional resources in the MEC network oriented to telepathy and computing. To this end, the service caching and task offloading model of mobile edge computing fused with telepathy and computing is studied and established; considering the time-varying network environment and incomplete observation state, under the constraints of multi-dimensional resources such as perception accuracy, computing power, storage and energy consumption, the joint optimization problem of service caching, power control and task offloading is abstracted into a partially observable Markov decision process with the goal of minimizing task computing delay and energy consumption; while ensuring the perception accuracy, a service caching and task offloading strategy based on cyclic multi-agent deep reinforcement learning is proposed. The simulation results show that the algorithm has significant performance improvements in terms of service cache hit rate."
+    },
+    {
+      "paperId": "602cb496c941cadeaaa70a5d9a2b2cb75e1c43db",
+      "externalIds": {
+        "ArXiv": "2604.13542",
+        "DBLP": "journals/corr/abs-2604-13542",
+        "DOI": "10.1109/CBDCom68404.2025.00029",
+        "CorpusId": 284965082
+      },
+      "url": "https://www.semanticscholar.org/paper/602cb496c941cadeaaa70a5d9a2b2cb75e1c43db",
+      "title": "Self-adaptive Multi-Access Edge Architectures: A Robotics Case",
+      "venue": "2025 IEEE Conference on Cloud and Big Data Computing (CBDCom)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.13542, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "23216850",
+          "name": "M. T. Moghaddam"
+        },
+        {
+          "authorId": "2406267876",
+          "name": "Joakim Leed"
+        },
+        {
+          "authorId": "2406268392",
+          "name": "Anders Frandsen"
+        }
+      ],
+      "abstract": "The growth of compute-intensive AI tasks highlights the need to mitigate the processing costs and improve performance and energy efficiency. This necessitates the integration of intelligent agents as architectural adaptation supervisors tasked with adaptive scaling of the infrastructure and efficient offloading of computation within the continuum. This paper presents a self-adaptation approach for an efficient computing system of a mixed human-robot environment. The computation task is associated with a Neural Network algorithm that leverages sensory data to predict human mobility behaviors, to enhance mobile robots' proactive path planning, and ensure human safety. To streamline neural network processing, we built a distributed edge offloading system with heterogeneous processing units, orchestrated by Kubernetes. By monitoring response times and power consumption, the MAPE-K-based adaptation supervisor makes informed decisions on scaling and offloading. Results show notable improvements in service quality over traditional setups, demonstrating the effectiveness of the proposed approach for AI-driven systems."
+    },
+    {
+      "paperId": "3c26a2a28804b3fda115470369aa03417d3eb541",
+      "externalIds": {
+        "DBLP": "conf/icc/MainiBMA26",
+        "DOI": "10.1109/ICC59461.2026.11587999",
+        "CorpusId": 290184595
+      },
+      "url": "https://www.semanticscholar.org/paper/3c26a2a28804b3fda115470369aa03417d3eb541",
+      "title": "A Reinforcement Learning Approach for Dynamic Latency-Energy Trade-off in Multi-UAV Mobile Edge Computing Systems",
+      "venue": "ICC 2026 - IEEE International Conference on Communications",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICC59461.2026.11587999?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICC59461.2026.11587999, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2450012479",
+          "name": "Rachid Cherif Maini"
+        },
+        {
+          "authorId": "3071382",
+          "name": "Malika Belkadi"
+        },
+        {
+          "authorId": "2199954",
+          "name": "Hassine Moungla"
+        },
+        {
+          "authorId": "2238301098",
+          "name": "Hossam Afifi"
+        }
+      ],
+      "abstract": "Unmanned Aerial Vehicle (UAV)-aided Mobile Edge Computing (MEC) systems have emerged as a promising solution for providing computational services in dynamic environments with user mobility and intermittent connectivity. However, achieving an optimal balance between latency and energy consumption remains a fundamental challenge in these systems. Conventional approaches typically rely on fixed weighting parameters that fail to adapt to varying network conditions and available resources. In this paper, we propose an intelligent framework that leverages Q-learning to dynamically adjust the latency-energy trade-off parameter during operation. Our solution incorporates this adaptive mechanism within a Block Coordinate Descent (BCD) optimization scheme that simultaneously addresses UAV trajectory control, task offloading decisions, user association, and communication-computation resource allocation. Extensive simulations with realistic user mobility traces show that the proposed method significantly outperforms static schemes, achieving lower latency and energy consumption while maintaining a high offloading ratio. These results demonstrate the potential of our adaptive framework to enable intelligent and flexible MEC systems capable of meeting the dynamic and heterogeneous demands of future wireless networks."
+    },
+    {
+      "paperId": "3588a18c2505f031a36d3d594c105b53282ba562",
+      "externalIds": {
+        "DOI": "10.1109/ICERCS65898.2025.11580494",
+        "CorpusId": 289703467
+      },
+      "url": "https://www.semanticscholar.org/paper/3588a18c2505f031a36d3d594c105b53282ba562",
+      "title": "GreenEdge-VEC: A Sustainable Vehicular Edge Computing Architecture for Energy-Efficient Intelligent Transport Systems",
+      "venue": "2025 International Conference on Emerging Research in Computational Science (ICERCS)",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICERCS65898.2025.11580494?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICERCS65898.2025.11580494, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2292041729",
+          "name": "Vinod Kumar R"
+        },
+        {
+          "authorId": "2247225719",
+          "name": "G. M"
+        },
+        {
+          "authorId": "2417129008",
+          "name": "K. E"
+        }
+      ],
+      "abstract": "Vehicular Edge Computing (VEC) is a new paradigm that is being developed to mitigate Intelligent Transport Systems (ITS) latency, scalability, and energy consumption issues. Traditional VEC architectures are however very non-conclusive with regards to the issues of sustainability hence inefficiencies in terms of energy consumption and carbon emission. In this paper, the author presents the concept of GreenEdge-VEC, a new multi-layer vehicular micro-cloud architecture, which combines vehicles, roadside units (RSUs), and edge data centers that use renewable sources of energy. The major characteristics of the proposed system are energy-conscious placement of edge nodes, approximate and intermittent computing of tasks that are not critical, cooperative offloading of tasks based on mobility prediction, adaptive caching, and AI-based resource scheduling. Indeed, simulation output shows that GreenEdge- VEC minimizes the mean task latency by 28.4%, energy use per task by 35.7% and task success rate of up to 98.11% with dynamic vehicular mobility. Furthermore, the predictive and hybrid caching methods enhanced the cache hit ratios by 93.77% whereas carbon emissions per job were reduced by the RL-based and MOEA scheduling methods. The flexibility of the model to adapt to the varying traffic conditions and its design with a sustainable nature is a major advancement over the static and cloud-only architectures. Such findings confirm that GreenEdge-VEC is a scalable and sustainable solution to deploy ITS in the future. The combination of renewable energy sources and flexible time optimization mechanisms is a direct contribution to smarter mobility infrastructure that is greener. This paper lays a groundwork to eco-friendly automotive computing and offers novel paths to the creation of edge computing low-carbon high-performance systems specific to intelligent transportation."
+    },
+    {
+      "paperId": "c36315362d980fdc6f94a3086c55c676eafebafa",
+      "externalIds": {
+        "DOI": "10.1109/RMKMATE69073.2026.11519056",
+        "CorpusId": 288468123
+      },
+      "url": "https://www.semanticscholar.org/paper/c36315362d980fdc6f94a3086c55c676eafebafa",
+      "title": "Hybrid Quantum-AI Encryption Offloading with Edge Computing for Secure 6G Networks",
+      "venue": "2026 3rd International Conference on Research Methodologies in Knowledge Management, Artificial Intelligence and Telecommunication Engineering (RMKMATE)",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/RMKMATE69073.2026.11519056?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/RMKMATE69073.2026.11519056, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2433005529",
+          "name": "Akhil Chowdary Chalasani"
+        }
+      ],
+      "abstract": "The 6G networks and quantum computing are converging, and the security must be changed by a paradigm shift. Here, it is suggested that a new Hybrid Quantum-AI Encryption Offloading (HQAEO) framework should be developed to provide secure 6G. HQAEO is synergistic and combines Post-Quantum Cryptography (PQC), AI-based threat detection, and Mobile Edge Computing (MEC). A smart algorithm gives the best separation of encryption between user equipment and edge servers, which reduces a weighted cost of latency and energy. An AI model that runs on the edge can support dynamic and adaptive security too, whereas a quantumresistant key mechanism will provide secure key exchange. Simulations show that HQAEO causes 32.7 percent and 41.3 percent latency and energy savings over local PQC, and a 28 percent improvement in zero-day attacks coverage over static protocols."
+    },
+    {
+      "paperId": "f46ad1d31fbc476e228b38e8f00038e38b135849",
+      "externalIds": {
+        "ArXiv": "2305.13553",
+        "DBLP": "journals/tccn/GuoCSA25",
+        "DOI": "10.1109/TCCN.2024.3510586",
+        "CorpusId": 258841596
+      },
+      "url": "https://www.semanticscholar.org/paper/f46ad1d31fbc476e228b38e8f00038e38b135849",
+      "title": "Digital-SC: Digital Semantic Communication With Adaptive Network Split and Learned Non-Linear Quantization",
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2305.13553",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.13553, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2148933765",
+          "name": "Lei Guo"
+        },
+        {
+          "authorId": null,
+          "name": "Wei Chen"
+        },
+        {
+          "authorId": "2109440325",
+          "name": "Yuxuan Sun"
+        },
+        {
+          "authorId": "144289803",
+          "name": "Bo Ai"
+        }
+      ],
+      "abstract": "Semantic communication, an intelligent communication paradigm that aims to transmit useful information in the semantic domain, is facilitated by deep learning techniques. Robust semantic features can be learned and transmitted in an analog fashion, but it poses new challenges to hardware, protocol, and encryption. In this paper, we propose a digital semantic communication system, which consists of an encoding network deployed on a resource-limited device and a decoding network deployed at the edge. To acquire better semantic representation for digital transmission, a novel non-linear quantization module is proposed to efficiently quantize semantic features with trainable quantization levels. Additionally, structured pruning is incorporated to reduce the dimension of the transmitted features. We also introduce a semantic learning loss (SLL) function to reduce semantic error. To adapt to various channel conditions and inputs under constraints of communication and computing resources, a policy network is designed to adaptively choose the split point and the dimension of the transmitted semantic features. Experiments using the CIFAR-10 and Mini-ImageNet dataset for image classification are employed to evaluate the proposed digital semantic communication network, and ablation studies are conducted to assess the proposed quantization module, structured pruning, and SLL."
+    },
+    {
+      "paperId": "9089fa095f3f1270e1723c8c40ef5a47ae1a6dfd",
+      "externalIds": {
+        "DOI": "10.1049/dgt2.70000",
+        "CorpusId": 276945838
+      },
+      "url": "https://www.semanticscholar.org/paper/9089fa095f3f1270e1723c8c40ef5a47ae1a6dfd",
+      "title": "EcoEdgeTwin: Driving 6G With AI‐Enhanced Edge Integration and Sustainable Digital Twins",
+      "venue": "Digital Twins and Applications",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1049/dgt2.70000",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1049/dgt2.70000?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1049/dgt2.70000, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2301015104",
+          "name": "Synthia Hossain Karobi"
+        },
+        {
+          "authorId": "2299117225",
+          "name": "Shakil Ahmed"
+        },
+        {
+          "authorId": "9396869",
+          "name": "S. Sabuj"
+        },
+        {
+          "authorId": "2245983139",
+          "name": "Ashfaq Khokhar"
+        }
+      ],
+      "abstract": "Integrating mobile edge computing (MEC) and digital twin (DT) technologies to enhance network performance through predictive, adaptive control for energy‐efficient and low‐latency communication is a significant challenge. This paper presents the EcoEdgeTwin model, an innovative framework that harnesses the harmony between MEC and DT technologies to ensure an efficient network operation. We optimise the utility function to balance enhancing users' quality of experience (QoE) and minimising latency and energy consumption at edge servers. This approach ensures efficient and adaptable network operations, utilising DT to synchronise and integrate real‐time data seamlessly. Our framework implements robust mechanisms for task offloading, service caching and cost‐effective service migration. Additionally, it manages energy consumption related to task processing, communication and the influence of DT predictions, all essential for optimising latency and minimising energy usage. Through the utility model, we also prioritise QoE, fostering a user‐centric approach to network management that balances network efficiency with user satisfaction. A cornerstone of our approach is integrating the advantage actor‐critic algorithm, marking a pioneering use of deep reinforcement learning for dynamic network management. This strategy addresses challenges in service mobility and network variability, ensuring optimal network performance matrices. Our extensive simulations demonstrate that compared to benchmark models, the EcoEdgeTwin framework significantly reduces energy usage and latency while enhancing QoE."
+    },
+    {
+      "paperId": "1bf7a9b8e0b294f0bef61ad126896cdbaf1023b6",
+      "externalIds": {
+        "DBLP": "journals/corr/abs-2403-13101",
+        "ArXiv": "2403.13101",
+        "DOI": "10.1109/TON.2025.3577790",
+        "CorpusId": 268537322
+      },
+      "url": "https://www.semanticscholar.org/paper/1bf7a9b8e0b294f0bef61ad126896cdbaf1023b6",
+      "title": "AdaptSFL: Adaptive Split Federated Learning in Resource-Constrained Edge Networks",
+      "venue": "IEEE Transactions on Networking",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.13101, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2365643",
+          "name": "Zhengyi Lin"
+        },
+        {
+          "authorId": "2052085053",
+          "name": "Guanqiao Qu"
+        },
+        {
+          "authorId": "2292342440",
+          "name": "Wei Wei"
+        },
+        {
+          "authorId": "31211490",
+          "name": "Xianhao Chen"
+        },
+        {
+          "authorId": "2355086251",
+          "name": "Kin K. Leung"
+        }
+      ],
+      "abstract": "The increasing complexity of deep neural networks poses significant barriers to democratizing AI to resource-limited edge devices. To address this challenge, split federated learning (SFL) has emerged as a promising solution that enables device-server co-training through model splitting. However, although system optimization substantially influences the performance of SFL, the problem remains largely uncharted. In this paper, we first provide a unified convergence analysis of SFL, which quantifies the impact of model splitting (MS) and client-side model aggregation (MA) on its learning performance, laying a theoretical foundation for this field. Based on this convergence bound, we introduce AdaptSFL, an adaptive SFL framework to accelerate SFL under resource-constrained edge computing systems. Specifically, AdaptSFL adaptively controls MS and client-side MA to balance communication-computing latency and training convergence. Extensive simulations across various datasets validate that our proposed AdaptSFL framework takes considerably less time to achieve target accuracy than existing benchmarks."
+    },
+    {
+      "paperId": "e9af06d41bb417459a4c0d79217723387761c827",
+      "externalIds": {
+        "DBLP": "conf/hpcc/FangLSLLGZG21",
+        "DOI": "10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00089",
+        "CorpusId": 249222802
+      },
+      "url": "https://www.semanticscholar.org/paper/e9af06d41bb417459a4c0d79217723387761c827",
+      "title": "Learning-based Task Offloading in Dynamic Orbital Edge Computing Network",
+      "venue": "2021 IEEE 23rd Int Conf on High Performance Computing & Communications; 7th Int Conf on Data Science & Systems; 19th Int Conf on Smart City; 7th Int Conf on Dependability in Sensor, Cloud & Big Data Systems & Application (HPCC/DSS/SmartCity/DependSys)",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00089?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00089, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2115379337",
+          "name": "Jiang Fang"
+        },
+        {
+          "authorId": "2115552425",
+          "name": "Haitao Liu"
+        },
+        {
+          "authorId": "2840209",
+          "name": "Jiyan Sun"
+        },
+        {
+          "authorId": "2118549415",
+          "name": "Ting Li"
+        },
+        {
+          "authorId": "2048991189",
+          "name": "Yinlong Liu"
+        },
+        {
+          "authorId": "2167308571",
+          "name": "Zhaorui Guo"
+        },
+        {
+          "authorId": "2167208691",
+          "name": "Shangyuan Zhuang"
+        },
+        {
+          "authorId": "41076985",
+          "name": "Liru Geng"
+        }
+      ],
+      "abstract": "In existing satellite communication model (SCM), satellites receive remote commands from ground station, then downlink raw sensed data to ground station directly. To tackle the challenges of high delay, intermittent downlink and congested ground station, edge computing for SCM is proposed, in which the flying satellites can locally process raw data. In SCM, the computing resources are time-variant and difficult to be obtained accurately due to rapid mobility of satellites. Multi-armed bandit (MAB) is a well-known scheme that has great potential to achieve nearly optimal task offloading for edge computing in mobility cases. However, existing MAB based works are difficult to apply in SCM. First, the distance difference between each satellite may be very large and the existing works have ignored the distance factor in exploration. This may cause huge errors for exploration cost evaluation and inevitable offloading failures. Second, the exploration and exploitation may have several order of magnitude difference while the existing work only use a constant to adjust the trade-off between the exploration and exploitation. As a result, it may take a long learning process to balance the trade-off, causing low offloading efficiency. To address the above challenges, in this work, we propose DMUCB as a Distance-aware and Mobility-aware task offloading algorithm based on MAB theory. The offloading decisions are made without any prior knowledge of computing resources. First, DMUCB provide a novel exploration method by jointly considering the distance, task size and the accumulative selected times to achieve an accurate exploration cost. Second, the difference of exploration and the new exploitation is largely reduced by our well-designed normalization mechanism for fast converge to the optimal offloading. Third, we present a time-variant parameter to effectively adapt the dynamic satellite communication environment. Simulation results show that DMUCB achieves close-to-optimal task offloading delay performance for satellite communication."
+    },
+    {
+      "paperId": "5f33b6a86e44de87010b9385e18780c62318b022",
+      "externalIds": {
+        "DBLP": "journals/iotj/LiuJYZ25",
+        "DOI": "10.1109/JIOT.2025.3580736",
+        "CorpusId": 279579249
+      },
+      "url": "https://www.semanticscholar.org/paper/5f33b6a86e44de87010b9385e18780c62318b022",
+      "title": "Vehicular Computing Power Networks for IoT-Driven Edge Intelligence: MA-DDPG-Based Robust Task Offloading and Resource Allocation",
+      "venue": "IEEE Internet of Things Journal",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2025.3580736?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2025.3580736, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "49420273",
+          "name": "Yi Liu"
+        },
+        {
+          "authorId": "2112640806",
+          "name": "Li Jiang"
+        },
+        {
+          "authorId": "2240201374",
+          "name": "Chau Yuen"
+        },
+        {
+          "authorId": "2342243356",
+          "name": "Yan Zhang"
+        }
+      ],
+      "abstract": "The deep integration of Internet of Things (IoT) and vehicular networks demands ultrareliable, low-latency computing paradigms to support emerging applications like autonomous driving and smart traffic management. Existing mobile-edge computing (MEC) frameworks, however, struggle with dynamic resource heterogeneity, intermittent connectivity, and inefficient coordination among distributed nodes. To address these challenges, this article proposes vehicular computing power networks (VCPNs), an IoT-driven edge intelligence framework that orchestrates computational resources from mobile user equipments (MUEs), connected vehicles, and edge servers. We formulate a joint optimization problem to minimize end-to-end task latency by finding optimal task offloading decisions and resource allocation (e.g., CPU and bandwidth) policies under time-varying IoT channel conditions and node mobility. To enable decentralized coordination in IoT environment, we model the problem as a multiagent Markov decision process (MDP) and propose a multiagent deep deterministic policy gradient (MA-DDPG) algorithm in which agents (MUEs, vehicles, servers) collaboratively learn policies to optimize task scheduling and resource sharing. Furthermore, we design a robust MA-DDPG variant with error-resilient experience replay and channel-adaptive reward mechanisms to ensure reliable training under packet loss and unstable connectivity. Numerical results demonstrate that VCPN reduces average task latency and improves energy efficiency compared to federated MEC baselines. The proposed MA-DDPG algorithm achieves convergence stability in high-mobility scenarios, outperforming conventional deep reinforcement learning methods."
+    },
+    {
+      "paperId": "791cc1155d95355cb05bff2421de51c14ba9ad3b",
+      "externalIds": {
+        "DBLP": "journals/comsur/WaliaKG24",
+        "DOI": "10.1109/COMST.2023.3338015",
+        "CorpusId": 265638876
+      },
+      "url": "https://www.semanticscholar.org/paper/791cc1155d95355cb05bff2421de51c14ba9ad3b",
+      "title": "AI-Empowered Fog/Edge Resource Management for IoT Applications: A Comprehensive Review, Research Challenges, and Future Perspectives",
+      "venue": "IEEE Communications Surveys and Tutorials",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://qmro.qmul.ac.uk/xmlui/bitstream/123456789/94420/2/Gill%20AI-Empowered%20Fog%202023%20Accepted.pdf",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/COMST.2023.3338015?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/COMST.2023.3338015, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2249282140",
+          "name": "G. Walia"
+        },
+        {
+          "authorId": "2249066577",
+          "name": "Mohit Kumar"
+        },
+        {
+          "authorId": "31043248",
+          "name": "S. Gill"
+        }
+      ],
+      "abstract": "The proliferation of ubiquitous Internet of Things (IoT) sensors and smart devices in several domains embracing healthcare, Industry 4.0, transportation and agriculture are giving rise to a prodigious amount of data requiring ever-increasing computations and services from cloud to the edge of the network. Fog/Edge computing is a promising and distributed computing paradigm that has drawn extensive attention from both industry and academia. The infrastructural efficiency of these computing paradigms necessitates adaptive resource management mechanisms for offloading decisions and efficient scheduling. Resource Management (RM) is a non-trivial issue whose complexity is the result of heterogeneous resources, incoming transactional workload, edge node discovery, and Quality of Service (QoS) parameters at the same time, which makes the efficacy of resources even more challenging. Hence, the researchers have adopted Artificial Intelligence (AI)-based techniques to resolve the above-mentioned issues. This paper offers a comprehensive review of resource management issues and challenges in Fog/Edge paradigm by categorizing them into provisioning of computing resources, task offloading, resource scheduling, service placement, and load balancing. In addition, existing AI and non-AI based state-of-the-art solutions have been discussed, along with their QoS metrics, datasets analysed, limitations and challenges. The survey provides mathematical formulation corresponding to each categorized resource management issue. Our work sheds light on promising research directions on cutting-edge technologies such as Serverless computing, 5G, Industrial IoT (IIoT), blockchain, digital twins, quantum computing, and Software-Defined Networking (SDN), which can be integrated with the existing frameworks of fog/edge-of-things paradigms to improve business intelligence and analytics amongst IoT-based applications."
+    },
+    {
+      "paperId": "78183a51195d2854b4c46bac02ad4c92330f8f9c",
+      "externalIds": {
+        "DBLP": "journals/ojcs/ShahGBH24",
+        "DOI": "10.1109/OJCOMS.2024.3382265",
+        "CorpusId": 268847951
+      },
+      "url": "https://www.semanticscholar.org/paper/78183a51195d2854b4c46bac02ad4c92330f8f9c",
+      "title": "Artificial Intelligence-Defined Wireless Networking for Computational Offloading and Resource Allocation in Edge Computing Networks",
+      "venue": "IEEE Open Journal of the Communications Society",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://ieeexplore.ieee.org/ielx7/8782661/8901158/10480671.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/OJCOMS.2024.3382265?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/OJCOMS.2024.3382265, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2893993",
+          "name": "S. Shah"
+        },
+        {
+          "authorId": "2276795451",
+          "name": "Mark A. Gregory"
+        },
+        {
+          "authorId": "145978239",
+          "name": "F. Bouhafs"
+        },
+        {
+          "authorId": "2289554542",
+          "name": "F. D. Hartog"
+        }
+      ],
+      "abstract": "The advent of the Internet of Everything and new Ultra-Reliable Low-Latency Communication (URLLC) services has resulted in an exponential growth in data demands at the network’s edge. To meet the stringent performance requirements of evolving 5G (and beyond) applications, deploying dedicated resources closer to mobile users is essential. Multi-Access Edge Computing (MEC) is a promising technology for bringing computational resources closer to users. However, the distributed and limited MEC resources must be effectively optimized to maximize the number of mobile users benefiting from low-latency MEC services at each time slot in highly congested, large-scale, and dynamic wireless network scenarios. In this research, we propose and evaluate a novel Artificial Intelligence-Defined Wireless Networking (AIDWN) approach that builds on conventional Software-Defined Networking (SDN), implementing a new AI-defined application plane for computational offloading and resource allocation in MEC-enabled wireless networks. The AIDWN approach implements a deep reinforcement learning framework and deep neural networks that dynamically adapt optimal computational offloading and wireless resource allocation decisions while considering the handover, mobility, and coordinated resource allocation challenges in highly dynamic and mobile multi-MEC server environments. Compared to recent state-of-the-art proposals, the proposed AIDWN demonstrates a substantial performance improvement, utilizing more than 90% of MEC resources per time slot across all MEC servers. It also accommodates significantly more mobile users in highly congested wireless network scenarios. We identified various future research directions highlighting the potential of the AIDWN approach in simplifying the management of next-generation wireless networks."
+    },
+    {
+      "paperId": "255fc7da7850245ddd732d41333b220ab9a34ea1",
+      "externalIds": {
+        "ArXiv": "2401.10541",
+        "DBLP": "conf/icc/BajpaiJH24",
+        "DOI": "10.1109/ICC51166.2024.10622954",
+        "CorpusId": 267060806
+      },
+      "url": "https://www.semanticscholar.org/paper/255fc7da7850245ddd732d41333b220ab9a34ea1",
+      "title": "I-SplitEE: Image Classification in Split Computing DNNs with Early Exits",
+      "venue": "ICC 2024 - IEEE International Conference on Communications",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2401.10541",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2401.10541, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2243182307",
+          "name": "D. J. Bajpai"
+        },
+        {
+          "authorId": "2397978007",
+          "name": "Aastha Jaiswal"
+        },
+        {
+          "authorId": "2098597",
+          "name": "M. Hanawal"
+        }
+      ],
+      "abstract": "The recent advances in Deep Neural Networks (DNNs) stem from their exceptional performance across various domains. However, deploying these networks on resource-constrained devices-like edge, mobile, and IoT platforms-is hindered by their inherent large size. Strategies have emerged, from partial cloud computation offloading (split computing) to integrating early exits within DNN layers. Our work presents an innovative unified approach merging early exits and split computing. We determine the ‘splitting layer’, the optimal depth in the DNN for edge device computations, and whether to infer on edge device or be offloaded to the cloud for inference considering accuracy, computational efficiency, and communication costs. Also, Image classification faces diverse environmental distortions, influenced by factors like time of day, lighting, and weather. To adapt to these distortions, we introduce I-SplitEE, an online unsupervised algorithm ideal for scenarios lacking ground truths and with sequential data. Experimental validation using Caltech-256 and Cifar-10 datasets subjected to varied distortions showcases I-SplitEE's ability to reduce costs by a minimum of 55% with marginal performance degradation of at most 5%. 1"
+    },
+    {
+      "paperId": "575c61a4a212ca724beebbe6cea370ea5fd18fb9",
+      "externalIds": {
+        "DOI": "10.1109/WoWMoM69805.2026.00022",
+        "CorpusId": 290744838
+      },
+      "url": "https://www.semanticscholar.org/paper/575c61a4a212ca724beebbe6cea370ea5fd18fb9",
+      "title": "Multi-TAB: Multi-View Inference at the Edge with Resource-Aware Split Computing",
+      "venue": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/WoWMoM69805.2026.00022?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/WoWMoM69805.2026.00022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2310632733",
+          "name": "T. Hassan"
+        },
+        {
+          "authorId": "2261688365",
+          "name": "Kevin S. Chan"
+        },
+        {
+          "authorId": "2728953",
+          "name": "F. Dagefu"
+        },
+        {
+          "authorId": "2253397521",
+          "name": "Jonathan D. Ashdown"
+        },
+        {
+          "authorId": "2243225326",
+          "name": "Flavio Esposito"
+        },
+        {
+          "authorId": "145825175",
+          "name": "F. Restuccia"
+        }
+      ],
+      "abstract": "Multi-view collaborative inference through deep neural networks (DNNs) aggregates views from mobile devices, thus achieving holistic situational awareness in applications such as surveillance and autonomous driving. Since on-device execution incurs significant resource consumption, offloading DNN computation to edge servers can alleviate latency demands. To this end, split computing partitions DNNs across devices and transmits intermediate compressed features to decrease the networking load. Nevertheless, unreliable wireless links between mobile devices and edge servers can increase end-to-end latency during offloading. Accordingly, we propose a novel multiview inference framework named Multi-TAB to optimize the trade-off between DNN performance and networking resource consumption. In contrast to prior work, Multi-TAB supports split computing while adaptively compressing the intermediate latent representations at runtime based on current capacity of the wireless channel. We demonstrate the effectiveness of our framework on two challenging pedestrian density detection tasks on the WILDTRACK and MULTIVIEWX datasets. We prototyped Multi-TAB on the Colosseum network emulator and evaluated its latency and overhead data volume on Jetson Nano and Raspberry Pi 4. Experimental results show that Multi-TAB can reduce end-to-end inference latency by 33.7% compared to state-of-the-art approaches while maintaining accuracy loss within 2.4%."
+    },
+    {
+      "paperId": "f6fb2cc091e57ca966edb0e7a94e7d1d8b5b685d",
+      "externalIds": {
+        "DBLP": "conf/globecom/LinH021",
+        "DOI": "10.1109/GLOBECOM46510.2021.9685694",
+        "CorpusId": 246479048
+      },
+      "url": "https://www.semanticscholar.org/paper/f6fb2cc091e57ca966edb0e7a94e7d1d8b5b685d",
+      "title": "Enabling Mobile Edge Computing for Battery-less Intermittent IoT Devices",
+      "venue": "Global Communications Conference",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/GLOBECOM46510.2021.9685694?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/GLOBECOM46510.2021.9685694, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2145832331",
+          "name": "Yu-Tai Lin"
+        },
+        {
+          "authorId": "70879057",
+          "name": "Yu-Cheng Hsiao"
+        },
+        {
+          "authorId": "143711461",
+          "name": "Chih-Yu Wang"
+        }
+      ],
+      "abstract": "Intermittent computing enables battery-less systems to support complex tasks such as face recognition through energy harvesting, but without an installed battery. Nevertheless, the latency may not be satisfied due to the limited computing power. Integrating mobile edge computing (MEC) with intermittent computing would be the desired solution to reduce latency and increase computation efficiency. In this work, we investigate the joint optimization problem of bandwidth allocation and the computation offloading with multiple battery-less intermittent devices in a wireless MEC network. We provide a comprehensive analysis of the expected offloading efficiency, and then propose Greedy Adaptive Balanced Allocation and Offloading (GABAO) algorithm considering the energy arrival distributions, remaining task load, and available computing/communication resources. Simulation results show that the proposed system can significantly reduce the latency in a multi-user MEC network with battery-less devices."
+    },
+    {
+      "paperId": "470f9dc3a9590364f0a7775caecd043e1b67db51",
+      "externalIds": {
+        "DOI": "10.65521/ijacte.v14i2.1930",
+        "CorpusId": 288738496
+      },
+      "url": "https://www.semanticscholar.org/paper/470f9dc3a9590364f0a7775caecd043e1b67db51",
+      "title": "Artificial Intelligence Techniques for Strategy Design for Energy-Efficient Data Offloading in 6G-Enabled Vehicular Edge Computing Networks Using Double Deep Q-Network: Trends and Challenges",
+      "venue": "International Journal on Advanced Computer Theory and Engineering",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://journals.mriindia.com/index.php/ijacte/article/download/1930/1857",
+        "status": "HYBRID",
+        "license": "CCBYND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.65521/ijacte.v14i2.1930?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.65521/ijacte.v14i2.1930, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2439178459",
+          "name": "Myeong Mulyadi"
+        }
+      ],
+      "abstract": "The rapid advancement of intelligent transportation systems and the emergence of sixth-generation (6G) networks have intensified the demand for efficient computation in vehicular environments. Vehicular Edge Computing (VEC) has become a promising paradigm to address latency-sensitive and computation-intensive applications by enabling task offloading from vehicles to nearby edge servers. However, achieving energy-efficient data offloading in dynamic vehicular networks remains a significant challenge due to high mobility, varying channel conditions, and limited computational resources. Artificial Intelligence (AI), particularly Deep Reinforcement Learning (DRL), has emerged as an effective solution for optimizing offloading decisions in such complex environments. Among DRL techniques, the Double Deep Q-Network (DDQN) has gained attention for its ability to reduce overestimation bias and improve learning stability. Recent studies demonstrate that DDQN-based strategies outperform traditional optimization approaches in minimizing energy consumption and latency while adapting to dynamic network conditions.  This paper presents a comprehensive review of AI-driven strategies for energy-efficient data offloading in 6G-enabled vehicular edge computing networks. It analyses recent advancements (2020–2023), highlights key trends, and identifies critical challenges. Furthermore, it explores hybrid AI techniques and multi-agent frameworks for improving scalability and efficiency. Finally, the paper outlines future research directions toward developing intelligent, adaptive, and secure offloading mechanisms in next-generation vehicular networks. \n "
+    },
+    {
+      "paperId": "67cf3cf4eded279d099d221398ffa3aecc003e57",
+      "externalIds": {
+        "DBLP": "journals/tccn/UddinZSSW26",
+        "DOI": "10.1109/TCCN.2026.3691564",
+        "CorpusId": 288126132
+      },
+      "url": "https://www.semanticscholar.org/paper/67cf3cf4eded279d099d221398ffa3aecc003e57",
+      "title": "Enhanced Deep Q-Learning Through Adaptive Experience Clustering for Vehicular Task Offloading",
+      "venue": "IEEE Transactions on Cognitive Communications and Networking",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TCCN.2026.3691564?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TCCN.2026.3691564, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2437125970",
+          "name": "Graduate Student Member Ieee Ashab Uddin"
+        },
+        {
+          "authorId": "2253468266",
+          "name": "Senior Member Ieee Ning Zhang"
+        },
+        {
+          "authorId": "2437128794",
+          "name": "Senior Member Ieee Md Ahmed Hamdi Sakr"
+        },
+        {
+          "authorId": "2437113417",
+          "name": "Graduate Student Member Ieee Shakil Ahamed Shohag"
+        },
+        {
+          "authorId": "2253458822",
+          "name": "S. Q. M. Jonathan Wu"
+        }
+      ],
+      "abstract": "With the increasing adoption of AI in connected and autonomous vehicles (CAVs), deep reinforcement learning (DRL) has emerged as a core approach for decision-making in dynamic vehicular edge computing (VEC) environments. These settings require rapid adaptation to changing mobility patterns, network conditions, and resource availability. However, conventional experience replay strategies such as uniform sampling and prioritized experience replay (PER) struggle to support efficient learning under such nonstationary conditions. To address this, we propose enhanced Deep Q-Learning through experience clustering mechanism, referred to as ARCS (Adaptive Reward Clustering and Sampling) which is a reward-guided replay mechanism that periodically clusters experiences based on reward distributions and prioritizes sampling from transitions near cluster centroids. This design filters out outdated or low-utility experiences, promoting stable, sample-efficient learning for Q value estimation in DQN network. Extensive simulations show that ARCS accelerates convergence while maintaining high task performance and energy efficiency. Compared to Uniform and PER, ARCS requires far fewer transitions, achieves approximately 5% higher task completion, 4% lower energy consumption, and maintains performance with a model architecture 16% smaller in size. These results underscore ARCS’s scalability and effectiveness for resource-constrained, high-variability edge learning scenarios."
+    },
+    {
+      "paperId": "f48c768550121f99676431da124df3a89ac36426",
+      "externalIds": {
+        "ArXiv": "2605.03232",
+        "DBLP": "journals/corr/abs-2605-03232",
+        "DOI": "10.48550/arXiv.2605.03232",
+        "CorpusId": 287962902
+      },
+      "url": "https://www.semanticscholar.org/paper/f48c768550121f99676431da124df3a89ac36426",
+      "title": "Renewables Power the Orbit? Achieving Sustainable Space Edge Computing via QoS-Aware Offloading",
+      "venue": "arXiv.org",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2605.03232, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2117802103",
+          "name": "Xiaoyi Fan"
+        },
+        {
+          "authorId": "2175157334",
+          "name": "Yi Ching Chou"
+        },
+        {
+          "authorId": "2314042051",
+          "name": "Haojie Fang"
+        },
+        {
+          "authorId": "2316241573",
+          "name": "Long Chen"
+        },
+        {
+          "authorId": "2337600721",
+          "name": "Hao Zhao"
+        },
+        {
+          "authorId": "2388371184",
+          "name": "Ershun Du"
+        },
+        {
+          "authorId": "2291084614",
+          "name": "Chongqing Kang"
+        },
+        {
+          "authorId": "2291082343",
+          "name": "Zhe Chen"
+        },
+        {
+          "authorId": "2286324069",
+          "name": "Jiangchuan Liu"
+        }
+      ],
+      "abstract": "Low-Earth-Orbit (LEO) satellite constellations are becoming integral to 6G infrastructure, but increasing in-orbit computation accelerates battery degradation and raises sustainability concerns. Meanwhile, renewable-heavy regions worldwide experience persistent energy curtailment due to transmission bottlenecks, leaving substantial clean energy stranded near generation sites. We identify a satellite-grid co-design opportunity: adaptively offloading task-critical data from satellite to data centers co-located with renewable power plants. However, realizing this vision requires jointly considering intermittent and capacity-limited communication windows, as well as time-varying electricity budgets. In this paper, we propose SQSO, a Sustainable and QoS-aware Satellite Offloading framework that models per-interval task offloading as a constrained optimization over dynamic topology and electricity prices. Under this framework, we design $\\text{AO}^2$, an adaptive offloading orchestration algorithm to solve the formulated optimization problem. Using Starlink-scale simulations and real-world electricity price traces, $\\text{AO}^2$ reduces energy consumption by up to 76.03% and battery life consumption by up to 76.85% compared to state-of-the-art schemes, while also lowering task delay. This work highlights that sustainable scaling of LEO constellations requires co-design of space networking and renewable energy infrastructure, while our solution promotes renewable-aware task offloading and cross-domain collaboration for space-energy integration in the 6G era."
+    },
+    {
+      "paperId": "45aade6284b2143dcfe9d13f74a1e65aeec7651e",
+      "externalIds": {
+        "DOI": "10.33411/ijist/1581",
+        "CorpusId": 290884832
+      },
+      "url": "https://www.semanticscholar.org/paper/45aade6284b2143dcfe9d13f74a1e65aeec7651e",
+      "title": "Industry 5.0: An Energy-Efficient Smart Task Offloading Mechanism for Multi-Access Edge Computing",
+      "venue": "International Journal of Innovative Science & Technology",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "https://journal.50sea.com/index.php/IJIST/article/download/1581/2371",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.33411/ijist/1581?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.33411/ijist/1581, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "authors": [
+        {
+          "authorId": "2354219313",
+          "name": "Saba Saddique"
+        },
+        {
+          "authorId": "2455930912",
+          "name": "Arslan Baig"
+        },
+        {
+          "authorId": "2141236796",
+          "name": "Erssa Arif"
+        },
+        {
+          "authorId": "2455933707",
+          "name": "Mudasir Zaheer"
+        },
+        {
+          "authorId": "2455936549",
+          "name": "Shahrukh Hamayoun"
+        },
+        {
+          "authorId": "2456328843",
+          "name": "Fizza Khan"
+        }
+      ],
+      "abstract": "The industry 5.0 heralds a transformation of industrial systems by integrating artificial intelligence (AI), the Industrial Internet of Things (IIoT), and Multi-Access Edge Computing (MEC) to foster resilience, efficiency, and sustainability. However, managing the massive volume of computation-intensive tasks generated by heterogeneous IIoT devices presents major challenges, particularly in optimizing both latency and energy consumption under dynamic industrial conditions. This research proposes a hybrid task offloading framework Computational Genetic Particle Swarm Optimization Algorithm (CGPCA) to intelligently balance energy efficiency and latency in MEC-enabled IIoT networks. CGPCA integrates the global search capability of Genetic Algorithms (GA) with the fast convergence of Particle Swarm Optimization (PSO), forming a two-layer optimization approach for effective task-device associations and power-bandwidth allocation. The framework is evaluated using iFogSim and Edgelands simulation environments, reflecting realistic industrial scenarios with variable workloads, device capabilities, and server conditions. Results indicate that CGPCA reduces average latency by up to 24%, lowers energy consumption by 18–25%, and maintains a task offloading success rate of 94% surpassing conventional GA, PSO, and heuristic baselines. The framework also achieves improved load balancing and faster convergence time, confirming its suitability for time-sensitive and energy-constrained IIoT environments. This study contributes to the realization of Industry 5.0 by offering an adaptive, intelligent solution that enhances computational efficiency while supporting sustainable and human-centered industrial automation. Future directions include extending CGPCA to highly mobile IIoT contexts and integrating predictive analytics for further performance gains"
+    }
+  ]
+}

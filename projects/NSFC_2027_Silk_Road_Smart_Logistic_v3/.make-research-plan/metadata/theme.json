@@ -1,0 +1,24 @@
+{
+  "primary_topic": {
+    "name": "弱网不完备观测下跨境物流货物状态辨识与风险驱动传输",
+    "description": "在状态相关缺失下联合推断货物状态与观测过程，并利用端侧—接收端信念差异形成风险证据的发送—等待边界。",
+    "keywords": [
+      "informative missingness",
+      "multimodal anomaly detection",
+      "uncertainty calibration",
+      "task-oriented communication",
+      "age of information"
+    ]
+  },
+  "secondary_topics": [
+    {
+      "name": "状态—观测双过程",
+      "keywords": ["missing modality", "sensor health", "observation process"]
+    },
+    {
+      "name": "端—收风险证据传输",
+      "keywords": ["edge intelligence", "decision value", "intermittent connectivity"]
+    }
+  ],
+  "extracted_at": "2026-08-18T20:08:18+08:00"
+}

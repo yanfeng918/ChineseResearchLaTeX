@@ -1,0 +1,21 @@
+{
+  "paperId": "8ad40638c424e679d1ebf6e38835d7a9a94bf6a9",
+  "title": "A Multimodal Sensor Fusion Framework Robust to Missing Modalities for Person Recognition",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2210.10972",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2210.10972, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "144945109",
+      "name": "V. John"
+    },
+    {
+      "authorId": "1770200",
+      "name": "Yasutomo Kawanishi"
+    }
+  ],
+  "abstract": "Utilizing the sensor characteristics of the audio, visible camera, and thermal camera, the robustness of person recognition can be enhanced. Existing multimodal person recognition frameworks are primarily formulated assuming that multimodal data is always available. In this paper, we propose a novel trimodal sensor fusion framework using the audio, visible, and thermal camera, which addresses the missing modality problem. In the framework, a novel deep latent embedding framework, termed the AVTNet, is proposed to learn multiple latent embeddings. Also, a novel loss function, termed missing modality loss, accounts for possible missing modalities based on the triplet loss calculation while learning the individual latent embeddings. Additionally, a joint latent embedding utilizing the trimodal data is learnt using the multi-head attention transformer, which assigns attention weights to the different modalities. The different latent embeddings are subsequently used to train a deep neural network. The proposed framework is validated on the Speaking Faces dataset. A comparative analysis with baseline algorithms shows that the proposed framework significantly increases the person recognition accuracy while accounting for missing modalities."
+}

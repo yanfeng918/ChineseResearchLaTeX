@@ -1,0 +1,41 @@
+{
+  "paperId": "f29a096dbb339fe5e5de54b177f71f765a93616c",
+  "title": "AAAD: Asynchronous Inter-Variable Relationship-Aware Anomaly Detection for Multivariate Time Series",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICME59968.2025.11210144?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICME59968.2025.11210144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2305457095",
+      "name": "Hongyi Liu"
+    },
+    {
+      "authorId": "2217880766",
+      "name": "Xiaosong Huang"
+    },
+    {
+      "authorId": "2305360009",
+      "name": "Mengxi Jia"
+    },
+    {
+      "authorId": "2306121651",
+      "name": "Lingzhe Zhang"
+    },
+    {
+      "authorId": "2242950960",
+      "name": "Tong Jia"
+    },
+    {
+      "authorId": "2260608757",
+      "name": "Zhonghai Wu"
+    },
+    {
+      "authorId": "2243918738",
+      "name": "Ying Li"
+    }
+  ],
+  "abstract": "Anomaly detection in multivariate time series (MTS) plays a crucial role in various domains, particularly in multimedia. While significant progress has been made in modeling normal data patterns and detecting anomalies based on deviations, existing methods face challenges in capturing complex inter-variable relationships, particularly in the presence of asynchronous dependencies. To address the challenges of detecting anomalies in MTS with complex inter-variable relationships, we propose an asynchronous inter-variable relationship-aware anomaly detection method. This approach simultaneously extracts both synchronous and asynchronous feature pairs between variables and leverages attention mechanisms to automatically learn unified inter-variable relationships across these dependencies. Additionally, we utilize a memory network to store and dynamically update the normal patterns of inter-variable relationships, computing anomaly scores based on deviations in these relationships. Extensive experiments demonstrate that our method outperforms existing baseline approaches, achieving an average F1 score of 97.05% across five benchmark datasets. Ablation studies further validate the effectiveness of each component of our method."
+}

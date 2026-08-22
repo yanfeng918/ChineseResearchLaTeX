@@ -1,0 +1,1791 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2026-08-15T05:21:14Z",
+      "timestamp": 1786771274818,
+      "version": "3.56.0"
+    },
+    "reference-count": 275,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2022-01-01T00:00:00Z",
+          "timestamp": 1640995200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Pattern Anal. Mach. Intell."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "DOI": "10.1109/tpami.2022.3195549",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2022-08-05T00:33:22Z",
+      "timestamp": 1659659602000
+    },
+    "page": "1-20",
+    "source": "Crossref",
+    "is-referenced-by-count": 773,
+    "title": [
+      "Domain Generalization: A Survey"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8153-3903",
+        "authenticated-orcid": false,
+        "given": "Kaiyang",
+        "family": "Zhou",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "S-Lab, Nanyang Technological University, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4220-5958",
+        "authenticated-orcid": false,
+        "given": "Ziwei",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "S-Lab, Nanyang Technological University, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1889-2567",
+        "authenticated-orcid": false,
+        "given": "Yu",
+        "family": "Qiao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2530-1059",
+        "authenticated-orcid": false,
+        "given": "Tao",
+        "family": "Xiang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Vision Speech and Signal Processing, University of Surrey, Guildford, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5345-1591",
+        "authenticated-orcid": false,
+        "given": "Chen Change",
+        "family": "Loy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "S-Lab, Nanyang Technological University, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2011.06.019"
+      },
+      {
+        "key": "ref2",
+        "first-page": "5389",
+        "article-title": "Do ImageNet classifiers generalize to ImageNet?",
+        "volume-title": "Proc. 36th Int. Conf. Mach. Learn.",
+        "author": "Recht"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10994-009-5152-4"
+      },
+      {
+        "key": "ref4",
+        "article-title": "Measuring robustness to natural distribution shifts in image classification",
+        "volume-title": "Proc. 34th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Taori"
+      },
+      {
+        "key": "ref5",
+        "article-title": "Domain generalization by marginal transfer learning",
+        "volume": "22",
+        "author": "Blanchard",
+        "year": "2021",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.90"
+      },
+      {
+        "key": "ref7",
+        "first-page": "1097",
+        "article-title": "ImageNet classification with deep convolutional neural networks",
+        "volume-title": "Proc. 25th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Krizhevsky"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature14539"
+      },
+      {
+        "key": "ref9",
+        "article-title": "Benchmarking neural network robustness to common corruptions and perturbations",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Hendrycks"
+      },
+      {
+        "key": "ref10",
+        "article-title": "Generalized out-of-distribution detection: A survey",
+        "author": "Yang",
+        "year": "2021"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2009.5206848"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-15561-1_16"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00913"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00392"
+      },
+      {
+        "key": "ref15",
+        "first-page": "1180",
+        "article-title": "Unsupervised domain adaptation by backpropagation",
+        "volume-title": "Proc. 32nd Int. Conf. Mach. Learn.",
+        "author": "Ganin"
+      },
+      {
+        "key": "ref16",
+        "first-page": "97",
+        "article-title": "Learning transferable features with deep adaptation networks",
+        "volume-title": "Proc. 32nd Int. Conf. Mach. Learn.",
+        "author": "Long"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.01242"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00116"
+      },
+      {
+        "key": "ref19",
+        "first-page": "I-10",
+        "article-title": "Domain generalization via invariant feature representation",
+        "volume-title": "Proc. 30th Int. Conf. Mach. Learn.",
+        "author": "Muandet"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00219"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00442"
+      },
+      {
+        "key": "ref22",
+        "first-page": "2178",
+        "article-title": "Generalizing from several related classification tasks to a new unlabeled sample",
+        "volume-title": "Proc. 24th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Blanchard"
+      },
+      {
+        "key": "ref23",
+        "article-title": "Domain generalization with mixstyle",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Zhou"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00811"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00533"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.01273"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00950"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-023-01913-8"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-023-01821-x"
+      },
+      {
+        "key": "ref30",
+        "first-page": "22405",
+        "article-title": "SWAD: Domain generalization by seeking flat minima",
+        "volume-title": "Proc. 35th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Cha"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00566"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01267-0_38"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v32i1.11596"
+      },
+      {
+        "key": "ref34",
+        "first-page": "1006",
+        "article-title": "MetaReg: Towards domain generalization using meta-regularization",
+        "volume-title": "Proc. 32nd Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Balaji"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58517-4_33"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v34i07.7003"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.591"
+      },
+      {
+        "key": "ref38",
+        "first-page": "3915",
+        "article-title": "Feature-critic networks for heterogeneous domain generalization",
+        "volume-title": "Proc. 36th Int. Conf. Mach. Learn.",
+        "author": "Li"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00807"
+      },
+      {
+        "key": "ref40",
+        "article-title": "Generalizing across domains via cross-gradient training",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Shankar"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2020.2974574"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-59713-9_46"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2011.5995347"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2004.383"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-007-0090-8"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-33718-5_12"
+      },
+      {
+        "key": "ref47",
+        "article-title": "AugMix: A simple data processing method to improve robustness and uncertainty",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Hendrycks"
+      },
+      {
+        "key": "ref48",
+        "article-title": "SelfNorm and CrossNorm for out-of-distribution robustness",
+        "author": "Tang",
+        "year": "2021"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00233"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tpami.2021.3070791"
+      },
+      {
+        "key": "ref51",
+        "article-title": "Learning robust representations by projecting superficial statistics out",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Wang"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58536-5_8"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2015.293"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5.726791"
+      },
+      {
+        "key": "ref55",
+        "article-title": "Reading digits in natural images with unsupervised feature learning",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst. Workshops",
+        "author": "Netzer"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2013.208"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-009-0275-4"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2010.5539970"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2017.572"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00149"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tip.2021.3112012"
+      },
+      {
+        "key": "ref62",
+        "article-title": "VisDA: The visual domain adaptation challenge",
+        "author": "Peng",
+        "year": "2017"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV48922.2021.00823"
+      },
+      {
+        "key": "ref64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.01501"
+      },
+      {
+        "key": "ref65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01270-0_28"
+      },
+      {
+        "key": "ref66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr52729.2023.01539"
+      },
+      {
+        "key": "ref67",
+        "first-page": "506",
+        "article-title": "Learning multiple visual domains with residual adapters",
+        "volume-title": "Proc. 31st Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Rebuffi"
+      },
+      {
+        "key": "ref68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cviu.2006.07.013"
+      },
+      {
+        "key": "ref69",
+        "article-title": "UCF101: A dataset of 101 human actions classes from videos in the wild",
+        "author": "Soomro",
+        "year": "2012"
+      },
+      {
+        "key": "ref70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2011.6126543"
+      },
+      {
+        "key": "ref71",
+        "article-title": "Adversarial pyramid network for video domain generalization",
+        "author": "Yao",
+        "year": "2019"
+      },
+      {
+        "key": "ref72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.352"
+      },
+      {
+        "key": "ref73",
+        "first-page": "5339",
+        "article-title": "Generalizing to unseen domains via adversarial data augmentation",
+        "volume-title": "Proc. 32nd Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Volpi"
+      },
+      {
+        "key": "ref74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46475-6_7"
+      },
+      {
+        "key": "ref75",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.350"
+      },
+      {
+        "key": "ref76",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2015.133"
+      },
+      {
+        "key": "ref77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-48881-3_2"
+      },
+      {
+        "key": "ref78",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00685"
+      },
+      {
+        "key": "ref79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICB.2012.6199754"
+      },
+      {
+        "key": "ref80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/FG.2017.77"
+      },
+      {
+        "key": "ref81",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIFS.2015.2400395"
+      },
+      {
+        "key": "ref82",
+        "first-page": "1",
+        "article-title": "On the effectiveness of local binary patterns in face anti-spoofing",
+        "volume-title": "Proc. Int. Conf. Biometrics Special Int. Group",
+        "author": "Chingovska"
+      },
+      {
+        "key": "ref83",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21437/Interspeech.2015-352"
+      },
+      {
+        "key": "ref84",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3115/1610075.1610094"
+      },
+      {
+        "key": "ref85",
+        "article-title": "WILDS: A benchmark of in-the-wild distribution shifts",
+        "author": "Koh",
+        "year": "2020"
+      },
+      {
+        "key": "ref86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2018.2867350"
+      },
+      {
+        "key": "ref87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00646"
+      },
+      {
+        "key": "ref88",
+        "article-title": "The iWildCam 2020 competition dataset",
+        "author": "Beery",
+        "year": "2020"
+      },
+      {
+        "key": "ref89",
+        "first-page": "7313",
+        "article-title": "Domain generalization using causal matching",
+        "volume-title": "Proc. 38th Int. Conf. Mach. Learn.",
+        "author": "Mahajan"
+      },
+      {
+        "key": "ref90",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2017.369"
+      },
+      {
+        "key": "ref91",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v33i01.3301590"
+      },
+      {
+        "key": "ref92",
+        "first-page": "1282",
+        "article-title": "Quantifying generalization in reinforcement learning",
+        "volume-title": "Proc. 36th Int. Conf. Mach. Learn.",
+        "author": "Cobbe"
+      },
+      {
+        "key": "ref93",
+        "first-page": "2048",
+        "article-title": "Leveraging procedural generation to benchmark reinforcement learning",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Cobbe"
+      },
+      {
+        "key": "ref94",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00153"
+      },
+      {
+        "key": "ref95",
+        "first-page": "1989",
+        "article-title": "CyCADA: Cycle-consistent adversarial domain adaptation",
+        "volume-title": "Proc. 35th Int. Conf. Mach. Learn.",
+        "author": "Hoffman"
+      },
+      {
+        "key": "ref96",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00258"
+      },
+      {
+        "key": "ref97",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2019.2938523"
+      },
+      {
+        "key": "ref98",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-019-01274-1"
+      },
+      {
+        "key": "ref99",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00844"
+      },
+      {
+        "key": "ref100",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00380"
+      },
+      {
+        "key": "ref101",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00225"
+      },
+      {
+        "key": "ref102",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tpami.2021.3069237"
+      },
+      {
+        "key": "ref103",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.00621"
+      },
+      {
+        "key": "ref104",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvpr46437.2021.00343"
+      },
+      {
+        "key": "ref105",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2014.220"
+      },
+      {
+        "key": "ref106",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2014.244"
+      },
+      {
+        "key": "ref107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46478-7_31"
+      },
+      {
+        "key": "ref108",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46487-9_6"
+      },
+      {
+        "key": "ref109",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2011.5995566"
+      },
+      {
+        "key": "ref110",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/BTAS.2018.8698584"
+      },
+      {
+        "key": "ref111",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-20893-6_38"
+      },
+      {
+        "key": "ref112",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2015.7298803"
+      },
+      {
+        "key": "ref113",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICB2018.2018.00033"
+      },
+      {
+        "key": "ref114",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WACV.2016.7477558"
+      },
+      {
+        "key": "ref115",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.527"
+      },
+      {
+        "key": "ref116",
+        "article-title": "Learn convolutional neural network for face anti-spoofing",
+        "author": "Yang",
+        "year": "2014"
+      },
+      {
+        "key": "ref117",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.01026"
+      },
+      {
+        "key": "ref118",
+        "article-title": "Gradient matching for domain generalization",
+        "author": "Shi",
+        "year": "2021"
+      },
+      {
+        "key": "ref119",
+        "article-title": "Model-based domain generalization",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Robey"
+      },
+      {
+        "key": "ref120",
+        "article-title": "Improving out-of-distribution robustness via selective augmentation",
+        "author": "Yao",
+        "year": "2022"
+      },
+      {
+        "key": "ref121",
+        "article-title": "Domain generalization via model-agnostic learning of semantic features",
+        "volume-title": "Proc. 33rd Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Dou"
+      },
+      {
+        "key": "ref122",
+        "article-title": "Improving zero-shot generalization in offline reinforcement learning using generalized similarity functions",
+        "author": "Mazoure",
+        "year": "2021"
+      },
+      {
+        "key": "ref123",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICRA48506.2021.9561103"
+      },
+      {
+        "key": "ref124",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00323"
+      },
+      {
+        "key": "ref125",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1613/jair.1.14174"
+      },
+      {
+        "key": "ref126",
+        "article-title": "Distributionally robust neural networks for group shifts: On the importance of regularization for worst-case generalization",
+        "author": "Sagawa",
+        "year": "2019"
+      },
+      {
+        "key": "ref127",
+        "first-page": "5815",
+        "article-title": "Out-of-distribution generalization via risk extrapolation (REx)",
+        "volume-title": "Proc. 38th Int. Conf. Mach. Learn.",
+        "author": "Krueger"
+      },
+      {
+        "key": "ref128",
+        "article-title": "In search of lost domain generalization",
+        "author": "Gulrajani",
+        "year": "2020"
+      },
+      {
+        "key": "ref129",
+        "article-title": "Deep multi-task representation learning: A tensor factorisation approach",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Yang"
+      },
+      {
+        "key": "ref130",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01225-0_5"
+      },
+      {
+        "key": "ref131",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00197"
+      },
+      {
+        "key": "ref132",
+        "first-page": "3854",
+        "article-title": "Learning to branch for multi-task learning",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Guo"
+      },
+      {
+        "key": "ref133",
+        "article-title": "Adashare: Learning what to share for efficient deep multi-task learning",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Sun"
+      },
+      {
+        "key": "ref134",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58545-7_10"
+      },
+      {
+        "key": "ref135",
+        "article-title": "Improving out-of-distribution generalization via multi-task self-supervised pretraining",
+        "author": "Albuquerque",
+        "year": "2020"
+      },
+      {
+        "key": "ref136",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2009.191"
+      },
+      {
+        "key": "ref137",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2015.11"
+      },
+      {
+        "key": "ref138",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2014.81"
+      },
+      {
+        "key": "ref139",
+        "first-page": "3320",
+        "article-title": "How transferable are features in deep neural networks?",
+        "volume-title": "Proc. 27th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Yosinski"
+      },
+      {
+        "key": "ref140",
+        "first-page": "I-647",
+        "article-title": "DeCAF: A deep convolutional activation feature for generic visual recognition",
+        "volume-title": "Proc. 31st Int. Conf. Mach. Learn.",
+        "author": "Donahue"
+      },
+      {
+        "key": "ref141",
+        "first-page": "1746",
+        "article-title": "Automated synthetic-to-real generalization",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Chen"
+      },
+      {
+        "key": "ref142",
+        "article-title": "Contrastive syn-to-real generalization",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Chen"
+      },
+      {
+        "key": "ref143",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2013.140"
+      },
+      {
+        "key": "ref144",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-022-01653-1"
+      },
+      {
+        "key": "ref145",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.01631"
+      },
+      {
+        "key": "ref146",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46475-6_4"
+      },
+      {
+        "key": "ref147",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58592-1_28"
+      },
+      {
+        "key": "ref148",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2018.2857768"
+      },
+      {
+        "key": "ref149",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.17"
+      },
+      {
+        "key": "ref150",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2012.6247911"
+      },
+      {
+        "key": "ref151",
+        "first-page": "136",
+        "article-title": "Unsupervised domain adaptation with residual transfer networks",
+        "volume-title": "Proc. 30th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Long"
+      },
+      {
+        "key": "ref152",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2019.00660"
+      },
+      {
+        "key": "ref153",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00503"
+      },
+      {
+        "key": "ref154",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2011.5995702"
+      },
+      {
+        "key": "ref155",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01252-6_47"
+      },
+      {
+        "key": "ref156",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.88"
+      },
+      {
+        "key": "ref157",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01237-3_9"
+      },
+      {
+        "key": "ref158",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00283"
+      },
+      {
+        "key": "ref159",
+        "article-title": "Tent: Fully test-time adaptation by entropy minimization",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "key": "ref160",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00460"
+      },
+      {
+        "key": "ref161",
+        "article-title": "MEMO: Test time robustness via adaptation and augmentation",
+        "author": "Zhang",
+        "year": "2021"
+      },
+      {
+        "key": "ref162",
+        "first-page": "2427",
+        "article-title": "Test-time classifier adjustment module for model-agnostic domain generalization",
+        "volume-title": "Proc. 35th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Iwasawa"
+      },
+      {
+        "key": "ref163",
+        "first-page": "9229",
+        "article-title": "Test-time training with self-supervision for generalization under distribution shifts",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Sun"
+      },
+      {
+        "key": "ref164",
+        "first-page": "1455",
+        "article-title": "Robust domain generalisation by enforcing distribution invariance",
+        "volume-title": "Proc. 25th Int. Joint Conf. Artif. Intell.",
+        "author": "Erfani"
+      },
+      {
+        "key": "ref165",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2016.2599532"
+      },
+      {
+        "key": "ref166",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v32i1.11682"
+      },
+      {
+        "key": "ref167",
+        "article-title": "Feature alignment and restoration for domain generalization and adaptation",
+        "author": "Jin",
+        "year": "2020"
+      },
+      {
+        "key": "ref168",
+        "first-page": "292",
+        "article-title": "Domain generalization via multidomain discriminant analysis",
+        "volume-title": "Proc. 35th Uncertainty Artif. Intell. Conf.",
+        "author": "Hu"
+      },
+      {
+        "key": "ref169",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.609"
+      },
+      {
+        "key": "ref170",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-32251-9_40"
+      },
+      {
+        "key": "ref171",
+        "article-title": "Domain generalization using causal matching",
+        "author": "Mahajan",
+        "year": "2020"
+      },
+      {
+        "key": "ref172",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/icpr48806.2021.9412797"
+      },
+      {
+        "key": "ref173",
+        "article-title": "Domain generalization for medical imaging classification with linear-dependency regularization",
+        "volume-title": "Proc. 34th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Li"
+      },
+      {
+        "key": "ref174",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2019.107124"
+      },
+      {
+        "key": "ref175",
+        "article-title": "Generalizing to unseen domains via distribution matching",
+        "author": "Albuquerque",
+        "year": "2019"
+      },
+      {
+        "key": "ref176",
+        "article-title": "Representation via representations: Domain generalization via adversarially learned invariant representations",
+        "author": "Deng",
+        "year": "2020"
+      },
+      {
+        "key": "ref177",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v34i07.6846"
+      },
+      {
+        "key": "ref178",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00851"
+      },
+      {
+        "key": "ref179",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-46147-8_19"
+      },
+      {
+        "key": "ref180",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISBI45749.2020.9098721"
+      },
+      {
+        "key": "ref181",
+        "article-title": "Domain generalization via entropy regularization",
+        "volume-title": "Proc. 34th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Zhao"
+      },
+      {
+        "key": "ref182",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-66415-2_39"
+      },
+      {
+        "key": "ref183",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58607-2_12"
+      },
+      {
+        "key": "ref184",
+        "article-title": "MetaNorm: Learning to normalize few-shot batches across domains",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Du"
+      },
+      {
+        "key": "ref185",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18653/v1/2021.naacl-main.33"
+      },
+      {
+        "key": "ref186",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2019.00198"
+      },
+      {
+        "key": "ref187",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fcvm.2020.00105"
+      },
+      {
+        "key": "ref188",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2020.2973595"
+      },
+      {
+        "key": "ref189",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.01257"
+      },
+      {
+        "key": "ref190",
+        "article-title": "Certifying some distributional robustness with principled adversarial training",
+        "author": "Sinha",
+        "year": "2017"
+      },
+      {
+        "key": "ref191",
+        "article-title": "Robust and generalizable visual representation learning via random convolutions",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Xu"
+      },
+      {
+        "key": "ref192",
+        "article-title": "Frustratingly simple domain generalization via image stylization",
+        "author": "Somavarapu",
+        "year": "2020"
+      },
+      {
+        "key": "ref193",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICPR48806.2021.9412735"
+      },
+      {
+        "key": "ref194",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCVW.2019.00403"
+      },
+      {
+        "key": "ref195",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-10578-9_41"
+      },
+      {
+        "key": "ref196",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2015.477"
+      },
+      {
+        "key": "ref197",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2015.7298894"
+      },
+      {
+        "key": "ref198",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIP.2017.2758199"
+      },
+      {
+        "key": "ref199",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-12939-2_14"
+      },
+      {
+        "key": "ref200",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICIP.2018.8451318"
+      },
+      {
+        "key": "ref201",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2020.3015224"
+      },
+      {
+        "key": "ref202",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58542-6_5"
+      },
+      {
+        "key": "ref203",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patcog.2022.109115"
+      },
+      {
+        "key": "ref204",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LRA.2018.2809700"
+      },
+      {
+        "key": "ref205",
+        "article-title": "Domain generalization needs stochastic weight averaging for robustness on domain shifts",
+        "author": "Cha",
+        "year": "2021"
+      },
+      {
+        "key": "ref206",
+        "article-title": "Zero shot domain generalization",
+        "volume-title": "Proc. Brit. Mach. Vis. Conf.",
+        "author": "Maniyar"
+      },
+      {
+        "key": "ref207",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-58545-7_18"
+      },
+      {
+        "key": "ref208",
+        "article-title": "Efficient domain generalization via common-specific low-rank decomposition",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Piratla"
+      },
+      {
+        "key": "ref209",
+        "article-title": "DIVA: Domain invariant variational autoencoder",
+        "volume-title": "Proc. Int. Conf. Learn. Representations Workshops",
+        "author": "Ilse"
+      },
+      {
+        "key": "ref210",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00671"
+      },
+      {
+        "key": "ref211",
+        "article-title": "Reinforcement learning with augmented data",
+        "volume-title": "Proc. 34th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Laskin"
+      },
+      {
+        "key": "ref212",
+        "article-title": "Image augmentation is all you need: Regularizing deep reinforcement learning from pixels",
+        "author": "Kostrikov",
+        "year": "2020"
+      },
+      {
+        "key": "ref213",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IROS.2017.8202133"
+      },
+      {
+        "key": "ref214",
+        "article-title": "Network randomization: A simple technique for generalization in deep reinforcement learning",
+        "author": "Lee",
+        "year": "2019"
+      },
+      {
+        "key": "ref215",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v35i12.17276"
+      },
+      {
+        "key": "ref216",
+        "first-page": "5639",
+        "article-title": "CURL: Contrastive unsupervised representations for reinforcement learning",
+        "volume-title": "Proc. 37th Int. Conf. Mach. Learn.",
+        "author": "Laskin"
+      },
+      {
+        "key": "ref217",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-71050-9"
+      },
+      {
+        "key": "ref218",
+        "first-page": "459",
+        "article-title": "On causal and anticausal learning",
+        "volume-title": "Proc. 29th Int. Conf. Mach. Learn.",
+        "author": "Schölkopf"
+      },
+      {
+        "key": "ref219",
+        "first-page": "723",
+        "article-title": "A kernel two-sample test",
+        "volume": "13",
+        "author": "Gretton",
+        "year": "2012",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "ref220",
+        "first-page": "2672",
+        "article-title": "Generative adversarial nets",
+        "volume-title": "Proc. 27th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Goodfellow"
+      },
+      {
+        "key": "ref221",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2017.316"
+      },
+      {
+        "key": "ref222",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2018.00400"
+      },
+      {
+        "key": "ref223",
+        "first-page": "1647",
+        "article-title": "Conditional adversarial domain adaptation",
+        "volume-title": "Proc. 32nd Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Long"
+      },
+      {
+        "key": "ref224",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.01053"
+      },
+      {
+        "key": "ref225",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2946645.2946704"
+      },
+      {
+        "key": "ref226",
+        "first-page": "1126",
+        "article-title": "Model-agnostic meta-learning for fast adaptation of deep networks",
+        "volume-title": "Proc. 34th Int. Conf. Mach. Learn.",
+        "author": "Finn"
+      },
+      {
+        "key": "ref227",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tpami.2021.3079209"
+      },
+      {
+        "key": "ref228",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.01386"
+      },
+      {
+        "key": "ref229",
+        "article-title": "Meta-learning probabilistic inference for prediction",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Gordon"
+      },
+      {
+        "key": "ref230",
+        "volume-title": "Deep Learning",
+        "author": "Goodfellow",
+        "year": "2016"
+      },
+      {
+        "key": "ref231",
+        "article-title": "Explaining and harnessing adversarial examples",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Goodfellow"
+      },
+      {
+        "key": "ref232",
+        "article-title": "Intriguing properties of neural networks",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Szegedy"
+      },
+      {
+        "key": "ref233",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2017.167"
+      },
+      {
+        "key": "ref234",
+        "article-title": "mixup: Beyond empirical risk minimization",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Zhang"
+      },
+      {
+        "key": "ref235",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1201/b12207"
+      },
+      {
+        "key": "ref236",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9781410605337-29"
+      },
+      {
+        "key": "ref237",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCV.2011.6126229"
+      },
+      {
+        "key": "ref238",
+        "first-page": "448",
+        "article-title": "Batch normalization: Accelerating deep network training by reducing internal covariate shift",
+        "volume-title": "Proc. 32nd Int. Conf. Mach. Learn.",
+        "author": "Ioffe"
+      },
+      {
+        "key": "ref239",
+        "first-page": "876",
+        "article-title": "Averaging weights leads to wider optima and better generalization",
+        "volume-title": "Proc. Uncertainty Artif. Intell. Conf.",
+        "author": "Izmailov"
+      },
+      {
+        "key": "ref240",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-46466-4_5"
+      },
+      {
+        "key": "ref241",
+        "article-title": "Unsupervised representation learning by predicting image rotations",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Gidaris"
+      },
+      {
+        "key": "ref242",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2020.2992393"
+      },
+      {
+        "key": "ref243",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-01264-9_9"
+      },
+      {
+        "key": "ref244",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR42600.2020.00975"
+      },
+      {
+        "key": "ref245",
+        "article-title": "Bootstrap your own latent: A new approach to self-supervised learning",
+        "volume-title": "Proc. 34th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Grill"
+      },
+      {
+        "key": "ref246",
+        "first-page": "2180",
+        "article-title": "InfoGAN: Interpretable representation learning by information maximizing generative adversarial nets",
+        "volume-title": "Proc. 30th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Chen"
+      },
+      {
+        "key": "ref247",
+        "article-title": "Improved regularization of convolutional neural networks with cutout",
+        "author": "DeVries",
+        "year": "2017"
+      },
+      {
+        "key": "ref248",
+        "article-title": "A survey on domain adaptation theory: Learning bounds and theoretical guarantees",
+        "author": "Redko",
+        "year": "2020"
+      },
+      {
+        "key": "ref249",
+        "article-title": "A generalization error bound for multi-class domain generalization",
+        "author": "Deshmukh",
+        "year": "2019"
+      },
+      {
+        "key": "ref250",
+        "first-page": "2641",
+        "article-title": "An online learning approach to interpolation and extrapolation in domain generalization",
+        "volume-title": "Proc. 25th Int. Conf. Artif. Intell. Statist.",
+        "author": "Rosenfeld"
+      },
+      {
+        "key": "ref251",
+        "first-page": "28131",
+        "article-title": "An empirical investigation of domain generalization with empirical risk minimizers",
+        "volume-title": "Proc. 35th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Vedantam"
+      },
+      {
+        "key": "ref252",
+        "first-page": "23519",
+        "article-title": "Towards a theoretical framework of out-of-distribution generalization",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Ye"
+      },
+      {
+        "key": "ref253",
+        "article-title": "Finding lost DG: Explaining domain generalization via model complexity",
+        "author": "Li",
+        "year": "2022"
+      },
+      {
+        "key": "ref254",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tpami.2021.3117837"
+      },
+      {
+        "key": "ref255",
+        "first-page": "667",
+        "article-title": "Dynamic filter networks",
+        "volume-title": "Proc. 30th Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Jia"
+      },
+      {
+        "key": "ref256",
+        "first-page": "1305",
+        "article-title": "CondConv: Conditionally parameterized convolutions for efficient inference",
+        "volume-title": "Proc. Int. Conf. Neural Inf. Process. Syst.",
+        "author": "Yang"
+      },
+      {
+        "key": "ref257",
+        "article-title": "Instance normalization: The missing ingredient for fast stylization",
+        "author": "Ulyanov",
+        "year": "2016"
+      },
+      {
+        "key": "ref258",
+        "article-title": "Layer normalization",
+        "author": "Ba",
+        "year": "2016"
+      },
+      {
+        "key": "ref259",
+        "article-title": "Differentiable learning-to-normalize via switchable normalization",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Luo"
+      },
+      {
+        "key": "ref260",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00244"
+      },
+      {
+        "key": "ref261",
+        "article-title": "Latent domain learning with dynamic residual adapters",
+        "author": "Deecke",
+        "year": "2020"
+      },
+      {
+        "key": "ref262",
+        "article-title": "How neural networks extrapolate: From feedforward to graph neural networks",
+        "volume-title": "Proc. Int. Conf. Learn. Representations",
+        "author": "Xu"
+      },
+      {
+        "key": "ref263",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-020-00257-z"
+      },
+      {
+        "key": "ref264",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00922"
+      },
+      {
+        "key": "ref265",
+        "article-title": "A meta-transfer objective for learning to disentangle causal mechanisms",
+        "author": "Bengio",
+        "year": "2019"
+      },
+      {
+        "key": "ref266",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2021.3058954"
+      },
+      {
+        "key": "ref267",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2016.96"
+      },
+      {
+        "key": "ref268",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.23919/MVA.2017.7986862"
+      },
+      {
+        "key": "ref269",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/cvprw53098.2021.00361"
+      },
+      {
+        "key": "ref270",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-10590-1_53"
+      },
+      {
+        "key": "ref271",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2017.2773081"
+      },
+      {
+        "key": "ref272",
+        "article-title": "Domain generalization via semi-supervised meta learning",
+        "author": "Sharifi-Noghabi",
+        "year": "2020"
+      },
+      {
+        "key": "ref273",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2020.2981604"
+      },
+      {
+        "key": "ref274",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2019.00046"
+      },
+      {
+        "key": "ref275",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR.2014.27"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/34/4359286/09847099.pdf?arnumber=9847099",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          1
+        ]
+      ],
+      "date-time": "2024-02-01T09:13:45Z",
+      "timestamp": 1706778825000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9847099/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "references-count": 275,
+    "URL": "https://doi.org/10.1109/tpami.2022.3195549",
+    "relation": {},
+    "ISSN": [
+      "0162-8828",
+      "2160-9292",
+      "1939-3539"
+    ],
+    "issn-type": [
+      {
+        "value": "0162-8828",
+        "type": "print"
+      },
+      {
+        "value": "2160-9292",
+        "type": "electronic"
+      },
+      {
+        "value": "1939-3539",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    }
+  }
+}

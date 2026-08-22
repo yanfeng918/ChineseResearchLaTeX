@@ -1,0 +1,29 @@
+{
+  "paperId": "aade743e3b0f65594745b6ad32444c7882a095e3",
+  "title": "Enhancing supply chain resilience and efficiency through internet of things integration: Challenges and opportunities",
+  "openAccessPdf": {
+    "url": "",
+    "status": "CLOSED",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.iot.2024.101324?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.iot.2024.101324, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2281986078",
+      "name": "Atefeh Shoomal"
+    },
+    {
+      "authorId": "46978404",
+      "name": "M. Jahanbakht"
+    },
+    {
+      "authorId": "48670963",
+      "name": "P. Componation"
+    },
+    {
+      "authorId": "2284894699",
+      "name": "Dervis Ozay"
+    }
+  ],
+  "abstract": null
+}

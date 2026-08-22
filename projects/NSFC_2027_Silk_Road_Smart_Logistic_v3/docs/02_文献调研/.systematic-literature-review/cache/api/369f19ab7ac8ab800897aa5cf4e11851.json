@@ -1,0 +1,549 @@
+{
+  "id": "https://openalex.org/W4413159242",
+  "doi": "https://doi.org/10.1016/j.comnet.2025.111627",
+  "title": "Hybrid IoT network for real-time monitoring of maritime containers",
+  "display_name": "Hybrid IoT network for real-time monitoring of maritime containers",
+  "publication_year": 2025,
+  "publication_date": "2025-08-13",
+  "ids": {
+    "openalex": "https://openalex.org/W4413159242",
+    "doi": "https://doi.org/10.1016/j.comnet.2025.111627"
+  },
+  "language": "en",
+  "primary_location": {
+    "id": "doi:10.1016/j.comnet.2025.111627",
+    "is_oa": false,
+    "landing_page_url": "https://doi.org/10.1016/j.comnet.2025.111627",
+    "pdf_url": null,
+    "source": {
+      "id": "https://openalex.org/S63392143",
+      "display_name": "Computer Networks",
+      "issn_l": "1389-1286",
+      "issn": [
+        "1389-1286",
+        "1872-7069"
+      ],
+      "is_oa": false,
+      "is_in_doaj": false,
+      "is_core": true,
+      "host_organization": "https://openalex.org/P4310320990",
+      "host_organization_name": "Elsevier BV",
+      "host_organization_lineage": [
+        "https://openalex.org/P4310320990"
+      ],
+      "host_organization_lineage_names": [
+        "Elsevier BV"
+      ],
+      "type": "journal"
+    },
+    "license": null,
+    "license_id": null,
+    "version": "publishedVersion",
+    "is_accepted": true,
+    "is_published": true,
+    "raw_source_name": "Computer Networks",
+    "raw_type": "journal-article"
+  },
+  "type": "article",
+  "indexed_in": [
+    "crossref"
+  ],
+  "open_access": {
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null,
+    "any_repository_has_fulltext": false
+  },
+  "authorships": [
+    {
+      "author_position": "first",
+      "author": {
+        "id": "https://openalex.org/A5093828513",
+        "display_name": "Oscar Ledesma",
+        "orcid": null
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210116615",
+          "display_name": "Universidad Internacional De La Rioja",
+          "ror": "https://ror.org/029gnnp81",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210116615"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": true,
+      "raw_author_name": "Oscar Ledesma",
+      "raw_affiliation_strings": [
+        "Universidad Internacional de La Rioja 26006 Logroño, Spain"
+      ],
+      "raw_orcid": "https://orcid.org/0009-0006-3097-5783",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Universidad Internacional de La Rioja 26006 Logroño, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210116615"
+          ]
+        }
+      ]
+    },
+    {
+      "author_position": "last",
+      "author": {
+        "id": "https://openalex.org/A5086097266",
+        "display_name": "Paula Lamo",
+        "orcid": "https://orcid.org/0000-0002-5877-045X"
+      },
+      "institutions": [
+        {
+          "id": "https://openalex.org/I4210116615",
+          "display_name": "Universidad Internacional De La Rioja",
+          "ror": "https://ror.org/029gnnp81",
+          "country_code": "ES",
+          "type": "education",
+          "lineage": [
+            "https://openalex.org/I4210116615"
+          ]
+        }
+      ],
+      "countries": [
+        "ES"
+      ],
+      "is_corresponding": false,
+      "raw_author_name": "Paula Lamo",
+      "raw_affiliation_strings": [
+        "Universidad Internacional de La Rioja 26006 Logroño, Spain"
+      ],
+      "raw_orcid": "https://orcid.org/0000-0002-5877-045X",
+      "affiliations": [
+        {
+          "raw_affiliation_string": "Universidad Internacional de La Rioja 26006 Logroño, Spain",
+          "institution_ids": [
+            "https://openalex.org/I4210116615"
+          ]
+        }
+      ]
+    }
+  ],
+  "institutions": [],
+  "countries_distinct_count": 1,
+  "institutions_distinct_count": 1,
+  "corresponding_author_ids": [
+    "https://openalex.org/A5093828513"
+  ],
+  "corresponding_institution_ids": [
+    "https://openalex.org/I4210116615"
+  ],
+  "apc_list": {
+    "value": 2370,
+    "currency": "USD",
+    "value_usd": 2370
+  },
+  "apc_paid": null,
+  "fwci": 2.1654,
+  "has_fulltext": false,
+  "cited_by_count": 3,
+  "citation_normalized_percentile": {
+    "value": 0.87213573,
+    "is_in_top_1_percent": false,
+    "is_in_top_10_percent": false
+  },
+  "cited_by_percentile_year": {
+    "min": 94,
+    "max": 97
+  },
+  "biblio": {
+    "volume": "271",
+    "issue": null,
+    "first_page": "111627",
+    "last_page": "111627"
+  },
+  "is_retracted": false,
+  "is_paratext": false,
+  "is_xpac": false,
+  "primary_topic": {
+    "id": "https://openalex.org/T11622",
+    "display_name": "Maritime Navigation and Safety",
+    "score": 0.989300012588501,
+    "subfield": {
+      "id": "https://openalex.org/subfields/2212",
+      "display_name": "Ocean Engineering"
+    },
+    "field": {
+      "id": "https://openalex.org/fields/22",
+      "display_name": "Engineering"
+    },
+    "domain": {
+      "id": "https://openalex.org/domains/3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "topics": [
+    {
+      "id": "https://openalex.org/T11622",
+      "display_name": "Maritime Navigation and Safety",
+      "score": 0.989300012588501,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2212",
+        "display_name": "Ocean Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12406",
+      "display_name": "IoT and GPS-based Vehicle Safety Systems",
+      "score": 0.9771000146865845,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2210",
+        "display_name": "Mechanical Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11192",
+      "display_name": "Underwater Vehicles and Communication Systems",
+      "score": 0.9449999928474426,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2212",
+        "display_name": "Ocean Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "https://openalex.org/keywords/computer-science",
+      "display_name": "Computer science",
+      "score": 0.8918794393539429
+    },
+    {
+      "id": "https://openalex.org/keywords/internet-of-things",
+      "display_name": "Internet of Things",
+      "score": 0.5301008820533752
+    },
+    {
+      "id": "https://openalex.org/keywords/real-time-computing",
+      "display_name": "Real-time computing",
+      "score": 0.49976110458374023
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-network",
+      "display_name": "Computer network",
+      "score": 0.4150310754776001
+    },
+    {
+      "id": "https://openalex.org/keywords/telecommunications",
+      "display_name": "Telecommunications",
+      "score": 0.3760910630226135
+    },
+    {
+      "id": "https://openalex.org/keywords/computer-security",
+      "display_name": "Computer security",
+      "score": 0.34597247838974
+    },
+    {
+      "id": "https://openalex.org/keywords/embedded-system",
+      "display_name": "Embedded system",
+      "score": 0.3310483694076538
+    }
+  ],
+  "concepts": [
+    {
+      "id": "https://openalex.org/C41008148",
+      "wikidata": "https://www.wikidata.org/wiki/Q21198",
+      "display_name": "Computer science",
+      "level": 0,
+      "score": 0.8918794393539429
+    },
+    {
+      "id": "https://openalex.org/C81860439",
+      "wikidata": "https://www.wikidata.org/wiki/Q251212",
+      "display_name": "Internet of Things",
+      "level": 2,
+      "score": 0.5301008820533752
+    },
+    {
+      "id": "https://openalex.org/C79403827",
+      "wikidata": "https://www.wikidata.org/wiki/Q3988",
+      "display_name": "Real-time computing",
+      "level": 1,
+      "score": 0.49976110458374023
+    },
+    {
+      "id": "https://openalex.org/C31258907",
+      "wikidata": "https://www.wikidata.org/wiki/Q1301371",
+      "display_name": "Computer network",
+      "level": 1,
+      "score": 0.4150310754776001
+    },
+    {
+      "id": "https://openalex.org/C76155785",
+      "wikidata": "https://www.wikidata.org/wiki/Q418",
+      "display_name": "Telecommunications",
+      "level": 1,
+      "score": 0.3760910630226135
+    },
+    {
+      "id": "https://openalex.org/C38652104",
+      "wikidata": "https://www.wikidata.org/wiki/Q3510521",
+      "display_name": "Computer security",
+      "level": 1,
+      "score": 0.34597247838974
+    },
+    {
+      "id": "https://openalex.org/C149635348",
+      "wikidata": "https://www.wikidata.org/wiki/Q193040",
+      "display_name": "Embedded system",
+      "level": 1,
+      "score": 0.3310483694076538
+    }
+  ],
+  "mesh": [],
+  "locations_count": 2,
+  "locations": [
+    {
+      "id": "doi:10.1016/j.comnet.2025.111627",
+      "is_oa": false,
+      "landing_page_url": "https://doi.org/10.1016/j.comnet.2025.111627",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S63392143",
+        "display_name": "Computer Networks",
+        "issn_l": "1389-1286",
+        "issn": [
+          "1389-1286",
+          "1872-7069"
+        ],
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": true,
+        "host_organization": "https://openalex.org/P4310320990",
+        "host_organization_name": "Elsevier BV",
+        "host_organization_lineage": [
+          "https://openalex.org/P4310320990"
+        ],
+        "host_organization_lineage_names": [
+          "Elsevier BV"
+        ],
+        "type": "journal"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "publishedVersion",
+      "is_accepted": true,
+      "is_published": true,
+      "raw_source_name": "Computer Networks",
+      "raw_type": "journal-article"
+    },
+    {
+      "id": "pmh:oai:reunir.unir.net:123456789/18265",
+      "is_oa": false,
+      "landing_page_url": "https://reunir.unir.net/handle/123456789/18265",
+      "pdf_url": null,
+      "source": {
+        "id": "https://openalex.org/S4306400329",
+        "display_name": "Re-Unir (International University of La Rioja)",
+        "issn_l": null,
+        "issn": null,
+        "is_oa": false,
+        "is_in_doaj": false,
+        "is_core": false,
+        "host_organization": null,
+        "host_organization_name": null,
+        "host_organization_lineage": [],
+        "host_organization_lineage_names": [],
+        "type": "repository"
+      },
+      "license": null,
+      "license_id": null,
+      "version": "submittedVersion",
+      "is_accepted": false,
+      "is_published": false,
+      "raw_source_name": null,
+      "raw_type": "article"
+    }
+  ],
+  "best_oa_location": null,
+  "sustainable_development_goals": [],
+  "awards": [
+    {
+      "id": "https://openalex.org/G2159430961",
+      "display_name": null,
+      "funder_award_id": "PP-2024-13",
+      "funder_id": "https://openalex.org/F4320317360",
+      "funder_display_name": "Universidad Internacional de La Rioja"
+    },
+    {
+      "id": "https://openalex.org/G3438142103",
+      "display_name": null,
+      "funder_award_id": "PTEP-20241026",
+      "funder_id": "https://openalex.org/F4320315062",
+      "funder_display_name": "Ministerio de Ciencia, Innovación y Universidades"
+    },
+    {
+      "id": "https://openalex.org/G8589583432",
+      "display_name": null,
+      "funder_award_id": "PTEP-20241026 - HERMESS",
+      "funder_id": "https://openalex.org/F4320315062",
+      "funder_display_name": "Ministerio de Ciencia, Innovación y Universidades"
+    }
+  ],
+  "funders": [
+    {
+      "id": "https://openalex.org/F4320315062",
+      "display_name": "Ministerio de Ciencia, Innovación y Universidades",
+      "ror": null
+    },
+    {
+      "id": "https://openalex.org/F4320317360",
+      "display_name": "Universidad Internacional de La Rioja",
+      "ror": "https://ror.org/029gnnp81"
+    }
+  ],
+  "has_content": {
+    "grobid_xml": false,
+    "pdf": false
+  },
+  "content_urls": null,
+  "referenced_works_count": 87,
+  "referenced_works": [
+    "https://openalex.org/W2939352300",
+    "https://openalex.org/W2999225332",
+    "https://openalex.org/W3023854532",
+    "https://openalex.org/W3046990722",
+    "https://openalex.org/W3111860558",
+    "https://openalex.org/W3156162801",
+    "https://openalex.org/W3158747922",
+    "https://openalex.org/W3193438927",
+    "https://openalex.org/W4205557186",
+    "https://openalex.org/W4214582117",
+    "https://openalex.org/W4229015641",
+    "https://openalex.org/W4283726888",
+    "https://openalex.org/W4293660993",
+    "https://openalex.org/W4293661231",
+    "https://openalex.org/W4295308199",
+    "https://openalex.org/W4296620249",
+    "https://openalex.org/W4297423547",
+    "https://openalex.org/W4297895220",
+    "https://openalex.org/W4309830136",
+    "https://openalex.org/W4313575208",
+    "https://openalex.org/W4321065803",
+    "https://openalex.org/W4377139370",
+    "https://openalex.org/W4378373499",
+    "https://openalex.org/W4378907074",
+    "https://openalex.org/W4381233082",
+    "https://openalex.org/W4381989604",
+    "https://openalex.org/W4384298251",
+    "https://openalex.org/W4386245296",
+    "https://openalex.org/W4387454334",
+    "https://openalex.org/W4387805957",
+    "https://openalex.org/W4388078767",
+    "https://openalex.org/W4388098863",
+    "https://openalex.org/W4388667640",
+    "https://openalex.org/W4388733910",
+    "https://openalex.org/W4388735143",
+    "https://openalex.org/W4388996514",
+    "https://openalex.org/W4390681988",
+    "https://openalex.org/W4390917943",
+    "https://openalex.org/W4391384285",
+    "https://openalex.org/W4391843562",
+    "https://openalex.org/W4392358104",
+    "https://openalex.org/W4392644225",
+    "https://openalex.org/W4392939609",
+    "https://openalex.org/W4393901782",
+    "https://openalex.org/W4394595049",
+    "https://openalex.org/W4396552442",
+    "https://openalex.org/W4396667486",
+    "https://openalex.org/W4399044127",
+    "https://openalex.org/W4400188061",
+    "https://openalex.org/W4400976492",
+    "https://openalex.org/W4402523171",
+    "https://openalex.org/W4402924947",
+    "https://openalex.org/W4403139669",
+    "https://openalex.org/W4403336266",
+    "https://openalex.org/W4403491489",
+    "https://openalex.org/W4403583637",
+    "https://openalex.org/W4404037083",
+    "https://openalex.org/W4405810589",
+    "https://openalex.org/W4405907128",
+    "https://openalex.org/W4405912044",
+    "https://openalex.org/W4406458261",
+    "https://openalex.org/W4406729617",
+    "https://openalex.org/W4406829679",
+    "https://openalex.org/W4407694314",
+    "https://openalex.org/W4407704065",
+    "https://openalex.org/W4408437795",
+    "https://openalex.org/W4408777640",
+    "https://openalex.org/W4409133943",
+    "https://openalex.org/W4410417345",
+    "https://openalex.org/W4412482426",
+    "https://openalex.org/W4412722626",
+    "https://openalex.org/W6775741251",
+    "https://openalex.org/W6795044976",
+    "https://openalex.org/W6804809874",
+    "https://openalex.org/W6856162499",
+    "https://openalex.org/W6860369807",
+    "https://openalex.org/W6861009577",
+    "https://openalex.org/W6864347225",
+    "https://openalex.org/W6868994347",
+    "https://openalex.org/W6870799475",
+    "https://openalex.org/W6872604832",
+    "https://openalex.org/W6872874851",
+    "https://openalex.org/W6874182452",
+    "https://openalex.org/W6876378038",
+    "https://openalex.org/W6877680918",
+    "https://openalex.org/W6880787966",
+    "https://openalex.org/W6881700219"
+  ],
+  "related_works": [
+    "https://openalex.org/W4245926026",
+    "https://openalex.org/W4311097251",
+    "https://openalex.org/W2586548817",
+    "https://openalex.org/W2625093826",
+    "https://openalex.org/W4410295802",
+    "https://openalex.org/W4200598720",
+    "https://openalex.org/W2921026492",
+    "https://openalex.org/W4247463117",
+    "https://openalex.org/W4361251261",
+    "https://openalex.org/W3031181660"
+  ],
+  "abstract_inverted_index": null,
+  "counts_by_year": [
+    {
+      "year": 2026,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2025,
+      "cited_by_count": 2
+    }
+  ],
+  "updated_date": "2026-03-27T05:58:40.876381",
+  "created_date": "2025-10-10T00:00:00"
+}

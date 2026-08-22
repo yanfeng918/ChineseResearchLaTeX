@@ -1,0 +1,29 @@
+{
+  "paperId": "e30449d98b48d1eb6254fb9965f8a91124522db2",
+  "title": "Semantic Communication Enabling Robust Edge Intelligence for Time-Critical IoT Applications",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2211.13787",
+    "status": "GOLD",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.13787, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2192517026",
+      "name": "Andrea Cavagn"
+    },
+    {
+      "authorId": "2143500908",
+      "name": "Nana Li"
+    },
+    {
+      "authorId": "2080027118",
+      "name": "A. Iosifidis"
+    },
+    {
+      "authorId": "47835189",
+      "name": "Qi Zhang"
+    }
+  ],
+  "abstract": "This paper aims to design robust Edge Intelligence using semantic communication for time-critical IoT applications. We systematically analyze the effect of image DCT coefficients on inference accuracy and propose the channel-agnostic effectiveness encoding for offloading by transmitting the most meaningful task data first. This scheme can well utilize all available communication resource and strike a balance between transmission latency and inference accuracy. Then, we design an effectiveness decoding by implementing a novel image augmentation process for convolutional neural network (CNN) training, through which an original CNN model is transformed into a Robust CNN model. We use the proposed training method to generate Robust MobileNet-v2 and Robust ResNet-50. The proposed Edge Intelligence framework consists of the proposed effectiveness encoding and effectiveness decoding. The experimental results show that the effectiveness decoding using the Robust CNN models perform consistently better under various image distortions caused by channel errors or limited communication resource. The proposed Edge Intelligence framework using semantic communication significantly outperforms the conventional approach under latency and data rate constraints, in particular, under ultra stringent deadlines and low data rate."
+}

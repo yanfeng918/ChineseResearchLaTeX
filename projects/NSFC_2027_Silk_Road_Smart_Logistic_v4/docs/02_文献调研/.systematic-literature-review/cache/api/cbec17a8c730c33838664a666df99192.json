@@ -1,0 +1,439 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ],
+      "date-time": "2026-07-02T15:48:59Z",
+      "timestamp": 1783007339773,
+      "version": "3.54.5"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 30,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              12
+            ]
+          ],
+          "date-time": "2023-11-12T00:00:00Z",
+          "timestamp": 1699747200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1145/3628353.3628545",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          16
+        ]
+      ],
+      "date-time": "2023-11-16T18:13:01Z",
+      "timestamp": 1700158381000
+    },
+    "page": "65-71",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": [
+      "Energy-Aware Adaptive Sampling for Self-Sustainability in Resource-Constrained IoT Devices"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-1106-3472",
+        "authenticated-orcid": false,
+        "given": "Marco",
+        "family": "Giordano",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "D-ITET, ETH Zürich, Zürich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2642-0797",
+        "authenticated-orcid": false,
+        "given": "Silvano",
+        "family": "Cortesi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "D-ITET, ETH Zürich, Zürich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0616-0657",
+        "authenticated-orcid": false,
+        "given": "Prodromos-Vasileios",
+        "family": "Mekikis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hilti Corporation, Schaan, Liechtenstein"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4308-2432",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Crabolu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hilti Corporation, Schaan, Liechtenstein"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5514-2503",
+        "authenticated-orcid": false,
+        "given": "Giovanni",
+        "family": "Bellusci",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hilti Corporation, Schaan, Liechtenstein"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0368-8923",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Magno",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "D-ITET, ETH Zürich, Zürich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_1_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3317679"
+      },
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.proeng.2015.08.980"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SENSORCOMM.2010.95"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCAD.2016.2547919"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ethan Blanton Dr. Vern Paxson and Mark Allman. 2009. TCP Congestion Control. RFC 5681. https://doi.org/10.17487/RFC5681",
+        "DOI": "10.17487/RFC5681"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "unstructured": "Greg Brockman Vicki Cheung Ludwig Pettersson Jonas Schneider John Schulman Jie Tang and Wojciech Zaremba. 2016. OpenAI Gym. arXiv:arXiv:1606.01540"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/DCOSS.2015.9"
+      },
+      {
+        "key": "e_1_3_2_1_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MECO52532.2021.9460139"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "unstructured": "Marco Gianfreda Marco Miozzo and Michele Rossi. 2014. SolarStat: modeling photovoltaic sources through stochastic Markov processes. https://www.dei.unipd.it/~rossi/Software/Sensors/SolarStat.zip"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Marco Giordano Silvano Cortesi Michele Crabolu Lavinia Pedrollo Giovanni Bellusci Tommaso Bendinelli Engin Türetken Andrea Dunbar and Michele Magno. 2023. Optimizing Iot-Based Asset and Utilization Tracking: Efficient Activity Classification With Minirocket on Resource-Constrained Devices. https://doi.org/10.48550/ARXIV.2310.14758 arXiv:2310.14758 [eess.SP]",
+        "DOI": "10.48550/ARXIV.2310.14758"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3401025.3403777"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "volume-title": "38th European Photovoltaic Solar Energy Conference and Exhibition (PVSEC). EU PVSEC, Online, EU, 907--911",
+        "author": "Gracio Amillo A.M.",
+        "unstructured": "A.M. Gracio Amillo, N. Taylor, A.M. Martinez, E.D. Dunlop, P. Mavrogiorgios, F. Fahl, G. Arcaro, and I. Pinedo. 2021. Adapting PVGIS to trends in climate, technology and user needs. In 38th European Photovoltaic Solar Energy Conference and Exhibition (PVSEC). EU PVSEC, Online, EU, 907--911."
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICECS202256217.2022.9971120"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "unstructured": "Texas Instruments. 2018. https://docs.rs-online.com/3934/A700000006811369.pdf. https://docs.rs-online.com/3934/A700000006811369.pdf"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3576842.3582388"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDSC.2009.5289358"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.enconman.2022.116335"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2018.2794963"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.23919/date56975.2023.10137108"
+      },
+      {
+        "key": "e_1_3_2_1_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ENERGYCON.2014.6850501"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4108/eai.11-6-2019.160835"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leonardo C. Monteiro Flavia C. Delicato Luci Pirmez Paulo F. Pires and Claudio Miceli. 2017. DPCAS: Data Prediction with Cubic Adaptive Sampling for Wireless Sensor Networks. In Green Pervasive and Cloud Computing Man Ho Allen Au Arcangelo Castiglione Kim-Kwang Raymond Choo Francesco Palmieri and Kuan-Ching Li (Eds.). Springer International Publishing Cham 353--368.",
+        "DOI": "10.1007/978-3-319-57186-7_27"
+      },
+      {
+        "key": "e_1_3_2_1_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/DATE.2007.364689"
+      },
+      {
+        "key": "e_1_3_2_1_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/iwasi.2015.7184943"
+      },
+      {
+        "key": "e_1_3_2_1_25_1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "John Nagle. 1984. Congestion Control in IP/TCP Internetworks. RFC 896. https://doi.org/10.17487/RFC0896",
+        "DOI": "10.17487/RFC0896"
+      },
+      {
+        "key": "e_1_3_2_1_26_1",
+        "volume-title": "Computer Performance Engineering",
+        "author": "Politaki Dimitra",
+        "unstructured": "Dimitra Politaki and Sara Alouf. 2017. Stochastic Models for Solar Power. In Computer Performance Engineering, Philipp Reinecke and Antinisca Di Marco (Eds.). Springer International Publishing, Cham, 282--297."
+      },
+      {
+        "key": "e_1_3_2_1_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.54060/jmss.v2i2.21"
+      },
+      {
+        "key": "e_1_3_2_1_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3485730.3493358"
+      },
+      {
+        "key": "e_1_3_2_1_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SAS.2015.7133582"
+      },
+      {
+        "key": "e_1_3_2_1_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7873/DATE.2013.190"
+      }
+    ],
+    "event": {
+      "name": "SenSys '23: The 21st ACM Conference on Embedded Networked Sensor Systems",
+      "location": "Istanbul Turkiye",
+      "acronym": "SenSys '23",
+      "sponsor": [
+        "SIGMETRICS ACM Special Interest Group on Measurement and Evaluation",
+        "SIGMOBILE ACM Special Interest Group on Mobility of Systems, Users, Data and Computing",
+        "SIGOPS ACM Special Interest Group on Operating Systems",
+        "SIGBED ACM Special Interest Group on Embedded Systems",
+        "SIGARCH ACM Special Interest Group on Computer Architecture"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 11th International Workshop on Energy Harvesting &amp; Energy-Neutral Sensing Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/3628353.3628545",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/3628353.3628545",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2025-08-23T18:16:49Z",
+      "timestamp": 1755973009000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/3628353.3628545"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          12
+        ]
+      ]
+    },
+    "references-count": 30,
+    "alternative-id": [
+      "10.1145/3628353.3628545",
+      "10.1145/3628353"
+    ],
+    "URL": "https://doi.org/10.1145/3628353.3628545",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2023-11-16",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

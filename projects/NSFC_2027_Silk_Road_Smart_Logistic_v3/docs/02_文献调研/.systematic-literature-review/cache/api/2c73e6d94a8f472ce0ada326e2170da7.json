@@ -1,0 +1,33 @@
+{
+  "paperId": "b249fe4e5e2bada6655ce5d61e7f50da5d471cb4",
+  "title": "Domain Generalization: A Survey",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2103.02503",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2103.02503, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "9368124",
+      "name": "Kaiyang Zhou"
+    },
+    {
+      "authorId": "2117940996",
+      "name": "Ziwei Liu"
+    },
+    {
+      "authorId": "143970608",
+      "name": "Y. Qiao"
+    },
+    {
+      "authorId": "145406421",
+      "name": "T. Xiang"
+    },
+    {
+      "authorId": "1717179",
+      "name": "Chen Change Loy"
+    }
+  ],
+  "abstract": "Generalization to out-of-distribution (OOD) data is a capability natural to humans yet challenging for machines to reproduce. This is because most learning algorithms strongly rely on the i.i.d. assumption on source/target data, which is often violated in practice due to domain shift. Domain generalization (DG) aims to achieve OOD generalization by using only source data for model learning. Over the last ten years, research in DG has made great progress, leading to a broad spectrum of methodologies, e.g., those based on domain alignment, meta-learning, data augmentation, or ensemble learning, to name a few; DG has also been studied in various application areas including computer vision, speech recognition, natural language processing, medical imaging, and reinforcement learning. In this paper, for the first time a comprehensive literature review in DG is provided to summarize the developments over the past decade. Specifically, we first cover the background by formally defining DG and relating it to other relevant fields like domain adaptation and transfer learning. Then, we conduct a thorough review into existing methods and theories. Finally, we conclude this survey with insights and discussions on future research directions."
+}

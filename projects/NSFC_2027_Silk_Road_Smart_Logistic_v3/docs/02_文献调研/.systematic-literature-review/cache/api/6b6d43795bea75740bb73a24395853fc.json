@@ -1,0 +1,37 @@
+{
+  "paperId": "7ec86c2650551a1ba722d62bd05f642d7c3c95a5",
+  "title": "Industrial internet of things and unsupervised deep learning enabled real-time occupational safety monitoring in cold storage warehouse",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ssci.2022.105766?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ssci.2022.105766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "1874350",
+      "name": "Xuegang Zhan"
+    },
+    {
+      "authorId": "2118255505",
+      "name": "Wei Wu"
+    },
+    {
+      "authorId": "144779855",
+      "name": "Leidi Shen"
+    },
+    {
+      "authorId": "98391364",
+      "name": "Wan-Huey Liao"
+    },
+    {
+      "authorId": "48633991",
+      "name": "Zhiheng Zhao"
+    },
+    {
+      "authorId": "2160821692",
+      "name": "Jing Xia"
+    }
+  ],
+  "abstract": null
+}

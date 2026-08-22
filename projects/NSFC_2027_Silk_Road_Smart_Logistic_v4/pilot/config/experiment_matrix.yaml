@@ -1,0 +1,172 @@
+schema_version: "1.0"
+matrix_status: "planned"
+scientific_scope:
+  primary: ["C1_three_clock_identification", "C2_set_conditional_evidence_value"]
+  optional: ["H3a_local_warehouse_calibration"]
+  excluded_until_gate: ["H3b_transport_warehouse_memory"]
+
+analysis_unit:
+  primary_unit: "independent_controlled_run_or_entity_session"
+  grouped_derivatives:
+    - "windows"
+    - "frames"
+    - "augmentations"
+    - "network_replays"
+    - "compression_variants"
+  operational_minimum_per_scenario:
+    dry_run: 5
+    pilot_estimation: 12
+  note: "These are execution lower bounds for feasibility and variance estimation, not a confirmatory power calculation."
+
+data_split:
+  grouping_key: "entity_id"
+  development_fraction: 0.50
+  calibration_fraction: 0.25
+  locked_evaluation_fraction: 0.25
+  stratify_by: ["scenario_id"]
+  prohibition: "No entity, mother stream, near-duplicate frame, or replay derivative may cross splits."
+
+scenarios:
+  - id: "S0"
+    event_type: "normal"
+  - id: "S1"
+    event_type: "controlled_tilt_proxy"
+  - id: "S2"
+    event_type: "controlled_opening_or_light_proxy"
+  - id: "S3"
+    event_type: "controlled_appearance_change_proxy"
+
+mother_stream:
+  policy_id: "FULL-REF"
+  requirements:
+    - "local_high_reliability_capture"
+    - "event_sample_arrival_clocks"
+    - "sample_sequence_number"
+    - "quality_and_health_anchors"
+    - "immutable_raw_payload"
+    - "sha256_manifest"
+  derived_data_only: "Observation missingness and delayed arrival are generated outside the immutable raw layer."
+
+c1_observation_mechanisms:
+  - id: "O0"
+    name: "complete_reference"
+  - id: "O1"
+    name: "fixed_period_low_sampling"
+  - id: "O2"
+    name: "state_or_resource_dependent_sampling"
+  - id: "O3"
+    name: "network_delay_and_loss_only"
+  - id: "O4"
+    name: "joint_informative_sampling_and_delayed_arrival"
+  - id: "O5"
+    name: "anchor_or_support_violation_negative_control"
+
+c1_methods:
+  - id: "B0"
+    name: "matched_masked_continuous_time_baseline"
+  - id: "B1"
+    name: "one_clock_ablation"
+  - id: "B2"
+    name: "merge_not_sampled_and_not_arrived_ablation"
+  - id: "M1"
+    name: "three_clock_sensitivity_interval_and_abstention"
+
+c1_metrics:
+  primary: "group_balanced_time_dependent_brier_score"
+  secondary:
+    - "calibration_error"
+    - "sensitivity_interval_coverage"
+    - "mean_interval_width"
+    - "selective_risk_coverage"
+    - "abstention_rate"
+    - "event_time_error"
+
+c1_sensitivity:
+  gamma_grid: [1.0, 1.25, 1.5, 2.0]
+  status: "provisional_freeze_before_locked_evaluation"
+  interpretation: "Gamma is a selection-odds sensitivity axis, not a fitted performance hyperparameter."
+
+c2_action_space:
+  acquisition_encoding:
+    - "full_reference"
+    - "fixed_period"
+    - "event_triggered"
+    - "guarded_downsample_or_compress"
+  cache_transport:
+    - "enqueue"
+    - "priority_class"
+    - "chunk"
+    - "retry"
+    - "resume"
+    - "minimum_local_alert"
+  hard_invariants:
+    - "no_silent_drop_of_protected_raw_evidence"
+    - "chunk_hash_consistency"
+    - "idempotent_resume_state"
+    - "no_compression_below_frozen_fidelity_floor"
+
+c2_methods:
+  - id: "FIFO"
+    name: "first_in_first_out"
+  - id: "EDF"
+    name: "earliest_deadline_first"
+  - id: "PAV"
+    name: "packetwise_additive_value"
+  - id: "M2"
+    name: "set_conditional_value_lcb_with_safety_barrier"
+
+c2_replay:
+  frozen_event_predictor_required: true
+  predictor_rule: "The event predictor and its threshold are frozen before policy comparison."
+  network_profiles: ["W0", "W1", "W2", "W3", "W4"]
+  random_seeds: [1101, 2202, 3303]
+  provisional_decision_deadlines_s: [5, 30, 120]
+  deadline_status: "freeze_after_dry_run_before_locked_evaluation"
+  pairing_keys:
+    - "mother_stream_id"
+    - "network_profile_id"
+    - "seed"
+    - "resource_initial_state"
+    - "decision_deadline_s"
+  support_rule: "Observational off-policy results require logged behavior propensities and overlap diagnostics; otherwise report controlled replay only."
+
+c2_metrics:
+  primary: "entity_and_opportunity_normalized_deadline_weighted_miss_risk"
+  secondary:
+    - "on_time_complete_delivery_rate"
+    - "communication_bytes"
+    - "buffer_overflow_count"
+    - "latency_p50_p95_p99"
+    - "retry_bytes"
+    - "protected_raw_evidence_retention"
+    - "protocol_hard_violation_count"
+    - "energy_value_with_source_flag"
+
+h3a_optional:
+  minimum_modalities:
+    - "temperature_humidity_if_available"
+    - "door_or_light_state_proxy"
+    - "fixed_view_image_if_available"
+  stressors:
+    - "time_shift"
+    - "sensor_offset"
+    - "single_modality_offline"
+  methods:
+    - "rule_threshold"
+    - "uncalibrated_matched_model"
+    - "posthoc_calibration"
+    - "rolling_recalibration"
+    - "selective_prediction_at_matched_coverage"
+  prohibition: "Do not infer or simulate H3b entity-level transport-to-warehouse pairing."
+
+freeze_before_locked_evaluation:
+  - "event_operational_definitions"
+  - "time_alignment_tolerance"
+  - "network_profiles"
+  - "random_seeds"
+  - "data_split"
+  - "model_capacity_and_training_budget"
+  - "decision_deadlines"
+  - "primary_and_secondary_metrics"
+  - "fidelity_floor"
+  - "statistical_analysis"

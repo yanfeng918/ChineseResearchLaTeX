@@ -1,0 +1,37 @@
+{
+  "paperId": "a20d42fe6450919645f8fad8eca757f748b9a878",
+  "title": "Multimodal Industrial Anomaly Detection via Hybrid Fusion",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/2303.00601",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.00601, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": null,
+      "name": "Yue Wang"
+    },
+    {
+      "authorId": "2122806600",
+      "name": "Jinlong Peng"
+    },
+    {
+      "authorId": "73329364",
+      "name": "Jiangning Zhang"
+    },
+    {
+      "authorId": "2210185130",
+      "name": "Ran Yi"
+    },
+    {
+      "authorId": "2628601",
+      "name": "Yabiao Wang"
+    },
+    {
+      "authorId": "2238285797",
+      "name": "Chengjie Wang"
+    }
+  ],
+  "abstract": "2D-based Industrial Anomaly Detection has been widely discussed, however, multimodal industrial anomaly detection based on 3D point clouds and RGB images still has many untouched fields. Existing multimodal industrial anomaly detection methods directly concatenate the multimodal features, which leads to a strong disturbance between features and harms the detection performance. In this paper, we propose Multi-3D-Memory (M3DM), a novel multimodal anomaly detection method with hybrid fusion scheme: firstly, we design an unsupervised feature fusion with patch-wise contrastive learning to encourage the interaction of different modal features; secondly, we use a decision layer fusion with multiple memory banks to avoid loss of information and additional novelty classifiers to make the final decision. We further propose a point feature alignment operation to better align the point cloud and RGB features. Extensive experiments show that our multi-modal industrial anomaly detection model outperforms the state-of-the-art (SOTA) methods on both detection and segmentation precision on MVTec-3D AD dataset. Code at github.com/nomewang/M3DM."
+}

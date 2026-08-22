@@ -1,0 +1,21 @@
+{
+  "paperId": "0a1fed4b53af009421e1e21a73e9799addd4cb3a",
+  "title": "Resource-aware in-edge distributed real-time deep learning",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.iot.2024.101263?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.iot.2024.101263, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "33600248",
+      "name": "Amin Yoosefi"
+    },
+    {
+      "authorId": "2330302684",
+      "name": "Mehdi Kargahi"
+    }
+  ],
+  "abstract": null
+}

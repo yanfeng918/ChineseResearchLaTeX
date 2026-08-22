@@ -1,0 +1,190 @@
+{
+  "version": "v1",
+  "entries": {
+    "50bc4d91b7b7336bb3fd77a5154a927f": {
+      "timestamp": "2026-08-18T22:04:46.272595",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "c4c99fda0e081d3ad394339510eed3bf": {
+      "timestamp": "2026-08-18T22:04:59.536230",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "9423c9e9d68db0a7c7314b8cc2026043": {
+      "timestamp": "2026-08-18T22:05:05.857958",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "params": true
+    },
+    "05b5c9820c1b98b64ca91dc2758ce13b": {
+      "timestamp": "2026-08-18T22:05:19.166400",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "cf235508b230cacc63eacf21dd1c54ac": {
+      "timestamp": "2026-08-18T22:05:23.895577",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "params": true
+    },
+    "d2577420f1c960f446d65d467b8c1b36": {
+      "timestamp": "2026-08-18T22:05:31.900410",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "params": true
+    },
+    "8bfb4c8c080f94ba1b2eb2d56027dead": {
+      "timestamp": "2026-08-18T22:05:45.653139",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "24bdf6eba8405b15b3e4ac1f0e660d1d": {
+      "timestamp": "2026-08-18T22:05:52.691520",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "params": true
+    },
+    "b4c4120092f884ecfdf57c5fef00d731": {
+      "timestamp": "2026-08-18T22:06:06.039327",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "128054c141f861e811106cbf552fbc87": {
+      "timestamp": "2026-08-18T22:06:18.761570",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search",
+      "params": true
+    },
+    "bf171fb27d99917216130f0e3896875e": {
+      "timestamp": "2026-08-18T22:06:31.955870",
+      "url": "https://api.crossref.org/works",
+      "params": true
+    },
+    "258c55026790652249b6a39bf186b681": {
+      "timestamp": "2026-08-18T22:12:56.008604",
+      "url": "https://api.crossref.org/works/10.1109/iccworkshops59551.2024.10615907",
+      "params": false
+    },
+    "4bbb35fc20f669558e73f8d51cdc624d": {
+      "timestamp": "2026-08-18T22:12:56.228407",
+      "url": "https://api.crossref.org/works/10.1109/iccv51070.2023.02013",
+      "params": false
+    },
+    "ec82d1922386b506bd4c9bbc827bdbf9": {
+      "timestamp": "2026-08-18T22:12:56.401475",
+      "url": "https://api.crossref.org/works/10.1145/3447548.3467174",
+      "params": false
+    },
+    "b6510ada73e455b991111c9632351f9d": {
+      "timestamp": "2026-08-18T22:12:56.654750",
+      "url": "https://api.crossref.org/works/10.1145/3551626.3564965",
+      "params": false
+    },
+    "36b760b9bf5d02598b09eb52736baf13": {
+      "timestamp": "2026-08-18T22:12:56.740289",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/mcom.001.2300155?fields=abstract",
+      "params": false
+    },
+    "6cf0259c2cb217390e8bf3bf8436fd32": {
+      "timestamp": "2026-08-18T22:12:56.754432",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/iccv51070.2023.02013?fields=abstract",
+      "params": false
+    },
+    "c170fe0be9800caa39fdaa45409cff84": {
+      "timestamp": "2026-08-18T22:12:56.959377",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/iccworkshops59551.2024.10615907?fields=ab",
+      "params": false
+    },
+    "fa36ef04c5aa4375810b5ade88ad68c0": {
+      "timestamp": "2026-08-18T22:12:57.379015",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3447548.3467174?fields=abstract",
+      "params": false
+    },
+    "cbec17a8c730c33838664a666df99192": {
+      "timestamp": "2026-08-18T22:12:57.624453",
+      "url": "https://api.crossref.org/works/10.1145/3628353.3628545",
+      "params": false
+    },
+    "22a7ee63e8347473224becc6c675b836": {
+      "timestamp": "2026-08-18T22:12:57.626642",
+      "url": "https://api.crossref.org/works/10.1007/s11063-022-11015-0",
+      "params": false
+    },
+    "6032ae1cf1ea694af714d37984ddb7a7": {
+      "timestamp": "2026-08-18T22:12:57.652218",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3551626.3564965?fields=abstract",
+      "params": false
+    },
+    "a0f99fbac02b50ba80302a60ef55ebd2": {
+      "timestamp": "2026-08-18T22:12:58.294912",
+      "url": "https://api.crossref.org/works/10.23919/jcc.fa.2024-0024.202407",
+      "params": false
+    },
+    "c2efefc82ac36d229ef428be2cfb4b7d": {
+      "timestamp": "2026-08-18T22:12:58.345614",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s11063-022-11015-0?fields=abstract",
+      "params": false
+    },
+    "47a5aa1758b8053adbc0129fb16bb784": {
+      "timestamp": "2026-08-18T22:12:58.612067",
+      "url": "https://api.crossref.org/works/10.1109/wcnc55385.2023.10118916",
+      "params": false
+    },
+    "35b37d1b8e1ab7b78ad777a59c2160e6": {
+      "timestamp": "2026-08-18T22:12:58.656359",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3628353.3628545?fields=abstract",
+      "params": false
+    },
+    "3fc38220894974cc366336ed9cfc5084": {
+      "timestamp": "2026-08-18T22:12:58.893188",
+      "url": "https://api.crossref.org/works/10.1109/swc62898.2024.00091",
+      "params": false
+    },
+    "163a9b1cd3e365076b7ae45d19af4cb1": {
+      "timestamp": "2026-08-18T22:12:59.347606",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=10.1007%2Fs11063-022-11015",
+      "params": false
+    },
+    "b5e002a36cb77ba4d4cd7a0390a8d06e": {
+      "timestamp": "2026-08-18T22:12:59.381210",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/wcnc55385.2023.10118916?fields=abstract",
+      "params": false
+    },
+    "6664bad5bf234665fd6ad0037efa61aa": {
+      "timestamp": "2026-08-18T22:12:59.405752",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/swc62898.2024.00091?fields=abstract",
+      "params": false
+    },
+    "9cd22cd8e41397e92bfc72b4e2520191": {
+      "timestamp": "2026-08-18T22:12:59.534882",
+      "url": "https://api.crossref.org/works/10.1109/icme59968.2025.11210144",
+      "params": false
+    },
+    "8a9967b8867901801aa71edde6961e3a": {
+      "timestamp": "2026-08-18T22:12:59.792146",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.23919/jcc.fa.2024-0024.202407?fields=abstract",
+      "params": false
+    },
+    "0d8958e206c1e96db9b7468894c623f0": {
+      "timestamp": "2026-08-18T22:13:00.081737",
+      "url": "https://api.crossref.org/works/10.1109/icbda65366.2025.11211409",
+      "params": false
+    },
+    "c172e716449019e6d33276fe44672411": {
+      "timestamp": "2026-08-18T22:13:00.277721",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icme59968.2025.11210144?fields=abstract",
+      "params": false
+    },
+    "d89da91875f3257a134397e8b2f37e82": {
+      "timestamp": "2026-08-18T22:13:00.617336",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icbda65366.2025.11211409?fields=abstract",
+      "params": false
+    },
+    "1a19a1b7a336596e916b6db3c1f06ebd": {
+      "timestamp": "2026-08-18T22:13:00.741289",
+      "url": "https://api.crossref.org/works/10.1109/jsen.2023.3339335",
+      "params": false
+    },
+    "27c1eb84d83708f6586ac5c08a58a119": {
+      "timestamp": "2026-08-18T22:13:01.647879",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/jsen.2023.3339335?fields=abstract",
+      "params": false
+    }
+  }
+}

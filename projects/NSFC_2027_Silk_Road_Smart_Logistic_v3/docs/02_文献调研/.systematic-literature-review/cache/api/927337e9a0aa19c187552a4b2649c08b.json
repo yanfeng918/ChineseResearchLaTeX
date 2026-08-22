@@ -1,0 +1,298 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          10
+        ]
+      ],
+      "date-time": "2026-08-10T15:28:29Z",
+      "timestamp": 1786375709102,
+      "version": "3.56.0"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 19,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2003,
+              8,
+              25
+            ]
+          ],
+          "date-time": "2003-08-25T00:00:00Z",
+          "timestamp": 1061769600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          25
+        ]
+      ]
+    },
+    "DOI": "10.1145/863955.863960",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          19
+        ]
+      ],
+      "date-time": "2004-04-19T17:18:43Z",
+      "timestamp": 1082395123000
+    },
+    "page": "27-34",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 982,
+    "title": [
+      "A delay-tolerant network architecture for challenged internets"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Kevin",
+        "family": "Fall",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Intel Research, Berkeley, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          25
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_1_2_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Border et. al. \"Performance Enhancing Proxies Intended to Mitigate Link-Related Degradations\" Internet RFC3135 June 2001.]]   Border et. al. \"Performance Enhancing Proxies Intended to Mitigate Link-Related Degradations\" Internet RFC3135 June 2001.]]",
+        "DOI": "10.17487/rfc3135"
+      },
+      {
+        "key": "e_1_3_2_1_3_1",
+        "unstructured": "V. Cerf et. al. \"Interplanetary Internet (IPN): Architectural Definition\" http://www.ipnsig.org/reports/memo-ipnrg-arch-00.pdf.]]  V. Cerf et. al. \"Interplanetary Internet (IPN): Architectural Definition\" http://www.ipnsig.org/reports/memo-ipnrg-arch-00.pdf.]]"
+      },
+      {
+        "key": "e_1_3_2_1_4_1",
+        "author": "Cerf V.",
+        "year": "1974",
+        "unstructured": "V. Cerf , R. Kahn , \" A Protocol for Packet Network Inter- communication\" , IEEE Trans. on Comm., COM-22(5) , May 1974 CFDP Protocol Specification, CCSDS 727.0-B-1, Jan 2002, http://www.ccsds.org.]] V. Cerf, R. Kahn, \"A Protocol for Packet Network Inter- communication\", IEEE Trans. on Comm., COM-22(5), May 1974 CFDP Protocol Specification, CCSDS 727.0-B-1, Jan 2002, http://www.ccsds.org.]]",
+        "journal-title": "IEEE Trans. on Comm., COM-22(5)"
+      },
+      {
+        "key": "e_1_3_2_1_5_1",
+        "unstructured": "CFDP Protocol Specification CCSDS 727.0-B-1 Jan 2002 http://www.ccsds.org]]  CFDP Protocol Specification CCSDS 727.0-B-1 Jan 2002 http://www.ccsds.org]]"
+      },
+      {
+        "key": "e_1_3_2_1_6_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "E. Chen J. Stewart \"A Framework for Inter-Domain Route Aggregation\" Internet RFC2519 Feb 1999.]]   E. Chen J. Stewart \"A Framework for Inter-Domain Route Aggregation\" Internet RFC2519 Feb 1999.]]",
+        "DOI": "10.17487/rfc2519"
+      },
+      {
+        "key": "e_1_3_2_1_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/52324.52336"
+      },
+      {
+        "key": "e_1_3_2_1_9_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "D. Feldmeier A. McAuley J. Smith D. Bakin W. Marcus T. Raleigh \"Protocol Boosters\" IEEE JSAC Apr 1998.]]  D. Feldmeier A. McAuley J. Smith D. Bakin W. Marcus T. Raleigh \"Protocol Boosters\" IEEE JSAC Apr 1998.]]",
+        "DOI": "10.1109/49.669053"
+      },
+      {
+        "key": "e_1_3_2_1_10_1",
+        "volume-title": "Proc. Usenix USITS",
+        "author": "Gritter M.",
+        "year": "2001",
+        "unstructured": "M. Gritter , D. Cheriton , \" An Architecture for Content Routing Support in the Internet \", Proc. Usenix USITS , March 2001 .]] M. Gritter, D. Cheriton, \"An Architecture for Content Routing Support in the Internet\", Proc. Usenix USITS, March 2001.]]"
+      },
+      {
+        "key": "e_1_3_2_1_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/502034.502049"
+      },
+      {
+        "key": "e_1_3_2_1_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/605397.605408"
+      },
+      {
+        "key": "e_1_3_2_1_13_1",
+        "volume-title": "Internet RFC",
+        "author": "Mealling M.",
+        "year": "2002",
+        "unstructured": "M. Mealling , R. Denenbers , eds., \"Report from the Joint W3C/IETF URI Planning Interest Group : Uniform Resource Identifiers (URIs), URLs, and Uniform Resource Names (URNs): Clarifications and Recommendations \", Internet RFC 3305, Aug 2002 .]] M. Mealling, R. Denenbers, eds., \"Report from the Joint W3C/IETF URI Planning Interest Group: Uniform Resource Identifiers (URIs), URLs, and Uniform Resource Names (URNs): Clarifications and Recommendations\", Internet RFC 3305, Aug 2002.]]"
+      },
+      {
+        "key": "e_1_3_2_1_14_1",
+        "volume-title": "Internet RFC1305",
+        "author": "Mills D.",
+        "year": "1992",
+        "unstructured": "D. Mills , \" Network Time Protocol (Version 3) Specification , Implementation and Analysis \", Internet RFC1305 , Mar 1992 .]] D. Mills, \"Network Time Protocol (Version 3) Specification, Implementation and Analysis\", Internet RFC1305, Mar 1992.]]"
+      },
+      {
+        "key": "e_1_3_2_1_15_1",
+        "unstructured": "D. Mills H. Nair \"Timekeeping in the Interplanetary Internet\" in progress http//:www.eecis.udel.edu/ mills/ipin.html.]]  D. Mills H. Nair \"Timekeeping in the Interplanetary Internet\" in progress http//:www.eecis.udel.edu/ mills/ipin.html.]]"
+      },
+      {
+        "key": "e_1_3_2_1_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/357401.357402"
+      },
+      {
+        "key": "e_1_3_2_1_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SNPA.2003.1203354"
+      },
+      {
+        "key": "e_1_3_2_1_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/570681.570685"
+      },
+      {
+        "key": "e_1_3_2_1_19_1",
+        "volume-title": "Report",
+        "author": "Sterbenz J.",
+        "year": "2002",
+        "unstructured": "J. Sterbenz , T. Saxena , R. Krishnan , \" Latency-Aware Information Access with User-Directed Fetch Behaviour for Weakly-Connected Mobile Wireless Clients\", BBN Tech . Report 8340, May 2002 .]] J. Sterbenz, T. Saxena, R. Krishnan, \"Latency-Aware Information Access with User-Directed Fetch Behaviour for Weakly-Connected Mobile Wireless Clients\", BBN Tech. Report 8340, May 2002.]]"
+      },
+      {
+        "key": "e_1_3_2_1_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/319151.319164"
+      },
+      {
+        "key": "e_1_3_2_1_22_1",
+        "volume-title": "Workshop on Research Directions for the Next Generation Internet\"",
+        "author": "Wroclawski J.",
+        "year": "1997",
+        "unstructured": "J. Wroclawski , \" The MetaNet : White Paper \", Workshop on Research Directions for the Next Generation Internet\" , May 1997 , http://www.cra.org/Policy/NGI/papers/wroklawWP.]] J. Wroclawski, \"The MetaNet: White Paper\", Workshop on Research Directions for the Next Generation Internet\", May 1997, http://www.cra.org/Policy/NGI/papers/wroklawWP.]]"
+      }
+    ],
+    "event": {
+      "name": "SIGCOMM03: Applications, Technologies, Architectures, and Protocols for Computer Communications",
+      "location": "Karlsruhe Germany",
+      "acronym": "SIGCOMM03",
+      "sponsor": [
+        "SIGCOMM ACM Special Interest Group on Data Communication",
+        "ACM Association for Computing Machinery"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 2003 conference on Applications, technologies, architectures, and protocols for computer communications"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/863955.863960",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/863955.863960",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2025-06-18T17:43:25Z",
+      "timestamp": 1750268605000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/863955.863960"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          25
+        ]
+      ]
+    },
+    "references-count": 19,
+    "alternative-id": [
+      "10.1145/863955.863960",
+      "10.1145/863955"
+    ],
+    "URL": "https://doi.org/10.1145/863955.863960",
+    "relation": {},
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          25
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2003-08-25",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

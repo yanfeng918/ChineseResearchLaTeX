@@ -1,0 +1,21 @@
+{
+  "paperId": "e77a404aad19c1f7197a0dbf986822b3ac6b29ac",
+  "title": "EmbraceNet: A robust deep learning architecture for multimodal classification",
+  "openAccessPdf": {
+    "url": "https://arxiv.org/pdf/1904.09078",
+    "status": "GREEN",
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.09078, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "150140898",
+      "name": "Jun-Ho Choi"
+    },
+    {
+      "authorId": "2108780415",
+      "name": "Jong-Seok Lee"
+    }
+  ],
+  "abstract": "Classification using multimodal data arises in many machine learning applications. It is crucial not only to model cross-modal relationship effectively but also to ensure robustness against loss of part of data or modalities. In this paper, we propose a novel deep learning-based multimodal fusion architecture for classification tasks, which guarantees compatibility with any kind of learning models, deals with cross-modal information carefully, and prevents performance degradation due to partial absence of data. We employ two datasets for multimodal classification tasks, build models based on our architecture and other state-of-the-art models, and analyze their performance on various situations. The results show that our architecture outperforms the other multimodal fusion architectures when some parts of data are not available."
+}

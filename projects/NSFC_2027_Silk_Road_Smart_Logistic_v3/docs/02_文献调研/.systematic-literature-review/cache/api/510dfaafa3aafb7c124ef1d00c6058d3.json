@@ -1,0 +1,806 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2025-11-14T07:40:16Z",
+      "timestamp": 1763106016217,
+      "version": "3.37.3"
+    },
+    "reference-count": 63,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100006115",
+        "name": "Institute for Research in Fundamental Sciences",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100006115",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Internet of Things"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.iot.2024.101263",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2024-06-28T00:53:35Z",
+      "timestamp": 1719536015000
+    },
+    "page": "101263",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "special_numbering": "C",
+    "title": [
+      "Resource-aware in-edge distributed real-time deep learning"
+    ],
+    "prefix": "10.1016",
+    "volume": "27",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0601-4545",
+        "authenticated-orcid": false,
+        "given": "Amin",
+        "family": "Yoosefi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mehdi",
+        "family": "Kargahi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.iot.2024.101263_b1",
+        "unstructured": "A. Krizhevsky, I. Sutskever, G.E. Hinton, Imagenet classification with deep convolutional neural networks, in: Advances in Neural Information Processing Systems, NeurIPS, 2012."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.iot.2024.101263_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "6033",
+        "DOI": "10.1109/TWC.2022.3145399",
+        "article-title": "AI-driven blind signature classification for IoT connectivity: A deep learning approach",
+        "volume": "21",
+        "author": "Pan",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Wirel. Commun."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b3",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "11711",
+        "article-title": "MCUNet: Tiny deep learning on IoT devices",
+        "volume": "Vol. 33",
+        "author": "Lin",
+        "year": "2020"
+      },
+      {
+        "year": "2021",
+        "series-title": "MCUNetV2: Memory-efficient patch-based inference for tiny deep learning",
+        "author": "Lin",
+        "key": "10.1016/j.iot.2024.101263_b4"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b5",
+        "unstructured": "C. Banbury, et al., MicroNets: Neural network architectures for deploying TinyML applications on commodity microcontrollers, in: Proceedings of Machine Learning and Systems, MLSys, Vol. 3, 2021, pp. 1–16."
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.iot.2024.101263_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1253",
+        "DOI": "10.1109/TC.2021.3066883",
+        "article-title": "Dory: Automatic end-to-end deployment of real-world DNNs on low-cost IoT MCUs",
+        "volume": "70",
+        "author": "Burrello",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Comput."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b7",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "article-title": "Sparse: Sparse architecture search for CNNs on resource-constrained microcontrollers",
+        "volume": "Vol. 32",
+        "author": "Fedorov",
+        "year": "2019"
+      },
+      {
+        "year": "2019",
+        "series-title": "Neural networks on microcontrollers: Saving memory at inference via operator reordering",
+        "author": "Liberis",
+        "key": "10.1016/j.iot.2024.101263_b8"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b9",
+        "unstructured": "M. Rusci, A. Capotondi, L. Benini, Memory-driven mixed low-precision quantization for enabling deep network inference on microcontrollers, in: Proceedings of Machine Learning and Systems, MLSys, Vol. 2, 2020, pp. 326–335."
+      },
+      {
+        "year": "2016",
+        "series-title": "Training deep nets with sublinear memory cost",
+        "author": "Chen",
+        "key": "10.1016/j.iot.2024.101263_b10"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b11",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "289",
+        "article-title": "A causal view on robustness of neural networks",
+        "volume": "Vol. 33",
+        "author": "Zhang",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "X. Gao, R.K. Saha, M.R. Prasad, A. Roychoudhury, Fuzz testing based data augmentation to improve robustness of deep neural networks, in: Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering, 2020, pp. 1147–1158.",
+        "DOI": "10.1145/3377811.3380415"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b13",
+        "doi-asserted-by": "crossref",
+        "unstructured": "H. Yokoyama, S. Onoue, S. Kikuchi, Towards building robust DNN applications: An industrial case study of evolutionary data augmentation, in: Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering, 2020, pp. 1184–1188.",
+        "DOI": "10.1145/3324884.3421841"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "K. Pei, Y. Cao, J. Yang, S. Jana, DeepXplore: Automated whitebox testing of deep learning systems, in: Proceedings of the 26th Symposium on Operating Systems Principles, 2017, pp. 1–18.",
+        "DOI": "10.1145/3132747.3132785"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b15",
+        "article-title": "Understanding the fatal Tesla accident on autopilot and the Nhtsa Probe",
+        "volume": "1",
+        "author": "Lambert",
+        "year": "2016",
+        "journal-title": "Electrek"
+      },
+      {
+        "issue": "18",
+        "key": "10.1016/j.iot.2024.101263_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1587",
+        "DOI": "10.1002/wcm.1203",
+        "article-title": "A survey of mobile cloud computing: Architecture, applications, and approaches",
+        "volume": "13",
+        "author": "Dinh",
+        "year": "2013",
+        "journal-title": "Wirel. Commun. Mob. Comput."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.iot.2024.101263_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "637",
+        "DOI": "10.1109/JIOT.2016.2579198",
+        "article-title": "Edge computing: Vision and challenges",
+        "volume": "3",
+        "author": "Shi",
+        "year": "2016",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b18",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "article-title": "Large scale distributed deep networks",
+        "volume": "Vol. 25",
+        "author": "Dean",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b19",
+        "unstructured": "M. Wang, et al., Minerva: A scalable and highly efficient training platform for deep learning, in: NIPS Workshop, Distributed Machine Learning and Matrix Computations, 2014."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b20",
+        "unstructured": "T. Chilimbi, Y. Suzue, J. Apacible, K. Kalyanaraman, Project Adam: Building an efficient and scalable deep learning training system, in: 11th USENIX Symposium on Operating Systems Design and Implementation, 2014, pp. 571–582."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J.K. Kim, et al., STRADS: A distributed framework for scheduled model parallel machine learning, in: Proceedings of the Eleventh European Conference on Computer Systems, ACM, 2016, pp. 1–16.",
+        "DOI": "10.1145/2901318.2901331"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b22",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "article-title": "PyTorch: An imperative style, high-performance deep learning library",
+        "volume": "Vol. 32",
+        "author": "Paszke",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b23",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "article-title": "Gpipe: Efficient training of giant neural networks using pipeline parallelism",
+        "volume": "Vol. 32",
+        "author": "Huang",
+        "year": "2019"
+      },
+      {
+        "year": "2020",
+        "series-title": "TorchGpipe: On-the-fly pipeline parallelism for training giant models",
+        "author": "Kim",
+        "key": "10.1016/j.iot.2024.101263_b24"
+      },
+      {
+        "year": "2018",
+        "series-title": "PipeDream: Fast and efficient pipeline parallel DNN training",
+        "author": "Harlap",
+        "key": "10.1016/j.iot.2024.101263_b25"
+      },
+      {
+        "year": "2019",
+        "series-title": "XPipe: Efficient pipeline model parallelism for multi-GPU DNN training",
+        "author": "Guan",
+        "key": "10.1016/j.iot.2024.101263_b26"
+      },
+      {
+        "year": "2018",
+        "series-title": "Efficient and robust parallel DNN training through model parallelism on multi-GPU platform",
+        "author": "Chen",
+        "key": "10.1016/j.iot.2024.101263_b27"
+      },
+      {
+        "year": "2014",
+        "series-title": "One weird trick for parallelizing convolutional neural networks",
+        "author": "Krizhevsky",
+        "key": "10.1016/j.iot.2024.101263_b28"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b29",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "10414",
+        "article-title": "Mesh-TensorFlow: Deep learning for supercomputers",
+        "volume": "Vol. 31",
+        "author": "Shazeer",
+        "year": "2018"
+      },
+      {
+        "year": "2019",
+        "series-title": "Megatron-LM: Training multi-billion parameter language models using model parallelism",
+        "author": "Shoeybi",
+        "key": "10.1016/j.iot.2024.101263_b30"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b31",
+        "series-title": "International Conference on Machine Learning",
+        "first-page": "2279",
+        "article-title": "Exploring hidden dimensions in parallelizing convolutional neural networks",
+        "author": "Jia",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b32",
+        "unstructured": "Z. Jia, M. Zaharia, A. Aiken, Beyond data and model parallelism for deep neural networks, in: Proceedings of Machine Learning and Systems, MLSys, Vol. 1, 2019, pp. 1–13."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b33",
+        "series-title": "International Conference on Machine Learning",
+        "first-page": "2430",
+        "article-title": "Device placement optimization with reinforcement learning",
+        "author": "Mirhoseini",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Wang, C. Huang, J. Li, Supporting very large models using automatic dataflow graph partitioning, in: Proceedings of the Fourteenth EuroSys Conference 2019, 2019, pp. 1–17.",
+        "DOI": "10.1145/3302424.3303953"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b35",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "22941",
+        "article-title": "On-device training under 256kb memory",
+        "volume": "Vol. 35",
+        "author": "Lin",
+        "year": "2022"
+      },
+      {
+        "year": "2018",
+        "series-title": "Dynamic sparse graph for efficient deep learning",
+        "author": "Liu",
+        "key": "10.1016/j.iot.2024.101263_b36"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b37",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "article-title": "Training deep neural networks with 8-bit floating-point numbers",
+        "volume": "Vol. 31",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b38",
+        "series-title": "2021 IEEE International Joint Conference on Neural Networks",
+        "first-page": "1",
+        "article-title": "TinyOL: TinyML with online-learning on microcontrollers",
+        "author": "Ren",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b39",
+        "series-title": "Advances in Neural Information Processing Systems",
+        "first-page": "11285",
+        "article-title": "TinyTL: Reduce memory, not parameters for efficient on-device learning",
+        "volume": "Vol. 33",
+        "author": "Cai",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "L. Yang, A.S. Rakin, D. Fan, Rep-Net: Efficient on-device learning via feature reprogramming, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, CVPR, 2022, pp. 12277–12286.",
+        "DOI": "10.1109/CVPR52688.2022.01196"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1016/j.neucom.2012.09.038",
+        "article-title": "An online self-adaptive modular neural network for time-varying systems",
+        "volume": "125",
+        "author": "Qiao",
+        "year": "2014",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "185",
+        "DOI": "10.1016/j.isatra.2019.11.015",
+        "article-title": "A feature clustering-based adaptive modular neural network for nonlinear system modeling",
+        "volume": "100",
+        "author": "Li",
+        "year": "2020",
+        "journal-title": "ISA Trans."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101263_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "484",
+        "DOI": "10.1109/TSMCB.2003.817053",
+        "article-title": "An approach to online identification of Takagi-Sugeno fuzzy models",
+        "volume": "34",
+        "author": "Angelov",
+        "year": "2004",
+        "journal-title": "IEEE Trans. Syst. Man Cybern. B (Cybernetics)"
+      },
+      {
+        "year": "2013",
+        "series-title": "An Introduction to Statistical Learning",
+        "author": "James",
+        "key": "10.1016/j.iot.2024.101263_b44"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101263_b45",
+        "doi-asserted-by": "crossref",
+        "first-page": "1341",
+        "DOI": "10.1007/s11227-017-2177-5",
+        "article-title": "Theoretical peak FLOPS per instruction set: A tutorial",
+        "volume": "74",
+        "author": "Dolbeau",
+        "year": "2018",
+        "journal-title": "J. Supercomput."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b46",
+        "unstructured": "[link] URL https://en.wikichip.org/wiki/flops."
+      },
+      {
+        "year": "2017",
+        "series-title": "MobileNets: Efficient convolutional neural networks for mobile vision applications",
+        "author": "Howard",
+        "key": "10.1016/j.iot.2024.101263_b47"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b48",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Sandler, et al., MobileNetV2: Inverted residuals and linear bottlenecks, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, CVPR, 2018, pp. 4510–4520.",
+        "DOI": "10.1109/CVPR.2018.00474"
+      },
+      {
+        "year": "2009",
+        "series-title": "Learning multiple layers of features from tiny images",
+        "author": "Krizhevsky",
+        "key": "10.1016/j.iot.2024.101263_b49"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b50",
+        "doi-asserted-by": "crossref",
+        "unstructured": "T. Akiba, et al., Optuna: A next-generation hyperparameter optimization framework, in: Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2019, pp. 2623–2631.",
+        "DOI": "10.1145/3292500.3330701"
+      },
+      {
+        "issue": "106775",
+        "key": "10.1016/j.iot.2024.101263_b51",
+        "article-title": "A survey on federated learning",
+        "volume": "216",
+        "author": "Zhang",
+        "year": "2021",
+        "journal-title": "Knowl.-Based Syst."
+      },
+      {
+        "year": "2015",
+        "series-title": "Why m heads are better than one: Training a diverse ensemble of deep networks",
+        "author": "Lee",
+        "key": "10.1016/j.iot.2024.101263_b52"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b53",
+        "series-title": "2012 IEEE International Conference on Acoustics, Speech and Signal Processing",
+        "first-page": "2133",
+        "article-title": "Scalable stacking and learning for building deep architectures",
+        "author": "Deng",
+        "year": "2012"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.iot.2024.101263_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1944",
+        "DOI": "10.1109/TPAMI.2012.268",
+        "article-title": "Tensor deep stacking networks",
+        "volume": "35",
+        "author": "Hutchinson",
+        "year": "2012",
+        "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.iot.2024.101263_b55",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1109/JIOT.2022.3202628",
+        "article-title": "Deep-distributed-learning-based POI recommendation under mobile-edge networks",
+        "volume": "10",
+        "author": "Guo",
+        "year": "2023",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.iot.2024.101263_b56",
+        "doi-asserted-by": "crossref",
+        "first-page": "13294",
+        "DOI": "10.1109/TVT.2021.3121146",
+        "article-title": "Optimal resource allocation and task segmentation in IoT enabled mobile edge cloud",
+        "volume": "70",
+        "author": "Mahmood",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Veh. Technol."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b57",
+        "series-title": "2019 IEEE 7th International Conference on Computer Science and Network Technology",
+        "first-page": "442",
+        "article-title": "Energy efficient training task assignment scheme for mobile distributed deep learning scenario using DQN",
+        "author": "Liu",
+        "year": "2019"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.iot.2024.101263_b58",
+        "doi-asserted-by": "crossref",
+        "first-page": "4004",
+        "DOI": "10.1109/JIOT.2020.3015432",
+        "article-title": "A survey on security and privacy issues in edge-computing-assisted internet of things",
+        "volume": "8",
+        "author": "Alwarafy",
+        "year": "2020",
+        "journal-title": "IEEE Internet Things J."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b59",
+        "unstructured": "[link]. URL https://pytorch.org/docs/stable/nn.html."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.iot.2024.101263_b60",
+        "doi-asserted-by": "crossref",
+        "first-page": "337",
+        "DOI": "10.1007/s00373-007-0738-8",
+        "article-title": "On the maximum number of cliques in a graph",
+        "volume": "23",
+        "author": "Wood",
+        "year": "2007",
+        "journal-title": "Graphs Combin."
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b61",
+        "doi-asserted-by": "crossref",
+        "unstructured": "K. He, J. Sun, Convolutional neural networks at constrained time cost, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, CVPR, 2015, pp. 5353–5360.",
+        "DOI": "10.1109/CVPR.2015.7299173"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b62",
+        "series-title": "2017 IEEE International Symposium on Performance Analysis of Systems and Software",
+        "first-page": "55",
+        "article-title": "Performance analysis of CNN frameworks for GPUs",
+        "author": "Kim",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.iot.2024.101263_b63",
+        "series-title": "Breakthroughs in Statistics: Methodology and Distribution",
+        "first-page": "569",
+        "article-title": "Bootstrap methods: Another look at the jackknife",
+        "author": "Efron",
+        "year": "1992"
+      }
+    ],
+    "container-title": [
+      "Internet of Things"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S254266052400204X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S254266052400204X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          20
+        ]
+      ],
+      "date-time": "2024-09-20T09:14:23Z",
+      "timestamp": 1726823663000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S254266052400204X"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "references-count": 63,
+    "alternative-id": [
+      "S254266052400204X"
+    ],
+    "URL": "https://doi.org/10.1016/j.iot.2024.101263",
+    "relation": {},
+    "ISSN": [
+      "2542-6605"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "2542-6605"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Resource-aware in-edge distributed real-time deep learning",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Internet of Things",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.iot.2024.101263",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "101263"
+  }
+}

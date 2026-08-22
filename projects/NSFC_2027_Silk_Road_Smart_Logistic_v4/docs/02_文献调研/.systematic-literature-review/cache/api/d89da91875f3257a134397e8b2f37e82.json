@@ -1,0 +1,21 @@
+{
+  "paperId": "687a600b5d0bb1a97681191fa61e97fee66e984f",
+  "title": "Unsupervised Concept Drift Detection and Adaptation for Hashing Based Multivariate Time Series Anomaly Detection",
+  "openAccessPdf": {
+    "url": "",
+    "status": null,
+    "license": null,
+    "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICBDA65366.2025.11211409?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICBDA65366.2025.11211409, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "authors": [
+    {
+      "authorId": "2266308763",
+      "name": "Takehiko Mizoguchi"
+    },
+    {
+      "authorId": "2266418262",
+      "name": "Yuji Kobayashi"
+    }
+  ],
+  "abstract": "Hashing based multivariate time series anomaly detection refer to identifying abnormal status in certain time steps in multivariate time series by efficiently retrieving the most relevant time series segments from historical data, by converting time series segments into compact binary codes. This is an effective way to utilize huge amount of time series data collected in complex systems. However, in various real world applications, the characteristics of time series data may change over time. Such phenomenon is called concept drift and leads a significant performance drop of anomaly detection models. This paper presents a novel drift-aware multivariate time series anomaly detection algorithm by proposing new drift detection and drift adaptation methods specifically designed for hashing based time series anomaly detection. The proposed concept drift detection method can detect drift in real time by monitoring the difference of binary patterns within two consecutive time windows, and proposed concept drift adaptation method updates only binary code database with binary codes extracted from time series segments with the new concept, keeping using the hash function trained on the original concept. This strategy enables us to catch up the anomaly detection system to the new concept without any time consuming model training procedure. Experiments performed on datasets from several domains including water circulation system and real optical network, demonstrate the effectiveness of the proposed method."
+}
