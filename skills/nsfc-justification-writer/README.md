@@ -1,169 +1,207 @@
-# nsfc-justification-writer
+# nsfc-justification-writer — 用户使用指南
 
-用于科研申请书"立项依据"章节的写作/重构：把"价值与必要性、现状不足、科学问题/假说、切入点与贡献"写成一段可直接落到 LaTeX 模板的正文，并保持模板结构不被破坏。适用于 NSFC 及各类科研基金申请书的立项依据写作场景。
+本 README 面向使用者：说明如何触发、准备输入、分阶段写作和安全写入。AI 执行规范见 [`SKILL.md`](SKILL.md)，默认参数见 [`config.yaml`](config.yaml)。
 
-> **⚠️ AI 能力建议**：本 skill 涉及复杂的科学问题识别、假说可证伪性判断、理论创新导向写作等高阶任务，建议使用你当前运行环境中“最高档位/最强能力”的模型或配置，以获得更稳定的逻辑与表达质量。
+## 它适合做什么
 
-> 主推"渐进式写作引导"（coach），配合"诊断→（分步写作）→安全写入→验收"形成闭环。
-> AI 能力默认来自运行环境的 Claude Code / Codex 原生智能，无需额外配置外部 API Key；不可用时自动回退到硬编码能力。
+当你需要撰写、重构、审查或润色 NSFC/科研基金申请书的立项依据、研究意义、国内外现状、科学问题或科学假设时使用本 skill。
 
-> **路径提示**：
-> - 在本仓库根目录运行：`python skills/nsfc-justification-writer/scripts/run.py ...`
-> - 在本 skill 目录运行：`python scripts/run.py ...`
+它重点检查以下论证链：
 
-能力亮点：
-- 默认不强制标题精确匹配，改为检查“价值/现状/科学问题/切入点”内容维度覆盖（AI + 兜底启发式）
-- AI 语义识别“吹牛式表述”（绝对化/填补空白/无依据夸大/自我定性）并给出改写建议，高风险词仅提示不做机械阻断
-- 目标字数优先从用户意图/信息表的“字数/范围/±容差”解析，再用配置兜底
-- 第三方约束预警（瘦身提质）：预估页数（经验估算）/核心文献数（去重 cite keys）/开篇 300 字“卡点+突破”信号检查（启发式，默认不阻断写入）
-- `coach --stage auto` 支持 AI 阶段判断（skeleton/draft/revise/polish/final），AI 不可用则回退到硬编码阈值
-- 写作导向可配置：`style.mode=theoretical|mixed|engineering`（默认 `theoretical`）
-
-## 推荐用法（Prompt 模板）
-
-### 开发者建议：多轮对话优化立项依据
-
-使用 Claude Code / Codex CLI 时，建议先让 skill 在本轮对话全局生效，便于多轮迭代优化：
-
-```
-接下来，我要使用 nsfc-justification-writer 这个skill 优化立项依据。仅使用skill，不要修改skill的任何文件。保持这个skill在本轮对话全局生效。先做好准备，不要开始干活。你准备好了吗？
+```text
+领域价值 → 已有证据 → 认知缺口 → 科学问题 → 可证伪假设 → 项目切入点 → 研究内容
 ```
 
-然后在同一轮对话中持续使用 coach→diagnose→apply 的闭环，直到满意为止。
+代码负责目标定位、引用/字数/术语检查、diff、备份和回滚；AI/用户负责理解课题、判断论证和生成正文。Skill 不会编造文献、实验结果或无法核验的事实。
 
----
+## 最小可用调用
 
-### 1）主推：渐进式写作引导（骨架→段落→修订→润色→验收）
+推荐先只读分析并生成可审阅建议：
 
-第一步先跑引导（不需要你一步到位写完）：
+```text
+请使用 nsfc-justification-writer skill 重构我的立项依据。
+输入：/path/to/project/justification.tex，以及相关研究内容和参考文献。
+要求：只改正文，保留标题、LaTeX 结构命令、标签和引用；先输出问题清单、修改后正文和 unified diff，不要写入文件。
+输出：可审阅的正文建议、引用核验提示和未修改范围说明。
+```
+
+确认目标和 diff 后，再明确授权：
+
+```text
+我确认上一步的目标文件和 diff。仅将确认的正文变更写入该文件，先备份，写入后再次展示 diff；不要修改其它文件。
+```
+
+目标文件可以由用户指定、项目配置声明，或由脚本从 `main.tex` 中只读发现唯一的 `\input`/`\include` 候选。候选不唯一时会停止写入并请你确认；不要求固定文件名、固定标题或 `\subsubsection`。
+
+## 从零开始写作
+
+### 1. 准备信息表
+
+没有成熟草稿时，先生成信息表模板：
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py coach --project-root projects/NSFC_Young --stage auto --topic "你的课题一句话"
+python skills/nsfc-justification-writer/scripts/run.py init
 ```
 
-如果你已经进入本 skill 目录，也可以用更短的写法：
+也可以交互式填写：
 
 ```bash
-python scripts/run.py coach --project-root projects/NSFC_Young --stage auto --topic "你的课题一句话"
+python skills/nsfc-justification-writer/scripts/run.py init --interactive
 ```
 
-按 coach 输出的“下一步可直接复制的写作提示词”去生成某个小标题正文后，用 `apply-section` 安全写入；再重复 coach→apply 的迭代，直到 `diagnose` 通过。
+至少提供：
 
-### 2）从零生成（一次性写完）
+- 研究对象或应用场景；
+- 问题定义和现有研究的 2–4 条关键瓶颈；
+- 1–3 条科学问题（疑问句，追问认知缺口）；
+- 1 条核心科学假设（可证伪陈述句，不写验证方式）；
+- 项目切入点及其与研究内容的衔接。
 
-```
-请使用 nsfc-justification-writer：
-目标项目：projects/NSFC_Young
-主题：<一句话题目/方向>
-信息表：<按 references/info_form.md 提供>
-输出：写入 extraTex/1.1.立项依据.tex
-```
+可选提供前期基础、代表性文献、方法概览、目标字数和术语口径。缺少事实或文献时，先补信息，不要让 AI 猜测。
 
-### 3）基于已有草稿重构
-
-```
-请使用 nsfc-justification-writer 重构（强调逻辑闭环与可核验性），不要改 main.tex：
-目标项目：<你的项目路径>
-现有草稿：<粘贴或指向 extraTex/1.1.立项依据.tex>
-补充信息：<按 references/info_form.md 缺啥补啥>
-```
-
-开发者建议的Prompt如下：
-
-```
-立项依据的{某个写得不满意的部分} 和前面的xxx主题差得有点远{或者其它你觉得不满意的地方}。 请使用nsfc-justification-writer这个skill进行优化。
-```
-
-## 输出文件
-
-- `extraTex/1.1.立项依据.tex`
-
-## 配置（可选）
-
-全局配置加载顺序（后者覆盖前者）：
-1. `skills/nsfc-justification-writer/config.yaml`
-2. `skills/nsfc-justification-writer/assets/presets/<preset>.yaml`（可选；兼容旧路径 `config/presets/`：如你有旧文件可自行创建该目录）
-3. `~/.config/nsfc-justification-writer/override.yaml`（可选，可用 `--no-user-override` 关闭）
-4. `--override /path/to/override.yaml`（可选，优先级最高）
-
-示例：
+### 2. 运行写作教练
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py --preset medical diagnose --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py --override /path/to/override.yaml terms --project-root projects/NSFC_Young
+python skills/nsfc-justification-writer/scripts/run.py coach \
+  --project-root <项目目录> \
+  --stage skeleton \
+  --info-form <信息表路径>
 ```
 
-## 配套脚本（可选但推荐）
+各阶段用途如下：
+
+| 阶段 | 作用 |
+| --- | --- |
+| `skeleton` | 确认正文边界，梳理事实、缺口、瓶颈→约束映射，并列出待补问题 |
+| `draft` | 按已确认范围生成或扩写正文，建立科学问题和假设的论证链 |
+| `revise` | 修复逻辑跳跃、缺失引用、不可核验表述和术语不一致 |
+| `polish` | 先保护事实与论证，再改善长句、指代、缩写界定和段内衔接 |
+| `final` | 按字数、引用、术语、结构和授权范围做最终检查 |
+| `auto` | 根据当前正文状态自动选择阶段 |
+
+`coach` 的输出是阶段指导和可复制提示词；真正的正文由 AI/用户生成。若 AI responder 不可用，skill 会返回确定性的检查清单，不会凭空生成事实。
+
+### 3. 形成完整提案并预览
+
+让 AI 输出包含目标文件完整内容的提案，保存为临时文件后运行：
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py refs --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py terms --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py review --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py coach --project-root projects/NSFC_Young --stage auto
-python skills/nsfc-justification-writer/scripts/run.py check-ai
+python skills/nsfc-justification-writer/scripts/run.py preview \
+  --project-root <项目目录> \
+  --proposal-file /tmp/proposal.tex
 ```
 
-安全写入（替换指定 `\\subsubsection{...}` 的正文）：
+`preview` 不解析标题、不写入项目文件，只检查：
+
+- 修改行和 unified diff；
+- 缺失 bibkey；
+- 标题、标签、环境、配置命令或其它结构变化；
+- 目标路径和项目根目录边界。
+
+如果发现结构命令变化，先让 AI 重新生成“正文-only”提案；只有明确授权扩大范围时才继续。
+
+### 4. 用户确认后写入
+
+新结构优先由宿主 AI 按确认后的 diff 写入。旧项目可使用兼容入口：
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py apply-section \\
-  --project-root projects/NSFC_Young \\
-  --title "国内外研究现状" \\
-  --body-file /path/to/new_body.txt
+python skills/nsfc-justification-writer/scripts/run.py apply-section \
+  --project-root <项目目录> \
+  --title "历史标题" \
+  --body-file /tmp/new_body.txt
 ```
 
-标题未命中时输出候选（便于修正 `--title`）：
+`apply-section` 依赖标题替换，仅用于迁移旧项目；它不是新项目的默认流程。写入前应备份，写入后查看实际 diff，并保留回滚入口。
+
+## 已有草稿的推荐流程
+
+先做只读诊断：
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py apply-section \\
-  --project-root projects/NSFC_Young \\
-  --title "现状" \\
-  --body-file /path/to/new_body.txt \\
-  --suggest-alias
+python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root <项目目录>
+python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项目目录>
 ```
 
-可视化诊断报告（HTML）：
+重点看“证据/缺口 → 科学问题 → 科学假设 → 研究内容”是否闭环。随后让 AI 只修改用户指定的正文范围，生成完整提案并运行 `preview`。用户确认后再写入。
+
+## 引用与 DOI 核验
+
+生成引用摘要：
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root projects/NSFC_Young --html-report auto
+python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项目目录>
 ```
 
-## FAQ
+按摘要将 DOI、链接或可核验题录补入项目 `references/*.bib`。缺失 key 默认拒绝写入；`apply-section --allow-missing-citations` 仅用于迁移或临时诊断，不应作为常规写作路径。
 
-- **Q：AI 能力为什么有时“不生效”？**  
-  A：本仓库脚本默认不假设可直接调用宿主 AI；需要运行环境注入 responder 才会启用 AI（不可用会自动回退到硬编码能力）。可先运行 `python skills/nsfc-justification-writer/scripts/run.py check-ai` 查看当前是否处于降级模式。
-- **Q：为什么 `apply-section` 会拒绝写入？**  
-  A：默认严格：若新正文里出现 `\\cite{...}` 但项目 `references/*.bib` 找不到对应 key，会拒绝写入以避免“幻觉引用”。先用 `refs` 生成核验清单/可复制提示词，按提示补齐 `references/*.bib` 后再写入。
-  如你使用 `--allow-missing-citations` 放宽该检查，建议同时加 `--strict-quality` 启用“新正文质量闸门”（命中绝对化表述/危险命令则拒绝写入）。
-- **Q：我想按学科调整术语一致性检查怎么做？**  
-  A：先试 `--preset medical/engineering`（已提供更丰富的三维矩阵示例），或写一个 `override.yaml` 覆盖 `terminology.dimensions`（推荐）：
+## 独立检查工具
 
-  ```yaml
-  terminology:
-    dimensions:
-      研究对象:
-        研究对象: ["患者", "受试者", "样本"]
-      指标:
-        AUC: ["AUC", "ROC-AUC"]
-      术语:
-        深度学习: ["深度学习", "DL"]
-  ```
+```bash
+# 字数（默认中文字符口径）
+python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root <项目目录>
 
-  如需临时关闭该检查，可设置 `terminology.dimensions: {}`（或兼容的 `terminology.alias_groups: {}`）。如需叠加 AI 语义检查，可设置 `terminology.mode: auto/ai`（AI 不可用时会自动回退到矩阵规则）。
-- **Q：行号怎么复制？**  
-  A：HTML 报告里点击行号会复制 `Lxx`；`Shift+点击` 复制带锚点链接（便于讨论定位）。
+# 跨章节研究对象、指标、术语和缩写一致性
+python skills/nsfc-justification-writer/scripts/run.py terms --project-root <项目目录>
 
-## 更多文档
+# 可选语义审查或写作引导
+python skills/nsfc-justification-writer/scripts/run.py review --project-root <项目目录>
+python skills/nsfc-justification-writer/scripts/run.py coach --project-root <项目目录> --stage auto
+```
 
-- `skills/nsfc-justification-writer/references/docs/tutorial.md`
-- `skills/nsfc-justification-writer/references/docs/architecture.md`
+`diagnose`、`coach` 和 `review` 的结果是建议，不以固定小节数量、标题关键词或旧版四维度作为写入门槛。对于“国际领先”“填补空白”等吹牛式或绝对化表述，脚本不再维护固定词表；请由宿主 AI 按 [`references/boastful_expression_guidelines.md`](references/boastful_expression_guidelines.md) 进行语义复核。
 
-版本回滚：
+## 写作边界
+
+- 科学问题应追问未知关系、机制、性质或适用边界，不写成“开发/构建/实现”的研究目标。
+- 科学假设应是可证伪的预测性陈述，不把“通过某实验验证”写进假设句。
+- 假设前优先放领域事实、已有研究和认知缺口；本项目干预、比较、终点和技术路线集中放在假设之后。
+- 外部论文的方法学描述可以作为现状证据，不自动判定为本项目方案。
+- 不使用“国际领先”“国内首次”等无法核验的绝对化表述；应改为可比较的指标、基线或适用边界。
+- 专业可读性复核不是科普化：保留已核验事实、必要术语、限定条件、引用命令和 LaTeX 结构。
+- 默认不修改 `main.tex`、配置文件、`.cls`、`.sty` 或用户未授权的正文范围。
+
+## 配置要点
+
+| 配置 | 作用 |
+| --- | --- |
+| `style.mode` | `theoretical`、`mixed` 或 `engineering`，改变措辞和证据重心 |
+| `targets.justification_tex` | 目标正文相对路径；为空时只读发现唯一候选 |
+| `targets.related_tex` | 相关研究内容章节，用于术语和逻辑对照 |
+| `references.allow_missing_citations` | 默认 `false`，缺失 bibkey 时拒绝写入 |
+| `guardrails.output_mode` | 默认 `preview`；写入必须有明确授权 |
+| `guardrails.allowed_write_files` | 自定义正文目标的精确白名单 |
+| `word_count` | 字数统计目标和口径，不强制固定章节结构 |
+
+自定义目标文件时，请同步在 `guardrails.allowed_write_files` 中声明相对路径。不要把 `.cls`、`.sty`、`main.tex` 或配置文件加入白名单，除非你明确承担相应风险并授权。
+
+## 写入后的版本管理
 
 ```bash
 python skills/nsfc-justification-writer/scripts/run.py list-runs
-python skills/nsfc-justification-writer/scripts/run.py diff --project-root projects/NSFC_Young --run-id <某次apply/rollback的run_id>
-python skills/nsfc-justification-writer/scripts/run.py rollback --project-root projects/NSFC_Young --run-id <run_id> --yes
+python skills/nsfc-justification-writer/scripts/run.py diff \
+  --project-root <项目目录> --run-id <run_id>
+python skills/nsfc-justification-writer/scripts/run.py rollback \
+  --project-root <项目目录> --run-id <run_id> --yes
 ```
+
+## 常见问题
+
+**为什么没有直接写文件？**
+
+默认是可逆的 `preview` 模式。先确认目标和 diff，再明确授权写入。
+
+**文件名或标题宏不同会被判为空吗？**
+
+不会。新流程不依赖固定文件名、标题命令或小节数量；旧 `apply-section` 仅保留为兼容提示。
+
+**假设前出现方法名是否一定错误？**
+
+不一定。外部论文的方法学描述可以作为现状证据；只有把本项目方案提前作为论证主线时，才建议后移。
+
+**为什么建议拆句或补过渡？**
+
+这是面向大同行的阅读负担复核。建议应说明位置、障碍、影响和保真改法；已经清楚的专业表述不需要为了通俗而改写。
+
+**缺少引用怎么办？**
+
+Skill 不会编造引用。请提供 DOI、链接或可核验题录，并先补齐项目 `references/*.bib`。

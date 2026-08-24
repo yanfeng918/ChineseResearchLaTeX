@@ -6,6 +6,13 @@
 
 ---
 
+## [Unreleased]
+
+### Changed（变更）
+
+- `nsfc-justification-writer`：在既有语义重构基础上增加面向大同行的专业可读性复核，贯通 `review`、`coach --stage polish`、Tier2 聚合与 HTML 展示；新增 `readability` 兼容字段、无 AI 回退建议和保真边界文档，版本推进至 v1.2.0。
+- `nsfc-justification-writer`：将用户教程、典型工作流和架构边界合并到技能 README，删除重复的 `references/docs/` 文档目录并清理当前路径引用。
+
 ## [4.0.20] - 2026-08-20
 
 ### Changed（变更）
@@ -573,6 +580,9 @@
 ---
 
 ## [Unreleased]
+
+- `nsfc-justification-writer` 精简重构：改为语义写作与最小文件边界，默认 preview/diff，取消固定文件名、标题和开篇/四维度硬门槛；旧 `apply-section` 保留为 legacy 兼容入口。
+- `nsfc-justification-writer` auto-test-skill A/B 轮优化：修复目标歧义回退、路径/白名单校验、preview 结构变更阻断、缺失 bibkey 提示及 coach/review/HTML 的旧结构残留；新增边界回归测试。
 
 ### Added（新增）
 

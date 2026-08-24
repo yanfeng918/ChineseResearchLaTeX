@@ -1188,6 +1188,14 @@ PlanName = v202602221258
 
 ---
 
+skills/nsfc-justification-writer 是怎么一步步把立项依据写出来的？请你把所有的细节都写清楚，总结为一个md文档，保存在 docs/plans 的一个新md里。 注意：应该在彻底了解skill源代码且不看任何文档的基础上写这个md，以保证完全真实（因为文档可能会犯错误）。
+
+---
+
+基于 docs/plans/2026-08-23-nsfc-justification-writer-专业性可读性优化计划.md 优化源代码。 有疑问的地方，按你认为最优方案执行，不要问我。在 skills/nsfc-rjustification-writer/tests/{PlanName} 这个文件夹里运行轻量测试以保证项目流程可以正常运行；所有测试时产生的中间文件都必须保存在测试目录里；测试目录必须包含测试的规划文档和报告文档。
+
+---
+
 PlanName = 第三方约束-优化-v202602221613
 按 skills/nsfc-justification-writer/plans/{PlanName}.md 的要求优化skill。 使用 awesome-code skill 辅助规划、优化。 有疑问的地方，按你认为最优方案执行，不要问我。在 skills/nsfc-rjustification-writer/tests/{PlanName} 这个文件夹里运行轻量测试以保证项目流程可以正常运行；所有测试时产生的中间文件都必须保存在测试目录里；测试目录必须包含测试的规划文档和报告文档。
 

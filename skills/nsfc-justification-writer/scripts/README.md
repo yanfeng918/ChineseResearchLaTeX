@@ -1,145 +1,49 @@
-# nsfc-justification-writer scripts
+# nsfc-justification-writer 脚本
 
-这些脚本提供“硬编码确定性能力”（诊断/术语/字数/评审建议/可视化报告 + 安全写入 + 版本回滚），用于配合 AI 写作流程：
-- AI 负责生成/重写文字
-- 脚本负责**定位段落**、**写入白名单文件**、**备份与可复现诊断**
+脚本只承担确定性边界：目标文件存在性、路径白名单、引用 key、字数/术语统计、备份、diff 和回滚。语义判断与正文改写由 AI/用户完成。
 
-## 快速开始
+## 推荐流程
 
-路径提示：
-- 在本仓库根目录运行：`python skills/nsfc-justification-writer/scripts/run.py ...`
-- 在本 skill 目录运行：`python scripts/run.py ...`
+1. 用户指定目标文件，或配置中声明 `targets.justification_tex`；不明确时只读追踪 `main.tex` 的唯一候选。
+2. AI 输出完整正文提案，运行 `preview` 生成 unified diff。
+3. 用户确认目标和 diff 后，才使用写入入口；写入前自动备份，写入后可用 `diff/rollback` 复核。
 
 ```bash
-python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root projects/NSFC_Young
+python skills/nsfc-justification-writer/scripts/run.py preview \
+  --project-root projects/NSFC_Young \
+  --proposal-file /tmp/proposal.tex
+```
+
+`preview` 不解析标题、不写入文件；如果新增/删除行包含章节、环境、引用入口或配置命令，会提示人工确认。
+
+## 独立工具
+
+```bash
 python skills/nsfc-justification-writer/scripts/run.py refs --project-root projects/NSFC_Young
+python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root projects/NSFC_Young
 python skills/nsfc-justification-writer/scripts/run.py terms --project-root projects/NSFC_Young
+python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root projects/NSFC_Young
 python skills/nsfc-justification-writer/scripts/run.py coach --project-root projects/NSFC_Young --stage auto
-python skills/nsfc-justification-writer/scripts/run.py review --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py check-ai
 ```
 
-## 可追溯测试会话（推荐）
+`diagnose/coach/review` 的结果是建议，不以固定小节数、开篇关键词或页数阈值阻断写作。措辞中的吹牛式、绝对化和无依据夸大表述由宿主 AI 按 `references/boastful_expression_guidelines.md` 复核，Python 不维护固定短语表。需要时可在配置 `constraints` 中显式启用独立预警。
 
-每次跑自检/单测建议创建一个新的会话目录，便于归档与复现（会自动写入 `tests/<session>/TEST_PLAN.md` 与 `TEST_REPORT.md`）：
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py test-session
-python skills/nsfc-justification-writer/scripts/run.py test-session --round B轮
-```
-
-如果你已经进入本 skill 目录，也可以用更短的写法：
-
-```bash
-python scripts/run.py diagnose --project-root projects/NSFC_Young
-python scripts/run.py coach --project-root projects/NSFC_Young --stage auto
-python scripts/run.py apply-section --project-root projects/NSFC_Young --title "国内外研究现状" --body-file /path/to/new_body.txt
-python scripts/run.py test-session
-```
-
-## AI 可用性自检（可选）
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py check-ai
-```
-
-说明：
-- 本仓库脚本不会主动直连外部大模型；AI 能力是否可用取决于运行环境是否注入 responder
-- 自检会输出 `ai.enabled`、responder 注入情况，并尝试发起一个最小测试请求（若可用）
-
-## 配置覆盖与学科预设（可选）
-
-全局参数需要放在子命令前：
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py --preset medical diagnose --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py --preset engineering terms --project-root projects/NSFC_Young
-python skills/nsfc-justification-writer/scripts/run.py --override /path/to/override.yaml coach --project-root projects/NSFC_Young --stage auto
-python skills/nsfc-justification-writer/scripts/run.py --no-user-override diagnose --project-root projects/NSFC_Young
-```
-
-说明：
-- `--preset <name>` 会加载 `skills/nsfc-justification-writer/assets/presets/<name>.yaml`（兼容旧路径 `config/presets/`：如你有旧文件可自行创建该目录）
-- 默认会尝试加载 `~/.config/nsfc-justification-writer/override.yaml`（如存在）；用 `--no-user-override` 关闭
-
-## 信息表生成（推荐）
-
-生成模板（用于你手工填写）：
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py init --out /path/to/info_form.md
-```
-
-交互式填写并生成：
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py init --interactive --out /path/to/info_form_filled.md
-```
-
-## 渐进式写作引导（主推）
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py coach --project-root projects/NSFC_Young --stage auto --topic "你的课题一句话"
-```
-
-说明：
-- 输出会告诉你“本轮只做三件事”，并给出“可复制提示词”（用于生成某个小标题正文）
-- 你每轮只需要改一个 `\subsubsection` 的正文，然后用 `apply-section` 写入
-
-## 安全写入：替换指定小标题正文
-
-将某个 `\\subsubsection{...}` 的正文替换为新内容（不改动小标题本身）：
+## legacy 兼容入口
 
 ```bash
 python skills/nsfc-justification-writer/scripts/run.py apply-section \
   --project-root projects/NSFC_Young \
   --title "国内外研究现状" \
-  --body-file /path/to/new_body.txt
+  --body-file /tmp/new_body.txt
 ```
 
-说明：
-- 备份默认写入 `skills/nsfc-justification-writer/tests/_artifacts/runs/`（不污染标书项目目录）
-- 仅允许写入 `extraTex/1.1.立项依据.tex`（由 `config.yaml` 的 guardrails 控制）
-- 默认严格：若新正文中出现 `\cite{...}` 但 `.bib` 不存在对应 key，将拒绝写入（防止幻觉引用）
-- 标题未命中时：可加 `--suggest-alias` 输出当前文档所有 `\subsubsection` 标题，便于修正 `--title`
-- 如需允许“标题不完全一致也能匹配”：在 `config.yaml` 里设置 `structure.strict_title_match: false`（会启用模糊匹配；AI 可用时会先做语义匹配）
-- 若你使用了 `--allow-missing-citations` 放宽引用约束，建议同时加 `--strict-quality` 启用“新正文质量闸门”（命中绝对化表述/危险命令将拒绝写入）
+该命令仍按 `\\subsubsection` 标题替换正文，仅用于迁移旧项目；它不会成为新项目默认工作流。标题未命中时不要改正文来适配检查器，应改用 `preview` 并明确正文范围。
 
-## 运行产物（runs/cache）
-
-- `skills/nsfc-justification-writer/tests/_artifacts/runs/`：每次写入/回滚的备份、diff、报告与日志（可随时删除某些旧 run）
-- `skills/nsfc-justification-writer/tests/_artifacts/cache/ai/`：Tier2/术语一致性等可选 AI 计算缓存（可用 `--fresh` 忽略缓存）
-
-清理示例：
-
-```bash
-rm -rf skills/nsfc-justification-writer/tests/_artifacts/runs/*
-rm -rf skills/nsfc-justification-writer/tests/_artifacts/cache/*
-```
-
-## HTML 可视化诊断报告
-
-```bash
-python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root projects/NSFC_Young --html-report auto
-```
-
-## 版本 diff / 回滚
-
-列出 runs：
+## 版本管理与验证
 
 ```bash
 python skills/nsfc-justification-writer/scripts/run.py list-runs
-```
-
-查看某次写入的备份与当前文件差异：
-
-```bash
 python skills/nsfc-justification-writer/scripts/run.py diff --project-root projects/NSFC_Young --run-id <run_id>
-```
-
-从某次备份回滚（需要显式确认）：
-
-```bash
 python skills/nsfc-justification-writer/scripts/run.py rollback --project-root projects/NSFC_Young --run-id <run_id> --yes
+python skills/nsfc-justification-writer/scripts/run.py validate-config
 ```

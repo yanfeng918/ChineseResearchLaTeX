@@ -13,16 +13,15 @@ from .ai_integration import AIIntegration
 from .config_access import get_bool, get_int, get_mapping, get_str
 from .config_loader import get_runs_dir, load_config
 from .diagnostic import DiagnosticReport, format_tier1, run_tier1
-from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNotFoundError
+from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNotFoundError, TargetResolutionError
 from .editor import ApplyResult, apply_new_content
 from .dimension_coverage import DimensionCoverageAI, format_dimension_coverage_markdown
 from .example_matcher import recommend_examples_markdown
-from .io_utils import iter_text_chunks_by_subsubsection_mark, read_text_streaming
+from .io_utils import iter_text_chunks_by_paragraph, read_text_streaming
 from .latex_parser import match_title_via_ai, replace_subsubsection_body_hybrid, suggest_titles
 from .observability import Observability, ensure_run_dir, make_run_id
-from .boastful_expression_checker import BoastfulExpressionAI
 from .reference_validator import check_citations
-from .security import build_write_policy, resolve_target_path, validate_write_target
+from .security import build_write_policy, discover_target_candidates, resolve_target_path, validate_write_target, validate_target_file
 from .term_consistency import term_consistency_report
 from .wordcount import count_cjk_chars, describe_word_count_mode
 from .prompt_templates import get_prompt, TIER2_DIAGNOSTIC_PROMPT
@@ -95,12 +94,24 @@ class HybridCoordinator:
         self.obs = observability or Observability()
         self.paths = CoordinatorPaths(skill_root=self.skill_root, runs_root=get_runs_dir(self.skill_root, self.config))
 
-    def _target_relpath(self) -> str:
+    def _target_relpath(self, project_root: Optional[Path] = None) -> str:
         targets = get_mapping(self.config, "targets")
-        return get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
+        configured = get_str(targets, "justification_tex", "").strip()
+        if configured:
+            return configured
+        if project_root is not None:
+            candidates = discover_target_candidates(project_root)
+            if len(candidates) == 1:
+                return candidates[0]
+            raise TargetResolutionError(project_root=str(project_root), candidates=candidates)
+        raise TargetResolutionError(project_root=str(project_root or ""))
 
     def _resolve_target(self, project_root: Path) -> Path:
-        return resolve_target_path(project_root, self._target_relpath())
+        return validate_target_file(
+            project_root=project_root,
+            target_path=resolve_target_path(project_root, self._target_relpath(project_root)),
+            require_exists=False,
+        )
 
     def target_path(self, *, project_root: Path) -> Path:
         return self._resolve_target(Path(project_root).resolve())
@@ -134,7 +145,6 @@ class HybridCoordinator:
             tier1=tier1,
             tier2=None,
             dimension_coverage=None,
-            boastful_expressions=None,
             word_target={"target": word_spec.target, "tolerance": word_spec.tolerance, "source": word_spec.source, "evidence": word_spec.evidence},
             notes=[],
         )
@@ -158,21 +168,6 @@ class HybridCoordinator:
             except RuntimeError:
                 report.dimension_coverage = None
 
-        # 吹牛式表述检查（AI 语义判断）
-        quality_cfg = get_mapping(self.config, "quality")
-        if get_bool(quality_cfg, "enable_ai_judgment", True):
-            try:
-                report.boastful_expressions = asyncio.run(
-                    BoastfulExpressionAI(self.ai).check(
-                        tex_text=tex,
-                        max_chars=ai_max_input_chars(self.config),
-                        cache_dir=cache_dir,
-                        fresh=bool(tier2_fresh),
-                    )
-                )
-            except RuntimeError:
-                report.boastful_expressions = None
-
         if not include_tier2:
             return report
 
@@ -194,7 +189,7 @@ class HybridCoordinator:
             # 超大文件：优先流式分块，避免一次性加载后再切块造成峰值内存
             if target.exists() and int(target.stat().st_size) > max_file_bytes(self.config):
                 chunks = list(
-                    iter_text_chunks_by_subsubsection_mark(
+                    iter_text_chunks_by_paragraph(
                         target,
                         max_chars=max_chars,
                         max_chunks=max_chunks if max_chunks > 0 else 10**9,
@@ -213,10 +208,11 @@ class HybridCoordinator:
                     "logic": [],
                     "terminology": [],
                     "evidence": [],
+                    "readability": ["AI 不可用：请按专业可读性准则人工复核长句、指代、缩写界定和段内衔接；此项仅为表达建议，不阻断写入。"],
                     "suggestions": ["AI 不可用：仅完成 Tier1 硬编码诊断。"],
                 }
 
-            merged: Dict[str, Any] = {"logic": [], "terminology": [], "evidence": [], "suggestions": []}
+            merged: Dict[str, Any] = {"logic": [], "terminology": [], "evidence": [], "readability": [], "suggestions": []}
             for i, ch in enumerate(chunks):
                 prompt = tpl.format(tex=ch)
                 obj = await self.ai.process_request(
@@ -229,7 +225,7 @@ class HybridCoordinator:
                 )
                 if not isinstance(obj, dict):
                     continue
-                for k in ["logic", "terminology", "evidence", "suggestions"]:
+                for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
                     v = obj.get(k)
                     if not v:
                         continue
@@ -239,7 +235,7 @@ class HybridCoordinator:
                         merged[k].append(str(v).strip())
 
             # 去重但保序
-            for k in ["logic", "terminology", "evidence", "suggestions"]:
+            for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
                 seen = set()
                 uniq: List[str] = []
                 for it in merged[k]:
@@ -266,24 +262,10 @@ class HybridCoordinator:
             out.append("")
             out.append("内容维度覆盖（价值/现状/科学问题/切入点）：")
             out.append(format_dimension_coverage_markdown(report.dimension_coverage).rstrip())
-        if report.boastful_expressions:
-            issues = report.boastful_expressions.get("issues", []) if isinstance(report.boastful_expressions, dict) else []
-            if issues:
-                out.append("")
-                out.append("可能引起评审不适的表述（AI 语义判断）：")
-                for it in issues[:6]:
-                    if not isinstance(it, dict):
-                        continue
-                    cat = str(it.get("category", "") or "")
-                    txt = str(it.get("text", "") or "")
-                    reason = str(it.get("reason", "") or "")
-                    out.append(f"- [{cat}] {txt}")
-                    if reason:
-                        out.append(f"  - 原因：{reason}")
         if report.tier2:
             out.append("")
             out.append("Tier2（AI 语义分析）：")
-            for k in ["logic", "terminology", "evidence", "suggestions"]:
+            for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
                 v = report.tier2.get(k) if isinstance(report.tier2, dict) else None
                 if not v:
                     continue
@@ -306,7 +288,7 @@ class HybridCoordinator:
         related = get_mapping(targets, "related_tex")
 
         files = {
-            "立项依据": resolve_target_path(project_root, self._target_relpath()),
+            "立项依据": resolve_target_path(project_root, self._target_relpath(project_root)),
         }
         for label, relpath in related.items():
             files[label] = resolve_target_path(project_root, str(relpath))
@@ -333,7 +315,7 @@ class HybridCoordinator:
         policy = build_write_policy(self.config)
         validate_write_target(project_root=project_root, target_path=target, policy=policy)
         if not target.exists():
-            raise TargetFileNotFoundError(target_relpath=self._target_relpath(), project_root=str(project_root))
+            raise TargetFileNotFoundError(target_relpath=self._target_relpath(project_root), project_root=str(project_root))
 
         src = read_text_streaming(target).text
         structure_cfg = get_mapping(self.config, "structure")
@@ -370,16 +352,11 @@ class HybridCoordinator:
         quality_cfg = get_mapping(self.config, "quality")
         strict_on_apply = get_bool(quality_cfg, "strict_on_apply", False) or bool(strict_quality)
         if strict_on_apply:
-            ai_cfg = get_mapping(self.config, "ai")
-            cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
-            qr = check_new_body_quality(new_body=new_body, config=self.config, ai=self.ai, cache_dir=cache_dir)
+            qr = check_new_body_quality(new_body=new_body, config=self.config)
             if not qr.ok:
                 from .errors import QualityGateError
 
-                raise QualityGateError(
-                    forbidden_phrases=qr.forbidden_phrases_hits,
-                    avoid_commands=qr.avoid_commands_hits,
-                )
+                raise QualityGateError(avoid_commands=qr.avoid_commands_hits)
 
         if not allow_missing:
             targets = get_mapping(self.config, "targets")
@@ -394,7 +371,7 @@ class HybridCoordinator:
         try:
             rel = target.relative_to(project_root).as_posix()
         except ValueError:
-            rel = self._target_relpath()
+            rel = self._target_relpath(project_root)
         result = apply_new_content(
             target_path=target,
             new_text=new_text,

@@ -185,44 +185,28 @@ def validate_config(*, skill_root: Path, config: Dict[str, Any]) -> List[str]:
     if not isinstance(targets, dict):
         err("targets 必须是 dict")
     else:
-        if not isinstance(targets.get("justification_tex"), str) or not str(targets.get("justification_tex")).strip():
-            err("targets.justification_tex 必须是非空字符串")
+        target = targets.get("justification_tex", "")
+        if target is not None and not isinstance(target, str):
+            err("targets.justification_tex 必须是字符串（可为空，表示只读候选发现）")
         bib_globs = targets.get("bib_globs", [])
         if not _is_seq_str(bib_globs):
             err("targets.bib_globs 必须是字符串列表")
 
-    structure = config.get("structure")
-    if not isinstance(structure, dict):
+    structure = config.get("structure", {})
+    if structure is not None and not isinstance(structure, dict):
         err("structure 必须是 dict")
-    else:
-        expected = structure.get("expected_subsubsections", None)
-        recommended = structure.get("recommended_subsubsections", None)
-        if (expected is None) and (recommended is None):
-            err("structure.expected_subsubsections 或 structure.recommended_subsubsections 必须至少存在一个")
-        else:
-            seq = recommended if recommended is not None else expected
-            if not _is_seq_str(seq) or not seq:
-                err("structure.(expected_subsubsections|recommended_subsubsections) 必须是非空字符串列表")
+    # 结构配置现在是可选的语义辅助；不再要求固定标题列表或最少小节数。
+    elif isinstance(structure, dict) and "min_subsubsection_count" in structure:
         m = structure.get("min_subsubsection_count")
-        if not isinstance(m, int) or m <= 0:
-            err("structure.min_subsubsection_count 必须是正整数")
+        if not isinstance(m, int) or m < 0:
+            err("structure.min_subsubsection_count 必须是非负整数")
 
     quality = config.get("quality")
     if not isinstance(quality, dict):
         err("quality 必须是 dict")
     else:
-        if "forbidden_phrases" in quality and not _is_seq_str(quality.get("forbidden_phrases", [])):
-            err("quality.forbidden_phrases 必须是字符串列表")
-        if "high_risk_examples" in quality and not _is_seq_str(quality.get("high_risk_examples", [])):
-            err("quality.high_risk_examples 必须是字符串列表")
         if not _is_seq_str(quality.get("avoid_commands", [])):
             err("quality.avoid_commands 必须是字符串列表")
-        if "strict_mode" in quality and not isinstance(quality.get("strict_mode"), bool):
-            err("quality.strict_mode 必须是 bool")
-        if "enable_ai_judgment" in quality and not isinstance(quality.get("enable_ai_judgment"), bool):
-            err("quality.enable_ai_judgment 必须是 bool")
-        if "ai_judgment_mode" in quality and not isinstance(quality.get("ai_judgment_mode"), str):
-            err("quality.ai_judgment_mode 必须是 str")
 
     wc = config.get("word_count", {})
     if not isinstance(wc, dict):
@@ -292,6 +276,14 @@ def validate_config(*, skill_root: Path, config: Dict[str, Any]) -> List[str]:
             err("guardrails.forbidden_write_files 必须是字符串列表")
         if not _is_seq_str(guardrails.get("forbidden_write_globs", [])):
             err("guardrails.forbidden_write_globs 必须是字符串列表")
+        targets_cfg = config.get("targets") if isinstance(config.get("targets"), dict) else {}
+        configured_target = str(targets_cfg.get("justification_tex", "") or "").strip()
+        allowed_targets = guardrails.get("allowed_write_files", [])
+        if configured_target and isinstance(allowed_targets, list) and configured_target not in allowed_targets:
+            err(
+                "targets.justification_tex 必须同时精确出现在 guardrails.allowed_write_files 中；"
+                "自定义目标不会自动扩大写入白名单"
+            )
 
     terminology = config.get("terminology", {})
     if terminology is not None and not isinstance(terminology, dict):

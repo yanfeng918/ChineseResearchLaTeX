@@ -69,47 +69,41 @@ def iter_text_chunks_by_subsubsection_mark(
     max_chunks: int,
 ) -> Iterator[str]:
     """
-    近似按 \\subsubsection{...} 边界进行分块的流式读取：
-    - 适用于 Tier2 等“只需要近似块边界”的场景
-    - 不保证严格 LaTeX 语法正确性，但可避免一次性加载超大文件
+    legacy 兼容名称：实际转发到不依赖任何标题宏的段落分块。
     """
+    # 兼容旧调用；新 Tier2 路径使用不依赖标题宏的 paragraph 分块。
+    yield from iter_text_chunks_by_paragraph(
+        path,
+        encoding=encoding,
+        errors=errors,
+        max_chars=max_chars,
+        max_chunks=max_chunks,
+    )
+
+
+def iter_text_chunks_by_paragraph(
+    path: Path,
+    *,
+    encoding: str = "utf-8",
+    errors: str = "ignore",
+    max_chars: int,
+    max_chunks: int,
+) -> Iterator[str]:
+    """按空行/字符上限流式分块；不依赖任何 LaTeX 标题宏。"""
     p = Path(path).resolve()
     if max_chars <= 0:
         yield read_text_streaming(p, encoding=encoding, errors=errors).text
         return
-
     buf = ""
     produced = 0
-    mark = "\\subsubsection{"
-
     with p.open("r", encoding=encoding, errors=errors) as f:
         for line in f:
             if produced >= max_chunks:
                 break
-            # 若已接近上限且下一行包含 mark，则优先在 mark 前切块
-            if (len(buf) >= max_chars) and (mark in line):
-                idx = line.find(mark)
-                head = line[:idx]
-                tail = line[idx:]
-                if head:
-                    if len(buf) + len(head) > max_chars:
-                        yield buf
-                        produced += 1
-                        buf = ""
-                    buf += head
-                if buf.strip():
-                    yield buf
-                    produced += 1
-                buf = tail
-                continue
-
-            if len(buf) + len(line) > max_chars and buf:
+            buf += line
+            if len(buf) >= max_chars or (not line.strip() and len(buf) >= max_chars // 2):
                 yield buf
                 produced += 1
                 buf = ""
-                if produced >= max_chunks:
-                    break
-            buf += line
-
-    if produced < max_chunks and buf.strip():
-        yield buf
+        if buf and produced < max_chunks:
+            yield buf

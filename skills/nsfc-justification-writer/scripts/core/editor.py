@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""正文写入原语（legacy 标题替换路径）；新流程优先由 preview diff 驱动。"""
+
 from __future__ import annotations
 
 import os

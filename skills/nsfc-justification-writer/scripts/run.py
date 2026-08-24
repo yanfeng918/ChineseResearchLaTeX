@@ -27,14 +27,15 @@ sys.path.insert(0, str(scripts_root_for_import))
 from core.config_loader import load_config, get_runs_dir, validate_config
 from core.config_access import get_bool, get_mapping, get_seq_str, get_str
 from core.bib_manager_integration import BibFixSuggestion
-from core.errors import BackupNotFoundError, MissingCitationKeysError, SectionNotFoundError, SkillError
+from core.change_guard import inspect_proposal
+from core.errors import BackupNotFoundError, SkillError, TargetResolutionError
 from core.html_report import render_diagnostic_html
 from core.hybrid_coordinator import HybridCoordinator
 from core.info_form import copy_info_form_template, interactive_collect_info_form, write_info_form_file
-from core.latex_parser import parse_subsubsections
 from core.logging_utils import configure_logging
 from core.observability import make_run_id
-from core.quality_gate import check_new_body_quality
+from core.reference_validator import check_citations
+from core.security import validate_target_file
 from core.versioning import find_backup_for_run_v2, list_runs, rollback_from_backup, unified_diff
 
 logger = logging.getLogger(__name__)
@@ -224,9 +225,11 @@ def cmd_diagnose(args: argparse.Namespace) -> int:
         if str(args.html_report).strip().lower() == "auto":
             out_path = (runs_root / run_id / "reports" / "diagnose.html").resolve()
 
-        targets = get_mapping(config, "targets")
-        target_relpath = get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
         target = coord.target_path(project_root=Path(args.project_root))
+        try:
+            target_relpath = target.relative_to(Path(args.project_root).resolve()).as_posix()
+        except ValueError:
+            target_relpath = target.name
         tex = target.read_text(encoding="utf-8", errors="ignore") if target.exists() else ""
         include_terms = not bool(getattr(args, "no_terms", False))
         term_md = coord.term_consistency_report(project_root=Path(args.project_root)) if include_terms else ""
@@ -458,6 +461,12 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
     config = _load_config_for_args(skill_root, args)
     coord = HybridCoordinator(skill_root=skill_root, config=config)
 
+    output_mode = get_str(get_mapping(config, "guardrails"), "output_mode", "preview").strip().lower() or "preview"
+    logger.warning(
+        "⚠️ apply-section 是 legacy 兼容入口（配置 output_mode=%s）：它依赖标题解析并会写入文件；新流程请先运行 preview 并确认 diff。",
+        output_mode,
+    )
+
     body = _read_body_file(args.body_file).strip()
     if not body:
         logger.error("❌ body 为空：请通过 --body-file 或 stdin 提供新正文")
@@ -470,11 +479,6 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
         if not strict_cfg:
             qr = check_new_body_quality(new_body=body, config=config)
             if not qr.ok:
-                if qr.forbidden_phrases_hits:
-                    logger.warning(
-                        "⚠️ 新正文包含不可核验表述（建议改写或启用 --strict-quality 阻断写入）：%s",
-                        "、".join(qr.forbidden_phrases_hits[:10]),
-                    )
                 if qr.avoid_commands_hits:
                     logger.warning(
                         "⚠️ 新正文包含可能破坏模板的命令（建议移除或启用 --strict-quality 阻断写入）：%s",
@@ -523,8 +527,10 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
     if args.log_json:
         runs_root = get_runs_dir(skill_root, config)
         log_path = (runs_root / run_id / "logs" / "apply_result.json").resolve()
-        targets = get_mapping(config, "targets")
-        target_relpath = get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
+        try:
+            target_relpath = result.target_path.relative_to(Path(args.project_root).resolve()).as_posix()
+        except ValueError:
+            target_relpath = result.target_path.name
         _write_json(
             log_path,
             {
@@ -536,6 +542,45 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
         )
         print(f"🧾 记录：{log_path}")
     return 0
+
+
+def cmd_preview(args: argparse.Namespace) -> int:
+    """只读预览完整正文提案；不解析标题，也不写入项目文件。"""
+    skill_root = Path(__file__).resolve().parent.parent
+    config = _load_config_for_args(skill_root, args)
+    coord = HybridCoordinator(skill_root=skill_root, config=config)
+    project_root = Path(args.project_root).resolve()
+    if args.target_file:
+        raw_target = Path(args.target_file).expanduser()
+        target = (raw_target if raw_target.is_absolute() else project_root / raw_target).resolve()
+        target = validate_target_file(project_root=project_root, target_path=target)
+    else:
+        target = coord.target_path(project_root=project_root)
+    if not target.is_file():
+        logger.error("❌ 目标文件不存在：%s；请显式提供 --target-file 或修正项目配置", target)
+        return 2
+    proposal = _read_body_file(args.proposal_file)
+    original = target.read_text(encoding="utf-8", errors="ignore")
+    try:
+        result = inspect_proposal(original=original, proposed=proposal, target_path=target, project_root=project_root)
+    except ValueError as exc:
+        logger.error("❌ 目标路径越出 project_root：%s", exc)
+        return 2
+    print(f"目标文件：{target}")
+    print(f"修改行数：{result.changed_lines}")
+    targets = get_mapping(config, "targets")
+    bib_globs = targets.get("bib_globs", ["references/*.bib"])
+    cite_result = check_citations(tex_text=proposal, project_root=project_root, bib_globs=bib_globs)
+    if cite_result.missing_keys:
+        print("⚠️ 提案包含缺失 bibkey（只读提示，写入时会拒绝）：" + "、".join(cite_result.missing_keys[:30]))
+    if result.structural_hits:
+        print("⚠️ 预览发现结构/配置命令变化（默认不写入）：" + "、".join(result.structural_hits))
+        print("请保留这些命令，或显式加 --allow-structural-change 扩大修改范围。")
+    else:
+        print("✅ 未发现结构/配置命令变化；仍需用户确认后再写入。")
+    print("\n--- unified diff ---")
+    print(result.diff, end="")
+    return 2 if result.structural_hits and not bool(getattr(args, "allow_structural_change", False)) else 0
 
 
 def cmd_init(args: argparse.Namespace) -> int:
@@ -628,8 +673,10 @@ def cmd_diff(args: argparse.Namespace) -> int:
     coord = HybridCoordinator(skill_root=skill_root, config=config)
     runs_root = get_runs_dir(skill_root, config)
     target = coord.target_path(project_root=Path(args.project_root))
-    targets = get_mapping(config, "targets")
-    target_relpath = get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
+    try:
+        target_relpath = target.relative_to(Path(args.project_root).resolve()).as_posix()
+    except ValueError:
+        target_relpath = target.name
     try:
         backup = find_backup_for_run_v2(
             runs_root=runs_root,
@@ -662,8 +709,10 @@ def cmd_rollback(args: argparse.Namespace) -> int:
     coord = HybridCoordinator(skill_root=skill_root, config=config)
     runs_root = get_runs_dir(skill_root, config)
     target = coord.target_path(project_root=Path(args.project_root))
-    targets = get_mapping(config, "targets")
-    target_relpath = get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
+    try:
+        target_relpath = target.relative_to(Path(args.project_root).resolve()).as_posix()
+    except ValueError:
+        target_relpath = target.name
     try:
         used = rollback_from_backup(
             runs_root=runs_root,
@@ -782,9 +831,16 @@ def build_parser() -> argparse.ArgumentParser:
     p_apply.add_argument("--run-id", help="可选：指定 run_id（默认按时间生成）")
     p_apply.add_argument("--log-json", action="store_true", help="写入 runs_dir/.../logs/apply_result.json")
     p_apply.add_argument("--allow-missing-citations", action="store_true", help="允许存在缺失 bibkey 的 \\cite{...}（不推荐）")
-    p_apply.add_argument("--strict-quality", action="store_true", help="启用“新正文质量闸门”：命中绝对化表述/危险命令则拒绝写入")
+    p_apply.add_argument("--strict-quality", action="store_true", help="启用“新正文质量闸门”：命中可能破坏模板的结构命令则拒绝写入；措辞风险由宿主 AI 语义复核")
     p_apply.add_argument("--suggest-alias", action="store_true", help="当标题未命中时，输出可用标题候选（便于改 title）")
     p_apply.set_defaults(func=cmd_apply_section)
+
+    p_preview = sub.add_parser("preview", help="只读生成完整正文 unified diff（不解析标题、不写入）")
+    p_preview.add_argument("--project-root", required=True)
+    p_preview.add_argument("--proposal-file", required=True, help="完整正文提案文件；用 - 表示从 stdin 读")
+    p_preview.add_argument("--target-file", help="可选：相对或绝对目标 .tex；未提供时按配置/唯一候选发现")
+    p_preview.add_argument("--allow-structural-change", action="store_true", help="允许 diff 中出现结构/配置命令变化（仍只读）")
+    p_preview.set_defaults(func=cmd_preview)
 
     p_cfg = sub.add_parser("validate-config", help="校验当前配置（默认配置 + preset + override）")
     p_cfg.set_defaults(func=cmd_validate_config)

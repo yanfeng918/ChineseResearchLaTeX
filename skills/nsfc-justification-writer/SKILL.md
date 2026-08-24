@@ -1,15 +1,16 @@
 ---
 name: nsfc-justification-writer
-description: 当用户明确要求"写/改 NSFC 立项依据""立项依据写作/重构"时使用。基于最小信息表输出价值与必要性、现状不足、科学问题/假说与项目切入点，并保持模板结构不被破坏。适用于 NSFC 及各类科研基金申请书的立项依据写作场景。
+description: 当用户要求写作、重构、审查或润色 NSFC/科研基金申请书的立项依据、研究意义、国内外现状、科学问题或科学假设时使用。以语义论证和可核验性为核心，支持任意文件名、标题命令和 LaTeX 结构；默认只输出建议与 unified diff，只有用户明确授权才写入。
 author: Bensz Conan
 metadata:
   author: Bensz Conan
-  short-description: 科研立项依据写作/重构
+  short-description: 科研立项依据语义写作与安全改写
   keywords:
     - nsfc-justification-writer
     - 立项依据
     - 科学问题
-    - 假说
+    - 科学假设
+    - 研究意义
     - 国内外现状
     - LaTeX
   triggers:
@@ -19,7 +20,8 @@ metadata:
     - 为什么要做
     - 国内外现状
     - 现有不足
-    - 切入点
+    - 科学问题
+    - 科学假设
 references: references/
 config: config.yaml
 ---
@@ -36,72 +38,61 @@ config: config.yaml
 - 若 AI 仍可通过 workaround 继续完成用户任务，应先记录 bug，再继续完成当前任务。
 - 当用户明确要求“report bensz skills bugs”等公开上报动作时，调用本地 `gh` 与 `bensz-collect-bugs`，仅上传新增 bug 到 `huangwb8/bensz-bugs`；不要 pull / clone 整个 bug 仓库。
 
-## 输出契约
+## 任务边界
 
-- 唯一默认写入落点：`extraTex/1.1.立项依据.tex`
-- 禁止改动：`main.tex`、`extraTex/@config.tex`、任何 `.cls/.sty`
-- 目标：把“为什么要做、现状为什么不够、科学问题是什么、项目如何切入”写清楚
-- 默认写作导向是 `theoretical`，可在 `config.yaml:style.mode` 切为 `mixed` 或 `engineering`
+- 先理解用户指定的文件、段落和目标，再输出建议正文或 unified diff；默认 `preview`，不直接改文件。
+- 只改用户明确授权的正文内容。保留现有标题、章节/环境命令、标签、引用命令和配置命令。
+- 不修改 `main.tex`、配置文件、`.cls`、`.sty`，除非用户明确授权；目标路径不唯一时先询问或只读列出候选。
+- 可使用项目配置声明目标文件，也可由用户显式提供路径；不要把某个固定文件名当成普遍规范。
+- 引用 key 必须能在项目 `.bib` 中核验；不新增无法核验的引用、实验结果或绝对化结论。
 
-## 输入
+## 语义写作规则
 
-- 最小信息表优先使用 `references/info_form.md`
-- 科学问题与假说口径统一看：
-  - `references/scientific_question_guidelines.md`
-  - `references/scientific_hypothesis_guidelines.md`
-- 推荐用 `scripts/run.py init` 帮用户快速生成和补全信息表
+1. 说明领域价值与现实/理论必要性，再梳理已有研究及其证据边界。
+2. 将“瓶颈/局限”转译为待解释的未知关系、机制、性质或适用边界。
+3. 科学问题用疑问句表达；科学假设用可证伪的陈述句表达。研究目标、技术路线和验证终点不要冒充科学问题或假设。
+4. 假设之前以领域事实、已有研究和认知缺口为主；项目干预、比较、终点和技术路线集中放在假设之后。外部文献的方法学描述可以作为证据保留，不等于本项目方案前置。
+5. “项目切入点/贡献”是可选的语义表达，不要求固定标题或固定段落数量；重点是前后逻辑能互相支撑。
+6. 理论、混合、工程导向只影响措辞和证据重心，不作为结构通过/拒写条件。
+7. 在逻辑、术语和引用检查之后，执行一次面向大同行的专业可读性复核：定位长句层级过多、指代不清、缩写/新概念未界定、抽象名词堆叠、段内衔接缺失或不增加准确性的修饰。输出“位置/障碍/影响/保真改法”的表达建议；不把专业正文改成科普文，也不因术语密度或必要限定而强行改写。
+8. 可读性改写必须保留已核验事实、研究对象、必要限定、科学问题/假设、引用命令、标签和 LaTeX 结构；无法保真时只说明风险，不补写事实或证据。
 
-## 硬规则
-
-- 只编辑 `extraTex/1.1.立项依据.tex`
-- 优先保留现有 `\subsubsection` 骨架，只替换正文
-- 不写无法核验的“国际领先/国内首次”等表述
-- 引用外部工作前先要求用户提供 DOI/链接或可核验题录信息
-- 若 AI 不可用，必须回退到硬编码能力，不得直接停工
+措辞边界：吹牛式、绝对化或无依据夸大表述不由 Python 固定词表判定；宿主 AI 应按 `references/boastful_expression_guidelines.md` 进行语义复核，并把发现归入逻辑/表达建议。脚本只保留路径、结构命令、引用 key 等确定性检查。
 
 ## 推荐工作流
 
-1. 定位项目与目标文件。
-2. 抽取现有小标题骨架与正文范围。
-3. 用 `scripts/run.py coach --stage auto` 判断当前处于 skeleton / draft / revise / polish 哪一阶段。
-4. 围绕 4 段闭环组织内容：
-   - 价值与必要性
-   - 现状与不足
-   - 科学问题 / 科学假设
-   - 本项目切入点与贡献
-5. 做可核验性与引用守护，避免吹牛式表述。
-6. 检查与 `2.1 研究内容` 的术语、缩写、指标一致性。
-7. 解析目标字数；无显式要求时再用配置兜底。
-8. 输出诊断、评审建议或安全写回结果。
+1. 读取用户指定文件和必要上下文；目标不明确时只读追踪 `main.tex` 的唯一 `\\input/\\include` 候选并请用户确认。
+2. 检查科学问题—假设—证据—研究内容的闭环、术语一致性和引用 key；把发现分成“事实问题、逻辑问题、表达建议”。
+3. 在上述检查完成后复核专业可读性，标明具体原句特征和保真改法；`polish` 阶段先确认事实/逻辑/引用未改变，再进行受约束的语言精修。
+4. 输出修改后正文或 unified diff，并明确未修改的结构命令和文件范围。
+5. 用户确认目标与 diff 后才写入；写入前保留备份，写入后再次展示 diff，并提供回滚入口。
+6. 字数统计、引用 key 检查、术语检查可作为独立工具运行，不把它们绑定到标题或固定四维度。
 
-## 关键能力
+## 输出契约
 
-- Tier1 硬编码诊断：结构、字数、引用键、危险命令、高风险表述提示
-- AI 语义能力：内容维度覆盖、吹牛式表述识别、术语一致性、阶段判断、示例推荐
-- 安全写入：按 `\subsubsection{...}` 精确替换正文并自动备份
-- 可视化报告、diff、rollback、review 建议
+默认输出：
 
-## 常用脚本
+```text
+目标文件（来自用户/配置/唯一候选）：...
+修改范围：仅正文 / 需要确认
+主要问题：...
+建议正文或 unified diff：...
+引用与事实守护：...
+未修改：标题、结构命令、配置和样式文件
+```
 
-- `scripts/run.py init`
-- `scripts/run.py coach --stage auto`
-- `scripts/run.py diagnose`
-- `scripts/run.py review`
-- `scripts/run.py apply-section`
-- `scripts/run.py diff`
-- `scripts/run.py rollback`
+可读性发现归入“表达建议”，不作为事实错误或写入阻断条件；Tier2 若可用，使用 `readability` 列表承载这些发现，旧响应缺少该字段时仍按空列表兼容。
 
-## 只读集成
+无法明确正文边界时，停止写入并给出候选范围。用户明确要求写入时，仍须执行白名单、备份、缺失 bibkey 检查，并在结果中报告实际变更。
 
-- 支持只读访问 `research-literature-review` 的结果目录，用于提取研究现状和验证引用一致性；历史工作区目录名仍为 `.systematic-literature-review/`
-- 集成逻辑见 `scripts/core/review_integration.py`
-- 该集成是只读的，不得修改综述目录内容
+## 脚本说明
 
-## 重点参考
+- `scripts/run.py preview`：只读生成建议文件与 unified diff，并检查是否触碰结构/配置命令。
+- `refs`、`wordcount`、`terms`：独立的引用、字数和术语工具。
+- `diagnose`、`coach`、`review`：可选的语义辅助；结果是建议，不是固定模板的通过门槛。措辞风险由宿主 AI 按参考准则判断，脚本不做固定短语命中。
+- `apply-section`：兼容旧接口（legacy）。它仍按标题替换正文，仅在用户明确确认后使用；新文档和新流程不应依赖 `\\subsubsection`。
+- `diff`、`rollback`：查看实际变更并回滚已确认写入。
 
-- `references/theoretical_innovation_guidelines.md`
-- `references/methodology_term_examples.md`
-- `references/boastful_expression_guidelines.md`
-- `references/dimension_coverage_design.md`
-- `references/dod_checklist.md`
-- `scripts/README.md`
+## 参考资料
+
+按任务阅读 `references/scientific_question_guidelines.md`、`references/scientific_hypothesis_guidelines.md` 和 `references/professional_readability_guidelines.md`；进行吹牛式/绝对化措辞语义复核时必须阅读 `references/boastful_expression_guidelines.md`。用户流程、脚本用法和架构边界见 `README.md`。旧的四维度/标题匹配资料仅用于迁移和解释历史行为，不作为硬规则。

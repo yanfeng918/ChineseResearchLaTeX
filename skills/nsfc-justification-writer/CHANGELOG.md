@@ -6,7 +6,18 @@ The version number is the single source of truth in `config.yaml` (`skill_info.v
 
 ## [Unreleased]
 
-（暂无）
+### Changed
+- 移除 Python 侧固定吹牛式表述词表与 `BoastfulExpressionAI` 运行时调用；措辞风险改由宿主 AI 按 `references/boastful_expression_guidelines.md` 进行语义复核，脚本继续负责引用、路径和结构命令等确定性检查。
+- 增加面向大同行的专业可读性复核准则：`review`、`coach --stage polish` 和 Tier2 均要求识别长句层级、指代/缩写界定、抽象名词关系与段内衔接问题，并在不改变事实、限定、术语和 LaTeX 结构的前提下给出保真改法。
+- Tier2 新增向后兼容的 `readability` 列表，聚合与 HTML 展示均保留旧字段；无 AI 回退继续输出人工可执行的可读性自检，不将其作为拒写条件。
+- 新增 `references/professional_readability_guidelines.md`，同步更新 README、SKILL 和参考文档索引。
+- 合并 README 与 `references/docs/` 中重复的教程、工作流和架构说明；删除不再需要的 `references/docs/` 文档目录。
+- 按 2026-08-23 精简重构计划，将 Skill 契约改为语义写作优先：取消固定文件名、固定标题、开篇 300 字和四维度硬门槛。
+- 默认输出 `preview`/unified diff；明确授权后才写入，并保留引用 key、白名单、备份与回滚保护。
+- 新增 `scripts/run.py preview` 与通用变更范围检查；`apply-section` 降级为 legacy 兼容入口。
+- 精简配置与 AI 提示词，支持自定义文件名和标题宏。
+- auto-test-skill A/B 轮优化：无唯一目标不再回退固定路径；统一 realpath/白名单校验；preview 对结构命令返回非零并提示缺失 bibkey；修复 coach/review/HTML 的旧四小节引导；Tier2 分块改为不依赖标题宏。
+- 新增 `tests/test_semantic_boundaries.py`，覆盖目标解析、结构 diff、正文-only diff 和引用守护。
 
 ## [1.0.0] - 2026-02-24
 

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""LaTeX 标题解析器（legacy）：仅供 apply-section 兼容入口使用。"""
+
 from __future__ import annotations
 
 import re

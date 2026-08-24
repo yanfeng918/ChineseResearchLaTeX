@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""内容维度启发式（legacy/可选）：不作为默认结构通过门槛。"""
+
 from __future__ import annotations
 
 import json

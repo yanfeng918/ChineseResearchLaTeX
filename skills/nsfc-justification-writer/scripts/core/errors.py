@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from typing import List, Optional
+
 
 class SkillError(Exception):
     """
@@ -23,6 +25,23 @@ class TargetFileNotFoundError(SkillError):
                 f"1) 项目根目录是否正确：{project_root}\n"
                 "2) 标书模板是否已初始化（是否存在 extraTex/ 与 references/）\n"
                 f"3) 目标文件路径是否应为：{target_relpath}\n"
+            ),
+        )
+
+
+class TargetResolutionError(SkillError):
+    def __init__(self, *, project_root: str, candidates: Optional[List[str]] = None) -> None:
+        self.candidates = [str(x) for x in (candidates or [])]
+        if self.candidates:
+            detail = "\n".join(f"- {x}" for x in self.candidates[:20])
+            message = "目标文件不唯一，已停止自动选择：\n" + detail
+        else:
+            message = "未找到可安全确认的目标文件，已停止自动选择。"
+        super().__init__(
+            message,
+            fix_suggestion=(
+                f"请在项目配置 targets.justification_tex 或命令行 --target-file 中显式指定项目内正文文件：{project_root}\n"
+                "确认目标后再运行 preview；不要依赖旧版固定文件名回退。"
             ),
         )
 
@@ -63,12 +82,9 @@ class SectionNotFoundError(SkillError):
 
 
 class QualityGateError(SkillError):
-    def __init__(self, *, forbidden_phrases: list[str], avoid_commands: list[str]) -> None:
-        self.forbidden_phrases = [str(x) for x in (forbidden_phrases or []) if str(x).strip()]
+    def __init__(self, *, avoid_commands: list[str]) -> None:
         self.avoid_commands = [str(x) for x in (avoid_commands or []) if str(x).strip()]
         parts = []
-        if self.forbidden_phrases:
-            parts.append("不可核验表述：" + "、".join(self.forbidden_phrases[:10]))
         if self.avoid_commands:
             parts.append("可能破坏模板的命令：" + "、".join(self.avoid_commands[:10]))
         detail = "；".join(parts) if parts else "命中质量闸门"
@@ -76,8 +92,7 @@ class QualityGateError(SkillError):
             f"新正文命中质量闸门，已拒绝写入（{detail}）",
             fix_suggestion=(
                 "建议：\n"
-                "- 删除/替换上述绝对化表述，改为“可核验的证据链”表述\n"
                 "- 避免在正文中直接使用 \\section/\\subsection/\\input/\\include 等结构命令\n"
-                "- 修订后重试；如确需跳过该闸门：不要使用 `--strict-quality`\n"
+                "- 修订后重试；措辞中的吹牛式表述由宿主 AI 按 references/boastful_expression_guidelines.md 复核\n"
             ),
         )

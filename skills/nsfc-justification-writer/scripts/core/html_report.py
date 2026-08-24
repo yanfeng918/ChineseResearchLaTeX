@@ -38,7 +38,7 @@ def _render_tier2(tier2: Optional[Dict[str, Any]]) -> str:
     if not tier2:
         return '<div class="md">（未启用或无输出）</div>'
     blocks = []
-    for k in ["logic", "terminology", "evidence", "suggestions"]:
+    for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
         v = tier2.get(k)
         if not v:
             continue
@@ -52,7 +52,6 @@ def _render_tier2(tier2: Optional[Dict[str, Any]]) -> str:
 def _highlight_line(
     *,
     src: str,
-    forbidden_phrases: List[str],
     avoid_commands: List[str],
     missing_cite_keys: List[str],
 ) -> str:
@@ -67,8 +66,6 @@ def _highlight_line(
         except re.error:
             return
 
-    for p in forbidden_phrases:
-        _wrap(p, "hlbad")
     for c in avoid_commands:
         _wrap(c, "hlbad")
 
@@ -140,8 +137,12 @@ def render_diagnostic_html(
     c = t1.constraints if isinstance(getattr(t1, "constraints", None), dict) else {}
     pages = c.get("estimated_pages") if isinstance(c, dict) else None
     refs_unique = c.get("references_unique") if isinstance(c, dict) else None
+    structure_label = (
+        "ℹ️ 未启用固定检查" if not getattr(t1, "structure_check_enabled", False)
+        else ("✅ 完整" if t1.structure_ok else "❌ 缺失")
+    )
     tier1_items = [
-        _kv("结构", ("✅ 完整" if t1.structure_ok else "❌ 缺失") + _badge(f"subsubsection={t1.subsubsection_count}", "warn")),
+        _kv("结构", structure_label + _badge(f"subsubsection={t1.subsubsection_count}", "warn")),
         _kv("引用", ("✅ 正常" if t1.citation_ok else "❌ 缺失") + _badge(f"missing={len(t1.missing_citation_keys)}", "bad" if (not t1.citation_ok) else "ok")),
         _kv("字数", _escape(str(t1.word_count))),
     ]
@@ -151,33 +152,27 @@ def render_diagnostic_html(
         tier1_items.append(_kv("核心文献", _escape(str(refs_unique))))
     if getattr(t1, "missing_doi_keys", None):
         tier1_items.append(_kv("DOI", _badge(f"缺失={len(t1.missing_doi_keys)}", "warn")))
-    if t1.forbidden_phrases_hits:
-        tier1_items.append(_kv("不可核验表述", _badge(", ".join(t1.forbidden_phrases_hits[:6]), "bad")))
     if t1.avoid_commands_hits:
         tier1_items.append(_kv("危险命令", _badge(", ".join(t1.avoid_commands_hits[:6]), "bad")))
 
     tier1_summary_html = '<div class="kvs">' + "".join(tier1_items) + "</div>"
 
     default_next = []
-    if not t1.structure_ok:
-        default_next.append("先补齐 4 个 \\subsubsection 标题骨架，再进入段落写作。")
+    if getattr(t1, "structure_check_enabled", False) and not t1.structure_ok:
+        default_next.append("按用户或 legacy 配置修复结构；未显式要求时只修改正文论证链。")
     if not t1.citation_ok:
         default_next.append("修复缺失的 \\cite{...}：先补齐/核验 bibkey（提供 DOI/链接或可核验题录信息）再写入。")
-    if t1.forbidden_phrases_hits:
-        default_next.append("删除不可核验绝对表述（国际领先/国内首次等），改为可验证指标与对照维度。")
     if t1.avoid_commands_hits:
         default_next.append("移除可能破坏模板的命令（\\section/\\input 等），仅改正文段落。")
     next_steps = next_steps if next_steps is not None else default_next
     next_steps_html = '<div class="md">' + _ul(next_steps) + "</div>"
 
     code_lines = []
-    forbidden = list(t1.forbidden_phrases_hits or [])
     avoid_cmds = list(t1.avoid_commands_hits or [])
     missing_keys = list(t1.missing_citation_keys or [])
     for i, line in enumerate((tex_text or "").splitlines(), start=1):
         line_html = _highlight_line(
             src=line,
-            forbidden_phrases=forbidden,
             avoid_commands=avoid_cmds,
             missing_cite_keys=missing_keys,
         )

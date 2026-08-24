@@ -18,6 +18,7 @@ from .wordcount import WordCountResult, count_cjk_chars
 @dataclass(frozen=True)
 class Tier1Report:
     structure_ok: bool
+    structure_check_enabled: bool
     subsubsection_count: int
     missing_subsubsections: List[str]
     citation_ok: bool
@@ -25,7 +26,6 @@ class Tier1Report:
     missing_doi_keys: List[str]
     invalid_doi_keys: List[str]
     word_count: int
-    forbidden_phrases_hits: List[str]
     avoid_commands_hits: List[str]
     constraints: Dict[str, Any]
 
@@ -35,7 +35,6 @@ class DiagnosticReport:
     tier1: Tier1Report
     tier2: Optional[Dict[str, Any]] = None
     dimension_coverage: Optional[Dict[str, Any]] = None
-    boastful_expressions: Optional[Dict[str, Any]] = None
     word_target: Optional[Dict[str, Any]] = None
     notes: List[str] = field(default_factory=list)
 
@@ -43,6 +42,7 @@ class DiagnosticReport:
         return {
             "tier1": {
                 "structure_ok": self.tier1.structure_ok,
+                "structure_check_enabled": self.tier1.structure_check_enabled,
                 "subsubsection_count": self.tier1.subsubsection_count,
                 "missing_subsubsections": self.tier1.missing_subsubsections,
                 "citation_ok": self.tier1.citation_ok,
@@ -50,13 +50,11 @@ class DiagnosticReport:
                 "missing_doi_keys": self.tier1.missing_doi_keys,
                 "invalid_doi_keys": self.tier1.invalid_doi_keys,
                 "word_count": self.tier1.word_count,
-                "forbidden_phrases_hits": self.tier1.forbidden_phrases_hits,
                 "avoid_commands_hits": self.tier1.avoid_commands_hits,
                 "constraints": self.tier1.constraints,
             },
             "tier2": self.tier2,
             "dimension_coverage": self.dimension_coverage,
-            "boastful_expressions": self.boastful_expressions,
             "word_target": self.word_target,
             "notes": self.notes,
         }
@@ -77,11 +75,14 @@ def _check_structure(text: str, rule: StructureRule) -> tuple[bool, int, List[st
     return (len(missing) == 0), count, missing
 
 
+def _structure_check_enabled(rule: StructureRule) -> bool:
+    return bool(rule.expected_subsubsections or rule.min_subsubsection_count > 0 or rule.strict_title_match)
+
+
 def _check_quality(text: str, rule: QualityRule) -> tuple[List[str], List[str]]:
     t = strip_comments(text)
-    forbidden_hits = [p for p in rule.high_risk_examples if p and (p in t)]
     cmd_hits = [c for c in rule.avoid_commands if c and (c in t)]
-    return forbidden_hits, cmd_hits
+    return [], cmd_hits
 
 
 def run_tier1(
@@ -105,12 +106,13 @@ def run_tier1(
     wc_cfg = get_mapping(config, "word_count")
     mode = str(wc_cfg.get("mode", "cjk_only")).strip() or "cjk_only"
     wc: WordCountResult = count_cjk_chars(tex_text, mode=mode)
-    forbidden_hits, cmd_hits = _check_quality(tex_text, quality_rule)
+    _, cmd_hits = _check_quality(tex_text, quality_rule)
 
     constraints: Dict[str, Any] = snapshot_third_party_constraints(tex_text=tex_text, config=config)
 
     return Tier1Report(
         structure_ok=structure_ok,
+        structure_check_enabled=_structure_check_enabled(structure_rule),
         subsubsection_count=count,
         missing_subsubsections=missing_sections,
         citation_ok=citation_ok,
@@ -118,7 +120,6 @@ def run_tier1(
         missing_doi_keys=cite_result.missing_doi_keys,
         invalid_doi_keys=cite_result.invalid_doi_keys,
         word_count=wc.cjk_count,
-        forbidden_phrases_hits=forbidden_hits,
         avoid_commands_hits=cmd_hits,
         constraints=constraints,
     )
@@ -126,7 +127,9 @@ def run_tier1(
 
 def format_tier1(report: Tier1Report) -> str:
     lines: List[str] = []
-    if report.structure_ok:
+    if not report.structure_check_enabled:
+        lines.append(f"- ℹ️ 未启用固定结构检查：检测到 subsubsection={report.subsubsection_count}（标题/宏由用户保留）")
+    elif report.structure_ok:
         lines.append(f"- ✅ 结构完整：subsubsection={report.subsubsection_count}")
     else:
         missing = "、".join(report.missing_subsubsections) if report.missing_subsubsections else "(未知)"
@@ -177,8 +180,6 @@ def format_tier1(report: Tier1Report) -> str:
                 if isinstance(issues, list) and issues:
                     lines.append(f"- ⚠️ 开篇 {n} 字：{issues[0]}")
 
-    if report.forbidden_phrases_hits:
-        lines.append(f"- ⚠️ 高风险表述（示例命中）：{', '.join(report.forbidden_phrases_hits)}")
     if report.avoid_commands_hits:
         lines.append(f"- ⚠️ 可能破坏模板的命令：{', '.join(report.avoid_commands_hits)}")
 

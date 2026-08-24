@@ -23,6 +23,10 @@ def snapshot_third_party_constraints(*, tex_text: str, config: Mapping[str, Any]
     将“第三方瘦身提质约束”落到可机器读的 snapshot，供 diagnose/review/coach 展示与预警。
     注意：本模块只做诊断/预警，不作为写入阻断。
     """
+    configured = config.get("constraints")
+    if not isinstance(configured, dict) or not configured:
+        return {}
+
     page_rule = load_page_limit(config)
     stripped_wc, pages = estimate_pages(tex_text, chars_per_page=page_rule.chars_per_page)
     page_status = classify_pages(pages, rule=page_rule)
@@ -34,10 +38,7 @@ def snapshot_third_party_constraints(*, tex_text: str, config: Mapping[str, Any]
     unique_cites = count_unique_citations(tex_text)
     refs_status = classify_range(unique_cites, lo=refs_rule.min_n, hi=refs_rule.max_n)
 
-    opening_chars = load_opening_limit(config)
-    opening = check_opening(tex_text, cjk_chars=opening_chars)
-
-    return {
+    snapshot = {
         "page_limit": {
             "min": page_rule.min_pages,
             "max": page_rule.max_pages,
@@ -51,6 +52,9 @@ def snapshot_third_party_constraints(*, tex_text: str, config: Mapping[str, Any]
         "word_count_range": {"min": word_rule.min_n, "max": word_rule.max_n, "status": word_range_status},
         "references_unique": int(unique_cites),
         "references_range": {"min": refs_rule.min_n, "max": refs_rule.max_n, "status": refs_status},
-        "opening": opening,
     }
-
+    # 开篇信号检查只能在用户显式启用时运行，避免把“前 300 字命中词”当成默认门槛。
+    opening_cfg = configured.get("opening")
+    if isinstance(opening_cfg, dict) and "cjk_chars" in opening_cfg:
+        snapshot["opening"] = check_opening(tex_text, cjk_chars=load_opening_limit(config))
+    return snapshot

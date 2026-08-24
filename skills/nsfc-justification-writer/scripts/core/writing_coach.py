@@ -16,6 +16,7 @@ from .dimension_coverage import format_dimension_coverage_markdown
 from .io_utils import read_text_streaming
 from .limits import ai_max_input_chars, writing_coach_preview_chars
 from .prompt_templates import get_prompt
+from .security import discover_target_relpath, resolve_target_path
 from .style import get_style_mode, style_preamble_text
 from .term_consistency import CrossChapterValidator, format_term_matrices_markdown
 from .word_target import WordTargetSpec, resolve_word_target
@@ -54,7 +55,7 @@ def _infer_stage(
     wc = int(tier1.get("word_count", 0))
     if wc < max(int(word_target * draft_ratio), draft_min_chars):
         return "draft"
-    if not bool(tier1.get("citation_ok")) or tier1.get("forbidden_phrases_hits") or tier1.get("avoid_commands_hits"):
+    if not bool(tier1.get("citation_ok")) or tier1.get("avoid_commands_hits"):
         return "revise"
     if abs(wc - word_target) > tol:
         return "polish"
@@ -93,22 +94,20 @@ def _suggest_questions(
     if "缺失维度" in dimension_coverage_md:
         base.append("哪些维度缺失？请优先补齐“价值/现状/科学问题/切入点”对应段落。")
     if stage in {"skeleton", "draft"}:
-        base.append("四个小标题是否要沿用模板默认（研究背景/现状/局限/切入点）？如要改标题，请明确新标题列表。")
+        base.append("正文范围和现有结构命令是否已确认？若需要调整标题，请先明确授权范围。")
     if not bool(tier1.get("citation_ok", True)):
         base.append("缺失引用的 bibkey 准备怎么补：提供 DOI/链接（或可核验题录信息）并补齐 references/*.bib？")
     if tier1.get("missing_doi_keys"):
         base.append("已存在的引用 bibkey 是否补齐 DOI 字段（建议补齐以便可核验）？")
-    if tier1.get("forbidden_phrases_hits"):
-        base.append("是否有可验证指标/对照维度替代“国际领先/国内首次”等表述？")
     return base[:8]
 
 
 def _copyable_prompt(*, stage: WritingStage, style_preamble: str) -> str:
     focus = {
-        "skeleton": "先生成 4 个 \\subsubsection 骨架（不写引用）。",
-        "draft": "只写其中 1 个 \\subsubsection 的正文段落（不新增引用）。",
-        "revise": "只重写/压缩其中 1 个 \\subsubsection，修复逻辑跳跃与不可核验表述（不新增引用）。",
-        "polish": "在不改变结构与事实点的前提下润色语言，强化“可验证指标/对照维度”（不新增引用）。",
+        "skeleton": "先确认正文边界并写出论证要点（不写未经核验的引用）。",
+        "draft": "只写用户指定正文范围的段落（不新增引用）。",
+        "revise": "只重写/压缩用户指定正文范围，修复逻辑跳跃与不可核验表述（不新增引用）。",
+        "polish": "先核对论证、事实和引用未改变，再按专业可读性准则润色语言（不新增引用、不删除必要术语或限定）。",
         "final": "按 DoD 做最终自检：结构/字数/引用/术语一致性（不新增引用）。",
         "auto": "按当前阶段输出下一步。",
     }.get(stage, "按当前阶段输出下一步。")
@@ -122,6 +121,7 @@ def _copyable_prompt(*, stage: WritingStage, style_preamble: str) -> str:
         + "- 避免不可核验绝对表述（国际领先/国内首次等），改为可验证指标/对照维度\n"
         + "- 科学问题必须是“疑问句”（追问认知缺口），避免写成“能否构建/开发/实现...”的研究目标\n"
         + "- 科学假设必须是“陈述句”（预测性结果），避免写“在...验证中/通过...验证”等验证方式\n"
+        + "- polish 阶段先保护事实/论证/引用/术语/限定/LaTeX 结构，再处理长句、指代、缩写界定与段内衔接；不为通俗而删除专业信息\n"
         + ((pre + "\n") if pre else "")
         + f"任务：{focus}\n"
         + "输入：我会提供（1）信息表（2）当前 tex（如有）。\n"
@@ -138,29 +138,29 @@ def _fallback_markdown(inp: CoachInput, stage: WritingStage) -> str:
     )
     tasks = {
         "skeleton": [
-            "补齐 4 个 \\subsubsection 标题骨架（先不追求字数）。",
-            "每个小标题下先写 3–5 句“要点句”，不要堆引用。",
-            "先明确“科学问题（疑问句）→科学假设（陈述句）”与“瓶颈→约束”映射，再跑 diagnose/terms 确认结构与术语口径。",
+            "确认用户指定的正文范围和已有结构命令，不新增标题或环境。",
+            "先写领域事实、已有证据和认知缺口的要点句，不堆引用。",
+            "明确“科学问题（疑问句）→科学假设（陈述句）”与“瓶颈→约束”映射，再做独立引用/术语检查。",
         ],
         "draft": [
-            "选 1 个小标题先写成 1–2 段（每段 3–5 句）。",
-            "在“局限性”小节点明瓶颈，并把瓶颈收束成科学问题约束（避免凭空新增约束）。",
-            "再逐小标题扩写到接近目标字数。",
+            "选择一个用户确认的正文范围先写成 1–2 段。",
+            "在现状/缺口所在位置点明瓶颈，并把瓶颈收束成科学问题约束。",
+            "沿现有结构扩写到用户要求的长度，不改变标题或命令。",
         ],
         "revise": [
             "先修复缺失引用 key（或删掉未核验引用）。",
             "把不可核验表述改成“可对照维度 + 指标 + 预期改善幅度/区间”。",
-            "检查科学问题是否写成疑问句、假设是否为预测性陈述且不含验证方式；统一术语/缩写口径并与 2.1/3.1 对齐。",
+            "检查科学问题是否写成疑问句、假设是否为预测性陈述且不含验证方式；统一术语/缩写口径并与用户指定的相关章节对齐。",
         ],
         "polish": [
-            "按字数目标做压缩/扩写（优先改“现状与不足/局限性”段落）。",
-            "增强承上启下：研究切入点最后 1 句自然引到 2.1 研究内容。",
-            "删除口号式句子，保留事实点与验证标准。",
+            "第一步只核对论证、事实、引用、术语边界和 LaTeX 结构，列出不可改变的科学含义。",
+            "第二步定位长句层级、指代/缩写界定、抽象名词关系和段内衔接问题；在不损失必要限定的前提下拆句、补过渡或克制修饰。",
+            "确认已清楚的专业表述不被强行通俗化，并增强结尾到用户指定研究内容的自然过渡。",
         ],
         "final": [
             "最后跑一遍 diagnose（必要时开 tier2）并修复剩余问题。",
             "跑 terms 确认跨章节术语一致。",
-            "确认输出只改 1.1 文件，且不含危险命令。",
+            "确认输出只改用户授权的正文范围，且没有未经授权的结构/配置命令。",
         ],
     }.get(stage, ["按当前阶段推进。"])
 
@@ -230,9 +230,9 @@ async def _infer_stage_auto(
 
 输入信息：
 - 当前字数：{tier1.get('word_count', 0)}（目标：{word_target.target}，容差：±{word_target.tolerance}）
-- 结构状态：{'✅ 完整' if tier1.get('structure_ok') else '❌ 不完整'}（小节数：{tier1.get('subsubsection_count', 0)}）
+- 结构状态：{'✅ 已按配置检查' if tier1.get('structure_check_enabled') and tier1.get('structure_ok') else ('⚠️ 需按配置修复' if tier1.get('structure_check_enabled') else 'ℹ️ 未启用固定结构检查')}（检测到 subsubsection：{tier1.get('subsubsection_count', 0)}）
 - 引用状态：{'✅ 正常' if tier1.get('citation_ok') else '❌ 缺失引用'}
-- 质量问题：高风险表述 {tier1.get('forbidden_phrases_hits', [])}，危险命令 {tier1.get('avoid_commands_hits', [])}
+- 质量问题：危险命令 {tier1.get('avoid_commands_hits', [])}；措辞风险由宿主 AI 按 references/boastful_expression_guidelines.md 复核
 
 文本内容（去注释后，最多 {preview_chars} 字）：{preview}
 
@@ -275,8 +275,10 @@ async def coach_markdown(
     skill_root = Path(skill_root).resolve()
     project_root = Path(project_root).resolve()
     targets = get_mapping(config, "targets")
-    rel = get_str(targets, "justification_tex", "extraTex/1.1.立项依据.tex")
-    target = (project_root / rel).resolve()
+    rel = get_str(targets, "justification_tex", "").strip()
+    if not rel:
+        rel = discover_target_relpath(project_root) or ""
+    target = resolve_target_path(project_root, rel) if rel else (project_root / ".__no_target__.tex").resolve()
     tex_text = read_text_streaming(target).text if target.exists() else ""
     style_mode = get_style_mode(config)
     style_preamble = style_preamble_text(style_mode).strip()
@@ -284,13 +286,13 @@ async def coach_markdown(
     tier1_obj = run_tier1(tex_text=tex_text, project_root=project_root, config=config)
     tier1 = {
         "structure_ok": tier1_obj.structure_ok,
+        "structure_check_enabled": tier1_obj.structure_check_enabled,
         "subsubsection_count": tier1_obj.subsubsection_count,
         "missing_subsubsections": tier1_obj.missing_subsubsections,
         "citation_ok": tier1_obj.citation_ok,
         "missing_citation_keys": tier1_obj.missing_citation_keys,
         "missing_doi_keys": tier1_obj.missing_doi_keys,
         "word_count": tier1_obj.word_count,
-        "forbidden_phrases_hits": tier1_obj.forbidden_phrases_hits,
         "avoid_commands_hits": tier1_obj.avoid_commands_hits,
     }
 
@@ -330,19 +332,23 @@ async def coach_markdown(
     )
     chosen_stage: WritingStage = auto_stage if stage == "auto" else stage
 
-    # 内容维度覆盖（尽量不失败）
+    # 内容维度覆盖是可选 legacy 辅助；默认不把固定四维度当作验收门槛。
     dimension_md = ""
-    try:
-        from .dimension_coverage import DimensionCoverageAI
-
-        dim_obj = await DimensionCoverageAI(ai_obj).check(
-            tex_text=tex_text,
-            max_chars=ai_max_input_chars(config),
-            cache_dir=cache_dir,
-        )
-        dimension_md = format_dimension_coverage_markdown(dim_obj)
-    except (ModuleNotFoundError, ImportError, RuntimeError):
+    structure_cfg = get_mapping(config, "structure")
+    if not get_bool(structure_cfg, "enable_dimension_coverage_check", False):
         dimension_md = "（未启用内容维度覆盖检查）"
+    else:
+        try:
+            from .dimension_coverage import DimensionCoverageAI
+
+            dim_obj = await DimensionCoverageAI(ai_obj).check(
+                tex_text=tex_text,
+                max_chars=ai_max_input_chars(config),
+                cache_dir=cache_dir,
+            )
+            dimension_md = format_dimension_coverage_markdown(dim_obj)
+        except (ModuleNotFoundError, ImportError, RuntimeError):
+            dimension_md = "（内容维度覆盖检查不可用）"
 
     inp = CoachInput(
         stage=chosen_stage,

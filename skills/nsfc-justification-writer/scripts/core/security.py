@@ -7,6 +7,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, List, Mapping, Optional
 
+import re
+
 from .config_access import get_mapping, get_seq_str
 from .config_loader import DEFAULT_CONFIG
 
@@ -60,8 +62,51 @@ def validate_write_target(
 
     if policy.allowed_relpaths:
         if rel_str not in set(policy.allowed_relpaths):
-            raise RuntimeError(f"写入目标不在白名单：{rel_str}")
+            raise RuntimeError(
+                f"写入目标不在白名单：{rel_str}；如这是用户确认的自定义目标，请将该相对路径精确加入 guardrails.allowed_write_files"
+            )
 
 
 def resolve_target_path(project_root: Path, relpath: str) -> Path:
     return (project_root / relpath).resolve()
+
+
+def discover_target_candidates(project_root: Path) -> List[str]:
+    """只读追踪 main.tex 的 input/include 候选；不在多个候选中猜测。"""
+    root = Path(project_root).resolve()
+    main = root / "main.tex"
+    if not main.is_file():
+        return []
+    text = main.read_text(encoding="utf-8", errors="ignore")
+    candidates: List[str] = []
+    for match in re.finditer(r"\\(?:input|include)\s*\{([^{}]+)\}", text):
+        raw = match.group(1).strip()
+        if not raw:
+            continue
+        rel = raw if raw.endswith(".tex") else raw + ".tex"
+        p = (root / rel).resolve()
+        try:
+            p.relative_to(root)
+        except ValueError:
+            continue
+        if p.is_file() and p not in {root / "main.tex"}:
+            candidates.append(p.relative_to(root).as_posix())
+    return sorted(set(candidates))
+
+
+def discover_target_relpath(project_root: Path) -> Optional[str]:
+    candidates = discover_target_candidates(project_root)
+    return candidates[0] if len(candidates) == 1 else None
+
+
+def validate_target_file(*, project_root: Path, target_path: Path, require_exists: bool = True) -> Path:
+    """统一规范化目标路径，拒绝越出项目根目录的绝对路径和符号链接。"""
+    root = Path(project_root).resolve()
+    target = Path(target_path).resolve()
+    try:
+        target.relative_to(root)
+    except ValueError as exc:
+        raise RuntimeError(f"目标路径越出 project_root：{target}") from exc
+    if require_exists and (not target.is_file()):
+        raise RuntimeError(f"目标文件不存在或不是普通文件：{target}")
+    return target
