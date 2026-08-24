@@ -34,7 +34,6 @@ class Tier1Report:
 class DiagnosticReport:
     tier1: Tier1Report
     tier2: Optional[Dict[str, Any]] = None
-    dimension_coverage: Optional[Dict[str, Any]] = None
     word_target: Optional[Dict[str, Any]] = None
     notes: List[str] = field(default_factory=list)
 
@@ -54,7 +53,6 @@ class DiagnosticReport:
                 "constraints": self.tier1.constraints,
             },
             "tier2": self.tier2,
-            "dimension_coverage": self.dimension_coverage,
             "word_target": self.word_target,
             "notes": self.notes,
         }

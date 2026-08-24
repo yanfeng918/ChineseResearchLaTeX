@@ -7,6 +7,7 @@ The version number is the single source of truth in `config.yaml` (`skill_info.v
 ## [Unreleased]
 
 ### Changed
+- 移除术语矩阵与固定内容维度检查链路及其独立 `terms` 命令；逻辑、术语、论证维度和专业可读性统一交由宿主 AI 在 `coach`、`diagnose --tier2` 或 `review` 中自主规划，Python 保留确定性校验、分块、缓存和安全写入。
 - 移除 Python 侧固定吹牛式表述词表与 `BoastfulExpressionAI` 运行时调用；措辞风险改由宿主 AI 按 `references/boastful_expression_guidelines.md` 进行语义复核，脚本继续负责引用、路径和结构命令等确定性检查。
 - 增加面向大同行的专业可读性复核准则：`review`、`coach --stage polish` 和 Tier2 均要求识别长句层级、指代/缩写界定、抽象名词关系与段内衔接问题，并在不改变事实、限定、术语和 LaTeX 结构的前提下给出保真改法。
 - Tier2 新增向后兼容的 `readability` 列表，聚合与 HTML 展示均保留旧字段；无 AI 回退继续输出人工可执行的可读性自检，不将其作为拒写条件。

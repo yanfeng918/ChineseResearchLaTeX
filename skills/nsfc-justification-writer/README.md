@@ -12,7 +12,7 @@
 领域价值 → 已有证据 → 认知缺口 → 科学问题 → 可证伪假设 → 项目切入点 → 研究内容
 ```
 
-代码负责目标定位、引用/字数/术语检查、diff、备份和回滚；AI/用户负责理解课题、判断论证和生成正文。Skill 不会编造文献、实验结果或无法核验的事实。
+代码负责目标定位、引用/字数检查、diff、备份和回滚；宿主 AI/用户负责理解课题，并自主规划逻辑、术语、论证维度、可读性检查和正文生成。Skill 不会编造文献、实验结果或无法核验的事实。
 
 ## 最小可用调用
 
@@ -74,9 +74,9 @@ python skills/nsfc-justification-writer/scripts/run.py coach \
 | --- | --- |
 | `skeleton` | 确认正文边界，梳理事实、缺口、瓶颈→约束映射，并列出待补问题 |
 | `draft` | 按已确认范围生成或扩写正文，建立科学问题和假设的论证链 |
-| `revise` | 修复逻辑跳跃、缺失引用、不可核验表述和术语不一致 |
+| `revise` | 修复逻辑跳跃、缺失引用和不可核验表述 |
 | `polish` | 先保护事实与论证，再改善长句、指代、缩写界定和段内衔接 |
-| `final` | 按字数、引用、术语、结构和授权范围做最终检查 |
+| `final` | 按字数、引用、结构和授权范围做最终检查 |
 | `auto` | 根据当前正文状态自动选择阶段 |
 
 `coach` 的输出是阶段指导和可复制提示词；真正的正文由 AI/用户生成。若 AI responder 不可用，skill 会返回确定性的检查清单，不会凭空生成事实。
@@ -122,7 +122,7 @@ python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root <
 python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项目目录>
 ```
 
-重点看“证据/缺口 → 科学问题 → 科学假设 → 研究内容”是否闭环。随后让 AI 只修改用户指定的正文范围，生成完整提案并运行 `preview`。用户确认后再写入。
+重点看“证据/缺口 → 科学问题 → 科学假设 → 研究内容”是否闭环。需要深层语义判断时显式运行 `diagnose --tier2`，由宿主 AI 自主规划检查范围。随后让 AI 只修改用户指定的正文范围，生成完整提案并运行 `preview`。用户确认后再写入。
 
 ## 引用与 DOI 核验
 
@@ -140,15 +140,12 @@ python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项�
 # 字数（默认中文字符口径）
 python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root <项目目录>
 
-# 跨章节研究对象、指标、术语和缩写一致性
-python skills/nsfc-justification-writer/scripts/run.py terms --project-root <项目目录>
-
 # 可选语义审查或写作引导
 python skills/nsfc-justification-writer/scripts/run.py review --project-root <项目目录>
 python skills/nsfc-justification-writer/scripts/run.py coach --project-root <项目目录> --stage auto
 ```
 
-`diagnose`、`coach` 和 `review` 的结果是建议，不以固定小节数量、标题关键词或旧版四维度作为写入门槛。对于“国际领先”“填补空白”等吹牛式或绝对化表述，脚本不再维护固定词表；请由宿主 AI 按 [`references/boastful_expression_guidelines.md`](references/boastful_expression_guidelines.md) 进行语义复核。
+`diagnose`、`coach` 和 `review` 的结果是建议，不以固定小节数量、标题关键词或固定术语/维度清单作为写入门槛。运行 `diagnose --tier2` 时，逻辑、术语、论证维度和专业可读性均由宿主 AI 自主规划。对于“国际领先”“填补空白”等吹牛式或绝对化表述，脚本不维护固定词表；请由宿主 AI 按 [`references/boastful_expression_guidelines.md`](references/boastful_expression_guidelines.md) 进行语义复核。
 
 ## 写作边界
 
@@ -166,7 +163,6 @@ python skills/nsfc-justification-writer/scripts/run.py coach --project-root <项
 | --- | --- |
 | `style.mode` | `theoretical`、`mixed` 或 `engineering`，改变措辞和证据重心 |
 | `targets.justification_tex` | 目标正文相对路径；为空时只读发现唯一候选 |
-| `targets.related_tex` | 相关研究内容章节，用于术语和逻辑对照 |
 | `references.allow_missing_citations` | 默认 `false`，缺失 bibkey 时拒绝写入 |
 | `guardrails.output_mode` | 默认 `preview`；写入必须有明确授权 |
 | `guardrails.allowed_write_files` | 自定义正文目标的精确白名单 |

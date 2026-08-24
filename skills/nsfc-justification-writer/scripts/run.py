@@ -231,15 +231,12 @@ def cmd_diagnose(args: argparse.Namespace) -> int:
         except ValueError:
             target_relpath = target.name
         tex = target.read_text(encoding="utf-8", errors="ignore") if target.exists() else ""
-        include_terms = not bool(getattr(args, "no_terms", False))
-        term_md = coord.term_consistency_report(project_root=Path(args.project_root)) if include_terms else ""
         html_text = render_diagnostic_html(
             skill_root=skill_root,
             project_root=Path(args.project_root),
             target_relpath=target_relpath,
             tex_text=tex,
             report=report,
-            term_matrix_md=term_md,
         )
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(html_text, encoding="utf-8")
@@ -296,28 +293,6 @@ def cmd_refs(args: argparse.Namespace) -> int:
             md = md.rstrip() + "\n\n## Crossref（可选联网）校验失败/超时的 DOI（需人工核验）\n\n" + "\n".join(failed) + "\n"
         else:
             md = md.rstrip() + "\n\n## Crossref（可选联网）校验\n\n- ✅ 未发现明显失败（仍建议抽查关键引用）\n"
-    if args.out:
-        Path(args.out).write_text(md, encoding="utf-8")
-        print(f"已输出：{args.out}")
-        return 0
-    print(md, end="")
-    return 0
-
-
-def cmd_terms(args: argparse.Namespace) -> int:
-    skill_root = Path(__file__).resolve().parent.parent
-    config = _load_config_for_args(skill_root, args)
-    coord = HybridCoordinator(skill_root=skill_root, config=config)
-    md = coord.term_consistency_report(project_root=Path(args.project_root))
-    targets = get_mapping(config, "targets")
-    related = get_mapping(targets, "related_tex")
-    if related:
-        md = (
-            md.rstrip()
-            + "\n\n## 建议同步到以下章节\n\n"
-            + "\n".join([f"- {k}: `{v}`" for k, v in related.items()])
-            + "\n"
-        )
     if args.out:
         Path(args.out).write_text(md, encoding="utf-8")
         print(f"已输出：{args.out}")
@@ -750,7 +725,6 @@ def build_parser() -> argparse.ArgumentParser:
         help="可选：输出 HTML 报告到文件；用 auto 输出到 runs_dir（默认 tests/_artifacts/runs/）...",
     )
     p_diag.add_argument("--open", action="store_true", help="若生成 HTML 报告则尝试自动打开浏览器")
-    p_diag.add_argument("--no-terms", action="store_true", help="HTML 报告不附带术语一致性矩阵")
     p_diag.add_argument("--run-id", help="可选：diagnose 的 run_id（用于 html-report=auto）")
     p_diag.set_defaults(func=cmd_diagnose)
 
@@ -770,11 +744,6 @@ def build_parser() -> argparse.ArgumentParser:
     p_refs.add_argument("--doi-timeout", default=5.0, type=float, help="Crossref 校验超时时间（秒）")
     p_refs.add_argument("--out", help="可选：输出到文件（markdown）")
     p_refs.set_defaults(func=cmd_refs)
-
-    p_terms = sub.add_parser("terms", help="术语一致性（硬编码 alias_groups）")
-    p_terms.add_argument("--project-root", required=True)
-    p_terms.add_argument("--out", help="可选：输出到文件（markdown）")
-    p_terms.set_defaults(func=cmd_terms)
 
     p_init = sub.add_parser("init", help="生成（或交互式填写）信息表 info_form.md")
     p_init.add_argument("--interactive", action="store_true", help="问答式收集并生成已填写的信息表")

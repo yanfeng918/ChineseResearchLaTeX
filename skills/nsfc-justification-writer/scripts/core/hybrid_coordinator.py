@@ -15,21 +15,19 @@ from .config_loader import get_runs_dir, load_config
 from .diagnostic import DiagnosticReport, format_tier1, run_tier1
 from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNotFoundError, TargetResolutionError
 from .editor import ApplyResult, apply_new_content
-from .dimension_coverage import DimensionCoverageAI, format_dimension_coverage_markdown
 from .example_matcher import recommend_examples_markdown
 from .io_utils import iter_text_chunks_by_paragraph, read_text_streaming
 from .latex_parser import match_title_via_ai, replace_subsubsection_body_hybrid, suggest_titles
 from .observability import Observability, ensure_run_dir, make_run_id
 from .reference_validator import check_citations
 from .security import build_write_policy, discover_target_candidates, resolve_target_path, validate_write_target, validate_target_file
-from .term_consistency import term_consistency_report
 from .wordcount import count_cjk_chars, describe_word_count_mode
 from .prompt_templates import get_prompt, TIER2_DIAGNOSTIC_PROMPT
 from .review_advice import generate_review_markdown
 from .writing_coach import coach_markdown
 from .quality_gate import check_new_body_quality
 from .word_target import resolve_word_target
-from .limits import ai_max_input_chars, max_file_bytes
+from .limits import max_file_bytes
 
 
 @dataclass(frozen=True)
@@ -144,7 +142,6 @@ class HybridCoordinator:
         report = DiagnosticReport(
             tier1=tier1,
             tier2=None,
-            dimension_coverage=None,
             word_target={"target": word_spec.target, "tolerance": word_spec.tolerance, "source": word_spec.source, "evidence": word_spec.evidence},
             notes=[],
         )
@@ -152,21 +149,6 @@ class HybridCoordinator:
 
         ai_cfg = get_mapping(self.config, "ai")
         cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
-
-        # 内容维度覆盖检查（AI 不可用时自动回退启发式）
-        structure_cfg = get_mapping(self.config, "structure")
-        if get_bool(structure_cfg, "enable_dimension_coverage_check", False):
-            try:
-                report.dimension_coverage = asyncio.run(
-                    DimensionCoverageAI(self.ai).check(
-                        tex_text=tex,
-                        max_chars=ai_max_input_chars(self.config),
-                        cache_dir=cache_dir,
-                        fresh=bool(tier2_fresh),
-                    )
-                )
-            except RuntimeError:
-                report.dimension_coverage = None
 
         if not include_tier2:
             return report
@@ -258,10 +240,6 @@ class HybridCoordinator:
             src = tgt.get("source", "")
             ev = tgt.get("evidence", "")
             out.append(f"- 🎯 目标字数：{tgt.get('target')}（容差 ±{tgt.get('tolerance')}，来源：{src}{'，线索：'+ev if ev else ''}）")
-        if report.dimension_coverage:
-            out.append("")
-            out.append("内容维度覆盖（价值/现状/科学问题/切入点）：")
-            out.append(format_dimension_coverage_markdown(report.dimension_coverage).rstrip())
         if report.tier2:
             out.append("")
             out.append("Tier2（AI 语义分析）：")
@@ -281,23 +259,6 @@ class HybridCoordinator:
             for n in report.notes:
                 out.append(f"- {n}")
         return "\n".join(out).strip() + "\n"
-
-    def term_consistency_report(self, *, project_root: Path) -> str:
-        project_root = Path(project_root).resolve()
-        targets = get_mapping(self.config, "targets")
-        related = get_mapping(targets, "related_tex")
-
-        files = {
-            "立项依据": resolve_target_path(project_root, self._target_relpath(project_root)),
-        }
-        for label, relpath in related.items():
-            files[label] = resolve_target_path(project_root, str(relpath))
-
-        ai_cfg = get_mapping(self.config, "ai")
-        cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
-        md = term_consistency_report(files=files, config=self.config, ai=self.ai, cache_dir=cache_dir)
-        self.obs.add("terms.report", ai=self.ai.is_available())
-        return md
 
     def apply_section_body(
         self,

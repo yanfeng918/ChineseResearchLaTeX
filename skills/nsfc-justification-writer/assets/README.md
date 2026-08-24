@@ -6,7 +6,7 @@
 - `assets/prompts/`：可配置 Prompt 文件（由 `config.yaml:prompts.*` 指向）
 - `assets/templates/`：模板文件（如 HTML 报告模板、结构骨架模板）
 - `assets/examples/`：示例库（`*.tex` + `*.metadata.yaml`），用于 `scripts/run.py examples/coach --topic` 推荐参考骨架
-- `assets/presets/`：学科预设（`--preset <name>`），用于覆盖术语维度等配置
+- `assets/presets/`：可选学科预设（`--preset <name>`），仅在确有稳定配置差异时使用
 
 说明：
 - 历史路径 `prompts/`、`templates/`、`examples/`、`config/presets/` 已迁移到此处；代码仍保留兼容回退。

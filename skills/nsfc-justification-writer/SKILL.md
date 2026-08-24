@@ -1,7 +1,6 @@
 ---
 name: nsfc-justification-writer
 description: 当用户要求写作、重构、审查或润色 NSFC/科研基金申请书的立项依据、研究意义、国内外现状、科学问题或科学假设时使用。以语义论证和可核验性为核心，支持任意文件名、标题命令和 LaTeX 结构；默认只输出建议与 unified diff，只有用户明确授权才写入。
-author: Bensz Conan
 metadata:
   author: Bensz Conan
   short-description: 科研立项依据语义写作与安全改写
@@ -22,8 +21,6 @@ metadata:
     - 现有不足
     - 科学问题
     - 科学假设
-references: references/
-config: config.yaml
 ---
 
 # 科研立项依据写作器
@@ -54,7 +51,7 @@ config: config.yaml
 4. 假设之前以领域事实、已有研究和认知缺口为主；项目干预、比较、终点和技术路线集中放在假设之后。外部文献的方法学描述可以作为证据保留，不等于本项目方案前置。
 5. “项目切入点/贡献”是可选的语义表达，不要求固定标题或固定段落数量；重点是前后逻辑能互相支撑。
 6. 理论、混合、工程导向只影响措辞和证据重心，不作为结构通过/拒写条件。
-7. 在逻辑、术语和引用检查之后，执行一次面向大同行的专业可读性复核：定位长句层级过多、指代不清、缩写/新概念未界定、抽象名词堆叠、段内衔接缺失或不增加准确性的修饰。输出“位置/障碍/影响/保真改法”的表达建议；不把专业正文改成科普文，也不因术语密度或必要限定而强行改写。
+7. 在逻辑和引用检查之后，由宿主 AI 自主规划术语、论证维度与专业可读性复核：定位长句层级过多、指代不清、缩写/新概念未界定、抽象名词堆叠、段内衔接缺失或不增加准确性的修饰。输出“位置/障碍/影响/保真改法”的表达建议；不把专业正文改成科普文，也不因术语密度或必要限定而强行改写。
 8. 可读性改写必须保留已核验事实、研究对象、必要限定、科学问题/假设、引用命令、标签和 LaTeX 结构；无法保真时只说明风险，不补写事实或证据。
 
 措辞边界：吹牛式、绝对化或无依据夸大表述不由 Python 固定词表判定；宿主 AI 应按 `references/boastful_expression_guidelines.md` 进行语义复核，并把发现归入逻辑/表达建议。脚本只保留路径、结构命令、引用 key 等确定性检查。
@@ -62,11 +59,11 @@ config: config.yaml
 ## 推荐工作流
 
 1. 读取用户指定文件和必要上下文；目标不明确时只读追踪 `main.tex` 的唯一 `\\input/\\include` 候选并请用户确认。
-2. 检查科学问题—假设—证据—研究内容的闭环、术语一致性和引用 key；把发现分成“事实问题、逻辑问题、表达建议”。
+2. 检查科学问题—假设—证据—研究内容的闭环和引用 key；由宿主 AI 自主决定是否需要提出术语、论证维度或表达方面的发现，并把结果分成“事实问题、逻辑问题、表达建议”。
 3. 在上述检查完成后复核专业可读性，标明具体原句特征和保真改法；`polish` 阶段先确认事实/逻辑/引用未改变，再进行受约束的语言精修。
 4. 输出修改后正文或 unified diff，并明确未修改的结构命令和文件范围。
 5. 用户确认目标与 diff 后才写入；写入前保留备份，写入后再次展示 diff，并提供回滚入口。
-6. 字数统计、引用 key 检查、术语检查可作为独立工具运行，不把它们绑定到标题或固定四维度。
+6. 字数统计和引用 key 检查可作为独立工具运行；不把写作流程绑定到固定标题或固定维度清单。
 
 ## 输出契约
 
@@ -88,11 +85,11 @@ config: config.yaml
 ## 脚本说明
 
 - `scripts/run.py preview`：只读生成建议文件与 unified diff，并检查是否触碰结构/配置命令。
-- `refs`、`wordcount`、`terms`：独立的引用、字数和术语工具。
+- `refs`、`wordcount`：独立的引用和字数工具；术语、论证维度与专业可读性由宿主 AI 在 `coach`、`diagnose --tier2` 或 `review` 中自主规划。
 - `diagnose`、`coach`、`review`：可选的语义辅助；结果是建议，不是固定模板的通过门槛。措辞风险由宿主 AI 按参考准则判断，脚本不做固定短语命中。
 - `apply-section`：兼容旧接口（legacy）。它仍按标题替换正文，仅在用户明确确认后使用；新文档和新流程不应依赖 `\\subsubsection`。
 - `diff`、`rollback`：查看实际变更并回滚已确认写入。
 
 ## 参考资料
 
-按任务阅读 `references/scientific_question_guidelines.md`、`references/scientific_hypothesis_guidelines.md` 和 `references/professional_readability_guidelines.md`；进行吹牛式/绝对化措辞语义复核时必须阅读 `references/boastful_expression_guidelines.md`。用户流程、脚本用法和架构边界见 `README.md`。旧的四维度/标题匹配资料仅用于迁移和解释历史行为，不作为硬规则。
+按任务阅读 `references/scientific_question_guidelines.md`、`references/scientific_hypothesis_guidelines.md` 和 `references/professional_readability_guidelines.md`；进行吹牛式/绝对化措辞语义复核时必须阅读 `references/boastful_expression_guidelines.md`。用户流程、脚本用法和架构边界见 `README.md`。宿主 AI 自主规划检查维度，不依赖固定术语矩阵或四维度门槛。

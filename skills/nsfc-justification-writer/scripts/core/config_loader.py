@@ -61,17 +61,6 @@ def _is_seq_str(x: Any) -> bool:
     return isinstance(x, list) and all(isinstance(it, str) for it in x)
 
 
-def _is_alias_groups(x: Any) -> bool:
-    if not isinstance(x, dict):
-        return False
-    for k, v in x.items():
-        if not isinstance(k, str):
-            return False
-        if not _is_seq_str(v):
-            return False
-    return True
-
-
 def _is_nonempty_seq_str(x: Any) -> bool:
     return isinstance(x, list) and all(isinstance(it, str) and str(it).strip() for it in x) and len(x) > 0
 
@@ -236,8 +225,6 @@ def validate_config(*, skill_root: Path, config: Dict[str, Any]) -> List[str]:
     elif isinstance(limits, dict):
         if "max_file_size_mb" in limits and not isinstance(limits.get("max_file_size_mb"), int):
             err("limits.max_file_size_mb 必须是 int")
-        if "ai_max_input_chars" in limits and not isinstance(limits.get("ai_max_input_chars"), int):
-            err("limits.ai_max_input_chars 必须是 int")
         if "writing_coach_preview_chars" in limits and not isinstance(limits.get("writing_coach_preview_chars"), int):
             err("limits.writing_coach_preview_chars 必须是 int")
         if "word_target" in limits:
@@ -284,40 +271,6 @@ def validate_config(*, skill_root: Path, config: Dict[str, Any]) -> List[str]:
                 "targets.justification_tex 必须同时精确出现在 guardrails.allowed_write_files 中；"
                 "自定义目标不会自动扩大写入白名单"
             )
-
-    terminology = config.get("terminology", {})
-    if terminology is not None and not isinstance(terminology, dict):
-        err("terminology 必须是 dict")
-    elif isinstance(terminology, dict):
-        mode = str(terminology.get("mode", "auto")).strip().lower()
-        if mode not in {"auto", "ai", "legacy", "semantic_only", "legacy_only"}:
-            err("terminology.mode 必须是 auto|ai|legacy|semantic_only|legacy_only")
-        if "enable_ai_semantic_check" in terminology and not isinstance(terminology.get("enable_ai_semantic_check"), bool):
-            err("terminology.enable_ai_semantic_check 必须是 bool")
-        if "ai_mode" in terminology and not isinstance(terminology.get("ai_mode"), str):
-            err("terminology.ai_mode 必须是 str")
-        ai_cfg = terminology.get("ai", {})
-        if ai_cfg is not None and not isinstance(ai_cfg, dict):
-            err("terminology.ai 必须是 dict")
-        elif isinstance(ai_cfg, dict):
-            if "enabled" in ai_cfg and not isinstance(ai_cfg.get("enabled"), bool):
-                err("terminology.ai.enabled 必须是 bool")
-            if "max_chars" in ai_cfg and not isinstance(ai_cfg.get("max_chars"), int):
-                err("terminology.ai.max_chars 必须是 int")
-        if "dimensions" in terminology:
-            dims = terminology.get("dimensions")
-            if not isinstance(dims, dict):
-                err("terminology.dimensions 必须是 dict")
-            elif dims:
-                for dim_name, groups in dims.items():
-                    if not isinstance(dim_name, str) or not dim_name.strip():
-                        err("terminology.dimensions 的 key 必须是非空字符串")
-                        continue
-                    if not _is_alias_groups(groups):
-                        err(f"terminology.dimensions.{dim_name} 必须是 dict[str, list[str]]")
-        elif "alias_groups" in terminology:
-            if not _is_alias_groups(terminology.get("alias_groups")):
-                err("terminology.alias_groups 必须是 dict[str, list[str]]")
 
     writing_coach = config.get("writing_coach")
     if writing_coach is not None and not isinstance(writing_coach, dict):

@@ -85,34 +85,6 @@ def _highlight_line(
     return t
 
 
-def _markdown_table_to_html(md: str) -> str:
-    lines = [ln.strip() for ln in (md or "").splitlines() if ln.strip()]
-    rows = [ln for ln in lines if ln.startswith("|") and ln.endswith("|")]
-    if len(rows) < 2:
-        if md.strip():
-            return f'<div class="md"><pre class="mono">{_escape(md)}</pre></div>'
-        return '<div class="md">（无）</div>'
-
-    header = [c.strip() for c in rows[0].strip("|").split("|")]
-    body_rows = []
-    for r in rows[2:]:
-        cols = [c.strip() for c in r.strip("|").split("|")]
-        if len(cols) != len(header):
-            continue
-        body_rows.append(cols)
-
-    thead = "<tr>" + "".join([f"<th>{_escape(h)}</th>" for h in header]) + "</tr>"
-    tbody = "".join(
-        [
-            "<tr>"
-            + "".join([f"<td>{_escape(c)}</td>" for c in cols])
-            + "</tr>"
-            for cols in body_rows
-        ]
-    )
-    return f"<table><thead>{thead}</thead><tbody>{tbody}</tbody></table>"
-
-
 def render_diagnostic_html(
     *,
     skill_root: Path,
@@ -120,7 +92,6 @@ def render_diagnostic_html(
     target_relpath: str,
     tex_text: str,
     report: DiagnosticReport,
-    term_matrix_md: str = "",
     next_steps: Optional[List[str]] = None,
 ) -> str:
     # 新规范：assets/templates/...
@@ -194,6 +165,5 @@ def render_diagnostic_html(
         tier1_summary_html=tier1_summary_html,
         next_steps_html=next_steps_html,
         tier2_html=_render_tier2(report.tier2),
-        terms_html=_markdown_table_to_html(term_matrix_md),
         code_lines_html="".join(code_lines) if code_lines else '<li class="line"><div class="ln mono">—</div><div class="src mono">（文件为空）</div></li>',
     )

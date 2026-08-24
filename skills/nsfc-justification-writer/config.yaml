@@ -17,7 +17,6 @@ parameters:
 targets:
   # 可由用户、项目配置或 CLI 显式指定；为空时由只读候选发现决定，不自动写入。
   justification_tex: ""
-  related_tex: {}
   bib_globs:
     - references/*.bib
     - references/**/*.bib
@@ -27,7 +26,6 @@ workspace:
 
 limits:
   max_file_size_mb: 5
-  ai_max_input_chars: 20000
   word_target:
     min: 100
     max: 20000
@@ -73,15 +71,6 @@ word_count:
   target: 9000
   tolerance: 800
   mode: cjk_only
-
-terminology:
-  mode: auto
-  enable_ai_semantic_check: true
-  ai_mode: auto
-  ai:
-    enabled: true
-    max_chars: 20000
-  dimensions: {}
 
 writing_coach:
   enable_ai_stage_inference: true

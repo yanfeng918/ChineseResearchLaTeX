@@ -41,5 +41,4 @@
 
 ## 可配置项
 
-字符截断与输入上限使用 `config.yaml`：
-- `limits.ai_max_input_chars`：AI 输入字符上限（避免超长文本导致成本/延迟显著上升）
+正文输入截断与分块由各命令的运行参数控制；`coach` 默认只向写作 prompt 提供最多 12000 字符，Tier2 使用 `--chunk-size` 与 `--max-chunks` 控制分块规模。

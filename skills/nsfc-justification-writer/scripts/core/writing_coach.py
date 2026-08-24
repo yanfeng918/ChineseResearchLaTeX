@@ -12,13 +12,11 @@ from typing import Any, Dict, List, Literal, Optional
 from .ai_integration import AIIntegration
 from .config_access import get_bool, get_mapping, get_str
 from .diagnostic import run_tier1
-from .dimension_coverage import format_dimension_coverage_markdown
 from .io_utils import read_text_streaming
-from .limits import ai_max_input_chars, writing_coach_preview_chars
+from .limits import writing_coach_preview_chars
 from .prompt_templates import get_prompt
 from .security import discover_target_relpath, resolve_target_path
 from .style import get_style_mode, style_preamble_text
-from .term_consistency import CrossChapterValidator, format_term_matrices_markdown
 from .word_target import WordTargetSpec, resolve_word_target
 
 WritingStage = Literal["auto", "skeleton", "draft", "revise", "polish", "final"]
@@ -32,9 +30,7 @@ class CoachInput:
     info_form_text: str
     tex_text: str
     tier1: Dict[str, Any]
-    term_matrix_md: str
     word_target: WordTargetSpec
-    dimension_coverage_md: str
 
 
 def _infer_stage(
@@ -66,7 +62,6 @@ def _suggest_questions(
     *,
     stage: WritingStage,
     tier1: Dict[str, Any],
-    dimension_coverage_md: str,
     style_mode: str,
 ) -> List[str]:
     base: List[str]
@@ -91,8 +86,6 @@ def _suggest_questions(
             "你准备如何验证（理论证明/定理/数值验证/对照实验）？",
             "本项目相对现有工作的理论差异化切口是什么（如新表征/新方法学/统一框架）？",
         ]
-    if "缺失维度" in dimension_coverage_md:
-        base.append("哪些维度缺失？请优先补齐“价值/现状/科学问题/切入点”对应段落。")
     if stage in {"skeleton", "draft"}:
         base.append("正文范围和现有结构命令是否已确认？若需要调整标题，请先明确授权范围。")
     if not bool(tier1.get("citation_ok", True)):
@@ -133,7 +126,6 @@ def _fallback_markdown(inp: CoachInput, stage: WritingStage) -> str:
     qs = _suggest_questions(
         stage=stage,
         tier1=inp.tier1,
-        dimension_coverage_md=inp.dimension_coverage_md,
         style_mode=inp.style_mode,
     )
     tasks = {
@@ -159,7 +151,6 @@ def _fallback_markdown(inp: CoachInput, stage: WritingStage) -> str:
         ],
         "final": [
             "最后跑一遍 diagnose（必要时开 tier2）并修复剩余问题。",
-            "跑 terms 确认跨章节术语一致。",
             "确认输出只改用户授权的正文范围，且没有未经授权的结构/配置命令。",
         ],
     }.get(stage, ["按当前阶段推进。"])
@@ -182,9 +173,6 @@ def _fallback_markdown(inp: CoachInput, stage: WritingStage) -> str:
         "```",
         "",
         f"## 目标字数：{inp.word_target.target}（容差 ±{inp.word_target.tolerance}，来源：{inp.word_target.source}{'；线索：'+inp.word_target.evidence if inp.word_target.evidence else ''}）",
-        "",
-        "## 内容维度覆盖（价值/现状/科学问题/切入点）",
-        inp.dimension_coverage_md.strip(),
     ]
     return "\n".join(md).strip() + "\n"
 
@@ -296,14 +284,6 @@ async def coach_markdown(
         "avoid_commands_hits": tier1_obj.avoid_commands_hits,
     }
 
-    # 术语矩阵（尽量不失败）
-    related = get_mapping(targets, "related_tex")
-    files = {"立项依据": target}
-    for label, relpath in related.items():
-        files[label] = (project_root / str(relpath)).resolve()
-    terminology_cfg = get_mapping(config, "terminology")
-    term_matrix_md = format_term_matrices_markdown(CrossChapterValidator(files=files, terminology_config=terminology_cfg).build())
-
     word_spec = resolve_word_target(
         config=config,
         user_intent_text="",
@@ -332,24 +312,6 @@ async def coach_markdown(
     )
     chosen_stage: WritingStage = auto_stage if stage == "auto" else stage
 
-    # 内容维度覆盖是可选 legacy 辅助；默认不把固定四维度当作验收门槛。
-    dimension_md = ""
-    structure_cfg = get_mapping(config, "structure")
-    if not get_bool(structure_cfg, "enable_dimension_coverage_check", False):
-        dimension_md = "（未启用内容维度覆盖检查）"
-    else:
-        try:
-            from .dimension_coverage import DimensionCoverageAI
-
-            dim_obj = await DimensionCoverageAI(ai_obj).check(
-                tex_text=tex_text,
-                max_chars=ai_max_input_chars(config),
-                cache_dir=cache_dir,
-            )
-            dimension_md = format_dimension_coverage_markdown(dim_obj)
-        except (ModuleNotFoundError, ImportError, RuntimeError):
-            dimension_md = "（内容维度覆盖检查不可用）"
-
     inp = CoachInput(
         stage=chosen_stage,
         style_mode=style_mode,
@@ -357,9 +319,7 @@ async def coach_markdown(
         info_form_text=info_form_text,
         tex_text=tex_text,
         tier1=tier1,
-        term_matrix_md=term_matrix_md,
         word_target=word_spec,
-        dimension_coverage_md=dimension_md,
     )
 
     prompt = get_prompt(
@@ -380,9 +340,7 @@ async def coach_markdown(
         "stage": chosen_stage,
         "info_form": (info_form_text or "").strip(),
         "tier1": tier1,
-        "term_matrix": (term_matrix_md or "").strip(),
         "word_target": {"target": word_spec.target, "tolerance": word_spec.tolerance, "source": word_spec.source},
-        "dimension_coverage": dimension_md,
         "tex": (tex_text or "")[:12000],
     }
     filled = prompt.format(
@@ -390,7 +348,6 @@ async def coach_markdown(
         style_preamble=style_preamble,
         info_form=payload["info_form"],
         tier1_json=json.dumps(payload["tier1"], ensure_ascii=False, indent=2),
-        term_matrix=payload["term_matrix"],
         tex=payload["tex"],
     )
 
