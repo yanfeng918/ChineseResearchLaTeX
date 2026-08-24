@@ -12,7 +12,7 @@
 ## 快速开始
 
 ```
-请用 research-literature-review 这个skill写一篇"xxx主题"的Premium级综述。 参考文献以近2023-2025年为主，更早之前的文献，如果特别相关、特别重要的，也可以纳入。要有一个小节，专门讨论出未来3年较有前景的研究方向。工作目录名为 XXX-01。
+请用 research-literature-review 这个skill写一篇"xxx主题"的Premium级综述。参考文献以近2023-2025年为主，更早之前的文献，如果特别相关、特别重要的，也可以纳入。要有一个小节专门讨论未来3年较有前景的研究方向，并将 PDF/Word 发布到 `./review-deliverables/`。
 ```
 
 > 💡 **示例**：查看 [examples/](examples/) 目录，包含本 skill 实际生成的专家级综述示例，可参考输出格式和质量标准。
@@ -163,14 +163,20 @@ cache:
 
 ### 按预算写作（含无引用段落）
 ```
-请读取 .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{yyyy-mm-dd-hh-mm}-{safe_topic}/.systematic-literature-review/artifacts/word_budget_final.csv，引用段按每篇文献的“综/述”字数预算写，无引用段（文献ID为空，如摘要/结论/展望）按该行预算控制长度；可合并引用但需贴近预算总字数。
+请读取 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{run-id}/output/artifacts/word_budget_final.csv`，引用段按每篇文献的“综/述”字数预算写，无引用段（文献ID为空，如摘要/结论/展望）按该行预算控制长度；可合并引用但需贴近预算总字数。
 ```
 
 ## 运行与校验（维护者）
-- 自动流程：`python scripts/pipeline_runner.py --topic "主题" --work-dir runs/主题`  
+- 自动流程：`python scripts/run_pipeline.py --topic "主题" --publish-dir ./review-deliverables`
   阶段：`0_setup → 0.5_subtopics（写作前由 AI 给出并记录） → 1_search → 2_dedupe → 3_score → 4_select → 4.5_word_budget → 5_write → 6_validate（含有机扩写与可选预算校验） → 7_export`
 - 校验：`validate_counts.py`（字数/引用 min/max）、`validate_review_tex.py`（必需章节 + cite/bib 对齐）
 - 导出：`compile_latex_with_bibtex.py {topic}_review.tex {topic}_review.pdf`；`convert_latex_to_word.py ...`；如需自定义模板可在 `config.yaml.latex.template_path_override` 或 CLI `--template` 指定路径（缺失会回退到内置模板并同步 `.bst`）。
+
+### 文件隔离
+
+- `output/artifacts/` 保存候选库、评分、选文、字数预算、证据卡和校验 JSON；`output/reference/` 保存数据抽取表；`output/deliverables/` 保存内部生成的 PDF/Word，`output/deliverables/supporting/` 保存可选支持性文件。
+- 正式目录由 `--publish-dir` 接收白名单文件，默认只复制 PDF/Word；需要源码和审计材料时显式加 `--include-supporting`。
+- 历史 `.systematic-literature-review/` 目录只能通过显式 resume/整理/迁移处理，不再作为新运行的默认路径。
 
 ## 关键文件
 - `SKILL.md`：工作流、输入输出、最高原则与硬校验

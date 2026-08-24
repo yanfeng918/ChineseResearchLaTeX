@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed（运行区与正式发布目录隔离 - 2026-08-24）
+
+- 新增统一布局解析与 `output/deliverables/` 内部交付区，避免把中间文件写入运行目录根部。
+- `run_pipeline.py` 默认使用 `.bensz-api` 任务工作区；新增 `--publish-dir`、`--include-supporting` 与 `--force-publish`，正式目录默认只接收 PDF/Word。
+- 整理器、状态恢复器与成本追踪统一读取 `config.yaml:layout`；整理冲突不再静默跳过，并兼容显式旧布局。
+- 新增发布白名单和目录清洁回归测试，字数预算、候选文献、评分、选文、摘要补齐和证据卡不会进入正式发布目录。
+
 ### Fixed（checkpoint 恢复完整性 - 2026-08-09）
 
 - `pipeline_runner.py` 在 `--resume` 与显式 `--resume-from` 组合下始终先加载已有 `pipeline_state.json`，避免空 state 跳过前置阶段后覆盖历史 checkpoint。

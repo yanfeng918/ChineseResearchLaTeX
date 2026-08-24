@@ -25,24 +25,32 @@ def _sanitize_topic(raw: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run research-literature-review pipeline with idempotent work_dir")
     parser.add_argument("--topic", required=True, help="主题")
-    parser.add_argument("--runs-root", type=Path, default=Path("runs"), help="runs 根目录（默认: runs/）")
+    parser.add_argument(
+        "--runs-root",
+        type=Path,
+        default=None,
+        help="兼容旧入口：显式指定 runs 根目录；未指定时使用 .bensz-api 任务工作区",
+    )
     parser.add_argument("--work-dir", type=Path, default=None, help="显式 work_dir（优先级最高）")
     parser.add_argument("--domain", default="general", help="领域（可选）")
     parser.add_argument("--config", type=Path, default=Path(__file__).parent.parent / "config.yaml")
     parser.add_argument("--review-level", choices=["premium", "standard", "basic"], help="档位（可选）")
     parser.add_argument("--output-stem", help="文件名前缀（可选）")
     parser.add_argument("--resume-from", type=int, help="从阶段编号开始执行（0-based）")
+    parser.add_argument("--publish-dir", type=Path, help="正式交付目录（与内部 work_dir 分离）")
+    parser.add_argument("--include-supporting", action="store_true", help="同时发布 tex/bib/工作条件/验证报告")
+    parser.add_argument("--force-publish", action="store_true", help="允许覆盖发布目录中的同名文件")
     args = parser.parse_args()
 
     safe_topic = _sanitize_topic(args.output_stem or args.topic)
     if args.work_dir is not None:
         work_dir = args.work_dir
-    else:
+    elif args.runs_root is not None:
         runs_root = args.runs_root
         # 幂等：如果 runs_root 已经是 runs/{safe_topic}，则不再重复拼接
         work_dir = runs_root if runs_root.name == safe_topic else (runs_root / safe_topic)
-
-    work_dir.mkdir(parents=True, exist_ok=True)
+    else:
+        work_dir = None
 
     cmd = [
         sys.executable,
@@ -53,21 +61,27 @@ def main() -> int:
         args.domain,
         "--config",
         str(args.config),
-        "--work-dir",
-        str(work_dir),
     ]
+    if work_dir is not None:
+        work_dir.mkdir(parents=True, exist_ok=True)
+        cmd += ["--work-dir", str(work_dir)]
     if args.review_level:
         cmd += ["--review-level", args.review_level]
     if args.output_stem:
         cmd += ["--output-stem", args.output_stem]
     if args.resume_from is not None:
         cmd += ["--resume-from", str(args.resume_from)]
+    if args.publish_dir is not None:
+        cmd += ["--publish-dir", str(args.publish_dir)]
+    if args.include_supporting:
+        cmd += ["--include-supporting"]
+    if args.force_publish:
+        cmd += ["--force-publish"]
 
-    print(f"work_dir: {work_dir}")
+    print(f"work_dir: {work_dir or '(由 pipeline_runner 分配 .bensz-api 任务工作区)'}")
     proc = subprocess.run(cmd)
     return int(proc.returncode)
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

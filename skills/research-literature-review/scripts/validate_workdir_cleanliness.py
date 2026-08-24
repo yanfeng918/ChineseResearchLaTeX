@@ -31,9 +31,33 @@ ALLOWED_PATTERNS = [
 # 允许存在的隐藏目录/文件
 ALLOWED_HIDDEN = [
     ".systematic-literature-review",
+    "output",
+    "input",
+    "log",
     ".DS_Store",
     ".gitignore",
 ]
+
+PUBLISH_ALLOWED_PATTERNS = ["*_review.pdf", "*_review.docx"]
+PUBLISH_SUPPORTING_PATTERNS = [
+    "*_review.tex",
+    "*_参考文献.bib",
+    "*_工作条件.md",
+    "*_验证报告.md",
+]
+
+
+def validate_publish_dir(publish_dir: Path, include_supporting: bool = False) -> List[Path]:
+    """返回发布目录中不属于发布白名单的条目。"""
+    publish_dir = Path(publish_dir).expanduser().resolve()
+    if not publish_dir.exists() or not publish_dir.is_dir():
+        return []
+    patterns = PUBLISH_ALLOWED_PATTERNS + (PUBLISH_SUPPORTING_PATTERNS if include_supporting else [])
+    return [
+        path
+        for path in sorted(publish_dir.iterdir())
+        if path.is_dir() or not any(path.match(pattern) for pattern in patterns)
+    ]
 
 
 def validate_workdir(work_dir: Path, strict: bool = False) -> tuple[List[Path], List[Path]]:
@@ -97,7 +121,20 @@ def main() -> int:
         action="store_true",
         help="以 JSON 格式输出结果",
     )
+    parser.add_argument("--publish-dir", type=Path, help="改为校验正式发布目录")
+    parser.add_argument("--include-supporting", action="store_true", help="允许 tex/bib/工作条件/验证报告")
     args = parser.parse_args()
+
+    if args.publish_dir:
+        publish_dir = args.publish_dir.expanduser().resolve()
+        unexpected = validate_publish_dir(publish_dir, include_supporting=args.include_supporting)
+        if unexpected:
+            print(f"⚠️ 发布目录存在 {len(unexpected)} 个未授权条目：")
+            for path in unexpected:
+                print(f"  - {path.name}")
+            return 1
+        print("✓ 发布目录整洁")
+        return 0
 
     work_dir = args.work_dir.expanduser().resolve()
     if not work_dir.exists():

@@ -66,15 +66,12 @@ metadata:
 
 ## 输出
 
-默认交付以下核心文件：
+默认发布以下核心文件（通过 `--publish-dir` 指定正式目录时复制）：
 
-- `{主题}_工作条件.md`：输入、检索、评分、选文、结构与校验记录。
-- `{主题}_review.tex`：正文唯一 LaTeX 源文件。
-- `{主题}_参考文献.bib`：选中文献 BibTeX。
-- `word_budget_run{1,2,3}.csv`、`word_budget_final.csv`、`non_cited_budget.csv`：综/述字数预算。
-- `{主题}_验证报告.md`：字数、章节、引用一致性等验证结果。
 - `{主题}_review.pdf`
 - `{主题}_review.docx`
+
+可选支持性文件（使用 `--include-supporting` 发布）包括 `{主题}_工作条件.md`、`{主题}_review.tex`、`{主题}_参考文献.bib` 和 `{主题}_验证报告.md`。字数预算、候选文献、评分、选文、摘要补齐和证据卡始终属于内部中间产物，不进入正式发布目录。
 
 必要中间产物包括：
 
@@ -168,24 +165,23 @@ metadata:
 
 ## 工作目录与文件隔离
 
-- 所有中间文件必须写入 `{work_dir}/.systematic-literature-review/`。
-- 最终交付物放在工作目录根部。
-- AI 临时脚本必须放到 `{work_dir}/.systematic-literature-review/scripts/`。
-- 不要把临时文件写到工作目录根部，不要用绝对路径写 `/tmp/*`，也不要读写其他 run 目录。
+- 默认 `run_pipeline.py` 将运行目录放在 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/<run-id>/`；内部状态和产物位于其 `output/` 下的 `artifacts/`、`reference/`、`cache/`、`scripts/`、`deliverables/`（支持性文件单独位于 `deliverables/supporting/`）。
+- 正式交付目录必须通过 `--publish-dir` 显式指定，并且只接收 PDF/Word（或显式开启的支持性文件）。不要把正式目录作为 `--work-dir`。
+- AI 临时脚本必须放到内部 `output/scripts/`；不要把临时文件写到运行目录根部，不要使用绝对路径写 `/tmp/*`，也不要读写其他 run 目录。
 - 以环境变量 `SYSTEMATIC_LITERATURE_REVIEW_SCOPE_ROOT` 和 `SYSTEMATIC_LITERATURE_REVIEW_SCRIPTS_DIR` 为准。
 
 ## 关键命令
 
 ```bash
 # 推荐主入口
-python3 scripts/run_pipeline.py --topic "{主题}" --runs-root runs
+python3 scripts/run_pipeline.py --topic "{主题}" --publish-dir ./review-deliverables
 
 # 旧入口 / resume
-python3 scripts/pipeline_runner.py --topic "{主题}" --domain general --work-dir .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{yyyy-mm-dd-hh-mm}-{safe_topic}
-python3 scripts/pipeline_runner.py --resume .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{yyyy-mm-dd-hh-mm}-{safe_topic}
+python3 scripts/pipeline_runner.py --topic "{主题}" --domain general --publish-dir ./review-deliverables
+python3 scripts/pipeline_runner.py --resume .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{run-id} --publish-dir ./review-deliverables
 
 # 阶段 3 评分后，从第 4 阶段继续
-python3 scripts/pipeline_runner.py --resume .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{yyyy-mm-dd-hh-mm}-{safe_topic} --resume-from 4
+python3 scripts/pipeline_runner.py --resume .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/{run-id} --resume-from 4
 ```
 
 `--resume-from` 只决定继续执行的阶段，不会绕过已有 `pipeline_state.json`。状态文件损坏时先备份或修复，禁止用空 state 覆盖历史 checkpoint。
@@ -208,7 +204,7 @@ python3 scripts/pipeline_runner.py --resume .bensz-api/task-{yyyymmdd-hhmm}-{简
 - 抓取定价：`python3 research-literature-review/scripts/pipeline_cost.py fetch-prices`
 - 记录 token：`pipeline_cost.py log ...`
 - 汇总：`pipeline_cost.py summary`
-- 所有成本数据写到 `.systematic-literature-review/cost/`
+- 所有成本数据写到内部 `output/cost/`（旧运行仍可显式使用 legacy 目录）。
 
 ## 参考材料
 

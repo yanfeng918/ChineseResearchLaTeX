@@ -21,6 +21,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict
 
+try:
+    from layout_paths import LayoutPaths
+except ModuleNotFoundError:  # 允许独立调用脚本
+    import sys
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from layout_paths import LayoutPaths
+
 # ========== 路径配置 ==========
 SCRIPT_DIR = Path(__file__).parent
 CONFIG_FILE = SCRIPT_DIR.parent / "config.yaml"
@@ -30,7 +38,12 @@ PRICE_FILE = SCRIPT_DIR / "pipeline_cost.yaml"
 def get_paths():
     """获取项目级路径"""
     work_dir = Path.cwd()
-    slr_dir = work_dir / ".systematic-literature-review"
+    try:
+        with CONFIG_FILE.open(encoding="utf-8") as f:
+            full_config = yaml.safe_load(f) or {}
+    except (OSError, yaml.YAMLError):
+        full_config = {}
+    slr_dir = LayoutPaths.from_config(work_dir, full_config).hidden_dir
     cost_dir = slr_dir / "cost"
 
     return {

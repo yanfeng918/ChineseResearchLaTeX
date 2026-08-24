@@ -1,27 +1,22 @@
 #!/usr/bin/env python3
-"""
-organize_run_dir.py - 整理单次综述运行目录的文件布局（把中间产物收纳到隐藏目录）
-
-目标：
-  - 工作目录根部只保留最终交付物：
-      {stem}_工作条件.md / {stem}_review.tex / {stem}_参考文献.bib / {stem}_review.pdf / {stem}_review.docx
-  - 其余中间产物移动到：
-      {work_dir}/.systematic-literature-review/artifacts/
-      {work_dir}/.systematic-literature-review/checkpoints/
-      {work_dir}/.systematic-literature-review/cache/
-
-安全策略：
-  - 默认 dry-run（只打印计划，不移动）
-  - 仅移动“已知 runner 产物”命名模式，避免误伤用户自建文件
-"""
+"""整理旧运行目录根部泄漏的已知中间产物。"""
 
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
+from typing import Any, Mapping
 
+import yaml
 
-HIDDEN = ".systematic-literature-review"
+try:
+    from layout_paths import LayoutPaths
+except ModuleNotFoundError:  # 允许被 qa 动态加载
+    import sys
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from layout_paths import LayoutPaths
+
 
 FINAL_SUFFIXES = (
     "_工作条件.md",
@@ -33,9 +28,8 @@ FINAL_SUFFIXES = (
 )
 
 
-def is_final_output(p: Path) -> bool:
-    name = p.name
-    return any(name.endswith(suf) for suf in FINAL_SUFFIXES)
+def is_final_output(path: Path) -> bool:
+    return any(path.name.endswith(suffix) for suffix in FINAL_SUFFIXES)
 
 
 def iter_candidates(work_dir: Path) -> list[Path]:
@@ -55,97 +49,92 @@ def iter_candidates(work_dir: Path) -> list[Path]:
         "supplement_search_history*.json",
         "sentinel_*",
         "selected_*",
+        "selection_rationale*.yaml",
+        "word_budget*.csv",
+        "non_cited_budget.csv",
         "doi_to_bibkey.json",
         "bibtex_report.json",
         "ccs_append*.bib",
         "data_extraction_table.md",
         "degraded_outline*.md",
-        # AI 临时脚本（应移动到 .systematic-literature-review/scripts/）
         "temp_*.py",
         "debug_*.py",
         "analysis_*.py",
     ]
-    out: list[Path] = []
-    for g in globs:
-        out.extend(sorted(work_dir.glob(g)))
-    # unique
     seen: set[Path] = set()
-    uniq: list[Path] = []
-    for p in out:
-        if p in seen:
+    result: list[Path] = []
+    for pattern in globs:
+        for path in sorted(work_dir.glob(pattern)):
+            if path not in seen:
+                seen.add(path)
+                result.append(path)
+    return result
+
+
+def organize_run_dir(
+    work_dir: Path,
+    config: Mapping[str, Any] | None = None,
+    *,
+    apply: bool = False,
+) -> list[str]:
+    """整理根部泄漏文件，返回已计划/移动的文件名。"""
+    work_dir = Path(work_dir).expanduser().resolve()
+    if not work_dir.is_dir():
+        raise ValueError(f"work_dir not found or not a directory: {work_dir}")
+
+    paths = LayoutPaths.from_config(work_dir, config)
+    checkpoints = paths.hidden_dir / "checkpoints"
+    moves: list[tuple[Path, Path]] = []
+    for path in iter_candidates(work_dir):
+        if not path.is_file() or is_final_output(path):
             continue
-        seen.add(p)
-        uniq.append(p)
-    return uniq
+        if path.name.startswith("checkpoint_"):
+            target_dir = checkpoints
+        elif path.name == "pipeline_state.json":
+            target_dir = paths.hidden_dir
+        elif path.suffix == ".py":
+            target_dir = paths.scripts_dir
+        else:
+            target_dir = paths.artifacts_dir
+        destination = target_dir / path.name
+        if destination.exists():
+            raise ValueError(f"整理目标已存在，拒绝覆盖：{destination}")
+        moves.append((path, destination))
+
+    if apply:
+        for _, destination in moves:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+        for source, destination in moves:
+            source.replace(destination)
+    return [source.name for source, _ in moves]
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Organize a research-literature-review run directory layout.")
-    parser.add_argument("--work-dir", required=True, type=Path, help="Run directory (contains final outputs)")
-    parser.add_argument("--apply", action="store_true", help="Apply changes (move files). Default is dry-run.")
+    parser.add_argument("--work-dir", required=True, type=Path, help="Run directory")
+    parser.add_argument("--apply", action="store_true", help="Apply changes; default is dry-run")
+    parser.add_argument("--config", type=Path, default=Path(__file__).parent.parent / "config.yaml")
     args = parser.parse_args()
 
-    work_dir = args.work_dir.expanduser().resolve()
-    if not work_dir.exists() or not work_dir.is_dir():
-        raise SystemExit(f"work_dir not found or not a directory: {work_dir}")
+    try:
+        config = yaml.safe_load(args.config.read_text(encoding="utf-8")) or {}
+        paths = LayoutPaths.from_config(args.work_dir, config)
+        planned = organize_run_dir(args.work_dir, config, apply=args.apply)
+    except (OSError, ValueError, yaml.YAMLError) as exc:
+        raise SystemExit(str(exc))
 
-    hidden = work_dir / HIDDEN
-    artifacts = hidden / "artifacts"
-    checkpoints = hidden / "checkpoints"
-    cache = hidden / "cache"
-    scripts = hidden / "scripts"
-
-    moves: list[tuple[Path, Path]] = []
-    for p in iter_candidates(work_dir):
-        if not p.is_file():
-            continue
-        if is_final_output(p):
-            continue
-        if p.name.startswith("checkpoint_"):
-            target_dir = checkpoints
-        elif p.name == "pipeline_state.json":
-            target_dir = hidden
-        elif p.suffix == ".py":
-            # AI 临时脚本移动到 scripts 目录
-            target_dir = scripts
-        else:
-            target_dir = artifacts
-        dst = target_dir / p.name
-        if dst.exists():
-            # skip conflicts
-            continue
-        moves.append((p, dst))
-
-    if not moves:
+    if not planned:
         print("✓ no moves needed")
         return 0
-
-    print(f"work_dir: {work_dir}")
-    print(f"hidden:   {hidden}")
+    print(f"work_dir: {Path(args.work_dir).expanduser().resolve()}")
+    print(f"hidden:   {paths.hidden_dir}")
     print(f"mode:     {'apply' if args.apply else 'dry-run'}")
-    print()
-    for src, dst in moves:
-        rel_src = src.relative_to(work_dir)
-        rel_dst = dst.relative_to(work_dir)
-        print(f"- {rel_src} -> {rel_dst}")
-
-    if not args.apply:
-        print("\n(dry-run) add --apply to move files")
-        return 0
-
-    hidden.mkdir(parents=True, exist_ok=True)
-    artifacts.mkdir(parents=True, exist_ok=True)
-    checkpoints.mkdir(parents=True, exist_ok=True)
-    cache.mkdir(parents=True, exist_ok=True)
-    scripts.mkdir(parents=True, exist_ok=True)
-
-    moved = 0
-    for src, dst in moves:
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        src.replace(dst)
-        moved += 1
-
-    print(f"\n✓ moved {moved} files into {HIDDEN}/")
+    for name in planned:
+        print(f"- {name}")
+    if args.apply:
+        print(f"✓ moved {len(planned)} files into {paths.hidden_dir}/")
+    else:
+        print("(dry-run) add --apply to move files")
     return 0
 
 

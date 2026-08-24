@@ -24,6 +24,14 @@ import io
 
 import yaml
 
+try:
+    from layout_paths import LayoutPaths
+    from publish_deliverables import PublishError, publish_deliverables
+except ModuleNotFoundError:  # 允许被 qa 动态加载
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from layout_paths import LayoutPaths
+    from publish_deliverables import PublishError, publish_deliverables
+
 
 def _safe_topic_slug(topic: str) -> str:
     slug = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff._-]+", "-", (topic or "").strip())
@@ -131,6 +139,9 @@ class PipelineRunner:
         work_dir: Path,
         review_level: Optional[str],
         output_stem: Optional[str],
+        publish_dir: Optional[Path] = None,
+        publish_include_supporting: Optional[bool] = None,
+        publish_force: Optional[bool] = None,
     ):
         self.topic = topic
         self.domain = domain
@@ -148,10 +159,32 @@ class PipelineRunner:
         # 设置工作目录隔离范围：子进程默认只允许在该目录内读写（由各脚本从 env 读取并校验）。
         os.environ["SYSTEMATIC_LITERATURE_REVIEW_SCOPE_ROOT"] = str(self.work_dir)
 
-        self.config_path = config_path
-        self.config = self._load_config(config_path)
+        self.config_path = config_path.expanduser().resolve()
+        self.config = self._load_config(self.config_path)
+        self.layout = LayoutPaths.from_config(self.work_dir, self.config)
+        self.legacy_layout_mode = False
+        # 仅在检测到旧 checkpoint 时兼容历史隐藏目录；新运行始终遵循 config.yaml。
+        legacy_layout = LayoutPaths.from_config(self.work_dir, {"layout": {"hidden_dir_name": ".systematic-literature-review"}})
+        if not self.layout.state_file.exists() and legacy_layout.state_file.exists():
+            self.layout = legacy_layout
+            self.legacy_layout_mode = True
         self.review_level = self._resolve_review_level(review_level)
         self.file_stem = self._sanitize_topic_for_filename(output_stem or topic)
+        self.publish_dir = Path(publish_dir).expanduser().resolve() if publish_dir else None
+        publish_cfg = self.config.get("publish", {}) if isinstance(self.config, dict) else {}
+        self.publish_include_supporting = bool(
+            publish_cfg.get("include_supporting", False)
+            if publish_include_supporting is None
+            else publish_include_supporting
+        )
+        self.publish_force = bool(publish_cfg.get("force", False) if publish_force is None else publish_force)
+        if self.publish_dir is not None:
+            try:
+                self.publish_dir.relative_to(self.work_dir)
+            except ValueError:
+                pass
+            else:
+                raise ValueError("publish_dir 不能位于内部 work_dir 内，请使用独立的正式交付目录")
 
         scoring_cfg = self.config.get("scoring", {}) if isinstance(self.config, dict) else {}
         word_range = (scoring_cfg.get("default_word_range") or {}).get(self.review_level, {}) if isinstance(scoring_cfg, dict) else {}
@@ -175,11 +208,11 @@ class PipelineRunner:
             "max": int((refs_cfg.get("max") or {}).get(self.review_level, 0) or 0),
         }
 
-        layout = self.config.get("layout", {}) if isinstance(self.config, dict) else {}
-        self.hidden_dir = self.work_dir / layout.get("hidden_dir_name", ".systematic-literature-review")
-        self.artifacts_dir = self.hidden_dir / layout.get("artifacts_dir_name", "artifacts")
-        self.reference_dir = self.hidden_dir / layout.get("reference_dir_name", "reference")
-        self.data_extraction_table = self.reference_dir / layout.get("reference_data_extraction_name", "data_extraction_table.md")
+        self.hidden_dir = self.layout.hidden_dir
+        self.artifacts_dir = self.layout.artifacts_dir
+        self.reference_dir = self.layout.reference_dir
+        layout_cfg = self.config.get("layout", {}) if isinstance(self.config, dict) else {}
+        self.data_extraction_table = self.reference_dir / layout_cfg.get("reference_data_extraction_name", "data_extraction_table.md")
 
         # 缓存策略（默认关闭，避免 run 目录 cache/api 文件爆炸）
         cache_cfg = self.config.get("cache", {}) if isinstance(self.config, dict) else {}
@@ -188,13 +221,12 @@ class PipelineRunner:
         self.cache_ttl_seconds = int(api_cache_cfg.get("ttl_seconds", 86400) or 86400)
         self.cache_dir: Optional[Path] = None
         if self.cache_enabled:
-            self.cache_dir = self.hidden_dir / layout.get("cache_dir_name", "cache") / "api"
+            self.cache_dir = self.layout.cache_dir / "api"
 
         # AI 临时脚本目录（供 AI 在工作流中创建临时脚本使用）
-        self.scripts_dir = self.hidden_dir / "scripts"
+        self.scripts_dir = self.layout.scripts_dir
 
-        for d in [self.work_dir / "input", self.work_dir / "log", self.hidden_dir, self.artifacts_dir, self.reference_dir, self.scripts_dir]:
-            d.mkdir(parents=True, exist_ok=True)
+        self.layout.ensure(cache_enabled=self.cache_enabled)
         if self.cache_dir is not None:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
             # 设置缓存目录环境变量（供 api_cache.py 使用）
@@ -244,7 +276,7 @@ class PipelineRunner:
         return str(review_cfg.get("default", "premium"))
 
     def _state_file(self) -> Path:
-        return self.hidden_dir / "pipeline_state.json"
+        return self.layout.state_file
 
     def save_state(self) -> None:
         self.state.to_json(self._state_file())
@@ -281,11 +313,19 @@ class PipelineRunner:
 
     def _output_path(self, key: str) -> Path:
         tpl = self.output_templates.get(key, f"{self.file_stem}_{key}.txt")
-        return self.work_dir / tpl.format(topic=self.file_stem)
+        if self.legacy_layout_mode:
+            output_root = self.work_dir
+        elif key in {"working_conditions", "review_tex", "references_bib", "validation_report"}:
+            output_root = self.layout.supporting_dir
+        else:
+            output_root = self.layout.deliverables_dir
+        return output_root / tpl.format(topic=self.file_stem)
 
     def _write_working_conditions_skeleton(self, path: Path) -> None:
         if path.exists():
             return
+        artifacts_rel = self.artifacts_dir.relative_to(self.work_dir).as_posix()
+        reference_rel = self.data_extraction_table.relative_to(self.work_dir).as_posix()
         sections = [
             "# 工作条件",
             f"- 主题: {self.topic}",
@@ -320,9 +360,9 @@ class PipelineRunner:
             "  - 如果所有文献评分均为 1.0（保底评分），说明评分机制失效",
             "  - 可能原因：中文主题导致脚本评分无法提取有效 token（v3.6 及更早版本）",
             "  - 建议：使用 AI 评分（v3.7+）或将主题转为英文",
-            "- 评分文件路径：`.systematic-literature-review/artifacts/scored_papers_{主题}.jsonl`",
+            f"- 评分文件路径：`{artifacts_rel}/scored_papers_{{主题}}.jsonl`",
             "## Data Extraction Table（数据抽取表）",
-            "- 数据抽取表路径：`.systematic-literature-review/reference/data_extraction_table.md`",
+            f"- 数据抽取表路径：`{reference_rel}`",
             "- 包含每篇文献的 Score、Subtopic、DOI、Year、Title、Venue、Design、Key findings、Limitations",
             "## Review Structure",
             "- 子主题列表与写作提纲",
@@ -917,7 +957,15 @@ class PipelineRunner:
         try:
             organize_script = Path(__file__).parent / "organize_run_dir.py"
             result = subprocess.run(
-                [sys.executable, str(organize_script), "--work-dir", str(self.work_dir), "--apply"],
+                [
+                    sys.executable,
+                    str(organize_script),
+                    "--work-dir",
+                    str(self.work_dir),
+                    "--config",
+                    str(self.config_path),
+                    "--apply",
+                ],
                 capture_output=True,
                 text=True,
             )
@@ -932,6 +980,20 @@ class PipelineRunner:
                 print(f"  ⚠️ 整理失败（非致命）: {error_msg}")
         except Exception as e:
             print(f"  ⚠️ 整理失败（非致命）: {e}")
+
+        if self.publish_dir is not None:
+            print(f"\n[发布] 复制交付文件到: {self.publish_dir}")
+            try:
+                result = publish_deliverables(
+                    self.work_dir if self.legacy_layout_mode else self.layout.deliverables_dir,
+                    self.publish_dir,
+                    include_supporting=self.publish_include_supporting,
+                    force=self.publish_force,
+                )
+                print(f"  ✓ 已发布: {', '.join(result.published)}")
+            except PublishError as exc:
+                print(f"  ✗ 发布失败: {exc}", file=sys.stderr)
+                return False
 
         return True
 
@@ -951,6 +1013,13 @@ def main() -> int:
     parser.add_argument("--output-stem", help="文件名前缀（可选）")
     parser.add_argument("--resume", type=Path, help="从已有 work_dir 恢复（自动读取其中的 pipeline_state.json）")
     parser.add_argument("--resume-from", type=int, help="从阶段编号开始执行（0-based）")
+    parser.add_argument("--publish-dir", type=Path, help="正式交付目录（与内部 work_dir 分离）")
+    parser.add_argument(
+        "--include-supporting",
+        action="store_true",
+        help="发布 .tex/.bib/工作条件/验证报告等支持性文件（默认仅发布 PDF/Word）",
+    )
+    parser.add_argument("--force-publish", action="store_true", help="允许覆盖发布目录中的同名核心文件")
     args = parser.parse_args()
 
     topic = args.topic
@@ -980,6 +1049,9 @@ def main() -> int:
         work_dir=work_dir,
         review_level=args.review_level,
         output_stem=args.output_stem,
+        publish_dir=args.publish_dir,
+        publish_include_supporting=args.include_supporting if args.include_supporting else None,
+        publish_force=args.force_publish if args.force_publish else None,
     )
     ok = runner.run(resume_from=args.resume_from)
     return 0 if ok else 1

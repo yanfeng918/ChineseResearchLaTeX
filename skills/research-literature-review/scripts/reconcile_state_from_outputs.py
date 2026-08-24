@@ -16,6 +16,16 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+import yaml
+
+try:
+    from layout_paths import LayoutPaths
+except ModuleNotFoundError:  # 允许被 qa 动态加载
+    import sys
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from layout_paths import LayoutPaths
+
 
 STAGE_ORDER: list[str] = [
     "0_setup",
@@ -81,24 +91,29 @@ def _mark_completed(state: Dict[str, Any], stage: str) -> None:
     state["completed_stages"] = ordered
 
 
-def _detect(work_dir: Path) -> Tuple[Dict[str, str], Dict[str, str], List[str]]:
+def _detect(work_dir: Path, config: Dict[str, Any] | None = None) -> Tuple[Dict[str, str], Dict[str, str], List[str]]:
     """
     返回 (input_files, output_files, completed_stages)
     """
-    hidden = work_dir / ".systematic-literature-review"
-    artifacts = hidden / "artifacts"
+    paths = LayoutPaths.from_config(work_dir, config)
+    legacy = LayoutPaths.from_config(work_dir, {"layout": {"hidden_dir_name": ".systematic-literature-review"}})
+    if not paths.state_file.exists() and legacy.state_file.exists():
+        paths = legacy
+    hidden = paths.hidden_dir
+    artifacts = paths.artifacts_dir
+    deliverables = paths.deliverables_dir
 
     output_files: Dict[str, str] = {}
     input_files: Dict[str, str] = {}
     completed: list[str] = []
 
     # final-ish outputs in work_dir
-    wc = _find_one(work_dir, "*_工作条件.md")
-    tex = _find_one(work_dir, "*_review.tex")
-    bib = _find_one(work_dir, "*_参考文献.bib")
-    pdf = _find_one(work_dir, "*_review.pdf")
-    docx = _find_one(work_dir, "*_review.docx")
-    report = _find_one(work_dir, "*_验证报告.md")
+    wc = _find_one(deliverables, "*_工作条件.md") or _find_one(work_dir, "*_工作条件.md")
+    tex = _find_one(deliverables, "*_review.tex") or _find_one(work_dir, "*_review.tex")
+    bib = _find_one(deliverables, "*_参考文献.bib") or _find_one(work_dir, "*_参考文献.bib")
+    pdf = _find_one(deliverables, "*_review.pdf") or _find_one(work_dir, "*_review.pdf")
+    docx = _find_one(deliverables, "*_review.docx") or _find_one(work_dir, "*_review.docx")
+    report = _find_one(deliverables, "*_验证报告.md") or _find_one(work_dir, "*_验证报告.md")
 
     if wc:
         output_files["working_conditions"] = str(wc)
@@ -160,14 +175,23 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Reconcile pipeline_state.json from actual outputs")
     parser.add_argument("--work-dir", required=True, type=Path, help="run directory")
     parser.add_argument("--apply", action="store_true", help="write back pipeline_state.json (default: dry-run)")
+    parser.add_argument("--config", type=Path, default=Path(__file__).parent.parent / "config.yaml")
     args = parser.parse_args()
 
     work_dir = args.work_dir.expanduser().resolve()
     if not work_dir.exists() or not work_dir.is_dir():
         raise SystemExit(f"work_dir not found: {work_dir}")
 
-    hidden = work_dir / ".systematic-literature-review"
-    state_path = hidden / "pipeline_state.json"
+    try:
+        config = yaml.safe_load(args.config.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError) as exc:
+        raise SystemExit(f"无法读取配置：{exc}")
+    paths = LayoutPaths.from_config(work_dir, config)
+    legacy = LayoutPaths.from_config(work_dir, {"layout": {"hidden_dir_name": ".systematic-literature-review"}})
+    if not paths.state_file.exists() and legacy.state_file.exists():
+        paths = legacy
+    hidden = paths.hidden_dir
+    state_path = paths.state_file
 
     state = _ensure_state_shape(_load_state(state_path))
     state.setdefault("topic", state.get("topic") or work_dir.name)
@@ -176,7 +200,7 @@ def main() -> int:
     if isinstance(state.get("metrics"), dict):
         state["metrics"]["work_dir"] = str(work_dir)
 
-    new_inputs, new_outputs, new_completed = _detect(work_dir)
+    new_inputs, new_outputs, new_completed = _detect(work_dir, config)
 
     # merge
     state["input_files"].update(new_inputs)
