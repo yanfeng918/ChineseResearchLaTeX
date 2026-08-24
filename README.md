@@ -272,7 +272,7 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 | [make-latex-model](skills/make-latex-model/) | 🔧 模板开发 | v3.1.2 | 面向 ChineseResearchLaTeX 全仓库的模板落地与高保真对齐 | ✅ 稳定 |
 | [complete-example](skills/complete-example/) | 🔧 模板开发 | v1.4.1 | 智能示例生成和补全 | ✅ 稳定 |
 | [transfer-old-latex-to-new](skills/transfer-old-latex-to-new/) | 🔧 模板开发  | v2.1.0 | 模板迁移与重构编排，支持任意输入并由 AI 自主决定输出 | ✅ 稳定 |
-| [research-literature-review](skills/research-literature-review/) | 📚 文献调研 | v1.1.1 | 令人印象深刻的精准、全面的专家级综述 | ✅ 稳定 |
+| [research-literature-review](skills/research-literature-review/) | 📚 文献调研 | v1.2.0 | 令人印象深刻的精准、全面的专家级综述 | ✅ 稳定 |
 | [research-citation-check](skills/research-citation-check/) | 📚 文献调研 | v1.1.0 | 综述引用语义一致性检查 | ✅ 稳定 |
 | [research-topic-extractor](skills/research-topic-extractor/) | 📚 文献调研 | v1.1.0 | 结构化综述主题提取 | ✅ 稳定 |
 | [research-guide-updater](skills/research-guide-updater/) | 📚 文献调研 | v1.1.0 | 项目指南优化与写作规范沉淀 | ✅ 稳定 |
@@ -281,7 +281,7 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 | [nsfc-code](skills/nsfc-code/) | ✍️ 标书写作 | v1.0.0 | NSFC 申请代码推荐（5 组 code1/code2 + 理由，只读） | ✅ 稳定 |
 | [nsfc-abstract](skills/nsfc-abstract/) | ✍️ 标书写作 | v2.1.2 | 标题建议 + NSFC 中英文摘要生成（中文≤400字；英文≤4000字符） | ✅ 稳定 |
 | [nsfc-budget](skills/nsfc-budget/) | ✍️ 标书写作 | v0.1.2 | NSFC 预算说明书生成（LaTeX 项目 + `budget.pdf`） | 🚧 开发中 |
-| [nsfc-justification-writer](skills/nsfc-justification-writer/) | ✍️ 标书写作 | v1.2.0 | 立项依据语义写作与面向大同行的专业可读性复核 | ✅ 稳定 |
+| [nsfc-justification-writer](skills/nsfc-justification-writer/) | ✍️ 标书写作 | v1.3.0 | 全自动立项依据语义写作、专业可读性复核与可逆写入 | ✅ 稳定 |
 | [nsfc-research-content-writer](skills/nsfc-research-content-writer/) | ✍️ 标书写作 | v1.0.0 | NSFC 研究内容编排写作 | ✅ 稳定 |
 | [nsfc-research-foundation-writer](skills/nsfc-research-foundation-writer/) | ✍️ 标书写作 | v0.1.2 | NSFC 研究基础编排写作 | 🚧 开发中 |
 | [nsfc-qc](skills/nsfc-qc/) | ✍️ 标书写作 | v1.2.0 | NSFC 标书只读质量控制（多线程检查文风/引用/篇幅/逻辑 + 全文级缩写注册表 QC） | ✅ 稳定 |

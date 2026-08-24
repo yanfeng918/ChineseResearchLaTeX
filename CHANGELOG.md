@@ -10,9 +10,11 @@
 
 ### Changed（变更）
 
+- `nsfc-justification-writer`：默认流程升级为完全自动，自动完成目标选择/创建、Tier1+Tier2、保守假设、成稿、正文-only 重试、备份和写入；移除中途用户确认/审核节点，保留 `--dry-run`、白名单、引用守护、diff 与回滚，版本推进至 v1.3.0。
 - `nsfc-justification-writer`：移除术语矩阵、固定内容维度检查及独立 `terms` 命令，将逻辑、术语、论证维度和专业可读性统一交由宿主 AI 自主规划；Python 仅保留确定性校验、分块、缓存和安全写入，精简写作链路。
 - `nsfc-justification-writer`：在既有语义重构基础上增加面向大同行的专业可读性复核，贯通 `review`、`coach --stage polish`、Tier2 聚合与 HTML 展示；新增 `readability` 兼容字段、无 AI 回退建议和保真边界文档，版本推进至 v1.2.0。
 - `nsfc-justification-writer`：将用户教程、典型工作流和架构边界合并到技能 README，删除重复的 `references/docs/` 文档目录并清理当前路径引用。
+- `research-literature-review`：将运行产物收敛到配置驱动的内部 `output/` 布局，新增 PDF/Word 白名单发布目录与 `--publish-dir`，并通过严格门禁阻止证据卡、选文和字数预算污染正式交付目录；技能版本推进至 v1.2.0。
 
 ## [4.0.20] - 2026-08-20
 
