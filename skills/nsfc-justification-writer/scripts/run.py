@@ -201,11 +201,11 @@ def cmd_diagnose(args: argparse.Namespace) -> int:
     config = _load_config_for_args(skill_root, args)
     coord = HybridCoordinator(skill_root=skill_root, config=config)
 
-    if args.tier2 and getattr(args, "verbose", False):
+    if getattr(args, "verbose", False):
         logger.info("⏳ 正在运行诊断（含 Tier2）...")
     report = coord.diagnose(
         project_root=Path(args.project_root),
-        include_tier2=bool(args.tier2),
+        include_tier2=True,
         tier2_chunk_size=int(args.chunk_size) if args.chunk_size is not None else None,
         tier2_max_chunks=int(args.max_chunks) if args.max_chunks is not None else None,
         tier2_fresh=bool(getattr(args, "fresh", False)),
@@ -590,7 +590,7 @@ def cmd_review(args: argparse.Namespace) -> int:
     coord = HybridCoordinator(skill_root=skill_root, config=config)
     md = coord.reviewer_advice(
         project_root=Path(args.project_root),
-        include_tier2=bool(args.tier2),
+        include_tier2=True,
         tier2_chunk_size=int(args.chunk_size) if args.chunk_size is not None else None,
         tier2_max_chunks=int(args.max_chunks) if args.max_chunks is not None else None,
         tier2_fresh=bool(getattr(args, "fresh", False)),
@@ -715,7 +715,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_diag = sub.add_parser("diagnose", help="Tier1/Tier2 诊断（结构/引用/字数/表述）")
     p_diag.add_argument("--project-root", required=True)
-    p_diag.add_argument("--tier2", action="store_true", help="启用 AI Tier2（需要 responder 环境）")
+    p_diag.add_argument("--tier2", action="store_true", help="兼容旧命令；Tier2 现在默认且必须执行")
     p_diag.add_argument("--chunk-size", type=int, default=12000, help="Tier2 分块大小（字符数），用于大文件；<=0 表示不分块")
     p_diag.add_argument("--max-chunks", type=int, default=20, help="Tier2 最多处理的分块数（防止超长文件过慢）")
     p_diag.add_argument("--fresh", action="store_true", help="忽略 AI 缓存，强制重新计算 Tier2")
@@ -751,9 +751,9 @@ def build_parser() -> argparse.ArgumentParser:
     p_init.add_argument("--run-id", help="可选：指定 run_id（默认按时间生成）")
     p_init.set_defaults(func=cmd_init)
 
-    p_review = sub.add_parser("review", help="评审人视角质疑与建议（可选 Tier2）")
+    p_review = sub.add_parser("review", help="评审人视角质疑与建议（包含必选 Tier2）")
     p_review.add_argument("--project-root", required=True)
-    p_review.add_argument("--tier2", action="store_true", help="启用 AI Tier2（需要 responder 环境）")
+    p_review.add_argument("--tier2", action="store_true", help="兼容旧命令；Tier2 现在默认且必须执行")
     p_review.add_argument("--chunk-size", type=int, default=12000, help="Tier2 分块大小（字符数），用于大文件；<=0 表示不分块")
     p_review.add_argument("--max-chunks", type=int, default=20, help="Tier2 最多处理的分块数（防止超长文件过慢）")
     p_review.add_argument("--fresh", action="store_true", help="忽略 AI 缓存，强制重新计算 Tier2")

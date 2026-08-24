@@ -122,7 +122,7 @@ python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root <
 python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项目目录>
 ```
 
-重点看“证据/缺口 → 科学问题 → 科学假设 → 研究内容”是否闭环。需要深层语义判断时显式运行 `diagnose --tier2`，由宿主 AI 自主规划检查范围。随后让 AI 只修改用户指定的正文范围，生成完整提案并运行 `preview`。用户确认后再写入。
+重点看“证据/缺口 → 科学问题 → 科学假设 → 研究内容”是否闭环。`diagnose` 默认且必须执行 Tier2 宿主 AI 语义检查，由宿主 AI 自主规划检查范围；宿主 AI 不可用时必须标记“Tier2 未完成”并转人工复核。随后让 AI 只修改用户指定的正文范围，生成完整提案并运行 `preview`。用户确认后再写入。
 
 ## 引用与 DOI 核验
 
@@ -140,12 +140,12 @@ python skills/nsfc-justification-writer/scripts/run.py refs --project-root <项�
 # 字数（默认中文字符口径）
 python skills/nsfc-justification-writer/scripts/run.py wordcount --project-root <项目目录>
 
-# 可选语义审查或写作引导
+# 语义审查或写作引导（完整流程必须包含 Tier2）
 python skills/nsfc-justification-writer/scripts/run.py review --project-root <项目目录>
 python skills/nsfc-justification-writer/scripts/run.py coach --project-root <项目目录> --stage auto
 ```
 
-`diagnose`、`coach` 和 `review` 的结果是建议，不以固定小节数量、标题关键词或固定术语/维度清单作为写入门槛。运行 `diagnose --tier2` 时，逻辑、术语、论证维度和专业可读性均由宿主 AI 自主规划。对于“国际领先”“填补空白”等吹牛式或绝对化表述，脚本不维护固定词表；请由宿主 AI 按 [`references/boastful_expression_guidelines.md`](references/boastful_expression_guidelines.md) 进行语义复核。
+`diagnose`、`coach` 和 `review` 的结果是建议，不以固定小节数量、标题关键词或固定术语/维度清单作为写入门槛；但完整流程必须包含 Tier2。逻辑、术语、论证维度和专业可读性均由宿主 AI 自主规划，宿主 AI 不可用时报告“Tier2 未完成”并转人工复核。对于“国际领先”“填补空白”等吹牛式或绝对化表述，脚本不维护固定词表；请由宿主 AI 按 [`references/boastful_expression_guidelines.md`](references/boastful_expression_guidelines.md) 进行语义复核。
 
 ## 写作边界
 

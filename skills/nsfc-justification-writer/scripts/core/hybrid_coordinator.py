@@ -118,7 +118,7 @@ class HybridCoordinator:
         self,
         *,
         project_root: Path,
-        include_tier2: bool = False,
+        include_tier2: bool = True,
         tier2_chunk_size: Optional[int] = None,
         tier2_max_chunks: Optional[int] = None,
         tier2_fresh: bool = False,
@@ -150,11 +150,9 @@ class HybridCoordinator:
         ai_cfg = get_mapping(self.config, "ai")
         cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
 
+        # Tier2 是主诊断链路的必选语义检查；保留显式 False 仅供 refs 等独立工具
+        # 复用 Tier1，主流程调用方不得用它跳过完整诊断。
         if not include_tier2:
-            return report
-
-        if not tier1.structure_ok:
-            report.notes.append("结构缺失：已跳过 Tier2（避免浪费 AI 资源）")
             return report
 
         async def _run() -> Optional[Dict[str, Any]]:
@@ -190,8 +188,8 @@ class HybridCoordinator:
                     "logic": [],
                     "terminology": [],
                     "evidence": [],
-                    "readability": ["AI 不可用：请按专业可读性准则人工复核长句、指代、缩写界定和段内衔接；此项仅为表达建议，不阻断写入。"],
-                    "suggestions": ["AI 不可用：仅完成 Tier1 硬编码诊断。"],
+                    "readability": ["AI 不可用：请按专业可读性准则人工复核长句、指代、缩写界定和段内衔接。"],
+                    "suggestions": ["Tier2 未完成：宿主 AI 不可用；不得将本次结果视为完整语义检查通过。"],
                 }
 
             merged: Dict[str, Any] = {"logic": [], "terminology": [], "evidence": [], "readability": [], "suggestions": []}
@@ -407,7 +405,7 @@ class HybridCoordinator:
         self,
         *,
         project_root: Path,
-        include_tier2: bool = False,
+        include_tier2: bool = True,
         tier2_chunk_size: Optional[int] = None,
         tier2_max_chunks: Optional[int] = None,
         tier2_fresh: bool = False,

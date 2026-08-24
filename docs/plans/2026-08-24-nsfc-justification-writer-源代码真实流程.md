@@ -13,7 +13,7 @@
   → 找到立项依据 tex
   → 读取正文/信息表
   → Tier1 确定性检查
-  →（可选）Tier2 宿主 AI 语义检查
+  → Tier2 宿主 AI 语义检查（必选；不可用时标记未完成并转人工复核）
   → 判断 skeleton/draft/revise/polish/final 阶段
   → 组装写作教练 prompt
   → 调用宿主 AI；没有 responder 时退化为固定的 Markdown 写作清单
@@ -152,17 +152,17 @@ Python 不直接连接某个大模型。`AIIntegration` 只接受宿主传入的
 - draft：先写用户确认范围内 1–2 段，把瓶颈收束成科学问题约束，再扩写到目标长度。
 - revise：先修复缺失 key；把不可核验表述改成对照维度/指标；检查问题疑问句和假设预测句，其它语义风险由宿主 AI 自主识别。
 - polish：先列出不可改变的科学含义，再处理长句、指代、缩写、抽象名词、过渡和结尾衔接。
-- final：再跑 diagnose，必要时 Tier2；确认只修改授权正文范围。
+- final：再跑 diagnose（包含必选 Tier2）；确认只修改授权正文范围。
 
 这意味着没有 responder 时，Skill 仍能告诉用户“下一步怎么写”，但不会替用户生成真实段落。
 
-## 6. 可选的诊断、评审和示例辅助
+## 6. 诊断、评审和示例辅助（Tier2 必选）
 
 ### 6.1 `diagnose`
 
-先做 Tier1。若开启维度检查，先做维度检查；若 `--tier2` 且结构检查通过，再做 Tier2。结构不通过时直接跳过 Tier2，并在备注中说明原因。
+先做 Tier1；随后必做 Tier2。Tier2 不因结构检查未通过而静默跳过：结构问题与语义问题并列报告。宿主 AI 不可用时输出“Tier2 未完成”及人工复核要求，不得将回退提示视为语义检查通过。
 
-Tier2 按 `--chunk-size`（默认 12000 字符）切块：普通文件优先按 `\\subsubsection` 标记分块，单块过大再硬切；超过 5 MB 的文件按段落流式分块。最多处理 `--max-chunks`（默认 20）块，超出部分丢弃并写备注。每块用 `tier2_diagnostic.txt` 让宿主 AI 自主检查逻辑、证据、术语、论证维度和专业可读性，并返回 `logic`、`terminology`、`evidence`、`readability`、`suggestions` 字段；各块结果按字段合并、去重、保序。AI 不可用时只给“请人工复核”的不可用提示，不伪造语义检查结论。
+Tier2 按 `--chunk-size`（默认 12000 字符）切块：普通文件优先按 `\\subsubsection` 标记分块，单块过大再硬切；超过 5 MB 的文件按段落流式分块。最多处理 `--max-chunks`（默认 20）块，超出部分丢弃并写备注。每块用 `tier2_diagnostic.txt` 让宿主 AI 自主检查逻辑、证据、术语、论证维度和专业可读性，并返回 `logic`、`terminology`、`evidence`、`readability`、`suggestions` 字段；各块结果按字段合并、去重、保序。AI 不可用时必须标记“Tier2 未完成”并要求人工复核，不伪造语义检查结论，也不得视为通过。
 
 ### 6.2 `review`
 
