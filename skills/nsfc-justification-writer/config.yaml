@@ -1,6 +1,7 @@
 skill_info:
   name: nsfc-justification-writer
-  version: 1.2.1
+  version: 1.3.0
+  description: "全自动撰写、重构、审查和润色 NSFC/科研基金立项依据；自动完成目标选择、Tier1+Tier2、保守假设、成稿、备份与写入，不在中途要求用户确认或审核。"
   category: writing
   author: "Bensz Conan"
 
@@ -15,7 +16,7 @@ parameters:
     description: 项目根目录
 
 targets:
-  # 可由用户、项目配置或 CLI 显式指定；为空时由只读候选发现决定，不自动写入。
+  # 可由项目配置或 CLI 显式指定；为空时由自动候选发现决定。
   justification_tex: ""
   bib_globs:
     - references/*.bib
@@ -32,21 +33,18 @@ limits:
 
 ai:
   enabled: true
-  tier2_chunk_size: 12000
-  tier2_max_chunks: 20
   cache_dir: tests/_artifacts/cache/ai
 
 prompts:
-  tier2_diagnostic: assets/prompts/tier2_diagnostic.txt
   review_suggestions: assets/prompts/review_suggestions.txt
   writing_coach: assets/prompts/writing_coach.txt
 
 references:
-  # 缺失 bibkey 默认拒绝写入；这是事实守护，不是结构检查。
+  # 缺失 bibkey 仍记录为事实风险；自动流程不暂停询问，宿主 AI 应优先改写为可核验表述。
   allow_missing_citations: false
 
 guardrails:
-  # 兼容旧项目的安全默认值；自定义目标必须同步显式声明白名单。
+  # 自动写入仍受白名单、禁写路径和备份保护；自定义目标必须同步声明白名单。
   allowed_write_files:
     - extraTex/1.1.立项依据.tex
   forbidden_write_files:
@@ -55,8 +53,11 @@ guardrails:
   forbidden_write_globs:
     - "**/*.cls"
     - "**/*.sty"
-  output_mode: preview
-  require_explicit_confirmation: true
+  output_mode: auto_apply
+  require_explicit_confirmation: false
+  auto_select_target: true
+  auto_create_target: true
+  auto_retry_body_only: true
 
 quality:
   # 吹牛式表述由宿主 AI 按 references/boastful_expression_guidelines.md 语义复核；

@@ -21,7 +21,7 @@ class TargetFileNotFoundError(SkillError):
         super().__init__(
             f"目标文件不存在：{target_relpath}",
             fix_suggestion=(
-                "请确认：\n"
+                "请检查：\n"
                 f"1) 项目根目录是否正确：{project_root}\n"
                 "2) 标书模板是否已初始化（是否存在 extraTex/ 与 references/）\n"
                 f"3) 目标文件路径是否应为：{target_relpath}\n"
@@ -34,14 +34,14 @@ class TargetResolutionError(SkillError):
         self.candidates = [str(x) for x in (candidates or [])]
         if self.candidates:
             detail = "\n".join(f"- {x}" for x in self.candidates[:20])
-            message = "目标文件不唯一，已停止自动选择：\n" + detail
+            message = "发现多个目标文件（自动流程将按优先级选择）：\n" + detail
         else:
-            message = "未找到可安全确认的目标文件，已停止自动选择。"
+            message = "未找到可自动选择的目标文件。"
         super().__init__(
             message,
             fix_suggestion=(
                 f"请在项目配置 targets.justification_tex 或命令行 --target-file 中显式指定项目内正文文件：{project_root}\n"
-                "确认目标后再运行 preview；不要依赖旧版固定文件名回退。"
+                "可在 targets.justification_tex 中指定正文路径；自动流程不会依赖旧版固定文件名回退。"
             ),
         )
 
@@ -67,7 +67,7 @@ class BackupNotFoundError(SkillError):
             f"未找到 run_id={run_id} 的备份文件",
             fix_suggestion=(
                 "建议：先运行 `list-runs` 查看可用 run_id；\n"
-                "或确认 `config.yaml:workspace.runs_dir` 是否指向正确目录（默认 `tests/_artifacts/runs/`）。"
+                "或检查 `config.yaml:workspace.runs_dir` 是否指向正确目录（默认 `tests/_artifacts/runs/`）。"
             ),
         )
 

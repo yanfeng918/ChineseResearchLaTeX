@@ -212,10 +212,6 @@ def validate_config(*, skill_root: Path, config: Dict[str, Any]) -> List[str]:
     else:
         if not isinstance(ai.get("enabled", True), bool):
             err("ai.enabled 必须是 bool")
-        if "tier2_chunk_size" in ai and not isinstance(ai.get("tier2_chunk_size"), int):
-            err("ai.tier2_chunk_size 必须是 int")
-        if "tier2_max_chunks" in ai and not isinstance(ai.get("tier2_max_chunks"), int):
-            err("ai.tier2_max_chunks 必须是 int")
         if "cache_dir" in ai and not isinstance(ai.get("cache_dir"), str):
             err("ai.cache_dir 必须是 str")
 

@@ -4,76 +4,33 @@
 from __future__ import annotations
 
 import asyncio
-import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 from .ai_integration import AIIntegration
-from .config_access import get_bool, get_int, get_mapping, get_str
+from .config_access import get_bool, get_mapping, get_str
 from .config_loader import get_runs_dir, load_config
 from .diagnostic import DiagnosticReport, format_tier1, run_tier1
 from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNotFoundError, TargetResolutionError
 from .editor import ApplyResult, apply_new_content
 from .example_matcher import recommend_examples_markdown
-from .io_utils import iter_text_chunks_by_paragraph, read_text_streaming
+from .io_utils import read_text_streaming
 from .latex_parser import match_title_via_ai, replace_subsubsection_body_hybrid, suggest_titles
 from .observability import Observability, ensure_run_dir, make_run_id
 from .reference_validator import check_citations
-from .security import build_write_policy, discover_target_candidates, resolve_target_path, validate_write_target, validate_target_file
+from .security import build_write_policy, choose_target_relpath, discover_target_candidates, resolve_target_path, validate_write_target, validate_target_file
 from .wordcount import count_cjk_chars, describe_word_count_mode
-from .prompt_templates import get_prompt, TIER2_DIAGNOSTIC_PROMPT
 from .review_advice import generate_review_markdown
 from .writing_coach import coach_markdown
 from .quality_gate import check_new_body_quality
 from .word_target import resolve_word_target
-from .limits import max_file_bytes
 
 
 @dataclass(frozen=True)
 class CoordinatorPaths:
     skill_root: Path
     runs_root: Path
-
-
-_SUBSUBSECTION_MARK = re.compile(r"\\subsubsection\s*\{")
-
-
-def _split_tex_by_subsubsection(tex: str, *, max_chars: int) -> List[str]:
-    if max_chars <= 0:
-        return [tex]
-    if len(tex) <= max_chars:
-        return [tex]
-
-    starts = [m.start() for m in _SUBSUBSECTION_MARK.finditer(tex)]
-    if not starts:
-        # 无结构可分，就按长度硬切
-        return [tex[i : i + max_chars] for i in range(0, len(tex), max_chars)]
-
-    blocks: List[str] = []
-    if starts[0] > 0:
-        blocks.append(tex[: starts[0]])
-    for i, s in enumerate(starts):
-        e = starts[i + 1] if (i + 1) < len(starts) else len(tex)
-        blocks.append(tex[s:e])
-
-    chunks: List[str] = []
-    cur = ""
-    for b in blocks:
-        if not b:
-            continue
-        if (len(cur) + len(b) > max_chars) and cur:
-            chunks.append(cur)
-            cur = b
-        else:
-            cur += b
-        if len(cur) > max_chars:
-            # 单块过大：继续硬切
-            chunks.extend([cur[i : i + max_chars] for i in range(0, len(cur), max_chars)])
-            cur = ""
-    if cur:
-        chunks.append(cur)
-    return [c for c in chunks if c.strip()] or [tex[:max_chars]]
 
 
 class HybridCoordinator:
@@ -99,10 +56,8 @@ class HybridCoordinator:
             return configured
         if project_root is not None:
             candidates = discover_target_candidates(project_root)
-            if len(candidates) == 1:
-                return candidates[0]
-            raise TargetResolutionError(project_root=str(project_root), candidates=candidates)
-        raise TargetResolutionError(project_root=str(project_root or ""))
+            return choose_target_relpath(project_root, candidates)
+        return "extraTex/1.1.立项依据.tex"
 
     def _resolve_target(self, project_root: Path) -> Path:
         return validate_target_file(
@@ -119,9 +74,6 @@ class HybridCoordinator:
         *,
         project_root: Path,
         include_tier2: bool = True,
-        tier2_chunk_size: Optional[int] = None,
-        tier2_max_chunks: Optional[int] = None,
-        tier2_fresh: bool = False,
     ) -> DiagnosticReport:
         project_root = Path(project_root).resolve()
         target = self._resolve_target(project_root)
@@ -150,85 +102,9 @@ class HybridCoordinator:
         ai_cfg = get_mapping(self.config, "ai")
         cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
 
-        # Tier2 是主诊断链路的必选语义检查；保留显式 False 仅供 refs 等独立工具
-        # 复用 Tier1，主流程调用方不得用它跳过完整诊断。
-        if not include_tier2:
-            return report
-
-        async def _run() -> Optional[Dict[str, Any]]:
-            tpl = get_prompt(
-                name="tier2_diagnostic",
-                default=TIER2_DIAGNOSTIC_PROMPT,
-                skill_root=self.skill_root,
-                config=self.config,
-                variant=get_str(self.config, "active_preset", "").strip() or None,
-            )
-            max_chars = int(tier2_chunk_size or get_int(ai_cfg, "tier2_chunk_size", 12000))
-            max_chunks = int(tier2_max_chunks or get_int(ai_cfg, "tier2_max_chunks", 20))
-            chunks: List[str]
-            # 超大文件：优先流式分块，避免一次性加载后再切块造成峰值内存
-            if target.exists() and int(target.stat().st_size) > max_file_bytes(self.config):
-                chunks = list(
-                    iter_text_chunks_by_paragraph(
-                        target,
-                        max_chars=max_chars,
-                        max_chunks=max_chunks if max_chunks > 0 else 10**9,
-                    )
-                )
-            else:
-                chunks = _split_tex_by_subsubsection(tex, max_chars=max_chars)
-                if max_chunks > 0 and len(chunks) > max_chunks:
-                    report.notes.append(
-                        f"Tier2 分块过多：仅处理前 {max_chunks}/{len(chunks)} 块（可调 --chunk-size/--max-chunks）"
-                    )
-                    chunks = chunks[:max_chunks]
-
-            def _fallback() -> Dict[str, Any]:
-                return {
-                    "logic": [],
-                    "terminology": [],
-                    "evidence": [],
-                    "readability": ["AI 不可用：请按专业可读性准则人工复核长句、指代、缩写界定和段内衔接。"],
-                    "suggestions": ["Tier2 未完成：宿主 AI 不可用；不得将本次结果视为完整语义检查通过。"],
-                }
-
-            merged: Dict[str, Any] = {"logic": [], "terminology": [], "evidence": [], "readability": [], "suggestions": []}
-            for i, ch in enumerate(chunks):
-                prompt = tpl.format(tex=ch)
-                obj = await self.ai.process_request(
-                    task=f"diagnose_tier2_chunk_{i+1}",
-                    prompt=prompt,
-                    fallback=_fallback,
-                    output_format="json",
-                    cache_dir=cache_dir,
-                    fresh=bool(tier2_fresh),
-                )
-                if not isinstance(obj, dict):
-                    continue
-                for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
-                    v = obj.get(k)
-                    if not v:
-                        continue
-                    if isinstance(v, list):
-                        merged[k].extend([str(x) for x in v if str(x).strip()])
-                    else:
-                        merged[k].append(str(v).strip())
-
-            # 去重但保序
-            for k in ["logic", "terminology", "evidence", "readability", "suggestions"]:
-                seen = set()
-                uniq: List[str] = []
-                for it in merged[k]:
-                    if it in seen:
-                        continue
-                    seen.add(it)
-                    uniq.append(it)
-                merged[k] = uniq
-
-            return merged
-
-        report.tier2 = asyncio.run(_run())
-        self.obs.add("diagnose.tier2", enabled=self.ai.is_available())
+        report.notes.append(
+            "Tier1 已完成；Tier2 必须由当前宿主 AI 读取 references/tier2_semantic_review.md 后直接执行。"
+        )
         return report
 
     def format_diagnose(self, report: DiagnosticReport) -> str:
@@ -406,9 +282,6 @@ class HybridCoordinator:
         *,
         project_root: Path,
         include_tier2: bool = True,
-        tier2_chunk_size: Optional[int] = None,
-        tier2_max_chunks: Optional[int] = None,
-        tier2_fresh: bool = False,
     ) -> str:
         project_root = Path(project_root).resolve()
         target = self._resolve_target(project_root)
@@ -416,9 +289,6 @@ class HybridCoordinator:
         report = self.diagnose(
             project_root=project_root,
             include_tier2=include_tier2,
-            tier2_chunk_size=tier2_chunk_size,
-            tier2_max_chunks=tier2_max_chunks,
-            tier2_fresh=tier2_fresh,
         )
         return asyncio.run(
             generate_review_markdown(

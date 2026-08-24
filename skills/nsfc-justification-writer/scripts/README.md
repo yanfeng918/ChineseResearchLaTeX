@@ -1,12 +1,12 @@
 # nsfc-justification-writer 脚本
 
-脚本只承担确定性边界：目标文件存在性、路径白名单、引用 key、字数统计、备份、diff 和回滚。逻辑、术语、论证维度、可读性等语义判断与正文改写由宿主 AI/用户完成。
+脚本只承担确定性边界：目标文件定位、路径白名单、引用 key、字数统计、备份、diff 和回滚。逻辑、术语、论证维度、可读性等语义判断与正文改写由宿主 AI 自动完成。
 
 ## 推荐流程
 
-1. 用户指定目标文件，或配置中声明 `targets.justification_tex`；不明确时只读追踪 `main.tex` 的唯一候选。
-2. AI 输出完整正文提案，运行 `preview` 生成 unified diff。
-3. 用户确认目标和 diff 后，才使用写入入口；写入前自动备份，写入后可用 `diff/rollback` 复核。
+1. 配置中声明 `targets.justification_tex`；未声明时自动追踪 `main.tex` 并按确定性优先级选择候选。
+2. AI 输出完整正文提案，运行 `preview` 自动生成 unified diff 并写入。
+3. 写入前自动备份，写入后输出 diff；需要只读检查时显式使用 `--dry-run`，不需要人工确认。
 
 ```bash
 python skills/nsfc-justification-writer/scripts/run.py preview \
@@ -14,7 +14,7 @@ python skills/nsfc-justification-writer/scripts/run.py preview \
   --proposal-file /tmp/proposal.tex
 ```
 
-`preview` 不解析标题、不写入文件；如果新增/删除行包含章节、环境、引用入口或配置命令，会提示人工确认。
+默认 `preview` 不解析标题但会自动写入；如果新增/删除行包含章节、环境、引用入口或配置命令，宿主 AI 自动退回正文-only 提案并重试。`--dry-run` 可强制只读。
 
 ## 独立工具
 

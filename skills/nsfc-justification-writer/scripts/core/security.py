@@ -63,7 +63,7 @@ def validate_write_target(
     if policy.allowed_relpaths:
         if rel_str not in set(policy.allowed_relpaths):
             raise RuntimeError(
-                f"写入目标不在白名单：{rel_str}；如这是用户确认的自定义目标，请将该相对路径精确加入 guardrails.allowed_write_files"
+                f"写入目标不在白名单：{rel_str}；如这是项目正文目标，请将该相对路径精确加入 guardrails.allowed_write_files"
             )
 
 
@@ -97,6 +97,23 @@ def discover_target_candidates(project_root: Path) -> List[str]:
 def discover_target_relpath(project_root: Path) -> Optional[str]:
     candidates = discover_target_candidates(project_root)
     return candidates[0] if len(candidates) == 1 else None
+
+
+def choose_target_relpath(project_root: Path, candidates: Optional[List[str]] = None) -> str:
+    """为全自动流程确定正文目标，不向用户发起候选确认。"""
+    root = Path(project_root).resolve()
+    items = list(candidates if candidates is not None else discover_target_candidates(root))
+    if not items:
+        return "extraTex/1.1.立项依据.tex"
+
+    def rank(rel: str) -> tuple[int, int, str]:
+        name = Path(rel).stem.lower()
+        preferred = ("立项依据", "justification", "justif", "proposal", "basis")
+        hit = 0 if any(token in name for token in preferred) else 1
+        depth = len(Path(rel).parts)
+        return hit, depth, rel
+
+    return min(items, key=rank)
 
 
 def validate_target_file(*, project_root: Path, target_path: Path, require_exists: bool = True) -> Path:

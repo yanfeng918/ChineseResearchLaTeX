@@ -83,7 +83,6 @@ def get_prompt(
     return default.strip() + "\n"
 
 
-# Backward-compatible constants (loaded from assets/prompts or prompts/ when present)
-TIER2_DIAGNOSTIC_PROMPT = get_prompt(name="tier2_diagnostic", default=_missing_prompt_message("tier2_diagnostic"))
+# Backward-compatible constants for the remaining host-AI-assisted features.
 REVIEW_SUGGESTIONS_PROMPT = get_prompt(name="review_suggestions", default=_missing_prompt_message("review_suggestions"))
 WRITING_COACH_PROMPT = get_prompt(name="writing_coach", default=_missing_prompt_message("writing_coach"))

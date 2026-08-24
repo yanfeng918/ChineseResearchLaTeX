@@ -31,11 +31,12 @@ from core.change_guard import inspect_proposal
 from core.errors import BackupNotFoundError, SkillError, TargetResolutionError
 from core.html_report import render_diagnostic_html
 from core.hybrid_coordinator import HybridCoordinator
-from core.info_form import copy_info_form_template, interactive_collect_info_form, write_info_form_file
+from core.info_form import copy_info_form_template
 from core.logging_utils import configure_logging
-from core.observability import make_run_id
+from core.observability import ensure_run_dir, make_run_id
 from core.reference_validator import check_citations
 from core.security import validate_target_file
+from core.editor import apply_new_content
 from core.versioning import find_backup_for_run_v2, list_runs, rollback_from_backup, unified_diff
 
 logger = logging.getLogger(__name__)
@@ -202,13 +203,10 @@ def cmd_diagnose(args: argparse.Namespace) -> int:
     coord = HybridCoordinator(skill_root=skill_root, config=config)
 
     if getattr(args, "verbose", False):
-        logger.info("⏳ 正在运行诊断（含 Tier2）...")
+        logger.info("⏳ 正在运行 Tier1；随后由宿主 AI 执行 Tier2...")
     report = coord.diagnose(
         project_root=Path(args.project_root),
         include_tier2=True,
-        tier2_chunk_size=int(args.chunk_size) if args.chunk_size is not None else None,
-        tier2_max_chunks=int(args.max_chunks) if args.max_chunks is not None else None,
-        tier2_fresh=bool(getattr(args, "fresh", False)),
     )
     text = coord.format_diagnose(report)
     print(text, end="")
@@ -290,7 +288,7 @@ def cmd_refs(args: argparse.Namespace) -> int:
             if not ok:
                 failed.append(f"- {k}: {doi}")
         if failed:
-            md = md.rstrip() + "\n\n## Crossref（可选联网）校验失败/超时的 DOI（需人工核验）\n\n" + "\n".join(failed) + "\n"
+            md = md.rstrip() + "\n\n## Crossref（可选联网）校验失败/超时的 DOI（记录为待核验）\n\n" + "\n".join(failed) + "\n"
         else:
             md = md.rstrip() + "\n\n## Crossref（可选联网）校验\n\n- ✅ 未发现明显失败（仍建议抽查关键引用）\n"
     if args.out:
@@ -438,7 +436,7 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
 
     output_mode = get_str(get_mapping(config, "guardrails"), "output_mode", "preview").strip().lower() or "preview"
     logger.warning(
-        "⚠️ apply-section 是 legacy 兼容入口（配置 output_mode=%s）：它依赖标题解析并会写入文件；新流程请先运行 preview 并确认 diff。",
+        "⚠️ apply-section 是 legacy 兼容入口（配置 output_mode=%s）：它依赖标题解析并会写入文件；新流程优先运行自动 preview。",
         output_mode,
     )
 
@@ -520,22 +518,31 @@ def cmd_apply_section(args: argparse.Namespace) -> int:
 
 
 def cmd_preview(args: argparse.Namespace) -> int:
-    """只读预览完整正文提案；不解析标题，也不写入项目文件。"""
+    """生成完整正文提案 diff，并按配置自动写入（--dry-run 时保持只读）。"""
     skill_root = Path(__file__).resolve().parent.parent
     config = _load_config_for_args(skill_root, args)
     coord = HybridCoordinator(skill_root=skill_root, config=config)
     project_root = Path(args.project_root).resolve()
+    guard = get_mapping(config, "guardrails")
+    auto_apply = (
+        (not bool(getattr(args, "dry_run", False)))
+        and get_str(guard, "output_mode", "preview").strip().lower() in {"auto_apply", "auto", "write"}
+    )
     if args.target_file:
         raw_target = Path(args.target_file).expanduser()
         target = (raw_target if raw_target.is_absolute() else project_root / raw_target).resolve()
-        target = validate_target_file(project_root=project_root, target_path=target)
+        target = validate_target_file(
+            project_root=project_root,
+            target_path=target,
+            require_exists=not (auto_apply and get_bool(guard, "auto_create_target", True)),
+        )
     else:
         target = coord.target_path(project_root=project_root)
-    if not target.is_file():
-        logger.error("❌ 目标文件不存在：%s；请显式提供 --target-file 或修正项目配置", target)
+    if not target.is_file() and not (auto_apply and get_bool(guard, "auto_create_target", True)):
+        logger.error("❌ 目标文件不存在：%s", target)
         return 2
     proposal = _read_body_file(args.proposal_file)
-    original = target.read_text(encoding="utf-8", errors="ignore")
+    original = target.read_text(encoding="utf-8", errors="ignore") if target.is_file() else ""
     try:
         result = inspect_proposal(original=original, proposed=proposal, target_path=target, project_root=project_root)
     except ValueError as exc:
@@ -547,21 +554,73 @@ def cmd_preview(args: argparse.Namespace) -> int:
     bib_globs = targets.get("bib_globs", ["references/*.bib"])
     cite_result = check_citations(tex_text=proposal, project_root=project_root, bib_globs=bib_globs)
     if cite_result.missing_keys:
-        print("⚠️ 提案包含缺失 bibkey（只读提示，写入时会拒绝）：" + "、".join(cite_result.missing_keys[:30]))
+        print("⚠️ 提案包含缺失 bibkey（已记录，自动流程不暂停）：" + "、".join(cite_result.missing_keys[:30]))
     if result.structural_hits:
-        print("⚠️ 预览发现结构/配置命令变化（默认不写入）：" + "、".join(result.structural_hits))
-        print("请保留这些命令，或显式加 --allow-structural-change 扩大修改范围。")
+        print("⚠️ 预览发现结构/配置命令变化（自动流程保留原文件并要求宿主 AI 重试正文-only）：" + "、".join(result.structural_hits))
+        print("宿主 AI 应自动移除结构命令后重试；不会请求用户确认。")
     else:
-        print("✅ 未发现结构/配置命令变化；仍需用户确认后再写入。")
+        print("✅ 未发现结构/配置命令变化。")
     print("\n--- unified diff ---")
     print(result.diff, end="")
-    return 2 if result.structural_hits and not bool(getattr(args, "allow_structural_change", False)) else 0
+    if result.structural_hits and not bool(getattr(args, "allow_structural_change", False)):
+        return 2
+    if not auto_apply:
+        print("ℹ️ 只读模式：未写入文件（可移除 --dry-run 并使用 guardrails.output_mode=auto_apply）。")
+        return 0
+    if cite_result.missing_keys and not get_bool(get_mapping(config, "references"), "allow_missing_citations", False):
+        print("⚠️ 自动写入暂缓：宿主 AI 应移除未核验引用或改写对应主张后自动重试；不向用户提问。")
+        return 2
+
+    run_id = make_run_id("auto")
+    runs_root = get_runs_dir(skill_root, config)
+    run_dir = ensure_run_dir(runs_root, run_id)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        rel = target.relative_to(project_root).as_posix()
+    except ValueError:
+        rel = target.name
+    from core.security import build_write_policy, validate_write_target
+
+    policy = build_write_policy(config)
+    # 未配置固定目标时，自动发现的项目正文可加入本次会话白名单；禁写路径仍优先阻断。
+    configured_target = get_str(get_mapping(config, "targets"), "justification_tex", "").strip()
+    if not configured_target and not args.target_file:
+        try:
+            if rel not in policy.allowed_relpaths:
+                policy.allowed_relpaths.append(rel)
+        except AttributeError:
+            pass
+    validate_write_target(project_root=project_root, target_path=target, policy=policy)
+    applied = apply_new_content(
+        target_path=target,
+        new_text=proposal,
+        backup_root=(run_dir / "backup").resolve(),
+        run_id=run_id,
+        target_relpath=rel,
+    )
+    log_path = (run_dir / "logs" / "auto_apply.json").resolve()
+    _write_json(
+        log_path,
+        {
+            "run_id": run_id,
+            "target": str(target),
+            "target_relpath": rel,
+            "changed": applied.changed,
+            "backup": str(applied.backup_path) if applied.backup_path else None,
+            "missing_bibkeys": cite_result.missing_keys,
+            "structural_hits": result.structural_hits,
+        },
+    )
+    print(f"✅ 已自动写入：{target}")
+    if applied.backup_path:
+        print(f"📦 自动备份：{applied.backup_path}")
+    print(f"🧾 自动写入记录：{log_path}")
+    return 0
 
 
 def cmd_init(args: argparse.Namespace) -> int:
     skill_root = Path(__file__).resolve().parent.parent
     config = _load_config_for_args(skill_root, args)
-    version = get_str(get_mapping(config, "skill_info"), "version", "")
     runs_root = get_runs_dir(skill_root, config)
     run_id = args.run_id or make_run_id("init")
 
@@ -569,18 +628,11 @@ def cmd_init(args: argparse.Namespace) -> int:
     out_path = out_path.resolve()
 
     template_path = (skill_root / "references" / "info_form.md").resolve()
-    if not args.interactive:
-        ok = copy_info_form_template(template_path=template_path, out_path=out_path)
-        if not ok:
-            logger.error("❌ 未找到 info_form 模板。")
-            return 2
-        print(f"✅ 已生成信息表模板：{out_path}")
-        return 0
-
-    print("进入交互式信息表收集（仅本地生成，不会修改标书项目目录）。")
-    answers = interactive_collect_info_form()
-    write_info_form_file(out_path=out_path, answers=answers, version=version or "v0.0.0")
-    print(f"✅ 已生成信息表：{out_path}")
+    ok = copy_info_form_template(template_path=template_path, out_path=out_path)
+    if not ok:
+        logger.error("❌ 未找到 info_form 模板。")
+        return 2
+    print(f"✅ 已生成信息表模板：{out_path}")
     return 0
 
 
@@ -591,9 +643,6 @@ def cmd_review(args: argparse.Namespace) -> int:
     md = coord.reviewer_advice(
         project_root=Path(args.project_root),
         include_tier2=True,
-        tier2_chunk_size=int(args.chunk_size) if args.chunk_size is not None else None,
-        tier2_max_chunks=int(args.max_chunks) if args.max_chunks is not None else None,
-        tier2_fresh=bool(getattr(args, "fresh", False)),
     )
     if args.out:
         Path(args.out).write_text(md, encoding="utf-8")
@@ -677,7 +726,7 @@ def cmd_diff(args: argparse.Namespace) -> int:
 
 def cmd_rollback(args: argparse.Namespace) -> int:
     if not args.yes:
-        logger.error("❌ 回滚需要显式确认：请加 --yes")
+        logger.error("❌ 回滚需要显式安全开关：请加 --yes")
         return 2
     skill_root = Path(__file__).resolve().parent.parent
     config = _load_config_for_args(skill_root, args)
@@ -715,10 +764,6 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_diag = sub.add_parser("diagnose", help="Tier1/Tier2 诊断（结构/引用/字数/表述）")
     p_diag.add_argument("--project-root", required=True)
-    p_diag.add_argument("--tier2", action="store_true", help="兼容旧命令；Tier2 现在默认且必须执行")
-    p_diag.add_argument("--chunk-size", type=int, default=12000, help="Tier2 分块大小（字符数），用于大文件；<=0 表示不分块")
-    p_diag.add_argument("--max-chunks", type=int, default=20, help="Tier2 最多处理的分块数（防止超长文件过慢）")
-    p_diag.add_argument("--fresh", action="store_true", help="忽略 AI 缓存，强制重新计算 Tier2")
     p_diag.add_argument("--json-out", help="可选：输出 JSON 报告到文件")
     p_diag.add_argument(
         "--html-report",
@@ -745,18 +790,13 @@ def build_parser() -> argparse.ArgumentParser:
     p_refs.add_argument("--out", help="可选：输出到文件（markdown）")
     p_refs.set_defaults(func=cmd_refs)
 
-    p_init = sub.add_parser("init", help="生成（或交互式填写）信息表 info_form.md")
-    p_init.add_argument("--interactive", action="store_true", help="问答式收集并生成已填写的信息表")
+    p_init = sub.add_parser("init", help="生成信息表 info_form.md；宿主 AI 自动提取和补齐内容")
     p_init.add_argument("--out", help="输出路径（默认写到 runs_dir/<run_id>/inputs/info_form.md）")
     p_init.add_argument("--run-id", help="可选：指定 run_id（默认按时间生成）")
     p_init.set_defaults(func=cmd_init)
 
     p_review = sub.add_parser("review", help="评审人视角质疑与建议（包含必选 Tier2）")
     p_review.add_argument("--project-root", required=True)
-    p_review.add_argument("--tier2", action="store_true", help="兼容旧命令；Tier2 现在默认且必须执行")
-    p_review.add_argument("--chunk-size", type=int, default=12000, help="Tier2 分块大小（字符数），用于大文件；<=0 表示不分块")
-    p_review.add_argument("--max-chunks", type=int, default=20, help="Tier2 最多处理的分块数（防止超长文件过慢）")
-    p_review.add_argument("--fresh", action="store_true", help="忽略 AI 缓存，强制重新计算 Tier2")
     p_review.add_argument("--out", help="可选：输出到文件（markdown）")
     p_review.set_defaults(func=cmd_review)
 
@@ -787,7 +827,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_rb = sub.add_parser("rollback", help="从某次 run 的备份回滚当前文件（默认会备份当前版本）")
     p_rb.add_argument("--project-root", required=True)
     p_rb.add_argument("--run-id", required=True)
-    p_rb.add_argument("--yes", action="store_true", help="确认回滚（必须显式指定）")
+    p_rb.add_argument("--yes", action="store_true", help="启用回滚安全开关（必须显式指定）")
     p_rb.add_argument("--no-backup", action="store_true", help="不备份当前版本（默认备份到新的 runs_dir/）")
     p_rb.add_argument("--new-run-id", help="可选：回滚备份的 run_id（默认按时间生成）")
     p_rb.set_defaults(func=cmd_rollback)
@@ -804,11 +844,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_apply.add_argument("--suggest-alias", action="store_true", help="当标题未命中时，输出可用标题候选（便于改 title）")
     p_apply.set_defaults(func=cmd_apply_section)
 
-    p_preview = sub.add_parser("preview", help="只读生成完整正文 unified diff（不解析标题、不写入）")
+    p_preview = sub.add_parser("preview", help="生成完整正文 unified diff；默认自动写入，--dry-run 只读")
     p_preview.add_argument("--project-root", required=True)
     p_preview.add_argument("--proposal-file", required=True, help="完整正文提案文件；用 - 表示从 stdin 读")
     p_preview.add_argument("--target-file", help="可选：相对或绝对目标 .tex；未提供时按配置/唯一候选发现")
-    p_preview.add_argument("--allow-structural-change", action="store_true", help="允许 diff 中出现结构/配置命令变化（仍只读）")
+    p_preview.add_argument("--allow-structural-change", action="store_true", help="允许 diff 中出现结构/配置命令变化（仅在项目白名单允许时使用）")
+    p_preview.add_argument("--dry-run", action="store_true", help="只生成 diff，不写入文件")
     p_preview.set_defaults(func=cmd_preview)
 
     p_cfg = sub.add_parser("validate-config", help="校验当前配置（默认配置 + preset + override）")

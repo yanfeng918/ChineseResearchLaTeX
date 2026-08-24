@@ -160,7 +160,7 @@ def check_citations(
 def verify_doi_via_crossref(*, doi: str, timeout_s: float = 5.0) -> bool:
     """
     可选联网校验：通过 Crossref API 检查 DOI 是否存在对应 works。
-    失败/超时返回 False（调用方应把 False 视为“需人工核验”，而非断言不存在）。
+    失败/超时返回 False（调用方应把 False 视为“待核验”，而非断言不存在）。
     """
     d = normalize_doi(doi)
     if not d or (not _DOI_FORMAT_RE.match(d)):

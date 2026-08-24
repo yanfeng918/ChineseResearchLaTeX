@@ -1,8 +1,37 @@
 # `nsfc-justification-writer` 如何一步步处理立项依据
 
-> 本文只按 `skills/nsfc-justification-writer/scripts/` 下的 Python 源码、`assets/prompts/` 下实际被代码加载的提示模板，以及 `config.yaml` 的运行配置整理；没有把 README、references 或历史计划当作流程依据。文中“写出正文”必须特别理解为：Python 负责准备、检查、提示和安全写入，真正的自然语言成稿由宿主注入的 AI responder 或用户完成。
+## 总体流程
 
-关键源码入口：[`run.py`](../../skills/nsfc-justification-writer/scripts/run.py)、[`hybrid_coordinator.py`](../../skills/nsfc-justification-writer/scripts/core/hybrid_coordinator.py)、[`writing_coach.py`](../../skills/nsfc-justification-writer/scripts/core/writing_coach.py)、[`diagnostic.py`](../../skills/nsfc-justification-writer/scripts/core/diagnostic.py)、[`security.py`](../../skills/nsfc-justification-writer/scripts/core/security.py)、[`editor.py`](../../skills/nsfc-justification-writer/scripts/core/editor.py)、[`ai_integration.py`](../../skills/nsfc-justification-writer/scripts/core/ai_integration.py)。
+```mermaid
+flowchart TD
+    A[用户提出立项依据写作/审查任务] --> B[加载 config.yaml、preset 和 override]
+    B --> C[定位目标 .tex]
+    C --> D[读取正文与信息表]
+    D --> E[Tier1：Python 确定性检查]
+    E --> E1[结构、引用 key、DOI、字数、路径与质量规则]
+    E1 --> F[当前宿主 AI 读取 references/tier2_semantic_review.md]
+    F --> G[Tier2：宿主 AI 语义审查]
+    G --> G1[逻辑、证据、术语、科学问题/假设、专业可读性]
+    G1 --> H{当前阶段}
+    H -->|skeleton/draft/revise/polish/final| I[宿主 AI 读取 writing_coach 规则并生成行动清单]
+    I --> J[宿主 AI 自动形成完整正文提案]
+    J --> K[preview：生成 unified diff 并检查引用与结构命令]
+    K --> L{自动安全检查}
+    L -->|结构命令变化| M[自动回退正文-only 提案并重试]
+    M --> F
+    L -->|通过| N[auto_apply：白名单、备份、引用和质量闸门]
+    N --> O[原子写入正文]
+    O --> P[diff 查看变更]
+    P --> Q{需要恢复？}
+    Q -->|是| R[rollback --yes：备份当前版本后恢复]
+    Q -->|否| S[完成]
+```
+
+图中需要特别区分两层：Tier1 是脚本执行的确定性检查；Tier2 不由 Python 调用模型，而是由当前宿主 AI 按参考 Markdown 直接完成。
+
+> 本文按当前 `skills/nsfc-justification-writer/scripts/` 下的 Python 源码、`config.yaml` 以及 Tier2 参考规范整理；没有把历史计划当作流程依据。文中“写出正文”必须特别理解为：Python 负责准备、检查和安全写入，真正的自然语言成稿与 Tier2 语义审查由当前宿主 AI 或用户完成。
+
+关键源码入口：[`run.py`](../../skills/nsfc-justification-writer/scripts/run.py)、[`hybrid_coordinator.py`](../../skills/nsfc-justification-writer/scripts/core/hybrid_coordinator.py)、[`writing_coach.py`](../../skills/nsfc-justification-writer/scripts/core/writing_coach.py)、[`diagnostic.py`](../../skills/nsfc-justification-writer/scripts/core/diagnostic.py)、[`security.py`](../../skills/nsfc-justification-writer/scripts/core/security.py)、[`editor.py`](../../skills/nsfc-justification-writer/scripts/core/editor.py)、[`ai_integration.py`](../../skills/nsfc-justification-writer/scripts/core/ai_integration.py)。其中 `AIIntegration` 仅服务 coach/review 等仍保留的宿主 AI 辅助功能，不负责 Tier2。
 
 ## 一句话结论
 
@@ -13,20 +42,20 @@
   → 找到立项依据 tex
   → 读取正文/信息表
   → Tier1 确定性检查
-  → Tier2 宿主 AI 语义检查（必选；不可用时标记未完成并转人工复核）
+  → Tier2 宿主 AI 语义检查（必选；当前宿主 AI 直接读取 `references/tier2_semantic_review.md` 执行）
   → 判断 skeleton/draft/revise/polish/final 阶段
   → 组装写作教练 prompt
-  → 调用宿主 AI；没有 responder 时退化为固定的 Markdown 写作清单
-  → 用户据此提供/确认正文提案
+  → 宿主 AI 直接执行 Tier2/coach；没有宿主 AI 响应时，Python 仅能输出确定性检查和固定的 Markdown 行动清单
+  → 宿主 AI 自动形成正文提案
   → preview 生成 diff、检查引用和结构命令
-  → 用户确认后，legacy 的 apply-section 才能按标题替换并安全写入
+  → 自动检查通过后按白名单备份并写入（`--dry-run` 可只读）
   → 备份、diff、rollback
 ```
 
 因此，“立项依据是怎样被写出来的”实际分成两部分：
 
 1. `coach` 通过检查结果和写作 prompt 引导 AI/用户形成论证链。
-2. `preview` 与 `apply-section` 检查并保存已经形成的正文；它们不会自行创作科学内容。
+2. `preview` 自动检查、备份并保存已经形成的正文；`apply-section` 仅为旧项目保留。它们不会凭空创作无法核验的科学事实。
 
 ## 1. 入口与配置加载
 
@@ -39,7 +68,7 @@ CLI 入口是 `scripts/run.py`。每个子命令先根据 skill 根目录创建 
 5. 最后合并 `--override` 指定的 YAML，优先级最高。
 6. 有 PyYAML 时校验关键字段；即使关闭校验，也会再次加固写入白名单，防止空策略放开任意写入。没有 PyYAML 时跳过强校验，但仍保留安全兜底。
 
-默认运行目录是 skill 下的 `tests/_artifacts/runs`；`NSFC_JUSTIFICATION_WRITER_RUNS_DIR` 可以覆盖它。AI 缓存默认在 `tests/_artifacts/cache/ai`。
+默认运行目录是 skill 下的 `tests/_artifacts/runs`；`NSFC_JUSTIFICATION_WRITER_RUNS_DIR` 可以覆盖它。AI 缓存默认在 `tests/_artifacts/cache/ai`，仅供 coach/review 等仍由 Python 协调的宿主 AI 辅助调用使用，Tier2 不使用该缓存。
 
 运行时 `style.mode` 只有 `theoretical`、`mixed`、`engineering` 三种。它只改变写作提示的证据重心，不决定结构是否通过。仓库当前默认是 `theoretical`，默认目标字数为 9000、容差 800、统计模式 `cjk_only`。
 
@@ -58,7 +87,7 @@ CLI 入口是 `scripts/run.py`。每个子命令先根据 skill 根目录创建 
 
 ### 3.1 正文
 
-正文用 `read_text_streaming()` 读取，默认 UTF-8、错误忽略。普通文件完整读取；超大文件在 Tier2 分析时才会改用流式段落分块。
+正文用 `read_text_streaming()` 读取，默认 UTF-8、错误忽略。当前 Python 诊断会读取完整正文；Tier2 的正文范围、是否分段以及上下文组织由宿主 AI 按任务需要处理，Python 不为 Tier2 分块。
 
 ### 3.2 信息表
 
@@ -136,9 +165,9 @@ CLI 调用 `HybridCoordinator.coach()`，最终进入 `coach_markdown()`。其�
 - 不新增无法核验的引用、DOI、结果或绝对化表述；需要外部证据时要求用户提供 DOI/链接或可核验题录信息。
 - `polish` 先保护事实、论证、术语、限定、引用和 LaTeX 结构，再处理长句、指代、缩写界定、抽象名词关系和段内衔接；不能为了通俗删除专业信息。
 
-### 5.5 AI 调用和降级
+### 5.5 Coach 的 AI 调用和降级
 
-Python 不直接连接某个大模型。`AIIntegration` 只接受宿主传入的 `responder(task, prompt, output_format)`：
+对于 coach 的阶段推断和写作教练，Python 不直接连接某个大模型。`AIIntegration` 只接受宿主传入的 `responder(task, prompt, output_format)`：
 
 - 可同步或异步返回字符串、字典或空值。
 - JSON 输出接受字典，或从 fenced JSON/第一个平衡花括号中解析。
@@ -149,24 +178,24 @@ Python 不直接连接某个大模型。`AIIntegration` 只接受宿主传入的
 `coach` 的 fallback 不是正文，而是阶段化 Markdown 清单：
 
 - skeleton：确认正文边界，先写事实/证据/缺口，建立“科学问题→假设”和“瓶颈→约束”映射。
-- draft：先写用户确认范围内 1–2 段，把瓶颈收束成科学问题约束，再扩写到目标长度。
+- draft：先写自动确定的最小安全正文范围 1–2 段，把瓶颈收束成科学问题约束，再扩写到目标长度。
 - revise：先修复缺失 key；把不可核验表述改成对照维度/指标；检查问题疑问句和假设预测句，其它语义风险由宿主 AI 自主识别。
 - polish：先列出不可改变的科学含义，再处理长句、指代、缩写、抽象名词、过渡和结尾衔接。
-- final：再跑 diagnose（包含必选 Tier2）；确认只修改授权正文范围。
+- final：由宿主 AI 按 `references/tier2_semantic_review.md` 完成 Tier2，确认只修改授权正文范围。
 
-这意味着没有 responder 时，Skill 仍能告诉用户“下一步怎么写”，但不会替用户生成真实段落。
+这意味着没有 responder 时，coach 仍能告诉用户“下一步怎么写”，但不会替用户生成真实段落；这不影响当前宿主 AI 直接执行 Tier2 的主流程。
 
 ## 6. 诊断、评审和示例辅助（Tier2 必选）
 
 ### 6.1 `diagnose`
 
-先做 Tier1；随后必做 Tier2。Tier2 不因结构检查未通过而静默跳过：结构问题与语义问题并列报告。宿主 AI 不可用时输出“Tier2 未完成”及人工复核要求，不得将回退提示视为语义检查通过。
+先做 Tier1；随后由当前宿主 AI 读取 `references/tier2_semantic_review.md` 并直接执行 Tier2。Python 不调用 responder、不生成 fallback 语义结论；结构问题与语义问题并列报告。
 
-Tier2 按 `--chunk-size`（默认 12000 字符）切块：普通文件优先按 `\\subsubsection` 标记分块，单块过大再硬切；超过 5 MB 的文件按段落流式分块。最多处理 `--max-chunks`（默认 20）块，超出部分丢弃并写备注。每块用 `tier2_diagnostic.txt` 让宿主 AI 自主检查逻辑、证据、术语、论证维度和专业可读性，并返回 `logic`、`terminology`、`evidence`、`readability`、`suggestions` 字段；各块结果按字段合并、去重、保序。AI 不可用时必须标记“Tier2 未完成”并要求人工复核，不伪造语义检查结论，也不得视为通过。
+Tier2 的检查范围、保真约束和 Markdown 输出格式统一见 `references/tier2_semantic_review.md`，由宿主 AI 直接读取并执行。该步骤不再由 `HybridCoordinator` 分块、缓存或调用 `AIIntegration.responder`；`diagnose` 只提供 Tier1 报告与待审查上下文。
 
 ### 6.2 `review`
 
-先完整运行 `diagnose`，再把 Tier1 JSON、最多 12000 字符 tex、实际 DoD 清单内容和风格前缀交给 `review_suggestions.txt`。AI 可用时返回 Markdown；否则 fallback 会生成评审人问题、可执行修改建议和专业可读性复核。它不写文件、不替正文。
+先完整运行 `diagnose`，再把 Tier1 JSON、最多 12000 字符 tex、实际 DoD 清单内容和风格前缀交给 `review_suggestions.txt`。该 review 辅助仍可通过宿主 responder 返回 Markdown，失败时使用固定评审清单；它不写文件、不替正文。Tier2 语义审查仍按 `references/tier2_semantic_review.md` 由当前宿主 AI 直接执行，不由这段 Python review 调用承担。
 
 ### 6.3 `examples`
 
@@ -179,10 +208,10 @@ Tier2 按 `--chunk-size`（默认 12000 字符）切块：普通文件优先按 
 1. 统计变更行数。
 2. 生成 unified diff。
 3. 对新增/删除行扫描 `\\part`、`\\chapter`、`\\section`、`\\subsection`、`\\subsubsection`、`\\paragraph`、`\\input`、`\\include`、`\\begin`、`\\end`、`\\label`、`\\newcommand`、`\\renewcommand`、`\\documentclass`、`\\usepackage`。
-4. 检查提案内所有引用 key；缺失 key 只在 preview 提示，但明确说明写入时会拒绝。
+4. 检查提案内所有引用 key；缺失 key 记录为待核验项，自动流程不暂停。
 5. 命中结构/配置命令时默认返回非零并要求保留这些命令，除非显式加 `--allow-structural-change`。即使放开，它仍然只是只读预览，不会写入。
 
-`preview` 是推荐的新流程：先生成完整正文提案和 diff，确认后再决定是否落盘。
+`preview` 是推荐的新流程：自动生成完整正文提案和 diff，通过安全检查后自动落盘；需要只读时加 `--dry-run`。
 
 ## 8. `apply-section`：旧式、按标题替换的真正写入路径
 
@@ -208,7 +237,7 @@ Tier2 按 `--chunk-size`（默认 12000 字符）切块：普通文件优先按 
 - `list-runs`：列出 runs 目录中的 run id。
 - `diff`：按目标相对路径查找指定 run 的备份；找不到时回退到按文件名查找；输出备份与当前文件的 unified diff。
 - `rollback --yes`：从指定 run 的备份恢复；默认先把当前版本备份到新的 rollback run，再原子替换目标文件。没有 `--yes` 时拒绝执行。
-- `Observability` 在内存中记录 diagnose、Tier2、wordcount、apply 等事件；源码提供 `write_json()`，但 CLI 的常规 diagnose 并不会自动把所有事件写出，除非调用方另行使用。
+- `Observability` 在内存中记录 diagnose、wordcount、apply 等事件；Tier2 由宿主 AI 在 Skill 对话中完成，不再由 Python 记录 `diagnose.tier2` 事件。源码提供 `write_json()`，但 CLI 的常规命令并不会自动把所有事件写出，除非调用方另行使用。
 
 ## 10. 实际可复现的推荐操作顺序
 
@@ -219,23 +248,23 @@ python skills/nsfc-justification-writer/scripts/run.py validate-config
 # 2) 生成信息表模板，或加 --interactive 交互填写
 python skills/nsfc-justification-writer/scripts/run.py init --out /path/to/info_form.md
 
-# 3) 先做确定性诊断；需要时再加 --tier2
+# 3) 先做确定性诊断；随后由当前宿主 AI 按 references/tier2_semantic_review.md 执行 Tier2
 python skills/nsfc-justification-writer/scripts/run.py diagnose --project-root /path/to/project
 
 # 4) 让 Skill 判断阶段并输出写作行动清单/提示词
 python skills/nsfc-justification-writer/scripts/run.py coach \
   --project-root /path/to/project --stage auto --info-form /path/to/info_form.md
 
-# 5) 用户/宿主 AI 根据 coach 结果形成“完整正文提案”，先只读预览
+# 5) 宿主 AI 根据 coach 结果自动形成“完整正文提案”，运行自动 preview
 python skills/nsfc-justification-writer/scripts/run.py preview \
   --project-root /path/to/project --proposal-file /path/to/proposal.tex
 
-# 6) 用户明确确认后，旧接口才按指定小标题写入（默认备份）
+# 6) 自动流程按白名单备份并写入；旧接口仅按指定小标题兼容迁移
 python skills/nsfc-justification-writer/scripts/run.py apply-section \
   --project-root /path/to/project --title '实际小标题' \
   --body-file /path/to/body.tex --log-json
 
-# 7) 写入后查看差异；需要时显式确认回滚
+# 7) 写入后查看差异；需要时显式启用回滚安全开关
 python skills/nsfc-justification-writer/scripts/run.py diff \
   --project-root /path/to/project --run-id apply_YYYYMMDDHHMMSS
 python skills/nsfc-justification-writer/scripts/run.py rollback \
@@ -250,17 +279,16 @@ python skills/nsfc-justification-writer/scripts/run.py rollback \
 - 不会把固定维度关键词命中当作科学论证成立；语义维度由宿主 AI 自主规划。
 - 不会自动把 `coach` 的 Markdown 清单写回 `.tex`。
 - 不会默认修改标题、结构命令、`main.tex`、配置文件、`.cls` 或 `.sty`。
-- 不会对“国际领先”“国内首次”等吹牛式措辞用固定词表硬判；这类判断只会进入宿主 AI/人工语义复核。
+- 不会对“国际领先”“国内首次”等吹牛式措辞用固定词表硬判；这类判断进入宿主 AI 语义复核并记录待核验项。
 - 不会因为 DOI 缺失或格式可疑就默认阻断写入；真正默认阻断的是缺失 bibkey、越界路径、白名单外目标和显式质量闸门命中。
 
 ## 12. 源码级边界与注意事项
 
 1. `run.py` 的 `cmd_apply_section()` 捕获 `MissingCitationKeysError`、`SectionNotFoundError`，并在 `--suggest-alias` 分支调用 `parse_subsubsections()`；但这些名称没有在该文件顶部导入。正常写入成功路径不触发该问题；一旦底层抛出相应异常，异常处理路径本身可能出现 `NameError`，所以这是当前源码的实际缺陷。
 2. 默认 `config.yaml` 的 `quality.avoid_commands` 为空，`preview` 的结构命令检查与 `apply-section` 的质量闸门是两套机制，不能混为一谈。
-3. `diagnose --tier2` 只有在结构规则通过时才运行；如果结构检查根本未启用，`structure_ok` 通常为真，因此不会因为“没有固定标题”跳过 Tier2。
-4. AI 缓存键包含完整 prompt；同一个 task 但正文或配置变化后会生成新缓存。需要重新请求时必须使用支持 `fresh` 的调用路径（CLI `diagnose/review` 提供 `--fresh`，`coach` CLI 没有 `--fresh` 参数）。
-5. `apply-section` 是标题替换接口，而 `preview` 是完整文件 diff 接口；二者的修改边界不同。推荐先用完整提案 `preview`，再由用户决定是否使用 legacy 写入。
+3. Tier2 不由 Python 调用模型；当前宿主 AI 直接读取 `references/tier2_semantic_review.md`，结合 Tier1 报告和正文执行语义审查。
+4. `apply-section` 是标题替换接口，而 `preview` 是完整文件 diff 接口；二者的修改边界不同。推荐使用完整提案 `preview` 自动写入，legacy 仅用于迁移。
 
 ## 结论
 
-从源代码看，Skill 的核心产品不是一篇不可追溯的自动生成文本，而是一个“输入事实 → 确定性守护 → 阶段化写作提示 → AI/人工成稿 → diff 审查 → 白名单写入 → 可回滚”的闭环。真正高质量的立项依据必须由用户提供可核验的研究对象、已有证据、缺口、问题和假设；Skill 能做的是把这些材料组织成下一步写作动作，并尽量阻止结构破坏、引用失真和未经确认的文件修改。
+从源代码看，Skill 的核心产品是一条“输入事实 → 确定性守护 → 阶段化写作提示 → AI 自动成稿 → diff 自检 → 白名单写入 → 可回滚”的闭环。高质量立项依据优先使用用户提供的可核验材料；材料不完整时 Skill 采用保守假设并记录待核验项，继续完成成稿，同时阻止结构破坏和引用失真。
