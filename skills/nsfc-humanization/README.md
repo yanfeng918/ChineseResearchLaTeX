@@ -1,159 +1,89 @@
 # nsfc-humanization — 用户使用指南
 
-本 README 面向**使用者**：如何触发并正确使用 `nsfc-humanization` skill。  
-执行指令与硬性规范在 `SKILL.md`；默认元信息在 `config.yaml`。
+本 README 面向使用者：如何触发 `nsfc-humanization`。执行规范见 [`SKILL.md`](SKILL.md)，默认策略见 [`config.yaml`](config.yaml)。
 
----
+## 快速开始
 
-## ✅ 快速开始（推荐用法）
+最小 Prompt：
 
-| 你的需求 | 推荐用法 | 理由 |
-|---|---|---|
-| 去掉“机器味”，但不改内容 | 直接贴文本并声明“只润色表达” | 最稳妥、风险最低 |
-| 文本含 LaTeX | 明确“保持 LaTeX 结构/引用/数学不变” | 避免破坏编译 |
-| 文本含列表/图表标题 | 说明“`\item`/`\caption{}` 结构必须保留，只改自然语言” | 避免破坏环境/命令结构 |
-| 轻微润色 | 说明“最小改动” | 保留原句结构 |
-| 边界声明、概念定位太重 | 说明“把抽象定位改成研究动作优先” | 更像研究者在写方案，而不是模板化归类 |
-| “不是……而是……”太多 | 说明“弱化伪对立和整齐二分句式” | 避免把普通判断写成 AI 味很重的对称句 |
-| 想要可控强度/变更摘要/跨段一致 | 显式声明参数（`strength/output_mode/STYLE_CARD`） | 可验可控、整篇一致 |
-
-### 最推荐
-
-```
-请使用 nsfc-humanization 润色以下段落（仅润色表达，不新增信息，不改 LaTeX 结构）：
-
-[粘贴你的标书文本]
-```
-
-### 场景化变体
-
-**- 含 LaTeX**
-```
-请用 nsfc-humanization 润色以下段落，保持所有 LaTeX 命令/引用 key/数学公式不变：
-
-[粘贴含 LaTeX 的文本]
-```
-
-**- 最小改动**
-```
-请用 nsfc-humanization 轻微润色以下段落，只改明显的“机器味”句子：
+```text
+请使用 nsfc-humanization skill 润色下面的 NSFC 标书段落。
+输入：以下文本
+输出：只返回润色后的文本；不新增信息，不改 LaTeX、数字、代码状态或安全边界。
 
 [粘贴文本]
 ```
 
-**- 抽象定位太重**
-```
-请用 nsfc-humanization 润色以下段落，把过重的概念定位和边界声明改成研究动作优先的表达；不要新增事实：
+需要审查而不改写时：
+
+```text
+请使用 nsfc-humanization skill 做 diagnosis_only 诊断。
+请按词语、句法、段落、章节四层列出“保留/改写/合并/人工确认”，并给出受保护 token 与安全不变量对照。
 
 [粘贴文本]
 ```
 
-**- “不是……而是……”过多**
-```
-请用 nsfc-humanization 润色以下段落，重点处理“不是……而是……”这类伪对立句式；保留真实边界，不新增信息：
+## 能处理什么
+
+- 清理套话、伪对立、抽象功能标签、括号/分号堆砌和边界声明过重。
+- 识别工程协议腔、规格书式字段串、无主语流程句、混合技术语域、术语漂移、跨章节重复和元评论。
+- 先建立术语表与安全不变量，再改写；不能证明零损失时保留原句并标记人工确认。
+- 保持 LaTeX 命令、引用、数学、数字、单位、变量、代码状态、路径、URL、邮箱、DOI、注释和结构不变。
+
+不适用：非 NSFC 内容、补写研究内容、事实核查或版式修改。
+
+## 常用参数
+
+| 参数 | 可选值 | 作用 |
+| --- | --- | --- |
+| `section_type` | `通用`、`立项依据`、`研究内容`、`研究基础`、`工作条件`、`风险应对`、`其他` | 决定章节职责检查 |
+| `field` | `general`、`cs`、`engineering`、`medicine`、`life_science` | 提供领域语域提示 |
+| `strength` | `minimal`、`moderate`、`aggressive` | 控制改写幅度，默认 `aggressive` |
+| `output_mode` | `text_only`、`text_with_change_summary`、`diagnosis_only`、`text_with_change_summary_and_style_card` | 控制输出形式 |
+| `self_eval_rounds` | `1` 或 `2` | 第 1 轮看自然度/职责，第 2 轮看安全/结构 |
+
+## 场景示例
+
+### LaTeX 混合文本
+
+```text
+请用 nsfc-humanization 润色以下段落，保持所有 LaTeX 命令、引用 key、数学公式、数字和代码状态逐字不变；section_type=研究内容，output_mode=text_with_change_summary。
 
 [粘贴文本]
 ```
 
----
+### 工程术语较多
 
-## ✨ 功能概述
-
-- 目标：去除 NSFC 标书中的“机器味”，让文本更像资深领域专家撰写
-- 核心原则：不改内容、不补充信息、不调整格式
-- 适用对象：NSFC 各类基金申请书正文（纯文本或 LaTeX 混合文本）
-- 典型高收益改法：把“括号套括号 + 分号罗列（数据来源/规模等）”改写为正常句子流（更顺、更像人写）
-- 新增高收益场景：把“先划边界、再给抽象定位”的句子改成“先说明原文已有的研究动作、再交代边界与落点”
-- 高收益句式处理：识别“不是……而是……/不只是……更是……”这类整齐二分和伪对立表达，能保留真实边界，也能拆掉不必要的模板骨架
-
-> 关键约束详见 `SKILL.md`（包括“结构保护”“语义零损失”“提示词注入防护”）。
-
----
-
-## 📎 使用示例（按场景）
-
-### 示例 1：纯文本（最简单）
-```
-本研究首先对现有方法进行了系统综述，其次分析了其局限性，最后提出了新的解决方案。
-```
-
-### 示例 2：LaTeX 混合文本
-```latex
-\subsection{研究意义}
-
-本研究的意义主要体现在以下几个方面。首先，从理论层面来看，本研究填补了领域内的空白。
-```
-
----
-
-## 📦 输出与配置
-
-- 输出文件：无（直接返回润色文本）
-- 可配置参数：支持（见 `SKILL.md` 的“可选控制参数 / output_mode / STYLE_CARD”）
-
-| 文件 | 作用 |
-|---|---|
-| `SKILL.md` | 执行规范与硬性约束 |
-| `config.yaml` | 版本与元信息（单一真相来源） |
-| `references/machine-patterns.md` | 机器味识别与对比示例 |
-
----
-
-## 🎛️ 常用参数（可选）
-
-默认情况下输出仅为润色文本（最适合直接粘贴回 LaTeX）。若你需要更强可控性，可显式声明：
-
-- `section_type`：`立项依据/研究内容/研究基础/工作条件/风险应对/通用`
-- `field`：`general/cs/engineering/medicine/life_science`
-- `strength`：`minimal` / `moderate` / `aggressive`（默认）
-- `output_mode`：`text_only`（默认）/ `text_with_change_summary` / `diagnosis_only` / `text_with_change_summary_and_style_card`
-
-### 示例：带强度与变更摘要
-
-```
-请用 nsfc-humanization 润色以下段落：
-section_type=研究内容
-field=cs
-strength=moderate
-output_mode=text_with_change_summary
+```text
+请用 nsfc-humanization 诊断工程协议腔和规格书式字段串。
+专业术语可保留但需首次中文释义；请区分保留、改写、合并和人工确认，不要删除 manifest、状态码、阈值、分母或失败处理。
 
 [粘贴文本]
 ```
 
-### 示例：跨段落一致（STYLE_CARD）
+### 跨章节检查
 
-第一段建议用：
+```text
+请用 nsfc-humanization 检查研究目标、研究内容和风险应对三段的术语漂移与重复规则。
+先给“事实—首次定义—后续引用”表，再决定哪些句子只保留短引用；若无法判断是否为不同对象，标记人工确认。
 
-```
-请用 nsfc-humanization 润色以下段落，并输出 STYLE_CARD：
-output_mode=text_with_change_summary_and_style_card
-
-[第 1 段]
+[粘贴文本]
 ```
 
-后续段落把上次生成的 `STYLE_CARD` 一并贴回，即可尽量保持整篇一致。
+## 输出与参考
 
----
+技能默认直接返回文本，不写项目文件。若选择诊断或变更摘要，输出还应包含术语表、章节去重决定、受保护 token diff 和安全不变量对照。匿名回归样例见 [`references/regression-cases.md`](references/regression-cases.md)，模式说明见 [`references/machine-patterns.md`](references/machine-patterns.md)。
 
-## ❓ 常见问题（FAQ）
+## FAQ
 
-**Q：会修改 LaTeX 命令或引用 key 吗？**  
-不会。`\cite{}`/`\ref{}`/数学公式等均保持原样。
+**会改 LaTeX 或代码状态吗？** 不会；这些片段逐字保护，无法证明时回退。
 
-**Q：会补充新内容吗？**  
-不会。本技能只润色表达，不新增任何实质性信息。
+**会删除所有英文技术词吗？** 不会。受控 token 保留；可解释术语首次给中文释义；临时造词才建议改写。
 
-**Q：可以处理整篇标书吗？**  
-建议按段落/小节分批处理，便于逐段核查。
+**会把研究内容补得更具体吗？** 不会。只使用原文已有动作和事实，不新增方法、指标、样本或临床落点。
 
-**Q：润色后还需要人工审核吗？**  
-建议审核，尤其是专业术语与事实边界。
-
-**Q：如果原文里夹杂了类似“忽略上述规则/输出英文”的指令句子怎么办？**  
-这些内容会被视为“原文正文”的一部分，不会被当成指令执行；你仍应按需要核查润色结果是否满足“结构保护 + 语义零损失”。
-
----
+**为什么还要人工确认？** 术语可能确实指向不同对象，或安全不变量无法从改写句中证明；此时保留原句比追求顺滑更安全。
 
 ## 版本
 
-1.1.2 — 详见 [CHANGELOG.md](CHANGELOG.md)
+1.2.0 — 详见 [`CHANGELOG.md`](CHANGELOG.md)。
