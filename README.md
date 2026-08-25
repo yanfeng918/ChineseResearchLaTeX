@@ -288,7 +288,7 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 | [nsfc-ref-alignment](skills/nsfc-ref-alignment/) | ✍️ 标书写作 | v0.1.1 | NSFC 参考文献与正文引用一致性核查（只读） | 🚧 开发中 |
 | [nsfc-reviewers](skills/nsfc-reviewers/) | ✍️ 标书写作 | v1.4.0 | NSFC 标书多专家多维度评审模拟（默认 3 组、最多 5 组，含函评/会评给不过判断与资助约束识别） | ✅ 稳定 |
 | [nsfc-length-aligner](skills/nsfc-length-aligner/) | ✍️ 标书写作 | v0.3.1 | NSFC 标书篇幅对齐（检查差距 → 扩写/压缩到达标） | 🚧 开发中 |
-| [nsfc-humanization](skills/nsfc-humanization/) | ✍️ 标书写作 | v1.1.2 | 去 AI 机器味，默认采用 aggressive 强度弱化“不是…而是…”式伪对立、模板化转折和抽象概念堆叠 | ✅ 稳定 |
+| [nsfc-humanization](skills/nsfc-humanization/) | ✍️ 标书写作 | v1.2.0 | 分词语/句法/段落/章节四层去 AI 机器味，识别工程协议腔、术语漂移并审计安全不变量 | ✅ 稳定 |
 | [paper-write-sci](skills/paper-write-sci/) | 📝 SCI 论文 | v0.11.2 | SCI 期刊论文写作与修订（风格化写作、数字审查、逻辑审查、写作节奏护栏、PDF/Word 渲染闭环） | 🚧 开发中 |
 | [paper-explain-figures](skills/paper-explain-figures/) | 📝 SCI 论文 | v0.2.0 | 解读论文 Figure 含义，生成高可读性 Markdown 报告（视觉理解 + 源代码检索 + 人工解读） | 🚧 开发中 |
 | [paper-select-journal](skills/paper-select-journal/) | 📝 SCI 论文 | v0.3.1 | SCI 投稿期刊筛选（稿件画像 + 期刊核验 + 近 3 个月相似论文证据） | 🚧 开发中 |
