@@ -29,3 +29,6 @@
 ### Added（新增）
 
 - 初始化 `paper-explain-figures`：支持多 figure 输入、`.paper-explain-figures/` 中间目录硬约束、自动源代码检索、使用 `codex exec`/`claude -p` 进程级隔离解读、最终合并输出 `paper-explain-figures_report.md`。
+## Unreleased
+
+- Figure 解读脚本改用任务级 `input/output/log` 工作区。

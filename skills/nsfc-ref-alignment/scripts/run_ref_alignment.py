@@ -9,7 +9,7 @@ run_ref_alignment.py - nsfc-ref-alignment 的确定性入口（只读）
 - 进行确定性完整性检查：缺失 bibkey / 重复条目 / 字段缺失 / DOI 格式
 - 可选：在线核验 DOI（Crossref/OpenAlex，只做存在性与元信息粗比对；失败降级）
 - 生成：
-  - 中间产物：{project_root}/.bensz-api/skills/nsfc-ref-alignment/{timestamp}/...
+  - 中间产物：{project_root}/.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-ref-alignment/{timestamp}/input|output|log/...
   - 交付报告（确定性草稿）：{report_dir}/NSFC-REF-ALIGNMENT-v{timestamp}.md
 
 非职责（启发式/AI）：
@@ -87,7 +87,7 @@ def main() -> int:
     report_dir = Path(args.report_dir).expanduser().resolve()
 
     run_id = local_timestamp_minute()
-    runs_root = project_root / ".bensz-api" / "skills" / "nsfc-ref-alignment"
+    runs_root = project_root / ".bensz-api" / f"task-{dt.datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-ref-alignment" / "nsfc-ref-alignment"
     runs_root.mkdir(parents=True, exist_ok=True)
     run_dir = None
     # Use atomic mkdir to avoid collisions (even under concurrent runs).
@@ -102,6 +102,11 @@ def main() -> int:
             continue
     if run_dir is None:
         raise SystemExit(f"failed to allocate unique run_dir under {runs_root} for run_id={run_id}")
+    input_dir = run_dir / "input"
+    output_dir = run_dir / "output"
+    log_dir = run_dir / "log"
+    for path in (input_dir, output_dir, log_dir):
+        path.mkdir(parents=True, exist_ok=True)
 
     warnings: List[str] = []
     warnings.extend(cfg_warnings)
@@ -291,12 +296,12 @@ def main() -> int:
     }
 
     # Write outputs (all writes are either run_dir or report_dir)
-    write_citations_csv(run_dir / "citations.csv", hits_effective)
-    write_json(run_dir / "bib_inventory.json", bib_inventory)
-    write_json(run_dir / "ai_ref_alignment_input.json", ai_input)
-    (run_dir / "ref_integrity_report.md").write_text(build_deterministic_report_md(report_summary), encoding="utf-8")
+    write_citations_csv(input_dir / "citations.csv", hits_effective)
+    write_json(input_dir / "bib_inventory.json", bib_inventory)
+    write_json(input_dir / "ai_ref_alignment_input.json", ai_input)
+    (output_dir / "ref_integrity_report.md").write_text(build_deterministic_report_md(report_summary), encoding="utf-8")
     write_json(
-        run_dir / "run_manifest.json",
+        log_dir / "run_manifest.json",
         {
             "args": vars(args),
             "project_root": str(project_root),

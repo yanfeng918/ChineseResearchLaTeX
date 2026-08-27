@@ -157,3 +157,6 @@
 - `scripts/run_parallel_qc.py`：在 `.nsfc-qc/` 内运行 parallel-vibe，并生成确定性 plan（各 thread 执行同一份 QC 清单）
 - `templates/`：提供标准化报告模板与 findings JSON schema
 - `references/qc_checklist.md`：给多线程 QC 的统一检查清单参考
+## Unreleased
+
+- QC 默认工作区改为任务级 `.bensz-api/task-.../nsfc-qc`，并同步快照输入路径。

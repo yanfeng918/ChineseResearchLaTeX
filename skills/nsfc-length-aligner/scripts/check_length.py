@@ -30,14 +30,16 @@ def _resolve_report_out_dir(input_path: Path, out_dir_arg: str, cfg: dict[str, A
     if not isinstance(output_settings, dict):
         output_settings = {}
 
-    default_dirname = str(output_settings.get("intermediate_dir") or ".bensz-api/skills/nsfc-length-aligner").strip()
-    if not default_dirname:
-        default_dirname = ".bensz-api/skills/nsfc-length-aligner"
+    default_dirname = str(output_settings.get("intermediate_dir") or ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-length-aligner").strip()
 
     base = input_path if input_path.is_dir() else input_path.parent
     if not out_dir_arg:
-        root = (base / default_dirname).resolve()
         stamp = dt.datetime.now().strftime("%Y-%m-%d-%H-%M")
+        task_stamp = dt.datetime.now().strftime("%Y%m%d-%H%M")
+        if "{yyyymmdd" in default_dirname or default_dirname.startswith(".bensz-api/skills/"):
+            root = (base / ".bensz-api" / f"task-{task_stamp}-nsfc-length-aligner" / "nsfc-length-aligner").resolve()
+        else:
+            root = (base / default_dirname).resolve()
         candidate = root / stamp
         if not candidate.exists():
             return candidate
@@ -537,7 +539,7 @@ def main(argv: list[str]) -> int:
         default="",
         help=(
             "Output directory for reports "
-            "(default: <input>/.bensz-api/skills/nsfc-length-aligner/<yyyy-mm-dd-hh-mm>; relative paths are resolved from --input)"
+            "(default: <input>/.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-length-aligner/<yyyy-mm-dd-hh-mm>; relative paths are resolved from --input)"
         ),
     )
     parser.add_argument(

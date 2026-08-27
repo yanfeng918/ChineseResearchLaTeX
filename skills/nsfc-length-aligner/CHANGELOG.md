@@ -64,3 +64,6 @@ The format is based on Keep a Changelog, and this skill adheres to Semantic Vers
 
 ### Added
 - 初始化 `nsfc-length-aligner` demo：内置示例篇幅标准、篇幅检查脚本、差距报告模板与使用说明。
+## Unreleased
+
+- 篇幅检查默认输出目录改为任务级 `.bensz-api/task-.../nsfc-length-aligner`。

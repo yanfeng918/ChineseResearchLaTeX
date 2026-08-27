@@ -110,12 +110,25 @@ def legacy_hidden_roots(paper_dir: Path, workspace_cfg: dict) -> list[str]:
 
 def ensure_workspace(skill_root: Path, config: dict, paper_dir: Path, mode: str, style: str, topic: str, refs: list[str]) -> dict:
     workspace_cfg = config["workspace"]
-    hidden_root = paper_dir / workspace_cfg["hidden_dir"]
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M")
+    task_prefix = str(workspace_cfg.get("task_prefix", "task")).strip("-") or "task"
+    task_label = str(workspace_cfg.get("task_label", "paper-write-sci")).strip("-") or "paper-write-sci"
+    task_root = paper_dir / str(workspace_cfg.get("task_root_dir", ".bensz-api")) / f"{task_prefix}-{timestamp}-{task_label}"
+    task_root.mkdir(parents=True, exist_ok=True)
+    for shared_subdir in ("input", "output", "log"):
+        (task_root / "shared" / shared_subdir).mkdir(parents=True, exist_ok=True)
+    task_readme = task_root / "README.md"
+    if not task_readme.exists():
+        task_readme.write_text(
+            f"# BenszAPI 任务工作区\n\n- 本轮 skill：`{task_label}`\n- 中间文件按 `input/`、`output/`、`log/` 分类保存。\n",
+            encoding="utf-8",
+        )
+    hidden_root = task_root / task_label
     hidden_root.mkdir(parents=True, exist_ok=True)
 
     runtime_cfg = config["runtime_outputs"]
-    timestamp = datetime.now().strftime(runtime_cfg["timestamp_format"])
-    run_id, run_dir = allocate_run_dir(hidden_root, runtime_cfg["run_dir_pattern"], timestamp)
+    run_timestamp = datetime.now().strftime(runtime_cfg["timestamp_format"])
+    run_id, run_dir = allocate_run_dir(hidden_root, runtime_cfg["run_dir_pattern"], run_timestamp)
     run_dir.mkdir(parents=True, exist_ok=False)
 
     for subdir in workspace_cfg.get("subdirs", []):
@@ -126,9 +139,10 @@ def ensure_workspace(skill_root: Path, config: dict, paper_dir: Path, mode: str,
 
     manifest_path = run_dir / safe_relative_path(runtime_cfg["runtime_manifest"], label="runtime_manifest")
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    plan_filename = runtime_cfg["collaborative_plan_pattern"].format(topic=topic, timestamp=timestamp, run_id=run_id)
+    plan_filename = runtime_cfg["collaborative_plan_pattern"].format(topic=topic, timestamp=run_timestamp, run_id=run_id)
     payload = {
         "paper_dir": str(paper_dir),
+        "task_root": str(task_root),
         "workspace_root": str(hidden_root),
         "workspace_dir": str(run_dir),
         "legacy_workspace_roots": legacy_hidden_roots(paper_dir, workspace_cfg),
@@ -136,7 +150,7 @@ def ensure_workspace(skill_root: Path, config: dict, paper_dir: Path, mode: str,
         "mode": mode,
         "style": style,
         "topic_slug": topic,
-        "timestamp": timestamp,
+        "timestamp": run_timestamp,
         "collaborative_plan_dir": str(plan_dir),
         "collaborative_plan_preview": str(plan_dir / plan_filename),
         "analysis_dir": str(run_dir / "analysis"),

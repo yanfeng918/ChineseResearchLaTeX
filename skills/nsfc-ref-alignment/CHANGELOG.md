@@ -22,3 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - 初版：只读方式抽取 NSFC 标书引用与 BibTeX 清单，生成结构化输入与审核报告（中间产物隔离在 `.nsfc-ref-alignment/run_{timestamp}/`，最终报告默认写入 `./references/`）。
+## Unreleased
+
+- 引用核验运行产物按任务级 `input/output/log` 分类归档。

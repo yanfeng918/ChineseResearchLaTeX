@@ -767,7 +767,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_diag.add_argument("--json-out", help="可选：输出 JSON 报告到文件")
     p_diag.add_argument(
         "--html-report",
-        help="可选：输出 HTML 报告到文件；用 auto 输出到 runs_dir（默认 tests/_artifacts/runs/）...",
+        help="可选：输出 HTML 报告到文件；用 auto 输出到当前任务的 runs_dir...",
     )
     p_diag.add_argument("--open", action="store_true", help="若生成 HTML 报告则尝试自动打开浏览器")
     p_diag.add_argument("--run-id", help="可选：diagnose 的 run_id（用于 html-report=auto）")

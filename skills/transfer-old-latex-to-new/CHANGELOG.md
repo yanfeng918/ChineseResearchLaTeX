@@ -26,3 +26,6 @@
 - 重写 [README.md](README.md)：用户使用方式改为“给任意材料 + 给目标”，不再要求用户先整理成固定输入输出协议。
 - 更新 [config.yaml](config.yaml)：版本跃迁到 `2.0.0`，并明确该配置主要服务 legacy CLI，而不是限定整个 skill 的输入输出边界。
 - 更新 [scripts/README.md](scripts/README.md)：将 `run.py`、`migrate.sh` 等脚本降级为可选的 legacy CLI 后备说明。
+## Unreleased
+
+- 迁移运行目录默认改为任务级 `.bensz-api/task-.../transfer-old-latex-to-new`。

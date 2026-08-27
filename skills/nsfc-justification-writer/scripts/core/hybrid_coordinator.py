@@ -10,7 +10,7 @@ from typing import Any, Dict, Optional
 
 from .ai_integration import AIIntegration
 from .config_access import get_bool, get_mapping, get_str
-from .config_loader import get_runs_dir, load_config
+from .config_loader import get_cache_dir, get_runs_dir, load_config
 from .diagnostic import DiagnosticReport, format_tier1, run_tier1
 from .errors import MissingCitationKeysError, SectionNotFoundError, TargetFileNotFoundError, TargetResolutionError
 from .editor import ApplyResult, apply_new_content
@@ -100,7 +100,7 @@ class HybridCoordinator:
         self.obs.add("diagnose.tier1", **report.to_dict()["tier1"])
 
         ai_cfg = get_mapping(self.config, "ai")
-        cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
+        cache_dir = get_cache_dir(self.skill_root, self.config)
 
         report.notes.append(
             "Tier1 已完成；Tier2 必须由当前宿主 AI 读取 references/tier2_semantic_review.md 后直接执行。"
@@ -166,7 +166,7 @@ class HybridCoordinator:
             cands = suggest_titles(src, query=title, limit=30)
             if self.ai.is_available() and cands:
                 ai_cfg = get_mapping(self.config, "ai")
-                cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
+                cache_dir = get_cache_dir(self.skill_root, self.config)
                 matched = asyncio.run(match_title_via_ai(query=title, candidates=cands, ai=self.ai, cache_dir=cache_dir))
                 if matched:
                     chosen = matched
@@ -262,7 +262,7 @@ class HybridCoordinator:
 
     def recommend_examples(self, *, query: str, top_k: int = 3) -> str:
         ai_cfg = get_mapping(self.config, "ai")
-        cache_dir = (self.skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
+        cache_dir = get_cache_dir(self.skill_root, self.config)
         return recommend_examples_markdown(skill_root=self.skill_root, query=query, top_k=top_k, ai=self.ai, cache_dir=cache_dir)
 
     def coach(self, *, project_root: Path, stage: str = "auto", info_form_text: str = "") -> str:

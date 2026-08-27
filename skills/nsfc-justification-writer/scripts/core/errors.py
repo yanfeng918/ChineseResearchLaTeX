@@ -67,7 +67,7 @@ class BackupNotFoundError(SkillError):
             f"未找到 run_id={run_id} 的备份文件",
             fix_suggestion=(
                 "建议：先运行 `list-runs` 查看可用 run_id；\n"
-                "或检查 `config.yaml:workspace.runs_dir` 是否指向正确目录（默认 `tests/_artifacts/runs/`）。"
+                "或检查 `config.yaml:workspace.runs_dir` 是否指向正确的任务级工作区。"
             ),
         )
 

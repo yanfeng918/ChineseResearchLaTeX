@@ -68,3 +68,6 @@
 - 新增 `scripts/init_workspace.py`，用于创建运行目录、测试区、manifest 和安全输出路径。
 - 新增 `scripts/validate_report.py`，用于检查最终报告结构、来源链接数量和中间路径泄露。
 - 新增 `references/source-policy.md` 与 `references/report-template.md`，沉淀来源分级和报告模板。
+## Unreleased
+
+- 测试目录默认移出隐藏 skill 目录，避免与任务级中间产物混用。

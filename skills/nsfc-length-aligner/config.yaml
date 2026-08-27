@@ -16,7 +16,7 @@ directories:
   tests: "tests"
 
 output_settings:
-  intermediate_dir: ".bensz-api/skills/nsfc-length-aligner"
+  intermediate_dir: ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-length-aligner"
 
 # ============================================================================
 # 篇幅标准（示例）

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import fnmatch
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import yaml
@@ -44,7 +45,9 @@ def _load_discovery_config(cfg: dict) -> tuple[list[str], list[str], str, str]:
     os_cfg = cfg.get("output_settings") if isinstance(cfg, dict) else None
     os_cfg = os_cfg if isinstance(os_cfg, dict) else {}
     panel_dir = str(os_cfg.get("panel_dir") or "panels").strip()
-    intermediate_dir = str(os_cfg.get("intermediate_dir") or ".bensz-api/skills/nsfc-reviewers").strip()
+    intermediate_dir = str(os_cfg.get("intermediate_dir") or "").strip()
+    if not intermediate_dir or "{yyyymmdd" in intermediate_dir or intermediate_dir.startswith(".bensz-api/skills/"):
+        intermediate_dir = f".bensz-api/task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-reviewers/nsfc-reviewers"
     if not panel_dir or not intermediate_dir:
         raise ValueError("config.yaml: output_settings.panel_dir/intermediate_dir must be non-empty")
 

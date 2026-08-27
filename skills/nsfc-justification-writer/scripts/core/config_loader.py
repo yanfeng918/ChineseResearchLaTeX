@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import os
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
 
@@ -413,5 +414,15 @@ def get_runs_dir(skill_root: Path, config: Dict[str, Any]) -> Path:
         return p.resolve()
     workspace = config.get("workspace", {})
     workspace = workspace if isinstance(workspace, dict) else {}
-    runs_dir = workspace.get("runs_dir", "tests/_artifacts/runs")
-    return (Path(skill_root) / str(runs_dir)).resolve()
+    runs_dir = str(workspace.get("runs_dir", "") or "")
+    if not runs_dir or "{yyyymmdd" in runs_dir or runs_dir.startswith("tests/_artifacts"):
+        return (Path.cwd() / ".bensz-api" / f"task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-justification-writer" / "nsfc-justification-writer").resolve()
+    return (Path(skill_root) / runs_dir).resolve()
+
+
+def get_cache_dir(skill_root: Path, config: Dict[str, Any]) -> Path:
+    ai = config.get("ai", {}) if isinstance(config, dict) else {}
+    value = str(ai.get("cache_dir", "") or "") if isinstance(ai, dict) else ""
+    if not value or "{yyyymmdd" in value or value.startswith("tests/_artifacts"):
+        return (Path.cwd() / ".bensz-api" / f"task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-justification-writer" / "nsfc-justification-writer" / "cache" / "ai").resolve()
+    return (Path(skill_root) / value).resolve()

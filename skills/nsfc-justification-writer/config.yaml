@@ -23,7 +23,7 @@ targets:
     - references/**/*.bib
 
 workspace:
-  runs_dir: tests/_artifacts/runs
+  runs_dir: .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-justification-writer
 
 limits:
   max_file_size_mb: 5
@@ -33,7 +33,7 @@ limits:
 
 ai:
   enabled: true
-  cache_dir: tests/_artifacts/cache/ai
+  cache_dir: .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-justification-writer/cache/ai
 
 prompts:
   review_suggestions: assets/prompts/review_suggestions.txt

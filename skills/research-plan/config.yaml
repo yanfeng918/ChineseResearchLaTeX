@@ -11,12 +11,12 @@ skill_info:
 # 工作目录配置
 work_directory:
   # 工作目录名称
-  name: ".make-research-plan"
+  name: ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan"
   # 子目录名称
   subdirs:
-    papers: "papers"
-    metadata: "metadata"
-    extracted: "extracted"
+    papers: "input/papers"
+    metadata: "input/metadata"
+    extracted: "output/extracted"
   # 输出文件名
   files:
     theme: "theme.json"

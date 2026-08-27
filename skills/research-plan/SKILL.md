@@ -30,7 +30,7 @@ metadata:
 
 **基于文献调研的科研分析策略规划助手**
 
-旧名 `make-research-plan` 仅作为 prompt 兼容别名保留；`.make-research-plan/` 是稳定历史工作区名，不随 skill 目录重命名。
+旧名 `make-research-plan` 仅作为 prompt 兼容别名保留；历史 `.make-research-plan/` 仅作显式兼容读取、迁移或清理，新运行统一使用任务级工作区。
 
 ## 核心功能
 
@@ -61,23 +61,24 @@ metadata:
 
 **操作：**
 1. 验证工作目录存在且可写
-2. 创建隐藏工作目录 `.make-research-plan/`
+2. 创建任务级隐藏工作目录 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/`
 3. 明确告知用户创建的目录位置和用途
 
 **输出：**
-- `.make-research-plan/` 目录结构
+- `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/` 目录结构
 
 **目录结构：**
 ```
-.make-research-plan/
-├── papers/              # 下载的 PDF 文献
-├── metadata/            # 调研元数据
+.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/
+├── input/papers/        # 下载的 PDF 文献
+├── input/metadata/      # 调研元数据
 │   ├── theme.json      # 主题和关键词
 │   └── search_history.json # 检索历史
-├── extracted/           # 提取的文献信息
+├── output/extracted/    # 提取的文献信息
 │   └── papers_info.json # 论文结构化信息
-├── analysis-framework.md # 分析框架总结
-└── plan.md             # 最终分析策略计划
+├── output/analysis-framework.md # 分析框架总结
+├── output/plan.md             # 任务内草稿
+└── log/                       # 命令、验证与错误日志
 ```
 
 ### 阶段 1：主题提取与文献调研

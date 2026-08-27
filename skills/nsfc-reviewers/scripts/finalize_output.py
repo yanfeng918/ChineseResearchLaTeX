@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import yaml
@@ -182,7 +183,9 @@ def main(argv: list[str] | None = None) -> int:
 
     os_cfg = cfg.get("output_settings") if isinstance(cfg, dict) else None
     os_cfg = os_cfg if isinstance(os_cfg, dict) else {}
-    default_intermediate = str(os_cfg.get("intermediate_dir") or ".bensz-api/skills/nsfc-reviewers")
+    default_intermediate = str(os_cfg.get("intermediate_dir") or "")
+    if not default_intermediate or "{yyyymmdd" in default_intermediate or default_intermediate.startswith(".bensz-api/skills/"):
+        default_intermediate = f".bensz-api/task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-reviewers/nsfc-reviewers"
     default_panel_dir = str(os_cfg.get("panel_dir") or "panels")
     default_filename = str(os_cfg.get("default_filename") or "comments-from-nsfc-reviewers.md")
     warn_missing_intermediate = bool(os_cfg.get("warn_missing_intermediate", True))
@@ -194,7 +197,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--intermediate-dir",
         default=default_intermediate,
-        help="覆盖 config.yaml:output_settings.intermediate_dir（默认 .bensz-api/skills/nsfc-reviewers）",
+        help="覆盖 config.yaml:output_settings.intermediate_dir（默认任务级 .bensz-api/.../nsfc-reviewers）",
     )
     p.add_argument(
         "--master-prompt-file",

@@ -219,3 +219,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 各章节详细写作指南
 - config.yaml：章节路径映射、格式保护目录、构建工具优先级配置
 - 工作区隔离机制
+## Unreleased
+
+- 写作工作区初始化改为任务级 `.bensz-api/task-.../paper-write-sci`。

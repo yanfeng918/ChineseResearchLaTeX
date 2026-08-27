@@ -45,3 +45,6 @@
 
 - 新增运行时公共工具：`skills/nsfc-budget/scripts/runtime_utils.py`
 - 新增路径安全与一致性回归测试：覆盖 `output_dirname` 越界、`spec` 越界、金额不一致、`template_id` 越界、`--skip-compile` manifest 等场景
+## Unreleased
+
+- 默认中间目录改为任务级 `.bensz-api/task-.../nsfc-budget`，并保留旧路径识别兼容。

@@ -1008,7 +1008,7 @@ def main() -> int:
     parser.add_argument("--topic", required=False, help="主题")
     parser.add_argument("--domain", default="general", help="领域（可选）")
     parser.add_argument("--config", type=Path, default=Path(__file__).parent.parent / "config.yaml")
-    parser.add_argument("--work-dir", type=Path, required=False, help="工作目录；默认使用 .bensz-api/skills/research-literature-review/<timestamp-topic>")
+    parser.add_argument("--work-dir", type=Path, required=False, help="工作目录；默认使用 .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-literature-review/<run-id>")
     parser.add_argument("--review-level", choices=["premium", "standard", "basic"], help="档位（可选）")
     parser.add_argument("--output-stem", help="文件名前缀（可选）")
     parser.add_argument("--resume", type=Path, help="从已有 work_dir 恢复（自动读取其中的 pipeline_state.json）")

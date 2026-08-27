@@ -33,7 +33,10 @@ input_validation:
     allow_directories: true
 
 workspace:
-  hidden_dir: .bensz-api/skills/paper-write-sci
+  task_root_dir: .bensz-api
+  task_prefix: task
+  task_label: paper-write-sci
+  hidden_dir: .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/paper-write-sci
   legacy_hidden_dirs:
     - .paper-write-sci
     - .write-paper-sci

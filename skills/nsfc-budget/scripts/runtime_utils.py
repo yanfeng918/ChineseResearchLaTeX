@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -11,7 +12,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "defaults": {
         "template_id": "01",
         "output_dirname": "budget_output",
-        "intermediate_dirname": ".bensz-api/skills/nsfc-budget",
+        "intermediate_dirname": ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-budget",
         "project_type": "general",
         "total_budget_wan": {"general": 50, "local": 50, "youth": 30},
         "target_chars": {"recommended_min": 800, "recommended_max": 1000, "recommended_default": 900},
@@ -51,6 +52,17 @@ DEFAULT_CONFIG: Dict[str, Any] = {
         },
     },
 }
+
+
+def resolve_intermediate_root(workdir: Path, configured: str | None, *, run_dir: Path | None = None) -> Path:
+    """Resolve the task-scoped intermediate root; legacy paths are read-only compatibility hints."""
+    if run_dir is not None:
+        return run_dir.resolve().parent
+    value = str(configured or "").strip()
+    if not value or value == ".bensz-api/skills/nsfc-budget" or "{yyyymmdd" in value:
+        stamp = datetime.now().strftime("%Y%m%d-%H%M")
+        return (workdir / ".bensz-api" / f"task-{stamp}-nsfc-budget" / "nsfc-budget").resolve()
+    return (workdir / value).resolve()
 
 
 def merge_dict(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]:
@@ -133,7 +145,7 @@ def resolve_output_dir(workdir: Path, output_dirname: str, intermediate_dirname:
     if output_dir == workdir_resolved:
         raise ValueError(f"{label} 不能指向工作目录根路径：{output_dirname}")
 
-    intermediate_root = resolve_under(workdir, intermediate_dirname, label="intermediate_dirname")
+    intermediate_root = resolve_intermediate_root(workdir, intermediate_dirname)
     if paths_overlap(output_dir, intermediate_root):
         raise ValueError(
             f"{label} 不能与隐藏工作区 {intermediate_dirname} 重叠：{output_dirname}"

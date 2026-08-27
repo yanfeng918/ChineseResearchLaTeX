@@ -29,7 +29,7 @@ def main() -> int:
     p.add_argument(
         "--run-dir",
         required=True,
-        help="某次 run 目录（例如 .bensz-api/skills/paper-explain-figures/YYYY-MM-DD-HH-MM）",
+        help="某次 run 目录（例如 .bensz-api/task-YYYYMMDD-HHMM-简短描述/paper-explain-figures/output/YYYY-MM-DD-HH-MM）",
     )
     p.add_argument("--out", default="paper-explain-figures_report.md", help="输出 Markdown（默认写到当前目录）")
     args = p.parse_args()

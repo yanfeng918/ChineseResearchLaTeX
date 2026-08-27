@@ -63,7 +63,7 @@ DEFAULT_CONFIG = {
             "/Volumes/2T01/Cache/.codex/skills",
         ],
     },
-    "tests": {"default_dir": ".bensz-api/skills/research-idea/tests"},
+    "tests": {"default_dir": "tests/research-idea"},
 }
 
 
@@ -159,7 +159,7 @@ def ensure_hidden_workspace(path: Path, label: str) -> None:
     parts = path.parts
     if path.name.startswith(".") or ".bensz-api" in parts:
         return
-    raise SystemExit(f"{label} 必须位于隐藏目录内，推荐 .bensz-api/skills/research-idea: {path}")
+    raise SystemExit(f"{label} 必须位于任务级隐藏目录内，推荐 .bensz-api/task-{{yyyymmdd-hhmm}}-{{简短描述}}/research-idea: {path}")
 
 
 def ensure_not_nested(parent: Path, child: Path, label: str) -> None:
@@ -252,7 +252,7 @@ def main() -> None:
     parser.add_argument("--cwd", default=".", help="用户当前工作目录，默认当前目录")
     parser.add_argument("--workspace-dir", help="显式兼容工作区根目录；默认使用任务级 BenszAPI 工作区")
     parser.add_argument("--output-dir", help="最终 Markdown 输出目录，默认 <cwd>")
-    parser.add_argument("--test-dir", help="测试区目录，默认 <cwd>/.bensz-api/skills/research-idea/tests")
+    parser.add_argument("--test-dir", help="测试区目录，默认 <cwd>/tests/research-idea")
     parser.add_argument("--with-test-dir", action="store_true", help="创建测试区；普通用户运行默认不创建")
     parser.add_argument("--repo-name", help="覆盖自动识别的 GitHub 仓库名")
     parser.add_argument("--pr-name", help="覆盖自动识别的 PR/分支名")

@@ -6,7 +6,7 @@ Goal:
 - Compile the proposal in an isolated copy (never touching proposal sources).
 - Run the standard 4-step sequence:
     xelatex -> bibtex -> xelatex -> xelatex
-- Write all outputs under a user-provided --out directory (recommended: .../.bensz-api/skills/nsfc-qc/<run_id>/artifacts).
+- Write all outputs under a user-provided --out directory (recommended inside the task-level .bensz-api/.../nsfc-qc/artifacts directory).
 
 Note:
 - `nsfc-qc` is positioned as "content quality QC"; compile success is an environment/engineering concern.
@@ -163,7 +163,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--project-root", required=True)
     ap.add_argument("--main-tex", default="main.tex", help="relative to project-root")
-    ap.add_argument("--out", required=True, help="output directory (recommended: .../.bensz-api/skills/nsfc-qc/<run_id>/artifacts)")
+    ap.add_argument("--out", required=True, help="output directory (recommended inside the task-level .bensz-api/.../nsfc-qc/artifacts)")
     args = ap.parse_args()
 
     project_root = Path(args.project_root).expanduser().resolve()

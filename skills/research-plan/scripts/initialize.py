@@ -7,12 +7,18 @@ Make Research Plan - 初始化脚本
 
 import os
 import json
+import re
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
 
-def create_work_directory(work_dir: Optional[str] = None) -> dict:
+def _slug(value: str) -> str:
+    value = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff_-]+", "-", value.strip())
+    return value.strip("-_") or "research-plan"
+
+
+def create_work_directory(work_dir: Optional[str] = None, task_label: Optional[str] = None) -> dict:
     """
     创建工作目录结构。
 
@@ -46,22 +52,32 @@ def create_work_directory(work_dir: Optional[str] = None) -> dict:
     if not os.access(work_path, os.W_OK):
         raise PermissionError(f"目录不可写: {work_path}")
 
-    # 创建隐藏工作目录
-    hidden_dir = work_path / ".make-research-plan"
-
-    if hidden_dir.exists():
-        return {
-            "status": "exists",
-            "work_directory": str(hidden_dir),
-            "message": "工作目录已存在"
-        }
+    # 创建任务级工作目录；旧 .make-research-plan 仅作显式兼容读取。
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M")
+    label = _slug(task_label or "research-plan")
+    task_base = work_path / ".bensz-api"
+    task_base.mkdir(parents=True, exist_ok=True)
+    task_root = task_base / f"task-{timestamp}-{label}"
+    if task_root.exists():
+        for index in range(2, 100):
+            candidate = task_base / f"task-{timestamp}-{label}-{index:02d}"
+            if not candidate.exists():
+                task_root = candidate
+                break
+        else:
+            raise RuntimeError("无法分配唯一任务工作区")
+    hidden_dir = task_root / "research-plan"
 
     # 目录结构
     directories = [
-        hidden_dir,
-        hidden_dir / "papers",
-        hidden_dir / "metadata",
-        hidden_dir / "extracted",
+        task_root / "shared" / "input",
+        task_root / "shared" / "output",
+        task_root / "shared" / "log",
+        hidden_dir / "input" / "papers",
+        hidden_dir / "input" / "metadata",
+        hidden_dir / "output" / "extracted",
+        hidden_dir / "output",
+        hidden_dir / "log",
     ]
 
     for directory in directories:
@@ -71,11 +87,13 @@ def create_work_directory(work_dir: Optional[str] = None) -> dict:
     init_meta = {
         "created_at": datetime.now().isoformat(),
         "work_directory": str(work_path),
+        "task_root": str(task_root),
+        "skill_directory": str(hidden_dir),
         "project_name": work_path.name,
         "version": "0.1.0"
     }
 
-    meta_file = hidden_dir / "metadata" / "init.json"
+    meta_file = hidden_dir / "input" / "metadata" / "init.json"
     with open(meta_file, "w", encoding="utf-8") as f:
         json.dump(init_meta, f, indent=2, ensure_ascii=False)
 
@@ -83,9 +101,9 @@ def create_work_directory(work_dir: Optional[str] = None) -> dict:
         "status": "created",
         "work_directory": str(hidden_dir),
         "structure": {
-            "papers": str(hidden_dir / "papers"),
-            "metadata": str(hidden_dir / "metadata"),
-            "extracted": str(hidden_dir / "extracted"),
+            "papers": str(hidden_dir / "input" / "papers"),
+            "metadata": str(hidden_dir / "input" / "metadata"),
+            "extracted": str(hidden_dir / "output" / "extracted"),
         },
         "message": f"已创建工作目录: {hidden_dir}"
     }

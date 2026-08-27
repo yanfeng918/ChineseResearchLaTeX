@@ -40,7 +40,8 @@ guardrails:
   # 允许写入：根层交付文件、隐藏工作区、测试/计划产物。
   allowed_write_globs:
     - "NSFC-CODE-*.md"
-    - ".nsfc-code/**"
+    - ".bensz-api/task-*/nsfc-code/**"
+    - ".nsfc-code/**"  # legacy compatibility only
     - "skills/nsfc-code/tests/**"
     - "skills/nsfc-code/plans/**"
   forbidden_write_globs:
@@ -54,6 +55,6 @@ references:
 
 output_contract:
   # 隐藏工作区（中间文件，每次运行独立隔离）
-  work_dir: ".nsfc-code/v{ts}/"
+  work_dir: ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-code/"
   # 最终交付（工作目录根层，文件名按分钟级时间戳）
   final_report: "NSFC-CODE-v{ts}.md"

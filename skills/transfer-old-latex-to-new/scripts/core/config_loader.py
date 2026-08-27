@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -54,7 +55,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
         "verbose": True,
     },
     "workspace": {
-        "runs_dir": ".bensz-api/skills/transfer-old-latex-to-new",
+        "runs_dir": ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/transfer-old-latex-to-new",
     },
     # 预设配置（profiles）
     "profiles": {
@@ -167,6 +168,8 @@ def get_runs_dir(skill_root: Path, config: Dict[str, Any]) -> Path:
         return path.resolve()
     if str(runs_dir) == "runs":
         return (Path(skill_root) / path).resolve()
+    if "{yyyymmdd" in str(runs_dir) or str(runs_dir).startswith(".bensz-api/skills/"):
+        return (Path.cwd() / ".bensz-api" / f"task-{datetime.now().strftime('%Y%m%d-%H%M')}-transfer-old-latex-to-new" / "transfer-old-latex-to-new").resolve()
     return (Path.cwd() / path).resolve()
 
 

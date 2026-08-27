@@ -210,7 +210,7 @@ output:
 # 工作空间（本 skill 运行目录）
 # =============================================================================
 workspace:
-  runs_dir: ".bensz-api/skills/transfer-old-latex-to-new"  # 运行产物根目录：./.bensz-api/skills/transfer-old-latex-to-new/<yyyy-mm-dd-hh-mm>/
+  runs_dir: ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/transfer-old-latex-to-new"  # 新运行使用任务级工作区
 
 # =============================================================================
 # 智能决策规则（AI自主规划逻辑）

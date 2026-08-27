@@ -248,7 +248,7 @@ output_settings:
   # 是否将中间过程文件隐藏到 intermediate_dir（推荐开启，减少根目录噪声）
   hide_intermediate: true
   # 中间过程统一托管目录（相对 review 根目录，放置 parallel-vibe 环境、日志与快照）
-  intermediate_dir: .bensz-api/skills/nsfc-reviewers
+  intermediate_dir: .bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-reviewers
   # 是否强制执行“输出整理”阶段（强烈建议开启，保证并行环境/计划文件可追溯）
   enforce_output_finalization: true
   # 若检测到多组评审但未生成 intermediate_dir（或缺少 parallel-vibe 环境），是否发出警告

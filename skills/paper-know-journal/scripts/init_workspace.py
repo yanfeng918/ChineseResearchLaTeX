@@ -39,7 +39,7 @@ DEFAULT_CONFIG = {
         "filename_template": "KnowJournal-{journal}.md",
         "unsafe_filename_chars": '/\\:*?"<>|',
     },
-    "tests": {"default_dir": ".bensz-api/skills/paper-know-journal/tests"},
+    "tests": {"default_dir": "tests/paper-know-journal"},
 }
 
 

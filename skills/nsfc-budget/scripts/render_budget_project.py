@@ -15,7 +15,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from runtime_utils import dump_json, load_config, load_template_meta, resolve_output_dir, resolve_under, safe_rel_path
+from runtime_utils import dump_json, load_config, load_template_meta, resolve_intermediate_root, resolve_output_dir, resolve_under, safe_rel_path
 
 
 SECTION_KEYS = ["equipment", "business", "labor", "transfer", "other_source"]
@@ -189,12 +189,12 @@ def validate_spec(spec_path: Path, spec: dict[str, Any], config: dict[str, Any],
             resolve_output_dir(
                 workdir,
                 output_dirname,
-                str(defaults.get("intermediate_dirname") or ".bensz-api/skills/nsfc-budget"),
+                str(defaults.get("intermediate_dirname") or ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-budget"),
                 label="output_dirname",
             )
         except ValueError as exc:
             errors.append(str(exc))
-        intermediate_dir = workdir / str(defaults.get("intermediate_dirname") or ".bensz-api/skills/nsfc-budget")
+        intermediate_dir = resolve_intermediate_root(workdir, str(defaults.get("intermediate_dirname") or ""), run_dir=spec_path.parent)
         try:
             spec_path.resolve().relative_to(intermediate_dir.resolve())
         except Exception:
@@ -402,7 +402,7 @@ def render_from_spec(spec_path: Path, force: bool = False, skip_compile: bool = 
     output_dir = resolve_output_dir(
         workdir,
         normalized["output_dirname"],
-        str((config.get("defaults") or {}).get("intermediate_dirname") or ".bensz-api/skills/nsfc-budget"),
+        str((config.get("defaults") or {}).get("intermediate_dirname") or ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-budget"),
         label="output_dirname",
     )
     assert template_dir is not None

@@ -101,7 +101,7 @@ def is_binary_file(path: Path) -> bool:
 def iter_input_files(inputs: Sequence[Path]) -> Iterable[Path]:
     exts = {".tex", ".md", ".txt"}
     skip_md_basenames = {"README.md", "CHANGELOG.md", "SKILL.md"}
-    skip_dir_parts = {".git", ".latex-cache", "build", "dist", "out", ".nsfc-code"}
+    skip_dir_parts = {".git", ".latex-cache", "build", "dist", "out", ".nsfc-code", ".bensz-api"}
     for inp in inputs:
         if inp.is_file():
             if inp.suffix.lower() in exts and not is_binary_file(inp):

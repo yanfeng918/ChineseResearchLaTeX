@@ -4,7 +4,7 @@ High-level runner for nsfc-qc with "deliver dir + sidecar workspace" layout.
 
 Default layout (when --deliver-dir/--workspace-dir not provided):
   <project_root>/QC/<run_id>/                                  (deliver-dir; for humans)
-  <project_root>/.bensz-api/skills/nsfc-qc/<run_id>/           (workspace-dir; for reproducibility)
+  <project_root>/.bensz-api/task-<yyyymmdd-hhmm>-<简短描述>/nsfc-qc/ (workspace-dir; for reproducibility)
 
 All QC intermediate products (runs/, snapshot/, .parallel-vibe/, artifacts) go to workspace-dir.
 Deliver-dir receives a copy of final outputs for review.
@@ -110,7 +110,7 @@ def main() -> int:
     ap.add_argument("--project-root", required=True)
     ap.add_argument("--main-tex", default="main.tex")
     ap.add_argument("--deliver-dir", default="", help="deliver directory (recommended: .../QC/YYYY-MM-DD-HH-MM)")
-    ap.add_argument("--workspace-dir", default="", help="workspace directory (recommended: <project-root>/.bensz-api/skills/nsfc-qc/<run-id>)")
+    ap.add_argument("--workspace-dir", default="", help="workspace directory (recommended: <project-root>/.bensz-api/task-<yyyymmdd-hhmm>-<简短描述>/nsfc-qc/)")
     ap.add_argument("--threads", type=int, default=5)
     ap.add_argument("--execution", choices=["serial", "parallel"], default="serial")
     ap.add_argument("--max-parallel", type=int, default=3)
@@ -159,7 +159,8 @@ def main() -> int:
         workspace_dir = Path(args.workspace_dir).expanduser().resolve()
         workspace_dir = _ensure_unique_dir(workspace_dir)
     else:
-        workspace_dir = _ensure_unique_dir(project_root / ".bensz-api" / "skills" / "nsfc-qc" / run_id)
+        task_root = project_root / ".bensz-api" / f"task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-qc"
+        workspace_dir = _ensure_unique_dir(task_root / "nsfc-qc")
 
     deliver_dir.mkdir(parents=True, exist_ok=True)
     run_base_dir = workspace_dir.parent

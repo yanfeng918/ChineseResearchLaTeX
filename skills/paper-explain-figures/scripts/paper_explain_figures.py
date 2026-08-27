@@ -17,9 +17,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 
-# Hard-coded per spec: ALL intermediates must live under the unified hidden workspace in CWD.
+# ALL intermediates live under the unified task workspace in CWD.
 WORK_DIR_ROOT_NAME = ".bensz-api"
-WORK_DIR_REL = Path(".bensz-api") / "skills" / "paper-explain-figures"
+SKILL_WORKSPACE_NAME = "paper-explain-figures"
 
 
 @dataclass(frozen=True)
@@ -1194,8 +1194,24 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         print(f"[ERROR] --out 必须位于当前工作目录内：cwd={cwd} out={out_md}", file=sys.stderr)
         return 2
 
-    base = (cwd / WORK_DIR_REL).resolve()
-    base.mkdir(parents=True, exist_ok=True)
+    task_stamp = _dt.datetime.now().strftime("%Y%m%d-%H%M")
+    task_root = (cwd / ".bensz-api" / f"task-{task_stamp}-{SKILL_WORKSPACE_NAME}").resolve()
+    if task_root.exists():
+        for idx in range(2, 100):
+            candidate = cwd / ".bensz-api" / f"task-{task_stamp}-{SKILL_WORKSPACE_NAME}-{idx:02d}"
+            if not candidate.exists():
+                task_root = candidate.resolve()
+                break
+    base = task_root / SKILL_WORKSPACE_NAME
+    for category in ("input", "output", "log"):
+        (base / category).mkdir(parents=True, exist_ok=True)
+    (task_root / "shared" / "input").mkdir(parents=True, exist_ok=True)
+    (task_root / "shared" / "output").mkdir(parents=True, exist_ok=True)
+    (task_root / "shared" / "log").mkdir(parents=True, exist_ok=True)
+    (task_root / "README.md").write_text(
+        "# BenszAPI 任务工作区\n\n- 本轮 skill：`paper-explain-figures`\n- 中间文件按 `input/`、`output/`、`log/` 分类保存。\n",
+        encoding="utf-8",
+    )
 
     if args.run_id.strip():
         run_id = _safe_filename(args.run_id.strip())
@@ -1208,13 +1224,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     run_id = candidate
                     break
 
-    run_dir = (base / run_id).resolve()
+    run_dir = (base / "output" / run_id).resolve()
     run_dir.mkdir(parents=True, exist_ok=True)
 
     # Preflight runner availability early to fail-fast (except local runner).
     runner_type = str(args.runner or "").strip().lower()
     if runner_type == "shell":
-        print("[ERROR] --runner shell 已禁用：它无法提供“除最终结果外所有中间文件均限制在 .bensz-api/skills/paper-explain-figures/ 内”的严格保证。", file=sys.stderr)
+        print("[ERROR] --runner shell 已禁用：它无法保证中间文件始终留在当前任务的 paper-explain-figures 工作区内。", file=sys.stderr)
         return 2
     if runner_type in {"codex", "claude"}:
         if not _which(runner_type):
@@ -1358,13 +1374,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     leaked_new, cleaned_new, changed_existing = _audit_workspace_leaks(cwd=cwd, before=workspace_before, out_md=out_md)
     if leaked_new or changed_existing:
         if cleaned_new:
-            print(f"[WARN] 已自动清理 .bensz-api/skills/paper-explain-figures/ 外的新增中间文件：{', '.join(cleaned_new)}", file=sys.stderr)
+            print(f"[WARN] 已自动清理任务工作区外的新增中间文件：{', '.join(cleaned_new)}", file=sys.stderr)
         if changed_existing:
             print(f"[ERROR] 检测到工作目录中存在被修改的非授权路径：{', '.join(changed_existing)}", file=sys.stderr)
             return 1
         remaining = [p for p in leaked_new if p not in set(cleaned_new)]
         if remaining:
-            print(f"[ERROR] 检测到无法清理的 .bensz-api/skills/paper-explain-figures/ 外中间文件：{', '.join(remaining)}", file=sys.stderr)
+            print(f"[ERROR] 检测到无法清理的任务工作区外中间文件：{', '.join(remaining)}", file=sys.stderr)
             return 1
 
     print(str(out_md))

@@ -13,7 +13,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from runtime_utils import dump_json, load_config, resolve_output_dir, resolve_under
+from runtime_utils import dump_json, load_config, resolve_intermediate_root, resolve_output_dir, resolve_under
 
 
 def parse_args() -> argparse.Namespace:
@@ -135,7 +135,7 @@ def main() -> int:
         resolve_output_dir(
             workdir,
             args.output_dirname,
-            str(defaults.get("intermediate_dirname") or ".bensz-api/skills/nsfc-budget"),
+            str(defaults.get("intermediate_dirname") or ".bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-budget"),
             label="output_dirname",
         )
         template_dir = resolve_under(skill_root / "models", args.template_id, label="template_id")
@@ -145,7 +145,7 @@ def main() -> int:
         print(f"[nsfc-budget] {exc}", file=sys.stderr)
         return 2
 
-    intermediate_root = ensure_directory(workdir / str(defaults.get("intermediate_dirname") or ".bensz-api/skills/nsfc-budget"))
+    intermediate_root = ensure_directory(resolve_intermediate_root(workdir, str(defaults.get("intermediate_dirname") or "")))
     run_dir = unique_path(intermediate_root / datetime.now().strftime("%Y-%m-%d-%H-%M"))
     ensure_directory(run_dir)
     ensure_directory(run_dir / "input")

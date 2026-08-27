@@ -18,6 +18,7 @@ from .prompt_templates import get_prompt
 from .security import discover_target_relpath, resolve_target_path
 from .style import get_style_mode, style_preamble_text
 from .word_target import WordTargetSpec, resolve_word_target
+from .config_loader import get_cache_dir
 
 WritingStage = Literal["auto", "skeleton", "draft", "revise", "polish", "final"]
 
@@ -299,7 +300,7 @@ async def coach_markdown(
         ai_obj = AIIntegration(enable_ai=get_bool(ai_cfg, "enabled", True), config=config)
 
     ai_cfg = get_mapping(config, "ai")
-    cache_dir = (skill_root / get_str(ai_cfg, "cache_dir", "tests/_artifacts/cache/ai")).resolve()
+    cache_dir = get_cache_dir(skill_root, config)
 
     auto_stage = await _infer_stage_auto(
         tex_text=tex_text,

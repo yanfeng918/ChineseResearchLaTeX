@@ -47,3 +47,6 @@ The version number is the single source of truth in `config.yaml` (`skill_info.v
 ### Changed
 - 信息表与写作教练：强化“科学问题≠研究目标”“假设不写验证方式”“瓶颈→约束映射”提示
 - 信息表生成标题去年份化（避免时间敏感硬编码）
+## Unreleased
+
+- runs/cache 默认收敛到任务级 `.bensz-api/task-.../nsfc-justification-writer`。

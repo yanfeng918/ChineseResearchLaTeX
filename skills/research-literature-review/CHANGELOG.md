@@ -1814,3 +1814,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Issue Tracker: [GitHub Issues](https://github.com/your-repo/issues)
 - Discussions: [GitHub Discussions](https://github.com/your-repo/discussions)
+## Unreleased
+
+- 更新命令帮助文本，统一任务级 `.bensz-api/task-...` 工作区口径。

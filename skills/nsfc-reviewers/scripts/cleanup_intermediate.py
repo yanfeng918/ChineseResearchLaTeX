@@ -5,6 +5,7 @@ import argparse
 import shutil
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 import yaml
@@ -63,7 +64,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--intermediate-dir",
         default="",
-        help="覆盖 config.yaml:output_settings.intermediate_dir（默认 .bensz-api/skills/nsfc-reviewers）",
+        help="覆盖 config.yaml:output_settings.intermediate_dir（默认任务级 .bensz-api/.../nsfc-reviewers）",
     )
     p.add_argument(
         "--logs-max-age-days",
@@ -95,9 +96,9 @@ def main(argv: list[str] | None = None) -> int:
 
     os_cfg = cfg.get("output_settings") if isinstance(cfg, dict) else None
     os_cfg = os_cfg if isinstance(os_cfg, dict) else {}
-    intermediate_dir_name = str(
-        args.intermediate_dir or os_cfg.get("intermediate_dir") or ".bensz-api/skills/nsfc-reviewers"
-    ).strip()
+    intermediate_dir_name = str(args.intermediate_dir or os_cfg.get("intermediate_dir") or "").strip()
+    if not intermediate_dir_name or "{yyyymmdd" in intermediate_dir_name or intermediate_dir_name.startswith(".bensz-api/skills/"):
+        intermediate_dir_name = f".bensz-api/task-{datetime.now().strftime('%Y%m%d-%H%M')}-nsfc-reviewers/nsfc-reviewers"
     if not intermediate_dir_name:
         print("error: intermediate_dir is empty", file=sys.stderr)
         return 2

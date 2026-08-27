@@ -70,3 +70,6 @@
 
 - 新增 `nsfc-code` 技能骨架：只读读取标书正文，结合 2026 申请代码推荐库输出 5 组主/次代码推荐与理由
 - 新增候选代码粗排脚本：`scripts/nsfc_code_rank.py`
+## Unreleased
+
+- 对齐任务级 `.bensz-api/task-.../nsfc-code/input|output|log` 工作区；`.nsfc-code` 仅保留兼容口径。

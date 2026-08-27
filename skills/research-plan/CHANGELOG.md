@@ -61,3 +61,6 @@
 - **Removed**: 已删除的功能
 - **Fixed**: 问题修复
 - **Security**: 安全性改进
+## Unreleased
+
+- 初始化脚本与文档改用任务级 `.bensz-api/task-.../research-plan/input|output|log` 工作区；历史 `.make-research-plan` 仅作兼容读取。

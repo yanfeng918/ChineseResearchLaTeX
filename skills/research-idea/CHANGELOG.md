@@ -33,3 +33,6 @@
 - 强化最终报告校验：要求至少 3 个候选、每个候选包含关键预测/反证路径/查新结论，查新摘要必须说明 Premium 档，最佳方案必须包含多维选择理由。
 - 收紧中间文件隔离：`parallel-vibe`、查新产物、manifest、agent review 和草稿均限定在隐藏工作区内，最终报告不得泄露内部路径。
 - 使用 `compact-bensz-skills` 压缩工作型 Markdown：`SKILL.md` 从 188 行降至 165 行，工作型 Markdown 总词数减少 302，压缩校验 0 error / 0 warning。
+## Unreleased
+
+- 测试目录默认改为项目 `tests/research-idea`，与任务级运行工作区分离。

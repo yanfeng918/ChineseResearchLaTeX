@@ -105,4 +105,4 @@ validation:
     - "可行性"
 
 tests:
-  default_dir: ".bensz-api/skills/research-idea/tests"
+  default_dir: "tests/research-idea"

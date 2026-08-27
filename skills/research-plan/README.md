@@ -7,7 +7,7 @@
 - 当前正式名：`research-plan`
 - 旧名：`make-research-plan`
 - 兼容状态：旧名 prompt 暂时仍会触发本 skill；安装新版本时系统级旧目录会被清理，不再保留 wrapper 目录。
-- 历史工作区：`.make-research-plan/` 保持不变，这是稳定产物目录，不等同于 skill 新名称。
+- 历史工作区：`.make-research-plan/` 仅作显式兼容读取、迁移或清理；新运行使用任务级 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/`。
 
 ## 用法
 
@@ -54,7 +54,7 @@
 ```text
 请使用 research-plan skill 为这个问题做文献驱动规划。
 输入：研究问题描述，工作目录 `./proposal`
-输出：`.make-research-plan/` 工作区和最终计划
+输出：任务级 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/` 工作区和正式计划
 ```
 
 ### 示例 3：强调方法学提炼
@@ -70,7 +70,7 @@
 
 ## 输出
 
-- 默认会在工作目录下创建 `.make-research-plan/` 隐藏工作区。
+- 默认会在工作目录下创建 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan/` 隐藏工作区。
 - 常见产物包括：
   - `metadata/theme.json`
   - `metadata/search_history.json`
@@ -82,7 +82,7 @@
 ## 配置
 
 - 配置文件：`research-plan/config.yaml`
-- 默认工作目录名：`.make-research-plan`
+- 默认工作目录名：`.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/research-plan`
 - 关键配置节：
   - `work_directory.subdirs`
   - `work_directory.files`
@@ -104,9 +104,9 @@ python3 research-plan/scripts/initialize.py .
 
 A：不会。它的职责是“基于文献调研设计可执行路线”，不是直接跑实验。
 
-### Q：为什么要创建 `.make-research-plan/`？
+### Q：为什么要创建任务级 `.bensz-api` 工作区？
 
-A：因为调研过程会产生主题提取、搜索历史、方法提炼和最终计划等中间产物，集中放在隐藏工作区更利于复盘。
+A：因为调研过程会产生主题提取、搜索历史、方法提炼等中间产物，按任务集中放在隐藏工作区更利于复盘，也避免与其它 skill 串写。
 
 ### Q：如果我已经知道一些候选方法，还值得用吗？
 

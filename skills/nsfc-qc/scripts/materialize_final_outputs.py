@@ -403,7 +403,7 @@ def main() -> int:
     ap.add_argument("--run-dir", default="", help="preferred: the run directory (contains artifacts/final/snapshot)")
     ap.add_argument("--project-root", default="", help="optional; used for metadata only")
     ap.add_argument("--run-id", default="", help="legacy mode: resolve run_dir from project_root + runs_root + run_id")
-    ap.add_argument("--runs-root", default=".bensz-api/skills/nsfc-qc", help="legacy mode: relative to project-root")
+    ap.add_argument("--runs-root", default=".bensz-api", help="legacy mode: relative to project-root; prefer --run-dir for a task workspace")
     ap.add_argument("--deliver-dir", default="", help="optional; for report metadata only")
     ap.add_argument("--overwrite", action="store_true", help="overwrite existing final outputs")
     args = ap.parse_args()
