@@ -3,6 +3,8 @@
 
 提供 NSFC 标书项目的 PDF 构建、缓存清理与辅助功能。
 编译链路为 ``xelatex → bibtex → xelatex → xelatex``（四遍编译，确保交叉引用与参考文献完全解析）。
+前两轮 XeLaTeX 只生成 XDV 和辅助文件，最后一轮才生成 PDF 与 SyncTeX，
+避免在交叉引用收敛期间重复解码和嵌入大图。
 中间文件隔离到项目内 ``.latex-cache/`` 目录，保持项目根目录整洁。
 
 核心特性：
@@ -235,7 +237,7 @@ def build_project(project_dir: Path, tex_file: str) -> None:
     2. 生成运行时路径文件 ``bensz-nsfc-runtime.def``
     3. 同步 ``references/`` 目录到缓存
     4. 清理根目录旧中间文件
-    5. 执行四遍编译：``xelatex → bibtex → xelatex → xelatex``
+    5. 执行四遍编译：``xelatex -no-pdf → bibtex → xelatex -no-pdf → xelatex``
     6. 将 PDF 从缓存目录复制到项目根目录
     7. 再次清理根目录中间文件
 
@@ -244,7 +246,7 @@ def build_project(project_dir: Path, tex_file: str) -> None:
         tex_file: 主 TeX 文件名（通常为 ``main.tex``）
 
     Raises:
-        BuildError: PDF 渲染失败（未找到输出文件）
+        BuildError: PDF 渲染失败（任一编译步骤返回非零，或未找到输出文件）
     """
     tex_path = resolve_tex_file(project_dir, tex_file)
     tex_stem = tex_path.stem
@@ -264,43 +266,43 @@ def build_project(project_dir: Path, tex_file: str) -> None:
     xelatex_bin = resolve_executable("xelatex")
     bibtex_bin = resolve_executable("bibtex")
 
-    xelatex_cmd = [
-        xelatex_bin,
+    xelatex_common_options = [
         "-interaction=nonstopmode",
         "-file-line-error",
-        "-synctex=1",
         f"-output-directory={cache_dir}",
-        tex_path.name,
     ]
+    xelatex_aux_cmd = [xelatex_bin, *xelatex_common_options, "-no-pdf", tex_path.name]
+    xelatex_pdf_cmd = [xelatex_bin, *xelatex_common_options, "-synctex=1", tex_path.name]
     bibtex_cmd = [bibtex_bin, tex_stem]
 
-    xelatex_run_1 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
-    bibtex_run = run_best_effort(bibtex_cmd, cwd=cache_dir, env=tex_env)
-    xelatex_run_2 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
-    xelatex_run_3 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
-
     pdf_source = cache_dir / f"{tex_stem}.pdf"
-    if not pdf_source.exists():
-        compiler_logs = "\n\n".join(
-            [
-                summarize_process_output("xelatex pass 1", xelatex_run_1),
-                summarize_process_output("bibtex", bibtex_run),
-                summarize_process_output("xelatex pass 2", xelatex_run_2),
-                summarize_process_output("xelatex pass 3", xelatex_run_3),
-            ]
-        )
-        raise BuildError(
-            f"PDF 渲染失败，未找到输出文件：{pdf_source}\n\n{compiler_logs}"
-        )
+    pdf_source.unlink(missing_ok=True)
 
-    for label, result in (
+    xelatex_run_1 = run_best_effort(xelatex_aux_cmd, cwd=project_dir, env=tex_env)
+    bibtex_run = run_best_effort(bibtex_cmd, cwd=cache_dir, env=tex_env)
+    xelatex_run_2 = run_best_effort(xelatex_aux_cmd, cwd=project_dir, env=tex_env)
+    xelatex_run_3 = run_best_effort(xelatex_pdf_cmd, cwd=project_dir, env=tex_env)
+
+    build_runs = (
         ("xelatex pass 1", xelatex_run_1),
         ("bibtex", bibtex_run),
         ("xelatex pass 2", xelatex_run_2),
         ("xelatex pass 3", xelatex_run_3),
-    ):
-        if result.returncode != 0:
-            print(f"Warning: {label} exit={result.returncode}", file=sys.stderr)
+    )
+    failed_runs = [(label, result) for label, result in build_runs if result.returncode != 0]
+    if failed_runs or not pdf_source.exists():
+        compiler_logs = "\n\n".join(
+            summarize_process_output(label, result) for label, result in build_runs
+        )
+        reasons: list[str] = []
+        if failed_runs:
+            failed_steps = ", ".join(
+                f"{label} exit={result.returncode}" for label, result in failed_runs
+            )
+            reasons.append(f"编译步骤失败：{failed_steps}")
+        if not pdf_source.exists():
+            reasons.append(f"未找到输出文件：{pdf_source}")
+        raise BuildError(f"PDF 渲染失败：{'；'.join(reasons)}\n\n{compiler_logs}")
 
     shutil.copy2(pdf_source, project_dir / f"{tex_stem}.pdf")
     clean_root_artifacts(project_dir, tex_stem)
