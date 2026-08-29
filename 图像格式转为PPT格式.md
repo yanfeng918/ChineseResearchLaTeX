@@ -1,4 +1,4 @@
-
+# 使用codex的这个会话 01a047b7-0024-79d3-b586-86c7e8f1acb1 解决
 
 
 这条固定 Python 渲染链会自动执行 `xelatex -> bibtex -> xelatex -> xelatex`，把中间文件全部收进 `.latex-cache/`，只在项目根目录保留 `main.pdf`。前两轮 XeLaTeX 只更新引用所需的 XDV/辅助文件，最后一轮才生成 PDF 和 SyncTeX。
