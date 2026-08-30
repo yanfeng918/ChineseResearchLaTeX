@@ -229,6 +229,22 @@ def run_best_effort(
     )
 
 
+BIBTEX_NO_CITATION_MARKER = r"I found no \citation commands"
+
+
+def bibtex_failure_is_benign(result: subprocess.CompletedProcess[str]) -> bool:
+    """判断 bibtex 的非零退出是否只是“正文里还没有任何 \\cite”。
+
+    空白模板（如 NSFC_General_Clean / NSFC_Local_Clean）在填写正文之前不含任何
+    引用，此时 bibtex 会以 exit=2 报 ``I found no \\citation commands``。三趟
+    xelatex 全部正常、PDF 也照常产出，因此不应把整个构建判定为失败。
+    其余 bibtex 错误（缺条目、.bst 出错等）仍然按失败处理。
+    """
+    if result.returncode == 0:
+        return True
+    return BIBTEX_NO_CITATION_MARKER in (result.stdout + result.stderr)
+
+
 def build_project(project_dir: Path, tex_file: str) -> None:
     """执行完整的 NSFC 项目 PDF 构建流程。
 
@@ -289,7 +305,12 @@ def build_project(project_dir: Path, tex_file: str) -> None:
         ("xelatex pass 2", xelatex_run_2),
         ("xelatex pass 3", xelatex_run_3),
     )
-    failed_runs = [(label, result) for label, result in build_runs if result.returncode != 0]
+    bibtex_skipped = bibtex_run.returncode != 0 and bibtex_failure_is_benign(bibtex_run)
+    failed_runs = [
+        (label, result)
+        for label, result in build_runs
+        if result.returncode != 0 and not (label == "bibtex" and bibtex_skipped)
+    ]
     if failed_runs or not pdf_source.exists():
         compiler_logs = "\n\n".join(
             summarize_process_output(label, result) for label, result in build_runs
@@ -306,6 +327,8 @@ def build_project(project_dir: Path, tex_file: str) -> None:
 
     shutil.copy2(pdf_source, project_dir / f"{tex_stem}.pdf")
     clean_root_artifacts(project_dir, tex_stem)
+    if bibtex_skipped:
+        print("! 正文中没有 \\cite，已跳过 bibtex；参考文献区块为空属正常现象。")
     print(f"✓ PDF generated: {project_dir / f'{tex_stem}.pdf'}")
     print(f"✓ Build cache: {cache_dir}")
     synctex_path = cache_dir / f"{tex_stem}.synctex.gz"

@@ -8,6 +8,11 @@
 
 ## [Unreleased]
 
+### Fixed（修复）
+
+- `packages/bensz-nsfc/scripts/nsfc_project_tool.py`：修复空白模板无法构建的问题。正文尚未添加任何 `\cite` 时，bibtex 会以 `exit=2` 报 `I found no \citation commands`，而 `build_project` 把任何非零退出码一律判定为构建失败，导致 `projects/NSFC_Local_Clean` 这类空白模板在三趟 xelatex 全部 `exit=0`、PDF 已正常产出的情况下仍然报"PDF 渲染失败"。现新增 `bibtex_failure_is_benign()`，仅当 bibtex 输出包含该标记时跳过这一步并打印提示；缺条目、`.bst` 出错、`.bib` 语法错误等其余 bibtex 失败仍然按失败处理。
+- `packages/bensz-nsfc/templates/`：修复 `bensz-nsfc-general.tex` / `bensz-nsfc-local.tex` / `bensz-nsfc-young.tex` 在 Linux 上的编译中断问题。三套模板在“已检测到内置字体”分支里硬写了 macOS 专用的 `\setmainfont[BoldFont=Times New Roman]{Times New Roman}`，而多数 Linux 发行版不自带该字体族名，导致 fontspec 报 `The font "Times New Roman" cannot be found`、xelatex 三趟全部以退出码 1 结束、`nsfc_project_tool.py build` 判定 PDF 渲染失败。现改为 `\IfFontExistsTF{Times New Roman}` 探测：系统有就照旧使用（保留真实斜体/粗体），没有则回退到 `packages/bensz-fonts/fonts/TimesNewRoman.ttf` 并用 `AutoFakeBold=5, AutoFakeSlant=0.2` 补齐粗斜体，与 `bensz-fonts.sty`、`bensz-thesis` 各 style 已有的探测写法保持一致。macOS / Windows 行为不变。
+
 ### Changed（变更）
 
 - `skills/`：对齐 `docs/prompts/005-bensz-skill-workspace.md` 的任务级中间文件契约；新运行统一使用 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/{skill名}/input|output|log/`，旧目录仅作显式兼容读取/迁移/清理。
