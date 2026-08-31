@@ -22,7 +22,7 @@
     {
       "id": 4,
       "prompt": "请使用 nsfc-full-pipeline 处理 projects/NSFC_Young，从头跑全流程。",
-      "expected_output": "stage 00 必须把该项目解析为 three-part 布局：part_one = 1.1.立项依据、2.1.研究内容、2.2.特色与创新、2.3.年度研究计划；foundation = 3.1.研究基础、3.2.工作条件、3.3.承担项目情况、3.4.完成国基项目情况；statements = 4.1、4.2、4.3、4.4、4.6。禁止创建或写入 1.2/1.3/1.4/1.5，禁止把研究基础写进 2.1.研究内容.tex。由于该布局没有独立的方案及可行性文件，研究方案、技术路线与可行性分析应并入 2.1.研究内容.tex。",
+      "expected_output": "stage 00 必须把该项目解析为 three-part 布局：part_one = 1.1.立项依据、2.1.研究内容、2.2.特色与创新、2.3.年度研究计划；foundation = 3.1.研究基础、3.2.工作条件、3.3.承担项目情况、3.4.完成国基项目情况；statements = 4.1、4.2、4.3、4.4、4.6。禁止创建或写入 1.2/1.3/1.4/1.5，禁止把研究基础写进 2.1.研究内容.tex。由于该布局没有独立的方案及可行性文件，研究方案、技术路线与可行性分析应并入 2.1.研究内容.tex。同一趟还必须把 project.grant_type 解析为青年科学基金而非地区基金，篇幅预算按该项目 AGENTS.md 取全文 30 页、不得套用地区基金的第一部分 8000 字上限。",
       "files": []
     },
     {
@@ -70,7 +70,7 @@
     {
       "id": 12,
       "prompt": "全流程跑完了吗？我直接拿去提交可以吗？",
-      "expected_output": "明确说明本编排器不覆盖摘要、申请代码与预算说明书，需分别单独调用 nsfc-abstract、nsfc-code、nsfc-budget，配图由 nsfc-proposal-figure-pipeline 接管；特别提醒摘要是申请书必填项，不得因流程显示 completed 就暗示标书已可提交；同时给出仍需人工核验的清单。",
+      "expected_output": "明确说明本编排器不覆盖摘要、申请代码与预算说明书，需分别单独调用 nsfc-abstract、nsfc-code、nsfc-budget；标书配图不在流程内且不对应任何可调用 skill，由用户自行完成，不得虚构一个配图 skill 名让用户去调用；特别提醒摘要是申请书必填项，不得因流程显示 completed 就暗示标书已可提交；同时给出仍需人工核验的清单。",
       "files": []
     },
     {
@@ -83,6 +83,24 @@
       "id": 14,
       "prompt": "文献这步跑完了，直接开始写立项依据吧。",
       "expected_output": "在推进阶段 05 前先执行参考文献充分性闸门：检查 references/myexample.bib 条目数是否达到 25 条底线与 30-50 条目标区间、覆盖是否包含奠基工作/近 3-5 年进展/代表方法/数据集与评测/局限；不足时补做文献调研或生成 docs/参考文献补充清单.md 并标记 need_user_input；不得为凑数编造参考文献。",
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "请用 nsfc-full-pipeline 跑一下 projects/NSFC_General 的模拟评审。",
+      "expected_output": "先从 stage 00 取 project.grant_type；该项目为面上项目，必须以面上口径评审，focus 中的适配性维度应为面上项目适配性而非地区基金适配性。不得因为断点模板或历史默认值就把 grant_type 当作地区基金。panel_count 默认 3，可由用户提高到上限 5。",
+      "files": []
+    },
+    {
+      "id": 16,
+      "prompt": "帮我用 nsfc-full-pipeline 把 projects/GXNSF_General 从头跑完。",
+      "expected_output": "识别出该项目为广西自然科学基金模板，不在本编排器适用范围内：其章节为 1.1-1.6、2.1-2.5、3.1-3.3、4.其他附件清单，含项目组人员简介、预期研究结果、组织管理措施、其他附件清单等 NSFC 模板没有的章节，角色关键词不覆盖。必须显式告知用户不适用并建议改用 nsfc-justification-writer、nsfc-qc 等单点 skill，而不是进入 stage 00 后以“无法归类”静默停住，也不得强行套用 five-part/three-part 布局。",
+      "files": []
+    },
+    {
+      "id": 17,
+      "prompt": "在 projects/NSFC_Local 上跑完文献这步，帮我把立项依据的项目范围沉淀进 AGENTS.md。",
+      "expected_output": "research-guide-updater 必须写入 projects/NSFC_Local/AGENTS.md，即标书项目自己的指南文件；严禁写入仓库根目录的 AGENTS.md，后者是整个仓库的开发指令与单一真相来源，被研究范围内容覆盖会破坏项目管理。断点文件中 project.guide_file 相对 proposal_path 解析。",
       "files": []
     }
   ]

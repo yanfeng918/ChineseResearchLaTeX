@@ -2,6 +2,42 @@
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
+## [0.2.0] - 2026-08-31
+
+一次完整审核后的修复。所有声明均已对当前仓库真实状态复核。
+
+### Fixed（修复）
+
+- **样例项目 `NSFC_2026_Education` 已不存在**：该项目在 commit `9f46d09`（Remove outdated NSFC project files）中被删除，但 `SKILL.md` 的布局校验表、`config.yaml` 的 `layout.known.five-part.example_projects` 与 `README.md` 仍把它当作 five-part 样例；`README.md` 的快速开始命令更是直接让用户去处理这个不存在的目录。现全部改为真实存在的 `NSFC_Local` / `NSFC_Local_Clean`。
+- **`nsfc-proposal-figure-pipeline` 不存在**：`config.yaml` 的 `not_covered` 与 `README.md` 让用户"单独调用"该 skill，但仓库 `skills/`、`~/.claude/skills/`、`~/.codex/skills/` 三处均无此技能，eval 12 还把这个查不到的名字写成了验收标准。现改为：配图不对应任何可调用 skill，由用户自行完成，本编排器不代为规划、不排进阶段、不擅自插图。
+- **`project.type` / `grant_type` 声称由 stage 00 解析，但 stage 00 从无此步骤**：`SKILL.md` 的断点模板注释 `resolved by stage 00`、阶段 12 也写 `or the grant type resolved in stage 00`，而 stage 00 的实际流程只解析布局与文件归类。两处默认值又都写死为地区基金，导致在 `NSFC_General` / `NSFC_Young` 上会一路带着地区基金的 `focus` 与专家预期跑完模拟评审。现 stage 00 新增第 5 步显式解析项目类型（用户说明 → 项目 `AGENTS.md`/`README.md` → 目录名，均失败则停下询问，**不回退到地区基金**），阶段 12 的 `grant_type` 与适配性 focus 改为读取 `project.grant_type`，`config.yaml` 中 `simulated_review.grant_type` 置空。
+- **地区基金篇幅上限被跨类型套用**：阶段 09 原写"normally 8000 Chinese characters or less"。经核，8000 字只见于 `projects/NSFC_Local/AGENTS.md`，`NSFC_General` 与 `NSFC_Young` 的 `AGENTS.md` 只规定全文 30 页。套用会导致面上/青年标书严重写不够。现 stage 00 新增第 6 步从项目自带 `AGENTS.md` 读出真实预算并记入 `project.length_budget`，阶段 09 改为引用该字段。
+- **阶段 13 仍残留 five-part 专用编号**：`chapter inconsistency among 1.1, 1.2, 1.3, 1.4, and 1.5`、`weak 1.1 literature chain`、`plain-prose 1.3` 三处是 v0.1.0 声称已清除的编号硬编码的残留，在 three-part 布局上无意义。现改为按 stage 00 解析出的角色引用。
+- **`AGENTS.md` 指代歧义可能污染仓库单一真相来源**：`SKILL.md` 通篇写 `AGENTS.md` 而未区分仓库根与标书项目两份文件，而阶段 01-03 会用 `research-guide-updater` 往"指南文件"里写研究范围。若解析到仓库根 `AGENTS.md`，将破坏整个仓库的开发指令。现在 `Required Initial Reads` 与断点模板的 `guide_file` 处显式限定为标书项目自己的 `AGENTS.md`。
+- **布局校验表漏了两个新模板**：补上 `NSFC_General_Clean` 与 `NSFC_Local_Clean`，并说明 `*_Clean` 变体与母模板同布局、只是正文出厂为空。
+- 阶段 05 的 `inputs` 补回 `docs/03_科学问题与创新点.md`；阶段 06 的 `outputs` 补上 `docs/05_研究基础素材.md`，使其自产的事实来源文件可被续跑校验。
+- `config.yaml` 的 `sub_skills["05_part_one_writing"]` 补上 `SKILL.md` 已声明使用的 `research-plan`。
+- 修正 v0.1.0 条目中的笔误：three-part 的 statements 为 `4.1`–`4.4` 与 `4.6`（`4.5.生成式人工智能.tex` 在 `main.tex` 中为注释态），原文误写为 `4.1`–`4.6`。
+
+### Added（新增）
+
+- `SKILL.md` 新增 `Scope` 小节，`config.yaml` 新增 `scope` 节：显式声明适用 `NSFC_General` / `NSFC_General_Clean` / `NSFC_Young` / `NSFC_Local` / `NSFC_Local_Clean`，不适用 `GDNSF_General` / `GDNSF_Regional_Young` / `GXNSF_General`。这三个省级模板的章节体例（立论依据、研究工作基础、实验条件、项目组人员简介、预期研究结果、组织管理措施、其他附件清单）与角色关键词完全不匹配，原先会在 stage 00 以"无法归类"静默卡死；现要求显式说明不适用并建议改用单点 skill。
+- `config.yaml` 新增 `grant_type` 节，固化解析顺序、目录名提示、篇幅预算来源与各类型已知预算。
+- `evals/evals.json` 由 14 条扩充到 17 条：新增面上项目模拟评审不得套用地区基金口径、省级基金项目须显式声明不适用、`research-guide-updater` 须写项目级而非仓库根 `AGENTS.md` 三条用例；同步修正 eval 4 与 eval 12。
+
+### Changed（变更）
+
+- frontmatter `description` 由英文改为中文，并与同系列 `nsfc-*` skill 的"当用户明确要求…时使用 + ⚠️ 不适用："范式对齐；新增 `metadata`（author / short-description / keywords）。原描述把适用范围写死为 `Regional Science Fund`，而 evals 4/6 恰恰是青年与面上项目用例，触发口径与实际能力不一致。
+- `config.yaml` 的 `description` 同步扩展为覆盖面上、青年、地区三类，并补上省级基金的负向约束。
+- stage 00 更名为 `Proposal Layout and Grant Type Resolution`，断点文件中同名阶段与 `README.md` 阶段表同步。
+
+### Known Issues（已知问题）
+
+- `SKILL.md` 由 617 行增至 649 行，仍未满足 ≤500 行规范；待把阶段细则外移到 `references/` 后统一收敛。
+- `SKILL.md` 正文仍为英文，与项目"默认简体中文"规范不一致，待整体中译（本次仅改 frontmatter）。
+- `docs/05_研究基础素材.md` 的编号与阶段编号错位（它是阶段 06 的输入而非阶段 05 的产物），本次未重命名以免影响已有断点文件。
+- `skills/README.md` 中 `research-idea` 与 `research-plan` 两个被本编排器调用的子技能同样未登记，超出本次修复范围。
+
 ## [0.1.0] - 2026-08-16
 
 首次纳入版本管理。此前该 skill 只有 `SKILL.md` 与 `evals/evals.json`，无版本号、无配置文件、未登记进 `skills/README.md`。
@@ -17,7 +53,7 @@
 
 ### Fixed（修复）
 
-- **正文文件名硬编码导致跨模板静默写错章节**：阶段 05/06/07 原先写死 `1.1`–`1.5`、`2.1`–`2.4`、`3.1`–`3.5`，仅适配 `NSFC_Local` 与 `NSFC_2026_Education`。`NSFC_General` 与 `NSFC_Young` 使用 `1.1`+`2.1`–`2.3`、`3.1`–`3.4`、`4.1`–`4.6` 的另一套编号，两套编号互相重叠，在面上/青年项目上运行会把研究基础写进研究内容的位置且不报错。现全部改为按 stage 00 解析出的角色引用，`SKILL.md` 中已无编号型 `extraTex/N.N.*.tex` 硬编码。
+- **正文文件名硬编码导致跨模板静默写错章节**：阶段 05/06/07 原先写死 `1.1`–`1.5`、`2.1`–`2.4`、`3.1`–`3.5`，仅适配 `NSFC_Local` 与 `NSFC_2026_Education`。`NSFC_General` 与 `NSFC_Young` 使用 `1.1`+`2.1`–`2.3`、`3.1`–`3.4`、`4.1`–`4.4`+`4.6` 的另一套编号，两套编号互相重叠，在面上/青年项目上运行会把研究基础写进研究内容的位置且不报错。现全部改为按 stage 00 解析出的角色引用，`SKILL.md` 中已无编号型 `extraTex/N.N.*.tex` 硬编码。
 - **编译命令路径不成立**：`python scripts/nsfc_build.py build --project-dir .` 依赖当前工作目录恰好是项目目录，而仓库根 `scripts/` 下并无该脚本。现区分仓库根入口 `packages/bensz-nsfc/scripts/nsfc_project_tool.py` 与项目内 wrapper 两种口径，并显式说明后者的适用前提。
 - **续跑阶段完成判定失真**：原判定依据为"声明的输出文件是否存在"，但 `extraTex/*.tex` 在模板中本就存在且带 `\NSFCBlankPara` 占位，会被误判为已完成而跳过写作。现要求输出文件同时非占位态才可判定完成。
 - **阶段 06 的 inputs 与 outputs 完全相同**，自引用使该阶段无法表达真实依赖。现输入改为 `docs/05_研究基础素材.md` 与已回填的补充问卷，输出为解析后的 `foundation` 文件集合。

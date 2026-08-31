@@ -1,6 +1,14 @@
 ---
 name: nsfc-full-pipeline
-description: Use this skill whenever the user wants to automatically write, resume, revise, quality-control, review, repair after reviewer feedback, or compile a National Natural Science Foundation of China (NSFC) Regional Science Fund proposal in a ChineseResearchLaTeX project. This skill orchestrates the full proposal workflow with checkpoints and reuses NSFC/research sub-skills. It must be used for end-to-end NSFC proposal generation, for resuming a stalled pipeline, and for automatically applying P0/P1 fixes after QC or simulated review when the fixes can be made from available evidence.
+description: 当用户明确要求"跑 NSFC 标书全流程""从头写完整标书""继续/续跑标书写作流程""按 QC 或模拟评审结果自动修改标书"时使用。适用于 ChineseResearchLaTeX 仓库内的国家自然科学基金面上、青年、地区科学基金项目（`NSFC_*` 系列模板），按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 `docs/workflow_status.yaml` 为断点实现续跑，缺真实信息时生成问卷并阻塞。⚠️ 不适用：只写某一个章节（应使用对应 `nsfc-*-writer`）、只做一次只读体检（应使用 `nsfc-qc`）、省级或地方科学基金项目（如 `GDNSF_*`、`GXNSF_*`，章节体例不同，本编排器不覆盖）。
+metadata:
+  author: Bensz Conan
+  short-description: NSFC 标书全流程编排（14 阶段 + 断点续跑 + 评审后自动修复）
+  keywords:
+    - nsfc-full-pipeline
+    - NSFC 标书全流程
+    - 标书续跑
+    - 评审后自动修复
 ---
 
 # NSFC Full Pipeline
@@ -13,9 +21,15 @@ Scratch artifacts that are not deliverables — retrieval caches, intermediate J
 
 ## Purpose
 
-This skill controls a recoverable full-process writing pipeline for NSFC Regional Science Fund proposals based on ChineseResearchLaTeX.
+This skill controls a recoverable full-process writing pipeline for NSFC proposals based on ChineseResearchLaTeX.
 
 It coordinates topic extraction, literature review, scientific question refinement, research plan design, proposal writing, research foundation writing, citation alignment, length control, humanization, QC, simulated review, targeted repair, and final compilation.
+
+## Scope
+
+In scope: the NSFC proposal templates in this repository — 面上项目 (`NSFC_General`, `NSFC_General_Clean`), 青年科学基金 (`NSFC_Young`), and 地区科学基金 (`NSFC_Local`, `NSFC_Local_Clean`) — plus user projects derived from them.
+
+Out of scope: provincial and local science-fund templates such as `GDNSF_General`, `GDNSF_Regional_Young`, and `GXNSF_General`. They use different chapter systems (`立论依据`, `研究工作基础`, `实验条件`, `项目组人员简介`, `预期研究结果`, `组织管理措施`, `其他附件清单`) that this pipeline's role model does not cover, and they follow different length and review conventions. When asked to run on one of them, say so explicitly and offer the single-purpose skills (`nsfc-justification-writer`, `nsfc-qc`, and so on) instead of halting silently in stage 00.
 
 ## Core Principles
 
@@ -79,7 +93,7 @@ Auto-repair should focus on P0/P1 first: missing citations, reference mismatch, 
 
 Before any writing or repair, read:
 
-- `AGENTS.md`
+- the project's own `AGENTS.md`, the one inside the proposal directory. Every `AGENTS.md` reference in this document means that file, never the repository-root `AGENTS.md`. The root file carries repo-wide development instructions and is the repository's single source of truth; the `research-guide-updater` calls in stages 01-03 write research scope into the guide file, so pointing them at the root file would corrupt it.
 - `README.md` or `README` if present
 - `main.tex`
 - `docs/00_项目基本信息.md` if present
@@ -91,9 +105,9 @@ Before any writing or repair, read:
 
 If `docs/workflow_status.yaml` does not exist, create it.
 
-## Stage 00: Proposal Layout Resolution
+## Stage 00: Proposal Layout and Grant Type Resolution
 
-NSFC project templates in this repository do not share one chapter numbering scheme, and the numbers overlap. Writing Part One content into a project that uses the other scheme silently overwrites the wrong chapter instead of failing. Resolve the layout before any writing, repair, or QC stage.
+NSFC project templates in this repository do not share one chapter numbering scheme, and the numbers overlap. Writing Part One content into a project that uses the other scheme silently overwrites the wrong chapter instead of failing. Resolve the layout and the grant type before any writing, repair, or QC stage.
 
 Do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.tex`:
 
@@ -104,19 +118,31 @@ Do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.
    - `foundation`: 研究基础 / 工作条件 / 承担项目 / 完成国基项目 / 项目完成情况
    - `statements`: 不同类型国基情况 / 同年单位不一致 / 承担中单位不一致 / 不同专业技术职务的申请 / 生成式人工智能 / 其他 / 其它
 4. Record the resolved layout and the ordered role-to-file map into `project.layout` and `project.body_files` in the checkpoint.
+5. Resolve the grant type in the same pass, and record it into `project.type` and `project.grant_type`. Never leave the checkpoint's shipped placeholder in place — every later stage that mentions grant type reads these two fields, not a default baked into this document. Resolve in this order, stopping at the first that yields an answer:
+   - an explicit statement from the user;
+   - the project's own `AGENTS.md` and `README.md` title line, which names the funding category directly (for example 青年科学基金项目（C类）, 面上项目, 地区科学基金项目);
+   - the project directory name, as a last resort: `NSFC_General*` → 面上项目, `NSFC_Young*` → 青年科学基金, `NSFC_Local*` → 地区科学基金.
 
-Two layouts currently exist. Use them to sanity-check the resolved map, not as a substitute for reading `main.tex`:
+   If none of these resolve, mark stage 00 `need_user_input` and ask; do not fall back to 地区基金.
+6. Resolve the length budget from the project's own `AGENTS.md` rather than from a number in this document, and record it in `project.length_budget`. The budgets differ by grant type: `NSFC_Local` caps Part One at 8000 characters on top of the 30-page whole-proposal limit, while `NSFC_General` and `NSFC_Young` state only the 30-page limit. Applying the regional 8000-character cap to a 面上 or 青年 proposal under-writes it badly.
+
+Known layouts. Use them to sanity-check the resolved map, not as a substitute for reading `main.tex`:
 
 | Layout | Example projects | Part One | Foundation | Statements |
 |---|---|---|---|---|
-| `five-part` | `NSFC_Local`, `NSFC_2026_Education` | `1.1`–`1.5` | `2.1`–`2.4` | `3.1`–`3.5` |
-| `three-part` | `NSFC_General`, `NSFC_Young` | `1.1`, `2.1`–`2.3` | `3.1`–`3.4` | `4.1`–`4.4`, `4.6` |
+| `five-part` | `NSFC_Local`, `NSFC_Local_Clean` | `1.1`–`1.5` | `2.1`–`2.4` | `3.1`–`3.5` |
+| `three-part` | `NSFC_General`, `NSFC_General_Clean`, `NSFC_Young` | `1.1`, `2.1`–`2.3` | `3.1`–`3.4` | `4.1`–`4.4`, `4.6` |
+
+The `*_Clean` variants share their parent's layout but ship with empty body files; treat them as the same layout, not as a third one.
 
 Stop and ask the user when:
 
 - no `\input{extraTex/...}` can be resolved from `main.tex`;
 - an active file cannot be classified into any role;
-- the resolved map contradicts both known layouts and the user has not confirmed a custom template.
+- the resolved map contradicts both known layouts and the user has not confirmed a custom template;
+- the grant type cannot be resolved by any of the routes above.
+
+When the project is a provincial template listed under `Scope` as out of scope, do not attempt resolution at all. Tell the user this pipeline does not cover it and point at the single-purpose skills.
 
 If the user later enables a section that is currently commented out in `main.tex`, such as an AIGC usage declaration, re-run this stage so the new file enters the role map before it is written.
 
@@ -130,12 +156,14 @@ The checkpoint file must use the following standard structure:
 
 ```yaml
 project:
-  type: NSFC_Regional          # resolved by stage 00
-  layout: five-part            # five-part | three-part | custom, resolved by stage 00
+  type:                        # NSFC_General | NSFC_Young | NSFC_Local, resolved by stage 00
+  grant_type:                  # 面上项目 | 青年科学基金 | 地区科学基金, resolved by stage 00
+  layout:                      # five-part | three-part | custom, resolved by stage 00
+  length_budget:               # e.g. "Part One ≤8000 chars; whole ≤30 pages", read from the project AGENTS.md
   proposal_path: "."
   body_dir: "extraTex"
   bib_file: "references/myexample.bib"
-  guide_file: "AGENTS.md"
+  guide_file: "AGENTS.md"      # relative to proposal_path: the PROJECT AGENTS.md, never the repo-root one
   stage_output_dir: "docs"
   review_output_dir: "review"
   body_files:                  # role -> ordered active files, resolved by stage 00
@@ -158,10 +186,14 @@ run:
 # before stage 00 has resolved the layout.
 stages:
   "00_layout_resolution":
-    name: "Proposal Layout Resolution"
+    name: "Proposal Layout and Grant Type Resolution"
     status: pending
-    inputs: ["main.tex", "extraTex/"]
-    outputs: ["docs/workflow_status.yaml#project.body_files"]
+    inputs: ["main.tex", "extraTex/", "AGENTS.md", "README.md"]
+    outputs:
+      - "docs/workflow_status.yaml#project.body_files"
+      - "docs/workflow_status.yaml#project.type"
+      - "docs/workflow_status.yaml#project.grant_type"
+      - "docs/workflow_status.yaml#project.length_budget"
     last_updated:
     notes:
     blockers:
@@ -205,7 +237,7 @@ stages:
   "05_part_one_writing":
     name: "NSFC Part One Writing"
     status: pending
-    inputs: ["AGENTS.md", "docs/04_研究方案与技术路线.md", "references/myexample.bib"]
+    inputs: ["AGENTS.md", "docs/03_科学问题与创新点.md", "docs/04_研究方案与技术路线.md", "references/myexample.bib"]
     outputs: ["@part_one"]
     last_updated:
     notes:
@@ -215,7 +247,7 @@ stages:
     name: "Research Foundation and Work Conditions"
     status: pending
     inputs: ["AGENTS.md", "docs/05_研究基础素材.md", "docs/研究基础信息补充问卷.md"]
-    outputs: ["@foundation"]
+    outputs: ["@foundation", "docs/05_研究基础素材.md"]
     last_updated:
     notes:
     blockers:
@@ -463,9 +495,9 @@ Use `nsfc-length-aligner`.
 
 Focus:
 
-- Part One under the `AGENTS.md` budget, normally 8000 Chinese characters or less for regional fund drafts.
+- Part One under the budget recorded in `project.length_budget` during stage 00. Do not carry a budget over from another grant type: `NSFC_Local` caps Part One at 8000 characters, while `NSFC_General` and `NSFC_Young` state only the 30-page whole-proposal limit and are under-written if the 8000-character cap is applied to them.
 - full proposal under the project page budget.
-- compress `1.1` and `1.3` first if overlong.
+- when Part One is overlong, compress the 立项依据 file and the 方案及可行性 file first, referring to them by role rather than by number.
 
 Do not remove scientific questions, falsification paths, or required NSFC headings merely to shorten text.
 
@@ -508,10 +540,10 @@ Use `nsfc-reviewers`.
 Default parameters:
 
 - `proposal_path=.`
-- `grant_type=地区基金`, or the grant type resolved in stage 00
+- `grant_type=` the value resolved into `project.grant_type` in stage 00. There is no default here; a proposal reviewed under the wrong grant type gets the wrong panel expectations.
 - `panel_count=3`, matching the tuned default of `nsfc-reviewers`. Raise it to at most 5 when the user asks for a stricter pass and accepts the added cost.
 - `output_path=review/模拟专家评审_全稿.md`
-- `focus=创新性、科学问题、研究方案可行性、研究基础支撑、地区基金适配性、函评/会评风险`
+- `focus=创新性、科学问题、研究方案可行性、研究基础支撑、函评/会评风险`, plus a grant-type fit item matching `project.grant_type`: 地区基金适配性 for 地区科学基金, 青年基金适配性（申请人独立性、成长性） for 青年科学基金, 面上项目适配性（研究深度与体量） for 面上项目.
 
 Do not modify proposal body text during simulated review.
 
@@ -530,10 +562,10 @@ Repair only P0/P1 issues unless the user asks for deeper polishing. Typical auto
 
 - unresolved placeholders or draft-like wording
 - citation/BibTeX mismatch or missing citation support
-- chapter inconsistency among 1.1, 1.2, 1.3, 1.4, and 1.5
+- chapter inconsistency across the `part_one` files resolved in stage 00
 - overlong sections, especially Part One
-- weak 1.1 literature chain or missing benchmark/dataset/method references
-- plain-prose 1.3 for CS/AI/Agent/Time-Series topics that lacks formulas, metrics, or protocol definitions
+- weak literature chain in the 立项依据 file, or missing benchmark/dataset/method references
+- plain-prose research scheme for CS/AI/Agent/Time-Series topics that lacks formulas, metrics, or protocol definitions, whether it lives in its own 方案及可行性 file or inside the 研究内容 file
 - unclear data/evaluation protocol
 - weak research foundation bridge when existing local evidence can support it
 - overly broad innovation claims that can be narrowed without changing the project truth
@@ -600,7 +632,7 @@ At the end of a successful run, provide:
 When the user says `继续`, `resume`, `接着写`, `继续全流程`, or similar:
 
 1. Read `docs/workflow_status.yaml`.
-2. Re-run stage 00 if `project.body_files` is empty or if `main.tex` changed since `last_updated`.
+2. Re-run stage 00 if `project.body_files` is empty, if `project.grant_type` or `project.length_budget` is empty, or if `main.tex` changed since `last_updated`.
 3. Verify whether declared outputs are actually present **and populated**. For `extraTex/*.tex` outputs, existence is not evidence of completion: template files ship with `\NSFCBlankPara` placeholders already in place. Treat a stage as incomplete when its output files still consist only of placeholders, questionnaire stubs, or draft markers such as `待填写`.
 4. Continue from the earliest stage with status other than `completed` or `skipped`.
 5. If all stages are completed, run a final QC/review summary rather than regenerating content.

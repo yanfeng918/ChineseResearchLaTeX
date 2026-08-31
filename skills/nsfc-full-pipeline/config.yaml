@@ -3,12 +3,19 @@
 
 skill_info:
   name: nsfc-full-pipeline
-  version: 0.1.0
-  description: "NSFC 标书全流程编排器：按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 docs/workflow_status.yaml 为断点实现续跑，缺真实信息时生成问卷并阻塞（不适用：单章节写作、已有独立 skill 覆盖的单点任务）"
+  version: 0.2.0
+  description: "NSFC 标书全流程编排器，覆盖面上、青年、地区科学基金项目：按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 docs/workflow_status.yaml 为断点实现续跑，缺真实信息时生成问卷并阻塞（不适用：单章节写作、已有独立 skill 覆盖的单点任务、省级/地方科学基金项目）"
   author: "Bensz Conan"
   category: writing
 
-# === 项目布局解析（stage 00）===
+# === 适用范围 ===
+scope:
+  in_scope_projects: [NSFC_General, NSFC_General_Clean, NSFC_Young, NSFC_Local, NSFC_Local_Clean]
+  # 省级/地方基金章节体例不同（立论依据/研究工作基础/实验条件/项目组人员简介等），
+  # 角色关键词不覆盖，篇幅与评审口径也不同；遇到时应显式说明不适用，而不是在 stage 00 静默卡死
+  out_of_scope_projects: [GDNSF_General, GDNSF_Regional_Young, GXNSF_General]
+
+# === 项目布局与项目类型解析（stage 00）===
 # 各 NSFC 模板的章节编号不共用一套方案且互相重叠，必须先解析再写作。
 layout:
   # 唯一真相来源：main.tex 中未被注释的 \input{extraTex/...}
@@ -17,19 +24,36 @@ layout:
   ignore_files:
     - "extraTex/@config.tex"
   # 已知布局，仅用于对解析结果做合理性校验，不替代读取 main.tex
+  # *_Clean 变体与母模板同布局，只是正文出厂为空，不算第三种布局
   known:
     five-part:
-      example_projects: [NSFC_Local, NSFC_2026_Education]
+      example_projects: [NSFC_Local, NSFC_Local_Clean]
       part_one: ["1.1", "1.2", "1.3", "1.4", "1.5"]
       foundation: ["2.1", "2.2", "2.3", "2.4"]
       statements: ["3.1", "3.2", "3.3", "3.4", "3.5"]
     three-part:
-      example_projects: [NSFC_General, NSFC_Young]
+      example_projects: [NSFC_General, NSFC_General_Clean, NSFC_Young]
       part_one: ["1.1", "2.1", "2.2", "2.3"]
       foundation: ["3.1", "3.2", "3.3", "3.4"]
       statements: ["4.1", "4.2", "4.3", "4.4", "4.6"]
   # 解析失败或与两种已知布局都冲突时必须停下询问，不得猜测
   halt_on_unresolved: true
+
+# === 项目类型与篇幅预算解析（stage 00，与布局同一趟完成）===
+# 无默认值：解析不出来必须停下问用户，不得回退到地区基金
+grant_type:
+  resolve_order: [user_statement, project_agents_md, project_readme, project_dir_name]
+  dir_name_hints:
+    "NSFC_General*": 面上项目
+    "NSFC_Young*": 青年科学基金
+    "NSFC_Local*": 地区科学基金
+  halt_on_unresolved: true
+  # 篇幅预算按项目自带 AGENTS.md 读取，禁止跨项目类型套用
+  length_budget_source: "<proposal_path>/AGENTS.md"
+  known_budgets:
+    NSFC_Local: "第一部分 ≤8000 字；全文 ≤30 页"
+    NSFC_General: "全文 ≤30 页（无第一部分字数上限）"
+    NSFC_Young: "全文 ≤30 页（无第一部分字数上限）"
 
 # === 断点与续跑 ===
 checkpoint:
@@ -57,7 +81,7 @@ sub_skills:
   "02_literature_review": [research-literature-review, research-guide-updater]
   "03_scientific_questions": [research-idea, research-guide-updater]
   "04_research_plan": [research-plan]
-  "05_part_one_writing": [nsfc-justification-writer, nsfc-research-content-writer]
+  "05_part_one_writing": [nsfc-justification-writer, nsfc-research-content-writer, research-plan]
   "06_research_foundation": [nsfc-research-foundation-writer]
   "08_reference_alignment": [nsfc-ref-alignment]
   "09_length_control": [nsfc-length-aligner]
@@ -73,13 +97,19 @@ not_covered:
     reason: "申请代码推荐为只读输出，不影响正文写作链路"
   - skill: nsfc-budget
     reason: "预算说明书为独立 LaTeX 交付物，通常在正文接近定稿后单独生成"
-  - skill: nsfc-proposal-figure-pipeline
-    reason: "配图在本编排器产出 main.pdf 之后由外层编排器接管"
+  # 配图不属于本编排器：由用户自行完成，本流程不代为规划、不排进阶段、正文不擅自插图。
+  # 此处不指向任何具体 skill —— 仓库与系统 skills 目录中都不存在可调用的标书配图 skill。
+  - skill: null
+    item: 标书配图
+    reason: "配图由用户独立完成，本编排器只保证正文与编译链路，不代为规划或生成图件"
 
 # === 模拟评审默认参数（stage 12）===
 simulated_review:
-  grant_type: 地区基金
-  panel_count: 3
+  # grant_type 无默认值，取 stage 00 解析出的 project.grant_type；
+  # 用错项目类型评审会套用错误的专家预期
+  grant_type: null
+  panel_count: 3          # 与 nsfc-reviewers 的 default_panel_count 一致
+  max_panel_count: 5
   output_path: review/模拟专家评审_全稿.md
 
 # === 编译（stage 14）===
