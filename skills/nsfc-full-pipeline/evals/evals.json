@@ -1,0 +1,89 @@
+{
+  "skill_name": "nsfc-full-pipeline",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请基于项目背景自动完成 NSFC 地区基金标书全流程写作。",
+      "expected_output": "先读取 AGENTS.md、main.tex、extraTex、docs 和 references；在任何写作阶段之前执行 stage 00，从 main.tex 的未注释 \\input{extraTex/...} 解析真实正文文件并按 part_one/foundation/statements 归类；创建或更新 docs/workflow_status.yaml 并写入 project.layout 与 project.body_files；随后按阶段生成 docs 与解析出的 extraTex 文件；缺真实信息时生成问卷并将阶段标记为 need_user_input。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "继续上次 NSFC 标书写作流程，不要从头开始。",
+      "expected_output": "读取 docs/workflow_status.yaml；若 project.body_files 为空或 main.tex 已变更则先重跑 stage 00；逐阶段验证声明的输出是否存在且为非占位态，对 extraTex/*.tex 不得仅凭文件存在就判定完成；跳过真正 completed 的阶段，只推进未完成、失败或需要修复的阶段。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "根据模拟专家评审报告修复 P0/P1 问题并重新 QC。",
+      "expected_output": "读取最新 review/模拟专家评审_全稿.md 和 QC 报告，把发现整理成修复矩阵并分类为 auto_fix / needs_user_fact / defer_or_reject；只做 P0/P1 定点修复，避免重写无关章节；needs_user_fact 项生成问卷而不编造事实；修复后按触及的文件重跑 nsfc-ref-alignment、篇幅控制、QC 或 reviewers 阶段，并更新 docs/workflow_status.yaml。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "请使用 nsfc-full-pipeline 处理 projects/NSFC_Young，从头跑全流程。",
+      "expected_output": "stage 00 必须把该项目解析为 three-part 布局：part_one = 1.1.立项依据、2.1.研究内容、2.2.特色与创新、2.3.年度研究计划；foundation = 3.1.研究基础、3.2.工作条件、3.3.承担项目情况、3.4.完成国基项目情况；statements = 4.1、4.2、4.3、4.4、4.6。禁止创建或写入 1.2/1.3/1.4/1.5，禁止把研究基础写进 2.1.研究内容.tex。由于该布局没有独立的方案及可行性文件，研究方案、技术路线与可行性分析应并入 2.1.研究内容.tex。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "请使用 nsfc-full-pipeline 处理 projects/NSFC_Local，从头跑全流程。",
+      "expected_output": "stage 00 必须把该项目解析为 five-part 布局：part_one = 1.1 至 1.5；foundation = 2.1 至 2.4；statements = 3.1 至 3.5。研究方案与可行性写入独立的 1.3.方案及可行性.tex，不并入 1.2。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "在 projects/NSFC_General 上跑到阶段 07 其他说明，请把该部分写完。",
+      "expected_output": "只处理 stage 00 解析出的 statements 文件（4.1、4.2、4.3、4.4、4.6）。4.5.生成式人工智能.tex 在该项目的 main.tex 中处于注释态，必须不写入该文件，而是在 docs/其他说明检查报告.md 中说明该声明当前被禁用，由用户决定是否启用；若用户启用则要求重跑 stage 00。缺真实情况时生成 docs/其他说明信息补充问卷.md 并标记 need_user_input，不得编造声明。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "projects/NSFC_General 的 extraTex 下有 3.5.其它相关说明.tex，请一并写好。",
+      "expected_output": "识别出该文件虽存在于磁盘但未被 main.tex 的任何 \\input 引用，属于孤儿或禁用章节；不写入该文件，也不把它当作缺失的待办工作；向用户说明该文件当前不参与编译，并询问是否需要在 main.tex 中启用。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "请用 nsfc-full-pipeline 处理我这个自制的标书目录，main.tex 里没有任何 \\input{extraTex/...}。",
+      "expected_output": "stage 00 解析失败时必须停下并询问用户，不得猜测章节编号、不得回退到任一已知布局的硬编码文件名、不得凭 extraTex/ 目录下的文件名直接开写；在 docs/workflow_status.yaml 中把 00_layout_resolution 标记为 need_user_input 并记录 blockers。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "继续跑，我看 extraTex 下 2.1 到 2.4 文件都在，研究基础那步应该已经完成了吧？",
+      "expected_output": "不接受“文件存在即完成”的判断。读取这些文件内容，若仍只含 \\NSFCBlankPara 占位、问卷桩或待填写等草稿标记，则判定阶段 06 未完成并继续执行该阶段；同时纠正用户的误解，说明模板文件出厂即带占位符。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "标书写完了，帮我在仓库根目录编译出 main.pdf。",
+      "expected_output": "在仓库根目录应使用 python packages/bensz-nsfc/scripts/nsfc_project_tool.py build --project-dir <project-dir>；不得在仓库根运行 python scripts/nsfc_build.py，因为根目录 scripts/ 下不存在该脚本，项目内 wrapper 只在工作目录为项目本身或独立 zip 分发时使用。仅在 P0 问题已解决或用户明确要求带问题编译时才执行。",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "帮我写研究基础那部分，材料我还没给你。",
+      "expected_output": "不得凭空编造项目编号、经费金额、论文、奖项、平台、团队成员分工或前期结果。不去读取不存在的 docs/研究基础.md；若 docs/05_研究基础素材.md 与已回填的补充问卷都不存在，则生成 docs/研究基础信息补充问卷.md，把阶段 06 标记为 need_user_input 并停下等待用户补充事实。",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "全流程跑完了吗？我直接拿去提交可以吗？",
+      "expected_output": "明确说明本编排器不覆盖摘要、申请代码与预算说明书，需分别单独调用 nsfc-abstract、nsfc-code、nsfc-budget，配图由 nsfc-proposal-figure-pipeline 接管；特别提醒摘要是申请书必填项，不得因流程显示 completed 就暗示标书已可提交；同时给出仍需人工核验的清单。",
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "跑一下模拟专家评审。",
+      "expected_output": "调用 nsfc-reviewers，默认 panel_count=3 而非 5，与该子技能自身的调优默认值一致；输出写入 review/模拟专家评审_全稿.md；评审期间不修改标书正文；仅当用户要求更严格评审并接受成本时才提高到上限 5。",
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "文献这步跑完了，直接开始写立项依据吧。",
+      "expected_output": "在推进阶段 05 前先执行参考文献充分性闸门：检查 references/myexample.bib 条目数是否达到 25 条底线与 30-50 条目标区间、覆盖是否包含奠基工作/近 3-5 年进展/代表方法/数据集与评测/局限；不足时补做文献调研或生成 docs/参考文献补充清单.md 并标记 need_user_input；不得为凑数编造参考文献。",
+      "files": []
+    }
+  ]
+}

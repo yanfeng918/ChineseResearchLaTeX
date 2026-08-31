@@ -1,0 +1,91 @@
+# nsfc-full-pipeline 配置文件
+# 版本号管理：本文件是版本信息的唯一来源（Single Source of Truth）
+
+skill_info:
+  name: nsfc-full-pipeline
+  version: 0.1.0
+  description: "NSFC 标书全流程编排器：按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 docs/workflow_status.yaml 为断点实现续跑，缺真实信息时生成问卷并阻塞（不适用：单章节写作、已有独立 skill 覆盖的单点任务）"
+  author: "Bensz Conan"
+  category: writing
+
+# === 项目布局解析（stage 00）===
+# 各 NSFC 模板的章节编号不共用一套方案且互相重叠，必须先解析再写作。
+layout:
+  # 唯一真相来源：main.tex 中未被注释的 \input{extraTex/...}
+  resolve_from: main.tex
+  ignore_commented_input: true
+  ignore_files:
+    - "extraTex/@config.tex"
+  # 已知布局，仅用于对解析结果做合理性校验，不替代读取 main.tex
+  known:
+    five-part:
+      example_projects: [NSFC_Local, NSFC_2026_Education]
+      part_one: ["1.1", "1.2", "1.3", "1.4", "1.5"]
+      foundation: ["2.1", "2.2", "2.3", "2.4"]
+      statements: ["3.1", "3.2", "3.3", "3.4", "3.5"]
+    three-part:
+      example_projects: [NSFC_General, NSFC_Young]
+      part_one: ["1.1", "2.1", "2.2", "2.3"]
+      foundation: ["3.1", "3.2", "3.3", "3.4"]
+      statements: ["4.1", "4.2", "4.3", "4.4", "4.6"]
+  # 解析失败或与两种已知布局都冲突时必须停下询问，不得猜测
+  halt_on_unresolved: true
+
+# === 断点与续跑 ===
+checkpoint:
+  file: docs/workflow_status.yaml
+  # 阶段完成判定不能只看输出文件是否存在：
+  # 模板自带 \NSFCBlankPara 占位，文件存在不等于已写作
+  completion_requires_non_placeholder: true
+  placeholder_markers:
+    - "\\NSFCBlankPara"
+    - "待填写"
+    - "现有材料未列"
+    - "项目编号未知"
+
+# === 参考文献充分性闸门（stage 05 前置）===
+reference_gate:
+  min_entries: 25
+  target_entries: [30, 50]
+  part_one_citations: [20, 35]
+  recent_5y_ratio_min: 0.6
+  allow_invented_references: false
+
+# === 子 skill 编排 ===
+sub_skills:
+  "01_topic_extraction": [research-topic-extractor, research-guide-updater]
+  "02_literature_review": [research-literature-review, research-guide-updater]
+  "03_scientific_questions": [research-idea, research-guide-updater]
+  "04_research_plan": [research-plan]
+  "05_part_one_writing": [nsfc-justification-writer, nsfc-research-content-writer]
+  "06_research_foundation": [nsfc-research-foundation-writer]
+  "08_reference_alignment": [nsfc-ref-alignment]
+  "09_length_control": [nsfc-length-aligner]
+  "10_humanization": [nsfc-humanization]
+  "11_qc": [nsfc-qc]
+  "12_simulated_review": [nsfc-reviewers]
+
+# 本编排器不覆盖的环节；需要时由用户单独调用
+not_covered:
+  - skill: nsfc-abstract
+    reason: "摘要为申请书必填项，但不在正文 extraTex 链路内，单独调用"
+  - skill: nsfc-code
+    reason: "申请代码推荐为只读输出，不影响正文写作链路"
+  - skill: nsfc-budget
+    reason: "预算说明书为独立 LaTeX 交付物，通常在正文接近定稿后单独生成"
+  - skill: nsfc-proposal-figure-pipeline
+    reason: "配图在本编排器产出 main.pdf 之后由外层编排器接管"
+
+# === 模拟评审默认参数（stage 12）===
+simulated_review:
+  grant_type: 地区基金
+  panel_count: 3
+  output_path: review/模拟专家评审_全稿.md
+
+# === 编译（stage 14）===
+build:
+  # 仓库根目录运行
+  repo_root_command: "python packages/bensz-nsfc/scripts/nsfc_project_tool.py build --project-dir <project-dir>"
+  # 项目目录内运行；根目录 scripts/ 下没有该脚本
+  project_dir_command: "python scripts/nsfc_build.py build --project-dir ."
+  compile_requires_no_p0: true
