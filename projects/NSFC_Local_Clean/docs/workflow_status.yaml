@@ -1,0 +1,60 @@
+# nsfc-full-pipeline 断点文件（空白模板）
+# 作用：记录流程进度与事实来源，避免每次运行都从头重问。
+# 新项目只需改 project 段的 5 个字段，stages 由流程自动维护。
+
+project:
+  type:                              # 如 NSFC_Local / NSFC_Local_Clean，或自定义
+  grant_type:                        # 如 地区科学基金 / 实验室开放课题
+  layout: five-part                  # 本模板为 five-part；实际以 main.tex 解析结果为准
+  length_budget: "第（一）部分 ≤8000 字；全文 ≤30 页"   # 地区基金口径；换申报类别务必改掉
+  proposal_path: "."
+  body_dir: "extraTex"
+  bib_file: "references/myexample.bib"
+  guide_file: "AGENTS.md"            # 项目级，非仓库根
+
+  # === 事实分层（见 docs/applicants/README.md）===
+  applicant_profile_file: "../../docs/applicants/yan-feng.md"
+  project_fact_file: "docs/00_项目事实库.md"
+
+  stage_output_dir: "docs"
+  review_output_dir: "review"
+  body_files:                        # 由 stage 00 从 main.tex 解析后填入
+    part_one: []
+    foundation: []
+    statements: []
+
+# 事实来源约定：本文件不重复罗列事实，只声明去哪里读。
+# 两份来源中状态为「已确认」的事实可直接使用，AI 不得再次询问。
+fact_sources:
+  applicant: "../../docs/applicants/yan-feng.md"
+  project: "docs/00_项目事实库.md"
+  read_order: [applicant, project]
+
+# 本申报对象不适用的章节。借用 NSFC 模板但实际不是国基时，在此列明，
+# 避免流程反复追问国基专属声明。用不到就留空。
+not_applicable: []
+
+run:
+  current_mode: fresh
+  last_started:
+  last_finished:
+  last_summary:
+  next_stage: "00_layout_resolution"
+
+# status: pending | in_progress | completed | skipped | need_user_input | failed
+stages:
+  "00_layout_resolution": { name: "布局与项目类型解析", status: pending, blockers: [] }
+  "01_topic_extraction":  { name: "选题与研究主题",     status: pending, blockers: [] }
+  "02_literature_review": { name: "文献调研",           status: pending, blockers: [] }
+  "03_scientific_questions": { name: "科学问题与创新点", status: pending, blockers: [] }
+  "04_research_plan":     { name: "研究方案与技术路线", status: pending, blockers: [] }
+  "05_part_one_writing":  { name: "第一部分正文",       status: pending, blockers: [] }
+  "06_research_foundation": { name: "研究基础与工作条件", status: pending, blockers: [] }
+  "07_other_statements":  { name: "其他说明",           status: pending, blockers: [] }
+  "08_reference_alignment": { name: "引用一致性核查",   status: pending, blockers: [] }
+  "09_length_control":    { name: "篇幅对齐",           status: pending, blockers: [] }
+  "10_humanization":      { name: "去 AI 味润色",       status: pending, blockers: [] }
+  "11_qc":                { name: "质量控制",           status: pending, blockers: [] }
+  "12_simulated_review":  { name: "模拟专家评审",       status: pending, blockers: [] }
+  "13_targeted_repair":   { name: "P0/P1 定点修复",     status: pending, blockers: [] }
+  "14_compile":           { name: "编译",               status: pending, blockers: [] }

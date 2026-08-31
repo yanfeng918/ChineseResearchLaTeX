@@ -8,13 +8,34 @@
 
 ## [Unreleased]
 
+### Added（新增）
+
+- `docs/applicants/`：建立**两层事实结构**，把跨项目复用的申请人事实与项目专属事实分开维护。新增 `README.md`（分层规则、`已确认`/`公开来源待终核`/`待本人确认`/`明确暂无` 四级状态口径、隐私规则、项目接入方式）与 `yan-feng.md`（共用申请人信息：身份、履历、科研项目 `P-H*`/`P-V*`、代表作 `O-*`、科研条件、跨项目待补事实 `F-GEN-*`）。共用层不复制到各项目，项目通过 `workflow_status.yaml` 的 `applicant_profile_file` 以相对路径指向；申请人信息更新一处即全项目生效，避免此前"同一事实在多份文档各存一份、口径互相打架"（如 A100 八卡在工作条件文档与补充问卷中结论相反）的问题。
+- `projects/NSFC_General_Clean/docs/` 与 `projects/NSFC_Local_Clean/docs/`：两个空白模板加入事实库接线骨架 —— `00_项目事实库.md`（项目专属事实模板）、`workflow_status.yaml`（14 阶段断点模板，预留 `applicant_profile_file`）、`README.md`（新项目三步接入说明）。新项目经 `scripts/create_project.py` 复制后即自动带上接线，无需手工配置。`NSFC_Local_Clean` 版按五段式适配：`layout: five-part`、篇幅口径含"第（一）部分 ≤8000 字"、章节对照表标明技术路线写在独立的 `1.3.方案及可行性`。
+- `skills/README.md`：补登记 `nsfc-full-pipeline`（第 23 条）。该技能此前只有 `SKILL.md`、`config.yaml` 等文件落地，从未进入技能总览、技能协作说明与推荐使用顺序，用户无法从索引发现它。同时在「技能依赖关系」与「推荐使用顺序」两处补充其作为 NSFC 编排层的定位。
+
 ### Fixed（修复）
 
+- `projects/NSFC_General_Clean/` 与 `projects/NSFC_Local_Clean/`：恢复为纯净空白模板。两者是仓库自带模板，被 `nsfc-full-pipeline`、`nsfc-research-content-writer`、`nsfc-research-foundation-writer` 三个技能引用为示例项目，此前误留了具体申报的个人材料（学术简历、工作条件、参与者名单）与另一课题的研究范围定义。这些材料会随 `scripts/create_project.py` 传播到每个新建项目，导致新项目一开始就带着无关内容。现已全部移出到仓库外的申报工作目录，本仓库只保留可复用的模板与技能。两个模板的 `extraTex/` 全程未被改动。
+- `docs/applicants/yan-feng.md`：修正 5 处指向不存在目录 `projects/NSFC_2026_TsingHua_electricity/` 的失效证据路径。共用申请人信息属仓库级资料层，不应绑定某个具体申报项目的目录，现统一改为按材料性质描述（学术简历、补充问卷、工作条件材料等），不再写死项目路径。
+- `projects/NSFC_Local/extraTex/2.1.研究基础.tex`：补齐缺失的「研究风险的应对措施」小节。该示例正文此前完全没有风险应对内容（`grep -c 风险` 为 0），而同类的 `NSFC_Young` 已有 4 处；`nsfc-research-foundation-writer` 的 DoD 与自检脚本均要求研究基础显式包含至少 3 条风险，该项目因此自检报 ERROR。新增内容按“风险描述---早期信号---应对预案”结构覆盖资源、技术与方法、进度三类风险，每条含可执行的替代路线与降级目标，并沿用该文件既有的公开示例口径与【】占位符风格。自检已转为通过；`nsfc_project_tool.py build` 编译零错误，PDF 由 12 页增至 14 页。
+- `skills/nsfc-full-pipeline/` 升级到 `v0.2.0`，修复一次完整审核暴露的 3 处阻断问题与 6 处一致性缺陷：
+  - **指向已删除的样例项目**：`SKILL.md` / `config.yaml` / `README.md` 均把 `NSFC_2026_Education` 当作 `five-part` 布局样例，但该项目已在 commit `9f46d09` 中删除，`README.md` 的快速开始命令直接指向不存在的目录；现改为 `NSFC_Local` / `NSFC_Local_Clean`。
+  - **指向不存在的 skill**：`config.yaml` 的 `not_covered` 与 `README.md` 让用户单独调用 `nsfc-proposal-figure-pipeline`，但仓库与两个系统 skills 目录中均无此技能；现改为说明配图由用户自行完成，不指向任何 skill。
+  - **`grant_type` 声称由 stage 00 解析但该步骤不存在**：默认值写死地区基金，会让 `NSFC_General` / `NSFC_Young` 带着错误的评审口径与 8000 字篇幅上限跑完全流程；现 stage 00 新增项目类型与篇幅预算解析，解析失败即停下询问，不回退到地区基金。
+  - 阶段 13 残留 `1.1`–`1.5` 编号硬编码（v0.1.0 声称已清除）、`AGENTS.md` 未区分仓库根与标书项目两份文件（可能被 `research-guide-updater` 写坏仓库单一真相来源）、布局校验表漏 `NSFC_General_Clean` / `NSFC_Local_Clean`、阶段 05 缺 `docs/03` 输入、阶段 06 自产文件未登记为输出、`sub_skills` 漏 `research-plan`。
+  - 新增 `Scope` 小节显式声明省级基金 `GDNSF_*` / `GXNSF_*` 不在覆盖范围（其章节体例与角色关键词完全不匹配，原先会在 stage 00 静默卡死）；frontmatter `description` 由英文改为中文并与同系列 `nsfc-*` 技能范式对齐；`evals/evals.json` 由 14 条扩至 17 条。
 - `packages/bensz-nsfc/scripts/nsfc_project_tool.py`：修复空白模板无法构建的问题。正文尚未添加任何 `\cite` 时，bibtex 会以 `exit=2` 报 `I found no \citation commands`，而 `build_project` 把任何非零退出码一律判定为构建失败，导致 `projects/NSFC_Local_Clean` 这类空白模板在三趟 xelatex 全部 `exit=0`、PDF 已正常产出的情况下仍然报"PDF 渲染失败"。现新增 `bibtex_failure_is_benign()`，仅当 bibtex 输出包含该标记时跳过这一步并打印提示；缺条目、`.bst` 出错、`.bib` 语法错误等其余 bibtex 失败仍然按失败处理。
 - `packages/bensz-nsfc/templates/`：修复 `bensz-nsfc-general.tex` / `bensz-nsfc-local.tex` / `bensz-nsfc-young.tex` 在 Linux 上的编译中断问题。三套模板在“已检测到内置字体”分支里硬写了 macOS 专用的 `\setmainfont[BoldFont=Times New Roman]{Times New Roman}`，而多数 Linux 发行版不自带该字体族名，导致 fontspec 报 `The font "Times New Roman" cannot be found`、xelatex 三趟全部以退出码 1 结束、`nsfc_project_tool.py build` 判定 PDF 渲染失败。现改为 `\IfFontExistsTF{Times New Roman}` 探测：系统有就照旧使用（保留真实斜体/粗体），没有则回退到 `packages/bensz-fonts/fonts/TimesNewRoman.ttf` 并用 `AutoFakeBold=5, AutoFakeSlant=0.2` 补齐粗斜体，与 `bensz-fonts.sty`、`bensz-thesis` 各 style 已有的探测写法保持一致。macOS / Windows 行为不变。
 
 ### Changed（变更）
 
+- `skills/nsfc-research-foundation-writer/` 升级到 `v0.2.0`：**修复按编号 glob 定位写入目标导致的静默写错章节**。`SKILL.md` 原写死 `extraTex/3.1.研究基础.tex` / `3.2.工作条件.tex` 并指示"仅编辑两份 `extraTex/3.*.tex`"，但五段式（`NSFC_Local`/`NSFC_Local_Clean`）的研究基础与工作条件实际在 `2.1`/`2.2`，其 `3.1`/`3.2` 是「不同类型国基情况」「同年单位不一致」等声明章节——在地区基金上运行会把研究基础写进声明章节且编译不报错。现改为从 `main.tex` 按 `foundation` / `work_conditions` 角色解析，显式排除承担项目/完成国基项目/项目完成情况，跨章节引用（研究内容、年度研究计划）同步改为按角色定位；`config.yaml` 换用 `layout_resolution` + 两张布局表 + `allowed_write_roles`；`check_project_outputs.py` 改为自解析并自动判定布局；`validate_skill.py` 新增编号 glob 回归护栏。已在 `NSFC_Young`/`NSFC_General`（three-part）与 `NSFC_Local`（five-part）验证解析正确。至此面上、青年、地区三类基金在 `nsfc-full-pipeline` 全链路上均无编号硬编码缺口。
+- `skills/nsfc-research-content-writer/` 升级到 `v1.1.0`，含一处高危修复与技术路线规范化：
+  - **修复按编号 glob 定位写入目标导致的静默写错章节**：`SKILL.md` 原指示"仅编辑三份 `extraTex/2.*.tex`"，但三段式的 `2.1` 是「研究内容」、五段式的 `2.1` 却是「研究基础」。在 `NSFC_Local` / `NSFC_Local_Clean` 上该 glob 匹配到 `2.1.研究基础` / `2.2.工作条件` / `2.3.承担项目`，会把研究内容写进研究基础且编译不报错。现新增「落点解析」章节，从 `main.tex` 未注释的 `\input{extraTex/...}` 按 `research_content` / `innovation` / `yearly_plan` / `scheme` 四角色解析，解析失败即停下询问；`config.yaml` 的 `guardrails.allowed_write_files` 改为 `allowed_write_roles`，并新增 `layout_resolution` 与两张已知布局表。
+  - **技术路线由一条 bullet 提升为独立写作步骤**，强制"总—分"两层结构并与研究内容逐项对应；落点随布局变化（三段式并入研究内容，五段式写入独立的 `1.3.方案及可行性`）。新增 `references/technical_route_structure.md`（总体路线四问、分项路线五要素、研究内容↔分路线映射表与四项自检、8 条专项反模式）；`config.yaml` 新增 `technical_route` 节；DoD 新增 B2 节；反模式新增 6b/6c/6d 三组；输出骨架扩展为完整总分骨架。
+  - **修复整条自检链路失效**：`validate_skill.py` 硬性要求从未提交过的 `plans/` 目录导致恒失败，现改为可选；`check_project_outputs.py` 原要求正文出现 `S1`/`对应 S1` 内部编号（与写作规范正好相反）且只能处理三段式，现改为自行解析 `main.tex` 按角色定位、自动判定布局，并反向检测内部编号泄漏。已在 `NSFC_Young`/`NSFC_General`/`NSFC_Local` 上验证。
+  - **修复版本号双真相来源**：`SKILL.md` frontmatter 写 `0.2.3` 而 `config.yaml` 写 `1.0.0`。现移除 frontmatter 的 `version`（宿主亦不支持该字段），校验器改为"存在则必须与 config.yaml 一致"。
 - `skills/`：对齐 `docs/prompts/005-bensz-skill-workspace.md` 的任务级中间文件契约；新运行统一使用 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/{skill名}/input|output|log/`，旧目录仅作显式兼容读取/迁移/清理。
 - `skills/nsfc-humanization/` 升级到 `v1.2.0`：基于工程协议腔与技术型 NSFC 文本优化计划，新增词语/句法/段落/章节四层诊断、术语表与章节去重、安全不变量和匿名回归样例；完成 1 轮 `auto-test-skill`（含 B 轮质量检查）并压缩工作型 Markdown，根级 README、skills 总览和技能 README 已同步。
 - `nsfc-justification-writer`：默认流程升级为完全自动，自动完成目标选择/创建、Tier1+Tier2、保守假设、成稿、正文-only 重试、备份和写入；移除中途用户确认/审核节点，保留 `--dry-run`、白名单、引用守护、diff 与回滚，版本推进至 v1.3.0。
