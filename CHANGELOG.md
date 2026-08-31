@@ -10,6 +10,7 @@
 
 ### Added（新增）
 
+- `docs/nsfc-writing-workflow-guide.md`：新增 AI 写作工作流指南。此前 `docs/nsfc-usage-guide.md` 只覆盖模板安装、编译与改哪些 `.tex`，缺少写作层的说明。新指南讲三层结构（共用事实 / 项目事实 / 技能）、开新标书三步、事实四级状态口径、技能选择顺序、技术路线总—分规范、三段式与五段式的章节编号陷阱、适用范围与常见问题；已从 `nsfc-usage-guide.md` 的延伸阅读与 `docs/applicants/README.md` 顶部挂入口。
 - `docs/applicants/`：建立**两层事实结构**，把跨项目复用的申请人事实与项目专属事实分开维护。新增 `README.md`（分层规则、`已确认`/`公开来源待终核`/`待本人确认`/`明确暂无` 四级状态口径、隐私规则、项目接入方式）与 `yan-feng.md`（共用申请人信息：身份、履历、科研项目 `P-H*`/`P-V*`、代表作 `O-*`、科研条件、跨项目待补事实 `F-GEN-*`）。共用层不复制到各项目，项目通过 `workflow_status.yaml` 的 `applicant_profile_file` 以相对路径指向；申请人信息更新一处即全项目生效，避免此前"同一事实在多份文档各存一份、口径互相打架"（如 A100 八卡在工作条件文档与补充问卷中结论相反）的问题。
 - `projects/NSFC_General_Clean/docs/` 与 `projects/NSFC_Local_Clean/docs/`：两个空白模板加入事实库接线骨架 —— `00_项目事实库.md`（项目专属事实模板）、`workflow_status.yaml`（14 阶段断点模板，预留 `applicant_profile_file`）、`README.md`（新项目三步接入说明）。新项目经 `scripts/create_project.py` 复制后即自动带上接线，无需手工配置。`NSFC_Local_Clean` 版按五段式适配：`layout: five-part`、篇幅口径含"第（一）部分 ≤8000 字"、章节对照表标明技术路线写在独立的 `1.3.方案及可行性`。
 - `skills/README.md`：补登记 `nsfc-full-pipeline`（第 23 条）。该技能此前只有 `SKILL.md`、`config.yaml` 等文件落地，从未进入技能总览、技能协作说明与推荐使用顺序，用户无法从索引发现它。同时在「技能依赖关系」与「推荐使用顺序」两处补充其作为 NSFC 编排层的定位。

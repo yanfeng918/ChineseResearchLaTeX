@@ -221,6 +221,7 @@ python packages/bensz-nsfc/scripts/install.py install --ref <tag>
 
 ## 延伸阅读
 
+- [`docs/nsfc-writing-workflow-guide.md`](./nsfc-writing-workflow-guide.md)：AI 写作工作流——两层事实库、开新标书三步、技能选择顺序与技术路线规范
 - [`docs/bensz-nsfc-design-principles.md`](./bensz-nsfc-design-principles.md)：解释公共包、profile、薄项目与官方脚本入口为何这样分层
 - [`packages/bensz-nsfc/README.md`](../packages/bensz-nsfc/README.md)：包级结构、安装入口与资源策略速览
 - [`projects/NSFC_Young/AGENTS.md`](../projects/NSFC_Young/AGENTS.md)：面向 AI 协作写作的项目级指令
