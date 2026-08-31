@@ -4,10 +4,10 @@
 
 skill_info:
   name: nsfc-research-foundation-writer
-  version: 0.1.2
+  version: 0.2.0
   # template_year: 移除年份限制，使技能适用于不同年份的 NSFC 模板
   category: writing
-  description: "为 NSFC 正文“（三）研究基础”写作/重构，并同步编排“工作条件/研究风险应对”（不适用：非标书正文场景）"
+  description: "为 NSFC 正文“（三）研究基础”写作/重构，并同步编排“工作条件/研究风险应对”；写入落点从 main.tex 按角色解析，适配面上/青年（三段式）与地区（五段式）两种章节编号（不适用：非标书正文场景）"
   author: "Bensz Conan"
 
 parameters:
@@ -23,14 +23,41 @@ parameters:
     # preview: 预览模式，只生成内容不写入文件
     # apply: 应用模式，将生成的内容写入 extraTex 文件
 
-targets:
+# === 正文落点（按布局解析，禁止按编号硬写）===
+# NSFC 模板不共用一套章节编号且互相重叠：三段式的 3.1 是"研究基础"，
+# 五段式的 3.1 却是"不同类型国基情况"（其他说明里的声明章节）。
+# 按 extraTex/3.*.tex 这类编号 glob 定位，会在地区基金项目上把研究基础
+# 写进声明章节且编译不报错。唯一真相来源：main.tex 中未被注释的
+# \input{extraTex/...} + 角色关键词。
+layout_resolution:
+  resolve_from: main.tex
+  ignore_commented_input: true
+  ignore_files:
+    - "extraTex/@config.tex"
+  role_keywords_foundation: ["研究基础"]
+  role_keywords_work_conditions: ["工作条件"]
+  # 同属"研究基础"大节但不由本技能撰写，解析时必须排除，避免误写
+  exclude_keywords: ["承担项目", "完成国基项目", "项目完成情况"]
+  halt_on_unresolved: true
+
+# 已知布局，仅用于对解析结果做合理性校验，不替代读取 main.tex
+targets_three_part:
+  example_projects: NSFC_General / NSFC_General_Clean / NSFC_Young
   foundation_tex: extraTex/3.1.研究基础.tex
   conditions_tex: extraTex/3.2.工作条件.tex
 
+targets_five_part:
+  example_projects: NSFC_Local / NSFC_Local_Clean
+  foundation_tex: extraTex/2.1.研究基础.tex
+  conditions_tex: extraTex/2.2.工作条件.tex
+
 guardrails:
-  allowed_write_files:
-    - extraTex/3.1.研究基础.tex
-    - extraTex/3.2.工作条件.tex
+  # 只允许写入 layout_resolution 解析出的角色文件；解析不出就停下问用户。
+  # 严禁按 extraTex/3.*.tex 这类编号 glob 批量选择写入目标。
+  allowed_write_roles:
+    - foundation
+    - work_conditions
+  forbid_numeric_glob_targeting: true
   forbidden_write_files:
     - main.tex
     - extraTex/@config.tex

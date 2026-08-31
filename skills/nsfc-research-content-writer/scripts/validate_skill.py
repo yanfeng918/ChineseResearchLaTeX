@@ -57,9 +57,13 @@ def main() -> int:
         if not path.exists():
             return _err(f"missing required file: {path}")
 
-    for d in [plans_dir, tests_dir, templates_dir]:
-        if not d.exists() or not d.is_dir():
-            return _err(f"missing required directory: {d}")
+    # templates/ 承载校验所需的模板文件，必需；plans/ 与 tests/ 是可选的工作目录，
+    # 本技能从未提交过它们，硬性要求会让整条自检链路恒失败。
+    if not templates_dir.is_dir():
+        return _err(f"missing required directory: {templates_dir}")
+    for d in [plans_dir, tests_dir]:
+        if d.exists() and not d.is_dir():
+            return _err(f"expected a directory, found a file: {d}")
 
     skill_text = skill_md.read_text(encoding="utf-8")
     frontmatter = _extract_frontmatter(skill_text)
@@ -67,11 +71,14 @@ def main() -> int:
         return _err("SKILL.md missing YAML frontmatter block")
 
     fm_name = _extract_frontmatter_field(frontmatter, "name")
-    fm_version = _extract_frontmatter_field(frontmatter, "version")
     fm_config = _extract_frontmatter_field(frontmatter, "config")
     fm_references = _extract_frontmatter_field(frontmatter, "references")
-    if not fm_name or not fm_version or not fm_config or not fm_references:
-        return _err("SKILL.md frontmatter missing required fields: name/version/config/references")
+    if not fm_name or not fm_config or not fm_references:
+        return _err("SKILL.md frontmatter missing required fields: name/config/references")
+
+    # 版本号只认 config.yaml（单一真相来源），且 `version` 不是宿主支持的 frontmatter 字段；
+    # 若 SKILL.md 里仍残留 version，必须与 config.yaml 一致，否则就是漂移。
+    fm_version = _extract_frontmatter_field(frontmatter, "version")
 
     fm_config_path = Path(fm_config)
     resolved_config_path = (
@@ -99,23 +106,38 @@ def main() -> int:
 
     if fm_name != cfg_name:
         return _err(f"name mismatch: SKILL.md={fm_name} config.yaml={cfg_name}")
-    if fm_version != cfg_version:
+    if fm_version is not None and fm_version != cfg_version:
         return _err(f"version mismatch: SKILL.md={fm_version} config.yaml={cfg_version}")
 
-    targets = [
-        extract_yaml_value_under_block(config_lines, "targets", "research_content_tex"),
-        extract_yaml_value_under_block(config_lines, "targets", "innovation_tex"),
-        extract_yaml_value_under_block(config_lines, "targets", "yearly_plan_tex"),
-    ]
-    if any(t is None for t in targets):
-        return _err("config.yaml missing one of targets.*_tex")
+    # 两张已知布局表都必须完整；它们只用于对 main.tex 解析结果做合理性校验。
+    layout_tables = {}
+    for block in ("targets_three_part", "targets_five_part"):
+        table = {
+            key: extract_yaml_value_under_block(config_lines, block, key)
+            for key in ("research_content_tex", "innovation_tex", "yearly_plan_tex")
+        }
+        missing = [k for k, v in table.items() if not v]
+        if missing:
+            return _err(f"config.yaml {block} missing: {missing}")
+        layout_tables[block] = table
 
-    allowed = extract_yaml_list_under_block(config_lines, "guardrails", "allowed_write_files")
-    if not allowed:
-        return _err("config.yaml missing guardrails.allowed_write_files")
+    # 两种布局必须给出不同的落点，否则说明编号硬编码问题没有真正修掉
+    if layout_tables["targets_three_part"] == layout_tables["targets_five_part"]:
+        return _err("config.yaml: targets_three_part and targets_five_part must differ")
 
-    if set(allowed) != set(t for t in targets if t is not None):
-        return _err("config.yaml mismatch: guardrails.allowed_write_files must equal targets.*_tex values")
+    scheme_five = extract_yaml_value_under_block(config_lines, "targets_five_part", "scheme_tex")
+    if not scheme_five:
+        return _err("config.yaml targets_five_part.scheme_tex must name the 方案及可行性 file")
+
+    allowed_roles = extract_yaml_list_under_block(config_lines, "guardrails", "allowed_write_roles")
+    if not allowed_roles:
+        return _err("config.yaml missing guardrails.allowed_write_roles")
+    for role in ["research_content", "innovation", "yearly_plan", "scheme"]:
+        if role not in allowed_roles:
+            return _err(f"config.yaml guardrails.allowed_write_roles missing role: {role}")
+
+    if not extract_yaml_value_under_block(config_lines, "layout_resolution", "resolve_from"):
+        return _err("config.yaml missing layout_resolution.resolve_from (write targets must be resolved from main.tex)")
 
     forbidden = extract_yaml_list_under_block(config_lines, "guardrails", "forbidden_write_files") or []
     for must_forbid in ["main.tex", "extraTex/@config.tex"]:
@@ -132,6 +154,9 @@ def main() -> int:
         "output_mode",
         "写入安全约束",
         "references/output_skeletons.md",
+        "references/technical_route_structure.md",
+        "落点解析",
+        "总—分",
         "main.tex",
         "extraTex/@config.tex",
         ".cls",
@@ -141,9 +166,10 @@ def main() -> int:
         if snippet not in skill_text:
             return _err(f"SKILL.md missing required snippet: {snippet}")
 
-    for t in targets:
-        if t and t not in skill_text:
-            return _err(f"SKILL.md missing target path from config.yaml: {t}")
+    # 回归护栏：SKILL.md 不得再把编号 glob 当作写入目标的选择方式。
+    # 允许在解释"为什么不能这么做"时出现该字符串，因此只在缺少禁令时报错。
+    if "extraTex/2.*.tex" in skill_text and "严禁用 `extraTex/2.*.tex`" not in skill_text:
+        return _err("SKILL.md mentions the numeric glob extraTex/2.*.tex without the accompanying prohibition")
 
     link_paths = re.findall(r"\((references/[^)]+)\)", skill_text)
     missing_links = []
@@ -184,7 +210,7 @@ def main() -> int:
 
     print("OK: validate-skill passed")
     print(f"- skill: {fm_name}")
-    print(f"- version: {fm_version}")
+    print(f"- version: {cfg_version} (source of truth: config.yaml)")
     print(f"- referenced files: {len(link_paths)}")
     return 0
 

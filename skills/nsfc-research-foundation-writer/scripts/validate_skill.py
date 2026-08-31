@@ -81,11 +81,14 @@ def main() -> int:
         return _err(str(exc))
 
     fm_name = _extract_frontmatter_field(frontmatter, "name")
-    fm_version = _extract_frontmatter_field(frontmatter, "version")
     fm_config = _extract_frontmatter_field(frontmatter, "config")
     fm_references = _extract_frontmatter_field(frontmatter, "references")
-    if not fm_name or not fm_version or not fm_config or not fm_references:
-        return _err("SKILL.md frontmatter missing required fields: name/version/config/references")
+    if not fm_name or not fm_config or not fm_references:
+        return _err("SKILL.md frontmatter missing required fields: name/config/references")
+
+    # 版本号只认 config.yaml（单一真相来源），且 `version` 不是宿主支持的 frontmatter 字段；
+    # 若 SKILL.md 里仍残留 version，必须与 config.yaml 一致，否则就是漂移。
+    fm_version = _extract_frontmatter_field(frontmatter, "version")
 
     fm_config_path = Path(fm_config)
     resolved_config_path = (
@@ -108,20 +111,40 @@ def main() -> int:
         return _err("config.yaml missing skill_info.name or skill_info.version")
     if cfg_name != fm_name:
         return _err(f"skill name mismatch: SKILL.md={fm_name} config.yaml={cfg_name}")
-    if cfg_version != fm_version:
+    if fm_version is not None and cfg_version != fm_version:
         return _err(f"skill version mismatch: SKILL.md={fm_version} config.yaml={cfg_version}")
 
-    target_foundation = extract_yaml_value_under_block(config_lines, "targets", "foundation_tex")
-    target_conditions = extract_yaml_value_under_block(config_lines, "targets", "conditions_tex")
-    if not target_foundation or not target_conditions:
-        return _err("config.yaml missing targets.foundation_tex or targets.conditions_tex")
+    # 两张已知布局表都必须完整；它们只用于对 main.tex 解析结果做合理性校验。
+    layout_tables = {}
+    for block in ("targets_three_part", "targets_five_part"):
+        table = {
+            key: extract_yaml_value_under_block(config_lines, block, key)
+            for key in ("foundation_tex", "conditions_tex")
+        }
+        missing = [k for k, v in table.items() if not v]
+        if missing:
+            return _err(f"config.yaml {block} missing: {missing}")
+        layout_tables[block] = table
 
-    allowed = extract_yaml_list_under_block(config_lines, "guardrails", "allowed_write_files") or []
-    if target_foundation not in allowed or target_conditions not in allowed:
-        return _err("config.yaml guardrails.allowed_write_files must include both targets.* paths")
+    # 两种布局必须给出不同的落点，否则说明编号硬编码问题没有真正修掉
+    if layout_tables["targets_three_part"] == layout_tables["targets_five_part"]:
+        return _err("config.yaml: targets_three_part and targets_five_part must differ")
+
+    allowed_roles = extract_yaml_list_under_block(config_lines, "guardrails", "allowed_write_roles") or []
+    for role in ("foundation", "work_conditions"):
+        if role not in allowed_roles:
+            return _err(f"config.yaml guardrails.allowed_write_roles missing role: {role}")
+
+    if not extract_yaml_value_under_block(config_lines, "layout_resolution", "resolve_from"):
+        return _err("config.yaml missing layout_resolution.resolve_from (write targets must be resolved from main.tex)")
+
+    # 回归护栏：SKILL.md 不得再把编号 glob 当作写入目标的选择方式。
+    # 允许在解释"为什么不能这么做"时出现该字符串，因此只在缺少禁令时报错。
+    if "extraTex/3.*.tex" in skill_text and "严禁用 `extraTex/3.*.tex`" not in skill_text:
+        return _err("SKILL.md mentions the numeric glob extraTex/3.*.tex without the accompanying prohibition")
 
     # Heuristic checks: keep them lightweight; warn rather than fail when ambiguous.
-    for needle in [target_foundation, target_conditions, "main.tex", "extraTex/@config.tex"]:
+    for needle in ["落点解析", "main.tex", "extraTex/@config.tex"]:
         if needle not in skill_text:
             _warn(f"SKILL.md does not mention expected guardrail/target string: {needle}")
 

@@ -4,9 +4,9 @@
 
 skill_info:
   name: nsfc-research-content-writer
-  version: 1.0.0
+  version: 1.1.0
   # template_year: 移除年份限制，使技能适用于不同年份的 NSFC 模板
-  description: NSFC 标书正文“（二）研究内容”写作/重构，并同步编排“特色与创新”“三年年度研究计划”，输出 2.1/2.2/2.3 三份 extraTex 文件
+  description: NSFC 标书正文“（二）研究内容”写作/重构，技术路线按“总—分”两层结构编排并与研究内容逐项对应，同步产出“特色与创新”“三年年度研究计划”，输出 2.1/2.2/2.3 三份 extraTex 文件
   category: writing
   author: "Bensz Conan"
 
@@ -21,16 +21,50 @@ parameters:
     default: apply
     allowed_values: [preview, apply]
 
-targets:
+# === 正文落点（按布局解析，禁止按编号硬写）===
+# NSFC 模板不共用一套章节编号且互相重叠：三段式的 2.1 是"研究内容"，
+# 五段式的 2.1 却是"研究基础"。按 extraTex/2.*.tex 这类编号 glob 定位，
+# 会在地区基金项目上把研究内容写进研究基础且不报错。
+# 唯一真相来源：main.tex 中未被注释的 \input{extraTex/...} + 角色关键词。
+layout_resolution:
+  resolve_from: main.tex
+  ignore_commented_input: true
+  ignore_files:
+    - "extraTex/@config.tex"
+  # 角色关键词（用于把解析出的文件归类到写作角色）
+  role_keywords_research_content: ["研究内容", "内容目标问题"]
+  role_keywords_innovation: ["特色与创新"]
+  role_keywords_yearly_plan: ["年度研究计划", "研究计划"]
+  role_keywords_scheme: ["方案及可行性"]
+  halt_on_unresolved: true
+
+# 已知布局，仅用于对解析结果做合理性校验，不替代读取 main.tex
+targets_three_part:
+  example_projects: NSFC_General / NSFC_General_Clean / NSFC_Young
   research_content_tex: extraTex/2.1.研究内容.tex
   innovation_tex: extraTex/2.2.特色与创新.tex
   yearly_plan_tex: extraTex/2.3.年度研究计划.tex
+  # 无独立方案文件：技术路线并入研究内容
+  scheme_tex: ""
+
+targets_five_part:
+  example_projects: NSFC_Local / NSFC_Local_Clean
+  research_content_tex: extraTex/1.2.内容目标问题.tex
+  innovation_tex: extraTex/1.4.特色与创新.tex
+  yearly_plan_tex: extraTex/1.5.研究计划.tex
+  # 有独立方案文件：技术路线落这里，不要写进研究内容
+  scheme_tex: extraTex/1.3.方案及可行性.tex
 
 guardrails:
-  allowed_write_files:
-    - extraTex/2.1.研究内容.tex
-    - extraTex/2.2.特色与创新.tex
-    - extraTex/2.3.年度研究计划.tex
+  # 只允许写入 layout_resolution 解析出的角色文件；解析不出就停下问用户。
+  # 严禁按 extraTex/2.*.tex 这类编号 glob 批量选择写入目标。
+  # scheme 仅在五段式存在独立"方案及可行性"文件时可写
+  allowed_write_roles:
+    - research_content
+    - innovation
+    - yearly_plan
+    - scheme
+  forbid_numeric_glob_targeting: true
   forbidden_write_files:
     - main.tex
     - extraTex/@config.tex
@@ -43,7 +77,8 @@ quality_contract:
     - 研究问题与总体目标
     - 3–4 个可检验子目标（指标/对照/数据来源）
     - 研究内容与任务分解（对齐子目标）
-    - 技术路线与验证口径（防泄漏/对照/消融/统计）
+    - 总体技术路线（起点/关键环节/研究内容落位/依赖关系/目标闭合）
+    - 分项技术路线（每项研究内容一条，含输入/方法与关键步骤/输出/验证口径/衔接）
   innovation_must_be:
     - 可理解（评审能看懂）
     - 可对照（相对坐标系）
@@ -51,6 +86,29 @@ quality_contract:
   yearly_plan_must_include:
     - 三年分年任务（不跨年）
     - 里程碑与可交付成果（每年都有）
+
+# 技术路线的"总—分"结构约束（详见 references/technical_route_structure.md）
+technical_route:
+  structure: 总分            # 先总体路线，再分项路线；两层缺一不可
+  require_overview: true     # 必须有总体技术路线
+  require_per_content: true  # 必须有分项技术路线
+  # 分路线条数必须等于研究内容项数：不允许缺口（有内容无路线）或孤儿（有路线无内容）
+  count_must_match_research_content: true
+  order_must_match_research_content: true
+  sub_route_required_elements:
+    - 输入
+    - 方法与关键步骤
+    - 输出
+    - 验证口径
+    - 衔接
+  overview_required_elements:
+    - 起点输入
+    - 关键环节主链
+    - 各研究内容在主链上的落位
+    - 环节间依赖关系（串行/并行）
+    - 跑通后如何达成总目标
+  # 中文序号（研究内容一/技术路线一）属正文正常表述，不在内部编号净化范围内
+  chinese_ordinals_are_body_text: true
 
 # scripts/check_project_outputs.py 的轻量自检参数（可选覆盖默认值）
 checks:
