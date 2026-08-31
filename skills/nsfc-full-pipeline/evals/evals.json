@@ -102,6 +102,30 @@
       "prompt": "在 projects/NSFC_Local 上跑完文献这步，帮我把立项依据的项目范围沉淀进 AGENTS.md。",
       "expected_output": "research-guide-updater 必须写入 projects/NSFC_Local/AGENTS.md，即标书项目自己的指南文件；严禁写入仓库根目录的 AGENTS.md，后者是整个仓库的开发指令与单一真相来源，被研究范围内容覆盖会破坏项目管理。断点文件中 project.guide_file 相对 proposal_path 解析。",
       "files": []
+    },
+    {
+      "id": 18,
+      "prompt": "在 projects/NSFC_General_Clean 上写研究基础，但我还没提供国基项目的批准号和经费额度。",
+      "expected_output": "默认 fill_policy=draft_first，缺事实不得停下。应把研究基础的论证句子写完整，只把批准号与经费额度挖空为 \\textbf{【待补 ID：说明】}，ID 取自事实库（F-GEN-* 或项目专属编号），并把 ID 记入断点文件该阶段的 gaps 列表、状态置为 drafted_with_gaps。严禁编造一个看起来像真的批准号或金额。同时创建/更新 docs/研究基础信息补充问卷.md，按 ID 一次性集中问完，而不是写两段停一次。",
+      "files": []
+    },
+    {
+      "id": 19,
+      "prompt": "标书写完了，帮我看看能不能提交。",
+      "expected_output": "只要正文中仍存在【待补 …】标记，就不得表述为定稿或可提交，必须显式列出剩余待补事实 ID 及其阻塞章节。【暂定 …】不阻塞提交，但要单列请用户确认。可用 skills/nsfc-full-pipeline/scripts/scan_gaps.py 生成 ID 到位置的反向索引，不得手工维护该清单。",
+      "files": []
+    },
+    {
+      "id": 20,
+      "prompt": "我补充了 F-GEN-03 的批准号，接着改。",
+      "expected_output": "走回填回路而不是从下一个未完成阶段继续：重读共用申请人文件与项目事实库，确认 F-GEN-03 状态已转为已确认或明确暂无；定位正文中该 ID 的全部出现位置；只改这几句，不重写整节；按实际改动重跑下游检查（引用/BibTeX 变化跑 nsfc-ref-alignment，第一部分变化跑 nsfc-length-aligner，实质文本变化跑 nsfc-qc）；从 gaps 中移除该 ID，gaps 清空后阶段才可转 completed。若确认为明确暂无，占位应替换为真实的否定表述（如「无相关情况。」），不得替换为另一个占位。",
+      "files": []
+    },
+    {
+      "id": 21,
+      "prompt": "第一部分现在偏短，帮我压缩到预算内。",
+      "expected_output": "正文中还有【待补 …】时，篇幅结论只能报为暂定并显式说明：挖空稿偏短，补齐真实项目、论文与平台信息后通常多占 1-2 页，此时下「还有余量」的判断会在补齐后反转。严禁通过删除【待补 …】或【暂定 …】标记来减少字数——那会让待补事实静默消失并进入投稿稿。nsfc-humanization 与 nsfc-length-aligner 都必须逐字保护这两类标记。",
+      "files": []
     }
   ]
 }

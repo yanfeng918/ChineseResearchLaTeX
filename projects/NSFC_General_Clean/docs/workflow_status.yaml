@@ -36,25 +36,29 @@ not_applicable: []
 
 run:
   current_mode: fresh
+  # draft_first：缺事实时按事实 ID 挖空占位并继续写作，补齐后定点回填（默认）
+  # blocking  ：缺事实时停下等补充（旧行为，需要时才改）
+  fill_policy: draft_first
   last_started:
   last_finished:
   last_summary:
   next_stage: "00_layout_resolution"
 
-# status: pending | in_progress | completed | skipped | need_user_input | failed
+# status: pending | in_progress | completed | drafted_with_gaps | skipped | need_user_input | failed
+# gaps: 该阶段正文中仍以【待补 ID】形式挖空的事实 ID；清空后阶段才可转 completed
 stages:
-  "00_layout_resolution": { name: "布局与项目类型解析", status: pending, blockers: [] }
-  "01_topic_extraction":  { name: "选题与研究主题",     status: pending, blockers: [] }
-  "02_literature_review": { name: "文献调研",           status: pending, blockers: [] }
-  "03_scientific_questions": { name: "科学问题与创新点", status: pending, blockers: [] }
-  "04_research_plan":     { name: "研究方案与技术路线", status: pending, blockers: [] }
-  "05_part_one_writing":  { name: "第一部分正文",       status: pending, blockers: [] }
-  "06_research_foundation": { name: "研究基础与工作条件", status: pending, blockers: [] }
-  "07_other_statements":  { name: "其他说明",           status: pending, blockers: [] }
-  "08_reference_alignment": { name: "引用一致性核查",   status: pending, blockers: [] }
-  "09_length_control":    { name: "篇幅对齐",           status: pending, blockers: [] }
-  "10_humanization":      { name: "去 AI 味润色",       status: pending, blockers: [] }
-  "11_qc":                { name: "质量控制",           status: pending, blockers: [] }
-  "12_simulated_review":  { name: "模拟专家评审",       status: pending, blockers: [] }
-  "13_targeted_repair":   { name: "P0/P1 定点修复",     status: pending, blockers: [] }
-  "14_compile":           { name: "编译",               status: pending, blockers: [] }
+  "00_layout_resolution": { name: "布局与项目类型解析", status: pending, blockers: [], gaps: [] }
+  "01_topic_extraction":  { name: "选题与研究主题",     status: pending, blockers: [], gaps: [] }
+  "02_literature_review": { name: "文献调研",           status: pending, blockers: [], gaps: [] }
+  "03_scientific_questions": { name: "科学问题与创新点", status: pending, blockers: [], gaps: [] }
+  "04_research_plan":     { name: "研究方案与技术路线", status: pending, blockers: [], gaps: [] }
+  "05_part_one_writing":  { name: "第一部分正文",       status: pending, blockers: [], gaps: [] }
+  "06_research_foundation": { name: "研究基础与工作条件", status: pending, blockers: [], gaps: [] }
+  "07_other_statements":  { name: "其他说明",           status: pending, blockers: [], gaps: [] }
+  "08_reference_alignment": { name: "引用一致性核查",   status: pending, blockers: [], gaps: [] }
+  "09_length_control":    { name: "篇幅对齐",           status: pending, blockers: [], gaps: [] }
+  "10_humanization":      { name: "去 AI 味润色",       status: pending, blockers: [], gaps: [] }
+  "11_qc":                { name: "质量控制",           status: pending, blockers: [], gaps: [] }
+  "12_simulated_review":  { name: "模拟专家评审",       status: pending, blockers: [], gaps: [] }
+  "13_targeted_repair":   { name: "P0/P1 定点修复",     status: pending, blockers: [], gaps: [] }
+  "14_compile":           { name: "编译",               status: pending, blockers: [], gaps: [] }

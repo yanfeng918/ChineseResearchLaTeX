@@ -36,12 +36,70 @@ Out of scope: provincial and local science-fund templates such as `GDNSF_General
 - Work in checkpoint/resume mode. Never restart from the beginning when previous outputs already exist.
 - Read before writing. Inspect existing files, checkpoints, and generated artifacts before deciding the next stage.
 - Do not fabricate papers, projects, data, awards, platforms, team achievements, prior experiments, funding information, or personal declarations.
-- If required real information is missing, create a questionnaire in `docs/` and mark the stage as `need_user_input`.
+- When required real information is missing, default to drafting around the hole instead of halting. Follow the Gap Policy below: leave a traceable `【待补 ID：说明】` marker, record the gap in the checkpoint, and keep writing. Halt only for the hard blockers listed there.
 - Prefer incremental updates over wholesale rewriting unless the user explicitly requests full regeneration.
 - Keep the project aligned with `AGENTS.md`; do not drift from the stable research scope.
 - Only modify proposal content files, docs, references, review reports, workflow status, and generated artifacts unless the user explicitly authorizes template changes.
 - Do not modify `extraTex/@config.tex` or layout/template files unless the user explicitly requests template changes.
 - After QC or simulated review, do not stop at advice when the user asks to continue, repair, fix, or automatically modify. Convert actionable findings into concrete edits, apply them, and rerun the relevant checks.
+
+## Gap Policy (Draft-First)
+
+Missing facts are the normal state of a proposal in progress, not a failure. The default is `draft_first`: keep writing and leave a traceable hole. Halting is reserved for cases where drafting would be meaningless or dishonest.
+
+`run.fill_policy` in the checkpoint selects the mode. `draft_first` is the default. `blocking` restores the older halt-on-missing-fact behavior and should be set only when the user asks for it.
+
+### Two kinds of missing information
+
+| Kind | Examples | Handling |
+|---|---|---|
+| **Assumable** | 年度计划的月份切分, 预期成果数量口径, 实验规模, 指标阈值, baseline 选择 | Write a reasonable draft value and mark it `【暂定 …】`. The prose stays complete. |
+| **Hard fact** | 项目批准号, 经费额度, 已发表论文, 获奖, 平台型号与保障年限, 团队成员, 国基完成情况, 各类声明 | Write the sentence complete and hollow out only the fact itself as `【待补 ID：说明】`. Never invent a plausible-looking value. |
+
+The second row is an NSFC integrity red line. `draft_first` changes *when the pipeline stops*, never *whether it may fabricate*.
+
+### Marker format
+
+```latex
+申请人主持国家自然科学基金青年科学基金项目\textbf{【待补 F-GEN-03：批准号与起止年份】}，围绕……开展了工作。
+```
+
+- Use plain `\textbf{}`. Do not introduce a new macro: the marker must compile on Overleaf, inside a standalone project zip, and against any installed `bensz-nsfc` version.
+- `ID` reuses an existing fact ID from the fact base — `F-GEN-*` in the shared applicant file, project-specific IDs in `docs/00_项目事实库.md`. Do not create a third gap list. If the gap is not yet in the fact base, add the row there first, then cite its ID.
+- The hollowed-out span must be a **noun phrase, not a whole paragraph**. A paragraph consisting only of a marker is not drafted work; it is a halt wearing a costume.
+- `【暂定 …】` needs no ID and does not block submission, but it must appear in the final deliverable checklist for user confirmation.
+
+### What blocks and what does not
+
+Decide by the role stage 00 already assigned. Do not re-derive this fact by fact.
+
+| Stage / role | Missing information → | Why |
+|---|---|---|
+| `00_layout_resolution` | **halt** | Without a resolved target file there is nowhere to write. |
+| `01_topic_extraction` | **halt** when topic, field, or research object is unknown | Everything downstream would be invented. |
+| `02`–`04` literature, questions, plan | continue | Built from public literature, not personal facts. |
+| `part_one` (立项依据 / 研究内容 / 方案及可行性 / 特色与创新 / 研究计划) | continue; hollow out any personal fact | Argument chapters. They should almost never be blocked by CV-type facts; blocking them was the original design error. |
+| `foundation` (研究基础 / 工作条件 / 承担项目 / 完成国基项目) | hollow out and continue | Evidence lists. Sentence scaffolding can be built before the numbers arrive. |
+| `statements` (各类声明) | hollow out and continue | Fill-in-the-blank sections by nature. |
+| `08`–`12` checks and review | continue, but mark verdicts provisional | See the length caveat below. |
+| `14_compile` | continue; report the gap count | A draft PDF with visible holes beats no PDF. |
+| Declaring 定稿 / 可提交 | **halt while any `【待补 …】` remains** | This is where the block moved to. |
+
+### Length verdicts are provisional while gaps remain
+
+Hollowed-out text is shorter and cites fewer references than finished text. Until gaps are closed, do not report a length conclusion as final and do not tell the user Part One has spare capacity. Filling in real projects, publications, and platform details typically adds one to two pages. State length findings as provisional and re-check after the fill-back loop, or the run degenerates into compress → fill → overflow → compress again.
+
+### Fill-back loop
+
+When the user says `我补充了 F-…`, `补充完了`, `信息补齐了`, or edits the fact base and asks to continue:
+
+1. Re-read the shared applicant file and `docs/00_项目事实库.md`. Identify IDs whose status moved to `已确认` or `明确暂无`.
+2. Locate every occurrence of those IDs in `extraTex/*.tex`. Use `scripts/scan_gaps.py` for the ID-to-location index; do not maintain it by hand.
+3. Edit only those sentences. Do not rewrite the surrounding section.
+4. Rerun downstream checks by what actually changed: citations or BibTeX → `nsfc-ref-alignment`; Part One → `nsfc-length-aligner`; substantive text → `nsfc-qc`.
+5. Remove closed IDs from the stage's `gaps` list. A stage becomes `completed` only when its `gaps` list is empty.
+
+An ID confirmed as `明确暂无` is closed too: replace the marker with truthful negative wording such as `无相关情况。`, not with another placeholder.
 
 ## CS/AI/Agent/Time-Series Proposal Defaults
 
@@ -78,7 +136,7 @@ The default repair loop is:
    - `needs_user_fact`: requires real personal, project, funding, platform, award, team, prior-result, or unpublished experimental information not present locally.
    - `defer_or_reject`: low-value P2/P3 suggestion, reviewer preference that conflicts with project scope, or change that would introduce unverifiable claims.
 4. Apply `auto_fix` items directly with minimal scoped edits. Update `extraTex/*.tex`, `references/myexample.bib`, `docs/*.md`, and `review/*.md` only as needed.
-5. For `needs_user_fact` items, create or update a concise questionnaire in `docs/`, keep the proposal truthful, and mark the stage `need_user_input` only if the missing facts block a P0/P1 issue.
+5. For `needs_user_fact` items under `draft_first`, apply everything the finding asks for except the fact itself: restructure the sentence, add the missing argument, and hollow out only the unknown value as `【待补 ID：说明】`. Record the ID in the stage's `gaps` and in the questionnaire. Do not mark the stage `need_user_input`; that is reserved for `blocking` mode.
 6. Record every applied, deferred, and blocked item in `review/P0P1定点修复报告.md`.
 7. Rerun checks based on touched files:
    - If citations or BibTeX changed, rerun `nsfc-ref-alignment`.
@@ -173,14 +231,19 @@ project:
 
 run:
   current_mode: resume
+  fill_policy: draft_first     # draft_first | blocking, see Gap Policy
   last_started:
   last_finished:
   last_summary:
   next_stage:
 
 # Every stage uses the same field set:
-#   name, status, inputs, outputs, last_updated, notes, blockers
-# status: pending | in_progress | completed | skipped | need_user_input | failed
+#   name, status, inputs, outputs, last_updated, notes, blockers, gaps
+# status: pending | in_progress | completed | drafted_with_gaps | skipped | need_user_input | failed
+# `gaps` holds fact IDs still hollowed out in this stage's output files.
+# `drafted_with_gaps` means written and not to be re-run, but not yet closeable;
+# it becomes `completed` only when `gaps` is empty. `blockers` remains reserved
+# for hard halts, which `draft_first` limits to stages 00 and 01.
 # In stages 05-07, `@part_one` / `@foundation` / `@statements` expand to the
 # corresponding project.body_files entry. Never write literal filenames here
 # before stage 00 has resolved the layout.
@@ -242,6 +305,7 @@ stages:
     last_updated:
     notes:
     blockers:
+    gaps: []
 
   "06_research_foundation":
     name: "Research Foundation and Work Conditions"
@@ -251,6 +315,7 @@ stages:
     last_updated:
     notes:
     blockers:
+    gaps: []
 
   "07_other_statements":
     name: "Other Statements"
@@ -260,6 +325,7 @@ stages:
     last_updated:
     notes:
     blockers:
+    gaps: []
 
   "08_reference_alignment":
     name: "Reference Alignment"
@@ -454,13 +520,11 @@ Outputs:
 
 Read the current content of those files before writing, but do not treat their existence as evidence that this stage is done. Template files ship pre-populated with `\NSFCBlankPara` placeholders.
 
-If real project numbers, funding amounts, publications, awards, platforms, team member roles, prior results, or completion status are missing, stop this stage and create:
+Under `draft_first`, missing project numbers, funding amounts, publications, awards, platforms, team member roles, prior results, or completion status do **not** stop this stage. Write the evidence sentences complete, hollow out each missing fact as `【待补 ID：说明】`, record the IDs in the stage's `gaps` list, and set the status to `drafted_with_gaps`. Also create or update `docs/研究基础信息补充问卷.md` so the user has one place to fill everything in, and ensure each hollowed ID exists as a row in the fact base.
 
-- `docs/研究基础信息补充问卷.md`
+Under `blocking`, stop instead and mark the stage `need_user_input`.
 
-Mark the stage as `need_user_input`.
-
-When writing the 承担项目 file, do not leave internal placeholders such as `待填写`, `现有材料未列`, `--`, or `项目编号未知` in the final text. If a project genuinely has no NSFC-style approval number, state the formal reason based on user-provided facts.
+Never substitute an invented number for a real one in either mode. Do not leave untraceable draft markers such as `待填写`, `现有材料未列`, `--`, or `项目编号未知`: every hole must carry a fact ID so the fill-back loop can find it. If a project genuinely has no NSFC-style approval number, state the formal reason based on user-provided facts rather than leaving a marker.
 
 ### 7. Other Statements
 
@@ -468,7 +532,7 @@ Check every file listed under `project.body_files.statements`. The count and num
 
 If the project has an active 生成式人工智能 declaration file, treat it as mandatory for this stage and fill it from the user's actual AIGC usage during drafting. If that section exists on disk but is commented out in `main.tex`, do not write to it; instead note in `docs/其他说明检查报告.md` that the declaration is disabled, so the user can decide whether to enable it before submission.
 
-Do not fabricate declarations. If the true situation is unknown, create `docs/其他说明信息补充问卷.md` and mark this stage as `need_user_input`.
+Do not fabricate declarations. Under `draft_first`, an unknown situation is hollowed out as `【待补 ID：说明】` and recorded in `gaps`, not halted on; also create `docs/其他说明信息补充问卷.md` so the user can settle all declarations in one pass. Under `blocking`, stop and mark the stage `need_user_input`.
 
 If the user confirms no relevant situation exists, use formal wording such as `无相关情况。` rather than draft-like placeholders.
 
@@ -499,7 +563,9 @@ Focus:
 - full proposal under the project page budget.
 - when Part One is overlong, compress the 立项依据 file and the 方案及可行性 file first, referring to them by role rather than by number.
 
-Do not remove scientific questions, falsification paths, or required NSFC headings merely to shorten text.
+Do not remove scientific questions, falsification paths, or required NSFC headings merely to shorten text. Never close a length gap by deleting a `【待补 …】` marker.
+
+While any stage still carries entries in `gaps`, report the length verdict as provisional and say so explicitly. Hollowed-out text under-counts, so a "still has room" conclusion drawn now will reverse once the facts land.
 
 ### 10. Humanization
 
@@ -570,7 +636,7 @@ Repair only P0/P1 issues unless the user asks for deeper polishing. Typical auto
 - weak research foundation bridge when existing local evidence can support it
 - overly broad innovation claims that can be narrowed without changing the project truth
 
-Do not auto-fill real project numbers, funding amounts, unpublished results, awards, personnel declarations, or prior-experiment metrics. If these are needed, create or update the relevant questionnaire in `docs/`, mark the item `needs_user_fact`, and leave a truthful non-fabricated text state.
+Do not auto-fill real project numbers, funding amounts, unpublished results, awards, personnel declarations, or prior-experiment metrics. If these are needed, hollow them out per the Gap Policy, update the relevant questionnaire in `docs/`, and mark the item `needs_user_fact`. The surrounding repair still gets applied; only the fact stays open.
 
 After repairs, rerun all relevant downstream checks:
 
@@ -585,6 +651,8 @@ Update `docs/workflow_status.yaml` after each repair loop. If the rerun reports 
 ### 14. Compile
 
 Compile only after P0 issues are resolved, or when the user explicitly asks to compile despite known issues.
+
+Open `gaps` do not block compilation. A draft PDF with visible holes is more useful than no PDF. But the compile report must state how many `【待补 …】` and `【暂定 …】` markers the PDF contains, and the run summary must not call the result 定稿 or 可提交 while any `【待补 …】` remains.
 
 Preferred command, run from the repository root:
 
@@ -626,6 +694,7 @@ At the end of a successful run, provide:
 - simulated review report
 - remaining human verification checklist
 - workflow status summary
+- the open-gap list: every `【待补 ID】` still in the body, grouped by fact ID with its blocking section, plus every `【暂定 …】` awaiting user confirmation. Say plainly whether the draft is submittable; it is not while any `【待补 …】` remains.
 
 ## Resume Behavior
 
@@ -633,17 +702,22 @@ When the user says `继续`, `resume`, `接着写`, `继续全流程`, or simila
 
 1. Read `docs/workflow_status.yaml`.
 2. Re-run stage 00 if `project.body_files` is empty, if `project.grant_type` or `project.length_budget` is empty, or if `main.tex` changed since `last_updated`.
-3. Verify whether declared outputs are actually present **and populated**. For `extraTex/*.tex` outputs, existence is not evidence of completion: template files ship with `\NSFCBlankPara` placeholders already in place. Treat a stage as incomplete when its output files still consist only of placeholders, questionnaire stubs, or draft markers such as `待填写`.
-4. Continue from the earliest stage with status other than `completed` or `skipped`.
-5. If all stages are completed, run a final QC/review summary rather than regenerating content.
+3. Verify whether declared outputs are actually present **and populated**. For `extraTex/*.tex` outputs, existence is not evidence of completion: template files ship with `\NSFCBlankPara` placeholders already in place. Treat a stage as incomplete when its output files still consist only of placeholders, questionnaire stubs, or draft markers such as `待填写`. A file containing real prose plus `【待补 …】` markers is drafted, not empty; do not rewrite it from scratch.
+4. Continue from the earliest stage with status other than `completed`, `skipped`, or `drafted_with_gaps`. A `drafted_with_gaps` stage is not re-run; it waits for the fill-back loop.
+5. If every stage is `completed` or `drafted_with_gaps`, do not regenerate content. Run a final QC/review summary and report the open gaps.
+
+When the user's resume message says the facts have been supplied, run the fill-back loop in the Gap Policy instead of continuing at the next unfinished stage.
 
 ## Stop Conditions
 
-Stop and ask for user input when:
+Under `draft_first`, missing facts are not a stop condition — they are hollowed out and recorded. Stop and ask for user input only when:
 
-- a stage requires real personal, funding, project, team, award, platform, or data information that is not present locally.
+- stage 00 cannot resolve the layout, the role map, or the grant type.
+- stage 01 cannot establish the topic, field, or research object.
 - a required file is missing and cannot be safely recreated.
-- QC or review identifies a P0 issue that cannot be fixed without user-confirmed facts.
-- the user requests a decision that affects truthfulness, compliance, or personal declaration.
+- the user requests a decision that affects truthfulness, compliance, or personal declaration, and no truthful hollowed-out wording exists.
+- `run.fill_policy` is `blocking` and a stage lacks facts it needs.
 
-When stopping, create a concise questionnaire in `docs/` and mark the relevant stage `need_user_input`.
+A P0 finding that needs user-confirmed facts is not a stop: hollow it out, log the ID, and continue with the rest of the repair loop.
+
+When stopping, create a concise questionnaire in `docs/` and mark the relevant stage `need_user_input`. When continuing with holes instead, still create or update the questionnaire, but mark the stage `drafted_with_gaps` and list the IDs in `gaps`.

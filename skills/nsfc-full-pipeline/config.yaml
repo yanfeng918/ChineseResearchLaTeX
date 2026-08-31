@@ -3,8 +3,8 @@
 
 skill_info:
   name: nsfc-full-pipeline
-  version: 0.2.0
-  description: "NSFC 标书全流程编排器，覆盖面上、青年、地区科学基金项目：按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 docs/workflow_status.yaml 为断点实现续跑，缺真实信息时生成问卷并阻塞（不适用：单章节写作、已有独立 skill 覆盖的单点任务、省级/地方科学基金项目）"
+  version: 0.3.0
+  description: "NSFC 标书全流程编排器，覆盖面上、青年、地区科学基金项目：按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 docs/workflow_status.yaml 为断点实现续跑，默认 draft-first——缺事实时按事实 ID 挖空占位并继续写作，补齐后按 ID 定点回填，仅在落点/项目类型/选题无法解析时阻塞（不适用：单章节写作、已有独立 skill 覆盖的单点任务、省级/地方科学基金项目）"
   author: "Bensz Conan"
   category: writing
 
@@ -55,17 +55,71 @@ grant_type:
     NSFC_General: "全文 ≤30 页（无第一部分字数上限）"
     NSFC_Young: "全文 ≤30 页（无第一部分字数上限）"
 
+# === 缺口策略（draft-first）===
+# 缺事实是写作过程的常态，不是失败。默认挖空继续写，只在真正写不下去时阻塞。
+# 注意：本策略只改变"何时停"，绝不改变"是否可以编造"。
+gap_policy:
+  default_fill_policy: draft_first    # draft_first | blocking
+  checkpoint_field: run.fill_policy
+
+  # 两类缺口：可推定的给草稿值，硬事实只挖空不猜
+  kinds:
+    assumable:
+      marker: "【暂定 …】"
+      requires_id: false
+      blocks_submission: false
+      examples: [年度计划月份切分, 预期成果数量口径, 实验规模, 指标阈值, baseline 选择]
+    hard_fact:
+      marker: "【待补 ID：说明】"
+      requires_id: true               # ID 必须已存在于事实库，不另立第三份清单
+      blocks_submission: true
+      examples: [项目批准号, 经费额度, 已发表论文, 获奖, 平台型号与保障年限, 团队成员, 国基完成情况, 各类声明]
+
+  marker_format:
+    latex: "\\textbf{【待补 F-GEN-03：批准号与起止年份】}"
+    # 不新增宏：必须能在 Overleaf、独立项目 zip 与任意已装 bensz-nsfc 版本下编译
+    forbid_new_macro: true
+    grep_patterns: ["【待补 ", "【暂定 "]
+    # 挖空的必须是名词短语；整段只有一个占位 = 这段其实没写
+    must_be_noun_phrase: true
+  id_sources:
+    - "docs/applicants/<slug>.md"      # F-GEN-*
+    - "docs/00_项目事实库.md"           # 项目专属 ID
+
+  # 分情况：按 stage 00 已解析出的角色判定，不逐条事实重新推导
+  halt_on_missing:
+    "00_layout_resolution": true       # 落点/项目类型解析不出来，无处可写
+    "01_topic_extraction": true        # 选题未知则全篇皆为编造
+    part_one: false                    # 论证章节，不应被履历型事实阻塞
+    foundation: false                  # 证据罗列，句子骨架可先搭
+    statements: false                  # 本身就是填空题
+    checks_and_review: false           # 结论标注为暂定
+    "14_compile": false                # 带缺口可编译，报告须写明数量
+    declare_final: true                # 有待补即不得声称定稿/可提交
+
+  # 缺口未清空前，篇幅结论一律暂定：挖空稿偏短，补完常多占 1-2 页
+  length_verdict_provisional_while_gaps: true
+
+  fillback_triggers: [我补充了, 补充完了, 信息补齐了, 补齐了, 填好了]
+  scan_script: skills/nsfc-full-pipeline/scripts/scan_gaps.py
+
 # === 断点与续跑 ===
 checkpoint:
   file: docs/workflow_status.yaml
   # 阶段完成判定不能只看输出文件是否存在：
   # 模板自带 \NSFCBlankPara 占位，文件存在不等于已写作
   completion_requires_non_placeholder: true
+  # 出厂占位/无锚点草稿标记：出现即视为该阶段未写作
   placeholder_markers:
     - "\\NSFCBlankPara"
     - "待填写"
     - "现有材料未列"
     - "项目编号未知"
+  # 带 ID 的缺口标记不同于上面：正文已写、只是事实待补，不判定为未写作
+  gap_markers_are_drafted: true
+  statuses: [pending, in_progress, completed, drafted_with_gaps, skipped, need_user_input, failed]
+  # drafted_with_gaps 续跑时不重跑；gaps 清空后才可转 completed
+  completed_requires_empty_gaps: true
 
 # === 参考文献充分性闸门（stage 05 前置）===
 reference_gate:
