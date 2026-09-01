@@ -3,6 +3,8 @@
 本 README 面向**使用者**：如何触发并正确使用 `nsfc-qc` skill。  
 执行规范与硬性约束见 `SKILL.md`；默认参数见 `config.yaml`。
 
+**版本**：1.2.2（以 [`config.yaml`](config.yaml) 为准）
+
 ## 你会得到什么
 
 对 NSFC 标书做**只读质量控制（QC）**，输出一份可审核、可追溯的**标准化 QC 报告**（P0/P1/P2 分级）：

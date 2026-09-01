@@ -2,6 +2,14 @@
 
 本文档记录 `nsfc-qc/` 的重要变更。格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。
 
+## [1.2.2] - 2026-09-01
+
+### Fixed（修复）
+
+- 补齐 draft-first 缺口护栏的版本发布：合法 `【待补 ID：说明】` / `【暂定 …】` 单列统计，不误判为未写作 P0；真正的 `\NSFCBlankPara` / `待填写` 仍按 P0 处理。
+- 报告必须给出剩余硬事实 ID 与可提交判定；有 `【待补 …】` 时不得声称可提交。
+- 清理 `SKILL.md` frontmatter 中宿主不支持的顶层 `author`、`config`、`references` 键；作者信息继续保留在合法 `metadata` 中。
+
 ## [Unreleased]
 
 ### Added（新增）

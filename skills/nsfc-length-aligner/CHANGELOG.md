@@ -4,6 +4,13 @@ All notable changes to this skill will be documented in this file.
 
 The format is based on Keep a Changelog, and this skill adheres to Semantic Versioning.
 
+## [0.3.2] - 2026-09-01
+
+### Fixed
+
+- 补齐 draft-first 缺口保护行为的版本发布：篇幅调整须逐字保留 `【待补 ID：说明】` 与 `【暂定 …】`，不得通过删除、合并或移位让事实缺口静默消失。
+- 正文仍有硬事实缺口时，篇幅结论必须标为暂定并提示回填后的页数反转风险。
+
 ## [Unreleased]
 
 ### Added

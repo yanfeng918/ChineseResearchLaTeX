@@ -2,6 +2,8 @@
 
 本 README 面向使用者：如何触发 `nsfc-humanization`。执行规范见 [`SKILL.md`](SKILL.md)，默认策略见 [`config.yaml`](config.yaml)。
 
+**版本**：1.2.1（以 [`config.yaml`](config.yaml) 为准）
+
 ## 快速开始
 
 最小 Prompt：
@@ -86,4 +88,4 @@
 
 ## 版本
 
-1.2.0 — 详见 [`CHANGELOG.md`](CHANGELOG.md)。
+1.2.1 — 详见 [`CHANGELOG.md`](CHANGELOG.md)。

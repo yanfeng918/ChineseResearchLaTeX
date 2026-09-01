@@ -1,6 +1,6 @@
 skill_info:
   name: nsfc-humanization
-  version: 1.2.0
+  version: 1.2.1
   description: "去除 NSFC 标书中的 AI 机器味，覆盖词语、句法、段落和章节层，并保护 LaTeX、数字、代码状态与安全不变量（不适用：非标书内容/需修改格式/需补充新内容）"
   category: writing
 
