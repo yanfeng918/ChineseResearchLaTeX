@@ -1,723 +1,168 @@
 ---
 name: nsfc-full-pipeline
-description: 当用户明确要求"跑 NSFC 标书全流程""从头写完整标书""继续/续跑标书写作流程""按 QC 或模拟评审结果自动修改标书"时使用。适用于 ChineseResearchLaTeX 仓库内的国家自然科学基金面上、青年、地区科学基金项目（`NSFC_*` 系列模板），按 00-14 阶段串联选题、文献调研、科学问题、研究方案、正文写作、引用核查、篇幅对齐、去 AI 味、QC、模拟评审、P0/P1 定点修复与编译；以 `docs/workflow_status.yaml` 为断点实现续跑，缺真实信息时生成问卷并阻塞。⚠️ 不适用：只写某一个章节（应使用对应 `nsfc-*-writer`）、只做一次只读体检（应使用 `nsfc-qc`）、省级或地方科学基金项目（如 `GDNSF_*`、`GXNSF_*`，章节体例不同，本编排器不覆盖）。
+description: 当用户明确要求“跑 NSFC 标书全流程”“从头写完整标书”“继续/续跑标书写作流程”或“按 QC/模拟评审结果自动修改标书”时使用。适用于 ChineseResearchLaTeX 仓库内的国家自然科学基金面上、青年、地区项目，按 00–14 共 15 个阶段编排正文写作、检查、评审、定点修复与编译；使用可迁移断点实现可靠续跑，默认 draft-first：缺硬事实时以事实 ID 挖空并继续，仅在布局、项目类型或选题无法确定时阻塞。⚠️ 不适用：单章节写作、一次性只读质检、省级或地方科学基金项目。
 metadata:
   author: Bensz Conan
-  short-description: NSFC 标书全流程编排（14 阶段 + 断点续跑 + 评审后自动修复）
+  short-description: NSFC 正文 15 阶段编排、draft-first 与可靠断点续跑
   keywords:
     - nsfc-full-pipeline
     - NSFC 标书全流程
-    - 标书续跑
-    - 评审后自动修复
+    - draft-first
+    - 断点续跑
 ---
 
-# NSFC Full Pipeline
+# NSFC 标书全流程
 
-## Workspace Convention
+## 目标与边界
 
-This skill deliberately writes to the proposal project itself rather than to a `.bensz-api/` task workspace. `docs/workflow_status.yaml` is the resume checkpoint, `docs/*.md` are stage records the user reads and edits, and `review/*.md` are deliverable reports. Under `skills/WORKSPACE.md` these count as formal deliverables, which are excluded from the task workspace.
+本技能编排 ChineseResearchLaTeX 中 NSFC 面上、青年和地区项目的正文流程。它覆盖选题、文献、科学问题、研究方案、正文、引用、篇幅、去 AI 味、QC、模拟评审、P0/P1 修复与编译。
 
-Scratch artifacts that are not deliverables — retrieval caches, intermediate JSON, command logs — still follow the standard convention and go to `./.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/nsfc-full-pipeline/input|output|log/`. Sub-skills invoked by this pipeline keep their own workspace behavior; share one task root across the run rather than creating one per sub-skill.
+“全流程”指 `main.tex` 引用的正文链路，不自动生成摘要、申请代码、预算说明、声明附件或配图。最终必须分别报告：
 
-## Purpose
+- `body_pipeline_ready`：正文 15 阶段是否完成；
+- `submission_ready`：正文完成且摘要、申请代码、预算、声明和附件均已完成或明确不适用。
 
-This skill controls a recoverable full-process writing pipeline for NSFC proposals based on ChineseResearchLaTeX.
+不得把前者表述成“整份申请书可以提交”。
 
-It coordinates topic extraction, literature review, scientific question refinement, research plan design, proposal writing, research foundation writing, citation alignment, length control, humanization, QC, simulated review, targeted repair, and final compilation.
+正式交付写入项目自身的 `docs/`、`review/`、`extraTex/` 和 `main.pdf`。检索缓存、中间 JSON 与命令日志放入统一的 `.bensz-api/task-.../nsfc-full-pipeline/` 临时工作区。
 
-## Scope
+## 必须遵守的规则
 
-In scope: the NSFC proposal templates in this repository — 面上项目 (`NSFC_General`, `NSFC_General_Clean`), 青年科学基金 (`NSFC_Young`), and 地区科学基金 (`NSFC_Local`, `NSFC_Local_Clean`) — plus user projects derived from them.
+1. 先读项目级 `AGENTS.md`，不得用仓库根规则替代项目的篇幅与章节规则。
+2. `main.tex` 中未注释的 `\input` / `\include` 是正文文件唯一真相来源；不得编辑孤儿文件、注释态章节或 `extraTex/@config.tex`。
+3. 不改模板结构、公共样式、页眉、字体和章节标题；只修改项目正文、事实资料、过程文档与评审报告。
+4. 不编造批准号、经费、论文、奖项、设备、团队、前期结果或声明。draft-first 只改变何时停，不降低事实标准。
+5. 引用必须真实可核验；缺文献时继续检索或记录缺失主题，不得虚构 BibTeX。
+6. `\NSFCBlankPara`、`待填写` 等是未写作占位；`【待补 ID：说明】` 是已写但待回填的硬事实缺口，两者不得混淆。
+7. 所有阶段状态通过脚本原子更新，不凭文件存在或模型记忆宣告完成。
 
-Out of scope: provincial and local science-fund templates such as `GDNSF_General`, `GDNSF_Regional_Young`, and `GXNSF_General`. They use different chapter systems (`立论依据`, `研究工作基础`, `实验条件`, `项目组人员简介`, `预期研究结果`, `组织管理措施`, `其他附件清单`) that this pipeline's role model does not cover, and they follow different length and review conventions. When asked to run on one of them, say so explicitly and offer the single-purpose skills (`nsfc-justification-writer`, `nsfc-qc`, and so on) instead of halting silently in stage 00.
+## 首轮读取
 
-## Core Principles
+每次新跑或续跑都先读取：
 
-- Work in checkpoint/resume mode. Never restart from the beginning when previous outputs already exist.
-- Read before writing. Inspect existing files, checkpoints, and generated artifacts before deciding the next stage.
-- Do not fabricate papers, projects, data, awards, platforms, team achievements, prior experiments, funding information, or personal declarations.
-- When required real information is missing, default to drafting around the hole instead of halting. Follow the Gap Policy below: leave a traceable `【待补 ID：说明】` marker, record the gap in the checkpoint, and keep writing. Halt only for the hard blockers listed there.
-- Prefer incremental updates over wholesale rewriting unless the user explicitly requests full regeneration.
-- Keep the project aligned with `AGENTS.md`; do not drift from the stable research scope.
-- Only modify proposal content files, docs, references, review reports, workflow status, and generated artifacts unless the user explicitly authorizes template changes.
-- Do not modify `extraTex/@config.tex` or layout/template files unless the user explicitly requests template changes.
-- After QC or simulated review, do not stop at advice when the user asks to continue, repair, fix, or automatically modify. Convert actionable findings into concrete edits, apply them, and rerun the relevant checks.
+- 项目 `AGENTS.md`、`README.md`、`main.tex`；
+- `docs/workflow_status.yaml`（若存在）；
+- `docs/00_项目基本信息.md`、`docs/00_项目事实库.md`（若存在）；
+- 断点中声明的 `applicant_profile_file`；
+- `references/myexample.bib`；
+- `main.tex` 实际引用的正文文件；
+- 与当前阶段有关的已有 `docs/`、`review/` 产物。
 
-## Gap Policy (Draft-First)
+随后完整读取 [references/checkpoint-and-gap-policy.md](references/checkpoint-and-gap-policy.md)，并按当前阶段完整读取：
 
-Missing facts are the normal state of a proposal in progress, not a failure. The default is `draft_first`: keep writing and leave a traceable hole. Halting is reserved for cases where drafting would be meaningless or dishonest.
+- stage 00–07：[references/stages-00-07.md](references/stages-00-07.md)
+- stage 08–14：[references/stages-08-14.md](references/stages-08-14.md)
 
-`run.fill_policy` in the checkpoint selects the mode. `draft_first` is the default. `blocking` restores the older halt-on-missing-fact behavior and should be set only when the user asks for it.
+## 每次运行的固定入口
 
-### Two kinds of missing information
-
-| Kind | Examples | Handling |
-|---|---|---|
-| **Assumable** | 年度计划的月份切分, 预期成果数量口径, 实验规模, 指标阈值, baseline 选择 | Write a reasonable draft value and mark it `【暂定 …】`. The prose stays complete. |
-| **Hard fact** | 项目批准号, 经费额度, 已发表论文, 获奖, 平台型号与保障年限, 团队成员, 国基完成情况, 各类声明 | Write the sentence complete and hollow out only the fact itself as `【待补 ID：说明】`. Never invent a plausible-looking value. |
-
-The second row is an NSFC integrity red line. `draft_first` changes *when the pipeline stops*, never *whether it may fabricate*.
-
-### Marker format
-
-```latex
-申请人主持国家自然科学基金青年科学基金项目\textbf{【待补 F-GEN-03：批准号与起止年份】}，围绕……开展了工作。
-```
-
-- Use plain `\textbf{}`. Do not introduce a new macro: the marker must compile on Overleaf, inside a standalone project zip, and against any installed `bensz-nsfc` version.
-- `ID` reuses an existing fact ID from the fact base — `F-GEN-*` in the shared applicant file, project-specific IDs in `docs/00_项目事实库.md`. Do not create a third gap list. If the gap is not yet in the fact base, add the row there first, then cite its ID.
-- The hollowed-out span must be a **noun phrase, not a whole paragraph**. A paragraph consisting only of a marker is not drafted work; it is a halt wearing a costume.
-- `【暂定 …】` needs no ID and does not block submission, but it must appear in the final deliverable checklist for user confirmation.
-
-### What blocks and what does not
-
-Decide by the role stage 00 already assigned. Do not re-derive this fact by fact.
-
-| Stage / role | Missing information → | Why |
-|---|---|---|
-| `00_layout_resolution` | **halt** | Without a resolved target file there is nowhere to write. |
-| `01_topic_extraction` | **halt** when topic, field, or research object is unknown | Everything downstream would be invented. |
-| `02`–`04` literature, questions, plan | continue | Built from public literature, not personal facts. |
-| `part_one` (立项依据 / 研究内容 / 方案及可行性 / 特色与创新 / 研究计划) | continue; hollow out any personal fact | Argument chapters. They should almost never be blocked by CV-type facts; blocking them was the original design error. |
-| `foundation` (研究基础 / 工作条件 / 承担项目 / 完成国基项目) | hollow out and continue | Evidence lists. Sentence scaffolding can be built before the numbers arrive. |
-| `statements` (各类声明) | hollow out and continue | Fill-in-the-blank sections by nature. |
-| `08`–`12` checks and review | continue, but mark verdicts provisional | See the length caveat below. |
-| `14_compile` | continue; report the gap count | A draft PDF with visible holes beats no PDF. |
-| Declaring 定稿 / 可提交 | **halt while any `【待补 …】` remains** | This is where the block moved to. |
-
-### Length verdicts are provisional while gaps remain
-
-Hollowed-out text is shorter and cites fewer references than finished text. Until gaps are closed, do not report a length conclusion as final and do not tell the user Part One has spare capacity. Filling in real projects, publications, and platform details typically adds one to two pages. State length findings as provisional and re-check after the fill-back loop, or the run degenerates into compress → fill → overflow → compress again.
-
-### Fill-back loop
-
-When the user says `我补充了 F-…`, `补充完了`, `信息补齐了`, or edits the fact base and asks to continue:
-
-1. Re-read the shared applicant file and `docs/00_项目事实库.md`. Identify IDs whose status moved to `已确认` or `明确暂无`.
-2. Locate every occurrence of those IDs in `extraTex/*.tex`. Use `scripts/scan_gaps.py` for the ID-to-location index; do not maintain it by hand.
-3. Edit only those sentences. Do not rewrite the surrounding section.
-4. Rerun downstream checks by what actually changed: citations or BibTeX → `nsfc-ref-alignment`; Part One → `nsfc-length-aligner`; substantive text → `nsfc-qc`.
-5. Remove closed IDs from the stage's `gaps` list. A stage becomes `completed` only when its `gaps` list is empty.
-
-An ID confirmed as `明确暂无` is closed too: replace the marker with truthful negative wording such as `无相关情况。`, not with another placeholder.
-
-## CS/AI/Agent/Time-Series Proposal Defaults
-
-When `AGENTS.md`, `docs/00_项目基本信息.md`, or the user request indicates a computer science direction such as 人工智能, 多模态, 大模型, 智能体/Agent, 信息检索, 推荐, 生成式检索, 时间序列, 时空预测, 异常检测, or related machine learning topics, apply these additional defaults:
-
-- Treat the proposal as a computational-method NSFC application, not only a narrative writing task.
-- The research scheme text resolved in stage 00, whether a dedicated 方案及可行性 file or the scheme part of the 研究内容 file, must contain formal problem definition, notation, model/input-output mapping, objective or loss functions, and evaluation/constraint definitions. Aim for 4-8 meaningful formula blocks across representation learning, model optimization, inference/decoding, and evaluation. Each formula must be followed by a short variable explanation and a sentence linking it to an experiment or metric.
-- Avoid decorative math. Do not add formulas that merely restate text without supporting a trainable model, optimization objective, inference rule, evaluation metric, or falsification path.
-- For agent-oriented topics, include state/action/memory/tool-use or planning equations when appropriate.
-- For time-series topics, include temporal input window, forecasting/anomaly target, temporal dependency modeling, prediction loss, uncertainty or robustness metric when appropriate.
-- For retrieval/recommendation/multimodal topics, include query-item scoring, representation alignment, ranking/generation objective, constrained decoding, Recall@K/NDCG/MRR or constraint satisfaction definitions when appropriate.
-
-## Reference Sufficiency Gate
-
-Reference quantity and coverage are part of proposal quality, not a final formatting detail.
-
-- For CS/AI/Agent/Time-Series NSFC proposals, the proposal bibliography should normally contain 30-50 verifiable BibTeX entries, unless the user explicitly requests a shorter reference list. Do not leave a full proposal with fewer than 25 references after the literature stage.
-- Ensure coverage across: seminal foundations, recent 3-5 year advances, representative methods, datasets/benchmarks, evaluation metrics, domain applications, and known limitations or failure modes.
-- For fast-moving AI fields, prefer at least 60% of references from the last 5 years while retaining a small number of unavoidable seminal older works.
-- The 立项依据 file should normally cite 20-35 references, with citations close to the claims they support rather than piled at paragraph ends.
-- Before completing stage 05, check that `references/myexample.bib` has enough entries and that Part One cites a meaningful subset. If the bibliography is too thin, run additional literature review or create `docs/参考文献补充清单.md` with missing reference groups and mark the relevant stage as `need_user_input`.
-- Never invent references. Add or cite only entries that are verifiable from user-provided materials, project literature-review artifacts, official metadata, DOI/Crossref/OpenAlex/Semantic Scholar records, or other reliable bibliographic sources.
-
-## Review-Driven Auto-Repair Policy
-
-When the user says `得到评审后`, `根据评审修改`, `自动修改`, `继续修复`, `P0/P1修复`, `按模拟评审修改`, or similar, treat this as permission to edit proposal content files directly after reading the latest QC and simulated review outputs.
-
-The default repair loop is:
-
-1. Read the latest `review/质量控制报告.md`, `review/模拟专家评审_全稿.md`, `review/引用一致性审核报告.md`, `review/篇幅控制报告.md`, `review/最终核查摘要.md`, and `docs/workflow_status.yaml` if they exist.
-2. Extract findings into an explicit repair matrix with: source report, severity, issue, affected section/file, proposed edit, evidence basis, and status.
-3. Classify each finding:
-   - `auto_fix`: can be fixed from existing proposal text, verified references, local docs, or harmless structural/wording edits.
-   - `needs_user_fact`: requires real personal, project, funding, platform, award, team, prior-result, or unpublished experimental information not present locally.
-   - `defer_or_reject`: low-value P2/P3 suggestion, reviewer preference that conflicts with project scope, or change that would introduce unverifiable claims.
-4. Apply `auto_fix` items directly with minimal scoped edits. Update `extraTex/*.tex`, `references/myexample.bib`, `docs/*.md`, and `review/*.md` only as needed.
-5. For `needs_user_fact` items under `draft_first`, apply everything the finding asks for except the fact itself: restructure the sentence, add the missing argument, and hollow out only the unknown value as `【待补 ID：说明】`. Record the ID in the stage's `gaps` and in the questionnaire. Do not mark the stage `need_user_input`; that is reserved for `blocking` mode.
-6. Record every applied, deferred, and blocked item in `review/P0P1定点修复报告.md`.
-7. Rerun checks based on touched files:
-   - If citations or BibTeX changed, rerun `nsfc-ref-alignment`.
-   - If Part One changed, rerun length control.
-   - If substantive text changed, rerun QC and simulated review or a focused reviewer pass.
-   - If no P0 blocker remains, compile.
-8. Update `docs/workflow_status.yaml` with the repair summary, current stage, blockers, and next stage.
-
-Auto-repair should focus on P0/P1 first: missing citations, reference mismatch, overlong Part One, weak 立项依据 or research-scheme evidence chain, missing formulas for CS/AI proposals, unclear evaluation protocol, chapter inconsistency, unresolved placeholders, and review comments that can be addressed without inventing facts. P2/P3 polishing is optional and should be limited unless the user asks for a full refinement pass.
-
-## Required Initial Reads
-
-Before any writing or repair, read:
-
-- the project's own `AGENTS.md`, the one inside the proposal directory. Every `AGENTS.md` reference in this document means that file, never the repository-root `AGENTS.md`. The root file carries repo-wide development instructions and is the repository's single source of truth; the `research-guide-updater` calls in stages 01-03 write research scope into the guide file, so pointing them at the root file would corrupt it.
-- `README.md` or `README` if present
-- `main.tex`
-- `docs/00_项目基本信息.md` if present
-- `docs/workflow_status.yaml` if present
-- Existing `docs/` stage outputs
-- Existing `extraTex/*.tex`
-- `references/myexample.bib`
-- Existing `review/*.md` reports if present
-
-If `docs/workflow_status.yaml` does not exist, create it.
-
-## Stage 00: Proposal Layout and Grant Type Resolution
-
-NSFC project templates in this repository do not share one chapter numbering scheme, and the numbers overlap. Writing Part One content into a project that uses the other scheme silently overwrites the wrong chapter instead of failing. Resolve the layout and the grant type before any writing, repair, or QC stage.
-
-Do not hardcode `extraTex/*.tex` filenames. Derive the real file set from `main.tex`:
-
-1. Read `main.tex` and collect every **active** `\input{extraTex/...}` in document order. Ignore lines whose `\input` is commented out with `%`, and ignore `extraTex/@config.tex`.
-2. Ignore `extraTex/*.tex` files that exist on disk but are not reachable from `main.tex`. They are disabled or orphaned sections; do not write to them and do not treat them as missing work.
-3. Classify each active file into a role by its chapter heading in `main.tex` and its filename:
-   - `part_one`: 立项依据 / 内容目标问题 / 方案及可行性 / 特色与创新 / 研究计划 / 研究内容 / 年度研究计划
-   - `foundation`: 研究基础 / 工作条件 / 承担项目 / 完成国基项目 / 项目完成情况
-   - `statements`: 不同类型国基情况 / 同年单位不一致 / 承担中单位不一致 / 不同专业技术职务的申请 / 生成式人工智能 / 其他 / 其它
-4. Record the resolved layout and the ordered role-to-file map into `project.layout` and `project.body_files` in the checkpoint.
-5. Resolve the grant type in the same pass, and record it into `project.type` and `project.grant_type`. Never leave the checkpoint's shipped placeholder in place — every later stage that mentions grant type reads these two fields, not a default baked into this document. Resolve in this order, stopping at the first that yields an answer:
-   - an explicit statement from the user;
-   - the project's own `AGENTS.md` and `README.md` title line, which names the funding category directly (for example 青年科学基金项目（C类）, 面上项目, 地区科学基金项目);
-   - the project directory name, as a last resort: `NSFC_General*` → 面上项目, `NSFC_Young*` → 青年科学基金, `NSFC_Local*` → 地区科学基金.
-
-   If none of these resolve, mark stage 00 `need_user_input` and ask; do not fall back to 地区基金.
-6. Resolve the length budget from the project's own `AGENTS.md` rather than from a number in this document, and record it in `project.length_budget`. The budgets differ by grant type: `NSFC_Local` caps Part One at 8000 characters on top of the 30-page whole-proposal limit, while `NSFC_General` and `NSFC_Young` state only the 30-page limit. Applying the regional 8000-character cap to a 面上 or 青年 proposal under-writes it badly.
-
-Known layouts. Use them to sanity-check the resolved map, not as a substitute for reading `main.tex`:
-
-| Layout | Example projects | Part One | Foundation | Statements |
-|---|---|---|---|---|
-| `five-part` | `NSFC_Local`, `NSFC_Local_Clean` | `1.1`–`1.5` | `2.1`–`2.4` | `3.1`–`3.5` |
-| `three-part` | `NSFC_General`, `NSFC_General_Clean`, `NSFC_Young` | `1.1`, `2.1`–`2.3` | `3.1`–`3.4` | `4.1`–`4.4`, `4.6` |
-
-The `*_Clean` variants share their parent's layout but ship with empty body files; treat them as the same layout, not as a third one.
-
-Stop and ask the user when:
-
-- no `\input{extraTex/...}` can be resolved from `main.tex`;
-- an active file cannot be classified into any role;
-- the resolved map contradicts both known layouts and the user has not confirmed a custom template;
-- the grant type cannot be resolved by any of the routes above.
-
-When the project is a provincial template listed under `Scope` as out of scope, do not attempt resolution at all. Tell the user this pipeline does not cover it and point at the single-purpose skills.
-
-If the user later enables a section that is currently commented out in `main.tex`, such as an AIGC usage declaration, re-run this stage so the new file enters the role map before it is written.
-
-## Checkpoint File
-
-Use `docs/workflow_status.yaml` as the single workflow checkpoint.
-
-If `docs/workflow_status.yaml` does not exist, create it before running any pipeline stage.
-
-The checkpoint file must use the following standard structure:
-
-```yaml
-project:
-  type:                        # NSFC_General | NSFC_Young | NSFC_Local, resolved by stage 00
-  grant_type:                  # 面上项目 | 青年科学基金 | 地区科学基金, resolved by stage 00
-  layout:                      # five-part | three-part | custom, resolved by stage 00
-  length_budget:               # e.g. "Part One ≤8000 chars; whole ≤30 pages", read from the project AGENTS.md
-  proposal_path: "."
-  body_dir: "extraTex"
-  bib_file: "references/myexample.bib"
-  guide_file: "AGENTS.md"      # relative to proposal_path: the PROJECT AGENTS.md, never the repo-root one
-  stage_output_dir: "docs"
-  review_output_dir: "review"
-  body_files:                  # role -> ordered active files, resolved by stage 00
-    part_one: []
-    foundation: []
-    statements: []
-
-run:
-  current_mode: resume
-  fill_policy: draft_first     # draft_first | blocking, see Gap Policy
-  last_started:
-  last_finished:
-  last_summary:
-  next_stage:
-
-# Every stage uses the same field set:
-#   name, status, inputs, outputs, last_updated, notes, blockers, gaps
-# status: pending | in_progress | completed | drafted_with_gaps | skipped | need_user_input | failed
-# `gaps` holds fact IDs still hollowed out in this stage's output files.
-# `drafted_with_gaps` means written and not to be re-run, but not yet closeable;
-# it becomes `completed` only when `gaps` is empty. `blockers` remains reserved
-# for hard halts, which `draft_first` limits to stages 00 and 01.
-# In stages 05-07, `@part_one` / `@foundation` / `@statements` expand to the
-# corresponding project.body_files entry. Never write literal filenames here
-# before stage 00 has resolved the layout.
-stages:
-  "00_layout_resolution":
-    name: "Proposal Layout and Grant Type Resolution"
-    status: pending
-    inputs: ["main.tex", "extraTex/", "AGENTS.md", "README.md"]
-    outputs:
-      - "docs/workflow_status.yaml#project.body_files"
-      - "docs/workflow_status.yaml#project.type"
-      - "docs/workflow_status.yaml#project.grant_type"
-      - "docs/workflow_status.yaml#project.length_budget"
-    last_updated:
-    notes:
-    blockers:
-
-  "01_topic_extraction":
-    name: "Topic Extraction"
-    status: pending
-    inputs: ["AGENTS.md", "README.md", "main.tex", "docs/00_项目基本信息.md"]
-    outputs: ["docs/01_选题与研究主题.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "02_literature_review":
-    name: "Literature Review"
-    status: pending
-    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "references/myexample.bib"]
-    outputs: ["docs/02_文献调研/"]
-    last_updated:
-    notes:
-    blockers:
-
-  "03_scientific_questions":
-    name: "Scientific Questions and Innovation"
-    status: pending
-    inputs: ["AGENTS.md", "docs/01_选题与研究主题.md", "docs/02_文献调研/"]
-    outputs: ["docs/03_科学问题与创新点.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "04_research_plan":
-    name: "Research Plan"
-    status: pending
-    inputs: ["AGENTS.md", "docs/03_科学问题与创新点.md"]
-    outputs: ["docs/04_研究方案与技术路线.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "05_part_one_writing":
-    name: "NSFC Part One Writing"
-    status: pending
-    inputs: ["AGENTS.md", "docs/03_科学问题与创新点.md", "docs/04_研究方案与技术路线.md", "references/myexample.bib"]
-    outputs: ["@part_one"]
-    last_updated:
-    notes:
-    blockers:
-    gaps: []
-
-  "06_research_foundation":
-    name: "Research Foundation and Work Conditions"
-    status: pending
-    inputs: ["AGENTS.md", "docs/05_研究基础素材.md", "docs/研究基础信息补充问卷.md"]
-    outputs: ["@foundation", "docs/05_研究基础素材.md"]
-    last_updated:
-    notes:
-    blockers:
-    gaps: []
-
-  "07_other_statements":
-    name: "Other Statements"
-    status: pending
-    inputs: ["docs/其他说明信息补充问卷.md"]
-    outputs: ["@statements", "docs/其他说明检查报告.md"]
-    last_updated:
-    notes:
-    blockers:
-    gaps: []
-
-  "08_reference_alignment":
-    name: "Reference Alignment"
-    status: pending
-    inputs: ["extraTex/", "references/myexample.bib"]
-    outputs: ["review/引用一致性审核报告.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "09_length_control":
-    name: "Length Control"
-    status: pending
-    inputs: ["extraTex/", "AGENTS.md"]
-    outputs: ["review/篇幅控制报告.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "10_humanization":
-    name: "Humanization"
-    status: pending
-    inputs: ["extraTex/"]
-    outputs: ["review/去AI味修改报告.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "11_qc":
-    name: "Quality Control"
-    status: pending
-    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
-    outputs: ["review/质量控制报告.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "12_simulated_review":
-    name: "Simulated Review"
-    status: pending
-    inputs: ["extraTex/", "references/myexample.bib", "AGENTS.md"]
-    outputs: ["review/模拟专家评审_全稿.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "13_targeted_repair":
-    name: "P0/P1 Targeted Repair"
-    status: pending
-    inputs: ["review/质量控制报告.md", "review/模拟专家评审_全稿.md"]
-    outputs: ["review/P0P1定点修复报告.md", "docs/评审意见修复清单.md"]
-    last_updated:
-    notes:
-    blockers:
-
-  "14_compile":
-    name: "Compile"
-    status: pending
-    inputs: ["main.tex", "extraTex/", "references/myexample.bib"]
-    outputs: ["main.pdf", "review/编译检查报告.md"]
-    last_updated:
-    notes:
-    blockers:
-```
-
-## Pipeline Stages
-
-### 1. Topic Extraction
-
-Use `research-topic-extractor`.
-
-Inputs:
-
-- `AGENTS.md`
-- project background
-- `docs/00_项目基本信息.md` if present
-
-Outputs:
-
-- `docs/01_选题与研究主题.md`
-
-Then use `research-guide-updater` to synchronize stable topic scope, terms, research boundaries, and writing rules into `AGENTS.md`.
-
-Mark this stage `need_user_input` if the project topic, funding type, or application field is unclear.
-
-### 2. Literature Review
-
-Use `research-literature-review`.
-
-Default scope:
-
-- 2022 to current year unless the user specifies otherwise.
-- English literature first, Chinese literature as supplement.
-- Use the project scope in `AGENTS.md` as the retrieval boundary.
-- For CS/AI/Agent/Time-Series projects, use multiple query groups rather than a single broad query:
-  - core method keywords;
-  - agent/LLM/tool-use/planning keywords when relevant;
-  - time-series/temporal modeling/forecasting/anomaly keywords when relevant;
-  - multimodal/retrieval/recommendation keywords when relevant;
-  - datasets, benchmarks, and evaluation metric keywords.
-
-Outputs should normally include:
-
-- review markdown or LaTeX
-- BibTeX file
-- validation report
-- PDF and Word when requested by the user or project convention
-
-Default output directory:
-
-- `docs/02_文献调研/`
-
-After completion, use `research-guide-updater` to synchronize stable literature groups, terminology, and technical boundaries into `AGENTS.md`.
-
-### 3. Scientific Questions and Innovation
-
-Use `research-idea`.
-
-Inputs:
-
-- `AGENTS.md`
-- `docs/01_选题与研究主题.md`
-- `docs/02_文献调研/`
-
-Output:
-
-- `docs/03_科学问题与创新点.md`
-
-The report must include:
-
-- core contradiction and research gap
-- 2 to 3 key scientific questions
-- falsifiable hypotheses
-- innovation points
-- relationship to existing paradigms
-- likely reviewer challenges and the intended response line
-
-Then use `research-guide-updater` to synchronize stable scientific questions, hypotheses, and term boundaries into `AGENTS.md`.
-
-### 4. Research Plan
-
-Use `research-plan`.
-
-Inputs:
-
-- `AGENTS.md`
-- `docs/01_选题与研究主题.md`
-- `docs/02_文献调研/`
-- `docs/03_科学问题与创新点.md`
-
-Output:
-
-- `docs/04_研究方案与技术路线.md`
-
-The research plan should map each scientific question to a research content, method, experiment, and falsification path.
-
-For CS/AI/Agent/Time-Series topics, the research plan must also include a compact formalization section covering inputs, outputs, notation, optimization objective, inference rule, evaluation metrics, and failure/falsification criteria. This section is later reused when drafting the research scheme text in stage 05.
-
-### 5. NSFC Part One Writing
-
-Write only the files listed under `project.body_files.part_one`. Map skills to files by role, not by number:
-
-- `nsfc-justification-writer` for the 立项依据 file.
-- `nsfc-research-content-writer` for the 研究内容 / 内容目标问题, 特色与创新, and 研究计划 / 年度研究计划 files.
-- `research-plan` outputs for the 方案及可行性 file when the layout has one.
-
-In `three-part` layouts there is no separate 方案及可行性 file. Fold the research scheme, technical route, and feasibility analysis into the 研究内容 file instead of creating a new file or writing into an inactive one.
-
-Requirements:
-
-- Keep Part One under the project word/page budget in `AGENTS.md`.
-- Maintain one-to-one consistency among research contents, scientific questions, and research schemes.
-- Use only BibTeX keys that exist in `references/myexample.bib`.
-- Do not turn the proposal into a generic AI, recommendation, ranking, or LLM-agent project when `AGENTS.md` defines a narrower scope.
-- For CS/AI/Agent/Time-Series projects, do not leave the research scheme text as a plain prose workflow, whether it lives in its own 方案及可行性 file or inside the 研究内容 file. It must include domain-appropriate formulas for representation/modeling, optimization, inference/decoding, and evaluation, plus variable explanations.
-- Before marking this stage complete, verify that Part One has enough cited references for the topic and that `references/myexample.bib` passes the Reference Sufficiency Gate.
-
-### 6. Research Foundation and Work Conditions
-
-Use `nsfc-research-foundation-writer`.
-
-Inputs:
-
-- `docs/05_研究基础素材.md` if present. This is the collected-facts file for this stage; create it from user-supplied CV, project, and platform materials before writing, so the stage has a source of record separate from its own output.
-- `docs/研究基础信息补充问卷.md` if a previous run produced one and the user has filled it in.
-- applicant CV/project information if present.
-- latest `review/模拟专家评审_全稿.md` if present.
-
-Outputs:
-
-- the files listed under `project.body_files.foundation`.
-
-Read the current content of those files before writing, but do not treat their existence as evidence that this stage is done. Template files ship pre-populated with `\NSFCBlankPara` placeholders.
-
-Under `draft_first`, missing project numbers, funding amounts, publications, awards, platforms, team member roles, prior results, or completion status do **not** stop this stage. Write the evidence sentences complete, hollow out each missing fact as `【待补 ID：说明】`, record the IDs in the stage's `gaps` list, and set the status to `drafted_with_gaps`. Also create or update `docs/研究基础信息补充问卷.md` so the user has one place to fill everything in, and ensure each hollowed ID exists as a row in the fact base.
-
-Under `blocking`, stop instead and mark the stage `need_user_input`.
-
-Never substitute an invented number for a real one in either mode. Do not leave untraceable draft markers such as `待填写`, `现有材料未列`, `--`, or `项目编号未知`: every hole must carry a fact ID so the fill-back loop can find it. If a project genuinely has no NSFC-style approval number, state the formal reason based on user-provided facts rather than leaving a marker.
-
-### 7. Other Statements
-
-Check every file listed under `project.body_files.statements`. The count and numbering differ by layout, and some templates ship additional declaration sections that are commented out in `main.tex`.
-
-If the project has an active 生成式人工智能 declaration file, treat it as mandatory for this stage and fill it from the user's actual AIGC usage during drafting. If that section exists on disk but is commented out in `main.tex`, do not write to it; instead note in `docs/其他说明检查报告.md` that the declaration is disabled, so the user can decide whether to enable it before submission.
-
-Do not fabricate declarations. Under `draft_first`, an unknown situation is hollowed out as `【待补 ID：说明】` and recorded in `gaps`, not halted on; also create `docs/其他说明信息补充问卷.md` so the user can settle all declarations in one pass. Under `blocking`, stop and mark the stage `need_user_input`.
-
-If the user confirms no relevant situation exists, use formal wording such as `无相关情况。` rather than draft-like placeholders.
-
-### 8. Reference Alignment
-
-Use `nsfc-ref-alignment`.
-
-Check:
-
-- all `\cite{}` keys exist in `references/myexample.bib`
-- suspicious 2025 to 2026 references
-- URL/DOI/title risks
-- citation-to-claim alignment
-
-Default output:
-
-- `review/引用一致性审核报告.md`
-
-Do not modify references unless the user asks for repair. If repair is requested, only change entries that can be verified or are supported by the project literature review artifacts.
-
-### 9. Length Control
-
-Use `nsfc-length-aligner`.
-
-Focus:
-
-- Part One under the budget recorded in `project.length_budget` during stage 00. Do not carry a budget over from another grant type: `NSFC_Local` caps Part One at 8000 characters, while `NSFC_General` and `NSFC_Young` state only the 30-page whole-proposal limit and are under-written if the 8000-character cap is applied to them.
-- full proposal under the project page budget.
-- when Part One is overlong, compress the 立项依据 file and the 方案及可行性 file first, referring to them by role rather than by number.
-
-Do not remove scientific questions, falsification paths, or required NSFC headings merely to shorten text. Never close a length gap by deleting a `【待补 …】` marker.
-
-While any stage still carries entries in `gaps`, report the length verdict as provisional and say so explicitly. Hollowed-out text under-counts, so a "still has room" conclusion drawn now will reverse once the facts land.
-
-### 10. Humanization
-
-Use `nsfc-humanization`.
-
-Focus:
-
-- repeated sentences
-- slogan-like transitions
-- excessive `不是...而是...` structures
-- over-abstract AI-style wording
-- chapter-to-chapter phrasing duplication
-
-Do not expand. Preserve technical meaning and citation links.
-
-### 11. QC
-
-Use `nsfc-qc`.
-
-Default output:
-
-- `review/质量控制报告.md`
-
-Check:
-
-- research content, scientific question, and research scheme consistency
-- length
-- AI-style residue
-- citation risk
-- regional fund fit
-- missing real information
-- unresolved placeholders
-
-### 12. Simulated Review
-
-Use `nsfc-reviewers`.
-
-Default parameters:
-
-- `proposal_path=.`
-- `grant_type=` the value resolved into `project.grant_type` in stage 00. There is no default here; a proposal reviewed under the wrong grant type gets the wrong panel expectations.
-- `panel_count=3`, matching the tuned default of `nsfc-reviewers`. Raise it to at most 5 when the user asks for a stricter pass and accepts the added cost.
-- `output_path=review/模拟专家评审_全稿.md`
-- `focus=创新性、科学问题、研究方案可行性、研究基础支撑、函评/会评风险`, plus a grant-type fit item matching `project.grant_type`: 地区基金适配性 for 地区科学基金, 青年基金适配性（申请人独立性、成长性） for 青年科学基金, 面上项目适配性（研究深度与体量） for 面上项目.
-
-Do not modify proposal body text during simulated review.
-
-### 13. P0/P1 Targeted Repair
-
-Read the latest QC and simulated review reports, then run the Review-Driven Auto-Repair Policy.
-
-Do not merely tell the user how to revise when the issue is auto-fixable. Apply the edit, keep the change minimal, and record it.
-
-Required outputs:
-
-- `docs/评审意见修复清单.md`: a repair matrix extracted from QC/reviewer findings.
-- `review/P0P1定点修复报告.md`: what was changed, what was deferred, what still needs user-confirmed facts, and which checks were rerun.
-
-Repair only P0/P1 issues unless the user asks for deeper polishing. Typical auto-fixable repairs include:
-
-- unresolved placeholders or draft-like wording
-- citation/BibTeX mismatch or missing citation support
-- chapter inconsistency across the `part_one` files resolved in stage 00
-- overlong sections, especially Part One
-- weak literature chain in the 立项依据 file, or missing benchmark/dataset/method references
-- plain-prose research scheme for CS/AI/Agent/Time-Series topics that lacks formulas, metrics, or protocol definitions, whether it lives in its own 方案及可行性 file or inside the 研究内容 file
-- unclear data/evaluation protocol
-- weak research foundation bridge when existing local evidence can support it
-- overly broad innovation claims that can be narrowed without changing the project truth
-
-Do not auto-fill real project numbers, funding amounts, unpublished results, awards, personnel declarations, or prior-experiment metrics. If these are needed, hollow them out per the Gap Policy, update the relevant questionnaire in `docs/`, and mark the item `needs_user_fact`. The surrounding repair still gets applied; only the fact stays open.
-
-After repairs, rerun all relevant downstream checks:
-
-- `nsfc-ref-alignment` after citation or BibTeX changes.
-- `nsfc-length-aligner` after Part One changes.
-- `nsfc-qc` after any substantive proposal text changes.
-- `nsfc-reviewers` after P0/P1 substantive repairs, unless the user asks to skip review for speed.
-- Compile after P0 issues are resolved.
-
-Update `docs/workflow_status.yaml` after each repair loop. If the rerun reports still contain P0/P1 auto-fixable findings, perform one additional repair loop before stopping. Stop only when all remaining P0/P1 items require user facts, conflict with the scope, or the user has asked for review-only mode.
-
-### 14. Compile
-
-Compile only after P0 issues are resolved, or when the user explicitly asks to compile despite known issues.
-
-Open `gaps` do not block compilation. A draft PDF with visible holes is more useful than no PDF. But the compile report must state how many `【待补 …】` and `【暂定 …】` markers the PDF contains, and the run summary must not call the result 定稿 or 可提交 while any `【待补 …】` remains.
-
-Preferred command, run from the repository root:
+从仓库根目录执行，`<project-dir>` 替换为标书目录：
 
 ```bash
-python packages/bensz-nsfc/scripts/nsfc_project_tool.py build --project-dir <project-dir>
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> migrate --apply
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> reconcile --apply
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> next
 ```
 
-When the working directory is the proposal project itself, or the project was distributed as a standalone zip, use its own wrapper instead:
+不得跳过迁移与对账：旧断点需要补齐 schema，`in_progress` 需要按产物指纹恢复，`main.tex` 变化需要让 stage 00 失效，正文缺口需要从真实文件反向同步。
+
+执行每个阶段前后分别运行：
+
+```bash
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> begin --stage <stage-id>
+
+# 完成该阶段的实际工作
+
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> finish --stage <stage-id>
+```
+
+`finish` 未通过时修复产物或状态，不能手工把阶段改成 `completed`。
+
+## 15 个阶段
+
+| ID | 阶段 | 主要产物/动作 | 子技能 |
+|---|---|---|---|
+| 00 | 布局与项目类型解析 | `project.layout`、`grant_type`、正文角色映射、篇幅预算 | 本技能 |
+| 01 | 选题与研究主题 | `docs/01_选题与研究主题.md` | `research-topic-extractor`、`research-guide-updater` |
+| 02 | 文献调研 | `docs/02_文献调研/`、真实 BibTeX | `research-literature-review`、`research-guide-updater` |
+| 03 | 科学问题与创新点 | `docs/03_科学问题与创新点.md` | `research-idea`、`research-guide-updater` |
+| 04 | 研究方案与技术路线 | `docs/04_研究方案与技术路线.md` | `research-plan` |
+| 05 | 第一部分正文 | stage 00 解析出的 `part_one` 文件 | 对应 NSFC writer、`research-plan` |
+| 06 | 研究基础与工作条件 | stage 00 解析出的 `foundation` 文件 | `nsfc-research-foundation-writer` |
+| 07 | 其他说明 | stage 00 解析出的 `statements` 文件与检查报告 | 本技能 |
+| 08 | 引用一致性核查 | `review/引用一致性审核报告.md` | `nsfc-ref-alignment` |
+| 09 | 篇幅对齐 | `review/篇幅控制报告.md` | `nsfc-length-aligner` |
+| 10 | 去 AI 味 | `review/去AI味修改报告.md` | `nsfc-humanization` |
+| 11 | QC | `review/质量控制报告.md` | `nsfc-qc` |
+| 12 | 模拟专家评审 | `review/模拟专家评审_全稿.md` | `nsfc-reviewers` |
+| 13 | P0/P1 定点修复 | 修复清单与 `review/P0P1定点修复报告.md` | 按问题回调相关技能 |
+| 14 | 编译 | `main.pdf`、`review/编译检查报告.md` | 官方构建入口 |
+
+按顺序推进，除非断点表明阶段已 `completed`、`drafted_with_gaps` 或 `skipped`。`drafted_with_gaps` 不重写；先继续后续阶段，事实补齐时再按 ID 定点回填。
+
+## Draft-first 缺口处理
+
+缺信息时先分类：
+
+- 可推定项：给合理草稿值并标 `【暂定 …】`；不得伪装成用户确认值。
+- 硬事实：只挖掉名词短语，写成 `\textbf{【待补 F-GEN-03：批准号与起止年份】}`；ID 必须来自申请人事实文件或项目事实库。
+
+正文句子与论证链必须尽量写完整，不得用一个占位符代替整段。集中更新相应信息补充问卷，但继续推进；stage 05–07 由状态脚本根据真实标记置为 `drafted_with_gaps`。
+
+只有以下情况暂停并向用户提一个合并后的问题：
+
+- stage 00 无法确定正文落点、项目类型或篇幅口径；
+- stage 01 无法确定研究主题，继续写会使整篇内容成为臆造；
+- 路径越界、资料冲突或工具故障使当前阶段无法安全推进。
+
+补事实后运行 `reconcile --apply`，按 ID 仅修改命中句；正文或 BibTeX 变化后重跑受影响的引用、篇幅、QC 或评审阶段。
+
+## 文献与写作闸门
+
+文献充分性按学科适配，不把 CS/AI 数量阈值强加给所有领域。通用要求是：关键论断有高质量、真实且语义匹配的来源，近年进展与奠基工作覆盖合理。CS/AI 默认量化参考见阶段文档。
+
+stage 05 写作必须形成闭环：价值与必要性 → 现状与缺口 → 科学问题/假说 → 研究目标与内容 → 方案与可行性 → 创新与计划。stage 06 只使用可追溯事实；stage 07 对每项声明给真实肯定或否定句，未知事实挖空，不得整节留白。
+
+## 检查、评审与修复
+
+stage 08–12 依次完成引用、篇幅、人味、QC 与模拟评审。任何改写都必须逐字保护 `【待补 …】`、`【暂定 …】` 和引用命令。
+
+stage 13 建立问题矩阵并分类：
+
+- `auto_fix`：证据充分、范围明确，可直接定点修复；
+- `needs_user_fact`：用既有事实 ID 挖空或保留，不停下重写整节；
+- `defer_or_reject`：与资助额度、研究边界或用户目标冲突，记录理由。
+
+优先修 P0/P1；每轮修复后只重跑受影响的 stage 08–12。若仍有可安全自动修复的 P0/P1，继续有限范围迭代；若剩余项需要用户事实或策略选择，记录后进入 stage 14，不假装修复完成。stage 13 不编译。
+
+## 编译与最终判定
+
+stage 14 使用官方入口：
+
+```bash
+python packages/bensz-nsfc/scripts/nsfc_project_tool.py build \
+  --project-dir <project-dir>
+```
+
+若从项目目录运行，则使用项目自带 wrapper：
 
 ```bash
 python scripts/nsfc_build.py build --project-dir .
 ```
 
-`scripts/nsfc_build.py` only exists inside each project directory. There is no such script at the repository root, so do not run the wrapper form from the repo root.
-
-Fallback:
+编译必须零错误；warning 要说明是已有还是新增。最终运行：
 
 ```bash
-xelatex main.tex
-bibtex main
-xelatex main.tex
-xelatex main.tex
+python skills/nsfc-full-pipeline/scripts/scan_gaps.py \
+  --project-dir <project-dir> --json
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> reconcile --apply
+python skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <project-dir> readiness
 ```
 
-Output:
-
-- `main.pdf`
-
-Record compile status in `docs/workflow_status.yaml`, including whether bibliography rendered and whether page budget appears acceptable.
-
-## Final Deliverables
-
-At the end of a successful run, provide:
-
-- generated/updated `extraTex/*.tex`
-- updated `references/myexample.bib` if modified
-- `main.pdf`
-- QC report
-- simulated review report
-- remaining human verification checklist
-- workflow status summary
-- the open-gap list: every `【待补 ID】` still in the body, grouped by fact ID with its blocking section, plus every `【暂定 …】` awaiting user confirmation. Say plainly whether the draft is submittable; it is not while any `【待补 …】` remains.
-
-## Resume Behavior
-
-When the user says `继续`, `resume`, `接着写`, `继续全流程`, or similar:
-
-1. Read `docs/workflow_status.yaml`.
-2. Re-run stage 00 if `project.body_files` is empty, if `project.grant_type` or `project.length_budget` is empty, or if `main.tex` changed since `last_updated`.
-3. Verify whether declared outputs are actually present **and populated**. For `extraTex/*.tex` outputs, existence is not evidence of completion: template files ship with `\NSFCBlankPara` placeholders already in place. Treat a stage as incomplete when its output files still consist only of placeholders, questionnaire stubs, or draft markers such as `待填写`. A file containing real prose plus `【待补 …】` markers is drafted, not empty; do not rewrite it from scratch.
-4. Continue from the earliest stage with status other than `completed`, `skipped`, or `drafted_with_gaps`. A `drafted_with_gaps` stage is not re-run; it waits for the fill-back loop.
-5. If every stage is `completed` or `drafted_with_gaps`, do not regenerate content. Run a final QC/review summary and report the open gaps.
-
-When the user's resume message says the facts have been supplied, run the fill-back loop in the Gap Policy instead of continuing at the next unfinished stage.
-
-## Stop Conditions
-
-Under `draft_first`, missing facts are not a stop condition — they are hollowed out and recorded. Stop and ask for user input only when:
-
-- stage 00 cannot resolve the layout, the role map, or the grant type.
-- stage 01 cannot establish the topic, field, or research object.
-- a required file is missing and cannot be safely recreated.
-- the user requests a decision that affects truthfulness, compliance, or personal declaration, and no truthful hollowed-out wording exists.
-- `run.fill_policy` is `blocking` and a stage lacks facts it needs.
-
-A P0 finding that needs user-confirmed facts is not a stop: hollow it out, log the ID, and continue with the rest of the repair loop.
-
-When stopping, create a concise questionnaire in `docs/` and mark the relevant stage `need_user_input`. When continuing with holes instead, still create or update the questionnaire, but mark the stage `drafted_with_gaps` and list the IDs in `gaps`.
+最终汇报必须列出：完成阶段、正文改动、报告与 PDF 路径、编译结果、剩余硬事实 ID、暂定项数量、`body_pipeline_ready`、`submission_ready` 及尚缺的申请书组件。

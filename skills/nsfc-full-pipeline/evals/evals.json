@@ -4,19 +4,19 @@
     {
       "id": 1,
       "prompt": "请基于项目背景自动完成 NSFC 地区基金标书全流程写作。",
-      "expected_output": "先读取 AGENTS.md、main.tex、extraTex、docs 和 references；在任何写作阶段之前执行 stage 00，从 main.tex 的未注释 \\input{extraTex/...} 解析真实正文文件并按 part_one/foundation/statements 归类；创建或更新 docs/workflow_status.yaml 并写入 project.layout 与 project.body_files；随后按阶段生成 docs 与解析出的 extraTex 文件；缺真实信息时生成问卷并将阶段标记为 need_user_input。",
+      "expected_output": "先读取项目级 AGENTS.md、main.tex、事实文件、docs 和 references；依次执行 pipeline_state.py migrate --apply、reconcile --apply、next；在任何写作阶段之前完成 stage 00，从 main.tex 的未注释 \\input/\\include 解析真实正文并按 part_one/foundation/statements 归类。默认 draft-first：缺硬事实时使用事实库中的 ID 挖空名词短语、集中更新问卷并继续，stage 05-07 记为 drafted_with_gaps；只有布局、项目类型或选题无法确定时才 need_user_input。",
       "files": []
     },
     {
       "id": 2,
       "prompt": "继续上次 NSFC 标书写作流程，不要从头开始。",
-      "expected_output": "读取 docs/workflow_status.yaml；若 project.body_files 为空或 main.tex 已变更则先重跑 stage 00；逐阶段验证声明的输出是否存在且为非占位态，对 extraTex/*.tex 不得仅凭文件存在就判定完成；跳过真正 completed 的阶段，只推进未完成、失败或需要修复的阶段。",
+      "expected_output": "先执行 pipeline_state.py migrate --apply 与 reconcile --apply，再用 next 获取下一阶段。若 main.tex 指纹变化则让 stage 00 失效并重解析；遗留 in_progress 只有在输出有效且相对 begin 时指纹发生变化才恢复。不得仅凭文件存在判断完成；跳过 completed/skipped/drafted_with_gaps，只推进真正未完成、失败或需修复的阶段。",
       "files": []
     },
     {
       "id": 3,
       "prompt": "根据模拟专家评审报告修复 P0/P1 问题并重新 QC。",
-      "expected_output": "读取最新 review/模拟专家评审_全稿.md 和 QC 报告，把发现整理成修复矩阵并分类为 auto_fix / needs_user_fact / defer_or_reject；只做 P0/P1 定点修复，避免重写无关章节；needs_user_fact 项生成问卷而不编造事实；修复后按触及的文件重跑 nsfc-ref-alignment、篇幅控制、QC 或 reviewers 阶段，并更新 docs/workflow_status.yaml。",
+      "expected_output": "读取最新 review/模拟专家评审_全稿.md 和 QC 报告，把发现整理成修复矩阵并分类为 auto_fix / needs_user_fact / defer_or_reject；只做 P0/P1 定点修复，避免重写无关章节；needs_user_fact 使用既有事实 ID 挖空或保留标记并继续修其他问题，不编造事实；修复后按触及范围重跑引用、篇幅、humanization、QC 或 reviewers 阶段，通过 pipeline_state.py 更新断点。stage 13 不编译。",
       "files": []
     },
     {
@@ -34,7 +34,7 @@
     {
       "id": 6,
       "prompt": "在 projects/NSFC_General 上跑到阶段 07 其他说明，请把该部分写完。",
-      "expected_output": "只处理 stage 00 解析出的 statements 文件（4.1、4.2、4.3、4.4、4.6）。4.5.生成式人工智能.tex 在该项目的 main.tex 中处于注释态，必须不写入该文件，而是在 docs/其他说明检查报告.md 中说明该声明当前被禁用，由用户决定是否启用；若用户启用则要求重跑 stage 00。缺真实情况时生成 docs/其他说明信息补充问卷.md 并标记 need_user_input，不得编造声明。",
+      "expected_output": "只处理 stage 00 解析出的 statements 文件（4.1、4.2、4.3、4.4、4.6）。4.5.生成式人工智能.tex 在 main.tex 中处于注释态，必须不写入，而是在 docs/其他说明检查报告.md 说明其被禁用；若后续启用则重跑 stage 00。缺真实声明时使用事实库既有 ID 挖空、集中更新 docs/其他说明信息补充问卷.md，将阶段置为 drafted_with_gaps 并继续，不得编造声明。",
       "files": []
     },
     {
@@ -64,13 +64,13 @@
     {
       "id": 11,
       "prompt": "帮我写研究基础那部分，材料我还没给你。",
-      "expected_output": "不得凭空编造项目编号、经费金额、论文、奖项、平台、团队成员分工或前期结果。不去读取不存在的 docs/研究基础.md；若 docs/05_研究基础素材.md 与已回填的补充问卷都不存在，则生成 docs/研究基础信息补充问卷.md，把阶段 06 标记为 need_user_input 并停下等待用户补充事实。",
+      "expected_output": "不得凭空编造项目编号、经费金额、论文、奖项、平台、团队成员分工或前期结果。不去读取不存在的 docs/研究基础.md；应先读申请人事实文件与项目事实库，把能由选题和方案确定的论证句写完整，只把硬事实名词短语替换为既有 ID 的【待补 …】标记，集中生成/更新 docs/研究基础信息补充问卷.md，并把阶段 06 置为 drafted_with_gaps 后继续流程。只有没有事实来源可登记 ID 或资料互相冲突时才阻塞。",
       "files": []
     },
     {
       "id": 12,
       "prompt": "全流程跑完了吗？我直接拿去提交可以吗？",
-      "expected_output": "明确说明本编排器不覆盖摘要、申请代码与预算说明书，需分别单独调用 nsfc-abstract、nsfc-code、nsfc-budget；标书配图不在流程内且不对应任何可调用 skill，由用户自行完成，不得虚构一个配图 skill 名让用户去调用；特别提醒摘要是申请书必填项，不得因流程显示 completed 就暗示标书已可提交；同时给出仍需人工核验的清单。",
+      "expected_output": "运行 pipeline_state.py readiness 并分别报告 body_pipeline_ready 与 submission_ready。明确正文流程不覆盖摘要、申请代码与预算说明，需分别调用 nsfc-abstract、nsfc-code、nsfc-budget；声明、附件和配图仍需人工核验或完成。不得因 15 个正文阶段 completed 就暗示整份申请书可提交，须列出 pending_submission_items、硬事实 ID 与暂定项。",
       "files": []
     },
     {
@@ -82,7 +82,7 @@
     {
       "id": 14,
       "prompt": "文献这步跑完了，直接开始写立项依据吧。",
-      "expected_output": "在推进阶段 05 前先执行参考文献充分性闸门：检查 references/myexample.bib 条目数是否达到 25 条底线与 30-50 条目标区间、覆盖是否包含奠基工作/近 3-5 年进展/代表方法/数据集与评测/局限；不足时补做文献调研或生成 docs/参考文献补充清单.md 并标记 need_user_input；不得为凑数编造参考文献。",
+      "expected_output": "在推进 stage 05 前执行学科适配的参考文献闸门：所有领域都检查关键论断覆盖、语义匹配、奠基工作和最近 5 年进展；若是 CS/AI，再参考 BibTeX 至少 25 条、目标 30-50 条、第一部分约 20-35 条引用和近 5 年比例通常不低于 60%。不足时继续检索；受访问限制则生成 docs/参考文献补充清单.md 后继续能安全完成的工作，不因公开文献不足直接 need_user_input，不得凑数或虚构。",
       "files": []
     },
     {
@@ -112,7 +112,7 @@
     {
       "id": 19,
       "prompt": "标书写完了，帮我看看能不能提交。",
-      "expected_output": "只要正文中仍存在【待补 …】标记，就不得表述为定稿或可提交，必须显式列出剩余待补事实 ID 及其阻塞章节。【暂定 …】不阻塞提交，但要单列请用户确认。可用 skills/nsfc-full-pipeline/scripts/scan_gaps.py 生成 ID 到位置的反向索引，不得手工维护该清单。",
+      "expected_output": "运行 scan_gaps.py 与 pipeline_state.py readiness。只要正文仍有【待补 …】，就不得表述为定稿或可提交，须列出 ID 及位置；【暂定 …】单列确认。即使硬缺口清空，也只有 body_pipeline_ready，不代表 submission_ready；还须检查摘要、申请代码、预算、声明和附件，不得手工维护缺口清单。",
       "files": []
     },
     {
@@ -125,6 +125,24 @@
       "id": 21,
       "prompt": "第一部分现在偏短，帮我压缩到预算内。",
       "expected_output": "正文中还有【待补 …】时，篇幅结论只能报为暂定并显式说明：挖空稿偏短，补齐真实项目、论文与平台信息后通常多占 1-2 页，此时下「还有余量」的判断会在补齐后反转。严禁通过删除【待补 …】或【暂定 …】标记来减少字数——那会让待补事实静默消失并进入投稿稿。nsfc-humanization 与 nsfc-length-aligner 都必须逐字保护这两类标记。",
+      "files": []
+    },
+    {
+      "id": 22,
+      "prompt": "这个项目的 workflow_status.yaml 是旧版本，继续跑就行。",
+      "expected_output": "不得直接按旧字段继续。先运行 pipeline_state.py migrate --apply 幂等升级到 schema_version=2，补齐 00-14 共 15 个阶段、指纹字段、project_fact_file 与 submission 清单；再运行 reconcile --apply 对照 main.tex、真实产物和正文缺口，最后用 next 决定续跑点。迁移不得丢失旧状态和用户记录。",
+      "files": []
+    },
+    {
+      "id": 23,
+      "prompt": "extraTex 里还有几个没被 main.tex 引用的旧章节，也一起检查缺口吧。",
+      "expected_output": "正式缺口扫描与就绪判定只检查 main.tex 实际引用的正文，孤儿/注释态章节不能让流程误报未完成，也不得被写入。只有用户明确做磁盘诊断时才给 scan_gaps.py 加 --all-body-files，并把结果标为诊断信息而非正式提交闸门。",
+      "files": []
+    },
+    {
+      "id": 24,
+      "prompt": "正文 15 个阶段都完成并编译成功了，所以整份申请书可以提交了吧？",
+      "expected_output": "不能仅凭正文阶段完成得出该结论。pipeline_state.py readiness 只有在 15 阶段完成、PDF 存在、无硬事实缺口、无未写作占位和扫描错误时才返回 body_pipeline_ready=true；submission_ready 还要求 abstract、application_code、budget、declarations、attachments 均 completed 或 not_applicable。必须报告尚缺组件。",
       "files": []
     }
   ]

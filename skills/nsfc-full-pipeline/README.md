@@ -1,27 +1,22 @@
-# nsfc-full-pipeline — NSFC 标书全流程编排器
+# nsfc-full-pipeline — NSFC 标书正文全流程
 
-**版本**：v0.3.0（开发中，版本号以 [config.yaml](config.yaml) 为准）
-**类型**：📝 日常
+**版本**：v0.4.0（以 [config.yaml](config.yaml) 为准）
+**状态**：🚧 开发中
 
-把"选题 → 文献 → 科学问题 → 研究方案 → 正文写作 → 核查 → 评审 → 修复 → 编译"串成一条可断点续跑的流水线，自动调用仓库内已有的 NSFC / research 系列 skill，而不是让你逐个手动触发。
+把选题、文献、科学问题、研究方案、正文写作、核查、评审、定点修复和编译串成可可靠续跑的 15 阶段流程。默认采用 draft-first：硬事实不足时保留可见、可追踪的事实 ID 缺口，先完成可安全完成的正文，不因一条批准号或设备型号反复中断。
 
----
+## 适用场景
 
-## 什么时候用
+- 从头写一份 NSFC 面上、青年或地区项目正文；
+- 上次运行中断，需要从真实进度继续；
+- 根据 QC 或模拟评审结果自动修复 P0/P1；
+- 需要统一管理事实缺口、编译和提交前检查。
 
-- 你有一个 NSFC 标书 LaTeX 项目（`main.tex` + `extraTex/` + `references/`），想从头跑完整流程
-- 上次跑到一半中断了，想接着跑而不是推倒重来
-- QC 或模拟评审出了报告，想让 AI **直接改稿**而不是只给建议
+支持 `NSFC_General`、`NSFC_General_Clean`、`NSFC_Young`、`NSFC_Local`、`NSFC_Local_Clean` 及其派生项目。
 
-**支持的项目**：`NSFC_General`、`NSFC_General_Clean`（面上）、`NSFC_Young`（青年）、`NSFC_Local`、`NSFC_Local_Clean`（地区），以及由它们派生的你自己的标书目录。
-
-**不适用**：只想写某一个章节（直接用对应的 `nsfc-*-writer`）；只想做一次只读体检（直接用 `nsfc-qc`）；省级/地方基金项目（`GDNSF_*`、`GXNSF_*`）——它们的章节体例、篇幅口径和评审标准都不一样，本流程不覆盖，会直接告诉你并建议改用单点 skill。
-
----
+不适用：单章节写作、一次性只读 QC、省级/地方自然科学基金项目。摘要、申请代码、预算说明、附件和配图不属于正文 15 阶段，需另行完成。
 
 ## 快速开始
-
-在标书项目目录下：
 
 ```text
 请使用 nsfc-full-pipeline 处理 projects/NSFC_Local，从头跑全流程。
@@ -30,127 +25,99 @@
 续跑：
 
 ```text
-继续
+继续上次 NSFC 标书写作流程，不要从头开始。
 ```
 
-评审后自动修复：
+评审后修复：
 
 ```text
-根据模拟评审报告修复 P0/P1 问题
+根据模拟专家评审和 QC 报告修复 P0/P1，并重新核查。
 ```
 
----
+## 15 个阶段
 
-## 14 个阶段
-
-| 阶段 | 调用的 skill | 产出 |
+| ID | 阶段 | 主要产物 |
 |---|---|---|
-| 00 布局与类型解析 | —（内置） | 断点文件的 `project.body_files`、`grant_type`、`length_budget` |
-| 01 选题 | `research-topic-extractor` + `research-guide-updater` | `docs/01_选题与研究主题.md` |
-| 02 文献调研 | `research-literature-review` | `docs/02_文献调研/` + `.bib` |
-| 03 科学问题 | `research-idea` | `docs/03_科学问题与创新点.md` |
-| 04 研究方案 | `research-plan` | `docs/04_研究方案与技术路线.md` |
-| 05 第一部分正文 | `nsfc-justification-writer`、`nsfc-research-content-writer` | `part_one` 角色对应的 `.tex` |
-| 06 研究基础 | `nsfc-research-foundation-writer` | `foundation` 角色对应的 `.tex` |
-| 07 其他说明 | —（人工确认） | `statements` 角色对应的 `.tex` |
-| 08 引用核查 | `nsfc-ref-alignment` | `review/引用一致性审核报告.md` |
-| 09 篇幅对齐 | `nsfc-length-aligner` | `review/篇幅控制报告.md` |
-| 10 去 AI 味 | `nsfc-humanization` | `review/去AI味修改报告.md` |
-| 11 质控 | `nsfc-qc` | `review/质量控制报告.md` |
-| 12 模拟评审 | `nsfc-reviewers`（默认 3 组） | `review/模拟专家评审_全稿.md` |
-| 13 定点修复 | —（内置） | `review/P0P1定点修复报告.md` |
-| 14 编译 | `nsfc_project_tool.py` | `main.pdf` |
+| 00 | 布局与项目类型解析 | 正文角色、资助类别、篇幅预算 |
+| 01 | 选题与研究主题 | `docs/01_选题与研究主题.md` |
+| 02 | 文献调研 | `docs/02_文献调研/`、真实 BibTeX |
+| 03 | 科学问题与创新点 | `docs/03_科学问题与创新点.md` |
+| 04 | 研究方案与技术路线 | `docs/04_研究方案与技术路线.md` |
+| 05 | 第一部分正文 | stage 00 解析出的 `part_one` 文件 |
+| 06 | 研究基础与工作条件 | `foundation` 文件 |
+| 07 | 其他说明 | `statements` 文件与检查报告 |
+| 08 | 引用一致性核查 | `review/引用一致性审核报告.md` |
+| 09 | 篇幅对齐 | `review/篇幅控制报告.md` |
+| 10 | 去 AI 味 | `review/去AI味修改报告.md` |
+| 11 | QC | `review/质量控制报告.md` |
+| 12 | 模拟专家评审 | `review/模拟专家评审_全稿.md` |
+| 13 | P0/P1 定点修复 | 修复清单与修复报告 |
+| 14 | 编译 | `main.pdf`、编译检查报告 |
 
----
+## 为什么续跑更可靠
 
-## 五个关键机制
+状态保存在 `docs/workflow_status.yaml`，schema v2 不只记录阶段名，还记录：
 
-### 1. 布局解析（stage 00）
+- `main.tex`、阶段输入和输出指纹；
+- `in_progress` 中断恢复依据；
+- 正文真实缺口与 stage 05–07 的反向对账；
+- 摘要、申请代码、预算、声明和附件的独立提交清单。
 
-仓库里的 NSFC 模板**不共用一套章节编号**，而且编号互相重叠：
-
-| 布局 | 项目 | 第一部分 | 研究基础 | 其他说明 |
-|---|---|---|---|---|
-| `five-part` | `NSFC_Local`、`NSFC_Local_Clean` | `1.1`–`1.5` | `2.1`–`2.4` | `3.1`–`3.5` |
-| `three-part` | `NSFC_General`、`NSFC_General_Clean`、`NSFC_Young` | `1.1`、`2.1`–`2.3` | `3.1`–`3.4` | `4.1`–`4.4`、`4.6` |
-
-如果按固定编号写，在面上项目上会把"研究基础"写进"研究内容"的位置**且不报错**。所以 stage 00 强制先读 `main.tex` 里未被注释的 `\input{extraTex/...}`，解析出真实文件集合并按角色归类，解析不出来就停下来问你。
-
-`*_Clean` 变体与母模板同布局，只是正文出厂为空。
-
-### 2. 项目类型与篇幅预算解析（stage 00 同一趟）
-
-评审口径和篇幅上限**按项目类型走**，没有默认值：
-
-| 项目类型 | 第一部分字数 | 全文页数 |
-|---|---|---|
-| 地区科学基金 | ≤ 8000 字 | ≤ 30 页 |
-| 面上项目 / 青年科学基金 | 无单独上限 | ≤ 30 页 |
-
-把地区基金的 8000 字上限套到面上项目上会严重写不够，所以 stage 00 会先从你的项目 `AGENTS.md` 里读出真实预算，解析不出项目类型就停下来问，**不会回退到地区基金**。
-
-### 3. 断点续跑
-
-状态记在 `docs/workflow_status.yaml`。判定阶段是否完成时**不只看文件是否存在**——模板自带 `\NSFCBlankPara` 占位，文件本来就在。必须同时确认内容非占位态。
-
-### 4. 缺信息不停，挖空继续写
-
-默认 `fill_policy: draft_first`。缺真实项目号、经费、论文、奖项、平台、团队信息时**不停下来等你**，而是：
-
-- **可推定的**（年度计划月份、预期成果数量口径、指标阈值）给合理草稿值，标 `【暂定 …】`
-- **硬事实**把句子写完整、只挖掉事实名词：`\textbf{【待补 F-GEN-03：批准号与起止年份】}`
-
-ID 复用事实库里已有的编号，不另立清单。查看当前缺口：
+手工诊断命令：
 
 ```bash
-python3 skills/nsfc-full-pipeline/scripts/scan_gaps.py --project-dir <项目路径>
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <项目路径> migrate --apply
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <项目路径> reconcile --apply
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <项目路径> next
 ```
 
-补齐后说「我补充了 F-GEN-03」，会按 ID 定位并只改那几句，不重写整节。
+旧断点会幂等迁移；`main.tex` 改变会让 stage 00 失效；遗留 `in_progress` 只有在产物有效且确实发生变化时才恢复。
 
-真正会停的只剩两处：stage 00 落点/项目类型解析不出来、stage 01 选题未定。想恢复旧行为，把 `run.fill_policy` 改成 `blocking`。
+## Draft-first 如何工作
 
-### 5. 不编造事实
+- 可推定项：给保守草稿值并标 `【暂定 …】`；
+- 硬事实：把句子写完整，只挖掉名词短语，例如 `\textbf{【待补 F-GEN-03：批准号与起止年份】}`。
 
-draft-first 只改变**何时停**，不改变**是否可以编造**。批准号、经费额度、论文、奖项一律只挖空，绝不填入看起来像真的的值。**只要还有 `【待补 …】`，就不会说这稿可以提交。**
+事实 ID 必须已登记在申请人事实文件或项目事实库。缺硬事实时集中更新问卷，stage 05–07 标为 `drafted_with_gaps` 并继续；只有布局、项目类型或选题无法确定时才暂停。
 
----
+扫描活动正文中的缺口：
 
-## 本编排器不管的事
+```bash
+python3 skills/nsfc-full-pipeline/scripts/scan_gaps.py \
+  --project-dir <项目路径> --json
+```
 
-需要时请单独调用：
+默认只扫描 `main.tex` 实际引用的正文；`--all-body-files` 仅用于诊断孤儿文件。补事实后按 ID 定点回填，不重写整节。
 
-| 环节 | skill |
-|---|---|
-| 中英文摘要 | `nsfc-abstract` |
-| 申请代码推荐 | `nsfc-code` |
-| 预算说明书 | `nsfc-budget` |
+## 正文完成不等于可以提交
 
-摘要是申请书必填项，跑完本流程后别忘了补。
+```bash
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir <项目路径> readiness
+```
 
-**标书配图**同样不在本流程内，且不对应任何可调用的 skill：本编排器只负责正文与编译链路，不代为规划图件、不排进阶段、也不会往正文里擅自插图。
+- `body_pipeline_ready`：15 阶段完成、PDF 存在、无硬事实缺口和未写作占位；
+- `submission_ready`：还要求摘要、申请代码、预算、声明和附件全部完成或明确不适用。
 
----
+只要仍有 `【待补 …】`，或提交清单仍有 `pending`，就不会宣告整份申请书可提交。
 
-## 输出去哪
+## 常见问题
 
-`docs/` 与 `review/` 直接写在标书项目里，**不进** `.bensz-api/` 任务工作区——按 [WORKSPACE.md](../WORKSPACE.md) 的定义它们属于正式交付物。只有检索缓存、中间 JSON、命令日志才进任务工作区。
+**会编造批准号、经费或论文吗？** 不会。draft-first 只改变何时停，不改变事实标准。
 
----
+**为什么磁盘上的某个 `.tex` 没有被写？** `main.tex` 的活动 `\input` / `\include` 是唯一正文清单；注释态和孤儿文件不会进入正式流程。
 
-## 已知限制
+**可以恢复旧的阻塞模式吗？** 兼容旧断点中的 `blocking` 值，但推荐保留 `draft_first`；无论哪种模式都不能编造事实。
 
-- `SKILL.md` 当前 723 行，仍超出项目规范的 500 行上限，待把缺口策略与阶段细则外移到 `references/` 后收敛
-- `scan_gaps.py` 只扫 `extraTex/*.tex`，未覆盖 `references/*.tex` 与自定义正文目录；当前模板下够用
-- `SKILL.md` 正文仍为英文（frontmatter 已改为中文），与项目"默认简体中文"规范不一致，待整体中译
-- 阶段 07「其他说明」高度依赖人工确认，自动化程度低于其他阶段
-- 若 `main.tex` 里某个声明章节是注释态（如部分模板的生成式人工智能声明），本流程不会写入，只会在检查报告里提示你决定是否启用
-- `docs/05_研究基础素材.md` 的编号与阶段编号错位（它是阶段 06 的输入），暂未重命名以免影响已有断点文件
+**文献必须固定 25 条吗？** 不是。所有领域必须满足论断覆盖和语义匹配；25/30–50 是 CS/AI 的默认量化参考，其他领域按证据传统调整并说明理由。
 
----
+## 相关文件
 
-## 相关文档
-
-- [SKILL.md](SKILL.md) — AI 执行规范
-- [config.yaml](config.yaml) — 参数与版本号唯一真相来源
-- [CHANGELOG.md](CHANGELOG.md) — 变更记录
+- [SKILL.md](SKILL.md)：AI 执行入口
+- [checkpoint-and-gap-policy.md](references/checkpoint-and-gap-policy.md)：断点、缺口与两级就绪度
+- [stages-00-07.md](references/stages-00-07.md)：前半流程细则
+- [stages-08-14.md](references/stages-08-14.md)：检查、修复与编译细则
+- [CHANGELOG.md](CHANGELOG.md)：版本记录

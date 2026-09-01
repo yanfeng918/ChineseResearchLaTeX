@@ -25,6 +25,8 @@ TBD_RE = re.compile(r"【待补\s*([^：:】]*?)\s*[：:]\s*([^】]*)】")
 TBD_NO_DESC_RE = re.compile(r"【待补\s*([^：:】]+?)\s*】")
 TENTATIVE_RE = re.compile(r"【暂定\s*([^】]*)】")
 ID_RE = re.compile(r"\b[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+\b")
+INPUT_RE = re.compile(r"\\(?:input|include)\s*\{([^}]+)\}")
+UNFINISHED_MARKERS = ("\\NSFCBlankPara", "待填写", "现有材料未列", "项目编号未知")
 
 # 判断「整段只有占位」时先剥掉的 LaTeX 噪声
 LATEX_CMD_RE = re.compile(r"\\[a-zA-Z@]+\*?(\[[^\]]*\])?")
@@ -70,8 +72,8 @@ def yaml_scalar(text: str, key: str) -> str | None:
     return value or None
 
 
-def collect_known_ids(project_dir: Path) -> tuple[set[str], list[str]]:
-    """从事实库收集已登记的事实 ID。返回 (ID 集合, 实际读到的文件列表)。"""
+def collect_known_ids(project_dir: Path) -> tuple[set[str], list[str], list[str]]:
+    """从事实库收集已登记的事实 ID，并报告声明但无法读取的文件。"""
     status_file = project_dir / "docs" / "workflow_status.yaml"
     candidates: list[Path] = []
     if status_file.is_file():
@@ -86,13 +88,58 @@ def collect_known_ids(project_dir: Path) -> tuple[set[str], list[str]]:
 
     ids: set[str] = set()
     seen: list[str] = []
+    missing: list[str] = []
     for path in candidates:
         if not path.is_file():
+            missing.append(str(path))
             continue
         seen.append(str(path))
         for token in ID_RE.findall(read_text(path)):
             ids.add(token)
-    return ids, seen
+    return ids, seen, missing
+
+
+def resolve_active_tex_files(
+    project_dir: Path,
+    body_dir: str,
+    include_all: bool = False,
+) -> tuple[list[Path], list[str]]:
+    """解析真正参与编译的正文文件；默认不扫描孤儿或注释态文件。"""
+    body_root = (project_dir / body_dir).resolve()
+    if include_all:
+        return (
+            [path for path in sorted(body_root.rglob("*.tex")) if not path.name.startswith("@")],
+            [],
+        )
+
+    main_tex = project_dir / "main.tex"
+    if not main_tex.is_file():
+        return [], [f"缺少主入口文件：{main_tex}"]
+
+    active: list[Path] = []
+    problems: list[str] = []
+    seen: set[Path] = set()
+    clean_main = "\n".join(strip_comments(line) for line in read_text(main_tex).splitlines())
+    for match in INPUT_RE.finditer(clean_main):
+        raw = match.group(1).strip()
+        rel = Path(raw if raw.endswith(".tex") else f"{raw}.tex")
+        path = (project_dir / rel).resolve()
+        try:
+            path.relative_to(body_root)
+        except ValueError:
+            continue
+        if path.name.startswith("@"):
+            continue
+        if not path.is_file():
+            problems.append(f"main.tex 引用的正文文件不存在：{rel.as_posix()}")
+            continue
+        if path not in seen:
+            active.append(path)
+            seen.add(path)
+
+    if not active and not problems:
+        problems.append(f"未从 main.tex 解析到 {body_dir}/ 下的活动正文文件")
+    return active, problems
 
 
 def paragraph_is_placeholder_only(lines: list[str], index: int) -> bool:
@@ -113,17 +160,21 @@ def paragraph_is_placeholder_only(lines: list[str], index: int) -> bool:
     return len(body) < 15
 
 
-def scan(project_dir: Path, body_dir: str = "extraTex") -> dict:
-    known_ids, fact_files = collect_known_ids(project_dir)
-    tex_root = project_dir / body_dir
+def scan(project_dir: Path, body_dir: str = "extraTex", include_all: bool = False) -> dict:
+    known_ids, fact_files, missing_fact_files = collect_known_ids(project_dir)
+    tex_files, scope_problems = resolve_active_tex_files(project_dir, body_dir, include_all)
 
     findings: list[dict] = []
-    for tex in sorted(tex_root.glob("*.tex")):
-        if tex.name.startswith("@"):
-            continue
+    unfinished_placeholders: list[str] = []
+    for tex in tex_files:
         lines = read_text(tex).splitlines()
         for lineno, raw in enumerate(lines):
             line = strip_comments(raw)
+            for marker in UNFINISHED_MARKERS:
+                if marker in line:
+                    unfinished_placeholders.append(
+                        f"{tex.relative_to(project_dir)}:{lineno + 1} {marker}"
+                    )
             if "【" not in line:
                 continue
             for m in TBD_RE.finditer(line):
@@ -162,13 +213,20 @@ def scan(project_dir: Path, body_dir: str = "extraTex") -> dict:
                     }
                 )
 
-    problems: list[str] = []
+    problems: list[str] = list(scope_problems)
+    hard_findings = [finding for finding in findings if finding["kind"] == "待补"]
+    if hard_findings and not fact_files:
+        problems.append("发现硬事实缺口，但未加载到事实库；不得把这些 ID 视为已登记")
+    for path in missing_fact_files:
+        problems.append(f"断点声明的事实库文件不存在：{path}")
     for f in findings:
         if f["kind"] != "待补":
             continue
         if not f["id"]:
             problems.append(f"{f['file']}:{f['line']} 待补标记缺少事实 ID")
-        elif known_ids and f["id"] not in known_ids:
+        elif not ID_RE.fullmatch(f["id"]):
+            problems.append(f"{f['file']}:{f['line']} 事实 ID 格式无效：{f['id']}")
+        elif f["id"] not in known_ids:
             problems.append(
                 f"{f['file']}:{f['line']} 事实 ID {f['id']} 未登记在事实库，"
                 f"应先在事实库建行再引用"
@@ -180,13 +238,17 @@ def scan(project_dir: Path, body_dir: str = "extraTex") -> dict:
 
     return {
         "project_dir": str(project_dir),
+        "scan_scope": "all_body_files" if include_all else "active_main_inputs",
+        "scanned_files": [str(path.relative_to(project_dir)) for path in tex_files],
         "fact_files": fact_files,
+        "missing_fact_files": missing_fact_files,
         "known_id_count": len(known_ids),
         "findings": findings,
         "problems": problems,
         "open_hard_gaps": sorted({f["id"] for f in findings if f["kind"] == "待补" and f["id"]}),
         "tentative_count": sum(1 for f in findings if f["kind"] == "暂定"),
-        "submittable": not any(f["kind"] == "待补" for f in findings),
+        "unfinished_placeholders": unfinished_placeholders,
+        "hard_gaps_clear": not hard_findings,
     }
 
 
@@ -222,8 +284,8 @@ def render(result: dict, only_id: str | None) -> int:
 
     if not only_id:
         print()
-        if result["submittable"]:
-            print("无待补事实：正文缺口已清空。")
+        if result["hard_gaps_clear"]:
+            print("未发现硬事实缺口；这只表示缺口已清空，不代表整份申请书可提交。")
         else:
             print(
                 f"仍有 {len(result['open_hard_gaps'])} 个待补事实 ID，"
@@ -238,6 +300,11 @@ def main() -> int:
     ap.add_argument("--body-dir", default="extraTex", help="正文目录，默认 extraTex")
     ap.add_argument("--id", dest="only_id", help="只列出指定事实 ID 的出现位置")
     ap.add_argument("--json", action="store_true", help="输出 JSON")
+    ap.add_argument(
+        "--all-body-files",
+        action="store_true",
+        help="诊断模式：扫描正文目录全部 tex；默认只扫描 main.tex 的活动输入",
+    )
     args = ap.parse_args()
 
     project_dir = Path(args.project_dir).expanduser().resolve()
@@ -248,7 +315,7 @@ def main() -> int:
         print(f"错误：正文目录不存在：{project_dir / args.body_dir}", file=sys.stderr)
         return 2
 
-    result = scan(project_dir, args.body_dir)
+    result = scan(project_dir, args.body_dir, include_all=args.all_body_files)
     if args.json:
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 1 if result["problems"] else 0

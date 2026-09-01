@@ -1,6 +1,8 @@
 # nsfc-full-pipeline 断点文件（空白模板）
 # 作用：记录流程进度与事实来源，避免每次运行都从头重问。
-# 新项目只需改 project 段的 5 个字段，stages 由流程自动维护。
+# 新项目只需补 project 段的项目元数据，stages 由状态脚本自动维护。
+
+schema_version: 2
 
 project:
   type:                              # 如 NSFC_General / NSFC_Young / NSFC_Local，或自定义
@@ -11,6 +13,7 @@ project:
   body_dir: "extraTex"
   bib_file: "references/myexample.bib"
   guide_file: "AGENTS.md"            # 项目级，非仓库根
+  main_tex_sha256: ""                # stage 00 完成时由状态脚本写入
 
   # === 事实分层（见 docs/applicants/README.md）===
   applicant_profile_file: "../../docs/applicants/yan-feng.md"
@@ -62,3 +65,11 @@ stages:
   "12_simulated_review":  { name: "模拟专家评审",       status: pending, blockers: [], gaps: [] }
   "13_targeted_repair":   { name: "P0/P1 定点修复",     status: pending, blockers: [], gaps: [] }
   "14_compile":           { name: "编译",               status: pending, blockers: [], gaps: [] }
+
+# 正文流程与整份申请书可提交分开判断；completed / not_applicable 才算通过。
+submission:
+  abstract: pending
+  application_code: pending
+  budget: pending
+  declarations: pending
+  attachments: pending
