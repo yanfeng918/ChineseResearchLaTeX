@@ -70,6 +70,19 @@ project:
 
 做完这三步，写作流程就不会再问共用层里已经确认过的信息。
 
+首次运行或续跑时，先让状态脚本迁移旧断点并与真实文件对账：
+
+```bash
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir projects/你的项目 migrate --apply
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir projects/你的项目 reconcile --apply
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir projects/你的项目 next
+```
+
+这样即使上次在阶段中途退出，也会根据输入/输出指纹恢复；若 `main.tex` 改过，则自动要求重跑布局解析。
+
 ---
 
 ## 三、事实的状态口径
@@ -137,6 +150,15 @@ python3 skills/nsfc-full-pipeline/scripts/scan_gaps.py --project-dir projects/�
 - **只要还有 `【待补 …】`，这稿就不能提交**。阻塞点没消失，只是从"写作时"挪到了"提交前"
 - **缺口清空前，篇幅结论只能算暂定**。挖空稿偏短，补完真实项目和论文常多占 1–2 页；这时候信"还有余量"，补完就得回头再压
 
+正文走完后仍要区分“正文完成”和“整份申请书可提交”：
+
+```bash
+python3 skills/nsfc-full-pipeline/scripts/pipeline_state.py \
+  --project-dir projects/你的项目 readiness
+```
+
+`body_pipeline_ready` 只代表正文 15 阶段与 PDF 通过；`submission_ready` 还要求摘要、申请代码、预算、声明和附件全部完成或明确不适用。
+
 想恢复旧的"缺信息就停"，把断点文件里的 `run.fill_policy` 改成 `blocking`。
 
 ---
@@ -149,7 +171,7 @@ python3 skills/nsfc-full-pipeline/scripts/scan_gaps.py --project-dir projects/�
 请使用 nsfc-full-pipeline 处理 projects/你的项目，从头跑全流程。
 ```
 
-它按 00–14 阶段串联，以 `docs/workflow_status.yaml` 为断点。中断后说「继续」即可续跑，不会推倒重来。
+它按 00–14 共 15 个阶段串联，以 `docs/workflow_status.yaml` 为断点。中断后说「继续」即可续跑，不会推倒重来。
 
 评审后自动改稿：
 

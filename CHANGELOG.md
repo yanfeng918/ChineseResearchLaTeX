@@ -10,6 +10,7 @@
 
 ### Added（新增）
 
+- `skills/nsfc-full-pipeline/` 升级到 `v0.4.0`：新增 schema v2 状态管理器，提供旧断点迁移、旧事实阻塞自动转换、原子写回、输入/输出指纹、中断恢复、已完成阶段输入漂移失效、`main.tex` 变更失效、真实缺口对账，以及 `body_pipeline_ready` / `submission_ready` 两级判定；`scan_gaps.py` 改为默认只扫描活动正文，并将事实源缺失、未登记 ID 与未写作占位纳入结构错误。主 `SKILL.md` 已压缩为 500 行以内的中文入口，阶段细则拆入 `references/`，并修正 00–14 实为 15 个阶段。新增 16 项确定性回归测试；下游 `nsfc-qc`、`nsfc-length-aligner`、`nsfc-humanization` 分别发布 `v1.2.2`、`v0.3.2`、`v1.2.1`，同步缺口标记保护口径。
 - `skills/nsfc-full-pipeline/` 升级到 `v0.3.0`：引入 **draft-first 缺口策略**，缺事实不再阻塞写作。此前编排器遇到缺真实项目号、经费、论文、奖项、平台、团队信息时一律生成问卷并把阶段标成 `need_user_input` 停住，导致一份标书要被打断很多次，而其中大部分缺口（研究基础的批准号、工作条件的设备型号、各类声明）根本不影响论证章节的写作。现默认 `run.fill_policy: draft_first`：
   - **两类缺口分离**。可推定项（年度计划月份切分、预期成果数量口径、实验规模、指标阈值）给合理草稿值并标 `【暂定 …】`，正文完整、不阻塞提交；硬事实（批准号、经费额度、已发论文、获奖、平台型号、团队成员、国基完成情况、各类声明）只把事实名词挖空为 `【待补 ID：说明】`。这条区分是安全底线——draft-first 只改变"何时停"，不改变"是否可以编造"。
   - **阻塞点从写作时移到提交前**。硬阻塞收敛为 stage 00（落点/项目类型解析失败，不知道往哪写）与 stage 01（选题未定，写什么都是编造）两处；只要正文仍有 `【待补 …】`，即不得表述为定稿或可提交。
@@ -21,7 +22,7 @@
   - `evals/evals.json` 由 17 条扩至 21 条；两个 `*_Clean` 模板的 `workflow_status.yaml` 与 `AGENTS.md`、`docs/nsfc-writing-workflow-guide.md` 同步接线。
 - `docs/nsfc-writing-workflow-guide.md`：新增 AI 写作工作流指南。此前 `docs/nsfc-usage-guide.md` 只覆盖模板安装、编译与改哪些 `.tex`，缺少写作层的说明。新指南讲三层结构（共用事实 / 项目事实 / 技能）、开新标书三步、事实四级状态口径、技能选择顺序、技术路线总—分规范、三段式与五段式的章节编号陷阱、适用范围与常见问题；已从 `nsfc-usage-guide.md` 的延伸阅读与 `docs/applicants/README.md` 顶部挂入口。
 - `docs/applicants/`：建立**两层事实结构**，把跨项目复用的申请人事实与项目专属事实分开维护。新增 `README.md`（分层规则、`已确认`/`公开来源待终核`/`待本人确认`/`明确暂无` 四级状态口径、隐私规则、项目接入方式）与 `yan-feng.md`（共用申请人信息：身份、履历、科研项目 `P-H*`/`P-V*`、代表作 `O-*`、科研条件、跨项目待补事实 `F-GEN-*`）。共用层不复制到各项目，项目通过 `workflow_status.yaml` 的 `applicant_profile_file` 以相对路径指向；申请人信息更新一处即全项目生效，避免此前"同一事实在多份文档各存一份、口径互相打架"（如 A100 八卡在工作条件文档与补充问卷中结论相反）的问题。
-- `projects/NSFC_General_Clean/docs/` 与 `projects/NSFC_Local_Clean/docs/`：两个空白模板加入事实库接线骨架 —— `00_项目事实库.md`（项目专属事实模板）、`workflow_status.yaml`（14 阶段断点模板，预留 `applicant_profile_file`）、`README.md`（新项目三步接入说明）。新项目经 `scripts/create_project.py` 复制后即自动带上接线，无需手工配置。`NSFC_Local_Clean` 版按五段式适配：`layout: five-part`、篇幅口径含"第（一）部分 ≤8000 字"、章节对照表标明技术路线写在独立的 `1.3.方案及可行性`。
+- `projects/NSFC_General_Clean/docs/` 与 `projects/NSFC_Local_Clean/docs/`：两个空白模板加入事实库接线骨架 —— `00_项目事实库.md`（项目专属事实模板）、`workflow_status.yaml`（00–14 共 15 阶段断点模板，预留 `applicant_profile_file`）、`README.md`（新项目三步接入说明）。新项目经 `scripts/create_project.py` 复制后即自动带上接线，无需手工配置。`NSFC_Local_Clean` 版按五段式适配：`layout: five-part`、篇幅口径含"第（一）部分 ≤8000 字"、章节对照表标明技术路线写在独立的 `1.3.方案及可行性`。
 - `skills/README.md`：补登记 `nsfc-full-pipeline`（第 23 条）。该技能此前只有 `SKILL.md`、`config.yaml` 等文件落地，从未进入技能总览、技能协作说明与推荐使用顺序，用户无法从索引发现它。同时在「技能依赖关系」与「推荐使用顺序」两处补充其作为 NSFC 编排层的定位。
 
 ### Fixed（修复）

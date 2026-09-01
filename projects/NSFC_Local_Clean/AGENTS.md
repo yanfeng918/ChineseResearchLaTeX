@@ -8,7 +8,7 @@
 |---|---|---|
 | 1 | `docs/applicants/<申请人slug>.md`（路径见断点文件 `applicant_profile_file`） | **共用申请人信息**：身份、履历、科研项目 `P-*`、代表作 `O-*`、科研条件、跨项目缺口 `F-GEN-*` |
 | 2 | [docs/00_项目事实库.md](docs/00_项目事实库.md) | **项目专属**：申报目标、研究边界、团队、数据条件、项目缺口 |
-| 3 | [docs/workflow_status.yaml](docs/workflow_status.yaml) | 14 阶段断点，跳过 `status: completed` 的阶段 |
+| 3 | [docs/workflow_status.yaml](docs/workflow_status.yaml) | 15 阶段 schema v2 断点；先由 `pipeline_state.py migrate/reconcile` 对账，再决定续跑点 |
 
 规则：
 

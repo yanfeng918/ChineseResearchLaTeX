@@ -770,9 +770,9 @@ output_mode：preview（先预览）/ apply（确认后写入）
 **技能特点**：
 - stage 00 先从 `main.tex` 未注释的 `\input{extraTex/...}` 解析真实正文文件并按角色归类，避免跨模板写错章节
 - stage 00 同一趟解析项目类型与篇幅预算，解析不出就停下询问，不回退到地区基金口径
-- 以 `docs/workflow_status.yaml` 为断点；判定阶段完成时要求输出文件同时为非占位态
-- 缺真实项目号、经费、论文、奖项、平台、团队信息时生成问卷并标记 `need_user_input`，不编造事实
-- 不覆盖摘要、申请代码、预算说明书与配图，需单独处理
+- 按 00–14 共 15 个阶段运行；schema v2 断点以输入/输出指纹、原子写回和真实产物对账保障可靠续跑
+- 默认 draft-first：缺真实项目号、经费、论文、奖项、平台或团队信息时按已登记事实 ID 挖空并继续，阶段记为 `drafted_with_gaps`；只在布局、项目类型或选题无法确定时阻塞
+- 区分 `body_pipeline_ready` 与 `submission_ready`；摘要、申请代码、预算、声明、附件和配图需单独处理
 
 [详细文档 →](nsfc-full-pipeline/README.md)
 
@@ -793,7 +793,7 @@ output_mode：preview（先预览）/ apply（确认后写入）
 - **nsfc-humanization**：在定稿前去掉明显“机器味”，保持表达更像人工撰写
 - **nsfc-qc**：在送审前做只读体检，集中排查文风/引用/篇幅/逻辑/缩写问题
 - **nsfc-reviewers**：标书完成后模拟专家评审（依赖标书完整正文）
-- **nsfc-full-pipeline**：上述 NSFC 环节的编排层，按 00-14 阶段自动串联并支持断点续跑；需要逐步手动控制时仍可直接调用各单点技能
+- **nsfc-full-pipeline**：上述 NSFC 环节的编排层，按 00–14 共 15 个阶段自动串联；schema v2 断点支持可靠续跑，并区分正文流程完成与整份申请书可提交；需要逐步手动控制时仍可直接调用各单点技能
 - **paper-write-sci**：SCI 论文写作与修订（依赖 LaTeX 论文项目结构）
 - **paper-explain-figures**：论文 Figure 解读（可与 paper-write-sci 配合使用）
 - **paper-select-journal**：论文接近成稿后做期刊筛选（可复用 paper-write-sci 产出的 manuscript）
