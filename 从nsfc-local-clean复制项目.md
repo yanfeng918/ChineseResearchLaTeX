@@ -1,4 +1,7 @@
 # 新建项目
+
+## 纯手工版本
+
 新目录名建议保持 NSFC_ 前缀，否则 VS Code 同步脚本无法识别其为 NSFC 项目。
 
 new_project=NSFC_MyProject
@@ -16,7 +19,6 @@ python scripts/sync_vscode_configs.py \
 
 ## 构建了一个脚本：
 
-
 python scripts/create_project.py \
   --template NSFC_Local_Clean  \
   --name NSFC_2027_Silk_Road_Smart_Logistic_v3
@@ -28,43 +30,28 @@ python scripts/create_project.py \
     失败时回滚本次新建目录
 
 
-# 新建指定格式的项目
-先把官方模板落成 LaTeX 项目
+# 启动项目
+
+----------------------------------------
+基于projects/NSFC_General_Clean/docs中的信息，
+请使用 nsfc-full-pipeline 处理 projects/NSFC_General_Clean这个项目，从头跑全流程。
+
+----------------------------------------
+请使用 nsfc-full-pipeline 处理 projects/你的项目，从头跑全流程。
 
 
-## 官方
+# 把官方模板落成 LaTeX 项目
 
-请使用 make-latex-model skill。
+
+请使用 make-latex-model skill，把我提供的官方基金模板落成一个新的 LaTeX 项目。
 目标项目：projects/NSFC\_2026\_Education\_final
-参考基线：projects/NSFC\_2026\_Education\_final/template/2026年度新疆教育云技术与资源重点实验室开放课题申请书.pdf
+参考模板：projects/NSFC\_2026\_Education\_final/template.pdf
 目标：根据当前 ChineseResearchLaTeX 的真实分层，把这套模板调到可交付状态；如果问题属于共享样式，请优先改 packages/bensz-thesis，而不是只改项目层。
 输出：直接修改代码并用官方构建入口验证；最后告诉我你改到了哪一层、为什么这样改。
 
 
 
-
-## cursor给出的提示词
-
-请使用 make-latex-model，把我提供的官方基金模板落成一个新的 LaTeX 项目。
-
-基金：【新疆自治区重点研发项目】
-材料：【/home/yanfeng/fund-writing/ChineseResearchLaTeX/template/申报书(2026自治区重点研发-物流项目).pdf】
-要求：
-- 不要套 NSFC_Young / NSFC_General 的章节编号
-- 章节名、提纲、页数/字数限制按官方模板来
-- 正文放 extraTex/，参考文献放 references/
-- 能编译出 main.pdf
-- 不要改 packages/bensz-nsfc，避免影响国自然三套模板
-
-
-
-
-
-
-
-
-# 把NSFC格式的申报书转换为指定格式：
-
+# 最后，把NSFC格式的申报书转换为指定格式申报书：
 
 
 场景 1：旧 NSFC 标书迁到当前项目
@@ -96,5 +83,4 @@ NSFC_2026_CCF_1688_Yuanbao2中迁移到这个项目中
 
 
 
-----------------------------------------
-请使用 nsfc-full-pipeline 处理 projects/你的项目，从头跑全流程。
+
