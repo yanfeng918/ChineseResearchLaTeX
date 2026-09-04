@@ -248,15 +248,21 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 
 > ⚠️ 注意：标记为 `🚧 开发中` 的 skill 暂时不建议小白用户使用，因为它们往往还没有被充分地测试，功能和安全性没有保障。与标书模板不同，Skills建议直接使用仓库里最新的版本。
 
-项目内置多个符合 [我预定义规范](https://github.com/huangwb8/skills) 的强大 Skills，辅助 LaTeX 写作和模板优化。**兼容 Claude Code、OpenAI Codex、Cursor、GitHub Actions、VS Code！** 通过灵活运用 skills，加上多轮对话进行优化，才能保证最佳效果。**详细使用说明和 Prompt 模板**：[skills/README.md](skills/README.md)
+项目内置多个符合 [我预定义规范](https://github.com/huangwb8/skills) 的强大 Skills，辅助 LaTeX 写作和模板优化。项目级自动发现已适配 **Claude Code** 与 **OpenAI Codex**；通过灵活运用 skills，加上多轮对话进行优化，才能保证最佳效果。**详细使用说明和 Prompt 模板**：[skills/README.md](skills/README.md)
 
-在 **Claude Code** 或 **OpenAI Codex** 中输入以下 Prompt，AI 会自动拉取官方一键脚本完成安装与更新：
+克隆或更新仓库后，无需把这些 Skills 安装到用户主目录。直接从仓库根目录或任意 `projects/*`、`packages/*` 子目录启动 Codex / Claude Code：Codex 通过 `.agents/skills/` 发现项目入口，Claude Code 通过 `.claude/skills/` 发现项目入口，实际执行规范仍以 `skills/<name>/SKILL.md` 为唯一来源。
 
+维护者修改、新增或删除 `skills/*` 后运行：
+
+```bash
+# 生成或更新两个宿主的项目级入口
+python3 scripts/sync_project_skills.py sync
+
+# 只读检查入口是否与 canonical Skills 同步
+python3 scripts/sync_project_skills.py check
 ```
-安装/更新 huangwb8/skills 的 bensz skills 到最新版
-```
 
-> 💡 需要一键 `curl | bash` / `irm | iex`、本地 `git clone` 或远程对话式安装等手动命令？见 [手动配置指南](docs/manual-setup-guide.md#skills-安装与更新)。
+旧全局同名副本不会被自动删除。只读审计、可恢复归档及外部 Skill 依赖说明见 [手动配置指南](docs/manual-setup-guide.md#skills-项目级加载与迁移)。
 
 
 本项目提供多个 AI 技能，覆盖文献调研、模板迁移、标书写作与模板开发等协作场景。
@@ -277,7 +283,7 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 | [research-topic-extractor](skills/research-topic-extractor/) | 📚 文献调研 | v1.1.0 | 结构化综述主题提取 | ✅ 稳定 |
 | [research-guide-updater](skills/research-guide-updater/) | 📚 文献调研 | v1.1.0 | 项目指南优化与写作规范沉淀 | ✅ 稳定 |
 | [research-plan](skills/research-plan/) | 📚 文献调研 | v0.2.0 | 文献驱动的科研分析策略规划 | 🚧 开发中 |
-| [research-idea](skills/research-idea/) | 📚 文献调研 | v0.2.0 | 基于查新与多轮独立审查提出科学问题和可证伪假设 | 🚧 开发中 |
+| [research-idea](skills/research-idea/) | 📚 文献调研 | v0.2.2 | 基于查新与多轮独立审查提出科学问题和可证伪假设 | 🚧 开发中 |
 | [nsfc-code](skills/nsfc-code/) | ✍️ 标书写作 | v1.0.0 | NSFC 申请代码推荐（5 组 code1/code2 + 理由，只读） | ✅ 稳定 |
 | [nsfc-abstract](skills/nsfc-abstract/) | ✍️ 标书写作 | v2.1.2 | 标题建议 + NSFC 中英文摘要生成（中文≤400字；英文≤4000字符） | ✅ 稳定 |
 | [nsfc-budget](skills/nsfc-budget/) | ✍️ 标书写作 | v0.1.2 | NSFC 预算说明书生成（LaTeX 项目 + `budget.pdf`） | 🚧 开发中 |
@@ -291,7 +297,7 @@ AI 会自动联网访问项目文档了解安装方式并完成安装。小白�
 | [nsfc-humanization](skills/nsfc-humanization/) | ✍️ 标书写作 | v1.2.1 | 分词语/句法/段落/章节四层去 AI 机器味，识别工程协议腔、术语漂移并审计安全不变量 | ✅ 稳定 |
 | [nsfc-full-pipeline](skills/nsfc-full-pipeline/) | ✍️ 标书写作 | v0.4.0 | NSFC 正文 15 阶段编排（draft-first、可靠断点、两级提交就绪度） | 🚧 开发中 |
 | [paper-write-sci](skills/paper-write-sci/) | 📝 SCI 论文 | v0.11.2 | SCI 期刊论文写作与修订（风格化写作、数字审查、逻辑审查、写作节奏护栏、PDF/Word 渲染闭环） | 🚧 开发中 |
-| [paper-explain-figures](skills/paper-explain-figures/) | 📝 SCI 论文 | v0.2.0 | 解读论文 Figure 含义，生成高可读性 Markdown 报告（视觉理解 + 源代码检索 + 人工解读） | 🚧 开发中 |
+| [paper-explain-figures](skills/paper-explain-figures/) | 📝 SCI 论文 | v0.2.1 | 解读论文 Figure 含义，生成高可读性 Markdown 报告（视觉理解 + 源代码检索 + 人工解读） | 🚧 开发中 |
 | [paper-select-journal](skills/paper-select-journal/) | 📝 SCI 论文 | v0.3.1 | SCI 投稿期刊筛选（稿件画像 + 期刊核验 + 近 3 个月相似论文证据） | 🚧 开发中 |
 | [paper-know-journal](skills/paper-know-journal/) | 📝 SCI 论文 | v0.3.0 | 期刊投稿指南调研（官方作者指南、投稿形式要求、费用政策与社区评价） | 🚧 开发中 |
 

@@ -27,6 +27,12 @@
 - 优先使用 Edit 工具进行精确修改
 - 避免不必要的格式化或重构
 
+### 项目级 Skills
+
+- Claude Code 通过 `.claude/skills/` 发现本仓库 Skills；这些文件由 `scripts/sync_project_skills.py` 生成，不得手工编辑
+- 实际执行规范与资源位于 `skills/<name>/`；修改后先运行 `python3 scripts/sync_project_skills.py sync`，再运行 `python3 scripts/sync_project_skills.py check`
+- 不把本项目自有 Skill 安装到 `~/.claude/skills/`；旧同名副本按 AGENTS.md 的审计、显式归档与恢复流程处理
+
 ### 与 AGENTS.md 的关系
 
 - **AGENTS.md**：跨平台通用项目指令（Single Source of Truth）

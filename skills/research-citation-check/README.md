@@ -165,11 +165,10 @@ research-citation-check 是一个**AI 驱动的引用语义核查工具**，解�
 ### 步骤 1：生成结构化输入（推荐）
 
 ```bash
-# 进入 skill 根目录（安装后通常是 ~/.codex/skills/research-citation-check 或 ~/.claude/skills/research-citation-check）
-cd /path/to/research-citation-check
-
-# 生成结构化输入（供 AI 快速核查）
-python3 scripts/run_ai_alignment.py --work-dir "/path/to/your_review_dir" --prepare
+# 从 ChineseResearchLaTeX 仓库根目录生成结构化输入（供 AI 快速核查）
+python3 skills/research-citation-check/scripts/run_ai_alignment.py \
+  --work-dir "/path/to/your_review_dir" \
+  --prepare
 ```
 
 **说明**：此步骤在 `{work_dir}/.check-review-alignment/` 目录下生成 `ai_alignment_input.json`，包含每条引用的文献元信息和 PDF 摘要段，便于宿主 AI 快速、可追溯地逐条核查。
@@ -187,7 +186,9 @@ python3 scripts/run_ai_alignment.py --work-dir "/path/to/your_review_dir" --prep
 
 ```bash
 # 渲染生成的 PDF 和 Word
-python3 scripts/run_ai_alignment.py --work-dir "/path/to/your_review_dir" --render
+python3 skills/research-citation-check/scripts/run_ai_alignment.py \
+  --work-dir "/path/to/your_review_dir" \
+  --render
 ```
 
 **说明**：此步骤复用 `research-literature-review` 的渲染脚本，不直接调用 LLM API。

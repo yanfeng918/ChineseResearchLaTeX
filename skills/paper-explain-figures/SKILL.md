@@ -104,29 +104,25 @@ metadata:
 在当前目录运行（推荐，产物会落到当前目录与 `.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/paper-explain-figures/`）：
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 "{canonical_skill_dir}/scripts/paper_explain_figures.py" \
   --fig /abs/path/to/figure1.png \
   --fig /abs/path/to/figure2.pdf \
   --note "你对这些图的关注点/背景解释（可选）"
 ```
 
-如果该 skill 已做系统级安装（路径因平台而异，以下仅示例）：
-
-```bash
-python3 ~/.codex/skills/paper-explain-figures/scripts/paper_explain_figures.py --fig /abs/path/to/figure.png
-```
+`canonical_skill_dir` 是当前已读取的 `skills/paper-explain-figures/` 目录。
 
 常用参数（按需）：
 
 ```bash
 # 启用并行（默认串行，减少 API 限流/封禁风险）
-python3 paper-explain-figures/scripts/paper_explain_figures.py --fig /abs/path/to/figure.png --parallel
+python3 "{canonical_skill_dir}/scripts/paper_explain_figures.py" --fig /abs/path/to/figure.png --parallel
 
 # 并发上限（默认 3；也可改 config.yaml:defaults.max_parallel）
-python3 paper-explain-figures/scripts/paper_explain_figures.py --fig /abs/path/to/figure.png --parallel --max-parallel 3
+python3 "{canonical_skill_dir}/scripts/paper_explain_figures.py" --fig /abs/path/to/figure.png --parallel --max-parallel 3
 
 # 指定 runner（codex/claude/local）
-python3 paper-explain-figures/scripts/paper_explain_figures.py --fig /abs/path/to/figure.png --runner codex
+python3 "{canonical_skill_dir}/scripts/paper_explain_figures.py" --fig /abs/path/to/figure.png --runner codex
 ```
 
 ⚠️ 安全提示：`--runner shell` 已禁用，因为它无法对“.bensz-api/task-{yyyymmdd-hhmm}-{简短描述}/paper-explain-figures 之外绝不泄露中间文件”提供严格保证。

@@ -23,6 +23,8 @@
 
 ```text
 ChineseResearchLaTeX/
+├── .agents/skills/         # Codex 项目级 Skill 自动生成入口
+├── .claude/skills/         # Claude Code 项目级 Skill 自动生成入口
 ├── packages/
 │   ├── bensz-nsfc/          # NSFC 公共包源码（当前主线）
 │   │   ├── scripts/         # NSFC 安装/构建/校验/TDS 打包脚本
@@ -46,6 +48,7 @@ ChineseResearchLaTeX/
 │   └── cv-01/               # 中英文简历示例项目（PDF）
 ├── scripts/
 │   ├── install.py           # 统一 LaTeX 包安装器（支持远程执行）
+│   ├── sync_project_skills.py # 生成、校验、审计与迁移项目级 Skills
 │   ├── sync_vscode_configs.py # 同步 projects/ 下固定的 VS Code 工作区与 LaTeX 配置
 │   ├── vscode/              # VS Code / LaTeX Workshop 固定配置模板
 │   ├── pack_release.py      # Release 资产打包与上传
@@ -89,8 +92,10 @@ ChineseResearchLaTeX/
 - `scripts/sync_vscode_configs.py`：同步 `projects/` 下各项目的 `*.code-workspace`、`.vscode/settings.json` 与 VS Code 构建 launcher
 - `scripts/vscode/`：按 `nsfc / paper / thesis / cv` 分型托管 VS Code / LaTeX Workshop 固定模板，并提供通过 `texlua` 转调项目级 Python wrapper 的跨平台 launcher
 - `scripts/pack_release.py`：项目级 Release 资产打包与上传
+- `scripts/sync_project_skills.py`：以 `skills/` 为唯一源码，维护 `.agents/skills/` 与 `.claude/skills/` 薄入口，并提供旧全局同名副本的只读审计、显式归档和恢复
 - `.github/workflows/sync-gitee-mirror.yml`：在默认分支有新 commit 时立即同步到 Gitee，并额外每小时巡检一次
 - `skills/`：项目级 AI 技能及其文档、脚本、测试
+- `.agents/skills/` / `.claude/skills/`：宿主发现用的自动生成入口，不承载业务源码，不得手工编辑
 - `docs/`：迁移说明等辅助文档
 
 如果一个问题影响多条产品线共享的字体文件、字体路径解析或字体引用 API，优先修改 `packages/bensz-fonts/`；如果问题影响三套 NSFC 模板的共同版式、BibTeX 资源或公共宏逻辑，再优先修改 `packages/bensz-nsfc/`，不要把同一份改动复制粘贴回 `projects/NSFC_General`、`projects/NSFC_Local`、`projects/NSFC_Young`。
@@ -178,6 +183,9 @@ ChineseResearchLaTeX/
 #### Skill 相关问题
 
 - 先确认是否改动 `SKILL.md`、`config.yaml`、脚本实现、README、CHANGELOG
+- `skills/<name>/` 是唯一可编辑源码；不得把项目自有 Skill 安装或同步到用户主目录作为默认工作流
+- 修改、新增或删除 Skill 后运行 `python3 scripts/sync_project_skills.py sync`，提交前运行 `python3 scripts/sync_project_skills.py check`
+- `.agents/skills/` 与 `.claude/skills/` 只保存受管薄入口；外部依赖登记在 `skills/external-dependencies.yaml`
 - 变更 Skill 后，检查根级 `README.md` 与根级 `CHANGELOG.md` 是否需要同步
 
 ### 输出规范
@@ -346,8 +354,10 @@ skill_info:
 1. 更新 `CHANGELOG.md`（Skill 级别）
 2. 更新 `SKILL.md`（如有功能变更）
 3. 重新生成 `README.md`（使用 `write-skill-readme` skill）
-4. 同步到项目级 `CHANGELOG.md`
-5. 视影响范围检查根级 `README.md`、`skills/README.md` 是否需要同步
+4. 运行 `python3 scripts/sync_project_skills.py sync` 更新双宿主生成入口
+5. 同步到项目级 `CHANGELOG.md`
+6. 视影响范围检查根级 `README.md`、`skills/README.md` 是否需要同步
+7. 运行 `python3 scripts/sync_project_skills.py check` 确认没有入口漂移
 
 ---
 
@@ -412,8 +422,9 @@ skill_info:
 ### 系统 Skill 保护
 
 - **严禁直接修改系统级 Skill 的工作文件/代码**（如 `~/.claude/skills/`、`~/.codex/skills/` 下的文件）
-- 如有项目个性化需求，应在项目目录内添加代码或配置
-- 遵循“项目级覆盖系统级”原则，通过项目内的 `skills/` 目录扩展或覆盖功能
+- 本项目自有 Skill 只维护在 `skills/`，通过 `.agents/skills/` 与 `.claude/skills/` 项目入口加载；普通使用和更新不得写入用户级 Skill 目录
+- 旧全局同名副本先用 `python3 scripts/sync_project_skills.py audit-global` 只读审计；只有用户明确确认后才能运行 `archive-global --apply`，并保留 manifest 以供恢复
+- 用户级目录仅用于本仓库未内置的外部 Skill，依赖范围以 `skills/external-dependencies.yaml` 为准；未知、系统或插件 Skill 不由本项目处理
 
 ---
 

@@ -4,6 +4,7 @@
 执行指令与硬性规范在 [SKILL.md](SKILL.md)；默认参数在 [config.yaml](config.yaml)。
 
 旧名 `explain-figures` 已停用；请统一改用 `paper-explain-figures`。
+本 Skill 随 ChineseResearchLaTeX 项目加载，无需安装到用户主目录。下面的备选脚本命令均从仓库根目录运行。
 
 ## 用法
 
@@ -68,7 +69,7 @@ paper-explain-figures 是你的"论文 Figure 解读老师"——不只是描述
 ### 示例 1：单图解读（最简单）
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 skills/paper-explain-figures/scripts/paper_explain_figures.py \
   --fig /Users/xxx/paper/figures/result_plot.png
 ```
 
@@ -77,7 +78,7 @@ python3 paper-explain-figures/scripts/paper_explain_figures.py \
 ### 示例 2：多图批量解读
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 skills/paper-explain-figures/scripts/paper_explain_figures.py \
   --fig /Users/xxx/paper/figures/fig1.png \
   --fig /Users/xxx/paper/figures/fig2.pdf \
   --fig /Users/xxx/paper/figures/fig3.jpg
@@ -86,7 +87,7 @@ python3 paper-explain-figures/scripts/paper_explain_figures.py \
 ### 示例 3：带人工解读（帮助模型聚焦）
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 skills/paper-explain-figures/scripts/paper_explain_figures.py \
   --fig /Users/xxx/paper/figures/result_plot.png \
   --note "这是关于 xxx 实验的结果，主要关注 y 轴的趋势变化"
 ```
@@ -94,7 +95,7 @@ python3 paper-explain-figures/scripts/paper_explain_figures.py \
 ### 示例 4：指定源代码路径
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 skills/paper-explain-figures/scripts/paper_explain_figures.py \
   --fig /Users/xxx/paper/figures/result_plot.png \
   --code-path /Users/xxx/paper/scripts/plot_results.R
 ```
@@ -102,7 +103,7 @@ python3 paper-explain-figures/scripts/paper_explain_figures.py \
 ### 示例 5：并行加速（多图场景）
 
 ```bash
-python3 paper-explain-figures/scripts/paper_explain_figures.py \
+python3 skills/paper-explain-figures/scripts/paper_explain_figures.py \
   --fig /Users/xxx/paper/figures/fig1.png \
   --fig /Users/xxx/paper/figures/fig2.pdf \
   --fig /Users/xxx/paper/figures/fig3.jpg \

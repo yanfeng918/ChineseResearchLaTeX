@@ -8,6 +8,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -58,9 +59,9 @@ DEFAULT_CONFIG = {
         },
         "search_roots": [
             ".",
+            "~/.agents/skills",
             "~/.codex/skills",
             "~/.claude/skills",
-            "/Volumes/2T01/Cache/.codex/skills",
         ],
     },
     "tests": {"default_dir": "tests/research-idea"},
@@ -200,11 +201,25 @@ def write_task_readme(task_root: Path, skill_name: str) -> None:
         )
 
 
+def project_search_roots(cwd: Path) -> tuple[Path, ...]:
+    roots: list[Path] = []
+    for candidate in (cwd.resolve(), *cwd.resolve().parents):
+        roots.append(candidate)
+        if (candidate / ".git").exists() or (candidate / "skills").is_dir():
+            break
+    return tuple(roots)
+
+
 def find_skill(skill_name: str, search_roots: list[str], cwd: Path) -> Path | None:
     candidates: list[Path] = []
     for root in search_roots:
         root_path = (cwd if root == "." else Path(root).expanduser()).resolve()
-        candidates.append(root_path / skill_name / "SKILL.md")
+        roots_to_check = project_search_roots(root_path) if root == "." else (root_path,)
+        for candidate_root in roots_to_check:
+            candidates.append(candidate_root / "skills" / skill_name / "SKILL.md")
+            candidates.append(candidate_root / ".agents" / "skills" / skill_name / "SKILL.md")
+            candidates.append(candidate_root / ".claude" / "skills" / skill_name / "SKILL.md")
+            candidates.append(candidate_root / skill_name / "SKILL.md")
     for env_name in ("CODEX_HOME", "CLAUDE_HOME"):
         env_value = os.environ.get(env_name)
         if env_value:
@@ -213,6 +228,20 @@ def find_skill(skill_name: str, search_roots: list[str], cwd: Path) -> Path | No
         if candidate.exists() and candidate.is_file():
             return candidate
     return None
+
+
+def is_project_local_skill(path: Path, skill_name: str, cwd: Path) -> bool:
+    expected = path.resolve()
+    for root in project_search_roots(cwd):
+        candidates = (
+            root / "skills" / skill_name / "SKILL.md",
+            root / ".agents" / "skills" / skill_name / "SKILL.md",
+            root / ".claude" / "skills" / skill_name / "SKILL.md",
+            root / skill_name / "SKILL.md",
+        )
+        if expected in (candidate.resolve() for candidate in candidates):
+            return True
+    return False
 
 
 def check_dependencies(config: dict, cwd: Path) -> dict[str, str]:
@@ -235,13 +264,21 @@ def check_dependencies(config: dict, cwd: Path) -> dict[str, str]:
             missing.append(skill_name)
         else:
             found[skill_name] = str(path.parent)
+            if not is_project_local_skill(path, resolved_name, cwd):
+                print(
+                    f"WARNING: {skill_name} 使用用户级兼容回退: {path.parent}；"
+                    "项目自有同名副本可用 scripts/sync_project_skills.py audit-global 审计，"
+                    "外部依赖以 skills/external-dependencies.yaml 为准。",
+                    file=sys.stderr,
+                )
             if resolved_name != skill_name:
                 found[f"{skill_name}__legacy_alias"] = resolved_name
     if missing:
         joined = ", ".join(missing)
         raise SystemExit(
             "缺少 research-idea 必需依赖 skill: "
-            f"{joined}。请先安装到当前仓库、~/.codex/skills 或 ~/.claude/skills。"
+            f"{joined}。本项目自有依赖应位于仓库 skills/；"
+            "外部依赖请查看 skills/external-dependencies.yaml。"
         )
     return found
 

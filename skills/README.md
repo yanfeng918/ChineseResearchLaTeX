@@ -4,6 +4,22 @@
 
 > 📋 **Skills 开发规范**：本项目遵循通用的 Skills 开发规范，详见 [huangwb8/skills](https://github.com/huangwb8/skills)
 
+## 项目级加载
+
+本仓库的 `skills/*` 是唯一可编辑源码。Codex 从 `.agents/skills/*/SKILL.md`、Claude Code 从 `.claude/skills/*/SKILL.md` 发现自动生成的薄入口，再完整读取对应的 canonical `skills/<name>/SKILL.md`。克隆或更新仓库后，从仓库根目录或任意子目录启动宿主即可，无需全局安装本项目自有 Skills。
+
+维护者修改 Skill 后运行：
+
+```bash
+# 更新生成入口
+python3 scripts/sync_project_skills.py sync
+
+# 提交前检查入口漂移
+python3 scripts/sync_project_skills.py check
+```
+
+不要直接编辑 `.agents/skills/` 或 `.claude/skills/`。旧全局副本的审计、归档和恢复方法见 [手动配置指南](../docs/manual-setup-guide.md#skills-项目级加载与迁移)；未内置依赖见 [`external-dependencies.yaml`](external-dependencies.yaml)。
+
 ## 推荐工作流
 
 以下为开发者推荐的完整文献调研与标书写作工作流：
@@ -551,7 +567,7 @@ output_mode：preview（先预览）/ apply（确认后写入）
 
 ### 17. paper-explain-figures - 论文 Figure 解读
 
-**状态**：🚧 开发中（v0.2.0）
+**状态**：🚧 开发中（v0.2.1）
 
 **类型**：📝 日常
 

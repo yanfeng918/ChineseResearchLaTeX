@@ -1,6 +1,6 @@
 skill_info:
   name: paper-explain-figures
-  version: 0.2.0
+  version: 0.2.1
   description: "解读论文 Figure 的含义并输出一份人类可读性很强的 Markdown 报告；自动将 figure 转成 jpg 做视觉理解，并尝试从图片附近检索生成该图的源代码作为解读依据；通过 worker 脚本以 `codex exec`/`claude -p` 进程级隔离解读每张图（并发上限默认 3）。⚠️ 全程只读：严禁修改图片与源代码。"
   author: "Bensz Conan"
   category: "paper-reading"

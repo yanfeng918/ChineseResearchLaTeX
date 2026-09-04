@@ -196,32 +196,57 @@ python packages/bensz-cv/scripts/cv_project_tool.py build --project-dir projects
 
 ---
 
-## Skills 安装与更新
+## Skills 项目级加载与迁移
 
-对应 README 入口：[Skills](../README.md#-skills) 章节的「⚡ 安装/更新」自然语言描述。
+对应 README 入口：[Skills](../README.md#-skills)。本仓库自有 Skills 随 Git 版本一起交付，不再要求安装到 `~/.agents/skills`、`~/.codex/skills` 或 `~/.claude/skills`。
 
-下方命令涉及上游 [huangwb8/skills](https://github.com/huangwb8/skills) 仓库。与标书模板不同，Skills 建议直接使用仓库里最新的版本。
+### 普通使用
 
-### 一键快速安装/更新
+克隆或更新仓库后，直接从仓库根目录或其子目录启动 Codex / Claude Code。宿主分别读取已提交的 `.agents/skills/` 与 `.claude/skills/` 薄入口，再转到 `skills/<name>/SKILL.md` 的 canonical 指令和资源。
 
-| 平台 | 命令 |
-|------|------|
-| **macOS / Linux / WSL** | `curl -fsSL https://raw.githubusercontent.com/huangwb8/skills/main/@install/install.sh \| bash` |
-| **Windows PowerShell** | `irm https://raw.githubusercontent.com/huangwb8/skills/main/@install/install.ps1 \| iex` |
+不要直接修改两个隐藏入口目录；它们由脚本生成。
 
-### 本地硬编码安装/更新
+### 维护入口
 
 ```bash
-git clone https://github.com/huangwb8/skills.git && 
-  git clone https://github.com/huangwb8/ChineseResearchLaTeX.git && 
-  cd skills &&
-  python3 install-bensz-skills/scripts/install.py --source ../ChineseResearchLaTeX/skills
+# 修改、新增或删除 skills/* 后，同步两个宿主入口
+python3 scripts/sync_project_skills.py sync
+
+# 提交前只读检查；发现缺失或漂移时返回非零状态
+python3 scripts/sync_project_skills.py check
 ```
 
-### 远程对话式安装/更新
+同步器会校验目录名与 `SKILL.md` frontmatter 的 `name`；存在 `config.yaml` 时，也会校验其中的 `skill_info.name`。生成入口只保留宿主共同支持的 frontmatter 字段，避免 canonical Skill 中的历史扩展字段阻断发现。它只会清理带生成标记的陈旧入口，不会删除自定义目录。
+
+### 审计旧全局副本
 
 ```bash
-git clone https://github.com/huangwb8/skills.git && 
-  cd skills &&
-  python3 install-bensz-skills/scripts/install.py --remote --check
+# 只读列出与当前项目 25 个 Skills 同名的用户级副本
+python3 scripts/sync_project_skills.py audit-global
+
+# 机器可读输出
+python3 scripts/sync_project_skills.py audit-global --json
 ```
+
+审计不会修改用户主目录。若确认旧副本不再被其他项目使用，可显式归档：
+
+```bash
+# 只移动精确同名目录/符号链接，并生成可恢复 manifest
+python3 scripts/sync_project_skills.py archive-global --apply
+```
+
+归档默认位于 `~/.ChineseResearchLaTeX/skill-backups/<时间戳>/`。需要回退时使用归档命令打印出的 manifest：
+
+```bash
+python3 scripts/sync_project_skills.py restore-global \
+  --manifest ~/.ChineseResearchLaTeX/skill-backups/<时间戳>/manifest.json \
+  --apply
+```
+
+恢复操作遇到已有目标时会拒绝覆盖。归档与恢复都只接受当前项目拥有的精确 Skill 名，不处理第三方、系统或插件 Skill。
+
+用户级同名副本仍存在时，Codex 可能显示重复项，Claude Code 也可能优先使用个人副本。完成归档后重启或刷新宿主，并核对实际 Skill 来源是否位于当前仓库。
+
+### 外部 Skill 依赖
+
+本仓库未内置的依赖单独登记在 [`skills/external-dependencies.yaml`](../skills/external-dependencies.yaml)。当前 `parallel-vibe` 是 `research-idea` 的必需依赖，也是 `nsfc-reviewers`、`nsfc-qc` 的可选增强依赖；本次迁移不会替用户自动安装或删除它。

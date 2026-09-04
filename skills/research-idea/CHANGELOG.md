@@ -8,6 +8,8 @@
 
 ### Changed
 
+- `config.yaml`：版本号 `0.2.1 → 0.2.2`；依赖发现改为从当前目录向仓库根逐级查找 `skills/`、`.agents/skills/` 与 `.claude/skills/`，并移除单机绝对路径。
+- `SKILL.md` / README：脚本命令改为项目源码路径；`parallel-vibe` 明确为未内置外部依赖，并使用初始化 manifest 中的实际解析路径。
 - `config.yaml`：版本号 `0.2.0 → 0.2.1`；最终报告泄露校验新增 `.parallel-vibe/` 禁止路径，兼容 `parallel-vibe` 默认工作区目录变更。
 - `SKILL.md` / `scripts/validate_report.py`：同步最终报告不得暴露 `.parallel-vibe/` 中间产物路径。
 - 依赖口径迁移为 `research-topic-extractor` 与 `research-literature-review`。

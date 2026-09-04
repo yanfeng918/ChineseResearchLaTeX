@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Changed（变更）
+
+- `config.yaml`：版本号 `0.2.0 → 0.2.1`；`SKILL.md` 与 README 的脚本示例改为从项目内 canonical Skill 目录执行，不再把用户级安装路径作为默认入口。
+
 ## [0.2.0] - 2026-03-26
 
 ### Changed（变更）

@@ -3,6 +3,8 @@
 本 README 面向**使用者**：如何触发并正确使用 `research-idea` skill。
 执行规范和硬性流程在 `SKILL.md`；默认参数在 `config.yaml`。
 
+本 Skill 随 ChineseResearchLaTeX 项目加载，无需安装到用户主目录；维护者与脚本均以仓库内 `skills/research-idea/` 为源码。
+
 ## 快速开始
 
 推荐 Prompt：
@@ -33,7 +35,9 @@
 
 ## 依赖兼容
 
-`research-idea` 当前优先发现 `research-topic-extractor` 与 `research-literature-review`。过渡期如果用户环境里只安装了旧名 `get-review-theme` 或 `systematic-literature-review`，依赖检查会把它们作为 fallback 使用。
+`research-idea` 会从当前目录向仓库根逐级发现项目内的 `research-topic-extractor` 与 `research-literature-review`。过渡期如果环境里只有旧名 `get-review-theme` 或 `systematic-literature-review`，依赖检查会把它们作为 fallback 使用。
+
+`parallel-vibe` 是未随本仓库内置的必需外部依赖；来源和依赖范围见 [`../external-dependencies.yaml`](../external-dependencies.yaml)。初始化脚本会把实际发现路径写入 manifest，后续流程按该路径调用，不依赖写死的全局目录。
 
 ## 使用示例
 

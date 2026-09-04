@@ -66,13 +66,10 @@ Research-Idea_{github仓库名}_{pr名}_{时间戳}.md
 初始化优先使用脚本：
 
 ```bash
-python3 research-idea/scripts/init_workspace.py --input-label "{简短主题或资料名}" --cwd .
-# 系统级安装后也可使用：
-python3 ~/.codex/skills/research-idea/scripts/init_workspace.py --input-label "{简短主题或资料名}" --cwd .
-python3 ~/.claude/skills/research-idea/scripts/init_workspace.py --input-label "{简短主题或资料名}" --cwd .
+python3 "{canonical_skill_dir}/scripts/init_workspace.py" --input-label "{简短主题或资料名}" --cwd .
 ```
 
-脚本会先检查 `research-topic-extractor`、`research-literature-review` 与 `parallel-vibe`；缺失时早失败。只在开发测试时传 `--with-test-dir` 创建测试区。
+`canonical_skill_dir` 是当前已读取的 `skills/research-idea/` 目录。脚本从当前目录向仓库根逐级查找项目依赖，并兼容用户级外部依赖；会先检查 `research-topic-extractor`、`research-literature-review` 与 `parallel-vibe`，缺失时早失败。只在开发测试时传 `--with-test-dir` 创建测试区。
 
 ## 主流程
 
@@ -127,14 +124,14 @@ python3 ~/.claude/skills/research-idea/scripts/init_workspace.py --input-label "
 
 ```bash
 for round in 1 2 3; do
-  python3 parallel-vibe/scripts/parallel_vibe.py \
+  python3 "{dependency_paths.parallel-vibe}/scripts/parallel_vibe.py" \
     --prompt "{第 ${round} 轮审查指令}" \
     --n 3 \
     --out-dir "{workspace_dir}/parallel-vibe/round-${round}"
 done
 ```
 
-系统级安装时可改用 `~/.codex/skills/parallel-vibe/scripts/parallel_vibe.py` 或 `~/.claude/skills/parallel-vibe/scripts/parallel_vibe.py`。
+`dependency_paths.parallel-vibe` 取初始化 manifest 中解析到的实际目录。`parallel-vibe` 不随本仓库内置，来源与依赖强度见 `skills/external-dependencies.yaml`。
 
 ### 5. 选择最佳方案
 
@@ -145,10 +142,7 @@ done
 按 `references/report-template.md` 写最终 Markdown。写完后运行：
 
 ```bash
-python3 research-idea/scripts/validate_report.py --report "{最终报告路径}"
-# 系统级安装后也可使用：
-python3 ~/.codex/skills/research-idea/scripts/validate_report.py --report "{最终报告路径}"
-python3 ~/.claude/skills/research-idea/scripts/validate_report.py --report "{最终报告路径}"
+python3 "{canonical_skill_dir}/scripts/validate_report.py" --report "{最终报告路径}"
 ```
 
 若校验失败，先修复报告再交付。

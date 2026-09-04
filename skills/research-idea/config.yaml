@@ -1,6 +1,6 @@
 skill_info:
   name: "research-idea"
-  version: "0.2.1"
+  version: "0.2.2"
   description: "根据用户资料提出关键科学问题和可证伪科学假设，并通过 Premium 查新与多轮独立审查打磨最佳研究想法。"
   author: "Bensz Conan"
   category: "research"
@@ -39,9 +39,9 @@ dependencies:
   systematic_literature_review_tier: "Premium"
   search_roots:
     - "."
+    - "~/.agents/skills"
     - "~/.codex/skills"
     - "~/.claude/skills"
-    - "/Volumes/2T01/Cache/.codex/skills"
 
 iteration:
   default_rounds: 3

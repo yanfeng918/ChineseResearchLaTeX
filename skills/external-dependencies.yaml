@@ -1,0 +1,12 @@
+schema_version: 1
+
+# 本文件只声明本仓库未内置的 Skill 依赖；项目自有 Skill 以 skills/* 为唯一源码。
+dependencies:
+  - name: parallel-vibe
+    bundled: false
+    source: https://github.com/huangwb8/skills/tree/main/parallel-vibe
+    consumers:
+      research-idea: required
+      nsfc-reviewers: optional
+      nsfc-qc: optional
+    resolution: project-first-then-user-level

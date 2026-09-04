@@ -211,6 +211,11 @@ skills/*/tests/
 /tests/*
 !/tests/bensz-thesis/
 !/tests/bensz-thesis/**
+!/tests/project-skills/
+!/tests/project-skills/**
+/tests/project-skills/__pycache__/
+/tests/project-skills/**/*.pyc
+/tests/project-skills/.pytest_cache/
 /tests/bensz-thesis/.DS_Store
 /tests/bensz-thesis/**/__pycache__/
 /tests/bensz-thesis/**/*.pyc
