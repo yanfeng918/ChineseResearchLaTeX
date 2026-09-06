@@ -10,3 +10,33 @@ dependencies:
       nsfc-reviewers: optional
       nsfc-qc: optional
     resolution: project-first-then-user-level
+  - name: academic-paper-analyzer-figure-planner
+    bundled: false
+    source: user-installed
+    consumers:
+      nsfc-illustrated-pipeline: required
+    resolution: host-discovery-then-user-level
+  - name: academic-figure-color-expert
+    bundled: false
+    source: user-installed
+    consumers:
+      nsfc-illustrated-pipeline: required
+    resolution: host-discovery-then-user-level
+  - name: academic-figure-prompt
+    bundled: false
+    source: user-installed
+    consumers:
+      nsfc-illustrated-pipeline: required
+    resolution: host-discovery-then-user-level
+  - name: imagegen
+    bundled: false
+    source: host-system-skill
+    consumers:
+      nsfc-illustrated-pipeline: required
+    resolution: host-discovery
+  - name: image-to-editable-ppt
+    bundled: false
+    source: user-installed
+    consumers:
+      nsfc-illustrated-pipeline: required
+    resolution: host-discovery-then-user-level

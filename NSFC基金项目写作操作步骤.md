@@ -22,7 +22,7 @@
 
 ```bash
 cd /home/yanfeng/fund-writing/ChineseResearchLaTeX
-python3 scripts/create_project.py --template NSFC_General_Clean --name NSFC_2027_你的项目名
+python3 scripts/create_project.py --template NSFC_General_Clean --name NSFC_2026_你的项目名
 ```
 
 名字必须以 `NSFC_` 开头，否则 VS Code 同步脚本认不出它是 NSFC 项目。脚本会拒绝覆盖已有项目、排除 PDF 与 LaTeX 中间产物、重新生成同名 VS Code 工作区，失败时回滚本次新建目录。

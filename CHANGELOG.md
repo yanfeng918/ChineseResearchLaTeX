@@ -10,6 +10,10 @@
 
 ### Added（新增）
 
+- `projects/NSFC_2027_Mapping/docs/05_配图规划/`：为该项目补建配图规划层，只读标书正文产出 12 张图的 Figure Plan（含章节映射、优先级、比例、必现视觉元素、30 页限制下的落地组合建议）、全篇统一的配色与视觉逻辑决策（Nature Blue 结构色 + Okabe-Ito 三态强调色、语义色绑定契约、六条视觉语法、灰度打印与色盲双编码），以及 12 张图各自的 JSON figure spec 与英文出图 prompt。未修改 `extraTex/*.tex`，未向 `figures/` 写入文件，未生成图像。
+
+- `projects/NSFC_2026_MineChangeTrust/`：依据项目事实库，将 15 阶段正文流程适配至中南大学重点实验室 2026 年开放课题；补建可追溯文献、研究方案、正文及审核记录，保留待回填事实和官方附件核验事项。
+
 - 项目自有 Skills 改为仓库级交付：新增 Codex 的 `.agents/skills/` 与 Claude Code 的 `.claude/skills/` 共 50 个受管薄入口，统一转读 `skills/*/SKILL.md`，并将入口 frontmatter 规范化为宿主共同支持的字段；新增 `scripts/sync_project_skills.py`，提供入口同步/漂移检查、旧用户级同名副本只读审计、显式可恢复归档与 manifest 恢复，并以 `tests/project-skills/` 覆盖名称一致性、陈旧入口保护、项目优先依赖发现、符号链接越界和归档路径安全。
 - 新增 `skills/external-dependencies.yaml`，明确未内置的 `parallel-vibe` 是 `research-idea` 的必需依赖，以及 `nsfc-reviewers`、`nsfc-qc` 的可选增强依赖；项目入口生成不会把第三方 Skill 混入仓库源码。
 - `skills/nsfc-full-pipeline/` 升级到 `v0.4.0`：新增 schema v2 状态管理器，提供旧断点迁移、旧事实阻塞自动转换、原子写回、输入/输出指纹、中断恢复、已完成阶段输入漂移失效、`main.tex` 变更失效、真实缺口对账，以及 `body_pipeline_ready` / `submission_ready` 两级判定；`scan_gaps.py` 改为默认只扫描活动正文，并将事实源缺失、未登记 ID 与未写作占位纳入结构错误。主 `SKILL.md` 已压缩为 500 行以内的中文入口，阶段细则拆入 `references/`，并修正 00–14 实为 15 个阶段。新增 16 项确定性回归测试；下游 `nsfc-qc`、`nsfc-length-aligner`、`nsfc-humanization` 分别发布 `v1.2.2`、`v0.3.2`、`v1.2.1`，同步缺口标记保护口径。

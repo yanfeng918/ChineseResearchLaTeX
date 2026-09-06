@@ -1,0 +1,22 @@
+skill_info:
+  name: nsfc-illustrated-pipeline
+  version: 0.1.0
+  description: "NSFC 图文全流程：正文写作与核查后，自动规划配图、逐个调用 imagegen（一 prompt 一张图）、重建可编辑 PPT、导出 PDF 并插入正文；支持独立断点和旧文字进度只读导入。不适用于只生成一张图或省级基金。"
+  category: writing
+checkpoint:
+  schema_version: 3
+  file: docs/illustrated_workflow_status.yaml
+  import_legacy: docs/workflow_status.yaml
+  stage_count: 23
+figures:
+  manifest: docs/figure_manifest.json
+  palette: docs/Figure_Palette.md
+  deck: figures/NSFC-Figures.pptx
+  max_corrections: 2
+  image_skill: imagegen
+  image_mode: builtin
+  sequential: true
+  one_prompt_one_image: true
+  allow_automatic_api_fallback: false
+  default_width: 0.9
+  required_kinds: [background, framework, route]

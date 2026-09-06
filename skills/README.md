@@ -794,6 +794,20 @@ output_mode：preview（先预览）/ apply（确认后写入）
 
 ---
 
+### nsfc-illustrated-pipeline - NSFC 图文全流程
+
+独立于 `nsfc-full-pipeline` 的 23 阶段编排器。文字写作与核查完成后自动继续配图规划、统一配色、逐图 prompt、串行 imagegen（一 prompt 一张图）、可编辑 PPT、逐图 PDF、正文插入和最终图文验收。
+
+```text
+请使用 nsfc-illustrated-pipeline 处理 projects/NSFC_Young，完成正文和配图，交付可编辑 PPT 与插图后的 main.pdf。
+```
+
+新技能使用 `docs/illustrated_workflow_status.yaml`，只读导入原版有效文字进度；保留旧技能和旧断点。图件和科学内容由宿主 AI 生成、核验，配套脚本负责状态、结构检查、重复执行和构建证据，不会自行调用图像模型。
+
+[使用指南 →](nsfc-illustrated-pipeline/README.md)
+
+---
+
 ## 技能依赖关系
 
 某些技能依赖其他技能的输出，形成完整的工作流：
@@ -810,6 +824,7 @@ output_mode：preview（先预览）/ apply（确认后写入）
 - **nsfc-qc**：在送审前做只读体检，集中排查文风/引用/篇幅/逻辑/缩写问题
 - **nsfc-reviewers**：标书完成后模拟专家评审（依赖标书完整正文）
 - **nsfc-full-pipeline**：上述 NSFC 环节的编排层，按 00–14 共 15 个阶段自动串联；schema v2 断点支持可靠续跑，并区分正文流程完成与整份申请书可提交；需要逐步手动控制时仍可直接调用各单点技能
+- **nsfc-illustrated-pipeline**：需要文字与配图自动衔接时使用，复用上述文字规则，增加逐个 imagegen、生图检查、可编辑 PPT、PDF 插入和图文验收；不覆盖原版技能
 - **paper-write-sci**：SCI 论文写作与修订（依赖 LaTeX 论文项目结构）
 - **paper-explain-figures**：论文 Figure 解读（可与 paper-write-sci 配合使用）
 - **paper-select-journal**：论文接近成稿后做期刊筛选（可复用 paper-write-sci 产出的 manuscript）
