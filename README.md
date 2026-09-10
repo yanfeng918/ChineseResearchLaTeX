@@ -44,6 +44,12 @@
 
 ## ✨ 概览
 
+测绘科学与工程自然资源部重点实验室开放基金申请书提供 [NSFC_2027_Mapping_final 项目](projects/NSFC_2027_Mapping_final/README.md)，按所供 2026 版 PDF 重建 10 页可编辑模板，使用 `bensz-thesis` 的专属样式与官方构建入口。
+
+中南大学有色金属成矿预测教育部重点实验室开放基金申请书提供 [NSFC_2026_MineChangeTrust_final 项目](projects/NSFC_2026_MineChangeTrust_final/README.md)，按官方 2026 版 PDF 重建 13 页可填写模板，使用 `bensz-thesis` 的独立 profile 和官方构建入口。
+
+华中师范大学实验室开放课题申请书（2026 版）提供独立的 [Huazhong_template 项目](projects/Huazhong_template/README.md)和 [NSFC_2026_CCNU-EduAgentTrust_final 项目](projects/NSFC_2026_CCNU-EduAgentTrust_final/README.md)，共用 `bensz-thesis` 的 `ccnu-open-fund-2026` 样式、PDF 构建与版式验收链路。
+
 2024-2025 年，AI 辅助开发迎来了真正的范式转移。2023 年，[GitHub Copilot](https://github.com/features/copilot) 普及了 AI 代码补全，但 AI 仍处于"被动响应"角色。2024 年初，[Cursor](https://cursor.sh) 率先将 AI 转变为"主动协作伙伴"，引入 AI 原生开发环境。随后，[Manus](https://manus.im)、[Windsurf](https://windsurf.ai) 等产品持续推动多 Agent 协作和深度 IDE 集成。到了 2024 年末，[Claude Code](https://code.claude.com/docs/en/overview) 和 [OpenAI Codex CLI](https://developers.openai.com/codex/cli) 将这一理念带入命令行领域，实现了真正的"AI 作为第一公民"。这一演进背后的核心理念被称为 **Vibe Coding**——AI 不再是工具，而是合作伙伴。传统模式下，人类写代码、AI 补全，指令是单向的、生成是一次性的。而在 Vibe Coding 模式下，AI 主动规划并执行任务，人类负责监督和决策；双方通过双向对话持续迭代优化，AI 成为真正的"合作开发者"。
 
 <h3>🔥 科研写作正从纯手工转向这种人机协作模式（我称之为 <strong>Vibe Writing</strong>）</h3>
@@ -128,6 +134,10 @@ AI 负责格式对齐、参考文献管理、章节重构、中英双语内容�
 | 模板 | 状态 | 标准包 | Overleaf 包 |
 |------|------|--------|-------------|
 | [广西面上](projects/GXNSF_General/) | ✅ 已发布 | [下载](https://github.com/huangwb8/ChineseResearchLaTeX/releases/download/v4.0.20/GXNSF_General-v4.0.20.zip)（0.54 MB） | [下载](https://github.com/huangwb8/ChineseResearchLaTeX/releases/download/v4.0.20/GXNSF_General-Overleaf-v4.0.20.zip)（32.0 MB） |
+
+### 实验室开放基金申请书
+
+[NSFC_2026_CIESM-STSR_final](projects/NSFC_2026_CIESM-STSR_final/README.md)：按地球系统数值模拟教育部重点实验室官方四页 PDF 重建的可编辑空白模板，使用 `bensz-thesis` 专属样式与官方 PDF 构建入口。当前由仓库源码交付。
 
 ### SCI 论文模板
 
@@ -296,6 +306,7 @@ python3 scripts/sync_project_skills.py check
 | [nsfc-length-aligner](skills/nsfc-length-aligner/) | ✍️ 标书写作 | v0.3.2 | NSFC 标书篇幅对齐（检查差距 → 扩写/压缩到达标） | 🚧 开发中 |
 | [nsfc-humanization](skills/nsfc-humanization/) | ✍️ 标书写作 | v1.2.1 | 分词语/句法/段落/章节四层去 AI 机器味，识别工程协议腔、术语漂移并审计安全不变量 | ✅ 稳定 |
 | [nsfc-full-pipeline](skills/nsfc-full-pipeline/) | ✍️ 标书写作 | v0.4.0 | NSFC 正文 15 阶段编排（draft-first、可靠断点、两级提交就绪度） | 🚧 开发中 |
+| [nsfc-illustrated-pipeline](skills/nsfc-illustrated-pipeline/) | ✍️ 标书图文 | v0.1.0 | 独立图文全流程：文字后逐个 imagegen 生图、可编辑 PPT、PDF 插图及断点续跑 | 🚧 开发中 |
 | [paper-write-sci](skills/paper-write-sci/) | 📝 SCI 论文 | v0.11.2 | SCI 期刊论文写作与修订（风格化写作、数字审查、逻辑审查、写作节奏护栏、PDF/Word 渲染闭环） | 🚧 开发中 |
 | [paper-explain-figures](skills/paper-explain-figures/) | 📝 SCI 论文 | v0.2.1 | 解读论文 Figure 含义，生成高可读性 Markdown 报告（视觉理解 + 源代码检索 + 人工解读） | 🚧 开发中 |
 | [paper-select-journal](skills/paper-select-journal/) | 📝 SCI 论文 | v0.3.1 | SCI 投稿期刊筛选（稿件画像 + 期刊核验 + 近 3 个月相似论文证据） | 🚧 开发中 |

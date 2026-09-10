@@ -22,7 +22,7 @@
 
 ```bash
 cd /home/yanfeng/fund-writing/ChineseResearchLaTeX
-python3 scripts/create_project.py --template NSFC_General_Clean --name NSFC_2026_你的项目名
+python3 scripts/create_project.py --template NSFC_General_Clean --name NSFC_2026_CIESM-STSR
 ```
 
 名字必须以 `NSFC_` 开头，否则 VS Code 同步脚本认不出它是 NSFC 项目。脚本会拒绝覆盖已有项目、排除 PDF 与 LaTeX 中间产物、重新生成同名 VS Code 工作区，失败时回滚本次新建目录。
@@ -150,7 +150,11 @@ python packages/bensz-nsfc/scripts/nsfc_project_tool.py build --project-dir proj
 | 申请代码推荐 | `nsfc-code` |
 | 预算说明书 | `nsfc-budget` |
 
-配图不在 `nsfc-full-pipeline` 内，正文定稿后单独走一遍，见第 10 步。
+原版 `nsfc-full-pipeline` 不包含配图，手动步骤见第 10 步。需要写完文字后自动衔接配图时，使用独立技能 [nsfc-illustrated-pipeline](skills/nsfc-illustrated-pipeline/README.md)：它只读导入原版有效文字进度，逐个调用 imagegen（一 prompt 一张图），随后制作可编辑 PPT、导出各图 PDF、插入正文并检查最终版面。
+
+```text
+请使用 nsfc-illustrated-pipeline 继续 projects/我的NSFC项目，保留已完成的有效文字进度，自动完成配图和正文插入，交付可编辑 PPT 与插图后的 main.pdf。
+```
 
 ## 第 10 步：配图
 
