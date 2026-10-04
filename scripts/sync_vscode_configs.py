@@ -5,6 +5,7 @@
 同步到 ``projects/`` 下各子项目中，确保所有项目具有一致的 VS Code 工程配置。
 
 同步内容：
+  - 仓库根目录 ``.vscode/settings.json`` ：按当前主文件选择所属项目 wrapper
   - ``*.code-workspace`` ：VS Code 工作区定义文件
   - ``.vscode/settings.json`` ：LaTeX Workshop 等扩展配置
   - LaTeX Workshop launcher 脚本（通过 ``texlua`` 转调项目级 Python wrapper）
@@ -17,6 +18,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -28,6 +30,7 @@ PROJECTS_DIR = REPO_ROOT / "projects"
 TEMPLATES_DIR = Path(__file__).resolve().parent / "vscode"
 # 通用工作区模板
 WORKSPACE_TEMPLATE = TEMPLATES_DIR / "project.code-workspace.json"
+REPOSITORY_SETTINGS_TEMPLATE = TEMPLATES_DIR / "repository.settings.json"
 # 按项目类型分级的 .vscode/settings.json 模板
 SETTINGS_TEMPLATES = {
     "nsfc": TEMPLATES_DIR / "nsfc.settings.json",
@@ -64,6 +67,22 @@ def infer_project_profile(project_name: str) -> str | None:
 def discover_projects() -> list[Path]:
     """扫描 ``projects/`` 目录下的所有子目录并按名称排序。"""
     return sorted(path for path in PROJECTS_DIR.iterdir() if path.is_dir())
+
+
+def resolve_project_profile(project_dir: Path) -> str | None:
+    """显式 build_profile 优先；未声明时兼容目录名前缀推断。"""
+    metadata_path = project_dir / "template.json"
+    if not metadata_path.is_file():
+        return infer_project_profile(project_dir.name)
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    if not isinstance(metadata, dict):
+        raise ValueError(f"{metadata_path}: 元数据必须是 JSON 对象")
+    profile = metadata.get("build_profile")
+    if profile is None:
+        return infer_project_profile(project_dir.name)
+    if not isinstance(profile, str) or profile not in SETTINGS_TEMPLATES:
+        raise ValueError(f"{metadata_path}: 不支持的 build_profile {profile!r}")
+    return profile
 
 
 def load_template(path: Path) -> str:
@@ -105,7 +124,7 @@ def sync_project(project_dir: Path, *, check_only: bool) -> list[str]:
     Returns:
         操作消息列表（SKIP / MISMATCH / UPDATED / OK）
     """
-    profile = infer_project_profile(project_dir.name)
+    profile = resolve_project_profile(project_dir)
     if profile is None:
         return [f"SKIP {project_dir.relative_to(REPO_ROOT)} (unknown profile)"]
 
@@ -130,6 +149,14 @@ def sync_project(project_dir: Path, *, check_only: bool) -> list[str]:
         else:
             messages.append(f"OK {relpath}")
     return messages
+
+
+def sync_repository(*, check_only: bool) -> str:
+    """确保打开整个仓库时也使用官方构建入口，不受主文件魔法注释影响。"""
+    target = REPO_ROOT / ".vscode" / "settings.json"
+    changed = ensure_text(target, load_template(REPOSITORY_SETTINGS_TEMPLATE), check_only)
+    status = "MISMATCH" if changed and check_only else "UPDATED" if changed else "OK"
+    return f"{status} {target.relative_to(REPO_ROOT)}"
 
 
 def parse_args() -> argparse.Namespace:
@@ -177,9 +204,20 @@ def main() -> int:
         print(str(exc), file=sys.stderr)
         return 1
 
-    has_mismatch = False
+    try:
+        repository_message = sync_repository(check_only=args.check)
+    except OSError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    print(repository_message)
+    has_mismatch = repository_message.startswith("MISMATCH ")
     for project_dir in selected_projects:
-        for message in sync_project(project_dir, check_only=args.check):
+        try:
+            messages = sync_project(project_dir, check_only=args.check)
+        except (OSError, ValueError) as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+        for message in messages:
             print(message)
             if message.startswith("MISMATCH "):
                 has_mismatch = True

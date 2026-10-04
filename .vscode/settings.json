@@ -1,0 +1,32 @@
+{
+  "latex-workshop.latex.build.enableMagicComments": false,
+  "latex-workshop.latex.build.forceRecipeUsage": true,
+  "latex-workshop.latex.recipe.default": "repository project build (python)",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "repository project build (python)",
+      "tools": ["repository-python-build"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "repository-python-build",
+      "command": "texlua",
+      "args": [
+        "%WORKSPACE_FOLDER%/scripts/vscode/latex_workshop_build.lua",
+        "%WORKSPACE_FOLDER%/scripts/vscode/repository_build.py",
+        "%DOC_EXT%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.auxDir": "%DIR%/.latex-cache",
+  "latex-workshop.latex.search.rootFiles.include": ["projects/**/*.tex"],
+  "latex-workshop.latex.search.rootFiles.exclude": ["**/.latex-cache/**", "**/.bensz-api/**"],
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.linting.chktex.enabled": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "files.watcherExclude": {"**/.latex-cache/**": true}
+}
