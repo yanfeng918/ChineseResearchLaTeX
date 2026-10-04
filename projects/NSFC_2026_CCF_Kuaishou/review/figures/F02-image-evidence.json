@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "逐字核对7框14标签无裁切；独立历史存档支路与执行到历史虚线反馈均已修正，评测仅接收输出。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-31ebde26-b13d-4849-b488-a2aae329297b.png"
+}

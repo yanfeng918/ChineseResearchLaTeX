@@ -1,0 +1,99 @@
+{
+  "diagram_type": "background",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Arrange nine white cards in three balanced rows of three. The top row is a temporal chain with two solid rightward arrows. A thin brace below that row spans all three risk cards in the middle row: risks can occur throughout the trajectory, not a one-to-one causal mapping of top cards. Each middle risk card points down to its corresponding bottom research card. Bottom cards are visually strongest. Use no pictograms. Preserve generous gutters and leave the top margin blank; no overall title.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "任务指令",
+      "exact_text": "目标与约束"
+    },
+    {
+      "relative_position": "top center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "多步工具交互",
+      "exact_text": "长结果累积"
+    },
+    {
+      "relative_position": "top right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "环境状态变化",
+      "exact_text": "旧证据失效"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "状态遗漏",
+      "exact_text": "未完成依赖丢失"
+    },
+    {
+      "relative_position": "middle center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "恢复不确定",
+      "exact_text": "回读未必有效"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "额外开销",
+      "exact_text": "重查与重试增加"
+    },
+    {
+      "relative_position": "bottom left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R1 保真压缩",
+      "exact_text": "保留动作依赖"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R2 有效恢复",
+      "exact_text": "核对当前适用性"
+    },
+    {
+      "relative_position": "bottom right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R3 预算调度",
+      "exact_text": "核算全部调用"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/1.1.立项依据.tex",
+  "source_excerpt": "本项目的中心科学问题是：\\textbf{在有限上下文与总调用预算下，压缩后动作依赖的保留和恢复证据的有效性怎样共同影响长程智能体的任务失败风险，这种改善在什么条件下仍具有净收益？}其中，拟重点检验元数据只部分可见而当前状态仍可查询时，有限预算在依赖保留与主动取证之间应如何配置。围绕这一问题提出三个子问题：未完成动作所依赖的约束能否比文本显著性更准确地识别应保留信息？恢复时结合动作前提与当前环境版本，能否降低过期证据驱动的操作失败？额外压缩、检索和校验开销在何种任务长度、依赖跨度及更新频率下能够被抵消？",
+  "caption_note": "长程任务中的上下文约束、证据风险与研究切入点"
+}

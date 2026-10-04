@@ -1,0 +1,87 @@
+{
+  "diagram_type": "framework",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Use three principal white modules in a left-to-right middle row: R1, R2, R3. A smaller visible-history card above R1 feeds R1 and the archive card below R1 by two separate solid arrows, making archive-before-compression explicit. The archive sends a rightward-then-upward connector into R2. R3 points downward to execution at bottom right. Execution has a dashed outer feedback path returning to visible history. Place the evaluation strip beneath the modules with a connector from execution; keep this distinct from the feedback loop. The final evaluation strip does not feed the method. Keep arrow lanes completely clear of text.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "可见历史",
+      "exact_text": "指令 · 动作 · 观察"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R1 保真压缩",
+      "exact_text": "紧凑状态与依赖"
+    },
+    {
+      "relative_position": "middle center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R2 有效恢复",
+      "exact_text": "证据与缺失前提"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "R3 预算调度",
+      "exact_text": "操作选择与资源余量"
+    },
+    {
+      "relative_position": "bottom left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "原文档案",
+      "exact_text": "压缩前存档"
+    },
+    {
+      "relative_position": "bottom right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "执行模型",
+      "exact_text": "任务动作与终态"
+    },
+    {
+      "relative_position": "lower center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "共同评测",
+      "exact_text": "成功率 · 违例 · 全开销"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/2.1.研究内容.tex",
+  "source_excerpt": "\\textbf{总体技术路线。}研究从可复位工具环境的完整轨迹出发，先建立任务状态与原始证据的关联，再比较不同压缩表示对动作前提的保留；长结果写入原文档案后，以未完成动作的证据需要驱动恢复，并通过来源版本与当前环境查询核对适用性；调度器接收压缩风险、恢复结果及预算反馈，选择下一步上下文操作。最终以任务终态、失败分型和全开销核算检验三项研究内容是否共同改善长程执行。",
+  "caption_note": "ACORE总体框架：状态保留、有效恢复与全开销调度"
+}

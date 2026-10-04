@@ -1,0 +1,81 @@
+{
+  "diagram_type": "optional",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Use five evenly spaced vertical phase cards across a single horizontal timeline. Each phase has its relative-month header in navy, a thin blue divider, and three separate short Chinese task lines. Connect only adjacent phase cards with small rightward arrows along a single level. Beneath all phases place one wide white annotation strip with the tentative-period header and contract qualification. The sequence is a proposed research schedule: do not add completion checkmarks, percentages, approval stamps, or calendar dates. Keep all five cards identical in width and height. Make the annotation as legible as the task labels, with sufficient bottom margin.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "column 1",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "M1—M2",
+      "exact_text": "共同评测\n先导成本\n冻结规模"
+    },
+    {
+      "relative_position": "column 2",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "M3—M5",
+      "exact_text": "保真压缩\n状态消融\n来源索引"
+    },
+    {
+      "relative_position": "column 3",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "M6—M8",
+      "exact_text": "有效恢复\n交叉实验\n失败复核"
+    },
+    {
+      "relative_position": "column 4",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "M9—M10",
+      "exact_text": "全开销调度\n外部验证\n成本权衡"
+    },
+    {
+      "relative_position": "column 5",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "M11—M12",
+      "exact_text": "冻结版本\n复跑核心比较\n整理交付"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "暂定研究周期",
+      "exact_text": "相对启动月份，正式周期以合同为准"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/2.3.年度研究计划.tex",
+  "source_excerpt": "项目按资料建议采用\\textbf{【暂定 自正式启动起12个月】}的研究周期。正式起止日期及合同要求以\\textbf{【待补 F-KS-05：资助起止日期和结题成果要求】}为准。以下月份为相对启动月份，依据三项研究内容的依赖关系安排，不预先写成已批准的日历日期。",
+  "caption_note": "暂定12个月研究安排：开发验证、机制比较、集成与复现"
+}

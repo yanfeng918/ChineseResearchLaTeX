@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "editable_objects": true,
+    "text_fidelity": true,
+    "page_mapping": true,
+    "editppt_validation": true
+  },
+  "notes": "editppt prepare→7个真实页级代理→7次record→finalize均成功；每页代理目视源图、preview/contact并校准。全部7页仅有原生文本与结构形状，整本0图片。Paddle上传超时后使用本地测量及逐字核对；保留低风险字体差异。",
+  "run_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/NSFC_2026_CCF_Kuaishou/editppt",
+  "slides": [
+    {
+      "slide": "ppt/slides/slide1.xml",
+      "texts": 18,
+      "shapes": 76,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide2.xml",
+      "texts": 17,
+      "shapes": 162,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide3.xml",
+      "texts": 33,
+      "shapes": 134,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide4.xml",
+      "texts": 16,
+      "shapes": 73,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide5.xml",
+      "texts": 16,
+      "shapes": 116,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide6.xml",
+      "texts": 20,
+      "shapes": 45,
+      "pictures": 0
+    },
+    {
+      "slide": "ppt/slides/slide7.xml",
+      "texts": 22,
+      "shapes": 38,
+      "pictures": 0
+    }
+  ]
+}

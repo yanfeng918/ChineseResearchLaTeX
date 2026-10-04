@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "8框文字内容完整，三输入、五操作组合与全成本账本方向正确；预算虚线反馈闭合，使用斜线分隔并列项不改变含义，无性能数值或裁切。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-4c2390e6-e730-400b-ae1d-2c2d583e72d3.png"
+}

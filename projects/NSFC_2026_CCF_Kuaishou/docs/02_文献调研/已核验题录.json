@@ -1,0 +1,872 @@
+[
+  {
+    "key": "react",
+    "arxiv": "2210.03629",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "authors": [
+      "Yao, Shunyu",
+      "Zhao, Jeffrey",
+      "Yu, Dian",
+      "Du, Nan",
+      "Shafran, Izhak",
+      "Narasimhan, Karthik",
+      "Cao, Yuan"
+    ],
+    "date": "2022/10/06",
+    "year": "2022",
+    "abstract": " While large language models (LLMs) have demonstrated impressive capabilities across tasks in language understanding and interactive decision making, their abilities for reasoning (e.g. chain-of-thought prompting) and acting (e.g. action plan generation) have primarily been studied as separate topics. In this paper, we explore the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner, allowing for greater synergy between the two: reasoning traces help the model induce, track, and update action plans as well as handle exceptions, while actions allow it to interface with external sources, such as knowledge bases or environments, to gather additional information. We apply our approach, named ReAct, to a diverse set of language and decision making tasks and demonstrate its effectiveness over state-of-the-art baselines, as well as improved human interpretability and trustworthiness over methods without reasoning or acting components. Concretely, on question answering (HotpotQA) and fact verification (Fever), ReAct overcomes issues of hallucination and error propagation prevalent in chain-of-thought reasoning by interacting with a simple Wikipedia API, and generates human-like task-solving trajectories that are more interpretable than baselines without reasoning traces. On two interactive decision making benchmarks (ALFWorld and WebShop), ReAct outperforms imitation and reinforcement learning methods by an absolute success rate of 34% and 10% respectively, while being prompted with only one or two in-context examples. Project site with code: this https URL",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "reflexion",
+    "arxiv": "2303.11366",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "authors": [
+      "Shinn, Noah",
+      "Cassano, Federico",
+      "Berman, Edward",
+      "Gopinath, Ashwin",
+      "Narasimhan, Karthik",
+      "Yao, Shunyu"
+    ],
+    "date": "2023/03/20",
+    "year": "2023",
+    "abstract": " Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning. We propose Reflexion, a novel framework to reinforce language agents not by updating weights, but instead through linguistic feedback. Concretely, Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text in an episodic memory buffer to induce better decision-making in subsequent trials. Reflexion is flexible enough to incorporate various types (scalar values or free-form language) and sources (external or internally simulated) of feedback signals, and obtains significant improvements over a baseline agent across diverse tasks (sequential decision-making, coding, language reasoning). For example, Reflexion achieves a 91% pass@1 accuracy on the HumanEval coding benchmark, surpassing the previous state-of-the-art GPT-4 that achieves 80%. We also conduct ablation and analysis studies using different feedback signals, feedback incorporation methods, and agent types, and provide insights into how they affect performance.",
+    "url": "https://arxiv.org/abs/2303.11366",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "toolformer",
+    "arxiv": "2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "authors": [
+      "Schick, Timo",
+      "Dwivedi-Yu, Jane",
+      "Dessì, Roberto",
+      "Raileanu, Roberta",
+      "Lomeli, Maria",
+      "Zettlemoyer, Luke",
+      "Cancedda, Nicola",
+      "Scialom, Thomas"
+    ],
+    "date": "2023/02/09",
+    "year": "2023",
+    "abstract": " Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\\&A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "generativeagents",
+    "arxiv": "2304.03442",
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "authors": [
+      "Park, Joon Sung",
+      "O'Brien, Joseph C.",
+      "Cai, Carrie J.",
+      "Morris, Meredith Ringel",
+      "Liang, Percy",
+      "Bernstein, Michael S."
+    ],
+    "date": "2023/04/07",
+    "year": "2023",
+    "abstract": " Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents--computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent's experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors: for example, starting with only a single user-specified notion that one agent wants to throw a Valentine's Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture--observation, planning, and reflection--each contribute critically to the believability of agent behavior. By fusing large language models with computational, interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+    "url": "https://arxiv.org/abs/2304.03442",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "memgpt",
+    "arxiv": "2310.08560",
+    "title": "MemGPT: Towards LLMs as Operating Systems",
+    "authors": [
+      "Packer, Charles",
+      "Wooders, Sarah",
+      "Lin, Kevin",
+      "Fang, Vivian",
+      "Patil, Shishir G.",
+      "Stoica, Ion",
+      "Gonzalez, Joseph E."
+    ],
+    "date": "2023/10/12",
+    "year": "2023",
+    "abstract": " Large language models (LLMs) have revolutionized AI, but are constrained by limited context windows, hindering their utility in tasks like extended conversations and document analysis. To enable using context beyond limited context windows, we propose virtual context management, a technique drawing inspiration from hierarchical memory systems in traditional operating systems that provide the appearance of large memory resources through data movement between fast and slow memory. Using this technique, we introduce MemGPT (Memory-GPT), a system that intelligently manages different memory tiers in order to effectively provide extended context within the LLM's limited context window, and utilizes interrupts to manage control flow between itself and the user. We evaluate our OS-inspired design in two domains where the limited context windows of modern LLMs severely handicaps their performance: document analysis, where MemGPT is able to analyze large documents that far exceed the underlying LLM's context window, and multi-session chat, where MemGPT can create conversational agents that remember, reflect, and evolve dynamically through long-term interactions with their users. We release MemGPT code and data for our experiments at this https URL .",
+    "url": "https://arxiv.org/abs/2310.08560",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "memorybank",
+    "arxiv": "2305.10250",
+    "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+    "authors": [
+      "Zhong, Wanjun",
+      "Guo, Lianghong",
+      "Gao, Qiqi",
+      "Ye, He",
+      "Wang, Yanlin"
+    ],
+    "date": "2023/05/17",
+    "year": "2023",
+    "abstract": " Revolutionary advancements in Large Language Models have drastically reshaped our interactions with artificial intelligence systems. Despite this, a notable hindrance remains-the deficiency of a long-term memory mechanism within these models. This shortfall becomes increasingly evident in situations demanding sustained interaction, such as personal companion systems and psychological counseling. Therefore, we propose MemoryBank, a novel memory mechanism tailored for LLMs. MemoryBank enables the models to summon relevant memories, continually evolve through continuous memory updates, comprehend, and adapt to a user personality by synthesizing information from past interactions. To mimic anthropomorphic behaviors and selectively preserve memory, MemoryBank incorporates a memory updating mechanism, inspired by the Ebbinghaus Forgetting Curve theory, which permits the AI to forget and reinforce memory based on time elapsed and the relative significance of the memory, thereby offering a human-like memory mechanism. MemoryBank is versatile in accommodating both closed-source models like ChatGPT and open-source models like ChatGLM. We exemplify application of MemoryBank through the creation of an LLM-based chatbot named SiliconFriend in a long-term AI Companion scenario. Further tuned with psychological dialogs, SiliconFriend displays heightened empathy in its interactions. Experiment involves both qualitative analysis with real-world user dialogs and quantitative analysis with simulated dialogs. In the latter, ChatGPT acts as users with diverse characteristics and generates long-term dialog contexts covering a wide array of topics. The results of our analysis reveal that SiliconFriend, equipped with MemoryBank, exhibits a strong capability for long-term companionship as it can provide emphatic response, recall relevant memories and understand user personality.",
+    "url": "https://arxiv.org/abs/2305.10250",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "llmlingua",
+    "arxiv": "2310.05736",
+    "title": "LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models",
+    "authors": [
+      "Jiang, Huiqiang",
+      "Wu, Qianhui",
+      "Lin, Chin-Yew",
+      "Yang, Yuqing",
+      "Qiu, Lili"
+    ],
+    "date": "2023/10/09",
+    "year": "2023",
+    "abstract": " Large language models (LLMs) have been applied in various applications due to their astonishing capabilities. With advancements in technologies such as chain-of-thought (CoT) prompting and in-context learning (ICL), the prompts fed to LLMs are becoming increasingly lengthy, even exceeding tens of thousands of tokens. To accelerate model inference and reduce cost, this paper presents LLMLingua, a coarse-to-fine prompt compression method that involves a budget controller to maintain semantic integrity under high compression ratios, a token-level iterative compression algorithm to better model the interdependence between compressed contents, and an instruction tuning based method for distribution alignment between language models. We conduct experiments and analysis over four datasets from different scenarios, i.e., GSM8K, BBH, ShareGPT, and Arxiv-March23; showing that the proposed approach yields state-of-the-art performance and allows for up to 20x compression with little performance loss. Our code is available at this https URL .",
+    "url": "https://arxiv.org/abs/2310.05736",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "longllmlingua",
+    "arxiv": "2310.06839",
+    "title": "LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression",
+    "authors": [
+      "Jiang, Huiqiang",
+      "Wu, Qianhui",
+      "Luo, Xufang",
+      "Li, Dongsheng",
+      "Lin, Chin-Yew",
+      "Yang, Yuqing",
+      "Qiu, Lili"
+    ],
+    "date": "2023/10/10",
+    "year": "2023",
+    "abstract": " In long context scenarios, large language models (LLMs) face three main challenges: higher computational cost, performance reduction, and position bias. Research indicates that LLM performance hinges on the density and position of key information in the input prompt. Inspired by these findings, we propose LongLLMLingua for prompt compression towards improving LLMs' perception of the key information to simultaneously address the three challenges. Our extensive evaluation across various long context scenarios demonstrates that LongLLMLingua not only enhances performance but also significantly reduces costs and latency. For instance, in the NaturalQuestions benchmark, LongLLMLingua boosts performance by up to 21.4% with around 4x fewer tokens in GPT-3.5-Turbo, leading to substantial cost savings. It achieves a 94.0% cost reduction in the LooGLE benchmark. Moreover, when compressing prompts of about 10k tokens at ratios of 2x-6x, LongLLMLingua can accelerate end-to-end latency by 1.4x-2.6x. Our code is available at this https URL .",
+    "url": "https://arxiv.org/abs/2310.06839",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "recomp",
+    "arxiv": "2310.04408",
+    "title": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation",
+    "authors": [
+      "Xu, Fangyuan",
+      "Shi, Weijia",
+      "Choi, Eunsol"
+    ],
+    "date": "2023/10/06",
+    "year": "2023",
+    "abstract": " Retrieving documents and prepending them in-context at inference time improves performance of language model (LMs) on a wide range of tasks. However, these documents, often spanning hundreds of words, make inference substantially more expensive. We propose compressing the retrieved documents into textual summaries prior to in-context integration. This not only reduces the computational costs but also relieves the burden of LMs to identify relevant information in long retrieved documents. We present two compressors -- an extractive compressor which selects useful sentences from retrieved documents and an abstractive compressor which generates summaries by synthesizing information from multiple documents. Both compressors are trained to improve LMs' performance on end tasks when the generated summaries are prepended to the LMs' input, while keeping the summary this http URL the retrieved documents are irrelevant to the input or offer no additional information to LM, our compressor can return an empty string, implementing selective this http URL evaluate our approach on language modeling task and open domain question answering task. We achieve a compression rate of as low as 6% with minimal loss in performance for both tasks, significantly outperforming the off-the-shelf summarization models. We show that our compressors trained for one LM can transfer to other LMs on the language modeling task and provide summaries largely faithful to the retrieved documents.",
+    "url": "https://arxiv.org/abs/2310.04408",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "selectivecontext",
+    "arxiv": "2304.12102",
+    "title": "Unlocking Context Constraints of LLMs: Enhancing Context Efficiency of LLMs with Self-Information-Based Content Filtering",
+    "authors": [
+      "Li, Yucheng"
+    ],
+    "date": "2023/04/24",
+    "year": "2023",
+    "abstract": " Large language models (LLMs) have received significant attention by achieving remarkable performance across various tasks. However, their fixed context length poses challenges when processing long documents or maintaining extended conversations. This paper proposes a method called \\textit{Selective Context} that employs self-information to filter out less informative content, thereby enhancing the efficiency of the fixed context length. We demonstrate the effectiveness of our approach on tasks of summarisation and question answering across different data sources, including academic papers, news articles, and conversation transcripts.",
+    "url": "https://arxiv.org/abs/2304.12102",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "lostmiddle",
+    "arxiv": "2307.03172",
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "authors": [
+      "Liu, Nelson F.",
+      "Lin, Kevin",
+      "Hewitt, John",
+      "Paranjape, Ashwin",
+      "Bevilacqua, Michele",
+      "Petroni, Fabio",
+      "Liang, Percy"
+    ],
+    "date": "2023/07/06",
+    "year": "2023",
+    "abstract": " While recent language models have the ability to take long contexts as input, relatively little is known about how well they use longer context. We analyze the performance of language models on two tasks that require identifying relevant information in their input contexts: multi-document question answering and key-value retrieval. We find that performance can degrade significantly when changing the position of relevant information, indicating that current language models do not robustly make use of information in long input contexts. In particular, we observe that performance is often highest when relevant information occurs at the beginning or end of the input context, and significantly degrades when models must access relevant information in the middle of long contexts, even for explicitly long-context models. Our analysis provides a better understanding of how language models use their input context and provides new evaluation protocols for future long-context language models.",
+    "url": "https://arxiv.org/abs/2307.03172",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "longbench",
+    "arxiv": "2308.14508",
+    "title": "LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding",
+    "authors": [
+      "Bai, Yushi",
+      "Lv, Xin",
+      "Zhang, Jiajie",
+      "Lyu, Hongchang",
+      "Tang, Jiankai",
+      "Huang, Zhidian",
+      "Du, Zhengxiao",
+      "Liu, Xiao",
+      "Zeng, Aohan",
+      "Hou, Lei",
+      "Dong, Yuxiao",
+      "Tang, Jie",
+      "Li, Juanzi"
+    ],
+    "date": "2023/08/28",
+    "year": "2023",
+    "abstract": " Although large language models (LLMs) demonstrate impressive performance for many language tasks, most of them can only handle texts a few thousand tokens long, limiting their applications on longer sequence inputs, such as books, reports, and codebases. Recent works have proposed methods to improve LLMs' long context capabilities by extending context windows and more sophisticated memory mechanisms. However, comprehensive benchmarks tailored for evaluating long context understanding are lacking. In this paper, we introduce LongBench, the first bilingual, multi-task benchmark for long context understanding, enabling a more rigorous evaluation of long context understanding. LongBench comprises 21 datasets across 6 task categories in both English and Chinese, with an average length of 6,711 words (English) and 13,386 characters (Chinese). These tasks cover key long-text application areas including single-doc QA, multi-doc QA, summarization, few-shot learning, synthetic tasks, and code completion. All datasets in LongBench are standardized into a unified format, allowing for effortless automatic evaluation of LLMs. Upon comprehensive evaluation of 8 LLMs on LongBench, we find that: (1) Commercial model (GPT-3.5-Turbo-16k) outperforms other open-sourced models, but still struggles on longer contexts. (2) Scaled position embedding and fine-tuning on longer sequences lead to substantial improvement on long context understanding. (3) Context compression technique such as retrieval brings improvement for model with weak ability on long contexts, but the performance still lags behind models that have strong long context understanding capability. The code and datasets are available at this https URL .",
+    "url": "https://arxiv.org/abs/2308.14508",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "ruler",
+    "arxiv": "2404.06654",
+    "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+    "authors": [
+      "Hsieh, Cheng-Ping",
+      "Sun, Simeng",
+      "Kriman, Samuel",
+      "Acharya, Shantanu",
+      "Rekesh, Dima",
+      "Jia, Fei",
+      "Zhang, Yang",
+      "Ginsburg, Boris"
+    ],
+    "date": "2024/04/09",
+    "year": "2024",
+    "abstract": " The needle-in-a-haystack (NIAH) test, which examines the ability to retrieve a piece of information (the \"needle\") from long distractor texts (the \"haystack\"), has been widely adopted to evaluate long-context language models (LMs). However, this simple retrieval-based test is indicative of only a superficial form of long-context understanding. To provide a more comprehensive evaluation of long-context LMs, we create a new synthetic benchmark RULER with flexible configurations for customized sequence length and task complexity. RULER expands upon the vanilla NIAH test to encompass variations with diverse types and quantities of needles. Moreover, RULER introduces new task categories multi-hop tracing and aggregation to test behaviors beyond searching from context. We evaluate 17 long-context LMs with 13 representative tasks in RULER. Despite achieving nearly perfect accuracy in the vanilla NIAH test, almost all models exhibit large performance drops as the context length increases. While these models all claim context sizes of 32K tokens or greater, only half of them can maintain satisfactory performance at the length of 32K. Our analysis of Yi-34B, which supports context length of 200K, reveals large room for improvement as we increase input length and task complexity. We open source RULER to spur comprehensive evaluation of long-context LMs.",
+    "url": "https://arxiv.org/abs/2404.06654",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "longmemeval",
+    "arxiv": "2410.10813",
+    "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "authors": [
+      "Wu, Di",
+      "Wang, Hongwei",
+      "Yu, Wenhao",
+      "Zhang, Yuwei",
+      "Chang, Kai-Wei",
+      "Yu, Dong"
+    ],
+    "date": "2024/10/14",
+    "year": "2024",
+    "abstract": " Recent large language model (LLM)-driven chat assistant systems have integrated memory components to track user-assistant chat histories, enabling more accurate and personalized responses. However, their long-term memory capabilities in sustained interactions remain underexplored. We introduce LongMemEval, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. With 500 meticulously curated questions embedded within freely scalable user-assistant chat histories, LongMemEval presents a significant challenge to existing long-term memory systems, with commercial chat assistants and long-context LLMs showing a 30% accuracy drop on memorizing information across sustained interactions. We then present a unified framework that breaks down the long-term memory design into three stages: indexing, retrieval, and reading. Built upon key experimental insights, we propose several memory design optimizations including session decomposition for value granularity, fact-augmented key expansion for indexing, and time-aware query expansion for refining the search scope. Extensive experiments show that these optimizations greatly improve both memory recall and downstream question answering on LongMemEval. Overall, our study provides valuable resources and guidance for advancing the long-term memory capabilities of LLM-based chat assistants, paving the way toward more personalized and reliable conversational AI. Our benchmark and code are publicly available at this https URL .",
+    "url": "https://arxiv.org/abs/2410.10813",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "locomo",
+    "arxiv": "2402.17753",
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "authors": [
+      "Maharana, Adyasha",
+      "Lee, Dong-Ho",
+      "Tulyakov, Sergey",
+      "Bansal, Mohit",
+      "Barbieri, Francesco",
+      "Fang, Yuwei"
+    ],
+    "date": "2024/02/27",
+    "year": "2024",
+    "abstract": " Existing works on long-term open-domain dialogues focus on evaluating model responses within contexts spanning no more than five chat sessions. Despite advancements in long-context large language models (LLMs) and retrieval augmented generation (RAG) techniques, their efficacy in very long-term dialogues remains unexplored. To address this research gap, we introduce a machine-human pipeline to generate high-quality, very long-term dialogues by leveraging LLM-based agent architectures and grounding their dialogues on personas and temporal event graphs. Moreover, we equip each agent with the capability of sharing and reacting to images. The generated conversations are verified and edited by human annotators for long-range consistency and grounding to the event graphs. Using this pipeline, we collect LoCoMo, a dataset of very long-term conversations, each encompassing 300 turns and 9K tokens on avg., over up to 35 sessions. Based on LoCoMo, we present a comprehensive evaluation benchmark to measure long-term memory in models, encompassing question answering, event summarization, and multi-modal dialogue generation tasks. Our experimental results indicate that LLMs exhibit challenges in understanding lengthy conversations and comprehending long-range temporal and causal dynamics within dialogues. Employing strategies like long-context LLMs or RAG can offer improvements but these models still substantially lag behind human performance.",
+    "url": "https://arxiv.org/abs/2402.17753",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "appworld",
+    "arxiv": "2407.18901",
+    "title": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents",
+    "authors": [
+      "Trivedi, Harsh",
+      "Khot, Tushar",
+      "Hartmann, Mareike",
+      "Manku, Ruskin",
+      "Dong, Vinty",
+      "Li, Edward",
+      "Gupta, Shashank",
+      "Sabharwal, Ashish",
+      "Balasubramanian, Niranjan"
+    ],
+    "date": "2024/07/26",
+    "year": "2024",
+    "abstract": " Autonomous agents that address day-to-day digital tasks (e.g., ordering groceries for a household), must not only operate multiple apps (e.g., notes, messaging, shopping app) via APIs, but also generate rich code with complex control flow in an iterative manner based on their interaction with the environment. However, existing benchmarks for tool use are inadequate, as they only cover tasks that require a simple sequence of API calls. To remedy this gap, we built $\\textbf{AppWorld Engine}$, a high-quality execution environment (60K lines of code) of 9 day-to-day apps operable via 457 APIs and populated with realistic digital activities simulating the lives of ~100 fictitious users. We then created $\\textbf{AppWorld Benchmark}$ (40K lines of code), a suite of 750 natural, diverse, and challenging autonomous agent tasks requiring rich and interactive code generation. It supports robust programmatic evaluation with state-based unit tests, allowing for different ways of completing a task while also checking for unexpected changes, i.e., collateral damage. The state-of-the-art LLM, GPT-4o, solves only ~49% of our 'normal' tasks and ~30% of 'challenge' tasks, while other models solve at least 16% fewer. This highlights the benchmark's difficulty and AppWorld's potential to push the frontiers of interactive coding agents. The project website is available at this https URL .",
+    "url": "https://arxiv.org/abs/2407.18901",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "webarena",
+    "arxiv": "2307.13854",
+    "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "authors": [
+      "Zhou, Shuyan",
+      "Xu, Frank F.",
+      "Zhu, Hao",
+      "Zhou, Xuhui",
+      "Lo, Robert",
+      "Sridhar, Abishek",
+      "Cheng, Xianyi",
+      "Ou, Tianyue",
+      "Bisk, Yonatan",
+      "Fried, Daniel",
+      "Alon, Uri",
+      "Neubig, Graham"
+    ],
+    "date": "2023/07/25",
+    "year": "2023",
+    "abstract": " With advances in generative AI, there is now potential for autonomous agents to manage daily tasks via natural language commands. However, current agents are primarily created and tested in simplified synthetic environments, leading to a disconnect with real-world scenarios. In this paper, we build an environment for language-guided agents that is highly realistic and reproducible. Specifically, we focus on agents that perform tasks on the web, and create an environment with fully functional websites from four common domains: e-commerce, social forum discussions, collaborative software development, and content management. Our environment is enriched with tools (e.g., a map) and external knowledge bases (e.g., user manuals) to encourage human-like task-solving. Building upon our environment, we release a set of benchmark tasks focusing on evaluating the functional correctness of task completions. The tasks in our benchmark are diverse, long-horizon, and designed to emulate tasks that humans routinely perform on the internet. We experiment with several baseline agents, integrating recent techniques such as reasoning before acting. The results demonstrate that solving complex tasks is challenging: our best GPT-4-based agent only achieves an end-to-end task success rate of 14.41%, significantly lower than the human performance of 78.24%. These results highlight the need for further development of robust agents, that current state-of-the-art large language models are far from perfect performance in these real-life tasks, and that WebArena can be used to measure such progress.",
+    "url": "https://arxiv.org/abs/2307.13854",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "agentbench",
+    "arxiv": "2308.03688",
+    "title": "AgentBench: Evaluating LLMs as Agents",
+    "authors": [
+      "Liu, Xiao",
+      "Yu, Hao",
+      "Zhang, Hanchen",
+      "Xu, Yifan",
+      "Lei, Xuanyu",
+      "Lai, Hanyu",
+      "Gu, Yu",
+      "Ding, Hangliang",
+      "Men, Kaiwen",
+      "Yang, Kejuan",
+      "Zhang, Shudan",
+      "Deng, Xiang",
+      "Zeng, Aohan",
+      "Du, Zhengxiao",
+      "Zhang, Chenhui",
+      "Shen, Sheng",
+      "Zhang, Tianjun",
+      "Su, Yu",
+      "Sun, Huan",
+      "Huang, Minlie",
+      "Dong, Yuxiao",
+      "Tang, Jie"
+    ],
+    "date": "2023/08/07",
+    "year": "2023",
+    "abstract": " The potential of Large Language Model (LLM) as agents has been widely acknowledged recently. Thus, there is an urgent need to quantitatively \\textit{evaluate LLMs as agents} on challenging tasks in interactive environments. We present AgentBench, a multi-dimensional benchmark that consists of 8 distinct environments to assess LLM-as-Agent's reasoning and decision-making abilities. Our extensive test over \\num API-based and open-sourced (OSS) LLMs shows that, while top commercial LLMs present a strong ability of acting as agents in complex environments, there is a significant disparity in performance between them and many OSS competitors that are no larger than 70B. We identify the typical reasons of failures in environments and LLMs, showing that poor long-term reasoning, decision-making, and instruction following abilities are the main obstacles for developing usable LLM agents. Improving instruction following and training on high quality multi-round alignment data could improve agent performance. And different from existing assumptions, training on code present ambivalent impacts on different agent tasks. Datasets, environments, and an integrated evaluation package for AgentBench are released at this https URL .",
+    "url": "https://arxiv.org/abs/2308.03688",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "swebench",
+    "arxiv": "2310.06770",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "authors": [
+      "Jimenez, Carlos E.",
+      "Yang, John",
+      "Wettig, Alexander",
+      "Yao, Shunyu",
+      "Pei, Kexin",
+      "Press, Ofir",
+      "Narasimhan, Karthik"
+    ],
+    "date": "2023/10/10",
+    "year": "2023",
+    "abstract": " Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities. We find real-world software engineering to be a rich, sustainable, and challenging testbed for evaluating the next generation of language models. To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories. Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue. Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks. Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues. The best-performing model, Claude 2, is able to solve a mere $1.96$% of the issues. Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous.",
+    "url": "https://arxiv.org/abs/2310.06770",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "gaia",
+    "arxiv": "2311.12983",
+    "title": "GAIA: a benchmark for General AI Assistants",
+    "authors": [
+      "Mialon, Grégoire",
+      "Fourrier, Clémentine",
+      "Swift, Craig",
+      "Wolf, Thomas",
+      "LeCun, Yann",
+      "Scialom, Thomas"
+    ],
+    "date": "2023/11/21",
+    "year": "2023",
+    "abstract": " We introduce GAIA, a benchmark for General AI Assistants that, if solved, would represent a milestone in AI research. GAIA proposes real-world questions that require a set of fundamental abilities such as reasoning, multi-modality handling, web browsing, and generally tool-use proficiency. GAIA questions are conceptually simple for humans yet challenging for most advanced AIs: we show that human respondents obtain 92\\% vs. 15\\% for GPT-4 equipped with plugins. This notable performance disparity contrasts with the recent trend of LLMs outperforming humans on tasks requiring professional skills in e.g. law or chemistry. GAIA's philosophy departs from the current trend in AI benchmarks suggesting to target tasks that are ever more difficult for humans. We posit that the advent of Artificial General Intelligence (AGI) hinges on a system's capability to exhibit similar robustness as the average human does on such questions. Using GAIA's methodology, we devise 466 questions and their answer. We release our questions while retaining answers to 300 of them to power a leader-board available at this https URL .",
+    "url": "https://arxiv.org/abs/2311.12983",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "toolbench",
+    "arxiv": "2307.16789",
+    "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "authors": [
+      "Qin, Yujia",
+      "Liang, Shihao",
+      "Ye, Yining",
+      "Zhu, Kunlun",
+      "Yan, Lan",
+      "Lu, Yaxi",
+      "Lin, Yankai",
+      "Cong, Xin",
+      "Tang, Xiangru",
+      "Qian, Bill",
+      "Zhao, Sihan",
+      "Hong, Lauren",
+      "Tian, Runchu",
+      "Xie, Ruobing",
+      "Zhou, Jie",
+      "Gerstein, Mark",
+      "Li, Dahai",
+      "Liu, Zhiyuan",
+      "Sun, Maosong"
+    ],
+    "date": "2023/07/31",
+    "year": "2023",
+    "abstract": " Despite the advancements of open-source large language models (LLMs), e.g., LLaMA, they remain significantly limited in tool-use capabilities, i.e., using external tools (APIs) to fulfill human instructions. The reason is that current instruction tuning largely focuses on basic language tasks but ignores the tool-use domain. This is in contrast to the excellent tool-use capabilities of state-of-the-art (SOTA) closed-source LLMs, e.g., ChatGPT. To bridge this gap, we introduce ToolLLM, a general tool-use framework encompassing data construction, model training, and evaluation. We first present ToolBench, an instruction-tuning dataset for tool use, which is constructed automatically using ChatGPT. Specifically, the construction can be divided into three stages: (i) API collection: we collect 16,464 real-world RESTful APIs spanning 49 categories from RapidAPI Hub; (ii) instruction generation: we prompt ChatGPT to generate diverse instructions involving these APIs, covering both single-tool and multi-tool scenarios; (iii) solution path annotation: we use ChatGPT to search for a valid solution path (chain of API calls) for each instruction. To enhance the reasoning capabilities of LLMs, we develop a novel depth-first search-based decision tree algorithm. It enables LLMs to evaluate multiple reasoning traces and expand the search space. Moreover, to evaluate the tool-use capabilities of LLMs, we develop an automatic evaluator: ToolEval. Based on ToolBench, we fine-tune LLaMA to obtain an LLM ToolLLaMA, and equip it with a neural API retriever to recommend appropriate APIs for each instruction. Experiments show that ToolLLaMA demonstrates a remarkable ability to execute complex instructions and generalize to unseen APIs, and exhibits comparable performance to ChatGPT. Our ToolLLaMA also demonstrates strong zero-shot generalization ability in an out-of-distribution tool-use dataset: APIBench.",
+    "url": "https://arxiv.org/abs/2307.16789",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "taubench",
+    "arxiv": "2406.12045",
+    "title": "$\\tau$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "authors": [
+      "Yao, Shunyu",
+      "Shinn, Noah",
+      "Razavi, Pedram",
+      "Narasimhan, Karthik"
+    ],
+    "date": "2024/06/17",
+    "year": "2024",
+    "abstract": " Existing benchmarks do not test language agents on their interaction with human users or ability to follow domain-specific rules, both of which are vital for deploying them in real world applications. We propose $\\tau$-bench, a benchmark emulating dynamic conversations between a user (simulated by language models) and a language agent provided with domain-specific API tools and policy guidelines. We employ an efficient and faithful evaluation process that compares the database state at the end of a conversation with the annotated goal state. We also propose a new metric (pass^k) to evaluate the reliability of agent behavior over multiple trials. Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on <50% of the tasks, and are quite inconsistent (pass^8 <25% in retail). Our findings point to the need for methods that can improve the ability of agents to act consistently and follow rules reliably.",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "rag",
+    "arxiv": "2005.11401",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": [
+      "Lewis, Patrick",
+      "Perez, Ethan",
+      "Piktus, Aleksandra",
+      "Petroni, Fabio",
+      "Karpukhin, Vladimir",
+      "Goyal, Naman",
+      "Küttler, Heinrich",
+      "Lewis, Mike",
+      "Yih, Wen-tau",
+      "Rocktäschel, Tim",
+      "Riedel, Sebastian",
+      "Kiela, Douwe"
+    ],
+    "date": "2020/05/22",
+    "year": "2020",
+    "abstract": " Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "url": "https://arxiv.org/abs/2005.11401",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "dpr",
+    "arxiv": "2004.04906",
+    "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "authors": [
+      "Karpukhin, Vladimir",
+      "Oğuz, Barlas",
+      "Min, Sewon",
+      "Lewis, Patrick",
+      "Wu, Ledell",
+      "Edunov, Sergey",
+      "Chen, Danqi",
+      "Yih, Wen-tau"
+    ],
+    "date": "2020/04/10",
+    "year": "2020",
+    "abstract": " Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework. When evaluated on a wide range of open-domain QA datasets, our dense retriever outperforms a strong Lucene-BM25 system largely by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system establish new state-of-the-art on multiple open-domain QA benchmarks.",
+    "url": "https://arxiv.org/abs/2004.04906",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "selfrag",
+    "arxiv": "2310.11511",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "authors": [
+      "Asai, Akari",
+      "Wu, Zeqiu",
+      "Wang, Yizhong",
+      "Sil, Avirup",
+      "Hajishirzi, Hannaneh"
+    ],
+    "date": "2023/10/17",
+    "year": "2023",
+    "abstract": " Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation. We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection. Our framework trains a single arbitrary LM that adaptively retrieves passages on-demand, and generates and reflects on retrieved passages and its own generations using special tokens, called reflection tokens. Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. Experiments show that Self-RAG (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality and citation accuracy for long-form generations relative to these models.",
+    "url": "https://arxiv.org/abs/2310.11511",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "amem",
+    "arxiv": "2502.12110",
+    "title": "A-MEM: Agentic Memory for LLM Agents",
+    "authors": [
+      "Xu, Wujiang",
+      "Liang, Zujie",
+      "Mei, Kai",
+      "Gao, Hang",
+      "Tan, Juntao",
+      "Zhang, Yongfeng"
+    ],
+    "date": "2025/02/17",
+    "year": "2025",
+    "abstract": " While large language model (LLM) agents can effectively use external tools for complex real-world tasks, they require memory systems to leverage historical experiences. Current memory systems enable basic storage and retrieval but lack sophisticated memory organization, despite recent attempts to incorporate graph databases. Moreover, these systems' fixed operations and structures limit their adaptability across diverse tasks. To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following the basic principles of the Zettelkasten method, we designed our memory system to create interconnected knowledge networks through dynamic indexing and linking. When a new memory is added, we generate a comprehensive note containing multiple structured attributes, including contextual descriptions, keywords, and tags. The system then analyzes historical memories to identify relevant connections, establishing links where meaningful similarities exist. Additionally, this process enables memory evolution - as new memories are integrated, they can trigger updates to the contextual representations and attributes of existing historical memories, allowing the memory network to continuously refine its understanding. Our approach combines the structured organization principles of Zettelkasten with the flexibility of agent-driven decision making, allowing for more adaptive and context-aware memory management. Empirical experiments on six foundation models show superior improvement against existing SOTA baselines. The source code for evaluating performance is available at this https URL , while the source code of the agentic memory system is available at this https URL .",
+    "url": "https://arxiv.org/abs/2502.12110",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "mem0",
+    "arxiv": "2504.19413",
+    "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+    "authors": [
+      "Chhikara, Prateek",
+      "Khant, Dev",
+      "Aryan, Saket",
+      "Singh, Taranjeet",
+      "Yadav, Deshraj"
+    ],
+    "date": "2025/04/28",
+    "year": "2025",
+    "abstract": " Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a proprietary model system, and (vi) a dedicated memory management platform. Empirical results show that our methods consistently outperform all existing memory systems across four question categories: single-hop, temporal, multi-hop, and open-domain. Notably, Mem0 achieves 26% relative improvements in the LLM-as-a-Judge metric over OpenAI, while Mem0 with graph memory achieves around 2% higher overall score than the base configuration. Beyond accuracy gains, we also markedly reduce computational overhead compared to full-context method. In particular, Mem0 attains a 91% lower p95 latency and saves more than 90% token cost, offering a compelling balance between advanced reasoning capabilities and practical deployment constraints. Our findings highlight critical role of structured, persistent memory mechanisms for long-term conversational coherence, paving the way for more reliable and efficient LLM-driven AI agents.",
+    "url": "https://arxiv.org/abs/2504.19413",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "acon",
+    "arxiv": "2510.00615",
+    "title": "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+    "authors": [
+      "Kang, Minki",
+      "Chen, Wei-Ning",
+      "Han, Dongge",
+      "Inan, Huseyin A.",
+      "Wutschitz, Lukas",
+      "Chen, Yanzhi",
+      "Sim, Robert",
+      "Rajmohan, Saravan"
+    ],
+    "date": "2025/10/01",
+    "year": "2025",
+    "abstract": " Large language models (LLMs) are increasingly deployed as agents in dynamic real-world environments, where success depends on maintaining precise records of actions and observations. However, the resulting unbounded context growth in long-horizon agentic tasks makes two critical bottlenecks: prohibitive inference memory costs and reasoning degradation due to irrelevant information. Existing compression methods fail to fully address this, often relying on brittle heuristics or requiring parameter updates impractical for proprietary or large-scale LLMs. We introduce Agent Context Optimization (ACON), a unified framework that optimally compresses both observations and history into concise, informative representations. Distinct from prior works, ACON employs an optimization in natural language space: it iteratively refines compression guidelines based on failure analysis of the agent, ensuring critical state information is preserved without model fine-tuning. To further minimize computational overhead, we distill the optimized compressor into smaller models. Experiments on AppWorld, OfficeBench, and Multi-objective QA demonstrate that ACON reduces peak token usage by 26-54% while improving task success over existing compression baselines. Notably, it enables smaller LMs to function effectively as long-horizon agents, achieving up to 46% performance improvement by mitigating context distraction. Our code is available at this https URL .",
+    "url": "https://arxiv.org/abs/2510.00615",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "agentfold",
+    "arxiv": "2510.24699",
+    "title": "AgentFold: Long-Horizon Web Agents with Proactive Context Management",
+    "authors": [
+      "Ye, Rui",
+      "Zhang, Zhongwang",
+      "Li, Kuan",
+      "Yin, Huifeng",
+      "Tao, Zhengwei",
+      "Zhao, Yida",
+      "Su, Liangcai",
+      "Zhang, Liwen",
+      "Qiao, Zile",
+      "Wang, Xinyu",
+      "Xie, Pengjun",
+      "Huang, Fei",
+      "Chen, Siheng",
+      "Zhou, Jingren",
+      "Jiang, Yong"
+    ],
+    "date": "2025/10/28",
+    "year": "2025",
+    "abstract": " LLM-based web agents show immense promise for information seeking, yet their effectiveness on long-horizon tasks is hindered by a fundamental trade-off in context management. Prevailing ReAct-based agents suffer from context saturation as they accumulate noisy, raw histories, while methods that fixedly summarize the full history at each step risk the irreversible loss of critical details. Addressing these, we introduce AgentFold, a novel agent paradigm centered on proactive context management, inspired by the human cognitive process of retrospective consolidation. AgentFold treats its context as a dynamic cognitive workspace to be actively sculpted, rather than a passive log to be filled. At each step, it learns to execute a `folding' operation, which manages its historical trajectory at multiple scales: it can perform granular condensations to preserve vital, fine-grained details, or deep consolidations to abstract away entire multi-step sub-tasks. The results on prominent benchmarks are striking: with simple supervised fine-tuning (without continual pre-training or RL), our AgentFold-30B-A3B agent achieves 36.2% on BrowseComp and 47.3% on BrowseComp-ZH. Notably, this performance not only surpasses or matches open-source models of a dramatically larger scale, such as the DeepSeek-V3.1-671B-A37B, but also surpasses leading proprietary agents like OpenAI's o4-mini.",
+    "url": "https://arxiv.org/abs/2510.24699",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "memoryr1",
+    "arxiv": "2508.19828",
+    "title": "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning",
+    "authors": [
+      "Yan, Sikuan",
+      "Yang, Xiufeng",
+      "Huang, Zuchao",
+      "Nie, Ercong",
+      "Ding, Zifeng",
+      "Li, Zonggen",
+      "Ma, Xiaowen",
+      "Bi, Jinhe",
+      "Kersting, Kristian",
+      "Pan, Jeff Z.",
+      "Schütze, Hinrich",
+      "Tresp, Volker",
+      "Ma, Yunpu"
+    ],
+    "date": "2025/08/27",
+    "year": "2025",
+    "abstract": " Large Language Models (LLMs) have demonstrated impressive capabilities across a wide range of NLP tasks, but they remain fundamentally stateless, constrained by limited context windows that hinder long-horizon reasoning. Recent efforts to address this limitation often augment LLMs with an external memory bank, yet most existing pipelines are static and heuristic-driven, lacking a learned mechanism for deciding what to store, update, or retrieve. We present Memory-R1, a reinforcement learning (RL) framework that equips LLMs with the ability to actively manage and utilize external memory through two specialized agents: a Memory Manager that learns structured operations, including ADD, UPDATE, DELETE, and NOOP; and an Answer Agent that pre-selects and reasons over relevant entries. Both agents are fine-tuned with outcome-driven RL (PPO and GRPO), enabling adaptive memory management with minimal supervision. With only 152 training QA pairs, Memory-R1 outperforms strong baselines and generalizes across diverse question types, three benchmarks (LoCoMo, MSC, LongMemEval), and multiple model scales (3B-14B).",
+    "url": "https://arxiv.org/abs/2508.19828",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "agemem",
+    "arxiv": "2601.01885",
+    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "authors": [
+      "Yu, Yi",
+      "Yao, Liuyi",
+      "Xie, Yuexiang",
+      "Tan, Qingquan",
+      "Feng, Jiaqi",
+      "Li, Yaliang",
+      "Wu, Libing"
+    ],
+    "date": "2026/01/05",
+    "year": "2026",
+    "abstract": " Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory management critical. Existing methods typically handle long-term memory (LTM) and short-term memory (STM) as separate components, relying on heuristics or auxiliary controllers, which limits adaptability and end-to-end optimization. In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy. AgeMem exposes memory operations as tool-based actions, enabling the LLM agent to autonomously decide what and when to store, retrieve, update, summarize, or discard information. To train such unified behaviors, we propose a three-stage progressive reinforcement learning strategy and design a step-wise GRPO to address sparse and discontinuous rewards induced by memory operations. Experiments on five long-horizon benchmarks demonstrate that AgeMem consistently outperforms strong memory-augmented baselines across multiple LLM backbones, achieving improved task performance, higher-quality long-term memory, and more efficient context usage.",
+    "url": "https://arxiv.org/abs/2601.01885",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "readagent",
+    "arxiv": "2402.09727",
+    "title": "A Human-Inspired Reading Agent with Gist Memory of Very Long Contexts",
+    "authors": [
+      "Lee, Kuang-Huei",
+      "Chen, Xinyun",
+      "Furuta, Hiroki",
+      "Canny, John",
+      "Fischer, Ian"
+    ],
+    "date": "2024/02/15",
+    "year": "2024",
+    "abstract": " Current Large Language Models (LLMs) are not only limited to some maximum context length, but also are not able to robustly consume long inputs. To address these limitations, we propose ReadAgent, an LLM agent system that increases effective context length up to 20x in our experiments. Inspired by how humans interactively read long documents, we implement ReadAgent as a simple prompting system that uses the advanced language capabilities of LLMs to (1) decide what content to store together in a memory episode, (2) compress those memory episodes into short episodic memories called gist memories, and (3) take actions to look up passages in the original text if ReadAgent needs to remind itself of relevant details to complete a task. We evaluate ReadAgent against baselines using retrieval methods, using the original long contexts, and using the gist memories. These evaluations are performed on three long-document reading comprehension tasks: QuALITY, NarrativeQA, and QMSum. ReadAgent outperforms the baselines on all three tasks while extending the effective context window by 3.5-20x.",
+    "url": "https://arxiv.org/abs/2402.09727",
+    "accessed_at": "2026-09-06",
+    "status": "verified_primary"
+  },
+  {
+    "key": "llmlingua2",
+    "title": "LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+    "authors": [
+      "Zhuoshi Pan",
+      "Qianhui Wu",
+      "Huiqiang Jiang",
+      "Menglin Xia",
+      "Xufang Luo",
+      "Jue Zhang",
+      "Qingwei Lin",
+      "Victor Rühle",
+      "Yuqing Yang",
+      "Chin-Yew Lin",
+      "H. Vicky Zhao",
+      "Lili Qiu",
+      "Dongmei Zhang"
+    ],
+    "year": "2024",
+    "url": "https://aclanthology.org/2024.findings-acl.57/",
+    "doi": "10.18653/v1/2024.findings-acl.57",
+    "abstract": "",
+    "status": "verified_primary",
+    "accessed_at": "2026-09-06"
+  },
+  {
+    "key": "yanhash",
+    "title": "Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval",
+    "authors": [
+      "Lihan Tang",
+      "Liejun Wang",
+      "Gang Wang",
+      "Mengyuan Sun",
+      "Feng Yan"
+    ],
+    "year": "2026",
+    "url": "https://doi.org/10.1109/LSP.2026.3652952",
+    "doi": "10.1109/LSP.2026.3652952",
+    "journal": "IEEE Signal Processing Letters",
+    "volume": "33",
+    "pages": "609-613",
+    "abstract": "",
+    "status": "verified_crossref_metadata_applicant_confirmed",
+    "accessed_at": "2026-09-06"
+  },
+  {
+    "key": "yanrshr",
+    "title": "RSHR+: Progressive question-conditioned visual calibration and structured state-space reasoning for remote sensing visual question answering",
+    "authors": [
+      "Pengfei Xu",
+      "Feng Yan",
+      "Yuqing Zhou",
+      "Yuancheng Liu",
+      "Chuanrui Wu"
+    ],
+    "year": "2026",
+    "url": "https://doi.org/10.1016/j.eswa.2026.132953",
+    "doi": "10.1016/j.eswa.2026.132953",
+    "journal": "Expert Systems with Applications",
+    "volume": "328",
+    "pages": "132953",
+    "abstract": "",
+    "status": "verified_crossref_metadata_applicant_confirmed",
+    "accessed_at": "2026-09-06"
+  },
+  {
+    "key": "yanvqa",
+    "title": "Knowledge-aware image understanding with multi-level visual representation enhancement for visual question answering",
+    "authors": [
+      "Feng Yan",
+      "Zhe Li",
+      "Wushour Silamu",
+      "Yanbing Li"
+    ],
+    "year": "2024",
+    "url": "https://doi.org/10.1007/s10994-023-06426-6",
+    "doi": "10.1007/s10994-023-06426-6",
+    "journal": "Machine Learning",
+    "volume": "113",
+    "pages": "3789-3805",
+    "abstract": "",
+    "status": "verified_crossref_metadata_applicant_confirmed",
+    "accessed_at": "2026-09-06",
+    "publication_note": "正式卷期年2024；在线发表2023"
+  },
+  {
+    "key": "memstrata",
+    "arxiv": "2606.26511",
+    "title": "Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge",
+    "authors": [
+      "Yadav, Neeraj"
+    ],
+    "date": "2026/06/25",
+    "year": "2026",
+    "abstract": "Retrieval-augmented generation (RAG) gives agents access to accumulated knowledge, but has no model of time. When a fact changes (e.g., a function is renamed or API restructured), RAG retrieves both the stale and current value with near-identical embedding similarity. The agent then either abstains or serves the superseded fact. We show this is a structural problem: on a calibrated dataset, cosine similarity distinguishes a contradicted fact from a duplicated one with AUROC 0.59 (near chance), as contradictions are often more embedding-similar to the original than rephrased duplicates. We present MemStrata, a retrieval memory maintaining temporal validity. It stores facts like RAG, preserving static recall, but when a fact's value is contradicted, a deterministic (subject, relation, object) supersession rule retires the stale value in a bi-temporal ledger - with no similarity threshold and no LLM call. Across six benchmarks run locally with a 7B model, MemStrata ties RAG on static knowledge and reaches 0.95-1.00 accuracy on evolving knowledge (where RAG reaches 0.20-0.47). The central result is the stale-fact-error rate: when required to answer, RAG serves superseded values 15-40% of the time; MemStrata drives this to ~0%, a failure class RAG cannot avoid. MemStrata achieves this at retrieval latency (~2.1s) versus ~16-18s for LLM-reranking baselines. We release the harness, datasets, and a marker-free evaluation protocol for memory under knowledge evolution.",
+    "url": "https://arxiv.org/abs/2606.26511",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "placemem",
+    "arxiv": "2607.04089",
+    "title": "PLACEMEM: Toward a Compute-Aware Memory Plane for Lifelong Agents",
+    "authors": [
+      "Ganguly, Sukanta"
+    ],
+    "date": "2026/07/05",
+    "year": "2026",
+    "abstract": "Lifelong agents need more than larger context windows and better retrieval. They need memories that can persist, evolve, and be corrected without forcing the serving stack to recompute the same history on every turn or silently reuse stale runtime state. We present PLACEMEM as a systems position on lifelong-agent memory, instantiated by an executable control-plane prototype. The central claim is that agent memory should be represented as versioned capsules that unify semantics, provenance, validity, and reusable runtime state under one correction-aware identity. In the current prototype, capsules drive prompt-level text retrieval, KV-aware routing, and cascading invalidation over live streamed backends; prospective layer-frontier replay is intentionally framed as a deeper integration agenda rather than a claimed engine feature. We describe a vLLM-first prototype with persistent capsule state, concurrency-safe invalidation, an OpenAI-compatible routing sidecar, a typed metadata contract, and a benchmark harness that measures live first-token latency, reuse, and post-correction behavior. The result is both an executable artifact that demonstrates correction-aware control-plane behavior today and a concrete roadmap for replay-aware serving integration in future lifelong-agent systems.",
+    "url": "https://arxiv.org/abs/2607.04089",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "contextbudget",
+    "arxiv": "2604.01664",
+    "title": "ContextBudget: Budget-Aware Context Management for Long-Horizon Search Agents",
+    "authors": [
+      "Wu, Yong",
+      "Zheng, YanZhao",
+      "Xu, TianZe",
+      "Zhang, ZhenTao",
+      "Yu, YuanQiang",
+      "Zhu, JiHuai",
+      "Ma, Chao",
+      "Lin, BinBin",
+      "Dong, BaoHua",
+      "Zhu, HangCheng",
+      "Huang, RuoHui",
+      "Yu, Gang"
+    ],
+    "date": "2026/04/02",
+    "year": "2026",
+    "abstract": "LLM-based agents show strong potential for long-horizon reasoning, yet their context size is limited by deployment factors (e.g., memory, latency, and cost), yielding a constrained context budget. As interaction histories grow, this induces a trade-off between retaining past information and staying within the context limit. To address this challenge, we propose Budget-Aware Context Management (BACM), which formulates context management as a sequential decision problem with a context budget constraint. It enables agents to assess the available budget before incorporating new observations and decide when and how much of the interaction history to compress. We further develop BACM-RL, an end-to-end curriculum-based reinforcement learning approach that learns compression strategies under varying context budgets. Experiments on compositional multi-objective QA and long-horizon web browsing benchmarks show that BACM-RL consistently outperforms prior methods across model scales and task complexities, achieving over $1.6\\times$ gains over strong baselines in high-complexity settings, while maintaining strong advantages as budgets shrink, where most methods exhibit a downward performance trend.",
+    "url": "https://arxiv.org/abs/2604.01664",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "agentzero",
+    "arxiv": "2608.29606",
+    "title": "Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents",
+    "authors": [
+      "Wu, Ming",
+      "Zhu, Pengyuan"
+    ],
+    "date": "2026/08/30",
+    "year": "2026",
+    "abstract": "Large language model (LLM) agents need durable, faithful memory of everything a user or organization has said and stored, yet most memory systems commit to a single organizing structure (a fact store, a vector index, or a knowledge graph) and inherit its blind spots. We present Agent Zero Memory, a provenance-aware long-term memory system that distils a user's conversations, files, and connected sources into three parallel memory systems, each capturing a different facet of the same history: an episodic Memory Events timeline that makes when and what changed first-class, an associative entity-event knowledge graph that links people and projects across sessions, and a semantic, curated, citation-locked Hierarchical Documentary Memory (HDM) of durable facts. A retrieval turn runs an intent gate (so self-contained turns add no latency), a source router, and three concurrent agentic searches, one per system, each a tool-using loop over hybrid (embedding + lexical) search under agent-controlled filters; their grounded, cited answers are integrated into one answer with a single confidence. We formalize the reading discipline: every learned item is a provenanced item carrying its origin, timestamp, and evidence pointer, and every answer is read under a citation lock, so it may cite only evidence its reader actually opened; fabrication is structurally excluded and the system abstains rather than guesses. On two public benchmarks the system sets a new state of the art: 95.60% on LongMemEval and 93.60% on LoCoMo, improving over the strongest prior systems by +0.73 and +1.10 points. A controlled study across eight backbone LLMs characterizes the accuracy-cost-latency frontier: accuracy varies by only 3.4 points while per-query cost varies by ~30x, with near-state-of-the-art quality at up to 20x lower cost per query, the signature of memory-driven, rather than model-driven, quality.",
+    "url": "https://arxiv.org/abs/2608.29606",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "invalidation",
+    "arxiv": "2609.00243",
+    "title": "Invalidation Contracts for Cross-Episode Agent Memory",
+    "authors": [
+      "Wu, Michael",
+      "Canedo, Arquimedes"
+    ],
+    "date": "2026/08/31",
+    "year": "2026",
+    "abstract": "LLM agents that cache recovery suggestions from API errors can skip re-derivation in later episodes, spending fewer tokens and fewer model calls on constraints they have already learned. Server-side data drift turns those cached fixes into silent failures, and the usual remedy, re-deriving on every episode, gives the savings back. We introduce invalidation contracts, a protocol layer that attaches version stamps and cacheability hints to every recovery suggestion so the client can evict stale entries without trial and error, and keep the rest. The contract decomposes realized savings into two independent factors: validity, the fraction of cached suggestions that remain correct after a drift event, and compliance, the fraction the planner applies on the first attempt. Validity depends only on the protocol and is vendor-independent. Compliance depends on the planner model: identical wire bytes yield 100% first-try compliance on Claude Haiku 4.5 and 11% or below on Claude Sonnet 5, which exhibits input-schema conservatism, refusing fixes that add fields the original request did not contain. We evaluate across seven models, three serving paths, two domains, and approximately 9,400 episodes. Row-level invalidation raises compliance by 0 to 66.7 percentage points across the seven models, 55.6 to 66.7 on three, and recovers 29-33% of baseline token cost on four of seven models, while table-level invalidation destroys co-located entries and drops post-drift first-try rates to 0% on five of seven. Eviction precision is 1.00 at row granularity on every model under the row-level oracle of Section 4.1. The contract adds 15% to response payload. Version-stamp validity is deterministic by construction and produced identical results across every model and serving path, with zero contract failures in the entire evaluation.",
+    "url": "https://arxiv.org/abs/2609.00243",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "rollbackrepair",
+    "arxiv": "2608.10502",
+    "title": "From Faulty Memories to Corrected Actions: Dependency-Guided Rollback Repair for Memory-Augmented Agents",
+    "authors": [
+      "Yu, Caili",
+      "Wang, Yiqi",
+      "Zhang, Jiaqi",
+      "Duan, Yiqun",
+      "Zheng, Mingkai",
+      "Wu, Zhangkai",
+      "Shi, Kaize",
+      "Cai, Taotao"
+    ],
+    "date": "2026/08/11",
+    "year": "2026",
+    "abstract": "Persistent memory lets language-model agents reuse information across sessions, but it also makes errors durable: a poisoned, stale, or misattributed record can alter reasoning, tool use, answers, and subsequent memory writes. Existing defenses mainly detect or delete suspicious memories, or revise the current response. Deleting the source leaves already propagated claims, actions, and derived memories active, whereas resetting the store or replaying the full trace destroys benign state and repeats unnecessary computation. We therefore formulate \\textbf{post-failure memory recovery: } \\textit{given a failed execution and diagnosed faulty memories, recover both the answer and persistent state while retaining unaffected work.} Our \\textbf{dependency-guided rollback repair} builds a typed memory-to-action graph from runtime provenance, traces explicit downstream dependencies, preserves candidates with independent trusted support, deactivates unsupported memory state, and selectively replays only answer-relevant affected computation. We evaluate this approach on a 150-case controlled benchmark spanning three tool-use domains and four memory failure types, and on a 50-case trajectory-derived stress test adapted from LongMemEval-V2. On the controlled benchmark, it achieves 85.3\\% recovery versus 77.3\\% for the best competing recovery method, removes all diagnosed faulty memories, preserves all benign memories, and requires only selective replay with modest LLM-call cost. On the adapted subset, it reaches 68.0\\% recovery versus 54.0\\% for the next best method, while also achieving the highest claim invalidation F1, 0.669 versus 0.603. Overall, the results do not imply uniformly better trace reconstruction, but show that dependency-guided rollback repair provides a strong recovery--cost trade-off while repairing faulty memory state and preserving benign memory.",
+    "url": "https://arxiv.org/abs/2608.10502",
+    "verified_on": "2026-09-06"
+  },
+  {
+    "key": "compressioncost",
+    "arxiv": "2608.16370",
+    "title": "What Does Context Compression Cost an Agent? Interaction Costs Unrevealed by Task-Completion Metrics",
+    "authors": [
+      "Liu, Shuyu"
+    ],
+    "date": "2026/08/17",
+    "year": "2026",
+    "abstract": "Task completion is the standard metric for evaluating context compression, yet it is incomplete: compression can increase an agent's interaction cost by forcing it to reacquire dropped state while leaving completion statistically unchanged. We introduce a controlled runtime measurement protocol for reacquisition cost in a bounded-horizon tool-using agent. The agent acts in a deterministic planning environment under a fixed 24-turn horizon. We vary compression severity, compare a dropping operator with a fact-preserving operator, restore dropped state through controlled oracle interventions, and decompose tool calls into retrieval and execution. We evaluate three models across two task regimes. Retrieval calls increase in all six model-regime comparisons and account for almost all added interaction; five of six remain significant after Holm correction. At the prespecified 5x comparison point, completion changes are not significant in any cell. DeepSeek shows a significant completion drop only at 10x compression. GPT-5.5 is the clearest case: completion changes from 80% to 85% (p = 1.0) while retrieval increases from 21.0 to 63.9 calls (p = .002). Retention interventions further separate state quantity, state type, and content validity. Random selection is comparable to an offline hindsight oracle, while replacing retained D-state with semantically irrelevant content increases retrieval by 57% (p < .001) without a significant completion change. In a second environment, ALFWorld, sliding compression produces no retrieval surge, showing that the reacquisition signature is environment-dependent rather than intrinsic to shortening context. Overall, compression can impose hidden interaction costs when execution-relevant state becomes absent and must be reacquired, while completion alone may not expose those costs.",
+    "url": "https://arxiv.org/abs/2608.16370",
+    "verified_on": "2026-09-06"
+  }
+]

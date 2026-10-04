@@ -1,0 +1,117 @@
+{
+  "diagram_type": "optional",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Build a large clean two-by-two factorial table in the center, with two column headers and two row headers. The first row is dependency retention off, the second on; the first column is validity checking off, the second on. Cell identifiers must be exactly 00, 01, 10, 11 in reading order. Above it place a single wide shared-conditions strip. Beneath the table place three equal endpoint cards. Use thin gray grid lines with heavier blue outside borders, and white cell fills. Do not use heatmap colors or numerical results. No data-flow arrow is required inside the table because the four cells are comparison groups, not sequential steps.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "四组共同条件",
+      "exact_text": "同一执行模型 · 原文档案 · 预算"
+    },
+    {
+      "relative_position": "table column left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "不核验有效性",
+      "exact_text": ""
+    },
+    {
+      "relative_position": "table column right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "核验有效性",
+      "exact_text": ""
+    },
+    {
+      "relative_position": "table row top",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "不保留依赖",
+      "exact_text": ""
+    },
+    {
+      "relative_position": "table row bottom",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "保留依赖",
+      "exact_text": ""
+    },
+    {
+      "relative_position": "cell top left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "00",
+      "exact_text": "基础恢复"
+    },
+    {
+      "relative_position": "cell top right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "01",
+      "exact_text": "有效性核验"
+    },
+    {
+      "relative_position": "cell bottom left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "10",
+      "exact_text": "依赖引导恢复"
+    },
+    {
+      "relative_position": "cell bottom right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "11",
+      "exact_text": "依赖与核验联合"
+    },
+    {
+      "relative_position": "bottom left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "主要终点",
+      "exact_text": "任务成功率"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "诊断指标",
+      "exact_text": "恢复有效性 · 失败类型"
+    },
+    {
+      "relative_position": "bottom right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "代价核算",
+      "exact_text": "Token · 接口 · 时延"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/2.1.研究内容.tex",
+  "source_excerpt": "核心机制实验采用“保留动作依赖/不保留动作依赖”与“核验当前有效性/不核验当前有效性”的交叉设计。四组共享原文档案、执行模型和候选证据规模，并在局部机制回放中匹配Token与实际查询开销，以分离更多上下文带来的影响；完整系统实验只匹配总预算上限，保留自然执行的实际调用差异，不添加无效调用强行配平成本。",
+  "caption_note": "依赖保留与有效性核验的交叉设计及共同评测条件"
+}

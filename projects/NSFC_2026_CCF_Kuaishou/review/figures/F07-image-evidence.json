@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "五阶段月份、15项任务和暂定合同提示完整，箭头仅顺序推进，无已完成符号，绑定F-KS-05，边界完整。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-16366c80-6a8a-43d8-ab90-4e25c86a6dcd.png"
+}

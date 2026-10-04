@@ -1,0 +1,33 @@
+{
+  "text_stages_done": true,
+  "body_pipeline_ready": false,
+  "figures_ready": false,
+  "illustrated_body_ready": false,
+  "submission_ready": false,
+  "pending_submission_items": [
+    "abstract",
+    "application_code",
+    "budget",
+    "declarations",
+    "attachments"
+  ],
+  "open_hard_gaps": [
+    "F-KS-01",
+    "F-KS-02",
+    "F-KS-03",
+    "F-KS-04",
+    "F-KS-05"
+  ],
+  "figure_gap_ids": [
+    "F-KS-05"
+  ],
+  "tentative_count": 6,
+  "counts": {
+    "selected": 7,
+    "generated": 7,
+    "pdf": 7,
+    "inserted": 7
+  },
+  "next_stage": null,
+  "scan_problems": []
+}

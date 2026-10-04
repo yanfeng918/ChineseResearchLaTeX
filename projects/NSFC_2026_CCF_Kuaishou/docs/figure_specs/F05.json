@@ -1,0 +1,93 @@
+{
+  "diagram_type": "route",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Use three compact input cards in the top row, each pointing down to one broad controller card. The controller has three distinct downward outgoing arrows toward the lower operation cards. All operation cards point to a wide bottom cost ledger. A dashed outer loop returns the ledger feedback to the remaining-budget card. Keep controller and execution distinct: the controller chooses context operations and the execution model is fixed, not trained here. Do not display a mathematical optimization formula, performance curve, percentages or guaranteed savings. The ledger is descriptive accounting rather than a claim of measured improvement. White backgrounds and restrained blue borders throughout.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "当前工作状态",
+      "exact_text": "占用 · 依赖 · 风险"
+    },
+    {
+      "relative_position": "top center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "恢复反馈",
+      "exact_text": "有效证据 · 缺失前提"
+    },
+    {
+      "relative_position": "top right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "剩余预算",
+      "exact_text": "窗口 · Token · 接口"
+    },
+    {
+      "relative_position": "middle center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "规则或轻量控制器",
+      "exact_text": "固定执行模型"
+    },
+    {
+      "relative_position": "lower left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "保留 / 压缩",
+      "exact_text": "更新工作窗口"
+    },
+    {
+      "relative_position": "lower center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "卸载 / 恢复",
+      "exact_text": "维护与读取档案"
+    },
+    {
+      "relative_position": "lower right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "重查",
+      "exact_text": "调用当前环境"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "完整成本记录",
+      "exact_text": "执行 · 压缩 · 检索\n校验 · 重查 · 重试"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/2.1.研究内容.tex",
+  "source_excerpt": "三条路线形成可观察的反馈关系：状态表示决定可提出哪些恢复请求，恢复结果暴露表示遗漏及证据过期风险，调度依据这些反馈重新分配有限上下文。共同实验保持这一反馈链可追踪，既做分模块干预，也检查整条轨迹的最终操作结果。",
+  "caption_note": "R3：结合恢复反馈和共同资源约束的全开销调度"
+}

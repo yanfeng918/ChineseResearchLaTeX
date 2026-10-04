@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "2×2行列与00、01、10、11顺序均核对正确；共同条件位于四组之上，任务终点与事件诊断区分，无结果数值或裁切。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-07b20673-5f33-4783-a467-60e82b8cef24.png"
+}

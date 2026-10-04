@@ -1,0 +1,93 @@
+{
+  "diagram_type": "route",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC, Arial, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "9-10pt regular",
+      "secondary_note": "8-9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "gray": "#8EAEC4",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "arrow": "#4D4D4D"
+  },
+  "layout_description": "Use a top horizontal sequence of three large cards with rightward arrows. From value estimation, a clean distribution line branches downward into three equal representation cards across the middle row. Their three downward connectors merge into a wide output card near the bottom center. A small dashed-border ablation card sits below or beside the output, connected by a dashed diagnostic line only. Make the three representation forms equally prominent: they are alternative granularities, not a serial processing sequence. A tiny neutral line divider under each card title provides the visual hierarchy. Do not add metrics, curves, labels about training results, or future observations.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "当前可见信息",
+      "exact_text": "指令 · 动作 · 工具观察"
+    },
+    {
+      "relative_position": "top center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "提取任务状态",
+      "exact_text": "目标 · 约束 · 动作前提"
+    },
+    {
+      "relative_position": "top right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "估计保留价值",
+      "exact_text": "未完成依赖 · 回取成本"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "原文片段",
+      "exact_text": "关键约束原样保留"
+    },
+    {
+      "relative_position": "middle center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "结构化事实",
+      "exact_text": "对象与条件关联"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "子任务概要",
+      "exact_text": "已知过程简述"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "紧凑状态与来源索引",
+      "exact_text": "输出至 R2 与 R3"
+    },
+    {
+      "relative_position": "bottom right small",
+      "shape": "white rectangle, colored blue border",
+      "exact_title_to_render_inside": "开发阶段消融",
+      "exact_text": "删除 · 打乱 · 随机保留"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 9-10pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "NO icons, NO pictograms, NO emojis, NO 3D rendering.",
+    "Feedback loop arrows are DASHED. Main forward flow arrows are SOLID.",
+    "Flat vector style: no gradients, no decorative shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "source_file": "extraTex/2.1.研究内容.tex",
+  "source_excerpt": "这一分路线输出紧凑状态、关联证据索引和保真风险。验证比较相同摘要长度下的关键约束遗漏率、动作前提满足情况与任务终态，并以去掉依赖关系、去掉未完成目标、随机保留等消融排除单纯长度优势。其输出直接作为下一分路线的恢复请求依据；不能由恢复模块看到压缩模块未被允许使用的未来答案。",
+  "caption_note": "R1：以未完成动作依赖指导任务状态保真压缩"
+}

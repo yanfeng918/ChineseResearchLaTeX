@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "已目视全部18条中文标签与3个R标识，三行层级完整无裁切；中下虚线表示风险对应研究切入点，并非系统前向数据流。无结果或未确认事实。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-42480a42-bdf5-42a7-b87b-0a299d96bdba.png"
+}

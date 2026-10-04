@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "中文标签、满足前提与仍不确定分支正确；原文档案向上供定位，重查虚线回到适用性核对；资源不足单独中止并计失败，无裁切。",
+  "source": "/home/yanfeng/.codex/generated_images/01a0773c-c805-70d0-8dfa-40a0f36155a5/exec-85d59a8b-26e2-408f-b973-351bc52198f1.png"
+}

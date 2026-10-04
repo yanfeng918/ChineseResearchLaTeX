@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "page_limit": true,
+    "legibility": true,
+    "no_crop": true,
+    "references": true,
+    "source_consistency": true,
+    "qc": true
+  },
+  "input_sha256": "39aa9e5276a45807117d566a7e9f45d3d960fe67f423034ed4aaa47487e6d965",
+  "pdf_sha256": "835c88df37651201a2dd5452b16662b72c8ae009e33e64e6887b00c33c4f4e1f",
+  "figure_pages": {
+    "F01": [
+      5
+    ],
+    "F02": [
+      13
+    ],
+    "F03": [
+      14
+    ],
+    "F04": [
+      16
+    ],
+    "F05": [
+      17
+    ],
+    "F06": [
+      15
+    ],
+    "F07": [
+      19
+    ]
+  },
+  "notes": "已目视全部7图PDF及最终7个插图页。26页、无空白页或裁切、全部123项锁定文字保留，引用43 keys无异常；已有字体/包提示及参考文献Underfull，未新增warning。5项事实缺口与6项暂定保留，F07仍待正式周期确认。"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "NSFC_2026_CCF_Kuaishou",
+  "grant_type": "CCF—快手大模型探索者基金（NSFC 面上模板承载）",
+  "layout": "three-part",
+  "length_budget": "模板正文不超过30页；实际CCF申报页数以官方附件为准；计划文字18—22页、含图24—28页",
+  "body_files": {
+    "part_one": [
+      "extraTex/1.1.立项依据.tex",
+      "extraTex/2.1.研究内容.tex",
+      "extraTex/2.2.特色与创新.tex",
+      "extraTex/2.3.年度研究计划.tex"
+    ],
+    "foundation": [
+      "extraTex/3.1.研究基础.tex",
+      "extraTex/3.2.工作条件.tex",
+      "extraTex/3.3.承担项目情况.tex",
+      "extraTex/3.4.完成国基项目情况.tex"
+    ],
+    "statements": [
+      "extraTex/4.1.不同类型国基情况.tex",
+      "extraTex/4.2.同年单位不一致.tex",
+      "extraTex/4.3.承担中单位不一致.tex",
+      "extraTex/4.4.不同专业技术职务的申请.tex",
+      "extraTex/4.6.其他.tex"
+    ]
+  },
+  "project_fact_file": "docs/00_项目事实库.md",
+  "applicant_profile_file": "../../docs/applicants/yan-feng.md"
+}
