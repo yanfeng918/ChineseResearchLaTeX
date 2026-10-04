@@ -2,7 +2,7 @@
 document: "共用申请人信息"
 applicant: "颜丰"
 slug: "yan-feng"
-version: "2026-09-10"
+version: "2026-09-22"
 status: "living_document"
 scope: "跨基金、开放课题、论文与其他科研项目申请复用"
 privacy: "不记录身份证号、学生学号、私人手机号等高敏感字段"
@@ -23,16 +23,18 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 | 中文姓名 | 颜丰 | 已确认 | 申请人简历、现有项目材料 |
 | 英文姓名 | Feng Yan | 公开来源待终核 | 申请人简历、个人主页 |
 | 所在单位 | 新疆大学 | 已确认 | 申请人简历、现有项目材料 |
-| 院系 | 计算机科学与技术学院（网络空间安全学院） | 公开来源待终核 | 项目工作条件、现有正文 |
-| 学位 | 博士 | 已确认 | 申请人补充问卷 |
+| 院系 | 计算机科学与技术学院 | 已确认 | 申请人2026-09-20提供的简介 |
+| 学位 | 工学博士 | 已确认 | 申请人2026-09-20提供的简介 |
 | 职称 | 副教授 | 已确认 | 申请人简历、现有项目材料 |
 | 导师资格 | 硕士研究生导师 | 已确认 | 申请人简历、现有项目材料 |
 | 人才类别 | 新疆大学高层次优秀青年 A 类博士引进人才 | 公开来源待终核 | 申请人公开主页、现有简历 |
 | 办公地点 | 计算机学院 B201 | 公开来源待终核 | 申请人公开主页、现有简历 |
 | 通讯地址 | 新疆乌鲁木齐市水磨沟区华瑞街777号新疆大学计算机科学与技术学院 | 已确认 | 申请人于2026-09-10提供 |
-| 专业邮箱 | yf@xju.edu.cn | 公开来源待终核 | 申请人公开主页、现有简历 |
+| 通讯邮编 | 830017（博达校区） | 公开来源待终核 | 2026-09-18核对[学校校区地址](https://www.xju.edu.cn/zzjg1.htm)及[研究生招生学院联系表](https://yz.xju.edu.cn/lianxiwomen/erjixueyuan/)中的计算机学院地址；学院页脚仍有830046旧口径，不直接沿用 |
+| 民族 | 汉族 | 已确认 | `projects/NSFC_2027_Mapping_final/extraTex/metadata.tex`记录申请人于2026-09-10确认；本轮补入共用资料 |
+| 专业邮箱 | yf@xju.edu.cn | 已确认（官方来源核对） | 2026-09-22对照[学院教师页](https://it.xju.edu.cn/info/1144/3131.htm)；核对公开列示，未测试邮件投递 |
 | 个人主页 | https://yanfeng918.github.io/ | 公开来源待终核 | 申请人简历 |
-| 性别、出生年月 | 男；90年11月 | 本人确认 | 正式申报表或本人确认 |
+| 性别、出生日期 | 男；1990年11月4日 | 已确认 | 本人于2026-09-11会话确认 |
 | 私人电话 | 13122045162 | 私密字段 | 仅由申请人向正式表格填写 |
 | 证件号码 | 370405199011045414 | 私密字段 | 仅由申请人向正式表格填写 |
 
@@ -40,18 +42,20 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 
 | 时间 | 学校 | 专业 | 学位 | 状态 |
 |---|---|---|---|---|
-| 2019.09--2023.08 | 新疆大学 | 计算机科学与技术 | 博士 | 公开来源待终核 |
-| 2012.09--2014.06 | 上海海事大学 | 计算机技术 | 硕士 | 公开来源待终核 |
-| 2008.09--2012.06 | 海南热带海洋学院 | 生态学 | 学士 | 公开来源待终核 |
+| 2019.09--2023.08 | 新疆大学 | 计算机科学与技术 | 博士 | 已确认（官方来源核对） |
+| 2012.09--2014.06 | 上海海事大学 | 计算机技术 | 硕士 | 已确认（官方来源核对） |
+| 2008.09--2012.06 | 海南热带海洋学院 | 生态学 | 学士 | 已确认（官方来源核对） |
+
+上述三段学历于2026-09-22重新对照[新疆大学学院教师页](https://it.xju.edu.cn/info/1144/3131.htm)“教育背景”，年月、学校、专业及学位均一致；“工学博士”门类另依据申请人2026-09-20确认。此处区分公开来源核实与申请人本轮口头确认。
 
 ## 工作经历
 
 | 时间 | 单位 | 职务或工作 | 状态 |
 |---|---|---|---|
-| 2023.12--至今 | 新疆大学 | 副教授 | 公开来源待终核 |
-| 2023.10--2023.12 | 新疆大学 | 教学与科研工作 | 公开来源待终核 |
-| 2018.03--2019.08 | 浙江大学山东工业技术研究院 | 科研与技术工作 | 公开来源待终核 |
-| 2016.10--2017.12 | 上海中科软科技有限公司 | 软件技术工作 | 公开来源待终核 |
+| 2023.12--至今 | 新疆大学 | 副教授 | 已确认（2026-09-22对照学院教师页“工作简历”） |
+| 2023.10--2023.12 | 新疆大学 | 教学与科研工作 | 已确认（2026-09-22对照学院教师页“个人简介”“工作简历”） |
+| 2018.03--2019.08 | 浙江大学山东工业技术研究院 | 软件工程师 | 公开来源待终核；2026-09-18复核[学院教师页](https://it.xju.edu.cn/info/1144/3131.htm) |
+| 2016.10--2017.12 | 上海中科软科技有限公司 | 软件工程师 | 公开来源待终核；2026-09-18复核[学院教师页](https://it.xju.edu.cn/info/1144/3131.htm) |
 
 ## 稳定研究方向与能力
 
@@ -77,7 +81,7 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 | ID | 项目 | 类别/编号 | 经费 | 执行期 | 本人角色与任务 | 状态与缺口 |
 |---|---|---|---:|---|---|---|
 | P-H01 | 融合多源数据大模型驱动的光伏发电功率预测方法研究 | 自治区高校基本科研业务费科研项目—培育类；`XJEDU2026P005` | 5 万元（直接 3.9 万元、间接 1.1 万元） | 2026.01--2026.12 | 主持；总体方案、模型研究和成果组织 | 申请人确认本次申请按“正在承担且与本项目相关”列示；经费与任务书研究内容已确认 |
-| P-H02 | 多模态融合技术研究及其在新疆产业集群中的应用 | 自治区天池英才引进计划（青年博士人才）；无独立项目批准号 | 50 万元 | 2025.02--2028.02 | 主持；总体研究方案、关键模型设计和成果组织 | 项目主体信息及无独立项目批准号均已确认；依据为任务书 |
+| P-H02 | 多模态融合技术研究及其在新疆产业集群中的应用 | 自治区天池英才引进计划（青年博士人才）；无独立项目批准号（沿用申请人此前信息） | 50 万元 | 2025.02--2028.02 | 主持；具体任务不列 | 名称、金额、期限及主持身份已于2026-09-22对照学院教师页；申请人当日明确无可供核对的具体任务/成果材料，授权删除不确定信息。撤下具体分工及“已核对任务书”表述，不补写考核成果 |
 | P-H03 | 面向通用领域的多模态视觉问答关键技术研究 | 自治区优秀博士后资助；编号待补 | 3 万元 | 2024.07--2025.11 | 主持；正式任务与成果归属待补 | 执行期已结束；结题/验收状态待本人确认 |
 | P-H04 | 面向政企数字化应用的智能知识库与问答系统研发 | 横向课题；委托单位为新疆数字云创有限公司；`202604140013` | 12 万元 | 2026.06--2026.10 | 主持；按合同构建一个知识库 | 申请人确认项目进行中，项目成果及知识产权由合同双方共同享有 |
 | P-H05 | 基于 YOLO-V8 的贴片二极管表面缺陷检测 | 横向课题；`202404140017` | 5.1 万元 | 2024.11--2025.08 | 主持；具体任务待补 | 结题/验收状态和代表性成果待确认 |
@@ -109,8 +113,8 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 
 | ID | 成果 | 本人角色 | 已核验元数据 | 状态与用途 |
 |---|---|---|---|---|
-| O-TS01 | DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Temporal Representations for Photovoltaic Power Forecasting, *Energy*, 2025, 139283 | 通讯作者 | DOI `10.1016/j.energy.2025.139283` | 已确认；支撑新能源功率预测和多尺度时频建模基础 |
-| O-TS02 | WaveKAN: Adaptive Wavelet Decomposition and Kolmogorov-Arnold Network for Long-Term Time Series Forecasting, *Neurocomputing*, 2026, 133361 | 共同第一作者 | DOI `10.1016/j.neucom.2026.133361` | 已确认；支撑自适应小波分解和长时序预测基础 |
+| O-TS01 | Qihui Sun, Feng Yan, Wanqing Sun, Yuqing Zhou. DWT-Former: Fusing Wavelet-Based Multi-Scale Features and Transformer-Based Temporal Representations for Photovoltaic Power Forecasting, *Energy*, 2025, 341: 139283 | 唯一通讯作者（申请人2026-09-20确认） | DOI `10.1016/j.energy.2025.139283` | 已确认；支撑新能源功率预测和多尺度时频建模基础 |
+| O-TS02 | Yuancheng Liu, Feng Yan, Pengfei Xu, Chongfeng Liu, Liejun Wang. WaveKAN: Adaptive Wavelet Decomposition and Kolmogorov-Arnold Network for Long-Term Time Series Forecasting, *Neurocomputing*, 2026, 682: 133361 | 共同第一作者 | DOI `10.1016/j.neucom.2026.133361` | 已确认；支撑自适应小波分解和长时序预测基础 |
 
 两项成果不能自动证明申请人已完成共形校准、输入可靠度条件融合、爬坡事件概率或任何新申报项目的专属先导实验。
 
@@ -119,9 +123,9 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 | ID | 成果 | 本人角色 | 当前元数据状态 |
 |---|---|---|---|
 | O-J01 | Lihan Tang, Liejun Wang, Gang Wang, Mengyuan Sun, Feng Yan. Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval, *IEEE Signal Processing Letters*, 2026, 33: 609--613 | 通讯作者；负责研究构思、方法设计、实验指导、结果分析及论文撰写与修改 | DOI `10.1109/LSP.2026.3652952`；题录已核验，作者身份与贡献已确认 |
-| O-J02 | Pengfei Xu, Feng Yan, Yuqing Zhou, Yuancheng Liu, Chuanrui Wu. RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reasoning for Remote Sensing Visual Question Answering, *Expert Systems with Applications*, 2026, 328: 132953 | 通讯作者；负责研究构思、方法设计、实验指导、结果分析及论文撰写与修改 | DOI `10.1016/j.eswa.2026.132953`；题录已核验，作者身份与贡献已确认 |
-| O-J03 | RSSR: Efficient Knowledge Transfer and Deep Spatial Modeling for Remote Sensing Visual Question Answering, *Computer Vision and Image Understanding*, 2026, 104753 | 通讯作者 | DOI `10.1016/j.cviu.2026.104753`；卷期待终核 |
-| O-J04 | S-YOLO: An Enhanced Small Object Detection Method Based on Adaptive Gating Strategy and Dynamic Multi-Scale Focus Module, *Neural Networks*, 2025, 107782 | 共同第一作者 | DOI、卷期页待终核 |
+| O-J02 | Pengfei Xu, Feng Yan, Yuqing Zhou, Yuancheng Liu, Chuanrui Wu. RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reasoning for Remote Sensing Visual Question Answering, *Expert Systems with Applications*, 2026, 328: 132953 | 唯一通讯作者（申请人2026-09-20确认）；负责研究构思、方法设计、实验指导、结果分析及论文撰写与修改 | DOI `10.1016/j.eswa.2026.132953`；题录已核验，作者身份与贡献已确认 |
+| O-J03 | Pengfei Xu, Feng Yan. RSSR: Efficient Knowledge Transfer and Deep Spatial Modeling for Remote Sensing Visual Question Answering, *Computer Vision and Image Understanding*, 2026, 268: 104753 | 唯一通讯作者（申请人2026-09-20确认） | DOI `10.1016/j.cviu.2026.104753`；全部作者、卷号与文章号已核验 |
+| O-J04 | Zengnan Wang, Feng Yan, Liejun Wang, Yabo Yin, Jiahuan Lin. S-YOLO: An Enhanced Small Object Detection Method Based on Adaptive Gating Strategy and Dynamic Multi-Scale Focus Module, *Neural Networks*, 2025, 191: 107782 | 共同第一作者 | DOI `10.1016/j.neunet.2025.107782`；全部作者、卷号与文章号已核验 |
 | O-J05 | Feng Yan, Zhe Li, Wushour Silamu, Yanbing Li. Knowledge-Aware Image Understanding with Multi-Level Visual Representation Enhancement for Visual Question Answering, *Machine Learning*, 2024, 113(6): 3789--3805 | 第一作者、通讯作者；负责研究构思、方法设计、实验指导、结果分析及论文撰写与修改 | DOI `10.1007/s10994-023-06426-6`；题录及作者贡献已核验 |
 | O-J06 | SPCA-Net: A Spatial Position Relationship Co-Attention Network for Visual Question Answering, *The Visual Computer*, 2022, 38(1): 3097--3108 | 第一作者 | DOI、检索状态待终核 |
 
@@ -135,6 +139,7 @@ privacy: "不记录身份证号、学生学号、私人手机号等高敏感字�
 
 ### 成果元数据规则
 
+- 以上六篇期刊成果于2026-09-20按申请人所供材料与出版方题录补齐，核验来源见[MineChangeTrust简历题录依据](../../projects/NSFC_2026_MineChangeTrust_final/docs/biography-sources.md)。申请人所附分区、Top与CCF简写尚缺认定年份和目录版本，不据此新增学术奖励事实。
 - 分区、Top、CCF 等级必须记录认定年份和采用的目录版本，不能只复制个人主页简写。
 - 作者贡献以正式论文作者标记、投稿记录或申请人确认结果为准。
 - DOI、卷期、页码、文章号和检索状态在每次正式申报前复核。
