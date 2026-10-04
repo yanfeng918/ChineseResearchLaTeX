@@ -1,0 +1,77 @@
+{
+  "diagram_type": "动态任务的研究背景 / Scientific Concept Diagram",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left third",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "环境变化",
+      "exact_text": "任务组成变化\n反馈噪声相关\n策略与工具更新",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle third",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "方法困难",
+      "exact_text": "参数需求难辨\n轨迹价值难判\n能力与置信偏移",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right third",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "科学问题",
+      "exact_text": "证据如何指导更新？\n哪些轨迹值得学习？\n保持与校准何时有效？",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom band",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "资源条件",
+      "exact_text": "固定计算预算｜有限参数｜有界记忆",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Use three equal vertical columns with wide gutters. The left column is titled “环境变化” and contains three aligned rows “任务组成变化”, “反馈噪声相关”, “策略与工具更新”. The middle column titled “方法困难” has matching rows “参数需求难辨”, “轨迹价值难判”, “能力与置信偏移”. The right column titled “科学问题” contains “证据如何指导更新？”, “哪些轨迹值得学习？”, “保持与校准何时有效？”. Connect each left row to its matching middle row, then to its matching right row using horizontal arrows. These show conceptual correspondence, not measured causal effects. Under the columns put one wide outlined band with heading “资源条件” and the line “固定计算预算｜有限参数｜有界记忆”.",
+  "caption_note": [
+    "动态任务变化、方法困难与科学问题的对应关系。图中连接表示研究动因与问题的对应，不表示已验证因果关系。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-c067936c-d82b-495c-898f-70820f9d0e2e",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-c067936c-d82b-495c-898f-70820f9d0e2e.png",
+  "notes": "实际查看纠错图：任务证据经探测到收益/干扰，四个选项独立分叉并汇入当前策略，已删除备选之间顺序箭头和评分直达输出捷径；中文、预算条件、冻结主干及边界完整。"
+}

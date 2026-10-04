@@ -1,0 +1,126 @@
+{
+  "diagram_type": "路线四：独立校准与行动选择 / Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left upper",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "冻结策略",
+      "exact_text": "当前工具版本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "执行前证据",
+      "exact_text": "上下文｜已观察历史",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "行动校准",
+      "exact_text": "动作正确性概率",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "left lower",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "独立校准集",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle lower",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "影子执行标签",
+      "exact_text": "仅供校准与审计",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical action alternatives",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "执行",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical action alternatives",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "追加验证",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical action alternatives",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "有限重规划",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical action alternatives",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "拒绝",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom left",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "概率评价",
+      "exact_text": "Brier／NLL",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom right",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "任务评价",
+      "exact_text": "风险｜覆盖率｜完成率｜成本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Use a left-to-right upper decision flow and a clearly separated lower evidence lane. Upper left is a dashed “冻结策略” box with “当前工具版本”. It feeds “执行前证据”, containing “上下文｜已观察历史”, then “行动校准”, containing “动作正确性概率”. At the right fan out into four alternative action boxes in one vertical stack: “执行”, “追加验证”, “有限重规划”, “拒绝”. In the lower evidence lane place “独立校准集”, feeding “影子执行标签” with “仅供校准与审计”. Route this evidence upward directly into the calibration box; it must never enter the execution-before-evidence box. At the bottom put two separate assessment boxes: “概率评价” with “Brier／NLL”, and “任务评价” with “风险｜覆盖率｜完成率｜成本”. Calibration links to probability evaluation; the decision group links to task evaluation. Keep evaluation paths thin and distinct from decision arrows. There are no risk curves, numerical results, or claims of guaranteed safety.",
+  "caption_note": [
+    "路线四：冻结策略后独立校准，并根据执行前可用证据选择行动。影子标签仅用于可重置沙箱中的校准和审计；概率评分与同覆盖率任务风险分别评价。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

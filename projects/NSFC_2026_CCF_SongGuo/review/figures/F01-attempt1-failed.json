@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "source": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-9eec9335-3d07-44ab-9cc2-39a17c833879.png",
+  "call_id": "exec-9eec9335-3d07-44ab-9cc2-39a17c833879",
+  "observed": "中文与箭头内容正确，但RGBA透明度异常，白底区域alpha接近0，面板有渐变与伪影，不能接受。"
+}

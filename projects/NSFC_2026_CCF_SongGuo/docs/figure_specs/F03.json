@@ -1,0 +1,119 @@
+{
+  "diagram_type": "路线一：任务感知参数适配 / Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "任务证据",
+      "exact_text": "请求语义\n工具集合\n既往失败",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "center top",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "有限探测",
+      "exact_text": "候选层位\n候选低秩容量",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "center bottom",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "收益与干扰",
+      "exact_text": "新任务增益\n历史开发集损失",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "upper center auxiliary",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "冻结主干",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical alternatives, row 1",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "复用",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical alternatives, row 2",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "更新",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical alternatives, row 3",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "冻结",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right vertical alternatives, row 4",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "替换",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom output",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "当前策略",
+      "exact_text": "版本｜容量｜实际成本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "footer",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "总预算内选择",
+      "exact_text": "探测成本计入",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Build a left-to-right decision diagram. On the left put “任务证据” with three compact rows “请求语义”, “工具集合”, “既往失败”. It feeds the central upper box “有限探测”, containing “候选层位” and “候选低秩容量”. A separate small dashed box above it reads “冻结主干”, connected by a short line to the probe stage. A downward arrow reaches central lower “收益与干扰”, with “新任务增益” and “历史开发集损失”. Fan out from this scoring stage into a vertical stack of four alternative decision boxes at the right, labelled exactly “复用”, “更新”, “冻结”, “替换”. These are mutually selectable alternatives, not four sequential operations. Merge their outgoing paths into a broad bottom box “当前策略”, with “版本｜容量｜实际成本”. Beneath it, a compact outlined resource strip has title “总预算内选择” and text “探测成本计入”. Keep the branching and joining lines clear and avoid intersections through labels.",
+  "caption_note": [
+    "路线一：依据任务与历史开发证据，在累计容量和计算预算内选择复用、更新、冻结或替换。有限探测计入总成本，历史测试结果不参与决策。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

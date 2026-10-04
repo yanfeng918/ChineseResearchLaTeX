@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-ed354bcd-4b97-4faf-929d-200abd0ac43b",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-ed354bcd-4b97-4faf-929d-200abd0ac43b.png",
+  "notes": "实际查看通过：两记忆分别以实线输入持续更新；容量管理从下方左外侧虚线总线分支回到两个记忆，箭头均指向记忆；评价带无连接，独立校准接冻结策略。中文完整、边界完整、RGB 白底。前两次错误连线已记录并纠正。"
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-842ab533-e43a-4f1e-ab52-092c1d0b685d",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-842ab533-e43a-4f1e-ab52-092c1d0b685d.png",
+  "notes": "第二次实际查看：白底已恢复、中文15项完整，三列各三行箭头从左向右，资源约束独立下栏，全部内容在画布内；无结果或因果实证主张。"
+}

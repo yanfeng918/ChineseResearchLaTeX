@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-135525c4-27cd-43f3-9847-2b056d58ff1f",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-135525c4-27cd-43f3-9847-2b056d58ff1f.png",
+  "notes": "实际查看通过：四行动从校准独立分支、组框统一输入任务评价；概率评价独立；影子标签只直接进入校准，未泄漏执行前证据。中文完整，灰色组框未遮字，所有边界完整；纠正了初图仅从拒绝通向任务评价的问题。"
+}

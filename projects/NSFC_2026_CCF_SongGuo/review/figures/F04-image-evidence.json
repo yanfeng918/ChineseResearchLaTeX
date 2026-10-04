@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-d212f766-d798-4381-a01e-d06f3fb1a033",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-d212f766-d798-4381-a01e-d06f3fb1a033.png",
+  "notes": "实际查看：四类证据进入正确性判定，未知轨迹独立下行待审且不入训练；独立开发集只支持效用评估，效用再分出监督池和偏好对。指定中文完整，箭头、层级、白底与边界正确，无分数或实验结果。"
+}

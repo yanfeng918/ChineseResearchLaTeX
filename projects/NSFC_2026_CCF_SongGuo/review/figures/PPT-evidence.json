@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "checks": {
+    "editable_objects": true,
+    "text_fidelity": true,
+    "page_mapping": true,
+    "editppt_validation": true
+  },
+  "notes": "真实 7 个页级代理逐页重建并完成目视自检；全部 run record 通过，随后 run finalize 从各 manifest 重建并通过 7 页整本校验。文字、框线、普通箭头均为原生对象，零整页位图；PaddleOCR 授权实际请求超时后使用 builtin-ink 和区域实测，原始服务错误另有记录。主编排器未代写页级产物。",
+  "workspace": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt",
+  "final_validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/final/validation.json",
+  "pages": [
+    {
+      "figure": "F01",
+      "slide": 1,
+      "agent_id": "/root/ppt_page_001",
+      "editable_text_boxes": 16,
+      "native_shapes": 44,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_001/validation.json"
+    },
+    {
+      "figure": "F02",
+      "slide": 2,
+      "agent_id": "/root/ppt_page_002",
+      "editable_text_boxes": 36,
+      "native_shapes": 151,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_002/validation.json"
+    },
+    {
+      "figure": "F03",
+      "slide": 3,
+      "agent_id": "/root/ppt_page_003",
+      "editable_text_boxes": 19,
+      "native_shapes": 99,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_003/validation.json"
+    },
+    {
+      "figure": "F04",
+      "slide": 4,
+      "agent_id": "/root/ppt_page_004",
+      "editable_text_boxes": 18,
+      "native_shapes": 37,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_004/validation.json"
+    },
+    {
+      "figure": "F05",
+      "slide": 5,
+      "agent_id": "/root/ppt_page_005",
+      "editable_text_boxes": 17,
+      "native_shapes": 172,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_005/validation.json"
+    },
+    {
+      "figure": "F06",
+      "slide": 6,
+      "agent_id": "/root/ppt_page_006",
+      "editable_text_boxes": 17,
+      "native_shapes": 131,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_006/validation.json"
+    },
+    {
+      "figure": "F07",
+      "slide": 7,
+      "agent_id": "/root/ppt_page_007",
+      "editable_text_boxes": 27,
+      "native_shapes": 48,
+      "raster_assets": 0,
+      "validation": ".bensz-api/task-20260906T2213-illustrated/nsfc-illustrated-pipeline/editable-ppt/pages/page_007/validation.json"
+    }
+  ]
+}

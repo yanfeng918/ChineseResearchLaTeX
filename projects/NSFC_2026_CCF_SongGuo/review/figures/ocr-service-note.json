@@ -1,0 +1,9 @@
+{
+  "prepare_pages": 7,
+  "configured_service": "PaddleOCR",
+  "request_attempted": true,
+  "network_restriction": false,
+  "failure": "Connection aborted; TimeoutError: The write operation timed out",
+  "chosen_text_hints": "builtin-ink",
+  "basis": "Configured authorized service request failed for an actual transport timeout; skill permits offline measurements after a real service/tool failure. Native labels are cross-checked against figure_specs and actual source images."
+}

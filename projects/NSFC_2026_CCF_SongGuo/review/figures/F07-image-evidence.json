@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-88b27fc7-d00e-431c-ac19-6607878ed7f1",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-88b27fc7-d00e-431c-ac19-6607878ed7f1.png",
+  "notes": "实际查看通过：四种数据分区相互隔离、无跨区箭头；相关性与错误回放剂量形成 2×2 四条件设计，匹配项完整；机制链为虚线且明确拟检验关系，无伪造数据或实验结果，中文和画面边界完整。"
+}

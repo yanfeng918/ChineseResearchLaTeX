@@ -1,0 +1,43 @@
+{
+  "pages": 24,
+  "figure_pages": {
+    "F01": [
+      4
+    ],
+    "F02": [
+      11
+    ],
+    "F03": [
+      12
+    ],
+    "F04": [
+      13
+    ],
+    "F05": [
+      14
+    ],
+    "F06": [
+      15
+    ],
+    "F07": [
+      16
+    ]
+  },
+  "pdf_sha256": "d16e40baff5f1c34ac4cac5a1e6189206374842dfd73ded69755e7c665d4ac9c",
+  "warnings": [
+    "Package currfile-abspath Warning: The required recorder file (.fls) was not fou",
+    "LaTeX Warning: You have requested package `bensz-nsfc-common',",
+    "LaTeX Font Warning: Font shape `TU/tnr/m/n' undefined",
+    "LaTeX Font Warning: Font shape `U/wasy/m/n' in size <10.5> not available",
+    "LaTeX Font Warning: Size substitutions with differences",
+    "LaTeX Font Warning: Some font shapes were not available, defaults substituted."
+  ],
+  "overfull": [],
+  "underfull": [
+    "Underfull \\hbox (badness 2951) in paragraph at lines 100--104",
+    "Underfull \\hbox (badness 1117) in paragraph at lines 114--118",
+    "Underfull \\hbox (badness 1558) in paragraph at lines 181--185"
+  ],
+  "undefined": [],
+  "errors": []
+}

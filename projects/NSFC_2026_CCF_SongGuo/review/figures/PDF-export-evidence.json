@@ -1,0 +1,93 @@
+[
+  {
+    "id": "F01",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 45,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "feef3ac7ab9fb4ad17f699e63a19510e298e3e3e9d425dc7a2aca2f3b566f1cf"
+  },
+  {
+    "id": "F02",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 152,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "4226533ff1003b3779ba62f291f052756534228a0564c13c5f05011d545e57ca"
+  },
+  {
+    "id": "F03",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 100,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "9fc861bac2ed6b17023ea9a259951fe8270cfd6c4ffe3b3668a42eea0a8bcad0"
+  },
+  {
+    "id": "F04",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 38,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "dc217bea8bcc78cd9770a50e981ccbf81f1f2e787d81e137ca977e99fcd166fc"
+  },
+  {
+    "id": "F05",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 173,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "8a5031de756d40f74d9362ce7ed17077d48da41a2baf2c41272267a04fffae0b"
+  },
+  {
+    "id": "F06",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 132,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "208538bd00344e6d6214f17d947e337a6fc56f05a26205cf112c8c8babbf4661"
+  },
+  {
+    "id": "F07",
+    "pages": 1,
+    "missing_text": [],
+    "raster_objects": 0,
+    "vector_paths": 52,
+    "fonts": [
+      "BAAAAA+NotoSansCJKsc-Bold",
+      "CAAAAA+NotoSansCJKsc-Medium",
+      "DAAAAA+NotoSansCJKsc-Regular"
+    ],
+    "sha256": "1c259779421a3ef421faab1c100c630350c61211c9cdecc2e4c64fd80880759f"
+  }
+]

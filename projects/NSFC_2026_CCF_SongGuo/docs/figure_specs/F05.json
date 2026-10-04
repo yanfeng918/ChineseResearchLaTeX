@@ -1,0 +1,98 @@
+{
+  "diagram_type": "路线三：有限记忆与能力保持 / Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top center",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "加权训练池",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "left upper",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "参数记忆",
+      "exact_text": "固定适配器库\n能力与版本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "left lower",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "轨迹记忆",
+      "exact_text": "容量内回放\n工具规则复核",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "center",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "持续更新",
+      "exact_text": "当前任务学习\n历史回放\n低秩干扰约束",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "冻结策略",
+      "exact_text": "交给独立校准",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "容量管理",
+      "exact_text": "合并｜替换｜冻结",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "footer",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "保持评价",
+      "exact_text": "历史测试仅评价｜容量与成本匹配",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Use a balanced three-column layout. The left column contains two separate memory boxes: upper “参数记忆” with “固定适配器库” and “能力与版本”, lower “轨迹记忆” with “容量内回放” and “工具规则复核”. Each feeds a larger central “持续更新” box containing three ruled rows “当前任务学习”, “历史回放”, “低秩干扰约束”. A small box “加权训练池” sits above and feeds the same central update box. A solid arrow from the update stage reaches a dashed-border right box “冻结策略”, containing “交给独立校准”. Beneath the update box place “容量管理” with “合并｜替换｜冻结”. Connect the central update downward into capacity management, then use two dashed feedback paths returning from capacity management to the two memory boxes. Keep these return paths outside the forward-flow corridor. Across the bottom draw a narrow evaluation band headed “保持评价”, containing “历史测试仅评价｜容量与成本匹配”. That band is explanatory and must not feed either memory box.",
+  "caption_note": [
+    "路线三：在附加参数和轨迹字节容量限制下联合管理参数记忆与经验回放。合并选择依据历史开发集，历史测试集仅报告能力保持结果。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

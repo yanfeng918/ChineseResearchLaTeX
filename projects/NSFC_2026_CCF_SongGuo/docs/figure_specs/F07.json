@@ -1,0 +1,161 @@
+{
+  "diagram_type": "实验隔离与机制对照 / Scientific Concept Diagram",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top first",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "训练集",
+      "exact_text": "参数学习",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "top second",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "开发集",
+      "exact_text": "选择与探测",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "top third",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "校准集",
+      "exact_text": "冻结后校准",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "top fourth",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "测试集",
+      "exact_text": "仅评价",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "matrix title",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "相关错误 × 回放剂量",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "column first",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "错误回放低",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "column second",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "错误回放高",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "row first",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "相关性低",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "row second",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "相关性高",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "cell 1",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "条件 A",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "cell 2",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "条件 B",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "cell 3",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "条件 C",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "cell 4",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "条件 D",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "right side",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "匹配条件",
+      "exact_text": "边际错误率\n任务与难度\n总训练成本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "footer",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "机制终点",
+      "exact_text": "入选偏差 → 回放暴露 → 更新干扰 → 历史损失",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "footer note",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "拟检验关系",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Across the top align four separated boxes: “训练集” with “参数学习”; “开发集” with “选择与探测”; “校准集” with “冻结后校准”; and “测试集” with “仅评价”. They represent isolated partitions, so draw no arrows between them. Below, on the left two-thirds, build a two-by-two experimental design table titled “相关错误 × 回放剂量”. Column headings are “错误回放低” and “错误回放高”; row headings are “相关性低” and “相关性高”. Cells read “条件 A”, “条件 B”, “条件 C”, “条件 D”, in reading order. All four cells remain white and contain no outcomes. To the right place “匹配条件” with three rows “边际错误率”, “任务与难度”, “总训练成本”. Along the bottom, an outlined band titled “机制终点” contains four short terms linked with dashed arrows: “入选偏差”, “回放暴露”, “更新干扰”, “历史损失”. Beneath that chain place “拟检验关系”. This is a planned design, not an experimental results chart.",
+  "caption_note": [
+    "实验隔离与机制对照示意。按任务来源和时间分区；相关错误与回放剂量构成2×2干预，分层匹配边际错误率、任务难度和训练量，图中不含实验结果。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

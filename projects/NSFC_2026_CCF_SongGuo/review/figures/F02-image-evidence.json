@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "call_id": "exec-c73aad3f-fc3a-4528-9e0b-a8a4430c0ecd",
+  "producer": "builtin image_gen.imagegen",
+  "source_output_hint_path": "/home/yanfeng/.codex/generated_images/01a0770e-5f4a-70e0-8bf3-da2af683a980/exec-c73aad3f-fc3a-4528-9e0b-a8a4430c0ecd.png",
+  "notes": "实际查看：四路线顺序R1至R4正确，校准集只入R4，冻结测试仅入评价，回流日志与测试分离；所有指定中文清晰完整，无裁切或虚构结果。"
+}

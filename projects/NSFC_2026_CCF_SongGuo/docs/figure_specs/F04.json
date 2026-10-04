@@ -1,0 +1,105 @@
+{
+  "diagram_type": "路线二：轨迹正确性与训练效用 / Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9pt regular",
+      "secondary_note": "8pt regular",
+      "tensor_shape": "7pt minimum, unused"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "background": "#FFFFFF",
+    "input": "#5BA0D0",
+    "computation": "#2E6B9E",
+    "output": "#1B3A5C",
+    "frozen_border": "#CCCCCC",
+    "text": "#333333",
+    "arrow": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "候选轨迹",
+      "exact_text": "当前策略｜工具版本",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "证据核验",
+      "exact_text": "执行状态\n验证器\n轨迹一致性\n不确定性",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "正确性判定",
+      "exact_text": "独立标签",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "lower middle",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "未知轨迹",
+      "exact_text": "保留待审",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "训练效用",
+      "exact_text": "配对探测增益",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "upper right",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "独立开发集",
+      "exact_text": "",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom right first",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "监督训练池",
+      "exact_text": "有界样本权重",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    },
+    {
+      "relative_position": "bottom right second",
+      "shape": "White fill rectangle with semantic colored border; frozen boxes dashed",
+      "exact_title_to_render_inside": "同任务偏好对",
+      "exact_text": "独立优劣证据",
+      "visual_anchor": "Short internal structural divider, not a pictorial icon"
+    }
+  ],
+  "spatial_flow_description": "Arrange five main steps in a gently descending left-to-right flow. At far left place “候选轨迹” with “当前策略｜工具版本”. It feeds “证据核验”, a taller box with four internal rows “执行状态”, “验证器”, “轨迹一致性”, “不确定性”. A rightward arrow reaches “正确性判定”, with “独立标签”. Its downward branch terminates at “未知轨迹” with “保留待审”; this branch has no path into training. Its rightward branch reaches “训练效用”, with “配对探测增益”. A small independent box above that stage, “独立开发集”, supplies evaluation evidence via a downward arrow. Below and to the right, branch the utility output into two equally prominent boxes: “监督训练池” with “有界样本权重” and “同任务偏好对” with “独立优劣证据”. Make the distinction between correctness and training utility visible through separate boxes and separate incoming evidence. Do not draw a probability scale or any invented score values.",
+  "caption_note": [
+    "路线二：分开判断轨迹正确性和增量训练效用。配对短程探测的收益来自独立开发任务；未知轨迹保留待审，不视作成功样本。",
+    "No measurements or pre-experiment results are rendered."
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings.",
+    "White canvas and WHITE box fills with COLORED BORDERS ONLY.",
+    "At most three blue chromatic colors plus neutrals.",
+    "Native structural rectangles, dividers and connectors only; every main block has a geometric anchor.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Dashed borders for frozen modules; dashed arrows for feedback or unverified mechanism.",
+    "No overall title, invented formulas, dimensions or performance numbers.",
+    "Readable simplified Chinese, no cropping or overlapping labels."
+  ]
+}

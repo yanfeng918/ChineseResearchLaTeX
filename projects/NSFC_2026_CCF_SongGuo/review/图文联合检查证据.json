@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "page_limit": true,
+    "legibility": true,
+    "no_crop": true,
+    "references": true,
+    "source_consistency": true,
+    "qc": true
+  },
+  "input_sha256": "d14ddceb8e3ff14a19412f760a2f32aec0f64d2ec3221b45391df9e0ec61da50",
+  "pdf_sha256": "d16e40baff5f1c34ac4cac5a1e6189206374842dfd73ded69755e7c665d4ac9c",
+  "figure_pages": {
+    "F01": [
+      4
+    ],
+    "F02": [
+      11
+    ],
+    "F03": [
+      12
+    ],
+    "F04": [
+      13
+    ],
+    "F05": [
+      14
+    ],
+    "F06": [
+      15
+    ],
+    "F07": [
+      16
+    ]
+  },
+  "notes": "实际逐页查看 main.pdf 第 4、11、12、13、14、15、16 页：所有图题、中文、边界及连线可辨，无裁切；24 页低于项目 30 页预算。无编译错误、Overfull 或未定义引用；保留文字基线已有的 6 条模板/字体警告与 3 条参考文献 Underfull。13 个活动正文的非插图科学内容哈希保持一致，事实缺口 3 类 6 处、暂定 2 处如实保留，图内缺口为零。图中条件与机制均为拟研究示意，无虚构结果。"
+}
