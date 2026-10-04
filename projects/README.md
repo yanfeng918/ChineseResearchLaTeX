@@ -7,6 +7,14 @@
 - 每个示例项目都应自带一个与目录同名的 `*.code-workspace` 和 `.vscode/settings.json`
 - 本地使用 VS Code 时，建议直接打开该 `*.code-workspace`，让 LaTeX Workshop 自动走项目内置的构建 wrapper，而不是手工拼 `xelatex`
 - 当前固定配置默认通过 `texlua + scripts/latex_workshop_build.lua` 转调项目级 Python wrapper，按同一套模板兼容 macOS / Linux / Windows
+- 无标准目录名前缀的项目可在 `template.json` 中声明 `build_profile`，同步脚本会采用已有类型的固定配置。
+- 打开整个仓库时，根目录的受管配置也会按当前主文件路由到所属项目 wrapper；请打开所需项目的 `main.tex` 再构建，避免在多个项目间误选主文件。
+
+`NSFC_2026_XJ-PVCast_final` 为中国沙漠气象科学研究基金申请项目，显式使用 `bensz-thesis` 的 `xj-desert-fund-2026` profile；可编辑13页空白稿与正式工作稿见 [项目说明](NSFC_2026_XJ-PVCast_final/README.md)。
+
+## 实验室开放基金
+
+[`NSFC_2026_CIESM-STSR_final/`](./NSFC_2026_CIESM-STSR_final/README.md) 提供地球系统数值模拟教育部重点实验室开放基金四页空白申请书，封面和表格可填写，正文可自动续页。模板由 `bensz-thesis` 的独立 `ciesm-open-fund` profile/style 承载；官方入口为 `thesis_project_tool.py build --project-dir projects/NSFC_2026_CIESM-STSR_final`。
 
 ## 国自然（NSFC）
 
@@ -61,6 +69,16 @@
 | 项目 | 用途 | 适用场景 |
 |------|------|----------|
 | [`GXNSF_General/`](./GXNSF_General/) | 广西自然科学基金面上项目报告正文模板 | 准备广西自然科学基金面上项目正文上传材料 |
+
+## 华中师范大学实验室开放课题
+
+[`Huazhong_template/`](./Huazhong_template/README.md) 提供 2026 版开放课题项目申请书，包含封面、承诺、信息表、横向成员表及五个章节。稳定版式由 `bensz-thesis` 的 `ccnu-open-fund-2026` profile 承载，项目使用 `build_profile=thesis` 接入统一 VS Code 配置。
+
+[`NSFC_2026_CCNU-EduAgentTrust_final/`](./NSFC_2026_CCNU-EduAgentTrust_final/README.md) 按同一官方 PDF 新建七页可编辑空白项目，复用上述公共样式；`template.json` 显式指定 thesis 构建链路，覆盖目录名前缀推断。
+
+## 测绘科学与工程实验室开放基金
+
+[NSFC_2027_Mapping_final](NSFC_2027_Mapping_final/README.md) 按官方 2026 版 PDF 提供 10 页可编辑空白申请书，含横向成员表、预算和自动续页正文；通过 `template.json` 显式选择 `thesis` 构建链路。
 
 ## SCI 论文
 
@@ -145,3 +163,7 @@
 - 写中英文简历：进入 `cv-01/`
 
 若你的问题涉及共享样式、公共宏、构建脚本或安装逻辑，再回到 `packages/` 目录定位对应公共包。
+
+## 中南大学实验室开放基金
+
+[NSFC_2026_MineChangeTrust_final](NSFC_2026_MineChangeTrust_final/README.md) 保留官方 2026 版申请书的 13 页空白结构与十四个栏目。采用 `bensz-thesis` 的 `csu-open-fund-2026` profile，支持研究正文续页及固定栏位溢出检查；项目显式声明 `build_profile=thesis`。

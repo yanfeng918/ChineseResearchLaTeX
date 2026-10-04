@@ -48,6 +48,8 @@
 
 中南大学有色金属成矿预测教育部重点实验室开放基金申请书提供 [NSFC_2026_MineChangeTrust_final 项目](projects/NSFC_2026_MineChangeTrust_final/README.md)，按官方 2026 版 PDF 重建 13 页可填写模板，使用 `bensz-thesis` 的独立 profile 和官方构建入口。
 
+中国沙漠气象科学研究基金申请书提供 [NSFC_2026_XJ-PVCast_final 项目](projects/NSFC_2026_XJ-PVCast_final/README.md)，包含原生可编辑的 13 页空白表及完整填写工作稿，使用 `bensz-thesis` 独立 `xj-desert-fund-2026` profile；已知资料统一回填，正式申报待补事项见项目说明。
+
 华中师范大学实验室开放课题申请书（2026 版）提供独立的 [Huazhong_template 项目](projects/Huazhong_template/README.md)和 [NSFC_2026_CCNU-EduAgentTrust_final 项目](projects/NSFC_2026_CCNU-EduAgentTrust_final/README.md)，共用 `bensz-thesis` 的 `ccnu-open-fund-2026` 样式、PDF 构建与版式验收链路。
 
 2024-2025 年，AI 辅助开发迎来了真正的范式转移。2023 年，[GitHub Copilot](https://github.com/features/copilot) 普及了 AI 代码补全，但 AI 仍处于"被动响应"角色。2024 年初，[Cursor](https://cursor.sh) 率先将 AI 转变为"主动协作伙伴"，引入 AI 原生开发环境。随后，[Manus](https://manus.im)、[Windsurf](https://windsurf.ai) 等产品持续推动多 Agent 协作和深度 IDE 集成。到了 2024 年末，[Claude Code](https://code.claude.com/docs/en/overview) 和 [OpenAI Codex CLI](https://developers.openai.com/codex/cli) 将这一理念带入命令行领域，实现了真正的"AI 作为第一公民"。这一演进背后的核心理念被称为 **Vibe Coding**——AI 不再是工具，而是合作伙伴。传统模式下，人类写代码、AI 补全，指令是单向的、生成是一次性的。而在 Vibe Coding 模式下，AI 主动规划并执行任务，人类负责监督和决策；双方通过双向对话持续迭代优化，AI 成为真正的"合作开发者"。
@@ -190,10 +192,13 @@ AI 负责格式对齐、参考文献管理、章节重构、中英双语内容�
 - **编译器**：**必须使用 XeLaTeX**（Overleaf 上请在 Menu → Compiler 中选择 XeLaTeX）
 - **编译顺序**：`xelatex -> bibtex -> xelatex -> xelatex`
 
+`bensz-thesis` 官方构建器会在上述流程后检查标签与交叉引用重跑提示，必要时最多补两遍；末遍编译出错或仍未收敛时返回失败，避免交付固定表格位置尚未稳定的 PDF。
+
 ### 工作软件
 
 - **VS Code + LaTeX Workshop**：本地开发的最佳选择，充分发挥 Vibe Coding 工具的超强能力
 - `projects/` 下每个示例项目都自带与目录同名的 `*.code-workspace`、`.vscode/settings.json` 与项目级 `scripts/latex_workshop_build.lua`；本地开发时，建议直接用该工作区文件打开项目，让 LaTeX Workshop 通过 `texlua` 自动转调项目内置的 Python 构建 wrapper
+- 打开整个仓库时，根目录 `.vscode/settings.json` 会按当前主文件所属项目选择构建 wrapper，同样优先采用 `template.json` 的 `build_profile`。该配置由 `python scripts/sync_vscode_configs.py` 统一维护；首次加入配置后可在 VS Code 执行 `Developer: Reload Window` 再构建。
 - **Claude Code / OpenAI Codex CLI**（VS Code 插件）：**最佳选择**，AI 辅助写作，与本项目的 AI 技能完美配合。VS Code 扩展市场搜索"Claude Code"或"OpenAI Codex"即可安装。macOS 已成为 AI 时代开发首选操作系统，体验最佳；Windows 用户建议使用 WSL（Windows Subsystem for Linux）环境以获得更稳定的性能。
 - 由于在本地使用 Vibe Coding 的体验很好，因此**不推荐**在 Overleaf 等在线平台使用本模板。但本项目**仍会持续支持 Overleaf 平台**，以满足一些小众用户的需求。
 - Overleaf 专用 zip 会将公共包运行时统一整理到项目根目录下的 `styles/`，并裁剪掉 VS Code 配置、构建脚本、示例 PDF/DOCX、Word 模板与其它非当前模板必需文件，保证结构更干净、上传后更直接。

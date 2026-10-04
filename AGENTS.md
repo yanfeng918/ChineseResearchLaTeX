@@ -159,6 +159,18 @@ ChineseResearchLaTeX/
 - 优先使用 `python packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir <项目路径>` 验证 PDF 输出
 - 涉及版式回归时，可使用 `python packages/bensz-thesis/scripts/thesis_project_tool.py compare --project-dir <项目路径> --baseline-pdf <原始PDF>` 做像素级验收
 
+#### 开放课题申请书模板
+
+- [NSFC_2026_XJ-PVCast_final](projects/NSFC_2026_XJ-PVCast_final/README.md#L1) 使用 `bensz-thesis` 的独立 `xj-desert-fund-2026` profile/style/artwork，提供 13 页原生可编辑空白表（含横向成员表）及正文续页；显式 `build_profile=thesis`，申请字段统一在项目元数据维护。
+
+- [NSFC_2026_MineChangeTrust_final](projects/NSFC_2026_MineChangeTrust_final/README.md#L1) 使用 `bensz-thesis` 的独立 `csu-open-fund-2026` profile/style/artwork；按官方 PDF 保留 13 页空白表、十四个栏目及签章区域，项目显式使用 `build_profile=thesis`。
+
+- [NSFC_2026_CIESM-STSR_final](projects/NSFC_2026_CIESM-STSR_final/README.md#L1) 使用 `packages/bensz-thesis/` 中独立的 `ciesm-open-fund` profile/style，正文与申请字段留在项目 `extraTex/`；使用官方 `thesis_project_tool.py` 构建与比对。
+- [Huazhong_template](projects/Huazhong_template/README.md#L1) 使用 `packages/bensz-thesis/` 中的 `ccnu-open-fund-2026` profile/style 与官方 PDF 构建、compare 入口；它是开放课题申请书，元数据以 `document_type=open-fund-application` 标识，不伪造学位 `degree`。
+- [NSFC_2027_Mapping_final](projects/NSFC_2027_Mapping_final/README.md#L1) 使用 `bensz-thesis` 的独立 `casm-open-fund-2026` profile/style/artwork；按所供 2026 版 PDF 保留年度、期限与原始编号。
+- 项目可在 `template.json` 显式声明已有 `build_profile`（如 `thesis`），其优先级高于目录前缀；未声明时再按前缀推断。由 [sync_vscode_configs.py](scripts/sync_vscode_configs.py#L70) 同步对应的受管工作区和构建配置。
+- thesis 官方构建器需保留 `-recorder` 以支持共享字体路径解析，并将最后一趟 XeLaTeX 非零退出视为失败；常规三遍后若日志仍提示标签或交叉引用需重跑，最多补两遍，仍未收敛时必须失败，不交付位置未稳定的 PDF。
+
 #### 博士后研究报告模板问题
 
 - 当前博士后研究报告项目统一纳入 `thesis-*` 产品线管理，使用 `degree=postdoc` 标识类型，并继续复用 `packages/bensz-thesis/` 的统一构建链路
@@ -178,6 +190,7 @@ ChineseResearchLaTeX/
 - `.code-workspace` 用于 VS Code 打开项目本身；`.vscode/settings.json` 负责把 LaTeX Workshop 固定到项目级 Python wrapper，不直接裸跑 `xelatex`
 - `.vscode/settings.json` 默认应通过 `texlua` 调起项目级 `scripts/latex_workshop_build.lua`，再由该 launcher 自动寻找可用 Python 解释器并转调 `scripts/*_build.py`，以兼容 macOS / Linux / Windows
 - 固定模板统一托管在 `scripts/vscode/`，批量同步入口为 `python scripts/sync_vscode_configs.py`
+- 整仓库工作区也需维护根目录 `.vscode/settings.json`；由 [repository.settings.json](scripts/vscode/repository.settings.json#L1) 和 [repository_build.py](scripts/vscode/repository_build.py#L1) 按主文件所属项目调用 wrapper，复用 `build_profile` 优先规则。同步脚本即使指定 `--project` 也同步或检查根配置，不得让魔法注释绕过官方构建器。
 - 调整 VS Code / LaTeX Workshop 配置时，优先修改 `scripts/vscode/` 模板，再同步到各项目；不要只改单个项目导致配置漂移
 
 #### Skill 相关问题

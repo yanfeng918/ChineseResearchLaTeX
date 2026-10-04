@@ -8,7 +8,118 @@
 
 ## [Unreleased]
 
+- `projects/NSFC_2027_Mapping_final/`：将“五、研究基础与工作条件”限制为该部分首页显示，标题由9次减至1次，续页保留版框；图12置顶并与正文合排，消除独立插图页的大面积留白，正式稿46页减至45页。前35页像素不变，正文、12图和48条文献完整，编译无错误或警告；验收见 `tests/mapping-foundation-layout-20260929/REPORT.md`。
+
+- `projects/NSFC_2027_Mapping_final/`：调整图5和图10的浮动位置，消除页脚第17页技术路线图上下的大面积留白，并避免重排后在图10处产生新的独立插图页；保留原图幅、字号与正文内容。正式稿仍46页，仅PDF第19—34页重排，12图、48条文献完整，编译无错误或警告；验收见 `tests/mapping-page17-spacing-20260929/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按申请人要求使用图文流水线中的可编辑PPT重建流程，将前6幅位图改写为原生矢量PDF/SVG及六页可编辑PPT，保留第7幅实测结果原文件；同步必要图注及开发/测试连接。正式稿33页、编译无错误或警告，仅六个插图页变化，全文无嵌入位图；验收见 `tests/minechange-vector-20260923/REPORT.md`。
+
+- `projects/NSFC_2026_XJ-PVCast_final/`：完成当前32页申请书只读检查，35处文献跳转与30个文献目标正常，无编译警告或预算加总错误；记录图文筛选范围不一致、公式跨页、题录专名大小写及统计措辞问题，正文与PDF未改动。报告见 `tests/xj-pvcast-current-check-20260922/final/nsfc-qc_report.md`。
+
+- `xj-desert-fund-2026`：启用正文文献引用跳转，35处可见引用链接及30个文献目标逐项核验通过，保持黑色文字和现有分页；研究基础两处DOI补完整跳转地址。正式稿32页、空白稿13页，编译无错误或警告；验收见 `tests/xj-pvcast-citation-links-20260922/REPORT.md`。
+
+- `xj-desert-fund-2026`：封面填写项统一为与标签相同的14.05bp，末行基线固定在下划线上方3bp，消除姓名、单位与期限悬空的间距；微调填写宽度，长题名不再拆开“预测”。正式稿32页仅封面变化，13页空白模板逐页像素不变，构建无错误或警告；验收见 `tests/xj-pvcast-cover-20260922/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：精简重复基线说明及图3图注，将图3排入第14页；保护小节首段并调整图5与补充对照段的顺序，减少整图换页留下的空白。实验数值、公式、图幅及字号不变，33页正式稿仅第14至20页重排，编译无错误或警告；验收见 `tests/minechange-methods-pagination-20260922/REPORT.md`。
+
+- `csu-open-fund-2026`：封面填写项由12bp统一为与标签相同的14.05bp，填写区略扩为338bp并保留原中轴、基线，24字课题名称完整单行显示。MineChangeTrust正式稿33页、仅封面变化，13页空白模板逐页像素不变，两次构建无警告；验收见 `tests/minechange-cover-font-20260922/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按申请人要求删除天池英才项目不确定的具体分工及“已确认任务书”依据，保留官方可核对的主体信息，并移除重复催补；完善5万元预算中外校研究生劳务的税前测算、任务工作量和审核支付说明，PDF表下增加据实结算备注。再次核对官方教师页和申请指南，学历、任职、邮箱及原填表日期均可沿用，同步共用事实状态。正式稿33页，无编译警告，仅第27、28页变化；验收见 `tests/minechange-submission-details-20260922/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：完成3组独立AI模拟评审并修改正文，补齐特征层/掩码投影、工作点敏感性、比较结论边界、强度对照优先级及残留错误复核联系；同步参数和计划，清理题录内部待办。正式稿仍33页、编译无警告，7图、31条题录、原预实验及申请字段保留。报告见 `tests/minechange-review-revise-20260921/comments-from-nsfc-reviewers.md`，验收见同目录 `REPORT.md`。
+
+- `projects/NSFC_2026_XJ-PVCast_final/`：按质检补全天气分组、日/过程块计数、验证期误报次数及持续时间约束，统一科学假设与评价口径；清理内部编辑说明，补管理费用途并精简重复。专属样式防止文献首尾孤行，正式稿37页减至32页、编译无警告，13页空白表像素不变；原图、4处公式、30篇引用及人员字段保留。数据授权、限项与单位审核仍按真实材料落实，验收见 `tests/xj-pvcast-qc-fix-20260921/REPORT.md`。
+
+- `projects/NSFC_2027_Mapping_final/`：修订 RSICD 描述去重、三态证据、固定候选真值、开发与最终测试隔离、指标及创新比较，同步十一幅插图；成员信息按已确认事实整理，未取得的履历与实验材料单列清单。参考文献改由 BibTeX 单源生成，修复长栏目标题分页及混排溢出；共享样式的 10 页空白表回归逐页像素一致。发现并修复 thesis 构建器三遍后未检查标签收敛的问题，增加有界补编译与失败保护，同步 AGENTS 和构建说明。构建与验收记录见 `tests/mapping-fixes-20260921/`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：补清复核指标的NA、有效矿区汇总和随机掩码刚性变换/回退规则，精简短尾页；修复CSU研究栏目满页后追加空行的问题。正式稿37页减至33页、编译无警告，13页空白表像素不变，预实验数据与图文资源保留。学历任职已据学院官网核对，任务书边界及具体劳务执行仍待事实材料；验收见 `tests/minechange-qc-fixes-20260921/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：完成当前37页申请书只读复查，未改正文或PDF；核对31条文献题名、7幅图、预算、摘要和全部页面，未发现新的硬性错误。保留复核指标聚合与随机掩码匹配两处定义建议，以及任务书等事实核对；报告见 `tests/minechange-current-qc-20260920/nsfc-qc_report.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户要求为成员表内申请人简历首段恢复两个汉字（24bp）的首行缩进。正式稿37页、无编译警告；验收见 `tests/minechange-biography-indent-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户要求去掉简历续页顶部“课题组主要成员简历（续）”标题，保留代表性成果、承担任务及原有版框。正式稿37页、无编译警告，仅第34页标题区域变化；验收见 `tests/minechange-biography-heading-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：修正当前预算科目与用途错位，保留1.80万元研究生助研劳务并列入“其它费用”，补充36人月×500元测算；测试分析费为0，五项合计5万元。创新点区分训练性能与固定模型梯度诊断，6.5节具体说明本申请任务及成果记录安排；按用户要求保留成员简历，同步现行预算和成员填写说明。正式稿37页、无编译警告，仅第24、30、31、32页变化，验收及未核实任务书范围见 `tests/minechange-submission-fixes-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：依据用户指定的2026年度开放课题指南核实执行期为1至2年、未指定统一起始年月；按现有24个月计划拟填2027年1月至2028年12月，简表与年度计划统一并注明以批复为准，同步填写依据。正式稿37页、无编译警告，仅第3、25页变化；验收见 `tests/minechange-period-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：全稿检查后修正阈值用途、Ds分档数字说明、相关置换检验对象及复核错误率口径，移出内部核对备注；补4条文献文章号并纠正Zhu姓名拆分。精简年度计划重复叙述，修复CSU长正文末尾空行导致空白续页的问题，正式稿37页、无编译警告；13页空白模板像素不变。待补资料与验收见 `tests/minechange-final-check-20260920/REPORT.md`。
+
+- `csu-open-fund-2026`：修复填报说明“项目编号”两侧曲双引号被 xeCJK 切换为全角宋体而挤压汉字的问题，固定西文片段局部保留 Times New Roman；不改原文坐标。13页空白稿及38页正式稿均仅第2页变化，编译无警告；验收见 `tests/minechange-instruction-quotes-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户指定参与者资料补入七名新疆大学研究生，完善成员表身份、出生年月与课题分工，同步简历、填写状态及预算工作量说明；未提供的专业留空。正式稿仍为38页、编译无警告，仅第34页变化；验收见 `tests/minechange-members-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按申请人材料完善简历，补齐六篇代表作的全部作者、卷期与文章号及 DOI 链接，将项目任务改写为矿山变化检测与可信评价职责；原成员表后新增一页简历续页，同步共用申请人事实与题录依据。正式稿38页，编译无警告，前33页及顺延的签章页内容保持一致；验收见 `tests/minechange-biography-20260920/REPORT.md`。
+
+### Changed（变更）
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：补齐5.00万元预算五项金额及测算依据，测试分析0.60万元、材料0.00万元、出版/文献等1.40万元、差旅1.80万元、其它费用（研究生助研劳务）1.20万元；增加预算依据记录并同步填写状态，明确拟列支单价与实际收费、人员及报销安排的区别。正式稿37页、无编译警告，预算表排版通过检查；验收见 `tests/minechange-budget-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户要求删除原6.3“可行性分析”、6.6“尚缺少的实验条件及拟解决的途径”和6.7“利用研究基地的计划与落实情况”的标题及正文；其余小节自动连续编号，在研项目交叉引用更新为6.5。重新构建37页，无编译警告。验收见 `tests/minechange-delete-sections-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：修复图7总标题与上排子图标题重叠，调整原 Matplotlib 绘图源中的顶部留白、行间距及第二排说明位置；使用归档实测数据重新生成矢量图，数据、误差线、坐标范围、字号与图幅尺寸不变。验收见 `tests/minechange-figure7-spacing-20260920/REPORT.md`。
+
+- VS Code 整仓库工作区补充受管构建配置，按主文件所属项目及 `build_profile` 调用现有 wrapper，避免魔法注释直接运行 XeLaTeX 并加载旧安装包；修复 MineChangeTrust 的 `csu-open-fund-2026` 缺失及随后累计100条错误。同步脚本同时维护根配置，18项路由及同步回归通过；实际配方构建38页无警告。验收见 `tests/minechange-build-error-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：润色7份正文共50处段落表述，将技术路线流程串、抽象证据标签和机械衔接改为具体研究说明，保留2.1总分结构、实验参数、历史数据及待补锚点；正式稿仍为38页，编译无警告，31条文献和36处引用跳转核验通过。验收见 `tests/minechange-humanization-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：将2.1“研究内容”调整为总述、总体框架图、三项分述的总—分结构，总述明确误差诊断、区域约束检验与可靠性评价的依赖关系；保留原三项内容和2.2/2.3文字，正式稿38页、编译无警告。验收见 `tests/minechange-content-overview-20260920/REPORT.md`。
+
+- `csu-open-fund-2026`：按用户要求将参考文献由五号10.5pt/20bp行距缩为小五号9pt/14bp行距，保留国自然题录样式和点击跳转；MineChangeTrust正式稿由40页缩为38页，31条文献完整，编译无警告。验收见 `tests/minechange-bibliography-size-20260920/REPORT.md`。
+
+- `csu-open-fund-2026`：统一封面、简表、预算和推荐人填写值与固定标签的文字基线，修复姓名、性别、出生年月等字段上下不齐；成员表单行共用基线，双行字段按基线中点对齐。正式稿仍为40页，仅第1、3、36、37页填写位置变化，其余页面及13页空白表在108dpi下逐像素一致，编译无警告；验收见 `tests/minechange-cell-alignment-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：结合已确认算力、5 万元申请额度及真实预实验，明确 7 处暂定设计，固定数据划分、分位数分层、效应判据、随机种子、区间估计、复核预算与 24 个月周期；同步限定核心实验规模、计算预算及端点不足时的处理，保留真实预实验和未确认人员/合作事实。官方构建输出 40 页，无编译警告，36 处文献跳转及 7 幅原图核验通过；验收见 `tests/minechange-parameters-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：CSU 专属样式启用 PDF 交叉引用链接，正文文献编号可跳转至对应参考文献，DOI/URL 可点击访问；保留黑色文字并隐藏链接边框。31 条文献的 36 处引用跳转核对通过，37 页文字、换行与分页保持一致，编译无警告；验收见 `tests/minechange-citation-links-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户指定将申请经费设为 5.00 万元，申请简表、预算合计及研究基础说明复用同一金额字段；同步填写状态，分项支出仍待安排。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按用户提供的信息补齐邮编与部门电话，同步填写状态并重新生成申请书 PDF。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：参考文献改用国自然模板共享的 `gbt7714-nsfc` 样式，按顺序编码输出作者、文献类型和年卷页等信息；CSU 专属样式设置五号文献字号与可换行链接，复用共享 BST，修正两条 URL 的下划线转义。31 条文献及引用顺序保留，正式稿 37 页；验证见 `tests/minechange-bibliography-20260920/REPORT.md`。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：补充图 1 的尺度差距、新疆地形与局地机制、四变量联合重建、三个科学问题及三类验证；区分原始模式场与校正后大尺度状态，明确回聚合对象，同步图注、图前说明与可追溯生成规范。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：按 `nsfc-humanization` 润色六份正文，减少元评论、自我辩护和配置罗列，明确研究动作、证据与条件；逐字保留 LaTeX 命令参数、公式、引用、数字与单位，保持人员分工及 4.50 万元预算、0.60 万元劳务费安排。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：将设备费 0.60 万元转为研究生劳务费（合计 12 人月、每人月 500 元），设备费为 0、总额保持 4.50 万元；同步预算表、工作基础、申请人简介与填写说明，独立空白稿保留原八类预算科目。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：预期成果单元格改为左对齐；移出正文中的提交前核实、合作人待补、学术奖励资料不足等填报提醒，保留内部填写说明及真实研究条件，清理少量写作过程表述。
+
+- `projects/NSFC_2026_XJ-PVCast/`：按中国沙漠气象科学研究基金自由申报类完成正文流程，并导入图文流水线续跑；交付5张独立生成图、5页对象级可编辑PPT、5份逐图PDF及23页含图正文。修复最终印刷字号并通过零错误编译；23阶段中21完成、2保留事实缺口，7类硬缺口及11处正文暂定不变，未宣称正式提交就绪。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：依据用户指定的参与者资料回填 7 名新疆大学在读研究生，按资料处理、模型实验、集成评价三个方向安排分工；同步研究基础、申请人简介和填写状态，移除两处 `F-CIESM-02` 占位，不推断资料未注明的年级或培养层次。
+
+- `ciesm-open-fund`：主要参考文献由 12bp / 22bp 行距调整为 10.5bp / 16bp 行距，采用局部左对齐、零首行缩进与悬挂缩进；消除编号多出的 24bp 左侧空白，避免长英文缩写引起字距拉伸。29 条题录完整，正式稿 36 页，构建无新增警告；验收见 `tests/ciesm-application-20260910/bibliography-layout-20260919/REPORT.md`。
+
+- `ciesm-open-fund`：修复基本信息表长字段自动缩小字号的问题；课题名称、预期成果与关键词统一使用 10.45bp 楷体，通过测量文字高度调整行高，并保留摘要区域的溢出检查。37 页全文检查无新增警告，其余 36 页逐像素不变；官方空白稿比对四页一致。验收见 `tests/ciesm-application-20260910/font-consistency-20260919/REPORT.md`。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：按用户要求细化六张配图，补充教学场景对照、约束与证据关联、前缀信息边界、提交前干预分支及交叉消融设计；保留旧图备份，沿用图号与交叉引用，生成后顺序验证正式版和未删节版。
+
 ### Added（新增）
+
+- `projects/NSFC_2026_XJ-PVCast_final/`：按中国沙漠气象科学研究基金官方 PDF 新建可编辑 13 页空白入口和完整申请稿；使用 `bensz-thesis` 独立 `xj-desert-fund-2026` profile/style/artwork、显式 `build_profile=thesis`。迁移全部实际科研正文、公式和 30 个引用，并补齐源项目新增的 5 幅原始 PDF、图注及图号引用，另按用户要求在 2.1 新增可编辑 TikZ 研究内容框架图，正式稿自然续页至 36 页。统一申请元数据，保留真实事实缺口与签章区域；支持横向成员表、长字段溢出检查、栏目自动续页及无额外条目空白的参考文献；按共用参与者资料回填7名研究生及拟分工，正式成员表可按需追加第8行，空白模板保持原7行。验收与实际同包消费者回归见 `tests/xj-pvcast-template/REPORT.md`。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：按用户提供的华中师范大学实验室 2026 版官方 PDF 落地七页可编辑空白申请书。基线与现有 `Huazhong_template` 逐字节一致，直接复用 `bensz-thesis` 的 `ccnu-open-fund-2026` profile/style；补齐正文、元数据、wrapper、VS Code 工作区及填写说明。显式 `build_profile=thesis` 避免目录名前缀误选构建器；在 CCNU 专属共享样式修复封面“课题负责人”的分散对齐。验收及同包消费者回归记录见 `tests/ccnu-eduagenttrust-template/REPORT.md`。
+
+- `projects/NSFC_2026_CIESM-STSR_final/`：以用户提供的官方四页 PDF 新建可编辑空白申请书，复用已有 `bensz-thesis` 的 `ciesm-open-fund` profile/style；显式声明 `build_profile=thesis`，避免目录名的 `NSFC_` 前缀误选编译链路。当前项目承接已移除的 `diQiuShuzhi` 入口，相关说明链接同步更新。官方 build 与 VS Code launcher 验证零错误/零警告，9 页填写测试及 12 项脚本测试通过；与上一轮验收输出逐像素一致，与官方 PDF 仍有细微像素差异，见 `tests/ciesm-final-template/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：按中南大学官方 2026 版 PDF 落地独立 `csu-open-fund-2026` profile/style/artwork，提供 13 页 `blank.tex` 空白验收入口、正文自动续页、固定栏位溢出检查及受管工作区；保留工作区现有正文并接通 31 条引用，`main.pdf` 33 页零错误/零警告。13 页填充与 28 页续页测试通过，四个实际同包消费者隔离对照逐像素一致，既有诊断及官方字体差异见 `tests/minechange-template-20260907/REPORT.md`。
+
+- `projects/NSFC_2027_Mapping_final/`：按测绘科学与工程自然资源部重点实验室官方 2026 版 PDF 新建 10 页可编辑开放基金申请书；在 `bensz-thesis` 新增独立 `casm-open-fund-2026` profile/style/artwork，支持横向成员表、15 项预算、固定区域溢出检查及正文续页。官方构建零错误/零警告，20 页填写与续页测试、Lua launcher 和四套同包项目隔离回归通过；官方比对保留字体与段落重排差异，详见 `tests/mapping-template/REPORT.md`。VS Code 同步时优先使用显式 `build_profile`，避免 NSFC 前缀误选构建器，同步包清单、项目说明与 AGENTS 指令。
+
+- 新增 `projects/Huazhong_template/`：根据 2026 版华中师范大学人工智能与教育新形态实验室开放课题申请书 PDF，落地可编辑七页模板及正文自动续页、固定单元格溢出检查、填写入口、VS Code 工作区。稳定版式独立注册于 `bensz-thesis` 的 `ccnu-open-fund-2026` profile/style。
+- 修复 `bensz-thesis` 官方构建器缺少 `-recorder` 导致共享字体绝对路径解析失败，以及未检查最后一趟 XeLaTeX 退出码导致部分编译错误被误报为成功的问题；同步更新项目指令和构建说明。
+
+- `projects/diQiuShuzhi/`：新增地球系统数值模拟教育部重点实验室开放基金空白申请书，按官方四页 PDF 重建可编辑封面、基本信息、正文提纲和预算表；稳定版式由 `bensz-thesis` 的专属 `ciesm-open-fund` profile/style 承载，复用官方构建与比对入口。四页空白输出及九页填写测试均零错误/零警告，原提纲文字完整，官方比对保留细微像素差异；同包现存 `Huazhong_template` 隔离回归七页逐像素一致。VS Code 同步器支持 `template.json` 中声明已有 `build_profile`，含非法声明检查，11 项脚本测试通过；README 与 AGENTS 接线同步，验收见 `tests/diqiushuzhi-template/REPORT.md`。
+
+- `projects/NSFC_2026_CIESM-STSR/`：按用户确认的 P02 一年期开放课题口径完成图文全流程，交付 24 页正文、25 条参考文献、7 张配图、7 页对象级可编辑 PPT、7 个逐图矢量 PDF 和插图后的 `main.pdf`；23 阶段已执行，编译零错误、无新增 warning，保留 3 个硬事实 ID 与 7 处暂定设计，尚非正式提交版。
+
+- `skills/nsfc-illustrated-pipeline/`：新增独立的 NSFC 图文全流程技能，复用原版文字阶段规范，编排 00–22 阶段；实现独立断点、旧进度只读导入、逐图 `$imagegen` 调用登记、PPT/PDF 检查、受管正文插入与最终构建验收。原 `nsfc-full-pipeline` 保持原有行为。15 项隔离回归及双宿主入口检查通过；合成夹具实际通过 LibreOffice 导出、五图插入及官方构建（零错误、无新增 LaTeX warning），真实生图和 editppt 页级重建尚未试跑。
+
+- `docs/plans/2026-09-06-nsfc-full-pipeline-v2-auto-figures.md`：新增 NSFC 全流程第二版方案，依据 `绘图提示词.md` 规划文字稿完成后自动衔接 Figure Plan、统一配色、提示词、生图、可编辑 PPT、逐图 PDF、正文插入与图文验收，并明确旧断点迁移和逐图续跑要求；生图明确按图 ID 串行调用 `$imagegen`，每个 prompt 单独生成一张、逐张检查落盘，不自动切换外部后端。本次仅交付方案，尚未变更技能执行逻辑。
 
 - `projects/NSFC_2027_Mapping/docs/05_配图规划/`：为该项目补建配图规划层，只读标书正文产出 12 张图的 Figure Plan（含章节映射、优先级、比例、必现视觉元素、30 页限制下的落地组合建议）、全篇统一的配色与视觉逻辑决策（Nature Blue 结构色 + Okabe-Ito 三态强调色、语义色绑定契约、六条视觉语法、灰度打印与色盲双编码），以及 12 张图各自的 JSON figure spec 与英文出图 prompt。未修改 `extraTex/*.tex`，未向 `figures/` 写入文件，未生成图像。
 
@@ -33,6 +144,66 @@
 
 ### Fixed（修复）
 
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：课题类型在左侧单元格直接填写“一般课题”，去掉后方 C 的圈框；CCNU 公共样式支持类别名称直接填表，并保留原有 A/B/C 圈选与空白模板行为。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：扩充1.2“国内外研究现状”，按教育教学行为、智能体交互风险、过程评判与测量有效性、运行保护与任务效用四个方向梳理代表性研究和局限；核对19篇原有文献及AgentBench作者单位，保留引用命令、其他章节和全部图文件，重新构建并统计篇幅。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：展开“研究目标与关键科学问题”，按情境与证据、前缀可判定性、风险与效用三个层次明确问题及验证依据；润色研究方案与可行性，补齐R1—R3总分技术路线，保留既定对照和统计边界。图6提前接排消除大块留白；18页扩写工作稿按含图中文字和参考文献口径为9289字，明确记录超7000字要求，未将其标为篇幅合规稿。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：将正式研究稿图文上下间距由8bp收紧至2bp，使图4接排第11页并消除短尾页，整份PDF由17页减为16页；保留正文、图片尺寸、图注和公共样式。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：扩写“研究不足与科学假说”，补齐教学边界、动作前证据与干预代价三方面的认知缺口，明确科学问题及识别、干预两层预测；按效应区间区分假说支持与证据不足，同步未删节版。保留其他正文更新、引用、实验设计与统计判据，按最新正文核验7000字上限。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：通读两版正文，清理申请人资料来源、作者贡献确认、经费填报、成果展示及编号填写等过程性表述；将相关段落改为事实、实施安排和验证条件，保留授权前提、待核实事项及统计判据。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：将既往主持国基项目情况精简为“申请人未主持完成国家自然科学基金项目。”，删除共用资料来源、前一期总结及替代填报等写作过程说明，同步两版 PDF。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：项目简介改为中文摘要，按研究问题、目标、基础与方法、验证思路、预期贡献组织，正文211字（含标点），同步正式版和未删节版。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：清除正式版与未删节版研究计划、实验设计中的“暂定”及草稿括号，明确立项后12个月的四阶段任务；样本规模、标注配置与评价阈值按研究设计表述，保留预实验、测试前锁定及统计判据。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：按用户确认将正文中的 F-EDU-01/02 内部待补标记改为正式实施安排，明确教学复核、公开资料与模拟实验先行、授权及适用伦理审查完成后开展真实验证；同步未删节版，具体事实状态继续在填写说明中追踪。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：按用户确认将封面申请日期填为2026年9月19日，简表职务填为“无”，同步正式版、未删节版与填写状态说明。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：参考文献改用仓库国自然模板的 `gbt7714-nsfc` 题录格式；按用户要求删除原第9条 LearnLM 及两版相关介绍和引用，其余28条保持原相对顺序并连续编号。仅调整项目内容，正式稿17页、完整稿24页，正式研究栏目按既有含标点口径计6997字；6图、7名成员、预算及空白入口保留，编译无错误、无新增排版警告。验收见 `tests/ccnu-eduagenttrust-template/20260919-references/REPORT.md`。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：依据用户指定参与者资料填入7名主要成员、出生年月、性别、学位及本课题分工，沿用既有确认的在读硕士生与已获学位口径；同步研究基础、剩余教学复核/合作缺项与累计16人月劳务测算，不扩大预算。正式/完整版本18/25页编译无错误，正式研究内容含标点6973字；7人表格字段、签字留白、敏感字段隔离与原图文资源检查通过，无新增排版警告。验收见 `tests/ccnu-eduagenttrust-template/20260919-members/REPORT.md`。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：补回民族、博达校区邮编和公开履历，依据 2026 年正式指南填入一般课题 5 万元、一年期安排并编制预算测算；补为 3 项代表作、4 项相关在研项目，统一实验室名称、成果要求及归属说明。正式稿 18 页、审阅稿 25 页均编译无错误，正式研究内容按既有含标点口径计 6969 字，原 6 图与 29 条文献保留；空白入口隔离填写预算后 7 页逐像素不变。剩余实名人员、授权和签章缺项集中列明；共用申请人资料同步民族、邮编及两段工作岗位。验收见 `tests/ccnu-eduagenttrust-template/20260918-fill/REPORT.md`。
+
+- CCNU-EduAgentTrust 申请书补齐6张原始矢量图、图注与交叉引用，统一回填申请人字段，提供正式正文、未删节审阅和7页空白入口。CCNU专属样式修复续页重复栏目标题、子标题编号、文献额外条目间距、缺失字体形状及长字段排版；正式研究内容按官方篇幅整理，保留来源及待补事实说明。实际包引用识别全部5个消费者，其他4个官方构建与修改前逐像素回归一致；验收见 `tests/ccnu-eduagenttrust-template/20260912/REPORT.md`。
+
+- CIESM 申请书后续修订：封面长课题名称与上下字段保持相同字号，分为两行并分别画下划线，后续字段整体下移；参考文献在专属公共样式中改为两端对齐，维持零条目间距；按原建议总额4.50万元填入八科预算草案及测算说明。空白入口继续隐藏金额和说明，保留官方四页空表。验收见 `tests/ciesm-application-20260910/bibliography-budget/REPORT.md`。
+
+- CIESM 开放基金填写稿：恢复原稿七张矢量 PDF 图及引用，接通 25 条文献的 Biber 自动生成，统一回填申请人元数据并提供独立四页 `blank.tex`。`bensz-thesis` 的 `ciesm-open-fund` 专属样式增加长字段双行适配、真实标题层级、图注共同分页、文献零条目间距和完整西文字形；正文及固定表格保留溢出检查。完整研究稿仍需压缩至官方 3000 字并补齐预算等实际字段；验收与五个实际包消费者的回归见 `tests/ciesm-application-20260910/REPORT.md`。
+
+- `NSFC_2026_MineChangeTrust_final` 与 `docs/applicants/yan-feng.md`：同步申请人确认的完整通讯地址；`bensz-thesis` 的 CSU 专属样式将简表地址格设为 9bp 字号、11bp 行距，解决固定格超高。官方构建37页、零错误/零警告，仅第1、3页变化；13页空白模板及四个同包消费者像素回归通过。验收见 `tests/minechange-address-20260910/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：依据共用申请人资料填入封面、申请简表、申请人所在成员行及主要简历，按现有正文补充300字以内的研究内容及意义。尚未确认的通讯字段、预算、研究起止年月及其他成员另列待补清单；不代填签章和审批意见。官方构建37页、零错误/零警告，仅第1、3、34页更新，验收见 `tests/minechange-personal-info-20260910/REPORT.md`。
+
+- `csu-open-fund-2026`：取消参考文献列表的条目间距和段间额外留白，保持文献内容及条目内行距；31 条文献完整，37 页正文零错误/零警告，空白模板和四个同包消费者像素回归通过。验收见 `tests/minechange-bibliography-20260910/REPORT.md`。
+
+- `csu-open-fund-2026`：为研究正文建立与官方栏目对应的二级标题编号，项目中“研究背景与意义”等小标题统一使用 `1.1`、`1.2` 等格式；合页及拆页栏目在排版前重置编号，补齐相关在研项目小标题。37 页正文的 22 个子标题与合页/拆页编号验证通过，零错误/零警告；13 页空白模板和四个同包消费者像素回归通过。验收见 `tests/minechange-subheadings-20260910/REPORT.md`。
+
+- `packages/bensz-thesis/` 的 `csu-open-fund-2026`：研究栏目标题只在栏目首页显示，统一修复立项依据、研究内容、研究方案、研究基础，以及拆页后的创新、执行计划、预期成果标题在续页重复的问题；表框与正文分页保留。37 页正文及 28 页续页样本零错误/零警告，13 页空白表与四个其他同包项目均逐像素回归通过。验收见 `tests/minechange-headings-20260910/REPORT.md`。
+
+- `projects/NSFC_2026_MineChangeTrust_final/`：补回正文迁移时遗漏的 7 幅原稿 PDF、完整图注及图号引用；图片与图注随正文整块分页，保留预实验结果的原始矢量图。此次修复位于项目内容层，复用现有 `bensz-thesis` 插图能力；官方构建输出 37 页、零错误/零警告，7 幅图逐页检查通过，13 页空白模板保持不变。验收记录见 `tests/minechange-figures-20260910/REPORT.md`。
+
+- `packages/bensz-thesis/styles/bthesis-style-casm-open-fund-2026.tex`：补齐斜体字族并消除正文压出官方版框的问题。此前 `\setmainfont{TimesNewRoman.ttf}` 未声明 `ItalicFont`，`\textit{}` 因字形缺失被**静默降级为正体**（只留一条 Font Warning，PDF 照常生成），`NSFC_2027_Mapping_final` 研究基础中约 10 个期刊名的斜体全部失效；现按 `bensz-cv` 既有做法挂载度量兼容的 `texgyretermes-italic/bolditalic`。同时为 `CasmResearch` 环境设置 `\emergencystretch=3em`：中西文混排（如“批准号 62466056。”）有时在容差内找不到断点，此前会产生 30.81pt 的 Overfull 并明显压过官方版框线。Overfull 由 5 处降至 1 处，仅存的 4.71bp 越界距版框线仍有 1.04bp、未压线。全文逐字符比对确认排版改动未改变任何文字，页数维持 47 页。
+
+- `projects/NSFC_2027_Mapping_final/`：按申请人决定清除 `F-MAP-01` 与 `F-MAP-08`，全文占位由 3 项降至 1 项（仅剩需实测的 `F-MAP-02`）。`F-MAP-01` 删除占位后保留成员的学位、培养层次与职称陈述，教育与研究经历不再列为待补项；`F-MAP-08` 连同仅用于承载“清单待核对”对冲的 §4.1.4 整节移除，§4.1.1–4.1.3 三项在研项目条目本身已完整。同时修正一处因填表而失效的陈述——§3.5 原写“成员已获学位、培养层次、职称……尚待补充”，与刚填入的成员表相互矛盾，现改为据实陈述。正式查重与清单核对仍属申请人提交前的自查事项，只是不再写入申请书。
+
+- `projects/NSFC_2027_Mapping_final/`：结清两项待核事实并收窄第三项，`【待补 F-MAP-xx】` 由 5 项降至 3 项。`F-MAP-05`（研究基地）经申请人确认无相关安排，§2.3 改为据实陈述“无”；`F-MAP-03`（与天池英才项目的六维度查重）删除占位与“核查状态待定”的对冲表述，保留并强化实质区分结论——申请书不宜写成“查重尚未完成”，正式核查仍属申请人提交前的自查事项。`F-MAP-02` 经联网核实后收窄：三个数据集获取入口均有效（SkyScript 对象存储直链实测 HTTP 200），但 RSITMD 与 RSICD 的作者仓库均未声明开源许可、仅要求引用原文，SkyScript 仓库为 MIT 而其影像源自 GEE、文本源自 OSM，故 §2.2.1 改写为“获取无障碍、许可存不确定性”，占位收窄为仅缺关系证据覆盖率的实测结论；§2.1.3 同步对齐口径。
+
+- `projects/NSFC_2027_Mapping_final/`：补齐申请人与成员表的空白必填栏。由申请人确认后填入民族（汉族）、每年工作时间（7 个月）、国别或地区（中国）；7 名参与者均为在读硕士生，学位栏按“已获学位”口径统一填学士而非尚未取得的硕士，职称栏留空，合计行按 `7|0|0|0|0|0|7` 填写（分项与总人数自洽）。`F-MAP-01` 相应收窄为仅缺教育与研究经历。传真栏仍留空。
+
+- `projects/NSFC_2027_Mapping_final/`：修正两处会随正式表格提交的内容问题。`metadata.tex` 的申请经费栏原为 `3.00 万元（预算草案）`，把写作阶段的内部批注印进了官方字段，现只保留金额；`commitment.tex` 与 `organization.tex` 的“重点实验室2026 年度”缺中西文间距，与官方 PDF 原文“重点实验室 2026 年度”不一致，现已补齐。
+
+- `packages/bensz-thesis/styles/bthesis-style-casm-open-fund-2026.tex`：收紧 `\CasmTopic` 栏目提示语与其后小标题之间的留白。原先提示语末行到小标题多出 27.25bp（约 1.4 个空行），页面顶部出现明显空档；现将宏尾的 `\vspace{24bp}` 改为 `6.75bp`，加上小标题 3bp 的 `beforeskip` 后多出 10bp，即半个正文行距（19.5bp）。`NSFC_2027_Mapping_final` 的 9 个栏目一致缩减 17.25bp，总页数仍为 48 页，官方构建零错误。该样式仅由该项目使用，其余开放课题模板无同类间距，不受影响。
+
+- `projects/NSFC_2027_Mapping_final/`：取消参考文献条目之间的额外间距，保持原有字号与行距，并重新生成 `main.pdf`。
+
 - `projects/NSFC_General_Clean/` 与 `projects/NSFC_Local_Clean/`：恢复为纯净空白模板。两者是仓库自带模板，被 `nsfc-full-pipeline`、`nsfc-research-content-writer`、`nsfc-research-foundation-writer` 三个技能引用为示例项目，此前误留了具体申报的个人材料（学术简历、工作条件、参与者名单）与另一课题的研究范围定义。这些材料会随 `scripts/create_project.py` 传播到每个新建项目，导致新项目一开始就带着无关内容。现已全部移出到仓库外的申报工作目录，本仓库只保留可复用的模板与技能。两个模板的 `extraTex/` 全程未被改动。
 - `docs/applicants/yan-feng.md`：修正 5 处指向不存在目录 `projects/NSFC_2026_TsingHua_electricity/` 的失效证据路径。共用申请人信息属仓库级资料层，不应绑定某个具体申报项目的目录，现统一改为按材料性质描述（学术简历、补充问卷、工作条件材料等），不再写死项目路径。
 - `projects/NSFC_Local/extraTex/2.1.研究基础.tex`：补齐缺失的「研究风险的应对措施」小节。该示例正文此前完全没有风险应对内容（`grep -c 风险` 为 0），而同类的 `NSFC_Young` 已有 4 处；`nsfc-research-foundation-writer` 的 DoD 与自检脚本均要求研究基础显式包含至少 3 条风险，该项目因此自检报 ERROR。新增内容按“风险描述---早期信号---应对预案”结构覆盖资源、技术与方法、进度三类风险，每条含可执行的替代路线与降级目标，并沿用该文件既有的公开示例口径与【】占位符风格。自检已转为通过；`nsfc_project_tool.py build` 编译零错误，PDF 由 12 页增至 14 页。
@@ -46,6 +217,10 @@
 - `packages/bensz-nsfc/templates/`：修复 `bensz-nsfc-general.tex` / `bensz-nsfc-local.tex` / `bensz-nsfc-young.tex` 在 Linux 上的编译中断问题。三套模板在“已检测到内置字体”分支里硬写了 macOS 专用的 `\setmainfont[BoldFont=Times New Roman]{Times New Roman}`，而多数 Linux 发行版不自带该字体族名，导致 fontspec 报 `The font "Times New Roman" cannot be found`、xelatex 三趟全部以退出码 1 结束、`nsfc_project_tool.py build` 判定 PDF 渲染失败。现改为 `\IfFontExistsTF{Times New Roman}` 探测：系统有就照旧使用（保留真实斜体/粗体），没有则回退到 `packages/bensz-fonts/fonts/TimesNewRoman.ttf` 并用 `AutoFakeBold=5, AutoFakeSlant=0.2` 补齐粗斜体，与 `bensz-fonts.sty`、`bensz-thesis` 各 style 已有的探测写法保持一致。macOS / Windows 行为不变。
 
 ### Changed（变更）
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：按正文复查意见明确“情境约束与行为证据关联的风险评价方法”和“任务效用约束下的动作前干预判据”；定义正常任务自主完成率损失，补充独立教学合规评价、样本覆盖与预实验安排，并新增拟实施说明。正式研究栏目按既有口径计6867字，年度计划与预期成果完整同页，消除两行尾页；共用简介同步术语。官方顺序构建main/full为18/24页，无新增警告；原有3条Underfull提示保留，28条文献与6张原图不变。教学复核人员及先导数据仍待实际落实；验收见 `tests/ccnu-eduagenttrust-template/20260919-revision/REPORT.md`。
+
+- `projects/NSFC_2026_CCNU-EduAgentTrust_final/`：正式稿“项目特色与创新点”由100个汉字扩充至443个，分别阐述教学支持边界特色、教育约束与过程证据交互、兼顾时间窗口与教学代价的干预验证；同步精简前文重复说明，保留实验设计、统计判据及考核要求。按现有口径含图文、文献与标点共6996字；官方构建更新18页PDF，无新增警告，保留原有3条Underfull提示。验收见 `tests/ccnu-eduagenttrust-template/20260919-innovation/REPORT.md`。
 
 - Skills 默认使用方式从“复制到用户级目录”切换为“随仓库项目级加载”；根级 README、手动配置指南、技能总览与 AGENTS/CLAUDE 维护规则同步更新。`research-idea` 升级到 `v0.2.2`，可从任意项目子目录向上发现仓库 Skill，并移除单机绝对路径；`paper-explain-figures` 升级到 `v0.2.1`，脚本示例改为 canonical 项目路径。
 - `skills/nsfc-research-foundation-writer/` 升级到 `v0.2.0`：**修复按编号 glob 定位写入目标导致的静默写错章节**。`SKILL.md` 原写死 `extraTex/3.1.研究基础.tex` / `3.2.工作条件.tex` 并指示"仅编辑两份 `extraTex/3.*.tex`"，但五段式（`NSFC_Local`/`NSFC_Local_Clean`）的研究基础与工作条件实际在 `2.1`/`2.2`，其 `3.1`/`3.2` 是「不同类型国基情况」「同年单位不一致」等声明章节——在地区基金上运行会把研究基础写进声明章节且编译不报错。现改为从 `main.tex` 按 `foundation` / `work_conditions` 角色解析，显式排除承担项目/完成国基项目/项目完成情况，跨章节引用（研究内容、年度研究计划）同步改为按角色定位；`config.yaml` 换用 `layout_resolution` + 两张布局表 + `allowed_write_roles`；`check_project_outputs.py` 改为自解析并自动判定布局；`validate_skill.py` 新增编号 glob 回归护栏。已在 `NSFC_Young`/`NSFC_General`（three-part）与 `NSFC_Local`（five-part）验证解析正确。至此面上、青年、地区三类基金在 `nsfc-full-pipeline` 全链路上均无编号硬编码缺口。
