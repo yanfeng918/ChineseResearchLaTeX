@@ -1,0 +1,225 @@
+{
+  "inputs": [
+    {
+      "path": "main.tex",
+      "sha256": "75cddfe298d923279fb3cbe51067445ddf13edd1194d266db4cfce7225069e47",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/@config.tex",
+      "sha256": "33826adfd8bf9d19f00a1eec5a8fe6b5c893b61e07e9cb786963161d53973b95",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/1.1.立项依据.tex",
+      "sha256": "02ad09d93e1632d9943b070300a928723054aa0a5db31406f8f6cce96441514d",
+      "graphics": [
+        "figures/F01-background.pdf"
+      ],
+      "labels": [
+        "fig:background"
+      ],
+      "references": [
+        "fig:background"
+      ],
+      "citations": [
+        "Lin2020CIESM",
+        "Eyring2016CMIP6",
+        "Hersbach2020ERA5",
+        "Munoz2021ERA5Land",
+        "Bano2022DeepESD",
+        "DeepSD2017",
+        "Stengel2020",
+        "Serifi2021",
+        "Harris2022",
+        "Mardani2025CorrDiff",
+        "Schmidt2025Coherent",
+        "Cannon2018MBCn",
+        "Lange2019ISIMIP",
+        "Trend2024",
+        "Bischoff2024Unpaired",
+        "Wan2023",
+        "Hess2025Scale",
+        "Aich2026Diffusion",
+        "Geiss2022",
+        "Gonzalez2024Hard",
+        "Maraun2017",
+        "Rampal2024",
+        "Pretrain2026"
+      ]
+    },
+    {
+      "path": "references/reference.tex",
+      "sha256": "4cfecfed7cb6fb20c819099f97bf9113068c19a7ceca402f258b4aa9a7f8bd80",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/2.1.研究内容.tex",
+      "sha256": "a6dbf6e572c32c9183e938077667b361136c18bfaf1f181dd9db57d8ed1220f2",
+      "graphics": [
+        "figures/F02-framework.pdf",
+        "figures/F03-data.pdf",
+        "figures/F04-reconstruction.pdf",
+        "figures/F05-constraints.pdf",
+        "figures/F06-integration.pdf",
+        "figures/F07-evaluation.pdf"
+      ],
+      "labels": [
+        "fig:framework",
+        "fig:data",
+        "fig:reconstruction",
+        "fig:constraints",
+        "fig:integration",
+        "fig:evaluation"
+      ],
+      "references": [
+        "fig:framework",
+        "fig:data",
+        "fig:reconstruction",
+        "fig:constraints",
+        "fig:integration",
+        "fig:evaluation"
+      ],
+      "citations": [
+        "Lange2019ISIMIP,Cannon2018MBCn"
+      ]
+    },
+    {
+      "path": "extraTex/2.2.特色与创新.tex",
+      "sha256": "6e82997ab6cd3009ff2d72bc2ac7a6d458bfbc07fcc530131f55578c680c9935",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/2.3.年度研究计划.tex",
+      "sha256": "4a0f6a2e41363c75febe81bf6b89e77ea55927672d394b98dce4f6aac9bfe605",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/3.1.研究基础.tex",
+      "sha256": "982becc2ee5194d9d33300b5b9dfea528ca8a3de3b8f0db5296ee8b5b236fb9a",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": [
+        "DWT2025",
+        "WaveKAN2026"
+      ]
+    },
+    {
+      "path": "extraTex/3.2.工作条件.tex",
+      "sha256": "28f864a55bc844614d418b88ffa87b2844b5569c1808ca1291237d69e7f835fe",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/3.3.承担项目情况.tex",
+      "sha256": "f3d4de927a617536cc1a87267d34b0d9b97eba25b26e4da58b2a4bf023490c05",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/3.4.完成国基项目情况.tex",
+      "sha256": "5b7c184533d8049aedd50fd207b35a10a0034d0e24964420ab7eac8741d7456f",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/4.1.不同类型国基情况.tex",
+      "sha256": "717b789b2dd070f0e93b1c640d321578bc85c5c23eccbf57e053aa078f9338e5",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/4.2.同年单位不一致.tex",
+      "sha256": "3b6c509f7883a1682488b9418ce4741f29fbfc1e53f9d38c2500ccf27f3e5057",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/4.3.承担中单位不一致.tex",
+      "sha256": "a1b60ac952ca79ad59ead0ff4a535957ca74b91f6a98bcfe40f45e9e82e7ddd1",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/4.4.不同专业技术职务的申请.tex",
+      "sha256": "fdc0441dbb4296d8bd7d586fb14ef11efa85a4ddbe91e34b6dc51c61d9bcfd4e",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/4.6.其他.tex",
+      "sha256": "ed365497461876355f5096d37c611bd80f88507ba4f9800482288508188c868f",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/F01-background.pdf",
+      "source": "extraTex/1.1.立项依据.tex",
+      "sha256": "1b0329f5c632cdc7c20c2288d456051a0485a8c2e3211be62c2030df5afb20c0"
+    },
+    {
+      "path": "figures/F02-framework.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "69c4a7c3212685cd662722fa4e1a9e325b421488f300e6456389c182840e3fec"
+    },
+    {
+      "path": "figures/F03-data.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "ad0b8f8fcdae2b333cc851243489d7911f63f023fe0abcd73a8cff98f1791bc1"
+    },
+    {
+      "path": "figures/F04-reconstruction.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "ddcbd03e9c0ed735b4e3d7df75c35397bd89ccaa78e565be72cbb36bdf8ea857"
+    },
+    {
+      "path": "figures/F05-constraints.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "673b7d5fc3099ea40fee97c3418d9eca3943937068066dbdae22f91200974b7f"
+    },
+    {
+      "path": "figures/F06-integration.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "ee0ee01601b3a8eb39905842020c0a2906ae3b74d204a1c9c0dd3a5218a304f5"
+    },
+    {
+      "path": "figures/F07-evaluation.pdf",
+      "source": "extraTex/2.1.研究内容.tex",
+      "sha256": "31e8ec8f83784e3574d87072263ab3c552eb6710c849a66e11c682d9c9a61b2b"
+    }
+  ]
+}

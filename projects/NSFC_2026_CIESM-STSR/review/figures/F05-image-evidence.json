@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看修订图：候选场→显式投影→受约束场，经验软约束为虚线；下部三类检查与数值一致性/泛化收益独立表达，删除歧义反馈线。明确不等于完整守恒，中文可读且无裁切。额外检查行是正文已有三类条件的展开，没有实验数值。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-aa50ce64-e2e6-4479-825e-fb08afd9d391.png",
+  "generation_call_id": "exec-aa50ce64-e2e6-4479-825e-fb08afd9d391"
+}

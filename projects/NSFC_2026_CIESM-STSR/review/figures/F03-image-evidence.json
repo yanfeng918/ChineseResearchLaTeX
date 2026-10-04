@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看第二轮修订：审计顺序正确，参考粗细内部配对与CIESM独立应用分别展示，底部为共同训练/验证/测试约定且没有错误连接；中文完整、字号可读、无裁切。移除歧义分叉后采用三层结构表达。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-aedff0d6-5ce5-464e-a255-54b3aeb7478c.png",
+  "generation_call_id": "exec-aedff0d6-5ce5-464e-a255-54b3aeb7478c"
+}

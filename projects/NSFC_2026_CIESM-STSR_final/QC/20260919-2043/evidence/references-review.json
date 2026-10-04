@@ -1,0 +1,238 @@
+{
+  "checked_at": "2026-09-19",
+  "references": 29,
+  "cited_unique": 29,
+  "missing_keys": [],
+  "uncited_keys": [],
+  "crossref_retrieved": 27,
+  "publisher_fallback_verified": 2,
+  "fake_doi_or_wrong_title_found": false,
+  "findings": [
+    {
+      "id": "REF-01",
+      "severity": "P2",
+      "status": "confirmed",
+      "file": "references/myexample.bib",
+      "line": 286,
+      "key": "Hao2015Oasis",
+      "title": "正式出版年与卷期不匹配",
+      "current": "2015, 8(2):172–183",
+      "expected": "2016, 8(2):172–183",
+      "explanation": "2015-12-09 为在线先发，所著录正式卷期为 2016-04；出版社 Cite this article 使用 2016。BibTeX key 可保留，不必因 key 含 2015 改正文引用。",
+      "source": "https://link.springer.com/article/10.1007/s40333-015-0060-x"
+    },
+    {
+      "id": "REF-02",
+      "severity": "P2",
+      "status": "confirmed",
+      "file": "references/myexample.bib",
+      "line": 113,
+      "key": "Bischoff2024Unpaired",
+      "title": "正式文献缺少卷期和文章号",
+      "expected": "Artificial Intelligence for the Earth Systems, 2024, 3(2):e230039",
+      "explanation": "Crossref 注册记录也未给出卷期，不能单凭 Crossref 缺失认定不存在；正式期刊 PDF 和目录补证。",
+      "sources": [
+        "https://clima.caltech.edu/wp-content/uploads/2024/06/aies-AIES-D-23-0039.1.pdf",
+        "https://journals.ametsoc.org/view/journals/aies/3/2/AIES-D-23-0039.1.xml"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "key": "Lin2020CIESM",
+      "line": 3,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Hersbach2020ERA5",
+      "line": 14,
+      "status": "publisher_verified",
+      "differences": {}
+    },
+    {
+      "key": "Munoz2021ERA5Land",
+      "line": 25,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Eyring2016CMIP6",
+      "line": 36,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Bano2022DeepESD",
+      "line": 47,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Mardani2025CorrDiff",
+      "line": 58,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Gonzalez2024Hard",
+      "line": 69,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Aich2026Diffusion",
+      "line": 80,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Hess2025Scale",
+      "line": 91,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Schmidt2025Coherent",
+      "line": 102,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Bischoff2024Unpaired",
+      "line": 113,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Lange2019ISIMIP",
+      "line": 121,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Cannon2018MBCn",
+      "line": 132,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "DWT2025",
+      "line": 143,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "WaveKAN2026",
+      "line": 154,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Pretrain2026",
+      "line": 165,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Stengel2020",
+      "line": 176,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "DeepSD2017",
+      "line": 187,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Harris2022",
+      "line": 196,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Maraun2017",
+      "line": 207,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Wan2023",
+      "line": 218,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Geiss2022",
+      "line": 227,
+      "status": "publisher_verified",
+      "differences": {}
+    },
+    {
+      "key": "Serifi2021",
+      "line": 238,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Trend2024",
+      "line": 248,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Rampal2024",
+      "line": 259,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "He2020CMFD",
+      "line": 272,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Hao2015Oasis",
+      "line": 283,
+      "status": "crossref_verified",
+      "differences": {
+        "year": {
+          "local": "2015",
+          "formal": "2016"
+        }
+      }
+    },
+    {
+      "key": "Li2019TianshanSnow",
+      "line": 294,
+      "status": "crossref_verified",
+      "differences": {}
+    },
+    {
+      "key": "Li2020TaklimakanDust",
+      "line": 304,
+      "status": "crossref_verified",
+      "differences": {}
+    }
+  ],
+  "publisher_fallbacks": [
+    {
+      "key": "Hersbach2020ERA5",
+      "url": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803",
+      "confirmed": "The ERA5 global reanalysis; Hersbach, Bell, Berrisford 等; 2020, 146(730):1999–2049",
+      "limit": "期刊网页核查主要作者及基本元数据，未自动比较完整作者序列。"
+    },
+    {
+      "key": "Geiss2022",
+      "url": "https://gmd.copernicus.org/articles/15/6677/2022/",
+      "confirmed": "Downscaling atmospheric chemistry simulations with physically consistent deep learning; Geiss, Silva, Hardin; 2022, 15(17):6677–6694"
+    }
+  ],
+  "scope_limits": [
+    "元数据核验不等同于全部全文论据核验。",
+    "ERA5 文献完整作者序列未作自动逐名对比；其余 27 条 Crossref 条目作者列表经去音调、标点归一后完全一致，Geiss 文献三个作者由官网核对。"
+  ]
+}

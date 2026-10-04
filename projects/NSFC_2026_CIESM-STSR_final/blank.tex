@@ -1,0 +1,17 @@
+% !TeX program = xelatex
+% 独立空白入口：不读取申请人、摘要或研究正文。
+\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}
+\def\CiesmBlankTemplate{1}
+\input{extraTex/@config}
+\CiesmSetup{
+  birth-date={\hspace{1em}年\hspace{1em}月\hspace{1em}日},
+  start-year={2027},start-month={1},start-day={1},
+  end-year={2027},end-month={12},end-day={31},
+  issuer={清华大学科研院},issue-date={二〇二六年八月}}
+\begin{document}
+\CiesmMakeCover
+\CiesmMakeInformation
+\input{extraTex/report}
+\clearpage
+\input{extraTex/budget}
+\end{document}

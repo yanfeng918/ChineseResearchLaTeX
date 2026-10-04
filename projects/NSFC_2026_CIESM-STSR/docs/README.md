@@ -1,0 +1,80 @@
+# 本项目图文工作索引
+
+本轮按用户确认的P02开放课题（2027年一年期）执行，保留现有正文模板。活动正文在`../extraTex/`，图件在`../figures/`，最终报告在`../review/`。
+
+当前图文断点为[illustrated_workflow_status.yaml](illustrated_workflow_status.yaml)，只通过nsfc-illustrated-pipeline脚本维护。原[workflow_status.yaml](workflow_status.yaml)仅作旧文字进度来源，不再由本轮写入。
+
+- [配图规划](Figure_Plan.md)、[配色规范](Figure_Palette.md)、[图件清单](figure_manifest.json)
+- [逐图提示词与JSON](figure_specs/)、[文字PDF基线](figure_source/main.text.pdf)
+- [引用审核](../review/引用一致性审核报告.md)、[QC](../review/质量控制报告.md)、[模拟评审](../review/模拟专家评审_全稿.md)
+- [定点修复](../review/P0P1定点修复报告.md)、[图件验收](../review/配图验收报告.md)
+
+项目事实库保留F-CIESM-01/02/03；它们需要真实合作数据接口、参与者和正式材料，不能由示意图或正文修订代替。以下通用接入说明用于理解两层事实来源；本项目已接入，不再手动重建旧断点。
+
+# docs/ 使用说明
+
+本目录存放**本项目的**写作输入与进度记录。事实分两层，不要混在一起。
+
+## 两层事实结构
+
+```text
+docs/applicants/<申请人slug>.md        ← 共用层（仓库级，跨项目复用）
+        身份 / 履历 / 科研项目 P-H*·P-V* / 代表作 O-* / 科研条件 / 跨项目缺口 F-GEN-*
+                    │
+                    ▼
+projects/<本项目>/docs/00_项目事实库.md  ← 项目层（只放本项目特有）
+        申报目标 / 研究边界 / 团队 / 联系人 / 数据条件 / 项目缺口 F-XXX-*
+```
+
+**共用层不复制到项目里**。项目事实库通过 `workflow_status.yaml` 的 `applicant_profile_file` 指向它。
+
+规则详见 [docs/applicants/README.md](../../../docs/applicants/README.md)。
+
+## 新项目三步接入
+
+1. **确认共用层有你的申请人文件**
+
+   ```bash
+   ls docs/applicants/
+   ```
+
+   没有就先建一份 `docs/applicants/<你的slug>.md`（照 `yan-feng.md` 的结构写）。
+
+2. **填本目录的 `00_项目事实库.md`**
+
+   逐节替换 `<...>` 占位内容，删掉用不到的小节。只写**本项目特有**的事实——申请人的履历、论文、项目**不要**抄进来。
+
+3. **改 `workflow_status.yaml` 的三处**
+
+   ```yaml
+   project:
+     type: <项目类型>
+     grant_type: <资助类别>
+     applicant_profile_file: "../../docs/applicants/<你的slug>.md"
+     project_fact_file: "docs/00_项目事实库.md"
+   ```
+
+   其余阶段状态跑流程时自动维护。
+
+做完这三步，写作流程就不会再问共用层里已经确认过的信息了。
+
+## 状态口径
+
+| 状态 | 使用规则 |
+|---|---|
+| `已确认` | 直接写入正文，**不得再询问** |
+| `公开来源待终核` | 可作草稿素材，提交前复核 |
+| `待本人确认` | 不得推断为既成事实 |
+| `明确暂无` | 可用真实、保守的否定表述 |
+
+需要补充事实时按 ID（`F-GEN-*` / `F-XXX-*`）**一次性集中问完**，不要逐条打断写作。
+
+## 本目录其它文件
+
+| 文件 | 说明 |
+|---|---|
+| `00_项目事实库.md` | 项目专属事实（必需） |
+| `workflow_status.yaml` | 15 阶段 schema v2 断点，续跑靠状态脚本对账 |
+| 其它 `00_*.md` | 按需添加的项目输入材料（研究内容约束、工作条件等） |
+
+**不要**把身份证号、学号、私人手机号放进本目录任何文件——见共用层 README 的隐私规则。

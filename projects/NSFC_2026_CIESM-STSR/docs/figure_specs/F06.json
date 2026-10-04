@@ -1,0 +1,104 @@
+{
+  "diagram_type": "CIESM 集成和应用证据路线",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Top horizontal file-processing sequence with four compact boxes. Lower three large ordered columns for proposed evidence levels, joined with thin forward arrows and explicit conditional relationship. A bottom note states all are planned and completion requires real records. No check marks or completed badges.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "顶部左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "CIESM 文件",
+      "exact_text": "定义核验",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "顶部中左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "分块推断",
+      "exact_text": "固定模型",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "顶部中右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "细网格输出",
+      "exact_text": "变量语义",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "顶部右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "粗化复核",
+      "exact_text": "聚合残差",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "底部左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "公开格式兼容",
+      "exact_text": "可复现运行记录",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "底部中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "实验室联调",
+      "exact_text": "接口与数据落实后",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "底部右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "实际应用与接收",
+      "exact_text": "应用记录与证明",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    },
+    {
+      "relative_position": "最底部",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "状态说明",
+      "exact_text": "拟开展流程\n完成以实际证据为准",
+      "source": "extraTex/2.1.研究内容.tex: 输入为选定模型、真实 CIESM 文件"
+    }
+  ],
+  "exact_arrow_labels": [
+    "条件落实后"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-09-19",
+  "document_type": "ciesm-open-fund-application",
+  "pdf_pages": 37,
+  "abstract_visible_character_estimate": 321,
+  "keyword_count": 5,
+  "reference_count": 29,
+  "citation_stats": {
+    "unique_citations": 29,
+    "missing_bibkeys": 0,
+    "missing_bibkeys_list": [],
+    "incomplete_bib_entries": 0,
+    "incomplete_bibkeys_list": []
+  },
+  "reference_network_coverage": {
+    "crossref": 27,
+    "publisher_fallback": 2
+  },
+  "findings_by_severity": {
+    "P1": 4,
+    "P2": 5,
+    "P0": 1
+  },
+  "source_lower_bound_counts": {
+    "extraTex/1.1.立项依据.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 3579
+    },
+    "extraTex/1.2.研究内容.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 7055
+    },
+    "extraTex/1.3.特色与创新.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 928
+    },
+    "extraTex/1.4.年度计划.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 902
+    },
+    "extraTex/2.1.工作基础.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 4068
+    },
+    "extraTex/2.2.申请人简介.tex": {
+      "ordinary_paragraph_cjk_lower_bound": 307
+    },
+    "section_i_cjk_lower_bound": 12464,
+    "method": "只统计汉字起始的正文段落；排除注释、行内数学、标题/图注行；不读取参考文献。该数值为汉字数量下限，并非精确可见字数。"
+  },
+  "budget": {
+    "total_wanyuan": 4.5,
+    "equipment_wanyuan": 0,
+    "labor_wanyuan": 0.6,
+    "labor_person_months": 12,
+    "labor_rate_yuan": 500,
+    "arithmetic_matches": true
+  },
+  "participant_count": 7,
+  "participant_names_match_source": true,
+  "visible_draft_markers": 0,
+  "pdf_unresolved_question_marks": 0,
+  "existing_build_log": {
+    "errors": 0,
+    "overfull": 0,
+    "missing_glyph": 0,
+    "underfull": 1,
+    "new_build_run": false
+  },
+  "ready_to_submit": false
+}

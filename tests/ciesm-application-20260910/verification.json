@@ -1,0 +1,741 @@
+{
+  "main_pages": 30,
+  "blank_pages": 4,
+  "blank_comparison_pdftoppm_144dpi": [
+    {
+      "page": 1,
+      "different_pixels_percent": 0.989,
+      "mean_absolute_channel_difference": 0.5705
+    },
+    {
+      "page": 2,
+      "different_pixels_percent": 0.7012,
+      "mean_absolute_channel_difference": 0.5455
+    },
+    {
+      "page": 3,
+      "different_pixels_percent": 0.6271,
+      "mean_absolute_channel_difference": 0.3414
+    },
+    {
+      "page": 4,
+      "different_pixels_percent": 0.5972,
+      "mean_absolute_channel_difference": 0.5096
+    }
+  ],
+  "blank_comparison_mupdf_144dpi": [
+    {
+      "page": 1,
+      "different_pixels_percent": 1.2298,
+      "mean_absolute_channel_difference": 0.6242
+    },
+    {
+      "page": 2,
+      "different_pixels_percent": 1.0941,
+      "mean_absolute_channel_difference": 0.6185
+    },
+    {
+      "page": 3,
+      "different_pixels_percent": 0.521,
+      "mean_absolute_channel_difference": 0.3483
+    },
+    {
+      "page": 4,
+      "different_pixels_percent": 11.4097,
+      "mean_absolute_channel_difference": 0.7988
+    }
+  ],
+  "official_headings_each_once": [
+    "一、基本信息表",
+    "二、报告正文",
+    "（一）立项依据与研究内容",
+    "1．课题的立项依据",
+    "2．课题的研究内容及拟解决的关键科学问题",
+    "3．课题的特色与创新之处",
+    "4．年度研究计划及预期研究结果",
+    "（二）研究基础与工作条件",
+    "1．工作基础（",
+    "2．申请人简介（",
+    "三、课题经费预算表"
+  ],
+  "numbered_headings": [
+    {
+      "part": 1,
+      "column": 0,
+      "kind": "section",
+      "number": ""
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.1"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.2"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.2.1"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.2.2"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.2.3"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.2.4"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.3"
+    },
+    {
+      "part": 1,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.4"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.1"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.1.1"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.1.2"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.1.3"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.1.4"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.2"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.3"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.3.1"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.3.2"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.3.3"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.4"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.1"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.2"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.3"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.4"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.5"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.5.1"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.5.2"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.5.3"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.5.4"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.5.5"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.6"
+    },
+    {
+      "part": 1,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.7"
+    },
+    {
+      "part": 1,
+      "column": 3,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 1,
+      "column": 3,
+      "kind": "subsubsection",
+      "number": "3.1"
+    },
+    {
+      "part": 1,
+      "column": 3,
+      "kind": "subsubsection",
+      "number": "3.2"
+    },
+    {
+      "part": 1,
+      "column": 3,
+      "kind": "paragraph",
+      "number": "3.2.1"
+    },
+    {
+      "part": 1,
+      "column": 3,
+      "kind": "paragraph",
+      "number": "3.2.2"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "subsubsection",
+      "number": "4.1"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "paragraph",
+      "number": "4.1.1"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "paragraph",
+      "number": "4.1.2"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "paragraph",
+      "number": "4.1.3"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "paragraph",
+      "number": "4.1.4"
+    },
+    {
+      "part": 1,
+      "column": 4,
+      "kind": "subsubsection",
+      "number": "4.2"
+    },
+    {
+      "part": 2,
+      "column": 0,
+      "kind": "section",
+      "number": ""
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.1"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.2"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.3"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.3.1"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.3.2"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.3.3"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.4"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.4.1"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.4.2"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.4.3"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.4.4"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.5"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.6"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.7"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "subsubsection",
+      "number": "1.8"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.8.1"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.8.2"
+    },
+    {
+      "part": 2,
+      "column": 1,
+      "kind": "paragraph",
+      "number": "1.8.3"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsection",
+      "number": ""
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.1"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.2"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.3"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.4"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.1"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "paragraph",
+      "number": "2.4.2"
+    },
+    {
+      "part": 2,
+      "column": 2,
+      "kind": "subsubsection",
+      "number": "2.5"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "label": "fig:background",
+      "page": 4,
+      "file": "figures/F01-background.pdf",
+      "sha256": "1b0329f5c632cdc7c20c2288d456051a0485a8c2e3211be62c2030df5afb20c0",
+      "vector_bounds": [
+        90.00016021728516,
+        80.68830871582031,
+        505.2950134277344,
+        314.2909851074219
+      ]
+    },
+    {
+      "number": 2,
+      "label": "fig:framework",
+      "page": 12,
+      "file": "figures/F02-framework.pdf",
+      "sha256": "69c4a7c3212685cd662722fa4e1a9e325b421488f300e6456389c182840e3fec",
+      "vector_bounds": [
+        90.00016021728516,
+        80.68830871582031,
+        505.2950134277344,
+        314.2909851074219
+      ]
+    },
+    {
+      "number": 3,
+      "label": "fig:data",
+      "page": 15,
+      "file": "figures/F03-data.pdf",
+      "sha256": "ad0b8f8fcdae2b333cc851243489d7911f63f023fe0abcd73a8cff98f1791bc1",
+      "vector_bounds": [
+        90.00016021728516,
+        80.68830871582031,
+        505.2950134277344,
+        314.2909851074219
+      ]
+    },
+    {
+      "number": 4,
+      "label": "fig:reconstruction",
+      "page": 16,
+      "file": "figures/F04-reconstruction.pdf",
+      "sha256": "ddcbd03e9c0ed735b4e3d7df75c35397bd89ccaa78e565be72cbb36bdf8ea857",
+      "vector_bounds": [
+        90.00016021728516,
+        216.37522888183594,
+        505.2950134277344,
+        449.9779052734375
+      ]
+    },
+    {
+      "number": 5,
+      "label": "fig:constraints",
+      "page": 17,
+      "file": "figures/F05-constraints.pdf",
+      "sha256": "673b7d5fc3099ea40fee97c3418d9eca3943937068066dbdae22f91200974b7f",
+      "vector_bounds": [
+        90.00016021728516,
+        458.17626953125,
+        505.2950134277344,
+        691.7910766601562
+      ]
+    },
+    {
+      "number": 6,
+      "label": "fig:integration",
+      "page": 20,
+      "file": "figures/F06-integration.pdf",
+      "sha256": "ee0ee01601b3a8eb39905842020c0a2906ae3b74d204a1c9c0dd3a5218a304f5",
+      "vector_bounds": [
+        90.00016021728516,
+        397.36334228515625,
+        505.2950134277344,
+        630.9781494140625
+      ]
+    },
+    {
+      "number": 7,
+      "label": "fig:evaluation",
+      "page": 22,
+      "file": "figures/F07-evaluation.pdf",
+      "sha256": "31e8ec8f83784e3574d87072263ab3c552eb6710c849a66e11c682d9c9a61b2b",
+      "vector_bounds": [
+        90.00016021728516,
+        80.67619323730469,
+        505.2950134277344,
+        314.2909851074219
+      ]
+    }
+  ],
+  "bibliography_keys": [
+    "Aich2026Diffusion",
+    "Bano2022DeepESD",
+    "Bischoff2024Unpaired",
+    "Cannon2018MBCn",
+    "DWT2025",
+    "DeepSD2017",
+    "Eyring2016CMIP6",
+    "Geiss2022",
+    "Gonzalez2024Hard",
+    "Harris2022",
+    "Hersbach2020ERA5",
+    "Hess2025Scale",
+    "Lange2019ISIMIP",
+    "Lin2020CIESM",
+    "Maraun2017",
+    "Mardani2025CorrDiff",
+    "Munoz2021ERA5Land",
+    "Pretrain2026",
+    "Rampal2024",
+    "Schmidt2025Coherent",
+    "Serifi2021",
+    "Stengel2020",
+    "Trend2024",
+    "Wan2023",
+    "WaveKAN2026"
+  ],
+  "bibliography_pages": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "bibliography_between_item_baselines_bp": [
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0,
+    22.0
+  ],
+  "bibliography_within_item_baselines_bp": [
+    22.0
+  ],
+  "abstract_characters_including_punctuation": 316,
+  "keywords": 5,
+  "first_part_han_count_including_headings_captions_excluding_bibliography": 10620,
+  "first_part_3000_limit_met": false,
+  "full_address_and_contact_verified": true,
+  "fixed_field_bounds": [
+    {
+      "field": "cover-title",
+      "page": 1,
+      "glyph_bounds": [
+        202.94700622558594,
+        323.7879333496094,
+        490.04705810546875,
+        370.83795166015625
+      ],
+      "allowed_bounds": [
+        198,
+        321.94,
+        495,
+        371.79
+      ]
+    },
+    {
+      "field": "information-title",
+      "page": 2,
+      "glyph_bounds": [
+        189.9980010986328,
+        104.5669937133789,
+        414.99798583984375,
+        123.36699676513672
+      ],
+      "allowed_bounds": [
+        182.15,
+        103.92,
+        423.15,
+        124.91
+      ]
+    },
+    {
+      "field": "keywords",
+      "page": 2,
+      "glyph_bounds": [
+        242.53599548339844,
+        593.7374267578125,
+        519.4609985351562,
+        604.1874389648438
+      ],
+      "allowed_bounds": [
+        234.55,
+        588.43,
+        528.2,
+        610.12
+      ]
+    },
+    {
+      "field": "birth-date",
+      "page": 2,
+      "glyph_bounds": [
+        195.00498962402344,
+        171.37646484375,
+        275.99249267578125,
+        181.8264617919922
+      ],
+      "allowed_bounds": [
+        182.15,
+        166.86,
+        289.05,
+        187.46
+      ]
+    }
+  ],
+  "oversized_field_guard_rejects": true,
+  "body_overflow_spans": [],
+  "underfull_boxes": [
+    "Underfull \\hbox (badness 1210)",
+    "Underfull \\hbox (badness 3547)",
+    "Underfull \\hbox (badness 1072)",
+    "Underfull \\hbox (badness 1024)"
+  ],
+  "main_pdf_sha256": "70e808670dcbbd5e7ecc5b894a995f55031e35d064ff2a66ac1a1b6a1881878d",
+  "style_sha256": "493c5a127be1b34195a65a8eeeca40e90b93d9ca21183557e380657989aa0bf2"
+}

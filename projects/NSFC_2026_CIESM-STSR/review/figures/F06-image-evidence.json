@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看初图：文件读入→分块推断→细场输出→粗化复核正确；三个落实层级有条件前提，明确拟开展、以实际证据为准。不存在已完成标记，中文无误、留白和边界通过。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-612ed87a-d4de-4f08-b009-4dc0a6e2050e.png",
+  "generation_call_id": "exec-612ed87a-d4de-4f08-b009-4dc0a6e2050e"
+}

@@ -1,0 +1,36 @@
+{
+  "dpi": 144,
+  "tolerance_pixels": 2,
+  "tolerance_bp": 1,
+  "pages": [
+    {
+      "page": 1,
+      "mean_absolute_gray_difference": 0.5705,
+      "different_pixels_pct": 0.989,
+      "official_ink_covered_within_2px_pct": 100.0,
+      "rendered_ink_covered_within_2px_pct": 100.0
+    },
+    {
+      "page": 2,
+      "mean_absolute_gray_difference": 0.5455,
+      "different_pixels_pct": 0.701,
+      "official_ink_covered_within_2px_pct": 99.231,
+      "rendered_ink_covered_within_2px_pct": 99.158
+    },
+    {
+      "page": 3,
+      "mean_absolute_gray_difference": 0.3414,
+      "different_pixels_pct": 0.627,
+      "official_ink_covered_within_2px_pct": 99.929,
+      "rendered_ink_covered_within_2px_pct": 99.929
+    },
+    {
+      "page": 4,
+      "mean_absolute_gray_difference": 0.5096,
+      "different_pixels_pct": 0.597,
+      "official_ink_covered_within_2px_pct": 98.375,
+      "rendered_ink_covered_within_2px_pct": 100.0
+    }
+  ],
+  "identical": false
+}

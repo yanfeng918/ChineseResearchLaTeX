@@ -1,0 +1,105 @@
+{
+  "diagram_type": "数据构建与样本隔离路线",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Top full-width three-step audit sequence. Below fork into two visually distinct lanes: left reference Y → coarse AY with a paired training brace; right CIESM X → corrected X* as independent application lane. Bottom horizontal timeline with three unequal blocks train, validation, test and visible white separation gaps. No specific years or map.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "顶部左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "来源审计",
+      "exact_text": "变量与频率\n版本与许可",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "顶部中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "定义统一",
+      "exact_text": "单位与日历\n面积与掩膜",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "顶部右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "先划分后拟合",
+      "exact_text": "连续时段\n完整地形区域",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "左中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "参考资料",
+      "exact_text": "细场 Y\n粗场 AY",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "右中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "CIESM 应用",
+      "exact_text": "原始场 X\n校正场 X*",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "底部左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "训练",
+      "exact_text": "估计参数",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "底部中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "验证",
+      "exact_text": "冻结选择",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    },
+    {
+      "relative_position": "底部右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "测试",
+      "exact_text": "独立评价",
+      "source": "extraTex/2.1.研究内容.tex: 气温统一单位后处理"
+    }
+  ],
+  "exact_arrow_labels": [
+    "内部配对",
+    "非配对应用"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

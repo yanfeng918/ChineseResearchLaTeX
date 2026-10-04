@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "run_id": "ciesm-stsr-panel-b-20260906",
+  "project_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CIESM-STSR",
+  "generated_at": "2026-09-06T14:45:20.934800+00:00",
+  "read_only": true,
+  "panel_id": "B",
+  "expert_views": 7,
+  "agent_count": 1,
+  "metadata_evidence": "tests/nsfc-ciesm-stsr-illustrated/metadata.json",
+  "metadata_verification": "Reused current-run fetched Crossref metadata; DOI/title/first-author/container checked. No new network fetch or full-text verification by this panel.",
+  "findings": [
+    {
+      "id": "B-P2-001",
+      "severity": "P2",
+      "category": "consistency",
+      "location": {
+        "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+        "anchor": "46,51"
+      },
+      "problem": "B \u7684\u62df\u5408\u76ee\u6807\u672a\u5728\u540c\u4e00\u53e5\u660e\u786e\u4e3a\u4e0e\u8bad\u7ec3\u6761\u4ef6\u540c\u652f\u6491\u3001\u540c\u7b97\u5b50\u7684 AY \u5206\u5e03\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u5f62\u6210 (AY,Y) \u8bad\u7ec3\u5bf9\uff1b\u5bf9 CIESM \u8f93\u5165\u5148\u5e94\u7528\u5728\u8bad\u7ec3\u671f\u4f30\u8ba1\u7684\u5206\u5e03\u53d8\u6362 B\u3002"
+        }
+      ],
+      "recommendation": "\u660e\u786e B \u9762\u5411\u51bb\u7ed3 A \u6240\u5f97\u53c2\u8003\u7c97\u573a\u5e76\u4fdd\u6301\u53d8\u91cf\u5b9a\u4e49\u3001\u7edf\u8ba1\u65f6\u6bb5\u548c\u5171\u540c\u8986\u76d6\u4e00\u81f4\u3002",
+      "status": "open",
+      "funding_context": "\u975e\u7ecf\u8d39\u95ee\u9898\uff0c\u4ec5\u8865\u5b9a\u4e49\u3002"
+    },
+    {
+      "id": "B-P2-002",
+      "severity": "P2",
+      "category": "consistency",
+      "location": {
+        "path": "extraTex/2.3.\u5e74\u5ea6\u7814\u7a76\u8ba1\u5212.tex",
+        "anchor": "15"
+      },
+      "problem": "\u968f\u673a\u6b8b\u5dee\u5728\u65b9\u6cd5\u4e0e\u98ce\u9669\u6bb5\u4e3a\u53ef\u9009\uff0c\u5b63\u5ea6\u8ba1\u5212\u8bfb\u8d77\u6765\u50cf\u56fa\u5b9a\u4efb\u52a1\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u5bf9\u968f\u673a\u6b8b\u5dee\u6a21\u578b\u8fdb\u884c\u6982\u7387\u6821\u51c6\u68c0\u9a8c\u3002"
+        }
+      ],
+      "recommendation": "\u5728\u5b63\u5ea6\u8ba1\u5212\u4fdd\u7559\u9a8c\u8bc1\u6548\u679c\u548c\u8ba1\u7b97\u9884\u7b97\u5141\u8bb8\u7684\u524d\u63d0\u3002",
+      "status": "open",
+      "funding_context": "\u4e00\u5e744.5\u4e07\u5143\u5141\u8bb8\u786e\u5b9a\u6027\u6838\u5fc3\u4e0e\u5c0f\u89c4\u6a21\u968f\u673a\u6269\u5c55\u5206\u5c42\uff1b\u7ecf\u8d39\u4e0d\u53d7\u9650\u65f6\u53ef\u589e\u52a0\u6a21\u578b\u5bb6\u65cf\u3001\u591a\u5e74\u4efd\u548c\u66f4\u5927\u96c6\u5408\uff0c\u4f46\u672c\u6b21\u65e0\u987b\u8ffd\u52a0\u3002"
+    },
+    {
+      "id": "B-P2-003",
+      "severity": "P2",
+      "category": "other",
+      "location": {
+        "path": "extraTex/2.3.\u5e74\u5ea6\u7814\u7a76\u8ba1\u5212.tex",
+        "anchor": "9; extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex:123"
+      },
+      "problem": "\u5b8c\u6574\u6570\u636e\u5ba1\u8ba1\u5b89\u6392Q1\uff0c\u5f53\u524d\u65e5\u9891\u4e0e\u63a5\u53e3\u4ecd\u672a\u786e\u8ba4\uff0c\u5e94\u5c3d\u53ef\u80fd\u964d\u4f4e\u542f\u52a8\u540e\u7684\u7b49\u5f85\u6210\u672c\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u5b8c\u6210 CIESM \u53d8\u91cf\u548c\u9891\u7387\u5ba1\u8ba1\uff1b\u82e5\u5173\u952e\u9891\u7387\u4e0d\u8db3\uff0c\u5728\u672c\u9636\u6bb5\u8c03\u6574\u6570\u636e\u83b7\u53d6\u8ba1\u5212\u5e76\u8bb0\u5f55\u6838\u5fc3\u76ee\u6807\u98ce\u9669\u3002"
+        }
+      ],
+      "recommendation": "\u5728\u53ef\u53d6\u5f97\u516c\u5f00\u6837\u4f8b\u65f6\u524d\u7f6e\u6bcf\u53d8\u91cf\u4e00\u4e2a\u6587\u4ef6\u7684\u6700\u5c0f\u9891\u7387\u4e0e\u8986\u76d6\u5ba1\u8ba1\uff1b\u65e0\u6cd5\u53d6\u5f97\u5219\u8bda\u5b9e\u4fdd\u7559F-CIESM-01\u3002",
+      "status": "open",
+      "funding_context": "\u4e00\u5e74\u671f\u9650\u538b\u7f29\u5bb9\u9519\u65f6\u95f4\uff1b\u8d44\u91d1\u4e0d\u53d7\u9650\u53ef\u589e\u5907\u9009\u8d44\u6599\uff0c\u4f46\u4e0d\u80fd\u66ff\u4ee3CIESM\u76ee\u6807\u3002"
+    },
+    {
+      "id": "B-P2-004",
+      "severity": "P2",
+      "category": "citation",
+      "location": {
+        "path": "references/myexample.bib",
+        "anchor": "187: DeepSD2017"
+      },
+      "problem": "\u4ec5\u5199\u5143\u6570\u636e\u4e3b\u6807\u9898 DeepSD\uff0c\u526f\u6807\u9898\u672a\u5e76\u5165\u9898\u540d\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u7f13\u5b58 subtitle: Generating High Resolution Climate Change Projections through Single Image Super-Resolution"
+        }
+      ],
+      "recommendation": "\u8865\u5165\u7f13\u5b58\u526f\u6807\u9898\uff0c\u63d0\u9ad8\u9898\u5f55\u5b8c\u6574\u6027\u3002",
+      "status": "open",
+      "funding_context": "\u975e\u7ecf\u8d39\u95ee\u9898\u3002"
+    }
+  ],
+  "metrics": {
+    "active_files": 13,
+    "bib_entries": 25,
+    "unique_cited_keys": 25,
+    "missing_cite_keys": [],
+    "uncited_bib_keys": [],
+    "raw_cjk_characters": 12755,
+    "page_count": null,
+    "page_count_checked": false,
+    "severity_counts": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 4
+    }
+  },
+  "gaps": [
+    {
+      "id": "F-CIESM-01",
+      "locations": [
+        "extraTex/3.2.\u5de5\u4f5c\u6761\u4ef6.tex:12"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": "F-CIESM-02",
+      "locations": [
+        "extraTex/3.1.\u7814\u7a76\u57fa\u7840.tex:27",
+        "extraTex/3.3.\u627f\u62c5\u9879\u76ee\u60c5\u51b5.tex:15"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": "F-CIESM-03",
+      "locations": [
+        "extraTex/4.6.\u5176\u4ed6.tex:4"
+      ],
+      "status": "needs_human_review"
+    }
+  ],
+  "provisional_markers": [
+    "\u3010\u6682\u5b9a 0.1\u00b0\u65e5\u5c3a\u5ea6\u533a\u57df\u7f51\u683c\u3011",
+    "\u3010\u6682\u5b9a\u8bad\u7ec3\u671f 1981\u20142005 \u5e74\u3001\u9a8c\u8bc1\u671f 2006\u20142009 \u5e74\u3001\u6d4b\u8bd5\u671f 2010\u20142014 \u5e74\u3011",
+    "\u3010\u6682\u5b9a\u8fde\u7eed 7 \u65e5\u7a97\u53e3\u3011",
+    "\u3010\u6682\u5b9a\u8bad\u7ec3\u671f\u7b2c 95 \u767e\u5206\u4f4d\u4f5c\u4e3a\u9ad8\u503c\u4e8b\u4ef6\u9608\u503c\u3001\u964d\u6c34 1 \u6beb\u7c73/\u65e5\u4f5c\u4e3a\u6e7f\u65e5\u9608\u503c\u3011",
+    "\u3010\u6682\u5b9a\u6cb3\u897f\u8d70\u5eca\u2014\u7941\u8fde\u5c71\u5730\u533a\u3011",
+    "\u3010\u6682\u5b9a 3 \u6b21\u72ec\u7acb\u968f\u673a\u79cd\u5b50\u3001\u6309\u5e74\u4efd\u4e0e\u4e8b\u4ef6\u5757\u91cd\u62bd\u6837\u5f62\u6210 95\\% \u7f6e\u4fe1\u533a\u95f4\u3011",
+    "\u3010\u6682\u5b9a\u7531\u65e5\u5c3a\u5ea6\u6761\u4ef6\u751f\u6210 6 \u5c0f\u65f6\u7edf\u8ba1\u4e00\u81f4\u7684\u5b50\u65f6\u6bb5\u5e8f\u5217\u3011"
+  ],
+  "readiness": {
+    "text_drafted": true,
+    "scientific_p0p1_found": false,
+    "submission_ready": false,
+    "reason": "3 unique factual gaps remain; mandatory proposal attachments and actual interface/data arrangements are not yet complete."
+  },
+  "stage_assessment": {
+    "correspondence": {
+      "decision": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u9ad8"
+    },
+    "panel": {
+      "decision": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u9ad8"
+    },
+    "basis": "Current version direct submission; readiness gaps, not fabricated scientific defects."
+  },
+  "reviewed_inputs": [
+    {
+      "path": "extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex",
+      "sha256": "67b687d5b1e2159871b616cdcc3490c4b0738f5b5722809cce10951b6f3a8c4a"
+    },
+    {
+      "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "sha256": "63406dee12e3ae49c8a2bb7ef9d452f391e23d70521227b1c5462755282db646"
+    },
+    {
+      "path": "extraTex/2.2.\u7279\u8272\u4e0e\u521b\u65b0.tex",
+      "sha256": "6e82997ab6cd3009ff2d72bc2ac7a6d458bfbc07fcc530131f55578c680c9935"
+    },
+    {
+      "path": "extraTex/2.3.\u5e74\u5ea6\u7814\u7a76\u8ba1\u5212.tex",
+      "sha256": "226170f7c3e2b95b3e1e5d2b211bcc5419ccc8693c8b276e25af3e0bf0a98b48"
+    },
+    {
+      "path": "extraTex/3.1.\u7814\u7a76\u57fa\u7840.tex",
+      "sha256": "521c3f98f98e8d11fe897a5fde6f05e336fec09506b8304f63e4ea336f0bbd56"
+    },
+    {
+      "path": "extraTex/3.2.\u5de5\u4f5c\u6761\u4ef6.tex",
+      "sha256": "28f864a55bc844614d418b88ffa87b2844b5569c1808ca1291237d69e7f835fe"
+    },
+    {
+      "path": "extraTex/3.3.\u627f\u62c5\u9879\u76ee\u60c5\u51b5.tex",
+      "sha256": "f3d4de927a617536cc1a87267d34b0d9b97eba25b26e4da58b2a4bf023490c05"
+    },
+    {
+      "path": "extraTex/3.4.\u5b8c\u6210\u56fd\u57fa\u9879\u76ee\u60c5\u51b5.tex",
+      "sha256": "5b7c184533d8049aedd50fd207b35a10a0034d0e24964420ab7eac8741d7456f"
+    },
+    {
+      "path": "extraTex/4.1.\u4e0d\u540c\u7c7b\u578b\u56fd\u57fa\u60c5\u51b5.tex",
+      "sha256": "717b789b2dd070f0e93b1c640d321578bc85c5c23eccbf57e053aa078f9338e5"
+    },
+    {
+      "path": "extraTex/4.2.\u540c\u5e74\u5355\u4f4d\u4e0d\u4e00\u81f4.tex",
+      "sha256": "3b6c509f7883a1682488b9418ce4741f29fbfc1e53f9d38c2500ccf27f3e5057"
+    },
+    {
+      "path": "extraTex/4.3.\u627f\u62c5\u4e2d\u5355\u4f4d\u4e0d\u4e00\u81f4.tex",
+      "sha256": "a1b60ac952ca79ad59ead0ff4a535957ca74b91f6a98bcfe40f45e9e82e7ddd1"
+    },
+    {
+      "path": "extraTex/4.4.\u4e0d\u540c\u4e13\u4e1a\u6280\u672f\u804c\u52a1\u7684\u7533\u8bf7.tex",
+      "sha256": "fdc0441dbb4296d8bd7d586fb14ef11efa85a4ddbe91e34b6dc51c61d9bcfd4e"
+    },
+    {
+      "path": "extraTex/4.6.\u5176\u4ed6.tex",
+      "sha256": "ed365497461876355f5096d37c611bd80f88507ba4f9800482288508188c868f"
+    },
+    {
+      "path": "references/myexample.bib",
+      "sha256": "a45b0021fbb42e5642c96e5903d7cbc05f78a01f3eb02a1f07c7109557bc3b9f"
+    }
+  ]
+}

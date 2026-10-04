@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "page_id": "page_007",
+  "runtime_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/pages/page_007/page.pptx",
+    "zip_ok": true,
+    "slides": 1,
+    "images": 0,
+    "editable_text_shapes": 18,
+    "shape_count": 41,
+    "all_text": "两因素对照无地形有地形独立表征共享表征固定比较条件相同信息校正与投影总容量与预算参考资料配对空间结构主指标依赖次要指标CIESM 非配对季节与联合统计聚合残差结论条件逐变量非退化时空块不确定性",
+    "required_text": [
+      "两因素对照",
+      "无地形",
+      "有地形",
+      "独立表征",
+      "共享表征",
+      "固定比较条件",
+      "相同信息",
+      "校正与投影",
+      "总容量与预算",
+      "参考资料配对",
+      "空间结构主指标",
+      "依赖次要指标",
+      "CIESM 非配对",
+      "季节与联合统计",
+      "聚合残差",
+      "结论条件",
+      "逐变量非退化",
+      "时空块不确定性"
+    ],
+    "missing_required_text": [],
+    "missing_parts": [],
+    "missing_relationship_targets": [],
+    "missing_asset_provenance": [],
+    "missing_manifest_images": [],
+    "missing_provenance_sources": [],
+    "invalid_asset_provenance": [],
+    "media_hash_mismatches": [],
+    "asset_provenance_checked": 0,
+    "manifest_image_count": 0,
+    "media_manifest_mismatch": false,
+    "relationship_targets_checked": 9,
+    "warnings": [],
+    "page_contract_violations": [],
+    "passed": true
+  },
+  "self_check": {
+    "source_reviewed": true,
+    "text_hints_reviewed": true,
+    "three_step_decisions_recorded_before_text": true,
+    "preview_and_contact_sheet_reviewed": true,
+    "all_18_readable_text_items_native_editable": true,
+    "all_five_panels_and_grid_native_editable": true,
+    "four_condition_cells_blank": true,
+    "panels_unconnected": true,
+    "same_level_font_sizes_consistent": true,
+    "no_text_clipping_or_overlap": true,
+    "slight_corner_geometry_preserved": true,
+    "no_raster_assets_needed": true,
+    "no_formula_candidates": true
+  },
+  "warnings": [
+    {
+      "type": "font-and-edge-rendering",
+      "note": "Noto Sans CJK SC preserves readable content and text hierarchy; glyph shapes/weight and crisp native border antialiasing differ slightly from the raster source."
+    }
+  ],
+  "evidence": {
+    "native_text_shapes": 18,
+    "native_structural_shapes": 23,
+    "images": 0,
+    "editable_text_coverage": "18/18",
+    "matrix_layout": "3 rows × 3 columns; four interior condition cells blank",
+    "preview": "preview.png",
+    "contact_sheet": "split_assets_contact.png"
+  }
+}

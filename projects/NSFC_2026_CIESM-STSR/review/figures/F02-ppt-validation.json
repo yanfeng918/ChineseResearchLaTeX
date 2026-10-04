@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "runtime_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/pages/page_002/page.pptx",
+    "zip_ok": true,
+    "slides": 1,
+    "images": 0,
+    "editable_text_shapes": 21,
+    "shape_count": 137,
+    "all_text": "参考资料内部粗细配对训练与检验CIESM训练期拟合校正应用资料R1 数据构建R2 联合重建R3 约束分析R4 集成验证变量定义粗化与划分共享表征变量专用输出地形条件聚合与非负区域评价接口与应用两类证据配对重建检验非配对模式应用",
+    "required_text": [
+      "参考资料",
+      "内部粗细配对",
+      "训练与检验",
+      "CIESM",
+      "训练期拟合校正",
+      "应用资料",
+      "R1 数据构建",
+      "R2 联合重建",
+      "R3 约束分析",
+      "R4 集成验证",
+      "变量定义",
+      "粗化与划分",
+      "共享表征",
+      "变量专用输出",
+      "地形条件",
+      "聚合与非负",
+      "区域评价",
+      "接口与应用",
+      "两类证据",
+      "配对重建检验",
+      "非配对模式应用"
+    ],
+    "missing_required_text": [],
+    "missing_parts": [],
+    "missing_relationship_targets": [],
+    "missing_asset_provenance": [],
+    "missing_manifest_images": [],
+    "missing_provenance_sources": [],
+    "invalid_asset_provenance": [],
+    "media_hash_mismatches": [],
+    "asset_provenance_checked": 0,
+    "manifest_image_count": 0,
+    "media_manifest_mismatch": false,
+    "relationship_targets_checked": 9,
+    "warnings": [],
+    "page_contract_violations": [],
+    "passed": true
+  },
+  "final_self_check": {
+    "source_inspected": true,
+    "text_hints_inspected": true,
+    "three_step_decision_file": "decisions.json",
+    "preview_and_contact_sheet_inspected": true,
+    "text_complete": true,
+    "text_count": 21,
+    "text_font_levels_calibrated": true,
+    "no_text_clipping_or_unexpected_wrapping": true,
+    "background_consistent": true,
+    "all_visual_objects_native_structure": true,
+    "native_shapes_preserve_arrow_directions": true,
+    "small_corner_geometry_preserved": true,
+    "no_duplicate_text_or_foreground": true,
+    "required_files_present": true
+  },
+  "warnings": [
+    {
+      "type": "font-rendering",
+      "severity": "low",
+      "note": "Native Noto Sans CJK SC Medium/Bold preserves measured glyph size and text positions; font edges and light source outline effects differ slightly from the raster source."
+    }
+  ],
+  "notes": [
+    "builtin-ink returned no detected lines. All 21 source lines were read visually, with neutral-ink bounding boxes measured from the source and common font sizes assigned by level.",
+    "The page contains only native structural backgrounds, panel borders, divider grids and ordinary arrows, so the asset separation set is empty."
+  ]
+}

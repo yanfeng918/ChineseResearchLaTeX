@@ -1,0 +1,139 @@
+{
+  "diagram_type": "Scientific problem overview: terrain-aware multivariate climate reconstruction",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "3:2",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "9.5pt",
+      "secondary_note": "8pt"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt",
+      "internal_divider": "1pt",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "branch": "scene: match existing blue figures, dense scientific content",
+    "alternate": "Blue Monochrome",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "fill": "#FFFFFF",
+    "arrow": "#4D4D4D",
+    "semantic_binding": "blue outlines for conditions and outputs; dark solid arrows for reconstruction; dashed arrow for aggregation check"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left upper column",
+      "exact_title": "粗尺度条件",
+      "exact_text": [
+        "CIESM 原始场 X",
+        "约 1°",
+        "分布校正",
+        "目标状态 X★"
+      ],
+      "icon": "coarse 4x4 grid thumbnail; vertical calibration arrow",
+      "source": "extraTex/1.1.立项依据.tex:13; extraTex/1.2.研究内容.tex:61"
+    },
+    {
+      "relative_position": "center upper column, wider",
+      "exact_title": "新疆局地差异",
+      "exact_text": [
+        "北 → 南",
+        "准噶尔盆地",
+        "天山",
+        "塔里木盆地",
+        "冬季逆温",
+        "地形抬升与积雪",
+        "绿洲冷岛",
+        "沙尘削弱短波",
+        "地形与下垫面"
+      ],
+      "icon": "flat cross-section of two basins separated by a mountain range, small monochrome process marks",
+      "source": "extraTex/1.1.立项依据.tex:4-9"
+    },
+    {
+      "relative_position": "right upper column",
+      "exact_title": "联合重建",
+      "exact_text": [
+        "0.1°目标网格 · 逐日",
+        "气温",
+        "近地面风",
+        "地表向下短波",
+        "降水",
+        "邻日连续性"
+      ],
+      "icon": "four fine-grid contour thumbnails in 2x2 arrangement, depicting different schematic spatial fields",
+      "source": "extraTex/1.2.研究内容.tex:29"
+    },
+    {
+      "relative_position": "separate route beneath top panels",
+      "exact_label": "回聚合检查",
+      "flow": "dashed arrow from fine-grid reconstructed output to target X★ only, never to original X",
+      "source": "extraTex/1.2.研究内容.tex:79-92"
+    },
+    {
+      "relative_position": "three equal cells below main graphic",
+      "exact_title": "待检验的科学问题",
+      "exact_text": [
+        "目标场有无可学信息？",
+        "地形与共享是否增益？",
+        "一致性与细节能否兼容？"
+      ],
+      "icon": "small magnifier, paired branch diagram, balance glyph; scientific line art",
+      "source": "extraTex/1.1.立项依据.tex:53-71"
+    },
+    {
+      "relative_position": "bottom horizontal strip",
+      "exact_title": "验证依据",
+      "exact_text": [
+        "参考资料内配对",
+        "CIESM 非配对应用",
+        "独立台站验证"
+      ],
+      "icon": "paired grid, distribution outline, station point respectively",
+      "source": "extraTex/1.2.研究内容.tex:53,106-110"
+    }
+  ],
+  "caption_note": [
+    "网格与南北剖面均为概念示意，不代表观测或模拟结果。",
+    "回聚合检查针对校正后大尺度状态 X★=B(X)，不强制保留原始模式偏差。",
+    "参考资料内配对用于训练与重建评价；真实 CIESM 不与观测按同日天气强行配对，台站验证与训练隔离。",
+    "0.1°为重建目标网格，细化本身不等于新增真实信息。"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* strings, no invented labels or results.",
+    "White canvas and boxes with colored borders only.",
+    "Every major panel has a meaningful visual anchor, no empty grids replacing content.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering, no gradients, no shadows.",
+    "Arrows never cross text. Dashed return terminates at X★, not X.",
+    "No geographic border map; terrain profile is conceptual.",
+    "No scores, measured data, causal claims beyond supplied text.",
+    "Local-process labels explain background mechanisms, not additional dynamic predictors; only terrain and land surface condition tag feeds reconstruction."
+  ],
+  "actual_rendering": {
+    "backend": "built-in image_gen",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "format": "PNG embedded unchanged in PDF",
+    "forward_route": "X★ target grid right port routed below center to reconstruction, independent terrain tag arrow",
+    "feedback_route": "dashed reconstruction-to-X★",
+    "exact_mechanism_descriptions": [
+      "盆地地形导致\n近地面逆温",
+      "迎风坡气流抬升\n促进降水与积雪",
+      "绿洲下垫面差异\n形成局地冷岛",
+      "沙尘气溶胶\n削弱地表短波"
+    ],
+    "notes": "生成输出加入了局地机制的短说明，已对照正文核查；科学关系与文稿图注共同解释。"
+  }
+}

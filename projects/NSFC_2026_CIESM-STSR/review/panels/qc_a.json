@@ -1,0 +1,400 @@
+{
+  "panel": "A",
+  "agent": "/root/qc_review_a",
+  "date": "2026-09-06",
+  "scope": "13 active body files, bibliography, project/applicant fact files, cached metadata and evidence matrix",
+  "read_only": true,
+  "all_active_body_read": true,
+  "current_stage_review": {
+    "letter_review": "给过",
+    "panel_review": "不给过",
+    "confidence": "中",
+    "formal_submit_ready": false,
+    "reason": "文字科学设计基本成立；实际资料、联调合作、团队和正式附件缺口仍限制当前直接提交及会评竞争力"
+  },
+  "counts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 2,
+    "cjk_source_characters": 12755,
+    "citation_keys": 25,
+    "bib_entries": 25,
+    "missing_keys": 0,
+    "uncited_entries": 0,
+    "gap_markers": 4,
+    "unique_gap_ids": 3,
+    "provisional_markers": 7
+  },
+  "findings": [
+    {
+      "id": "A-P2-01",
+      "severity": "P2",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 82,
+      "title": "可补主要评价量的离散计算与近零尺度处理约定",
+      "autonomously_fixable": true,
+      "mandatory": false
+    },
+    {
+      "id": "A-P2-02",
+      "severity": "P2",
+      "file": "extraTex/3.1.研究基础.tex",
+      "line": 14,
+      "title": "研究基础可减少重复 DOI 和题录核验过程描述",
+      "autonomously_fixable": true,
+      "mandatory": false
+    }
+  ],
+  "gaps": [
+    {
+      "id": "F-CIESM-01",
+      "locations": [
+        "extraTex/3.2.工作条件.tex:12"
+      ],
+      "resolution": "申请人或合作方提供真实数据/联调事实",
+      "severity": "gap_not_P0_P1"
+    },
+    {
+      "id": "F-CIESM-02",
+      "locations": [
+        "extraTex/3.1.研究基础.tex:27",
+        "extraTex/3.3.承担项目情况.tex:15"
+      ],
+      "resolution": "申请人确认参与者及在研项目",
+      "severity": "gap_not_P0_P1"
+    },
+    {
+      "id": "F-CIESM-03",
+      "locations": [
+        "extraTex/4.6.其他.tex:4"
+      ],
+      "resolution": "申请人完成正式附件与签章",
+      "severity": "gap_not_P0_P1"
+    }
+  ],
+  "qc_coverage": [
+    "文风可读性",
+    "引用真伪和错引风险",
+    "篇幅和结构",
+    "逻辑闭环",
+    "缩略语和术语",
+    "事实一致性",
+    "统计与实验设计"
+  ],
+  "focused_checks": {
+    "paired_reference_unpaired_ciesm": true,
+    "wind_temporal_definition": true,
+    "unique_primary_and_nondegradation": true,
+    "finite_sample_sharing": true,
+    "not_full_conservation": true
+  },
+  "evidence_limits": {
+    "metadata": "read prior real Crossref cache and DOI/title evidence; no new fetch by this panel",
+    "full_papers": "not independently full-text reviewed by this panel",
+    "pdf": "not compiled or visually checked by this panel",
+    "funding": "user-confirmed P02 one year, 4.5万元 proposed"
+  },
+  "input_files": [
+    {
+      "path": "extraTex/1.1.立项依据.tex",
+      "sha256": "67b687d5b1e2159871b616cdcc3490c4b0738f5b5722809cce10951b6f3a8c4a",
+      "cjk": 2817
+    },
+    {
+      "path": "extraTex/2.1.研究内容.tex",
+      "sha256": "63406dee12e3ae49c8a2bb7ef9d452f391e23d70521227b1c5462755282db646",
+      "cjk": 5676
+    },
+    {
+      "path": "extraTex/2.2.特色与创新.tex",
+      "sha256": "6e82997ab6cd3009ff2d72bc2ac7a6d458bfbc07fcc530131f55578c680c9935",
+      "cjk": 474
+    },
+    {
+      "path": "extraTex/2.3.年度研究计划.tex",
+      "sha256": "226170f7c3e2b95b3e1e5d2b211bcc5419ccc8693c8b276e25af3e0bf0a98b48",
+      "cjk": 729
+    },
+    {
+      "path": "extraTex/3.1.研究基础.tex",
+      "sha256": "521c3f98f98e8d11fe897a5fde6f05e336fec09506b8304f63e4ea336f0bbd56",
+      "cjk": 1403
+    },
+    {
+      "path": "extraTex/3.2.工作条件.tex",
+      "sha256": "28f864a55bc844614d418b88ffa87b2844b5569c1808ca1291237d69e7f835fe",
+      "cjk": 596
+    },
+    {
+      "path": "extraTex/3.3.承担项目情况.tex",
+      "sha256": "f3d4de927a617536cc1a87267d34b0d9b97eba25b26e4da58b2a4bf023490c05",
+      "cjk": 533
+    },
+    {
+      "path": "extraTex/3.4.完成国基项目情况.tex",
+      "sha256": "5b7c184533d8049aedd50fd207b35a10a0034d0e24964420ab7eac8741d7456f",
+      "cjk": 84
+    },
+    {
+      "path": "extraTex/4.1.不同类型国基情况.tex",
+      "sha256": "717b789b2dd070f0e93b1c640d321578bc85c5c23eccbf57e053aa078f9338e5",
+      "cjk": 85
+    },
+    {
+      "path": "extraTex/4.2.同年单位不一致.tex",
+      "sha256": "3b6c509f7883a1682488b9418ce4741f29fbfc1e53f9d38c2500ccf27f3e5057",
+      "cjk": 62
+    },
+    {
+      "path": "extraTex/4.3.承担中单位不一致.tex",
+      "sha256": "a1b60ac952ca79ad59ead0ff4a535957ca74b91f6a98bcfe40f45e9e82e7ddd1",
+      "cjk": 68
+    },
+    {
+      "path": "extraTex/4.4.不同专业技术职务的申请.tex",
+      "sha256": "fdc0441dbb4296d8bd7d586fb14ef11efa85a4ddbe91e34b6dc51c61d9bcfd4e",
+      "cjk": 64
+    },
+    {
+      "path": "extraTex/4.6.其他.tex",
+      "sha256": "ed365497461876355f5096d37c611bd80f88507ba4f9800482288508188c868f",
+      "cjk": 164
+    }
+  ],
+  "reference_checks": [
+    {
+      "key": "Lin2020CIESM",
+      "doi": "10.1029/2019ms002036",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Community Integrated Earth System Model (CIESM): Description and Evaluation"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Hersbach2020ERA5",
+      "doi": "10.1002/qj.3803",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "The ERA5 global reanalysis"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Munoz2021ERA5Land",
+      "doi": "10.5194/essd-13-4349-2021",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "ERA5-Land: a state-of-the-art global reanalysis dataset for land applications"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Eyring2016CMIP6",
+      "doi": "10.5194/gmd-9-1937-2016",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6)  experimental design and organization"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Bano2022DeepESD",
+      "doi": "10.5194/gmd-15-6747-2022",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Downscaling multi-model climate projection ensembles with deep learning (DeepESD): contribution to CORDEX EUR-44"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Mardani2025CorrDiff",
+      "doi": "10.1038/s43247-025-02042-5",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Residual corrective diffusion modeling for km-scale atmospheric downscaling"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Gonzalez2024Hard",
+      "doi": "10.1609/aaaiss.v2i1.27650",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Multi-Variable Hard Physical Constraints for Climate Model Downscaling"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Aich2026Diffusion",
+      "doi": "10.5194/gmd-19-1791-2026",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Conditional diffusion models for downscaling and bias  correction of Earth system model precipitation"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Hess2025Scale",
+      "doi": "10.1038/s42256-025-00980-5",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Fast, scale-adaptive and uncertainty-aware downscaling of Earth system model fields with generative machine learning"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Schmidt2025Coherent",
+      "doi": "10.1038/s41612-025-01157-y",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Bischoff2024Unpaired",
+      "doi": "10.1175/aies-d-23-0039.1",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Unpaired Downscaling of Fluid Flows with Diffusion Bridges"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Lange2019ISIMIP",
+      "doi": "10.5194/gmd-12-3055-2019",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Trend-preserving bias adjustment and statistical downscaling with ISIMIP3BASD (v1.0)"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Cannon2018MBCn",
+      "doi": "10.1007/s00382-017-3580-6",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Multivariate quantile mapping bias correction: an N-dimensional probability density function transform for climate model simulations of multiple variables"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "DWT2025",
+      "doi": "10.1016/j.energy.2025.139283",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "DWT-Former: Fusing wavelet-based multi-scale features and transformer-based temporal representations for photovoltaic power forecasting"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "WaveKAN2026",
+      "doi": "10.1016/j.neucom.2026.133361",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "WaveKAN: Adaptive wavelet decomposition and Kolmogorov-Arnold network for long-term time series forecasting"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Pretrain2026",
+      "doi": "10.5194/gmd-19-5781-2026",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Pre-training for deep statistical climate downscaling: enhancing consistency and robustness across regional datasets"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Stengel2020",
+      "doi": "10.1073/pnas.1918964117",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Adversarial super-resolution of climatological wind and solar data"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "DeepSD2017",
+      "doi": "10.1145/3097983.3098004",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "DeepSD"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Harris2022",
+      "doi": "10.1029/2022ms003120",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "A Generative Deep Learning Approach to Stochastic Downscaling of Precipitation Forecasts"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Maraun2017",
+      "doi": "10.1038/nclimate3418",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Towards process-informed bias correction of climate change simulations"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Wan2023",
+      "doi": "10.52202/075280-2069",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Debias Coarsely, Sample Conditionally: Statistical Downscaling through Optimal Transport and Probabilistic Diffusion Models"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Geiss2022",
+      "doi": "10.5194/gmd-15-6677-2022",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Downscaling atmospheric chemistry simulations with physically consistent deep learning"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Serifi2021",
+      "doi": "10.3389/fclim.2021.656479",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Spatio-Temporal Downscaling of Climate Data Using Convolutional and Error-Predicting Neural Networks"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Trend2024",
+      "doi": "10.1007/s00382-024-07406-9",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "Multivariate bias correction and downscaling of climate models with trend-preserving deep learning"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    },
+    {
+      "key": "Rampal2024",
+      "doi": "10.1029/2024gl112492",
+      "cached_metadata_match": true,
+      "title_from_metadata": [
+        "On the Extrapolation of Generative Adversarial Networks for Downscaling Precipitation Extremes in Warmer Climates"
+      ],
+      "semantic_evidence": "project evidence matrix plus current citation context; not independent full-text check"
+    }
+  ],
+  "provisional_markers": [
+    "【暂定 0.1°日尺度区域网格】",
+    "【暂定训练期 1981—2005 年、验证期 2006—2009 年、测试期 2010—2014 年】",
+    "【暂定连续 7 日窗口】",
+    "【暂定训练期第 95 百分位作为高值事件阈值、降水 1 毫米/日作为湿日阈值】",
+    "【暂定河西走廊—祁连山地区】",
+    "【暂定 3 次独立随机种子、按年份与事件块重抽样形成 95\\% 置信区间】",
+    "【暂定由日尺度条件生成 6 小时统计一致的子时段序列】"
+  ]
+}

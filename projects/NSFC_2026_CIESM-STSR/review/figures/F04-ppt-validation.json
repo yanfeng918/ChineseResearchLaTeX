@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "page_id": "page_004",
+  "runtime_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/pages/page_004/page.pptx",
+    "zip_ok": true,
+    "slides": 1,
+    "images": 0,
+    "editable_text_shapes": 21,
+    "shape_count": 134,
+    "all_text": "邻日粗场相同多变量输入地形条件高程与下垫面季节信息日序条件联合学习共享时空表征多尺度背景局地残差变量专用输出气温风辐射降水可选随机残差条件可能样本公平比较等信息独立基线同输入与校正同总容量与预算",
+    "required_text": [
+      "邻日粗场",
+      "相同多变量输入",
+      "地形条件",
+      "高程与下垫面",
+      "季节信息",
+      "日序条件",
+      "联合学习",
+      "共享时空表征",
+      "多尺度背景",
+      "局地残差",
+      "变量专用输出",
+      "气温",
+      "风",
+      "辐射",
+      "降水",
+      "可选随机残差",
+      "条件可能样本",
+      "公平比较",
+      "等信息独立基线",
+      "同输入与校正",
+      "同总容量与预算"
+    ],
+    "missing_required_text": [],
+    "missing_parts": [],
+    "missing_relationship_targets": [],
+    "missing_asset_provenance": [],
+    "missing_manifest_images": [],
+    "missing_provenance_sources": [],
+    "invalid_asset_provenance": [],
+    "media_hash_mismatches": [],
+    "asset_provenance_checked": 0,
+    "manifest_image_count": 0,
+    "media_manifest_mismatch": false,
+    "relationship_targets_checked": 9,
+    "warnings": [],
+    "page_contract_violations": [],
+    "passed": true
+  },
+  "visual_self_check": {
+    "compared": [
+      "source.png",
+      "preview.png",
+      "split_assets_contact.png"
+    ],
+    "background_consistent": true,
+    "all_21_text_items_visible_and_editable": true,
+    "same_level_font_sizes_consistent": true,
+    "four_output_labels_and_original_branch_directions_preserved": true,
+    "conditional_residual_dashed_route_preserved": true,
+    "independent_baseline_preserved": true,
+    "straight_corners_preserved": true,
+    "foreground_asset_count": 0,
+    "raster_assets_required": false,
+    "no_text_overflow_or_occlusion": true
+  },
+  "warnings": [
+    {
+      "type": "low-risk-font-rendering",
+      "detail": "Noto Sans CJK SC retains the measured type hierarchy with minor glyph-width, weight and antialiasing differences from the source. Solid and dashed native edges retain their source-pixel geometry with minor edge-rendering differences."
+    }
+  ]
+}

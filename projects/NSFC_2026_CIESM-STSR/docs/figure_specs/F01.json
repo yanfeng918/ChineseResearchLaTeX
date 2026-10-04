@@ -1,0 +1,85 @@
+{
+  "diagram_type": "复杂地形下的跨尺度重建问题",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Three large columns, left coarse regular grid, middle nested fine grid with three banded rows (no map or mountain icon), right two equal question boxes; bidirectional scale relationship with forward solid arrow and dashed aggregation-return arrow.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "左上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "大尺度状态",
+      "exact_text": "CIESM\n粗网格",
+      "source": "extraTex/1.1.立项依据.tex: 这里的高分辨率增强具有"
+    },
+    {
+      "relative_position": "中上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "地形条件",
+      "exact_text": "山地与盆地\n局地差异",
+      "source": "extraTex/1.1.立项依据.tex: 这里的高分辨率增强具有"
+    },
+    {
+      "relative_position": "右上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "联合重建",
+      "exact_text": "气温　风\n辐射　降水",
+      "source": "extraTex/1.1.立项依据.tex: 这里的高分辨率增强具有"
+    },
+    {
+      "relative_position": "中下",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "待检验问题",
+      "exact_text": "共享表征收益\n一致性与细节",
+      "source": "extraTex/1.1.立项依据.tex: 这里的高分辨率增强具有"
+    },
+    {
+      "relative_position": "底部",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "证据边界",
+      "exact_text": "研究方案示意",
+      "source": "extraTex/1.1.立项依据.tex: 这里的高分辨率增强具有"
+    }
+  ],
+  "exact_arrow_labels": [
+    "粗尺度条件",
+    "局地重建",
+    "回聚合检查"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "run_id": "panel_c",
+  "generated_at": "2026-09-06T22:46:52.992262",
+  "project_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CIESM-STSR",
+  "scope": {
+    "panel": "C",
+    "read_only": true,
+    "read_other_panels": false,
+    "expert_profiles": 7,
+    "grant_type": "P02\u5f00\u653e\u8bfe\u9898",
+    "duration": "2027\u5e74\u4e00\u5e74",
+    "funding_wan": 4.5,
+    "funding_status": "\u5efa\u8bae\u7533\u8bf7\u989d",
+    "active_body_file_count": 13,
+    "files": [
+      "extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex",
+      "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "extraTex/2.2.\u7279\u8272\u4e0e\u521b\u65b0.tex",
+      "extraTex/2.3.\u5e74\u5ea6\u7814\u7a76\u8ba1\u5212.tex",
+      "extraTex/3.1.\u7814\u7a76\u57fa\u7840.tex",
+      "extraTex/3.2.\u5de5\u4f5c\u6761\u4ef6.tex",
+      "extraTex/3.3.\u627f\u62c5\u9879\u76ee\u60c5\u51b5.tex",
+      "extraTex/3.4.\u5b8c\u6210\u56fd\u57fa\u9879\u76ee\u60c5\u51b5.tex",
+      "extraTex/4.1.\u4e0d\u540c\u7c7b\u578b\u56fd\u57fa\u60c5\u51b5.tex",
+      "extraTex/4.2.\u540c\u5e74\u5355\u4f4d\u4e0d\u4e00\u81f4.tex",
+      "extraTex/4.3.\u627f\u62c5\u4e2d\u5355\u4f4d\u4e0d\u4e00\u81f4.tex",
+      "extraTex/4.4.\u4e0d\u540c\u4e13\u4e1a\u6280\u672f\u804c\u52a1\u7684\u7533\u8bf7.tex",
+      "extraTex/4.6.\u5176\u4ed6.tex"
+    ],
+    "source_sha256": {
+      "extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex": "67b687d5b1e2159871b616cdcc3490c4b0738f5b5722809cce10951b6f3a8c4a",
+      "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex": "63406dee12e3ae49c8a2bb7ef9d452f391e23d70521227b1c5462755282db646",
+      "extraTex/2.2.\u7279\u8272\u4e0e\u521b\u65b0.tex": "6e82997ab6cd3009ff2d72bc2ac7a6d458bfbc07fcc530131f55578c680c9935",
+      "extraTex/2.3.\u5e74\u5ea6\u7814\u7a76\u8ba1\u5212.tex": "226170f7c3e2b95b3e1e5d2b211bcc5419ccc8693c8b276e25af3e0bf0a98b48",
+      "extraTex/3.1.\u7814\u7a76\u57fa\u7840.tex": "521c3f98f98e8d11fe897a5fde6f05e336fec09506b8304f63e4ea336f0bbd56",
+      "extraTex/3.2.\u5de5\u4f5c\u6761\u4ef6.tex": "28f864a55bc844614d418b88ffa87b2844b5569c1808ca1291237d69e7f835fe",
+      "extraTex/3.3.\u627f\u62c5\u9879\u76ee\u60c5\u51b5.tex": "f3d4de927a617536cc1a87267d34b0d9b97eba25b26e4da58b2a4bf023490c05",
+      "extraTex/3.4.\u5b8c\u6210\u56fd\u57fa\u9879\u76ee\u60c5\u51b5.tex": "5b7c184533d8049aedd50fd207b35a10a0034d0e24964420ab7eac8741d7456f",
+      "extraTex/4.1.\u4e0d\u540c\u7c7b\u578b\u56fd\u57fa\u60c5\u51b5.tex": "717b789b2dd070f0e93b1c640d321578bc85c5c23eccbf57e053aa078f9338e5",
+      "extraTex/4.2.\u540c\u5e74\u5355\u4f4d\u4e0d\u4e00\u81f4.tex": "3b6c509f7883a1682488b9418ce4741f29fbfc1e53f9d38c2500ccf27f3e5057",
+      "extraTex/4.3.\u627f\u62c5\u4e2d\u5355\u4f4d\u4e0d\u4e00\u81f4.tex": "a1b60ac952ca79ad59ead0ff4a535957ca74b91f6a98bcfe40f45e9e82e7ddd1",
+      "extraTex/4.4.\u4e0d\u540c\u4e13\u4e1a\u6280\u672f\u804c\u52a1\u7684\u7533\u8bf7.tex": "fdc0441dbb4296d8bd7d586fb14ef11efa85a4ddbe91e34b6dc51c61d9bcfd4e",
+      "extraTex/4.6.\u5176\u4ed6.tex": "ed365497461876355f5096d37c611bd80f88507ba4f9800482288508188c868f"
+    },
+    "compile_or_visual_review": false
+  },
+  "summary": {
+    "P0": 0,
+    "P1": 1,
+    "P2": 2,
+    "fact_gap_ids": 3,
+    "fact_gap_occurrences": 4,
+    "tentative_occurrences": 7,
+    "unfinished_body_placeholders": 0,
+    "submission_ready": false,
+    "submission_reason": "F-CIESM-01/02/03\u5c1a\u5f85\u8865\u9f50\uff1b\u8fd9\u4e9b\u4e8b\u5b9e\u7f3a\u53e3\u4e0d\u8ba1\u5165P0/P1\u3002",
+    "scientific_alignment": "03\u4e3b\u95ee\u9898\u4e2d\u7684\u6709\u9650\u6837\u672c\u5171\u4eab\u8868\u5f81\u3001\u7b49\u4fe1\u606f\u5bf9\u7167\u548c\u5730\u5f62\u4ea4\u4e92\u5df2\u8fdb\u5165\u6b63\u6587\uff1b\u65f6\u95f4\u6269\u5c55\u4e0e\u8fb9\u754c\u8bca\u65ad\u4fdd\u6301\u6761\u4ef6\u6027\u3002"
+  },
+  "findings": [
+    {
+      "id": "C-P1-001",
+      "severity": "P1",
+      "category": "logic",
+      "location": {
+        "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+        "anchor": "\u7b2c82\u884c\uff1b\u540c\u6b65extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex\u7b2c52\u884c"
+      },
+      "related_locations": [
+        {
+          "path": "extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex",
+          "line": 52
+        },
+        {
+          "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+          "line": 82
+        }
+      ],
+      "problem": "\u4e0d\u652f\u6301\u5047\u8bbe\u7684\u7f6e\u4fe1\u533a\u95f4\u65b9\u5411\u672a\u5199\u6e05\u3002\u201c\u7f6e\u4fe1\u533a\u95f4\u6392\u9664\u8be5\u6700\u5c0f\u589e\u76ca\u201d\u540c\u65f6\u5305\u62ec\u533a\u95f4\u5b8c\u5168\u4f4e\u4e8e\u6216\u5b8c\u5168\u9ad8\u4e8e\u8be5\u6570\u503c\uff0c\u4e24\u8005\u7ed3\u8bba\u76f8\u53cd\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u7a33\u5b9a\u53cd\u5411\u6548\u5e94\uff0c\u6216\u7f6e\u4fe1\u533a\u95f4\u6392\u9664\u8be5\u6700\u5c0f\u589e\u76ca\uff0c\u6784\u6210\u4e0d\u652f\u6301\u76f8\u5e94\u589e\u76ca\u5047\u8bbe\u7684\u8bc1\u636e\u3002"
+        },
+        {
+          "type": "note",
+          "detail": "\u793a\u4f8b\uff1a\u03b4=0.05\u3001\u6539\u5584\u533a\u95f4[0.06,0.08]\u6392\u96640.05\uff0c\u5374\u652f\u6301\u8d85\u8fc7\u03b4\u7684\u6539\u5584\u3002\u8be5\u793a\u4f8b\u53ea\u8bf4\u660e\u5224\u636e\uff0c\u4e0d\u662f\u9879\u76ee\u6548\u679c\u6570\u636e\u3002"
+        }
+      ],
+      "recommendation": "\u5b9a\u4e49\u589e\u76ca\u4e3a\u57fa\u7ebf\u8bef\u5dee\u51cf\u672c\u6cd5\u8bef\u5dee\u3002\u4e0a\u754c<\u03b4\u65f6\u4e0d\u652f\u6301\u6709\u610f\u4e49\u589e\u76ca\uff1b\u4e0b\u754c>\u03b4\u4e14\u9010\u53d8\u91cf\u975e\u9000\u5316\u68c0\u67e5\u901a\u8fc7\u65f6\u652f\u6301\uff1b\u5176\u4f59\u4e3a\u8bc1\u636e\u4e0d\u8db3\u3002\u540c\u6b65\u7acb\u9879\u4f9d\u636e\u4e0e\u7814\u7a76\u5185\u5bb9\u4e24\u5904\uff0c\u660e\u786e\u4ea4\u4e92\u6548\u5e94\u53e6\u5224\u3002",
+      "verification": "\u9010\u53e5\u6838\u5bf9\u4e24\u5904\u5224\u636e\uff0c\u5206\u522b\u4ee3\u5165\u533a\u95f4\u4f4e\u4e8e\u3001\u8de8\u8d8a\u3001\u9ad8\u4e8e\u03b4\u4e09\u4e2a\u4f8b\u5b50\uff0c\u786e\u4fdd\u7ed3\u8bba\u4e00\u81f4\u3002",
+      "status": "open",
+      "fixability": "\u53ef\u76f4\u63a5\u4fee\u6b63\u6587\u8868\u8ff0",
+      "funding_limited": false
+    },
+    {
+      "id": "C-P2-001",
+      "severity": "P2",
+      "category": "logic",
+      "location": {
+        "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+        "anchor": "\u7b2c59\u300184\u884c"
+      },
+      "related_locations": [
+        {
+          "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+          "line": 59
+        },
+        {
+          "path": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+          "line": 84
+        }
+      ],
+      "problem": "\u90bb\u65e5\u987a\u5e8f\u5bf9\u7167\u5df2\u6709\uff0c\u4f46\u8865\u5145\u65f6\u95f4\u6307\u6807\u4e3b\u8981\u5217\u81ea\u76f8\u5173\u548c\u4e8b\u4ef6\u7edf\u8ba1\uff0c\u672a\u663e\u5f0f\u5217\u51fa\u65e5\u589e\u91cf\u6216\u8f6c\u6298\u8bca\u65ad\uff1b\u5e73\u6ed1\u4e5f\u53ef\u80fd\u63d0\u9ad8\u81ea\u76f8\u5173\u3002",
+      "evidence": [
+        {
+          "type": "quote",
+          "detail": "\u5e76\u4e0e\u5355\u65e5\u3001\u6253\u4e71\u90bb\u65e5\u987a\u5e8f\u548c\u7f29\u77ed\u7a97\u53e3\u5bf9\u7167"
+        },
+        {
+          "type": "quote",
+          "detail": "\u8865\u5145\u8bc4\u4ef7\u5305\u62ec\u529f\u7387\u8c31\u3001\u90bb\u65e5\u81ea\u76f8\u5173\u2026\u2026"
+        }
+      ],
+      "recommendation": "\u8865\u5145\u4e00\u9879\u65e5\u589e\u91cf\u8bef\u5dee\u6216\u8f6c\u6298\u4fdd\u6301\u8bca\u65ad\uff1b\u56fa\u5b9a\u76ee\u6807\u65e5\u4f4d\u7f6e\u5e76\u68c0\u67e5\u4e71\u5e8f\u662f\u5426\u5f15\u5165\u4e0d\u5408\u7406\u57df\u5916\u6761\u4ef6\u3002\u4f5c\u4e3a\u6b21\u8981\u8bca\u65ad\uff0c\u4e0d\u589e\u52a0\u65b0\u6838\u5fc3\u6a21\u578b\u3002",
+      "verification": "\u786e\u8ba4\u65f6\u95f4\u6536\u76ca\u6709\u4e00\u9879\u4e0d\u80fd\u4ec5\u51ed\u5e73\u6ed1\u63d0\u9ad8\u7684\u6307\u6807\uff0c\u4e14\u987a\u5e8f\u5bf9\u7167\u6709\u76f8\u540c\u7a97\u53e3\u5143\u7d20\u3002",
+      "status": "open",
+      "fixability": "\u53ef\u76f4\u63a5\u8865\u4e00\u81f3\u4e24\u53e5",
+      "funding_limited": false
+    },
+    {
+      "id": "C-P2-002",
+      "severity": "P2",
+      "category": "style",
+      "location": {
+        "path": "extraTex/1.1.\u7acb\u9879\u4f9d\u636e.tex",
+        "anchor": "\u7b2c8\u300117\u300129\u884c\uff1bextraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex\u7b2c86\u884c"
+      },
+      "problem": "CMIP6\u3001ERA5\u3001ESM\u3001DEM\u9996\u6b21\u51fa\u73b0\u65f6\u4e3b\u8981\u7528\u7f29\u5199\u6216\u6570\u636e\u96c6\u540d\u79f0\uff0c\u90bb\u8fd1\u8ba1\u7b97\u673a\u9886\u57df\u8bc4\u5ba1\u9700\u989d\u5916\u731c\u6d4b\u542b\u4e49\u3002",
+      "evidence": [
+        {
+          "type": "note",
+          "detail": "CIESM\u5df2\u6709\u5b8c\u6574\u5b9a\u4e49\uff1b\u6570\u636e/\u6a21\u578b\u4e13\u540d\u5927\u591a\u6709\u4e0a\u4e0b\u6587\u8bf4\u660e\uff0c\u6545\u4e0d\u4f5c\u4e3a\u79d1\u5b66\u7f3a\u9677\u3002\u9884\u68c0\u4e2d\u7684UTF8\u3001AutoFakeBold\u3001\u6837\u5f0f\u5b8f\u7b49\u5c5e\u4e8e\u8bef\u62a5\uff0c\u5df2\u6392\u9664\u3002"
+        }
+      ],
+      "recommendation": "\u4ec5\u4e3a\u5173\u952e\u6570\u636e/\u6a21\u578b\u65cf\u8865\u7b80\u77ed\u4e2d\u6587\u91ca\u4e49\uff0c\u5982\u7b2c\u516d\u9636\u6bb5\u8026\u5408\u6a21\u5f0f\u6bd4\u8f83\u8ba1\u5212\u3001\u7b2c\u4e94\u4ee3\u5168\u7403\u518d\u5206\u6790\u3001\u5730\u7403\u7cfb\u7edf\u6a21\u5f0f\u3001\u6570\u5b57\u9ad8\u7a0b\u6a21\u578b\uff1b\u65e0\u9700\u628a\u6240\u6709\u8f6f\u4ef6\u540d\u79f0\u4e0e\u6a21\u578b\u4e13\u540d\u673a\u68b0\u5c55\u5f00\u3002",
+      "verification": "\u6309main\u5b9e\u9645\u987a\u5e8f\u68c0\u67e5\u5173\u952e\u540d\u8bcd\u9996\u6b21\u51fa\u73b0\u53ef\u7406\u89e3\uff0c\u4e14\u4e0d\u65b0\u589e\u91cd\u590d\u5b9a\u4e49\u3002",
+      "status": "open",
+      "fixability": "\u53ef\u8bfb\u6027\u4f18\u5316",
+      "funding_limited": false
+    }
+  ],
+  "fact_gaps": {
+    "F-CIESM-02": [
+      {
+        "file": "extraTex/3.1.\u7814\u7a76\u57fa\u7840.tex",
+        "line": 27,
+        "description": "\u53c2\u4e0e\u8005\u540d\u5355\u4e0e\u5206\u5de5"
+      },
+      {
+        "file": "extraTex/3.3.\u627f\u62c5\u9879\u76ee\u60c5\u51b5.tex",
+        "line": 15,
+        "description": "\u53c2\u4e0e\u8005\u540d\u5355\u4e0e\u5206\u5de5"
+      }
+    ],
+    "F-CIESM-01": [
+      {
+        "file": "extraTex/3.2.\u5de5\u4f5c\u6761\u4ef6.tex",
+        "line": 12,
+        "description": "\u5408\u4f5c\u4eba\u3001\u6570\u636e\u7248\u672c\u548c\u8054\u8c03\u5b89\u6392"
+      }
+    ],
+    "F-CIESM-03": [
+      {
+        "file": "extraTex/4.6.\u5176\u4ed6.tex",
+        "line": 4,
+        "description": "\u6b63\u5f0f\u7533\u8bf7\u6750\u6599\u4e0e\u9644\u4ef6"
+      }
+    ]
+  },
+  "tentative_designs": [
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 26,
+      "text": "\u3010\u6682\u5b9a 0.1\u00b0\u65e5\u5c3a\u5ea6\u533a\u57df\u7f51\u683c\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 44,
+      "text": "\u3010\u6682\u5b9a\u8bad\u7ec3\u671f 1981\u20142005 \u5e74\u3001\u9a8c\u8bc1\u671f 2006\u20142009 \u5e74\u3001\u6d4b\u8bd5\u671f 2010\u20142014 \u5e74\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 59,
+      "text": "\u3010\u6682\u5b9a\u8fde\u7eed 7 \u65e5\u7a97\u53e3\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 84,
+      "text": "\u3010\u6682\u5b9a\u8bad\u7ec3\u671f\u7b2c 95 \u767e\u5206\u4f4d\u4f5c\u4e3a\u9ad8\u503c\u4e8b\u4ef6\u9608\u503c\u3001\u964d\u6c34 1 \u6beb\u7c73/\u65e5\u4f5c\u4e3a\u6e7f\u65e5\u9608\u503c\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 86,
+      "text": "\u3010\u6682\u5b9a\u6cb3\u897f\u8d70\u5eca\u2014\u7941\u8fde\u5c71\u5730\u533a\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 88,
+      "text": "\u3010\u6682\u5b9a 3 \u6b21\u72ec\u7acb\u968f\u673a\u79cd\u5b50\u3001\u6309\u5e74\u4efd\u4e0e\u4e8b\u4ef6\u5757\u91cd\u62bd\u6837\u5f62\u6210 95\\% \u7f6e\u4fe1\u533a\u95f4\u3011"
+    },
+    {
+      "file": "extraTex/2.1.\u7814\u7a76\u5185\u5bb9.tex",
+      "line": 109,
+      "text": "\u3010\u6682\u5b9a\u7531\u65e5\u5c3a\u5ea6\u6761\u4ef6\u751f\u6210 6 \u5c0f\u65f6\u7edf\u8ba1\u4e00\u81f4\u7684\u5b50\u65f6\u6bb5\u5e8f\u5217\u3011"
+    }
+  ],
+  "citation_check": {
+    "unique_citations": 25,
+    "missing_keys": 0,
+    "incomplete_entries": 0,
+    "cited_keys": 25,
+    "resolved_title": 25,
+    "resolved_abstract": 18,
+    "pdf_downloaded": 0,
+    "pdf_text_excerpt_available": 0,
+    "no_title_or_abstract": 0,
+    "url_checked": 0,
+    "url_accessible": 0,
+    "title_match_exact": 0,
+    "title_match_fuzzy": 25,
+    "title_mismatch": 0,
+    "no_abstract_keys": [
+      "Cannon2018MBCn",
+      "DWT2025",
+      "DeepSD2017",
+      "Maraun2017",
+      "Mardani2025CorrDiff",
+      "Wan2023",
+      "WaveKAN2026"
+    ],
+    "assessment": "25\u4e2a\u9898\u5f55\u901a\u8fc7DOI\u5143\u6570\u636e\u9898\u540d\u5f52\u4e00\u5339\u914d\uff0c18\u4e2a\u53d6\u5f97\u6458\u8981\uff1b\u672a\u53d1\u73b0\u660e\u786e\u5047\u5f15/\u9519\u5f15\u30027\u9879\u6458\u8981\u7f3a\u5931\u4e0d\u7b49\u4e8e\u4f2a\u9020\uff0c\u7ec6\u7c92\u5ea6\u8bed\u4e49\u6838\u9a8c\u6807uncertain\u3002bib\u65e0url\u5b57\u6bb5\uff0c\u9884\u68c0\u672a\u6267\u884c\u989d\u5916HEAD\u7f51\u5740\u53ef\u8fbe\u6027\u68c0\u67e5\uff0c\u4e0d\u80fd\u58f0\u79f025\u4e2a\u51fa\u7248\u793e\u9875\u9762\u5747\u5df2\u8bbf\u95ee\u3002"
+  },
+  "lengths": {
+    "body_raw_han_chars": 12755,
+    "visible_text_estimated_han_chars": 11887,
+    "section_han_chars": {
+      "justification": 2670,
+      "research_and_plan": 6392,
+      "foundation": 2393,
+      "statements": 432
+    },
+    "pdf_pages": null,
+    "note": "\u6e90\u6587\u672c\u4f30\u7b97\uff0c\u4e0d\u4ee3\u66ff\u63d2\u56fe\u540e\u7684PDF\u9875\u6570\u3002"
+  },
+  "experts": [
+    {
+      "id": 1,
+      "role": "\u5b66\u672f\u524d\u6cbf\u4e0e\u521b\u65b0\u6027",
+      "letter": "\u7ed9\u8fc7",
+      "panel": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u521b\u65b0\u5df2\u6536\u7a84\u4e3a\u53d7\u63a7\u589e\u91cf\u548c\u5730\u5f62\u4ea4\u4e92\uff0c\u7b26\u5408P02\u5c0f\u989d\u63a2\u7d22\uff1b\u76f8\u5bf9\u7ade\u4e89\u529b\u4ecd\u4f9d\u8d56\u76f4\u63a5\u4efb\u52a1\u8bc1\u636e\uff0c\u5c1a\u4e0d\u80fd\u8bc1\u660e\u660e\u663e\u4f18\u4e8e\u90bb\u8fd1\u5df2\u6709\u65b9\u6cd5\u3002",
+      "findings": [
+        "C-P1-001"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "\u7814\u7a76\u65b9\u6cd5\u4e0e\u53ef\u884c\u6027",
+      "letter": "\u7ed9\u8fc7",
+      "panel": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u914d\u5bf9\u8bad\u7ec3\u4e0e\u975e\u914d\u5bf9\u5e94\u7528\u5206\u79bb\u3001\u6295\u5f71\u53ef\u884c\u6027\u548c\u975e\u9000\u5316\u68c0\u67e5\u8f83\u5b8c\u6574\uff1b\u7edf\u8ba1\u65b9\u5411\u9700\u6f84\u6e05\uff0c\u65e5\u6570\u636e\u9891\u7387\u4e0e\u771f\u5b9e\u8fc1\u79fb\u8bc1\u636e\u5c1a\u5f85\u843d\u5b9e\u3002",
+      "findings": [
+        "C-P1-001",
+        "C-P2-001"
+      ]
+    },
+    {
+      "id": 3,
+      "role": "\u7814\u7a76\u57fa\u7840\u4e0e\u56e2\u961f",
+      "letter": "\u4e0d\u7ed9\u8fc7",
+      "panel": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u516c\u5f00\u6570\u636e\u548c\u65e2\u6709GPU\u652f\u6301\u8d77\u6b65\uff0c\u4f46\u5f53\u524d\u7f3a\u5c11\u672c\u8bfe\u9898\u76f4\u63a5\u57fa\u7ebf\uff0c\u5408\u4f5c\u63a5\u53e3\u4e0e\u4e3b\u8981\u53c2\u4e0e\u8005\u5c1a\u5f85\u8865\uff0c\u5b9e\u9645\u96c6\u6210\u76ee\u6807\u7684\u8bc1\u636e\u4e0d\u8db3\u3002",
+      "findings": [],
+      "fact_gaps": [
+        "F-CIESM-01",
+        "F-CIESM-02"
+      ]
+    },
+    {
+      "id": 4,
+      "role": "\u4e25\u683c\u7efc\u5408",
+      "letter": "\u4e0d\u7ed9\u8fc7",
+      "panel": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u5f53\u524d\u7a3f\u603b\u4f53\u81ea\u6d3d\uff0c\u4f46\u65e5\u5c3a\u5ea6\u6570\u636e\u6709\u6548\u6027\u548c\u5e94\u7528\u5bf9\u63a5\u672a\u843d\u5b9e\uff0c\u5224\u636e\u4ecd\u542b\u53ef\u53cd\u5411\u89e3\u8bfb\u8bed\u53e5\uff1b\u4ee5\u5f53\u524d\u7a3f\u76f4\u63a5\u6bd4\u8f83\u7ade\u4e89\u529b\u4ecd\u504f\u5f31\u3002",
+      "findings": [
+        "C-P1-001"
+      ],
+      "fact_gaps": [
+        "F-CIESM-01"
+      ]
+    },
+    {
+      "id": 5,
+      "role": "\u5efa\u8bbe\u6027",
+      "letter": "\u7ed9\u8fc7",
+      "panel": "\u7ed9\u8fc7",
+      "confidence": "\u4f4e",
+      "reason": "\u56db\u5185\u5bb9\u56f4\u7ed5\u540c\u4e00\u6a21\u578b\u63a8\u8fdb\uff0c\u6709\u6708\u5ea6\u4e0e\u786e\u5b9a\u6027\u964d\u7ea7\u65b9\u6848\uff1b\u4e00\u5e744.5\u4e07\u5143\u4e0b\u53ef\u6309\u63a2\u7d22\u6027\u7b97\u6cd5\u8bfe\u9898\u8bc4\u4ef7\uff0c\u6700\u5c0f\u6539\u52a8\u80fd\u6d88\u9664\u73b0\u6709\u6587\u5b57\u5224\u636e\u7f3a\u9677\u3002",
+      "findings": [
+        "C-P1-001",
+        "C-P2-001"
+      ]
+    },
+    {
+      "id": 6,
+      "role": "\u79d1\u5b66\u610f\u4e49\u4e0e\u9886\u57df\u5f71\u54cd",
+      "letter": "\u7ed9\u8fc7",
+      "panel": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u65b0\u7586\u590d\u6742\u5730\u5f62\u533a\u57df\u6570\u636e\u589e\u5f3a\u6709\u660e\u786e\u4ef7\u503c\uff0c\u4e14\u6ca1\u6709\u628a\u63d2\u503c\u7f51\u683c\u89c6\u4e3a\u771f\u5b9e\u65b0\u589e\u4fe1\u606f\uff1b\u5f53\u524d\u79d1\u5b66\u589e\u91cf\u4ecd\u4ee5\u62df\u9a8c\u8bc1\u4e3a\u4e3b\uff0c\u7f3a\u5c11\u76f4\u63a5\u4efb\u52a1\u7ed3\u679c\u652f\u6491\u4f1a\u8bc4\u8fa8\u8bc6\u5ea6\u3002",
+      "findings": []
+    },
+    {
+      "id": 7,
+      "role": "\u53ef\u8bfb\u6027\u4e0e\u8bba\u8bc1\u6e05\u6670\u5ea6",
+      "letter": "\u7ed9\u8fc7",
+      "panel": "\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "reason": "\u6570\u636e\u2014\u65b9\u6cd5\u2014\u7ea6\u675f\u2014\u5e94\u7528\u903b\u8f91\u660e\u786e\uff0c\u4e8b\u5b9e\u4e0e\u8ba1\u5212\u533a\u5206\u826f\u597d\uff1b\u5c11\u91cf\u7f29\u5199\u548c\u65f6\u95f4\u8bc4\u4ef7\u8868\u8ff0\u53ef\u7b80\u5316\uff0c\u672a\u53d1\u73b0\u4f2a\u521b\u65b0\u6216\u5927\u6bb5\u673a\u5668\u5f0f\u7a7a\u8bdd\u3002",
+      "findings": [
+        "C-P2-001",
+        "C-P2-002"
+      ]
+    }
+  ],
+  "stage_assessment": {
+    "basis": "\u5f53\u524d\u6b63\u6587\u7684\u5b66\u672f\u8bc4\u5ba1\u503e\u5411\uff0c\u4e0e\u6b63\u5f0f\u7533\u8bf7\u6750\u6599\u9f50\u5907\u5224\u65ad\u5206\u522b\u62a5\u544a\uff1b\u4e0d\u5047\u5b9a\u540e\u7eed\u5df2\u8865\u9f50\u3002",
+    "letter_review": {
+      "verdict": "\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "expert_votes": {
+        "pass": 5,
+        "fail": 2
+      },
+      "reasons": [
+        "\u79d1\u5b66\u95ee\u9898\u4e0e\u56db\u7814\u7a76\u5185\u5bb9\u95ed\u73af\uff0c\u73b0\u6709\u65b9\u6cd5\u7684\u8fb9\u754c\u8bba\u8bc1\u8bda\u5b9e\u3002",
+        "\u7b49\u4fe1\u606f\u5bf9\u7167\u3001\u5730\u5f62\u4ea4\u4e92\u3001\u975e\u9000\u5316\u548c\u975e\u914d\u5bf9\u8bc4\u4ef7\u5df2\u6210\u4f53\u7cfb\u3002",
+        "\u4ee54.5\u4e07\u5143\u4e00\u5e74P02\u5c3a\u5ea6\uff0c\u73b0\u6709\u7b97\u529b\u548c\u786e\u5b9a\u6027\u964d\u7ea7\u65b9\u6848\u652f\u6301\u63a2\u7d22\u3002"
+      ]
+    },
+    "panel_review": {
+      "verdict": "\u4e0d\u7ed9\u8fc7",
+      "confidence": "\u4e2d",
+      "expert_votes": {
+        "pass": 2,
+        "fail": 5
+      },
+      "reasons": [
+        "\u7f3a\u5c11CIESM\u672c\u4efb\u52a1\u76f4\u63a5\u57fa\u7ebf\u548c\u6570\u636e\u9891\u7387\u843d\u5b9e\u8bc1\u636e\uff0c\u521b\u65b0\u4f18\u52bf\u4ecd\u4e3a\u5f85\u9a8c\u5047\u8bbe\u3002",
+        "\u5b9e\u9a8c\u5ba4\u63a5\u53e3\u548c\u53c2\u4e0e\u8005\u672a\u843d\u5b9e\uff0c\u5b9e\u9645\u5e94\u7528\u76ee\u6807\u8bc1\u636e\u4e0d\u8db3\u3002",
+        "\u7edf\u8ba1\u53cd\u8bc1\u65b9\u5411\u4ecd\u6709\u4e00\u5904\u5173\u952e\u6b67\u4e49\u3002"
+      ],
+      "turnaround_actions": [
+        "\u4fee\u6b63C-P1-001\u5e76\u7edf\u4e00\u4e24\u4e2a\u7ae0\u8282\u5224\u636e\u3002",
+        "\u5b8c\u6210\u6700\u5c0f\u53d8\u91cf\u9891\u7387\u5ba1\u8ba1\u548c\u4e00\u4e2a\u7b49\u4fe1\u606f\u57fa\u7ebf\uff0c\u62a5\u544a\u6210\u529f\u6216\u53d7\u9650\u7ed3\u679c\u3002",
+        "\u6309\u4e8b\u5b9e\u8865\u9f50\u5408\u4f5c\u63a5\u53e3\u3001\u53c2\u4e0e\u8005\u53ca\u9644\u4ef6\uff0c\u4e0d\u5c06\u8ba1\u5212\u5199\u6210\u843d\u5b9e\u3002"
+      ]
+    }
+  },
+  "funding_constraints": [
+    {
+      "constraint": "\u53d7\u8d44\u52a9\u989d\u5ea6\u9650\u5236\uff0c\u91c7\u7528\u518d\u5206\u6790\u5185\u90e8\u914d\u5bf9\u4e0e\u5c0f\u533a\u57df\u8f7b\u91cf\u6a21\u578b\u3001\u6709\u9650\u968f\u673a\u91cd\u590d\uff0c\u6ca1\u6709\u81ea\u5efa\u72ec\u7acb\u5bc6\u96c6\u89c2\u6d4b\u6216\u533a\u57df\u52a8\u529b\u964d\u5c3a\u5ea6\u7cfb\u7edf\u3002",
+      "reasonable_boundary": "\u672c\u671f\u652f\u6301\u7b97\u6cd5\u76f8\u5bf9\u518d\u5206\u6790\u7684\u589e\u91cf\u53ca\u4e00\u81f4\u6027\u8bc1\u636e\uff0c\u4e0d\u80fd\u5ba3\u79f0\u72ec\u7acb\u5929\u6c14\u771f\u5b9e\u6027\u6216\u666e\u9002\u6c34\u80fd\u91cf\u95ed\u5408\u3002",
+      "unconstrained_reference": "\u82e5\u8d44\u52a9\u4e0d\u53d7\u9650\uff0c\u53ef\u7ed3\u5408\u72ec\u7acb\u7ad9\u7f51/\u9065\u611f\u3001\u591a\u4e2a\u533a\u57df\u52a8\u529b\u964d\u5c3a\u5ea6\u57fa\u51c6\u3001\u591a\u4e2a\u6a21\u5f0f\u6210\u5458\u548c\u66f4\u957f\u65f6\u95f4\u6bb5\u68c0\u9a8c\u771f\u5b9e\u8fc7\u7a0b\u53ca\u66f4\u5e7f\u6cdb\u5916\u63a8\u3002"
+    }
+  ],
+  "next_actions": [
+    "\u5148\u4feeP1\u5224\u636e\u65b9\u5411\uff1b\u65e0\u9700\u91cd\u5199\u4e3b\u4f53\u7814\u7a76\u3002",
+    "\u53ef\u9009\u8865\u65f6\u95f4\u589e\u91cf/\u8f6c\u6298\u8bca\u65ad\u548c\u5fc5\u8981\u4e2d\u6587\u91ca\u4e49\u3002",
+    "\u4e8b\u5b9e\u7f3a\u53e3\u6309\u539fID\u8865\u9f50\uff1b\u63d2\u56fe\u548c\u6700\u7ec8PDF\u7531\u4e3b\u6d41\u7a0b\u9a8c\u6536\u3002"
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "updated": "2026-09-20",
+  "entrypoint": "main.tex",
+  "inputs": [
+    {
+      "path": "main.tex",
+      "sha256": "c657b7027966d0883e78849709bb0c993582f1d14d5188af11c888cf2dc380c9",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/@config.tex",
+      "sha256": "3eff5cb175d28f9d1edbc075ead08e1aec8a339fad25e485a74de7c9d2bd1b2c",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/metadata.tex",
+      "sha256": "e2efdcdf1c12776a8650c4c0308ad317d8955c9231d9f95c998a84ae068c83d8",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/abstract.tex",
+      "sha256": "44b0d415590a9d5af9c4bbda81c41c28696d39ead9658de73f713c4a06c30151",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/report.tex",
+      "sha256": "d45ec208f1fb419092beb029a77ad320dda86f25ae98aa7c8eaaf1202211500a",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/1.1.立项依据.tex",
+      "sha256": "78be0978896717eb211a1f1e15cfebbee20712c6a3c118c5bd50657ebe4d1614",
+      "graphics": [
+        "figures/F01-background.pdf"
+      ],
+      "labels": [
+        "fig:background"
+      ],
+      "references": [
+        "fig:background"
+      ],
+      "citations": [
+        "Li2019TianshanSnow",
+        "Hao2015Oasis",
+        "Li2020TaklimakanDust",
+        "Lin2020CIESM",
+        "Eyring2016CMIP6",
+        "Hersbach2020ERA5",
+        "Munoz2021ERA5Land",
+        "He2020CMFD",
+        "Bano2022DeepESD",
+        "DeepSD2017",
+        "Stengel2020",
+        "Serifi2021",
+        "Harris2022",
+        "Mardani2025CorrDiff",
+        "Schmidt2025Coherent",
+        "Cannon2018MBCn",
+        "Lange2019ISIMIP",
+        "Trend2024",
+        "Bischoff2024Unpaired",
+        "Wan2023",
+        "Hess2025Scale",
+        "Aich2026Diffusion",
+        "Geiss2022",
+        "Gonzalez2024Hard",
+        "Maraun2017",
+        "Rampal2024",
+        "Pretrain2026"
+      ]
+    },
+    {
+      "path": "extraTex/1.2.研究内容.tex",
+      "sha256": "9e09143a64830a8c923c3303db8fd1c72ad526c301a4de7addd65b7dcd791912",
+      "graphics": [
+        "figures/F02-framework.pdf",
+        "figures/F03-data.pdf",
+        "figures/F04-reconstruction.pdf",
+        "figures/F05-constraints.pdf",
+        "figures/F06-integration.pdf",
+        "figures/F07-evaluation.pdf"
+      ],
+      "labels": [
+        "fig:framework",
+        "fig:data",
+        "fig:reconstruction",
+        "fig:constraints",
+        "fig:integration",
+        "fig:evaluation"
+      ],
+      "references": [
+        "fig:framework",
+        "fig:data",
+        "fig:reconstruction",
+        "fig:constraints",
+        "fig:integration",
+        "fig:evaluation"
+      ],
+      "citations": [
+        "Geiss2022",
+        "He2020CMFD",
+        "Lange2019ISIMIP",
+        "Cannon2018MBCn"
+      ]
+    },
+    {
+      "path": "extraTex/1.3.特色与创新.tex",
+      "sha256": "d753f991cc8dd11d07e7e340749e2351034cd1173b41a468c6b20fbd88887ae5",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/1.4.年度计划.tex",
+      "sha256": "d174419d67e5e2ad4ba693a323b2da7d0fd014c81a3273df0529ec7ffff0fd0a",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "extraTex/2.1.工作基础.tex",
+      "sha256": "925c9ddcbbefeb1cabad05070dde385c74bcf02b49b97718b61e7f847cf536c4",
+      "graphics": [
+        "figures/F08-pilot-error.pdf",
+        "figures/F09-pilot-aggregation.pdf"
+      ],
+      "labels": [
+        "fig:pilot-error",
+        "fig:pilot-agg"
+      ],
+      "references": [
+        "fig:pilot-error",
+        "fig:pilot-agg"
+      ],
+      "citations": [
+        "DWT2025",
+        "WaveKAN2026",
+        "He2020CMFD"
+      ]
+    },
+    {
+      "path": "extraTex/2.2.申请人简介.tex",
+      "sha256": "1db3c35c6b1da9b2de29b4b2be59105abdadc67f29042b2ad057cee52977bf10",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": [
+        "DWT2025",
+        "WaveKAN2026"
+      ]
+    },
+    {
+      "path": "extraTex/budget.tex",
+      "sha256": "8cbce85fd89bf907b818e9f6c7105ccb1a0e3ea2ec594035bc1b5af7686aedbb",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    },
+    {
+      "path": "references/myexample.bib",
+      "sha256": "3f181f628443db04b562f1a32082855dba87cc1f298829d8058957897ea1c38a",
+      "graphics": [],
+      "labels": [],
+      "references": [],
+      "citations": []
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/F01-background.pdf",
+      "source": "extraTex/1.1.立项依据.tex",
+      "sha256": "4e43c5b9f738fcfbcc499f0aceab6386b74e6010b8d3d6de16bccf92ce3d74b1",
+      "raster_source": "figures/F01-background-v2.png",
+      "figure_spec": "docs/figure_specs/F01-background-v2.json",
+      "updated": "2026-09-19",
+      "rendering": "raster image embedded in PDF",
+      "label": "fig:background"
+    },
+    {
+      "path": "figures/F02-framework.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "69c4a7c3212685cd662722fa4e1a9e325b421488f300e6456389c182840e3fec",
+      "label": "fig:framework"
+    },
+    {
+      "path": "figures/F03-data.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "ad0b8f8fcdae2b333cc851243489d7911f63f023fe0abcd73a8cff98f1791bc1",
+      "label": "fig:data"
+    },
+    {
+      "path": "figures/F04-reconstruction.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "ddcbd03e9c0ed735b4e3d7df75c35397bd89ccaa78e565be72cbb36bdf8ea857",
+      "label": "fig:reconstruction"
+    },
+    {
+      "path": "figures/F05-constraints.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "673b7d5fc3099ea40fee97c3418d9eca3943937068066dbdae22f91200974b7f",
+      "label": "fig:constraints"
+    },
+    {
+      "path": "figures/F06-integration.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "ee0ee01601b3a8eb39905842020c0a2906ae3b74d204a1c9c0dd3a5218a304f5",
+      "label": "fig:integration"
+    },
+    {
+      "path": "figures/F07-evaluation.pdf",
+      "source": "extraTex/1.2.研究内容.tex",
+      "sha256": "31e8ec8f83784e3574d87072263ab3c552eb6710c849a66e11c682d9c9a61b2b",
+      "label": "fig:evaluation"
+    },
+    {
+      "path": "figures/F08-pilot-error.pdf",
+      "source": "extraTex/2.1.工作基础.tex",
+      "label": "fig:pilot-error",
+      "sha256": "6b0f715fce2c9395e6ae7433cbda5090cdb4a9b5af869f1eabe538c75417a25c",
+      "generator": "../../tests/ciesm-pilot-20260911/make_figures.py",
+      "updated": "2026-09-19",
+      "rendering": "vector PDF from recorded pilot results"
+    },
+    {
+      "path": "figures/F09-pilot-aggregation.pdf",
+      "source": "extraTex/2.1.工作基础.tex",
+      "label": "fig:pilot-agg",
+      "sha256": "51bdd881a21ecaa81b6339a152f11872d77d69c9e41da4b4397a5b90330db266",
+      "generator": "../../tests/ciesm-pilot-20260911/make_figures.py",
+      "updated": "2026-09-19",
+      "rendering": "vector PDF from recorded pilot results"
+    }
+  ]
+}

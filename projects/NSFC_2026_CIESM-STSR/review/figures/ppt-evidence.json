@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": {
+    "editable_objects": true,
+    "text_fidelity": true,
+    "page_mapping": true,
+    "editppt_validation": true
+  },
+  "notes": "7个真实页代理分别读取原图、测量文字并重建原生对象；7页run record均通过；run finalize通过。逐页检查由页代理完成，主代理没有重复替代页级QA。OCR服务上传超时，使用本地提示和原图逐字/尺寸校准；轻微Noto字形和抗锯齿差异已记录。",
+  "run": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run",
+  "slides": [
+    {
+      "id": "F01",
+      "page": 1,
+      "text_boxes": 18,
+      "pictures": 0,
+      "editable_objects": 297
+    },
+    {
+      "id": "F02",
+      "page": 2,
+      "text_boxes": 21,
+      "pictures": 0,
+      "editable_objects": 137
+    },
+    {
+      "id": "F03",
+      "page": 3,
+      "text_boxes": 23,
+      "pictures": 0,
+      "editable_objects": 74
+    },
+    {
+      "id": "F04",
+      "page": 4,
+      "text_boxes": 21,
+      "pictures": 0,
+      "editable_objects": 134
+    },
+    {
+      "id": "F05",
+      "page": 5,
+      "text_boxes": 17,
+      "pictures": 0,
+      "editable_objects": 401
+    },
+    {
+      "id": "F06",
+      "page": 6,
+      "text_boxes": 20,
+      "pictures": 0,
+      "editable_objects": 97
+    },
+    {
+      "id": "F07",
+      "page": 7,
+      "text_boxes": 18,
+      "pictures": 0,
+      "editable_objects": 41
+    }
+  ],
+  "final_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/final/F01-background_edited.pptx",
+    "deck_manifest": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/deck_manifest.json",
+    "expected_pages": 7,
+    "slides": 7,
+    "page_manifests_missing": [],
+    "page_validation_missing": [],
+    "failed_page_validations": [],
+    "page_contract_violations": [],
+    "notes_expected": 0,
+    "notes_found": 0,
+    "notes_hash_mismatches": [],
+    "missing_parts": [],
+    "warnings": [],
+    "passed": true
+  }
+}

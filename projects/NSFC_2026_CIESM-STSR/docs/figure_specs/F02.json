@@ -1,0 +1,95 @@
+{
+  "diagram_type": "四项研究内容及训练与应用关系",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Two source lanes at top: reference data on left and CIESM application on right. Four numbered research modules in central horizontal row, data → reconstruction → constraints → integration. A narrow bottom strip separates paired evaluation from unpaired application. No arrow pairing calendar days across source lanes.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "左上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "参考资料",
+      "exact_text": "内部粗细配对\n训练与检验",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "右上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "CIESM",
+      "exact_text": "训练期拟合校正\n应用资料",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "中左",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "R1 数据构建",
+      "exact_text": "变量定义\n粗化与划分",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "中左二",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "R2 联合重建",
+      "exact_text": "共享表征\n变量专用输出",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "中右二",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "R3 约束分析",
+      "exact_text": "地形条件\n聚合与非负",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "中右",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "R4 集成验证",
+      "exact_text": "区域评价\n接口与应用",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    },
+    {
+      "relative_position": "底部",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "两类证据",
+      "exact_text": "配对重建检验\n非配对模式应用",
+      "source": "extraTex/2.1.研究内容.tex: 本项目围绕数据对应关系"
+    }
+  ],
+  "exact_arrow_labels": [],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

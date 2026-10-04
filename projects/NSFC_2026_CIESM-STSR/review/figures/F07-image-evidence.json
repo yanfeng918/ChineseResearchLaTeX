@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看修订图：两因素四条件矩阵与两种证据体系分别展示，无将独立/共享模型错误映射到不同资料的箭头。主次指标及逐变量非退化、时空块不确定性准确，无性能数字和显著性虚构。表格空格代表拟比较组合，中文和边界通过。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-db8a2842-3176-4811-a7bb-fbbdd68094e5.png",
+  "generation_call_id": "exec-db8a2842-3176-4811-a7bb-fbbdd68094e5"
+}

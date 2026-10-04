@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "page_limit": true,
+    "legibility": true,
+    "no_crop": true,
+    "references": true,
+    "source_consistency": true,
+    "qc": true
+  },
+  "input_sha256": "b1c0314ab36e7918783a32adb4111eb1c26ca3435638fbae53b750cca44be9d8",
+  "pdf_sha256": "328941a44d60cd5ade3e54d91bd35b6cae6b30222472707d4e196f4a80af08c3",
+  "figure_pages": {
+    "F01": [
+      2
+    ],
+    "F02": [
+      7
+    ],
+    "F03": [
+      10
+    ],
+    "F04": [
+      11
+    ],
+    "F05": [
+      13
+    ],
+    "F06": [
+      15
+    ],
+    "F07": [
+      17
+    ]
+  },
+  "notes": "实际逐页查看当前 main.pdf 的第 2、7、10、11、13、15、17 页；七图中文、箭头、边界、图题、图号均通过。24 页满足不超过 30 页与 18—24 页目标。共 6 条既有 LaTeX warning：currfile-abspath 的 recorder 提示、公共包声明名称不一致、TU/tnr 字体形状回退、U/wasy 10.5 字号替代，以及两条字体替代汇总。与文字基线记录相同；新增 warning 为 0。另有流水线 Python fitz API 弃用提示，不影响输出。无 Overfull/Underfull、缺字或未定义文献/图引用。 保留 3 个硬事实 ID（4 处标记）和 7 处暂定设计，图内缺口 0；尚非正式提交版。"
+}

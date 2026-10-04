@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-19",
+  "fixed": [
+    "QC-01",
+    "QC-02",
+    "QC-03",
+    "QC-04",
+    "QC-05",
+    "QC-06",
+    "QC-07",
+    "QC-08",
+    "QC-10"
+  ],
+  "deferred": [
+    "QC-09"
+  ],
+  "pdf_pages": 38,
+  "validation_passed": true,
+  "external_confirmation_pending": [
+    "参加单位数统计口径",
+    "实验室合作人及接口",
+    "新增劳务科目的受理口径"
+  ]
+}

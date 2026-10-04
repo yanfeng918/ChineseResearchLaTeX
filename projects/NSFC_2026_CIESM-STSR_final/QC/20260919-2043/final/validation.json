@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-09-19",
+  "source_and_pdf_hashes_unchanged": true,
+  "changed_sources": [],
+  "hashed_files": 15,
+  "required_deliverables_exist": true,
+  "reference_evidence_exists": true,
+  "reference_entries_checked": 29,
+  "read_only_check_passed": true,
+  "document_ready_to_submit": false,
+  "limits": [
+    "未重新编译；采用当前构建日志并抽查PDF",
+    "未重新运行预实验",
+    "元数据核验不等于全部引文论据核验",
+    "没有认定新增劳务科目已获实验室认可"
+  ]
+}

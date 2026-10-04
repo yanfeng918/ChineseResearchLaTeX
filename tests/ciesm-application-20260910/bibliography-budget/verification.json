@@ -1,0 +1,79 @@
+{
+  "main_pages": 30,
+  "blank_pages": 4,
+  "cover_title_font_bp": 15.95,
+  "cover_title_baselines_bp": [
+    337.49,
+    368.59
+  ],
+  "cover_title_separate_underlines": [
+    [
+      197.9990997314453,
+      340.68927001953125,
+      494.99951171875,
+      340.68927001953125
+    ],
+    [
+      197.9990997314453,
+      371.789306640625,
+      494.99951171875,
+      371.789306640625
+    ]
+  ],
+  "bibliography_justified_nonfinal_lines": 96,
+  "bibliography_max_ink_right_edge_bp": 506.98828125,
+  "bibliography_item_baselines_bp": [
+    22.0
+  ],
+  "budget_total_wan": "4.50",
+  "budget_rendered_amounts_wan": [
+    "0.30",
+    "0.00",
+    "0.80",
+    "0.00",
+    "1.60",
+    "0.40",
+    "1.00",
+    "0.40",
+    "4.50"
+  ],
+  "budget_status": "proposal; unit prices and categories require applicant review",
+  "blank_unchanged": true,
+  "consumer_regressions": [
+    {
+      "project": "Huazhong_template",
+      "pages": 7,
+      "identical": true
+    },
+    {
+      "project": "NSFC_2026_CCNU-EduAgentTrust_final",
+      "pages": 20,
+      "identical": true
+    },
+    {
+      "project": "NSFC_2026_CIESM-STSR_final",
+      "pages": 26,
+      "identical": true
+    },
+    {
+      "project": "NSFC_2026_MineChangeTrust_final",
+      "pages": 37,
+      "identical": true
+    },
+    {
+      "project": "NSFC_2027_Mapping_final",
+      "pages": 47,
+      "identical": true
+    }
+  ],
+  "existing_underfull": [
+    "Underfull \\hbox (badness 1210)",
+    "Underfull \\hbox (badness 1024)"
+  ],
+  "new_underfull": [
+    "Underfull \\hbox (badness 3547)",
+    "Underfull \\hbox (badness 1072)"
+  ],
+  "main_pdf_sha256": "70e808670dcbbd5e7ecc5b894a995f55031e35d064ff2a66ac1a1b6a1881878d",
+  "style_sha256": "493c5a127be1b34195a65a8eeeca40e90b93d9ca21183557e380657989aa0bf2"
+}

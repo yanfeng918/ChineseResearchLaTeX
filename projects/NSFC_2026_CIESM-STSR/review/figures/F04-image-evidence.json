@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看修订图：四变量专用输出分别为气温、风、辐射、降水；共享表征输入为邻日粗场、地形和季节；随机分支虚线区分条件性，公平基线独立注释同信息同预算，无将本法输出喂给基线的错误线。中文、留白、裁切通过。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-a1263a68-10e7-4487-8738-51d6c829ed51.png",
+  "generation_call_id": "exec-a1263a68-10e7-4487-8738-51d6c829ed51"
+}

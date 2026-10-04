@@ -1,0 +1,98 @@
+{
+  "diagram_type": "显式一致性与经验约束的作用区分",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Main middle flow candidate fine field → explicit projection → constrained fine field. Three thin parallel check rows beneath projection: aggregation, nonnegative quantities, variable definition. Top dashed terrain-gradient and dependence soft penalty lane feeds candidate. Bottom two evidence boxes mathematical residual and independent reconstruction effect. Use only simple rectangles, lines, small grid matrices.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "左中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "候选细场",
+      "exact_text": "模型重建",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "中中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "显式投影",
+      "exact_text": "粗细聚合\n非负条件\n变量定义",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "右中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "受约束细场",
+      "exact_text": "逐类残差",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "中上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "经验软约束",
+      "exact_text": "地形梯度\n变量依赖",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "左下",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "数学一致性",
+      "exact_text": "数值残差",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "右下",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "泛化收益",
+      "exact_text": "独立样本效果",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    },
+    {
+      "relative_position": "底部",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "约束范围",
+      "exact_text": "不等于完整守恒",
+      "source": "extraTex/2.1.研究内容.tex: 地形引导通过原生模式地形"
+    }
+  ],
+  "exact_arrow_labels": [
+    "强度比较",
+    "投影检查"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

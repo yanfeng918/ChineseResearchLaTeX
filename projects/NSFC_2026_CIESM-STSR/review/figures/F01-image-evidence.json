@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看修订图：中文清楚，额外地形带标签已移除，虚线自联合重建输出绕回粗场，问题框独立，边界无裁切。回聚合文字未保留，但箭头连接关系明确，正文和图题解释其含义。网格仅为示意。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-59f5b5dd-0ede-4ad4-88f8-6f29aa503eb9.png",
+  "generation_call_id": "exec-59f5b5dd-0ede-4ad4-88f8-6f29aa503eb9"
+}

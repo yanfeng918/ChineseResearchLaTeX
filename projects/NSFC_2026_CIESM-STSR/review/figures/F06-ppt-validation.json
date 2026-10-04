@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "page_id": "page_006",
+  "runtime_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/pages/page_006/page.pptx",
+    "zip_ok": true,
+    "slides": 1,
+    "images": 0,
+    "editable_text_shapes": 20,
+    "shape_count": 97,
+    "all_text": "CIESM 文件定义核验分块推断固定模型细网格输出变量语义粗化复核聚合残差公开格式兼容可复现运行记录实验室联调接口与数据落实后实际应用与接收应用记录与证明条件落实后条件落实后状态说明拟开展流程 / 完成以实际证据为准",
+    "required_text": [
+      "CIESM 文件",
+      "定义核验",
+      "分块推断",
+      "固定模型",
+      "细网格输出",
+      "变量语义",
+      "粗化复核",
+      "聚合残差",
+      "公开格式兼容",
+      "可复现运行记录",
+      "实验室联调",
+      "接口与数据落实后",
+      "实际应用与接收",
+      "应用记录与证明",
+      "条件落",
+      "实后",
+      "条件落",
+      "实后",
+      "状态说明",
+      "拟开展流程 / 完成以实际证据为准"
+    ],
+    "missing_required_text": [],
+    "missing_parts": [],
+    "missing_relationship_targets": [],
+    "missing_asset_provenance": [],
+    "missing_manifest_images": [],
+    "missing_provenance_sources": [],
+    "invalid_asset_provenance": [],
+    "media_hash_mismatches": [],
+    "asset_provenance_checked": 0,
+    "manifest_image_count": 0,
+    "media_manifest_mismatch": false,
+    "relationship_targets_checked": 9,
+    "warnings": [],
+    "page_contract_violations": [],
+    "passed": true
+  },
+  "self_check": {
+    "source_and_preview_compared": true,
+    "contact_sheet_inspected": true,
+    "all_text_native_and_visible": true,
+    "no_text_clipping_or_wrong_wrapping": true,
+    "cjk_font": "Noto Sans CJK SC",
+    "background_consistency": "Solid white preserved with editable native workflow and evidence frames.",
+    "foreground_asset_assessment": "Inventory contains native structural frames, dividers, and ordinary directional connectors only.",
+    "corner_geometry": "Slight source outer-frame turns represented by 3 px radii, with square inner frame openings.",
+    "font_calibration": "Partial builtin-ink lines expanded from complete visual transcription; g1 28.5 pt, g3 20.5 pt, and bottom g2 22.5 pt preserve source levels.",
+    "main_dataflow": "CIESM 文件 → 分块推断 → 细网格输出 → 粗化复核; dashed return to 定义核验 retained.",
+    "three_evidence_levels": [
+      "公开格式兼容 / 可复现运行记录",
+      "实验室联调 / 接口与数据落实后",
+      "实际应用与接收 / 应用记录与证明"
+    ],
+    "conditions": "Both transitions visibly retain 条件落实后.",
+    "status": "拟开展流程 / 完成以实际证据为准 preserved exactly.",
+    "image_asset_count": 0
+  },
+  "warnings": [
+    "使用 Noto Sans CJK SC 重建文字，原图字形与抗锯齿存在轻微差异。"
+  ]
+}

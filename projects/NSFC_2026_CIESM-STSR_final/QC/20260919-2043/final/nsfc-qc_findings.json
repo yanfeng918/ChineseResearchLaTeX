@@ -1,0 +1,144 @@
+{
+  "checked_at": "2026-09-19",
+  "read_only": true,
+  "findings": [
+    {
+      "id": "QC-01",
+      "severity": "P1",
+      "category": "guideline_alignment",
+      "status": "confirmed",
+      "title": "论文考核以投稿替代发表或接收，未论证同级别替代",
+      "locations": [
+        "extraTex/metadata.tex:27",
+        "extraTex/1.4.年度计划.tex:16",
+        "extraTex/1.4.年度计划.tex:22"
+      ],
+      "source": "https://www.dess.tsinghua.edu.cn/info/1079/6998.htm"
+    },
+    {
+      "id": "QC-02",
+      "severity": "P1",
+      "category": "consistency",
+      "status": "confirmed",
+      "title": "基本信息仅承诺格式兼容，正文及指南目标包含实际应用",
+      "locations": [
+        "extraTex/metadata.tex:27",
+        "extraTex/1.2.研究内容.tex:19",
+        "extraTex/2.1.工作基础.tex:96"
+      ],
+      "source": "https://www.dess.tsinghua.edu.cn/info/1079/6998.htm"
+    },
+    {
+      "id": "QC-03",
+      "severity": "P1",
+      "category": "method",
+      "status": "confirmed",
+      "title": "无量纲空间结构主指标缺少对应阈值，现有MCID为物理单位",
+      "locations": [
+        "extraTex/1.2.研究内容.tex:33",
+        "extraTex/1.2.研究内容.tex:100",
+        "extraTex/1.1.立项依据.tex:69"
+      ]
+    },
+    {
+      "id": "QC-04",
+      "severity": "P1",
+      "category": "experimental_evidence",
+      "status": "confirmed",
+      "title": "73%改善归属及秩相关误差混用模型配置",
+      "locations": [
+        "extraTex/2.1.工作基础.tex:21"
+      ],
+      "evidence": "../../tests/ciesm-pilot-20260911/out/metrics.json",
+      "corrected_values": {
+        "indep_terrain_improvement_pct": 73.14,
+        "joint_terrain_improvement_pct": 71.04,
+        "without_terrain_rank_error": [
+          0.112,
+          0.121
+        ],
+        "with_terrain_rank_error": [
+          0.113,
+          0.122
+        ]
+      }
+    },
+    {
+      "id": "QC-05",
+      "severity": "P2",
+      "category": "experimental_evidence",
+      "status": "confirmed",
+      "title": "逐年划分表述与同年内半年划分不符",
+      "locations": [
+        "extraTex/2.1.工作基础.tex:15"
+      ],
+      "evidence": "../../tests/ciesm-pilot-20260911/run_pilot.py:239"
+    },
+    {
+      "id": "QC-06",
+      "severity": "P2",
+      "category": "reference",
+      "status": "confirmed",
+      "title": "Hao文献正式年卷应为2016,8(2)",
+      "locations": [
+        "references/myexample.bib:286"
+      ],
+      "source": "https://link.springer.com/article/10.1007/s40333-015-0060-x"
+    },
+    {
+      "id": "QC-07",
+      "severity": "P2",
+      "category": "reference",
+      "status": "confirmed",
+      "title": "Bischoff文献缺3(2):e230039",
+      "locations": [
+        "references/myexample.bib:113"
+      ],
+      "source": "https://journals.ametsoc.org/view/journals/aies/3/2/AIES-D-23-0039.1.xml"
+    },
+    {
+      "id": "QC-08",
+      "severity": "P2",
+      "category": "figure_labels",
+      "status": "confirmed",
+      "title": "图8图9内部P01/P02编号与正文编号不一致",
+      "locations": [
+        "figures/F08-pilot-error.pdf",
+        "figures/F09-pilot-aggregation.pdf"
+      ]
+    },
+    {
+      "id": "QC-09",
+      "severity": "P0",
+      "category": "length",
+      "status": "known_deferred",
+      "title": "第一部分普通正文汉字下限12464，超出3000字要求",
+      "locations": [
+        "extraTex/report.tex:2"
+      ],
+      "action_boundary": "按先前暂不压缩篇幅要求保留，本次只报告",
+      "source": "https://www.dess.tsinghua.edu.cn/__local/3/30/45/E5C9CD75EF55762B1FABF343BA1_336CD6D7_BB9D.doc"
+    },
+    {
+      "id": "QC-10",
+      "severity": "P2",
+      "category": "method_clarity",
+      "status": "confirmed",
+      "title": "随机种子指标均值与预测均值后的误差统计需区分",
+      "locations": [
+        "extraTex/2.1.工作基础.tex:18"
+      ],
+      "evidence": "../../tests/ciesm-pilot-20260911/run_pilot.py:293"
+    }
+  ],
+  "uncertain_items": [
+    {
+      "field": "unit-count",
+      "reason": "官方附件未解释是否包含依托单位，不能确认0是否符合填表口径"
+    },
+    {
+      "field": "labor_budget_category",
+      "reason": "用户授权新增劳务行；官方附件原列8项，指南未说明能否增列，非算术错误"
+    }
+  ]
+}

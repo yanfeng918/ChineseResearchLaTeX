@@ -1,0 +1,97 @@
+[
+  {
+    "project": "Huazhong_template",
+    "pages": 7,
+    "pixel_identical": true,
+    "before_warnings": {
+      "overfull": 0,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    },
+    "after_warnings": {
+      "overfull": 0,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    }
+  },
+  {
+    "project": "NSFC_2026_CCNU-EduAgentTrust_final",
+    "pages": 20,
+    "pixel_identical": true,
+    "before_warnings": {
+      "overfull": 7,
+      "underfull": 0,
+      "font_warning": 2,
+      "missing_glyph": 0,
+      "undefined": 0
+    },
+    "after_warnings": {
+      "overfull": 7,
+      "underfull": 0,
+      "font_warning": 2,
+      "missing_glyph": 0,
+      "undefined": 0
+    }
+  },
+  {
+    "project": "NSFC_2026_CIESM-STSR_final",
+    "pages": 26,
+    "pixel_identical": true,
+    "before_warnings": {
+      "overfull": 4,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 8,
+      "undefined": 0
+    },
+    "after_warnings": {
+      "overfull": 4,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 8,
+      "undefined": 0
+    }
+  },
+  {
+    "project": "NSFC_2026_MineChangeTrust_final",
+    "pages": 37,
+    "pixel_identical": true,
+    "before_warnings": {
+      "overfull": 0,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    },
+    "after_warnings": {
+      "overfull": 0,
+      "underfull": 0,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    }
+  },
+  {
+    "project": "NSFC_2027_Mapping_final",
+    "pages": 47,
+    "pixel_identical": true,
+    "before_warnings": {
+      "overfull": 1,
+      "underfull": 45,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    },
+    "after_warnings": {
+      "overfull": 1,
+      "underfull": 45,
+      "font_warning": 0,
+      "missing_glyph": 0,
+      "undefined": 0
+    }
+  }
+]

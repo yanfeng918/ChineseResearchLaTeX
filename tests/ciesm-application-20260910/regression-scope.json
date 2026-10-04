@@ -1,0 +1,37 @@
+[
+  {
+    "project": "projects/Huazhong_template",
+    "references": [
+      "projects/Huazhong_template/extraTex/@config.tex"
+    ],
+    "fixture": "fixtures/Huazhong_template"
+  },
+  {
+    "project": "projects/NSFC_2026_CCNU-EduAgentTrust_final",
+    "references": [
+      "projects/NSFC_2026_CCNU-EduAgentTrust_final/extraTex/@config.tex"
+    ],
+    "fixture": "fixtures/NSFC_2026_CCNU-EduAgentTrust_final"
+  },
+  {
+    "project": "projects/NSFC_2026_CIESM-STSR_final",
+    "references": [
+      "projects/NSFC_2026_CIESM-STSR_final/extraTex/@config.tex"
+    ],
+    "fixture": "fixtures/NSFC_2026_CIESM-STSR_final"
+  },
+  {
+    "project": "projects/NSFC_2026_MineChangeTrust_final",
+    "references": [
+      "projects/NSFC_2026_MineChangeTrust_final/extraTex/@config.tex"
+    ],
+    "fixture": "fixtures/NSFC_2026_MineChangeTrust_final"
+  },
+  {
+    "project": "projects/NSFC_2027_Mapping_final",
+    "references": [
+      "projects/NSFC_2027_Mapping_final/extraTex/@config.tex"
+    ],
+    "fixture": "fixtures/NSFC_2027_Mapping_final"
+  }
+]

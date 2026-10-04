@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "page_id": "page_003",
+  "runtime_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ciesm-stsr-illustrated/editppt-run/pages/page_003/page.pptx",
+    "zip_ok": true,
+    "slides": 1,
+    "images": 0,
+    "editable_text_shapes": 23,
+    "shape_count": 74,
+    "all_text": "来源审计定义统一先划分后拟合变量与频率版本与许可单位与日历面积与掩膜连续时段完整地形区域参考资料CIESM 应用细场 Y粗场 AY原始场 X校正场 X*内部配对非配对应用训练验证测试估计参数冻结选择独立评价",
+    "required_text": [
+      "来源审计",
+      "定义统一",
+      "先划分后拟合",
+      "变量与频率",
+      "版本与许可",
+      "单位与日历",
+      "面积与掩膜",
+      "连续时段",
+      "完整地形区域",
+      "参考资料",
+      "CIESM 应用",
+      "细场 Y",
+      "粗场 AY",
+      "原始场 X",
+      "校正场 X*",
+      "内部配对",
+      "非配对应用",
+      "训练",
+      "验证",
+      "测试",
+      "估计参数",
+      "冻结选择",
+      "独立评价"
+    ],
+    "missing_required_text": [],
+    "missing_parts": [],
+    "missing_relationship_targets": [],
+    "missing_asset_provenance": [],
+    "missing_manifest_images": [],
+    "missing_provenance_sources": [],
+    "invalid_asset_provenance": [],
+    "media_hash_mismatches": [],
+    "asset_provenance_checked": 0,
+    "manifest_image_count": 0,
+    "media_manifest_mismatch": false,
+    "relationship_targets_checked": 9,
+    "warnings": [],
+    "page_contract_violations": [],
+    "passed": true
+  },
+  "self_check": {
+    "source_and_hints_visually_inspected": true,
+    "comparison_artifact": "split_assets_contact.png",
+    "office_render_artifact": "office-preview.png",
+    "editable_text_complete": true,
+    "native_structure_complete": true,
+    "independent_three_layers_preserved": true,
+    "text_clipping_or_overflow": false,
+    "corner_geometry_preserved": true,
+    "all_required_outputs_present": true
+  },
+  "warnings": [
+    "使用 Noto Sans CJK SC；源图中的字形与抗锯齿效果存在轻微差异。"
+  ],
+  "notes": [
+    "23 个原生可编辑文本框；4 个原生普通箭头；8 个大矩形容器、4 个小圆角变量框和参考资料下方虚线均为原生结构。",
+    "Y、AY、X、X* 为普通变量文本标签。",
+    "LibreOffice 成功打开 PPTX 并导出 PDF；逐项查看实际渲染，无文字裁切。"
+  ]
+}

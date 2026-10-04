@@ -1,0 +1,57 @@
+{
+  "project": "NSFC_2026_CIESM-STSR_final",
+  "pages": 4,
+  "warnings": [],
+  "build_profile": "thesis",
+  "runtime_unchanged": {
+    "packages/bensz-thesis/styles/bthesis-style-ciesm-open-fund.tex": true,
+    "packages/bensz-thesis/profiles/bthesis-profile-ciesm-open-fund.def": true,
+    "packages/bensz-thesis/scripts/thesis_project_tool.py": true
+  },
+  "visual_checks": [
+    {
+      "page": 1,
+      "text_characters_preserved": true,
+      "page_size_matches": true,
+      "image_objects": 0,
+      "different_gray_pixels_pct": 0.989,
+      "identical_to_previous_verified_template": true
+    },
+    {
+      "page": 2,
+      "text_characters_preserved": true,
+      "page_size_matches": true,
+      "image_objects": 0,
+      "different_gray_pixels_pct": 0.701,
+      "identical_to_previous_verified_template": true
+    },
+    {
+      "page": 3,
+      "text_characters_preserved": true,
+      "page_size_matches": true,
+      "image_objects": 0,
+      "different_gray_pixels_pct": 0.627,
+      "identical_to_previous_verified_template": true
+    },
+    {
+      "page": 4,
+      "text_characters_preserved": true,
+      "page_size_matches": true,
+      "image_objects": 0,
+      "different_gray_pixels_pct": 0.597,
+      "identical_to_previous_verified_template": true
+    }
+  ],
+  "editability": {
+    "filled_build": "passed",
+    "filled_pages": 9,
+    "warnings": [],
+    "metadata_and_numeric_text": "passed",
+    "body_continuation_and_total_pages": "passed",
+    "budget_wrapping": "passed",
+    "overflow_rejected": true,
+    "official_pdf_needed_for_build": false
+  },
+  "pytest": "............                                                             [100%]\n12 passed in 0.10s",
+  "official_baseline_sha256": "f9170bb2d850fcbe987529398ea131ad6994fb987a20898037fb11956720d013"
+}

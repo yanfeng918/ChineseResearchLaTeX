@@ -1,0 +1,18 @@
+% 参数依次为序号、预算科目、经费（万元）、概要说明。
+% 本轮按用户要求将总额增至5.00万元，新增0.50万元计入劳务费；测算依据见 ../填写说明.md。
+% 金额、数量和单价为拟安排预算，非已发生支出或已核定报价。
+% 总计复用 metadata.tex；blank.tex 由公共样式隐藏金额和说明。
+% 劳务费增至1.10万元，按合计22人月、每人月500元测算；空白稿保留原表。
+\begin{CiesmBudget}
+  \CiesmBudgetRow{1}{设备费}{0.00}{使用现有计算与\newline 存储设备，\newline 不购置新设备}
+  \CiesmBudgetRow{2}{材料费}{0.00}{以计算研究为主，\newline 不单列材料费}
+  \CiesmBudgetRow{3}{测试化验加工费}{0.00}{本课题无样品测试、\newline 化验或加工需求，\newline 不单列该科目}
+  \CiesmBudgetRow{4}{燃料动力费}{0.00}{利用现有公共设施，\newline 不单列燃料动力费}
+  \CiesmBudgetRow{5}{差旅费}{1.60}{CIESM对接与联调\newline 2人次×0.80万元}
+  \CiesmBudgetRow{6}{国内会议费}{0.30}{专题交流会议1次\newline 场地、资料等费用}
+  \CiesmBudgetRow{7}{出版/文献/信息传播/知识产权事务费}{1.40}{论文版面费1.00万元\newline 数据产品发布、文献\newline 与成果印制0.40万元}
+  \CiesmBudgetRow{8}{专家咨询费}{0.60}{方法设计与成果评价\newline 咨询6人次×0.10万元}
+  \ifCiesmBlank\else
+    \CiesmBudgetRow{9}{劳务费}{1.10}{研究生劳务补助\newline 合计22人月\newline 每人月0.05万元}
+  \fi
+\end{CiesmBudget}

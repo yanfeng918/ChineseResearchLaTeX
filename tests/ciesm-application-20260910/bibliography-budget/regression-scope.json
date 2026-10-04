@@ -1,0 +1,32 @@
+[
+  {
+    "project": "Huazhong_template",
+    "references": [
+      "projects/Huazhong_template/extraTex/@config.tex"
+    ]
+  },
+  {
+    "project": "NSFC_2026_CCNU-EduAgentTrust_final",
+    "references": [
+      "projects/NSFC_2026_CCNU-EduAgentTrust_final/extraTex/@config.tex"
+    ]
+  },
+  {
+    "project": "NSFC_2026_CIESM-STSR_final",
+    "references": [
+      "projects/NSFC_2026_CIESM-STSR_final/extraTex/@config.tex"
+    ]
+  },
+  {
+    "project": "NSFC_2026_MineChangeTrust_final",
+    "references": [
+      "projects/NSFC_2026_MineChangeTrust_final/extraTex/@config.tex"
+    ]
+  },
+  {
+    "project": "NSFC_2027_Mapping_final",
+    "references": [
+      "projects/NSFC_2027_Mapping_final/extraTex/@config.tex"
+    ]
+  }
+]

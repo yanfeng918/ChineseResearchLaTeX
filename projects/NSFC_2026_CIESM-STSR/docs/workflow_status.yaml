@@ -1,0 +1,75 @@
+# nsfc-full-pipeline 断点文件（空白模板）
+# 作用：记录流程进度与事实来源，避免每次运行都从头重问。
+# 新项目只需补 project 段的项目元数据，stages 由状态脚本自动维护。
+
+schema_version: 2
+
+project:
+  type: NSFC_General                               # 如 NSFC_General / NSFC_Young / NSFC_Local，或自定义
+  grant_type: 面上项目                        # 如 面上项目 / 青年科学基金 / 地区科学基金 / 实验室开放课题
+  layout: three-part                 # 本模板为 three-part；实际以 main.tex 解析结果为准
+  length_budget:                     # 如 "全文 ≤30 页"；按实际申报模板要求填
+  proposal_path: "."
+  body_dir: "extraTex"
+  bib_file: "references/myexample.bib"
+  guide_file: "AGENTS.md"            # 项目级，非仓库根
+  main_tex_sha256: ""                # stage 00 完成时由状态脚本写入
+
+  # === 事实分层（见 docs/applicants/README.md）===
+  applicant_profile_file: "../../docs/applicants/yan-feng.md"
+  project_fact_file: "docs/00_项目事实库.md"
+
+  stage_output_dir: "docs"
+  review_output_dir: "review"
+  body_files:                        # 由 stage 00 从 main.tex 解析后填入
+    part_one: []
+    foundation: []
+    statements: []
+
+# 事实来源约定：本文件不重复罗列事实，只声明去哪里读。
+# 两份来源中状态为「已确认」的事实可直接使用，AI 不得再次询问。
+fact_sources:
+  applicant: "../../docs/applicants/yan-feng.md"
+  project: "docs/00_项目事实库.md"
+  read_order: [applicant, project]
+
+# 本申报对象不适用的章节。借用 NSFC 模板但实际不是国基时，在此列明，
+# 避免流程反复追问国基专属声明。用不到就留空。
+not_applicable: []
+
+run:
+  current_mode: fresh
+  # draft_first：缺事实时按事实 ID 挖空占位并继续写作，补齐后定点回填（默认）
+  # blocking  ：缺事实时停下等补充（旧行为，需要时才改）
+  fill_policy: draft_first
+  last_started:
+  last_finished:
+  last_summary:
+  next_stage: "00_layout_resolution"
+
+# status: pending | in_progress | completed | drafted_with_gaps | skipped | need_user_input | failed
+# gaps: 该阶段正文中仍以【待补 ID】形式挖空的事实 ID；清空后阶段才可转 completed
+stages:
+  "00_layout_resolution": { name: "布局与项目类型解析", status: pending, blockers: [], gaps: [] }
+  "01_topic_extraction":  { name: "选题与研究主题",     status: pending, blockers: [], gaps: [] }
+  "02_literature_review": { name: "文献调研",           status: pending, blockers: [], gaps: [] }
+  "03_scientific_questions": { name: "科学问题与创新点", status: pending, blockers: [], gaps: [] }
+  "04_research_plan":     { name: "研究方案与技术路线", status: pending, blockers: [], gaps: [] }
+  "05_part_one_writing":  { name: "第一部分正文",       status: pending, blockers: [], gaps: [] }
+  "06_research_foundation": { name: "研究基础与工作条件", status: pending, blockers: [], gaps: [] }
+  "07_other_statements":  { name: "其他说明",           status: pending, blockers: [], gaps: [] }
+  "08_reference_alignment": { name: "引用一致性核查",   status: pending, blockers: [], gaps: [] }
+  "09_length_control":    { name: "篇幅对齐",           status: pending, blockers: [], gaps: [] }
+  "10_humanization":      { name: "去 AI 味润色",       status: pending, blockers: [], gaps: [] }
+  "11_qc":                { name: "质量控制",           status: pending, blockers: [], gaps: [] }
+  "12_simulated_review":  { name: "模拟专家评审",       status: pending, blockers: [], gaps: [] }
+  "13_targeted_repair":   { name: "P0/P1 定点修复",     status: pending, blockers: [], gaps: [] }
+  "14_compile":           { name: "编译",               status: pending, blockers: [], gaps: [] }
+
+# 正文流程与整份申请书可提交分开判断；completed / not_applicable 才算通过。
+submission:
+  abstract: pending
+  application_code: pending
+  budget: pending
+  declarations: pending
+  attachments: pending

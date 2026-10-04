@@ -1,0 +1,37 @@
+{
+  "total_wan": "4.50",
+  "items": [
+    {
+      "category": "设备费",
+      "amount_wan": "0.30"
+    },
+    {
+      "category": "材料费",
+      "amount_wan": "0.00"
+    },
+    {
+      "category": "测试化验加工费",
+      "amount_wan": "0.80"
+    },
+    {
+      "category": "燃料动力费",
+      "amount_wan": "0.00"
+    },
+    {
+      "category": "差旅费",
+      "amount_wan": "1.60"
+    },
+    {
+      "category": "国内会议费",
+      "amount_wan": "0.40"
+    },
+    {
+      "category": "出版/文献/信息传播/知识产权事务费",
+      "amount_wan": "1.00"
+    },
+    {
+      "category": "专家咨询费",
+      "amount_wan": "0.40"
+    }
+  ]
+}

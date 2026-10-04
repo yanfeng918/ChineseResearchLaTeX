@@ -1,0 +1,12 @@
+fixtures/
+package-before/
+regression/
+rendered/
+blank-compare/
+*.log
+*.pdf
+*.aux
+*.bbl
+*.bcf
+*.fls
+__pycache__/

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看：已恢复白底和大字，四模块顺序R1→R2→R3→R4正确，CIESM仅进入应用R4；参考资料支持训练和约束。底部虚线表示模型与应用间的方法反馈，测试集不调参的边界由正文限定。无错字、溢出或虚构实验值。",
+  "source_image": "/home/yanfeng/.codex/generated_images/01a07708-778e-77f3-9fc9-a2b4226007f1/exec-a981cf1f-bc6d-42df-8405-4d6994d536ef.png",
+  "generation_call_id": "exec-a981cf1f-bc6d-42df-8405-4d6994d536ef"
+}

@@ -1,0 +1,10 @@
+{
+  "filled_build": "passed",
+  "filled_pages": 9,
+  "warnings": [],
+  "metadata_and_numeric_text": "passed",
+  "body_continuation_and_total_pages": "passed",
+  "budget_wrapping": "passed",
+  "overflow_rejected": true,
+  "official_pdf_needed_for_build": false
+}

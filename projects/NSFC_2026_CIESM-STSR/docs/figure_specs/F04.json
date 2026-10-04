@@ -1,0 +1,98 @@
+{
+  "diagram_type": "多变量时空重建与等信息对照",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm",
+    "font_family": "Noto Sans CJK SC; Arial",
+    "font_hierarchy": {
+      "title": "11pt bold",
+      "primary_label": "10pt regular",
+      "secondary_note": "9pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF"
+  },
+  "layout": "Left three stacked inputs; center shared spatiotemporal representation; right four vertically aligned variable-specific heads. Bottom framed independent-baseline lane receives exactly the same inputs and budget. Small dashed optional residual branch from shared representation; no tensor sizes and no invented network depth.",
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "左上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "邻日粗场",
+      "exact_text": "相同多变量输入",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "左中",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "地形条件",
+      "exact_text": "高程与下垫面",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "左下",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "季节信息",
+      "exact_text": "日序条件",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "中上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "共享时空表征",
+      "exact_text": "多尺度背景\n局地残差",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "右上",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "变量专用输出",
+      "exact_text": "气温\n风\n辐射\n降水",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "中下",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "可选随机残差",
+      "exact_text": "条件可能样本",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    },
+    {
+      "relative_position": "底部",
+      "shape": "White rectangular container, colored border only",
+      "exact_title_to_render_inside": "等信息独立基线",
+      "exact_text": "同输入与校正\n同总容量与预算",
+      "source": "extraTex/2.1.研究内容.tex: 对照采用逐级设计"
+    }
+  ],
+  "exact_arrow_labels": [
+    "联合学习",
+    "公平比较"
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only the exact_* text values.",
+    "All container fills are pure white; borders carry the palette.",
+    "Use only structural rectangles, grid lines, simple connectors and text.",
+    "No pictograms, illustrations, photographs, logos, maps or decorative assets.",
+    "No experimental values, trends, performance curves or significance markers.",
+    "Main data flow is solid; optional or return flow is dashed.",
+    "No gradients, shadows, 3D or emoji.",
+    "Keep all content inside a generous safe margin; use clear Chinese labels.",
+    "No figure ID and no overall title inside the canvas."
+  ]
+}

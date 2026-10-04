@@ -1,0 +1,11 @@
+{
+  "project_name": "NSFC_2026_CIESM-STSR_final",
+  "document_type": "open-fund-application",
+  "fund": "地球系统数值模拟教育部重点实验室开放基金",
+  "build_profile": "thesis",
+  "template": "ciesm-open-fund",
+  "baseline_pdf": "地球系统数值模拟教育部重点实验室开放基金.pdf",
+  "template_institution": "清华大学",
+  "main_file": "main.tex",
+  "blank_file": "blank.tex"
+}
