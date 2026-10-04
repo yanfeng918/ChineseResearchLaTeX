@@ -1,0 +1,58 @@
+% 这是实验室开放基金申请书，使用 thesis 构建链路。
+\usepackage{bensz-thesis}
+\BenszThesisSetup{template=casm-open-fund-2026}
+
+% 数学扩展字体支持五号等字号，避免网址初始化时触发字号替代。
+\DeclareFontShape{OMX}{cmex}{m}{n}
+  {<-8>sfixed*cmex7<8-9>cmex8<9-10>cmex9<10->cmex10}{}
+
+% 参考文献用五号字、两端对齐，条目间不增加额外间距。
+\apptocmd{\thebibliography}{%
+  \fontsize{10.5bp}{16.25bp}\selectfont%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}%
+}{}{\PackageError{mapping-project}{Cannot patch bibliography spacing}%
+  {Check the bibliography environment before rebuilding.}}
+
+% 正文内部子标题：小四加粗，编号随所属提纲填写；使用原生标题分页规则。
+\ctexset{
+  subsection = {
+    format = {\CasmTimes\fontsize{12bp}{19.5bp}\selectfont\bfseries},
+    indent = 2em,
+    beforeskip = 3bp,
+    afterskip = 2bp,
+    afterindent = true
+  },
+  subsubsection = {
+    format = {\CasmTimes\fontsize{12bp}{19.5bp}\selectfont\bfseries},
+    indent = 2em,
+    beforeskip = 2bp,
+    afterskip = 2bp,
+    afterindent = true
+  }
+}
+
+% 本项目的立项依据、研究基础栏目标题只显示在各部分首页，续页仍沿用原版框。
+\AtBeginEnvironment{CasmResearch}{%
+  \edef\MappingResearchFirstPage{\number\value{page}}%
+}
+\patchcmd{\CasmProposalArtwork}
+  {\CasmHei 四、立项依据与研究内容}
+  {\ifnum\value{page}=\MappingResearchFirstPage\relax
+     \CasmHei 四、立项依据与研究内容%
+   \fi}
+  {}
+  {\PackageError{mapping-project}{Cannot patch proposal heading}%
+    {Check the casm-open-fund-2026 proposal artwork before rebuilding.}}
+\patchcmd{\CasmFoundationArtwork}
+  {\CasmHei 五、研究基础与工作条件}
+  {\ifnum\value{page}=\MappingResearchFirstPage\relax
+     \CasmHei 五、研究基础与工作条件%
+   \fi}
+  {}
+  {\PackageError{mapping-project}{Cannot patch foundation heading}%
+    {Check the casm-open-fund-2026 foundation artwork before rebuilding.}}
+
+% 正文引用可跳转至参考文献；页码重置后仍使用唯一的链接目标。
+\usepackage[hidelinks,hypertexnames=false]{hyperref}

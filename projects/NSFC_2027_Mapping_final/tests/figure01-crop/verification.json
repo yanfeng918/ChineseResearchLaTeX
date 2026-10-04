@@ -1,0 +1,15 @@
+{
+  "pdf_pages": 48,
+  "figure_page": 6,
+  "before": {
+    "warnings": 0,
+    "overfull": 0,
+    "underfull": 0
+  },
+  "after": {
+    "warnings": 0,
+    "overfull": 0,
+    "underfull": 0
+  },
+  "source_change": "--- before\n+++ after\n@@ -10,7 +10,7 @@\n % F1: F01_研究背景与问题提出-v4.png\n \\begin{figure}[!htbp]\n     \\centering\n-    \\includegraphics[width=\\linewidth]{figures/F01_研究背景与问题提出-v4.png}\n+    \\includegraphics[trim=32bp 125bp 11bp 156bp,clip,width=\\linewidth]{figures/F01_研究背景与问题提出-v4.png}\n     \\caption{研究背景与问题提出。业务场景用于说明研究动机，项目验证范围为公开学术基准。}\n     \\label{fig:background}\n \\end{figure}\n"
+}

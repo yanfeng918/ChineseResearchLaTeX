@@ -1,0 +1,28 @@
+% !TeX program = xelatex
+\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}
+\input{extraTex/@config}
+\input{extraTex/metadata}
+% 文献位于立项依据末尾；显式入口同时供官方构建器检测 BibTeX。
+\newcommand{\MappingBibliography}{%
+  \begingroup
+  \bibliographystyle{\CasmBibliographyStylePath}%
+  \bibliography{references/myexample}%
+  \endgroup}
+\begin{document}
+\CasmCover
+\CasmInstructions
+\CasmInformation{\input{extraTex/abstract}}
+\CasmMembers{\input{extraTex/members}}
+\CasmBudget{\input{extraTex/budget}}{\input{extraTex/budget-basis}}
+\begin{CasmResearch}{proposal}
+  \input{extraTex/proposal}
+\end{CasmResearch}
+\begin{CasmResearch}{foundation}
+  \input{extraTex/foundation}
+\end{CasmResearch}
+\CasmCommitment{\input{extraTex/commitment}}{\input{extraTex/organization}}
+\CasmReview{\input{extraTex/committee}}{\input{extraTex/director}}
+\begin{CasmAttachments}
+  \input{extraTex/attachments}
+\end{CasmAttachments}
+\end{document}

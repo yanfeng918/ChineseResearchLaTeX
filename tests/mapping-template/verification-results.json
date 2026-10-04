@@ -1,0 +1,79 @@
+{
+  "target": {
+    "success": true,
+    "returncode": 0,
+    "warnings": [],
+    "pages": 10
+  },
+  "filled_and_long": {
+    "success": true,
+    "returncode": 0,
+    "warnings": [],
+    "pages": 20
+  },
+  "overflow": {
+    "success": false,
+    "returncode": 1,
+    "warnings": []
+  },
+  "bad_row": {
+    "success": false,
+    "returncode": 1,
+    "warnings": []
+  },
+  "regressions": {
+    "NSFC_2026_CCNU-EduAgentTrust_final": {
+      "success": true,
+      "returncode": 0,
+      "warnings": [],
+      "pages": 7,
+      "identical": true,
+      "comparison": "同份项目源码、冻结包副本：加载完整包 vs 移除本任务新增 CASM profile/style/artwork 的控制包",
+      "control_warning_count": 0,
+      "new_warnings": []
+    },
+    "Huazhong_template": {
+      "success": true,
+      "returncode": 0,
+      "warnings": [],
+      "pages": 7,
+      "identical": true,
+      "comparison": "同份项目源码、冻结包副本：加载完整包 vs 移除本任务新增 CASM profile/style/artwork 的控制包",
+      "control_warning_count": 0,
+      "new_warnings": []
+    },
+    "NSFC_2026_MineChangeTrust_final": {
+      "success": true,
+      "returncode": 0,
+      "warnings": [],
+      "pages": 13,
+      "identical": true,
+      "comparison": "同份项目源码、冻结包副本：加载完整包 vs 移除本任务新增 CASM profile/style/artwork 的控制包",
+      "control_warning_count": 0,
+      "new_warnings": []
+    },
+    "NSFC_2026_CIESM-STSR_final": {
+      "success": true,
+      "returncode": 0,
+      "warnings": [
+        "Overfull \\hbox (2.71014pt too wide) in paragraph at lines 6--7",
+        "Missing character: There is no ñ (U+00F1) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ë (U+00EB) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ñ (U+00F1) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ë (U+00EB) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ñ (U+00F1) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ñ (U+00F1) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no ñ (U+00F1) in font [/home/yanfeng/fund-writing/C",
+        "Missing character: There is no Á (U+00C1) in font [/home/yanfeng/fund-writing/C",
+        "Overfull \\hbox (0.69861pt too wide) in paragraph at lines 104--106",
+        "Overfull \\hbox (4.71361pt too wide) in paragraph at lines 6--7",
+        "Overfull \\hbox (4.71361pt too wide) in paragraph at lines 5--6"
+      ],
+      "pages": 26,
+      "identical": true,
+      "comparison": "同份项目源码、冻结包副本：加载完整包 vs 移除本任务新增 CASM profile/style/artwork 的控制包",
+      "control_warning_count": 12,
+      "new_warnings": []
+    }
+  }
+}

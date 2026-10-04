@@ -1,0 +1,156 @@
+{
+  "citations": {
+    "unique_citations": 48,
+    "missing_bibkeys": 0,
+    "missing_bibkeys_list": [],
+    "incomplete_bib_entries": 0,
+    "incomplete_bibkeys_list": []
+  },
+  "text_counts": {
+    "main.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 2,
+      "non_space_chars": 18
+    },
+    "extraTex/@config.tex": {
+      "cjk_chars": 20,
+      "ascii_words": 65,
+      "non_space_chars": 404
+    },
+    "extraTex/metadata.tex": {
+      "cjk_chars": 94,
+      "ascii_words": 51,
+      "non_space_chars": 425
+    },
+    "extraTex/abstract.tex": {
+      "cjk_chars": 284,
+      "ascii_words": 3,
+      "non_space_chars": 311
+    },
+    "extraTex/members.tex": {
+      "cjk_chars": 136,
+      "ascii_words": 153,
+      "non_space_chars": 1080
+    },
+    "extraTex/budget.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 34,
+      "non_space_chars": 68
+    },
+    "extraTex/budget-basis.tex": {
+      "cjk_chars": 24,
+      "ascii_words": 17,
+      "non_space_chars": 70
+    },
+    "extraTex/proposal.tex": {
+      "cjk_chars": 12432,
+      "ascii_words": 413,
+      "non_space_chars": 14748
+    },
+    "extraTex/foundation.tex": {
+      "cjk_chars": 4207,
+      "ascii_words": 227,
+      "non_space_chars": 5664
+    },
+    "extraTex/commitment.tex": {
+      "cjk_chars": 151,
+      "ascii_words": 18,
+      "non_space_chars": 264
+    },
+    "extraTex/organization.tex": {
+      "cjk_chars": 134,
+      "ascii_words": 1,
+      "non_space_chars": 144
+    },
+    "extraTex/committee.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 0,
+      "non_space_chars": 0
+    },
+    "extraTex/director.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 0,
+      "non_space_chars": 0
+    },
+    "extraTex/attachments.tex": {
+      "cjk_chars": 42,
+      "ascii_words": 4,
+      "non_space_chars": 62
+    }
+  },
+  "terminology": {
+    "unique_normalized_terms": 59,
+    "inconsistent_terms": 0,
+    "issues_by_severity": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0
+    }
+  },
+  "main.log": [],
+  "main.bibtex.txt": [
+    "Warning--Require address: radford2021clip"
+  ],
+  "reviewed_pdf_pages": 46,
+  "reviewed_figures": 12,
+  "bibliography_entries_verified": 48,
+  "reference_evidence_sources": {
+    "crossref": 46,
+    "jeit": 1,
+    "pmlr": 1
+  },
+  "citation_links_verified": 143,
+  "findings_by_severity": {
+    "P0": 0,
+    "P1": 3,
+    "P2": 2
+  },
+  "confirmed_direct_errors": [
+    "F01",
+    "F04"
+  ],
+  "facts_or_wording_to_reconcile": [
+    "F02",
+    "F03",
+    "F05"
+  ],
+  "known_fact_gaps": [
+    {
+      "id": "G01",
+      "title": "主要成员教育与研究简历不足",
+      "location": "extraTex/foundation.tex:96,119-139",
+      "known_before_review": true,
+      "detail": "模板要求学历与研究工作简历，当前7人主要只有在读身份和拟定分工；需本人提供经历和成果，不能代编。"
+    },
+    {
+      "id": "G02",
+      "title": "正在承担项目的列示范围需要核对",
+      "location": "extraTex/foundation.tex:141-170",
+      "known_before_review": true,
+      "detail": "当前列3项；教师官网另列2026年度光伏预测项目、2026.06-2026.10智能知识库项目及其他参与项目。栏目原文没有仅限相关项目的限定，当前小标题自行限定为相关项目。应按申报基准日、实际在研状态与本表要求核实完整清单，不能把共用资料中“本次申请”的筛选决定自动套用至本项目。",
+      "source": "https://it.xju.edu.cn/info/1144/3131.htm"
+    },
+    {
+      "id": "G03",
+      "title": "申请人奖励情况待本人确认",
+      "location": "extraTex/foundation.tex:96,112-116",
+      "known_before_review": true,
+      "detail": "未提供奖励材料，不应自行填无奖励。"
+    },
+    {
+      "id": "G04",
+      "title": "ESRN方法重叠尚未完成全文核验",
+      "location": "extraTex/proposal.tex:365",
+      "known_before_review": true,
+      "detail": "题录真实性已通过；全文仍受访问限制。属于查新缺口，不是虚假文献。"
+    },
+    {
+      "id": "G05",
+      "title": "预审计与试标尚未实施",
+      "location": "extraTex/foundation.tex:35,75-83",
+      "known_before_review": true,
+      "detail": "正文明确安排在执行期开展，没有虚称已完成；不能单独以未开展预实验认定不能申报。"
+    }
+  ],
+  "scope": "明显错误筛查；并非逐篇全文同行评审"
+}

@@ -1,0 +1,11 @@
+{
+  "total_normalized_terms": 59,
+  "inconsistent_terms": 0,
+  "issues_count": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0
+  },
+  "top_issues": [],
+  "note": "Heuristic only. AI threads should verify each item and filter false positives."
+}

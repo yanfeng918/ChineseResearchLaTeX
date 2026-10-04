@@ -1,0 +1,184 @@
+[
+  {
+    "page": 10,
+    "changed_pixels": 84,
+    "ratio": 0.00016738669514897416,
+    "bounds": [
+      233,
+      732,
+      248,
+      742
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 13,
+    "changed_pixels": 280,
+    "ratio": 0.0005579556504965805,
+    "bounds": [
+      222,
+      638,
+      459,
+      727
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 14,
+    "changed_pixels": 444,
+    "ratio": 0.0008847582457874348,
+    "bounds": [
+      244,
+      255,
+      459,
+      614
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 15,
+    "changed_pixels": 280,
+    "ratio": 0.0005579556504965805,
+    "bounds": [
+      222,
+      157,
+      459,
+      711
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 16,
+    "changed_pixels": 60,
+    "ratio": 0.00011956192510641011,
+    "bounds": [
+      256,
+      684,
+      459,
+      692
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 17,
+    "changed_pixels": 274,
+    "ratio": 0.0005459994579859396,
+    "bounds": [
+      222,
+      450,
+      277,
+      614
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 18,
+    "changed_pixels": 233,
+    "ratio": 0.00046429880916322593,
+    "bounds": [
+      268,
+      235,
+      449,
+      633
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 19,
+    "changed_pixels": 187,
+    "ratio": 0.00037263466658164486,
+    "bounds": [
+      268,
+      115,
+      449,
+      126
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 24,
+    "changed_pixels": 83,
+    "ratio": 0.00016539399639720065,
+    "bounds": [
+      452,
+      509,
+      467,
+      520
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 26,
+    "changed_pixels": 80,
+    "ratio": 0.00015941590014188016,
+    "bounds": [
+      393,
+      477,
+      404,
+      488
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 28,
+    "changed_pixels": 99,
+    "ratio": 0.0001972771764255767,
+    "bounds": [
+      151,
+      606,
+      162,
+      617
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 35,
+    "changed_pixels": 82,
+    "ratio": 0.00016340129764542716,
+    "bounds": [
+      481,
+      473,
+      492,
+      483
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 40,
+    "changed_pixels": 75,
+    "ratio": 0.00014945240638301264,
+    "bounds": [
+      336,
+      219,
+      345,
+      230
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  },
+  {
+    "page": 42,
+    "changed_pixels": 22,
+    "ratio": 4.383937253901704e-05,
+    "bounds": [
+      110,
+      680,
+      114,
+      687
+    ],
+    "text_equal": true,
+    "text_equal_without_whitespace": true
+  }
+]

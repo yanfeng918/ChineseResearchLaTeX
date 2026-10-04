@@ -1,0 +1,35 @@
+{
+  "before": {
+    "pages": 48,
+    "bibliography_pages": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "bibliography_label_font_sizes": {
+      "12.0": 48
+    },
+    "missing_labels": []
+  },
+  "after": {
+    "pages": 46,
+    "bibliography_pages": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "bibliography_label_font_sizes": {
+      "10.5": 48
+    },
+    "missing_labels": []
+  },
+  "warnings": [],
+  "overfull": 0,
+  "underfull": 0
+}

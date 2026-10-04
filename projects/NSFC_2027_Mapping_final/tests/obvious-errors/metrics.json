@@ -1,0 +1,94 @@
+{
+  "citations": {
+    "unique_citations": 48,
+    "missing_bibkeys": 0,
+    "missing_bibkeys_list": [],
+    "incomplete_bib_entries": 0,
+    "incomplete_bibkeys_list": []
+  },
+  "text_counts": {
+    "main.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 2,
+      "non_space_chars": 18
+    },
+    "extraTex/@config.tex": {
+      "cjk_chars": 20,
+      "ascii_words": 65,
+      "non_space_chars": 404
+    },
+    "extraTex/metadata.tex": {
+      "cjk_chars": 94,
+      "ascii_words": 51,
+      "non_space_chars": 425
+    },
+    "extraTex/abstract.tex": {
+      "cjk_chars": 284,
+      "ascii_words": 3,
+      "non_space_chars": 311
+    },
+    "extraTex/members.tex": {
+      "cjk_chars": 136,
+      "ascii_words": 153,
+      "non_space_chars": 1080
+    },
+    "extraTex/budget.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 34,
+      "non_space_chars": 68
+    },
+    "extraTex/budget-basis.tex": {
+      "cjk_chars": 24,
+      "ascii_words": 17,
+      "non_space_chars": 70
+    },
+    "extraTex/proposal.tex": {
+      "cjk_chars": 12432,
+      "ascii_words": 413,
+      "non_space_chars": 14748
+    },
+    "extraTex/foundation.tex": {
+      "cjk_chars": 4207,
+      "ascii_words": 227,
+      "non_space_chars": 5664
+    },
+    "extraTex/commitment.tex": {
+      "cjk_chars": 151,
+      "ascii_words": 18,
+      "non_space_chars": 264
+    },
+    "extraTex/organization.tex": {
+      "cjk_chars": 134,
+      "ascii_words": 1,
+      "non_space_chars": 144
+    },
+    "extraTex/committee.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 0,
+      "non_space_chars": 0
+    },
+    "extraTex/director.tex": {
+      "cjk_chars": 0,
+      "ascii_words": 0,
+      "non_space_chars": 0
+    },
+    "extraTex/attachments.tex": {
+      "cjk_chars": 42,
+      "ascii_words": 4,
+      "non_space_chars": 62
+    }
+  },
+  "terminology": {
+    "unique_normalized_terms": 59,
+    "inconsistent_terms": 0,
+    "issues_by_severity": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0
+    }
+  },
+  "main.log": [],
+  "main.bibtex.txt": [
+    "Warning--Require address: radford2021clip"
+  ]
+}

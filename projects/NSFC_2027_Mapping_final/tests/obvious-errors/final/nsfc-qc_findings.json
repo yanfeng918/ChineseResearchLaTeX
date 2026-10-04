@@ -1,0 +1,106 @@
+{
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "P1",
+      "status": "confirmed",
+      "title": "图1竖排文字错字",
+      "path": "figures/F01_研究背景与问题提出-v4.png",
+      "source_path": "extraTex/proposal.tex",
+      "line": 13,
+      "pdf_page": 6,
+      "evidence": "竖排标签实际写成“覆差差异”。",
+      "recommendation": "将第二字“差”改为“盖”，得到“覆盖差异”；只改图中文字。"
+    },
+    {
+      "id": "F02",
+      "severity": "P1",
+      "status": "needs_reconciliation",
+      "title": "天池英才项目具体任务与最新事实库未同步",
+      "path": "extraTex/foundation.tex",
+      "line": 148,
+      "pdf_page": 41,
+      "evidence": "正文写“依据为项目任务书”并列具体负责内容，第150行进一步断言研究数据、评测和成果边界；共享事实库 docs/applicants/yan-feng.md 第84行于2026-09-22记录无可供核对的具体任务/成果材料，并撤下具体分工和已核对任务书表述。",
+      "recommendation": "保留已经确认的名称、金额、期限与主持身份；具体分工及边界补充材料后再写，或改为拟遵守的原则。不能据此认定项目本身不存在。"
+    },
+    {
+      "id": "F03",
+      "severity": "P1",
+      "status": "needs_confirmation",
+      "title": "地址与邮编存在新旧校区口径冲突",
+      "path": "extraTex/metadata.tex",
+      "line": 19,
+      "pdf_page": 3,
+      "evidence": "华瑞街777号使用830046；学校校区地址列表和研究生招生学院联系表将博达校区/计算机学院列为830017。学院页脚仍列830046，因此保留来源冲突说明。",
+      "recommendation": "按实际收件地点核对；如为博达校区华瑞街777号，应优先采用校级及学院联系表的830017口径。",
+      "sources": [
+        "https://www.xju.edu.cn/zzjg1.htm",
+        "https://yz.xju.edu.cn/lianxiwomen/erjixueyuan/",
+        "https://it.xju.edu.cn/xygk/xyjj.htm"
+      ]
+    },
+    {
+      "id": "F04",
+      "severity": "P2",
+      "status": "confirmed",
+      "title": "SCAN参考文献的论文集名误用丛书名",
+      "path": "references/myexample.bib",
+      "line": 334,
+      "pdf_page": 14,
+      "evidence": "参考文献[11]的booktitle只有Lecture Notes in Computer Science，漏了具体论文集Computer Vision – ECCV 2018。",
+      "recommendation": "booktitle改为具体论文集名，LNCS放series，并按官方题录补卷11208、Springer和Cham。",
+      "sources": [
+        "https://link.springer.com/chapter/10.1007/978-3-030-01225-0_13"
+      ]
+    },
+    {
+      "id": "F05",
+      "severity": "P2",
+      "status": "wording_inconsistency",
+      "title": "未完成方法查新，却提前断言研究空白",
+      "path": "extraTex/proposal.tex",
+      "line": 75,
+      "pdf_page": 10,
+      "evidence": "第75行使用“仍未被正面处理”，第365行却明确未取得最相关ESRN的可靠摘要和全文，尚无法判断方法重叠。",
+      "recommendation": "改成需要进一步检验的具体问题；完成全文对照前不要断言既有工作尚未正面处理。"
+    }
+  ],
+  "fact_gaps": [
+    {
+      "id": "G01",
+      "title": "主要成员教育与研究简历不足",
+      "location": "extraTex/foundation.tex:96,119-139",
+      "known_before_review": true,
+      "detail": "模板要求学历与研究工作简历，当前7人主要只有在读身份和拟定分工；需本人提供经历和成果，不能代编。"
+    },
+    {
+      "id": "G02",
+      "title": "正在承担项目的列示范围需要核对",
+      "location": "extraTex/foundation.tex:141-170",
+      "known_before_review": true,
+      "detail": "当前列3项；教师官网另列2026年度光伏预测项目、2026.06-2026.10智能知识库项目及其他参与项目。栏目原文没有仅限相关项目的限定，当前小标题自行限定为相关项目。应按申报基准日、实际在研状态与本表要求核实完整清单，不能把共用资料中“本次申请”的筛选决定自动套用至本项目。",
+      "source": "https://it.xju.edu.cn/info/1144/3131.htm"
+    },
+    {
+      "id": "G03",
+      "title": "申请人奖励情况待本人确认",
+      "location": "extraTex/foundation.tex:96,112-116",
+      "known_before_review": true,
+      "detail": "未提供奖励材料，不应自行填无奖励。"
+    },
+    {
+      "id": "G04",
+      "title": "ESRN方法重叠尚未完成全文核验",
+      "location": "extraTex/proposal.tex:365",
+      "known_before_review": true,
+      "detail": "题录真实性已通过；全文仍受访问限制。属于查新缺口，不是虚假文献。"
+    },
+    {
+      "id": "G05",
+      "title": "预审计与试标尚未实施",
+      "location": "extraTex/foundation.tex:35,75-83",
+      "known_before_review": true,
+      "detail": "正文明确安排在执行期开展，没有虚称已完成；不能单独以未开展预实验认定不能申报。"
+    }
+  ]
+}

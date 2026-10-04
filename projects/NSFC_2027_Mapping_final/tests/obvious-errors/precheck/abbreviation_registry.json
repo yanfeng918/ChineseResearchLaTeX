@@ -1,0 +1,1690 @@
+[
+  {
+    "abbr": "UTF8",
+    "first_occurrence": {
+      "abbr": "UTF8",
+      "seq": 1,
+      "path": "main.tex",
+      "line": 2,
+      "column": 16,
+      "excerpt": "\\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}"
+    },
+    "occurrences": [
+      {
+        "abbr": "UTF8",
+        "seq": 1,
+        "path": "main.tex",
+        "line": 2,
+        "column": 16,
+        "excerpt": "\\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "OMX",
+    "first_occurrence": {
+      "abbr": "OMX",
+      "seq": 4,
+      "path": "extraTex/@config.tex",
+      "line": 6,
+      "column": 19,
+      "excerpt": "\\DeclareFontShape{OMX}{cmex}{m}{n}"
+    },
+    "occurrences": [
+      {
+        "abbr": "OMX",
+        "seq": 4,
+        "path": "extraTex/@config.tex",
+        "line": 6,
+        "column": 19,
+        "excerpt": "\\DeclareFontShape{OMX}{cmex}{m}{n}"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CasmResearch",
+    "first_occurrence": {
+      "abbr": "CasmResearch",
+      "seq": 29,
+      "path": "extraTex/@config.tex",
+      "line": 37,
+      "column": 21,
+      "excerpt": "\\AtBeginEnvironment{CasmResearch}{"
+    },
+    "occurrences": [
+      {
+        "abbr": "CasmResearch",
+        "seq": 29,
+        "path": "extraTex/@config.tex",
+        "line": 37,
+        "column": 21,
+        "excerpt": "\\AtBeginEnvironment{CasmResearch}{"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RSITMD",
+    "first_occurrence": {
+      "abbr": "RSITMD",
+      "seq": 124,
+      "path": "extraTex/proposal.tex",
+      "line": 21,
+      "column": 78,
+      "excerpt": "自然语言描述对影像内容的覆盖程度，会影响图文匹配的监督含义。一景遥感影像通常同时包含道路、建筑、水体、植被及其空间格局，一条人工描述往往只涉及其中一部分。RSITMD 强调细粒度、低冗余描述，每图配置 5 条描述并附关键词\\cite{yuan2022amfmn}。RSICD..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RSITMD",
+        "seq": 124,
+        "path": "extraTex/proposal.tex",
+        "line": 21,
+        "column": 78,
+        "excerpt": "自然语言描述对影像内容的覆盖程度，会影响图文匹配的监督含义。一景遥感影像通常同时包含道路、建筑、水体、植被及其空间格局，一条人工描述往往只涉及其中一部分。RSITMD 强调细粒度、低冗余描述，每图配置 5 条描述并附关键词\\cite{yuan2022amfmn}。RSICD..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 133,
+        "path": "extraTex/proposal.tex",
+        "line": 37,
+        "column": 11,
+        "excerpt": "项目验证范围限定为 RSITMD、RSICD 及其关系挑战子集。业务场景用于说明研究动机，公开基准结论向实际作业推广仍需检验数据域差异、精度和作业规范适配。"
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 137,
+        "path": "extraTex/proposal.tex",
+        "line": 45,
+        "column": 40,
+        "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 151,
+        "path": "extraTex/proposal.tex",
+        "line": 73,
+        "column": 60,
+        "excerpt": "国内团队在该方向具有较强的研究基础与体系化推进。在数据与基准层面，RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 两个被国际广泛使用的遥感图文基准均由国内团队构建，LuoJiaHOG\\cite{zhao2025luo..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 187,
+        "path": "extraTex/proposal.tex",
+        "line": 140,
+        "column": 22,
+        "excerpt": "\\item 目标一（表示）：完成 RSITMD 与 RSICD 各 300 组、合计 600 组影像及其全部描述的审计，形成不超过 20 类实体、10 类关系的词表与三态判定规范各 1 套；计划交付 1800 条人工核验关系挑战记录，全部经双人独立标注，以仲裁前三态标注一致..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 207,
+        "path": "extraTex/proposal.tex",
+        "line": 170,
+        "column": 23,
+        "excerpt": "首先开展\\textbf{公开数据审计}：在 RSITMD 与 RSICD 原始验证划分中，按场景类别比例各抽取\\textbf{300 组、合计 600 组}影像及其全部配对描述，名义上为 3000 条记录。先保留原始索引，完成完全重复、近义改写和来源核对，再记录有效描述数、..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 211,
+        "path": "extraTex/proposal.tex",
+        "line": 177,
+        "column": 64,
+        "excerpt": "\\item 同图描述（训练端弱线索）：RSICD 的复制补齐记录不能视为独立证据\\cite{lu2018rsicd}，RSITMD 同样先核对文本与来源\\cite{yuan2022amfmn}。只有去重后且来源可区分的描述共同提及同一命题，才记为弱支持候选；来源不明时不按独..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 252,
+        "path": "extraTex/proposal.tex",
+        "line": 243,
+        "column": 17,
+        "excerpt": "\\textbf{标准检索}沿用 RSITMD\\cite{yuan2022amfmn} 与 RSICD\\cite{lu2018rsicd} 的原始双向协议，分别报告 R@1、R@5 和 R@10，以六项均值作为 mR。挑战标签不改写标准配对真值。"
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 276,
+        "path": "extraTex/proposal.tex",
+        "line": 288,
+        "column": 1,
+        "excerpt": "RSITMD 与 RSICD 经审计、去重后形成训练弱标签、验证审计记录和封存测试候选组；许可满足时，以少量 SkyScript\\cite{wang2024skyscript} 数据补充验证。内容二在训练数据上实现三臂方法，内容三先用验证集检查失效模式。2027 年 1 月..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 288,
+        "path": "extraTex/proposal.tex",
+        "line": 307,
+        "column": 16,
+        "excerpt": "\\textbf{数据可行性}：RSITMD 与 RSICD 的公开获取入口已经核验，作者仓库提供影像、标注与解析程序；数据的实际获取与逐样本验证安排在启动阶段完成，其当前状态详见“研究基础与工作条件”第 1 小节的前期基础边界说明。"
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 338,
+        "path": "extraTex/proposal.tex",
+        "line": 398,
+        "column": 4,
+        "excerpt": "完成 RSITMD、RSICD 的获取、许可和完整性核对，检查原图、近重复影像及同源切片，保持官方划分。从验证集各抽取 300 组影像，审计其名义 3000 条描述记录并统计去重后的有效信息量；复现 CLIP\\cite{radford2021clip}、RemoteCLIP..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 393,
+        "path": "extraTex/foundation.tex",
+        "line": 61,
+        "column": 15,
+        "excerpt": "本项目使用公开遥感图文数据。RSITMD\\cite{yuan2022amfmn} 与 RSICD\\cite{lu2018rsicd} 的作者仓库提供影像、标注文件与解析程序的获取入口，此前核验时入口有效；必要且许可条件满足时，可使用 SkyScript\\cite{wang2..."
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 398,
+        "path": "extraTex/foundation.tex",
+        "line": 71,
+        "column": 17,
+        "excerpt": "此前已核验三个数据集的获取入口：RSITMD 的标注文件与解析脚本由作者仓库分发，影像另经网盘入口提供；RSICD 的标注文件托管于作者仓库，影像包经云盘入口获取；SkyScript 提供对象存储直链，核验时响应正常。完整下载、文件校验和使用权限仍需在启动阶段落实。"
+      },
+      {
+        "abbr": "RSITMD",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 7,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RSICD",
+    "first_occurrence": {
+      "abbr": "RSICD",
+      "seq": 124,
+      "path": "extraTex/proposal.tex",
+      "line": 21,
+      "column": 133,
+      "excerpt": "自然语言描述对影像内容的覆盖程度，会影响图文匹配的监督含义。一景遥感影像通常同时包含道路、建筑、水体、植被及其空间格局，一条人工描述往往只涉及其中一部分。RSITMD 强调细粒度、低冗余描述，每图配置 5 条描述并附关键词\\cite{yuan2022amfmn}。RSICD..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RSICD",
+        "seq": 124,
+        "path": "extraTex/proposal.tex",
+        "line": 21,
+        "column": 133,
+        "excerpt": "自然语言描述对影像内容的覆盖程度，会影响图文匹配的监督含义。一景遥感影像通常同时包含道路、建筑、水体、植被及其空间格局，一条人工描述往往只涉及其中一部分。RSITMD 强调细粒度、低冗余描述，每图配置 5 条描述并附关键词\\cite{yuan2022amfmn}。RSICD..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 133,
+        "path": "extraTex/proposal.tex",
+        "line": 37,
+        "column": 18,
+        "excerpt": "项目验证范围限定为 RSITMD、RSICD 及其关系挑战子集。业务场景用于说明研究动机，公开基准结论向实际作业推广仍需检验数据域差异、精度和作业规范适配。"
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 137,
+        "path": "extraTex/proposal.tex",
+        "line": 45,
+        "column": 14,
+        "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 151,
+        "path": "extraTex/proposal.tex",
+        "line": 73,
+        "column": 34,
+        "excerpt": "国内团队在该方向具有较强的研究基础与体系化推进。在数据与基准层面，RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 两个被国际广泛使用的遥感图文基准均由国内团队构建，LuoJiaHOG\\cite{zhao2025luo..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 187,
+        "path": "extraTex/proposal.tex",
+        "line": 140,
+        "column": 31,
+        "excerpt": "\\item 目标一（表示）：完成 RSITMD 与 RSICD 各 300 组、合计 600 组影像及其全部描述的审计，形成不超过 20 类实体、10 类关系的词表与三态判定规范各 1 套；计划交付 1800 条人工核验关系挑战记录，全部经双人独立标注，以仲裁前三态标注一致..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 207,
+        "path": "extraTex/proposal.tex",
+        "line": 170,
+        "column": 32,
+        "excerpt": "首先开展\\textbf{公开数据审计}：在 RSITMD 与 RSICD 原始验证划分中，按场景类别比例各抽取\\textbf{300 组、合计 600 组}影像及其全部配对描述，名义上为 3000 条记录。先保留原始索引，完成完全重复、近义改写和来源核对，再记录有效描述数、..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 208,
+        "path": "extraTex/proposal.tex",
+        "line": 172,
+        "column": 155,
+        "excerpt": "其次\\textbf{构建实体关系词表}：实体归并上限为\\textbf{20 类}；候选关系最多\\textbf{10 类}，包括相离、相邻、包含，影像坐标系的左、右、上、下，以及归一化距离近、中、远。距离以实体质心间距除以影像对角线长度，初始边界为 $1/3$ 和 $2/3$..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 211,
+        "path": "extraTex/proposal.tex",
+        "line": 177,
+        "column": 24,
+        "excerpt": "\\item 同图描述（训练端弱线索）：RSICD 的复制补齐记录不能视为独立证据\\cite{lu2018rsicd}，RSITMD 同样先核对文本与来源\\cite{yuan2022amfmn}。只有去重后且来源可区分的描述共同提及同一命题，才记为弱支持候选；来源不明时不按独..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 252,
+        "path": "extraTex/proposal.tex",
+        "line": 243,
+        "column": 46,
+        "excerpt": "\\textbf{标准检索}沿用 RSITMD\\cite{yuan2022amfmn} 与 RSICD\\cite{lu2018rsicd} 的原始双向协议，分别报告 R@1、R@5 和 R@10，以六项均值作为 mR。挑战标签不改写标准配对真值。"
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 276,
+        "path": "extraTex/proposal.tex",
+        "line": 288,
+        "column": 10,
+        "excerpt": "RSITMD 与 RSICD 经审计、去重后形成训练弱标签、验证审计记录和封存测试候选组；许可满足时，以少量 SkyScript\\cite{wang2024skyscript} 数据补充验证。内容二在训练数据上实现三臂方法，内容三先用验证集检查失效模式。2027 年 1 月..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 288,
+        "path": "extraTex/proposal.tex",
+        "line": 307,
+        "column": 25,
+        "excerpt": "\\textbf{数据可行性}：RSITMD 与 RSICD 的公开获取入口已经核验，作者仓库提供影像、标注与解析程序；数据的实际获取与逐样本验证安排在启动阶段完成，其当前状态详见“研究基础与工作条件”第 1 小节的前期基础边界说明。"
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 338,
+        "path": "extraTex/proposal.tex",
+        "line": 398,
+        "column": 11,
+        "excerpt": "完成 RSITMD、RSICD 的获取、许可和完整性核对，检查原图、近重复影像及同源切片，保持官方划分。从验证集各抽取 300 组影像，审计其名义 3000 条描述记录并统计去重后的有效信息量；复现 CLIP\\cite{radford2021clip}、RemoteCLIP..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 393,
+        "path": "extraTex/foundation.tex",
+        "line": 61,
+        "column": 44,
+        "excerpt": "本项目使用公开遥感图文数据。RSITMD\\cite{yuan2022amfmn} 与 RSICD\\cite{lu2018rsicd} 的作者仓库提供影像、标注文件与解析程序的获取入口，此前核验时入口有效；必要且许可条件满足时，可使用 SkyScript\\cite{wang2..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 398,
+        "path": "extraTex/foundation.tex",
+        "line": 71,
+        "column": 53,
+        "excerpt": "此前已核验三个数据集的获取入口：RSITMD 的标注文件与解析脚本由作者仓库分发，影像另经网盘入口提供；RSICD 的标注文件托管于作者仓库，影像包经云盘入口获取；SkyScript 提供对象存储直链，核验时响应正常。完整下载、文件校验和使用权限仍需在启动阶段落实。"
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 16,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      },
+      {
+        "abbr": "RSICD",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 48,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "SkyScript",
+    "first_occurrence": {
+      "abbr": "SkyScript",
+      "seq": 137,
+      "path": "extraTex/proposal.tex",
+      "line": 45,
+      "column": 123,
+      "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+    },
+    "occurrences": [
+      {
+        "abbr": "SkyScript",
+        "seq": 137,
+        "path": "extraTex/proposal.tex",
+        "line": 45,
+        "column": 123,
+        "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+      },
+      {
+        "abbr": "SkyScript",
+        "seq": 276,
+        "path": "extraTex/proposal.tex",
+        "line": 288,
+        "column": 56,
+        "excerpt": "RSITMD 与 RSICD 经审计、去重后形成训练弱标签、验证审计记录和封存测试候选组；许可满足时，以少量 SkyScript\\cite{wang2024skyscript} 数据补充验证。内容二在训练数据上实现三臂方法，内容三先用验证集检查失效模式。2027 年 1 月..."
+      },
+      {
+        "abbr": "SkyScript",
+        "seq": 393,
+        "path": "extraTex/foundation.tex",
+        "line": 61,
+        "column": 118,
+        "excerpt": "本项目使用公开遥感图文数据。RSITMD\\cite{yuan2022amfmn} 与 RSICD\\cite{lu2018rsicd} 的作者仓库提供影像、标注文件与解析程序的获取入口，此前核验时入口有效；必要且许可条件满足时，可使用 SkyScript\\cite{wang2..."
+      },
+      {
+        "abbr": "SkyScript",
+        "seq": 398,
+        "path": "extraTex/foundation.tex",
+        "line": 71,
+        "column": 83,
+        "excerpt": "此前已核验三个数据集的获取入口：RSITMD 的标注文件与解析脚本由作者仓库分发，影像另经网盘入口提供；RSICD 的标注文件托管于作者仓库，影像包经云盘入口获取；SkyScript 提供对象存储直链，核验时响应正常。完整下载、文件校验和使用权限仍需在启动阶段落实。"
+      },
+      {
+        "abbr": "SkyScript",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 78,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RS5M",
+    "first_occurrence": {
+      "abbr": "RS5M",
+      "seq": 137,
+      "path": "extraTex/proposal.tex",
+      "line": 45,
+      "column": 174,
+      "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RS5M",
+        "seq": 137,
+        "path": "extraTex/proposal.tex",
+        "line": 45,
+        "column": 174,
+        "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "LuoJiaHOG",
+    "first_occurrence": {
+      "abbr": "LuoJiaHOG",
+      "seq": 137,
+      "path": "extraTex/proposal.tex",
+      "line": 45,
+      "column": 220,
+      "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+    },
+    "occurrences": [
+      {
+        "abbr": "LuoJiaHOG",
+        "seq": 137,
+        "path": "extraTex/proposal.tex",
+        "line": 45,
+        "column": 220,
+        "excerpt": "遥感图文检索的基准体系以 RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 为核心，评测普遍采用双向 R@1/R@5/R@10 及六项均值 mR。近年出现了规模更大、语义更丰富的数据资源：SkyScript 将影像与开..."
+      },
+      {
+        "abbr": "LuoJiaHOG",
+        "seq": 151,
+        "path": "extraTex/proposal.tex",
+        "line": 73,
+        "column": 112,
+        "excerpt": "国内团队在该方向具有较强的研究基础与体系化推进。在数据与基准层面，RSICD\\cite{lu2018rsicd} 与 RSITMD\\cite{yuan2022amfmn} 两个被国际广泛使用的遥感图文基准均由国内团队构建，LuoJiaHOG\\cite{zhao2025luo..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CLIP",
+    "first_occurrence": {
+      "abbr": "CLIP",
+      "seq": 142,
+      "path": "extraTex/proposal.tex",
+      "line": 55,
+      "column": 1,
+      "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+    },
+    "occurrences": [
+      {
+        "abbr": "CLIP",
+        "seq": 142,
+        "path": "extraTex/proposal.tex",
+        "line": 55,
+        "column": 1,
+        "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+      },
+      {
+        "abbr": "CLIP",
+        "seq": 338,
+        "path": "extraTex/proposal.tex",
+        "line": 398,
+        "column": 101,
+        "excerpt": "完成 RSITMD、RSICD 的获取、许可和完整性核对，检查原图、近重复影像及同源切片，保持官方划分。从验证集各抽取 300 组影像，审计其名义 3000 条描述记录并统计去重后的有效信息量；复现 CLIP\\cite{radford2021clip}、RemoteCLIP..."
+      },
+      {
+        "abbr": "CLIP",
+        "seq": 424,
+        "path": "extraTex/foundation.tex",
+        "line": 129,
+        "column": 8,
+        "excerpt": "杨铄：拟负责 CLIP、RemoteCLIP 基线复现和参数高效适配实验，维护一致的数据预处理、训练预算及运行配置。"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RemoteCLIP",
+    "first_occurrence": {
+      "abbr": "RemoteCLIP",
+      "seq": 142,
+      "path": "extraTex/proposal.tex",
+      "line": 55,
+      "column": 56,
+      "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RemoteCLIP",
+        "seq": 142,
+        "path": "extraTex/proposal.tex",
+        "line": 55,
+        "column": 56,
+        "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+      },
+      {
+        "abbr": "RemoteCLIP",
+        "seq": 142,
+        "path": "extraTex/proposal.tex",
+        "line": 55,
+        "column": 301,
+        "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+      },
+      {
+        "abbr": "RemoteCLIP",
+        "seq": 338,
+        "path": "extraTex/proposal.tex",
+        "line": 398,
+        "column": 128,
+        "excerpt": "完成 RSITMD、RSICD 的获取、许可和完整性核对，检查原图、近重复影像及同源切片，保持官方划分。从验证集各抽取 300 组影像，审计其名义 3000 条描述记录并统计去重后的有效信息量；复现 CLIP\\cite{radford2021clip}、RemoteCLIP..."
+      },
+      {
+        "abbr": "RemoteCLIP",
+        "seq": 424,
+        "path": "extraTex/foundation.tex",
+        "line": 129,
+        "column": 13,
+        "excerpt": "杨铄：拟负责 CLIP、RemoteCLIP 基线复现和参数高效适配实验，维护一致的数据预处理、训练预算及运行配置。"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "GeoRSCLIP",
+    "first_occurrence": {
+      "abbr": "GeoRSCLIP",
+      "seq": 142,
+      "path": "extraTex/proposal.tex",
+      "line": 55,
+      "column": 91,
+      "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+    },
+    "occurrences": [
+      {
+        "abbr": "GeoRSCLIP",
+        "seq": 142,
+        "path": "extraTex/proposal.tex",
+        "line": 55,
+        "column": 91,
+        "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "SkySense",
+    "first_occurrence": {
+      "abbr": "SkySense",
+      "seq": 142,
+      "path": "extraTex/proposal.tex",
+      "line": 55,
+      "column": 132,
+      "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+    },
+    "occurrences": [
+      {
+        "abbr": "SkySense",
+        "seq": 142,
+        "path": "extraTex/proposal.tex",
+        "line": 55,
+        "column": 132,
+        "excerpt": "CLIP 及其大规模图文对比预训练范式\\cite{radford2021clip} 之后，遥感领域相继出现了 RemoteCLIP\\cite{liu2024remoteclip}、GeoRSCLIP\\cite{zhang2024rs5m} 与多模态遥感基础模型 SkySen..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "PMPGuard",
+    "first_occurrence": {
+      "abbr": "PMPGuard",
+      "seq": 148,
+      "path": "extraTex/proposal.tex",
+      "line": 67,
+      "column": 215,
+      "excerpt": "图文对不完全匹配的问题已有系统研究：部分错配对的鲁棒学习\\cite{hu2023rcl}、基于元学习的相似度校正\\cite{han2023msc}、双向相似度一致性纠正\\cite{yang2023bicro}、证据深度学习处理噪声对应\\cite{qin2022decl}、负..."
+    },
+    "occurrences": [
+      {
+        "abbr": "PMPGuard",
+        "seq": 148,
+        "path": "extraTex/proposal.tex",
+        "line": 67,
+        "column": 215,
+        "excerpt": "图文对不完全匹配的问题已有系统研究：部分错配对的鲁棒学习\\cite{hu2023rcl}、基于元学习的相似度校正\\cite{han2023msc}、双向相似度一致性纠正\\cite{yang2023bicro}、证据深度学习处理噪声对应\\cite{qin2022decl}、负..."
+      },
+      {
+        "abbr": "PMPGuard",
+        "seq": 149,
+        "path": "extraTex/proposal.tex",
+        "line": 69,
+        "column": 20,
+        "excerpt": "这些方法并非都把失配统一视为无用噪声。PMPGuard 通过匹配程度估计与注意力机制，区分并利用部分匹配图文中的正、负语义线索\\cite{pmpguard2026}。其启发在于保留有效语义；本项目进一步检验具体“影像—实体对—关系命题”的支持、冲突与未知状态如何参与监督。训..."
+      },
+      {
+        "abbr": "PMPGuard",
+        "seq": 238,
+        "path": "extraTex/proposal.tex",
+        "line": 220,
+        "column": 59,
+        "excerpt": "\\item 臂 (b)：S 为正例，C 与 U 均作为关系负例；这是本项目构造的二值处理对照，不声称等价于 PMPGuard 或其他完整方法；"
+      },
+      {
+        "abbr": "PMPGuard",
+        "seq": 319,
+        "path": "extraTex/proposal.tex",
+        "line": 365,
+        "column": 1,
+        "excerpt": "PMPGuard\\cite{pmpguard2026}既估计伪匹配程度，也通过注意力利用部分匹配中的正、负语义线索；本项目不能将其简化为统一抑制噪声。拟比较的重点是具体关系命题的三态标签、未知屏蔽位置及独立候选真值协议。实体关系单模态学习\\cite{zhang2023uni..."
+      },
+      {
+        "abbr": "PMPGuard",
+        "seq": 323,
+        "path": "extraTex/proposal.tex",
+        "line": 371,
+        "column": 25,
+        "excerpt": "\\caption{相关工作与拟研究重点。PMPGuard 利用部分匹配正、负线索；ESRN 仅据题录标示关系研究主题，其方法重叠仍待全文核查。}"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "NA",
+    "first_occurrence": {
+      "abbr": "NA",
+      "seq": 225,
+      "path": "extraTex/proposal.tex",
+      "line": 199,
+      "column": 151,
+      "excerpt": "覆盖分层以查询原配影像的去重描述为依据：实际输入的单关系查询明确包含的实体和目标关系条目数，除以同图有效描述经核验合并后的条目数，得到\\textbf{文本内部相对覆盖度}；低、中、高边界为 $1/3$、$2/3$。它不估计影像真实语义覆盖。只有一条有效描述、不同表述的条目集..."
+    },
+    "occurrences": [
+      {
+        "abbr": "NA",
+        "seq": 225,
+        "path": "extraTex/proposal.tex",
+        "line": 199,
+        "column": 151,
+        "excerpt": "覆盖分层以查询原配影像的去重描述为依据：实际输入的单关系查询明确包含的实体和目标关系条目数，除以同图有效描述经核验合并后的条目数，得到\\textbf{文本内部相对覆盖度}；低、中、高边界为 $1/3$、$2/3$。它不估计影像真实语义覆盖。只有一条有效描述、不同表述的条目集..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 225,
+        "path": "extraTex/proposal.tex",
+        "line": 199,
+        "column": 199,
+        "excerpt": "覆盖分层以查询原配影像的去重描述为依据：实际输入的单关系查询明确包含的实体和目标关系条目数，除以同图有效描述经核验合并后的条目数，得到\\textbf{文本内部相对覆盖度}；低、中、高边界为 $1/3$、$2/3$。它不估计影像真实语义覆盖。只有一条有效描述、不同表述的条目集..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 225,
+        "path": "extraTex/proposal.tex",
+        "line": 199,
+        "column": 257,
+        "excerpt": "覆盖分层以查询原配影像的去重描述为依据：实际输入的单关系查询明确包含的实体和目标关系条目数，除以同图有效描述经核验合并后的条目数，得到\\textbf{文本内部相对覆盖度}；低、中、高边界为 $1/3$、$2/3$。它不估计影像真实语义覆盖。只有一条有效描述、不同表述的条目集..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 225,
+        "path": "extraTex/proposal.tex",
+        "line": 199,
+        "column": 324,
+        "excerpt": "覆盖分层以查询原配影像的去重描述为依据：实际输入的单关系查询明确包含的实体和目标关系条目数，除以同图有效描述经核验合并后的条目数，得到\\textbf{文本内部相对覆盖度}；低、中、高边界为 $1/3$、$2/3$。它不估计影像真实语义覆盖。只有一条有效描述、不同表述的条目集..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 105,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 246,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 315,
+        "path": "extraTex/proposal.tex",
+        "line": 358,
+        "column": 121,
+        "excerpt": "\\item 将描述覆盖差异与候选真值核验结合。去重和来源核对后的描述可提供训练弱线索，视觉及人工证据确定其适用边界；通过全候选核验的三图挑战组，同时报告冲突、支持与未知返回率，检验关系约束的收益是否真实。文本内部覆盖度与不可估计的 NA 分层分别报告，避免把描述数量或覆盖比..."
+      },
+      {
+        "abbr": "NA",
+        "seq": 339,
+        "path": "extraTex/proposal.tex",
+        "line": 400,
+        "column": 84,
+        "excerpt": "\\textbf{阶段目标}：2027 年 1 月底前交付 600 组审计、基线与 H1 报告、去重及描述来源记录、规范 v1、100 条试标报告，预先确定挑战集抽样、NA 与配额调整规则。"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CR",
+    "first_occurrence": {
+      "abbr": "CR",
+      "seq": 254,
+      "path": "extraTex/proposal.tex",
+      "line": 247,
+      "column": 21,
+      "excerpt": "\\textbf{关系冲突误匹配率}记为 CR@1，\\textbf{支持返回率}记为 SR@1。令 $Q$ 为全部挑战查询，$i_q^*$ 为查询 $q$ 的组内最高分候选，$y_{q,i}$ 为人工三态标签，则"
+    },
+    "occurrences": [
+      {
+        "abbr": "CR",
+        "seq": 254,
+        "path": "extraTex/proposal.tex",
+        "line": 247,
+        "column": 21,
+        "excerpt": "\\textbf{关系冲突误匹配率}记为 CR@1，\\textbf{支持返回率}记为 SR@1。令 $Q$ 为全部挑战查询，$i_q^*$ 为查询 $q$ 的组内最高分候选，$y_{q,i}$ 为人工三态标签，则"
+      },
+      {
+        "abbr": "CR",
+        "seq": 256,
+        "path": "extraTex/proposal.tex",
+        "line": 249,
+        "column": 10,
+        "excerpt": "\\mathrm{CR@1}=\\frac{\\sum_{q\\in Q}\\mathbf{1}[y_{q,i_q^*}=C]}{|Q|},\\qquad"
+      },
+      {
+        "abbr": "CR",
+        "seq": 259,
+        "path": "extraTex/proposal.tex",
+        "line": 252,
+        "column": 77,
+        "excerpt": "未知返回率 $\\mathrm{UR@1}$ 同理以 U 计数，三率之和为 1，均以全部查询为分母。U 不当作正确或冲突，也不从分母中删去。H2 除要求 CR@1 降低外，还要求 SR@1 不降低且 UR@1 不增加；同时报告从冲突转为支持或未知的查询数量，区分正确返回与回避判定。"
+      },
+      {
+        "abbr": "CR",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 145,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "CR",
+        "seq": 273,
+        "path": "extraTex/proposal.tex",
+        "line": 282,
+        "column": 158,
+        "excerpt": "报告三种子的均值、标准差与各次结果。对方法差值进行 2000 次配对 bootstrap：关系挑战以不重叠三图组为重采样单位、按基准分层，标准检索以影像及其全部配对描述为聚类单位，在固定全库排名上重采样；各次保留三个种子的配对结果并取均值，给出 95\\% 置信区间。H2 的..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "SR",
+    "first_occurrence": {
+      "abbr": "SR",
+      "seq": 254,
+      "path": "extraTex/proposal.tex",
+      "line": 247,
+      "column": 43,
+      "excerpt": "\\textbf{关系冲突误匹配率}记为 CR@1，\\textbf{支持返回率}记为 SR@1。令 $Q$ 为全部挑战查询，$i_q^*$ 为查询 $q$ 的组内最高分候选，$y_{q,i}$ 为人工三态标签，则"
+    },
+    "occurrences": [
+      {
+        "abbr": "SR",
+        "seq": 254,
+        "path": "extraTex/proposal.tex",
+        "line": 247,
+        "column": 43,
+        "excerpt": "\\textbf{关系冲突误匹配率}记为 CR@1，\\textbf{支持返回率}记为 SR@1。令 $Q$ 为全部挑战查询，$i_q^*$ 为查询 $q$ 的组内最高分候选，$y_{q,i}$ 为人工三态标签，则"
+      },
+      {
+        "abbr": "SR",
+        "seq": 257,
+        "path": "extraTex/proposal.tex",
+        "line": 250,
+        "column": 10,
+        "excerpt": "\\mathrm{SR@1}=\\frac{\\sum_{q\\in Q}\\mathbf{1}[y_{q,i_q^*}=S]}{|Q|}."
+      },
+      {
+        "abbr": "SR",
+        "seq": 259,
+        "path": "extraTex/proposal.tex",
+        "line": 252,
+        "column": 90,
+        "excerpt": "未知返回率 $\\mathrm{UR@1}$ 同理以 U 计数，三率之和为 1，均以全部查询为分母。U 不当作正确或冲突，也不从分母中删去。H2 除要求 CR@1 降低外，还要求 SR@1 不降低且 UR@1 不增加；同时报告从冲突转为支持或未知的查询数量，区分正确返回与回避判定。"
+      },
+      {
+        "abbr": "SR",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 163,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "SR",
+        "seq": 273,
+        "path": "extraTex/proposal.tex",
+        "line": 282,
+        "column": 174,
+        "excerpt": "报告三种子的均值、标准差与各次结果。对方法差值进行 2000 次配对 bootstrap：关系挑战以不重叠三图组为重采样单位、按基准分层，标准检索以影像及其全部配对描述为聚类单位，在固定全库排名上重采样；各次保留三个种子的配对结果并取均值，给出 95\\% 置信区间。H2 的..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "UR",
+    "first_occurrence": {
+      "abbr": "UR",
+      "seq": 259,
+      "path": "extraTex/proposal.tex",
+      "line": 252,
+      "column": 100,
+      "excerpt": "未知返回率 $\\mathrm{UR@1}$ 同理以 U 计数，三率之和为 1，均以全部查询为分母。U 不当作正确或冲突，也不从分母中删去。H2 除要求 CR@1 降低外，还要求 SR@1 不降低且 UR@1 不增加；同时报告从冲突转为支持或未知的查询数量，区分正确返回与回避判定。"
+    },
+    "occurrences": [
+      {
+        "abbr": "UR",
+        "seq": 259,
+        "path": "extraTex/proposal.tex",
+        "line": 252,
+        "column": 100,
+        "excerpt": "未知返回率 $\\mathrm{UR@1}$ 同理以 U 计数，三率之和为 1，均以全部查询为分母。U 不当作正确或冲突，也不从分母中删去。H2 除要求 CR@1 降低外，还要求 SR@1 不降低且 UR@1 不增加；同时报告从冲突转为支持或未知的查询数量，区分正确返回与回避判定。"
+      },
+      {
+        "abbr": "UR",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 154,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "UR",
+        "seq": 273,
+        "path": "extraTex/proposal.tex",
+        "line": 282,
+        "column": 191,
+        "excerpt": "报告三种子的均值、标准差与各次结果。对方法差值进行 2000 次配对 bootstrap：关系挑战以不重叠三图组为重采样单位、按基准分层，标准检索以影像及其全部配对描述为聚类单位，在固定全库排名上重采样；各次保留三个种子的配对结果并取均值，给出 95\\% 置信区间。H2 的..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "S--C",
+    "first_occurrence": {
+      "abbr": "S--C",
+      "seq": 260,
+      "path": "extraTex/proposal.tex",
+      "line": 254,
+      "column": 76,
+      "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+    },
+    "occurrences": [
+      {
+        "abbr": "S--C",
+        "seq": 260,
+        "path": "extraTex/proposal.tex",
+        "line": 254,
+        "column": 76,
+        "excerpt": "\\textbf{关系排序准确率}比较同一查询中 S 候选与 C 候选的得分：S 得分较高计 1、相等计 $1/2$、较低计 0，总分除以全部可比较的 S--C 候选对数。U 不进入该分母；没有可比较对时记为 NA，同时报告有效查询数与候选对数。例如一组标签为 S、C、U，若..."
+      },
+      {
+        "abbr": "S--C",
+        "seq": 302,
+        "path": "extraTex/proposal.tex",
+        "line": 332,
+        "column": 177,
+        "excerpt": "\\item 关系标注一致性或样本量不足的风险。\\textbf{应对}：先在验证集完成 100 条试标，两次开发修订后冻结规范，再开展 1800 条正式标注；目标为仲裁前 $\\kappa\\geq0.70$。若正式一致性不足，按冻结规范复核整批受影响记录，保留各轮数值，不因测试..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "H1--H3",
+    "first_occurrence": {
+      "abbr": "H1--H3",
+      "seq": 286,
+      "path": "extraTex/proposal.tex",
+      "line": 303,
+      "column": 178,
+      "excerpt": "\\textbf{理论可行性}：图像级描述只能提供部分语义，重复记录还会影响有效信息量\\cite{lu2018rsicd,yuan2022amfmn}；已有工作已证明可以利用部分匹配中的有效线索和鲁棒学习处理失配\\cite{pmpguard2026,hu2023rcl,han..."
+    },
+    "occurrences": [
+      {
+        "abbr": "H1--H3",
+        "seq": 286,
+        "path": "extraTex/proposal.tex",
+        "line": 303,
+        "column": 178,
+        "excerpt": "\\textbf{理论可行性}：图像级描述只能提供部分语义，重复记录还会影响有效信息量\\cite{lu2018rsicd,yuan2022amfmn}；已有工作已证明可以利用部分匹配中的有效线索和鲁棒学习处理失配\\cite{pmpguard2026,hu2023rcl,han..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "H2--H3",
+    "first_occurrence": {
+      "abbr": "H2--H3",
+      "seq": 310,
+      "path": "extraTex/proposal.tex",
+      "line": 349,
+      "column": 154,
+      "excerpt": "第二个特色是\\textbf{预先规定可证伪判据}。多描述数据的有效信息量需先核查\\cite{lu2018rsicd,yuan2022amfmn}，现有部分匹配与鲁棒学习也已能保留有效语义\\cite{pmpguard2026,hu2023rcl}，因此本项目不预设新方法一定有..."
+    },
+    "occurrences": [
+      {
+        "abbr": "H2--H3",
+        "seq": 310,
+        "path": "extraTex/proposal.tex",
+        "line": 349,
+        "column": 154,
+        "excerpt": "第二个特色是\\textbf{预先规定可证伪判据}。多描述数据的有效信息量需先核查\\cite{lu2018rsicd,yuan2022amfmn}，现有部分匹配与鲁棒学习也已能保留有效语义\\cite{pmpguard2026,hu2023rcl}，因此本项目不预设新方法一定有..."
+      },
+      {
+        "abbr": "H2--H3",
+        "seq": 344,
+        "path": "extraTex/proposal.tex",
+        "line": 410,
+        "column": 140,
+        "excerpt": "在冻结配置下完成两基准各三臂、三种子的 18 次主实验，以及两项消融各两基准、三种子的 12 次实验；全部检查点仅依据验证集选定。完成 1800 条挑战记录的双人核验、仲裁及 180 条抽查，封存标签和一致性报告。以验证结果开展五类分析、检查两个方向的迁移流程，并形成论文初..."
+      },
+      {
+        "abbr": "H2--H3",
+        "seq": 347,
+        "path": "extraTex/proposal.tex",
+        "line": 416,
+        "column": 48,
+        "excerpt": "评测人员对冻结的检查点、脚本和标签一次性运行最终测试，完成五类评测、2000 次聚类重采样与 H2--H3 判断。后续复核仅解释结果或按冻结规范纠正可追踪的错误，不再调参；成果于 2027 年 10 月底前整理交付。"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "ESRN",
+    "first_occurrence": {
+      "abbr": "ESRN",
+      "seq": 319,
+      "path": "extraTex/proposal.tex",
+      "line": 365,
+      "column": 146,
+      "excerpt": "PMPGuard\\cite{pmpguard2026}既估计伪匹配程度，也通过注意力利用部分匹配中的正、负语义线索；本项目不能将其简化为统一抑制噪声。拟比较的重点是具体关系命题的三态标签、未知屏蔽位置及独立候选真值协议。实体关系单模态学习\\cite{zhang2023uni..."
+    },
+    "occurrences": [
+      {
+        "abbr": "ESRN",
+        "seq": 319,
+        "path": "extraTex/proposal.tex",
+        "line": 365,
+        "column": 146,
+        "excerpt": "PMPGuard\\cite{pmpguard2026}既估计伪匹配程度，也通过注意力利用部分匹配中的正、负语义线索；本项目不能将其简化为统一抑制噪声。拟比较的重点是具体关系命题的三态标签、未知屏蔽位置及独立候选真值协议。实体关系单模态学习\\cite{zhang2023uni..."
+      },
+      {
+        "abbr": "ESRN",
+        "seq": 319,
+        "path": "extraTex/proposal.tex",
+        "line": 365,
+        "column": 181,
+        "excerpt": "PMPGuard\\cite{pmpguard2026}既估计伪匹配程度，也通过注意力利用部分匹配中的正、负语义线索；本项目不能将其简化为统一抑制噪声。拟比较的重点是具体关系命题的三态标签、未知屏蔽位置及独立候选真值协议。实体关系单模态学习\\cite{zhang2023uni..."
+      },
+      {
+        "abbr": "ESRN",
+        "seq": 323,
+        "path": "extraTex/proposal.tex",
+        "line": 371,
+        "column": 46,
+        "excerpt": "\\caption{相关工作与拟研究重点。PMPGuard 利用部分匹配正、负线索；ESRN 仅据题录标示关系研究主题，其方法重叠仍待全文核查。}"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "IEEE",
+    "first_occurrence": {
+      "abbr": "IEEE",
+      "seq": 368,
+      "path": "extraTex/foundation.tex",
+      "line": 12,
+      "column": 111,
+      "excerpt": "申请人在跨模态检索方向的工作直接支撑本项目内容二。代表性成果为 Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval（\\textit{IEEE Signal Processing Lett..."
+    },
+    "occurrences": [
+      {
+        "abbr": "IEEE",
+        "seq": 368,
+        "path": "extraTex/foundation.tex",
+        "line": 12,
+        "column": 111,
+        "excerpt": "申请人在跨模态检索方向的工作直接支撑本项目内容二。代表性成果为 Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval（\\textit{IEEE Signal Processing Lett..."
+      },
+      {
+        "abbr": "IEEE",
+        "seq": 418,
+        "path": "extraTex/foundation.tex",
+        "line": 114,
+        "column": 157,
+        "excerpt": "申请人围绕多模态学习与遥感视觉理解形成了系列成果，包括发表于 \\textit{Machine Learning}、\\textit{Expert Systems with Applications}、\\textit{Computer Vision and Image Unde..."
+      }
+    ],
+    "definitions": [
+      {
+        "abbr": "IEEE",
+        "seq": 368,
+        "path": "extraTex/foundation.tex",
+        "line": 12,
+        "column": 111,
+        "english_full": "",
+        "chinese_full": "",
+        "english_full_normalized": "",
+        "chinese_full_normalized": "",
+        "matched_text": "（\\textit{IEEE Signal Processing Letters}, 2026, 33: 609--613）",
+        "context": "\\subsubsection*{1.1.1\\quad 跨模态检索的表征与匹配}\n申请人在跨模态检索方向的工作直接支撑本项目内容二。代表性成果为 Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval（\\textit{IEEE Signal Processing Letters}, 2026, 33: 609--613），申请人为通讯作者，负责研究构思、方法设计、实验指导、结果分析及论文撰写与修改。该工作围绕跨模态哈希检索中的特征融合与解耦展开，使申请人对图文双塔的表征学习、相似度构造、负样本组织与检索评测流程具备完整的实操经验。相关的跨模态检索..."
+      }
+    ],
+    "status": {
+      "first_use": "defined",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "ICASSP",
+    "first_occurrence": {
+      "abbr": "ICASSP",
+      "seq": 368,
+      "path": "extraTex/foundation.tex",
+      "line": 12,
+      "column": 382,
+      "excerpt": "申请人在跨模态检索方向的工作直接支撑本项目内容二。代表性成果为 Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval（\\textit{IEEE Signal Processing Lett..."
+    },
+    "occurrences": [
+      {
+        "abbr": "ICASSP",
+        "seq": 368,
+        "path": "extraTex/foundation.tex",
+        "line": 12,
+        "column": 382,
+        "excerpt": "申请人在跨模态检索方向的工作直接支撑本项目内容二。代表性成果为 Feature Fusion Mamba Hashing via Decoupling for Cross-Modal Retrieval（\\textit{IEEE Signal Processing Lett..."
+      },
+      {
+        "abbr": "ICASSP",
+        "seq": 418,
+        "path": "extraTex/foundation.tex",
+        "line": 114,
+        "column": 248,
+        "excerpt": "申请人围绕多模态学习与遥感视觉理解形成了系列成果，包括发表于 \\textit{Machine Learning}、\\textit{Expert Systems with Applications}、\\textit{Computer Vision and Image Unde..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RSHR",
+    "first_occurrence": {
+      "abbr": "RSHR",
+      "seq": 371,
+      "path": "extraTex/foundation.tex",
+      "line": 18,
+      "column": 48,
+      "excerpt": "申请人在遥感视觉理解方向积累了对遥感影像语义、空间结构与多模态交互的处理经验。代表性成果包括 RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reas..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RSHR",
+        "seq": 371,
+        "path": "extraTex/foundation.tex",
+        "line": 18,
+        "column": 48,
+        "excerpt": "申请人在遥感视觉理解方向积累了对遥感影像语义、空间结构与多模态交互的处理经验。代表性成果包括 RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reas..."
+      },
+      {
+        "abbr": "RSHR",
+        "seq": 377,
+        "path": "extraTex/foundation.tex",
+        "line": 31,
+        "column": 40,
+        "excerpt": "内容一的三态判定需要辨认遥感影像中的空间关系，并判断关系证据对图文匹配的作用。RSHR+ 与 RSSR 提供遥感影像空间结构与视觉校准经验，跨模态哈希检索工作提供表征学习、相似度构造与负样本组织经验，SPCA-Net 则提供空间关系进入多模态交互的实现经验。内容三所需的分层..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RSSR",
+    "first_occurrence": {
+      "abbr": "RSSR",
+      "seq": 371,
+      "path": "extraTex/foundation.tex",
+      "line": 18,
+      "column": 291,
+      "excerpt": "申请人在遥感视觉理解方向积累了对遥感影像语义、空间结构与多模态交互的处理经验。代表性成果包括 RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reas..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RSSR",
+        "seq": 371,
+        "path": "extraTex/foundation.tex",
+        "line": 18,
+        "column": 291,
+        "excerpt": "申请人在遥感视觉理解方向积累了对遥感影像语义、空间结构与多模态交互的处理经验。代表性成果包括 RSHR+: Progressive Question-Conditioned Visual Calibration and Structured State-Space Reas..."
+      },
+      {
+        "abbr": "RSSR",
+        "seq": 377,
+        "path": "extraTex/foundation.tex",
+        "line": 31,
+        "column": 48,
+        "excerpt": "内容一的三态判定需要辨认遥感影像中的空间关系，并判断关系证据对图文匹配的作用。RSHR+ 与 RSSR 提供遥感影像空间结构与视觉校准经验，跨模态哈希检索工作提供表征学习、相似度构造与负样本组织经验，SPCA-Net 则提供空间关系进入多模态交互的实现经验。内容三所需的分层..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "SPCA-Net",
+    "first_occurrence": {
+      "abbr": "SPCA-Net",
+      "seq": 374,
+      "path": "extraTex/foundation.tex",
+      "line": 24,
+      "column": 237,
+      "excerpt": "申请人在多模态表征学习方面的工作包括 Knowledge-Aware Image Understanding with Multi-Level Visual Representation Enhancement for Visual Question Answering（\\..."
+    },
+    "occurrences": [
+      {
+        "abbr": "SPCA-Net",
+        "seq": 374,
+        "path": "extraTex/foundation.tex",
+        "line": 24,
+        "column": 237,
+        "excerpt": "申请人在多模态表征学习方面的工作包括 Knowledge-Aware Image Understanding with Multi-Level Visual Representation Enhancement for Visual Question Answering（\\..."
+      },
+      {
+        "abbr": "SPCA-Net",
+        "seq": 377,
+        "path": "extraTex/foundation.tex",
+        "line": 31,
+        "column": 101,
+        "excerpt": "内容一的三态判定需要辨认遥感影像中的空间关系，并判断关系证据对图文匹配的作用。RSHR+ 与 RSSR 提供遥感影像空间结构与视觉校准经验，跨模态哈希检索工作提供表征学习、相似度构造与负样本组织经验，SPCA-Net 则提供空间关系进入多模态交互的实现经验。内容三所需的分层..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "NVIDIA",
+    "first_occurrence": {
+      "abbr": "NVIDIA",
+      "seq": 389,
+      "path": "extraTex/foundation.tex",
+      "line": 53,
+      "column": 20,
+      "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+    },
+    "occurrences": [
+      {
+        "abbr": "NVIDIA",
+        "seq": 389,
+        "path": "extraTex/foundation.tex",
+        "line": 53,
+        "column": 20,
+        "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+      },
+      {
+        "abbr": "NVIDIA",
+        "seq": 389,
+        "path": "extraTex/foundation.tex",
+        "line": 53,
+        "column": 42,
+        "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "GeForce",
+    "first_occurrence": {
+      "abbr": "GeForce",
+      "seq": 389,
+      "path": "extraTex/foundation.tex",
+      "line": 53,
+      "column": 49,
+      "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+    },
+    "occurrences": [
+      {
+        "abbr": "GeForce",
+        "seq": 389,
+        "path": "extraTex/foundation.tex",
+        "line": 53,
+        "column": 49,
+        "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "RTX",
+    "first_occurrence": {
+      "abbr": "RTX",
+      "seq": 389,
+      "path": "extraTex/foundation.tex",
+      "line": 53,
+      "column": 57,
+      "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+    },
+    "occurrences": [
+      {
+        "abbr": "RTX",
+        "seq": 389,
+        "path": "extraTex/foundation.tex",
+        "line": 53,
+        "column": 57,
+        "excerpt": "申请人已确认可稳定使用的计算资源包括 NVIDIA A40 图形处理器 8 块与 NVIDIA GeForce RTX 3090 Ti 图形处理器 6 块。本项目采用参数高效适配策略控制可训练参数规模，不依赖超大规模集群；上述资源可支撑中等规模视觉语言模型的领域适配、三臂受..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "ALPHA",
+    "first_occurrence": {
+      "abbr": "ALPHA",
+      "seq": 395,
+      "path": "extraTex/foundation.tex",
+      "line": 65,
+      "column": 27,
+      "excerpt": "申请人为新疆大学副教授、硕士研究生导师，创建并负责 ALPHA Group 研究团队，具备指导研究生开展系统性研究的基础。依托单位新疆大学在计算机与人工智能方向具备相应的学科平台与研究生培养条件，申请人所在二级单位为计算机科学与技术学院（网络空间安全学院）。"
+    },
+    "occurrences": [
+      {
+        "abbr": "ALPHA",
+        "seq": 395,
+        "path": "extraTex/foundation.tex",
+        "line": 65,
+        "column": 27,
+        "excerpt": "申请人为新疆大学副教授、硕士研究生导师，创建并负责 ALPHA Group 研究团队，具备指导研究生开展系统性研究的基础。依托单位新疆大学在计算机与人工智能方向具备相应的学科平台与研究生培养条件，申请人所在二级单位为计算机科学与技术学院（网络空间安全学院）。"
+      },
+      {
+        "abbr": "ALPHA",
+        "seq": 404,
+        "path": "extraTex/foundation.tex",
+        "line": 83,
+        "column": 19,
+        "excerpt": "\\textbf{拟解决途径}：依托 ALPHA Group 的 7 名参与研究生按既定分工推进，2026 年 11 月至 2027 年 1 月完成 600 组审计、100 条试标培训及首次开发回流；2--4 月结合开发数据继续试标，完成第二次规范修订并冻结；5--7 月完成..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "MIT",
+    "first_occurrence": {
+      "abbr": "MIT",
+      "seq": 399,
+      "path": "extraTex/foundation.tex",
+      "line": 73,
+      "column": 93,
+      "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+    },
+    "occurrences": [
+      {
+        "abbr": "MIT",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 93,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "OpenStreetMap",
+    "first_occurrence": {
+      "abbr": "OpenStreetMap",
+      "seq": 399,
+      "path": "extraTex/foundation.tex",
+      "line": 73,
+      "column": 135,
+      "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+    },
+    "occurrences": [
+      {
+        "abbr": "OpenStreetMap",
+        "seq": 399,
+        "path": "extraTex/foundation.tex",
+        "line": 73,
+        "column": 135,
+        "excerpt": "此前核验中，RSITMD 与 RSICD 的作者仓库未声明开源许可，只提出引用原始论文的要求；RSICD 的底图取自公开地图服务，可能附带第三方使用条款。SkyScript 仓库采用 MIT 许可，但影像和文本标签分别涉及 Google Earth Engine 与 Ope..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CAAI---",
+    "first_occurrence": {
+      "abbr": "CAAI---",
+      "seq": 439,
+      "path": "extraTex/foundation.tex",
+      "line": 160,
+      "column": 11,
+      "excerpt": "资助机构与项目类别：CAAI---蚂蚁科研基金，批准号 202604140006。项目获资助总额 15 万元，起止年月为 2026 年 2 月至 2027 年 2 月。申请人为参与者，负责高效注意力机制研究。"
+    },
+    "occurrences": [
+      {
+        "abbr": "CAAI---",
+        "seq": 439,
+        "path": "extraTex/foundation.tex",
+        "line": 160,
+        "column": 11,
+        "excerpt": "资助机构与项目类别：CAAI---蚂蚁科研基金，批准号 202604140006。项目获资助总额 15 万元，起止年月为 2026 年 2 月至 2027 年 2 月。申请人为参与者，负责高效注意力机制研究。"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "MNR",
+    "first_occurrence": {
+      "abbr": "MNR",
+      "seq": 450,
+      "path": "extraTex/commitment.tex",
+      "line": 4,
+      "column": 136,
+      "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+    },
+    "occurrences": [
+      {
+        "abbr": "MNR",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 136,
+        "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+      }
+    ],
+    "definitions": [
+      {
+        "abbr": "MNR",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 136,
+        "english_full": "",
+        "chinese_full": "",
+        "english_full_normalized": "",
+        "chinese_full_normalized": "",
+        "matched_text": "（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）",
+        "context": "\\vspace{2.3bp}\n凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）。\n}{"
+      }
+    ],
+    "status": {
+      "first_use": "defined",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CASM",
+    "first_occurrence": {
+      "abbr": "CASM",
+      "seq": 450,
+      "path": "extraTex/commitment.tex",
+      "line": 4,
+      "column": 141,
+      "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+    },
+    "occurrences": [
+      {
+        "abbr": "CASM",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 141,
+        "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+      }
+    ],
+    "definitions": [
+      {
+        "abbr": "CASM",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 141,
+        "english_full": "",
+        "chinese_full": "",
+        "english_full_normalized": "",
+        "chinese_full_normalized": "",
+        "matched_text": "（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）",
+        "context": "\\vspace{2.3bp}\n凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）。\n}{"
+      }
+    ],
+    "status": {
+      "first_use": "defined",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "NO",
+    "first_occurrence": {
+      "abbr": "NO",
+      "seq": 450,
+      "path": "extraTex/commitment.tex",
+      "line": 4,
+      "column": 147,
+      "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+    },
+    "occurrences": [
+      {
+        "abbr": "NO",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 147,
+        "excerpt": "凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MN..."
+      }
+    ],
+    "definitions": [
+      {
+        "abbr": "NO",
+        "seq": 450,
+        "path": "extraTex/commitment.tex",
+        "line": 4,
+        "column": 147,
+        "english_full": "",
+        "chinese_full": "",
+        "english_full_normalized": "",
+        "chinese_full_normalized": "",
+        "matched_text": "（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）",
+        "context": "\\vspace{2.3bp}\n凡由本实验室资助的课题成果，均注明“测绘科学与工程自然资源部重点实验室资助基金项目，课题编号：XXXXXX”（英文“Funded by Key Laboratory of Surveying and Mapping Science and Engineering of MNR, CASM, NO. XXXXXX,”）。\n}{"
+      }
+    ],
+    "status": {
+      "first_use": "defined",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CasmGuideBlue",
+    "first_occurrence": {
+      "abbr": "CasmGuideBlue",
+      "seq": 458,
+      "path": "extraTex/attachments.tex",
+      "line": 1,
+      "column": 18,
+      "excerpt": "{\\CasmFang\\color{CasmGuideBlue}\\fontsize{12bp}{19.5bp}\\selectfont"
+    },
+    "occurrences": [
+      {
+        "abbr": "CasmGuideBlue",
+        "seq": 458,
+        "path": "extraTex/attachments.tex",
+        "line": 1,
+        "column": 18,
+        "excerpt": "{\\CasmFang\\color{CasmGuideBlue}\\fontsize{12bp}{19.5bp}\\selectfont"
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  },
+  {
+    "abbr": "CJKglue",
+    "first_occurrence": {
+      "abbr": "CJKglue",
+      "seq": 459,
+      "path": "extraTex/attachments.tex",
+      "line": 2,
+      "column": 13,
+      "excerpt": "\\xeCJKsetup{CJKglue={\\hskip 0bp plus .2bp minus .2bp}}\\leftskip=21bp\\rightskip=-.4bp\\noindent（不具备高级专业技术职称的申请人，必须提供至少两名具有高级专业技术职称同行专家的推荐意见..."
+    },
+    "occurrences": [
+      {
+        "abbr": "CJKglue",
+        "seq": 459,
+        "path": "extraTex/attachments.tex",
+        "line": 2,
+        "column": 13,
+        "excerpt": "\\xeCJKsetup{CJKglue={\\hskip 0bp plus .2bp minus .2bp}}\\leftskip=21bp\\rightskip=-.4bp\\noindent（不具备高级专业技术职称的申请人，必须提供至少两名具有高级专业技术职称同行专家的推荐意见..."
+      }
+    ],
+    "definitions": [],
+    "status": {
+      "first_use": "bare_first_use",
+      "english_full_name": "missing",
+      "chinese_full": "missing",
+      "redefinition": "none"
+    }
+  }
+]

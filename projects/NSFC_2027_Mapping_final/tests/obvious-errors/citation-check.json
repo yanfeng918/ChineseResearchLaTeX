@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "pdf": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2027_Mapping_final/main.pdf",
+  "pdf_pages": 46,
+  "bibliography_entries": 48,
+  "unique_cited_keys": 48,
+  "expected_citation_links": 143,
+  "observed_citation_links": 143,
+  "total_pdf_links": 221,
+  "verified_visible_citation_numbers": 143,
+  "verified_bibliography_targets": 48,
+  "destinations": [
+    {
+      "key": "lishutao2025alignment",
+      "number": "1",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhengxiangtao2025crossmodal",
+      "number": "2",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "wuhui2026rsitr",
+      "number": "3",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "li2024vlmrsmag",
+      "number": "4",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "rsitrreview2025",
+      "number": "5",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "yuan2022amfmn",
+      "number": "6",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "lu2018rsicd",
+      "number": "7",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "wang2024skyscript",
+      "number": "8",
+      "pdf_page": 13,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhang2024rs5m",
+      "number": "9",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhao2025luojiahog",
+      "number": "10",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "lee2018scan",
+      "number": "11",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "diao2021sgraf",
+      "number": "12",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "diao2023regulator",
+      "number": "13",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "cheng2021dsan",
+      "number": "14",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "yuan2022galr",
+      "number": "15",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "rahhal2022multilanguage",
+      "number": "16",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "fusionencoder2023",
+      "number": "17",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "pan2023pir",
+      "number": "18",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhang2024glisa",
+      "number": "19",
+      "pdf_page": 14,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "mssa2025",
+      "number": "20",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "dcca2026",
+      "number": "21",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "cglsa2026",
+      "number": "22",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "yuan2023peft",
+      "number": "23",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhou2022cocoop",
+      "number": "24",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "radford2021clip",
+      "number": "25",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "liu2024remoteclip",
+      "number": "26",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "guo2024skysense",
+      "number": "27",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhang2023unimodal",
+      "number": "28",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "wu2024scat",
+      "number": "29",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "yang2024dove",
+      "number": "30",
+      "pdf_page": 15,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "mi2024knowledgeaware",
+      "number": "31",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "shui2025esrn",
+      "number": "32",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "sgfn2023",
+      "number": "33",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "pan2023semrel",
+      "number": "34",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "thrush2022winoground",
+      "number": "35",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "liu2023vsr",
+      "number": "36",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "hu2023rcl",
+      "number": "37",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "han2023msc",
+      "number": "38",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "yang2023bicro",
+      "number": "39",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "qin2022decl",
+      "number": "40",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "zhang2024npc",
+      "number": "41",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "feng2024tripartition",
+      "number": "42",
+      "pdf_page": 16,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "pmpguard2026",
+      "number": "43",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "nguyen2022quality",
+      "number": "44",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "schuhmann2022laion",
+      "number": "45",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "chun2021pcme",
+      "number": "46",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "han2021tmc",
+      "number": "47",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    },
+    {
+      "key": "li2023pau",
+      "number": "48",
+      "pdf_page": 17,
+      "numbered_item_verified": true
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

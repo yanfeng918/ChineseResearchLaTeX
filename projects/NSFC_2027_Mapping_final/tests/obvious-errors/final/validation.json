@@ -1,0 +1,17 @@
+{
+  "source_files_unchanged": true,
+  "changed_source_files": [],
+  "citation_validation": {
+    "status": "passed",
+    "observed_citation_links": 143,
+    "verified_bibliography_targets": 48,
+    "errors": [],
+    "warnings": []
+  },
+  "latex_log_warnings": [],
+  "bibtex_log_warnings": [
+    "Warning--Require address: radford2021clip"
+  ],
+  "report_is_read_only": true,
+  "all_findings_have_source_locations": true
+}

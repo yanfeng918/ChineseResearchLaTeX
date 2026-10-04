@@ -1,0 +1,49 @@
+bibkey,status,occurrences_n,occurrences_preview
+cglsa2026,ok,1,extraTex/proposal.tex:49
+cheng2021dsan,ok,1,extraTex/proposal.tex:49
+chun2021pcme,ok,3,extraTex/proposal.tex:226 | extraTex/proposal.tex:303 | extraTex/proposal.tex:365
+dcca2026,ok,1,extraTex/proposal.tex:49
+diao2021sgraf,ok,1,extraTex/proposal.tex:49
+diao2023regulator,ok,1,extraTex/proposal.tex:49
+feng2024tripartition,ok,3,extraTex/proposal.tex:67 | extraTex/proposal.tex:91 | extraTex/proposal.tex:356
+fusionencoder2023,ok,1,extraTex/proposal.tex:49
+guo2024skysense,ok,2,extraTex/proposal.tex:55 | extraTex/proposal.tex:63
+han2021tmc,ok,2,extraTex/proposal.tex:226 | extraTex/proposal.tex:365
+han2023msc,ok,4,extraTex/proposal.tex:67 | extraTex/proposal.tex:91 | extraTex/proposal.tex:303 | extraTex/proposal.tex:356
+hu2023rcl,ok,5,extraTex/proposal.tex:67 | extraTex/proposal.tex:91 | extraTex/proposal.tex:303 | extraTex/proposal.tex:349 | extraTex/proposal.tex:356
+lee2018scan,ok,1,extraTex/proposal.tex:49
+li2023pau,ok,3,extraTex/proposal.tex:226 | extraTex/proposal.tex:303 | extraTex/proposal.tex:365
+li2024vlmrsmag,ok,2,extraTex/proposal.tex:19 | extraTex/proposal.tex:55
+lishutao2025alignment,ok,2,extraTex/proposal.tex:19 | extraTex/proposal.tex:73
+liu2023vsr,ok,1,extraTex/proposal.tex:61
+liu2024remoteclip,ok,8,extraTex/proposal.tex:55 | extraTex/proposal.tex:55 | extraTex/proposal.tex:63 | extraTex/proposal.tex:95 | extraTex/proposal.tex:216
+lu2018rsicd,ok,10,extraTex/proposal.tex:21 | extraTex/proposal.tex:45 | extraTex/proposal.tex:73 | extraTex/proposal.tex:91 | extraTex/proposal.tex:172
+mi2024knowledgeaware,ok,3,extraTex/proposal.tex:59 | extraTex/proposal.tex:93 | extraTex/proposal.tex:356
+mssa2025,ok,1,extraTex/proposal.tex:49
+nguyen2022quality,ok,1,extraTex/proposal.tex:69
+pan2023pir,ok,2,extraTex/proposal.tex:49 | extraTex/proposal.tex:73
+pan2023semrel,ok,1,extraTex/proposal.tex:59
+pmpguard2026,ok,7,extraTex/proposal.tex:67 | extraTex/proposal.tex:69 | extraTex/proposal.tex:91 | extraTex/proposal.tex:303 | extraTex/proposal.tex:349
+qin2022decl,ok,3,extraTex/proposal.tex:67 | extraTex/proposal.tex:226 | extraTex/proposal.tex:365
+radford2021clip,ok,4,extraTex/proposal.tex:55 | extraTex/proposal.tex:216 | extraTex/proposal.tex:303 | extraTex/proposal.tex:398
+rahhal2022multilanguage,ok,1,extraTex/proposal.tex:49
+rsitrreview2025,ok,4,extraTex/proposal.tex:19 | extraTex/proposal.tex:45 | extraTex/proposal.tex:95 | extraTex/proposal.tex:95
+schuhmann2022laion,ok,1,extraTex/proposal.tex:69
+sgfn2023,ok,1,extraTex/proposal.tex:59
+shui2025esrn,ok,7,extraTex/proposal.tex:59 | extraTex/proposal.tex:63 | extraTex/proposal.tex:73 | extraTex/proposal.tex:93 | extraTex/proposal.tex:330
+thrush2022winoground,ok,1,extraTex/proposal.tex:61
+wang2024skyscript,ok,3,extraTex/proposal.tex:45 | extraTex/proposal.tex:288 | extraTex/foundation.tex:61
+wu2024scat,ok,5,extraTex/proposal.tex:59 | extraTex/proposal.tex:63 | extraTex/proposal.tex:73 | extraTex/proposal.tex:93 | extraTex/proposal.tex:356
+wuhui2026rsitr,ok,3,extraTex/proposal.tex:19 | extraTex/proposal.tex:55 | extraTex/proposal.tex:73
+yang2023bicro,ok,3,extraTex/proposal.tex:67 | extraTex/proposal.tex:91 | extraTex/proposal.tex:356
+yang2024dove,ok,3,extraTex/proposal.tex:59 | extraTex/proposal.tex:93 | extraTex/proposal.tex:356
+yuan2022amfmn,ok,10,extraTex/proposal.tex:21 | extraTex/proposal.tex:45 | extraTex/proposal.tex:49 | extraTex/proposal.tex:73 | extraTex/proposal.tex:91
+yuan2022galr,ok,2,extraTex/proposal.tex:49 | extraTex/proposal.tex:73
+yuan2023peft,ok,4,extraTex/proposal.tex:49 | extraTex/proposal.tex:216 | extraTex/proposal.tex:303 | extraTex/proposal.tex:398
+zhang2023unimodal,ok,6,extraTex/proposal.tex:59 | extraTex/proposal.tex:63 | extraTex/proposal.tex:73 | extraTex/proposal.tex:93 | extraTex/proposal.tex:356
+zhang2024glisa,ok,2,extraTex/proposal.tex:49 | extraTex/proposal.tex:73
+zhang2024npc,ok,3,extraTex/proposal.tex:67 | extraTex/proposal.tex:91 | extraTex/proposal.tex:356
+zhang2024rs5m,ok,4,extraTex/proposal.tex:45 | extraTex/proposal.tex:55 | extraTex/proposal.tex:63 | extraTex/proposal.tex:95
+zhao2025luojiahog,ok,2,extraTex/proposal.tex:45 | extraTex/proposal.tex:73
+zhengxiangtao2025crossmodal,ok,2,extraTex/proposal.tex:19 | extraTex/proposal.tex:73
+zhou2022cocoop,ok,2,extraTex/proposal.tex:49 | extraTex/proposal.tex:216
