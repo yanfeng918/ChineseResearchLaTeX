@@ -1,0 +1,360 @@
+% 地球系统数值模拟教育部重点实验室开放基金申请书。
+% 坐标单位 bp，原点为纸张左上角，参数来自用户提供的四页官方 PDF。
+% 固定表单用原生文字和矢量线条重建；报告正文使用可跨页的正常排版。
+\RequirePackage{geometry}
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+\RequirePackage{bensz-fonts}
+\RequirePackage{tikz}
+\RequirePackage{lastpage}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{graphicx}
+\newif\ifCiesmBlank
+\geometry{paperwidth=595.3bp,paperheight=841.9bp,
+  left=90bp,right=90bp,top=80.69bp,bottom=80bp,headheight=0pt,headsep=0pt}
+\setmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{Kaiti.ttf}
+\setCJKmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{Kaiti.ttf}
+\setCJKsansfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{Kaiti.ttf}
+\setCJKmonofont[Path={\BenszFontsDir}]{Kaiti.ttf}
+\newCJKfontfamily\CiesmFooterSong[Path={\BenszFontsDir}]{SimSun.ttf}
+\newfontfamily\CiesmFooterTimes[Path={\BenszFontsDir}]{TimesNewRoman.ttf}
+\newfontfamily\CiesmBibliographyLatin[Path={\BenszFontsDir},Ligatures=TeX,AutoFakeSlant=.2]{TimesNewRoman.ttf}
+\xeCJKsetup{PunctStyle=plain,CJKecglue=\hskip .25em}
+\linespread{1}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\setlength{\topskip}{12bp}
+\pagestyle{empty}
+\AtBeginDocument{\fontsize{12bp}{22bp}\selectfont}
+
+\pgfkeys{/ciesm/.is family,/ciesm,
+  special-name/.initial={}, title/.initial={}, applicant/.initial={},
+  institution/.initial={}, unit-count/.initial={}, sex/.initial={},
+  birth-date/.initial={}, professional-title/.initial={}, degree/.initial={},
+  start-year/.initial={}, start-month/.initial={}, start-day/.initial={},
+  end-year/.initial={}, end-month/.initial={}, end-day/.initial={},
+  total-budget/.initial={}, expected-results/.initial={}, keywords/.initial={},
+  issuer/.initial={}, issue-date/.initial={}}
+\pgfkeys{/ciesm/.cd,
+  faculty/.initial={}, address/.initial={}, phone/.initial={}, email/.initial={},
+  mentor/.initial={}, english-name/.initial={}, talent/.initial={}, office/.initial={},
+  homepage/.initial={}, education/.initial={}, employment/.initial={}}
+\NewDocumentCommand{\CiesmSetup}{+m}{\pgfkeys{/ciesm/.cd,#1}}
+\newcommand{\CiesmValue}[1]{\pgfkeysvalueof{/ciesm/#1}}
+\newcommand{\CiesmDate}[1]{\CiesmValue{#1-year}年\CiesmValue{#1-month}月\CiesmValue{#1-day}日}
+\newcommand{\CiesmUrlValue}[1]{\begingroup
+  \edef\ciesmUrl{\CiesmValue{#1}}\expandafter\url\expandafter{\ciesmUrl}\endgroup}
+
+% 与官方表单一致的页脚；总页数随正文自动增长。
+\AddToHook{shipout/foreground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=base,inner sep=0pt] at
+      ([xshift=297.65bp,yshift=-789.77bp]current page.north west)
+      {\CiesmFooterTimes\CiesmFooterSong\fontsize{9bp}{9bp}\selectfont
+       第\hspace{4.5bp}\thepage\hspace{4.5bp}页\hspace{4.5bp}共\hspace{4.5bp}\pageref{LastPage}\hspace{4.5bp}页};
+  \end{tikzpicture}%
+}
+
+\newenvironment{CiesmCanvas}{%
+  \noindent\begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.north west)},x=1bp,y=-1bp,
+    every node/.style={inner sep=0pt,outer sep=0pt}]
+}{\end{scope}\end{tikzpicture}\par\null}
+\newcommand{\CiesmText}[3]{\node[anchor=base west] at (#1,#2) {#3};}
+
+% 固定信息表的填写区：按真实高度检查，过长即报错，避免静默越框。
+\newsavebox{\CiesmFieldBox}
+% TikZ 绘图区使用 nullfont，测量可编辑文本时须恢复普通排版环境。
+\newcommand{\CiesmMeasure}[2]{%
+  \setbox#1=\hbox{\begin{pgfinterruptpicture}#2\end{pgfinterruptpicture}}%
+}
+\newcommand{\CiesmMeasureCell}[2]{%
+  \CiesmMeasure{\CiesmFieldBox}{\begin{minipage}{#1bp}
+    \centering\normalfont\fontsize{10.45bp}{16bp}\selectfont #2\par
+  \end{minipage}}%
+}
+% 长字段保持同一字号和行距，增加行高；留出 4bp 的上下内边距。
+\newcommand{\CiesmCellGrowth}[4]{%
+  \CiesmMeasureCell{#2}{#4}%
+  \pgfmathsetmacro{#1}{max(0,ceil((\ht\CiesmFieldBox+\dp\CiesmFieldBox)/1bp+4-#3))}%
+}
+\newcommand{\CiesmCell}[5]{%
+  \CiesmMeasureCell{#3}{#5}%
+  \ifdim\dimexpr\ht\CiesmFieldBox+\dp\CiesmFieldBox\relax>#4bp
+    \PackageError{ciesm-open-fund}{Information field exceeds its box}
+      {Adjust this template's local field dimensions; do not truncate the value.}%
+  \fi
+  \node at ({#1+#3/2},{#2+#4/2}) {\usebox{\CiesmFieldBox}};
+}
+\newcommand{\CiesmCoverField}[5]{%
+  \CiesmText{111}{#1}{#2}%
+  \draw[line width=.75bp] (#3,{#1+3.2}) -- (#4,{#1+3.2});
+  \CiesmMeasure{\CiesmFieldBox}{\normalfont\fontsize{15.95bp}{20bp}\selectfont\CiesmValue{#5}}%
+  \ifdim\wd\CiesmFieldBox>\dimexpr#4bp-#3bp\relax
+    \CiesmMeasure{\CiesmFieldBox}{\begin{minipage}{\dimexpr#4bp-#3bp\relax}
+      \centering\normalfont\fontsize{12bp}{13bp}\selectfont\CiesmValue{#5}\par
+    \end{minipage}}%
+    \ifdim\dimexpr\ht\CiesmFieldBox+\dp\CiesmFieldBox\relax>27bp
+      \PackageError{ciesm-open-fund}{Cover field '#5' exceeds two lines}
+        {Adjust the local field layout; keep the complete value.}%
+    \fi
+    \node[anchor=south] at ({(#3+#4)/2},#1) {\usebox{\CiesmFieldBox}};
+  \else
+    \node[anchor=base] at ({(#3+#4)/2},#1) {\usebox{\CiesmFieldBox}};
+  \fi
+}
+
+% 长课题名称保持封面字段字号，逐行画下划线；后续字段整体下移一行。
+\newcommand{\CiesmCoverTitle}{%
+  \def\ciesmCoverShift{0}%
+  \CiesmMeasure{\CiesmFieldBox}{\normalfont\fontsize{15.95bp}{31.1bp}\selectfont\CiesmValue{title}}%
+  \ifdim\wd\CiesmFieldBox>297bp
+    \def\ciesmCoverShift{31.1}%
+    \CiesmText{111}{337.49}{课题名称：}%
+    \draw[line width=.75bp] (198,340.69) -- (495,340.69);
+    \draw[line width=.75bp] (198,371.79) -- (495,371.79);
+    \CiesmMeasure{\CiesmFieldBox}{\begin{minipage}[b]{297bp}
+      \centering\normalfont\fontsize{15.95bp}{31.1bp}\selectfont\CiesmValue{title}\par
+    \end{minipage}}%
+    \ifdim\dimexpr\ht\CiesmFieldBox+\dp\CiesmFieldBox\relax>50bp
+      \PackageError{ciesm-open-fund}{Cover field 'title' exceeds two lines}
+        {Adjust the cover field width; do not shrink or truncate the title.}%
+    \fi
+    \node[anchor=base] at (346.5,368.59) {\usebox{\CiesmFieldBox}};
+  \else
+    \CiesmCoverField{337.49}{课题名称：}{198}{495}{title}%
+  \fi
+}
+
+\newcommand{\CiesmMakeCover}{%
+  \begin{CiesmCanvas}
+    \fontsize{20.05bp}{31.2bp}\selectfont
+    \node[anchor=base] at (297.65,185.69)
+      {\bfseries\xeCJKsetup{CJKglue=\hskip .23bp}地球系统数值模拟教育部重点实验室开放基金};
+    \node[anchor=base] at (297.65,216.89)
+      {\bfseries\xeCJKsetup{CJKglue=\hskip .23bp}课题申请书};
+    \fontsize{15.95bp}{31.1bp}\selectfont
+    \CiesmCoverField{306.41}{专项名称：}{198}{495}{special-name}
+    \CiesmCoverTitle
+    \begin{scope}[shift={(0,\ciesmCoverShift)}]
+    \CiesmCoverField{368.69}{课题申请人：}{208.5}{495}{applicant}
+    \CiesmCoverField{399.77}{课题依托单位：}{225.75}{489.95}{institution}
+    \CiesmText{111}{430.85}{起止年限：\CiesmValue{start-year}年\CiesmValue{start-month}月}
+    \CiesmText{291}{430.85}{至}
+    \CiesmText{323.04}{430.85}{\CiesmValue{end-year}年\CiesmValue{end-month}月}
+    \fontsize{18bp}{23.04bp}\selectfont
+    \node[anchor=base] at (297.65,533.21) {\CiesmValue{issuer}};
+    \node[anchor=base] at (297.65,556.25) {\CiesmValue{issue-date}};
+    \end{scope}
+  \end{CiesmCanvas}
+  \clearpage
+}
+
+\newcommand{\CiesmMakeInformation}{%
+  \begin{CiesmCanvas}
+    \CiesmCellGrowth{\ciesmTitleGrowth}{233}{19}{\CiesmValue{title}}%
+    \CiesmCellGrowth{\ciesmResultsGrowth}{335}{39}{\raggedright\CiesmValue{expected-results}}%
+    \CiesmCellGrowth{\ciesmKeywordsGrowth}{284}{20}{\CiesmValue{keywords}}%
+    \pgfmathsetmacro{\ciesmTitleHeight}{19+\ciesmTitleGrowth}%
+    \pgfmathsetmacro{\ciesmResultsHeight}{39+\ciesmResultsGrowth}%
+    \pgfmathsetmacro{\ciesmKeywordsHeight}{20+\ciesmKeywordsGrowth}%
+    \pgfmathsetmacro{\ciesmAbstractShift}{\ciesmTitleGrowth+\ciesmResultsGrowth}%
+    \pgfmathsetmacro{\ciesmAbstractHeight}{288-\ciesmAbstractShift-\ciesmKeywordsGrowth}%
+    \node[anchor=base,font=\fontsize{15bp}{20bp}\selectfont] at (297.65,93.05) {一、基本信息表};
+    \draw[line width=1.44bp] (67.1,103.92) rectangle (528.2,610.12);
+    \draw[line width=.72bp] (182.15,103.92) -- (182.15,{273.13+\ciesmAbstractShift});
+    \foreach \x in {423.15,495.3}
+      \draw[line width=.96bp] (\x,103.92) -- (\x,{124.91+\ciesmTitleGrowth});
+    \fontsize{10.45bp}{16bp}\selectfont
+    \CiesmText{103.56}{117.05+\ciesmTitleGrowth/2}{\bfseries 课题名称}
+    \CiesmText{432.84}{117.05+\ciesmTitleGrowth/2}{\bfseries 参加单位数}
+    \CiesmCell{186}{104.5}{233}{\ciesmTitleHeight}{\CiesmValue{title}}
+    \CiesmCell{498}{104.5}{27}{\ciesmTitleHeight}{\CiesmValue{unit-count}}
+    \begin{scope}[shift={(0,\ciesmTitleGrowth)}]
+    \draw[line width=1.44bp] (67.1,145.87) -- (528.2,145.87);
+    \foreach \y in {124.91,226.91}
+      \draw[line width=.72bp] (67.1,\y) -- (528.2,\y);
+    \foreach \y in {166.86,187.46}
+      \draw[line width=.72bp] (97.85,\y) -- (528.2,\y);
+    \draw[line width=.96bp] (67.1,208.18) -- (528.2,208.18);
+    \draw[line width=.96bp] (67.1,{273.13+\ciesmResultsGrowth}) -- (528.2,{273.13+\ciesmResultsGrowth});
+    \draw[line width=.72bp] (97.85,145.87) -- (97.85,208.18);
+    \foreach \x in {289.05,423.15}
+      \draw[line width=.72bp] (\x,124.91) -- (\x,208.18);
+    \CiesmText{93}{137.69}{\bfseries 课题起始时间}
+    \CiesmText{197.52}{137.69}{\CiesmDate{start}}
+    \CiesmText{324.48}{137.69}{\bfseries 课题结束时间}
+    \CiesmText{432.36}{137.69}{\CiesmDate{end}}
+    \CiesmText{77.16}{163.61}{\bfseries 申}
+    \CiesmText{77.16}{179.69}{\bfseries 请}
+    \CiesmText{77.16}{195.65}{\bfseries 人}
+    \CiesmText{119.04}{159.05}{姓\hspace{20.99bp}名}
+    \CiesmText{345.6}{159.05}{性别}
+    \CiesmText{119.04}{179.69}{出生日期}
+    \CiesmText{345.6}{179.69}{职称}
+    \CiesmText{119.04}{200.21}{最高学位}
+    \CiesmText{335.04}{200.21}{所在单位}
+    \CiesmText{99}{220.13}{\bfseries 申请经费情况}
+    \CiesmText{187.56}{220.13}{课题总经费：}
+    \draw[line width=.48bp] (250.55,221.25) -- (282,221.25);
+    \CiesmText{282}{220.13}{万元}
+    \CiesmText{103.56}{252.41+\ciesmResultsGrowth/2}{\bfseries 预期成果}
+    \CiesmCell{186}{146.5}{99}{19}{\CiesmValue{applicant}}
+    \CiesmCell{427}{146.5}{97}{19}{\CiesmValue{sex}}
+    \CiesmCell{186}{167.2}{99}{19}{\CiesmValue{birth-date}}
+    \CiesmCell{427}{167.2}{97}{19}{\CiesmValue{professional-title}}
+    \CiesmCell{186}{187.9}{99}{19}{\CiesmValue{degree}}
+    \CiesmCell{427}{187.9}{97}{19}{\CiesmValue{institution}}
+    \CiesmCell{250.55}{208.5}{31.45}{17}{\CiesmValue{total-budget}}
+    \CiesmCell{187}{230}{335}{\ciesmResultsHeight}{\raggedright\CiesmValue{expected-results}}
+    \end{scope}
+    \draw[line width=.96bp] (67.1,{588.43-\ciesmKeywordsGrowth}) -- (528.2,{588.43-\ciesmKeywordsGrowth});
+    \draw[line width=.48bp] (234.55,{588.43-\ciesmKeywordsGrowth}) -- (234.55,610.12);
+    \CiesmText{72.48}{284.21+\ciesmAbstractShift}{{\bfseries 课题摘要}（包括标点符号不超过400字）}
+    \CiesmText{72.48}{599.45-\ciesmKeywordsGrowth/2}{\bfseries 关键词（用分号隔开，最多5个）}
+    \pgfmathsetmacro{\ciesmKeywordsTop}{589-\ciesmKeywordsGrowth}%
+    \CiesmCell{239}{\ciesmKeywordsTop}{284}{\ciesmKeywordsHeight}{\CiesmValue{keywords}}
+    \CiesmMeasure{\CiesmFieldBox}{\begin{minipage}{444bp}
+      \fontsize{12bp}{22bp}\selectfont\setlength{\parindent}{2em}
+      \ifCiesmBlank\else\input{extraTex/abstract}\fi\par
+    \end{minipage}}%
+    \ifdim\dimexpr\ht\CiesmFieldBox+\dp\CiesmFieldBox\relax>\ciesmAbstractHeight bp
+      \PackageError{ciesm-open-fund}{Abstract exceeds its box}
+        {Adjust the information rows or shorten extraTex/abstract.tex; the limit is 400 characters.}%
+    \fi
+    \node[anchor=north west] at (76,{294+\ciesmAbstractShift}) {\usebox{\CiesmFieldBox}};
+  \end{CiesmCanvas}
+  \clearpage
+}
+
+% 正文不装入固定框，正常段落、公式、图表与参考文献可以跨页。
+\newcommand{\CiesmReportTitle}[1]{%
+  {\par\noindent\fontsize{14.05bp}{25.2bp}\selectfont #1\par}\nobreak
+}
+\NewDocumentCommand{\CiesmReportPart}{O{22bp} m m}{%
+  {\par\noindent\fontsize{14.05bp}{#1}\selectfont #2{\fontsize{12bp}{22bp}\selectfont #3}\par}\nobreak
+}
+\newcommand{\CiesmPrompt}[1]{\par\noindent #1\par\nobreak}
+\newcommand{\CiesmTemplateBreak}{\ifCiesmBlank\linebreak\fi}
+\newcommand{\CiesmAnswer}[1]{\ifCiesmBlank\else\input{#1}\fi\par\vspace{22bp}}
+
+% 填写稿采用真正的标题层级；空白入口保持官方四页的定位与留白。
+% 官方两部分为 section，各部分的官方栏目为 subsection，栏目内为 1.1 等。
+\newcommand{\CiesmApplicationMode}{%
+  \RequirePackage{placeins}
+  \RequirePackage{caption}
+  \RequirePackage{ragged2e}
+  % 参考文献著录与国自然口径统一：GB/T 7714 顺序编码制。
+  % bensz-nsfc 走 BibTeX + gbt7714-nsfc.bst，本模板走 biber，故用 biblatex-gb7714-2015
+  % 实现同一标准；sorting=none 保证按正文引用顺序编号，maxbibnames=3 对应“列三位后加等”。
+  \RequirePackage[backend=biber,style=gb7714-2015,sorting=none,
+    % maxcitenames 同时管 \fullcite；设为 3 才能保证代表作里申请人本人的署名可见。
+    maxbibnames=3,minbibnames=3,maxcitenames=3,mincitenames=3,
+    gbalign=gb7714-2015,gbpub=true,gbtype=true,doi=true,url=false,isbn=false]{biblatex}
+  \ctexset{
+    section={format=\normalfont\fontsize{14.05bp}{22bp}\selectfont,
+      name={},number={},beforeskip=12bp,afterskip=6bp},
+    subsection={format=\normalfont\fontsize{12bp}{22bp}\selectfont,
+      name={},number={},beforeskip=10bp,afterskip=4bp},
+    subsubsection={format=\normalfont\bfseries\fontsize{12bp}{22bp}\selectfont,
+      number=\arabic{subsection}.\arabic{subsubsection},
+      beforeskip=8bp,afterskip=2bp},
+    paragraph={format=\normalfont\bfseries\fontsize{12bp}{22bp}\selectfont,
+      number=\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph},
+      runin=false,beforeskip=5bp,afterskip=0bp}}
+  \setcounter{secnumdepth}{4}
+  \setlength{\emergencystretch}{2em}
+  \clubpenalty=10000
+  \widowpenalty=10000
+  \renewcommand{\thesection}{\arabic{section}}
+  \renewcommand{\thesubsection}{\arabic{subsection}}
+  \RenewDocumentCommand{\CiesmReportPart}{O{22bp} m m}{%
+    \FloatBarrier\section{##2{\fontsize{12bp}{22bp}\selectfont ##3}}}
+  \renewcommand{\CiesmPrompt}[1]{\FloatBarrier\subsection{##1}}
+  \renewcommand{\CiesmAnswer}[1]{\input{##1}\par}
+  \DeclareCaptionFont{ciesm}{\fontsize{10.5bp}{16bp}\selectfont}
+  \captionsetup[figure]{font=ciesm,labelfont=normalfont,labelsep=quad,
+    skip=6bp,singlelinecheck=false,justification=justified}
+  \setlength{\textfloatsep}{12bp}
+  \setlength{\intextsep}{12bp}
+  % 参考文献使用 10.5bp 字号、16bp 行距，条目之间不额外留白。
+  \setlength{\bibitemsep}{0pt}
+  \setlength{\bibparsep}{0pt}
+  % 楷体不含全部拉丁附加符号；题录西文使用共享 Times 字体保全作者姓名。
+  \renewcommand{\bibfont}{\normalfont\CiesmBibliographyLatin\fontsize{10.5bp}{16bp}\selectfont}
+  % 编号贴正文左边界，续行保留悬挂缩进；左对齐避免长英文词拉大字距。
+  \AtBeginBibliography{\RaggedRight\setlength{\parindent}{0pt}\setlength{\parskip}{0pt}}
+  % 文章号不再在此处理：gb7714-2015 的 sourcemap 已把 article 的 eid 映射进 pages
+  % （且不覆盖原有 pages），旧的 numeric 样式下用来去重的 \clearfield{pages} 在这里
+  % 会反过来把文章号整个抹掉，故移除。
+  \defbibheading{ciesm}{\subsubsection*{主要参考文献}}
+}
+\newcommand{\CiesmFullCite}[1]{{\CiesmBibliographyLatin\fullcite{#1}}}
+
+% 图和图注作为一个浮动体，限宽限高且始终保留纵横比，不裁剪原 PDF。
+\newcommand{\CiesmFigure}[3]{%
+  \begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\linewidth,height=.62\textheight,keepaspectratio]{#1}
+    \caption{#2}\label{#3}
+  \end{figure}
+}
+
+% 预算表保留官方列宽与底色；概要说明换行时相应行自动增高。
+\definecolor{CiesmBudgetGray}{gray}{.953}
+\newsavebox{\CiesmBudgetNameBox}
+\newsavebox{\CiesmBudgetAmountBox}
+\newsavebox{\CiesmBudgetNoteBox}
+\newdimen\CiesmBudgetHeight
+\newcommand{\CiesmBudgetRow}[4]{%
+  \CiesmMeasure{\CiesmBudgetNameBox}{\parbox{170bp}{\normalfont\fontsize{9.95bp}{14bp}\selectfont\raggedright #2\par}}%
+  % 空白入口复用同一科目表，但不展开填写稿的金额与说明。
+  \CiesmMeasure{\CiesmBudgetAmountBox}{\parbox{55bp}{\normalfont\fontsize{9.95bp}{14bp}\selectfont\centering\ifCiesmBlank\else #3\fi\par}}%
+  \CiesmMeasure{\CiesmBudgetNoteBox}{\parbox{93bp}{\normalfont\fontsize{9.95bp}{14bp}\selectfont\centering\ifCiesmBlank\else #4\fi\par}}%
+  \CiesmBudgetHeight=20.6bp
+  \foreach \boxname in {\CiesmBudgetNameBox,\CiesmBudgetAmountBox,\CiesmBudgetNoteBox}{%
+    \ifdim\dimexpr\ht\boxname+\dp\boxname+6bp\relax>\CiesmBudgetHeight
+      \global\CiesmBudgetHeight=\dimexpr\ht\boxname+\dp\boxname+6bp\relax
+    \fi
+  }%
+  \pgfmathsetmacro{\ciesmRowBottom}{\ciesmRowTop+\CiesmBudgetHeight/1bp}
+  \fill[CiesmBudgetGray] (104.15,\ciesmRowTop) rectangle (323.9,\ciesmRowBottom);
+  \draw[line width=.72bp] (104.15,\ciesmRowBottom) -- (491.15,\ciesmRowBottom);
+  \node at (120.825,{(\ciesmRowTop+\ciesmRowBottom)/2}) {#1};
+  \node[anchor=west] at (149.04,{(\ciesmRowTop+\ciesmRowBottom)/2}) {\usebox{\CiesmBudgetNameBox}};
+  \node at (355.8,{(\ciesmRowTop+\ciesmRowBottom)/2}) {\usebox{\CiesmBudgetAmountBox}};
+  \node at (439.425,{(\ciesmRowTop+\ciesmRowBottom)/2}) {\usebox{\CiesmBudgetNoteBox}};
+  \let\ciesmRowTop\ciesmRowBottom
+}
+\newenvironment{CiesmBudget}{%
+  \begin{CiesmCanvas}
+    \CiesmText{90}{86.69}{\fontsize{14.05bp}{22bp}\selectfont 三、课题经费预算表}
+    \fontsize{9.95bp}{14bp}\selectfont
+    \fill[CiesmBudgetGray] (104.15,110.56) rectangle (491.15,151.76);
+    \draw[line width=.72bp] (104.15,110.56) -- (491.15,110.56);
+    \draw[line width=.72bp] (137.5,131.16) -- (491.15,131.16);
+    \draw[line width=.72bp] (104.15,151.76) -- (491.15,151.76);
+    \CiesmText{110.76}{134.69}{\bfseries 序号}
+    \CiesmText{200.52}{124.49}{\bfseries 预算科目名称}
+    \CiesmText{325.68}{124.49}{\bfseries 经费（万元）}
+    \CiesmText{419.4}{124.49}{\bfseries 概要说明}
+    \CiesmText{218.16}{145.01}{（1）}
+    \CiesmText{343.2}{145.01}{（2）}
+    \CiesmText{426.84}{145.01}{（3）}
+    \def\ciesmRowTop{151.76}
+}{%
+    \draw[line width=.72bp] (137.5,110.56) -- (137.5,\ciesmRowTop);
+    \pgfmathsetmacro{\ciesmRowBottom}{\ciesmRowTop+20.6}
+    \fill[CiesmBudgetGray] (104.15,\ciesmRowTop) rectangle (323.9,\ciesmRowBottom);
+    \CiesmText{115.68}{\ciesmRowTop+13.85}{共计}
+    \node at (355.8,{\ciesmRowTop+10.3}) {\CiesmValue{total-budget}};
+    \CiesmText{436.92}{\ciesmRowTop+13.85}{/}
+    \foreach \x in {104.15,323.9,387.7,491.15}
+      \draw[line width=.72bp] (\x,110.56) -- (\x,\ciesmRowBottom);
+    \draw[line width=.72bp] (104.15,\ciesmRowBottom) -- (491.15,\ciesmRowBottom);
+    \ifdim\ciesmRowBottom bp>740bp
+      \PackageError{ciesm-open-fund}{Budget table exceeds one page}
+        {Shorten the budget notes in extraTex/budget.tex.}%
+    \fi
+  \end{CiesmCanvas}
+}

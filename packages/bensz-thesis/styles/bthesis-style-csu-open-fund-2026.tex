@@ -1,0 +1,233 @@
+\ProvidesFile{bthesis-style-csu-open-fund-2026.tex}
+  [2026/09/07 CSU laboratory open-fund form]
+% 独立模板身份。固定标签与矢量线来自官方 PDF 的 bp 坐标；不读取/嵌入 PDF。
+\RequirePackage{geometry}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{etoolbox}
+\RequirePackage{amsmath}
+\RequirePackage{graphicx}
+\RequirePackage{enumitem}
+\RequirePackage{caption}
+\RequirePackage{xurl}
+% 文献引用与图表编号可点击跳转，保持申请书的黑色文字和原有版式。
+\RequirePackage[hidelinks,bookmarks=false]{hyperref}
+% 正文插图在 minipage 中使用 captionof，交叉引用定位到对应图注。
+\captionsetup{hypcap=false}
+% URL 内部初始化数学字体时采用可用字号；URL 文字跟随小五号文献字号。
+\DeclareMathSizes{9}{9}{6}{5}
+\urlstyle{same}
+% 复用国自然公共包的 BST；绝对路径兼容 BibTeX 在 .latex-cache/ 内执行。
+% 独立安装时也可由 TeX 的标准 BST 搜索路径查找。
+\RequirePackage[abspath]{currfile}
+\getabspath{bensz-thesis.sty}
+\edef\CSUBibliographySourcePath{\theabsdir../bensz-nsfc/assets/bibtex-style/gbt7714-nsfc}
+\newcommand{\CSUBibliographyStylePath}{gbt7714-nsfc}
+\IfFileExists{\CSUBibliographySourcePath.bst}{%
+  \let\CSUBibliographyStylePath\CSUBibliographySourcePath
+}{}
+% 按填写要求缩为小五号，配14bp行距；保留标题与零条目间距。
+\apptocmd{\thebibliography}{%
+  \fontsize{9pt}{14bp}\selectfont\frenchspacing
+  \setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}%
+}{}{\PackageError{csu-open-fund-2026}{Cannot configure bibliography spacing}{Check the bibliography environment definition.}}
+\geometry{paperwidth=595.3bp,paperheight=841.9bp,left=90.45bp,right=90.45bp,top=110bp,bottom=107bp}
+\pagestyle{empty}
+\renewcommand{\baselinestretch}{1}
+\setlength{\parindent}{24bp}
+\setlength{\parskip}{0pt}
+\setcounter{secnumdepth}{2}
+\setlength{\emergencystretch}{1em}
+\setCJKmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{SimSun.ttf}
+\setCJKsansfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{AdobeHeitiStd-Regular.otf}
+\setCJKfamilyfont{csufang}[Path={\BenszFontsDir}]{AdobeFangsongStd-Regular.otf}
+\setmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5,AutoFakeSlant=.2]{TimesNewRoman.ttf}
+\newfontfamily\CSUArial[Path={\BenszFontsDir}]{NotoSansSC-Regular.otf}
+\xeCJKsetup{PunctStyle=plain,CJKecglue={}}
+\newcommand{\CSUSong}{\rmfamily\CJKfamily{rm}}
+\newcommand{\CSUHei}{\rmfamily\CJKfamily{sf}}
+\newcommand{\CSUFang}{\rmfamily\CJKfamily{csufang}}
+% 原表西文片段按 Times New Roman 的字宽定位；引号不能被 xeCJK 切换成全角宋体。
+% CSUText 与页码节点均有局部分组，禁用状态不会进入相邻中文或正文。
+\newcommand{\CSURoman}{\rmfamily\makexeCJKinactive}
+\newcommand{\CSUBodyFont}{\CSUSong\fontsize{12bp}{20bp}\selectfont
+  \xeCJKsetup{CJKecglue={\hskip0pt plus .08em},CJKglue={\hskip0pt plus .08em minus .02em}}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\ctexset{subsection={format=\CSUBodyFont\bfseries}}
+\newenvironment{CSUCanvas}{%
+  \begin{tikzpicture}[remember picture,overlay,x=1bp,y=-1bp]
+  \begin{scope}[shift={(current page.north west)},every node/.style={inner sep=0pt,outer sep=0pt}]
+}{\end{scope}\end{tikzpicture}}
+\newcommand{\CSUText}[5]{\node[anchor=base west] at (#1,#2) {{#4\fontsize{#3bp}{20bp}\selectfont #5}};}
+\newcommand{\CSULine}[5]{\draw[line width=#1bp] (#2,#3) -- (#4,#5);}
+% WPS 填报说明含人为字距；保持字号，用字距复原，不拉伸字形。
+\ExplSyntaxOn
+\NewDocumentCommand{\CSUTrack}{mm}{\str_map_inline:nn{#2}{\makebox[#1bp][l]{%
+  \str_if_eq:nnTF{##1}{□}{\scalebox{1.6}{##1}}{##1}}}}
+\ExplSyntaxOff
+\newcommand{\CSUArtwork}[1]{\csname CSUArtwork#1\endcsname}
+\newcommand{\CSUFooter}{\begin{CSUCanvas}
+  \node[anchor=base] at (297.69,790.25) {{\CSURoman\fontsize{9bp}{10bp}\selectfont\thepage}};
+\end{CSUCanvas}}
+\AtBeginDocument{\CSUBodyFont\AddToShipoutPictureFG{\CSUFooter}}
+\newcommand{\CSUFixedPage}[2]{\begin{CSUCanvas}\CSUArtwork{#1}#2\end{CSUCanvas}\null\clearpage}
+
+\makeatletter
+\newcommand{\CSUDeclareField}[1]{%
+  \expandafter\def\csname CSUfield@#1\endcsname{}%
+  \define@key{CSU}{#1}{\expandafter\def\csname CSUfield@#1\endcsname{##1}}}
+\forcsvlist{\CSUDeclareField}{title,applicant,organization,address,phone,fax,email,date,funding,discipline,sex,birth,professional-title,degree,field,postcode,department,department-phone}
+\newcommand{\CSUField}[1]{\csname CSUfield@#1\endcsname}
+\newcommand{\CSUSetup}[1]{\setkeys{CSU}{#1}}
+\define@key{CSU}{research-type}{\CSUSelectResearch{#1}}
+\define@key{CSU}{organization-type}{\CSUSelectOrganization{#1}}
+\makeatother
+
+\newsavebox{\CSUCellBox}
+% 固定字段共享测量与溢出检查；有同行标签时，最后一行与标签共用基线。
+\newcommand{\CSUMeasureCell}[3]{%
+  \sbox{\CSUCellBox}{\begin{minipage}[b]{#1bp}\CSUSong\fontsize{12bp}{15bp}\selectfont\centering #3\par\end{minipage}}%
+  \ifdim\dimexpr\ht\CSUCellBox+\dp\CSUCellBox\relax>#2bp
+    \PackageError{csu-open-fund-2026}{Fixed field overflow}{Shorten the field; put long text in research sections.}%
+  \fi
+}
+\newcommand{\CSUCell}[5]{%
+  \node[anchor=center] at ({#1+#3/2},{#2+#4/2}) {%
+    \CSUMeasureCell{#3}{#4}{#5}\usebox{\CSUCellBox}};}
+\newcommand{\CSUBaselineCell}[5]{%
+  \node[anchor=base] at ({#1+#3/2},{#2}) {%
+    \CSUMeasureCell{#3}{#4}{#5}\usebox{\CSUCellBox}};}
+% 表格的一至两行字段：单行基线一致，双行基线中点与其一致。
+\newcommand{\CSURowCell}[5]{%
+  \node[anchor=base] at ({#1+#3/2},{#2}) {%
+    \CSUMeasureCell{#3}{#4}{#5}%
+    \ifdim\dimexpr\ht\CSUCellBox+\dp\CSUCellBox\relax>15bp
+      \raisebox{-7.5bp}{\usebox{\CSUCellBox}}%
+    \else\usebox{\CSUCellBox}\fi};}
+\newcommand{\CSUBlock}[5]{%
+  \node[anchor=north west] at (#1,#2) {%
+  \sbox{\CSUCellBox}{\begin{minipage}{#3bp}\CSUBodyFont\setlength{\parindent}{24bp}#5\par\end{minipage}}%
+  \ifdim\dimexpr\ht\CSUCellBox+\dp\CSUCellBox\relax>#4bp
+    \PackageError{csu-open-fund-2026}{Fixed text block overflow at (#1,#2)}{Shorten this form field or add a separate attachment page.}%
+  \fi
+  \usebox{\CSUCellBox}};}
+\newcommand{\CSUCover}{\CSUFixedPage{1}{%
+  % 封面填写值与固定标签统一字号；保持原中轴与基线，完整容纳24字课题名。
+  \foreach \field [count=\row from 0] in {title,applicant,organization,address,phone,fax,email,date}{%
+    \CSUBaselineCell{158.5}{435.890+31.2*\row}{338}{30}{%
+      \fontsize{14.05bp}{15.6bp}\selectfont\CSUField{\field}}}}}
+\newcommand{\CSUInstructions}{\CSUFixedPage{2}{}}
+\newcommand{\CSUCheck}[2]{\draw[line width=.65bp] (#1,#2) -- ++(2.2,2.5) -- ++(4.5,-6);}
+\newcommand{\CSUInformation}[1]{\CSUFixedPage{3}{%
+  \CSUBaselineCell{214}{126.170}{292}{25}{\CSUField{title}}
+  \CSUBaselineCell{450}{154.609}{29}{24}{\CSUField{funding}}
+  % 起止年月保留官方单位文字，通过四个分栏填写数字。
+  \CSUPeriodValues
+  \CSUBaselineCell{450}{183.170}{56}{23}{\CSUField{discipline}}
+  \CSUBaselineCell{214}{211.609}{63}{23}{\CSUField{applicant}}
+  \CSUBaselineCell{324}{211.609}{56}{23}{\CSUField{sex}}
+  \CSUBaselineCell{450}{211.609}{56}{23}{\CSUField{birth}}
+  \CSUBaselineCell{214}{240.170}{103}{23}{\CSUField{professional-title}}
+  \CSUBaselineCell{387}{240.170}{119}{23}{\CSUField{degree}}
+  \CSUBaselineCell{214}{268.609}{292}{23}{\CSUField{field}}
+  % 简表地址格较窄，使用 9bp 字号和 11bp 行距容纳两行完整地址；仍检查溢出。
+  \CSUCell{214}{306}{150}{23}{\fontsize{9bp}{11bp}\selectfont\CSUField{address}}
+  \CSUBaselineCell{434}{325.609}{72}{23}{\CSUField{postcode}}
+  \CSUBaselineCell{214}{354.169}{150}{23}{\CSUField{department}}
+  \CSUBaselineCell{434}{354.169}{72}{23}{\CSUField{department-phone}}
+  \CSUBlock{133}{368}{370}{327}{#1}
+  \ifdefstring{\CSUResearchType}{basic}{\CSUCheck{227}{150}}{}%
+  \ifdefstring{\CSUResearchType}{applied}{\CSUCheck{311}{150}}{}%
+  \ifdefstring{\CSUOrganizationType}{university}{\CSUCheck{242}{293}}{}%
+  \ifdefstring{\CSUOrganizationType}{research}{\CSUCheck{332}{293}}{}%
+  \ifdefstring{\CSUOrganizationType}{other}{\CSUCheck{423}{293}}{}%
+}}
+\newcommand{\CSUResearchType}{}
+\newcommand{\CSUOrganizationType}{}
+\newcommand{\CSUPeriodValues}{}
+\newcommand{\CSUPeriod}[4]{\renewcommand{\CSUPeriodValues}{%
+  \CSUBaselineCell{214}{183.170}{32}{23}{#1}\CSUBaselineCell{261}{183.170}{16}{23}{#2}%
+  \CSUBaselineCell{304}{183.170}{28}{23}{#3}\CSUBaselineCell{345}{183.170}{13}{23}{#4}}}
+\newcommand{\CSUSelectResearch}[1]{%
+  \ifboolexpr{test {\ifstrequal{#1}{basic}} or test {\ifstrequal{#1}{applied}} or test {\ifstrequal{#1}{}}}
+    {\renewcommand{\CSUResearchType}{#1}}
+    {\PackageError{csu-open-fund-2026}{Invalid research type #1}{Use basic or applied.}}}
+\newcommand{\CSUSelectOrganization}[1]{%
+  \ifboolexpr{test {\ifstrequal{#1}{university}} or test {\ifstrequal{#1}{research}} or test {\ifstrequal{#1}{other}} or test {\ifstrequal{#1}{}}}
+    {\renewcommand{\CSUOrganizationType}{#1}}
+    {\PackageError{csu-open-fund-2026}{Invalid organization type #1}{Use university, research or other.}}}
+
+% 官方栏目用版框绘制一级标题；正文使用正常的二级标题及按栏重置的编号。
+\newcommand{\CSUSetResearchSection}[1]{%
+  \setcounter{section}{#1}\setcounter{subsection}{0}\setcounter{subsubsection}{0}}
+% 单个研究栏目用正常 LaTeX 分页；标题仅在首页绘制，续页保留版框与连续页码。
+\newcommand{\CSUResearchPage}[2]{%
+  \ifnum#1=4 \def\CSUResearchBottom{135bp}\else\def\CSUResearchBottom{107bp}\fi
+  \newgeometry{left=90.45bp,right=90.45bp,top=110bp,bottom=\CSUResearchBottom}%
+  \ifnum#1=8 \CSUSetResearchSection{6}\else\CSUSetResearchSection{\numexpr#1-3\relax}\fi
+  \AddToShipoutPictureBG{\begin{CSUCanvas}\csname CSUResearchFrame#1\endcsname\end{CSUCanvas}}%
+  \AddToShipoutPictureBG*{\begin{CSUCanvas}\csname CSUResearchHeading#1\endcsname\end{CSUCanvas}}%
+  % 空栏目保留验收页；非空正文不追加空行，避免满页时多出空白续页。
+  \CSUBodyFont\ifblank{#2}{\null}{#2\par}%
+  \clearpage\ClearShipoutPictureBG\restoregeometry}
+\newsavebox{\CSUFirstBox}
+\newsavebox{\CSUSecondBox}
+\newcommand{\CSUPrepareBody}[2]{%
+  \setbox#1=\vbox{\hsize=414.4bp\linewidth=\hsize\columnwidth=\hsize
+    \CSUBodyFont\setlength{\parindent}{24bp}#2\par}}
+\newcommand{\CSUPutBody}[2]{\node[anchor=north west] at (90.45,#1) {\usebox{#2}};}
+\newcommand{\CSUExpandedSection}[2]{%
+  \newgeometry{left=90.45bp,right=90.45bp,top=110bp,bottom=107bp}%
+  \AddToShipoutPictureBG{\begin{CSUCanvas}
+    \draw[line width=.48bp] (84.45,103.44) rectangle (510.85,741.64);
+  \end{CSUCanvas}}%
+  \AddToShipoutPictureBG*{\begin{CSUCanvas}
+    \CSUText{89.88}{92.69}{14.05}{\CSUHei}{#1}
+  \end{CSUCanvas}}%
+  % 仅空内容需要占位；非空正文后追加空行会在满页时产生空白续页。
+  \ifdim\dimexpr\ht#2+\dp#2\relax=0pt \null\else\unvbox#2\fi
+  \par\clearpage\ClearShipoutPictureBG\restoregeometry}
+% 合页栏目在短正文时保持官方空白表高度；任一栏目过长则按阅读顺序拆成可续页栏目。
+\newcommand{\CSUInnovationPlan}[2]{%
+  \CSUSetResearchSection{4}\CSUPrepareBody{\CSUFirstBox}{#1}%
+  \CSUSetResearchSection{5}\CSUPrepareBody{\CSUSecondBox}{#2}%
+  \ifboolexpr{test {\ifdimcomp{\ht\CSUFirstBox+\dp\CSUFirstBox}{>}{290bp}} or test {\ifdimcomp{\ht\CSUSecondBox+\dp\CSUSecondBox}{>}{298bp}}}{%
+    \CSUExpandedSection{四、本课题的特色及创新之处}{\CSUFirstBox}%
+    \CSUExpandedSection{五、课题执行计划}{\CSUSecondBox}%
+  }{\CSUFixedPage{7}{\CSUPutBody{110}{\CSUFirstBox}\CSUPutBody{445}{\CSUSecondBox}}}}
+\newcommand{\CSUOutcomesBudget}[2]{%
+  \CSUSetResearchSection{7}\CSUPrepareBody{\CSUFirstBox}{#1}%
+  \ifdim\dimexpr\ht\CSUFirstBox+\dp\CSUFirstBox\relax>267bp
+    \CSUExpandedSection{七、预期成果和考核指标}{\CSUFirstBox}%
+    \CSUFixedPage{BudgetOnly}{\begin{scope}[shift={(0,-311.76)}]#2\end{scope}}%
+  \else\CSUFixedPage{9}{\CSUPutBody{110}{\CSUFirstBox}#2}\fi}
+\newcommand{\CSUBudgetRow}[3]{%
+  \ifnum#1<0 \PackageError{csu-open-fund-2026}{Budget row must be 0--5}{}\fi
+  \ifnum#1>5 \PackageError{csu-open-fund-2026}{Budget row must be 0--5}{}\fi
+  \pgfmathsetmacro{\CSURowTop}{449.69+34.5*#1+ifthenelse(#1>3,4,0)}%
+  \pgfmathsetmacro{\CSURowHeight}{ifthenelse(#1==3,34.5,30.5)}%
+  \ifcase#1\def\CSURowBaseline{472.730}\or\def\CSURowBaseline{507.169}%
+    \or\def\CSURowBaseline{541.730}\or\def\CSURowBaseline{578.210}%
+    \or\def\CSURowBaseline{614.690}\or\def\CSURowBaseline{649.250}\fi
+  \CSUBaselineCell{199}{\CSURowBaseline}{104}{\CSURowHeight}{#2}%
+  \CSURowCell{311}{\CSURowBaseline}{196}{\CSURowHeight}{#3}}
+\newcommand{\CSUMembers}[2]{\CSUFixedPage{10}{#1\CSUBlock{90.45}{500}{414.4}{224}{#2}}}
+\newcommand{\CSUMember}[7]{%
+  \ifnum#1<1 \PackageError{csu-open-fund-2026}{Member row must be 1--9}{}\fi
+  \ifnum#1>9 \PackageError{csu-open-fund-2026}{Member row must be 1--9}{}\fi
+  \pgfmathsetmacro{\CSURowTop}{133.94+31.7*(#1-1)+2}%
+  \CSURowCell{88}{\CSURowTop+17.8}{54}{27}{#2}\CSURowCell{149}{\CSURowTop+17.8}{54}{27}{#3}%
+  \CSURowCell{210}{\CSURowTop+17.8}{54}{27}{#4}\CSURowCell{271}{\CSURowTop+17.8}{54}{27}{#5}%
+  \CSURowCell{332}{\CSURowTop+17.8}{54}{27}{#6}\CSURowCell{393}{\CSURowTop+17.8}{53}{27}{#7}}
+\newcommand{\CSURecommendations}[3]{\CSUFixedPage{11}{%
+  \CSUBlock{90.45}{200}{414.4}{157}{#1}\CSUBlock{90.45}{455}{414.4}{195}{#2}#3}}
+\newcommand{\CSURecommender}[4]{%
+  \ifnum#1<1 \PackageError{csu-open-fund-2026}{Recommender row must be 1--2}{}\fi
+  \ifnum#1>2 \PackageError{csu-open-fund-2026}{Recommender row must be 1--2}{}\fi
+  \ifnum#1=1\def\CSURowBaseline{381.050}\else\def\CSURowBaseline{677.930}\fi
+  \CSUBaselineCell{368}{\CSURowBaseline}{115}{18}{#2}%
+  \CSUBaselineCell{212}{\CSURowBaseline+31.2}{109}{18}{#3}\CSUBaselineCell{362}{\CSURowBaseline+31.2}{115}{18}{#4}}
+\newcommand{\CSUApprovals}[2]{\CSUFixedPage{12}{%
+  \CSUBlock{94}{385}{410}{35}{#1}\CSUBlock{95}{534}{440}{164}{#2}}}
+\newcommand{\CSUDirector}[1]{\CSUFixedPage{13}{\CSUBlock{95}{112}{440}{150}{#1}}}
+\input{styles/bthesis-artwork-csu-open-fund-2026.tex}

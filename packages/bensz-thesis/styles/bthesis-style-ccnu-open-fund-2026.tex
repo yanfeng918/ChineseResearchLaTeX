@@ -1,0 +1,394 @@
+\ProvidesFile{bthesis-style-ccnu-open-fund-2026.tex}
+  [2026/09/06 CCNU laboratory open-fund form]
+% 页面尺寸与 bp 坐标来自用户提供的 2026 版 PDF；固定表格用原生矢量线和文字重建。
+% 正文用普通 LaTeX 分页，版框通过 shipout 绘制；构建不读取参考 PDF。
+\RequirePackage{geometry}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{enumitem}
+\RequirePackage{etoolbox}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\RequirePackage{caption}
+\RequirePackage{amsmath}
+\RequirePackage{xurl}
+\urlstyle{rm}
+% 官方 10.45bp 正文不是标准数学字号，使用可缩放的大符号字形。
+\DeclareFontShape{OMX}{cmex}{m}{n}{<-> cmex10}{}
+\geometry{paperwidth=595.35bp,paperheight=842bp,left=70.44bp,right=56.35bp,top=100.295bp,bottom=108bp}
+\pagestyle{empty}
+\renewcommand{\baselinestretch}{1}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\setCJKmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{SimSun.ttf}
+\setCJKsansfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{AdobeHeitiStd-Regular.otf}
+\setCJKfamilyfont{hzkai}[Path={\BenszFontsDir}]{Kaiti.ttf}
+\setCJKfamilyfont{hzfang}[Path={\BenszFontsDir}]{AdobeFangsongStd-Regular.otf}
+\setmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5,AutoFakeSlant=.2]{TimesNewRoman.ttf}
+\xeCJKsetup{PunctStyle=plain,CJKecglue={\hskip 0pt plus .08em}}
+\newcommand{\HZSong}{\rmfamily\CJKfamily{rm}}
+\newcommand{\HZHei}{\rmfamily\CJKfamily{sf}}
+\newcommand{\HZKai}{\rmfamily\CJKfamily{hzkai}}
+\newcommand{\HZFang}{\rmfamily\CJKfamily{hzfang}}
+\newcommand{\HZSize}[1]{\fontsize{#1bp}{15.6bp}\selectfont}
+\newcommand{\HZTableFont}{\HZSong\HZSize{10.45}}
+
+\makeatletter
+\newcommand{\HZDeclareField}[1]{%
+  \expandafter\def\csname HZfield@#1\endcsname{}%
+  \define@key{HZ}{#1}{\expandafter\def\csname HZfield@#1\endcsname{##1}}}
+\forcsvlist{\HZDeclareField}{title,applicant,organization,year,month,day,edition,category,sex,ethnicity,birth,major,degree,position,professional-title,phone,keywords,funding,period,school,department,address,postcode,email,supervisor,education,employment}
+\newcommand{\HuazhongSetup}[1]{\setkeys{HZ}{#1}}
+\newcommand{\HZField}[1]{\csname HZfield@#1\endcsname}
+\makeatother
+
+\newenvironment{HZCanvas}{%
+  \begin{tikzpicture}[remember picture,overlay,x=1bp,y=-1bp]
+  \begin{scope}[shift={(current page.north west)},every node/.style={inner sep=0pt,outer sep=0pt}]
+}{\end{scope}\end{tikzpicture}}
+\newcommand{\HZText}[4]{\node[anchor=base west] at (#1,#2) {{\HZSize{#3}#4}};}
+\newcommand{\HZLine}[5]{\draw[line width=#1bp] (#2,#3) -- (#4,#5);}
+\newsavebox{\HZContentBox}
+% 固定表格的内容先排版再检查高度；过量内容必须由作者修改，不能静默裁切。
+\newcommand{\HZCell}[5]{%
+  \node[anchor=center] at ({#1+#3/2},{#2+#4/2}) {%
+    \sbox{\HZContentBox}{\begin{minipage}{#3bp}\HZTableFont\centering #5\par\end{minipage}}%
+    \ifdim\dimexpr\ht\HZContentBox+\dp\HZContentBox\relax>#4bp
+      \PackageError{ccnu-open-fund-2026}{Fixed form cell overflow at (#1,#2)}{Adjust this template's local cell font or padding; retain the complete field.}%
+    \fi
+    \usebox{\HZContentBox}};}
+\newcommand{\HZBlock}[6]{%
+  \node[anchor=north west] at (#1,#2) {%
+    \sbox{\HZContentBox}{\begin{minipage}[t]{#3bp}#5#6\par\end{minipage}}%
+    \ifdim\dimexpr\ht\HZContentBox+\dp\HZContentBox\relax>#4bp
+      \PackageError{ccnu-open-fund-2026}{Fixed text block overflow at (#1,#2)}{Shorten this field; use research sections for long text.}%
+    \fi
+    \usebox{\HZContentBox}};}
+\newcommand{\HZPageNumber}{%
+  \begin{HZCanvas}
+    \ifdim\paperwidth>700bp
+      \HZText{415.92}{543.77}{9}{\HZSong\thepage}
+    \else
+      \HZText{302.52}{790.37}{9}{\HZSong\thepage}
+    \fi
+  \end{HZCanvas}}
+
+\newcommand{\HuazhongCover}{%
+  \begin{HZCanvas}
+    \HZCoverArtwork
+    \HZCell{240}{438}{250}{38}{\HZSize{14.05}\HZField{title}}
+    \HZCell{240}{494}{250}{25}{\HZSize{15.95}\HZField{applicant}}
+    \HZCell{240}{524}{250}{38}{\HZSize{14.05}\HZField{organization}}
+    \HZCell{268}{580}{38}{25}{\HZSize{15.95}\HZField{year}}
+    \HZCell{333}{580}{21}{25}{\HZSize{15.95}\HZField{month}}
+    \HZCell{381}{580}{21}{25}{\HZSize{15.95}\HZField{day}}
+    \node[anchor=base] at (304.75,726.29) {{\HZSong\HZSize{15.95}\bfseries\HZField{edition}}};
+  \end{HZCanvas}\null\clearpage
+  \setcounter{page}{1}\AddToShipoutPictureFG{\HZPageNumber}}
+
+\newcommand{\HuazhongCommitmentLine}[2][0]{%
+  \noindent\hspace*{#1bp}\makebox[\dimexpr\linewidth-#1bp\relax][s]{#2}\\}
+\newcommand{\HuazhongCommitment}[1]{%
+  \begin{HZCanvas}
+    \HZCommitmentArtwork
+    \HZBlock{85.08}{127.986}{439.45}{252}{\HZKai\fontsize{14.05bp}{24bp}\selectfont\raggedright\xeCJKsetup{PunctStyle=banjiao,CJKglue={\hskip0bp plus1bp minus1bp},CJKecglue={\hskip3.5bp plus1bp minus1bp}}}{#1}
+  \end{HZCanvas}\null\clearpage}
+
+\newcommand{\HuazhongInformation}[1]{%
+  \begin{HZCanvas}
+    \HZInformationArtwork
+    \HZCell{132}{97}{409}{28}{\HZField{title}}
+    \HZCell{193}{160}{35}{28}{\HZField{applicant}}
+    \HZCell{273}{160}{33}{28}{\HZField{sex}}
+    \HZCell{368}{160}{66}{28}{\HZField{ethnicity}}
+    \HZCell{497}{160}{45}{28}{\HZField{birth}}
+    \HZCell{193}{191}{35}{28}{\fontsize{8.5bp}{9bp}\selectfont\HZField{major}}
+    \HZCell{273}{191}{33}{28}{\HZField{degree}}
+    \HZCell{368}{191}{66}{28}{\HZField{position}}
+    \HZCell{497}{191}{45}{28}{\HZField{professional-title}}
+    \HZCell{193}{223}{113}{28}{\fontsize{8.7bp}{9.1bp}\selectfont\HZField{organization}}
+    \HZCell{368}{223}{174}{28}{\HZField{phone}}
+    \HZCell{210}{692}{332}{27}{\HZField{keywords}}
+    \HZCell{210}{723}{56}{28}{\HZField{funding}}
+    \HZCell{368}{723}{174}{28}{\HZField{period}}
+    \HZBlock{69}{280}{471}{396}{\HZTableFont\setlength{\parindent}{2em}}{#1}
+    % 类别名称直接填入左侧单元格；兼容原有 A/B/C 圈选写法。
+    \ifcsstring{HZfield@category}{A}{\draw[line width=.6bp] (208.5,143) ellipse (7bp and 8bp);}{%
+      \ifcsstring{HZfield@category}{B}{\draw[line width=.6bp] (278,143) ellipse (7bp and 8bp);}{%
+        \ifcsstring{HZfield@category}{C}{\draw[line width=.6bp] (347,143) ellipse (7bp and 8bp);}{%
+          \ifcsempty{HZfield@category}{}{\HZCell{130}{129}{57}{27}{\HZField{category}}}%
+        }%
+      }%
+    }%
+  \end{HZCanvas}\null\clearpage}
+
+% 横向页直接设置 MediaBox，文字保持可检索；不旋转整页截图。
+\newcommand{\HuazhongMembers}[1]{%
+  \setlength{\paperwidth}{842bp}\setlength{\paperheight}{595.35bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight
+  \special{papersize=842bp,595.35bp}%
+  \begin{HZCanvas}\HZMembersArtwork #1\end{HZCanvas}\null\clearpage
+  \setlength{\paperwidth}{595.35bp}\setlength{\paperheight}{842bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight
+  \special{papersize=595.35bp,842bp}}
+\newcommand{\HuazhongMember}[8]{%
+  \ifnum#1<1 \PackageError{ccnu-open-fund-2026}{Member row must be 1--12}{}\fi
+  \ifnum#1>12 \PackageError{ccnu-open-fund-2026}{Member row must be 1--12}{}\fi
+  \pgfmathsetmacro{\HZRowY}{134.37+(#1-1)*31.45+2}%
+  \HZCell{108}{\HZRowY}{40}{27}{#2}\HZCell{155}{\HZRowY}{34}{27}{#3}%
+  \HZCell{196}{\HZRowY}{57}{27}{#4}\HZCell{260}{\HZRowY}{41}{27}{#5}%
+  \HZCell{308}{\HZRowY}{48}{27}{#6}\HZCell{363}{\HZRowY}{148}{27}{#7}%
+  \HZCell{519}{\HZRowY}{165}{27}{#8}}
+
+% 每个研究栏目至少占一页；版框随正文续页，完整栏目标题只在首页出现。
+\newenvironment{HuazhongResearch}[1]{%
+  \ifstrequal{#1}{foundation}{%
+    \def\HZResearchHeading{二、研究基础}\def\HZResearchLeft{66.25}\def\HZResearchRight{543.25}\def\HZBodyLeft{71.64}%
+  }{\ifstrequal{#1}{proposal}{%
+    \def\HZResearchHeading{三、项目申请内容}\def\HZResearchLeft{65.05}\def\HZResearchRight{544.45}\def\HZBodyLeft{70.44}%
+  }{\PackageError{ccnu-open-fund-2026}{Unknown research section #1}{Use foundation or proposal.}}}%
+  \newgeometry{left=\HZBodyLeft bp,right=56.6bp,top=100.295bp,bottom=108bp}%
+  \setcounter{section}{0}\setcounter{subsection}{0}%
+  \AddToShipoutPictureFG*{\begin{HZCanvas}
+    \HZText{85.08}{90.65}{14.05}{\HZHei\HZResearchHeading}
+  \end{HZCanvas}}%
+  \AddToShipoutPictureBG{\begin{HZCanvas}
+    \draw[line width=.96bp] (\HZResearchLeft,95.18) rectangle (\HZResearchRight,744.18);
+  \end{HZCanvas}}%
+  \HZTableFont\setlength{\parindent}{2em}%
+}{\par\clearpage\ClearShipoutPictureBG\restoregeometry}
+\newcommand{\HuazhongGuide}[1]{\noindent\hspace*{21bp}{\bfseries #1}\par}
+\newenvironment{HuazhongOutline}{%
+  \begin{enumerate}[label=\arabic*),font=\bfseries,leftmargin=21bp,labelwidth=17bp,labelsep=4bp,align=left,
+    itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]
+}{\end{enumerate}}
+
+% 正式申请书的提纲项使用 section，其下按 1.1、1.2 连续编号。
+% 空白模板仍可用 HuazhongOutline 精确保留官方提纲行序。
+\ctexset{
+  section={format=\HZTableFont\bfseries,number=\arabic{section},
+    aftername={)\quad},beforeskip=9bp,afterskip=3bp,indent=0pt},
+  subsection={format=\HZTableFont\bfseries,number=\arabic{section}.\arabic{subsection},
+    aftername=\quad,beforeskip=7bp,afterskip=3bp,indent=0pt},
+  subsubsection={format=\HZTableFont\bfseries,number=\thesubsection.\arabic{subsubsection},
+    aftername=\quad,beforeskip=5bp,afterskip=2bp,indent=0pt}
+}
+\setlength{\emergencystretch}{2em}
+% 原图保持比例，图片与图注作为整体按出现顺序分页。
+\floatplacement{figure}{H}
+\captionsetup*[figure]{font=small,labelfont=bf,labelsep=quad,skip=4bp,
+  justification=centering,singlelinecheck=false}
+\setlength{\intextsep}{8bp}
+\newcommand{\HuazhongFigure}[3]{%
+  \begin{figure}[H]\centering
+    \includegraphics[width=.96\linewidth,height=.70\textheight,keepaspectratio]{#1}%
+    \caption{#2}\label{#3}%
+  \end{figure}}
+% 只去掉条目与段落之间的额外空白，保留本模板正常的条目内行距。
+\patchcmd{\thebibliography}{\section*{\refname}}{\subsection*{\refname}}
+  {}{\PackageError{ccnu-open-fund-2026}{Cannot configure bibliography heading}{}}
+\apptocmd{\thebibliography}{%
+  \HZTableFont\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}%
+  \setlength{\parskip}{0pt}\setlength{\topsep}{0pt}%
+}{}{\PackageError{ccnu-open-fund-2026}{Cannot configure bibliography spacing}{}}
+
+\newcommand{\HuazhongBudget}[2]{%
+  \begin{HZCanvas}\HZBudgetArtwork #1
+    \HZBlock{73}{397}{464}{160}{\HZSong\HZSize{12}\setlength{\parindent}{2em}}{#2}
+  \end{HZCanvas}\null\clearpage}
+\newcommand{\HuazhongBudgetRow}[3]{%
+  \ifnum#1<1 \PackageError{ccnu-open-fund-2026}{Budget row must be 1--6}{}\fi
+  \ifnum#1>6 \PackageError{ccnu-open-fund-2026}{Budget row must be 1--6}{}\fi
+  \pgfmathsetmacro{\HZRowY}{145.42+(#1-1)*28.6+2}%
+  \HZCell{195}{\HZRowY}{57}{24}{#2}\HZCell{259}{\HZRowY}{282}{24}{#3}}
+
+% 下方为官方固定标签和表格线，按页面分组。填写内容由上方接口注入。
+\newcommand{\HZCoverArtwork}{%
+  \HZLine{0.48}{237.65}{476.99}{492.35}{476.99}%
+  \HZLine{0.48}{237.65}{520.04}{492.35}{520.04}%
+  \HZLine{0.48}{237.65}{563.09}{492.35}{563.09}%
+  \HZLine{0.48}{237.65}{606.14}{492.35}{606.14}%
+  \HZText{85.08}{92.69}{15.95}{\HZSong 附件}%
+  \HZText{95.76}{161.69}{21.95}{\HZSong\bfseries 华中师范大学人工智能与教育新形态实验室}%
+  \HZText{214.80}{213.53}{30.00}{\HZSong\bfseries 开放课题项目}%
+  \HZText{214.44}{332.33}{36.00}{\HZHei\bfseries 申}%
+  \HZText{286.68}{332.33}{36.00}{\HZHei\bfseries 请}%
+  \HZText{358.92}{332.33}{36.00}{\HZHei\bfseries 书}%
+  \HZText{122.52}{472.13}{15.95}{\HZFang 课}%
+  \HZText{153.72}{472.13}{15.95}{\HZFang 题}%
+  \HZText{185.04}{472.13}{15.95}{\HZFang 名}%
+  \HZText{216.24}{472.13}{15.95}{\HZFang 称}%
+  % 官方封面此行使用分散对齐，五字覆盖与上下标签相同的宽度。
+  \HZText{122.52}{515.21}{15.95}{\HZFang 课}%
+  \HZText{145.92}{515.21}{15.95}{\HZFang 题}%
+  \HZText{169.32}{515.21}{15.95}{\HZFang 负}%
+  \HZText{192.84}{515.21}{15.95}{\HZFang 责}%
+  \HZText{216.24}{515.21}{15.95}{\HZFang 人}%
+  \HZText{122.52}{558.29}{15.95}{\HZFang 所在单位}%
+  \HZText{188.64}{558.29}{15.95}{\HZFang (}%
+  \HZText{196.20}{558.29}{15.95}{\HZFang 盖章}%
+  \HZText{225.24}{558.29}{15.95}{\HZFang )}%
+  \HZText{122.52}{601.25}{15.95}{\HZFang 申}%
+  \HZText{153.72}{601.25}{15.95}{\HZFang 请}%
+  \HZText{185.04}{601.25}{15.95}{\HZFang 日}%
+  \HZText{216.24}{601.25}{15.95}{\HZFang 期}%
+  \HZText{309.00}{601.25}{15.95}{\HZFang 年}%
+  \HZText{357.00}{601.25}{15.95}{\HZFang 月}%
+  \HZText{405.00}{601.25}{15.95}{\HZFang 日}%
+}
+
+\newcommand{\HZCommitmentArtwork}{%
+  \HZText{264.72}{92.69}{15.95}{\HZHei 申请人承诺}%
+  \HZText{285.36}{430.01}{14.05}{\HZHei 申请人（签章）：}%
+  \HZText{390.60}{460.01}{14.05}{\HZFang 年}%
+  \HZText{425.64}{460.01}{14.05}{\HZFang 月}%
+  \HZText{460.68}{460.01}{14.05}{\HZFang 日}%
+}
+
+\newcommand{\HZInformationArtwork}{%
+  \HZLine{0.96}{63.07}{95.18}{546.43}{95.18}%
+  \HZLine{0.96}{63.07}{753.13}{546.43}{753.13}%
+  \HZLine{0.24}{64.03}{127.02}{545.47}{127.02}%
+  \HZLine{0.24}{64.03}{158.47}{545.47}{158.47}%
+  \HZLine{0.24}{127.63}{189.92}{545.47}{189.92}%
+  \HZLine{0.24}{127.63}{221.37}{545.47}{221.37}%
+  \HZLine{0.24}{64.03}{252.82}{545.47}{252.82}%
+  \HZLine{0.24}{64.03}{689.87}{545.47}{689.87}%
+  \HZLine{0.24}{64.03}{721.32}{545.47}{721.32}%
+  \HZLine{0.96}{63.55}{94.70}{63.55}{753.61}%
+  \HZLine{0.96}{545.95}{95.66}{545.95}{753.61}%
+  \HZLine{0.24}{127.75}{95.66}{127.75}{252.70}%
+  \HZLine{0.24}{189.55}{126.90}{189.55}{252.70}%
+  \HZLine{0.24}{206.20}{689.75}{206.20}{752.65}%
+  \HZLine{0.24}{232.25}{158.35}{232.25}{221.25}%
+  \HZLine{0.24}{269.85}{158.35}{269.85}{221.25}%
+  \HZLine{0.24}{269.85}{721.20}{269.85}{752.65}%
+  \HZLine{0.24}{309.55}{158.35}{309.55}{252.70}%
+  \HZLine{0.24}{364.10}{158.35}{364.10}{252.70}%
+  \HZLine{0.24}{364.10}{721.20}{364.10}{752.65}%
+  \HZLine{0.24}{438.80}{158.35}{438.80}{221.25}%
+  \HZLine{0.24}{493.50}{158.35}{493.50}{221.25}%
+  \HZText{85.08}{90.65}{14.05}{\HZHei 一、项目简要信息表}%
+  \HZText{74.64}{115.01}{10.45}{\HZSong 课题名称}%
+  \HZText{74.64}{146.45}{10.45}{\HZSong 课题类型}%
+  \HZText{205.08}{146.45}{10.45}{\HZSong A.}%
+  \HZText{214.80}{146.45}{10.45}{\HZSong 重大课题}%
+  \HZText{274.68}{146.45}{10.45}{\HZSong B.}%
+  \HZText{283.80}{146.45}{10.45}{\HZSong 重点课题}%
+  \HZText{343.68}{146.45}{10.45}{\HZSong C.}%
+  \HZText{352.92}{146.45}{10.45}{\HZSong 一般课题}%
+  \HZText{69.36}{209.33}{10.45}{\HZSong 申请人信息}%
+  \HZText{148.20}{177.89}{10.45}{\HZSong 姓名}%
+  \HZText{240.60}{177.89}{10.45}{\HZSong 性别}%
+  \HZText{326.28}{177.89}{10.45}{\HZSong 民族}%
+  \HZText{445.20}{177.89}{10.45}{\HZSong 出生年月}%
+  \HZText{148.20}{209.33}{10.45}{\HZSong 专业}%
+  \HZText{240.60}{209.33}{10.45}{\HZSong 学位}%
+  \HZText{326.28}{209.33}{10.45}{\HZSong 职务}%
+  \HZText{455.64}{209.33}{10.45}{\HZSong 职称}%
+  \HZText{137.64}{240.77}{10.45}{\HZSong 工作单位}%
+  \HZText{315.84}{240.77}{10.45}{\HZSong 联系电话}%
+  \HZText{69.00}{265.49}{10.45}{\HZSong\textbf{项目简介}（中文，}%
+  \HZText{153.12}{265.49}{10.45}{\HZSong 300}%
+  \HZText{168.90}{265.49}{10.45}{\HZSong  字以内）：}%
+  \HZText{119.04}{710.33}{10.45}{\HZSong\bfseries 关键词}%
+  \HZText{69.00}{741.77}{10.45}{\HZSong 申请资助经费（单位：万元）}%
+  \HZText{295.92}{741.77}{10.45}{\HZSong 起止年月}%
+}
+
+\newcommand{\HZMembersArtwork}{%
+  \HZLine{0.96}{70.37}{102.53}{772.98}{102.53}%
+  \HZLine{0.96}{70.37}{512.13}{772.98}{512.13}%
+  \HZLine{0.24}{71.33}{134.37}{772.02}{134.37}%
+  \HZLine{0.24}{71.33}{165.82}{772.02}{165.82}%
+  \HZLine{0.24}{71.33}{197.27}{772.02}{197.27}%
+  \HZLine{0.24}{71.33}{228.72}{772.02}{228.72}%
+  \HZLine{0.24}{71.33}{260.17}{772.02}{260.17}%
+  \HZLine{0.24}{71.33}{291.62}{772.02}{291.62}%
+  \HZLine{0.24}{71.33}{323.07}{772.02}{323.07}%
+  \HZLine{0.24}{71.33}{354.52}{772.02}{354.52}%
+  \HZLine{0.24}{71.33}{385.97}{772.02}{385.97}%
+  \HZLine{0.24}{71.33}{417.42}{772.02}{417.42}%
+  \HZLine{0.24}{71.33}{448.87}{772.02}{448.87}%
+  \HZLine{0.24}{71.33}{480.32}{772.02}{480.32}%
+  \HZLine{0.96}{70.85}{102.05}{70.85}{512.61}%
+  \HZLine{0.96}{772.50}{103.01}{772.50}{512.61}%
+  \HZLine{0.24}{104.85}{103.01}{104.85}{511.65}%
+  \HZLine{0.24}{151.50}{103.01}{151.50}{511.65}%
+  \HZLine{0.24}{192.75}{103.01}{192.75}{511.65}%
+  \HZLine{0.24}{256.25}{103.01}{256.25}{511.65}%
+  \HZLine{0.24}{304.75}{103.01}{304.75}{511.65}%
+  \HZLine{0.24}{359.20}{103.01}{359.20}{511.65}%
+  \HZLine{0.24}{515.00}{103.01}{515.00}{511.65}%
+  \HZLine{0.24}{687.50}{103.01}{687.50}{511.65}%
+  \HZText{70.80}{98.57}{12.00}{\HZHei 课题组主要成员}%
+  \HZText{154.80}{98.57}{10.45}{\HZSong （注:}%
+  \HZText{181.03}{98.57}{10.45}{\HZSong  }%
+  \HZText{186.36}{98.57}{10.45}{\HZSong 课题组主要成员不包括申请人）}%
+  \HZText{77.40}{124.13}{10.45}{\HZSong 编号}%
+  \HZText{117.60}{124.13}{10.45}{\HZSong 姓名}%
+  \HZText{161.64}{124.13}{10.45}{\HZSong 性别}%
+  \HZText{203.52}{124.13}{10.45}{\HZSong 出生年月}%
+  \HZText{270.00}{124.13}{10.45}{\HZSong 学位}%
+  \HZText{321.48}{124.13}{10.45}{\HZSong 职称}%
+  \HZText{416.04}{124.13}{10.45}{\HZSong 工作单位}%
+  \HZText{580.20}{124.13}{10.45}{\HZSong 项目分工}%
+  \HZText{719.52}{124.13}{10.45}{\HZSong 签字}%
+  \HZText{85.20}{155.57}{10.45}{\HZSong 1}%
+  \HZText{85.20}{187.01}{10.45}{\HZSong 2}%
+  \HZText{85.20}{218.45}{10.45}{\HZSong 3}%
+  \HZText{85.20}{249.89}{10.45}{\HZSong 4}%
+  \HZText{85.20}{281.33}{10.45}{\HZSong 5}%
+  \HZText{85.20}{312.77}{10.45}{\HZSong 6}%
+  \HZText{85.20}{344.21}{10.45}{\HZSong 7}%
+  \HZText{85.20}{375.65}{10.45}{\HZSong 8}%
+  \HZText{85.20}{407.09}{10.45}{\HZSong 9}%
+  \HZText{82.56}{438.65}{10.45}{\HZSong 10}%
+  \HZText{82.56}{470.09}{10.45}{\HZSong 11}%
+  \HZText{82.56}{501.53}{10.45}{\HZSong 12}%
+}
+
+\newcommand{\HZBudgetArtwork}{%
+  \HZLine{0.96}{64.52}{113.58}{545.38}{113.58}%
+  \HZLine{0.96}{64.52}{317.38}{545.38}{317.38}%
+  \HZLine{0.24}{65.48}{145.42}{544.42}{145.42}%
+  \HZLine{0.24}{65.48}{174.02}{544.42}{174.02}%
+  \HZLine{0.24}{65.48}{202.62}{544.42}{202.62}%
+  \HZLine{0.24}{65.48}{231.22}{544.42}{231.22}%
+  \HZLine{0.24}{65.48}{259.82}{544.42}{259.82}%
+  \HZLine{0.24}{65.48}{288.42}{544.42}{288.42}%
+  \HZLine{0.96}{65.00}{113.10}{65.00}{317.86}%
+  \HZLine{0.96}{544.90}{114.06}{544.90}{317.86}%
+  \HZLine{0.24}{191.40}{114.06}{191.40}{316.90}%
+  \HZLine{0.24}{255.15}{114.06}{255.15}{316.90}%
+  \HZLine{0.96}{64.12}{383.38}{546.33}{383.38}%
+  \HZLine{0.96}{64.12}{636.38}{546.33}{636.38}%
+  \HZLine{0.96}{64.60}{382.90}{64.60}{635.90}%
+  \HZLine{0.96}{545.85}{382.90}{545.85}{635.90}%
+  \HZText{85.08}{90.65}{14.05}{\HZHei 四、经费预算}%
+  \HZText{117.60}{134.45}{10.45}{\HZSong\bfseries 类别}%
+  \HZText{212.64}{126.65}{10.45}{\HZSong\bfseries 金额}%
+  \HZText{202.20}{142.25}{10.45}{\HZSong\bfseries （万元）}%
+  \HZText{321.00}{134.45}{10.45}{\HZSong\bfseries 经费预算的依据及用途的简要说明}%
+  \HZText{70.44}{164.45}{10.45}{\HZSong\bfseries 申请经费总额}%
+  \HZText{70.44}{193.01}{10.45}{\HZSong\bfseries 直接费用合计}%
+  \HZText{80.88}{221.69}{10.45}{\HZSong 1.}%
+  \HZText{88.80}{221.69}{10.45}{\HZSong 业务费}%
+  \HZText{80.88}{250.25}{10.45}{\HZSong 2.}%
+  \HZText{88.80}{250.25}{10.45}{\HZSong 劳务费}%
+  \HZText{80.88}{278.81}{10.45}{\HZSong 3.}%
+  \HZText{88.80}{278.81}{10.45}{\HZSong 设备费}%
+  \HZText{70.44}{307.49}{10.45}{\HZSong\bfseries 间接费用}%
+  \HZText{85.08}{334.49}{10.45}{\HZKai 注：经费开支科目及预决算管理参照《高等学校哲学社会科学繁荣计划专项资金管理办法》执行，}%
+  \HZText{85.08}{348.05}{10.45}{\HZKai 间接经费预算不超过项总预算的40\%。}%
+  \HZText{85.08}{378.89}{14.05}{\HZHei 五、申请人所在单位（部门）意见}%
+  \HZText{117.96}{589.73}{12.00}{\HZSong 单位负责人签字}%
+  \HZText{201.96}{589.73}{12.00}{\HZSong (}%
+  \HZText{205.92}{589.73}{12.00}{\HZSong 章}%
+  \HZText{217.92}{589.73}{12.00}{\HZSong )}%
+  \HZText{222.00}{589.73}{12.00}{\HZSong ：}%
+  \HZText{354.00}{589.73}{12.00}{\HZSong 单位盖章：}%
+  \HZText{411.96}{631.73}{12.00}{\HZSong 年}%
+  \HZText{441.96}{631.73}{12.00}{\HZSong 月}%
+  \HZText{471.96}{631.73}{12.00}{\HZSong 日}%
+}

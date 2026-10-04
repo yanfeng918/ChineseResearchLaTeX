@@ -1,0 +1,8 @@
+\ProvidesFile{bthesis-profile-ciesm-open-fund.def}
+  [2026/09/06 CIESM open fund application profile]
+
+\makeatletter
+\def\bthesis@template{ciesm-open-fund}
+\def\bthesis@templateversion{t_v20260906}
+\def\bthesis@stylefile{styles/bthesis-style-ciesm-open-fund.tex}
+\makeatother

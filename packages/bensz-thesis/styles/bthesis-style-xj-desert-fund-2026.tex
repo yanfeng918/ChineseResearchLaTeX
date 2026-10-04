@@ -1,0 +1,204 @@
+\ProvidesFile{bthesis-style-xj-desert-fund-2026.tex}
+  [2026/09/19 Editable desert meteorology fund application]
+% 本模板专属布局；项目只传入申请字段和研究正文。单位均为 PDF bp。
+\RequirePackage{geometry}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{etoolbox}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{enumitem}
+\RequirePackage{ragged2e}
+\RequirePackage[numbers,sort&compress]{natbib}
+\RequirePackage{xurl}
+% 正文引用跳转到参考文献条目，保留黑色文字和原有打印版式。
+\RequirePackage[hidelinks,bookmarks=false]{hyperref}
+% GB/T BibTeX 将作者 Ar{\i}k 大写为 AR{\I}K；大写 dotless i 的字形为 I。
+\providecommand{\I}{I}
+\geometry{paperwidth=595.3bp,paperheight=841.9bp,left=77bp,right=77.25bp,top=82bp,bottom=90bp}
+\pagestyle{empty}
+\setCJKmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{SimSun.ttf}
+\setCJKsansfont[Path={\BenszFontsDir},AutoFakeBold=2.5]{AdobeHeitiStd-Regular.otf}
+\setCJKfamilyfont{xjfang}[Path={\BenszFontsDir},AutoFakeBold=2.5]{FZFangSong-Z02.ttf}
+\setmainfont[Path={\BenszFontsDir},AutoFakeBold=2.5,AutoFakeSlant=.2]{TimesNewRoman.ttf}
+\newfontfamily\XJLatinSong[Path={\BenszFontsDir},AutoFakeBold=2.5]{SimSun.ttf}
+\newfontfamily\XJLatinSans[Path={\BenszFontsDir}]{NotoSansSC-Regular.otf}
+\newcommand{\XJSong}{\XJLatinSong\CJKfamily{rm}}
+\newcommand{\XJHei}{\XJLatinSong\CJKfamily{sf}}
+\newcommand{\XJFang}{\XJLatinSong\CJKfamily{xjfang}}
+\newcommand{\XJCalibri}{\XJLatinSans}
+\newcommand{\XJBodyFont}{\rmfamily\CJKfamily{rm}\fontsize{12bp}{20bp}\selectfont}
+\renewcommand{\baselinestretch}{1}
+\setlength{\parindent}{24bp}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+\xeCJKsetup{PunctStyle=plain,CJKecglue={\hskip0pt plus .08em},CJKglue={\hskip0pt plus .08em minus .02em}}
+\setcounter{secnumdepth}{3}
+\ctexset{
+  section={format=\XJBodyFont\bfseries,number=\arabic{section}.,aftername=\enspace,beforeskip=0pt,afterskip=8bp},
+  subsection={format=\XJBodyFont\bfseries,number=\arabic{section}.\arabic{subsection},beforeskip=8bp,afterskip=4bp},
+  subsubsection={format=\XJBodyFont\bfseries,number=\arabic{section}.\arabic{subsection}.\arabic{subsubsection},beforeskip=5bp,afterskip=3bp}}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=6bp}
+% 只取消条目之间留白；条目内仍使用正常 14bp 基线距离。
+\setlength{\bibsep}{0pt}
+\renewcommand{\bibfont}{\fontsize{10.5bp}{14bp}\selectfont}
+\renewcommand{\bibsection}{\subsection*{主要参考文献}}
+% 在 natbib 初始化后设置；列表段首会从 \@clubpenalty 恢复首行分页处罚。
+\makeatletter
+\apptocmd{\thebibliography}{%
+  \setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}\setlength{\parskip}{0pt}%
+  \clubpenalty=10000\@clubpenalty=10000\widowpenalty=10000\relax}{}%
+  {\PackageError{xj-desert-fund-2026}{Cannot configure bibliography spacing}{Check natbib environment.}}
+\makeatother
+\urlstyle{same}
+\newif\ifXJBlankMode
+\XJBlankModefalse
+\newcommand{\XJOfficialPeriod}[1]{\ifXJBlankMode#1\fi}
+\newenvironment{XJCanvas}{%
+  \begin{tikzpicture}[remember picture,overlay,x=1bp,y=-1bp]
+  \begin{scope}[shift={(current page.north west)},every node/.style={inner sep=0pt,outer sep=0pt}]
+}{\end{scope}\end{tikzpicture}}
+\newcommand{\XJText}[5]{\node[anchor=base west] at (#1,#2) {{#4\fontsize{#3bp}{20bp}\selectfont\xeCJKsetup{CJKecglue={},CJKglue={}}#5}};}
+\newcommand{\XJLine}[5]{\draw[line width=#1bp] (#2,#3) -- (#4,#5);}
+\ExplSyntaxOn
+\NewDocumentCommand{\XJTrack}{mm}{\str_map_inline:nn{#2}{\makebox[#1bp][l]{##1}}}
+\ExplSyntaxOff
+\newcommand{\XJFooter}{\ifXJBlankMode\else\begin{XJCanvas}
+  \ifdim\paperwidth>\paperheight\def\XJFooterX{420.95}\def\XJFooterY{544.3}%
+  \else\def\XJFooterX{297.65}\def\XJFooterY{790.9}\fi
+  \node[anchor=base] at (\XJFooterX,\XJFooterY) {\rmfamily\fontsize{9bp}{10bp}\selectfont\thepage};
+\end{XJCanvas}\fi}
+\AtBeginDocument{\XJBodyFont\AddToShipoutPictureFG{\XJFooter}}
+\newcommand{\XJFixedPage}[2]{%
+  \begin{XJCanvas}\csname XJArtwork#1\endcsname
+  \ifXJBlankMode\csname XJOriginalFooter#1\endcsname\fi
+  #2\end{XJCanvas}\null\clearpage}
+\makeatletter
+\newcommand{\XJDeclareField}[1]{%
+  \expandafter\def\csname XJfield@#1\endcsname{}%
+  \define@key{XJ}{#1}{\expandafter\def\csname XJfield@#1\endcsname{##1}}}
+\forcsvlist{\XJDeclareField}{title,original-title,applicant,organization,department,address,postcode,phone,email,sex,birth,education,degree,professional-title,id-number,period,date,funding,category,age,member-role,project-number}
+\newcommand{\XJSetup}[1]{\setkeys{XJ}{#1}}
+\newcommand{\XJField}[1]{\csname XJfield@#1\endcsname}
+\makeatother
+\newsavebox{\XJCellBox}
+% 固定字段按实际文字量换行；任何纵向溢出均作为构建错误，禁止裁切。
+\newcommand{\XJCell}[5]{\node[anchor=center] at ({#1+#3/2},{#2+#4/2}) {%
+  \sbox{\XJCellBox}{\begin{minipage}{#3bp}\XJBodyFont\fontsize{12bp}{14bp}\selectfont\centering#5\par\end{minipage}}%
+  \ifdim\dimexpr\ht\XJCellBox+\dp\XJCellBox\relax>#4bp
+    \PackageError{xj-desert-fund-2026}{Fixed field overflow at (#1,#2)}{Adjust this field locally; do not clip text.}\fi
+  \usebox{\XJCellBox}};}
+\newcommand{\XJBlock}[5]{\node[anchor=north west] at (#1,#2) {%
+  \sbox{\XJCellBox}{\begin{minipage}{#3bp}\XJBodyFont\setlength{\parindent}{24bp}#5\par\end{minipage}}%
+  \ifdim\dimexpr\ht\XJCellBox+\dp\XJCellBox\relax>#4bp
+    \PackageError{xj-desert-fund-2026}{Fixed text block overflow at (#1,#2)}{Reflow this field locally or use an attachment.}\fi
+  \usebox{\XJCellBox}};}
+% 封面与标签同字号；#1 为下划线纵坐标，末行基线在线上方 3bp。
+% 使用底部基线定位，避免单行内容在固定框中居中而远离下划线。
+\newcommand{\XJCoverField}[3]{\node[anchor=base] at (361,{#1-3}) {%
+  \sbox{\XJCellBox}{\begin{minipage}[b]{264bp}\XJBodyFont\fontsize{14.05bp}{17.5bp}\selectfont\centering#3\par\end{minipage}}%
+  \ifdim\dimexpr\ht\XJCellBox+\dp\XJCellBox\relax>#2bp
+    \PackageError{xj-desert-fund-2026}{Cover field overflow above underline #1}{Reflow this field without reducing its font size.}\fi
+  \usebox{\XJCellBox}};}
+\newcommand{\XJCover}{\XJFixedPage{1}{%
+  \XJCoverField{499.8}{38}{\XJField{title}}
+  \XJCoverField{531.0}{26}{\XJField{applicant}}
+  \XJCoverField{562.2}{26}{\XJField{organization}}
+  \ifXJBlankMode\else\XJCoverField{593.4}{26}{\XJField{period}}\fi
+  \XJCoverField{624.6}{26}{\XJField{date}}}}
+\newcommand{\XJInstructions}{\XJFixedPage{2}{}}
+\newcommand{\XJInformation}[2]{\XJFixedPage{3}{%
+  \XJCell{145}{106}{381}{26}{\XJField{title}}
+  \XJCell{145}{162}{57}{26}{\XJField{applicant}}
+  \ifXJBlankMode\else\XJCell{265}{162}{86}{26}{\fontsize{10.5bp}{13bp}\selectfont\XJField{period}}\fi
+  \XJCell{421}{162}{105}{26}{\XJField{funding}}
+  \XJCell{145}{193}{57}{19}{\XJField{sex}}
+  \XJCell{265}{193}{86}{19}{\XJField{education}}
+  \XJCell{421}{193}{105}{19}{\XJField{degree}}
+  \XJCell{143}{217}{61}{19}{\fontsize{10.5bp}{13bp}\selectfont\XJField{birth}}
+  \XJCell{265}{217}{86}{19}{\XJField{professional-title}}
+  \XJCell{421}{217}{105}{19}{\XJField{phone}}
+  \XJCell{145}{241}{206}{19}{\XJField{id-number}}
+  \XJCell{421}{241}{105}{19}{\XJField{postcode}}
+  \XJCell{145}{265}{206}{19}{\XJField{organization}}
+  \XJCell{421}{265}{105}{19}{\XJField{email}}
+  \ifXJBlankMode\else\XJCategoryCheck\fi
+  \XJBlock{72}{315}{450}{228}{#1}
+  \XJBlock{72}{592}{450}{145}{\fontsize{10.5bp}{16bp}\selectfont#2}}}
+% 一个官方栏目一个连续正文流；真正 section/subsection 负责语义与编号。
+% 续页只重画表框，不重复栏目名称。
+\newcommand{\XJCategoryCheck}{%
+  \edef\XJCategory{\XJField{category}}%
+  \ifdefstring{\XJCategory}{自由申报类}{\draw[line width=.7bp] (329,146) -- (332,149) -- (338,140);}{}%
+  \ifdefstring{\XJCategory}{科研与业务融合专项}{\draw[line width=.7bp] (173,146) -- (176,149) -- (182,140);}{}%
+}
+\expandafter\def\csname XJSectionTitle1\endcsname{立项依据（研究意义和国内外研究现状，或结合气象业务迫切需要解决的关键科学问题，并附主要参考文献目录）}
+\expandafter\def\csname XJSectionTitle2\endcsname{研究内容、研究目标及拟解决的关键科学（技术）问题}
+\expandafter\def\csname XJSectionTitle3\endcsname{拟采取的研究方案及可行性分析（包括研究方法、技术路线、试验手段等）}
+\expandafter\def\csname XJSectionTitle4\endcsname{本课题的特色与创新之处}
+\expandafter\def\csname XJSectionTitle5\endcsname{年度研究计划及预期研究成果}
+\expandafter\def\csname XJSectionTitle6\endcsname{研究基础与工作条件（包括与本项目相关的研究工作积累，申请者和课题组主要成员正在承担的科研课题情况。）}
+\newcommand{\XJBibliography}[1]{\begingroup\raggedright\bibliographystyle{gbt7714-numeric}#1\endgroup}
+\newcommand{\XJResearchSection}[2]{%
+  \ifnum#1=1
+    \newgeometry{left=77bp,right=77.25bp,top=112bp,bottom=92bp}%
+    \def\XJFrameTop{103.56}\def\XJFrameBottom{758.96}%
+  \else
+    \newgeometry{left=77bp,right=77.25bp,top=82bp,bottom=88bp}%
+    \def\XJFrameTop{72.36}\def\XJFrameBottom{764.31}%
+  \fi
+  \AddToShipoutPictureBG{\begin{XJCanvas}\draw[line width=.48bp] (68.75,\XJFrameTop) rectangle (526.55,\XJFrameBottom);\end{XJCanvas}}%
+  \ifnum#1=1\AddToShipoutPictureBG*{\begin{XJCanvas}\XJText{70.92}{92.69}{14.05}{\XJSong}{二、申请书正文}\XJText{177}{92.69}{12}{\XJSong}{（要求内容翔实、清晰，层次分明。可另附页）}\end{XJCanvas}}\fi
+  \setcounter{section}{\numexpr#1-1\relax}\XJBodyFont\section{\csname XJSectionTitle#1\endcsname}#2\par\clearpage
+  \ClearShipoutPictureBG\restoregeometry}
+\newcommand{\XJLandscapePage}[1]{%
+  \clearpage\setlength{\paperwidth}{841.9bp}\setlength{\paperheight}{595.3bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight
+  \special{papersize=841.9bp,595.3bp}%
+  \XJFixedPage{7}{#1}%
+  \setlength{\paperwidth}{595.3bp}\setlength{\paperheight}{841.9bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight
+  \special{papersize=595.3bp,841.9bp}}
+\newcommand{\XJMember}[8]{%
+  \ifnum#1<1 \PackageError{xj-desert-fund-2026}{Member row must be 1--8}{}\fi
+  \ifnum#1>8 \PackageError{xj-desert-fund-2026}{Member row must be 1--8}{}\fi
+  % 正式稿按需在原表底部追加第8行；空白入口不调用本宏，仍为官方7行。
+  % 保持原行高、字体、签名列和前7行坐标，不压缩长字段。
+  \ifnum#1=8
+    \foreach \XJColumn in {76.25,163.15,212.8,262.4,333.25,411.25,567.3,688.65,765.6}{%
+      \XJLine{.48}{\XJColumn}{401.4}{\XJColumn}{441.23}}%
+    \XJLine{.48}{76.01}{440.99}{765.84}{440.99}%
+  \fi
+  \pgfmathsetmacro{\XJRowTop}{{127.34,169.59,207.64,246.19,285.14,324.54,362.29,401.64}[#1-1]+3}%
+  \pgfmathsetmacro{\XJRowHeight}{{42.25,38.05,38.55,38.95,39.40,37.75,39.35,39.35}[#1-1]-6}%
+  \XJCell{80}{\XJRowTop}{79}{\XJRowHeight}{#2}%
+  \XJCell{166}{\XJRowTop}{43}{\XJRowHeight}{#3}%
+  \XJCell{216}{\XJRowTop}{43}{\XJRowHeight}{#4}%
+  \XJCell{266}{\XJRowTop}{64}{\XJRowHeight}{#5}%
+  \XJCell{337}{\XJRowTop}{70}{\XJRowHeight}{#6}%
+  \XJCell{415}{\XJRowTop}{148}{\XJRowHeight}{\fontsize{9.5bp}{11bp}\selectfont#7}%
+  \XJCell{571}{\XJRowTop}{114}{\XJRowHeight}{\fontsize{9.5bp}{11bp}\selectfont#8}}
+\newcommand{\XJApplicantMember}{\XJMember{1}{\XJField{applicant}}{\XJField{sex}}{\XJField{age}}{\XJField{education}}{\XJField{professional-title}}{\XJField{organization}\\\XJField{department}}{\XJField{member-role}}}
+\newcommand{\XJBudgetTotals}[3]{%
+  \XJCell{239}{129}{267}{18}{#1}\XJCell{239}{152}{267}{18}{#2}\XJCell{239}{175}{267}{18}{#3}}
+\newcommand{\XJBudgetRow}[3]{%
+  \ifnum#1<1 \PackageError{xj-desert-fund-2026}{Budget row must be 1--6}{}\fi
+  \ifnum#1>6 \PackageError{xj-desert-fund-2026}{Budget row must be 1--6}{}\fi
+  \pgfmathsetmacro{\XJRowTop}{{261.09,318.89,361.14,413.69,471.79,527.84}[#1-1]+4}%
+  \pgfmathsetmacro{\XJRowHeight}{{57.80,42.25,52.55,58.10,56.05,56.90}[#1-1]-8}%
+  \XJCell{259}{\XJRowTop}{77}{\XJRowHeight}{#2}%
+  \XJCell{345}{\XJRowTop}{163}{\XJRowHeight}{\fontsize{10.5bp}{14bp}\selectfont#3}}
+% 长题名在正式承诺页重排，保留全文和签名位置；空白入口仍按官方坐标。
+\newcommand{\XJPrincipalCommitment}{%
+  \ifXJBlankMode\XJFixedPage{12}{}\else
+    \newgeometry{left=90bp,right=90bp,top=80bp,bottom=100bp}%
+    {\XJFang\fontsize{16bp}{26bp}\selectfont\setlength{\parindent}{32bp}
+    \noindent 课题负责人承诺：\par
+    本人作为2026年度中国沙漠气象科学研究基金课题（课题名称：\XJField{title}；课题编号：\XJField{project-number}\underline{\hspace{3em}}）的负责人，在充分知晓并接受基金课题管理有关规定的前提下，郑重承诺如下：\par
+    1.本人保证课题材料的真实性和合法性；本课题没有出现违反法律及有关规定的内容，课题组成员身份均真实有效，符合中国沙漠气象科学研究基金课题管理办法的规定。若填报失实或违反规定，本人将承担相关责任。\par
+    2.本人将严格履行课题负责人职责，主动承担课题责任，严格遵守课题管理的有关规定，严格落实科技项目经费管理办法及课题经费预算书，建立专项账目，做到专款专用。切实保证研究工作时间，认真开展工作，按时报送有关材料，确保课题顺利完成。如有违反财经纪律或因离职造成课题无法顺利实施完毕等情况，本人愿接受相关行政主管部门依据有关法律法规做出的科技活动违规行为处理，并记入科研失信名单。\par
+    \vspace{26bp}课题负责人（亲笔签字）：\par
+    \vspace{26bp}\hfill 年\quad 月\quad 日\par}\clearpage\restoregeometry
+  \fi}
+\input{styles/bthesis-artwork-xj-desert-fund-2026.tex}

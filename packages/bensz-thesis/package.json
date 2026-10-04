@@ -1,6 +1,6 @@
 {
   "name": "bensz-thesis",
-  "version": "p_v20260702",
+  "version": "p_v20260919",
   "description": "ChineseResearchLaTeX 毕业论文公共包（支持多学校 profile、PDF 构建、DOCX 初稿导出与像素级验收）",
   "author": "ChineseResearchLaTeX Contributors",
   "license": "MIT",
@@ -12,8 +12,13 @@
   "features": [
     "毕业论文共享样式",
     "多学校 profile",
+    "华中师范大学开放课题申请书专属 profile",
+    "CIESM 开放基金申请书专属 profile",
+    "测绘科学与工程自然资源部重点实验室开放基金专属 profile",
     "统一 PDF 构建入口",
     "通用 DOCX 初稿导出入口",
-    "依赖 bensz-fonts 共享字体包"
+    "依赖 bensz-fonts 共享字体包",
+    "中南大学开放基金申请书专属 profile",
+    "中国沙漠气象科学研究基金申请书专属 profile"
   ]
 }

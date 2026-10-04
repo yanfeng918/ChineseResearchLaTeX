@@ -1,0 +1,7 @@
+\ProvidesFile{bthesis-profile-casm-open-fund-2026.def}
+  [2026/09/07 CASM MNR laboratory open-fund application]
+\makeatletter
+\def\bthesis@template{casm-open-fund-2026}
+\def\bthesis@templateversion{t_v20260907}
+\def\bthesis@stylefile{styles/bthesis-style-casm-open-fund-2026.tex}
+\makeatother

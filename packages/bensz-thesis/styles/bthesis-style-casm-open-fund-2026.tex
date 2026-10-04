@@ -1,0 +1,203 @@
+\ProvidesFile{bthesis-style-casm-open-fund-2026.tex}
+  [2026/09/07 CASM MNR open-fund form]
+% 官方固定表格用原生文字和矢量线重建；正文可分页。构建不读取参考 PDF。
+\RequirePackage{geometry}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{etoolbox}
+\RequirePackage{needspace}
+\RequirePackage{amsmath}
+\RequirePackage{xurl}
+\urlstyle{same}
+% 复用公共 BST；仓库中解析绝对路径，独立安装时沿用 TeX 标准搜索路径。
+\RequirePackage[abspath]{currfile}
+\getabspath{bensz-thesis.sty}
+\edef\CasmBibliographySourcePath{\theabsdir../bensz-nsfc/assets/bibtex-style/gbt7714-nsfc}
+\newcommand{\CasmBibliographyStylePath}{gbt7714-nsfc}
+\IfFileExists{\CasmBibliographySourcePath.bst}{%
+  \let\CasmBibliographyStylePath\CasmBibliographySourcePath
+}{}
+\geometry{paperwidth=595.3bp,paperheight=841.9bp,left=90bp,right=90bp,top=112.4bp,bottom=97bp}
+\pagestyle{empty}
+\renewcommand{\baselinestretch}{1}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\setCJKmainfont[Path={\BenszFontsDir},AutoFakeBold=2.86]{SimSun.ttf}
+\setCJKsansfont[Path={\BenszFontsDir},AutoFakeBold=2.86]{AdobeHeitiStd-Regular.otf}
+\setCJKfamilyfont{casmkai}[Path={\BenszFontsDir}]{Kaiti.ttf}
+\setCJKfamilyfont{casmfang}[Path={\BenszFontsDir}]{AdobeFangsongStd-Regular.otf}
+% TimesNewRoman.ttf 只含正体：不声明斜体族时 \textit 会静默降级为正体（期刊名排不出斜体）。
+% 用度量兼容的 TeX Gyre Termes 补斜体，与 bensz-cv 既有做法一致。
+\setmainfont[Path={\BenszFontsDir},AutoFakeBold=2.86,
+  ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]{TimesNewRoman.ttf}
+\newfontfamily\CasmLatinSong[Path={\BenszFontsDir},AutoFakeBold=2.86]{SimSun.ttf}
+\newfontfamily\CasmLatinFang[Path={\BenszFontsDir}]{AdobeFangsongStd-Regular.otf}
+\xeCJKsetup{PunctStyle=plain,CJKecglue={}}
+\newcommand{\CasmSong}{\CasmLatinSong\CJKfamily{rm}}
+\newcommand{\CasmHei}{\rmfamily\CJKfamily{sf}}
+\newcommand{\CasmKai}{\rmfamily\CJKfamily{casmkai}}
+\newcommand{\CasmFang}{\CasmLatinFang\CJKfamily{casmfang}}
+\newcommand{\CasmTimes}{\rmfamily\CJKfamily{rm}}
+\newcommand{\CasmSize}[1]{\fontsize{#1bp}{19.5bp}\selectfont}
+\newcommand{\CasmBody}{\CasmTimes\fontsize{12bp}{19.5bp}\selectfont}
+\definecolor{CasmGuideBlue}{HTML}{0070C0}
+
+\makeatletter
+\newcommand{\CasmDeclareField}[1]{%
+  \expandafter\def\csname CasmField@#1\endcsname{}%
+  \define@key{Casm}{#1}{\expandafter\def\csname CasmField@#1\endcsname{##1}}}
+\forcsvlist{\CasmDeclareField}{title,title-en,applicant,organization,sex,birth,ethnicity,degree,professional-title,work-months,phone,email,fax,country,address,research-area,direction,period,category,funding,keywords}
+\newcommand{\CasmSetup}[1]{\setkeys{Casm}{#1}}
+\newcommand{\CasmField}[1]{\csname CasmField@#1\endcsname}
+\newcommand{\CasmIfEmpty}[3]{\ifcsempty{CasmField@#1}{#2}{#3}}
+\makeatother
+
+\newenvironment{CasmCanvas}{%
+  \begin{tikzpicture}[remember picture,overlay,x=1bp,y=-1bp]
+  \begin{scope}[shift={(current page.north west)},every node/.style={inner sep=0pt,outer sep=0pt}]
+}{\end{scope}\end{tikzpicture}}
+\newcommand{\CasmText}[4]{\node[anchor=base west] at (#1,#2) {{\CasmSize{#3}#4}};}
+\newcommand{\CasmLine}[5]{\draw[line width=#1bp] (#2,#3)--(#4,#5);}
+\newsavebox{\CasmContentBox}
+% 固定表格不得静默裁切：高度超限即让官方构建失败。
+\newcommand{\CasmCell}[5]{%
+  \node[anchor=center] at ({#1+#3/2},{#2+#4/2}) {%
+    \sbox{\CasmContentBox}{\begin{minipage}{#3bp}\CasmTimes\fontsize{10.5bp}{12.5bp}\selectfont\centering #5\par\end{minipage}}%
+    \ifdim\dimexpr\ht\CasmContentBox+\dp\CasmContentBox\relax>#4bp
+      \PackageError{casm-open-fund-2026}{Fixed form cell overflow at (#1,#2)}{Shorten the field to fit the official form.}%
+    \fi\usebox{\CasmContentBox}};}
+\newcommand{\CasmBlock}[6]{%
+  \node[anchor=north west] at (#1,#2) {%
+    \sbox{\CasmContentBox}{\begin{minipage}{#3bp}\CasmBody #5#6\par\end{minipage}}%
+    \ifdim\dimexpr\ht\CasmContentBox+\dp\CasmContentBox\relax>#4bp
+      \PackageError{casm-open-fund-2026}{Fixed text block overflow at (#1,#2)}{Shorten the text; research sections support automatic page breaks.}%
+    \fi\usebox{\CasmContentBox}};}
+\newcommand{\CasmFieldCell}[5]{\CasmCell{#1}{#2}{#3}{#4}{\CasmField{#5}}}
+\newcommand{\CasmFooterY}{790.25}
+\newcommand{\CasmTopicIndent}{20.64}
+\newcommand{\CasmGuideIndent}{20.64}
+\newcommand{\CasmHeaderFooter}{\begin{CasmCanvas}
+  \ifdim\paperwidth>700bp
+    \CasmText{323.4}{50.09}{7.45}{\CasmKai 测绘科学与工程自然资源部重点实验室开放基金课题申请书}
+    \fill (72,53.25) rectangle (769.9,53.97);
+    \node[anchor=base] at (421,543.65) {{\CasmTimes\CasmSize{9}\thepage}};
+  \else
+    \CasmText{200.16}{50.09}{7.45}{\CasmKai 测绘科学与工程自然资源部重点实验室开放基金课题申请书}
+    \fill (90,53.25) rectangle (505.3,53.97);
+    \node[anchor=base] at (297.69,\CasmFooterY) {{\CasmTimes\CasmSize{9}\thepage}};
+  \fi
+\end{CasmCanvas}}
+\newcommand{\CasmCover}{\begin{CasmCanvas}\CasmCoverArtwork
+  \CasmCell{185}{343}{281}{40}{\CasmSize{16}\CasmField{title}}
+  \CasmCell{268}{400}{196}{29}{\CasmSize{16}\CasmField{applicant}}
+  \CasmCell{268}{445}{196}{31}{\CasmSize{14}\CasmField{organization}}
+\end{CasmCanvas}\null\clearpage}
+\newcommand{\CasmInstructions}{\begin{CasmCanvas}\CasmInstructionsArtwork\end{CasmCanvas}\null\clearpage
+  \setcounter{page}{1}\AddToShipoutPictureFG{\CasmHeaderFooter}}
+\newcommand{\CasmInformation}[1]{\begin{CasmCanvas}\CasmInformationArtwork
+  \CasmFieldCell{142}{131}{51}{22}{applicant}
+  \CasmFieldCell{255}{131}{45}{22}{sex}
+  \CasmFieldCell{366}{131}{54}{22}{birth}
+  \CasmFieldCell{475}{131}{39}{22}{ethnicity}
+  \CasmFieldCell{142}{157}{51}{22}{degree}
+  \CasmFieldCell{255}{157}{105}{22}{professional-title}
+  \CasmFieldCell{475}{157}{39}{22}{work-months}
+  \CasmFieldCell{142}{183}{107}{22}{phone}
+  \CasmFieldCell{366}{183}{148}{22}{email}
+  \CasmFieldCell{142}{209}{107}{22}{fax}
+  \CasmFieldCell{366}{209}{148}{22}{country}
+  \CasmFieldCell{166}{235}{348}{22}{address}
+  \CasmFieldCell{166}{261}{348}{22}{organization}
+  \CasmFieldCell{166}{287}{348}{22}{research-area}
+  \CasmFieldCell{166}{339}{348}{22}{title}
+  \CasmFieldCell{166}{365}{348}{22}{title-en}
+  \CasmFieldCell{166}{391}{348}{28}{direction}
+  \CasmFieldCell{166}{423}{348}{22}{period}
+  \CasmFieldCell{166}{449}{348}{22}{category}
+  \CasmFieldCell{166}{475}{348}{22}{funding}
+  \CasmFieldCell{166}{501}{348}{22}{keywords}
+  \CasmBlock{84}{545.8}{429}{166}{\fontsize{10.5bp}{16.25bp}\selectfont}{#1}
+\end{CasmCanvas}\null\clearpage}
+\newcommand{\CasmMembers}[1]{%
+  \setlength{\paperwidth}{841.9bp}\setlength{\paperheight}{595.3bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight\special{papersize=841.9bp,595.3bp}%
+  \begin{CasmCanvas}\CasmMembersArtwork #1\end{CasmCanvas}\null\clearpage
+  \setlength{\paperwidth}{595.3bp}\setlength{\paperheight}{841.9bp}%
+  \pdfpagewidth=\paperwidth\pdfpageheight=\paperheight\special{papersize=595.3bp,841.9bp}}
+% 每行使用 key=value，避免 TeX 九参数上限；签字栏保留手签空间。
+\makeatletter
+\forcsvlist{\CasmDeclareField}{member-name,member-sex,member-degree,member-birth,member-age,member-title,member-unit,member-task,member-signature}
+\makeatother
+\newcommand{\CasmMember}[2]{\begingroup
+  \ifnum#1<1 \PackageError{casm-open-fund-2026}{Member row must be 1--10}{}\fi
+  \ifnum#1>10 \PackageError{casm-open-fund-2026}{Member row must be 1--10}{}\fi
+  \CasmSetup{#2}\pgfmathsetmacro{\CasmY}{149.29+(#1-1)*26}%
+  \CasmFieldCell{110}{\CasmY}{58}{22}{member-name}
+  \CasmFieldCell{174}{\CasmY}{30}{22}{member-sex}
+  \CasmFieldCell{209}{\CasmY}{37}{22}{member-degree}
+  \CasmFieldCell{252}{\CasmY}{65}{22}{member-birth}
+  \CasmFieldCell{323}{\CasmY}{44}{22}{member-age}
+  \CasmFieldCell{372}{\CasmY}{44}{22}{member-title}
+  \CasmFieldCell{422}{\CasmY}{157}{22}{member-unit}
+  \CasmFieldCell{585}{\CasmY}{115}{22}{member-task}
+  \CasmFieldCell{706}{\CasmY}{65}{22}{member-signature}
+\endgroup}
+\newcommand{\CasmMemberTotals}[7]{%
+  \CasmCell{74}{467}{96}{21}{#1}\CasmCell{174}{467}{96}{21}{#2}%
+  \CasmCell{275}{467}{95}{21}{#3}\CasmCell{375}{467}{95}{21}{#4}%
+  \CasmCell{475}{467}{95}{21}{#5}\CasmCell{576}{467}{95}{21}{#6}%
+  \CasmCell{676}{467}{95}{21}{#7}}
+\newcommand{\CasmBudget}[2]{\begin{CasmCanvas}\CasmBudgetArtwork #1
+  \CasmBlock{180}{511}{204}{66}{\fontsize{10.5bp}{15bp}\selectfont}{#2}
+\end{CasmCanvas}\null\clearpage}
+\newcommand{\CasmBudgetTotals}[3]{%
+  \CasmCell{393}{141}{92}{25}{#1}\CasmCell{393}{171}{92}{16}{#2}%
+  \CasmCell{393}{191}{92}{16}{#3}}
+\newcommand{\CasmBudgetRow}[2]{%
+  \ifnum#1<1 \PackageError{casm-open-fund-2026}{Budget row must be 1--15}{}\fi
+  \ifnum#1>15 \PackageError{casm-open-fund-2026}{Budget row must be 1--15}{}\fi
+  \pgfmathsetmacro{\CasmY}{210.84+(#1-1)*19.85}%
+  \CasmCell{393}{\CasmY}{92}{16}{#2}}
+
+% 版框在每次 shipout 绘制；正文、公式、图表保持普通 LaTeX 流式排版。
+\newenvironment{CasmResearch}[1]{%
+  \ifstrequal{#1}{proposal}{%
+    \def\CasmResearchArtwork{\CasmProposalArtwork}\renewcommand{\CasmFooterY}{797.45}%
+  }{\ifstrequal{#1}{foundation}{\def\CasmResearchArtwork{\CasmFoundationArtwork}%
+    \renewcommand{\CasmTopicIndent}{22.32}\renewcommand{\CasmGuideIndent}{21.72}}{%
+    \PackageError{casm-open-fund-2026}{Unknown research section #1}{Use proposal or foundation.}}}%
+  \AddToShipoutPictureBG{\begin{CasmCanvas}\CasmResearchArtwork\end{CasmCanvas}}%
+  \CasmTimes\fontsize{12bp}{19.5bp}\selectfont\setlength{\parindent}{2em}%
+  % 版框是官方固定线：宁可行距略松，也不能让正文压出框。中西文混排（如“批准号 62466056。”）
+  % 有时找不到容差内的断点而产生 Overfull，给最后一趟断行留应急拉伸量即可避免。
+  \setlength{\emergencystretch}{3em}%
+}{\par\clearpage\ClearShipoutPictureBG\renewcommand{\CasmFooterY}{790.25}}
+\newcommand{\CasmTopicContent}[2]{%
+  {\CasmTimes\fontsize{14.05bp}{21.6bp}\selectfont\bfseries
+  \noindent\hspace*{\CasmTopicIndent bp}#1\par}\nobreak\vspace{5.1bp}%
+  {\CasmFang\fontsize{12bp}{19.5bp}\selectfont\color{CasmGuideBlue}%
+   \xeCJKsetup{CJKglue={\hskip 0bp plus .2bp minus .2bp}}%
+   \spaceskip=3bp plus 1bp minus 1bp%
+   \leftskip=\CasmGuideIndent bp\rightskip=-.4bp\noindent #2\par}\nobreak\vspace{6.75bp}}
+\newsavebox{\CasmTopicBox}
+\newcommand{\CasmTopic}[2]{\par
+  % 先按实际行宽测量标题与提示，再为其后的正文保留至少两行。
+  \setbox\CasmTopicBox=\vbox{\hsize=\linewidth\CasmTopicContent{#1}{#2}}%
+  \Needspace{\dimexpr\ht\CasmTopicBox+\dp\CasmTopicBox+2\baselineskip\relax}%
+  \CasmTopicContent{#1}{#2}}
+% 提示语与其后小标题只隔半个正文行距（19.5bp 的一半，含小标题 beforeskip），不留整行空白。
+\newcommand{\CasmCommitment}[2]{\begin{CasmCanvas}\CasmCommitmentArtwork
+  \CasmBlock{86.16}{145.08}{423}{160}{\CasmSong\setlength{\parindent}{24bp}}{#1}
+  \CasmBlock{90.12}{489.96}{415}{136}{\CasmSong\setlength{\parindent}{24bp}}{#2}
+\end{CasmCanvas}\null\clearpage}
+\newcommand{\CasmReview}[2]{\begin{CasmCanvas}\CasmReviewArtwork
+  \CasmBlock{91}{141}{413}{226}{}{#1}
+  \CasmBlock{91}{480}{413}{126}{}{#2}
+\end{CasmCanvas}\null\clearpage}
+\newenvironment{CasmAttachments}{%
+  \AddToShipoutPictureBG{\begin{CasmCanvas}\CasmAttachmentsArtwork\end{CasmCanvas}}%
+  \CasmBody
+}{\par\null\clearpage\ClearShipoutPictureBG}
+
+% 官方固定标签与线条。独立源文件便于复核坐标，不含申请人正文。
+\input{styles/bthesis-artwork-casm-open-fund-2026.tex}
