@@ -1,0 +1,151 @@
+{
+  "route_ids": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "kind": "background",
+      "required": true,
+      "selected": true,
+      "name": "研究背景与科学问题",
+      "source_file": "extraTex/1.1.立项依据.tex",
+      "source_excerpt": "这一问题的科学价值在于厘清两类容易混淆的关系：更丰富的气象输入是否在实际可得的信息条件下仍有增益；逐时距预测区间更准确，是否就意味着爬坡风险估计更可靠。前者决定多源融合有无实际预测意义，后者决定概率预测能否用于变化事件预警。若能在相同边际预测下单独考察连续误差依赖，就能区分点值或区间精度改善与轨迹结构改善的贡献，为小样本、复杂天气条件下选择预测方法提供依据。",
+      "anchor": "这一问题的科学价值在于厘清两类容易混淆的关系：更丰富的气象输入是否在实际可得的信息条件下仍有增益；逐时距预测区间更准确，是否就意味着爬坡风险估计更可靠。前者决定多源融合有无实际预测意义，后者决定概率预测能否用于变化事件预警。若能在相同边际预测下单独考察连续误差依赖，就能区分点值或区间精度改善与轨迹结构改善的贡献，为小样本、复杂天气条件下选择预测方法提供依据。",
+      "spec": "docs/figure_specs/F01.json",
+      "prompt": "docs/figure_specs/F01.prompt.md",
+      "png": "figures/F01.png",
+      "pdf": "figures/F01.pdf",
+      "caption": "复杂天气下光伏功率变化与三个待检验问题（拟开展研究，数据待落实）",
+      "label": "fig:xj-f01",
+      "width": 0.94,
+      "gap_ids": [
+        "F-XJ-01"
+      ],
+      "aspect_ratio": "2:1",
+      "claim_type": "proposed_research_schematic"
+    },
+    {
+      "id": "F02",
+      "kind": "framework",
+      "required": true,
+      "selected": true,
+      "name": "总体研究框架",
+      "source_file": "extraTex/2.1.研究内容.tex",
+      "source_excerpt": "\\textbf{总体路线。}以获得合法使用条件的功率和气象数据为起点，先建立发布时刻的信息集合并识别可利用的时间尺度，内容一据此输出可追溯样本和变量选择依据。内容二在同一数据划分上训练概率模型并保存边际预测、到齐标签和连续误差向量；内容三接收这些产物，通过同边际轨迹对照检验爬坡概率，再将验证集确定的决策规则接入离线原型。三项内容在数据、概率输出和事件评价之间依次衔接，最终以独立时间段与天气过程检验总体目标。",
+      "anchor": "\\textbf{总体路线。}以获得合法使用条件的功率和气象数据为起点，先建立发布时刻的信息集合并识别可利用的时间尺度，内容一据此输出可追溯样本和变量选择依据。内容二在同一数据划分上训练概率模型并保存边际预测、到齐标签和连续误差向量；内容三接收这些产物，通过同边际轨迹对照检验爬坡概率，再将验证集确定的决策规则接入离线原型。三项内容在数据、概率输出和事件评价之间依次衔接，最终以独立时间段与天气过程检验总体目标。",
+      "spec": "docs/figure_specs/F02.json",
+      "prompt": "docs/figure_specs/F02.prompt.md",
+      "png": "figures/F02.png",
+      "pdf": "figures/F02.pdf",
+      "caption": "总体研究框架：原始分位网格与完整历史误差进入爬坡分析，校准区间用于并行诊断",
+      "label": "fig:xj-f02",
+      "width": 0.94,
+      "gap_ids": [
+        "F-XJ-01",
+        "F-XJ-02"
+      ],
+      "aspect_ratio": "16:9",
+      "claim_type": "proposed_research_schematic"
+    },
+    {
+      "id": "F03",
+      "kind": "route",
+      "required": true,
+      "selected": true,
+      "name": "C1 可用气象信息与跨尺度增益路线",
+      "source_file": "extraTex/2.1.研究内容.tex",
+      "source_excerpt": "\\textbf{对应研究内容一的路线。}输入原始功率、气象与运行日志，完成授权核验、时间对齐和异常分层；以因果窗口提取尺度特征，在统一预算下进行逐源增量与变量消融。输出可复现数据清单、训练测试索引和尺度增益分析，用跨时间块的损失差异检验其稳定性。这些索引和保留变量成为内容二的固定输入。",
+      "anchor": "\\textbf{对应研究内容一的路线。}输入原始功率、气象与运行日志，完成授权核验、时间对齐和异常分层；以因果窗口提取尺度特征，在统一预算下进行逐源增量与变量消融。输出可复现数据清单、训练测试索引和尺度增益分析，用跨时间块的损失差异检验其稳定性。这些索引和保留变量成为内容二的固定输入。",
+      "spec": "docs/figure_specs/F03.json",
+      "prompt": "docs/figure_specs/F03.prompt.md",
+      "png": "figures/F03.png",
+      "pdf": "figures/F03.pdf",
+      "caption": "可用信息与跨尺度增益路线（数据按授权加入，变量选择不使用测试效果）",
+      "label": "fig:xj-f03",
+      "width": 0.94,
+      "gap_ids": [
+        "F-XJ-01",
+        "F-XJ-02"
+      ],
+      "aspect_ratio": "16:9",
+      "claim_type": "proposed_research_schematic",
+      "route_id": "C1"
+    },
+    {
+      "id": "F04",
+      "kind": "route",
+      "required": true,
+      "selected": true,
+      "name": "C2 分位数预测与延迟标签校准路线",
+      "source_file": "extraTex/2.1.研究内容.tex",
+      "source_excerpt": "\\textbf{对应研究内容二的路线。}输入经核验的样本和尺度特征，训练分位数模型，并以只含到达标签的滚动样本校准区间。输出原始单调分位数网格、单独校准的区间、覆盖诊断和完整历史误差轨迹，比较静态与滚动校准的覆盖及效率。原始分位数网格与误差秩模板一并传给内容三，校准区间用于并行可靠性诊断；不将两个覆盖层级的端点拼接成已校准的完整分布，不把区间覆盖结果当作事件可靠性的替代证据。",
+      "anchor": "\\textbf{对应研究内容二的路线。}输入经核验的样本和尺度特征，训练分位数模型，并以只含到达标签的滚动样本校准区间。输出原始单调分位数网格、单独校准的区间、覆盖诊断和完整历史误差轨迹，比较静态与滚动校准的覆盖及效率。原始分位数网格与误差秩模板一并传给内容三，校准区间用于并行可靠性诊断；不将两个覆盖层级的端点拼接成已校准的完整分布，不把区间覆盖结果当作事件可靠性的替代证据。",
+      "spec": "docs/figure_specs/F04.json",
+      "prompt": "docs/figure_specs/F04.prompt.md",
+      "png": "figures/F04.png",
+      "pdf": "figures/F04.pdf",
+      "caption": "分位数预测与延迟标签校准路线（80%与90%覆盖层级暂定）",
+      "label": "fig:xj-f04",
+      "width": 0.94,
+      "gap_ids": [
+        "F-XJ-01",
+        "F-XJ-02"
+      ],
+      "aspect_ratio": "16:9",
+      "claim_type": "proposed_research_schematic",
+      "route_id": "C2"
+    },
+    {
+      "id": "F05",
+      "kind": "route",
+      "required": true,
+      "selected": true,
+      "name": "C3 固定边际的依赖对照与爬坡评价路线",
+      "source_file": "extraTex/2.1.研究内容.tex",
+      "source_excerpt": "\\textbf{对应研究内容三的路线。}输入内容二的边际预测与可用历史误差轨迹，构造同边际、不同时间依赖的轨迹并计算爬坡概率，与独立排序和直接增量方法对照。输出事件概率、可靠性分析与按事件聚合的告警记录，以概率评分和锁定告警规则下的实际效果验证，最后形成可回放的离线原型和适用条件说明。",
+      "anchor": "\\textbf{对应研究内容三的路线。}输入内容二的边际预测与可用历史误差轨迹，构造同边际、不同时间依赖的轨迹并计算爬坡概率，与独立排序和直接增量方法对照。输出事件概率、可靠性分析与按事件聚合的告警记录，以概率评分和锁定告警规则下的实际效果验证，最后形成可回放的离线原型和适用条件说明。",
+      "spec": "docs/figure_specs/F05.json",
+      "prompt": "docs/figure_specs/F05.prompt.md",
+      "png": "figures/F05.png",
+      "pdf": "figures/F05.pdf",
+      "caption": "同边际依赖对照与爬坡评价路线（配对示意非实测，D0为主检验、D1为预设次检验）",
+      "label": "fig:xj-f05",
+      "width": 0.94,
+      "gap_ids": [
+        "F-XJ-01"
+      ],
+      "aspect_ratio": "3:2",
+      "claim_type": "proposed_research_schematic",
+      "route_id": "C3"
+    },
+    {
+      "id": "F06",
+      "selected": false,
+      "required": false,
+      "reason": "年度计划文字清楚，单独图与现有内容重复。"
+    },
+    {
+      "id": "F07",
+      "selected": false,
+      "required": false,
+      "reason": "信息到达时间已纳入F03和F04。"
+    },
+    {
+      "id": "F08",
+      "selected": false,
+      "required": false,
+      "reason": "场站位置未确认，不生成站点地图。"
+    },
+    {
+      "id": "F09",
+      "selected": false,
+      "required": false,
+      "reason": "无真实实验结果，不生成性能、消融或覆盖率结果图。"
+    }
+  ],
+  "scope_note": "用户明确按中国沙漠气象科学研究基金复用图文流程；仅画拟开展方案。F-XJ-07不构成示意图依赖，不画结果。",
+  "excluded_optional": []
+}

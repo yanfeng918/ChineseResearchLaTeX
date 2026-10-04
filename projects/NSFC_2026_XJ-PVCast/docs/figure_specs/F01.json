@@ -1,0 +1,171 @@
+{
+  "figure_id": "F01",
+  "name_zh": "研究背景与科学问题",
+  "diagram_type": "Scientific Background and Research Questions",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "2:1",
+  "physical_spec_and_typography": {
+    "canvas_width": "155mm (user-specified proposal print width)",
+    "canvas_height": "77.5mm",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC; sans-serif",
+    "font_hierarchy": {
+      "title": "10pt bold",
+      "primary_label": "9.5pt medium",
+      "secondary_note": "8.5pt regular",
+      "tensor_shape": "not applicable; do not invent dimensions"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with compact arrowhead",
+      "feedback_arrow": "not used"
+    },
+    "minimum_text_size": "8.5pt at 155mm print width",
+    "white_space_target": "at least 35% unoccupied canvas; white surface area at least 85%; all fills white",
+    "corners": "core and diagnostic blocks: 1.5mm radius; input and output blocks: straight corners",
+    "visual_anchor_size": "4–6mm; 1.0pt #4D4D4D native geometric strokes"
+  },
+  "style_and_colors": {
+    "palette_name": "Nature Blue",
+    "decision_branch": "scene",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "reserved #5BA0D0; inactive",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "neutral_border": "#CCCCCC",
+    "semantic_binding": {
+      "source_and_input": "#2E6B9E border; straight rectangle with small open table",
+      "core_question_or_model": "#1B3A5C border; small rounded rectangle",
+      "diagnosis_and_supervision": "#616161 border; separate diagnostic area",
+      "output": "#2E6B9E border; straight rectangle with two inner bottom lines"
+    },
+    "geometry_only": true,
+    "active_chromatic_colors": [
+      "#1B3A5C",
+      "#2E6B9E"
+    ],
+    "neutral_status": "#616161",
+    "anchor": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "id": "weather",
+      "relative_position": "left upper: x=4%, y=21%, w=23%, h=22%",
+      "shape": "white-fill straight rectangle; 1.5pt #2E6B9E border",
+      "exact_title_to_render_inside": "气象变化",
+      "visual_anchor": "small open 2-by-2 table with native lines; #4D4D4D",
+      "exact_text": "日照／云／沙尘"
+    },
+    {
+      "id": "operation",
+      "relative_position": "left lower: x=4%, y=55%, w=23%, h=22%",
+      "shape": "white-fill straight rectangle; 1.5pt #2E6B9E border",
+      "exact_title_to_render_inside": "运行状态",
+      "visual_anchor": "small open 2-by-2 table with native lines; #4D4D4D",
+      "exact_text": "停机／限电"
+    },
+    {
+      "id": "power",
+      "relative_position": "center: x=35%, y=33%, w=23%, h=31%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "功率变化",
+      "visual_anchor": "two offset outlined squares, drawn as editable rectangles",
+      "exact_text": "周期与突变"
+    },
+    {
+      "id": "q1",
+      "relative_position": "right top: x=68%, y=17%, w=28%, h=17%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "信息可用性",
+      "visual_anchor": "one short horizontal stroke next to a small open bracket"
+    },
+    {
+      "id": "q2",
+      "relative_position": "right middle: x=68%, y=42%, w=28%, h=17%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "区间可靠性",
+      "visual_anchor": "two short parallel horizontal strokes next to a small open bracket"
+    },
+    {
+      "id": "q3",
+      "relative_position": "right bottom: x=68%, y=67%, w=28%, h=17%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "爬坡概率",
+      "visual_anchor": "three short parallel horizontal strokes next to a small open bracket"
+    },
+    {
+      "id": "status",
+      "relative_position": "bottom center, x=50%, y=94%",
+      "shape": "plain unboxed text",
+      "exact_text": "拟开展研究 · 数据待落实"
+    }
+  ],
+  "connections": [
+    {
+      "from": "weather",
+      "to": "power",
+      "route": "straight diagonal toward left upper edge of center; arrowhead at center"
+    },
+    {
+      "from": "operation",
+      "to": "power",
+      "route": "straight diagonal toward left lower edge of center; arrowhead at center"
+    },
+    {
+      "from": "power",
+      "to": "q1",
+      "route": "orthogonal branch in blank center-right gutter"
+    },
+    {
+      "from": "power",
+      "to": "q2",
+      "route": "horizontal in blank gutter"
+    },
+    {
+      "from": "power",
+      "to": "q3",
+      "route": "orthogonal branch in blank center-right gutter"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Generate one standalone figure only.",
+    "Render text only from exact_* fields within layout_and_content_blocks.",
+    "All canvas and block fills are pure WHITE #FFFFFF; colors appear only on borders and linework.",
+    "NO semantic icons: no sun, cloud, photovoltaic panel, desert, badge, document, lock, fire or lightning graphics.",
+    "Every main block has an abstract geometric visual anchor built only from short strokes, open brackets, small outlines or native editable lines; not a pictorial icon.",
+    "NO emojis, NO 3D rendering, NO gradients, NO drop shadows, NO textures.",
+    "No plots, axes, waveforms, measured values, claimed improvements, invented experiments, institutional logos or maps.",
+    "Main connectors are solid dark-gray arrows; no feedback loop or additional connection.",
+    "Preserve all Chinese labels exactly, including punctuation; no English translation.",
+    "Do not add tensor dimensions, layer counts, model internals, equations or new modules.",
+    "Do not render captions, source paragraphs, gap IDs or JSON field names.",
+    "Keep all labels legible at 155mm print width; 8.5pt minimum.",
+    "Use only two active chromatic colors; #5BA0D0 stays inactive. Geometric anchors are #4D4D4D. Overall figure title stays in the external caption."
+  ],
+  "caption_note": [
+    "Sources represent possible contributors to power variation, not proven causal effects.",
+    "Data, station identity and cooperation are still pending; no geographical locations or existing demonstration are depicted.",
+    "The project is a proposed two-year desert meteorology fund study, not an already funded NSFC project."
+  ],
+  "caption_zh": "研究背景与待检验问题示意。新疆场站、数据与合作尚待落实，图示不表示已获得实测结果。",
+  "source_tex": "extraTex/1.1.立项依据.tex",
+  "anchor": "这一问题的科学价值在于厘清两类容易混淆的关系：更丰富的气象输入是否在实际可得的信息条件下仍有增益；逐时距预测区间更准确，是否就意味着爬坡风险估计更可靠。前者决定多源融合有无实际预测意义，后者决定概率预测能否用于变化事件预警。若能在相同边际预测下单独考察连续误差依赖，就能区分点值或区间精度改善与轨迹结构改善的贡献，为小样本、复杂天气条件下选择预测方法提供依据。",
+  "source_excerpt": "这一问题的科学价值在于厘清两类容易混淆的关系：更丰富的气象输入是否在实际可得的信息条件下仍有增益；逐时距预测区间更准确，是否就意味着爬坡风险估计更可靠。前者决定多源融合有无实际预测意义，后者决定概率预测能否用于变化事件预警。若能在相同边际预测下单独考察连续误差依赖，就能区分点值或区间精度改善与轨迹结构改善的贡献，为小样本、复杂天气条件下选择预测方法提供依据。",
+  "source_line": 9,
+  "gap_ids": [
+    "F-XJ-01"
+  ],
+  "palette_source": "docs/Figure_Palette.md",
+  "science_boundaries_source": ".bensz-api/task-20260919-xj-pvcast/nsfc-illustrated-pipeline/science-boundaries.md",
+  "completeness": {
+    "output_type": "完整spec与prompt；未生成图像",
+    "high_confidence": "正文支持的背景或拓扑，无实验结果",
+    "pending": "实测数据和授权尚未落实；不影响画拟开展方案",
+    "no_reference_image": true,
+    "figure_generation_status": "not_started",
+    "palette_verified": "Read and aligned to current docs/Figure_Palette.md; scene branch; two active blues plus neutrals."
+  }
+}

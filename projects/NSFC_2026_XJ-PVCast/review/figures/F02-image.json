@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看：拟获取数据→C1→C2；原始分位网格及完整外推误差两箭头进入C3，C2下行区间校准独立诊断；C3至离线原型。中文准确，无交叉裁切，白底。",
+  "source_path": "/home/yanfeng/.codex/generated_images/01a0b82f-1a98-7381-a3c6-22107e0c6512/exec-2c0e7452-5eb0-4271-b849-886fc5fdefa4.png",
+  "call_id": "exec-2c0e7452-5eb0-4271-b849-886fc5fdefa4"
+}

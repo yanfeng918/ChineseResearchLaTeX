@@ -1,0 +1,25 @@
+% !TeX program = xelatex
+\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}
+\input{extraTex/@config}
+\input{extraTex/metadata}
+\begin{document}
+\XJCover
+\XJInstructions
+\XJInformation{\input{extraTex/abstract}}{\input{extraTex/assessment}}
+\XJResearchSection{1}{%
+  \input{extraTex/01-justification}
+  % 官方构建器从入口检测显式 bibliography；样式和间距由包维护。
+  \XJBibliography{\bibliography{references/myexample}}}
+\XJResearchSection{2}{\input{extraTex/02-content}}
+\XJResearchSection{3}{\input{extraTex/03-methods}}
+\XJResearchSection{4}{\input{extraTex/04-innovation}}
+\XJResearchSection{5}{\input{extraTex/05-plan}}
+\XJResearchSection{6}{\input{extraTex/06-foundation}\input{extraTex/07-declarations}}
+\XJLandscapePage{\input{extraTex/members}}
+\XJFixedPage{8}{\input{extraTex/budget}}
+\XJFixedPage{9}{}
+\XJFixedPage{10}{}
+\XJFixedPage{11}{}
+\XJPrincipalCommitment
+\XJFixedPage{13}{}
+\end{document}

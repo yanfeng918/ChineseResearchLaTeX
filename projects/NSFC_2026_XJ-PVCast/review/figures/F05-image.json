@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "第二次纠错后实际查看：三组逐列点相同、每点一对一配对；独立仅共同样本，总体秩加历史误差，天气秩再加发布时可知天气，用明确输入标签消除原交叉连线歧义。D0总体减独立为主、D1天气减总体为次，概率评分与告警平行，明确非实测。末行完整未裁切。",
+  "source_path": "/home/yanfeng/.codex/generated_images/01a0b82f-1a98-7381-a3c6-22107e0c6512/exec-98729bd7-c260-456f-8b63-2a769fbc8d49.png",
+  "call_id": "exec-98729bd7-c260-456f-8b63-2a769fbc8d49",
+  "corrections": 2
+}

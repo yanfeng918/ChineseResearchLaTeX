@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看修正后图：五个标题栏均白填充，中文保持正确；输入时间门槛、未到达等待、只用历史的因果窗口、同预算三消融及训练验证选择到C2方向一致。无曲线或效果数据。",
+  "source_path": "/home/yanfeng/.codex/generated_images/01a0b82f-1a98-7381-a3c6-22107e0c6512/exec-fd43dc33-9058-4de4-97f6-acf49050de8c.png",
+  "call_id": "exec-fd43dc33-9058-4de4-97f6-acf49050de8c",
+  "corrections": 1
+}

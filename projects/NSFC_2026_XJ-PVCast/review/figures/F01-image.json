@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看1774×887原图：中文完整，气象/运行汇入功率变化，再分三问题，结构与源文一致；无结果数字。PNG外围为透明alpha，最终PPT使用纯白页面并重建全部原生对象；不将透明显示的黑底当科学图底色。",
+  "tool": "image_gen.imagegen",
+  "source_path": "/home/yanfeng/.codex/generated_images/01a0b82f-1a98-7381-a3c6-22107e0c6512/exec-474133c7-50af-414a-b1eb-3bb21ebba71e.png",
+  "call_id": "exec-474133c7-50af-414a-b1eb-3bb21ebba71e"
+}

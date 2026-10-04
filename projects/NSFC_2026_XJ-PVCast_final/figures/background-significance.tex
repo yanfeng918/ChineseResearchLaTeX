@@ -1,0 +1,57 @@
+% 按用户要求将图1调整为“研究背景与意义”。
+% 内容来自立项依据1.1；旧F01.pdf保留为迁移原件，不再由正文调用。
+\begingroup
+\definecolor{XJBackgroundBlue}{HTML}{235D82}
+\definecolor{XJBackgroundTeal}{HTML}{28777C}
+\definecolor{XJBackgroundMuted}{HTML}{505B65}
+\begin{tikzpicture}[
+  x=1bp,y=-1bp,
+  every node/.style={inner sep=0pt,outer sep=0pt,align=center,
+    font={\XJHei\fontsize{9.2bp}{13bp}\selectfont}},
+  flow/.style={->,>=stealth,line width=.9bp,draw=XJBackgroundBlue}]
+  \path[use as bounding box] (0,0) rectangle (414,295);
+
+  \node[text=XJBackgroundBlue,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}]
+    at (207,11) {新疆光伏场景：功率变化具有不同的时间尺度与来源};
+
+  \draw[draw=XJBackgroundBlue,line width=.7bp,rounded corners=2bp,fill=XJBackgroundBlue!6]
+    (0,32) rectangle (198,80);
+  \draw[draw=XJBackgroundMuted,line width=.7bp,rounded corners=2bp,fill=XJBackgroundMuted!5]
+    (216,32) rectangle (414,80);
+  \node[text=XJBackgroundBlue,font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}]
+    at (99,46) {气象背景};
+  \node at (99,65) {日照周期、云团移动、沙尘扰动};
+  \node[text=XJBackgroundMuted,font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}]
+    at (315,46) {运行背景};
+  \node at (315,65) {停机、限电、积尘可造成相似下降};
+  \draw[draw=XJBackgroundBlue,line width=.9bp] (99,80) -- (99,87) -- (315,87) -- (315,80);
+  \draw[flow] (207,87) -- (207,96);
+
+  \draw[draw=XJBackgroundBlue,line width=.8bp,rounded corners=2bp,fill=XJBackgroundBlue!8]
+    (0,97) rectangle (414,156);
+  \node[text=XJBackgroundBlue,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}]
+    at (207,110) {预报预警需求};
+  \node at (207,129) {既要预报功率大小，也要判断短时间大幅变化的可能性};
+  \node[text=XJBackgroundMuted,font={\XJHei\fontsize{8.8bp}{12bp}\selectfont}]
+    at (207,146) {平均误差可能掩盖快速变化；逐时距区间可靠不等于爬坡概率可靠};
+
+  \draw[draw=XJBackgroundBlue,line width=.9bp] (207,156) -- (207,166);
+  \draw[flow] (207,166) -- (99,166) -- (99,179);
+  \draw[flow] (207,166) -- (315,166) -- (315,179);
+  \draw[draw=XJBackgroundBlue,line width=.7bp,rounded corners=2bp,fill=white]
+    (0,180) rectangle (198,266);
+  \draw[draw=XJBackgroundTeal,line width=.7bp,rounded corners=2bp,fill=white]
+    (216,180) rectangle (414,266);
+  \fill[XJBackgroundBlue!10] (.5,180.5) rectangle (197.5,205);
+  \fill[XJBackgroundTeal!10] (216.5,180.5) rectangle (413.5,205);
+  \node[text=XJBackgroundBlue,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}]
+    at (99,193) {科学意义};
+  \node[text=XJBackgroundTeal,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}]
+    at (315,193) {应用意义};
+  \node at (99,234) {辨明真实可用气象信息的增益\\区分边际预测与时间依赖的贡献\\为复杂天气下的方法选择提供依据};
+  \node at (315,234) {服务场站功率变化风险识别\\支撑概率预报与爬坡预警产品研究\\明确适用天气与失效条件};
+
+  \node[text=XJBackgroundMuted,font={\XJHei\fontsize{8.8bp}{12bp}\selectfont}]
+    at (207,285) {拟开展研究；应用价值需在取得授权的实测数据上验证。};
+\end{tikzpicture}
+\endgroup

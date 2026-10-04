@@ -1,0 +1,58 @@
+% 项目层研究内容图；原生 TikZ 文字与路径，随 main.tex 官方构建。
+% 依据 extraTex/02-content.tex 与 03-methods.tex，不引入新研究承诺。
+\begingroup
+\definecolor{XJFrameworkBlue}{HTML}{235D82}
+\definecolor{XJFrameworkTeal}{HTML}{28777C}
+\definecolor{XJFrameworkSlate}{HTML}{48677E}
+\definecolor{XJFrameworkMuted}{HTML}{505B65}
+\begin{tikzpicture}[
+  x=1bp,y=-1bp,
+  every node/.style={inner sep=0pt,outer sep=0pt,align=center,
+    font={\XJHei\fontsize{9.2bp}{13bp}\selectfont}},
+  flow/.style={->,>=stealth,line width=1bp,draw=XJFrameworkBlue}]
+  \path[use as bounding box] (0,0) rectangle (414,294);
+
+  \fill[XJFrameworkBlue!7] (0,0) rectangle (414,37);
+  \node[text=XJFrameworkBlue,font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}]
+    at (207,12) {可用气象信息如何改善概率预测，并传递到爬坡预警？};
+  \node[text=XJFrameworkMuted,font={\XJHei\fontsize{8.8bp}{12bp}\selectfont}]
+    at (207,27) {新疆典型光伏场站\quad 多源气象信息\quad 短时功率变化与爬坡风险};
+
+  % 三列使用相同层次：研究内容、核心问题、研究要点、预期输出。
+  \foreach \x/\col in {0/XJFrameworkBlue,143/XJFrameworkTeal,286/XJFrameworkSlate}{
+    \draw[draw=\col,line width=.7bp,rounded corners=2bp,fill=white]
+      (\x,50) rectangle +(128,174);
+    \fill[\col!10] (\x+.5,50.5) rectangle +(127,25);
+    \draw[draw=\col!35,line width=.45bp] (\x+8,121) -- (\x+120,121);
+    \fill[\col!6] (\x+.5,184) rectangle +(127,39.5);
+  }
+  \node[text=XJFrameworkBlue,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}] at (64,63) {研究内容一};
+  \node[text=XJFrameworkTeal,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}] at (207,63) {研究内容二};
+  \node[text=XJFrameworkSlate,font={\XJHei\bfseries\fontsize{10.5bp}{14bp}\selectfont}] at (350,63) {研究内容三};
+
+  \node[font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}] at (64,96) {多源气象与功率变化\\的跨尺度关系};
+  \node[font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}] at (207,96) {天气变化下的\\概率功率预测与校准};
+  \node[font={\XJHei\bfseries\fontsize{10bp}{14bp}\selectfont}] at (350,96) {同边际爬坡概率\\估计与预警评价};
+
+  \node[text=XJFrameworkBlue] at (64,135) {哪些信息与尺度有增益？};
+  \node[text=XJFrameworkTeal] at (207,135) {如何兼顾覆盖与效率？};
+  \node[text=XJFrameworkSlate] at (350,135) {时间依赖有何贡献？};
+  \node at (64,164) {可用信息核验\\变量与尺度消融};
+  \node at (207,164) {多尺度分位数预测\\静态与滚动校准};
+  \node at (350,164) {三组依赖结构对照\\爬坡概率与告警效用};
+
+  \node at (64,204) {输入与尺度选择依据\\信息增益的适用条件};
+  \node at (207,204) {原始分位网格、完整误差\\区间可靠性并行诊断};
+  \node at (350,204) {事件概率与预警评价\\适用边界与离线原型};
+  \draw[flow] (130,98) -- (141,98);
+  \draw[flow] (273,98) -- (284,98);
+
+  \node[text=XJFrameworkBlue,font={\XJHei\fontsize{9bp}{13bp}\selectfont}]
+    at (207,243) {可用输入\ $\longrightarrow$\ 原始分位网格与完整历史误差\ $\longrightarrow$\ 爬坡概率};
+  \node[text=XJFrameworkMuted,font={\XJHei\fontsize{8.8bp}{12bp}\selectfont}]
+    at (207,260) {校准区间仅用于并行诊断，不视为完整预测分布已校准。};
+  \draw[XJFrameworkBlue!30,line width=.5bp] (0,273) -- (414,273);
+  \node[text=XJFrameworkMuted,font={\XJHei\fontsize{8.8bp}{12bp}\selectfont}]
+    at (207,286) {拟开展研究；数据按授权获取；输入与标签遵循真实到达时间。};
+\end{tikzpicture}
+\endgroup

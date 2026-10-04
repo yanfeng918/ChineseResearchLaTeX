@@ -1,0 +1,192 @@
+{
+  "figure_id": "F02",
+  "name_zh": "总体研究框架",
+  "diagram_type": "Scientific Overall Framework with Parallel Calibration Diagnosis",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "155mm (user-specified proposal print width)",
+    "canvas_height": "87.2mm",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC; sans-serif",
+    "font_hierarchy": {
+      "title": "10pt bold",
+      "primary_label": "9.5pt medium",
+      "secondary_note": "8.5pt regular",
+      "tensor_shape": "not applicable; do not invent dimensions"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with compact arrowhead",
+      "feedback_arrow": "not used"
+    },
+    "minimum_text_size": "8.5pt at 155mm print width",
+    "white_space_target": "at least 35% unoccupied canvas; white surface area at least 85%; all fills white",
+    "corners": "core and diagnostic blocks: 1.5mm radius; input and output blocks: straight corners",
+    "visual_anchor_size": "4–6mm; 1.0pt #4D4D4D native geometric strokes"
+  },
+  "style_and_colors": {
+    "palette_name": "Nature Blue",
+    "decision_branch": "scene",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "reserved #5BA0D0; inactive",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "neutral_border": "#CCCCCC",
+    "semantic_binding": {
+      "source_and_input": "#2E6B9E border; straight rectangle with small open table",
+      "core_question_or_model": "#1B3A5C border; small rounded rectangle",
+      "diagnosis_and_supervision": "#616161 border; separate diagnostic area",
+      "output": "#2E6B9E border; straight rectangle with two inner bottom lines"
+    },
+    "geometry_only": true,
+    "active_chromatic_colors": [
+      "#1B3A5C",
+      "#2E6B9E"
+    ],
+    "neutral_status": "#616161",
+    "anchor": "#4D4D4D"
+  },
+  "layout_and_content_blocks": [
+    {
+      "id": "input",
+      "relative_position": "left: x=3%, y=22%, w=17%, h=30%",
+      "shape": "white-fill straight rectangle; 1.5pt #2E6B9E border",
+      "exact_title_to_render_inside": "拟获取数据",
+      "visual_anchor": "small open 2-by-2 table with native lines; #4D4D4D",
+      "exact_text": "发布时刻可用"
+    },
+    {
+      "id": "c1",
+      "relative_position": "left-center: x=25%, y=22%, w=20%, h=30%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "C1 气象尺度",
+      "visual_anchor": "one open square beside two short parallel strokes",
+      "exact_text": "固定输入与索引"
+    },
+    {
+      "id": "c2",
+      "relative_position": "center-right: x=50%, y=16%, w=22%, h=42%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "C2 分位预测",
+      "visual_anchor": "two offset open rectangular frames",
+      "internal_content": {
+        "layout": "two separated rows, no nested boxes; both are outgoing artifacts",
+        "row_1": {
+          "exact_text": "原始分位网格"
+        },
+        "row_2": {
+          "exact_text": "完整外推误差"
+        }
+      }
+    },
+    {
+      "id": "c3",
+      "relative_position": "right: x=78%, y=22%, w=19%, h=30%",
+      "shape": "white-fill rounded rectangle; 1.5pt #1B3A5C border",
+      "exact_title_to_render_inside": "C3 爬坡概率",
+      "visual_anchor": "three short parallel strokes joining an open square",
+      "exact_text": "固定边际\n三组对照"
+    },
+    {
+      "id": "diagnosis",
+      "relative_position": "bottom-center: x=47%, y=70%, w=28%, h=21%",
+      "shape": "white-fill rounded rectangle; 1.5pt #616161 border",
+      "exact_title_to_render_inside": "区间校准",
+      "visual_anchor": "two open horizontal brackets facing one another",
+      "exact_text": "并行可靠性诊断"
+    },
+    {
+      "id": "offline",
+      "relative_position": "bottom-right: x=79%, y=70%, w=18%, h=21%",
+      "shape": "white-fill straight rectangle; 1.5pt #2E6B9E border with two thin inner bottom lines",
+      "exact_title_to_render_inside": "离线原型",
+      "visual_anchor": "two short endpoint brackets; #4D4D4D",
+      "exact_text": "适用边界"
+    },
+    {
+      "id": "status",
+      "relative_position": "bottom-left whitespace: x=4%, y=81%",
+      "shape": "plain unboxed text on two lines",
+      "exact_text": "拟开展研究\n数据待落实"
+    }
+  ],
+  "connections": [
+    {
+      "from": "input",
+      "to": "c1",
+      "route": "horizontal, no label"
+    },
+    {
+      "from": "c1",
+      "to": "c2",
+      "route": "horizontal, no label"
+    },
+    {
+      "from": "c2.row_1",
+      "to": "c3",
+      "route": "upper clean rightward outgoing port; joins C3 upper left"
+    },
+    {
+      "from": "c2.row_2",
+      "to": "c3",
+      "route": "lower clean rightward outgoing port; joins C3 lower left"
+    },
+    {
+      "from": "c2",
+      "to": "diagnosis",
+      "route": "vertical downward from original prediction branch; not through C3"
+    },
+    {
+      "from": "c3",
+      "to": "offline",
+      "route": "vertical downward; no link to diagnosis"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Generate one standalone figure only.",
+    "Render text only from exact_* fields within layout_and_content_blocks.",
+    "All canvas and block fills are pure WHITE #FFFFFF; colors appear only on borders and linework.",
+    "NO semantic icons: no sun, cloud, photovoltaic panel, desert, badge, document, lock, fire or lightning graphics.",
+    "Every main block has an abstract geometric visual anchor built only from short strokes, open brackets, small outlines or native editable lines; not a pictorial icon.",
+    "NO emojis, NO 3D rendering, NO gradients, NO drop shadows, NO textures.",
+    "No plots, axes, waveforms, measured values, claimed improvements, invented experiments, institutional logos or maps.",
+    "Main connectors are solid dark-gray arrows; no feedback loop or additional connection.",
+    "Preserve all Chinese labels exactly, including punctuation; no English translation.",
+    "Do not add tensor dimensions, layer counts, model internals, equations or new modules.",
+    "Do not render captions, source paragraphs, gap IDs or JSON field names.",
+    "Keep all labels legible at 155mm print width; 8.5pt minimum.",
+    "C3 receives raw quantile grid plus complete historical out-of-sample errors; calibration is a separate diagnostic branch.",
+    "Never draw any arrow from calibration/diagnosis to C3, its trajectories, or event probabilities.",
+    "Use only two active chromatic colors; #5BA0D0 stays inactive. Geometric anchors are #4D4D4D. Overall figure title stays in the external caption."
+  ],
+  "caption_note": [
+    "C1 fixes usable variables/scales and sample indices for C2.",
+    "C2 feeds C3 only the original monotonic quantile grid and complete historical rolling-holdout error vectors after every horizon label has arrived.",
+    "Calibrated 80%/90% intervals are separate reliability diagnostics; their endpoints do not constitute a fully calibrated joint distribution.",
+    "The three C3 comparison groups are independent ordering, overall historical ranks, and weather-conditioned historical ranks; details are reserved for F05.",
+    "No actual performance, station count, forecast skill or deployment status is claimed."
+  ],
+  "caption_zh": "总体研究框架。C1确定可利用输入，C2形成原始分位预测并单独评价区间校准，C3使用原始网格与完整历史误差检验依赖贡献。所有模块均为拟开展工作。",
+  "source_tex": "extraTex/2.1.研究内容.tex",
+  "anchor": "\\textbf{总体路线。}以获得合法使用条件的功率和气象数据为起点，先建立发布时刻的信息集合并识别可利用的时间尺度，内容一据此输出可追溯样本和变量选择依据。内容二在同一数据划分上训练概率模型并保存边际预测、到齐标签和连续误差向量；内容三接收这些产物，通过同边际轨迹对照检验爬坡概率，再将验证集确定的决策规则接入离线原型。三项内容在数据、概率输出和事件评价之间依次衔接，最终以独立时间段与天气过程检验总体目标。",
+  "source_excerpt": "\\textbf{总体路线。}以获得合法使用条件的功率和气象数据为起点，先建立发布时刻的信息集合并识别可利用的时间尺度，内容一据此输出可追溯样本和变量选择依据。内容二在同一数据划分上训练概率模型并保存边际预测、到齐标签和连续误差向量；内容三接收这些产物，通过同边际轨迹对照检验爬坡概率，再将验证集确定的决策规则接入离线原型。三项内容在数据、概率输出和事件评价之间依次衔接，最终以独立时间段与天气过程检验总体目标。",
+  "source_line": 68,
+  "gap_ids": [
+    "F-XJ-01",
+    "F-XJ-02"
+  ],
+  "palette_source": "docs/Figure_Palette.md",
+  "science_boundaries_source": ".bensz-api/task-20260919-xj-pvcast/nsfc-illustrated-pipeline/science-boundaries.md",
+  "completeness": {
+    "output_type": "完整spec与prompt；未生成图像",
+    "high_confidence": "正文支持的背景或拓扑，无实验结果",
+    "pending": "实测数据和授权尚未落实；不影响画拟开展方案",
+    "no_reference_image": true,
+    "figure_generation_status": "not_started",
+    "palette_verified": "Read and aligned to current docs/Figure_Palette.md; scene branch; two active blues plus neutrals."
+  }
+}

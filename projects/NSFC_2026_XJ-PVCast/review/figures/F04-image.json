@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "实际查看三泳道：原始网格直达C3；逐时距到达标签与历史预测更新分数，校准仅至独立诊断；全轨迹到齐误差单独入库上行C3。80/90%保留暂定。生成器增加泳道标题、图例与等候解释，均为正文已有关系的准确解释，未引入新方法或已完成结果，纳入PPT重建文字清单。",
+  "source_path": "/home/yanfeng/.codex/generated_images/01a0b82f-1a98-7381-a3c6-22107e0c6512/exec-7eb6685b-7731-432e-b306-f36f4ca325a0.png",
+  "call_id": "exec-7eb6685b-7731-432e-b306-f36f4ca325a0"
+}

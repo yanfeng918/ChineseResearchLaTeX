@@ -1,0 +1,342 @@
+{
+  "diagram_type": "Scientific Technical Route",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "reference_image": "None; source is the verified proposal text and Figure_Palette.md",
+  "physical_spec_and_typography": {
+    "canvas_width": "155mm at final insertion width",
+    "canvas_height": "87.1875mm",
+    "instruction_precedence": "Task-specific 155mm and Chinese 8.5–10pt override the generic 89/183mm skill defaults. No global figure title is rendered.",
+    "font_family": "Noto Sans CJK SC, Source Han Sans SC; Arial for Latin characters",
+    "font_hierarchy": {
+      "title": "10pt semibold for short module headings",
+      "primary_label": "9.5pt regular",
+      "secondary_note": "8.5pt regular",
+      "tensor_shape": "not used; no invented dimensions"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid, 1.2mm arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "safe_margin_mm": 3,
+    "minimum_padding_mm": 2,
+    "corner_radius_mm": 1,
+    "coordinate_system": "normalized x,y,width,height on the 16:9 canvas; positions are layout guidance, not data coordinates"
+  },
+  "style_and_colors": {
+    "style_family": "classic_academic",
+    "palette": "Nature Blue",
+    "decision_branch": "existing Figure_Palette.md, scene decision",
+    "alternate": "Print-Safe Gray, whole-set switch only",
+    "active_chromatic_colors": [
+      "#1B3A5C",
+      "#2E6B9E"
+    ],
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary_reserved_not_used": "#5BA0D0",
+    "canvas": "#FFFFFF",
+    "fill": "#FFFFFF",
+    "text": "#333333",
+    "arrow": "#4D4D4D",
+    "anchor": "#4D4D4D",
+    "neutral_status": "#616161",
+    "separator": "#CCCCCC",
+    "semantic_binding": {
+      "input_data": "#2E6B9E straight rectangles and a small empty table anchor",
+      "core_method": "#1B3A5C small rounded rectangles and three short horizontal lines",
+      "diagnostic_feedback": "#616161 separate rectangles with endpoint brackets; feedback arrows dashed",
+      "output": "#2E6B9E straight rectangle and an inner bottom rule"
+    },
+    "status_encoding": "Pending input uses explicit Chinese wording and dashed outlines. No frozen or trainable network status is invented.",
+    "white_area_minimum": "85%"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY from exact_* fields nested in layout_and_content_blocks and connections. Preserve every Chinese character, punctuation mark and explicit line break.",
+    "All containers and panels have WHITE #FFFFFF fill. Colored borders only. Do not render metadata, block IDs, source references, caption_note or completeness text.",
+    "Use only #1B3A5C and #2E6B9E as chromatic colors; all text is #333333; anchors/arrows #4D4D4D; diagnostics #616161.",
+    "Final physical width is 155mm. Chinese labels must remain 8.5–10pt after insertion. Delete optional secondary text before reducing font size.",
+    "Each major block must have the specified small geometric anchor or numbered outline marker, composed of editable lines/rectangles/circles.",
+    "No decorative pictograms, weather illustrations, waveform plots, heatmap values, performance numbers, success ticks or sample-result curves.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, color-filled modules or raster textures.",
+    "Forward data flow uses solid arrows; label/score feedback uses dashed arrows. Draw no unintended connection between separated branches.",
+    "No invented dimensions, neural layers, trainable/frozen badges, tensors, station names, coordinates, cooperation logos or experimental outcomes.",
+    "Long formulas, parameters, limitations and F-XJ references belong in caption_note, never as unapproved on-figure text."
+  ],
+  "figure_id": "F03",
+  "manifest_figure_id": "fig03",
+  "figure_name_zh": "C1 可用气象信息与跨尺度增益路线",
+  "figure_type": "Technical Route",
+  "claim_status": "proposed_research_schematic; no experimental data",
+  "source_spans": [
+    "extraTex/2.1.研究内容.tex:7,26,28,30,32,70",
+    "docs/04_研究方案与技术路线.md:数据与时间边界",
+    "docs/Figure_Palette.md",
+    ".bensz-api/task-20260919-xj-pvcast/nsfc-illustrated-pipeline/science-boundaries.md"
+  ],
+  "palette_decision_file": "docs/Figure_Palette.md",
+  "layout_and_content_blocks": [
+    {
+      "id": "sources",
+      "role": "input_data",
+      "relative_position": [
+        0.025,
+        0.12,
+        0.205,
+        0.57
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "small hollow 2-by-3 table",
+      "exact_title_to_render_inside": "拟获取输入",
+      "exact_marker": "01",
+      "border_style": "dashed; explicit pending-data status",
+      "internal_content": {
+        "layout": "three equal-height short cards",
+        "cards": [
+          {
+            "exact_text_lines": [
+              "功率历史",
+              "太阳几何"
+            ]
+          },
+          {
+            "exact_text_lines": [
+              "地面气象",
+              "观测"
+            ]
+          },
+          {
+            "exact_text_lines": [
+              "NWP与卫星",
+              "按授权加入"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "time_gate",
+      "role": "core_method",
+      "relative_position": [
+        0.275,
+        0.215,
+        0.195,
+        0.25
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "two short vertical posts spanning a thin horizontal line",
+      "exact_title_to_render_inside": "时间门槛",
+      "exact_text_lines": [
+        "获取时间",
+        "不晚于发布"
+      ],
+      "exact_marker": "02"
+    },
+    {
+      "id": "waiting",
+      "role": "diagnostic_feedback",
+      "relative_position": [
+        0.28,
+        0.565,
+        0.185,
+        0.12
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three empty small rectangles; no connecting arrow to the causal window",
+      "exact_text_lines": [
+        "未到达数据",
+        "等待"
+      ]
+    },
+    {
+      "id": "causal_window",
+      "role": "core_method",
+      "relative_position": [
+        0.515,
+        0.17,
+        0.195,
+        0.34
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three horizontal bars terminating at the same vertical boundary",
+      "exact_title_to_render_inside": "因果窗口",
+      "exact_text_lines": [
+        "仅用历史输入"
+      ],
+      "exact_marker": "03",
+      "internal_content": {
+        "layout": "two equal short outline bars below the main text",
+        "branches": [
+          {
+            "exact_label": "慢变成分"
+          },
+          {
+            "exact_label": "快变成分"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ablation",
+      "role": "core_method",
+      "relative_position": [
+        0.755,
+        0.12,
+        0.22,
+        0.57
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "small three-row outline table without checkmarks or metric cells",
+      "exact_title_to_render_inside": "受控消融",
+      "exact_text_lines": [
+        "同容量／同预算"
+      ],
+      "exact_marker": "04",
+      "internal_content": {
+        "layout": "three vertically spaced condition labels with small equal squares",
+        "rows": [
+          {
+            "exact_label": "逐源增加"
+          },
+          {
+            "exact_label": "去除尺度"
+          },
+          {
+            "exact_label": "固定融合"
+          }
+        ]
+      }
+    },
+    {
+      "id": "selection",
+      "role": "output",
+      "relative_position": [
+        0.315,
+        0.785,
+        0.54,
+        0.12
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "short internal bottom rule",
+      "exact_text_lines": [
+        "保留变量／尺度／样本索引"
+      ],
+      "exact_marker": "05"
+    },
+    {
+      "id": "to_c2",
+      "role": "output",
+      "relative_position": [
+        0.9,
+        0.79,
+        0.075,
+        0.1
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "small right-facing bracket",
+      "exact_text_lines": [
+        "C2"
+      ]
+    },
+    {
+      "id": "selection_rule",
+      "role": "annotation",
+      "relative_position": [
+        0.3,
+        0.92,
+        0.675,
+        0.045
+      ],
+      "exact_text": "训练与历史验证选取；测试不参与选择"
+    },
+    {
+      "id": "status_note",
+      "role": "annotation",
+      "relative_position": [
+        0.025,
+        0.735,
+        0.23,
+        0.04
+      ],
+      "exact_text": "拟开展研究／结构示意"
+    }
+  ],
+  "connections": [
+    {
+      "from": "sources",
+      "to": "time_gate",
+      "route": "source right center to gate left center; short horizontal arrow",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "time_gate",
+      "to": "causal_window",
+      "route": "gate right edge to historical-window left edge; no future input",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "time_gate",
+      "to": "waiting",
+      "route": "short vertical downward arrow terminating at waiting box",
+      "style": "dashed",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "causal_window",
+      "to": "ablation",
+      "route": "two internal scale bars merge before one rightward arrow to controlled comparison",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "ablation",
+      "to": "selection",
+      "route": "down from ablation bottom then left into selection right edge; do not cross labels",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "selection",
+      "to": "to_c2",
+      "route": "short rightward arrow",
+      "style": "solid",
+      "color": "#4D4D4D"
+    }
+  ],
+  "caption_note": [
+    "图名：C1 可用气象信息与跨尺度增益路线。数据授权与时间核验后，仅使用发布时刻之前已获取的信息；历史窗口分解不使用未来测试值。",
+    "同容量、同训练预算比较逐源增加、去除尺度与固定融合，变量和尺度仅在训练与历史验证中选择；测试用于独立评价。该图仅为研究设计，不展示实测波形、性能或已完成成果。",
+    "NWP的起报、有效和实际获取时刻须分别保留；卫星考虑处理延迟。未来实况与ERA5仅用于明示的离线描述或理想输入对照，不接主预测通路。",
+    "F-XJ-01/02仍待新疆实测授权与业务NWP档案落实。无NWP可用历史观测开展短时研究，未获新疆实测不能声称完成地域验证。",
+    "相关与尺度增益是待检验的预测关系，不是已识别的物理因果机制；具体变量、采样和分解参数以真实资料确认。"
+  ],
+  "scientific_invariants": [
+    "No input acquired after publication enters the main predictor.",
+    "The causal window uses only historical observations.",
+    "Ablation cells describe experimental conditions, never results.",
+    "No test-based variable or scale selection.",
+    "Data availability remains prospective."
+  ],
+  "completeness": {
+    "已分析材料": "活动正文、技术路线manifest、已核验事实与科学边界、Figure_Palette.md",
+    "当前输出类型": "完整配图规范；研究设计示意，非实验结果",
+    "高置信信息": "时间可得性约束、历史窗口分解、同预算消融和固定输入输出",
+    "待确认信息": [
+      "F-XJ-01 新疆实测与授权",
+      "F-XJ-02 业务NWP档案"
+    ],
+    "建议补充材料": [
+      "数据字段与获取时间说明",
+      "业务NWP版本及许可",
+      "场站实测使用授权依据"
+    ]
+  },
+  "gap_ids": [
+    "F-XJ-01",
+    "F-XJ-02"
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "diagram_type": "Scientific Technical Route",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "reference_image": "None; source is the verified proposal text and Figure_Palette.md",
+  "physical_spec_and_typography": {
+    "canvas_width": "155mm at final insertion width",
+    "canvas_height": "87.1875mm",
+    "instruction_precedence": "Task-specific 155mm and Chinese 8.5–10pt override the generic 89/183mm skill defaults. No global figure title is rendered.",
+    "font_family": "Noto Sans CJK SC, Source Han Sans SC; Arial for Latin characters",
+    "font_hierarchy": {
+      "title": "10pt semibold for short module headings",
+      "primary_label": "9.5pt regular",
+      "secondary_note": "8.5pt regular",
+      "tensor_shape": "not used; no invented dimensions"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid, 1.2mm arrowhead",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "safe_margin_mm": 3,
+    "minimum_padding_mm": 2,
+    "corner_radius_mm": 1,
+    "coordinate_system": "normalized x,y,width,height on the 16:9 canvas; positions are layout guidance, not data coordinates"
+  },
+  "style_and_colors": {
+    "style_family": "classic_academic",
+    "palette": "Nature Blue",
+    "decision_branch": "existing Figure_Palette.md, scene decision",
+    "alternate": "Print-Safe Gray, whole-set switch only",
+    "active_chromatic_colors": [
+      "#1B3A5C",
+      "#2E6B9E"
+    ],
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary_reserved_not_used": "#5BA0D0",
+    "canvas": "#FFFFFF",
+    "fill": "#FFFFFF",
+    "text": "#333333",
+    "arrow": "#4D4D4D",
+    "anchor": "#4D4D4D",
+    "neutral_status": "#616161",
+    "separator": "#CCCCCC",
+    "semantic_binding": {
+      "input_data": "#2E6B9E straight rectangles and a small empty table anchor",
+      "core_method": "#1B3A5C small rounded rectangles and three short horizontal lines",
+      "diagnostic_feedback": "#616161 separate rectangles with endpoint brackets; feedback arrows dashed",
+      "output": "#2E6B9E straight rectangle and an inner bottom rule"
+    },
+    "status_encoding": "Pending input uses explicit Chinese wording and dashed outlines. No frozen or trainable network status is invented.",
+    "white_area_minimum": "85%"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY from exact_* fields nested in layout_and_content_blocks and connections. Preserve every Chinese character, punctuation mark and explicit line break.",
+    "All containers and panels have WHITE #FFFFFF fill. Colored borders only. Do not render metadata, block IDs, source references, caption_note or completeness text.",
+    "Use only #1B3A5C and #2E6B9E as chromatic colors; all text is #333333; anchors/arrows #4D4D4D; diagnostics #616161.",
+    "Final physical width is 155mm. Chinese labels must remain 8.5–10pt after insertion. Delete optional secondary text before reducing font size.",
+    "Each major block must have the specified small geometric anchor or numbered outline marker, composed of editable lines/rectangles/circles.",
+    "No decorative pictograms, weather illustrations, waveform plots, heatmap values, performance numbers, success ticks or sample-result curves.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, color-filled modules or raster textures.",
+    "Forward data flow uses solid arrows; label/score feedback uses dashed arrows. Draw no unintended connection between separated branches.",
+    "No invented dimensions, neural layers, trainable/frozen badges, tensors, station names, coordinates, cooperation logos or experimental outcomes.",
+    "Long formulas, parameters, limitations and F-XJ references belong in caption_note, never as unapproved on-figure text."
+  ],
+  "figure_id": "F04",
+  "manifest_figure_id": "fig04",
+  "figure_name_zh": "C2 分位数预测与延迟标签校准路线",
+  "figure_type": "Technical Route",
+  "claim_status": "proposed_research_schematic; no experimental data",
+  "source_spans": [
+    "extraTex/2.1.研究内容.tex:9,30,40-46,56,72",
+    "docs/04_研究方案与技术路线.md:数据与时间边界、主方法与统计检验",
+    "docs/Figure_Palette.md",
+    ".bensz-api/task-20260919-xj-pvcast/nsfc-illustrated-pipeline/science-boundaries.md"
+  ],
+  "palette_decision_file": "docs/Figure_Palette.md",
+  "layout_and_content_blocks": [
+    {
+      "id": "arrival_axis",
+      "role": "annotation",
+      "relative_position": [
+        0.12,
+        0.065,
+        0.74,
+        0.085
+      ],
+      "shape": "thin horizontal line with one central vertical publication tick; left segment solid, right segment dashed",
+      "visual_anchor": "empty rectangular tokens on the left and right, no sample values",
+      "internal_content": {
+        "left": {
+          "exact_label": "已到达"
+        },
+        "center": {
+          "exact_label": "发布时刻"
+        },
+        "right": {
+          "exact_text_lines": [
+            "未到达",
+            "等待"
+          ]
+        }
+      }
+    },
+    {
+      "id": "status_note",
+      "role": "annotation",
+      "relative_position": [
+        0.025,
+        0.012,
+        0.42,
+        0.035
+      ],
+      "exact_text": "拟开展研究／结构示意"
+    },
+    {
+      "id": "input",
+      "role": "input_data",
+      "relative_position": [
+        0.025,
+        0.22,
+        0.2,
+        0.165
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "small hollow 2-by-2 table",
+      "exact_text_lines": [
+        "固定输入",
+        "时间划分"
+      ]
+    },
+    {
+      "id": "model",
+      "role": "core_method",
+      "relative_position": [
+        0.285,
+        0.22,
+        0.185,
+        0.165
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three short horizontal stacked lines",
+      "exact_title_to_render_inside": "分位数模型",
+      "exact_marker": "01"
+    },
+    {
+      "id": "raw_grid",
+      "role": "output",
+      "relative_position": [
+        0.52,
+        0.22,
+        0.21,
+        0.165
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three unnumbered parallel short ticks above an inner bottom rule",
+      "exact_text_lines": [
+        "原始单调",
+        "分位数网格"
+      ]
+    },
+    {
+      "id": "to_c3",
+      "role": "output",
+      "relative_position": [
+        0.795,
+        0.2,
+        0.18,
+        0.195
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "two incoming ports and a short inner bottom rule",
+      "exact_title_to_render_inside": "送入 C3",
+      "exact_text_lines": [
+        "原始网格",
+        "完整误差"
+      ]
+    },
+    {
+      "id": "arrived_h",
+      "role": "diagnostic_feedback",
+      "relative_position": [
+        0.025,
+        0.51,
+        0.21,
+        0.165
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "one endpoint bracket next to two small empty tokens",
+      "exact_text_lines": [
+        "逐时距标签",
+        "已到达才更新"
+      ]
+    },
+    {
+      "id": "scores",
+      "role": "diagnostic_feedback",
+      "relative_position": [
+        0.29,
+        0.51,
+        0.18,
+        0.165
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "two short endpoint ticks; no values",
+      "exact_text_lines": [
+        "校准分数"
+      ]
+    },
+    {
+      "id": "intervals",
+      "role": "core_method",
+      "relative_position": [
+        0.52,
+        0.49,
+        0.21,
+        0.2
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "two endpoint brackets without data curves",
+      "exact_title_to_render_inside": "区间校准",
+      "exact_text_lines": [
+        "静态／滚动",
+        "80%／90%（暂定）"
+      ],
+      "exact_marker": "02"
+    },
+    {
+      "id": "diagnostics",
+      "role": "diagnostic_feedback",
+      "relative_position": [
+        0.795,
+        0.49,
+        0.18,
+        0.2
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three short unnumbered tally rows",
+      "exact_title_to_render_inside": "单独诊断",
+      "exact_text_lines": [
+        "覆盖偏差",
+        "宽度／评分"
+      ]
+    },
+    {
+      "id": "history",
+      "role": "input_data",
+      "relative_position": [
+        0.025,
+        0.815,
+        0.21,
+        0.14
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "three offset empty rectangles",
+      "exact_text_lines": [
+        "历史留出预测"
+      ]
+    },
+    {
+      "id": "all_labels_gate",
+      "role": "diagnostic_feedback",
+      "relative_position": [
+        0.29,
+        0.805,
+        0.24,
+        0.16
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "a complete row of empty rectangles entering one short vertical gate",
+      "exact_text_lines": [
+        "全轨迹标签",
+        "到齐才入库"
+      ],
+      "exact_marker": "03"
+    },
+    {
+      "id": "complete_errors",
+      "role": "input_data",
+      "relative_position": [
+        0.58,
+        0.815,
+        0.15,
+        0.14
+      ],
+      "shape": "white-filled rectangle; slightly rounded only for core_method",
+      "visual_anchor": "small hollow vertical table",
+      "exact_text_lines": [
+        "完整误差",
+        "向量"
+      ]
+    },
+    {
+      "id": "branch_note",
+      "role": "annotation",
+      "relative_position": [
+        0.36,
+        0.73,
+        0.37,
+        0.04
+      ],
+      "exact_text": "校准区间仅作诊断"
+    }
+  ],
+  "connections": [
+    {
+      "from": "input",
+      "to": "model",
+      "route": "straight top-row rightward arrow",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "model",
+      "to": "raw_grid",
+      "route": "straight top-row rightward arrow",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "raw_grid",
+      "to": "to_c3",
+      "route": "straight arrow entering the upper-left C3 port; this arrow bypasses interval calibration",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "raw_grid",
+      "to": "intervals",
+      "route": "short vertical arrow from original grid bottom to interval-calibration top; raw intervals only",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "arrived_h",
+      "to": "scores",
+      "route": "dashed rightward score-update arrow",
+      "style": "dashed",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "history",
+      "to": "scores",
+      "route": "history right edge to x=0.26, turn up in empty inter-column gutter, then enter scores lower-left edge",
+      "style": "dashed",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "scores",
+      "to": "intervals",
+      "route": "dashed rightward score-feedback arrow",
+      "style": "dashed",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "intervals",
+      "to": "diagnostics",
+      "route": "solid rightward arrow; this branch ends at diagnostics",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "history",
+      "to": "all_labels_gate",
+      "route": "solid rightward arrow gated by availability of all trajectory labels",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "all_labels_gate",
+      "to": "complete_errors",
+      "route": "solid rightward arrow along bottom row",
+      "style": "solid",
+      "color": "#4D4D4D"
+    },
+    {
+      "from": "complete_errors",
+      "to": "to_c3",
+      "route": "leave error cache to x=0.76 gutter, turn upward without crossing diagnostics, enter lower-left C3 port",
+      "style": "solid",
+      "color": "#4D4D4D"
+    }
+  ],
+  "prohibited_connections": [
+    "diagnostics -> to_c3",
+    "intervals -> to_c3",
+    "unarrived labels -> scores",
+    "partial trajectory labels -> complete_errors",
+    "arrival_axis as a numeric data series"
+  ],
+  "caption_note": [
+    "图名：C2 分位数预测与延迟标签校准路线。分位模型输出原始单调网格，网格直接供C3使用；80%和90%两级区间仅作单独校准与可靠性诊断，覆盖水平为暂定设计。",
+    "对发布时刻t及预测时距h，只有i+h不晚于t且真实标签实际到达的历史样本，才能更新该时距校准分数；未到达或迟报标签等待，不提前输入。",
+    "完整误差向量来自历史滚动留出预测，必须等整条轨迹的真实标签均到齐后才进入C3历史秩模板；不采用模型训练拟合残差，不把逐h标签到达等同全轨迹到齐。",
+    "C3接受原始分位网格与完整历史外推误差。校准区间不是已校准完整分布，不用于拼接联合轨迹，也不据其覆盖改善推断事件概率必然改善。",
+    "静态与滚动校准均在相同预测器下比较，以经验覆盖偏差、宽度及区间评分评价；不承诺任意天气漂移下的有限样本条件覆盖。",
+    "图中没有实测数据或命中率。F-XJ-01/02尚待数据与档案落实；本图不依赖先导实验，具体分数公式和时间索引见正文。"
+  ],
+  "scientific_invariants": [
+    "The original monotone quantile grid directly reaches C3.",
+    "Calibrated intervals terminate at their own diagnostic output; no arrow reaches C3.",
+    "Per-horizon calibration and complete-trajectory templates use different label-arrival gates.",
+    "Historical predictions are out-of-sample rolling forecasts.",
+    "80%/90% are tentative nominal interval levels, never observed coverage rates.",
+    "No arbitrary-drift coverage guarantee."
+  ],
+  "completeness": {
+    "已分析材料": "活动正文、技术路线manifest、已核验事实与科学边界、Figure_Palette.md",
+    "当前输出类型": "完整配图规范；研究设计示意，非实验结果",
+    "高置信信息": "原始网格与区间分支分离、逐h更新、完整历史标签到齐门槛",
+    "待确认信息": [
+      "F-XJ-01 实测与授权",
+      "F-XJ-02 气象预报档案",
+      "区间层级为暂定设计"
+    ],
+    "建议补充材料": [
+      "各变量及真实标签的到达时间字段",
+      "数据许可与有效时段",
+      "未来用于验证的校准窗口与评价规则"
+    ]
+  },
+  "gap_ids": [
+    "F-XJ-01",
+    "F-XJ-02"
+  ]
+}

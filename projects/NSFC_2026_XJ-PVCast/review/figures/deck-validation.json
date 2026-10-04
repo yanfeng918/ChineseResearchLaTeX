@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "checks": {
+    "editable_objects": true,
+    "text_fidelity": true,
+    "page_mapping": true,
+    "editppt_validation": true
+  },
+  "notes": "最终印刷字号P1修复后，使用editppt-print重新prepare/三名真实代理dispatch/record/finalize。逐页实际导出查看；所有字面字符经排除空白后的计数对比保持不变，允许换行重排。所有原生文字至少25pt，实际正文缩放后至少8.5pt；公式资产单独查看。没有整页截图。",
+  "run": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print",
+  "pages": [
+    {
+      "figure": "F01",
+      "page": 1,
+      "texts": 10,
+      "shapes": 38,
+      "images": 0,
+      "validation": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/pages/page_001/validation.json"
+    },
+    {
+      "figure": "F02",
+      "page": 2,
+      "texts": 16,
+      "shapes": 72,
+      "images": 0,
+      "validation": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/pages/page_002/validation.json"
+    },
+    {
+      "figure": "F03",
+      "page": 3,
+      "texts": 31,
+      "shapes": 251,
+      "images": 0,
+      "validation": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/pages/page_003/validation.json"
+    },
+    {
+      "figure": "F04",
+      "page": 4,
+      "texts": 54,
+      "shapes": 314,
+      "images": 0,
+      "validation": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/pages/page_004/validation.json"
+    },
+    {
+      "figure": "F05",
+      "page": 5,
+      "texts": 27,
+      "shapes": 70,
+      "images": 6,
+      "validation": ".bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/pages/page_005/validation.json"
+    }
+  ],
+  "final_validation": {
+    "pptx": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_XJ-PVCast/.bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/final/figures-input-canvas32_edited.pptx",
+    "deck_manifest": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_XJ-PVCast/.bensz-api/task-20260919T1500-illustrated/nsfc-illustrated-pipeline/editppt-print/deck_manifest.json",
+    "expected_pages": 5,
+    "slides": 5,
+    "page_manifests_missing": [],
+    "page_validation_missing": [],
+    "failed_page_validations": [],
+    "page_contract_violations": [],
+    "notes_expected": 0,
+    "notes_found": 0,
+    "notes_hash_mismatches": [],
+    "missing_parts": [],
+    "warnings": [],
+    "passed": true
+  }
+}

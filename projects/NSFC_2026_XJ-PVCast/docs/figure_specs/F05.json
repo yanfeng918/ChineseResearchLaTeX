@@ -1,0 +1,318 @@
+{
+  "figure_id": "F05",
+  "name_zh": "C3 固定边际的依赖对照与爬坡评价路线",
+  "diagram_type": "Scientific Technical Route with Matched-Marginal Dependency Comparison",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "3:2",
+  "physical_spec_and_typography": {
+    "canvas_width": "155mm at final proposal insertion width",
+    "canvas_height": "103.3mm",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC; Arial for Latin symbols",
+    "font_hierarchy": {
+      "title": "11pt semibold",
+      "primary_label": "10pt",
+      "secondary_note": "9pt",
+      "tensor_shape": "not applicable; use only the two locked future-time symbols"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid dark gray",
+      "feedback_arrow": "not used"
+    },
+    "minimum_text_size": "8.5pt at 155mm final width",
+    "safety_margin": "3mm; keep every glyph within canvas",
+    "pairing_line_width": "0.8–1.0pt, same for every group",
+    "white_space_target": "white canvas and module fill; no colored panels"
+  },
+  "style_and_colors": {
+    "palette_name": "Nature Blue",
+    "decision_branch": "scene: multi-module classic academic flowchart",
+    "active_chromatic_colors": [
+      "#1B3A5C",
+      "#2E6B9E"
+    ],
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0, reserved and not rendered",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "fill": "#FFFFFF",
+    "arrows": "#4D4D4D",
+    "visual_anchors": "#4D4D4D",
+    "neutral_diagnostic": "#616161",
+    "semantic_binding": {
+      "data_input": "#2E6B9E",
+      "core_method": "#1B3A5C",
+      "supervision_evaluation": "#616161",
+      "prediction_output": "#2E6B9E",
+      "fixed_status": "#616161"
+    },
+    "geometry_only": true
+  },
+  "layout_and_content_blocks": [
+    {
+      "id": "shared_samples",
+      "relative_position": "upper left: x=4%, y=4%, w=42%, h=15%",
+      "shape": "white-fill rectangular input card; 1.5pt #2E6B9E border",
+      "exact_title_to_render_inside": "原始分位网格",
+      "exact_text": "共同逐时距样本",
+      "visual_anchor": "small empty two-column grid, dark-gray native lines, no cell text"
+    },
+    {
+      "id": "history",
+      "relative_position": "upper right: x=53%, y=4%, w=43%, h=26%",
+      "shape": "white-fill rectangular input card; 1.5pt #2E6B9E border",
+      "exact_title_to_render_inside": "可用历史信息",
+      "visual_anchor": "two small offset empty rectangles, dark-gray outlines",
+      "internal_content": {
+        "layout": "two equal-width columns separated by a nonessential thin gray divider; no nested boxes",
+        "errors": {
+          "exact_text": "历史外推误差\n全轨迹标签到齐",
+          "role": "complete historical rolling-holdout error vectors; supplies both rank-based panels"
+        },
+        "weather": {
+          "exact_text": "发布时已知天气\n当前与历史匹配",
+          "role": "current known weather matched to weather known at each historical issuance; supplies weather-conditioned panel only"
+        }
+      }
+    },
+    {
+      "id": "invariance",
+      "relative_position": "below shared input: x=4%, y=22%, w=42%, h=9%",
+      "shape": "unboxed two-line note",
+      "exact_text": "各时距样本值相同\n仅改变跨时距配对"
+    },
+    {
+      "id": "independent",
+      "relative_position": "middle comparison row: x=4%, y=38%, w=28%, h=24%",
+      "shape": "identical white-fill small-radius rectangle; 1.5pt #1B3A5C border; equal visual emphasis across all three panels",
+      "exact_title_to_render_inside": "独立排序",
+      "internal_content": {
+        "layout": "two future-time columns with identical open-circle sample positions across all three panels; three thin straight pairing segments between columns",
+        "left_column": {
+          "exact_label": "t+h"
+        },
+        "right_column": {
+          "exact_label": "t+h+δ"
+        },
+        "visual_anchor": {
+          "kind": "abstract column-sample and pairing diagram made entirely from native lines and open circles",
+          "same_sample_positions_in_every_panel": true,
+          "left_and_right_column_sample_heights": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "left_to_right_row_index": [
+            2,
+            0,
+            1
+          ],
+          "visible_values": false,
+          "instruction": "Numbers in this geometry description are coordinates/indexes, never rendered labels. Marker count is schematic, not the study sample size. No trajectory shape, width, darkness or smoothness implies better performance."
+        }
+      }
+    },
+    {
+      "id": "overall",
+      "relative_position": "middle comparison row: x=36%, y=38%, w=28%, h=24%",
+      "shape": "identical white-fill small-radius rectangle; 1.5pt #1B3A5C border; equal visual emphasis across all three panels",
+      "exact_title_to_render_inside": "总体历史秩",
+      "internal_content": {
+        "layout": "two future-time columns with identical open-circle sample positions across all three panels; three thin straight pairing segments between columns",
+        "left_column": {
+          "exact_label": "t+h"
+        },
+        "right_column": {
+          "exact_label": "t+h+δ"
+        },
+        "visual_anchor": {
+          "kind": "abstract column-sample and pairing diagram made entirely from native lines and open circles",
+          "same_sample_positions_in_every_panel": true,
+          "left_and_right_column_sample_heights": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "left_to_right_row_index": [
+            1,
+            2,
+            0
+          ],
+          "visible_values": false,
+          "instruction": "Numbers in this geometry description are coordinates/indexes, never rendered labels. Marker count is schematic, not the study sample size. No trajectory shape, width, darkness or smoothness implies better performance."
+        }
+      }
+    },
+    {
+      "id": "weather",
+      "relative_position": "middle comparison row: x=68%, y=38%, w=28%, h=24%",
+      "shape": "identical white-fill small-radius rectangle; 1.5pt #1B3A5C border; equal visual emphasis across all three panels",
+      "exact_title_to_render_inside": "天气条件历史秩",
+      "internal_content": {
+        "layout": "two future-time columns with identical open-circle sample positions across all three panels; three thin straight pairing segments between columns",
+        "left_column": {
+          "exact_label": "t+h"
+        },
+        "right_column": {
+          "exact_label": "t+h+δ"
+        },
+        "visual_anchor": {
+          "kind": "abstract column-sample and pairing diagram made entirely from native lines and open circles",
+          "same_sample_positions_in_every_panel": true,
+          "left_and_right_column_sample_heights": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "left_to_right_row_index": [
+            2,
+            1,
+            0
+          ],
+          "visible_values": false,
+          "instruction": "Numbers in this geometry description are coordinates/indexes, never rendered labels. Marker count is schematic, not the study sample size. No trajectory shape, width, darkness or smoothness implies better performance."
+        }
+      }
+    },
+    {
+      "id": "probabilities",
+      "relative_position": "below comparison panels: x=25%, y=66%, w=50%, h=10%",
+      "shape": "white-fill output rectangle; 1.5pt #2E6B9E border with a short inner bottom rule",
+      "exact_title_to_render_inside": "各组净变化概率",
+      "visual_anchor": "three parallel small endpoint brackets; channels remain separate rather than pooled"
+    },
+    {
+      "id": "comparison",
+      "relative_position": "lower left: x=4%, y=79%, w=58%, h=14%",
+      "shape": "white-fill diagnostic rectangle; 1.5pt #616161 border",
+      "exact_title_to_render_inside": "Brier差值比较",
+      "exact_text": "主 D0：总体历史秩−独立排序\n次 D1：天气条件历史秩−总体历史秩",
+      "visual_anchor": "two short parallel horizontal strokes, no numerical scale or apparent result"
+    },
+    {
+      "id": "alarm",
+      "relative_position": "lower right: x=67%, y=79%, w=29%, h=14%",
+      "shape": "white-fill output rectangle; 1.5pt #2E6B9E border with a short inner bottom rule",
+      "exact_title_to_render_inside": "离线告警",
+      "exact_text": "验证集固定阈值\n测试实际告警",
+      "visual_anchor": "small empty two-row output table, no score values"
+    },
+    {
+      "id": "status",
+      "relative_position": "footer: x=4%, text baseline at 99.5mm on the 103.3mm-high canvas; leave at least 3mm below every glyph",
+      "shape": "unboxed dark text, 8.5–9pt; separate from both lower boxes",
+      "exact_text": "拟开展研究｜结构示意，非实测"
+    }
+  ],
+  "connections": [
+    {
+      "from": "shared_samples",
+      "to": [
+        "independent",
+        "overall",
+        "weather"
+      ],
+      "route": "one shared distribution bracket or bus above the three comparison panels; three identical short input arrows; never create three distinct samplers"
+    },
+    {
+      "from": "history.errors",
+      "to": [
+        "overall",
+        "weather"
+      ],
+      "route": "separate orthogonal thin routes to secondary panel input ports; they supply historical rank pairing only, not added residual values; route through gutters without accidental junctions"
+    },
+    {
+      "from": "history.weather",
+      "to": "weather",
+      "route": "short orthogonal route to the weather-condition input port; no weather-selection connection to the overall panel"
+    },
+    {
+      "from": [
+        "independent",
+        "overall",
+        "weather"
+      ],
+      "to": "probabilities",
+      "route": "three separate downward arrows into the three output channels; do not average or merge the probability values"
+    },
+    {
+      "from": "probabilities",
+      "to": "comparison",
+      "route": "lower-left branch, scoring unthresholded event probabilities"
+    },
+    {
+      "from": "probabilities",
+      "to": "alarm",
+      "route": "lower-right parallel branch, probabilities pass through the validation-fixed alert rule inside the alarm box; no arrow from comparison to alarm"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Generate exactly one standalone figure. Render visible words only from exact_* fields in layout_and_content_blocks. Preserve all Chinese labels, D0/D1, minus signs, future-time symbols and punctuation exactly.",
+    "All canvas and box fills are WHITE #FFFFFF. Activate only #1B3A5C and #2E6B9E chromatic borders, with neutral gray. Text is #333333. Geometric anchors and arrows are #4D4D4D.",
+    "All three comparison panels have identical size, border color and weight, the same sample marker locations per column, and different pairings only. Do not imply any panel performs best.",
+    "Use simple native editable tables, open circles, straight pairing lines, orthogonal flow connectors and brackets. All conceptual sample markers are nonnumeric and labeled collectively as non-measured.",
+    "All forward connectors are solid arrows. Pairing segments inside panels have no arrowheads and are not causal or statistical effect estimates.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering, NO complex semantic icons, NO gradients, NO shadows, NO maps, NO photographs.",
+    "NO measured scores, percentages, numerical sample values, confidence intervals, significance stars, achieved performance, outcome badges or fabricated datasets.",
+    "Do not draw calibrated C2 intervals as the source of the shared samples; the source is the original monotonic quantile grid.",
+    "Complete historical out-of-sample error vectors provide ranks only; all horizon labels must have arrived. Weather matching uses information known at each historical issuance and at the current issuance.",
+    "D0 is the primary overall-minus-independent Brier comparison; D1 is the prespecified secondary weather-minus-overall Brier comparison. Never swap them.",
+    "Probability scoring and offline alerting are parallel branches. Do not threshold probabilities before Brier scoring or choose thresholds using test outcomes.",
+    "Do not add text not present in exact_* fields; captions, grounding, metadata, index arrays, coordinates and formulas remain off-figure.",
+    "Preserve readability at 155mm final width, preferably 10pt main labels and 9pt notes. Simplify geometry or spacing before shrinking text."
+  ],
+  "caption_note": [
+    "Each comparison panel depicts two future endpoints and three abstract sample markers per endpoint. This illustrative marker count is not M; the actual trajectory count remains a separate tentative design.",
+    "All horizons share identical marginal sample multisets across groups; reordering changes only within-row temporal pairings. No residual addition, separate marginal resampling or group-specific clipping is permitted.",
+    "Historical errors come from rolling holdout forecasts after complete trajectory truth has arrived. Weather conditioning matches current known weather to the conditions known at the corresponding historical issuance; sparse groups revert to the overall template.",
+    "The study concerns endpoint net change, not maximum within-window slope. Tentative primary event: future 60-to-90-minute net decline greater than 20% of capacity, with a 30-minute endpoint interval. Event magnitude and alert probability threshold are distinct quantities.",
+    "D0 = Brier(overall historical ranks) minus Brier(independent ordering). D1 = Brier(weather-conditioned historical ranks) minus Brier(overall historical ranks). D0 is primary and D1 prespecified secondary.",
+    "Paired uncertainty intervals fully below zero support the corresponding improvement; intervals crossing zero mean insufficient evidence. No actual interval or result is plotted. Primary/secondary comparisons are never exchanged according to test performance.",
+    "Use all valid unthresholded event probabilities for Brier and reliability diagnostics. Alert thresholds are fixed using validation data; test evaluation reports actual false alarms, precision, recall and lead time with prespecified event aggregation.",
+    "Direct increment/classification baselines, sample-count sensitivities and failure boundaries remain in the adjacent methods text; they are not additional matched-marginal panels.",
+    "This is a proposed research schematic. Xinjiang data authorization and collaboration remain unresolved; no empirical or deployed result is claimed."
+  ],
+  "caption_zh": "C3技术路线：固定逐时距样本边际，比较独立排序、总体历史秩与天气条件历史秩。D0为总体历史秩减独立排序的Brier主比较，D1为天气条件历史秩减总体历史秩的预设次比较。样本列及配对线仅为结构示意，非实测结果；图示点数不代表实际轨迹数。历史模板只使用完整到齐的滚动留出误差，并按发布时已知天气匹配。未经阈值化的概率用于评分，告警阈值在验证阶段确定。",
+  "source_tex": "extraTex/2.1.研究内容.tex",
+  "source_line": 74,
+  "anchor": "\\textbf{对应研究内容三的路线。}输入内容二的边际预测与可用历史误差轨迹，构造同边际、不同时间依赖的轨迹并计算爬坡概率，与独立排序和直接增量方法对照。输出事件概率、可靠性分析与按事件聚合的告警记录，以概率评分和锁定告警规则下的实际效果验证，最后形成可回放的离线原型和适用条件说明。",
+  "source_excerpt": "\\textbf{对应研究内容三的路线。}输入内容二的边际预测与可用历史误差轨迹，构造同边际、不同时间依赖的轨迹并计算爬坡概率，与独立排序和直接增量方法对照。输出事件概率、可靠性分析与按事件聚合的告警记录，以概率评分和锁定告警规则下的实际效果验证，最后形成可回放的离线原型和适用条件说明。",
+  "source_grounding": [
+    {
+      "file": "extraTex/2.1.研究内容.tex",
+      "lines": [
+        54,
+        56,
+        61,
+        63,
+        65,
+        72,
+        74
+      ],
+      "supports": "event definition, fixed marginals, complete error/weather timing, Brier contrasts and validation-fixed alert rule"
+    },
+    {
+      "file": "extraTex/2.2.特色与创新.tex",
+      "line": 10,
+      "supports": "empirical dependency boundaries and no claimed algorithm first or achieved benefit"
+    }
+  ],
+  "gap_ids": [
+    "F-XJ-01",
+    "F-XJ-04",
+    "F-XJ-07"
+  ],
+  "palette_source": "docs/Figure_Palette.md",
+  "science_boundaries_source": ".bensz-api/task-20260919-xj-pvcast/nsfc-illustrated-pipeline/science-boundaries.md",
+  "completeness": {
+    "output_type": "逐图JSON与英文prompt；未生成图像",
+    "high_confidence": "三同边际对照、历史信息限制、D0/D1及概率/告警分支由当前正文支持",
+    "pending": "实测资料及授权、业务需求与先导结果未落实，图中均不假定已完成",
+    "no_reference_image": true,
+    "layout_inference": "几何坐标与无数值配对图仅为表达选择",
+    "figure_generation_status": "not_started"
+  }
+}

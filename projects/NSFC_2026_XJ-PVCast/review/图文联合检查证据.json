@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": {
+    "page_limit": true,
+    "legibility": true,
+    "no_crop": true,
+    "references": true,
+    "source_consistency": true,
+    "qc": true
+  },
+  "input_sha256": "14875d9efac2fc05411afb50f28807f140ffb69b8beb9d81ce0668237544a72d",
+  "pdf_sha256": "8b525ef3cacece0a9c093adc25d64baeb5e407f6c9173f363e1d9024afec1b26",
+  "figure_pages": {
+    "F01": [
+      2
+    ],
+    "F02": [
+      12
+    ],
+    "F03": [
+      13
+    ],
+    "F04": [
+      14
+    ],
+    "F05": [
+      14
+    ]
+  },
+  "figure_font_sizes": {
+    "F01": {
+      "embedded_scale": 0.35272,
+      "ppt_pdf_min_font_pt": 25.002,
+      "final_min_font_pt": 8.819,
+      "final_max_font_pt": 11.288,
+      "text_spans_checked": 10,
+      "minimum_required_pt": 8.5
+    },
+    "F02": {
+      "embedded_scale": 0.35272,
+      "ppt_pdf_min_font_pt": 25.002,
+      "final_min_font_pt": 8.819,
+      "final_max_font_pt": 11.288,
+      "text_spans_checked": 16,
+      "minimum_required_pt": 8.5
+    },
+    "F03": {
+      "embedded_scale": 0.35272,
+      "ppt_pdf_min_font_pt": 25.002,
+      "final_min_font_pt": 8.819,
+      "final_max_font_pt": 10.228,
+      "text_spans_checked": 31,
+      "minimum_required_pt": 8.5
+    },
+    "F04": {
+      "embedded_scale": 0.35272,
+      "ppt_pdf_min_font_pt": 25.002,
+      "final_min_font_pt": 8.819,
+      "final_max_font_pt": 11.288,
+      "text_spans_checked": 56,
+      "minimum_required_pt": 8.5
+    },
+    "F05": {
+      "embedded_scale": 0.35272,
+      "ppt_pdf_min_font_pt": 25.002,
+      "final_min_font_pt": 8.819,
+      "final_max_font_pt": 11.288,
+      "text_spans_checked": 27,
+      "minimum_required_pt": 8.5
+    }
+  },
+  "notes": "实际检查全部最终插图页及23页总览；印刷字号P1经对象级PPT重排修复，最小字号均>=8.5pt。保留7类硬事实缺口、11处正文暂定，图件依赖F-XJ-01/02；未虚构数据。"
+}
