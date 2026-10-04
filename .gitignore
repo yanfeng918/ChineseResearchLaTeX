@@ -209,6 +209,11 @@ test.md
 skills/*/plans/
 skills/*/tests/
 /tests/*
+!/tests/nsfc-illustrated-pipeline/
+/tests/nsfc-illustrated-pipeline/*
+!/tests/nsfc-illustrated-pipeline/test_pipeline.py
+!/tests/nsfc-illustrated-pipeline/smoke_integration.py
+!/tests/nsfc-illustrated-pipeline/README.md
 !/tests/bensz-thesis/
 !/tests/bensz-thesis/**
 !/tests/project-skills/
@@ -222,3 +227,54 @@ skills/*/tests/
 .parallel_vibe/
 .compact-bensz-skills/
 .draw-plot
+
+# 地球系统数值模拟开放基金模板验收：保留脚本与报告，隔离光栅图和填写夹具。
+!/tests/diqiushuzhi-template/
+/tests/diqiushuzhi-template/*
+!/tests/diqiushuzhi-template/REPORT.md
+!/tests/diqiushuzhi-template/regression-plan.json
+!/tests/diqiushuzhi-template/editability-report.json
+!/tests/diqiushuzhi-template/visual-metrics.json
+!/tests/diqiushuzhi-template/test_vscode_profile.py
+!/tests/diqiushuzhi-template/verify_editability.py
+
+# CIESM 最终模板的验收脚本与结果
+!/tests/ciesm-final-template/
+/tests/ciesm-final-template/*
+!/tests/ciesm-final-template/REPORT.md
+!/tests/ciesm-final-template/verify_editability.py
+!/tests/ciesm-final-template/verification.json
+
+# CCNU 最终模板验收：保留脚本和结果，忽略填写副本与光栅图。
+!/tests/ccnu-eduagenttrust-template/
+/tests/ccnu-eduagenttrust-template/*
+!/tests/ccnu-eduagenttrust-template/REPORT.md
+!/tests/ccnu-eduagenttrust-template/verify_delivery.py
+!/tests/ccnu-eduagenttrust-template/verification.json
+!/tests/ccnu-eduagenttrust-template/package-regression-plan.json
+!/tests/ccnu-eduagenttrust-template/regression-scope.json
+!/tests/ccnu-eduagenttrust-template/regression-results.json
+!/tests/ccnu-eduagenttrust-template/compare-summary.json
+
+# 测绘实验室模板验收：仅保留脚本、计划、报告与轻量指标。
+!/tests/mapping-template/
+/tests/mapping-template/*
+!/tests/mapping-template/REPORT.md
+!/tests/mapping-template/regression-plan.json
+!/tests/mapping-template/verification-results.json
+!/tests/mapping-template/visual-metrics.json
+!/tests/mapping-template/verify_template.py
+!/tests/mapping-template/generate_artwork.py
+
+# CIESM 完整申请书验收；保留脚本与小型报告，隔离快照、日志和栅格图。
+!/tests/ciesm-application-20260910/
+/tests/ciesm-application-20260910/*
+!/tests/ciesm-application-20260910/*.py
+!/tests/ciesm-application-20260910/*.json
+!/tests/ciesm-application-20260910/REPORT.md
+!/tests/ciesm-application-20260910/.gitignore
+!/tests/ciesm-application-20260910/bibliography-budget/
+/tests/ciesm-application-20260910/bibliography-budget/*
+!/tests/ciesm-application-20260910/bibliography-budget/*.py
+!/tests/ciesm-application-20260910/bibliography-budget/*.json
+!/tests/ciesm-application-20260910/bibliography-budget/REPORT.md
