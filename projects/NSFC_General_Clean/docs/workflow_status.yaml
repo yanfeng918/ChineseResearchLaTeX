@@ -5,8 +5,8 @@
 schema_version: 2
 
 project:
-  type:                              # 如 NSFC_General / NSFC_Young / NSFC_Local，或自定义
-  grant_type:                        # 如 面上项目 / 青年科学基金 / 地区科学基金 / 实验室开放课题
+  type: NSFC_General                               # 如 NSFC_General / NSFC_Young / NSFC_Local，或自定义
+  grant_type: 面上项目                        # 如 面上项目 / 青年科学基金 / 地区科学基金 / 实验室开放课题
   layout: three-part                 # 本模板为 three-part；实际以 main.tex 解析结果为准
   length_budget:                     # 如 "全文 ≤30 页"；按实际申报模板要求填
   proposal_path: "."

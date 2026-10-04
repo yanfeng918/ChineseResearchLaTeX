@@ -1,6 +1,6 @@
 # nsfc-full-pipeline 第二版方案：写完正文后自动绘图并插入
 
-本方案依据当前仓库技能、状态脚本及用户的 [绘图提示词.md](../../绘图提示词.md#L1) 制定。交付状态：**方案已形成，执行逻辑尚未修改**。沿用 `nsfc-full-pipeline` 技能名称；“第二版”指这次流程设计，不代表当前技能已发布为 v2.0.0。当前配置版本为 v0.4.0，现有断点 schema 为 2。
+本方案依据仓库技能、状态脚本及用户的 [绘图提示词.md](../../绘图提示词.md#L1) 制定。根据用户后续要求，已另建独立技能 [nsfc-illustrated-pipeline](../../skills/nsfc-illustrated-pipeline/SKILL.md)，原 `nsfc-full-pipeline` 保留。新技能版本 v0.1.0，使用独立 schema 3 断点，只读导入原版文字进度；实际接口以新技能及其脚本为准。以下保留设计依据与验收目标，真实生图和页级 PPT 重建须在具体项目运行时验收。
 
 **一、目前为什么会停在文字稿**
 
@@ -109,7 +109,7 @@ PDF 必须从通过检查的 PPT 导出。按固定的“图 ID ↔ 幻灯片页
 
 **七、断点与旧项目迁移**
 
-断点仍使用 `docs/workflow_status.yaml`，计划升级为 schema 3。保留旧 00–14 阶段及历史记录，新增 15–22 和逐图记录；迁移先备份，幂等写回。不要另造一个与原断点互不相认的第二套主流程。
+为满足新旧技能独立共存的最新要求，新技能使用 `docs/illustrated_workflow_status.yaml`（schema 3），首次只读导入原 `docs/workflow_status.yaml` 中的有效阶段；保留旧 00–14 的历史信息，新增 15–22 和逐图记录。原版断点不被覆盖，之后由新技能独立管理图文任务。
 
 旧项目文字阶段完成后，迁移和对账通过即进入 15。已有 Figure Plan、PNG、PPT 或 PDF 时，先验证其来源、内容和格式，合格产物可复用；文件存在不代表对应新阶段已完成。有 PNG/PDF、缺少对象级 PPT 的项目，不能直接把 18 标记为完成。
 
@@ -163,12 +163,12 @@ PDF 必须从通过检查的 PPT 导出。按固定的“图 ID ↔ 幻灯片页
 
 **九、实施范围与顺序**
 
-1. **先落实自动执行契约。** 修改 `skills/nsfc-full-pipeline/SKILL.md`、`config.yaml`，移除配图排除项，加入自动衔接、各阶段产物和结束条件；新增 `references/stages-15-22.md`，同步原有阶段及断点文档。保持主 SKILL 不超过 500 行。
+1. **先落实自动执行契约。** 在 `skills/nsfc-illustrated-pipeline/` 创建独立 `SKILL.md` 和 `config.yaml`，声明自动衔接、各阶段产物和结束条件；通过 `references/` 复用原版科学写作规则并提供图文流程细则。保持主 SKILL 不超过 500 行，原版保留配图不覆盖的行为。
 2. **再扩展状态与产物验证。** 修改 `pipeline_state.py` 的迁移、阶段顺序、输入/输出声明、完成验证、对账及 readiness；添加最小图件管理辅助脚本，承担路径、PPT/PDF 结构检查、逐页映射、受管插入及指纹管理。科学语义、配图构思和视觉判断仍由 AI 完成，不再开发另一套绘图平台。
 3. **接入现有技能并完成样板验证。** 在 `skills/external-dependencies.yaml` 登记 Figure Planner、Color Expert、Prompt 和 image-to-editable-ppt 的真实依赖，按当前宿主发现能力加载；通过宿主加载 `$imagegen` 并逐个调用内置绘图工具，不复制或修改系统技能源码。用隔离项目完整验证五张核心图的生成、重建、导出、插入和最终构建。
 4. **同步用户入口和交付说明。** 更新技能版本与 CHANGELOG，使用 write-skill-readme 维护技能 README；同步根 README、`skills/README.md`、根 CHANGELOG 和 `NSFC基金项目写作操作步骤.md` 的相关说明，清理“配图须单独调用”等过期口径。项目自有技能只修改 `skills/`；通过 `sync_project_skills.py sync` 和 `check` 更新、核验受管入口，不直接修改用户级技能副本。
 
-实现时需要特别说明：用户这次引用了全局技能路径。第二版应通过项目入口或明确读取仓库 `skills/nsfc-full-pipeline/SKILL.md` 使用，避免继续加载全局旧副本而再次跳过绘图。全局旧副本的归档另遵循仓库既有规则，不作为本次方案或后续正常执行的默认动作。
+实现时需要特别说明：第二版通过项目入口或明确读取仓库 `skills/nsfc-illustrated-pipeline/SKILL.md` 使用，避免继续加载原版而跳过绘图。全局旧副本的归档另遵循仓库既有规则，不作为本次工作的默认动作。
 
 **十、如何确认第二版真的解决了问题**
 
@@ -196,4 +196,4 @@ PDF 必须从通过检查的 PPT 导出。按固定的“图 ID ↔ 幻灯片页
 
 第二版实施后的默认使用方式仍是一条指令：
 
-> 使用项目内的 nsfc-full-pipeline，从头完成这份标书；文字写作与核查完成后，按绘图提示词.md 自动完成配图规划、配色、提示词、生图、可编辑 PPT、逐图 PDF、正文插入和图文检查，最终交付插图后的 main.pdf。已有进度从断点续跑。
+> 使用项目内的 nsfc-illustrated-pipeline，从头完成这份标书；文字写作与核查完成后，按绘图提示词.md 自动完成配图规划、配色、提示词、逐个 imagegen 生图、可编辑 PPT、逐图 PDF、正文插入和图文检查，最终交付插图后的 main.pdf。已有进度从断点续跑。
