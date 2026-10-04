@@ -174,6 +174,7 @@ python packages/bensz-paper/scripts/paper_project_tool.py count-words projects/p
 适用于 `projects/thesis-*`：
 
 - 每个 thesis 项目都应在 `packages/bensz-thesis/` 中拥有独立的 `template/profile/style`；`thesis-smu-postdoc` 现已独立于 `thesis-smu-master`，仅共享同一公共包基础设施
+- PDF 构建保留三遍常规流程；若日志仍要求重跑标签或交叉引用，最多补两遍。末遍编译非零或仍未收敛时命令失败，未稳定的 PDF 不作为交付物。
 - 可通过 `docx` 子命令从同一份 LaTeX 源导出可编辑 Word draft；复杂表格、算法、代码块、TikZ 或 PDF 专属构造会在 `.latex-cache/docx/main_docx_quality_report.md` 中提示人工复核，学校 Word 样式建议配合 `--reference-doc` 使用
 
 ```bash

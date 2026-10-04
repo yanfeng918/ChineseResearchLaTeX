@@ -3,6 +3,7 @@
 
 支持功能：
 - **PDF 构建**：自动执行 xelatex + bibtex/biber + xelatex x2 编译链路，
+  若交叉引用尚未稳定，按日志最多追加两遍 xelatex，未收敛则失败；
   中间文件隔离到 ``.latex-cache/`` 目录，最终 PDF 输出到项目根目录。
 - **DOCX 导出**：从同一份 LaTeX 源生成可编辑 Word 初稿，复杂对象以占位符
   和质量报告提示人工复核。
@@ -280,6 +281,18 @@ def log_has_fatal_errors(log_path: Path) -> bool:
     return any(marker in content for marker in fatal_markers)
 
 
+def log_needs_rerun(log_path: Path) -> bool:
+    """检查当前编译日志中的标签、书签或表格重跑提示。"""
+    if not log_path.exists():
+        return False
+    content = " ".join(log_path.read_text(encoding="utf-8", errors="ignore").split())
+    return bool(re.search(
+        r"Label\(s\) may have changed|Rerun to get (?:cross-references|outlines) right|Rerun LaTeX",
+        content,
+        re.IGNORECASE,
+    ))
+
+
 def run_best_effort(
     args: list[str],
     *,
@@ -314,7 +327,8 @@ def build_project(project_dir: Path, tex_file: str) -> Path:
     1. 清理旧缓存目录 ``.latex-cache/`` 并重建。
     2. 若检测到 BENSZ_PASSTHROUGH_PDF 指令，直接复制预编译 PDF 并返回。
     3. 否则执行完整编译链路：xelatex -> bibtex/biber -> xelatex -> xelatex。
-    4. 编译完成后将最终 PDF 从缓存目录复制到项目根目录。
+    4. 根据日志最多追加两遍 xelatex，交叉引用仍不稳定则失败。
+    5. 编译成功且稳定后将最终 PDF 从缓存目录复制到项目根目录。
 
     Args:
         project_dir: 论文项目根目录（包含 main.tex 和 extraTex/）。
@@ -358,11 +372,30 @@ def build_project(project_dir: Path, tex_file: str) -> Path:
         "-interaction=nonstopmode",
         "-file-line-error",
         "-synctex=1",
+        # bensz-fonts 使用 currfile-abspath 从 recorder 文件解析共享字体目录。
+        "-recorder",
         f"-output-directory={cache_dir}",
         tex_path.name,
     ]
 
-    xelatex_run_1 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
+    log_path = cache_dir / f"{tex_stem}.log"
+    process_runs: list[tuple[str, subprocess.CompletedProcess[str]]] = []
+    xelatex_runs: list[subprocess.CompletedProcess[str]] = []
+
+    def run_xelatex_pass() -> subprocess.CompletedProcess[str]:
+        result = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
+        xelatex_runs.append(result)
+        label = f"xelatex pass {len(xelatex_runs)}"
+        process_runs.append((label, result))
+        diagnostic_base = cache_dir / f"{tex_stem}.xelatex-pass-{len(xelatex_runs)}"
+        Path(str(diagnostic_base) + ".txt").write_text(
+            result.stdout + "\n" + result.stderr, encoding="utf-8"
+        )
+        if log_path.exists():
+            shutil.copy2(log_path, str(diagnostic_base) + ".log")
+        return result
+
+    run_xelatex_pass()
 
     bib_backend = detect_bibliography_backend(tex_path)
     bib_run: subprocess.CompletedProcess[str] | None = None
@@ -385,22 +418,35 @@ def build_project(project_dir: Path, tex_file: str) -> Path:
         normalize_bibtex_aux(cache_dir, tex_stem)
         bib_run = run_best_effort([resolve_executable("bibtex"), tex_stem], cwd=cache_dir, env=tex_env)
 
-    xelatex_run_2 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
-    xelatex_run_3 = run_best_effort(xelatex_cmd, cwd=project_dir, env=tex_env)
+    if bib_run is not None:
+        process_runs.append((bib_backend or "bibliography", bib_run))
+        (cache_dir / f"{tex_stem}.{bib_backend}.txt").write_text(
+            bib_run.stdout + "\n" + bib_run.stderr, encoding="utf-8"
+        )
+
+    run_xelatex_pass()
+    last_run = run_xelatex_pass()
+    for _ in range(2):
+        if last_run.returncode != 0 or log_has_fatal_errors(log_path) or not log_needs_rerun(log_path):
+            break
+        print(f"↻ Cross-references changed; running XeLaTeX pass {len(xelatex_runs) + 1}")
+        last_run = run_xelatex_pass()
 
     pdf_source = cache_dir / f"{tex_stem}.pdf"
-    log_path = cache_dir / f"{tex_stem}.log"
-    if not pdf_source.exists() or (bib_run is not None and bib_run.returncode != 0) or log_has_fatal_errors(log_path):
+    needs_rerun = log_needs_rerun(log_path)
+    if (
+        last_run.returncode != 0
+        or not pdf_source.exists()
+        or (bib_run is not None and bib_run.returncode != 0)
+        or log_has_fatal_errors(log_path)
+        or needs_rerun
+    ):
         compiler_logs = "\n\n".join(
-            [
-                summarize_process_output("xelatex pass 1", xelatex_run_1),
-                summarize_process_output(bib_backend or "bibliography skipped", bib_run or xelatex_run_1),
-                summarize_process_output("xelatex pass 2", xelatex_run_2),
-                summarize_process_output("xelatex pass 3", xelatex_run_3),
-            ]
+            summarize_process_output(label, result) for label, result in process_runs
         )
+        reason = f"；{len(xelatex_runs)} 遍 XeLaTeX 后交叉引用仍未收敛" if needs_rerun else ""
         raise BuildError(
-            f"PDF 渲染失败：{pdf_source}\n\n{compiler_logs}"
+            f"PDF 渲染失败{reason}：{pdf_source}\n\n{compiler_logs}"
         )
 
     output_pdf = project_dir / f"{tex_stem}.pdf"
