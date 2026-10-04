@@ -1,0 +1,116 @@
+{
+  "diagram_type": "前缀评测与有效告警时间窗",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "upper left input stack",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "任务要求\n外显计划\n检索回执\n工具与记忆\n候选回答",
+      "visual_anchor": "small hollow circle",
+      "flow": "right into two evaluators"
+    },
+    {
+      "relative_position": "upper middle top",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "规则核验",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to outputs"
+    },
+    {
+      "relative_position": "upper middle bottom",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "语义判别",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to outputs"
+    },
+    {
+      "relative_position": "upper right output stack",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "分维度风险\n证据位置\n不确定性",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "center footer",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "只使用当前前缀",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower left timeline node",
+      "shape": "circle; white fill, blue border",
+      "exact_text": "首个证据",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to alarm"
+    },
+    {
+      "relative_position": "lower center timeline node",
+      "shape": "circle; white fill, blue border",
+      "exact_text": "有效告警",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to commit"
+    },
+    {
+      "relative_position": "lower right timeline node",
+      "shape": "circle; white fill, blue border",
+      "exact_text": "动作提交",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower interval annotation",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "动作前干预窗口",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Divide the canvas into a top computational route and a lower temporal diagram. The upper left has a five-line observed-input container. Split its outgoing connection into two vertically arranged evaluation boxes in the center, then merge their outputs into a three-line result container on the right. Put the prefix-only constraint directly beneath this top route. In the lower third draw a horizontal timeline with exactly three ordered hollow circular nodes: first evidence on the left, valid alarm in the center, action commitment on the right. Add a clean bracket from the valid-alarm node to just before commitment and label it as the intervention window. Leave enough separation that the timeline cannot be confused with model dataflow. Do not draw feedback from future evidence, hidden reasoning, or outcomes into the evaluator.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "R2：规则核验与语义判别依据当前可见前缀输出风险、证据位置及不确定性。有效提前告警发生在首个可观察证据之后、风险动作提交之前；未检出和事后检出均保留统计。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/2.1.研究内容.tex",
+    "source_excerpt": "\\textbf{面向研究内容二的轨迹评测路线。}以第一条路线的风险规则和可观测轨迹为输入，建立规则核验与语义评价器，分别开展完整轨迹定位及仅使用当前前缀的告警。通过等信息通用评价对照、教育约束交叉消融和模板家族留出测试，验证识别表现及其来源，输出分维度判断、证据定位、校准参数和失败案例。满足可解释性与校准要求的前缀评价方法进入第三条路线，证据不足的风险类别保留人工处理。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

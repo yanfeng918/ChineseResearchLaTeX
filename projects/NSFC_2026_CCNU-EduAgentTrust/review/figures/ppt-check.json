@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "checks": {
+    "editable_objects": true,
+    "text_fidelity": true,
+    "page_mapping": true,
+    "editppt_validation": true
+  },
+  "notes": "两轮实际editppt prepare、页级worker dispatch/record及finalize。第一轮完成六页重建；最终插入检查后第二轮仅放大F04八处输入输出文字至18.5pt并扩框，其余五页逐页验证后原样复用。accepted页不支持reset，故保留旧run并新建editppt-final-fonts，未手改状态。最终validation passed无warning；当前所有文字/结构原生可编辑，全部真实LO导出已查看。",
+  "run_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/tests/nsfc-ccnu-eduagenttrust-20260906/.bensz-api/editppt-final-fonts",
+  "pages": [
+    {
+      "figure": "F01",
+      "slide": 1,
+      "text_runs": 12,
+      "editable_shapes": 47,
+      "pictures": 0
+    },
+    {
+      "figure": "F02",
+      "slide": 2,
+      "text_runs": 19,
+      "editable_shapes": 250,
+      "pictures": 0
+    },
+    {
+      "figure": "F03",
+      "slide": 3,
+      "text_runs": 12,
+      "editable_shapes": 330,
+      "pictures": 0
+    },
+    {
+      "figure": "F04",
+      "slide": 4,
+      "text_runs": 15,
+      "editable_shapes": 65,
+      "pictures": 0
+    },
+    {
+      "figure": "F05",
+      "slide": 5,
+      "text_runs": 17,
+      "editable_shapes": 142,
+      "pictures": 0
+    },
+    {
+      "figure": "F06",
+      "slide": 6,
+      "text_runs": 13,
+      "editable_shapes": 41,
+      "pictures": 0
+    }
+  ],
+  "ocr_warning": "PaddleOCR write timeout; actual fallback builtin-ink, visual and exact-label verification completed",
+  "worker_ids": [
+    "/root/ppt_font_reuse_001",
+    "/root/ppt_font_reuse_002",
+    "/root/ppt_font_reuse_003",
+    "/root/ppt_page_004",
+    "/root/ppt_page_005",
+    "/root/ppt_page_006"
+  ],
+  "ppt_sha256": "1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488"
+}

@@ -1,0 +1,102 @@
+{
+  "diagram_type": "动作提交前的监测与分级处置",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top full width",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "待发送回答　工具行动　记忆写入",
+      "visual_anchor": "small hollow circle",
+      "flow": "down to check"
+    },
+    {
+      "relative_position": "upper center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "权限与风险检查",
+      "visual_anchor": "small hollow circle",
+      "flow": "fanout to four branches"
+    },
+    {
+      "relative_position": "lower left branch",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "低风险且授权\n执行\n提交动作",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower middle-left branch",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "可修正风险\n重规划",
+      "visual_anchor": "small hollow circle",
+      "flow": "dashed return upward to check"
+    },
+    {
+      "relative_position": "lower middle-right branch",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "越权或不可修正\n阻断\n停止提交",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower right branch",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "规范不确定\n人工复核",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom footer",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "共同记录：风险后果　正常完成　复核成本",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Place a wide candidate-action input strip across the top, leading down to a central review box. Fan out from that box into exactly four aligned branches across the lower half. Each branch has a small condition line above a strong action label. Only the execution branch points down into an action-commit endpoint. The block branch ends at a separate stop-submission endpoint. Draw a dashed return connector from re-planning around the left outer margin into the review box; it must not point directly into execution. The human-review branch is an independent endpoint with no automatic execution arrow. The footer is a separate common-outcome annotation applying to every initial task, not a fifth decision branch. Avoid crossing any arrow through text. Make the four decisions visually equal in size while clearly distinguishing forward execution from the dashed recheck loop.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "R3：回答发送、工具执行与记忆写入在提交前统一检查。已授权低风险动作继续执行，可修正风险重规划，明确越权或不可安全修正时阻断，规范不确定时转人工；修订动作再次检查。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/2.1.研究内容.tex",
+    "source_excerpt": "\\textbf{面向研究内容三的监测干预路线。}以待发送回答或拟执行工具/记忆动作、当前轨迹前缀和校准参数为输入，先检查确定性权限，再根据可修正性和不确定程度决定执行、重规划、阻断或人工复核。每次干预后重建对应运行分支，追踪任务完成与风险后果；只有重新通过检查的动作才允许提交。通过与事后检查、仅规则保护和统一拒绝比较，检验风险下降、误阻断和人工负担，输出可运行原型与分场景建议。新发现的问题可用于下一版本开发，但不能回填当前测试版本以改变既有结论。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

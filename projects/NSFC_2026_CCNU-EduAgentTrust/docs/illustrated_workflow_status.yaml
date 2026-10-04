@@ -1,0 +1,648 @@
+schema_version: 3
+project:
+  type: CCNU_Open_2026
+  grant_type: 国家工程研究中心开放课题（一般课题，借用 NSFC 面上正文模板）
+  layout: three-part
+  length_budget: 全文不超过30页；按1年、建议5万元控制研究规模，预留配图及补事实空间
+  proposal_path: .
+  body_dir: extraTex
+  bib_file: references/myexample.bib
+  guide_file: AGENTS.md
+  main_tex_sha256: ''
+  applicant_profile_file: ../../docs/applicants/yan-feng.md
+  project_fact_file: docs/00_项目事实库.md
+  stage_output_dir: docs
+  review_output_dir: review
+  body_files:
+    part_one:
+    - extraTex/1.1.立项依据.tex
+    - extraTex/2.1.研究内容.tex
+    - extraTex/2.2.特色与创新.tex
+    - extraTex/2.3.年度研究计划.tex
+    foundation:
+    - extraTex/3.1.研究基础.tex
+    - extraTex/3.2.工作条件.tex
+    - extraTex/3.3.承担项目情况.tex
+    - extraTex/3.4.完成国基项目情况.tex
+    statements:
+    - extraTex/4.1.不同类型国基情况.tex
+    - extraTex/4.2.同年单位不一致.tex
+    - extraTex/4.3.承担中单位不一致.tex
+    - extraTex/4.4.不同专业技术职务的申请.tex
+    - extraTex/4.6.其他.tex
+fact_sources:
+  applicant: ../../docs/applicants/yan-feng.md
+  project: docs/00_项目事实库.md
+  read_order:
+  - applicant
+  - project
+not_applicable: []
+run:
+  current_mode: fresh
+  fill_policy: draft_first
+  last_started: null
+  last_finished: null
+  last_summary: null
+  next_stage: null
+  mode: illustrated
+  workspace: .bensz-api/task-20260906T2243-illustrated/nsfc-illustrated-pipeline
+  drawing_rules: /home/yanfeng/fund-writing/ChineseResearchLaTeX/绘图提示词.md
+stages:
+  00_layout_resolution:
+    name: 布局与项目类型解析
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - main.tex
+    - AGENTS.md
+    - README.md
+    outputs: []
+    last_updated: null
+    notes: null
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T22:45:21+08:00'
+    input: ed7778d30276a5402d2f2cfe0340d74c9c8db5226f1f038fc4091b5e693a7438
+    output: 44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a
+    finished_at: '2026-09-06T22:45:21+08:00'
+  01_topic_extraction:
+    name: 选题与研究主题
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - README.md
+    - main.tex
+    - docs/00_项目基本信息.md
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - docs/01_选题与研究主题.md
+    last_updated: null
+    notes: null
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T22:45:22+08:00'
+    input: 7c95d92dfc083f790fc370f3ec693549a71627c54609108f723d19fca53d19ec
+    output: 97bdbe6a572d0f58fba7673171e6f6437aaa6c9fc3c4b30c5501dcce937286b9
+    finished_at: '2026-09-06T22:45:58+08:00'
+  02_literature_review:
+    name: 文献调研
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/01_选题与研究主题.md
+    outputs:
+    - docs/02_文献调研
+    - references/myexample.bib
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:33+08:00'
+    input: 2a449869734b1a250d323a15f2222256680dd5e8badaa0386a749e52d302cb68
+    output: 5ef005a34a47088d4bd32b6e8729400f42db2880cc8c858b9e94fd62f28bc79c
+    finished_at: '2026-09-07T00:02:33+08:00'
+  03_scientific_questions:
+    name: 科学问题与创新点
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/01_选题与研究主题.md
+    - docs/02_文献调研
+    outputs:
+    - docs/03_科学问题与创新点.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:33+08:00'
+    input: 63deec34cd127ce024a4df2e8e4f735629db77542d8d9c4eb5ab085aee5ed6c7
+    output: e1def1621396fddaf7b5378cd1a843afc72359c727dde3a3d523c7220134a603
+    finished_at: '2026-09-07T00:02:33+08:00'
+  04_research_plan:
+    name: 研究方案与技术路线
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/03_科学问题与创新点.md
+    outputs:
+    - docs/04_研究方案与技术路线.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:34+08:00'
+    input: b789851b7128fef64327e1121940ff065c952b5b84ed5ebc6c07aafda3416cf4
+    output: cb0924df76aa02c2762646fe9838a9ff156fbc0644cdc43ccc7d187eccd9f990
+    finished_at: '2026-09-07T00:02:34+08:00'
+  05_part_one_writing:
+    name: 第一部分正文
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-EDU-02
+    - F-EDU-03
+    inputs:
+    - AGENTS.md
+    - docs/03_科学问题与创新点.md
+    - docs/04_研究方案与技术路线.md
+    - references/myexample.bib
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@part_one'
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:34+08:00'
+    input: 27f154fffc72c93bb99ad2ebd4a94268cf73c49a862c9cf2b8aa44f59e867d33
+    output: f6041ba582bf3bcfdb23be6fec622f2ec6044a0e75c3b48e1cbb6dae5ac042c9
+    finished_at: '2026-09-07T00:02:34+08:00'
+  06_research_foundation:
+    name: 研究基础与工作条件
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-EDU-01
+    - F-EDU-02
+    inputs:
+    - AGENTS.md
+    - docs/05_研究基础素材.md
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@foundation'
+    last_updated: null
+    notes: null
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T23:09:57+08:00'
+    input: 28ac85b35fffcf1e7cfacf1d693fc4faf9240437001606844372187d1534a42f
+    output: 251c9862600067d504689fd4b0612370ba20050b50aaf3fd14c0cc18ac660242
+    finished_at: '2026-09-06T23:09:58+08:00'
+  07_other_statements:
+    name: 其他说明
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-EDU-03
+    - F-EDU-04
+    inputs:
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@statements'
+    - docs/其他说明检查报告.md
+    last_updated: null
+    notes: null
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T23:09:59+08:00'
+    input: 4e78e5425b9d038f67795d77cd9f1f6bb51675b61d02d9f18ba3582bdab5772c
+    output: b9e63bd4b75f585ad5199581c75739c0a15bfe0e27bd88ebe4c5a48a48e929db
+    finished_at: '2026-09-06T23:10:00+08:00'
+  08_reference_alignment:
+    name: 引用一致性核查
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    outputs:
+    - review/引用一致性审核报告.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:34+08:00'
+    input: 529215d19a98b91db2aef583dc906135ed0565bbad080480e4ec2228e1f89c56
+    output: adc334bacbd34e5751f171be7036bcf1bb5476b53840b6ec2944cc29ac3ccaf8
+    finished_at: '2026-09-07T00:02:35+08:00'
+  09_length_control:
+    name: 篇幅对齐
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - AGENTS.md
+    outputs:
+    - review/篇幅控制报告.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T23:21:51+08:00'
+    input: 982e4b456dc37fa9728571411dd7222389055545cd5a9b1346bd0c81009152e4
+    output: 11358d34328fc1d0c4e7aa5a979a774fa8cb5f6a27d1e4ad032accfed2113295
+    finished_at: '2026-09-06T23:21:51+08:00'
+  10_humanization:
+    name: 去 AI 味润色
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    outputs:
+    - review/去AI味修改报告.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-06T23:21:51+08:00'
+    input: 0f8ed751a97c4e79223a8e4fd5c1645faf2b636f786475a35331cf155e3d6106
+    output: 81e7bc107beefd622595ed415dcbdf0901ad6df36120fe50f838dfc3995ca8f1
+    finished_at: '2026-09-06T23:21:51+08:00'
+  11_qc:
+    name: 质量控制
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    - AGENTS.md
+    outputs:
+    - review/质量控制报告.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:35+08:00'
+    input: ddd73906f67913eeafbeda62fcef651fbd78d432be433635a438c9e66db4e3a7
+    output: 94e5113abc835902fe183d30649dc0ec7750907d786cec25a8b91c824bd5bd53
+    finished_at: '2026-09-07T00:02:35+08:00'
+  12_simulated_review:
+    name: 模拟专家评审
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    - AGENTS.md
+    outputs:
+    - review/模拟专家评审_全稿.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:35+08:00'
+    input: ddd73906f67913eeafbeda62fcef651fbd78d432be433635a438c9e66db4e3a7
+    output: e22612153fb44be6820e3f619684d203a05d14f81a1c5824a275aa84dfa78ce8
+    finished_at: '2026-09-07T00:02:35+08:00'
+  13_targeted_repair:
+    name: P0/P1 定点修复
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - review/质量控制报告.md
+    - review/模拟专家评审_全稿.md
+    outputs:
+    - review/P0P1定点修复报告.md
+    - docs/评审意见修复清单.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:36+08:00'
+    input: 1a6cdc87ebe31ed173f1d38d4dbeb516d248d135d5199d1da37e241ad345e30d
+    output: 95f50e5c65c6873ed4f1bbcf01d84c1ee1fae513a368cf59f64780a8b609ef4c
+    finished_at: '2026-09-07T00:02:36+08:00'
+  14_compile:
+    name: 编译
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - main.tex
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    outputs:
+    - main.pdf
+    - review/编译检查报告.md
+    last_updated: null
+    notes: 输入或产物指纹变化，需定点复核
+    input_sha256: ''
+    output_sha256_before: ''
+    output_sha256: ''
+    started_at: '2026-09-07T00:02:36+08:00'
+    input: 54c4b2fdd693a0849d97796dee974c0e0074edefb933e747c8a89e7491b60ee2
+    output: e1db764db493b10c93820dcc61d4f488c8abeadacea10301d3341301fd4113d8
+    finished_at: '2026-09-07T00:03:27+08:00'
+  15_figure_plan:
+    name: 配图规划
+    status: completed
+    started_at: '2026-09-07T00:03:28+08:00'
+    gaps: []
+    input: 8e4435af82261d8dda99747733d118137179bae4c7ce820e650cf9221b9d3704
+    output: fd10ce5b977d7c43b283d0dfef6a29a14e71341a748537d92397fefe910c5913
+    finished_at: '2026-09-07T00:03:28+08:00'
+    notes: 输入或产物指纹变化，需定点复核
+  16_figure_prompts:
+    name: 统一配色与逐图提示词
+    status: completed
+    started_at: '2026-09-06T23:43:20+08:00'
+    gaps: []
+    input: 72c035e8cc048ad91c437627a4d85c24e0f1db3e13895f57699fcc90d0e18426
+    output: 5199d1cf84bfdaf9988b92b4f9caaf87332caa032bea1083ac47e9699ea6ec37
+    finished_at: '2026-09-06T23:43:20+08:00'
+    notes: 输入或产物指纹变化，需定点复核
+  17_imagegen:
+    name: 逐个调用 imagegen
+    status: completed
+    started_at: '2026-09-06T23:27:14+08:00'
+    gaps: []
+    input: 318eaa207905372994a68c8aa88c4470d78ea538a5c5ced6c277c0b917a23f26
+    output: 2c27e9e59df5badca0bddfd7372f196dcce4c2356c9484521837520b8897e3b0
+    finished_at: '2026-09-06T23:44:56+08:00'
+  18_editable_ppt:
+    name: 可编辑 PPT
+    status: completed
+    started_at: '2026-09-07T00:24:34+08:00'
+    gaps: []
+    input: f7b9500b96eca510c530bab558d252ca10efb13619c910acd6cad1e5000df37c
+    output: d8949f249ae8ae3220754f3d15928548f786f7ffd374545df28f70cbfcf56096
+    finished_at: '2026-09-07T00:24:34+08:00'
+    notes: PPT 未登记验收或其内容/源 PNG 已变化
+  19_figure_pdf:
+    name: 逐图 PDF
+    status: completed
+    started_at: '2026-09-07T00:24:35+08:00'
+    gaps: []
+    input: 6a2397dabb5df858005a53c91275f7e57a7e654a4c21472ff9a1d3a81d6b0087
+    output: 54625f26152205739d02c24769ca28d1e0ad864caf66d1d3920cd5f2edeeb644
+    finished_at: '2026-09-07T00:25:21+08:00'
+    notes: 逐图 PDF 未从当前 PPT 导出
+  20_insert_figures:
+    name: 插入正文
+    status: completed
+    started_at: '2026-09-07T00:25:22+08:00'
+    gaps: []
+    input: b79a1434dd9736d1ed403edfd3f2255c88baa94a5dda2fec5420baa12848b070
+    output: 32314b43ca783b67d8d6d659f238507ff3856dd5e9df35159e2a5445cea7a6f3
+    finished_at: '2026-09-07T00:25:22+08:00'
+    notes: 输入或产物指纹变化，需定点复核
+  21_joint_review:
+    name: 图文联合检查
+    status: completed
+    started_at: '2026-09-07T00:25:23+08:00'
+    gaps: []
+    input: 7b014ead958c961fd2c0a7fa9ec9b86c08ef5d02f4adc6725ccf02c118037034
+    output: 0ccf90e801478b0e97bc8ae8ad4d2f97ad51b6fb8b0f319a961f55e2134e732e
+    finished_at: '2026-09-07T00:26:21+08:00'
+  22_final_compile:
+    name: 最终构建验收
+    status: completed
+    started_at: '2026-09-07T00:26:22+08:00'
+    gaps: []
+    input: 7b014ead958c961fd2c0a7fa9ec9b86c08ef5d02f4adc6725ccf02c118037034
+    output: a5333fb526a455baf8c747d70f296bfb2087eb527ef12cf289d07c873550a5e4
+    finished_at: '2026-09-07T00:26:22+08:00'
+submission:
+  abstract: pending
+  application_code: pending
+  budget: pending
+  declarations: pending
+  attachments: pending
+skill: nsfc-illustrated-pipeline
+figures:
+  F01:
+    attempts:
+    - prompt: docs/figure_specs/F01.prompt.md
+      prompt_sha256: 5c0947a82670d477ee28845ee88debd8489d3ad3cdb7a7fa88c180bcbb28d425
+      input: 6ae7769e8bdc50751b542b4a4292d6b07ce2104d8d18613ebdf05646c16aec79
+      before: missing
+      started_at: '2026-09-06T23:27:36+08:00'
+      status: completed
+      call_id: exec-ec449d09-1e92-40b3-b71e-e894177d46c2
+      finished_at: '2026-09-06T23:29:05+08:00'
+    image:
+      input: 6ae7769e8bdc50751b542b4a4292d6b07ce2104d8d18613ebdf05646c16aec79
+      output: 8a42c32a7ea1793bb49f5003a13aa29d872923d97c2ee538fa2bfbf03e189a47
+      evidence:
+        path: review/figures/F01-image-check.json
+        sha256: 6f6327b14be63af22c66fecef9061f0fd6245fae76bdb8af53ee005b78aca08b
+      call_id: exec-ec449d09-1e92-40b3-b71e-e894177d46c2
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 9b5935807d6cf646600c94f3bc0af0e73049869a84865386aa33b5cb72d96e7e
+      slide: 1
+  F02:
+    attempts:
+    - prompt: docs/figure_specs/F02.prompt.md
+      prompt_sha256: ba500c323626604ac20113a6c656c17aea5d4e34a5280b3c3355b418bfc3de23
+      input: 556334d2f92e227f153e3de834a25b7d5429f02021de02e4c5b1c0d1a9bf099d
+      before: missing
+      started_at: '2026-09-06T23:29:06+08:00'
+      status: failed
+      reason: 已查看实际F02首稿，存在透明背景、蓝色渐变和空白卡片分隔，未符合白底蓝框规范；需统一约束汇入R1。
+    - prompt: docs/figure_specs/F02.correct-01.prompt.md
+      prompt_sha256: f093221e71d59da6a95c73150a1b7013e29e984dfa13e992092a20dc685b2cf0
+      input: 556334d2f92e227f153e3de834a25b7d5429f02021de02e4c5b1c0d1a9bf099d
+      before: missing
+      started_at: '2026-09-06T23:31:14+08:00'
+      status: failed
+      reason: 白底已修复，但公共输入箭头误落到R2，帮助边界卡片尚未连入总线；需单独局部改箭头。
+    - prompt: docs/figure_specs/F02.correct-02.prompt.md
+      prompt_sha256: dfaffe56171b999eac032807c20f72396fb08da1b5e31386401f897167f25b3b
+      input: 556334d2f92e227f153e3de834a25b7d5429f02021de02e4c5b1c0d1a9bf099d
+      before: missing
+      started_at: '2026-09-06T23:32:44+08:00'
+      status: completed
+      call_id: exec-c7e2141d-1fc7-429b-8ef4-877ec3924945
+      finished_at: '2026-09-06T23:34:06+08:00'
+    image:
+      input: 556334d2f92e227f153e3de834a25b7d5429f02021de02e4c5b1c0d1a9bf099d
+      output: 3b2e8278e1dab813a2a22e4d51e90247890c89e6423fe75958e8db8369c190dc
+      evidence:
+        path: review/figures/F02-image-check.json
+        sha256: a09709b21ec63f38f43be598f74a5eef17db2c6b7b862aee125279b1903c7555
+      call_id: exec-c7e2141d-1fc7-429b-8ef4-877ec3924945
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 517d119935908f70721a82f8aa2c85137147b1f2d3c130ff2bd56d57a248151b
+      slide: 2
+  F03:
+    attempts:
+    - prompt: docs/figure_specs/F03.prompt.md
+      prompt_sha256: 62e3296fe09170ce22e41bb52b61476b065adbd1a8b4aa943c82a931a1f1ead9
+      input: 0980c3b3ceb35fb3eeb801f7a450564293c6f29911da3793eaa43762d4ab1761
+      before: missing
+      started_at: '2026-09-06T23:34:06+08:00'
+      status: failed
+      reason: F03首稿透明背景和渐变不合规范；风险类别汇合后应先进入独立标注，而非直接仲裁。
+    - prompt: docs/figure_specs/F03.correct-01.prompt.md
+      prompt_sha256: f659af12e20a8fc710d03b8e1a1255852392cb5c367b7e5ea9df29a9ea8b5187
+      input: 0980c3b3ceb35fb3eeb801f7a450564293c6f29911da3793eaa43762d4ab1761
+      before: missing
+      started_at: '2026-09-06T23:35:40+08:00'
+      status: completed
+      call_id: exec-f0709ed9-efb4-4d85-8bfe-4fec50ce2c2a
+      finished_at: '2026-09-06T23:37:11+08:00'
+    image:
+      input: 0980c3b3ceb35fb3eeb801f7a450564293c6f29911da3793eaa43762d4ab1761
+      output: b97cc13990df4bb9ca147dec2f711959eb2910611cbc02e027c5cd96514ecab3
+      evidence:
+        path: review/figures/F03-image-check.json
+        sha256: 4b9405c88ba7177b02ae17ffc0dbd0e3a7ad7440e176f031cf352a032503e69c
+      call_id: exec-f0709ed9-efb4-4d85-8bfe-4fec50ce2c2a
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 2a1284563c18736a418ccd73453e570b6bea438fa399498e12fd5167c86d6b9a
+      slide: 3
+  F04:
+    attempts:
+    - prompt: docs/figure_specs/F04.prompt.md
+      prompt_sha256: 4cc671fa321fadc0fb6a7f762bc066cede29cb96e95b1ab55504d57a497de3c5
+      input: f5cbfe1677e9304aa086510e7340f25d04987c7c0e023a2f3c63744265f591d1
+      before: missing
+      started_at: '2026-09-06T23:37:11+08:00'
+      status: completed
+      call_id: exec-b2261711-55d3-4c67-af70-c52b1ffc3032
+      finished_at: '2026-09-06T23:38:27+08:00'
+    image:
+      input: f5cbfe1677e9304aa086510e7340f25d04987c7c0e023a2f3c63744265f591d1
+      output: 47fd5c74489de5b2c7d265d46725974c335bfc3d1832946a420683c64da5d725
+      evidence:
+        path: review/figures/F04-image-check.json
+        sha256: 352783b483b6e7f8e2a3967e7d79935cc1a9390e0038f07011fc6421fa8a3271
+      call_id: exec-b2261711-55d3-4c67-af70-c52b1ffc3032
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 20e37318f5921b0a6ce770129510914c246b8a4b4a6ffb8d0d56cc5461cdfda6
+      slide: 4
+  F05:
+    attempts:
+    - prompt: docs/figure_specs/F05.prompt.md
+      prompt_sha256: 4c8a002f621d2bb03955044c5743414d8c5465a5c260db86b0023ddf7144931c
+      input: 47f3fd5867e9de929afc17726364bdeb8783f6ddbc6aba782d1deede6959fb9d
+      before: missing
+      started_at: '2026-09-06T23:38:27+08:00'
+      status: failed
+      reason: F05白底正确，但虚线误从执行分支返回，执行/提交与阻断/停止标签重复。需将回查线接到重规划并去重复。
+    - prompt: docs/figure_specs/F05.correct-01.prompt.md
+      prompt_sha256: 1dff4c769233e243fb348587a5eca6e90b630bb986f5fa87e276f63c21e7d08f
+      input: 47f3fd5867e9de929afc17726364bdeb8783f6ddbc6aba782d1deede6959fb9d
+      before: missing
+      started_at: '2026-09-06T23:40:05+08:00'
+      status: failed
+      reason: F05已去重复且回查起点正确，但虚线经过提交动作框，造成连接歧义；需上移至框间空白带。
+    - prompt: docs/figure_specs/F05.correct-02.prompt.md
+      prompt_sha256: f9e2a2a707a074d1715976b612e5954624784dfab6b1759a1117f78c3b634c77
+      input: 47f3fd5867e9de929afc17726364bdeb8783f6ddbc6aba782d1deede6959fb9d
+      before: missing
+      started_at: '2026-09-06T23:41:54+08:00'
+      status: completed
+      call_id: exec-1a78532d-86b1-44e0-b896-d0f6fddaef1c
+      finished_at: '2026-09-06T23:43:20+08:00'
+    image:
+      input: 47f3fd5867e9de929afc17726364bdeb8783f6ddbc6aba782d1deede6959fb9d
+      output: 6a5d4181b53c589d583217d8c620d96b44be5656f3a93d713d1dec389d0c107f
+      evidence:
+        path: review/figures/F05-image-check.json
+        sha256: 219ffd2143e2c690b4194124bfab66e54c0f3fd1739e3b61485d8b22a2d7fa1d
+      call_id: exec-1a78532d-86b1-44e0-b896-d0f6fddaef1c
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 9942910920a08d18a55500d713eec399f31797951db22866209ff9c4037d6d3f
+      slide: 5
+  F06:
+    attempts:
+    - prompt: docs/figure_specs/F06.prompt.md
+      prompt_sha256: d242be805f94386a72f52652f0502e756334429ada2cc55028b865a589212646
+      input: a24acc2e3f0f0fdc6e6533625ada5c4aa9acacd11d3c90cf24dd04122a3ea9f7
+      before: missing
+      started_at: '2026-09-06T23:43:20+08:00'
+      status: completed
+      call_id: exec-e9e57046-3f68-43db-9f95-2ae47e32cafd
+      finished_at: '2026-09-06T23:44:56+08:00'
+    image:
+      input: a24acc2e3f0f0fdc6e6533625ada5c4aa9acacd11d3c90cf24dd04122a3ea9f7
+      output: a9eea16c36d5908b8009b358a2ff14b60f25b5fbd90904d3188f7c92f4500bbb
+      evidence:
+        path: review/figures/F06-image-check.json
+        sha256: e4f720c3698c54ac9657f85e68b3ca5e1e159730391297240b8ff4c0d6287b04
+      call_id: exec-e9e57046-3f68-43db-9f95-2ae47e32cafd
+    pdf:
+      deck: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+      output: 803871a0382bba7062b114f4dddd86378618dd787f04ddd1ae813a9b866b9e48
+      slide: 6
+builds:
+  text:
+    command:
+    - /opt/anaconda3/bin/python3
+    - /home/yanfeng/fund-writing/ChineseResearchLaTeX/packages/bensz-nsfc/scripts/nsfc_project_tool.py
+    - build
+    - --project-dir
+    - /home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CCNU-EduAgentTrust
+    exit_code: 0
+    input: 5473c57d70a2571b15a94ec177ab97aaf8797e65cc6115570e0b1289cfe1d264
+    output: c91ba7a072aa59c1e3e49ab1575611cb8104e3645b7e55912092c0c0cd8e12f8
+    pages: 20
+    built_at: '2026-09-07T00:02:41+08:00'
+  final:
+    command:
+    - /opt/anaconda3/bin/python3
+    - /home/yanfeng/fund-writing/ChineseResearchLaTeX/packages/bensz-nsfc/scripts/nsfc_project_tool.py
+    - build
+    - --project-dir
+    - /home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CCNU-EduAgentTrust
+    exit_code: 0
+    input: 7b014ead958c961fd2c0a7fa9ec9b86c08ef5d02f4adc6725ccf02c118037034
+    output: dcc7cdef992799cb2db3e99c9e93928fd701bdf6b7177c2c49af76cd456c8456
+    pages: 23
+    built_at: '2026-09-07T00:25:28+08:00'
+imported_from:
+  path: docs/workflow_status.yaml
+  sha256: e6137a23ccaf412aab3704d133f727db0a4d7a4d5c49b8137779f70315d23c85
+deck:
+  output: 1bbd16b50efd25ee54135200f041baf21256661e017cf6189502daaba61a4488
+  evidence:
+    path: review/figures/ppt-check.json
+    sha256: c9760d85b5f1e76199d5f99dec63b30649a017348e5facbf62e835024acdf5e4
+  images:
+    F01: 8a42c32a7ea1793bb49f5003a13aa29d872923d97c2ee538fa2bfbf03e189a47
+    F02: 3b2e8278e1dab813a2a22e4d51e90247890c89e6423fe75958e8db8369c190dc
+    F03: b97cc13990df4bb9ca147dec2f711959eb2910611cbc02e027c5cd96514ecab3
+    F04: 47fd5c74489de5b2c7d265d46725974c335bfc3d1832946a420683c64da5d725
+    F05: 6a5d4181b53c589d583217d8c620d96b44be5656f3a93d713d1dec389d0c107f
+    F06: a9eea16c36d5908b8009b358a2ff14b60f25b5fbd90904d3188f7c92f4500bbb

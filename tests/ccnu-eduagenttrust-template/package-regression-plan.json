@@ -1,0 +1,36 @@
+{
+  "package_name": "bensz-thesis",
+  "package_root": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/packages/bensz-thesis",
+  "policy": {
+    "require_regression_plan_before_edit": true,
+    "project_layer_bias": true,
+    "escalation_rules": [
+      "仅当问题确属共享样式、共享字体、profile 或统一构建逻辑时，才从项目层升级到包层。",
+      "若项目层修复只会复制共享逻辑，应改包层；但要先缩小到最具体的 style / profile / template 文件，而不是直接改共享核心入口。",
+      "若无法精确判断影响范围，默认扩大回归范围，而不是假设只影响当前模板。"
+    ],
+    "preferred_isolation_order": [
+      "新增或调整模板专属 profile / style 文件。",
+      "在共享包中增加仅对目标模板生效的条件分支。",
+      "最后才修改共享核心入口、跨模板通用宏或字体 API。"
+    ],
+    "verification_rules": [
+      "先验证当前目标项目，确认改动确实解决了本次问题。",
+      "再回归该公共包直接覆盖的全部现有项目。",
+      "若某个项目已有 baseline，优先补跑官方 compare；没有 compare 入口时至少完成官方 build。",
+      "未完成相关回归前，不得宣称包层改动安全。"
+    ],
+    "forbidden_actions": [
+      "在没有回归计划的情况下直接修改 packages 下的共享实现。",
+      "为了赶进度而把共享逻辑复制回单个项目。",
+      "在未验证其它现有模板前宣称不会产生副作用。"
+    ]
+  },
+  "guard_found": true,
+  "prefer_paths": [
+    "packages/bensz-thesis/profiles/",
+    "packages/bensz-thesis/styles/"
+  ],
+  "rationale": "毕业论文公共包同时服务多所学校模板；优先把改动收敛到模板专属 profile / style，再回归全部现有 thesis 项目。",
+  "projects": []
+}

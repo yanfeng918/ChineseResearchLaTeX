@@ -1,0 +1,144 @@
+{
+  "diagram_type": "教育约束与轨迹证据交叉消融",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top left column header",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "正确约束",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "top right column header",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "打乱约束",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "middle left row header",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "保留证据",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower left row header",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "移除证据",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "matrix upper left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R11",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "matrix upper right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R10",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "matrix lower left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R01",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "matrix lower right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R00",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "below matrix footer",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "原始标签固定",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "开发家族",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to calibration"
+    },
+    {
+      "relative_position": "bottom center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "校准家族",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to test"
+    },
+    {
+      "relative_position": "bottom right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "留出家族",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom annotation",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "测试前冻结方案",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Use a large, orderly two-by-two matrix occupying the upper two-thirds of the canvas. Put correct versus shuffled constraint headers above its two columns and retained versus removed evidence headers to the left of its two rows. Each white matrix cell contains only its exact short Latin identifier, correctly mapped: R11 top-left, R10 top-right, R01 bottom-left, R00 bottom-right. The cell areas are blank except for these identifiers; they contain no scores, bars, invented values or heatmap coloring. Center the fixed-label statement below the matrix. In the lower third draw three equal small boxes for development, calibration and held-out families, connected left-to-right; separate them clearly from matrix row labels. Add the freeze-before-test statement beneath these boxes. This is an experimental-design schematic, not a results chart; keep all four matrix cells visually comparable.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "交叉消融设计。轨迹证据保留或移除，与教育约束正确或打乱形成四条件；打乱只改变评价器输入，真实标签保持不变。比较交互召回并报告实测误报，无法估计的家族不赋零或静默剔除。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/2.1.研究内容.tex",
+    "source_excerpt": "\\textbf{对照与消融。}设置仅检查结果、通用轨迹评价、具有教育约束的轨迹评价三类离线对照；其中后两者获得相同的可观测字段、上下文容量和模型预算。进一步采用轨迹证据保留/移除与教育约束正确/打乱的交叉消融，检验教育约束和证据之间的交互作用。打乱约束只改变评价器输入，真实任务标签仍由原始情境确定；另设合法授权变化的任务对，用于研究风险含义随情境的变化。两类实验不得混用标签。合法授权比较固定任务、行动和回答，只改变支持规则；另外开展自然运行验证，区分标签含义变化与智能体行为变化。增加等长无关约束和规则措辞改写对照，检查规则关键词捷径。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

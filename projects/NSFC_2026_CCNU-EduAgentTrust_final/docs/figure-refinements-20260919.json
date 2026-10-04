@@ -1,0 +1,12 @@
+[
+  {
+    "id": "F05",
+    "reason": "三项检查顺序执行，移除绕过前两项检查的旁路",
+    "prompt": "Edit this academic flowchart with one precise correction. The top node 候选动作先缓存 must have ONLY ONE outgoing control-flow arrow, going to the LEFTMOST diamond 确定性越权？. Delete the horizontal distribution bus that currently also sends direct arrows from the cache to the middle 规范不确定？ diamond and the right 语义风险达阈值？ diamond. The three decisions must form a strictly sequential chain: cache → 确定性越权？ —否→ 规范不确定？ —否→ 语义风险达阈值？. Every other arrow, Chinese word, panel, icon, color and position stays exactly the same. Preserve the dashed 重规划→重新检查→候选动作先缓存 loop. No new text, no extra arrows, no stylistic changes. Ensure no path from the cache can bypass the first or second decision."
+  },
+  {
+    "id": "F06",
+    "reason": "约束打乱是任务与约束错配，不是仅调整列表次序",
+    "prompt": "Make a precise scientific correction to this Chinese 2x2 ablation diagram. Keep layout, colors, sizes, formula Δ_int = (R11 − R01) − (R10 − R00), all cell labels and all other elements unchanged. In the top-left constraint header, replace the small sublabel 约束顺序正确 with 与任务匹配. In the top-right constraint header, replace the small sublabel 约束顺序打乱 with 与任务错配. Replace the tiny 3-1-2 order-shuffling icon in that right header with two small different task cards connected by crossed arrows to indicate assigning an irrelevant other task's constraint to the current task, not merely reordering a list. The c=0 manipulation breaks the valid task–constraint mapping; reordering identical constraints alone does not change their meaning. Exact labels 正确约束 c=1 and 打乱约束 c=0 stay. Do not add explanatory prose; only those two short Chinese substitutions and the small icon replacement."
+  }
+]

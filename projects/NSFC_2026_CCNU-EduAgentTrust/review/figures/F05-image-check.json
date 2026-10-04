@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "两轮局部纠错后通过：四类条件与处置准确，重规划虚线回到检查并与提交框分离；实线执行连接和虚线回查交叉处无连接节点，PPT重建时保留非连接含义。全部文字不重复、白底完整。",
+  "tool_output_path": "/home/yanfeng/.codex/generated_images/01a07729-3ab5-7551-a94f-9d58e947e3bd/exec-1a78532d-86b1-44e0-b896-d0f6fddaef1c.png",
+  "actual_call_identifier": "exec-1a78532d-86b1-44e0-b896-d0f6fddaef1c"
+}

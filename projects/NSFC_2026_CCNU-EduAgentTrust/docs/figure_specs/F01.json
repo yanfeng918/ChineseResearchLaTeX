@@ -1,0 +1,102 @@
+{
+  "diagram_type": "情境与过程共同决定风险含义",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "upper center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "相同完整解答",
+      "visual_anchor": "small hollow circle",
+      "flow": "split left and right"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "教师演示\n可允许",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "独立练习\n可能超界",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "检索证据\n来源失真",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "工具行动\n权限越界",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "lower right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "记忆更新\n污染延续",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom footer",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "结合情境与过程判断",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Place one compact source card in the upper center, with two balanced arrows down-left and down-right into two large context cards. The left context permits the answer for teacher demonstration; the right context shows a possible boundary violation during independent practice. Preserve this conditional meaning. Under a thin horizontal divider place three equal process-evidence cards in one row, each pairing a process with its possible risk. These three cards are parallel evidence categories: do not connect them by arrows as a causal sequence. Put the final synthesis label centered below the row. Distinguish the top comparison from the lower evidence row with whitespace; do not place a gigantic outer box around everything.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "教育情境与行为过程共同决定风险含义。相同解答在不同帮助边界下可能具有不同判断；最终回答正确不能抵消来源、权限或记忆风险。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/1.1.立项依据.tex",
+    "source_excerpt": "教育情境还对“正确”的含义提出了额外要求。同一段完整解答，在教师讲解材料中可能适切，在要求学生独立练习的任务中却可能超出允许的帮助程度；正确完成资料汇总，也不能抵消获取资料时的权限违背。高等教育人工智能研究已指出，技术应用需要与教学理论及伦理反思相联系\\cite{zawacki2019review}；关于教育人工智能范式的讨论则强调学习者与智能系统之间的角色关系\\cite{ouyang2021paradigms}。因此，教育智能体的可信性需要在任务目的、支持边界与行动授权共同构成的情境中判断。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

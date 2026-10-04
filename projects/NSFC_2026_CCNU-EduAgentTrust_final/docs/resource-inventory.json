@@ -1,0 +1,74 @@
+[
+  {
+    "source_tex": "extraTex/1.1.立项依据.tex",
+    "file": "figures/F01-background.pdf",
+    "sha256": "9b5935807d6cf646600c94f3bc0af0e73049869a84865386aa33b5cb72d96e7e",
+    "bytes": 98706,
+    "caption": "教育情境与行为过程共同决定风险含义",
+    "label": "fig:edu-f01",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "9b5935807d6cf646600c94f3bc0af0e73049869a84865386aa33b5cb72d96e7e",
+    "target_caption_source": "extraTex/figures/F01.tex"
+  },
+  {
+    "source_tex": "extraTex/2.1.研究内容.tex",
+    "file": "figures/F02-framework.pdf",
+    "sha256": "517d119935908f70721a82f8aa2c85137147b1f2d3c130ff2bd56d57a248151b",
+    "bytes": 137214,
+    "caption": "教育智能体的风险表征、轨迹评测与监测干预依次衔接",
+    "label": "fig:edu-f02",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "517d119935908f70721a82f8aa2c85137147b1f2d3c130ff2bd56d57a248151b",
+    "target_caption_source": "extraTex/figures/F02.tex"
+  },
+  {
+    "source_tex": "extraTex/2.1.研究内容.tex",
+    "file": "figures/F03-risk-representation.pdf",
+    "sha256": "2a1284563c18736a418ccd73453e570b6bea438fa399498e12fd5167c86d6b9a",
+    "bytes": 107274,
+    "caption": "R1以任务约束建立风险表征，通过独立标注与仲裁形成证据案例",
+    "label": "fig:edu-f03",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "2a1284563c18736a418ccd73453e570b6bea438fa399498e12fd5167c86d6b9a",
+    "target_caption_source": "extraTex/figures/F03.tex"
+  },
+  {
+    "source_tex": "extraTex/2.1.研究内容.tex",
+    "file": "figures/F04-trajectory-evaluation.pdf",
+    "sha256": "20e37318f5921b0a6ce770129510914c246b8a4b4a6ffb8d0d56cc5461cdfda6",
+    "bytes": 99472,
+    "caption": "R2依据当前前缀评测风险，并在动作提交前识别可干预时间窗",
+    "label": "fig:edu-f04",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "20e37318f5921b0a6ce770129510914c246b8a4b4a6ffb8d0d56cc5461cdfda6",
+    "target_caption_source": "extraTex/figures/F04.tex"
+  },
+  {
+    "source_tex": "extraTex/2.1.研究内容.tex",
+    "file": "figures/F05-monitoring-intervention.pdf",
+    "sha256": "9942910920a08d18a55500d713eec399f31797951db22866209ff9c4037d6d3f",
+    "bytes": 98597,
+    "caption": "R3对回答发送及工具、记忆动作进行提交前监测，并按风险分级处置",
+    "label": "fig:edu-f05",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "9942910920a08d18a55500d713eec399f31797951db22866209ff9c4037d6d3f",
+    "target_caption_source": "extraTex/figures/F05.tex"
+  },
+  {
+    "source_tex": "extraTex/2.1.研究内容.tex",
+    "file": "figures/F06-factorial-design.pdf",
+    "sha256": "803871a0382bba7062b114f4dddd86378618dd787f04ddd1ae813a9b866b9e48",
+    "bytes": 97119,
+    "caption": "教育约束正确或打乱与轨迹证据保留或移除形成四条件消融，真实任务标签固定",
+    "label": "fig:edu-f06",
+    "target_exists_before": false,
+    "target_exists": true,
+    "target_sha256": "803871a0382bba7062b114f4dddd86378618dd787f04ddd1ae813a9b866b9e48",
+    "target_caption_source": "extraTex/figures/F06.tex"
+  }
+]

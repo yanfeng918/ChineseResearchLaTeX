@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "首稿查看通过：正确/打乱列、保留/移除行与R11、R10、R01、R00一一对应；固定标签、开发校准留出与测试前冻结说明完整。无数值结果，白底和中文均清晰。",
+  "tool_output_path": "/home/yanfeng/.codex/generated_images/01a07729-3ab5-7551-a94f-9d58e947e3bd/exec-e9e57046-3f68-43db-9f95-2ae47e32cafd.png",
+  "actual_call_identifier": "exec-e9e57046-3f68-43db-9f95-2ae47e32cafd"
+}

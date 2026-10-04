@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": {
+    "page_limit": true,
+    "legibility": true,
+    "no_crop": true,
+    "references": true,
+    "source_consistency": true,
+    "qc": true
+  },
+  "input_sha256": "7b014ead958c961fd2c0a7fa9ec9b86c08ef5d02f4adc6725ccf02c118037034",
+  "pdf_sha256": "dcc7cdef992799cb2db3e99c9e93928fd701bdf6b7177c2c49af76cd456c8456",
+  "figure_pages": {
+    "F01": [
+      2
+    ],
+    "F02": [
+      7
+    ],
+    "F03": [
+      8
+    ],
+    "F04": [
+      9
+    ],
+    "F05": [
+      10
+    ],
+    "F06": [
+      14
+    ]
+  },
+  "notes": "逐一实际查看当前 main.pdf 全部六个插图页。F04小标签已放大至正文约8pt。无裁切、越界和新增插图排版警告。29条引用核查通过。保留4个合法硬事实ID、11处待补标记与11处暂定项；不表示申报就绪。"
+}

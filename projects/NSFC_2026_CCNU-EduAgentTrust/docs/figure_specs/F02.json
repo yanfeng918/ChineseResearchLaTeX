@@ -1,0 +1,109 @@
+{
+  "diagram_type": "三项研究与共用验证框架",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "top full width",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "课程答疑　文献学习辅助",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "upper left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "任务目标",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "upper center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "帮助边界",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "upper right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "数据授权",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "middle left",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R1 风险表征\n类别与证据\n标注依据",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to R2"
+    },
+    {
+      "relative_position": "middle center",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R2 轨迹评测\n前缀风险\n校准参数",
+      "visual_anchor": "small hollow circle",
+      "flow": "right to R3"
+    },
+    {
+      "relative_position": "middle right",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "R3 监测干预\n分级处置\n分支后果",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom wide container",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "独立验证\n风险识别　动作前告警\n正常完成　人工负担",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Use three horizontal tiers. The top tier names the two shared educational scenarios and has three small input cards underneath. Feed these inputs into a dominant middle row of three equal research modules. Connect R1 to R2 to R3 with two clear rightward solid arrows. Each research module contains its route identifier, its short name and two output labels. The bottom tier is a wide independent validation container separated with a dashed border; three short downward arrows from the modules enter this container. Inside it arrange the four validation outcomes as a balanced two-by-two text grid. No arrow may return from independent validation to any research module. This is a proposed research framework, with no claims of measured performance.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "总体研究框架。风险表征、轨迹评测和监测干预依次衔接，共用课程答疑与文献学习任务；留出测试仅用于最终验证，不参与当前版本调整。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/2.1.研究内容.tex",
+    "source_excerpt": "\\textbf{总体技术路线。}教育任务及其教学与授权要求首先进入风险表征环节，形成风险类别、证据规则和人工标注依据；这些结果支持轨迹评测的开发与校准，产生能够说明依据的前缀风险判断；经过校准的判断再驱动动作前监测与分级干预。三条路线在同一组课程答疑和文献学习任务上检验，最终形成评测案例、监测原型及其有效范围。留出测试只承担最终验证，不能反向参与当前版本的规则或阈值调整。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

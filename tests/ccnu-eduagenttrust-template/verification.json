@@ -1,0 +1,115 @@
+{
+  "builds": [
+    {
+      "label": "build-blank",
+      "exit_code": 0,
+      "issues": []
+    },
+    {
+      "label": "build-filled",
+      "exit_code": 0,
+      "issues": []
+    },
+    {
+      "label": "build-long-content",
+      "exit_code": 0,
+      "issues": []
+    },
+    {
+      "label": "reject-overflow",
+      "exit_code": 1,
+      "issues": [
+        "./main.tex:6: Package ccnu-open-fund-2026 Error: Fixed form cell overflow at (2",
+        "./main.tex:8: Package ccnu-open-fund-2026 Error: Fixed form cell overflow at (1"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0,
+      "line_count": 4,
+      "max_line_error_bp": 0.000946044921875
+    },
+    {
+      "page": 2,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0
+    },
+    {
+      "page": 3,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0,
+      "line_count": 22,
+      "max_line_error_bp": 0.0014801025390625
+    },
+    {
+      "page": 4,
+      "size_bp": [
+        842.0,
+        595.3499755859375
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0,
+      "line_count": 24,
+      "max_line_error_bp": 0.0014801025390625
+    },
+    {
+      "page": 5,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0
+    },
+    {
+      "page": 6,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0
+    },
+    {
+      "page": 7,
+      "size_bp": [
+        595.3499755859375,
+        842.0
+      ],
+      "visible_character_counts_match": true,
+      "embedded_images": 0,
+      "line_count": 16,
+      "max_line_error_bp": 0.00146484375
+    }
+  ],
+  "baseline_sha256": "2d7251d3338255a659e58a930c4a6d002c42769f3ad320858185f5b546a1a6aa",
+  "cover_label_max_origin_error_bp": 0.0009918212890625,
+  "filled": {
+    "pages": 7,
+    "baseline_present": false,
+    "cover_and_information_title_match": true,
+    "first_and_last_member_present": true,
+    "category_circle_present": true
+  },
+  "pagination": {
+    "pages": 12,
+    "both_end_markers_present": true,
+    "frames_headings_page_numbers_match": true,
+    "body_inside_frames": true
+  }
+}

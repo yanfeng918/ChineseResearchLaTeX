@@ -1,0 +1,109 @@
+{
+  "diagram_type": "风险表征与独立标注路线",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm; proposal insertion 0.96\\textwidth",
+    "font_family": "Noto Sans CJK SC / Arial",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "palette": "classic Nature Blue",
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "arrows": "#4D4D4D",
+    "fill": "#FFFFFF"
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "left input column",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "任务目标\n帮助边界\n数据授权",
+      "visual_anchor": "small hollow circle",
+      "flow": "right fanout to three categories"
+    },
+    {
+      "relative_position": "center top",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "证据与内容失真",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "center middle",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "教学支持失配",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "center bottom",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "行动与信息边界违背",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "right top",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "独立标注",
+      "visual_anchor": "small hollow circle",
+      "flow": "down to adjudication"
+    },
+    {
+      "relative_position": "right middle",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "分歧仲裁",
+      "visual_anchor": "small hollow circle",
+      "flow": "down to cases"
+    },
+    {
+      "relative_position": "right bottom",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "证据案例",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    },
+    {
+      "relative_position": "bottom separate status row",
+      "shape": "rect; white fill, blue border",
+      "exact_text": "明确违背　支持不足　规范不确定",
+      "visual_anchor": "small hollow circle",
+      "flow": "None"
+    }
+  ],
+  "layout_description": "Build a spacious left-to-right route with three columns. The compact left input column lists three task constraints as three separate lines. In the center stack three equal-width risk category cards, with fan-out arrows from the input and a clean merging connector toward annotation. The right column is a vertical three-step sequence: independent annotation, disagreement adjudication, evidence cases, connected downward. The bottom status strip shows three distinct annotation outcomes, each with its own small hollow geometric marker. Keep this strip visually separate from risk categories: the three annotation outcomes are not three additional risk types. All forward arrows have one unambiguous arrowhead. The figure describes planned annotation, so it must not imply that personnel or a validated dataset already exist.",
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render only exact_* fields; no global title.",
+    "All boxes WHITE fill, colored borders only.",
+    "Geometric structural visual anchors, no pictorial icons.",
+    "Solid forward arrows; dashed recheck arrows.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering.",
+    "No gradients, shadows, fabricated data or results.",
+    "Keep all labels and arrowheads inside safe margins."
+  ],
+  "caption_note": [
+    "R1：由任务目标和授权要求建立风险表征，经独立标注与仲裁形成证据案例。明确违背、支持不足及规范不确定分开保留，风险注入不直接充当违规标签。",
+    "参数、样本规模、完整统计公式及事实缺口说明保留正文；图内不作实验完成声明。"
+  ],
+  "completeness": {
+    "grounded": true,
+    "source_file": "extraTex/2.1.研究内容.tex",
+    "source_excerpt": "\\textbf{面向研究内容一的风险表征路线。}以公开学习材料、任务目标和授权范围为输入，先分析正常任务需要执行的动作，再构造受控情境变化与污染版本。依据外显证据定位风险事件，进行盲法双人标注和分歧仲裁，输出风险类别、标注手册及带证据的案例。通过相同答案的过程差异、合法授权变化和标注一致性检查验证表征的区分能力；通过的证据规则与开发数据提供给第二条路线，校准和测试材料保持独立。",
+    "missing_scientific_modules": [],
+    "real_world_authorization_claimed": false,
+    "reference_image": "none"
+  }
+}

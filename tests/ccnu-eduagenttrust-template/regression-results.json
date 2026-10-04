@@ -1,0 +1,48 @@
+[
+  {
+    "project": "projects/Huazhong_template",
+    "build_exit_code": 0,
+    "issues": [],
+    "compare_exit_code": 1,
+    "pages": 7,
+    "identical": false,
+    "changed_pages": [
+      1
+    ],
+    "expected_cover_label_change": true
+  },
+  {
+    "project": "projects/NSFC_2026_CIESM-STSR_final",
+    "build_exit_code": 0,
+    "issues": [],
+    "compare_exit_code": 0,
+    "pages": 4,
+    "identical": true,
+    "changed_pages": []
+  },
+  {
+    "project": "projects/NSFC_2026_MineChangeTrust_final",
+    "build_exit_code": 0,
+    "issues": [],
+    "pages": 13,
+    "existing_pdf_compare_exit_code": 1,
+    "existing_pdf_changed_pages": [
+      3
+    ],
+    "controlled_compare_exit_code": 0,
+    "controlled_identical": true,
+    "controlled_package_differences": [
+      "styles/bthesis-style-ccnu-open-fund-2026.tex"
+    ],
+    "official_builder_sha256": "b25d10d3951ea89c55079da6fcc1a7972bdbd666a0c80740dcaf3aadb0b6340b"
+  },
+  {
+    "project": "projects/NSFC_2027_Mapping_final",
+    "build_exit_code": 0,
+    "issues": [],
+    "compare_exit_code": 0,
+    "pages": 10,
+    "identical": true,
+    "changed_pages": []
+  }
+]

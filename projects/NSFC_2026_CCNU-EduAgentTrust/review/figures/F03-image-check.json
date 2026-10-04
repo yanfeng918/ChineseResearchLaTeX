@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "一轮纠错后通过：白底、三类风险汇入独立标注再下行仲裁和案例，三种标注结果单列；中文准确，箭头及边界完整，无已完成标注的虚构声明。",
+  "tool_output_path": "/home/yanfeng/.codex/generated_images/01a07729-3ab5-7551-a94f-9d58e947e3bd/exec-f0709ed9-efb4-4d85-8bfe-4fec50ce2c2a.png",
+  "actual_call_identifier": "exec-f0709ed9-efb4-4d85-8bfe-4fec50ce2c2a"
+}

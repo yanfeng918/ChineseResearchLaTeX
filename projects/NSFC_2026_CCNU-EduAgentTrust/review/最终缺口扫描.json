@@ -1,0 +1,213 @@
+{
+  "project_dir": "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CCNU-EduAgentTrust",
+  "scan_scope": "active_main_inputs",
+  "scanned_files": [
+    "extraTex/1.1.立项依据.tex",
+    "extraTex/2.1.研究内容.tex",
+    "extraTex/2.2.特色与创新.tex",
+    "extraTex/2.3.年度研究计划.tex",
+    "extraTex/3.1.研究基础.tex",
+    "extraTex/3.2.工作条件.tex",
+    "extraTex/3.3.承担项目情况.tex",
+    "extraTex/3.4.完成国基项目情况.tex",
+    "extraTex/4.1.不同类型国基情况.tex",
+    "extraTex/4.2.同年单位不一致.tex",
+    "extraTex/4.3.承担中单位不一致.tex",
+    "extraTex/4.4.不同专业技术职务的申请.tex",
+    "extraTex/4.6.其他.tex"
+  ],
+  "fact_files": [
+    "/home/yanfeng/fund-writing/ChineseResearchLaTeX/docs/applicants/yan-feng.md",
+    "/home/yanfeng/fund-writing/ChineseResearchLaTeX/projects/NSFC_2026_CCNU-EduAgentTrust/docs/00_项目事实库.md"
+  ],
+  "missing_fact_files": [],
+  "known_id_count": 39,
+  "findings": [
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "24个模板家族、每家族5个基础任务，共120个基础任务",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 80,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "4个受控版本、2个模型和3个随机种子，共2880次候选轨迹运行",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 80,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "2名独立标注者和1名分歧仲裁者",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 82,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "12个家族用于规则与评价器开发、6个用于校准、6个用于留出测试",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 84,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "整轨迹误报率10\\%的名义工作点",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 92,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "正常任务完成率损失不超过5个百分点的比较约束",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 96,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "交互召回增益5个百分点为最小实际意义幅度",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 100,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-02",
+      "desc": "课程场景、授权范围及审查结论",
+      "file": "extraTex/2.1.研究内容.tex",
+      "line": 138,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-03",
+      "desc": "正式指南或任务书确定的执行期",
+      "file": "extraTex/2.3.年度研究计划.tex",
+      "line": 6,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "第1—3个月",
+      "file": "extraTex/2.3.年度研究计划.tex",
+      "line": 8,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "第4—6个月",
+      "file": "extraTex/2.3.年度研究计划.tex",
+      "line": 10,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "第7—9个月",
+      "file": "extraTex/2.3.年度研究计划.tex",
+      "line": 12,
+      "paragraph_only": false
+    },
+    {
+      "kind": "暂定",
+      "id": "",
+      "desc": "第10—12个月",
+      "file": "extraTex/2.3.年度研究计划.tex",
+      "line": 14,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-01",
+      "desc": "中心合作人、团队名单及任务分工",
+      "file": "extraTex/3.1.研究基础.tex",
+      "line": 22,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-01",
+      "desc": "合作人与教学规则标注人员",
+      "file": "extraTex/3.2.工作条件.tex",
+      "line": 12,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-02",
+      "desc": "课程场景、数据使用授权和伦理审查结论",
+      "file": "extraTex/3.2.工作条件.tex",
+      "line": 12,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-01",
+      "desc": "正式团队名单与相关项目核对结果",
+      "file": "extraTex/3.3.承担项目情况.tex",
+      "line": 8,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-04",
+      "desc": "本年度实际申请项目及区别联系核对结果",
+      "file": "extraTex/4.1.不同类型国基情况.tex",
+      "line": 4,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-04",
+      "desc": "申请人及主要参与者同年申请单位核对结果",
+      "file": "extraTex/4.2.同年单位不一致.tex",
+      "line": 4,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-04",
+      "desc": "本次人员范围内承担项目单位核对结果",
+      "file": "extraTex/4.3.承担中单位不一致.tex",
+      "line": 4,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-04",
+      "desc": "申请人和主要参与者年度职称使用核对结果",
+      "file": "extraTex/4.4.不同专业技术职务的申请.tex",
+      "line": 4,
+      "paragraph_only": false
+    },
+    {
+      "kind": "待补",
+      "id": "F-EDU-03",
+      "desc": "开放课题正式指南中的声明及附件要求",
+      "file": "extraTex/4.6.其他.tex",
+      "line": 4,
+      "paragraph_only": false
+    }
+  ],
+  "problems": [],
+  "open_hard_gaps": [
+    "F-EDU-01",
+    "F-EDU-02",
+    "F-EDU-03",
+    "F-EDU-04"
+  ],
+  "tentative_count": 11,
+  "unfinished_placeholders": [],
+  "hard_gaps_clear": false
+}

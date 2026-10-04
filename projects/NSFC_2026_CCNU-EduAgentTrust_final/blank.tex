@@ -1,0 +1,18 @@
+% !TeX program = xelatex
+\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}
+\input{extraTex/@config}
+\input{extraTex/blank/metadata}
+\begin{document}
+\HuazhongCover
+\HuazhongCommitment{\input{extraTex/commitment}}
+\HuazhongInformation{}
+\HuazhongMembers{}
+\begin{HuazhongResearch}{foundation}
+  \input{extraTex/blank/foundation}
+\end{HuazhongResearch}
+\begin{HuazhongResearch}{proposal}
+  \input{extraTex/blank/proposal}
+\end{HuazhongResearch}
+% 空白验收入口不读取已填写的预算及单位意见。
+\HuazhongBudget{\HuazhongBudgetRow{1}{}{——}\HuazhongBudgetRow{2}{}{——}}{}
+\end{document}

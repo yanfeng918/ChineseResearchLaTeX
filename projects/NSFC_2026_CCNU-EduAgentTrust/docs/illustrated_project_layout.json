@@ -1,0 +1,29 @@
+{
+  "type": "CCNU_Open_2026",
+  "grant_type": "国家工程研究中心开放课题（一般课题，借用 NSFC 面上正文模板）",
+  "layout": "three-part",
+  "length_budget": "全文不超过30页；按1年、建议5万元控制研究规模，预留配图及补事实空间",
+  "body_files": {
+    "part_one": [
+      "extraTex/1.1.立项依据.tex",
+      "extraTex/2.1.研究内容.tex",
+      "extraTex/2.2.特色与创新.tex",
+      "extraTex/2.3.年度研究计划.tex"
+    ],
+    "foundation": [
+      "extraTex/3.1.研究基础.tex",
+      "extraTex/3.2.工作条件.tex",
+      "extraTex/3.3.承担项目情况.tex",
+      "extraTex/3.4.完成国基项目情况.tex"
+    ],
+    "statements": [
+      "extraTex/4.1.不同类型国基情况.tex",
+      "extraTex/4.2.同年单位不一致.tex",
+      "extraTex/4.3.承担中单位不一致.tex",
+      "extraTex/4.4.不同专业技术职务的申请.tex",
+      "extraTex/4.6.其他.tex"
+    ]
+  },
+  "applicant_profile_file": "../../docs/applicants/yan-feng.md",
+  "project_fact_file": "docs/00_项目事实库.md"
+}

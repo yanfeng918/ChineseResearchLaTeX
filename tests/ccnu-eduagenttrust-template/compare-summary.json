@@ -1,0 +1,37 @@
+{
+  "dpi": 144,
+  "project_pages": 7,
+  "baseline_pages": 7,
+  "identical": false,
+  "compare_exit_code": 1,
+  "mismatches": [
+    {
+      "page": 1,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 2,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 3,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 4,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 5,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 6,
+      "reason": "pixel_difference"
+    },
+    {
+      "page": 7,
+      "reason": "pixel_difference"
+    }
+  ]
+}

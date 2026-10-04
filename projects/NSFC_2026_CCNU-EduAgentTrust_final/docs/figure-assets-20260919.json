@@ -1,0 +1,50 @@
+[
+  {
+    "id": "F01",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-c931c062-11a2-4833-bcbc-94da1da01fc0.png",
+    "png": "figures/F01-background-v2.png",
+    "pdf": "figures/F01-background-v2.pdf",
+    "caption": "教育情境与过程证据共同决定风险含义",
+    "label": "fig:edu-f01"
+  },
+  {
+    "id": "F02",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-a15de741-c414-44b7-ba5e-c8200178a028.png",
+    "png": "figures/F02-framework-v2.png",
+    "pdf": "figures/F02-framework-v2.pdf",
+    "caption": "风险表征、轨迹评测与监测干预的总体框架",
+    "label": "fig:edu-f02"
+  },
+  {
+    "id": "F03",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-390a76b2-5441-467c-b005-bfdc2c926cd5.png",
+    "png": "figures/F03-risk-representation-v2.png",
+    "pdf": "figures/F03-risk-representation-v2.pdf",
+    "caption": "R1：任务约束、风险证据与独立标注",
+    "label": "fig:edu-f03"
+  },
+  {
+    "id": "F04",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-997cfd27-3c12-4768-9cce-220f7e096c04.png",
+    "png": "figures/F04-trajectory-evaluation-v2.png",
+    "pdf": "figures/F04-trajectory-evaluation-v2.pdf",
+    "caption": "R2：当前前缀评测与动作前干预窗口",
+    "label": "fig:edu-f04"
+  },
+  {
+    "id": "F05",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-01d0f88c-e91e-4cd0-9ed5-60284e39b126.png",
+    "png": "figures/F05-monitoring-intervention-v2.png",
+    "pdf": "figures/F05-monitoring-intervention-v2.pdf",
+    "caption": "R3：候选动作缓存、顺序检查与分级处置",
+    "label": "fig:edu-f05"
+  },
+  {
+    "id": "F06",
+    "source": "/home/yanfeng/.codex/generated_images/01a0b802-05e3-71d1-8bcd-166bd8fb417e/exec-9b42e752-0df9-401a-959c-f1955afd9279.png",
+    "png": "figures/F06-factorial-design-v2.png",
+    "pdf": "figures/F06-factorial-design-v2.pdf",
+    "caption": "约束与证据的交叉消融及家族隔离验证",
+    "label": "fig:edu-f06"
+  }
+]

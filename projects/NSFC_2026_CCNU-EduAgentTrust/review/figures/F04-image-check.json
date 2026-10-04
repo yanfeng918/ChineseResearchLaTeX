@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "chinese": true,
+    "direction": true,
+    "hierarchy": true,
+    "crop": true,
+    "source_consistency": true
+  },
+  "notes": "首稿查看通过：五项外显输入进入规则/语义两支，汇合为三类输出；时间轴为首证据、有效告警、动作提交，窗口位于告警至提交之前。中文清楚，白底且无裁切、未来信息反馈或虚构数值。",
+  "tool_output_path": "/home/yanfeng/.codex/generated_images/01a07729-3ab5-7551-a94f-9d58e947e3bd/exec-b2261711-55d3-4c67-af70-c52b1ffc3032.png",
+  "actual_call_identifier": "exec-b2261711-55d3-4c67-af70-c52b1ffc3032"
+}

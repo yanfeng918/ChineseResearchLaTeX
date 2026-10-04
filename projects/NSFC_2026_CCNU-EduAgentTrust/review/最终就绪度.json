@@ -1,0 +1,30 @@
+{
+  "text_stages_done": true,
+  "body_pipeline_ready": false,
+  "figures_ready": true,
+  "illustrated_body_ready": false,
+  "submission_ready": false,
+  "pending_submission_items": [
+    "abstract",
+    "application_code",
+    "budget",
+    "declarations",
+    "attachments"
+  ],
+  "open_hard_gaps": [
+    "F-EDU-01",
+    "F-EDU-02",
+    "F-EDU-03",
+    "F-EDU-04"
+  ],
+  "figure_gap_ids": [],
+  "tentative_count": 11,
+  "counts": {
+    "selected": 6,
+    "generated": 6,
+    "pdf": 6,
+    "inserted": 6
+  },
+  "next_stage": null,
+  "scan_problems": []
+}

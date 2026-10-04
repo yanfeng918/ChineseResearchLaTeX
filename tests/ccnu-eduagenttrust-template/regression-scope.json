@@ -1,0 +1,34 @@
+{
+  "reason": "封面课题负责人字距为 CCNU 两个项目共用的固定版式，项目层覆盖会重复公共实现。仅修复 CCNU style。补充实际 bensz-thesis 消费者，不能仅按 thesis-* 名称前缀判断。",
+  "projects": [
+    {
+      "project": "projects/Huazhong_template",
+      "template": "ccnu-open-fund-2026",
+      "official_build": "python3 packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir projects/Huazhong_template",
+      "baseline_snapshot": "regression/Huazhong_template-before.pdf"
+    },
+    {
+      "project": "projects/NSFC_2026_CCNU-EduAgentTrust_final",
+      "template": "ccnu-open-fund-2026",
+      "official_build": "python3 packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir projects/NSFC_2026_CCNU-EduAgentTrust_final"
+    },
+    {
+      "project": "projects/NSFC_2026_CIESM-STSR_final",
+      "template": "ciesm-open-fund",
+      "official_build": "python3 packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir projects/NSFC_2026_CIESM-STSR_final",
+      "baseline_snapshot": "regression/NSFC_2026_CIESM-STSR_final-before.pdf"
+    },
+    {
+      "project": "projects/NSFC_2026_MineChangeTrust_final",
+      "template": "csu-open-fund-2026",
+      "official_build": "python3 packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir projects/NSFC_2026_MineChangeTrust_final",
+      "baseline_snapshot": "regression/NSFC_2026_MineChangeTrust_final-before.pdf"
+    },
+    {
+      "project": "projects/NSFC_2027_Mapping_final",
+      "template": "casm-open-fund-2026",
+      "official_build": "python3 packages/bensz-thesis/scripts/thesis_project_tool.py build --project-dir projects/NSFC_2027_Mapping_final",
+      "baseline_snapshot": "regression/NSFC_2027_Mapping_final-before.pdf"
+    }
+  ]
+}
