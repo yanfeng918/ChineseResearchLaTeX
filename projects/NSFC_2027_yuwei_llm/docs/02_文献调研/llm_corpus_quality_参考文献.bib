@@ -1,0 +1,457 @@
+@article{harnessingdiversityfor2024,
+  title = {Harnessing Diversity for Important Data Selection in Pretraining Large Language Models},
+  author = {Chi Zhang and Huaping Zhong and Kuan Zhang and Chengliang Chai and Rui Wang and Xinlin Zhuang and Tianyi Bai and Jiantao Qiu and Lei Cao and Ju Fan},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2409.16986},
+  url = {https://openalex.org/W4403321931},
+  abstract = {Data selection is of great significance in pre-training large language models, given the variation in quality within the large-scale available training corpora. To achieve this, researchers are currently investigating the use of data influence to measure the importance of data instances, \$i.e.,\$ a high influence score indicates that incorporating this instance to the training set is likely to enhance the model performance. Consequently, they select the top-\$k\$ instances with the highest scores. However, this approach has several limitations. (1) Computing the influence of all available data is time-consuming. (2) The selected data instances are not diverse enough, which may hinder the pre-trained model's ability to generalize effectively to various downstream tasks. In this paper, we introduce \texttt{Quad}, a data selection approach that considers both quality and diversity by using data influence to achieve state-of-the-art pre-training results. In particular, noting that attention layers capture extensive semantic details, we have adapted the accelerated \$iHVP\$ computation methods for attention layers, enhancing our ability to evaluate the influence of data, \$i.e.,\$ its quality. For the diversity, \texttt{Quad} clusters the dataset into similar data instances within each cluster and diverse instances across different clusters. For each cluster, if we opt to select data from it, we take some samples to evaluate the influence to prevent processing all instances. To determine which clusters to select, we utilize the classic Multi-Armed Bandit method, treating each cluster as an arm. This approach favors clusters with highly influential instances (ensuring high quality) or clusters that have been selected less frequently (ensuring diversity), thereby well balancing between quality and diversity.}
+}
+
+@article{datacurationalone2023,
+  title = {Data Curation Alone Can Stabilize In-context Learning},
+  author = {Ting-Yun Chang and Robin Jia},
+  year = {2023},
+  journal = {Unknown},
+  doi = {10.18653/v1/2023.acl-long.452},
+  url = {https://openalex.org/W4385571098},
+  abstract = {In-context learning (ICL) enables large language models (LLMs) to perform new tasks by prompting them with a sequence of training examples. However, it is known that ICL is very sensitive to the choice of training examples: randomly sampling examples from a training set leads to high variance in performance. In this paper, we show that carefully curating a subset of training data greatly stabilizes ICL performance without any other changes to the ICL algorithm (e.g., prompt retrieval or calibration). We introduce two methods to choose training subsets-both score training examples individually, then select the highest-scoring ones. CONDACC scores a training example by its average dev-set ICL accuracy when combined with random training examples, while DATAMODELS learns linear regressors that estimate how the presence of each training example influences LLM outputs. Across five tasks and two LLMs, sampling from stable subsets selected by CONDACC and DATAMODELS improves average accuracy over sampling from the entire training set by 7.7\% and 6.3\%, respectively. Surprisingly, the stable subset examples are not especially diverse in content or low in perplexity, in contrast with other work suggesting that diversity and perplexity are important when prompting LLMs.}
+}
+
+@article{rephrasingtheweb2024,
+  title = {Rephrasing the Web: A Recipe for Compute and Data-Efficient Language Modeling},
+  author = {Pratyush Maini and Skyler Seto and Richard Bai and David Grangier and Yizhe Zhang and Navdeep Jaitly},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.acl-long.757},
+  url = {https://openalex.org/W4402671026},
+  abstract = {Pratyush Maini, Skyler Seto, Richard Bai, David Grangier, Yizhe Zhang, Navdeep Jaitly. Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2024.}
+}
+
+@article{theminipilechallenge2023,
+  title = {The MiniPile Challenge for Data-Efficient Language Models},
+  author = {Jean Kaddour},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2304.08442},
+  url = {https://openalex.org/W4366330500},
+  abstract = {The ever-growing diversity of pre-training text corpora has equipped language models with generalization capabilities across various downstream tasks. However, such diverse datasets are often too large for academic budgets; hence, most research on Transformer architectures, training procedures, optimizers, etc. gets conducted on smaller, homogeneous datasets. To this end, we present The MiniPile Challenge, where one pre-trains a language model on a diverse text corpus containing at most 1M documents. MiniPile is a 6GB subset of the deduplicated 825GB The Pile corpus. To curate MiniPile, we perform a simple, three-step data filtering process: we (1) infer embeddings for all documents of the Pile, (2) cluster the embedding space using \$k\$-means, and (3) filter out low-quality clusters. To verify MiniPile's suitability for language model pre-training, we use it to pre-train a BERT and T5 model, yielding a performance drop of only \$1.9\\%\$/\$2.5\\%\$ on the GLUE and SNI benchmarks compared to the original pre-trained checkpoints trained on \$2.6\$x/\$745\$x the amount of data. MiniPile is available at https://huggingface.co/datasets/JeanKaddour/minipile.}
+}
+
+@article{whatsin2023,
+  title = {What's In My Big Data?},
+  author = {Yanai Elazar and Akshita Bhagia and Ian Magnusson and Abhilasha Ravichander and Dustin Schwenk and Alane Suhr and Pete Walsh and Dirk Groeneveld and Luca Soldaini and Sameer Singh},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2310.20707},
+  url = {https://openalex.org/W4388185104},
+  abstract = {Large text corpora are the backbone of language models. However, we have a limited understanding of the content of these corpora, including general statistics, quality, social factors, and inclusion of evaluation data (contamination). In this work, we propose What's In My Big Data? (WIMBD), a platform and a set of sixteen analyses that allow us to reveal and compare the contents of large text corpora. WIMBD builds on two basic capabilities -- count and search -- at scale, which allows us to analyze more than 35 terabytes on a standard compute node. We apply WIMBD to ten different corpora used to train popular language models, including C4, The Pile, and RedPajama. Our analysis uncovers several surprising and previously undocumented findings about these corpora, including the high prevalence of duplicate, synthetic, and low-quality content, personally identifiable information, toxic language, and benchmark contamination. For instance, we find that about 50\% of the documents in RedPajama and LAION-2B-en are duplicates. In addition, several datasets used for benchmarking models trained on such corpora are contaminated with respect to important benchmarks, including the Winograd Schema Challenge and parts of GLUE and SuperGLUE. We open-source WIMBD's code and artifacts to provide a standard set of evaluations for new text-based corpora and to encourage more analyses and transparency around them.}
+}
+
+@article{thefalconseries2023,
+  title = {The Falcon Series of Open Language Models},
+  author = {Ebtesam Almazrouei and Hamza Alobeidli and Abdulaziz Alshamsi and Alessandro Cappelli and Ruxandra Cojocaru and Debbah, Mérouane and Goffinet, Étienne and Daniel Hesslow and Julien Launay and Quentin Malartic},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2311.16867},
+  url = {https://openalex.org/W4389157038},
+  abstract = {We introduce the Falcon series: 7B, 40B, and 180B parameters causal decoder-only models trained on a diverse high-quality corpora predominantly assembled from web data. The largest model, Falcon-180B, has been trained on over 3.5 trillion tokens of text--the largest openly documented pretraining run. Falcon-180B significantly outperforms models such as PaLM or Chinchilla, and improves upon concurrently developed models such as LLaMA 2 or Inflection-1. It nears the performance of PaLM-2-Large at a reduced pretraining and inference cost, making it, to our knowledge, one of the three best language models in the world along with GPT-4 and PaLM-2-Large. We report detailed evaluations, as well as a deep dive into the methods and custom tooling employed to pretrain Falcon. Notably, we report on our custom distributed training codebase, allowing us to efficiently pretrain these models on up to 4,096 A100s on cloud AWS infrastructure with limited interconnect. We release a 600B tokens extract of our web dataset, as well as the Falcon-7/40/180B models under a permissive license to foster open-science and accelerate the development of an open ecosystem of large language models.}
+}
+
+@article{dataaugmentationusing2024,
+  title = {Data Augmentation using LLMs: Data Perspectives, Learning Paradigms and Challenges},
+  author = {Bosheng Ding and Chengwei Qin and Ruochen Zhao and Tianze Luo and Xinze Li and Guizhen Chen and Wenhan Xia and Junjie Hu and Anh Tuan Luu and Shafiq Joty},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.findings-acl.97},
+  url = {https://openalex.org/W4402670893},
+  abstract = {Bosheng Ding, Chengwei Qin, Ruochen Zhao, Tianze Luo, Xinze Li, Guizhen Chen, Wenhan Xia, Junjie Hu, Anh Tuan Luu, Shafiq Joty. Findings of the Association for Computational Linguistics: ACL 2024. 2024.}
+}
+
+@article{deduplicatingtrainingdata2022,
+  title = {Deduplicating Training Data Makes Language Models Better},
+  author = {Katherine Lee and Daphne Ippolito and Andrew Nystrom and Chiyuan Zhang and Douglas Eck and Chris Callison-Burch and Nicholas Carlini},
+  year = {2022},
+  journal = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  doi = {10.18653/v1/2022.acl-long.577},
+  url = {https://openalex.org/W3177765786},
+  abstract = {Katherine Lee, Daphne Ippolito, Andrew Nystrom, Chiyuan Zhang, Douglas Eck, Chris Callison-Burch, Nicholas Carlini. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2022.}
+}
+
+@article{datasetsforlarge2024,
+  title = {Datasets for Large Language Models: A Comprehensive Survey},
+  author = {Yang Liu and Jiahuan Cao and Chongyu Liu and Kai Ding and Lianwen Jin},
+  year = {2024},
+  journal = {Research Square},
+  doi = {10.21203/rs.3.rs-3996137/v1},
+  url = {https://openalex.org/W4392402185},
+  abstract = {This paper embarks on an exploration into the Large Language Model (LLM) datasets, which play a crucial role in the remarkable advancements of LLMs. The datasets serve as the foundational infrastructure analogous to a root system that sustains and nurtures the development of LLMs. Consequently, examination of these datasets emerges as a critical topic in research. In order to address the current lack of a comprehensive overview and thorough analysis of LLM datasets, and to gain insights into their current status and future trends, this survey consolidates and categorizes the fundamental aspects of LLM datasets from five perspectives: (1) Pre-training Corpora; (2) Instruction Fine-tuning Datasets; (3) Preference Datasets; (4) Evaluation Datasets; (5) Traditional Natural Language Processing (NLP) Datasets. The survey sheds light on the prevailing challenges and points out potential avenues for future investigation. Additionally, a comprehensive review of the existing available dataset resources is also provided, including statistics from 444 datasets, covering 8 language categories and spanning 32 domains. Information from 20 dimensions is incorporated into the dataset statistics. The total data size surveyed surpasses 774.5 TB for pre-training corpora and 700M instances for other datasets. We aim to present the entire landscape of LLM text datasets, serving as a comprehensive reference for researchers in this field and contributing to future studies. Related resources are available at: https://github.com/lmmlzn/Awesome-LLMs-Datasets.}
+}
+
+@article{baichuanseedsharingthe2024,
+  title = {BaichuanSEED: Sharing the Potential of ExtensivE Data Collection and Deduplication by Introducing a Competitive Large Language Model Baseline},
+  author = {Guosheng Dong and Da Pan and Yiding Sun and Shusen Zhang and Liang, Zheng and Xin Wu and Yanjun Shen and Fan Yang and Haoze Sun and Tianpeng Li},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2408.15079},
+  url = {https://openalex.org/W4402705130},
+  abstract = {The general capabilities of Large Language Models (LLM) highly rely on the composition and selection on extensive pretraining datasets, treated as commercial secrets by several institutions. To mitigate this issue, we open-source the details of a universally applicable data processing pipeline and validate its effectiveness and potential by introducing a competitive LLM baseline. Specifically, the data processing pipeline consists of broad collection to scale up and reweighting to improve quality. We then pretrain a 7B model BaichuanSEED with 3T tokens processed by our pipeline without any deliberate downstream task-related optimization, followed by an easy but effective supervised fine-tuning stage. BaichuanSEED demonstrates consistency and predictability throughout training and achieves comparable performance on comprehensive benchmarks with several commercial advanced large language models, such as Qwen1.5 and Llama3. We also conduct several heuristic experiments to discuss the potential for further optimization of downstream tasks, such as mathematics and coding.}
+}
+
+@article{therefinedwebdataset2023,
+  title = {The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data, and Web Data Only},
+  author = {Guilherme Penedo and Quentin Malartic and Daniel Hesslow and Ruxandra Cojocaru and Alessandro Cappelli and Hamza Alobeidli and B. Pannier and Ebtesam Almazrouei and Julien Launay},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2306.01116},
+  url = {https://openalex.org/W4379468930},
+  abstract = {Large language models are commonly trained on a mixture of filtered web data and curated high-quality corpora, such as social media conversations, books, or technical papers. This curation process is believed to be necessary to produce performant models with broad zero-shot generalization abilities. However, as larger models requiring pretraining on trillions of tokens are considered, it is unclear how scalable is curation and whether we will run out of unique high-quality data soon. At variance with previous beliefs, we show that properly filtered and deduplicated web data alone can lead to powerful models; even significantly outperforming models from the state-of-the-art trained on The Pile. Despite extensive filtering, the high-quality data we extract from the web is still plentiful, and we are able to obtain five trillion tokens from CommonCrawl. We publicly release an extract of 600 billion tokens from our RefinedWeb dataset, and 1.3/7.5B parameters language models trained on it.}
+}
+
+@article{dolmaanopen2024,
+  title = {Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research},
+  author = {Luca Soldaini and Rodney Kinney and Akshita Bhagia and Dustin Schwenk and David Atkinson and Russell Authur and Ben Bogin and Khyathi Raghavi Chandu and Jennifer Dumas and Yanai Elazar},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.acl-long.840},
+  url = {https://openalex.org/W4402671286},
+  abstract = {Luca Soldaini, Rodney Kinney, Akshita Bhagia, Dustin Schwenk, David Atkinson, Russell Authur, Ben Bogin, Khyathi Chandu, Jennifer Dumas, Yanai Elazar, Valentin Hofmann, Ananya Jha, Sachin Kumar, Li Lucy, Xinxi Lyu, Nathan Lambert, Ian Magnusson, Jacob Morrison, Niklas Muennighoff, Aakanksha Naik, Crystal Nam, Matthew Peters, Abhilasha Ravichander, Kyle Richardson, Zejiang Shen, Emma Strubell, Nishant Subramani, Oyvind Tafjord, Evan Walsh, Luke Zettlemoyer, Noah Smith, Hannaneh Hajishirzi, Iz Beltagy, Dirk Groeneveld, Jesse Dodge, Kyle Lo. Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2024.}
+}
+
+@article{anarchivalperspective2024,
+  title = {An archival perspective on pretraining data},
+  author = {Meera Desai and Irene V. Pasquetto and Abigail Z. Jacobs and Dallas Card},
+  year = {2024},
+  journal = {Patterns},
+  doi = {10.1016/j.patter.2024.100966},
+  url = {https://openalex.org/W4393321314},
+  abstract = {Alongside an explosion in research and development related to large language models, there has been a concomitant rise in the creation of pretraining datasets-massive collections of text, typically scraped from the web. Drawing on the field of archival studies, we analyze pretraining datasets as informal archives-heterogeneous collections of diverse material that mediate access to knowledge. We use this framework to identify impacts of pretraining data creation and use beyond directly shaping model behavior and reveal how choices about what is included in pretraining data necessarily involve subjective decisions about values. In doing so, the archival perspective helps us identify opportunities for researchers who study the social impacts of technology to contribute to confronting the challenges and trade-offs that arise in creating pretraining datasets at this scale.}
+}
+
+@article{skillita2023,
+  title = {Skill-it! A Data-Driven Skills Framework for Understanding and Training Language Models},
+  author = {Mayee F. Chen and Nicholas Roberts and Kush Bhatia and Jue Wang and Ce Zhang and Frédéric Sala and Christopher Ré},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2307.14430},
+  url = {https://openalex.org/W4385373703},
+  abstract = {The quality of training data impacts the performance of pre-trained large language models (LMs). Given a fixed budget of tokens, we study how to best select data that leads to good downstream model performance across tasks. We develop a new framework based on a simple hypothesis: just as humans acquire interdependent skills in a deliberate order, language models also follow a natural order when learning a set of skills from their training data. If such an order exists, it can be utilized for improved understanding of LMs and for data-efficient training. Using this intuition, our framework formalizes the notion of a skill and of an ordered set of skills in terms of the associated data. First, using both synthetic and real data, we demonstrate that these ordered skill sets exist, and that their existence enables more advanced skills to be learned with less data when we train on their prerequisite skills. Second, using our proposed framework, we introduce an online data sampling algorithm, Skill-It, over mixtures of skills for both continual pre-training and fine-tuning regimes, where the objective is to efficiently learn multiple skills in the former and an individual skill in the latter. On the LEGO synthetic in the continual pre-training setting, Skill-It obtains 36.5 points higher accuracy than random sampling. On the Natural Instructions dataset in the fine-tuning setting, Skill-It reduces the validation loss on the target skill by 13.6\% versus training on data associated with the target skill itself. We apply our skills framework on the recent RedPajama dataset to continually pre-train a 3B-parameter LM, achieving higher accuracy on the LM Evaluation Harness with 1B tokens than the baseline approach of sampling uniformly over data sources with 3B tokens.}
+}
+
+@article{doremioptimizingdata2023,
+  title = {DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining},
+  author = {Sang Michael Xie and Hieu Pham and Xuanyi Dong and Nan Du and Hanxiao Liu and Yifeng Lu and Percy Liang and Quoc V. Le and Tengyu Ma and Adams Wei Yu},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2305.10429},
+  url = {https://openalex.org/W4377121615},
+  abstract = {The mixture proportions of pretraining data domains (e.g., Wikipedia, books, web text) greatly affect language model (LM) performance. In this paper, we propose Domain Reweighting with Minimax Optimization (DoReMi), which first trains a small proxy model using group distributionally robust optimization (Group DRO) over domains to produce domain weights (mixture proportions) without knowledge of downstream tasks. We then resample a dataset with these domain weights and train a larger, full-sized model. In our experiments, we use DoReMi on a 280M-parameter proxy model to set the domain weights for training an 8B-parameter model (30x larger) more efficiently. On The Pile, DoReMi improves perplexity across all domains, even when it downweights a domain. DoReMi improves average few-shot downstream accuracy by 6.5\% points over a baseline model trained using The Pile's default domain weights and reaches the baseline accuracy with 2.6x fewer training steps. On the GLaM dataset, DoReMi, which has no knowledge of downstream tasks, even matches the performance of using domain weights tuned on downstream tasks.}
+}
+
+@article{dogedomainreweighting2023,
+  title = {DoGE: Domain Reweighting with Generalization Estimation},
+  author = {Simin Fan and Matteo Pagliardini and Martin Jaggi},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2310.15393},
+  url = {https://openalex.org/W4387947154},
+  abstract = {The coverage and composition of the pretraining data significantly impacts the generalization ability of Large Language Models (LLMs). Despite its importance, recent LLMs still rely on heuristics and trial and error to increase or reduce the influence of data-domains. We propose DOmain reweighting with Generalization Estimation (DoGE), which optimizes the probability of sampling from each domain (domain weights) in a principled way. Our approach is a two-stage process consisting of (i) training a proxy model to obtain domain weights using a bi-level optimization algorithm; (ii) training a larger base model by sampling training domains according to the learned domain weights. In our experiments, we extensively show how DoGE improves the generalization of the base model to any target data mixture. On the SlimPajama dataset, our base model gets better perplexity and few-shot reasoning accuracies across \$6\$ tasks compared to baseline methods. Moreover, aiming to generalize to out-of-domain target tasks, which is unseen in the pretraining corpus (OOD domain), DoGE can effectively identify inter-domain dependencies, and consistently achieves better test perplexity on the target domain.}
+}
+
+@article{datamixinglaws2024,
+  title = {Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance},
+  author = {Jiasheng Ye and Peiju Liu and Tung-Ching Sun and Jun Zhan and Yunhua Zhou and Xipeng Qiu},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2403.16952},
+  url = {https://openalex.org/W4393213783},
+  abstract = {Pretraining data of large language models composes multiple domains (e.g., web texts, academic papers, codes), whose mixture proportions crucially impact the competence of outcome models. While existing endeavors rely on heuristics or qualitative strategies to tune the proportions, we discover the quantitative predictability of model performance regarding the mixture proportions in function forms, which we refer to as the data mixing laws. Fitting such functions on sample mixtures unveils model performance on unseen mixtures before actual runs, thus guiding the selection of an ideal data mixture. Furthermore, we propose nested use of the scaling laws of training steps, model sizes, and our data mixing law to enable predicting the performance of large models trained on massive data under various mixtures with only small-scale training. Moreover, experimental results verify that our method effectively optimizes the training mixture of a 1B model trained for 100B tokens in RedPajama, reaching a performance comparable to the one trained for 48\% more steps on the default mixture. Extending the application of data mixing laws to continual training accurately predicts the critical mixture proportion that avoids catastrophic forgetting and outlooks the potential for dynamic data schedules}
+}
+
+@article{selfinfluenceguided2023,
+  title = {Self-Influence Guided Data Reweighting for Language Model Pre-training},
+  author = {Megh Thakkar and Tolga Bolukbasi and Sriram Ganapathy and Shikhar Vashishth and Sarath Chandar and Partha Talukdar},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.18653/v1/2023.emnlp-main.125},
+  url = {https://openalex.org/W4389519618},
+  abstract = {Language Models (LMs) pre-trained with selfsupervision on large text corpora have become the default starting point for developing models for various NLP tasks. Once the pre-training corpus has been assembled, all data samples in the corpus are treated with equal importance during LM pre-training. However, due to varying levels of relevance and quality of data, equal importance to all the data samples may not be the optimal choice. While data reweighting has been explored in the context of task-specific supervised learning and LM fine-tuning, model-driven reweighting for pretraining data has not been explored. We fill this important gap and propose PRESENCE, a method for jointly reweighting samples by leveraging self-influence (SI) scores as an indicator of sample importance and pre-training. PRESENCE promotes novelty and stability for model pre-training. Through extensive analysis spanning multiple model sizes, datasets, and tasks, we present PRESENCE as an important first step in the research direction of sample reweighting for pre-training language models.}
+}
+
+@article{dynamiclossbased2025,
+  title = {Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining},
+  author = {Daouda Sow and Herbert Woisetschläger and Saikiran Bulusu and Shiqiang Wang and Hans‐Arno Jacobsen and Yingbin Liang},
+  year = {2025},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2502.06733},
+  url = {https://openalex.org/W4407359523},
+  abstract = {Pretraining large language models (LLMs) on vast and heterogeneous datasets is crucial for achieving state-of-the-art performance across diverse downstream tasks. However, current training paradigms treat all samples equally, overlooking the importance or relevance of individual samples throughout the training process. Existing reweighting strategies, which primarily focus on group-level data importance, fail to leverage fine-grained instance-level information and do not adapt dynamically to individual sample importance as training progresses. In this paper, we introduce novel algorithms for dynamic, instance-level data reweighting aimed at improving both the efficiency and effectiveness of LLM pretraining. Our methods adjust the weight of each training sample based on its loss value in an online fashion, allowing the model to dynamically focus on more informative or important samples at the current training stage. In particular, our framework allows us to systematically devise reweighting strategies deprioritizing redundant or uninformative data, which we find tend to work best. Furthermore, we develop a new theoretical framework for analyzing the impact of loss-based reweighting on the convergence of gradient-based optimization, providing the first formal characterization of how these strategies affect convergence bounds. We empirically validate our approach across a spectrum of tasks, from pretraining 7B and 1.4B parameter LLMs to smaller-scale language models and linear regression problems, demonstrating that our loss-based reweighting approach can lead to faster convergence and significantly improved performance.}
+}
+
+@article{scalebioscalablebilevel2024,
+  title = {ScaleBiO: Scalable Bilevel Optimization for LLM Data Reweighting},
+  author = {Rui Pan and Zhang, Dylan and Zhang, Hanning and Xingyuan Pan and Xu, Minrui and Jipeng Zhang and Renjie Pi and Xiaoyu Wang and Tong Zhang},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2406.19976},
+  url = {https://openalex.org/W4400222097},
+  abstract = {Bilevel optimization has shown its utility across various machine learning settings, yet most algorithms in practice require second-order information, making it challenging to scale them up. Only recently, a paradigm of first-order algorithms has emerged in the theoretical literature, capable of effectively addressing bilevel optimization problems. Nevertheless, the practical efficiency of this paradigm remains unverified, particularly in the context of large language models (LLMs). This paper introduces the first scalable instantiation of this paradigm called ScaleBiO, focusing on bilevel optimization for large-scale LLM data reweighting. By combining with a recently proposed memory-efficient training technique called LISA, our novel algorithm allows the paradigm to scale to \$\sim\$30B-sized LLMs on \$8\times\$H100 GPUs, marking the first successful application of bilevel optimization under practical scenarios for large-sized LLMs. Empirically, extensive experiments on data reweighting verify the effectiveness of ScaleBiO for different-scaled models, including Llama-3-8B, Gemma-2-9B, Qwen-2-7B, and Qwen-2.5-32B, where bilevel optimization succeeds in instruction-following and math reasoning tasks, outperforming several popular baselines, including uniform sampling, influence-aware data filtering, and reference-model-based sampling methods. Theoretically, ScaleBiO ensures the optimality of the learned data weights, along with a convergence guarantee matching the conventional first-order bilevel optimization paradigm on smooth and strongly convex objectives.}
+}
+
+@article{trainingcomputeoptimal2022,
+  title = {Training Compute-Optimal Large Language Models},
+  author = {Jordan Hoffmann and Sebastian Borgeaud and Arthur Mensch and Elena Buchatskaya and Trevor Cai and Eliza Rutherford and Diego de Las Casas and Lisa Anne Hendricks and Johannes Welbl and Aidan Clark},
+  year = {2022},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2203.15556},
+  url = {https://openalex.org/W4225591000},
+  abstract = {We investigate the optimal model size and number of tokens for training a transformer language model under a given compute budget. We find that current large language models are significantly undertrained, a consequence of the recent focus on scaling language models whilst keeping the amount of training data constant. By training over 400 language models ranging from 70 million to over 16 billion parameters on 5 to 500 billion tokens, we find that for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled. We test this hypothesis by training a predicted compute-optimal model, Chinchilla, that uses the same compute budget as Gopher but with 70B parameters and 4\$\times\$ more more data. Chinchilla uniformly and significantly outperforms Gopher (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing NLG (530B) on a large range of downstream evaluation tasks. This also means that Chinchilla uses substantially less compute for fine-tuning and inference, greatly facilitating downstream usage. As a highlight, Chinchilla reaches a state-of-the-art average accuracy of 67.5\% on the MMLU benchmark, greater than a 7\% improvement over Gopher.}
+}
+
+@article{scalinglanguagemodels2021,
+  title = {Scaling Language Models: Methods, Analysis \& Insights from Training Gopher},
+  author = {Jack W. Rae and Sebastian Borgeaud and Trevor Cai and Katie Millican and Jordan Hoffmann and Francis Song and John Aslanides and Sarah B. Henderson and Roman Ring and Susannah Young},
+  year = {2021},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2112.11446},
+  url = {https://openalex.org/W4226146865},
+  abstract = {Language modelling provides a step towards intelligent communication systems by harnessing large repositories of written human knowledge to better predict and understand the world. In this paper, we present an analysis of Transformer-based language model performance across a wide range of model scales -- from models with tens of millions of parameters up to a 280 billion parameter model called Gopher. These models are evaluated on 152 diverse tasks, achieving state-of-the-art performance across the majority. Gains from scale are largest in areas such as reading comprehension, fact-checking, and the identification of toxic language, but logical and mathematical reasoning see less benefit. We provide a holistic analysis of the training dataset and model's behaviour, covering the intersection of model scale with bias and toxicity. Finally we discuss the application of language models to AI safety and the mitigation of downstream harms.}
+}
+
+@article{scalinglawsfor2020,
+  title = {Scaling Laws for Neural Language Models},
+  author = {Kaplan, Jared and Sam McCandlish and Tom Henighan and T. B. Brown and Benjamin Chess and Rewon Child and Scott Gray and Alec Radford and Jeffrey Wu and Dario Amodei},
+  year = {2020},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2001.08361},
+  url = {https://openalex.org/W3001279689},
+  abstract = {This paper develops a transport-validity theory for agentic AI interventions that are first screened on small systems and later considered for frontier-scale deployment. Rather than predicting absolute frontier performance, it asks when a comparative gain observed at small scale can be carried forward without overclaiming. The analysis targets an explicitly delimited class of operationally isolatable interventions whose effects can be compiled from logged event-local channels with bounded spillover and replayable extraction maps. The paper proves structured failure modes for naive extrapolation, including sign reversal under bottleneck-weight shift and the vacuity of observable closeness when a descriptor omits a sign-relevant coordinate. It then develops a constructive positive framework based on executable lower certificates: a two-stage compiler architecture, replayable identified sets for stage-one mode laws, descriptor-language growth audits, witness-cover transport certificates, branch-local evaluation bridges, confidence-calibrated audit rules, and portfolio-level frontier allocation under interaction risk. The result is a finite, machine-readable, and operational framework for deciding which small-scale architectural improvements—such as decomposition, tool routing, memory policy, verifier coupling, orchestration, and related inference-time interventions—deserve expensive frontier trials, and how scarce frontier budget should be allocated among them. The paper does not claim a law for AGI timelines and does not remove the need for frontier experimentation; its claim is narrower and practical: to provide replayable, falsifiable conditions for responsible scale-up decisions in agentic AI research.}
+}
+
+@article{asurveyon2024,
+  title = {A Survey on Data Selection for Language Models},
+  author = {Alon Albalak and Yanai Elazar and Sang Michael Xie and Shayne Longpre and Nathan Lambert and Xinyi Wang and Niklas Muennighoff and Bairu Hou and Liangming Pan and Haewon Jeong},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2402.16827},
+  url = {https://openalex.org/W4392223203},
+  abstract = {A major factor in the recent success of large language models is the use of enormous and ever-growing text datasets for unsupervised pre-training. However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary. Filtering out data can also decrease the carbon footprint and financial costs of training models by reducing the amount of training required. Data selection methods aim to determine which candidate data points to include in the training dataset and how to appropriately sample from the selected data points. The promise of improved data selection methods has caused the volume of research in the area to rapidly expand. However, because deep learning is mostly driven by empirical evidence and experimentation on large-scale data is expensive, few organizations have the resources for extensive data selection research. Consequently, knowledge of effective data selection practices has become concentrated within a few organizations, many of which do not openly share their findings and methodologies. To narrow this gap in knowledge, we present a comprehensive review of existing literature on data selection methods and related research areas, providing a taxonomy of existing approaches. By describing the current landscape of research, this work aims to accelerate progress in data selection by establishing an entry point for new and established researchers. Additionally, throughout this review we draw attention to noticeable holes in the literature and conclude the paper by proposing promising avenues for future research.}
+}
+
+@article{positionpaperdata2024,
+  title = {Position Paper: Data-Centric AI in the Age of Large Language Models},
+  author = {Xinyi Xu and Zhaoxuan Wu and Rui Qiao and Arun Verma and Yao Shu and Jingtan Wang and Xinyuan Niu and Zhenfeng He and Jiangwei Chen and Zijian Zhou},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.findings-emnlp.695},
+  url = {https://openalex.org/W4404781101},
+  abstract = {Xinyi Xu, Zhaoxuan Wu, Rui Qiao, Arun Verma, Yao Shu, Jingtan Wang, Xinyuan Niu, Zhenfeng He, Jiangwei Chen, Zijian Zhou, Gregory Kang Ruey Lau, Hieu Dao, Lucas Agussurja, Rachael Hwee Ling Sim, Xiaoqiang Lin, Wenyang Hu, Zhongxiang Dai, Pang Wei Koh, Bryan Kian Hsiang Low. Findings of the Association for Computational Linguistics: EMNLP 2024. 2024.}
+}
+
+@article{datamanagementfor2023,
+  title = {Data Management For Training Large Language Models: A Survey},
+  author = {Zige Wang and Wanjun Zhong and Yufei Wang and Qi Zhu and Fei Mi and Baojun Wang and Lifeng Shang and Xin Jiang and Liu, Qun},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2312.01700},
+  url = {https://openalex.org/W4389364022},
+  abstract = {Data plays a fundamental role in training Large Language Models (LLMs). Efficient data management, particularly in formulating a well-suited training dataset, is significant for enhancing model performance and improving training efficiency during pretraining and supervised fine-tuning stages. Despite the considerable importance of data management, the underlying mechanism of current prominent practices are still unknown. Consequently, the exploration of data management has attracted more and more attention among the research community. This survey aims to provide a comprehensive overview of current research in data management within both the pretraining and supervised fine-tuning stages of LLMs, covering various aspects of data management strategy design. Looking into the future, we extrapolate existing challenges and outline promising directions for development in this field. Therefore, this survey serves as a guiding resource for practitioners aspiring to construct powerful LLMs through efficient data management practices. The collection of the latest papers is available at https://github.com/ZigeW/data\_management\_LLM.}
+}
+
+@article{adatacentric2025,
+  title = {A Data-Centric Perspective on the Lifecycle of Large Language Models},
+  author = {Jun Rao and Xuebo Liu and Haotian Yan and Junjie Shen and Haizhen Mo and Yanghaopeng Dong and Zihao Yan and Ziyi Wang and Zepeng Lin and Xiaojun Meng},
+  year = {2025},
+  journal = {Unknown},
+  doi = {10.36227/techrxiv.176620610.03288677/v1},
+  url = {https://openalex.org/W4417519375},
+  abstract = {This survey reframes large language model (LLM) development through a purely data-centric lens, arguing that downstream capability is shaped primarily by the quality and evolution of training data rather than parameter count. We systematically map the LLM data lifecycle across three interconnected dimensions: (i) Existing Datasets: cataloging general and domain-specific corpora used in pre-training, SFT and RL; (ii) Creation: reviewing annotation, synthesis and selection techniques that generate or filter data while balancing fidelity, diversity and task relevance; and (iii) Strategy: summarizing how data ordering, mixing, replay and constraints influence training effectiveness, efficiency and truthfulness. By treating data as an active epistemic agent that co-evolves with the model, we reveal how iterative generate-filter-reuse cycles can expand capability frontiers without architectural redesign. The survey concludes with emerging challenges, domain scarcity, crossdomain reuse, privacy, and outlines future directions such as data flywheels and model-aware filters, offering researchers a concise roadmap for building performant, trustworthy and domain-expert LLMs via data-centric optimization.}
+}
+
+@article{largelanguagemodels2024,
+  title = {Large Language Models for Data Annotation and Synthesis: A Survey},
+  author = {Zhen Tan and Dawei Li and Song Wang and Alimohammad Beigi and Bohan Jiang and Amrita Bhattacharjee and Mansooreh Karami and Jundong Li and Cheng Lu and Huan Liu},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.emnlp-main.54},
+  url = {https://openalex.org/W4404783774},
+  abstract = {Zhen Tan, Dawei Li, Song Wang, Alimohammad Beigi, Bohan Jiang, Amrita Bhattacharjee, Mansooreh Karami, Jundong Li, Lu Cheng, Huan Liu. Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing. 2024.}
+}
+
+@article{quantifyingmemorizationacross2022,
+  title = {Quantifying Memorization Across Neural Language Models},
+  author = {Nicholas Carlini and Daphne Ippolito and Matthew Jagielski and Katherine Lee and Florian Tramèr and Chiyuan Zhang},
+  year = {2022},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2202.07646},
+  url = {https://openalex.org/W4221159672},
+  abstract = {Large language models (LMs) have been shown to memorize parts of their training data, and when prompted appropriately, they will emit the memorized training data verbatim. This is undesirable because memorization violates privacy (exposing user data), degrades utility (repeated easy-to-memorize text is often low quality), and hurts fairness (some texts are memorized over others). We describe three log-linear relationships that quantify the degree to which LMs emit memorized training data. Memorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated, and (3) the number of tokens of context used to prompt the model. Surprisingly, we find the situation becomes more complicated when generalizing these results across model families. On the whole, we find that memorization in LMs is more prevalent than previously believed and will likely get worse as models continues to scale, at least without active mitigations.}
+}
+
+@article{trainingdatainfluence2024,
+  title = {Training data influence analysis and estimation: a survey},
+  author = {Zayd Hammoudeh and Daniel Lowd},
+  year = {2024},
+  journal = {Machine Learning},
+  doi = {10.1007/s10994-023-06495-7},
+  url = {https://openalex.org/W4393306008},
+  abstract = {Abstract Good models require good training data. For overparameterized deep models, the causal relationship between training data and model predictions is increasingly opaque and poorly understood. Influence analysis partially demystifies training’s underlying interactions by quantifying the amount each training instance alters the final model. Measuring the training data’s influence exactly can be provably hard in the worst case; this has led to the development and use of influence estimators, which only approximate the true influence. This paper provides the first comprehensive survey of training data influence analysis and estimation. We begin by formalizing the various, and in places orthogonal, definitions of training data influence. We then organize state-of-the-art influence analysis methods into a taxonomy; we describe each of these methods in detail and compare their underlying assumptions, asymptotic complexities, and overall strengths and weaknesses. Finally, we propose future research directions to make influence analysis more useful in practice as well as more theoretically and empirically sound.}
+}
+
+@article{orcainterpretingprompted2022,
+  title = {ORCA: Interpreting Prompted Language Models via Locating Supporting Data Evidence in the Ocean of Pretraining Data},
+  author = {Xiaochuang Han and Yulia Tsvetkov},
+  year = {2022},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2205.12600},
+  url = {https://openalex.org/W4281784180},
+  abstract = {Large pretrained language models have been performing increasingly well in a variety of downstream tasks via prompting. However, it remains unclear from where the model learns the task-specific knowledge, especially in a zero-shot setup. In this work, we want to find evidence of the model's task-specific competence from pretraining and are specifically interested in locating a very small subset of pretraining data that directly supports the model in the task. We call such a subset supporting data evidence and propose a novel method ORCA to effectively identify it, by iteratively using gradient information related to the downstream task. This supporting data evidence offers interesting insights about the prompted language models: in the tasks of sentiment analysis and textual entailment, BERT shows a substantial reliance on BookCorpus, the smaller corpus of BERT's two pretraining corpora, as well as on pretraining examples that mask out synonyms to the task verbalizers.}
+}
+
+@article{datavaluationwithout2023,
+  title = {Data Valuation Without Training of a Model},
+  author = {Nohyun Ki and Ho‐Yong Choi and Hye Won Chung},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2301.00930},
+  url = {https://openalex.org/W4313531492},
+  abstract = {Many recent works on understanding deep learning try to quantify how much individual data instances influence the optimization and generalization of a model. Such attempts reveal characteristics and importance of individual instances, which may provide useful information in diagnosing and improving deep learning. However, most of the existing works on data valuation require actual training of a model, which often demands high-computational cost. In this paper, we provide a training-free data valuation score, called complexity-gap score, which is a data-centric score to quantify the influence of individual instances in generalization of two-layer overparameterized neural networks. The proposed score can quantify irregularity of the instances and measure how much each data instance contributes in the total movement of the network parameters during training. We theoretically analyze and empirically demonstrate the effectiveness of the complexity-gap score in finding `irregular or mislabeled' data instances, and also provide applications of the score in analyzing datasets and diagnosing training dynamics. Our code is publicly available at https://github.com/JJchy/CG\_score}
+}
+
+@article{whatisyour2025,
+  title = {What is Your Data Worth to GPT? LLM-Scale Data Valuation with Influence Functions},
+  author = {Sang Keun Choe and Hwijeen Ahn and Juhan Bae and Kewen Zhao and Youngseog Chung and Adithya Pratapa and Willie Neiswanger and Emma Strubell and Teruko Mitamura and Jeff Schneider},
+  year = {2025},
+  journal = {Unknown},
+  doi = {10.52202/085713-4883},
+  url = {https://openalex.org/W4399026300},
+  abstract = {Large language models (LLMs) are trained on a vast amount of human-written data, but data providers often remain uncredited. In response to this issue, data valuation (or data attribution), which quantifies the contribution or value of each data to the model output, has been discussed as a potential solution. Nevertheless, applying existing data valuation methods to recent LLMs and their vast training datasets has been largely limited by prohibitive compute and memory costs. In this work, we focus on influence functions, a popular gradient-based data valuation method, and significantly improve its scalability with an efficient gradient projection strategy called LoGra that leverages the gradient structure in backpropagation. We then provide a theoretical motivation of gradient projection approaches to influence functions to promote trust in the data valuation process. Lastly, we lower the barrier to implementing data valuation systems by introducing LogIX, a software package that can transform existing training code into data valuation code with minimal effort. In our data valuation experiments, LoGra achieves competitive accuracy against more expensive baselines while showing up to 6,500x improvement in throughput and 5x reduction in GPU memory usage when applied to Llama3-8B-Instruct and the 1B-token dataset.}
+}
+
+@article{decipheringtheimpact2024,
+  title = {Deciphering the Impact of Pretraining Data on Large Language Models through Machine Unlearning},
+  author = {Yang Zhao and Li Du and Xiao Ding and Kai Xiong and Zhouhao Sun and Shi Jun and Ting Liu and Bing Qin},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.findings-acl.559},
+  url = {https://openalex.org/W4402670181},
+  abstract = {Through pretraining on a corpus with various sources, Large Language Models (LLMs) have gained impressive performance.However, the impact of each component of the pretraining corpus remains opaque.As a result, the organization of the pretraining corpus is still empirical and may deviate from the optimal.To address this issue, we systematically analyze the impact of 48 datasets from 5 major categories of pretraining data of LLMs and measure their impacts on LLMs using benchmarks about nine major categories of model capabilities.Our analyses provide empirical results about the contribution of multiple corpora on the performances of LLMs, along with their joint impact patterns, including complementary, orthogonal, and correlational relationships.We also identify a set of "high-impact data" such as Books that is significantly related to a set of model capabilities.These findings provide insights into the organization of data to support more efficient pretraining of LLMs.}
+}
+
+@article{firstisbetter2022,
+  title = {First is Better Than Last for Language Data Influence},
+  author = {Chih‐Kuan Yeh and Ankur Taly and Mukund Sundararajan and Frederick Liu and Pradeep Ravikumar},
+  year = {2022},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2202.11844},
+  url = {https://openalex.org/W4307533970},
+  abstract = {The ability to identify influential training examples enables us to debug training data and explain model behavior. Existing techniques to do so are based on the flow of training data influence through the model parameters. For large models in NLP applications, it is often computationally infeasible to study this flow through all model parameters, therefore techniques usually pick the last layer of weights. However, we observe that since the activation connected to the last layer of weights contains "shared logic", the data influenced calculated via the last layer weights prone to a ``cancellation effect'', where the data influence of different examples have large magnitude that contradicts each other. The cancellation effect lowers the discriminative power of the influence score, and deleting influential examples according to this measure often does not change the model's behavior by much. To mitigate this, we propose a technique called TracIn-WE that modifies a method called TracIn to operate on the word embedding layer instead of the last layer, where the cancellation effect is less severe. One potential concern is that influence based on the word embedding layer may not encode sufficient high level information. However, we find that gradients (unlike embeddings) do not suffer from this, possibly because they chain through higher layers. We show that TracIn-WE significantly outperforms other data influence methods applied on the last layer significantly on the case deletion evaluation on three language classification tasks for different models. In addition, TracIn-WE can produce scores not just at the level of the overall training input, but also at the level of words within the training input, a further aid in debugging.}
+}
+
+@article{opendatavalaunified2023,
+  title = {OpenDataVal: a Unified Benchmark for Data Valuation},
+  author = {Kevin Fu Jiang and Weixin Liang and James Zou and Yongchan Kwon},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2306.10577},
+  url = {https://openalex.org/W4381562228},
+  abstract = {Assessing the quality and impact of individual data points is critical for improving model performance and mitigating undesirable biases within the training dataset. Several data valuation algorithms have been proposed to quantify data quality, however, there lacks a systemic and standardized benchmarking system for data valuation. In this paper, we introduce OpenDataVal, an easy-to-use and unified benchmark framework that empowers researchers and practitioners to apply and compare various data valuation algorithms. OpenDataVal provides an integrated environment that includes (i) a diverse collection of image, natural language, and tabular datasets, (ii) implementations of eleven different state-of-the-art data valuation algorithms, and (iii) a prediction model API that can import any models in scikit-learn. Furthermore, we propose four downstream machine learning tasks for evaluating the quality of data values. We perform benchmarking analysis using OpenDataVal, quantifying and comparing the efficacy of state-of-the-art data valuation approaches. We find that no single algorithm performs uniformly best across all tasks, and an appropriate algorithm should be employed for a user's downstream task. OpenDataVal is publicly available at https://opendataval.github.io with comprehensive documentation. Furthermore, we provide a leaderboard where researchers can evaluate the effectiveness of their own data valuation algorithms.}
+}
+
+@article{scalableinfluenceand2024,
+  title = {Scalable Influence and Fact Tracing for Large Language Model Pretraining},
+  author = {Tyler A. Chang and Dheeraj Rajagopal and Tolga Bolukbasi and Lucas Dixon and Ian Tenney},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2410.17413},
+  url = {https://openalex.org/W4404304976},
+  abstract = {Training data attribution (TDA) methods aim to attribute model outputs back to specific training examples, and the application of these methods to large language model (LLM) outputs could significantly advance model transparency and data curation. However, it has been challenging to date to apply these methods to the full scale of LLM pretraining. In this paper, we refine existing gradient-based methods to work effectively at scale, allowing us to retrieve influential examples for an 8B-parameter language model from a pretraining corpus of over 160B tokens with no need for subsampling or pre-filtering. Our method combines several techniques, including optimizer state correction, a task-specific Hessian approximation, and normalized encodings, which we find to be critical for performance at scale. In quantitative evaluations on a fact tracing task, our method performs best at identifying examples that influence model predictions, but classical, model-agnostic retrieval methods such as BM25 still perform better at finding passages which explicitly contain relevant facts. These results demonstrate a misalignment between factual *attribution* and causal *influence*. With increasing model size and training tokens, we find that influence more closely aligns with factual attribution. Finally, we examine different types of examples identified as influential by our method, finding that while many directly entail a particular fact, others support the same output by reinforcing priors on relation types, common entities, and names. We release our prompt set and model outputs, along with a web-based visualization tool to explore influential examples for factual predictions, commonsense reasoning, arithmetic, and open-ended generation for an 8B-parameter LLM.}
+}
+
+@article{savascalablelearning2024,
+  title = {SAVA: Scalable Learning-Agnostic Data Valuation},
+  author = {Samuel Kessler and Tam-Tri Le and Vu Nguyen},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2406.01130},
+  url = {https://openalex.org/W4399400856},
+  abstract = {Selecting data for training machine learning models is crucial since large, web-scraped, real datasets contain noisy artifacts that affect the quality and relevance of individual data points. These noisy artifacts will impact model performance. We formulate this problem as a data valuation task, assigning a value to data points in the training set according to how similar or dissimilar they are to a clean and curated validation set. Recently, LAVA demonstrated the use of optimal transport (OT) between a large noisy training dataset and a clean validation set, to value training data efficiently, without the dependency on model performance. However, the LAVA algorithm requires the entire dataset as an input, this limits its application to larger datasets. Inspired by the scalability of stochastic (gradient) approaches which carry out computations on batches of data points instead of the entire dataset, we analogously propose SAVA, a scalable variant of LAVA with its computation on batches of data points. Intuitively, SAVA follows the same scheme as LAVA which leverages the hierarchically defined OT for data valuation. However, while LAVA processes the whole dataset, SAVA divides the dataset into batches of data points, and carries out the OT problem computation on those batches. Moreover, our theoretical derivations on the trade-off of using entropic regularization for OT problems include refinements of prior work. We perform extensive experiments, to demonstrate that SAVA can scale to large datasets with millions of data points and does not trade off data valuation performance.}
+}
+
+@article{onllmsdriven2024,
+  title = {On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: A Survey},
+  author = {Lin Long and Rui Wang and Ruixuan Xiao and Junbo Zhao and Xiao Ding and Gang Chen and Haobo Wang},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.findings-acl.658},
+  url = {https://openalex.org/W4402684073},
+  abstract = {Within the evolving landscape of deep learning, the dilemma of data quantity and quality has been a long-standing problem.The recent advent of Large Language Models (LLMs) offers a data-centric solution to alleviate the limitations of real-world data with synthetic data generation.However, current investigations into this field lack a unified framework and mostly stay on the surface.Therefore, this paper provides an organization of relevant studies based on a generic workflow of synthetic data generation.By doing so, we highlight the gaps within existing research and outline prospective avenues for future study.This work aims to shepherd the academic and industrial communities towards deeper, more methodical inquiries into the capabilities and applications of LLMs-driven synthetic data generation.}
+}
+
+@article{extractingtrainingdata2020,
+  title = {Extracting Training Data from Large Language Models},
+  author = {Nicholas Carlini and Florian Tramèr and Eric Wallace and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and Adam P. Roberts and T. B. Brown and Dawn Song and Úlfar Erlingsson},
+  year = {2020},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2012.07805},
+  url = {https://openalex.org/W3112689365},
+  abstract = {It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model. We demonstrate our attack on GPT-2, a language model trained on scrapes of the public Internet, and are able to extract hundreds of verbatim text sequences from the model's training data. These extracted examples include (public) personally identifiable information (names, phone numbers, and email addresses), IRC conversations, code, and 128-bit UUIDs. Our attack is possible even though each of the above sequences are included in just one document in the training data. We comprehensively evaluate our extraction attack to understand the factors that contribute to its success. Worryingly, we find that larger models are more vulnerable than smaller models. We conclude by drawing lessons and discussing possible safeguards for training large language models.}
+}
+
+@article{directionsinabusive2020,
+  title = {Directions in abusive language training data, a systematic review: Garbage in, garbage out},
+  author = {Bertie Vidgen and Leon Derczynski},
+  year = {2020},
+  journal = {PLoS ONE},
+  doi = {10.1371/journal.pone.0243300},
+  url = {https://openalex.org/W3014487746},
+  abstract = {Data-driven and machine learning based approaches for detecting, categorising and measuring abusive content such as hate speech and harassment have gained traction due to their scalability, robustness and increasingly high performance. Making effective detection systems for abusive content relies on having the right training datasets, reflecting a widely accepted mantra in computer science: Garbage In, Garbage Out. However, creating training datasets which are large, varied, theoretically-informed and that minimize biases is difficult, laborious and requires deep expertise. This paper systematically reviews 63 publicly available training datasets which have been created to train abusive language classifiers. It also reports on creation of a dedicated website for cataloguing abusive language data hatespeechdata.com. We discuss the challenges and opportunities of open science in this field, and argue that although more dataset sharing would bring many benefits it also poses social and ethical risks which need careful consideration. Finally, we provide evidence-based recommendations for practitioners creating new abusive content training datasets.}
+}
+
+@article{frompretrainingdata2023,
+  title = {From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models},
+  author = {Shangbin Feng and Chan Young Park and Yuhan Liu and Yulia Tsvetkov},
+  year = {2023},
+  journal = {Unknown},
+  doi = {10.18653/v1/2023.acl-long.656},
+  url = {https://openalex.org/W4385564993},
+  abstract = {Language models (LMs) are pretrained on diverse data sources, including news, discussion forums, books, and online encyclopedias. A significant portion of this data includes opinions and perspectives which, on one hand, celebrate democracy and diversity of ideas, and on the other hand are inherently socially biased. Our work develops new methods to (1) measure political biases in LMs trained on such corpora, along social and economic axes, and (2) measure the fairness of downstream NLP models trained on top of politically biased LMs. We focus on hate speech and misinformation detection, aiming to empirically quantify the effects of political (social, economic) biases in pretraining data on the fairness of high-stakes social-oriented tasks. Our findings reveal that pretrained LMs do have political leanings that reinforce the polarization present in pretraining corpora, propagating social biases into hate speech predictions and misinformation detectors. We discuss the implications of our findings for NLP research and propose future directions to mitigate unfairness.}
+}
+
+@article{scalableextractionof2023,
+  title = {Scalable Extraction of Training Data from (Production) Language Models},
+  author = {Milad Nasr and Nicholas Carlini and Jonathan Hayase and Matthew Jagielski and A. Feder Cooper and Daphne Ippolito and Christopher A. Choquette-Choo and Eric Wallace and Florian Tramèr and Katherine Lee},
+  year = {2023},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2311.17035},
+  url = {https://openalex.org/W4389216598},
+  abstract = {This paper studies extractable memorization: training data that an adversary can efficiently extract by querying a machine learning model without prior knowledge of the training dataset. We show an adversary can extract gigabytes of training data from open-source language models like Pythia or GPT-Neo, semi-open models like LLaMA or Falcon, and closed models like ChatGPT. Existing techniques from the literature suffice to attack unaligned models; in order to attack the aligned ChatGPT, we develop a new divergence attack that causes the model to diverge from its chatbot-style generations and emit training data at a rate 150x higher than when behaving properly. Our methods show practical attacks can recover far more data than previously thought, and reveal that current alignment techniques do not eliminate memorization.}
+}
+
+@article{cmmlumeasuringmassive2024,
+  title = {CMMLU: Measuring massive multitask language understanding in Chinese},
+  author = {Haonan Li and Yixuan Zhang and Fajri Koto and Yifei Yang and Hai Zhao and Yeyun Gong and Nan Duan and Timothy Baldwin},
+  year = {2024},
+  journal = {Unknown},
+  doi = {10.18653/v1/2024.findings-acl.671},
+  url = {https://openalex.org/W4402684121},
+  abstract = {As the capabilities of large language models (LLMs) continue to advance, evaluating their performance is becoming more important and more challenging.This paper aims to address this issue for Mandarin Chinese in the form of CMMLU, a comprehensive Chinese benchmark that covers various subjects, including natural sciences, social sciences, engineering, and the humanities.We conduct a thorough evaluation of more than 20 contemporary multilingual and Chinese LLMs, assessing their performance across different subjects and settings.The results reveal that most existing LLMs struggle to achieve an accuracy of even 60\%, which is the pass mark for Chinese exams.This highlights that there is substantial room for improvement in the capabilities of LLMs.Additionally, we conduct extensive experiments to identify factors impacting model performance and propose directions for enhancing LLMs.CMMLU fills the gap in evaluating the knowledge and reasoning capabilities of large language models for Chinese.}
+}
+
+@article{chatglmafamily2024,
+  title = {ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools},
+  author = {Team GLM and : and Aohan Zeng and Bin Xu and Bowen Wang and Chenhui Zhang and Da Gang Yin and Zhang, Dan and Diego Rojas and Guanyu Feng},
+  year = {2024},
+  journal = {arXiv (Cornell University)},
+  doi = {10.48550/arxiv.2406.12793},
+  url = {https://openalex.org/W4399837985},
+  abstract = {We introduce ChatGLM, an evolving family of large language models that we have been developing over time. This report primarily focuses on the GLM-4 language series, which includes GLM-4, GLM-4-Air, and GLM-4-9B. They represent our most capable models that are trained with all the insights and lessons gained from the preceding three generations of ChatGLM. To date, the GLM-4 models are pre-trained on ten trillions of tokens mostly in Chinese and English, along with a small set of corpus from 24 languages, and aligned primarily for Chinese and English usage. The high-quality alignment is achieved via a multi-stage post-training process, which involves supervised fine-tuning and learning from human feedback. Evaluations show that GLM-4 1) closely rivals or outperforms GPT-4 in terms of general metrics such as MMLU, GSM8K, MATH, BBH, GPQA, and HumanEval, 2) gets close to GPT-4-Turbo in instruction following as measured by IFEval, 3) matches GPT-4 Turbo (128K) and Claude 3 for long context tasks, and 4) outperforms GPT-4 in Chinese alignments as measured by AlignBench. The GLM-4 All Tools model is further aligned to understand user intent and autonomously decide when and which tool(s) touse -- including web browser, Python interpreter, text-to-image model, and user-defined functions -- to effectively complete complex tasks. In practical applications, it matches and even surpasses GPT-4 All Tools in tasks like accessing online information via web browsing and solving math problems using Python interpreter. Over the course, we have open-sourced a series of models, including ChatGLM-6B (three generations), GLM-4-9B (128K, 1M), GLM-4V-9B, WebGLM, and CodeGeeX, attracting over 10 million downloads on Hugging face in the year 2023 alone. The open models can be accessed through https://github.com/THUDM and https://huggingface.co/THUDM.}
+}
+@article{inadequaciesoflarge2024,
+  title = {Inadequacies of Large Language Model Benchmarks in the Era of Generative Artificial Intelligence},
+  author = {Timothy R. McIntosh and Teo Sušnjak and Nalin Arachchilage and Tong Liu and Paul Watters and Malka N. Halgamuge},
+  year = {2024},
+  journal = {arXiv},
+  doi = {10.48550/arXiv.2402.09880},
+  url = {https://arxiv.org/abs/2402.09880}
+}
