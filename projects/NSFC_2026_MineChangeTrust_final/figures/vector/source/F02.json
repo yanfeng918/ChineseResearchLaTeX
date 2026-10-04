@@ -1,0 +1,2056 @@
+{
+  "schema_version": 1,
+  "page_id": "page_002",
+  "slide": {
+    "width": 13.333,
+    "height": 7.5,
+    "size_mode": "wide"
+  },
+  "content_box": {
+    "left": 0.0012602739726021994,
+    "top": 0,
+    "width": 13.330479452054796,
+    "height": 7.5,
+    "fit": "contain"
+  },
+  "source": {
+    "path": "source.png",
+    "width_px": 1038,
+    "height_px": 584
+  },
+  "page_strategy": "User-requested fully editable vector rewrite using native text and geometric structure; no bitmap assets. Scientific labels follow the current final-project text.",
+  "text_inventory": [
+    {
+      "id": "status",
+      "text": "研究设计",
+      "decision": "native-text"
+    },
+    {
+      "id": "input-title",
+      "text": "公开影像",
+      "decision": "native-text"
+    },
+    {
+      "id": "input-subtitle",
+      "text": "标签／矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnosis-title",
+      "text": "误差诊断",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnosis-subtitle",
+      "text": "内容一",
+      "decision": "native-text"
+    },
+    {
+      "id": "constraint-title",
+      "text": "区域约束",
+      "decision": "native-text"
+    },
+    {
+      "id": "constraint-subtitle",
+      "text": "内容二",
+      "decision": "native-text"
+    },
+    {
+      "id": "review-title",
+      "text": "复核评价",
+      "decision": "native-text"
+    },
+    {
+      "id": "review-subtitle",
+      "text": "内容三",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-title",
+      "text": "条件与反例",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-subtitle",
+      "text": "矿区证据",
+      "decision": "native-text"
+    },
+    {
+      "id": "time0",
+      "text": "时相1",
+      "decision": "native-text"
+    },
+    {
+      "id": "time1",
+      "text": "时相2",
+      "decision": "native-text"
+    },
+    {
+      "id": "input-note",
+      "text": "来源记录",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnostic-text0",
+      "text": "配准差异",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnostic-text1",
+      "text": "标签边界",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnostic-text2",
+      "text": "外观差异",
+      "decision": "native-text"
+    },
+    {
+      "id": "diagnostic-output",
+      "text": "核验样本与分层",
+      "decision": "native-text"
+    },
+    {
+      "id": "arm-label0",
+      "text": "无约束",
+      "decision": "native-text"
+    },
+    {
+      "id": "arm-label1",
+      "text": "全图",
+      "decision": "native-text"
+    },
+    {
+      "id": "arm-label2",
+      "text": "背景",
+      "decision": "native-text"
+    },
+    {
+      "id": "arm-label3",
+      "text": "随机",
+      "decision": "native-text"
+    },
+    {
+      "id": "constraint-output",
+      "text": "误报与小变化召回",
+      "decision": "native-text"
+    },
+    {
+      "id": "review-fixed",
+      "text": "检测器固定",
+      "decision": "native-text"
+    },
+    {
+      "id": "review-ranking",
+      "text": "窗口排序",
+      "decision": "native-text"
+    },
+    {
+      "id": "review-budget",
+      "text": "同面积复核",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-text0",
+      "text": "效应区间",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-text1",
+      "text": "适用条件",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-text2",
+      "text": "失败案例",
+      "decision": "native-text"
+    },
+    {
+      "id": "evidence-output",
+      "text": "保留负结果",
+      "decision": "native-text"
+    },
+    {
+      "id": "extension-title",
+      "text": "外部验证（条件性）",
+      "decision": "native-text"
+    },
+    {
+      "id": "extension-condition",
+      "text": "核心实验完成后开展",
+      "decision": "native-text"
+    },
+    {
+      "id": "extension-note",
+      "text": "对齐数据与标签口径，检验适用范围",
+      "decision": "native-text"
+    }
+  ],
+  "visual_inventory": [
+    {
+      "id": "canvas",
+      "description": "native structural white background with reserved top margin"
+    },
+    {
+      "id": "panels",
+      "description": "native structural five square-corner panels and forward connectors"
+    },
+    {
+      "id": "observations",
+      "description": "native structural paired observation tile grids and polygon regions under the explicit user vector-redraw instruction"
+    },
+    {
+      "id": "diagnostic",
+      "description": "native structural diagnosis rows"
+    },
+    {
+      "id": "comparison",
+      "description": "native structural four equal constraint comparison cells"
+    },
+    {
+      "id": "ranking",
+      "description": "native structural full-window ranking grid"
+    },
+    {
+      "id": "evidence",
+      "description": "native structural evidence rows"
+    },
+    {
+      "id": "extension",
+      "description": "native structural conditional external-validation panel with one-way connection"
+    }
+  ],
+  "background_strategy": {
+    "mode": "native-or-script",
+    "source_consistency_contract": "Preserve white background, five-stage horizontal scientific flow and detached conditional-validation panel; adapt editable geometry under user vector-rewrite instruction.",
+    "removed_foreground": [],
+    "comparison_note": "Source is white; native white background preserves it while reserving top 70 source pixels and omitting embedded figure title."
+  },
+  "quality_checks": {
+    "font_size_calibrated": true,
+    "visual_inventory_matched": true,
+    "background_strategy_checked": true,
+    "shape_corner_geometry_checked": true
+  },
+  "font_calibration_note": "Offline hints at content labels identify 14.5 pt CJK; labels are standardized at 16 pt and principal headings at 18.5 pt per parent readability instruction for the rewritten vector layout. False graphic detections excluded.",
+  "text_boxes": [
+    {
+      "id": "status",
+      "text": "研究设计",
+      "box_px": [
+        867,
+        79,
+        153,
+        26
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 15.5,
+      "max_font_size": 15.5,
+      "color": "#616161",
+      "bold": false,
+      "align": "right",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "input-title",
+      "text": "公开影像",
+      "box_px": [
+        21,
+        126,
+        136,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 18.5,
+      "max_font_size": 18.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "input-subtitle",
+      "text": "标签／矿区",
+      "box_px": [
+        21,
+        173,
+        136,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnosis-title",
+      "text": "误差诊断",
+      "box_px": [
+        195,
+        126,
+        162,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 18.5,
+      "max_font_size": 18.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnosis-subtitle",
+      "text": "内容一",
+      "box_px": [
+        195,
+        173,
+        162,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "constraint-title",
+      "text": "区域约束",
+      "box_px": [
+        395,
+        126,
+        190,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 18.5,
+      "max_font_size": 18.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "constraint-subtitle",
+      "text": "内容二",
+      "box_px": [
+        395,
+        173,
+        190,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "review-title",
+      "text": "复核评价",
+      "box_px": [
+        623,
+        126,
+        206,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 18.5,
+      "max_font_size": 18.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "review-subtitle",
+      "text": "内容三",
+      "box_px": [
+        623,
+        173,
+        206,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-title",
+      "text": "条件与反例",
+      "box_px": [
+        867,
+        126,
+        150,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 18.5,
+      "max_font_size": 18.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-subtitle",
+      "text": "矿区证据",
+      "box_px": [
+        867,
+        173,
+        150,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "time0",
+      "text": "时相1",
+      "box_px": [
+        37,
+        218,
+        70,
+        22
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 14.5,
+      "max_font_size": 14.5,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "time1",
+      "text": "时相2",
+      "box_px": [
+        64,
+        244,
+        70,
+        22
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 14.5,
+      "max_font_size": 14.5,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "input-note",
+      "text": "来源记录",
+      "box_px": [
+        23,
+        344,
+        132,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnostic-text0",
+      "text": "配准差异",
+      "box_px": [
+        216,
+        220,
+        120,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnostic-text1",
+      "text": "标签边界",
+      "box_px": [
+        216,
+        256,
+        120,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnostic-text2",
+      "text": "外观差异",
+      "box_px": [
+        216,
+        292,
+        120,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "diagnostic-output",
+      "text": "核验样本与分层",
+      "box_px": [
+        199,
+        344,
+        154,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "arm-label0",
+      "text": "无约束",
+      "box_px": [
+        412,
+        221,
+        68,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "arm-label1",
+      "text": "全图",
+      "box_px": [
+        502,
+        221,
+        68,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "arm-label2",
+      "text": "背景",
+      "box_px": [
+        412,
+        276,
+        68,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "arm-label3",
+      "text": "随机",
+      "box_px": [
+        502,
+        276,
+        68,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "constraint-output",
+      "text": "误报与小变化召回",
+      "box_px": [
+        398,
+        344,
+        184,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "review-fixed",
+      "text": "检测器固定",
+      "box_px": [
+        628,
+        211,
+        196,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "review-ranking",
+      "text": "窗口排序",
+      "box_px": [
+        630,
+        328,
+        192,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "review-budget",
+      "text": "同面积复核",
+      "box_px": [
+        630,
+        358,
+        192,
+        25
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-text0",
+      "text": "效应区间",
+      "box_px": [
+        886,
+        220,
+        112,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-text1",
+      "text": "适用条件",
+      "box_px": [
+        886,
+        256,
+        112,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-text2",
+      "text": "失败案例",
+      "box_px": [
+        886,
+        292,
+        112,
+        24
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "evidence-output",
+      "text": "保留负结果",
+      "box_px": [
+        870,
+        344,
+        144,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "extension-title",
+      "text": "外部验证（条件性）",
+      "box_px": [
+        165,
+        456,
+        287,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 17.5,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 17.5,
+      "max_font_size": 17.5,
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "extension-condition",
+      "text": "核心实验完成后开展",
+      "box_px": [
+        454,
+        456,
+        416,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    },
+    {
+      "id": "extension-note",
+      "text": "对齐数据与标签口径，检验适用范围",
+      "box_px": [
+        166,
+        501,
+        706,
+        27
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16,
+      "font_size_source": "measured",
+      "fit_text": true,
+      "min_font_size": 16,
+      "max_font_size": 16,
+      "color": "#616161",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "z_index": 40
+    }
+  ],
+  "shapes": [
+    {
+      "id": "background",
+      "type": "rect",
+      "box_px": [
+        0,
+        0,
+        1038,
+        584
+      ],
+      "stroke": "#FFFFFF",
+      "fill": "#FFFFFF",
+      "stroke_width": 0,
+      "z_index": 0,
+      "corner_category": "straight"
+    },
+    {
+      "id": "input-panel",
+      "type": "rect",
+      "box_px": [
+        16,
+        115,
+        146,
+        280
+      ],
+      "stroke": "#5BA0D0",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.6,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "input-top",
+      "type": "line",
+      "points_px": [
+        17,
+        116,
+        161,
+        116
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 3,
+      "z_index": 20
+    },
+    {
+      "id": "input-separator",
+      "type": "line",
+      "points_px": [
+        16,
+        164,
+        162,
+        164
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.1,
+      "z_index": 20
+    },
+    {
+      "id": "diagnosis-panel",
+      "type": "rect",
+      "box_px": [
+        190,
+        115,
+        172,
+        280
+      ],
+      "stroke": "#1B3A5C",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.6,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "diagnosis-top",
+      "type": "line",
+      "points_px": [
+        191,
+        116,
+        361,
+        116
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 3,
+      "z_index": 20
+    },
+    {
+      "id": "diagnosis-separator",
+      "type": "line",
+      "points_px": [
+        190,
+        164,
+        362,
+        164
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1.1,
+      "z_index": 20
+    },
+    {
+      "id": "constraint-panel",
+      "type": "rect",
+      "box_px": [
+        390,
+        115,
+        200,
+        280
+      ],
+      "stroke": "#1B3A5C",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.6,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "constraint-top",
+      "type": "line",
+      "points_px": [
+        391,
+        116,
+        589,
+        116
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 3,
+      "z_index": 20
+    },
+    {
+      "id": "constraint-separator",
+      "type": "line",
+      "points_px": [
+        390,
+        164,
+        590,
+        164
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1.1,
+      "z_index": 20
+    },
+    {
+      "id": "review-panel",
+      "type": "rect",
+      "box_px": [
+        618,
+        115,
+        216,
+        280
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.6,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "review-top",
+      "type": "line",
+      "points_px": [
+        619,
+        116,
+        833,
+        116
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 3,
+      "z_index": 20
+    },
+    {
+      "id": "review-separator",
+      "type": "line",
+      "points_px": [
+        618,
+        164,
+        834,
+        164
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "z_index": 20
+    },
+    {
+      "id": "evidence-panel",
+      "type": "rect",
+      "box_px": [
+        862,
+        115,
+        160,
+        280
+      ],
+      "stroke": "#5BA0D0",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.6,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "evidence-top",
+      "type": "line",
+      "points_px": [
+        863,
+        116,
+        1021,
+        116
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 3,
+      "z_index": 20
+    },
+    {
+      "id": "evidence-separator",
+      "type": "line",
+      "points_px": [
+        862,
+        164,
+        1022,
+        164
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.1,
+      "z_index": 20
+    },
+    {
+      "id": "pair0",
+      "type": "rect",
+      "box_px": [
+        35,
+        216,
+        74,
+        74
+      ],
+      "stroke": "#616161",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.1,
+      "z_index": 14,
+      "corner_category": "straight"
+    },
+    {
+      "id": "pair0-v1",
+      "type": "line",
+      "points_px": [
+        59.7,
+        216,
+        59.7,
+        290
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 15
+    },
+    {
+      "id": "pair0-h1",
+      "type": "line",
+      "points_px": [
+        35,
+        240.7,
+        109,
+        240.7
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 15
+    },
+    {
+      "id": "pair0-v2",
+      "type": "line",
+      "points_px": [
+        84.4,
+        216,
+        84.4,
+        290
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 15
+    },
+    {
+      "id": "pair0-h2",
+      "type": "line",
+      "points_px": [
+        35,
+        265.4,
+        109,
+        265.4
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 15
+    },
+    {
+      "id": "pair-region0",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          43,
+          271
+        ],
+        [
+          54,
+          250
+        ],
+        [
+          78,
+          233
+        ],
+        [
+          96,
+          242
+        ],
+        [
+          92,
+          266
+        ],
+        [
+          74,
+          280
+        ]
+      ],
+      "box_px": [
+        43,
+        233,
+        53,
+        47
+      ],
+      "fill": "#E8F1F7",
+      "stroke": "#5BA0D0",
+      "stroke_width": 0.8,
+      "z_index": 18
+    },
+    {
+      "id": "pair1",
+      "type": "rect",
+      "box_px": [
+        62,
+        242,
+        74,
+        74
+      ],
+      "stroke": "#616161",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.1,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "pair1-v1",
+      "type": "line",
+      "points_px": [
+        86.7,
+        242,
+        86.7,
+        316
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 16
+    },
+    {
+      "id": "pair1-h1",
+      "type": "line",
+      "points_px": [
+        62,
+        266.7,
+        136,
+        266.7
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 16
+    },
+    {
+      "id": "pair1-v2",
+      "type": "line",
+      "points_px": [
+        111.4,
+        242,
+        111.4,
+        316
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 16
+    },
+    {
+      "id": "pair1-h2",
+      "type": "line",
+      "points_px": [
+        62,
+        291.4,
+        136,
+        291.4
+      ],
+      "stroke": "#CDD6DC",
+      "stroke_width": 0.65,
+      "z_index": 16
+    },
+    {
+      "id": "pair-region1",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          70,
+          297
+        ],
+        [
+          81,
+          276
+        ],
+        [
+          105,
+          259
+        ],
+        [
+          123,
+          268
+        ],
+        [
+          119,
+          292
+        ],
+        [
+          101,
+          306
+        ]
+      ],
+      "box_px": [
+        70,
+        259,
+        53,
+        47
+      ],
+      "fill": "#E8F1F7",
+      "stroke": "#5BA0D0",
+      "stroke_width": 0.8,
+      "z_index": 19
+    },
+    {
+      "id": "diagnostic-row0",
+      "type": "rect",
+      "box_px": [
+        210,
+        217,
+        132,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "diagnostic-row1",
+      "type": "rect",
+      "box_px": [
+        210,
+        253,
+        132,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "diagnostic-row2",
+      "type": "rect",
+      "box_px": [
+        210,
+        289,
+        132,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm0",
+      "type": "rect",
+      "box_px": [
+        405,
+        217,
+        80,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm-stripe0",
+      "type": "rect",
+      "box_px": [
+        405,
+        217,
+        4,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm1",
+      "type": "rect",
+      "box_px": [
+        495,
+        217,
+        80,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm-stripe1",
+      "type": "rect",
+      "box_px": [
+        495,
+        217,
+        4,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm2",
+      "type": "rect",
+      "box_px": [
+        405,
+        272,
+        80,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm-stripe2",
+      "type": "rect",
+      "box_px": [
+        405,
+        272,
+        4,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm3",
+      "type": "rect",
+      "box_px": [
+        495,
+        272,
+        80,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "arm-stripe3",
+      "type": "rect",
+      "box_px": [
+        495,
+        272,
+        4,
+        42
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-0-0",
+      "type": "rect",
+      "box_px": [
+        666,
+        246,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-0-1",
+      "type": "rect",
+      "box_px": [
+        696,
+        246,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#E8F1F7",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-0-2",
+      "type": "rect",
+      "box_px": [
+        726,
+        246,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-0-3",
+      "type": "rect",
+      "box_px": [
+        756,
+        246,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-1-0",
+      "type": "rect",
+      "box_px": [
+        666,
+        271,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-1-1",
+      "type": "rect",
+      "box_px": [
+        696,
+        271,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-1-2",
+      "type": "rect",
+      "box_px": [
+        726,
+        271,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-1-3",
+      "type": "rect",
+      "box_px": [
+        756,
+        271,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#E8F1F7",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-2-0",
+      "type": "rect",
+      "box_px": [
+        666,
+        296,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#E8F1F7",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-2-1",
+      "type": "rect",
+      "box_px": [
+        696,
+        296,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-2-2",
+      "type": "rect",
+      "box_px": [
+        726,
+        296,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "window-2-3",
+      "type": "rect",
+      "box_px": [
+        756,
+        296,
+        30,
+        25
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.85,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "evidence-row0",
+      "type": "rect",
+      "box_px": [
+        881,
+        217,
+        122,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "evidence-row1",
+      "type": "rect",
+      "box_px": [
+        881,
+        253,
+        122,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "evidence-row2",
+      "type": "rect",
+      "box_px": [
+        881,
+        289,
+        122,
+        30
+      ],
+      "stroke": "#C9D7E1",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.8,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "flow0-line",
+      "type": "line",
+      "points_px": [
+        165,
+        287,
+        180,
+        287
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow0-head",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          180,
+          282
+        ],
+        [
+          187,
+          287
+        ],
+        [
+          180,
+          292
+        ]
+      ],
+      "box_px": [
+        180,
+        282,
+        7,
+        10
+      ],
+      "fill": "#616161",
+      "stroke": "#616161",
+      "stroke_width": 0.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow1-line",
+      "type": "line",
+      "points_px": [
+        365,
+        287,
+        380,
+        287
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow1-head",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          380,
+          282
+        ],
+        [
+          387,
+          287
+        ],
+        [
+          380,
+          292
+        ]
+      ],
+      "box_px": [
+        380,
+        282,
+        7,
+        10
+      ],
+      "fill": "#616161",
+      "stroke": "#616161",
+      "stroke_width": 0.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow2-line",
+      "type": "line",
+      "points_px": [
+        593,
+        287,
+        608,
+        287
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow2-head",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          608,
+          282
+        ],
+        [
+          615,
+          287
+        ],
+        [
+          608,
+          292
+        ]
+      ],
+      "box_px": [
+        608,
+        282,
+        7,
+        10
+      ],
+      "fill": "#616161",
+      "stroke": "#616161",
+      "stroke_width": 0.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow3-line",
+      "type": "line",
+      "points_px": [
+        837,
+        287,
+        852,
+        287
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.8,
+      "z_index": 20
+    },
+    {
+      "id": "flow3-head",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          852,
+          282
+        ],
+        [
+          859,
+          287
+        ],
+        [
+          852,
+          292
+        ]
+      ],
+      "box_px": [
+        852,
+        282,
+        7,
+        10
+      ],
+      "fill": "#616161",
+      "stroke": "#616161",
+      "stroke_width": 0.8,
+      "z_index": 20
+    },
+    {
+      "id": "extension-down",
+      "type": "line",
+      "points_px": [
+        942,
+        395,
+        942,
+        426
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.1,
+      "z_index": 20,
+      "dash": "dash"
+    },
+    {
+      "id": "extension-left",
+      "type": "line",
+      "points_px": [
+        942,
+        426,
+        861,
+        426
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.1,
+      "z_index": 20,
+      "dash": "dash"
+    },
+    {
+      "id": "extension-entry",
+      "type": "line",
+      "points_px": [
+        861,
+        426,
+        861,
+        438
+      ],
+      "stroke": "#616161",
+      "stroke_width": 1.1,
+      "z_index": 20,
+      "dash": "dash"
+    },
+    {
+      "id": "extension-head",
+      "type": "freeform",
+      "polygon_px": [
+        [
+          856,
+          438
+        ],
+        [
+          861,
+          445
+        ],
+        [
+          866,
+          438
+        ]
+      ],
+      "box_px": [
+        856,
+        438,
+        10,
+        7
+      ],
+      "fill": "#616161",
+      "stroke": "#616161",
+      "stroke_width": 0.8,
+      "z_index": 20
+    },
+    {
+      "id": "extension",
+      "type": "rect",
+      "box_px": [
+        150,
+        445,
+        738,
+        92
+      ],
+      "stroke": "#5BA0D0",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.1,
+      "z_index": 10,
+      "corner_category": "straight",
+      "dash": "dash"
+    },
+    {
+      "id": "extension-divider",
+      "type": "line",
+      "points_px": [
+        169,
+        494,
+        869,
+        494
+      ],
+      "stroke": "#D5DFE7",
+      "stroke_width": 0.8,
+      "z_index": 20
+    }
+  ],
+  "images": [],
+  "asset_provenance": [],
+  "formula_inventory": []
+}

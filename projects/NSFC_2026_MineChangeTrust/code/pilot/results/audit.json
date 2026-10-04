@@ -1,0 +1,26 @@
+{
+  "samples": {
+    "train": 1188,
+    "val": 480
+  },
+  "positive_pixels": {
+    "train": 10203045,
+    "val": 3193183
+  },
+  "exact_image_pair_overlap_train_val": 0,
+  "duplicate_pairs_within_split": {
+    "train": 0,
+    "val": 0
+  },
+  "image_shape": [
+    256,
+    256,
+    3
+  ],
+  "mask_shape": [
+    256,
+    256
+  ],
+  "test_images_read": 0,
+  "claims": "矿区ID与字节重复审计不替代地理邻近及配准质量专业核验"
+}

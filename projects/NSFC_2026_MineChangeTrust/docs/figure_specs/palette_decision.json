@@ -1,0 +1,47 @@
+{
+  "style_family": "classic",
+  "branch": "scene",
+  "venue": null,
+  "venue_context": "2026年度实验室开放课题正文",
+  "domain": "remote-sensing change detection / mine generalization / reliability assessment",
+  "module_count_framework": 5,
+  "recommended": "Nature Blue",
+  "alternate": "Blue Monochrome",
+  "colors": {
+    "primary": "#1B3A5C",
+    "secondary": "#2E6B9E",
+    "tertiary": "#5BA0D0",
+    "text": "#333333",
+    "fill": "#FFFFFF",
+    "section_bg": "#F7F7F7",
+    "border": "#CCCCCC",
+    "arrow": "#4D4D4D",
+    "frozen": "#616161"
+  },
+  "semantic_binding": {
+    "Data": "#5BA0D0",
+    "Backbone": "#1B3A5C",
+    "Loss": "#2E6B9E",
+    "Output": "#5BA0D0",
+    "Frozen": "#616161"
+  },
+  "series_binding": {
+    "none": {
+      "color": "#616161",
+      "marker": "square",
+      "exact_label": "无一致性"
+    },
+    "full": {
+      "color": "#2E6B9E",
+      "marker": "circle",
+      "exact_label": "全区域"
+    },
+    "background": {
+      "color": "#1B3A5C",
+      "marker": "triangle",
+      "exact_label": "背景位置"
+    }
+  },
+  "text_contrast_on_white": 12.635,
+  "generated_images": false
+}

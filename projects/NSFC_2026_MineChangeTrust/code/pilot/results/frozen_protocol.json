@@ -1,0 +1,71 @@
+{
+  "protocol": {
+    "protocol_id": "MCT-P01",
+    "created_before_training": true,
+    "dataset": "HZDR-FWGEL/MineNetCD256",
+    "source_record": "https://rodare.hzdr.de/record/3251",
+    "source_license": "CC BY 4.0",
+    "purpose": "公开矿山数据上的小规模可行性和误差预实验，非完整基准复现或主假说确认性检验",
+    "split_policy": "官方60个训练矿区按sha256('mct-pilot-split-v1|'+domain)排序，前50个用于训练，后10个保留；只在官方10个验证矿区诊断，官方30个测试矿区不读取影像、不评分",
+    "sampling_salt": "mct-pilot-patches-v1",
+    "train_tiles_per_site": 24,
+    "validation_tiles_per_site": 48,
+    "sampling": "每矿区按sha256(salt+'|'+split+'|'+domain+'|'+global_row_index)排序取前K个，不依据标签类别或模型结果选样，不足K全部取用",
+    "tile_size": 256,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "arms": [
+      "none",
+      "full",
+      "background"
+    ],
+    "epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "consistency_weight": 0.1,
+    "base_channels": 16,
+    "optimizer": "AdamW",
+    "segmentation_loss": "BCEWithLogits(pos_weight=clip(train_negative/train_positive,1,10))+soft_Dice，所有组相同",
+    "consistency_loss": "最深共享特征通道L2归一化后的逐位置平方距离；每影像按受约束位置数归一化后取batch平均；背景组仅用训练标签腐蚀后的纯未变化位置，空掩码为0",
+    "checkpoint": "固定第12轮，不按验证指标选择轮次或重调参数",
+    "augmentation": "训练时同步随机水平/垂直翻转；各同种子组同初始化、同采样顺序和同增强序列",
+    "normalization": "RGB整数除以255，固定映射，不使用任何测试集统计",
+    "threshold": 0.5,
+    "small_component_max_pixels": 64,
+    "small_component_connectivity": 8,
+    "small_component_border_rule": "排除与切片边界接触的连通域；该定义仅用于本预实验，非项目正式小变化阈值",
+    "metrics": [
+      "IoU",
+      "F1",
+      "precision",
+      "recall",
+      "FPR",
+      "small_recall"
+    ],
+    "aggregation": "每矿区汇总像素混淆计数后计算指标，对有效矿区等权平均；无分母记NA；先平均同矿区3种子，再矿区配对bootstrap",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 1729,
+    "interval": "95%双侧百分位区间，探索性，不作多重比较后的确认性显著性结论",
+    "primary_pilot_contrast": "background - full，none为效用参考；未配置随机掩码、强度匹配、平滑或近邻完整复现，不能据本预实验单独归因或确认创新",
+    "null_results": "保留所有种子和负结果；不按本次验证结果追加搜索以争取正向收益"
+  },
+  "protocol_sha256": "5d4814bf7a3eb7b47876a98e8d307ad0d96027542224135559504d77ddf1c52a",
+  "code_sha256": "96b2894fb0c989e07cc17c5f17c427f864624b13ced80ca8ec7c551807a31ea3",
+  "selection_sha256": "26509d5b3c7cb588b665ac612ee41eded7c057605157c814d9eb535721191b00",
+  "train_cache_sha256": "66709a03cc69105d471ca77801d2f669281777c87f4419a2399f03639e99a233",
+  "validation_cache_sha256": "992f60e4b282aa6c559679f2dc88b56e75148e8ca4dd8cbad5229ca7cd0c0ed9",
+  "started_at": "2026-09-06T04:17:33.244896+00:00",
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "GPU": "NVIDIA A40",
+    "visible_devices": "6",
+    "precision": "float32; TF32 off",
+    "deterministic_algorithms": true
+  }
+}

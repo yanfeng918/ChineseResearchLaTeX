@@ -1,0 +1,25 @@
+% !TeX program = xelatex
+\documentclass[UTF8,fontset=none,zihao=-4]{ctexart}
+\input{extraTex/@config}
+\input{extraTex/metadata}
+\begin{document}
+\CSUCover
+\CSUInstructions
+\CSUInformation{\input{extraTex/abstract}}
+\CSUResearchPage{4}{%
+  \input{extraTex/justification}
+  \begingroup\raggedright
+  \bibliographystyle{\CSUBibliographyStylePath}
+  \bibliography{references/myexample}\endgroup}
+\CSUResearchPage{5}{\input{extraTex/content}}
+\CSUResearchPage{6}{\input{extraTex/methods}}
+\CSUInnovationPlan{\input{extraTex/innovation}}{\input{extraTex/plan}}
+\CSUResearchPage{8}{\input{extraTex/foundation}}
+\CSUOutcomesBudget{\input{extraTex/outcomes}}{\input{extraTex/budget}}
+\CSUMembers{\input{extraTex/members}}{\input{extraTex/biographies}}
+\CSUPrepareBody{\CSUFirstBox}{\input{extraTex/biographies-details}}
+\CSUExpandedSection{}{\CSUFirstBox}
+\CSURecommendations{\input{extraTex/recommendation-one}}{\input{extraTex/recommendation-two}}{\input{extraTex/recommenders}}
+\CSUApprovals{\input{extraTex/organization-opinion}}{\input{extraTex/committee-opinion}}
+\CSUDirector{\input{extraTex/director-opinion}}
+\end{document}

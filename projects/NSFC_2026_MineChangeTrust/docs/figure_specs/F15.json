@@ -1,0 +1,489 @@
+{
+  "figure_id": "F15",
+  "figure_name_zh": "预实验结果：检测收益与召回代价",
+  "diagram_type": "Data Behavior",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {
+      "none": {
+        "color": "#616161",
+        "marker": "square",
+        "exact_label": "无一致性"
+      },
+      "full": {
+        "color": "#2E6B9E",
+        "marker": "circle",
+        "exact_label": "全区域"
+      },
+      "background": {
+        "color": "#1B3A5C",
+        "marker": "triangle",
+        "exact_label": "背景位置"
+      }
+    }
+  },
+  "layout_description": "Arrange three matched quantitative panels with the same arm order and distinct marker shapes. Use measured means and sample standard deviations across seeds, keeping each metric on a clearly labeled percentage axis. All three panels must be equally visible; do not enlarge only the favorable false-positive result. Include a compact note that small-change recall is unavailable and different from the overall recall panel.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "left",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "变化 IoU",
+      "exact_text": "越高越好",
+      "icon": "data-anchored point-and-error-bar plot panel, monochrome thin dark-grey line art",
+      "visual_function": "三组真实指标是否同时改善？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）1.2 MCT-P01结果表",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b2",
+      "relative_position": "center",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "背景误报率",
+      "exact_text": "越低越好",
+      "icon": "data-anchored point-and-error-bar plot panel, monochrome thin dark-grey line art",
+      "visual_function": "三组真实指标是否同时改善？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）1.2 MCT-P01结果表",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b3",
+      "relative_position": "right",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "总体召回率",
+      "exact_text": "越高越好",
+      "icon": "data-anchored point-and-error-bar plot panel, monochrome thin dark-grey line art",
+      "visual_function": "三组真实指标是否同时改善？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）1.2 MCT-P01结果表",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "预实验结果",
+    "exact_auxiliary_labels": [
+      "无一致性",
+      "全区域",
+      "背景位置",
+      "指标（%）",
+      "小变化召回 NA"
+    ],
+    "exact_axis_tick_labels": [
+      "0",
+      "10",
+      "20",
+      "30",
+      "40",
+      "50",
+      "60",
+      "70",
+      "80",
+      "90",
+      "100"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "三个种子的矿区宏平均为：无约束IoU/FPR/总体召回21.08/24.13/67.82%，全区域20.96/26.62/72.65%，背景21.72/23.28/68.55%。误差条为种子样本标准差，不是矿区泛化置信区间。",
+    "必须用JSON数值通过绘图库生成，图像模型只能提供版式草案；小变化不可估计不能补零；不加显著性星号。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      16,
+      17
+    ],
+    "section": "（三）1.2 MCT-P01结果表",
+    "supplemental_assets": [
+      "code/pilot/results/aggregate_metrics.json",
+      "code/pilot/results/seed_macro_metrics.json"
+    ],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "programmatic_plot",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "Matplotlib or equivalent"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "三组真实指标是否同时改善？",
+    "待确认信息": "必须用JSON数值通过绘图库生成，图像模型只能提供版式草案；小变化不可估计不能补零；不加显著性星号。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "NUMERICAL DATA MUST BE RENDERED PROGRAMMATICALLY FROM data_payload. Image-model output may only be a non-evidential layout study, never the scientific chart.",
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "data_payload": {
+    "aggregate_metrics.json": [
+      {
+        "arm": "none",
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "IoU": {
+          "mean": 0.21084057183281532,
+          "seed_std": 0.017853880202728517
+        },
+        "F1": {
+          "mean": 0.3313315457377661,
+          "seed_std": 0.02309282132555098
+        },
+        "precision": {
+          "mean": 0.22838597525657034,
+          "seed_std": 0.01895222479529353
+        },
+        "recall": {
+          "mean": 0.6781659516691985,
+          "seed_std": 0.014698857879018538
+        },
+        "FPR": {
+          "mean": 0.24125113768203924,
+          "seed_std": 0.02395245805679919
+        },
+        "small_recall": {
+          "mean": null,
+          "seed_std": null
+        }
+      },
+      {
+        "arm": "full",
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "IoU": {
+          "mean": 0.20960691960554392,
+          "seed_std": 0.01636199851515196
+        },
+        "F1": {
+          "mean": 0.3298806794372384,
+          "seed_std": 0.020593385371166426
+        },
+        "precision": {
+          "mean": 0.22262527454843592,
+          "seed_std": 0.022145454858524836
+        },
+        "recall": {
+          "mean": 0.7265344620250765,
+          "seed_std": 0.06305390820465734
+        },
+        "FPR": {
+          "mean": 0.2662384739983786,
+          "seed_std": 0.06119175192146916
+        },
+        "small_recall": {
+          "mean": null,
+          "seed_std": null
+        }
+      },
+      {
+        "arm": "background",
+        "seeds": [
+          17,
+          29,
+          43
+        ],
+        "IoU": {
+          "mean": 0.21721082260821453,
+          "seed_std": 0.014328833381189756
+        },
+        "F1": {
+          "mean": 0.3387475743461237,
+          "seed_std": 0.016390680110172296
+        },
+        "precision": {
+          "mean": 0.2353839877075822,
+          "seed_std": 0.021734048775342088
+        },
+        "recall": {
+          "mean": 0.6854796879567493,
+          "seed_std": 0.06589303120610199
+        },
+        "FPR": {
+          "mean": 0.23275528995948677,
+          "seed_std": 0.055675654330494206
+        },
+        "small_recall": {
+          "mean": null,
+          "seed_std": null
+        }
+      }
+    ],
+    "seed_macro_metrics.json": [
+      {
+        "arm": "none",
+        "seed": 17,
+        "IoU": 0.19024045528358768,
+        "IoU_valid_sites": 10,
+        "F1": 0.3046669809809182,
+        "F1_valid_sites": 10,
+        "precision": 0.20650236778831083,
+        "precision_valid_sites": 10,
+        "recall": 0.663026856446041,
+        "recall_valid_sites": 10,
+        "FPR": 0.2685738731602532,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "full",
+        "seed": 17,
+        "IoU": 0.1917127285319835,
+        "IoU_valid_sites": 10,
+        "F1": 0.3074491759718769,
+        "F1_valid_sites": 10,
+        "precision": 0.1975756596476826,
+        "precision_valid_sites": 10,
+        "recall": 0.7979295758460755,
+        "recall_valid_sites": 10,
+        "FPR": 0.3368937371109767,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "background",
+        "seed": 17,
+        "IoU": 0.20572276782334406,
+        "IoU_valid_sites": 10,
+        "F1": 0.3253671858908046,
+        "F1_valid_sites": 10,
+        "precision": 0.2143326454734698,
+        "precision_valid_sites": 10,
+        "recall": 0.7611551524219682,
+        "recall_valid_sites": 10,
+        "FPR": 0.2941089525085395,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "none",
+        "seed": 29,
+        "IoU": 0.2218387969299435,
+        "IoU_valid_sites": 10,
+        "F1": 0.344493133887456,
+        "F1_valid_sites": 10,
+        "precision": 0.23919504684428777,
+        "precision_valid_sites": 10,
+        "recall": 0.6923809691524803,
+        "recall_valid_sites": 10,
+        "FPR": 0.2313074764205048,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "full",
+        "seed": 29,
+        "IoU": 0.22380410464413436,
+        "IoU_valid_sites": 10,
+        "F1": 0.3479307753416723,
+        "F1_valid_sites": 10,
+        "precision": 0.23960078597503132,
+        "precision_valid_sites": 10,
+        "recall": 0.7032001017783172,
+        "recall_valid_sites": 10,
+        "FPR": 0.23146387868481208,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "background",
+        "seed": 29,
+        "IoU": 0.23326668368873643,
+        "IoU_valid_sites": 10,
+        "F1": 0.3570299339479733,
+        "F1_valid_sites": 10,
+        "precision": 0.25774180228115784,
+        "precision_valid_sites": 10,
+        "recall": 0.6408002001008831,
+        "recall_valid_sites": 10,
+        "FPR": 0.18544792790595638,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "none",
+        "seed": 43,
+        "IoU": 0.22044246328491476,
+        "IoU_valid_sites": 10,
+        "F1": 0.34483452234492395,
+        "F1_valid_sites": 10,
+        "precision": 0.23946051113711242,
+        "precision_valid_sites": 10,
+        "recall": 0.6790900294090741,
+        "recall_valid_sites": 10,
+        "FPR": 0.2238720634653597,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "full",
+        "seed": 43,
+        "IoU": 0.2133039256405139,
+        "IoU_valid_sites": 10,
+        "F1": 0.33426208699816606,
+        "F1_valid_sites": 10,
+        "precision": 0.2306993780225938,
+        "precision_valid_sites": 10,
+        "recall": 0.6784737084508371,
+        "recall_valid_sites": 10,
+        "FPR": 0.23035780619934704,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      },
+      {
+        "arm": "background",
+        "seed": 43,
+        "IoU": 0.21264301631256313,
+        "IoU_valid_sites": 10,
+        "F1": 0.3338456031995932,
+        "F1_valid_sites": 10,
+        "precision": 0.234077515368119,
+        "precision_valid_sites": 10,
+        "recall": 0.6544837113473962,
+        "recall_valid_sites": 10,
+        "FPR": 0.21870898946396444,
+        "FPR_valid_sites": 10,
+        "small_recall": null,
+        "small_recall_valid_sites": 0
+      }
+    ]
+  },
+  "data_selection": {
+    "metrics": [
+      "IoU",
+      "FPR",
+      "recall"
+    ],
+    "arm_order": [
+      "none",
+      "full",
+      "background"
+    ],
+    "value_scale": 100,
+    "interval": "sample standard deviation across the three seed-level mine-macro means",
+    "axis_policy": "Each panel labels its own percent scale; retain complete error bars."
+  },
+  "data_semantics": "Percent scores; error bars are sample SD across 3 seed-level site-macro means; small recall NA.",
+  "exact_text_whitelist": [
+    "变化 IoU",
+    "越高越好",
+    "背景误报率",
+    "越低越好",
+    "总体召回率",
+    "无一致性",
+    "全区域",
+    "背景位置",
+    "指标（%）",
+    "小变化召回 NA",
+    "预实验结果",
+    "0",
+    "10",
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90",
+    "100"
+  ],
+  "image_prompt_english_word_count": 253
+}

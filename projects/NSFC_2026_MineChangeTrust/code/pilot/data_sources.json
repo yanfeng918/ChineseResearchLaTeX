@@ -1,0 +1,36 @@
+{
+  "dataset": "HZDR-FWGEL/MineNetCD256",
+  "official_record": "https://rodare.hzdr.de/record/3251",
+  "doi": "10.14278/rodare.3251",
+  "license": "CC BY 4.0",
+  "authors": "Weikang Yu, Xiaokang Zhang, Richard Gloaguen, Xiao Xiang Zhu, Pedram Ghamisi",
+  "retrieved_at": "2026-09-06",
+  "identity": "SHA256 fixed to publisher Git-LFS objects, even if the main URL changes",
+  "test_downloaded": false,
+  "files": [
+    {
+      "filename": "train-00000-of-00003-71b0c72c7a610c87.parquet",
+      "url": "https://huggingface.co/datasets/HZDR-FWGEL/MineNetCD256/resolve/main/data/train-00000-of-00003-71b0c72c7a610c87.parquet?download=true",
+      "bytes": 439641126,
+      "sha256": "5a61eebe2936331218b5396b5a39e1a5badf1464bb811e7522d7953d08bd9836"
+    },
+    {
+      "filename": "train-00001-of-00003-35e4fc5a06f6d361.parquet",
+      "url": "https://huggingface.co/datasets/HZDR-FWGEL/MineNetCD256/resolve/main/data/train-00001-of-00003-35e4fc5a06f6d361.parquet?download=true",
+      "bytes": 420100951,
+      "sha256": "ab6ec8077309ff9967ecfbbe1786cdb698596f365d22769de28118e34df20e7f"
+    },
+    {
+      "filename": "train-00002-of-00003-aa08409b2f32c17e.parquet",
+      "url": "https://huggingface.co/datasets/HZDR-FWGEL/MineNetCD256/resolve/main/data/train-00002-of-00003-aa08409b2f32c17e.parquet?download=true",
+      "bytes": 426375091,
+      "sha256": "11fe2e9f45f58ebb7f7b734c836949b8e95ebc535a0e538842b083dac7117203"
+    },
+    {
+      "filename": "val-00000-of-00001-7df994b1ccb91e45.parquet",
+      "url": "https://huggingface.co/datasets/HZDR-FWGEL/MineNetCD256/resolve/main/data/val-00000-of-00001-7df994b1ccb91e45.parquet?download=true",
+      "bytes": 122395003,
+      "sha256": "58a6f3e633f429434e95441da08df155a48feb024a53fc65d65383b54577c8e6"
+    }
+  ]
+}

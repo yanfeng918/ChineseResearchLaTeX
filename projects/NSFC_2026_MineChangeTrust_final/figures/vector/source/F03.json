@@ -1,0 +1,1937 @@
+{
+  "schema_version": 1,
+  "slide": {
+    "width": 13.333,
+    "height": 7.5,
+    "size_mode": "wide"
+  },
+  "content_box": {
+    "left": 0.0012602739726021994,
+    "top": 0,
+    "width": 13.330479452054796,
+    "height": 7.5,
+    "fit": "contain"
+  },
+  "source": {
+    "path": "source.png",
+    "width_px": 1038,
+    "height_px": 584
+  },
+  "page_strategy": "User-authorized fully vector scientific redraw; native editable text, panels, process structure and connectors. Blank upper 70 px retained. Current methods.tex is authoritative.",
+  "background_strategy": {
+    "mode": "native-or-script",
+    "source_consistency_contract": "White background; source canvas dimensions unchanged; Nature Blue palette; top 70 px empty.",
+    "removed_foreground": "Existing scientific process diagrams are reconstructed as native structural objects under explicit user authorization for all-vector figures.",
+    "comparison_note": "White background preserves the source context. User-authorized reflow removes the embedded figure number and total heading and leaves y<70px blank."
+  },
+  "visual_inventory": [
+    {
+      "id": "source-ancestry",
+      "description": "矿区、场景、切片的 native structural source-ancestry boxes and arrows; user requests editable vector structure.",
+      "decision": "native-structure"
+    },
+    {
+      "id": "split-and-baseline",
+      "description": "独立分组及模型复现 native structural panels with editable text.",
+      "decision": "native-structure"
+    },
+    {
+      "id": "diagnosis",
+      "description": "误差核验及质量诊断 native structural comparison panels.",
+      "decision": "native-structure"
+    },
+    {
+      "id": "decision-and-outputs",
+      "description": "Mechanism decision, output panels and branch paths reconstructed with native structural nodes and connectors.",
+      "decision": "native-structure"
+    }
+  ],
+  "text_inventory": [
+    {
+      "id": "heading-0",
+      "text": "来源核验",
+      "decision": "native-text"
+    },
+    {
+      "id": "heading-1",
+      "text": "独立划分",
+      "decision": "native-text"
+    },
+    {
+      "id": "heading-2",
+      "text": "基线复现",
+      "decision": "native-text"
+    },
+    {
+      "id": "heading-3",
+      "text": "误差核验",
+      "decision": "native-text"
+    },
+    {
+      "id": "ancestry-label-0",
+      "text": "矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "ancestry-label-1",
+      "text": "场景",
+      "decision": "native-text"
+    },
+    {
+      "id": "ancestry-label-2",
+      "text": "切片",
+      "decision": "native-text"
+    },
+    {
+      "id": "ancestry-note",
+      "text": "追溯来源关联",
+      "decision": "native-text"
+    },
+    {
+      "id": "split-label-0",
+      "text": "训练 50",
+      "decision": "native-text"
+    },
+    {
+      "id": "split-label-1",
+      "text": "校准 10",
+      "decision": "native-text"
+    },
+    {
+      "id": "split-label-2",
+      "text": "验证 10",
+      "decision": "native-text"
+    },
+    {
+      "id": "split-label-3",
+      "text": "测试 30",
+      "decision": "native-text"
+    },
+    {
+      "id": "split-note",
+      "text": "矿区互不交叉",
+      "decision": "native-text"
+    },
+    {
+      "id": "baseline-name",
+      "text": "ResNet-18",
+      "decision": "native-text"
+    },
+    {
+      "id": "baseline-type",
+      "text": "孪生基线",
+      "decision": "native-text"
+    },
+    {
+      "id": "baseline-scope1",
+      "text": "开发期仅使用",
+      "decision": "native-text"
+    },
+    {
+      "id": "baseline-scope2",
+      "text": "训练／验证矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "baseline-note",
+      "text": "固定输入与配置",
+      "decision": "native-text"
+    },
+    {
+      "id": "error-label-0",
+      "text": "误报／漏检",
+      "decision": "native-text"
+    },
+    {
+      "id": "error-label-1",
+      "text": "分层抽查",
+      "decision": "native-text"
+    },
+    {
+      "id": "error-label-2",
+      "text": "误差清单",
+      "decision": "native-text"
+    },
+    {
+      "id": "error-note",
+      "text": "归类主要误差",
+      "decision": "native-text"
+    },
+    {
+      "id": "mechanism-label",
+      "text": "机制相关？",
+      "decision": "native-text"
+    },
+    {
+      "id": "output-main",
+      "text": "核验样本与分层",
+      "decision": "native-text"
+    },
+    {
+      "id": "output-next",
+      "text": "进入路线二",
+      "decision": "native-text"
+    },
+    {
+      "id": "relevant",
+      "text": "相关",
+      "decision": "native-text"
+    },
+    {
+      "id": "quality-heading",
+      "text": "质量诊断",
+      "decision": "native-text"
+    },
+    {
+      "id": "quality-detail",
+      "text": "配准／标签",
+      "decision": "native-text"
+    },
+    {
+      "id": "quality-label",
+      "text": "质量主导",
+      "decision": "native-text"
+    },
+    {
+      "id": "quality-return-label",
+      "text": "复核",
+      "decision": "native-text"
+    },
+    {
+      "id": "development-note",
+      "text": "开发决策：仅使用训练与验证矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "isolation-note",
+      "text": "校准集仅拟合温度；测试集在规则冻结后评估",
+      "decision": "native-text"
+    }
+  ],
+  "quality_checks": {
+    "font_size_calibrated": true,
+    "visual_inventory_matched": true,
+    "background_strategy_checked": true,
+    "shape_corner_geometry_checked": true,
+    "text_hints_note": "Offline hints measured the removed total heading and one small annotation; missed process labels were read from the source. User-authorized layout reflow uses consistent 19.5px main labels and 17px body labels, mapped to 18.0pt and 15.7pt, with 16px notes.",
+    "scientific_scope": "Current methods.tex: 50 training/10 independent calibration/10 validation/30 test mines; development decisions use training/validation only; test has no feedback into diagnosis.",
+    "user_vector_authorization": "Explicit full-vector redraw overrides raster separation. All diagram components are native structural shapes and editable text. images and asset_provenance are empty."
+  },
+  "text_boxes": [
+    {
+      "id": "heading-0",
+      "text": "来源核验",
+      "box_px": [
+        29,
+        120,
+        144,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "heading-1",
+      "text": "独立划分",
+      "box_px": [
+        219,
+        120,
+        144,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "heading-2",
+      "text": "基线复现",
+      "box_px": [
+        409,
+        120,
+        144,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "heading-3",
+      "text": "误差核验",
+      "box_px": [
+        599,
+        120,
+        144,
+        33
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "ancestry-label-0",
+      "text": "矿区",
+      "box_px": [
+        51,
+        190,
+        100,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "ancestry-label-1",
+      "text": "场景",
+      "box_px": [
+        51,
+        246,
+        100,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "ancestry-label-2",
+      "text": "切片",
+      "box_px": [
+        51,
+        302,
+        100,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "ancestry-note",
+      "text": "追溯来源关联",
+      "box_px": [
+        28,
+        356,
+        146,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.8,
+      "min_font_size": 14.8,
+      "max_font_size": 14.8,
+      "font_size_source": "measured",
+      "size_group": "note",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "split-label-0",
+      "text": "训练 50",
+      "box_px": [
+        237,
+        185,
+        108,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "split-label-1",
+      "text": "校准 10",
+      "box_px": [
+        237,
+        229,
+        108,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "split-label-2",
+      "text": "验证 10",
+      "box_px": [
+        237,
+        273,
+        108,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "split-label-3",
+      "text": "测试 30",
+      "box_px": [
+        237,
+        317,
+        108,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "split-note",
+      "text": "矿区互不交叉",
+      "box_px": [
+        218,
+        356,
+        146,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.8,
+      "min_font_size": 14.8,
+      "max_font_size": 14.8,
+      "font_size_source": "measured",
+      "size_group": "note",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "baseline-name",
+      "text": "ResNet-18",
+      "box_px": [
+        423,
+        188,
+        116,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "baseline-type",
+      "text": "孪生基线",
+      "box_px": [
+        423,
+        218,
+        116,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "baseline-scope1",
+      "text": "开发期仅使用",
+      "box_px": [
+        408,
+        272,
+        146,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#333333",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "baseline-scope2",
+      "text": "训练／验证矿区",
+      "box_px": [
+        408,
+        303,
+        146,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#333333",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "baseline-note",
+      "text": "固定输入与配置",
+      "box_px": [
+        408,
+        356,
+        146,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.8,
+      "min_font_size": 14.8,
+      "max_font_size": 14.8,
+      "font_size_source": "measured",
+      "size_group": "note",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "error-label-0",
+      "text": "误报／漏检",
+      "box_px": [
+        615,
+        190,
+        112,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#333333",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "error-label-1",
+      "text": "分层抽查",
+      "box_px": [
+        615,
+        246,
+        112,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#333333",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "error-label-2",
+      "text": "误差清单",
+      "box_px": [
+        615,
+        302,
+        112,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#333333",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "error-note",
+      "text": "归类主要误差",
+      "box_px": [
+        598,
+        356,
+        146,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 14.8,
+      "min_font_size": 14.8,
+      "max_font_size": 14.8,
+      "font_size_source": "measured",
+      "size_group": "note",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "mechanism-label",
+      "text": "机制相关？",
+      "box_px": [
+        824,
+        249,
+        164,
+        38
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "output-main",
+      "text": "核验样本与分层",
+      "box_px": [
+        807,
+        94,
+        198,
+        31
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "output-next",
+      "text": "进入路线二",
+      "box_px": [
+        808,
+        129,
+        196,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "relevant",
+      "text": "相关",
+      "box_px": [
+        925,
+        170,
+        69,
+        30
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "quality-heading",
+      "text": "质量诊断",
+      "box_px": [
+        810,
+        443,
+        192,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 18.0,
+      "min_font_size": 18.0,
+      "max_font_size": 18.0,
+      "font_size_source": "measured",
+      "size_group": "title",
+      "color": "#1B3A5C",
+      "bold": true,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "quality-detail",
+      "text": "配准／标签",
+      "box_px": [
+        811,
+        486,
+        190,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "quality-label",
+      "text": "质量主导",
+      "box_px": [
+        923,
+        368,
+        91,
+        31
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "quality-return-label",
+      "text": "复核",
+      "box_px": [
+        681,
+        412,
+        57,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#2E6B9E",
+      "bold": false,
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "development-note",
+      "text": "开发决策：仅使用训练与验证矿区",
+      "box_px": [
+        36,
+        457,
+        546,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "left",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    },
+    {
+      "id": "isolation-note",
+      "text": "校准集仅拟合温度；测试集在规则冻结后评估",
+      "box_px": [
+        36,
+        494,
+        546,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 15.7,
+      "min_font_size": 15.7,
+      "max_font_size": 15.7,
+      "font_size_source": "measured",
+      "size_group": "body",
+      "color": "#1B3A5C",
+      "bold": false,
+      "align": "left",
+      "valign": "middle",
+      "fit_text": true,
+      "line_height": 1.08,
+      "z_index": 40
+    }
+  ],
+  "shapes": [
+    {
+      "id": "panel-0",
+      "type": "rect",
+      "box_px": [
+        20,
+        110,
+        162,
+        285
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "divider-0",
+      "type": "line",
+      "points_px": [
+        20,
+        163,
+        182,
+        163
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "panel-1",
+      "type": "rect",
+      "box_px": [
+        210,
+        110,
+        162,
+        285
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "divider-1",
+      "type": "line",
+      "points_px": [
+        210,
+        163,
+        372,
+        163
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "panel-2",
+      "type": "rect",
+      "box_px": [
+        400,
+        110,
+        162,
+        285
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "divider-2",
+      "type": "line",
+      "points_px": [
+        400,
+        163,
+        562,
+        163
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "panel-3",
+      "type": "rect",
+      "box_px": [
+        590,
+        110,
+        162,
+        285
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "divider-3",
+      "type": "line",
+      "points_px": [
+        590,
+        163,
+        752,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "ancestry-0",
+      "type": "rect",
+      "box_px": [
+        45,
+        185,
+        112,
+        40
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "ancestry-link-0-shaft",
+      "type": "line",
+      "points_px": [
+        101,
+        225,
+        101.0,
+        233.0
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "ancestry-link-0-head",
+      "type": "polygon",
+      "box_px": [
+        97.0,
+        233.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          101,
+          241
+        ],
+        [
+          97.0,
+          233.0
+        ],
+        [
+          105.0,
+          233.0
+        ]
+      ],
+      "fill": "#5BA0D0",
+      "stroke": "#5BA0D0",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "ancestry-1",
+      "type": "rect",
+      "box_px": [
+        45,
+        241,
+        112,
+        40
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "ancestry-link-1-shaft",
+      "type": "line",
+      "points_px": [
+        101,
+        281,
+        101.0,
+        289.0
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "ancestry-link-1-head",
+      "type": "polygon",
+      "box_px": [
+        97.0,
+        289.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          101,
+          297
+        ],
+        [
+          97.0,
+          289.0
+        ],
+        [
+          105.0,
+          289.0
+        ]
+      ],
+      "fill": "#5BA0D0",
+      "stroke": "#5BA0D0",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "ancestry-2",
+      "type": "rect",
+      "box_px": [
+        45,
+        297,
+        112,
+        40
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "split-0",
+      "type": "rect",
+      "box_px": [
+        230,
+        183,
+        122,
+        34
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "split-1",
+      "type": "rect",
+      "box_px": [
+        230,
+        227,
+        122,
+        34
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "split-2",
+      "type": "rect",
+      "box_px": [
+        230,
+        271,
+        122,
+        34
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "split-3",
+      "type": "rect",
+      "box_px": [
+        230,
+        315,
+        122,
+        34
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "baseline-model",
+      "type": "rect",
+      "box_px": [
+        418,
+        185,
+        126,
+        69
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "error-0",
+      "type": "rect",
+      "box_px": [
+        609,
+        185,
+        124,
+        40
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "error-1",
+      "type": "rect",
+      "box_px": [
+        609,
+        241,
+        124,
+        40
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "error-2",
+      "type": "rect",
+      "box_px": [
+        609,
+        297,
+        124,
+        40
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "flow-0-shaft",
+      "type": "line",
+      "points_px": [
+        182,
+        270,
+        202.0,
+        270.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "flow-0-head",
+      "type": "polygon",
+      "box_px": [
+        202.0,
+        266.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          210,
+          270
+        ],
+        [
+          202.0,
+          274.0
+        ],
+        [
+          202.0,
+          266.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "flow-1-shaft",
+      "type": "line",
+      "points_px": [
+        372,
+        270,
+        392.0,
+        270.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "flow-1-head",
+      "type": "polygon",
+      "box_px": [
+        392.0,
+        266.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          400,
+          270
+        ],
+        [
+          392.0,
+          274.0
+        ],
+        [
+          392.0,
+          266.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "flow-2-shaft",
+      "type": "line",
+      "points_px": [
+        562,
+        270,
+        582.0,
+        270.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "flow-2-head",
+      "type": "polygon",
+      "box_px": [
+        582.0,
+        266.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          590,
+          270
+        ],
+        [
+          582.0,
+          274.0
+        ],
+        [
+          582.0,
+          266.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "flow-decision-shaft",
+      "type": "line",
+      "points_px": [
+        752,
+        270,
+        788.0,
+        270.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "flow-decision-head",
+      "type": "polygon",
+      "box_px": [
+        788.0,
+        266.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          796,
+          270
+        ],
+        [
+          788.0,
+          274.0
+        ],
+        [
+          788.0,
+          266.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "mechanism-decision",
+      "type": "diamond",
+      "preset": "diamond",
+      "box_px": [
+        796,
+        208,
+        220,
+        124
+      ],
+      "stroke": "#1B3A5C",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "z_index": 10
+    },
+    {
+      "id": "output",
+      "type": "rect",
+      "box_px": [
+        798,
+        88,
+        216,
+        78
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "branch-relevant-shaft",
+      "type": "line",
+      "points_px": [
+        906,
+        208,
+        906.0,
+        174.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "branch-relevant-head",
+      "type": "polygon",
+      "box_px": [
+        902.0,
+        166,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          906,
+          166
+        ],
+        [
+          910.0,
+          174.0
+        ],
+        [
+          902.0,
+          174.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "quality",
+      "type": "rect",
+      "box_px": [
+        798,
+        434,
+        216,
+        96
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    },
+    {
+      "id": "branch-quality-shaft",
+      "type": "line",
+      "points_px": [
+        906,
+        332,
+        906.0,
+        426.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.5,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "branch-quality-head",
+      "type": "polygon",
+      "box_px": [
+        902.0,
+        426.0,
+        8.0,
+        8.0
+      ],
+      "polygon_px": [
+        [
+          906,
+          434
+        ],
+        [
+          902.0,
+          426.0
+        ],
+        [
+          910.0,
+          426.0
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "quality-return-h-0",
+      "type": "line",
+      "points_px": [
+        798.0,
+        482.0,
+        791.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-1",
+      "type": "line",
+      "points_px": [
+        785.0,
+        482.0,
+        778.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-2",
+      "type": "line",
+      "points_px": [
+        772.0,
+        482.0,
+        765.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-3",
+      "type": "line",
+      "points_px": [
+        759.0,
+        482.0,
+        752.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-4",
+      "type": "line",
+      "points_px": [
+        746.0,
+        482.0,
+        739.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-5",
+      "type": "line",
+      "points_px": [
+        733.0,
+        482.0,
+        726.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-6",
+      "type": "line",
+      "points_px": [
+        720.0,
+        482.0,
+        713.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-7",
+      "type": "line",
+      "points_px": [
+        707.0,
+        482.0,
+        700.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-8",
+      "type": "line",
+      "points_px": [
+        694.0,
+        482.0,
+        687.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-h-9",
+      "type": "line",
+      "points_px": [
+        681.0,
+        482.0,
+        674.0,
+        482.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-0",
+      "type": "line",
+      "points_px": [
+        671.0,
+        482.0,
+        671.0,
+        475.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-1",
+      "type": "line",
+      "points_px": [
+        671.0,
+        469.0,
+        671.0,
+        462.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-2",
+      "type": "line",
+      "points_px": [
+        671.0,
+        456.0,
+        671.0,
+        449.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-3",
+      "type": "line",
+      "points_px": [
+        671.0,
+        443.0,
+        671.0,
+        436.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-4",
+      "type": "line",
+      "points_px": [
+        671.0,
+        430.0,
+        671.0,
+        423.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-5",
+      "type": "line",
+      "points_px": [
+        671.0,
+        417.0,
+        671.0,
+        410.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-v-6",
+      "type": "line",
+      "points_px": [
+        671.0,
+        404.0,
+        671.0,
+        403.0
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.2,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "quality-return-head",
+      "type": "polygon",
+      "box_px": [
+        667,
+        395,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          671,
+          395
+        ],
+        [
+          667,
+          403
+        ],
+        [
+          675,
+          403
+        ]
+      ],
+      "fill": "#2E6B9E",
+      "stroke": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 21
+    },
+    {
+      "id": "scope-note",
+      "type": "rect",
+      "box_px": [
+        20,
+        450,
+        578,
+        80
+      ],
+      "stroke": "#5BA0D0",
+      "stroke_width": 1,
+      "fill": "#FFFFFF",
+      "corner_category": "straight",
+      "z_index": 10
+    }
+  ],
+  "images": [],
+  "asset_provenance": []
+}

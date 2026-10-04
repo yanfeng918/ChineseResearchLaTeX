@@ -1,0 +1,136 @@
+{
+  "figure_id": "F2",
+  "figure_name_zh": "总体研究框架图",
+  "priority": "must",
+  "module_count": 6,
+  "diagram_type": "Overall Research Framework with Freeze Gates",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular",
+      "tensor_shape": "6-7pt monospace"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with 4px head",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "background": "White (#FFFFFF)",
+    "main_block_color_palette": {
+      "Data_Layer": "Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "Content_Module": "Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "Freeze_Gate": "Grey (#8EAEC4) 1.5pt dashed border, white fill, [Fixed] pill",
+      "Evidence_Layer": "Medium Blue (#2E6B9E) 1.5pt solid border, white fill",
+      "External_Optional": "Grey (#8EAEC4) 1pt dotted border, white fill",
+      "Pilot_Badge": "Amber (#E69F00) 1.5pt solid border pill, white fill"
+    },
+    "flow_arrow_colors": {
+      "main_forward_flow": "Dark Grey (#4D4D4D) solid",
+      "feedback_loop": "Dark Grey (#4D4D4D) dashed curved"
+    }
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "Far Left Column",
+      "shape": "Tall rectangle, Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "exact_title_to_render_inside": "Public Mining Data",
+      "icon": "small stacked-map-tiles icon, monochrome thin line art",
+      "internal_content": {
+        "layout": "Two stacked rows",
+        "row_1": { "exact_text": "MineNetCD\n100 sites / 71,711 tiles" },
+        "row_2": { "exact_header": "Site-isolated split", "exact_text": "60 / 10 / 30" }
+      },
+      "flow": "Horizontal arrow pointing RIGHT to Content One"
+    },
+    {
+      "relative_position": "Center Left",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Content 1: Error Diagnosis",
+      "icon": "small confusion matrix heatmap thumbnail, monochrome",
+      "exact_text": "Provenance audit\nBaseline reproduction\nPer-site errors",
+      "exact_floating_text": "Output: frozen split, error list",
+      "flow": "Horizontal arrow pointing RIGHT through Freeze Gate A"
+    },
+    {
+      "relative_position": "Center Left Gate",
+      "shape": "Narrow vertical double-line gate, Grey (#8EAEC4) 1.5pt dashed border",
+      "exact_label": "Freeze Split",
+      "secondary_note": "[Fixed]"
+    },
+    {
+      "relative_position": "Center",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Content 2: Constraint Region",
+      "icon": "small four-cell grid icon with one cell hatched, monochrome",
+      "exact_text": "Four-arm control\nMask contamination\nNeighbour swap",
+      "exact_floating_text": "Output: effect interval, counter-examples",
+      "flow": "Horizontal arrow pointing RIGHT through Freeze Gate B"
+    },
+    {
+      "relative_position": "Center Right Gate",
+      "shape": "Narrow vertical double-line gate, Grey (#8EAEC4) 1.5pt dashed border",
+      "exact_label": "Freeze Detector",
+      "secondary_note": "[Fixed]"
+    },
+    {
+      "relative_position": "Right Center",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Content 3: Review Reliability",
+      "icon": "small window-grid icon with three cells shaded, monochrome",
+      "exact_text": "Temperature calibration\nError ranking\nFixed area budget",
+      "exact_floating_text": "Output: residual FP/FN, coverage"
+    },
+    {
+      "relative_position": "Far Right Column",
+      "shape": "Tall rectangle, Medium Blue (#2E6B9E) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Site-level Evidence",
+      "icon": "small document-with-checklist icon, monochrome",
+      "exact_text": "Applicable conditions\nFailure cases"
+    },
+    {
+      "relative_position": "Top Right, above Evidence",
+      "shape": "Rectangle, Grey (#8EAEC4) 1pt dotted border, white fill",
+      "exact_title_to_render_inside": "EuroMineNet",
+      "secondary_note": "(conditional)",
+      "exact_text": "External validation"
+    },
+    {
+      "relative_position": "Top Left, above Content One",
+      "shape": "Small pill, Amber (#E69F00) 1.5pt solid border, white fill",
+      "exact_label": "MCT-P01 done",
+      "secondary_note": "(pilot evidence)"
+    },
+    {
+      "relative_position": "Bottom, spanning Content One back to Data Layer",
+      "shape": "Long curved dashed arrow, Dark Grey (#4D4D4D) 1.0pt dashed",
+      "exact_floating_text": "If registration or label ambiguity dominates: narrow hypothesis"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Freeze gates are rendered as narrow vertical DOUBLE LINES with dashed grey border and a small grey [Fixed] pill; NO padlock symbol.",
+    "The conditional external-validation block uses a DOTTED border to distinguish it from solid required modules.",
+    "Amber (#E69F00) appears only on the pilot badge border; never as text colour.",
+    "Feedback loop arrow is DASHED and curves along the bottom edge; main forward flow arrows are SOLID.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 8-9pt, notes 7-8pt.",
+    "Icons are monochrome thin grey line art. No colored icons.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Flat vector style: no gradients, no drop shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "caption_reserve": [
+    "71,711 片与 100 矿区为本项目实测核验值，非引用论文说法",
+    "矿区隔离核验方法与结果",
+    "MCT-P01 预实验的完整协议与三臂结果"
+  ],
+  "open_question": "若希望图面完全无数字，把 row_1 的 exact_text 改为 \"MineNetCD\\n100 sites\" 或仅 \"MineNetCD\"。"
+}

@@ -1,0 +1,228 @@
+{
+  "figure_id": "F21",
+  "figure_name_zh": "24个月任务进度与冻结节点",
+  "diagram_type": "Research Timeline",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Create a task timeline with proportionate month intervals and small milestone markers, not a chain of equal-size boxes pretending to be durations. Place writing as a thin parallel track beginning during mechanism experiments. Mark first submission as conditional around month twelve, with a reassessment at month fifteen. External validation and real review appear as dotted optional tracks after the core chain closes. Do not draw publication as guaranteed.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "far left",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "数据与误差",
+      "exact_text": "1—3月",
+      "icon": "source ledger above a timeline interval, monochrome thin dark-grey line art",
+      "visual_function": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+      "source_span": {
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "section": "（二）1.9年度计划、1.10预期结果",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b2",
+      "relative_position": "left center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "机制与对照",
+      "exact_text": "4—9月",
+      "icon": "matched-mask pictogram above a timeline interval, monochrome thin dark-grey line art",
+      "visual_function": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+      "source_span": {
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "section": "（二）1.9年度计划、1.10预期结果",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b3",
+      "relative_position": "center",
+      "shape": "white filled outlined panel; #616161 border; dashed for fixed state",
+      "semantic_role": "Frozen",
+      "exact_title_to_render_inside": "冻结与原型",
+      "exact_text": "10—12月",
+      "icon": "fixed model outline above a milestone bracket, monochrome thin dark-grey line art",
+      "visual_function": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+      "source_span": {
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "section": "（二）1.9年度计划、1.10预期结果",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [],
+      "exact_status": "[固定]"
+    },
+    {
+      "id": "b4",
+      "relative_position": "right center",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "评估与扩展",
+      "exact_text": "13—15月",
+      "icon": "paired-interval pictogram above a timeline interval, monochrome thin dark-grey line art",
+      "visual_function": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+      "source_span": {
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "section": "（二）1.9年度计划、1.10预期结果",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b5",
+      "relative_position": "far right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "修改与发表",
+      "exact_text": "16—24月",
+      "icon": "manuscript revision ledger above a timeline interval, monochrome thin dark-grey line art",
+      "visual_function": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+      "source_span": {
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "section": "（二）1.9年度计划、1.10预期结果",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "研究设计",
+    "exact_auxiliary_labels": [
+      "暂定24个月",
+      "条件首投",
+      "重新核对",
+      "同步写作",
+      "可选扩展"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "研究期限暂定24个月，自立项批复起计；依次完成数据核验、机制对照、检测器冻结与可靠性评价。首投与发表受结果成熟度和审稿周期影响，资源不足时先保障主链。",
+    "没有实际批复起止日期，不写具体年月；不将投稿画成已经满足源刊发表要求。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      14,
+      15
+    ],
+    "section": "（二）1.9年度计划、1.10预期结果",
+    "supplemental_assets": [],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "schematic",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "vector editor or approved image model after a later request"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "数据、机制和可靠性任务如何依赖并留出发表时间？",
+    "待确认信息": "没有实际批复起止日期，不写具体年月；不将投稿画成已经满足源刊发表要求。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "exact_text_whitelist": [
+    "数据与误差",
+    "1—3月",
+    "机制与对照",
+    "4—9月",
+    "冻结与原型",
+    "10—12月",
+    "[固定]",
+    "评估与扩展",
+    "13—15月",
+    "修改与发表",
+    "16—24月",
+    "暂定24个月",
+    "条件首投",
+    "重新核对",
+    "同步写作",
+    "可选扩展",
+    "研究设计"
+  ],
+  "image_prompt_english_word_count": 277
+}

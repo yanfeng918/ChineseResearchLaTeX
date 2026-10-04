@@ -1,0 +1,321 @@
+schema_version: 2
+project:
+  type: Laboratory_Open_Fund
+  grant_type: 中南大学有色金属成矿预测与地质环境监测教育部重点实验室2026年度开放课题
+  layout: three-part
+  length_budget: 借用模板内部上限30页；暂以15–20页组织完整草稿；官方开放课题附件的篇幅待核实
+  proposal_path: .
+  body_dir: extraTex
+  bib_file: references/myexample.bib
+  guide_file: AGENTS.md
+  main_tex_sha256: 75cddfe298d923279fb3cbe51067445ddf13edd1194d266db4cfce7225069e47
+  applicant_profile_file: ../../docs/applicants/yan-feng.md
+  project_fact_file: docs/00_项目事实库.md
+  stage_output_dir: docs
+  review_output_dir: review
+  body_files:
+    part_one:
+    - extraTex/1.1.立项依据.tex
+    - extraTex/2.1.研究内容.tex
+    - extraTex/2.2.特色与创新.tex
+    - extraTex/2.3.年度研究计划.tex
+    foundation:
+    - extraTex/3.1.研究基础.tex
+    - extraTex/3.2.工作条件.tex
+    - extraTex/3.3.承担项目情况.tex
+    - extraTex/3.4.完成国基项目情况.tex
+    statements:
+    - extraTex/4.1.不同类型国基情况.tex
+    - extraTex/4.2.同年单位不一致.tex
+    - extraTex/4.3.承担中单位不一致.tex
+    - extraTex/4.4.不同专业技术职务的申请.tex
+    - extraTex/4.6.其他.tex
+  adaptation_note: 依据项目事实库，将用户指定的15阶段流程适配至实验室开放课题。NSFC版式仅为正文工作载体，不代表官方申报模板。24个月是建议值。
+fact_sources:
+  applicant: ../../docs/applicants/yan-feng.md
+  project: docs/00_项目事实库.md
+  read_order:
+  - applicant
+  - project
+not_applicable:
+- NSFC申请代码
+- 3.4 完成国家自然科学基金项目情况（非本开放课题要求）
+- 4.1–4.4 NSFC专属年度申报声明（非本开放课题要求）
+run:
+  current_mode: fresh
+  fill_policy: draft_first
+  last_started: '2026-09-06T12:44:44+08:00'
+  last_finished: '2026-09-06T12:44:44+08:00'
+  last_summary: 从空白适用正文完成00—14全部15阶段；按真实实验室开放课题适配。最终PDF20页、零编译错误；31条文献、3轮选题复核、5线程QC、3组模拟评审及定点修复。F-MCT-01—06与7处暂定尚待落实，无真实矿山预实验，正文和提交均未就绪。
+  next_stage: null
+stages:
+  00_layout_resolution:
+    name: 布局与项目类型解析
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - main.tex
+    - AGENTS.md
+    - README.md
+    outputs: []
+    last_updated: '2026-09-06T12:43:02+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: 5dafd9651ca56337834660d5e0d25e82d2f2e6aafa5e1be82079bb02b6282d09
+    output_sha256_before: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    output_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  01_topic_extraction:
+    name: 选题与研究主题
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - README.md
+    - main.tex
+    - docs/00_项目基本信息.md
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - docs/01_选题与研究主题.md
+    last_updated: '2026-09-06T12:43:02+08:00'
+    notes: 已针对本轮输入变化复核，并按最终产物重新完成；未无关重写。
+    input_sha256: 0db3f55a69ce7e0196f65b611ea52e261f36a157d845571e5b0c7886f7d36e69
+    output_sha256_before: 076ea1e869059deb888f8cdb2bda6a1fccd44d1a4619f055b795ee5a442f7918
+    output_sha256: 076ea1e869059deb888f8cdb2bda6a1fccd44d1a4619f055b795ee5a442f7918
+  02_literature_review:
+    name: 文献调研
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/01_选题与研究主题.md
+    outputs:
+    - docs/02_文献调研
+    - references/myexample.bib
+    last_updated: '2026-09-06T01:46:52+08:00'
+    notes: null
+    input_sha256: 0057f1f83e689ecc8dc87a937d3a6a787d333ad331e0e2485efc0d687cdc71f7
+    output_sha256_before: a891244d9673602f2803974f419e73728bbe36411d942c1a931a7c840fb3b05a
+    output_sha256: a891244d9673602f2803974f419e73728bbe36411d942c1a931a7c840fb3b05a
+  03_scientific_questions:
+    name: 科学问题与创新点
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/01_选题与研究主题.md
+    - docs/02_文献调研
+    outputs:
+    - docs/03_科学问题与创新点.md
+    last_updated: '2026-09-06T12:43:03+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: c6f0d2f4af197b0591c781fd8960597d1ce35b16764d489b4c4ea94006b69107
+    output_sha256_before: e150ef26da5b164fe87bcd8b035fe7450bb43fcf9659015b9e8d4defa0350e57
+    output_sha256: e150ef26da5b164fe87bcd8b035fe7450bb43fcf9659015b9e8d4defa0350e57
+  04_research_plan:
+    name: 研究方案与技术路线
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - AGENTS.md
+    - docs/03_科学问题与创新点.md
+    outputs:
+    - docs/04_研究方案与技术路线.md
+    last_updated: '2026-09-06T12:43:03+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: 80045c3f08af2041ff5c16eb062c27c7eaf17230191c85e89863b19bed77bea5
+    output_sha256_before: e050228827d769ac5b4e512a5a261b6ad16371daead33adf73f7f49cfc2d8df7
+    output_sha256: e050228827d769ac5b4e512a5a261b6ad16371daead33adf73f7f49cfc2d8df7
+  05_part_one_writing:
+    name: 第一部分正文
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-MCT-01
+    - F-MCT-02
+    inputs:
+    - AGENTS.md
+    - docs/03_科学问题与创新点.md
+    - docs/04_研究方案与技术路线.md
+    - references/myexample.bib
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@part_one'
+    last_updated: '2026-09-06T12:44:43+08:00'
+    notes: null
+    input_sha256: 6989591a884fd05f5535debd571f96ac72ac9790a83a5e3b48d3541dc8099b45
+    output_sha256_before: 3de3ecb9e10c0eabc9d1d6b045da64af0304f24e8b7934931c25ceb9959a42a7
+    output_sha256: 3de3ecb9e10c0eabc9d1d6b045da64af0304f24e8b7934931c25ceb9959a42a7
+  06_research_foundation:
+    name: 研究基础与工作条件
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-MCT-01
+    - F-MCT-02
+    - F-MCT-03
+    - F-MCT-05
+    inputs:
+    - AGENTS.md
+    - docs/05_研究基础素材.md
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@foundation'
+    last_updated: '2026-09-06T12:44:43+08:00'
+    notes: null
+    input_sha256: 3f188056044be37c8ad199e68b1ac43db20b1001395f0e8db3df24e7b1003e8e
+    output_sha256_before: acee964bfc3a68236c0e46272af853b2991cc004dd61e100698e2315c7854c11
+    output_sha256: acee964bfc3a68236c0e46272af853b2991cc004dd61e100698e2315c7854c11
+  07_other_statements:
+    name: 其他说明
+    status: drafted_with_gaps
+    blockers: []
+    gaps:
+    - F-MCT-02
+    - F-MCT-04
+    - F-MCT-05
+    - F-MCT-06
+    inputs:
+    - '@applicant_profile'
+    - '@project_fact'
+    outputs:
+    - '@statements'
+    - docs/其他说明检查报告.md
+    last_updated: '2026-09-06T12:44:44+08:00'
+    notes: null
+    input_sha256: 96fc405484bd2e258e3ef05857d3d635190edab268b4d96064441dee826e0494
+    output_sha256_before: b0da7879e4f2c24e359e53fc1c777106995c5ab6b2435c7c3c6c5e1e3912f7df
+    output_sha256: b0da7879e4f2c24e359e53fc1c777106995c5ab6b2435c7c3c6c5e1e3912f7df
+  08_reference_alignment:
+    name: 引用一致性核查
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    outputs:
+    - review/引用一致性审核报告.md
+    last_updated: '2026-09-06T12:43:03+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: cd95a59bc6abc834a220b18ead408a4656f87b503aa42a351029806b4577ed7a
+    output_sha256_before: 394f2f36206ae1103faf65a2005f615e8e9e82032501b70ac352d4c75bfed41a
+    output_sha256: 394f2f36206ae1103faf65a2005f615e8e9e82032501b70ac352d4c75bfed41a
+  09_length_control:
+    name: 篇幅对齐
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - AGENTS.md
+    outputs:
+    - review/篇幅控制报告.md
+    last_updated: '2026-09-06T12:43:03+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: 29e57331d0b683d497dc2afb0fb287ded9a88893533db66ec82681cdd9103459
+    output_sha256_before: f0edea5549788bf5e7d2a55f752136a95b41b1ede132c95445ec87f2484145a8
+    output_sha256: f0edea5549788bf5e7d2a55f752136a95b41b1ede132c95445ec87f2484145a8
+  10_humanization:
+    name: 去 AI 味润色
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    outputs:
+    - review/去AI味修改报告.md
+    last_updated: '2026-09-06T12:43:04+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: 0030d888a515adf45db2aaf17e1a4882ac738bf7d5630f189cce79ffb53a7c77
+    output_sha256_before: 2563f102b68a5b610b1c8e5b7b46de2ec022025c7449edd555ca8aaa93eec1a9
+    output_sha256: 2563f102b68a5b610b1c8e5b7b46de2ec022025c7449edd555ca8aaa93eec1a9
+  11_qc:
+    name: 质量控制
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    - AGENTS.md
+    outputs:
+    - review/质量控制报告.md
+    last_updated: '2026-09-06T12:43:04+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: dc3ade4781f4d725145dd7efb4015d0fddfe02f3f524b14fcf0d6575f19f25b4
+    output_sha256_before: cfedb89a12b14b99188654f81249157f888cf6e1a603b3013ca997a012f89d7b
+    output_sha256: cfedb89a12b14b99188654f81249157f888cf6e1a603b3013ca997a012f89d7b
+  12_simulated_review:
+    name: 模拟专家评审
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    - AGENTS.md
+    outputs:
+    - review/模拟专家评审_全稿.md
+    last_updated: '2026-09-06T12:43:04+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: dc3ade4781f4d725145dd7efb4015d0fddfe02f3f524b14fcf0d6575f19f25b4
+    output_sha256_before: 88371ba915491e935636559106aea1c5f60ebac0e6d9768ce864cd5413b6be1f
+    output_sha256: 88371ba915491e935636559106aea1c5f60ebac0e6d9768ce864cd5413b6be1f
+  13_targeted_repair:
+    name: P0/P1 定点修复
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - review/质量控制报告.md
+    - review/模拟专家评审_全稿.md
+    outputs:
+    - review/P0P1定点修复报告.md
+    - docs/评审意见修复清单.md
+    last_updated: '2026-09-06T12:43:05+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: adb6edd4a1067f3d19a947354963ca1ea4e12257a2ef6923a9245c7210335939
+    output_sha256_before: db2f7daadfe2bb135e81091274f09e29e67248205ea6cc72fb2e1efcdcf15f16
+    output_sha256: db2f7daadfe2bb135e81091274f09e29e67248205ea6cc72fb2e1efcdcf15f16
+  14_compile:
+    name: 编译
+    status: completed
+    blockers: []
+    gaps: []
+    inputs:
+    - main.tex
+    - '@part_one'
+    - '@foundation'
+    - '@statements'
+    - references/myexample.bib
+    outputs:
+    - main.pdf
+    - review/编译检查报告.md
+    last_updated: '2026-09-06T12:43:05+08:00'
+    notes: 阶段输入已变化，需定点复核后重新完成；不得无关重写。
+    input_sha256: c572298b83c060a2dff73d904c2e5dbb1825284cd35ca679ea02426a57f744d8
+    output_sha256_before: a2626ebac36968d884852171d9dc4ef33a5c9534d46e46fb25f7637420875032
+    output_sha256: a2626ebac36968d884852171d9dc4ef33a5c9534d46e46fb25f7637420875032
+submission:
+  abstract: pending
+  application_code: not_applicable
+  budget: pending
+  declarations: pending
+  attachments: pending

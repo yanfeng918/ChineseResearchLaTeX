@@ -1,0 +1,86 @@
+{
+  "selection_basis": "用户选择F01—F05、F14、合并后的F15＋F16",
+  "figure_count": 7,
+  "generated_images": false,
+  "source_pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+  "items": [
+    {
+      "display_number": 1,
+      "figure_id": "F01",
+      "title": "研究背景：真实地表变化、外观差异与复核需求",
+      "aspect_ratio": "16:9",
+      "json": "F01.json",
+      "prompt": "F01.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 2,
+      "figure_id": "F02",
+      "title": "总体研究框架：失效证据—机制检验—复核评价",
+      "aspect_ratio": "16:9",
+      "json": "F02.json",
+      "prompt": "F02.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 3,
+      "figure_id": "F03",
+      "title": "研究路线一：矿区来源核验与误差诊断",
+      "aspect_ratio": "16:9",
+      "json": "F03.json",
+      "prompt": "F03.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 4,
+      "figure_id": "F04",
+      "title": "研究路线二：约束区域与负迁移条件检验",
+      "aspect_ratio": "16:9",
+      "json": "F04.json",
+      "prompt": "F04.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 5,
+      "figure_id": "F05",
+      "title": "研究路线三：校准、错误排序与固定面积复核",
+      "aspect_ratio": "16:9",
+      "json": "F05.json",
+      "prompt": "F05.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 6,
+      "figure_id": "F14",
+      "title": "已完成预实验流程：固定子样本与九模型运行",
+      "aspect_ratio": "16:9",
+      "json": "F14.json",
+      "prompt": "F14.prompt.md",
+      "production_mode": "schematic"
+    },
+    {
+      "display_number": 7,
+      "figure_id": "F15_F16",
+      "title": "预实验结果与矿区配对效应：检测收益、召回代价及不确定性",
+      "aspect_ratio": "4:3",
+      "json": "F15_F16.json",
+      "prompt": "F15_F16.prompt.md",
+      "production_mode": "programmatic_plot"
+    }
+  ],
+  "insertion": {
+    "status": "completed",
+    "pdf_pages": 25,
+    "figure_pages": [
+      2,
+      8,
+      11,
+      14,
+      15,
+      19,
+      20
+    ],
+    "asset_manifest": "../../figures/inserted_figures.json",
+    "note": "generated_images=false describes the earlier planning stage; inserted assets and measured plot are tracked here."
+  }
+}

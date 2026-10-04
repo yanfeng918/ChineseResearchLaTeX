@@ -1,0 +1,147 @@
+{
+  "figure_id": "F4",
+  "figure_name_zh": "技术路线·内容二：约束区域对照与负迁移条件",
+  "priority": "must",
+  "diagram_type": "Controlled Constraint-Region Comparison Pipeline",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular",
+      "tensor_shape": "6-7pt monospace"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with 4px head",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "background": "White (#FFFFFF)",
+    "main_block_color_palette": {
+      "Backbone": "Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "Mask_Chain": "Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "Constraint_Arm": "Medium Blue (#2E6B9E) 1.5pt dashed border, white fill",
+      "Control_Panel": "Section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "Counter_Example": "Amber (#E69F00) 1.5pt solid border, white fill",
+      "Output": "Medium Blue (#2E6B9E) 1.5pt solid border, white fill"
+    },
+    "flow_arrow_colors": {
+      "main_forward_flow": "Dark Grey (#4D4D4D) solid",
+      "feedback_loop": "Dark Grey (#4D4D4D) dashed"
+    }
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "Top Left",
+      "shape": "Two stacked rectangles sharing one border bracket, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Shared Encoder",
+      "icon": "small stacked feature maps icon (three decreasing rectangles), monochrome",
+      "exact_text": "Siamese, weights tied",
+      "secondary_note": "(same backbone)",
+      "flow": "Arrow pointing DOWN-RIGHT to the four-arm row"
+    },
+    {
+      "relative_position": "Left Middle",
+      "shape": "Three small boxes chained left to right, Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "exact_title_to_render_inside": "Mask Construction",
+      "internal_content": {
+        "layout": "Three chained small boxes with short arrows",
+        "box_1": { "exact_label": "Label Y=0" },
+        "box_2": { "exact_label": "Valid Region" },
+        "box_3": { "exact_label": "Erosion" }
+      },
+      "exact_floating_text": "Train labels only",
+      "flow": "Arrow pointing RIGHT to the four-arm row"
+    },
+    {
+      "relative_position": "Center, four boxes in a horizontal row",
+      "shape": "Four equal rectangles, Medium Blue (#2E6B9E) 1.5pt dashed border, white fill; the third box has a thicker 2pt border",
+      "exact_title_to_render_inside": "Four Constraint Arms",
+      "internal_content": {
+        "layout": "Four equal-width boxes in a row, each with a small 4x4 mask thumbnail above the label",
+        "box_1": { "exact_label": "None", "icon": "small 4x4 grid, all cells empty" },
+        "box_2": { "exact_label": "Full Image", "icon": "small 4x4 grid, all cells shaded" },
+        "box_3": {
+          "exact_label": "Background",
+          "icon": "small 4x4 grid, outer cells shaded, centre cells empty",
+          "secondary_note": "(ours)"
+        },
+        "box_4": { "exact_label": "Random Equal", "icon": "small 4x4 grid, scattered cells shaded" }
+      },
+      "flow": "Arrow pointing RIGHT to Attribution Controls"
+    },
+    {
+      "relative_position": "Below the four arms",
+      "shape": "Wide flat band, section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "exact_title_to_render_inside": "Matched Across Arms",
+      "exact_text": "Same backbone, steps, resolution\nSame constrained pixel count\nShape and edge-distance matched"
+    },
+    {
+      "relative_position": "Center Right Top",
+      "shape": "Panel, section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "exact_title_to_render_inside": "Attribution Controls",
+      "internal_content": {
+        "layout": "Three stacked pills",
+        "pill_1": { "exact_label": "Smoothing" },
+        "pill_2": { "exact_label": "Strength Match" },
+        "pill_3": { "exact_label": "Gradient Norm" }
+      }
+    },
+    {
+      "relative_position": "Center Right Bottom",
+      "shape": "Horizontal axis with four tick marks, Medium Blue (#2E6B9E) 1.5pt solid line",
+      "exact_title_to_render_inside": "Mask Contamination Dose",
+      "exact_floating_text": "Change-pixel share in mask",
+      "secondary_note": "(fixed area)"
+    },
+    {
+      "relative_position": "Bottom Center",
+      "shape": "Rectangle, Medium Blue (#2E6B9E) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Neighbour Swap",
+      "exact_text": "DonaNet: region-restricted KL",
+      "secondary_note": "(same budget)"
+    },
+    {
+      "relative_position": "Far Right",
+      "shape": "Rectangle, Medium Blue (#2E6B9E) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Outputs",
+      "icon": "small paired-interval plot thumbnail (dot with horizontal error bar), monochrome",
+      "exact_text": "Effect intervals\nApplicable conditions"
+    },
+    {
+      "relative_position": "Far Right Lower",
+      "shape": "Rectangle, Amber (#E69F00) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Counter-examples",
+      "exact_text": "Recall loss cases"
+    },
+    {
+      "relative_position": "Top Right corner, small",
+      "shape": "Borderless small text on light grey (#F7F7F7) strip",
+      "exact_text": "L = L_seg + lambda * L_bg"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "The four constraint arms MUST be distinguishable by their 4x4 mask thumbnails, not by colour alone; all four share the same dashed medium-blue border except the third, which uses a thicker 2pt border to mark the proposed arm.",
+    "Only ONE formula line appears on the figure; all parameter values belong in the caption.",
+    "Amber (#E69F00) is used only for the counter-example block border, never as text colour.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 8-9pt, notes 7-8pt.",
+    "Icons are monochrome thin grey line art. No colored icons.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Flat vector style: no gradients, no drop shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "caption_reserve": [
+    "L_bg 完整定义与按约束像素数归一化的写法",
+    "lambda、腐蚀尺度、剂量取值",
+    "随机掩码形状/边界距离匹配失败样本比例",
+    "MCT-P01 三臂实测结果（无约束 / 全区域 / 背景位置）"
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "figure_id": "F02",
+  "figure_name_zh": "总体研究框架：失效证据—机制检验—复核评价",
+  "diagram_type": "Overall Framework",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Arrange five major blocks in one horizontal chain. The middle three correspond exactly to the three research contents, with the same names used in their dedicated route figures. Label the handoff from diagnosis as verified samples and strata, and the next handoff as a frozen detector. Below the chain, reserve a thin detached strip for conditional external validation; it is not a sixth core module. Do not depict a deployed monitoring platform.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "far left",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "公开影像",
+      "exact_text": "标签／矿区",
+      "icon": "paired image frames with a small source ledger, monochrome thin dark-grey line art",
+      "visual_function": "三项研究如何依赖前序产出并共同回答中心问题？",
+      "source_span": {
+        "pdf_pages": [
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "section": "（二）1.1、1.4、1.7—1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b2",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "relative_position": "left center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "误差诊断",
+      "exact_text": "内容一",
+      "icon": "magnifier above a confusion grid, monochrome thin dark-grey line art",
+      "visual_function": "三项研究如何依赖前序产出并共同回答中心问题？",
+      "source_span": {
+        "pdf_pages": [
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "section": "（二）1.1、1.4、1.7—1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b3",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "核验与分层"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "relative_position": "center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "区域约束",
+      "exact_text": "内容二",
+      "icon": "feature maps beside a binary mask, monochrome thin dark-grey line art",
+      "visual_function": "三项研究如何依赖前序产出并共同回答中心问题？",
+      "source_span": {
+        "pdf_pages": [
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "section": "（二）1.1、1.4、1.7—1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b4",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "冻结检测器"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "relative_position": "right center",
+      "shape": "white filled outlined panel; #616161 border; dashed for fixed state",
+      "semantic_role": "Frozen",
+      "exact_title_to_render_inside": "复核评价",
+      "exact_text": "内容三",
+      "icon": "fixed model outline beside a ranked window grid, monochrome thin dark-grey line art",
+      "visual_function": "三项研究如何依赖前序产出并共同回答中心问题？",
+      "source_span": {
+        "pdf_pages": [
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "section": "（二）1.1、1.4、1.7—1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b5",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        }
+      ],
+      "exact_status": "[固定]"
+    },
+    {
+      "id": "b5",
+      "relative_position": "far right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "条件与反例",
+      "exact_text": "矿区证据",
+      "icon": "document with a split effect marker, monochrome thin dark-grey line art",
+      "visual_function": "三项研究如何依赖前序产出并共同回答中心问题？",
+      "source_span": {
+        "pdf_pages": [
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "section": "（二）1.1、1.4、1.7—1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "研究设计",
+    "exact_auxiliary_labels": [
+      "外部验证（条件性）"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "总体框架包含公开输入、误差诊断、区域约束检验、冻结检测器的复核评价及矿区证据输出五个主模块。配准或标签问题占主导时先返回质量诊断；外部验证为有条件扩展。",
+    "内容二是待检验机制，输出允许无增量和反例；内容三不向检测器回传训练梯度。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      7,
+      8,
+      9,
+      13,
+      14
+    ],
+    "section": "（二）1.1、1.4、1.7—1.8",
+    "supplemental_assets": [],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "schematic",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "vector editor or approved image model after a later request"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "三项研究如何依赖前序产出并共同回答中心问题？",
+    "待确认信息": "内容二是待检验机制，输出允许无增量和反例；内容三不向检测器回传训练梯度。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "exact_text_whitelist": [
+    "公开影像",
+    "标签／矿区",
+    "误差诊断",
+    "内容一",
+    "区域约束",
+    "内容二",
+    "复核评价",
+    "内容三",
+    "[固定]",
+    "条件与反例",
+    "矿区证据",
+    "核验与分层",
+    "冻结检测器",
+    "外部验证（条件性）",
+    "研究设计"
+  ],
+  "image_prompt_english_word_count": 282
+}

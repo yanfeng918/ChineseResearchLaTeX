@@ -1,0 +1,190 @@
+{
+  "figure_count": 7,
+  "items": [
+    {
+      "display_number": 1,
+      "figure_id": "F01",
+      "png": "ChatGPT Image 2026年9月6日 17_05_55 (1).png",
+      "png_sha256": "983d042bd176985a4713bbedd803ab81906208424193b5293fbb5044ec9789f5",
+      "pdf": "F01_research_background.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 2,
+      "figure_id": "F02",
+      "png": "ChatGPT Image 2026年9月6日 17_06_05 (2).png",
+      "png_sha256": "dbdb6f50bec4d9c4bffd86d640b25024d3b2eefc7be57f22ec6154790337d2b5",
+      "pdf": "F02_overall_framework.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 3,
+      "figure_id": "F03",
+      "png": "ChatGPT Image 2026年9月6日 17_06_18 (3).png",
+      "png_sha256": "02c15f4198da604a2247b6bb505e9aba7af5b850762cd151d56a39e9972d40e9",
+      "pdf": "F03_route_diagnosis.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 4,
+      "figure_id": "F04",
+      "png": "ChatGPT Image 2026年9月6日 17_06_21 (4).png",
+      "png_sha256": "5d19184625fba31924dbae4f515e935c3f3337a0cbefb695fd79853af8816305",
+      "pdf": "F04_route_constraint.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 5,
+      "figure_id": "F05",
+      "png": "ChatGPT Image 2026年9月6日 17_06_22 (5).png",
+      "png_sha256": "6357514b51d0806f0954d6ab519ffb458d353faf7a81c04d89453aadf01093c4",
+      "pdf": "F05_route_reliability.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 6,
+      "figure_id": "F14",
+      "png": "ChatGPT Image 2026年9月6日 17_06_22 (6).png",
+      "png_sha256": "732cbd9383d2c8d59d4614edfe52b7e5e0e7de3289a70e70615981563734cef2",
+      "pdf": "F14_pilot_workflow.pdf",
+      "kind": "lossless raster PDF",
+      "latex_top_trim_mm": 12,
+      "note": "Full original retained in the PDF; LaTeX clips only its embedded heading for automatic caption numbering."
+    },
+    {
+      "display_number": 7,
+      "figure_id": "F15_F16",
+      "pdf": "F15_F16_pilot_results.pdf",
+      "kind": "vector plot from archived measurements",
+      "data_sources": {
+        "code/pilot/results/aggregate_metrics.json": "b85dadc377ac4bc8fc6366a42e15bd63f69e87c068dbc9e083d418b018a73820",
+        "code/pilot/results/paired_site_contrasts.json": "d11f7682fac2b424e489cc153e8fc6804ccfbd582377b6ef92fdf96f12bce71a"
+      },
+      "plotted_values": {
+        "top": [
+          {
+            "arm": "none",
+            "metric": "IoU",
+            "mean_percent": 21.084057183281534,
+            "seed_sd_percent": 1.7853880202728516
+          },
+          {
+            "arm": "full",
+            "metric": "IoU",
+            "mean_percent": 20.960691960554392,
+            "seed_sd_percent": 1.6361998515151959
+          },
+          {
+            "arm": "background",
+            "metric": "IoU",
+            "mean_percent": 21.721082260821454,
+            "seed_sd_percent": 1.4328833381189756
+          },
+          {
+            "arm": "none",
+            "metric": "FPR",
+            "mean_percent": 24.125113768203924,
+            "seed_sd_percent": 2.395245805679919
+          },
+          {
+            "arm": "full",
+            "metric": "FPR",
+            "mean_percent": 26.623847399837857,
+            "seed_sd_percent": 6.119175192146916
+          },
+          {
+            "arm": "background",
+            "metric": "FPR",
+            "mean_percent": 23.275528995948676,
+            "seed_sd_percent": 5.56756543304942
+          },
+          {
+            "arm": "none",
+            "metric": "recall",
+            "mean_percent": 67.81659516691985,
+            "seed_sd_percent": 1.4698857879018539
+          },
+          {
+            "arm": "full",
+            "metric": "recall",
+            "mean_percent": 72.65344620250765,
+            "seed_sd_percent": 6.305390820465734
+          },
+          {
+            "arm": "background",
+            "metric": "recall",
+            "mean_percent": 68.54796879567493,
+            "seed_sd_percent": 6.589303120610198
+          }
+        ],
+        "bottom": [
+          {
+            "contrast": "background - full",
+            "metric": "IoU",
+            "difference_pp": 0.7603903002670611,
+            "ci95_pp": [
+              -0.05667853894588415,
+              1.5152485119341392
+            ]
+          },
+          {
+            "contrast": "background - none",
+            "metric": "IoU",
+            "difference_pp": 0.6370250775399223,
+            "ci95_pp": [
+              -0.020019764361135128,
+              1.2410406735888688
+            ]
+          },
+          {
+            "contrast": "background - full",
+            "metric": "FPR",
+            "difference_pp": -3.348318403889182,
+            "ci95_pp": [
+              -4.216795726281972,
+              -2.5669716330887065
+            ]
+          },
+          {
+            "contrast": "background - none",
+            "metric": "FPR",
+            "difference_pp": -0.8495847722552461,
+            "ci95_pp": [
+              -2.0530860225448437,
+              0.2722512877306784
+            ]
+          },
+          {
+            "contrast": "background - full",
+            "metric": "recall",
+            "difference_pp": -4.105477406832746,
+            "ci95_pp": [
+              -6.235724806980461,
+              -2.2330847083192515
+            ]
+          },
+          {
+            "contrast": "background - none",
+            "metric": "recall",
+            "difference_pp": 0.7313736287550621,
+            "ci95_pp": [
+              -1.0469401908458182,
+              2.6798359202758006
+            ]
+          }
+        ]
+      },
+      "note": "The supplied seventh PNG has mismatched values and is preserved but not used as scientific evidence."
+    }
+  ]
+}

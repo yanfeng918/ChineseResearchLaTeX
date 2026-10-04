@@ -1,0 +1,262 @@
+{
+  "figure_id": "F11",
+  "figure_name_zh": "概率校准与错误排序：两个不同问题",
+  "diagram_type": "Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "4:3",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Use a forked two-lane comparison. The upper lane evaluates probability calibration, while the lower lane evaluates ranking utility under the same frozen detector. Connect calibrated probabilities to the ranking candidates only as one available input, not as a guaranteed improvement. Keep reliability axes empty because no reliability experiment has been completed. The two output panels have equal visual weight and no superiority badge.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "left",
+      "shape": "white filled outlined panel; #616161 border; dashed for fixed state",
+      "semantic_role": "Frozen",
+      "exact_title_to_render_inside": "固定预测",
+      "exact_text": "同一检测器",
+      "icon": "fixed detector logits beside a save marker, monochrome thin dark-grey line art",
+      "visual_function": "概率更准确是否意味着能在同一预算下发现更多错误？",
+      "source_span": {
+        "pdf_pages": [
+          3,
+          12,
+          13
+        ],
+        "section": "（一）1.2（4）；（二）1.4（4）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b2",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        },
+        {
+          "target": "b4",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        }
+      ],
+      "exact_status": "[固定]"
+    },
+    {
+      "id": "b2",
+      "relative_position": "upper center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "温度缩放",
+      "exact_text": "概率尺度",
+      "icon": "single scalar dial, monochrome thin dark-grey line art",
+      "visual_function": "概率更准确是否意味着能在同一预算下发现更多错误？",
+      "source_span": {
+        "pdf_pages": [
+          3,
+          12,
+          13
+        ],
+        "section": "（一）1.2（4）；（二）1.4（4）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b3",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        },
+        {
+          "target": "b4",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "校准熵"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "relative_position": "upper right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "校准质量",
+      "exact_text": "Brier／误差",
+      "icon": "unpopulated reliability-bin grid, monochrome thin dark-grey line art",
+      "visual_function": "概率更准确是否意味着能在同一预算下发现更多错误？",
+      "source_span": {
+        "pdf_pages": [
+          3,
+          12,
+          13
+        ],
+        "section": "（一）1.2（4）；（二）1.4（4）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b4",
+      "relative_position": "lower center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "熵与分歧",
+      "exact_text": "预列候选",
+      "icon": "entropy distribution outline and aligned multi-view frames, monochrome thin dark-grey line art",
+      "visual_function": "概率更准确是否意味着能在同一预算下发现更多错误？",
+      "source_span": {
+        "pdf_pages": [
+          3,
+          12,
+          13
+        ],
+        "section": "（一）1.2（4）；（二）1.4（4）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b5",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "relative_position": "lower right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "排序效用",
+      "exact_text": "剩余 FP／FN",
+      "icon": "ranked complete-scene windows, monochrome thin dark-grey line art",
+      "visual_function": "概率更准确是否意味着能在同一预算下发现更多错误？",
+      "source_span": {
+        "pdf_pages": [
+          3,
+          12,
+          13
+        ],
+        "section": "（一）1.2（4）；（二）1.4（4）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "研究设计",
+    "exact_auxiliary_labels": [
+      "校准质量",
+      "排序效用",
+      "结果待验证"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "温度缩放的校准质量与熵/推理分歧的排序效用分别评估。部分排序定义下温度缩放可能不改顺序，须以固定检测器、同面积剩余错误检验增量。",
+    "不填补不存在的ECE、Brier、ROC/AUC或理想下降曲线；窗尺度、视图集合、组合权重仍待验证冻结。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      3,
+      12,
+      13
+    ],
+    "section": "（一）1.2（4）；（二）1.4（4）",
+    "supplemental_assets": [],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "schematic",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "vector editor or approved image model after a later request"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "概率更准确是否意味着能在同一预算下发现更多错误？",
+    "待确认信息": "不填补不存在的ECE、Brier、ROC/AUC或理想下降曲线；窗尺度、视图集合、组合权重仍待验证冻结。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "exact_text_whitelist": [
+    "固定预测",
+    "同一检测器",
+    "[固定]",
+    "温度缩放",
+    "概率尺度",
+    "校准质量",
+    "Brier／误差",
+    "熵与分歧",
+    "预列候选",
+    "排序效用",
+    "剩余 FP／FN",
+    "校准熵",
+    "结果待验证",
+    "研究设计"
+  ],
+  "image_prompt_english_word_count": 266
+}

@@ -1,0 +1,520 @@
+{
+  "figure_id": "F18",
+  "figure_name_zh": "D_s扩展结果：可计算性、误差关联与变化占比混杂",
+  "diagram_type": "Data Behavior",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "4:3",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {
+      "low_bin": {
+        "color": "#2E6B9E",
+        "marker": "circle",
+        "exact_label": "低档"
+      },
+      "high_bin": {
+        "color": "#1B3A5C",
+        "marker": "triangle",
+        "exact_label": "高档"
+      }
+    }
+  },
+  "layout_description": "Use a two-by-two diagnostic sheet with ten-site scatter plots rather than invented smooth trend curves. The availability panel distinguishes applicable pairs from six unavailable pairs. The lower group comparison labels low and high bins explicitly so their order cannot be reversed. State that the split uses the validation-site median for this exploratory extension, not the training threshold proposed for the formal study. Include the class-proportion association beside the error association.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "upper left",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "可计算性",
+      "exact_text": "474／480",
+      "icon": "two exact availability counts in a proportion strip, monochrome thin dark-grey line art",
+      "visual_function": "已有探索结果为何不能直接证明外观差异使任务更难？",
+      "source_span": {
+        "pdf_pages": [
+          11,
+          17
+        ],
+        "section": "（三）MCT-P01-EXT-Ds；（二）1.4（2）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b2",
+      "relative_position": "upper right",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "D_s 与误报",
+      "exact_text": "背景组",
+      "icon": "ten site-level points on a scatter panel, monochrome thin dark-grey line art",
+      "visual_function": "已有探索结果为何不能直接证明外观差异使任务更难？",
+      "source_span": {
+        "pdf_pages": [
+          11,
+          17
+        ],
+        "section": "（三）MCT-P01-EXT-Ds；（二）1.4（2）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b3",
+      "relative_position": "lower left",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "D_s 与占比",
+      "exact_text": "相关非因果",
+      "icon": "ten site-level points on a scatter panel, monochrome thin dark-grey line art",
+      "visual_function": "已有探索结果为何不能直接证明外观差异使任务更难？",
+      "source_span": {
+        "pdf_pages": [
+          11,
+          17
+        ],
+        "section": "（三）MCT-P01-EXT-Ds；（二）1.4（2）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b4",
+      "relative_position": "lower right",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "低档／高档",
+      "exact_text": "探索分档",
+      "icon": "paired mean markers with direct group labels, monochrome thin dark-grey line art",
+      "visual_function": "已有探索结果为何不能直接证明外观差异使任务更难？",
+      "source_span": {
+        "pdf_pages": [
+          11,
+          17
+        ],
+        "section": "（三）MCT-P01-EXT-Ds；（二）1.4（2）",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "预实验结果",
+    "exact_auxiliary_labels": [
+      "D_s",
+      "背景误报率（%）",
+      "变化占比（%）",
+      "低档",
+      "高档",
+      "6对 NA",
+      "验证中位数"
+    ],
+    "exact_axis_tick_labels": [
+      "0",
+      "0.1",
+      "0.2",
+      "0.3",
+      "10",
+      "20",
+      "30",
+      "40",
+      "50"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "474/480对可计算D_s，6对NA；矿区范围0.0915—0.2196。背景组低/高档FPR为19.07/27.49%，变化占比为7.24/13.06%；D_s与变化占比Spearman约0.370、置换p约0.295，仅10矿区，均为探索证据。",
+    "此处分档界点来自验证矿区；不伪装为正式训练界点；不将置换p说成已证实因果，实际点坐标只取已存JSON。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      11,
+      17
+    ],
+    "section": "（三）MCT-P01-EXT-Ds；（二）1.4（2）",
+    "supplemental_assets": [
+      "code/pilot/results/ds_appearance_probe.json"
+    ],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "programmatic_plot",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "Matplotlib or equivalent"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "已有探索结果为何不能直接证明外观差异使任务更难？",
+    "待确认信息": "此处分档界点来自验证矿区；不伪装为正式训练界点；不将置换p说成已证实因果，实际点坐标只取已存JSON。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "NUMERICAL DATA MUST BE RENDERED PROGRAMMATICALLY FROM data_payload. Image-model output may only be a non-evidential layout study, never the scientific chart.",
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "data_payload": {
+    "ds_appearance_probe.json": {
+      "protocol": "MCT-P01-EXT-Ds",
+      "definition_source": "申报书 2.1 节 D_s",
+      "erosion": 3,
+      "normalization": "RGB/255",
+      "n_val_tiles": 480,
+      "n_applicable_pairs": 474,
+      "n_na_pairs": 6,
+      "site_Ds": {
+        "Chile_01": 0.1228758692741394,
+        "Germany_05": 0.13594770431518555,
+        "Congo_01": 0.18692810833454132,
+        "Brazil_01": 0.11176470667123795,
+        "SouthAfrica_05": 0.09150326997041702,
+        "SouthAfrica_08": 0.2196078598499298,
+        "Russia_08": 0.11699346825480461,
+        "Tanzania_01": 0.12091502547264099,
+        "Serbia_01": 0.1738562062382698,
+        "SouthAfrica_11": 0.10196079313755035
+      },
+      "arms": {
+        "background": {
+          "n_sites": 10,
+          "cut": 0.1218954473733902,
+          "spearman_Ds_FPR": 0.38181818181818183,
+          "perm_p_FPR": 0.2810859457027149,
+          "spearman_Ds_IoU": 0.35757575757575755,
+          "perm_p_IoU": 0.31963401829908505,
+          "low_bin": {
+            "n": 5,
+            "FPR": 0.19065013256001895,
+            "IoU": 0.17829382543119765
+          },
+          "high_bin": {
+            "n": 5,
+            "FPR": 0.27486044735895454,
+            "IoU": 0.2561278197852314
+          },
+          "per_site": {
+            "Chile_01": {
+              "Ds": 0.1228758692741394,
+              "FPR": 0.3135318930602185,
+              "IoU": 0.0925003563098371
+            },
+            "Germany_05": {
+              "Ds": 0.13594770431518555,
+              "FPR": 0.44231066550196735,
+              "IoU": 0.2133429775069736
+            },
+            "Congo_01": {
+              "Ds": 0.18692810833454132,
+              "FPR": 0.13703227799427156,
+              "IoU": 0.1554439479250542
+            },
+            "Brazil_01": {
+              "Ds": 0.11176470667123795,
+              "FPR": 0.287698766791389,
+              "IoU": 0.3713731741104869
+            },
+            "SouthAfrica_05": {
+              "Ds": 0.09150326997041702,
+              "FPR": 0.10615594992499594,
+              "IoU": 0.0969514513827076
+            },
+            "SouthAfrica_08": {
+              "Ds": 0.2196078598499298,
+              "FPR": 0.3515920693043042,
+              "IoU": 0.4569764287055798
+            },
+            "Russia_08": {
+              "Ds": 0.11699346825480461,
+              "FPR": 0.12657203843332082,
+              "IoU": 0.05875947923791644
+            },
+            "Tanzania_01": {
+              "Ds": 0.12091502547264099,
+              "FPR": 0.14002266680669329,
+              "IoU": 0.17984597193030386
+            },
+            "Serbia_01": {
+              "Ds": 0.1738562062382698,
+              "FPR": 0.1298353309340113,
+              "IoU": 0.3623753884787124
+            },
+            "SouthAfrica_11": {
+              "Ds": 0.10196079313755035,
+              "FPR": 0.29280124084369574,
+              "IoU": 0.18453905049457342
+            }
+          }
+        },
+        "full": {
+          "n_sites": 10,
+          "cut": 0.1218954473733902,
+          "spearman_Ds_FPR": 0.2121212121212121,
+          "perm_p_FPR": 0.5656217189140543,
+          "spearman_Ds_IoU": 0.41818181818181815,
+          "perm_p_IoU": 0.23548822558872057,
+          "low_bin": {
+            "n": 5,
+            "FPR": 0.22499659520930987,
+            "IoU": 0.17266105477912336
+          },
+          "high_bin": {
+            "n": 5,
+            "FPR": 0.30748035278744734,
+            "IoU": 0.24655278443196446
+          },
+          "per_site": {
+            "Chile_01": {
+              "Ds": 0.1228758692741394,
+              "FPR": 0.3423896012971627,
+              "IoU": 0.09338599197420572
+            },
+            "Germany_05": {
+              "Ds": 0.13594770431518555,
+              "FPR": 0.48722077493732013,
+              "IoU": 0.22302712711779696
+            },
+            "Congo_01": {
+              "Ds": 0.18692810833454132,
+              "FPR": 0.1601874877384172,
+              "IoU": 0.13331989276463688
+            },
+            "Brazil_01": {
+              "Ds": 0.11176470667123795,
+              "FPR": 0.30929604971955116,
+              "IoU": 0.35581841889201765
+            },
+            "SouthAfrica_05": {
+              "Ds": 0.09150326997041702,
+              "FPR": 0.12341828034230239,
+              "IoU": 0.0922514949737439
+            },
+            "SouthAfrica_08": {
+              "Ds": 0.2196078598499298,
+              "FPR": 0.3971639554715878,
+              "IoU": 0.4454726635924326
+            },
+            "Russia_08": {
+              "Ds": 0.11699346825480461,
+              "FPR": 0.17041916753057829,
+              "IoU": 0.07223168879656412
+            },
+            "Tanzania_01": {
+              "Ds": 0.12091502547264099,
+              "FPR": 0.16985719474200098,
+              "IoU": 0.1599798539855622
+            },
+            "Serbia_01": {
+              "Ds": 0.1738562062382698,
+              "FPR": 0.15043994449274886,
+              "IoU": 0.33755824671075035
+            },
+            "SouthAfrica_11": {
+              "Ds": 0.10196079313755035,
+              "FPR": 0.3519922837121164,
+              "IoU": 0.1830238172477289
+            }
+          }
+        },
+        "none": {
+          "n_sites": 10,
+          "cut": 0.1218954473733902,
+          "spearman_Ds_FPR": 0.22424242424242422,
+          "perm_p_FPR": 0.5434728263586821,
+          "spearman_Ds_IoU": 0.35757575757575755,
+          "perm_p_IoU": 0.31963401829908505,
+          "low_bin": {
+            "n": 5,
+            "FPR": 0.20256028451375102,
+            "IoU": 0.17409388938669798
+          },
+          "high_bin": {
+            "n": 5,
+            "FPR": 0.2799419908503274,
+            "IoU": 0.24758725427893263
+          },
+          "per_site": {
+            "Chile_01": {
+              "Ds": 0.1228758692741394,
+              "FPR": 0.33392953154368693,
+              "IoU": 0.08967702025986646
+            },
+            "Germany_05": {
+              "Ds": 0.13594770431518555,
+              "FPR": 0.43071495015241584,
+              "IoU": 0.20521745274778894
+            },
+            "Congo_01": {
+              "Ds": 0.18692810833454132,
+              "FPR": 0.1374052860538941,
+              "IoU": 0.1508058294421122
+            },
+            "Brazil_01": {
+              "Ds": 0.11176470667123795,
+              "FPR": 0.26613526073222205,
+              "IoU": 0.37174316537711594
+            },
+            "SouthAfrica_05": {
+              "Ds": 0.09150326997041702,
+              "FPR": 0.11873356366478664,
+              "IoU": 0.08986700161918541
+            },
+            "SouthAfrica_08": {
+              "Ds": 0.2196078598499298,
+              "FPR": 0.3721881868464969,
+              "IoU": 0.4333245213656471
+            },
+            "Russia_08": {
+              "Ds": 0.11699346825480461,
+              "FPR": 0.14378766748175464,
+              "IoU": 0.07497421637062464
+            },
+            "Tanzania_01": {
+              "Ds": 0.12091502547264099,
+              "FPR": 0.1447750385073164,
+              "IoU": 0.16282292006065044
+            },
+            "Serbia_01": {
+              "Ds": 0.1738562062382698,
+              "FPR": 0.12547199965514333,
+              "IoU": 0.3589114475792486
+            },
+            "SouthAfrica_11": {
+              "Ds": 0.10196079313755035,
+              "FPR": 0.3393698921826755,
+              "IoU": 0.17106214350591342
+            }
+          }
+        }
+      },
+      "confounder_change_ratio": {
+        "spearman_Ds_changeratio": 0.3696969696969697,
+        "perm_p": 0.2954352282385881,
+        "n_sites": 10,
+        "low_bin_change_ratio": 0.07238260904947917,
+        "high_bin_change_ratio": 0.13063449859619142,
+        "per_site_change_ratio": {
+          "Brazil_01": 0.1592381795247396,
+          "Chile_01": 0.07312488555908203,
+          "Congo_01": 0.047766685485839844,
+          "Germany_05": 0.17754491170247397,
+          "Russia_08": 0.06566905975341797,
+          "Serbia_01": 0.07573445638020833,
+          "SouthAfrica_05": 0.018898963928222656,
+          "SouthAfrica_08": 0.27900155385335285,
+          "SouthAfrica_11": 0.08673477172851562,
+          "Tanzania_01": 0.0313720703125
+        },
+        "note": "D_s 与变化像素占比同向共变；按 D_s 分层的组间差异不能单独归因于外观差异"
+      }
+    }
+  },
+  "data_selection": {
+    "scatter_model": "background",
+    "source_field_paths": {
+      "x": "site_Ds.<site>",
+      "y_error": "arms.background.per_site.<site>.FPR",
+      "y_change_fraction": "confounder_change_ratio.per_site_change_ratio.<site>"
+    },
+    "unit": "one point per validation mine",
+    "ds_axis_limits": [
+      0.08,
+      0.24
+    ],
+    "y_value_scale": 100,
+    "group_order": [
+      "low_bin",
+      "high_bin"
+    ],
+    "cutoff_field": "arms.background.cut",
+    "cutoff_origin": "validation-mine median, exploratory only",
+    "axis_policy": "Compute coordinates from the per-site records; keep all ten mines. No fitted causal curve."
+  },
+  "data_semantics": "10 validation sites; extension uses validation-site median, descriptive bins, no causal interpretation.",
+  "exact_text_whitelist": [
+    "可计算性",
+    "474／480",
+    "D_s 与误报",
+    "背景组",
+    "D_s 与占比",
+    "相关非因果",
+    "低档／高档",
+    "探索分档",
+    "D_s",
+    "背景误报率（%）",
+    "变化占比（%）",
+    "低档",
+    "高档",
+    "6对 NA",
+    "验证中位数",
+    "预实验结果",
+    "0",
+    "0.1",
+    "0.2",
+    "0.3",
+    "10",
+    "20",
+    "30",
+    "40",
+    "50"
+  ],
+  "image_prompt_english_word_count": 276
+}

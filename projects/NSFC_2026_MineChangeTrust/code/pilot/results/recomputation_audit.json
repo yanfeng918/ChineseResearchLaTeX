@@ -1,0 +1,9 @@
+{
+  "runs_checked": 9,
+  "site_rows_checked": 90,
+  "confusion_counts_match": true,
+  "small_component_counts_match": true,
+  "prediction_threshold_exact_match": true,
+  "same_seed_initialization_match": true,
+  "checkpoint_hashes_match": true
+}

@@ -1,0 +1,3476 @@
+{
+  "schema_version": 1,
+  "page_id": "page_006",
+  "slide": {
+    "width": 13.333,
+    "height": 7.5,
+    "size_mode": "wide"
+  },
+  "content_box": {
+    "left": 0.0012602739726021994,
+    "top": 0,
+    "width": 13.330479452054796,
+    "height": 7.5,
+    "fit": "contain"
+  },
+  "source": {
+    "path": "source.png",
+    "width_px": 1038,
+    "height_px": 584
+  },
+  "page_strategy": "User-requested full-vector redesign of the completed pilot workflow. All objects are editable native structural grids, cards, connectors and text; images remain empty.",
+  "text_inventory": [
+    {
+      "id": "evidence_state",
+      "text": "已完成预实验",
+      "decision": "native-text"
+    },
+    {
+      "id": "shards_title",
+      "text": "公开分片",
+      "decision": "native-text"
+    },
+    {
+      "id": "sampling_title",
+      "text": "固定抽样",
+      "decision": "native-text"
+    },
+    {
+      "id": "runs_title",
+      "text": "同种子对照",
+      "decision": "native-text"
+    },
+    {
+      "id": "last_epoch_title",
+      "text": "固定末轮",
+      "decision": "native-text"
+    },
+    {
+      "id": "scoring_title",
+      "text": "验证评分",
+      "decision": "native-text"
+    },
+    {
+      "id": "shard_text_1",
+      "text": "分片1",
+      "decision": "native-text"
+    },
+    {
+      "id": "shard_text_2",
+      "text": "分片2",
+      "decision": "native-text"
+    },
+    {
+      "id": "shard_text_3",
+      "text": "分片3",
+      "decision": "native-text"
+    },
+    {
+      "id": "shard_text_4",
+      "text": "分片4",
+      "decision": "native-text"
+    },
+    {
+      "id": "checksum",
+      "text": "SHA256 核验",
+      "decision": "native-text"
+    },
+    {
+      "id": "verified",
+      "text": "四分片均通过",
+      "decision": "native-text"
+    },
+    {
+      "id": "train_mines",
+      "text": "50 个训练矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "train_pairs",
+      "text": "1,188 对影像",
+      "decision": "native-text"
+    },
+    {
+      "id": "val_mines",
+      "text": "10 个验证矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "val_pairs",
+      "text": "480 对影像",
+      "decision": "native-text"
+    },
+    {
+      "id": "light_twin",
+      "text": "轻量孪生网络",
+      "decision": "native-text"
+    },
+    {
+      "id": "row_name_0",
+      "text": "种子",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_0_0",
+      "text": "17",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_0_1",
+      "text": "29",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_0_2",
+      "text": "43",
+      "decision": "native-text"
+    },
+    {
+      "id": "row_name_1",
+      "text": "无一致性",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_1_0",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_1_1",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_1_2",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "row_name_2",
+      "text": "全区域",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_2_0",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_2_1",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_2_2",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "row_name_3",
+      "text": "背景位置",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_3_0",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_3_1",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_text_3_2",
+      "text": "1次",
+      "decision": "native-text"
+    },
+    {
+      "id": "run_total",
+      "text": "三组 × 三种子，共9次",
+      "decision": "native-text"
+    },
+    {
+      "id": "shared_seed",
+      "text": "同种子设置一致",
+      "decision": "native-text"
+    },
+    {
+      "id": "epochs",
+      "text": "固定 12 轮",
+      "decision": "native-text"
+    },
+    {
+      "id": "threshold",
+      "text": "阈值 0.5",
+      "decision": "native-text"
+    },
+    {
+      "id": "saved_models",
+      "text": "9 个末轮模型",
+      "decision": "native-text"
+    },
+    {
+      "id": "saved_then_score",
+      "text": "保存后统一评分",
+      "decision": "native-text"
+    },
+    {
+      "id": "model_count",
+      "text": "9 个模型",
+      "decision": "native-text"
+    },
+    {
+      "id": "sites_per_model",
+      "text": "每模型 10 矿区",
+      "decision": "native-text"
+    },
+    {
+      "id": "record_count",
+      "text": "90 行记录",
+      "decision": "native-text"
+    },
+    {
+      "id": "reserved_mines",
+      "text": "10 个保留矿区：未作校准",
+      "decision": "native-text"
+    },
+    {
+      "id": "test_mines",
+      "text": "30 个官方测试矿区：未读取",
+      "decision": "native-text"
+    }
+  ],
+  "visual_inventory": [
+    {
+      "id": "white_background",
+      "description": "Native structural white background and reserved upper blank margin."
+    },
+    {
+      "id": "source_shards",
+      "description": "Four native structural cards represent the four checksum-verified public shards."
+    },
+    {
+      "id": "fixed_subsets",
+      "description": "Native structural dataset cards contain the verified train and validation counts."
+    },
+    {
+      "id": "run_matrix",
+      "description": "Native structural three-by-three run matrix maps the three constraints to the three actual seeds."
+    },
+    {
+      "id": "saved_models",
+      "description": "Nine native structural cells represent the nine saved last-epoch models."
+    },
+    {
+      "id": "scoring_records",
+      "description": "Native structural nine-column ten-row grid represents exactly ninety model-by-validation-mine records; individual confusion counts are absent."
+    },
+    {
+      "id": "unused_data",
+      "description": "Native structural gray strip isolates ten reserved mines without calibration and thirty official test mines not read."
+    },
+    {
+      "id": "flow",
+      "description": "Native structural forward connectors join only the completed workflow stages."
+    }
+  ],
+  "background_strategy": {
+    "mode": "native-or-script",
+    "source_consistency_contract": "Preserve white background, completed-pilot evidence status and five-stage flow; user-authorized vector redesign uses native geometry instead of decorative document or network visuals.",
+    "removed_foreground": "All foreground text and structural data-count objects rebuilt as independent native editable objects.",
+    "comparison_note": "Source, text-hints overlay, final preview and origin-versus-preview contact sheet were visually inspected. The completed five-stage workflow is retained with verified protocol counts, clear same-level typography and an isolated gray unused-data strip. No overlap, clipping or embedded title was observed."
+  },
+  "quality_checks": {
+    "font_size_calibrated": true,
+    "visual_inventory_matched": true,
+    "background_strategy_checked": true,
+    "shape_corner_geometry_checked": true
+  },
+  "text_boxes": [
+    {
+      "id": "evidence_state",
+      "text": "已完成预实验",
+      "box_px": [
+        12,
+        81,
+        190,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "left",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shards_title",
+      "text": "公开分片",
+      "box_px": [
+        16,
+        127,
+        148,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "sampling_title",
+      "text": "固定抽样",
+      "box_px": [
+        196,
+        127,
+        164,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "runs_title",
+      "text": "同种子对照",
+      "box_px": [
+        392,
+        127,
+        236,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "last_epoch_title",
+      "text": "固定末轮",
+      "box_px": [
+        660,
+        127,
+        162,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "scoring_title",
+      "text": "验证评分",
+      "box_px": [
+        854,
+        127,
+        168,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+      "font_size": 18.5,
+      "bold": true,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "main",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shard_text_1",
+      "text": "分片1",
+      "box_px": [
+        27,
+        207,
+        56,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shard_text_2",
+      "text": "分片2",
+      "box_px": [
+        97,
+        207,
+        56,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shard_text_3",
+      "text": "分片3",
+      "box_px": [
+        27,
+        289,
+        56,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shard_text_4",
+      "text": "分片4",
+      "box_px": [
+        97,
+        289,
+        56,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "checksum",
+      "text": "SHA256 核验",
+      "box_px": [
+        19,
+        366,
+        142,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "verified",
+      "text": "四分片均通过",
+      "box_px": [
+        19,
+        405,
+        142,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "train_mines",
+      "text": "50 个训练矿区",
+      "box_px": [
+        208,
+        202,
+        140,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "train_pairs",
+      "text": "1,188 对影像",
+      "box_px": [
+        208,
+        246,
+        140,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "val_mines",
+      "text": "10 个验证矿区",
+      "box_px": [
+        208,
+        331,
+        140,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "val_pairs",
+      "text": "480 对影像",
+      "box_px": [
+        208,
+        375,
+        140,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "light_twin",
+      "text": "轻量孪生网络",
+      "box_px": [
+        401,
+        166,
+        218,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "row_name_0",
+      "text": "种子",
+      "box_px": [
+        402,
+        208,
+        78,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_0_0",
+      "text": "17",
+      "box_px": [
+        485,
+        208,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_0_1",
+      "text": "29",
+      "box_px": [
+        531,
+        208,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_0_2",
+      "text": "43",
+      "box_px": [
+        577,
+        208,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "row_name_1",
+      "text": "无一致性",
+      "box_px": [
+        402,
+        252,
+        78,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_1_0",
+      "text": "1次",
+      "box_px": [
+        485,
+        252,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_1_1",
+      "text": "1次",
+      "box_px": [
+        531,
+        252,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_1_2",
+      "text": "1次",
+      "box_px": [
+        577,
+        252,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "row_name_2",
+      "text": "全区域",
+      "box_px": [
+        402,
+        296,
+        78,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_2_0",
+      "text": "1次",
+      "box_px": [
+        485,
+        296,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_2_1",
+      "text": "1次",
+      "box_px": [
+        531,
+        296,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_2_2",
+      "text": "1次",
+      "box_px": [
+        577,
+        296,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "row_name_3",
+      "text": "背景位置",
+      "box_px": [
+        402,
+        340,
+        78,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_3_0",
+      "text": "1次",
+      "box_px": [
+        485,
+        340,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_3_1",
+      "text": "1次",
+      "box_px": [
+        531,
+        340,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_text_3_2",
+      "text": "1次",
+      "box_px": [
+        577,
+        340,
+        42,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "run_total",
+      "text": "三组 × 三种子，共9次",
+      "box_px": [
+        396,
+        389,
+        228,
+        29
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "shared_seed",
+      "text": "同种子设置一致",
+      "box_px": [
+        397,
+        424,
+        226,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "epochs",
+      "text": "固定 12 轮",
+      "box_px": [
+        665,
+        186,
+        152,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "threshold",
+      "text": "阈值 0.5",
+      "box_px": [
+        665,
+        223,
+        152,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "saved_models",
+      "text": "9 个末轮模型",
+      "box_px": [
+        664,
+        391,
+        154,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "saved_then_score",
+      "text": "保存后统一评分",
+      "box_px": [
+        661,
+        425,
+        160,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "model_count",
+      "text": "9 个模型",
+      "box_px": [
+        860,
+        184,
+        156,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "sites_per_model",
+      "text": "每模型 10 矿区",
+      "box_px": [
+        857,
+        220,
+        162,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "record_count",
+      "text": "90 行记录",
+      "box_px": [
+        860,
+        403,
+        156,
+        28
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#1B3A5C",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "reserved_mines",
+      "text": "10 个保留矿区：未作校准",
+      "box_px": [
+        27,
+        502,
+        477,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#555B63",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    },
+    {
+      "id": "test_mines",
+      "text": "30 个官方测试矿区：未读取",
+      "box_px": [
+        534,
+        502,
+        477,
+        32
+      ],
+      "font": "Noto Sans CJK SC",
+      "preview_font": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "font_size": 16.5,
+      "bold": false,
+      "color": "#555B63",
+      "align": "center",
+      "valign": "middle",
+      "fit_text": true,
+      "text_fit_safety": 0.97,
+      "size_group": "body",
+      "z_index": 40,
+      "font_size_source": "manual-calibrated-user-redesign"
+    }
+  ],
+  "shapes": [
+    {
+      "id": "shards",
+      "type": "rect",
+      "box_px": [
+        12,
+        120,
+        156,
+        338
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.35,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "shards_divider",
+      "type": "line",
+      "points_px": [
+        12,
+        163,
+        168,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "sampling",
+      "type": "rect",
+      "box_px": [
+        192,
+        120,
+        172,
+        338
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.35,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "sampling_divider",
+      "type": "line",
+      "points_px": [
+        192,
+        163,
+        364,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "runs",
+      "type": "rect",
+      "box_px": [
+        388,
+        120,
+        244,
+        338
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.35,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "runs_divider",
+      "type": "line",
+      "points_px": [
+        388,
+        163,
+        632,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "last_epoch",
+      "type": "rect",
+      "box_px": [
+        656,
+        120,
+        170,
+        338
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.35,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "last_epoch_divider",
+      "type": "line",
+      "points_px": [
+        656,
+        163,
+        826,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "scoring",
+      "type": "rect",
+      "box_px": [
+        850,
+        120,
+        176,
+        338
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.35,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "scoring_divider",
+      "type": "line",
+      "points_px": [
+        850,
+        163,
+        1026,
+        163
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.1,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "a1",
+      "type": "line",
+      "points_px": [
+        168,
+        292,
+        185,
+        292
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.45,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "a1_head",
+      "type": "polygon",
+      "box_px": [
+        184,
+        288,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          184,
+          288
+        ],
+        [
+          192,
+          292
+        ],
+        [
+          184,
+          296
+        ]
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 20
+    },
+    {
+      "id": "a2",
+      "type": "line",
+      "points_px": [
+        364,
+        292,
+        381,
+        292
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.45,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "a2_head",
+      "type": "polygon",
+      "box_px": [
+        380,
+        288,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          380,
+          288
+        ],
+        [
+          388,
+          292
+        ],
+        [
+          380,
+          296
+        ]
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 20
+    },
+    {
+      "id": "a3",
+      "type": "line",
+      "points_px": [
+        632,
+        292,
+        649,
+        292
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.45,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "a3_head",
+      "type": "polygon",
+      "box_px": [
+        648,
+        288,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          648,
+          288
+        ],
+        [
+          656,
+          292
+        ],
+        [
+          648,
+          296
+        ]
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 20
+    },
+    {
+      "id": "a4",
+      "type": "line",
+      "points_px": [
+        826,
+        292,
+        843,
+        292
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.45,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "a4_head",
+      "type": "polygon",
+      "box_px": [
+        842,
+        288,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          842,
+          288
+        ],
+        [
+          850,
+          292
+        ],
+        [
+          842,
+          296
+        ]
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 20
+    },
+    {
+      "id": "shard_1",
+      "type": "rect",
+      "box_px": [
+        24,
+        193,
+        62,
+        62
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "shard_2",
+      "type": "rect",
+      "box_px": [
+        94,
+        193,
+        62,
+        62
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "shard_3",
+      "type": "rect",
+      "box_px": [
+        24,
+        275,
+        62,
+        62
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "shard_4",
+      "type": "rect",
+      "box_px": [
+        94,
+        275,
+        62,
+        62
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "train_subset",
+      "type": "rect",
+      "box_px": [
+        202,
+        186,
+        152,
+        104
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.9,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "val_subset",
+      "type": "rect",
+      "box_px": [
+        202,
+        315,
+        152,
+        104
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.9,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "row_name_cell_0",
+      "type": "rect",
+      "box_px": [
+        399,
+        202,
+        84,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#F1F3F5",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_0_0",
+      "type": "rect",
+      "box_px": [
+        483,
+        202,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#F1F3F5",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_0_1",
+      "type": "rect",
+      "box_px": [
+        529,
+        202,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#F1F3F5",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_0_2",
+      "type": "rect",
+      "box_px": [
+        575,
+        202,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#F1F3F5",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "row_name_cell_1",
+      "type": "rect",
+      "box_px": [
+        399,
+        246,
+        84,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_1_0",
+      "type": "rect",
+      "box_px": [
+        483,
+        246,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_1_1",
+      "type": "rect",
+      "box_px": [
+        529,
+        246,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_1_2",
+      "type": "rect",
+      "box_px": [
+        575,
+        246,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "row_name_cell_2",
+      "type": "rect",
+      "box_px": [
+        399,
+        290,
+        84,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_2_0",
+      "type": "rect",
+      "box_px": [
+        483,
+        290,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_2_1",
+      "type": "rect",
+      "box_px": [
+        529,
+        290,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_2_2",
+      "type": "rect",
+      "box_px": [
+        575,
+        290,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "row_name_cell_3",
+      "type": "rect",
+      "box_px": [
+        399,
+        334,
+        84,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_3_0",
+      "type": "rect",
+      "box_px": [
+        483,
+        334,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_3_1",
+      "type": "rect",
+      "box_px": [
+        529,
+        334,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "run_cell_3_2",
+      "type": "rect",
+      "box_px": [
+        575,
+        334,
+        46,
+        44
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.7,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_0_0",
+      "type": "rect",
+      "box_px": [
+        676,
+        278,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_0_1",
+      "type": "rect",
+      "box_px": [
+        722,
+        278,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_0_2",
+      "type": "rect",
+      "box_px": [
+        768,
+        278,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_1_0",
+      "type": "rect",
+      "box_px": [
+        676,
+        313,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_1_1",
+      "type": "rect",
+      "box_px": [
+        722,
+        313,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_1_2",
+      "type": "rect",
+      "box_px": [
+        768,
+        313,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_2_0",
+      "type": "rect",
+      "box_px": [
+        676,
+        348,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_2_1",
+      "type": "rect",
+      "box_px": [
+        722,
+        348,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "saved_model_2_2",
+      "type": "rect",
+      "box_px": [
+        768,
+        348,
+        38,
+        27
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 1.2,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "to_records",
+      "type": "line",
+      "points_px": [
+        938,
+        254,
+        938,
+        270
+      ],
+      "stroke": "#2E6B9E",
+      "stroke_width": 1.45,
+      "fill": "none",
+      "z_index": 20
+    },
+    {
+      "id": "to_records_head",
+      "type": "polygon",
+      "box_px": [
+        934,
+        269,
+        8,
+        8
+      ],
+      "polygon_px": [
+        [
+          934,
+          269
+        ],
+        [
+          938,
+          277
+        ],
+        [
+          942,
+          269
+        ]
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#2E6B9E",
+      "stroke_width": 0.5,
+      "z_index": 20
+    },
+    {
+      "id": "record_0_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_0_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        292,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_1_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        302,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_2_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        312,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_3_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        322,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_4_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        332,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_5_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        342,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_6_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        352,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_7_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        362,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_8_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        372,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_0",
+      "type": "rect",
+      "box_px": [
+        884,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_1",
+      "type": "rect",
+      "box_px": [
+        896,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_2",
+      "type": "rect",
+      "box_px": [
+        908,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_3",
+      "type": "rect",
+      "box_px": [
+        920,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_4",
+      "type": "rect",
+      "box_px": [
+        932,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_5",
+      "type": "rect",
+      "box_px": [
+        944,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_6",
+      "type": "rect",
+      "box_px": [
+        956,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_7",
+      "type": "rect",
+      "box_px": [
+        968,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "record_9_8",
+      "type": "rect",
+      "box_px": [
+        980,
+        382,
+        12,
+        10
+      ],
+      "stroke": "#2E6B9E",
+      "fill": "#FFFFFF",
+      "stroke_width": 0.35,
+      "z_index": 15,
+      "corner_category": "straight"
+    },
+    {
+      "id": "unused_strip",
+      "type": "rect",
+      "box_px": [
+        12,
+        487,
+        1014,
+        63
+      ],
+      "stroke": "#D8DDE3",
+      "fill": "#F1F3F5",
+      "stroke_width": 0.9,
+      "z_index": 10,
+      "corner_category": "straight"
+    },
+    {
+      "id": "unused_split",
+      "type": "line",
+      "points_px": [
+        519,
+        487,
+        519,
+        550
+      ],
+      "stroke": "#D8DDE3",
+      "stroke_width": 0.9,
+      "fill": "none",
+      "z_index": 20
+    }
+  ],
+  "images": [],
+  "asset_provenance": [],
+  "formula_inventory": [],
+  "preview_scale": 120,
+  "fit_text": true,
+  "text_fit_safety": 0.97,
+  "design_constraints": {
+    "palette": [
+      "#1B3A5C",
+      "#2E6B9E",
+      "#5BA0D0"
+    ],
+    "top_blank_px": 70
+  },
+  "text_hints_note": "Offline ink hints reviewed with source overlay. Several small labels were missed; source prose in current foundation.tex supplies verified text. Unified requested page_001 typography uses 18.5 pt headings and 16.5 pt body text."
+}

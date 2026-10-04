@@ -1,0 +1,139 @@
+{
+  "figure_id": "F3",
+  "figure_name_zh": "技术路线·内容一：数据与误差诊断",
+  "priority": "must",
+  "diagram_type": "Data Provenance and Error Diagnosis Pipeline",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular",
+      "tensor_shape": "6-7pt monospace"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with 4px head",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "background": "White (#FFFFFF)",
+    "main_block_color_palette": {
+      "Input": "Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "Process": "Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "Key_Tech": "Dark Navy (#1B3A5C) 2pt solid border, white fill, light grey (#F7F7F7) panel behind",
+      "Error_Class": "Amber (#E69F00) 1.5pt solid border, white fill",
+      "Output_Frozen": "Grey (#8EAEC4) 1.5pt dashed border, white fill, [Fixed] pill",
+      "Decision": "Dark Navy (#1B3A5C) 1.5pt solid border diamond, white fill",
+      "Prohibition": "Amber (#E69F00) 1.5pt solid border, diagonal hatch fill"
+    },
+    "flow_arrow_colors": {
+      "main_forward_flow": "Dark Grey (#4D4D4D) solid",
+      "feedback_loop": "Dark Grey (#4D4D4D) dashed"
+    }
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "Far Left",
+      "shape": "Rectangle, Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "exact_title_to_render_inside": "Inputs",
+      "icon": "small stacked-map-tiles icon, monochrome",
+      "exact_text": "Imagery\nLabels\nSite metadata",
+      "flow": "Horizontal arrow pointing RIGHT to Archive Check"
+    },
+    {
+      "relative_position": "Left Center",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Archive Check",
+      "icon": "small checksum icon (three horizontal bars with a tick), monochrome",
+      "exact_text": "Version, licence\nSHA256, site ID",
+      "flow": "Horizontal arrow pointing RIGHT to Provenance Map"
+    },
+    {
+      "relative_position": "Center Left, emphasised",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 2pt solid border, white fill, sitting on a light grey (#F7F7F7) panel",
+      "exact_title_to_render_inside": "Provenance Map",
+      "secondary_note": "(key tech)",
+      "icon": "small three-level tree icon (site to scene to tile), monochrome",
+      "exact_text": "Site to Scene to Tile",
+      "flow": "Horizontal arrow pointing RIGHT to Pairing Check"
+    },
+    {
+      "relative_position": "Center",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Pairing and Registration",
+      "icon": "small two-overlapping-frames icon, monochrome",
+      "exact_text": "Pair integrity\nValid pixels",
+      "flow": "Horizontal arrow pointing RIGHT to Baseline"
+    },
+    {
+      "relative_position": "Center Right",
+      "shape": "Rectangle, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Baseline Reproduction",
+      "icon": "small training loss convergence curve thumbnail, monochrome",
+      "exact_text": "Official split\nPer-site FP and FN",
+      "flow": "Arrow pointing RIGHT to the decision diamond, and DOWN to Error Classes"
+    },
+    {
+      "relative_position": "Bottom Center, four boxes in a row",
+      "shape": "Four small rectangles, Amber (#E69F00) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Error Classes",
+      "internal_content": {
+        "layout": "Four equal boxes in a horizontal row",
+        "box_1": { "exact_label": "Registration" },
+        "box_2": { "exact_label": "Label Edge" },
+        "box_3": { "exact_label": "Appearance" },
+        "box_4": { "exact_label": "Small Change" }
+      }
+    },
+    {
+      "relative_position": "Right Center",
+      "shape": "Diamond, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_text": "Errors match\nmechanism?",
+      "branch_yes": "Solid arrow RIGHT to Outputs, labelled Yes",
+      "branch_no": "Dashed arrow DOWN-LEFT to Quality Diagnosis, labelled No"
+    },
+    {
+      "relative_position": "Bottom Right",
+      "shape": "Rectangle, Grey (#8EAEC4) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Quality Diagnosis First",
+      "exact_text": "Narrow hypothesis"
+    },
+    {
+      "relative_position": "Far Right",
+      "shape": "Rectangle, Grey (#8EAEC4) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Outputs",
+      "secondary_note": "[Fixed]",
+      "icon": "small document-with-checklist icon, monochrome",
+      "exact_text": "Frozen split\nTraceable error list\nD_s strata"
+    },
+    {
+      "relative_position": "Bottom Left, beside Archive Check",
+      "shape": "Small rectangle, Amber (#E69F00) 1.5pt solid border, diagonal hatch fill",
+      "exact_text": "No dropping sites by test score"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY, except the single prohibition box which carries diagonal hatching.",
+    "The Provenance Map block is emphasised with a 2pt border and a light grey backing panel; it is the key technique.",
+    "Frozen outputs use a DASHED grey border plus a small [Fixed] pill; NO padlock symbol.",
+    "Decision diamond has two labelled branches: Yes continues right as a SOLID arrow, No is a DASHED arrow.",
+    "Amber (#E69F00) is used for borders and hatching only, never as text colour.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 8-9pt, notes 7-8pt.",
+    "Icons are monochrome thin grey line art. No colored icons.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Flat vector style: no gradients, no drop shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "caption_reserve": [
+    "抽样规则与固定盐（sha256 salt）",
+    "重复/无效样本剔除规则全文",
+    "D_s 定义、腐蚀口径与「不适用」条款"
+  ]
+}

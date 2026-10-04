@@ -1,0 +1,21 @@
+{
+  "rule": "验证矿区名称字典序前3个；每矿区取按原始行号排序的第一个有变化标签切片，无变化则取第一个；采用预定首种子17，不按预测效果选案例",
+  "selected_before_validation_metrics": true,
+  "cases": [
+    {
+      "index": 149,
+      "domain": "Brazil_01",
+      "row_index": 2251
+    },
+    {
+      "index": 2,
+      "domain": "Chile_01",
+      "row_index": 62
+    },
+    {
+      "index": 105,
+      "domain": "Congo_01",
+      "row_index": 1304
+    }
+  ]
+}

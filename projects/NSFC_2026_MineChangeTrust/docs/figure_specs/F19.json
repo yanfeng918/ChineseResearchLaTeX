@@ -1,0 +1,219 @@
+{
+  "figure_id": "F19",
+  "figure_name_zh": "固定矿区案例：两期影像、真值与三组预测",
+  "diagram_type": "Qualitative Comparison",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "4:3",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Specify a three-row, six-column image plate using only the already archived examples. Rows are the prespecified mines; columns are the two observations, label and three prediction arms. Preserve native pixel content and use equal-sized crops with synchronized framing. Add neutral outlines and column labels around the assets, never artificial restoration, recoloring or newly generated predictions. Existing full comparison artwork may be reused intact if original tile assets are unavailable.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "top row",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "Brazil_01",
+      "exact_text": "row 2251",
+      "icon": "six source-preserved raster tiles from the fixed first case; the native raster is the visual anchor, do not replace it with an icon",
+      "visual_function": "真实误报和漏检在固定案例中是什么样？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）MCT-P01；已有案例资产",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b2",
+      "relative_position": "middle row",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "Chile_01",
+      "exact_text": "row 62",
+      "icon": "six source-preserved raster tiles from the fixed second case; the native raster is the visual anchor, do not replace it with an icon",
+      "visual_function": "真实误报和漏检在固定案例中是什么样？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）MCT-P01；已有案例资产",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b3",
+      "relative_position": "bottom row",
+      "shape": "white panel with neutral dividers; measured plot or unaltered asset content",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "Congo_01",
+      "exact_text": "row 1304",
+      "icon": "six source-preserved raster tiles from the fixed third case; the native raster is the visual anchor, do not replace it with an icon",
+      "visual_function": "真实误报和漏检在固定案例中是什么样？",
+      "source_span": {
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "section": "（三）MCT-P01；已有案例资产",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "固定案例",
+    "exact_auxiliary_labels": [
+      "时相A",
+      "时相B",
+      "变化标签",
+      "无一致性",
+      "全区域",
+      "背景位置",
+      "白色：变化",
+      "种子17"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "采用首次评分前确定的三个验证矿区案例和种子17。三组预测均保留，白色表示变化；图像与标签来自MineNetCD作者数据，CC BY 4.0，预测为本次运行生成。该案例集不代表总体误差发生率。",
+    "必须复用真实影像、标签和预测，不调用图像模型重绘科学栅格；局部放大裁切必须各列同坐标；不删除不利案例。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      16,
+      17
+    ],
+    "section": "（三）MCT-P01；已有案例资产",
+    "supplemental_assets": [
+      "figures/pilot_examples.png",
+      "code/pilot/results/qualitative_selection.json"
+    ],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "asset_composition",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "lossless source-asset composition"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "真实误报和漏检在固定案例中是什么样？",
+    "待确认信息": "必须复用真实影像、标签和预测，不调用图像模型重绘科学栅格；局部放大裁切必须各列同坐标；不删除不利案例。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "asset_integrity": {
+    "source_png": "figures/pilot_examples.png",
+    "sha256": "3f4c88be1e21a18e5a1c801ce0da373ec5937e95f975b8d9fe95ef26ca518ddb",
+    "row_selection": {
+      "rule": "验证矿区名称字典序前3个；每矿区取按原始行号排序的第一个有变化标签切片，无变化则取第一个；采用预定首种子17，不按预测效果选案例",
+      "selected_before_validation_metrics": true,
+      "cases": [
+        {
+          "index": 149,
+          "domain": "Brazil_01",
+          "row_index": 2251
+        },
+        {
+          "index": 2,
+          "domain": "Chile_01",
+          "row_index": 62
+        },
+        {
+          "index": 105,
+          "domain": "Congo_01",
+          "row_index": 1304
+        }
+      ]
+    },
+    "instruction": "Preserve original A/B/label/prediction pixels; no image-model redraw, color correction or invented crop."
+  },
+  "exact_text_whitelist": [
+    "Brazil_01",
+    "row 2251",
+    "Chile_01",
+    "row 62",
+    "Congo_01",
+    "row 1304",
+    "时相A",
+    "时相B",
+    "变化标签",
+    "无一致性",
+    "全区域",
+    "背景位置",
+    "白色：变化",
+    "种子17",
+    "固定案例"
+  ],
+  "image_prompt_english_word_count": 279
+}

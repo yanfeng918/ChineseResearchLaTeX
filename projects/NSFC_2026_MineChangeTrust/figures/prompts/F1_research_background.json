@@ -1,0 +1,140 @@
+{
+  "figure_id": "F1",
+  "figure_name_zh": "研究背景与问题动机图",
+  "priority": "must",
+  "diagram_type": "Conceptual Problem Motivation Diagram",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular",
+      "tensor_shape": "6-7pt monospace"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with 4px head",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "background": "White (#FFFFFF)",
+    "main_block_color_palette": {
+      "Input_Pair": "Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "Should_Detect": "Medium Blue (#2E6B9E) 1.5pt solid border, white fill",
+      "Should_Suppress": "Amber (#E69F00) 1.5pt solid border, white fill, diagonal hatch top-right corner",
+      "Should_Flag": "Grey (#8EAEC4) 1.5pt dashed border, white fill",
+      "Problem_Panel": "Section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "Boundary_Bar": "Section background (#F7F7F7), no chromatic border"
+    },
+    "flow_arrow_colors": {
+      "main_forward_flow": "Dark Grey (#4D4D4D) solid",
+      "feedback_loop": "Dark Grey (#4D4D4D) dashed"
+    }
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "Far Left",
+      "shape": "Two stacked square thumbnails, Light Blue 1pt solid border, white fill",
+      "exact_title_to_render_inside": "Bi-temporal Pair",
+      "icon": "small image frame icon with diagonal cross, monochrome thin line art",
+      "internal_content": {
+        "layout": "Two stacked square panels",
+        "panel_1": { "exact_label": "T1" },
+        "panel_2": { "exact_label": "T2" }
+      },
+      "secondary_note": "(mine site)",
+      "flow": "Horizontal arrow pointing RIGHT to Difference Split"
+    },
+    {
+      "relative_position": "Center Left",
+      "shape": "Small circle junction, Dark Grey 1.5pt solid border",
+      "exact_label": "Difference",
+      "flow": "Three arrows fanning RIGHT to the three outcome boxes"
+    },
+    {
+      "relative_position": "Center Top",
+      "shape": "Rounded rectangle, Medium Blue (#2E6B9E) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Real Surface Change",
+      "exact_text": "Should detect",
+      "icon": "small polygon outline icon with corner markers, monochrome"
+    },
+    {
+      "relative_position": "Center Middle",
+      "shape": "Rounded rectangle, Amber (#E69F00) 1.5pt solid border, white fill, diagonal hatch in top-right corner",
+      "exact_title_to_render_inside": "Appearance Difference",
+      "exact_text": "Should suppress",
+      "secondary_note": "(illumination, moisture)",
+      "icon": "small half-filled brightness circle icon, monochrome"
+    },
+    {
+      "relative_position": "Center Bottom",
+      "shape": "Rounded rectangle, Grey (#8EAEC4) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Registration and Label Edge",
+      "exact_text": "Should flag",
+      "icon": "small offset-grid icon, monochrome"
+    },
+    {
+      "relative_position": "Right Top",
+      "shape": "Panel, section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "exact_title_to_render_inside": "Problem A: Constraint Trade-off",
+      "internal_content": {
+        "layout": "Horizontal seesaw beam pivoting on a triangle",
+        "left_end": { "exact_label": "Fewer FP", "shape": "Amber (#E69F00) 1.5pt solid border pill" },
+        "right_end": { "exact_label": "Small Change Lost", "shape": "Medium Blue (#2E6B9E) 1.5pt solid border pill" }
+      },
+      "exact_floating_text": "Where to constrain"
+    },
+    {
+      "relative_position": "Right Bottom",
+      "shape": "Panel, section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "exact_title_to_render_inside": "Problem B: Review Blind Spot",
+      "internal_content": {
+        "layout": "Two rows",
+        "row_1": { "exact_text": "Mean metric acceptable" },
+        "row_2": {
+          "exact_text": "Unseen site high-confidence error",
+          "shape": "Amber (#E69F00) 1.5pt solid border, diagonal hatch"
+        }
+      },
+      "exact_floating_text": "Confident unchanged misses"
+    },
+    {
+      "relative_position": "Bottom Full Width",
+      "shape": "Wide flat bar, section background (#F7F7F7), no chromatic border, 1pt (#CCCCCC) divider in the middle",
+      "internal_content": {
+        "layout": "Two halves separated by a vertical divider",
+        "left_half": {
+          "exact_header": "In scope",
+          "exact_text": "Land cover and mine footprint\nbinary change"
+        },
+        "right_half": {
+          "exact_header": "Out of scope",
+          "exact_text": "Contamination, subsidence risk,\nrestoration outcome"
+        }
+      }
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 8-9pt, notes 7-8pt.",
+    "Adhere to stroke hierarchy: containers 1.5pt, dividers 1.0pt, arrows 1.5pt.",
+    "Icons are monochrome thin grey line art. No colored icons.",
+    "Amber (#E69F00) is used for borders and hatching ONLY, never for text.",
+    "Each of the three outcome boxes must be distinguishable in GREYSCALE by border style: solid medium, solid with hatch, dashed.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Flat vector style: no gradients, no drop shadows, no photographic imagery.",
+    "The bottom scope bar carries NO chromatic colour and NO risk-level shading.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "caption_reserve": [
+    "数据来源与许可（MineNetCD, CC BY 4.0）",
+    "「应抑制 / 应标记」的判定依据",
+    "二值变化标注不支持污染程度、沉降风险、生态修复成效判定的完整说明"
+  ]
+}

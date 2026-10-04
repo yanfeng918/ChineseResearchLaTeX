@@ -1,0 +1,250 @@
+{
+  "figure_id": "F08",
+  "figure_name_zh": "可归因对照矩阵：区域、面积、形状、强度与平滑",
+  "diagram_type": "Comparison / Ablation",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Use an equal-size two-by-three matrix. The first four cells share the same tiny scene and segmentation target, differing only in the constraint overlay. The fifth cell represents sensitivity controls and the sixth holds independent complete comparison methods. Do not connect the cells as sequential network layers. A narrow shared footer records equal backbone, training steps and search budgets without filling every cell with repeated prose.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "upper left",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "无一致性",
+      "exact_text": "共同监督",
+      "icon": "empty constraint overlay on a common mask frame, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b2",
+      "relative_position": "upper center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "全区域",
+      "exact_text": "有效区域",
+      "icon": "full-frame outlined constraint grid, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b3",
+      "relative_position": "upper right",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "背景位置",
+      "exact_text": "训练标签",
+      "icon": "unchanged-area contour within the same frame, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b4",
+      "relative_position": "lower left",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "等面积随机",
+      "exact_text": "匹配形状",
+      "icon": "relocated contour with matched area and boundary markers, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b5",
+      "relative_position": "lower center",
+      "shape": "white filled outlined panel; #2E6B9E border; solid",
+      "semantic_role": "Loss",
+      "exact_title_to_render_inside": "强度与平滑",
+      "exact_text": "敏感性对照",
+      "icon": "gradient-length rulers next to an outline smoothing stencil, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b6",
+      "relative_position": "lower right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "完整近邻",
+      "exact_text": "独立比较",
+      "icon": "three separate reference-method cards, monochrome thin dark-grey line art",
+      "visual_function": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          14
+        ],
+        "section": "（二）1.4（2）、1.8",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "研究设计",
+    "exact_auxiliary_labels": [
+      "FCCDN",
+      "DonaNet",
+      "CDDGNet"
+    ]
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "前三组和等面积随机组承担受控比较，进一步记录形状、边界和强度匹配残差；平滑及完整近邻为不同性质的对照。矩阵说明实验设计，不表示这些正式实验均已运行。",
+    "不用空白假表表示已测指标；不把完整近邻与仅掩码替换混在一列成绩。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      10,
+      11,
+      14
+    ],
+    "section": "（二）1.4（2）、1.8",
+    "supplemental_assets": [],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "schematic",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "vector editor or approved image model after a later request"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "哪些对照排除“收益只是约束更弱或结果更平滑”的解释？",
+    "待确认信息": "不用空白假表表示已测指标；不把完整近邻与仅掩码替换混在一列成绩。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "exact_text_whitelist": [
+    "无一致性",
+    "共同监督",
+    "全区域",
+    "有效区域",
+    "背景位置",
+    "训练标签",
+    "等面积随机",
+    "匹配形状",
+    "强度与平滑",
+    "敏感性对照",
+    "完整近邻",
+    "独立比较",
+    "FCCDN",
+    "DonaNet",
+    "CDDGNet",
+    "研究设计"
+  ],
+  "image_prompt_english_word_count": 283
+}

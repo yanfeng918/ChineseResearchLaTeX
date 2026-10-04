@@ -1,0 +1,139 @@
+{
+  "figure_id": "F5",
+  "figure_name_zh": "技术路线·内容三：固定复核面积下的可靠性评价",
+  "priority": "must",
+  "diagram_type": "Calibration and Review-Budget Reliability Pipeline",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "16:9",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_hierarchy": {
+      "title": "10-12pt bold",
+      "primary_label": "8-9pt regular",
+      "secondary_note": "7-8pt regular",
+      "tensor_shape": "6-7pt monospace"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid with 4px head",
+      "feedback_arrow": "1.0pt dashed"
+    }
+  },
+  "style_and_colors": {
+    "background": "White (#FFFFFF)",
+    "main_block_color_palette": {
+      "Frozen_Detector": "Grey (#8EAEC4) 1.5pt dashed border, white fill, [Fixed] pill",
+      "Calibration": "Medium Blue (#2E6B9E) 1.5pt dashed border, white fill",
+      "Window_Grid": "Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "Scoring": "Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "Baseline_Row": "Section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "Residual_Error": "Amber (#E69F00) 1.5pt solid border, white fill",
+      "Limit_Bar": "Section background (#F7F7F7), no chromatic border"
+    },
+    "flow_arrow_colors": {
+      "main_forward_flow": "Dark Grey (#4D4D4D) solid",
+      "feedback_loop": "Dark Grey (#4D4D4D) dashed"
+    }
+  },
+  "layout_and_content_blocks": [
+    {
+      "relative_position": "Far Left",
+      "shape": "Rectangle, Grey (#8EAEC4) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Frozen Detector",
+      "secondary_note": "[Fixed]",
+      "icon": "small stacked feature maps icon, monochrome",
+      "exact_text": "No parameter update",
+      "flow": "Horizontal arrow pointing RIGHT to Calibration"
+    },
+    {
+      "relative_position": "Left Center",
+      "shape": "Rectangle, Medium Blue (#2E6B9E) 1.5pt dashed border, white fill",
+      "exact_title_to_render_inside": "Calibration Sites",
+      "icon": "small reliability-diagram thumbnail (diagonal line with step curve), monochrome",
+      "exact_text": "Fit temperature T\nBrier, grouped ECE",
+      "secondary_note": "(held-out sites)",
+      "flow": "Horizontal arrow pointing RIGHT to Window Grid"
+    },
+    {
+      "relative_position": "Center Left",
+      "shape": "Rectangle containing a 6x4 cell grid, Light Blue (#5BA0D0) 1pt solid border, white fill",
+      "exact_title_to_render_inside": "Whole-Scene Windows",
+      "internal_content": {
+        "layout": "6x4 grid of equal cells; three scattered cells carry diagonal hatching",
+        "annotation": { "exact_floating_text": "Predicted-unchanged windows also enter the pool" }
+      },
+      "secondary_note": "(fixed, non-overlapping)",
+      "flow": "Arrow pointing RIGHT to Error Ranking"
+    },
+    {
+      "relative_position": "Center Right, three stacked boxes",
+      "shape": "Three rectangles, Dark Navy (#1B3A5C) 1.5pt solid border, white fill",
+      "exact_title_to_render_inside": "Error Ranking",
+      "internal_content": {
+        "layout": "Three stacked boxes merging into one arrow",
+        "box_1": { "exact_label": "Entropy", "icon": "small probability distribution bar chart thumbnail" },
+        "box_2": { "exact_label": "View Disagreement", "icon": "small two-branch fork icon" },
+        "box_3": { "exact_label": "Combined", "secondary_note": "(val-selected)" }
+      },
+      "flow": "Arrow pointing RIGHT to Area Budget"
+    },
+    {
+      "relative_position": "Right Center",
+      "shape": "Horizontal bar partially filled with diagonal hatch, Medium Blue (#2E6B9E) 1.5pt solid border",
+      "exact_title_to_render_inside": "Area Budget",
+      "exact_label": "10% area",
+      "secondary_note": "(0, 5%, 20%)",
+      "exact_floating_text": "Whole windows in order; stop before overrun"
+    },
+    {
+      "relative_position": "Bottom Center band",
+      "shape": "Wide flat band, section background (#F7F7F7), 1pt (#CCCCCC) border",
+      "exact_title_to_render_inside": "Same-Budget Baselines",
+      "internal_content": {
+        "layout": "Five pills in a row",
+        "pill_1": { "exact_label": "Random" },
+        "pill_2": { "exact_label": "Raw Entropy" },
+        "pill_3": { "exact_label": "Calibrated" },
+        "pill_4": { "exact_label": "Disagreement" },
+        "pill_5": { "exact_label": "Combined" }
+      }
+    },
+    {
+      "relative_position": "Far Right, three stacked outputs",
+      "shape": "Three rectangles, Amber (#E69F00) 1.5pt solid border for the first two, Medium Blue (#2E6B9E) 1.5pt solid for the third, white fill",
+      "exact_title_to_render_inside": "Whole-Scene Residual",
+      "internal_content": {
+        "layout": "Three stacked boxes",
+        "box_1": { "exact_label": "Residual FP" },
+        "box_2": { "exact_label": "Residual FN" },
+        "box_3": { "exact_label": "Change Coverage", "secondary_note": "(unselected misses)" }
+      }
+    },
+    {
+      "relative_position": "Bottom Full Width",
+      "shape": "Wide flat bar, section background (#F7F7F7), no chromatic border",
+      "exact_text": "Ground-truth substitution gives an ideal correction ceiling, not measured human effort"
+    }
+  ],
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY.",
+    "The frozen detector uses a DASHED grey border plus a small [Fixed] pill; NO padlock symbol.",
+    "In the window grid, selected windows are marked by DIAGONAL HATCHING, not by fill colour, so the figure survives greyscale printing.",
+    "The floating note about predicted-unchanged windows must be clearly attached to the window grid.",
+    "Amber (#E69F00) is used for residual-error block borders only, never as text colour.",
+    "Adhere to typography hierarchy: titles 10-12pt bold, labels 8-9pt, notes 7-8pt.",
+    "Icons are monochrome thin grey line art. No colored icons.",
+    "NO emojis, NO lock/fire/lightning decorative symbols, NO 3D rendering.",
+    "Flat vector style: no gradients, no drop shadows.",
+    "Canvas is pure white (#FFFFFF)."
+  ],
+  "caption_reserve": [
+    "窗口尺度、分数汇总与组合权重的选择依据（仅由验证矿区确定）",
+    "等实际面积核对流程",
+    "剩余 FP/FN 的分母口径（全图背景面积 / 全图变化面积）",
+    "真实人工复核的核验者错误、耗时与一致性记录方式"
+  ]
+}

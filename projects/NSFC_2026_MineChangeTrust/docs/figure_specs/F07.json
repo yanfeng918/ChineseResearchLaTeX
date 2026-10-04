@@ -1,0 +1,314 @@
+{
+  "figure_id": "F07",
+  "figure_name_zh": "核心机制：训练背景位置约束与全区域分割监督",
+  "diagram_type": "Module Detail",
+  "diagram_title_rendering": "None",
+  "aspect_ratio": "4:3",
+  "physical_spec_and_typography": {
+    "canvas_width": "183mm (double column)",
+    "font_family": "Noto Sans CJK SC / Source Han Sans SC for Chinese; Arial / Helvetica for Latin; STIX for mathematics",
+    "font_hierarchy": {
+      "title": "10–12pt bold",
+      "primary_label": "8–9pt regular",
+      "secondary_note": "7–8pt regular",
+      "tensor_shape": "6–7pt monospace/italic"
+    },
+    "stroke_hierarchy": {
+      "container_border": "1.5pt solid",
+      "internal_divider": "1.0pt solid",
+      "flow_arrow": "1.5pt solid",
+      "feedback_arrow": "1.0pt dashed"
+    },
+    "placement_note": "Reflow to the actual proposal text width; do not shrink labels below legible size."
+  },
+  "style_and_colors": {
+    "family": "classic",
+    "palette": "Nature Blue",
+    "decision_branch": "scene",
+    "colors": {
+      "primary": "#1B3A5C",
+      "secondary": "#2E6B9E",
+      "tertiary": "#5BA0D0",
+      "text": "#333333",
+      "fill": "#FFFFFF",
+      "section_bg": "#F7F7F7",
+      "border": "#CCCCCC",
+      "arrow": "#4D4D4D",
+      "frozen": "#616161"
+    },
+    "semantic_binding": {
+      "Data": "#5BA0D0",
+      "Backbone": "#1B3A5C",
+      "Loss": "#2E6B9E",
+      "Output": "#5BA0D0",
+      "Frozen": "#616161"
+    },
+    "series_binding": {}
+  },
+  "layout_description": "Organize a two-row training graph. The top row carries paired images through shared encoding to change prediction. The lower row introduces training labels only at supervision nodes: one path creates an eroded unchanged mask for feature consistency, and another supervises segmentation across all valid pixels. Use a clear training-only divider. A small detached inference inset repeats only image input, shared encoder and prediction, with no label or mask input.",
+  "layout_and_content_blocks": [
+    {
+      "id": "b1",
+      "relative_position": "upper left",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "两期影像",
+      "exact_text": "共享输入",
+      "icon": "two aligned image frames, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b2",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "relative_position": "upper center",
+      "shape": "white filled outlined panel; #1B3A5C border; solid",
+      "semantic_role": "Backbone",
+      "exact_title_to_render_inside": "共享编码",
+      "exact_text": "同一骨干",
+      "icon": "paired feature-map stacks tied by an equality bracket, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b3",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": ""
+        },
+        {
+          "target": "b5",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "特征"
+        }
+      ],
+      "exact_status": "[训练]"
+    },
+    {
+      "id": "b3",
+      "relative_position": "upper right",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Output",
+      "exact_title_to_render_inside": "变化预测",
+      "exact_text": "全图输出",
+      "icon": "binary spatial prediction grid, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b6",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "预测"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "relative_position": "lower left",
+      "shape": "white filled outlined panel; #5BA0D0 border; solid",
+      "semantic_role": "Data",
+      "exact_title_to_render_inside": "训练标签",
+      "exact_text": "未变化区",
+      "icon": "binary label grid with an eroded interior contour, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": [
+        {
+          "target": "b5",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "掩码"
+        },
+        {
+          "target": "b6",
+          "line_style": "solid",
+          "color": "#4D4D4D",
+          "exact_arrow_label": "真值"
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "relative_position": "lower center",
+      "shape": "white filled outlined panel; #2E6B9E border; solid",
+      "semantic_role": "Loss",
+      "exact_title_to_render_inside": "背景约束",
+      "exact_text": "按面积归一",
+      "icon": "masked distance cells with an averaging bracket, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    },
+    {
+      "id": "b6",
+      "relative_position": "lower right",
+      "shape": "white filled outlined panel; #2E6B9E border; solid",
+      "semantic_role": "Loss",
+      "exact_title_to_render_inside": "分割监督",
+      "exact_text": "全部有效区",
+      "icon": "two-class label grid reaching all valid locations, monochrome thin dark-grey line art",
+      "visual_function": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+      "source_span": {
+        "pdf_pages": [
+          10,
+          11,
+          17
+        ],
+        "section": "（二）1.4（2）；（三）预实验局限",
+        "basis": "source-grounded functional abstraction; see caption for limitations"
+      },
+      "outgoing_connections": []
+    }
+  ],
+  "on_figure_annotations": {
+    "exact_evidence_status": "研究设计",
+    "exact_auxiliary_labels": [
+      "训练阶段",
+      "推理阶段",
+      "仅训练标签"
+    ],
+    "exact_formula": "L = Lseg + λLbg"
+  },
+  "text_budget": {
+    "module_title_max_words": 5,
+    "subcomponent_max_words": 3,
+    "arrow_label_max_words": 3,
+    "core_formula_max_lines": 1,
+    "chinese_rule": "中文采用等效短语预算，主要模块标题优先不超过10字，不塞整句。"
+  },
+  "caption_note": [
+    "图示为正式研究的功能性损失结构，骨干尚未锁定。分割监督覆盖全部有效区，背景约束在训练标签经腐蚀后的位置计算；空掩码项为零。背景位置特征仍可能受感受野与空间归一化影响。",
+    "不编造正式骨干层数、通道数或预训练模块；仅保留一行总损失，完整公式进图注；测试侧没有真值输入。",
+    "完整数值、参数、来源署名和解释范围留在图注；不将图注段落渲染进模块。"
+  ],
+  "grounding": {
+    "pdf_file": "main.pdf",
+    "pdf_sha256": "db55a915a37398fc0a82858f1bee368018c5bd208724a8bf912f453da53a7a78",
+    "pdf_pages": [
+      10,
+      11,
+      17
+    ],
+    "section": "（二）1.4（2）；（三）预实验局限",
+    "supplemental_assets": [],
+    "source_path_base": "project_root"
+  },
+  "production": {
+    "mode": "schematic",
+    "images_generated": false,
+    "run_models": false,
+    "edit_proposal": false,
+    "future_renderer": "vector editor or approved image model after a later request"
+  },
+  "completeness": {
+    "已分析材料": "main.pdf全部21页及所列只读补充资产",
+    "当前输出类型": "完整规范；尚未生图",
+    "高置信信息": "背景掩码如何进入训练损失，同时避免真值进入测试前向？",
+    "待确认信息": "不编造正式骨干层数、通道数或预训练模块；仅保留一行总损失，完整公式进图注；测试侧没有真值输入。",
+    "建议补充材料": "仅在正式参数或新增实证图制作前补冻结配置/真实结果。"
+  },
+  "RENDERING_RULES_AND_NEGATIVE_PROMPT_INSTRUCTIONS": [
+    "Render text ONLY within designated exact_* fields; all other prose is production guidance.",
+    "All container boxes use WHITE (#FFFFFF) fill with COLORED BORDERS ONLY; preserve native pixels inside real source-image assets.",
+    "Use title 10–12pt, primary label 8–9pt, secondary label 7–8pt and tensor notes 6–7pt; keep labels readable after final placement.",
+    "Use 1.5pt container borders and forward arrows, 1.0pt dividers and feedback arrows; align objects on a consistent grid.",
+    "Icons are monochrome dark-grey thin line art, one visual anchor per major block; no decorative pictograms.",
+    "Weight status uses a solid border with [训练] for trainable weights, a dashed grey border with [固定] for frozen weights; do not assign weight status to ordinary data.",
+    "Main forward flow arrows are SOLID; feedback arrows DASHED; optional-extension edges DOTTED. No held-out test feedback into development.",
+    "NO emojis, NO lock/fire/lightning icons, NO 3D rendering; no gradients, shadows, invented achievements or winner badges.",
+    "Use no more than three specified chromatic colors plus neutrals; source raster colors remain unchanged.",
+    "Long formulas, thresholds without frozen values, citations and explanatory sentences belong in caption_note, never in module boxes.",
+    "No fabricated measurements, ROC curves, confusion scores, geographic coordinates, model layers or environmental-risk categories.",
+    "This package is planning-only: do not execute image generation or plot rendering without the subsequent task to produce figures."
+  ],
+  "inference_inset": {
+    "relative_position": "detached lower margin",
+    "exact_title": "推理阶段",
+    "icon": "paired image frames and an output grid, monochrome",
+    "reused_block_ids": [
+      "b1",
+      "b2",
+      "b3"
+    ],
+    "excluded_block_ids": [
+      "b4",
+      "b5",
+      "b6"
+    ],
+    "caption_note": "Inference takes images only; no ground-truth-derived mask."
+  },
+  "exact_text_whitelist": [
+    "两期影像",
+    "共享输入",
+    "共享编码",
+    "同一骨干",
+    "[训练]",
+    "变化预测",
+    "全图输出",
+    "训练标签",
+    "未变化区",
+    "背景约束",
+    "按面积归一",
+    "分割监督",
+    "全部有效区",
+    "特征",
+    "预测",
+    "掩码",
+    "真值",
+    "训练阶段",
+    "推理阶段",
+    "仅训练标签",
+    "研究设计",
+    "L = Lseg + λLbg"
+  ],
+  "image_prompt_english_word_count": 286
+}
